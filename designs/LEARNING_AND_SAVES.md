@@ -257,7 +257,7 @@ The file contains progress and scheduler state, not active sprites. Voluntary se
 
 ## 9. Save API
 
-Fastify, bound to `127.0.0.1`, exposes:
+Fastify, bound to `100.65.64.80`, exposes:
 
 ```text
 GET  /api/health

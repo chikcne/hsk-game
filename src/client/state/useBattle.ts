@@ -8,6 +8,7 @@ import { generateChoices, type MeaningChoice } from "../../domain/session/choice
 import { calculatePoints } from "../../domain/session/scoring";
 import { nearestEnemy } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
+import { playSoundEffect } from "../audio/soundEffects";
 
 export type Feedback = { id: string; kind: "correct" | "miss" | "landed"; word: RuntimeWord; typed?: string; points?: number; oldWeight: number; newWeight: number };
 export type SessionStats = { score: number; correct: number; wrongPinyin: number; wrongMeaning: number; landed: number; bestStreak: number; seen: Set<string>; newlyMastered: Set<string> };
@@ -25,6 +26,8 @@ export function useBattle(deck: RuntimeDeck, initialLevel: LevelProgress | undef
   const [phase, setPhase] = useState<"pinyin" | "meaning">("pinyin");
   const [choices, setChoices] = useState<MeaningChoice[]>([]);
   const [feedback, setFeedback] = useState<Feedback | null>(null);
+  const [learningPaused, setLearningPaused] = useState(false);
+  const learningPausedRef = useRef(false); learningPausedRef.current = learningPaused;
   const [audioError, setAudioError] = useState(false);
   const [streak, setStreak] = useState(0);
   const streakRef = useRef(0); streakRef.current = streak;
@@ -53,8 +56,15 @@ export function useBattle(deck: RuntimeDeck, initialLevel: LevelProgress | undef
     setStreak(nowStreak);
     const points = outcome.kind === "correct" ? calculatePoints(thinking, streakRef.current, settings.spawnIntervalMs, settings.enemySpeedMultiplier) : 0;
     setStats((old) => { const seen = new Set(old.seen).add(word.id); const newlyMastered = new Set(old.newlyMastered); if (previous.appearanceWeight > 1 && weight === 1) newlyMastered.add(word.id); return { ...old, score: old.score + points, correct: old.correct + (outcome.kind === "correct" ? 1 : 0), wrongPinyin: old.wrongPinyin + (outcome.kind === "wrongPinyin" ? 1 : 0), wrongMeaning: old.wrongMeaning + (outcome.kind === "wrongMeaning" ? 1 : 0), landed: old.landed + (outcome.kind === "landed" ? 1 : 0), bestStreak: Math.max(old.bestStreak, nowStreak), seen, newlyMastered }; });
-    setFeedback({ id: enemy.id, kind: outcome.kind === "correct" ? "correct" : outcome.kind === "landed" ? "landed" : "miss", word, typed, points, oldWeight: previous.appearanceWeight, newWeight: weight });
-    window.setTimeout(() => setFeedback((item) => item?.id === enemy.id ? null : item), 1100);
+    const feedbackKind = outcome.kind === "correct" ? "correct" : outcome.kind === "landed" ? "landed" : "miss";
+    playSoundEffect(feedbackKind === "correct" ? "blaster" : "buzzer", settings.masterVolume);
+    setFeedback({ id: enemy.id, kind: feedbackKind, word, typed, points, oldWeight: previous.appearanceWeight, newWeight: weight });
+    if (feedbackKind === "miss") {
+      learningPausedRef.current = true;
+      setLearningPaused(true);
+    } else {
+      window.setTimeout(() => setFeedback((item) => item?.id === enemy.id ? null : item), 1100);
+    }
     onLevelChange(nextLevel, outcome, points);
   }, [deck.words, onLevelChange, settings, words]);
 
@@ -80,7 +90,7 @@ export function useBattle(deck: RuntimeDeck, initialLevel: LevelProgress | undef
     const tick = (now: number) => {
       if (lastFrame.current === null) lastFrame.current = now;
       const delta = Math.min(100, now - lastFrame.current); lastFrame.current = now;
-      if (!pausedRef.current && !document.hidden) {
+      if (!pausedRef.current && !learningPausedRef.current && !document.hidden) {
         if (now >= spawnDue.current) { spawn(); spawnDue.current = now + settings.spawnIntervalMs; }
         const advance = delta / BASE_TRAVEL_MS * settings.enemySpeedMultiplier;
         const advanced = enemiesRef.current.map((enemy) => ({ ...enemy, progress: enemy.progress + advance }));
@@ -100,16 +110,26 @@ export function useBattle(deck: RuntimeDeck, initialLevel: LevelProgress | undef
     const audio = new Audio(source); audio.volume = settings.masterVolume; void audio.play().catch(() => setAudioError(true));
   };
   const submitPinyin = (raw: string) => {
-    const enemy = targetRef.current; const word = enemy ? words.get(enemy.wordId) : null; if (!enemy || !word || !raw.trim() || phase !== "pinyin") return;
+    const enemy = targetRef.current; const word = enemy ? words.get(enemy.wordId) : null; if (!enemy || !word || !raw.trim() || phase !== "pinyin" || pausedRef.current || learningPausedRef.current) return;
     const elapsed = performance.now() - phaseStarted.current;
     if (acceptsPinyin(word.acceptedPinyin, raw)) { meaningPinyinMs.current = elapsed; setChoices(generateChoices(deck, word, enemy.id)); setPhase("meaning"); phaseStarted.current = performance.now(); playWordAudio(word); }
     else resolveEnemy(enemy, { kind: "wrongPinyin", pinyinMs: elapsed }, raw);
   };
   const chooseMeaning = (key: ChoiceKey) => {
-    const enemy = targetRef.current; if (!enemy || phase !== "meaning") return; const choice = choices.find((item) => item.key === key); if (!choice) return;
+    const enemy = targetRef.current; if (!enemy || phase !== "meaning" || pausedRef.current || learningPausedRef.current) return; const choice = choices.find((item) => item.key === key); if (!choice) return;
     const meaningMs = performance.now() - phaseStarted.current;
     resolveEnemy(enemy, choice.correct ? { kind: "correct", pinyinMs: meaningPinyinMs.current, meaningMs } : { kind: "wrongMeaning", pinyinMs: meaningPinyinMs.current, meaningMs });
   };
+  const dismissFeedback = useCallback(() => {
+    if (!learningPausedRef.current) return;
+    learningPausedRef.current = false;
+    setLearningPaused(false);
+    setFeedback((item) => item?.kind === "miss" ? null : item);
+    const now = performance.now();
+    phaseStarted.current = now;
+    lastFrame.current = now;
+    spawnDue.current = now + settings.spawnIntervalMs;
+  }, [settings.spawnIntervalMs]);
   const replay = () => { if (targetWord) playWordAudio(targetWord); };
-  return { enemies, target, targetWord, phase, choices, feedback, audioError, streak, stats, level, submitPinyin, chooseMeaning, replay };
+  return { enemies, target, targetWord, phase, choices, feedback, learningPaused, audioError, streak, stats, level, submitPinyin, chooseMeaning, dismissFeedback, replay };
 }

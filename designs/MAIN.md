@@ -22,8 +22,8 @@ This document is the implementation authority. Supporting details live in:
 3. Every enemy carries its own Hanzi. The enemy closest to the base is the only active target and receives the amber highlight. Ties go to the older spawn.
 4. The player types the active Hanzi's pinyin and presses **Enter**. Comparison ignores tone marks and formatting; accepted variants are precompiled from the deck.
 5. Correct pinyin immediately plays that word's audio and opens eight English meanings mapped to **A S D F H J K L**.
-6. The matching letter destroys the enemy. A wrong submission at either stage resolves that encounter as a miss and the enemy breaches the base in a short feedback animation.
-7. A wrong answer or an enemy landing naturally resets the streak. There is no health, life counter, game-over state, or progress loss beyond the affected word becoming more frequent.
+6. The matching letter destroys the enemy and plays the blaster effect. A wrong submission at either stage resolves that encounter as a miss, plays the buzzer, and opens a blocking answer review until the player continues.
+7. A wrong answer or an enemy landing naturally resets the streak; a natural landing also plays the buzzer. There is no health, life counter, game-over state, or progress loss beyond the affected word becoming more frequent.
 8. Progress is checkpointed to a file under gitignored `saves/` after scheduler-changing events. The player may end a session at any time.
 9. A level's live mastery is complete when every logical word has reached the minimum appearance weight.
 
@@ -42,9 +42,9 @@ This document is the implementation authority. Supporting details live in:
 | Deck scope | One selected source deck per session, not cumulative HSK 1–N. |
 | Enemy population | Multiple simultaneous enemies; maximum 32 active as a rendering safety ceiling. |
 | Targeting | Nearest vertical position to the base, then lowest `spawnOrdinal` as tie-breaker. No manual target switching. |
-| Wrong answer | One scored/mastery outcome per enemy. A wrong non-empty pinyin or wrong meaning key causes an immediate breach animation and removes the enemy. |
+| Wrong answer | One scored/mastery outcome per enemy. A wrong non-empty pinyin or wrong meaning key removes the enemy and opens a blocking correction panel; descent and spawning resume only after **Continue Defense**. |
 | Blank/irrelevant input | Blank Enter and keys outside the current phase are ignored, not counted wrong. |
-| Audio timing | Play word audio after pinyin succeeds, before the meaning choice; **R** replays it in the meaning phase. |
+| Audio timing | Play word audio after pinyin succeeds, before the meaning choice; **R** replays it in the meaning phase. Play a blaster on a complete correct answer and a buzzer on wrong answers or natural landings. |
 | Persistence | Authoritative JSON file in `saves/`; browser storage may only be an emergency retry cache. |
 | Completion | `firstCompletedAt` is a permanent achievement; current mastery can regress if a mastered fallback word is later missed. |
 | Source duplicates | Exact semantic duplicates become one logical word with multiple source GUIDs; distinct senses remain distinct. |
@@ -75,7 +75,7 @@ Mockups can be regenerated with `python3 designs/render_mockups.py` (design tool
 - **Client shell:** React + Vite
 - **Game rendering:** Phaser 3, configured for nearest-neighbour/pixel rendering
 - **Cross-boundary state:** a small Zustand store that exposes immutable snapshots; learning and simulation logic remain framework-free
-- **Server:** Fastify, bound to `127.0.0.1` by default
+- **Server:** Fastify, bound to `100.65.64.80` by default
 - **Validation/contracts:** Zod schemas shared between importer, server, and client
 - **Anki importer:** Node/TypeScript, streaming ZIP reader plus SQLite reader
 - **Tests:** Vitest for pure/integration tests and Playwright for browser flows
@@ -191,7 +191,7 @@ stateDiagram-v2
   Summary --> DeckSelect
 ```
 
-World spawning and descent continue during `Pinyin` and `Meaning`. They freeze in `Paused`, settings, and blocking feedback only if the configured feedback policy says so. For MVP, feedback is a short **non-blocking world animation**: enemies keep descending, while answer input is disabled for 800 ms. This preserves pressure without allowing accidental inputs.
+World spawning and descent continue during `Pinyin`, `Meaning`, hit feedback, and natural-landing feedback. They freeze in `Paused`, settings, and wrong-answer review. Wrong-answer review remains visible until **Continue Defense** is pressed; response timing and the spawn interval restart on dismissal so review time cannot penalize the player or cause a spawn burst.
 
 The active target is derived, not independently mutable:
 

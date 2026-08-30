@@ -6,6 +6,7 @@ import { createDemoDeck, } from "../data/demoDeck";
 import { loadSave, putSave } from "../api/saves";
 import { GameCanvas } from "../game/GameCanvas";
 import { useBattle, type SessionStats } from "../state/useBattle";
+import { unlockSoundEffects } from "../audio/soundEffects";
 
 const deckLabel = (id: DeckId) => `HSK ${id.at(-1)}`;
 const masteredCount = (level?: LevelProgress) => level ? Object.values(level.words).filter((word) => word.appearanceWeight === 1).length : 0;
@@ -48,6 +49,7 @@ export function App() {
   const queueSnapshot = useCallback((snapshot: SaveFile) => { saveRef.current = snapshot; setSave(snapshot); pendingSave.current = snapshot; void drainSaves(); }, [drainSaves]);
 
   const deploy = async (id: DeckId) => {
+    unlockSoundEffects();
     setSelected(id); setScreen("loading");
     try {
       const response = await fetch(`/game-data/${id}/deck.json`); if (!response.ok) throw new Error("Generated deck not found");
@@ -98,9 +100,9 @@ function BattleScreen({ deck, save, settings, paused, saveStatus, onPause, onRes
   const battle = useBattle(deck, save.levels[deck.id], settings, paused, stableLevelChange);
   const [pinyin, setPinyin] = useState(""); const [composing, setComposing] = useState(false); const input = useRef<HTMLInputElement>(null);
   const mastered = masteredCount(battle.level); const total = deck.words.length;
-  useEffect(() => { setPinyin(""); if (!paused && battle.phase === "pinyin") input.current?.focus(); }, [battle.phase, battle.target?.id, paused]);
+  useEffect(() => { setPinyin(""); if (!paused && !battle.learningPaused && battle.phase === "pinyin") input.current?.focus(); }, [battle.learningPaused, battle.phase, battle.target?.id, paused]);
   useEffect(() => {
-    const listener = (event: KeyboardEvent) => { if (event.key === "Escape") { event.preventDefault(); paused ? onResume() : onPause(); return; } if (paused || event.repeat || battle.phase !== "meaning") return; const key = event.key.toUpperCase(); if (CHOICE_KEYS.includes(key as ChoiceKey)) battle.chooseMeaning(key as ChoiceKey); else if (key === "R") battle.replay(); };
+    const listener = (event: KeyboardEvent) => { if (battle.learningPaused) return; if (event.key === "Escape") { event.preventDefault(); paused ? onResume() : onPause(); return; } if (paused || event.repeat || battle.phase !== "meaning") return; const key = event.key.toUpperCase(); if (CHOICE_KEYS.includes(key as ChoiceKey)) battle.chooseMeaning(key as ChoiceKey); else if (key === "R") battle.replay(); };
     window.addEventListener("keydown", listener); return () => window.removeEventListener("keydown", listener);
   }, [battle, onPause, onResume, paused]);
   const submit = (event: FormEvent) => { event.preventDefault(); if (!composing) battle.submitPinyin(pinyin); };
@@ -108,18 +110,19 @@ function BattleScreen({ deck, save, settings, paused, saveStatus, onPause, onRes
   return <main className="battle-screen starfield"><header className="battle-hud"><strong>{deckLabel(deck.id)}</strong><div><small>SCORE</small><b>{battle.stats.score.toString().padStart(6, "0")}</b></div><div><small>STREAK</small><b className="amber">×{battle.streak}</b></div><div className="hud-mastery"><small>MASTERY</small><div className="segment-bar"><i style={{ width: `${mastered / total * 100}%` }} /></div><b>{mastered}/{total}</b></div><span className={`save-state ${saveStatus}`}>● {saveStatus.toUpperCase()}</span><button className="icon-button" onClick={onPause} aria-label="Pause game">Ⅱ</button></header>
     <section className="arena"><GameCanvas enemies={enemyViews} targetId={battle.target?.id ?? null} /></section>
     <section className={`command-panel ${battle.phase}`} aria-label="Answer console"><div className="target-card"><small>{battle.phase === "meaning" ? "PINYIN CONFIRMED ✓" : battle.target ? "LOCKED TARGET" : "SCANNING"}</small><strong lang="zh-Hans">{battle.targetWord?.displayHanzi ?? "—"}</strong>{battle.phase === "meaning" && <span>{battle.targetWord?.displayPinyin}</span>}<em>{battle.target ? `ALTITUDE ${Math.max(0, Math.round((1 - battle.target.progress) * 100))}%` : "AWAITING SIGNAL"}</em></div>
-      {battle.phase === "pinyin" ? <form className="pinyin-form" onSubmit={submit}><label htmlFor="pinyin">TYPE PINYIN — NO TONE MARKS</label><input id="pinyin" ref={input} value={pinyin} onChange={(event) => setPinyin(event.target.value)} onCompositionStart={() => setComposing(true)} onCompositionEnd={() => setComposing(false)} autoComplete="off" autoCapitalize="none" spellCheck={false} placeholder={battle.target ? "type answer…" : "waiting for target…"} disabled={!battle.target || paused} /><div className="form-help"><span><kbd>ENTER</kbd> FIRE</span><span>ü = v</span><span><kbd>ESC</kbd> PAUSE</span></div></form>
-      : <div className="meaning-zone"><div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : "SELECT THE MEANING"}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ R REPLAY AUDIO</button></div><div className="meaning-grid">{battle.choices.map((choice) => <button key={choice.key} onClick={() => battle.chooseMeaning(choice.key)}><kbd>{choice.key}</kbd><span>{choice.label}</span></button>)}</div></div>}
+      {battle.phase === "pinyin" ? <form className="pinyin-form" onSubmit={submit}><label htmlFor="pinyin">TYPE PINYIN — NO TONE MARKS</label><input id="pinyin" ref={input} value={pinyin} onChange={(event) => setPinyin(event.target.value)} onCompositionStart={() => setComposing(true)} onCompositionEnd={() => setComposing(false)} autoComplete="off" autoCapitalize="none" spellCheck={false} placeholder={battle.target ? "type answer…" : "waiting for target…"} disabled={!battle.target || paused || battle.learningPaused} /><div className="form-help"><span><kbd>ENTER</kbd> FIRE</span><span>ü = v</span><span><kbd>ESC</kbd> PAUSE</span></div></form>
+      : <div className="meaning-zone"><div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : "SELECT THE MEANING"}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ R REPLAY AUDIO</button></div><div className="meaning-grid">{battle.choices.map((choice) => <button key={choice.key} onClick={() => battle.chooseMeaning(choice.key)} disabled={battle.learningPaused}><kbd>{choice.key}</kbd><span>{choice.label}</span></button>)}</div></div>}
     </section>
     <div className="sr-live" aria-live="polite">{battle.targetWord ? `Target ${battle.targetWord.displayHanzi}. ${battle.phase === "pinyin" ? "Type pinyin" : "Choose meaning"}.` : "Waiting for target"}</div>
-    {battle.feedback && <FeedbackNotice feedback={battle.feedback} />}
+    {battle.feedback && <FeedbackNotice feedback={battle.feedback} onDismiss={battle.dismissFeedback} />}
     {paused && !children && <PauseDialog onResume={onResume} onSettings={onSettings} onEnd={() => onEnd(battle.stats)} />}{children}
   </main>;
 }
 
-function FeedbackNotice({ feedback }: { feedback: NonNullable<ReturnType<typeof useBattle>["feedback"]> }) {
+function FeedbackNotice({ feedback, onDismiss }: { feedback: NonNullable<ReturnType<typeof useBattle>["feedback"]>; onDismiss: () => void }) {
   if (feedback.kind === "correct") return <aside className="hit-notice" role="status"><b>+{feedback.points}</b><span>DIRECT HIT</span></aside>;
-  return <aside className="breach-notice" role="alert"><small>// {feedback.kind === "landed" ? "ALIEN LANDED" : "SIGNAL BREACH"} //</small><strong lang="zh-Hans">{feedback.word.displayHanzi}</strong><span>{feedback.word.displayPinyin}</span><b>{feedback.word.meaning}</b>{feedback.typed && <em>YOU TYPED: {feedback.typed}</em>}<footer><span>STREAK RESET</span><span>PRIORITY {feedback.oldWeight} → {feedback.newWeight}</span></footer></aside>;
+  const notice = <aside className="breach-notice" role={feedback.kind === "miss" ? "dialog" : "alert"} aria-modal={feedback.kind === "miss" ? true : undefined} aria-labelledby={feedback.kind === "miss" ? "learning-feedback-title" : undefined}><small>// {feedback.kind === "landed" ? "ALIEN LANDED" : "ANSWER REVIEW"} //</small><strong id={feedback.kind === "miss" ? "learning-feedback-title" : undefined} lang="zh-Hans">{feedback.word.displayHanzi}</strong><span>{feedback.word.displayPinyin}</span><b>{feedback.word.meaning}</b>{feedback.typed && <em>YOU TYPED: {feedback.typed}</em>}<footer><span>STREAK RESET</span><span>PRIORITY {feedback.oldWeight} → {feedback.newWeight}</span></footer>{feedback.kind === "miss" && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE DEFENSE</button>}</aside>;
+  return feedback.kind === "miss" ? <div className="modal-backdrop learning-backdrop">{notice}</div> : notice;
 }
 
 function PauseDialog({ onResume, onSettings, onEnd }: { onResume: () => void; onSettings: () => void; onEnd: () => void }) { return <div className="modal-backdrop"><section className="pause-dialog" role="dialog" aria-modal="true" aria-labelledby="pause-title"><small>SIMULATION HALTED</small><h2 id="pause-title">PAUSED</h2><button autoFocus className="primary" onClick={onResume}>RESUME DEFENSE</button><button onClick={onSettings}>SYSTEM SETTINGS</button><button className="danger" onClick={onEnd}>END SESSION</button><p><kbd>ENTER</kbd> fire · <kbd>A S D F H J K L</kbd> meaning · <kbd>R</kbd> replay</p></section></div>; }

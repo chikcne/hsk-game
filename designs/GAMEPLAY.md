@@ -61,7 +61,8 @@ MEANING
 
 HIT / MISS
   target is already resolved; late events are ignored
-  800 ms non-blocking feedback; other enemies continue descending
+  HIT and natural-landing feedback are short and non-blocking
+  wrong-answer feedback freezes descent and spawning until CONTINUE DEFENSE
   -> nearest remaining enemy becomes PINYIN target
 ```
 
@@ -178,7 +179,7 @@ Accuracy is `completeCorrect / resolvedEnemies`. Do not count blank or irrelevan
 
 ## 7. Spawning and pressure
 
-The spawn clock runs while the battle is active, including pinyin, meaning, and non-blocking feedback. It freezes while paused/settings, while the page is hidden, and before deck/save loading completes.
+The spawn clock runs while the battle is active, including pinyin, meaning, and non-blocking hit/landing feedback. It freezes during wrong-answer review, while paused/settings, while the page is hidden, and before deck/save loading completes.
 
 When a timer is due:
 
@@ -219,9 +220,9 @@ A natural landing:
 - checkpoints immediately;
 - targets the next-nearest enemy.
 
-Several enemies may land during the 800 ms feedback window. Each receives its own learning miss, while the UI coalesces visual notices into a queue. Streak remains zero. The correction panel prioritizes the oldest unresolved notice and never blocks the simulation.
+Several enemies may land during a natural-landing feedback window. Each receives its own learning miss, while the UI coalesces visual notices into a queue. Streak remains zero. Natural-landing notices do not block the simulation.
 
-A wrong-answer breach uses a faster descent/explosion animation but is already logically resolved; it cannot generate a second landing outcome.
+A wrong-answer breach is already logically resolved, so it cannot generate a second landing outcome. Its correction panel reveals Hanzi, pinyin, and meaning; freezes descent, spawning, and answer input; and remains until the player presses **Continue Defense**. Review time is excluded from response timing, and the spawn interval restarts on dismissal instead of catching up.
 
 ## 10. Session ending
 
