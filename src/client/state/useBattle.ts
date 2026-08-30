@@ -169,6 +169,14 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     });
   }, []);
 
+  const playWordAudio = useCallback((word: RuntimeWord) => {
+    if (!word.audioUrl) return;
+    const source = word.audioUrl.startsWith("/") ? word.audioUrl : `/game-data/${deck.id}/${word.audioUrl}`;
+    const audio = new Audio(source);
+    audio.volume = settings.masterVolume;
+    void audio.play().catch(() => setAudioError(true));
+  }, [deck.id, settings.masterVolume]);
+
   const updateWord = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     const word = words.get(enemy.wordId); if (!word) return;
     const config = optionsRef.current;
@@ -211,13 +219,14 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     const nowStreak = outcome.kind === "correct" ? streakRef.current + 1 : 0;
     streakRef.current = nowStreak;
     playSoundEffect(feedback.kind === "correct" ? "blaster" : "buzzer", settings.masterVolume);
+    if (outcome.kind === "wrongPinyin" || outcome.kind === "wrongMeaning") playWordAudio(word);
     setFeedback(feedback);
     if (feedback.kind === "miss") {
       learningPausedRef.current = true; setLearningPaused(true);
     } else {
       window.setTimeout(() => setFeedback((item) => item?.id === enemy.id ? null : item), 1100);
     }
-  }, [deck, settings, updateSessionStats, words]);
+  }, [deck, playWordAudio, settings, updateSessionStats, words]);
 
   const resolveEnemy = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     if (!enemiesRef.current.some((item) => item.id === enemy.id)) return;
@@ -274,11 +283,6 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     frame = requestAnimationFrame(tick); return () => cancelAnimationFrame(frame);
   }, [settings.enemySpeedMultiplier, settings.spawnIntervalMs, spawn, updateWord]);
 
-  const playWordAudio = (word: RuntimeWord) => {
-    if (!word.audioUrl) return;
-    const source = word.audioUrl.startsWith("/") ? word.audioUrl : `/game-data/${deck.id}/${word.audioUrl}`;
-    const audio = new Audio(source); audio.volume = settings.masterVolume; void audio.play().catch(() => setAudioError(true));
-  };
   const submitPinyin = (raw: string) => {
     const enemy = targetRef.current; const word = enemy ? words.get(enemy.wordId) : null;
     if (!enemy || !word || !raw.trim() || phase !== "pinyin" || pausedRef.current || learningPausedRef.current) return;
