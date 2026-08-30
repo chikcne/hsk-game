@@ -18,8 +18,8 @@ This document is the implementation authority. Supporting details live in:
 ### Core loop
 
 1. The player selects exactly one HSK deck (HSK 1–6). Levels are never locked.
-2. Enemies spawn continuously and descend at one shared, constant vertical speed. Multiple enemies coexist to create queue pressure.
-3. Every enemy carries its own Hanzi. The enemy closest to the base is the only active target and receives the amber highlight. Ties go to the older spawn.
+2. Enemies spawn continuously and descend at word-specific speeds that rise with mastery. Multiple enemies coexist to create queue pressure.
+3. Every enemy carries its own Hanzi. When no target is locked, the enemy predicted to reach the base soonest becomes the only active target and receives the amber highlight. Ties go to the older spawn; the lock remains until resolution even if a faster arrival later spawns.
 4. The player types the active Hanzi's pinyin and presses **Enter**. Comparison ignores tone marks and formatting; accepted variants are precompiled from the deck.
 5. Correct pinyin immediately plays that word's audio and opens eight English meanings mapped to **A S D F H J K L**.
 6. The matching letter destroys the enemy and plays the blaster effect. A wrong submission at either stage resolves that encounter as a miss, plays the buzzer, and opens a blocking answer review until the player continues.
@@ -30,9 +30,9 @@ This document is the implementation authority. Supporting details live in:
 ### Settings added to the contract
 
 - A settings screen adjusts **enemy spawn rate** and one **global enemy speed**.
-- All active and future enemies always share that speed; per-enemy random speeds are out of scope.
-- The active target is always recomputed as the enemy nearest the base. Because enemies share speed and path length, targeting is stable until that enemy is removed or lands.
-- Opening settings pauses the simulation. Applying a speed change updates all active enemies uniformly. Applying a spawn-rate change starts a fresh interval rather than causing a burst.
+- The global setting multiplies every active and future enemy's mastery-derived speed uniformly; per-enemy random speeds are out of scope.
+- A new target is chosen by shortest predicted time to ground, then locked until removal or landing. New spawns cannot steal the lock.
+- Opening settings pauses the simulation. Applying a global speed change updates all active enemies uniformly. Applying a spawn-rate change starts a fresh interval rather than causing a burst.
 
 ### Explicit MVP decisions
 
@@ -41,7 +41,7 @@ This document is the implementation authority. Supporting details live in:
 | Application shape | Local Node server plus browser client; a static-only app cannot write repository-local save files. |
 | Deck scope | One selected source deck per session, not cumulative HSK 1–N. |
 | Enemy population | Multiple simultaneous enemies; maximum 32 active as a rendering safety ceiling. |
-| Targeting | Nearest vertical position to the base, then lowest `spawnOrdinal` as tie-breaker. No manual target switching. |
+| Targeting | Shortest predicted time to ground, then lowest `spawnOrdinal` as tie-breaker. Lock until resolution; no spawn-time or manual switching. |
 | Wrong answer | One scored/mastery outcome per enemy. A wrong non-empty pinyin or wrong meaning key removes the enemy and opens a blocking correction panel; descent and spawning resume only after **Continue Defense**. |
 | Blank/irrelevant input | Blank Enter and keys outside the current phase are ignored, not counted wrong. |
 | Audio timing | Play word audio after pinyin succeeds, before the meaning choice; **R** replays it in the meaning phase. Play a blaster on a complete correct answer and a buzzer on wrong answers or natural landings. |
@@ -179,8 +179,8 @@ stateDiagram-v2
   Meaning --> FeedbackHit: correct ASDFHJKL key
   Meaning --> FeedbackMiss: wrong ASDFHJKL key
   Meaning --> FeedbackMiss: active enemy lands
-  FeedbackHit --> Pinyin: delay complete / nearest enemy exists
-  FeedbackMiss --> Pinyin: delay complete / nearest enemy exists
+  FeedbackHit --> Pinyin: delay complete / next predicted arrival exists
+  FeedbackMiss --> Pinyin: delay complete / next predicted arrival exists
   Pinyin --> AwaitTarget: no active enemy
   AwaitTarget --> Pinyin: enemy spawned
   Pinyin --> Paused: Esc/settings
@@ -193,15 +193,16 @@ stateDiagram-v2
 
 World spawning and descent continue during `Pinyin`, `Meaning`, hit feedback, and natural-landing feedback. They freeze in `Paused`, settings, and wrong-answer review. Wrong-answer review remains visible until **Continue Defense** is pressed; response timing and the spawn interval restart on dismissal so review time cannot penalize the player or cause a spawn burst.
 
-The active target is derived, not independently mutable:
+The active target is a lock. Keep it while that enemy remains descending; only then choose a replacement:
 
 ```ts
-activeEnemy = enemies
-  .filter(enemy => enemy.status === "descending")
-  .sort((a, b) => b.y - a.y || a.spawnOrdinal - b.spawnOrdinal)[0]
+activeEnemy = enemies.find(enemy => enemy.id === lockedTargetId)
+  ?? enemies
+    .filter(enemy => enemy.status === "descending")
+    .sort((a, b) => timeToGround(a) - timeToGround(b) || a.spawnOrdinal - b.spawnOrdinal)[0]
 ```
 
-All enemies use the same `pixelsPerSecond = BASE_SPEED * settings.enemySpeedMultiplier`. A settings change therefore preserves their relative ordering.
+Each enemy uses `pixelsPerSecond = BASE_SPEED * settings.enemySpeedMultiplier * wordSpeedMultiplier`. `wordSpeedMultiplier` scales linearly from `0.65` at mastery `1` to `1.50` at mastery `100`. A settings change still applies one uniform global factor.
 
 ### Event boundary
 
@@ -268,9 +269,10 @@ An implementation is not feature-complete until all gates pass.
 ### Gate C — game behavior
 
 - At least two enemies can be visible simultaneously under default settings.
-- All active enemies move at exactly the same configured speed.
-- The lowest enemy is highlighted and is the only word accepted by the command panel.
-- Removing/landing the target immediately highlights the next-lowest enemy.
+- Active enemies move at their deterministic mastery-derived speeds multiplied by the same global setting.
+- The locked predicted-soonest arrival is highlighted and is the only word accepted by the command panel.
+- Removing/landing the target immediately locks the remaining enemy predicted to land soonest.
+- A target at ground level cannot land until its active pinyin recall window expires; altitude before selection never shortens that window, and accepted pinyin disables landing during meaning selection.
 - Spawn and speed sliders work, persist, and do not create a spawn burst.
 - Wrong answer and natural landing both reset streak; neither ends the game.
 
@@ -339,8 +341,8 @@ npm start
 and then, from the browser:
 
 1. choose any HSK deck;
-2. see a growing queue of same-speed descending Hanzi enemies;
-3. answer the highlighted nearest enemy with pinyin then one of eight meaning keys;
+2. see a growing queue of mastery-speed-scaled descending Hanzi enemies;
+3. answer the highlighted, locked predicted arrival with pinyin then one of eight meaning keys;
 4. hear local word audio after correct pinyin;
 5. change spawn rate and global speed from settings;
 6. accumulate score/streak without a death state;

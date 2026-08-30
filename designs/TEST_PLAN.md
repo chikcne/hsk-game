@@ -181,7 +181,7 @@ Cover every state/event pair, especially ignored events.
 - key repeat after resolution → no-op;
 - late Phaser landing callback after wrong breach → no-op;
 - duplicate landing callback → one outcome;
-- target landing during meaning → one landing, no answer accepted later.
+- target at ground during meaning → remains answerable and does not create a landing outcome;
 
 ### Deadline race
 
@@ -190,13 +190,13 @@ Define and test ordering: input events captured before a fixed simulation step a
 ## 7. Multi-enemy simulation tests
 
 - default spawn settings produce multiple visible enemies;
-- all descending progress deltas are equal for equal starting progress;
-- closest progress is active;
-- equal progress chooses lower spawn ordinal;
-- newer same-speed enemy never overtakes older enemy;
-- hit/removal selects the next closest immediately;
-- natural landing selects the next closest immediately;
-- changing global speed applies identical multiplier to every active enemy and preserves ordering;
+- progress deltas scale linearly with each word's mastery-derived speed;
+- a higher but faster enemy is selected when its predicted landing is sooner;
+- equal predicted landing times choose lower spawn ordinal;
+- a newly spawned earlier arrival does not steal the current target lock;
+- hit/removal selects the predicted-soonest remaining enemy immediately;
+- natural landing selects the predicted-soonest remaining enemy immediately;
+- changing global speed applies an identical additional multiplier to every active enemy and preserves arrival ordering;
 - changing spawn interval creates no immediate catch-up burst;
 - pause/settings/hidden page freezes progress, spawn clock, and answer clocks;
 - one spawn occurs after lag clamp, not several catch-up spawns;
@@ -280,7 +280,7 @@ Use a tiny generated test deck and deterministic clock.
 1. **Keyboard success**: select HSK, see several enemies, confirm lowest highlighted, type pinyin, hear mocked audio call, press correct letter, score/streak increase, save file updates.
 2. **Wrong pinyin**: wrong non-empty Enter shows correction, resets streak, breaches once, raises weight, selects next enemy.
 3. **Wrong meaning**: correct pinyin then wrong letter shows chosen/correct labels and one miss.
-4. **Natural landing**: advance clock, verify no game over and next target highlight.
+4. **Natural landing**: put the target at ground, verify it receives a full selection-based pinyin window, then advance the recall clock and verify no game over and the next target highlight.
 5. **Cooldown across restart**: spawn a word, end, reload, verify it does not reappear before stored eligibility.
 6. **Settings**: pause, adjust rate/speed, assert scene frozen, apply, assert all enemies same new speed and no burst, reload and verify persistence.
 7. **End session**: end with enemies active, verify they are not misses, report waits for save, resume fresh arena with progress retained.

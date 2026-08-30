@@ -306,7 +306,7 @@ tests/domain/session*.test.ts
 ### Deliverables
 
 - pinyin submission matching against precompiled accepted forms.
-- nearest-enemy derivation by progress/ordinal.
+- predicted-arrival targeting by progress/speed/ordinal with a persistent target lock.
 - pinyin/meaning/miss/hit/pause/end transitions.
 - safe eight-choice generator using meaning indexes and separate RNG.
 - exactly-once enemy resolution guard.
@@ -327,7 +327,7 @@ P5/P6 consume immutable view state and dispatch typed events; they do not duplic
 
 ### Goal
 
-Render and simulate a same-speed multi-enemy pressure queue controlled entirely by typed state/events.
+Render and simulate a mastery-speed-scaled multi-enemy pressure queue controlled entirely by typed state/events.
 
 ### Prerequisite
 
@@ -346,16 +346,16 @@ tests/client/game*.test.ts
 - Phaser boot/config with pixel settings.
 - fixed-step active clock, visibility/pause handling, no burst catch-up.
 - 8 lanes, 0–1 progress mapping, up to 32 active enemies.
-- same global speed for every active/future enemy.
+- one global speed factor plus a deterministic mastery-derived factor for every active/future enemy.
 - all enemy Hanzi overlays and length-aware sizing.
-- amber nearest-target highlight, danger state, base/turret.
+- amber predicted-arrival target lock, danger state, base/turret.
 - spawn/remove/land animation adapters and late-callback guards.
 - original sprite atlas/effects matching palette.
 - headless simulation adapter tests where feasible.
 
 ### Acceptance
 
-Default produces multiple enemies; nearest highlight switches correctly; speed apply preserves ordering; no Phaser object/listener leak in accelerated lifecycle test.
+Default produces multiple enemies; predicted-arrival lock changes only after resolution; global speed apply preserves arrival ordering; no Phaser object/listener leak in accelerated lifecycle test.
 
 ### Do not
 

@@ -4,7 +4,16 @@ export type EncounterOutcome =
   | { kind: "wrongPinyin"; pinyinMs: number }
   | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number }
   | { kind: "landed"; activeThinkingMs: number | null };
-export type Enemy = { id: string; wordId: string; progress: number; lane: number; spawnOrdinal: number; status: "descending" | "resolved" };
+export type Enemy = {
+  id: string;
+  wordId: string;
+  progress: number;
+  /** Word-mastery speed factor; the global settings multiplier is separate. */
+  speedMultiplier: number;
+  lane: number;
+  spawnOrdinal: number;
+  status: "descending" | "resolved";
+};
 export type SessionPhase = "waiting" | "pinyin" | "meaning" | "feedback" | "paused";
 export type SessionEvent =
  | { type: "pinyinSubmitted"; raw: string; atMs: number }

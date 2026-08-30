@@ -147,7 +147,7 @@ Every descending enemy carries its own Hanzi. The one **soonest to land** must a
 - command panel repeats exactly the same Hanzi;
 - assistive status announces it once when target changes.
 
-Non-target enemies use cyan. An enemy in its final 20% may pulse/red-mark as danger, but red must not override the active amber outline. All enemies move at the same configured speed.
+Non-target enemies use cyan. An enemy in its final 20% may pulse/red-mark as danger, but red must not override the active amber outline. Enemy speed rises with word mastery and is multiplied by the configured global speed.
 
 Hanzi sizing by display length:
 
@@ -251,7 +251,7 @@ Settings content:
 
 1. **Enemy spawn rate** slider, 1.5–5.0 s, showing both `1 every 3.0s` and `20/min`.
 2. **Enemy speed** slider, 0.65–1.50×, showing `SLOW`, `STANDARD`, or `FAST`.
-3. Read-only targeting rule: **CLOSEST TO BASE IS ALWAYS HIGHLIGHTED**.
+3. Read-only targeting rule: **SOONEST ARRIVAL LOCKS UNTIL RESOLVED**.
 4. Master volume, mute, reduced motion, and reset defaults may follow below the gameplay controls.
 5. Cancel and Apply Settings buttons.
 
@@ -262,7 +262,7 @@ Keyboard:
 - Escape cancels to prior screen;
 - Enter activates focused button, not an unrelated pinyin form.
 
-Apply updates all enemies to the same global speed and restarts one spawn interval. The paused scene behind settings must not visibly move.
+Apply updates the shared global speed factor for every enemy and restarts one spawn interval. Per-word mastery speed factors remain intact. The paused scene behind settings must not visibly move.
 
 ## 10. Session summary
 
@@ -369,8 +369,8 @@ Sprites should align to a low-resolution grid, use the palette above, and be tes
 
 ## 14. Visual acceptance checklist
 
-- [ ] Multiple same-speed enemies are visible in normal play.
-- [ ] The enemy closest to land is unmistakably amber-highlighted.
+- [ ] Multiple mastery-scaled enemies are visible in normal play.
+- [ ] The locked enemy predicted to land soonest at selection time is unmistakably amber-highlighted.
 - [ ] Command-panel Hanzi always matches that highlighted enemy.
 - [ ] No life/health/game-over UI exists.
 - [ ] Pinyin and meaning phases are visually distinct without moving the battlefield unexpectedly.

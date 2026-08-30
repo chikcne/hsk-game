@@ -7,20 +7,23 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 - Enemies spawn at normalized vertical progress `0` and land at `1`.
 - More than one enemy may be descending at once; default settings produce roughly eight visible enemies once the queue stabilizes.
 - Every enemy displays its own normalized Hanzi.
-- All enemies share one global speed. No enemy has a random or word-specific velocity.
-- The active answer target is the descending enemy with greatest vertical progress (closest to `1`). An amber box/beam and the command panel identify it.
-- A tie is broken by lower `spawnOrdinal`, so the older enemy stays selected.
+- Each enemy has a word-specific speed derived from mastery: mastery `1` uses `0.65×` and mastery `100` uses `1.50×`, linearly interpolated between them.
+- The global speed setting multiplies every word-specific speed; there is no random velocity.
+- When a target is needed, choose the descending enemy with the shortest predicted time to ground, not the lowest altitude. An amber box/beam and the command panel identify it.
+- Equal predicted arrival times are broken by lower `spawnOrdinal`.
+- Once selected, the target stays locked until it is resolved or lands. A newly spawned alien never steals the lock, even if its predicted arrival is earlier.
 - There is no manual target switching in MVP.
 
 Use normalized progress in the domain/simulation layer rather than canvas pixels:
 
 ```ts
-progress += (deltaMs / BASE_TRAVEL_MS) * enemySpeedMultiplier
+mastery = 101 - appearanceWeight
+wordSpeed = lerp(0.65, 1.50, (mastery - 1) / 99)
+progress += (deltaMs / BASE_TRAVEL_MS) * enemySpeedMultiplier * wordSpeed
+arrivalTime = (1 - progress) / wordSpeed
 ```
 
-`BASE_TRAVEL_MS = 24_000`. Phaser converts progress into a responsive world Y coordinate. This keeps gameplay timing stable across screen sizes.
-
-Because all enemies start at the same progress and share the same speed, a newer enemy cannot overtake an older enemy. Recomputing the closest enemy every tick remains important for correctness after removal, landing, loading, or future layout changes.
+`BASE_TRAVEL_MS = 24_000`. The shared global multiplier cancels when comparing arrival times. Phaser converts progress into a responsive world Y coordinate. This keeps gameplay timing stable across screen sizes.
 
 ### Spawn lanes
 
@@ -39,31 +42,32 @@ At default values, one enemy lands every three seconds once the queue is full un
 
 ## 2. Target and encounter phases
 
-Only the nearest enemy can receive answer input. The command panel always repeats its Hanzi in accessible DOM.
+Only the locked target can receive answer input. The command panel always repeats its Hanzi in accessible DOM.
 
 ```text
 WAITING_FOR_TARGET
-  nearest enemy exists
+  predicted-soonest enemy exists
     -> PINYIN
 
 PINYIN
   blank Enter                    -> ignore
   normalized answer accepted    -> play word audio -> MEANING
   non-empty answer rejected     -> MISS(reason=pinyin)
-  target reaches ground         -> MISS(reason=landing)
+  target at ground before recall window expires -> wait at ground
+  target at ground after recall window expires  -> MISS(reason=landing)
 
 MEANING
   R                              -> replay word audio
   non-ASDFHJKL key               -> ignore
   correct choice key             -> HIT
   wrong choice key               -> MISS(reason=meaning)
-  target reaches ground          -> MISS(reason=landing)
+  target reaches ground          -> wait for meaning answer
 
 HIT / MISS
   target is already resolved; late events are ignored
   HIT and natural-landing feedback are short and non-blocking
   wrong-answer feedback freezes descent and spawning until CONTINUE DEFENSE
-  -> nearest remaining enemy becomes PINYIN target
+  -> predicted-soonest remaining enemy becomes PINYIN target
 ```
 
 A resolved target is removed from answer state immediately. Its explosion or breach sprite may remain temporarily as a visual effect, but cannot land or be answered again.
@@ -96,7 +100,7 @@ Examples:
 
 Canonicalization is specified in [`DATA_PIPELINE.md`](DATA_PIPELINE.md). It is used both during import and submission. Do not perform incremental red/green character checking; a submission is judged only on Enter. This avoids leaking the answer and supports natural editing.
 
-Timing starts when the enemy first becomes the active target, not when it spawned. Pause, settings, and hidden-tab time are excluded. If an enemy lands before it ever becomes active, its outcome is a landing miss with no response-time score.
+Timing starts when the enemy first becomes the active target, not when it spawned. Pause, settings, and hidden-tab time are excluded. An enemy that reaches the ground before selection waits there, and a newly selected enemy always receives the full configured recall window regardless of altitude. Once pinyin is accepted, altitude cannot turn meaning-selection time into a recall failure.
 
 ## 4. Meaning choices
 
@@ -210,17 +214,17 @@ Settings persist in the player save but do not belong to an HSK level.
 
 ## 9. Landing and feedback
 
-A natural landing:
+A natural landing occurs only when the selected target is at progress `>= 1`, remains in the pinyin phase, and its active recall window has expired. Reaching the ground before selection or before that deadline clamps the enemy at ground level instead. A landing:
 
-- removes the enemy at progress `>= 1`;
+- removes the enemy;
 - emits one `landed` outcome;
 - resets streak;
 - flashes the impacted base lane and displays the correction;
 - leaves score unchanged;
 - checkpoints immediately;
-- targets the next-nearest enemy.
+- targets the remaining enemy predicted to land soonest.
 
-Several enemies may land during a natural-landing feedback window. Each receives its own learning miss, while the UI coalesces visual notices into a queue. Streak remains zero. Natural-landing notices do not block the simulation.
+Natural-landing notices do not block the simulation. The next enemy becomes selected immediately, but even if it is already at ground level its own recall window starts at selection, so landings cannot cascade from queued altitude alone.
 
 A wrong-answer breach is already logically resolved, so it cannot generate a second landing outcome. Its correction panel reveals Hanzi, pinyin, and meaning; freezes descent, spawning, and answer input; and remains until the player presses **Continue Defense**. Review time is excluded from response timing, and the spawn interval restarts on dismissal instead of catching up.
 

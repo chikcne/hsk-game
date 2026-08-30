@@ -7,7 +7,9 @@ import { applyReviewOutcome, prepareReviewRound, spawnNextReviewWord } from "../
 import { randomStateFromSeed } from "../../domain/random";
 import { generateChoices, type MeaningChoice } from "../../domain/session/choices";
 import { calculatePoints } from "../../domain/session/scoring";
-import { nearestEnemy } from "../../domain/session/targeting";
+import { advanceEnemiesForRecallWindow } from "../../domain/session/landing";
+import { wordSpeedMultiplierFromAppearanceWeight } from "../../domain/session/speed";
+import { selectLockedTarget } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
 import { playSoundEffect } from "../audio/soundEffects";
 
@@ -86,7 +88,10 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const [reviewComplete, setReviewComplete] = useState(false);
   const [enemies, setEnemies] = useState<Enemy[]>([]);
   const enemiesRef = useRef(enemies); enemiesRef.current = enemies;
+  const [targetId, setTargetId] = useState<string | null>(null);
+  const targetIdRef = useRef<string | null>(null);
   const [phase, setPhase] = useState<"pinyin" | "meaning">("pinyin");
+  const phaseRef = useRef<"pinyin" | "meaning">("pinyin");
   const [choices, setChoices] = useState<MeaningChoice[]>([]);
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const [learningPaused, setLearningPaused] = useState(false);
@@ -95,7 +100,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const [streak, setStreak] = useState(0);
   const streakRef = useRef(0); streakRef.current = streak;
   const [stats, setStats] = useState<SessionStats>(() => initialStats(options.kind));
-  const target = nearestEnemy(enemies);
+  const target = targetId === null ? null : enemies.find((enemy) => enemy.id === targetId) ?? null;
   const targetRef = useRef(target); targetRef.current = target;
   const targetWord = target ? words.get(target.wordId) ?? null : null;
   const phaseStarted = useRef(performance.now());
@@ -107,9 +112,20 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const optionsRef = useRef(options); optionsRef.current = options;
   const suspendedAt = useRef<number | null>(null);
 
-  useEffect(() => {
-    setPhase("pinyin"); setChoices([]); setAudioError(false); phaseStarted.current = performance.now();
-  }, [target?.id]);
+  const commitEnemies = useCallback((nextEnemies: Enemy[], now = performance.now()) => {
+    const nextTarget = selectLockedTarget(nextEnemies, targetIdRef.current);
+    const nextTargetId = nextTarget?.id ?? null;
+    if (nextTargetId !== targetIdRef.current) {
+      targetIdRef.current = nextTargetId;
+      targetRef.current = nextTarget;
+      setTargetId(nextTargetId);
+      phaseRef.current = "pinyin"; setPhase("pinyin");
+      setChoices([]); setAudioError(false); phaseStarted.current = now;
+    }
+    enemiesRef.current = nextEnemies;
+    setEnemies(nextEnemies);
+  }, []);
+
   useEffect(() => {
     const suspended = paused || learningPaused || document.hidden;
     const now = performance.now();
@@ -185,7 +201,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       ? outcome.pinyinMs + outcome.meaningMs
       : outcome.kind === "wrongPinyin" ? outcome.pinyinMs : outcome.activeThinkingMs ?? 0;
     const points = outcome.kind === "correct"
-      ? calculatePoints(thinking, streakRef.current, settings.spawnIntervalMs, settings.enemySpeedMultiplier)
+      ? calculatePoints(thinking, streakRef.current, settings.spawnIntervalMs, settings.enemySpeedMultiplier * enemy.speedMultiplier)
       : 0;
     let feedback: Feedback;
 
@@ -231,9 +247,9 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const resolveEnemy = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     if (!enemiesRef.current.some((item) => item.id === enemy.id)) return;
     const remaining = enemiesRef.current.filter((item) => item.id !== enemy.id);
-    enemiesRef.current = remaining; setEnemies(remaining);
+    commitEnemies(remaining);
     updateWord(enemy, outcome, typed);
-  }, [updateWord]);
+  }, [commitEnemies, updateWord]);
 
   const spawn = useCallback(() => {
     if (enemiesRef.current.length >= MAX_ACTIVE_ENEMIES) return;
@@ -241,12 +257,14 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     const excluded = new Set(enemiesRef.current.map((enemy) => enemy.wordId));
     let wordId: string;
     let ordinal: number;
+    let appearanceWeight: number;
     if (config.kind === "regular") {
       const current = levelRef.current; if (!current) return;
       const result = spawnNextWord(current, deck, undefined, settings, excluded);
       if (result.status !== "spawned") return;
       levelRef.current = result.level; setLevel(result.level); config.onChange(result.level);
       wordId = result.wordId; ordinal = result.spawnOrdinal;
+      appearanceWeight = result.level.words[wordId]?.appearanceWeight ?? 100;
     } else {
       const current = reviewRef.current; if (!current) return;
       const result = spawnNextReviewWord(current, config.masteredWordKeys, excluded, undefined, settings);
@@ -256,12 +274,21 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       }
       reviewRef.current = result.review; setReview(result.review); config.onChange(result.review);
       wordId = result.wordKey; ordinal = result.spawnOrdinal;
+      appearanceWeight = 1;
     }
     setReviewComplete(false);
     const lane = (ordinal * 5 + 1) % 8;
-    const enemy: Enemy = { id: `e-${Date.now()}-${enemySequence.current++}`, wordId, progress: 0, lane, spawnOrdinal: ordinal, status: "descending" };
-    const nextEnemies = [...enemiesRef.current, enemy]; enemiesRef.current = nextEnemies; setEnemies(nextEnemies);
-  }, [deck, settings]);
+    const enemy: Enemy = {
+      id: `e-${Date.now()}-${enemySequence.current++}`,
+      wordId,
+      progress: 0,
+      speedMultiplier: wordSpeedMultiplierFromAppearanceWeight(appearanceWeight),
+      lane,
+      spawnOrdinal: ordinal,
+      status: "descending",
+    };
+    commitEnemies([...enemiesRef.current, enemy]);
+  }, [commitEnemies, deck, settings]);
 
   useEffect(() => { spawnDue.current = performance.now(); }, [settings.spawnIntervalMs]);
   useEffect(() => {
@@ -272,16 +299,23 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       if (!pausedRef.current && !learningPausedRef.current && !document.hidden) {
         if (now >= spawnDue.current) { spawn(); spawnDue.current = now + settings.spawnIntervalMs; }
         const advance = delta / BASE_TRAVEL_MS * settings.enemySpeedMultiplier;
-        const advanced = enemiesRef.current.map((enemy) => ({ ...enemy, progress: enemy.progress + advance }));
-        const landed = advanced.filter((enemy) => enemy.progress >= 1);
-        const descending = advanced.filter((enemy) => enemy.progress < 1);
-        enemiesRef.current = descending; setEnemies(descending);
-        for (const enemy of landed) updateWord(enemy, { kind: "landed", activeThinkingMs: enemy.id === targetRef.current?.id ? Math.max(0, now - phaseStarted.current) : null });
+        const lockedTargetId = targetIdRef.current;
+        const activeRecallMs = lockedTargetId === null ? 0 : Math.max(0, now - phaseStarted.current);
+        const result = advanceEnemiesForRecallWindow(
+          enemiesRef.current,
+          advance,
+          lockedTargetId,
+          phaseRef.current,
+          activeRecallMs,
+          settings.struggleThresholdMs,
+        );
+        commitEnemies(result.active, now);
+        for (const enemy of result.landed) updateWord(enemy, { kind: "landed", activeThinkingMs: activeRecallMs });
       }
       frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick); return () => cancelAnimationFrame(frame);
-  }, [settings.enemySpeedMultiplier, settings.spawnIntervalMs, spawn, updateWord]);
+  }, [commitEnemies, settings.enemySpeedMultiplier, settings.spawnIntervalMs, spawn, updateWord]);
 
   const submitPinyin = (raw: string) => {
     const enemy = targetRef.current; const word = enemy ? words.get(enemy.wordId) : null;
@@ -289,7 +323,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     const elapsed = performance.now() - phaseStarted.current;
     if (acceptsPinyin(word.acceptedPinyin, raw)) {
       meaningPinyinMs.current = elapsed; setChoices(generateChoices(deck, word, enemy.id));
-      setPhase("meaning"); phaseStarted.current = performance.now(); playWordAudio(word);
+      phaseRef.current = "meaning"; setPhase("meaning"); phaseStarted.current = performance.now(); playWordAudio(word);
     } else resolveEnemy(enemy, { kind: "wrongPinyin", pinyinMs: elapsed }, raw);
   };
   const chooseMeaning = (key: ChoiceKey) => {

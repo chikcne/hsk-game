@@ -199,7 +199,8 @@ Response clocks use active simulation time:
 - pause, settings, hidden tab, and feedback are excluded;
 - changing game speed does not change measured milliseconds;
 - audio load/play duration is excluded;
-- an enemy landing before activation has `activeThinkingMs = null`.
+- reaching the ground does not end an encounter until the highlighted target has received the full pinyin recall window;
+- after accepted pinyin, altitude cannot convert meaning-selection time into a recall failure.
 
 Game settings influence points but not mastery formulas.
 
