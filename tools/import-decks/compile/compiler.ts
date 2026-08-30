@@ -12,7 +12,7 @@ import { buildMeaningIndexes, normalizeAndDedupe, type Overrides, type WordAudit
 import { extractSelectedAudio } from "./audio";
 import { stableJson } from "./stable-json";
 
-export const IMPORTER_VERSION = "1.0.0";
+export const IMPORTER_VERSION = "1.0.1";
 
 export type DeckSource = {
   id: DeckId;
@@ -112,14 +112,22 @@ async function compileOneDeck(
     }
     const deckOutput = join(outputRoot, source.id);
     const selectedMedia = new Map<string, string>();
-    for (const word of normalized.words) selectedMedia.set(word.audioFilename, media.memberByFilename.get(word.audioFilename)!);
-    const audio = await extractSelectedAudio(apkgPath, selectedMedia, join(deckOutput, "audio"));
+    const pronunciationOnlyFilenames = new Set<string>();
+    for (const word of normalized.words) {
+      selectedMedia.set(word.audioFilename, media.memberByFilename.get(word.audioFilename)!);
+      if (word.audioNeedsQualifierRemoval) pronunciationOnlyFilenames.add(word.audioFilename);
+    }
+    const audio = await extractSelectedAudio(
+      apkgPath, selectedMedia, join(deckOutput, "audio"), pronunciationOnlyFilenames,
+    );
     for (const word of normalized.words) {
       const url = audio.urlByFilename.get(word.audioFilename);
       if (!url) throw new Error(`No extracted audio URL for ${word.audioFilename}`);
       word.audioUrl = url;
     }
-    const runtimeWords = normalized.words.map(({ audioFilename: _audio, sourceNoteId: _note, ...word }) => word);
+    const runtimeWords = normalized.words.map(({
+      audioFilename: _audio, audioNeedsQualifierRemoval: _qualifier, sourceNoteId: _note, ...word
+    }) => word);
     const indexes = buildMeaningIndexes(runtimeWords);
     const fingerprint = digest(`deck-v1\0${IMPORTER_VERSION}\0${packageSha256}\0${overrideSha256}`);
     const deck = RuntimeDeckSchema.parse({

@@ -11,8 +11,12 @@ import { normalizedKey, sanitizeText } from "../../tools/import-decks/normalize/
 
   it("normalizes compatibility Hanzi and reviewed suffix forms", () => {
     expect(normalizeHanzi(" ⽩⾊. ")).toMatchObject({ displayHanzi: "白色", hanziKey: "白色", nfkcChanged: true });
-    expect(normalizeHanzi("本 (classifier)")).toMatchObject({ displayHanzi: "本", senseLabel: "classifier" });
-    expect(normalizeHanzi("生 2")).toMatchObject({ displayHanzi: "生", senseLabel: "sense 2" });
+    expect(normalizeHanzi("本 (classifier)")).toMatchObject({
+      displayHanzi: "本", senseLabel: "classifier", qualifierStyle: "parenthetical",
+    });
+    expect(normalizeHanzi("生 2")).toMatchObject({
+      displayHanzi: "生", senseLabel: "sense 2", qualifierStyle: "numbered",
+    });
     expect(() => normalizeHanzi("劳verb")).toThrow(/non-CJK residue/u);
   });
 

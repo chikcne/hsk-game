@@ -5,6 +5,7 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { RuntimeDeckSchema } from "../../src/shared/schemas";
 import { parseMediaMap } from "../../tools/import-decks/archive/media";
+import { pronunciationEndFromSilenceLog } from "../../tools/import-decks/compile/audio";
 import { compileDecks } from "../../tools/import-decks/compile/compiler";
 import { stableJson } from "../../tools/import-decks/compile/stable-json";
 import { buildMeaningIndexes, normalizeAndDedupe } from "../../tools/import-decks/normalize/words";
@@ -47,7 +48,9 @@ describe("runtime deck compilation primitives", () => {
     expect(one.audioFilename).toBe("g1.mp3");
     expect(result.audit.exactDuplicateGroups).toEqual([{ wordId: expectedId, sourceGuids: ["duplicate-guid", "g1"] }]);
 
-    const runtimeWords = result.words.map(({ audioFilename: _audio, sourceNoteId: _source, ...word }) => ({ ...word, audioUrl: `audio/${word.id}.mp3` }));
+    const runtimeWords = result.words.map(({
+      audioFilename: _audio, audioNeedsQualifierRemoval: _qualifier, sourceNoteId: _source, ...word
+    }) => ({ ...word, audioUrl: `audio/${word.id}.mp3` }));
     const indexes = buildMeaningIndexes(runtimeWords);
     expect(indexes.allMeaningKeys).toEqual([...indexes.allMeaningKeys].sort());
     expect(indexes.minimumSafeDistractors).toBe(8);
@@ -66,6 +69,18 @@ describe("runtime deck compilation primitives", () => {
     const { notes, media } = fixture();
     const words = normalizeAndDedupe(notes.slice(0, 7), media, {}).words;
     expect(() => buildMeaningIndexes(words)).toThrow(/only 6 safe meaning distractors/u);
+  });
+
+  it("finds an internal pause before spoken qualifier audio, but not terminal silence", () => {
+    const spokenQualifier = [
+      "silence_start: 0", "silence_end: 0.229", "silence_start: 0.529",
+      "silence_end: 0.712", "silence_start: 1.561",
+    ].join("\n");
+    const pronunciationOnly = [
+      "silence_start: 0", "silence_end: 0.206", "silence_start: 0.787",
+    ].join("\n");
+    expect(pronunciationEndFromSilenceLog(spokenQualifier)).toBe(0.529);
+    expect(pronunciationEndFromSilenceLog(pronunciationOnly)).toBeNull();
   });
 
   it("serializes object keys deterministically without changing array order", () => {

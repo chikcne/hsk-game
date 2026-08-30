@@ -20,7 +20,11 @@ export type WordAudit = {
   maxMeaningLength: number;
 };
 
-export type CompiledWord = RuntimeWord & { audioFilename: string; sourceNoteId: number };
+export type CompiledWord = RuntimeWord & {
+  audioFilename: string;
+  audioNeedsQualifierRemoval: boolean;
+  sourceNoteId: number;
+};
 
 function hash(value: string): string {
   return createHash("sha256").update(value).digest("hex");
@@ -104,7 +108,8 @@ export function normalizeAndDedupe(
     groups.set(semanticIdentity, {
       id, sourceGuids: [note.guid], displayHanzi: hanzi.displayHanzi, hanziKey: hanzi.hanziKey,
       displayPinyin, acceptedPinyin, partOfSpeech, partOfSpeechKey, senseLabel: hanzi.senseLabel,
-      meaning, meaningKey, example, audioUrl: "", audioFilename, sourceNoteId: note.id,
+      meaning, meaningKey, example, audioUrl: "", audioFilename,
+      audioNeedsQualifierRemoval: hanzi.qualifierStyle === "parenthetical", sourceNoteId: note.id,
     });
   }
 
