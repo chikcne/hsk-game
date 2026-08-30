@@ -1,0 +1,5 @@
+export const INITIAL_APPEARANCE_WEIGHT = 70;
+export const ACTIVE_CURRICULUM_SIZE = 30;
+export const MIN_ARCADE_WORDS = 26;
+export const MAX_ELIGIBLE_AGE_BOOST = 1.5;
+export const ANTI_STARVATION_AGE = 150;

@@ -1,0 +1,43 @@
+import type { SaveSnapshot } from "../../src/server/saves/validation";
+import { createDefaultSave } from "../../src/server/saves/repository";
+
+export function makeSnapshot(): SaveSnapshot {
+  const { revision: _revision, savedAt: _savedAt, ...snapshot } = createDefaultSave(
+    new Date("2025-01-01T00:00:00.000Z"),
+  );
+  return snapshot;
+}
+
+export function makeSnapshotWithWord(wordId = "word-1"): SaveSnapshot {
+  const snapshot = makeSnapshot();
+  snapshot.levels["hsk-1"] = {
+    deckId: "hsk-1",
+    deckFingerprint: "fixture-fingerprint",
+    nextSpawnOrdinal: 1,
+    schedulerRng: [0, 1, 2, 0xffff_ffff],
+    curriculumSeed: "fixture-seed",
+    curriculumCursor: 1,
+    activeLearningWordIds: [wordId],
+    firstCompletedAt: null,
+    words: {
+      [wordId]: {
+        appearanceWeight: 70,
+        attempts: 0,
+        completeCorrect: 0,
+        wrongPinyin: 0,
+        wrongMeaning: 0,
+        landed: 0,
+        totalThinkingMs: 0,
+        fastestCorrectMs: null,
+        lastOutcome: null,
+        lastSeenAt: null,
+        introducedAtOrdinal: 0,
+        lastSpawnOrdinal: 0,
+        nextEligibleSpawn: 11,
+        reinforcementRemaining: 0,
+      },
+    },
+    orphanedProgress: {},
+  };
+  return snapshot;
+}
