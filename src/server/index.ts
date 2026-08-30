@@ -3,7 +3,7 @@ import { buildApp } from "./app";
 
 export async function startServer(): Promise<void> {
   const app = await buildApp({ logger: true });
-  const port = Number.parseInt(process.env.PORT ?? "8787", 10);
+  const port = Number.parseInt(process.env.PORT ?? "5757", 10);
   if (!Number.isInteger(port) || port < 1 || port > 65_535) {
     throw new Error(`Invalid PORT: ${process.env.PORT ?? ""}`);
   }

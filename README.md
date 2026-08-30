@@ -7,7 +7,7 @@ A local-first arcade vocabulary game built from the six HSK Anki packages in `de
 ```bash
 npm install
 npm run import:decks   # one-time; compiles the source APKGs and local audio
-npm run dev            # http://100.65.64.80:5173
+npm run dev            # http://100.65.64.80:5757
 ```
 
 The client includes a small bundled training deck so it remains playable while generated deck data is unavailable. Imported data takes precedence automatically.
@@ -16,7 +16,7 @@ Production:
 
 ```bash
 npm run build
-npm start              # http://100.65.64.80:8787
+npm start              # http://100.65.64.80:5757
 ```
 
 Progress is written atomically to the gitignored `saves/default.json`. If the local API is unavailable, the browser keeps an emergency retry copy and clearly marks the HUD `OFFLINE`.

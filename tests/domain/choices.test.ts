@@ -1,9 +1,16 @@
 import { describe, expect, it } from "vitest";
-import { generateChoices } from "../../src/domain/session/choices";
+import { choiceShortcutForLabel, generateChoices } from "../../src/domain/session/choices";
 import { createDemoDeck } from "../../src/client/data/demoDeck";
 
 describe("meaning choices", () => {
-  it("makes deterministic safe choices with distinct first-letter shortcuts", () => {
+  it("uses the first content word after leading prepositions", () => {
+    expect(choiceShortcutForLabel("to drink")).toEqual({ key: "D", index: 3 });
+    expect(choiceShortcutForLabel("from behind cover")).toEqual({ key: "C", index: 12 });
+    expect(choiceShortcutForLabel("school")).toEqual({ key: "S", index: 0 });
+    expect(choiceShortcutForLabel("to")).toEqual({ key: "T", index: 0 });
+  });
+
+  it("makes deterministic safe choices with distinct highlighted-letter shortcuts", () => {
     const deck = createDemoDeck("hsk-1");
     const first = generateChoices(deck, deck.words[0]!, "enemy-1");
     const again = generateChoices(deck, deck.words[0]!, "enemy-1");
@@ -13,8 +20,10 @@ describe("meaning choices", () => {
     expect(first.filter((choice) => choice.correct)).toHaveLength(1);
     expect(new Set(first.map((choice) => choice.label)).size).toBe(8);
     expect(new Set(first.map((choice) => choice.key)).size).toBe(8);
+    expect(first.filter((choice) => choice.label.startsWith("to ")).length).toBeGreaterThan(1);
     for (const choice of first) {
-      expect(choice.key).toBe(choice.label.charAt(0).toUpperCase());
+      expect(choice.key).toBe(choice.label.charAt(choice.shortcutIndex).toUpperCase());
     }
+    expect(first.find((choice) => choice.correct)).toMatchObject({ key: "S", shortcutIndex: 3 });
   });
 });

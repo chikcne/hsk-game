@@ -1,7 +1,18 @@
 import { CHOICE_KEYS, type ChoiceKey } from "../../shared/constants";
 import type { RuntimeDeck, RuntimeWord } from "../../shared/schemas";
 
-export type MeaningChoice = { key: ChoiceKey; label: string; correct: boolean };
+export type MeaningChoice = { key: ChoiceKey; label: string; shortcutIndex: number; correct: boolean };
+
+const LEADING_PREPOSITIONS = new Set([
+  "aboard", "about", "above", "across", "after", "against", "along", "amid", "among", "around", "as", "at",
+  "before", "behind", "below", "beneath", "beside", "besides", "between", "beyond", "but", "by",
+  "concerning", "considering", "despite", "down", "during", "except", "excluding", "following", "for", "from",
+  "in", "inside", "into", "like", "near", "of", "off", "on", "onto", "opposite", "outside", "over", "past", "per",
+  "regarding", "round", "since", "than", "through", "throughout", "till", "to", "toward", "towards", "under",
+  "underneath", "unlike", "until", "up", "upon", "versus", "via", "with", "within", "without",
+]);
+
+export type MeaningShortcut = { key: ChoiceKey; index: number };
 
 function hashSeed(input: string): number {
   let value = 2166136261;
@@ -14,10 +25,19 @@ function random(seed: number) {
   return () => ((state = Math.imul(state ^ (state >>> 15), 1 | state) + 0x6d2b79f5 | 0) >>> 0) / 4294967296;
 }
 
-/** The visible first letter is also the keyboard shortcut for a choice. */
+/** Uses the first content word, skipping leading prepositions such as the
+ * infinitive marker in "to drink". The returned index identifies the letter
+ * the UI should highlight. */
+export function choiceShortcutForLabel(label: string): MeaningShortcut | null {
+  const words = [...label.matchAll(/[A-Za-z]+(?:['’][A-Za-z]+)*/g)];
+  if (words.length === 0) return null;
+  const contentWord = words.find((word) => !LEADING_PREPOSITIONS.has(word[0].toLowerCase())) ?? words[0]!;
+  const key = contentWord[0].charAt(0).toUpperCase();
+  return CHOICE_KEYS.includes(key as ChoiceKey) ? { key: key as ChoiceKey, index: contentWord.index! } : null;
+}
+
 export function choiceKeyForLabel(label: string): ChoiceKey | null {
-  const first = label.trim().charAt(0).toUpperCase();
-  return CHOICE_KEYS.includes(first as ChoiceKey) ? first as ChoiceKey : null;
+  return choiceShortcutForLabel(label)?.key ?? null;
 }
 
 export function generateChoices(deck: RuntimeDeck, word: RuntimeWord, seed: string): MeaningChoice[] {
@@ -31,17 +51,17 @@ export function generateChoices(deck: RuntimeDeck, word: RuntimeWord, seed: stri
   }
 
   const correctLabel = word.meaning.trim();
-  const correctKey = choiceKeyForLabel(correctLabel);
-  if (!correctKey) throw new Error(`Meaning must start with A-Z: ${word.meaning}`);
+  const correctShortcut = choiceShortcutForLabel(correctLabel);
+  if (!correctShortcut) throw new Error(`Meaning must contain A-Z: ${word.meaning}`);
 
-  const choices: MeaningChoice[] = [{ key: correctKey, label: correctLabel, correct: true }];
-  const usedKeys = new Set<ChoiceKey>([correctKey]);
+  const choices: MeaningChoice[] = [{ key: correctShortcut.key, label: correctLabel, shortcutIndex: correctShortcut.index, correct: true }];
+  const usedKeys = new Set<ChoiceKey>([correctShortcut.key]);
   for (const meaningKey of pool) {
     const label = (deck.meaningIndex[meaningKey]?.label ?? meaningKey).trim();
-    const key = choiceKeyForLabel(label);
-    if (!key || usedKeys.has(key)) continue;
-    choices.push({ key, label, correct: false });
-    usedKeys.add(key);
+    const shortcut = choiceShortcutForLabel(label);
+    if (!shortcut || usedKeys.has(shortcut.key)) continue;
+    choices.push({ key: shortcut.key, label, shortcutIndex: shortcut.index, correct: false });
+    usedKeys.add(shortcut.key);
     if (choices.length === 8) break;
   }
 
