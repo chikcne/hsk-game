@@ -162,7 +162,7 @@ export function App() {
 }
 
 function LoadingScreen({ hasSave }: { hasSave: boolean }) {
-  return <main className="loading-screen starfield"><div className="loader-logo">汉</div><h1>HANZI DEFENDER</h1><p>{hasSave ? "LOADING SECTOR DATA" : "CONNECTING TO DEFENSE NETWORK"}</p><div className="loading-bar"><i /></div><small>LOCAL-FIRST • OFFLINE READY</small></main>;
+  return <main className="loading-screen starfield"><div className="loader-logo" lang="zh-Hans">汉</div><h1>HANZI DEFENDER</h1><p>{hasSave ? "LOADING SECTOR DATA" : "CONNECTING TO DEFENSE NETWORK"}</p><div className="loading-bar"><i /></div><small>LOCAL-FIRST • OFFLINE READY</small></main>;
 }
 
 function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, onSettings, saveStatus }: {
@@ -352,7 +352,7 @@ function Summary({ stats, deckId, deck, level, saveStatus, onAgain, onSectors }:
       const word = wordMap.get(id); const errors = item.wrongPinyin + item.wrongMeaning + item.landed;
       return <div key={id}><b>#{index + 1}</b><strong lang="zh-Hans">{word?.displayHanzi ?? id.split(":").at(-1)}</strong><span>{word?.displayPinyin}</span><span>{errors} WRONG · {item.struggles} STRUGGLES</span><em>{item.recallScoreMsPerChar === null ? "—" : `${Math.round(item.recallScoreMsPerChar)} ms/char`}</em></div>;
     })}</div>}</section>
-    : <section className="summary-details"><div className="mastery-report"><h2>SECTOR MASTERY <span>{mastered} / {total}</span></h2><div className="segment-bar"><i style={{ width: `${mastered / total * 100}%` }} /></div><p><b className="mint">+{stats.newlyMastered.size}</b> NEW WORDS MASTERED</p><p><b className="red">{stats.wrongPinyin + stats.wrongMeaning + stats.landed}</b> WORDS NEED REINFORCEMENT</p><p><b className="cyan">{stats.levelsCompleted}</b> LEVELS COMPLETED</p><small>NEXT UP</small><div className="next-up">{next.map((item, index) => <span key={index}>{item}</span>)}</div></div><div className="save-report"><small>SAVE STATUS</small><b className={saveStatus === "saved" ? "mint" : "red"}>{saveStatus === "saved" ? "✓ ALL PROGRESS SAVED" : "! PROGRESS CACHED LOCALLY"}</b><span>LAST CHECKPOINT<br />JUST NOW</span><button className="primary" onClick={onAgain}>CONTINUE</button></div></section>}
+    : <section className="summary-details"><div className="mastery-report"><h2>SECTOR MASTERY <span>{mastered} / {total}</span></h2><div className="segment-bar"><i style={{ width: `${mastered / total * 100}%` }} /></div><p><b className="mint">+{stats.newlyMastered.size}</b> NEW WORDS MASTERED</p><p><b className="red">{stats.wrongPinyin + stats.wrongMeaning + stats.landed}</b> WORDS NEED REINFORCEMENT</p><p><b className="cyan">{stats.levelsCompleted}</b> LEVELS COMPLETED</p><small>NEXT UP</small><div className="next-up">{next.map((item, index) => <span lang="zh-Hans" key={index}>{item}</span>)}</div></div><div className="save-report"><small>SAVE STATUS</small><b className={saveStatus === "saved" ? "mint" : "red"}>{saveStatus === "saved" ? "✓ ALL PROGRESS SAVED" : "! PROGRESS CACHED LOCALLY"}</b><span>LAST CHECKPOINT<br />JUST NOW</span><button className="primary" onClick={onAgain}>CONTINUE</button></div></section>}
     <footer><button onClick={onSectors}>RETURN TO SECTORS</button><button className="pink-button" onClick={onAgain}>{isReview ? "NEXT REVIEW ROUND" : "DEFEND AGAIN"}</button></footer>
   </main>;
 }

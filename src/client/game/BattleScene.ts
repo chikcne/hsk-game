@@ -3,7 +3,7 @@ import type { Enemy } from "../../domain/session/types";
 import type { RuntimeWord } from "../../shared/schemas";
 
 export type EnemyView = Enemy & { word: RuntimeWord };
-type ShipParts = { root: Phaser.GameObjects.Container; screen: Phaser.GameObjects.Rectangle; body: Phaser.GameObjects.Rectangle; text: Phaser.GameObjects.Text; target: Phaser.GameObjects.Rectangle };
+type ShipParts = { root: Phaser.GameObjects.Container; screen: Phaser.GameObjects.Rectangle; body: Phaser.GameObjects.Rectangle; target: Phaser.GameObjects.Rectangle };
 
 export class BattleScene extends Phaser.Scene {
   private ships = new Map<string, ShipParts>();
@@ -42,12 +42,9 @@ export class BattleScene extends Phaser.Scene {
     const body = this.add.rectangle(0, 12, width + 10, 8, 0x55e6ff);
     const leftFoot = this.add.rectangle(-width / 3, 19, 8, 8, 0x55e6ff);
     const rightFoot = this.add.rectangle(width / 3, 19, 8, 8, 0x55e6ff);
-    const text = this.add.text(0, -8, enemy.word.displayHanzi, {
-      fontFamily: '"Noto Sans SC", "Microsoft YaHei", sans-serif', fontSize: `${textSize}px`, color: "#f4f0ff", fontStyle: "bold",
-    }).setOrigin(0.5).setResolution(2);
     const target = this.add.rectangle(0, 1, width + 22, 56).setStrokeStyle(2, 0xffc857).setFillStyle(0, 0).setVisible(false);
-    root.add([target, screen, body, leftFoot, rightFoot, text]);
-    this.ships.set(enemy.id, { root, screen, body, text, target });
+    root.add([target, screen, body, leftFoot, rightFoot]);
+    this.ships.set(enemy.id, { root, screen, body, target });
     return this.ships.get(enemy.id)!;
   }
 
