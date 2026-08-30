@@ -6,6 +6,10 @@ import {
 } from "../../src/domain/session/speed";
 import { selectLockedTarget, soonestLandingEnemy } from "../../src/domain/session/targeting";
 import { calculatePoints } from "../../src/domain/session/scoring";
+import {
+  nextPerformanceMultiplier,
+  performanceAdjustedSpawnDelayMs,
+} from "../../src/domain/session/performance";
 import type { Enemy } from "../../src/domain/session/types";
 
 const enemy = (id: string, progress: number, spawnOrdinal: number, speedMultiplier = 1): Enemy => ({
@@ -58,6 +62,21 @@ describe("session rules", () => {
     expect(calculatePoints(2500, 0, 3000, 1)).toBe(400);
     expect(calculatePoints(12000, 0, 3000, 1)).toBe(200);
     expect(calculatePoints(2500, 10, 1500, 1.5)).toBeGreaterThan(400);
+  });
+
+  it("smoothly adapts pressure to current answer performance", () => {
+    const fast = nextPerformanceMultiplier(1, true, 0, 8_000);
+    const slow = nextPerformanceMultiplier(1, true, 16_000, 8_000);
+    const miss = nextPerformanceMultiplier(1, false, 1_000, 8_000);
+    expect(fast).toBeCloseTo(1.15);
+    expect(slow).toBeCloseTo(0.91);
+    expect(miss).toBeCloseTo(0.91);
+  });
+
+  it("multiplies configured pressure and fills an empty battlefield within half a second", () => {
+    expect(performanceAdjustedSpawnDelayMs(3_000, 1.5, true)).toBe(2_000);
+    expect(performanceAdjustedSpawnDelayMs(3_000, 0.75, true)).toBe(4_000);
+    expect(performanceAdjustedSpawnDelayMs(5_000, 0.7, false)).toBe(500);
   });
 
   it("gives a selected word the full pinyin recall window regardless of altitude", () => {

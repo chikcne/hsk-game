@@ -7,6 +7,11 @@ import { applyReviewOutcome, prepareReviewRound, spawnNextReviewWord } from "../
 import { randomStateFromSeed } from "../../domain/random";
 import { generateChoices, type MeaningChoice } from "../../domain/session/choices";
 import { calculatePoints } from "../../domain/session/scoring";
+import {
+  EMPTY_BATTLEFIELD_SPAWN_DELAY_MS,
+  nextPerformanceMultiplier,
+  performanceAdjustedSpawnDelayMs,
+} from "../../domain/session/performance";
 import { advanceEnemiesForRecallWindow } from "../../domain/session/landing";
 import { wordSpeedMultiplierFromAppearanceWeight } from "../../domain/session/speed";
 import { selectLockedTarget } from "../../domain/session/targeting";
@@ -101,6 +106,8 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const [audioError, setAudioError] = useState(false);
   const [streak, setStreak] = useState(0);
   const streakRef = useRef(0); streakRef.current = streak;
+  const [performanceMultiplier, setPerformanceMultiplier] = useState(1);
+  const performanceMultiplierRef = useRef(1);
   const [stats, setStats] = useState<SessionStats>(() => initialStats(options.kind));
   const target = targetId === null ? null : enemies.find((enemy) => enemy.id === targetId) ?? null;
   const targetRef = useRef(target); targetRef.current = target;
@@ -133,6 +140,9 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   useEffect(() => () => wordAudioPlayer.dispose(), [wordAudioPlayer]);
 
   const commitEnemies = useCallback((nextEnemies: Enemy[], now = performance.now()) => {
+    if (nextEnemies.length === 0) {
+      spawnDue.current = Math.min(spawnDue.current, now + EMPTY_BATTLEFIELD_SPAWN_DELAY_MS);
+    }
     const nextTarget = selectLockedTarget(nextEnemies, targetIdRef.current);
     const nextTargetId = nextTarget?.id ?? null;
     if (nextTargetId !== targetIdRef.current) {
@@ -164,7 +174,11 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
         phaseStarted.current += now - suspendedAt.current;
         suspendedAt.current = null;
         lastFrame.current = now;
-        spawnDue.current = now + settings.spawnIntervalMs;
+        spawnDue.current = now + performanceAdjustedSpawnDelayMs(
+          settings.spawnIntervalMs,
+          performanceMultiplierRef.current,
+          enemiesRef.current.length > 0,
+        );
       }
     };
     document.addEventListener("visibilitychange", visibility);
@@ -220,8 +234,15 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     const thinking = outcome.kind === "correct" || outcome.kind === "wrongMeaning"
       ? outcome.pinyinMs + outcome.meaningMs
       : outcome.kind === "wrongPinyin" ? outcome.pinyinMs : outcome.activeThinkingMs ?? 0;
+    const currentPerformanceMultiplier = performanceMultiplierRef.current;
+    const effectiveSpawnIntervalMs = settings.spawnIntervalMs / currentPerformanceMultiplier;
     const points = outcome.kind === "correct"
-      ? calculatePoints(thinking, streakRef.current, settings.spawnIntervalMs, settings.enemySpeedMultiplier * enemy.speedMultiplier)
+      ? calculatePoints(
+        thinking,
+        streakRef.current,
+        effectiveSpawnIntervalMs,
+        settings.enemySpeedMultiplier * enemy.speedMultiplier * currentPerformanceMultiplier,
+      )
       : 0;
     let feedback: Feedback;
 
@@ -257,6 +278,22 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
 
     const nowStreak = outcome.kind === "correct" ? streakRef.current + 1 : 0;
     streakRef.current = nowStreak;
+
+    const nextMultiplier = nextPerformanceMultiplier(
+      currentPerformanceMultiplier,
+      outcome.kind === "correct",
+      thinking,
+      settings.struggleThresholdMs,
+    );
+    performanceMultiplierRef.current = nextMultiplier;
+    setPerformanceMultiplier(nextMultiplier);
+    const now = performance.now();
+    const adjustedRemaining = Math.max(0, spawnDue.current - now) * currentPerformanceMultiplier / nextMultiplier;
+    spawnDue.current = now + adjustedRemaining;
+    if (enemiesRef.current.length === 0) {
+      spawnDue.current = Math.min(spawnDue.current, now + EMPTY_BATTLEFIELD_SPAWN_DELAY_MS);
+    }
+
     playSoundEffect(feedback.kind === "correct" ? "blaster" : "buzzer", settings.masterVolume);
     if (outcome.kind === "wrongPinyin" || outcome.kind === "wrongMeaning") playWordAudio(word);
     setFeedback(feedback);
@@ -320,8 +357,16 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       if (lastFrame.current === null) lastFrame.current = now;
       const delta = Math.min(100, now - lastFrame.current); lastFrame.current = now;
       if (!pausedRef.current && !learningPausedRef.current && !document.hidden) {
-        if (now >= spawnDue.current) { spawn(); spawnDue.current = now + settings.spawnIntervalMs; }
-        const advance = delta / BASE_TRAVEL_MS * settings.enemySpeedMultiplier;
+        const currentPerformanceMultiplier = performanceMultiplierRef.current;
+        if (now >= spawnDue.current) {
+          spawn();
+          spawnDue.current = now + performanceAdjustedSpawnDelayMs(
+            settings.spawnIntervalMs,
+            currentPerformanceMultiplier,
+            enemiesRef.current.length > 0,
+          );
+        }
+        const advance = delta / BASE_TRAVEL_MS * settings.enemySpeedMultiplier * currentPerformanceMultiplier;
         const lockedTargetId = targetIdRef.current;
         const activeRecallMs = lockedTargetId === null ? 0 : Math.max(0, now - phaseStarted.current);
         const result = advanceEnemiesForRecallWindow(
@@ -365,8 +410,12 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     const now = performance.now();
     suspendedAt.current = null;
     phaseStarted.current = now; lastFrame.current = now;
-    spawnDue.current = now + settings.spawnIntervalMs;
+    spawnDue.current = now + performanceAdjustedSpawnDelayMs(
+      settings.spawnIntervalMs,
+      performanceMultiplierRef.current,
+      enemiesRef.current.length > 0,
+    );
   }, [settings.spawnIntervalMs]);
   const replay = () => { if (targetWord) playWordAudio(targetWord); };
-  return { enemies, target, targetWord, phase, choices, feedback, learningPaused, audioError, streak, stats, level, review, reviewComplete, submitPinyin, chooseMeaning, dismissFeedback, replay };
+  return { enemies, target, targetWord, phase, choices, feedback, learningPaused, audioError, streak, performanceMultiplier, stats, level, review, reviewComplete, submitPinyin, chooseMeaning, dismissFeedback, replay };
 }
