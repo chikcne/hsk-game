@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+public/game-data/
+*.log
+__pycache__/
+*.py[cod]
+decks/*.apkg
+
+# Local player profiles and progress. Keep this directory on the machine only.
+saves/

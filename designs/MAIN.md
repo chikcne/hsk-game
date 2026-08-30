@@ -1,0 +1,349 @@
+# Hanzi Defender — main execution plan
+
+**Status:** architecture and implementation plan, ready to split into focused agent tasks  
+**Product:** a local-first TypeScript web game that turns HSK vocabulary into descending pixel-art aliens  
+**Source decks:** the six `.apkg` files in [`../decks/`](../decks/README.md)
+
+This document is the implementation authority. Supporting details live in:
+
+- [`GAMEPLAY.md`](GAMEPLAY.md) — encounter rules, multi-enemy targeting, scoring, and settings
+- [`DATA_PIPELINE.md`](DATA_PIPELINE.md) — Anki import, normalization, indexes, audio, and source audit
+- [`LEARNING_AND_SAVES.md`](LEARNING_AND_SAVES.md) — mastery weights, cooldown scheduler, and local save schema
+- [`UI_SPEC.md`](UI_SPEC.md) — screens, responsive behavior, controls, visual tokens, and accessibility
+- [`TEST_PLAN.md`](TEST_PLAN.md) — unit, integration, browser, importer, and statistical tests
+- [`AGENT_WORK.md`](AGENT_WORK.md) — small-agent work packages, dependencies, ownership, and handoff rules
+
+## 1. Product contract
+
+### Core loop
+
+1. The player selects exactly one HSK deck (HSK 1–6). Levels are never locked.
+2. Enemies spawn continuously and descend at one shared, constant vertical speed. Multiple enemies coexist to create queue pressure.
+3. Every enemy carries its own Hanzi. The enemy closest to the base is the only active target and receives the amber highlight. Ties go to the older spawn.
+4. The player types the active Hanzi's pinyin and presses **Enter**. Comparison ignores tone marks and formatting; accepted variants are precompiled from the deck.
+5. Correct pinyin immediately plays that word's audio and opens eight English meanings mapped to **A S D F H J K L**.
+6. The matching letter destroys the enemy. A wrong submission at either stage resolves that encounter as a miss and the enemy breaches the base in a short feedback animation.
+7. A wrong answer or an enemy landing naturally resets the streak. There is no health, life counter, game-over state, or progress loss beyond the affected word becoming more frequent.
+8. Progress is checkpointed to a file under gitignored `saves/` after scheduler-changing events. The player may end a session at any time.
+9. A level's live mastery is complete when every logical word has reached the minimum appearance weight.
+
+### Settings added to the contract
+
+- A settings screen adjusts **enemy spawn rate** and one **global enemy speed**.
+- All active and future enemies always share that speed; per-enemy random speeds are out of scope.
+- The active target is always recomputed as the enemy nearest the base. Because enemies share speed and path length, targeting is stable until that enemy is removed or lands.
+- Opening settings pauses the simulation. Applying a speed change updates all active enemies uniformly. Applying a spawn-rate change starts a fresh interval rather than causing a burst.
+
+### Explicit MVP decisions
+
+| Topic | Decision |
+|---|---|
+| Application shape | Local Node server plus browser client; a static-only app cannot write repository-local save files. |
+| Deck scope | One selected source deck per session, not cumulative HSK 1–N. |
+| Enemy population | Multiple simultaneous enemies; maximum 32 active as a rendering safety ceiling. |
+| Targeting | Nearest vertical position to the base, then lowest `spawnOrdinal` as tie-breaker. No manual target switching. |
+| Wrong answer | One scored/mastery outcome per enemy. A wrong non-empty pinyin or wrong meaning key causes an immediate breach animation and removes the enemy. |
+| Blank/irrelevant input | Blank Enter and keys outside the current phase are ignored, not counted wrong. |
+| Audio timing | Play word audio after pinyin succeeds, before the meaning choice; **R** replays it in the meaning phase. |
+| Persistence | Authoritative JSON file in `saves/`; browser storage may only be an emergency retry cache. |
+| Completion | `firstCompletedAt` is a permanent achievement; current mastery can regress if a mastered fallback word is later missed. |
+| Source duplicates | Exact semantic duplicates become one logical word with multiple source GUIDs; distinct senses remain distinct. |
+| Learning set | A deterministic 30-word active curriculum advances as words master; misses enter a three-review repair tier. This prevents a hard word from disappearing inside a 1,800-word flat lottery. |
+| Offline behavior | Runtime uses only local generated deck data, fonts, audio, and server APIs. No CDN is required. |
+
+## 2. Reference experience
+
+The PNGs are visual acceptance references rather than exact pixel-coordinate mandates. Implementations should match their hierarchy, palette, density, and state clarity.
+
+| State | Reference |
+|---|---|
+| Deck selection and progress | [`01-deck-select.png`](01-deck-select.png) |
+| Multiple enemies; nearest target; pinyin entry | [`02-battle-pinyin.png`](02-battle-pinyin.png) |
+| Pinyin confirmed, audio played, eight-key meaning grid | [`03-battle-meaning.png`](03-battle-meaning.png) |
+| Wrong answer or landing feedback | [`04-miss-feedback.png`](04-miss-feedback.png) |
+| End-session report and persisted progress | [`05-session-summary.png`](05-session-summary.png) |
+| Spawn-rate and global-speed settings | [`06-settings.png`](06-settings.png) |
+| Mobile/touch meaning selection | [`07-mobile-meaning.png`](07-mobile-meaning.png) |
+
+Mockups can be regenerated with `python3 designs/render_mockups.py` (design tooling only; Pillow is not a runtime dependency).
+
+## 3. Technical architecture
+
+### Chosen stack
+
+- **Language:** TypeScript in strict mode for client, domain, importer, tests, and server
+- **Client shell:** React + Vite
+- **Game rendering:** Phaser 3, configured for nearest-neighbour/pixel rendering
+- **Cross-boundary state:** a small Zustand store that exposes immutable snapshots; learning and simulation logic remain framework-free
+- **Server:** Fastify, bound to `127.0.0.1` by default
+- **Validation/contracts:** Zod schemas shared between importer, server, and client
+- **Anki importer:** Node/TypeScript, streaming ZIP reader plus SQLite reader
+- **Tests:** Vitest for pure/integration tests and Playwright for browser flows
+- **Package manager:** npm with a committed lockfile
+
+Phaser owns moving world objects, effects, and fixed-step simulation. React owns text input, meaning buttons, menus, settings, status, and accessibility. Hanzi and critical answer text remain DOM-visible in the command panel even though the same Hanzi is rendered on the canvas enemy.
+
+### Runtime topology
+
+```mermaid
+flowchart LR
+  APKG[decks/*.apkg] -->|npm run import:decks| Importer[TypeScript deck importer]
+  Importer --> Data[public/game-data/<deck>/deck.json]
+  Importer --> Audio[public/game-data/<deck>/audio/*.mp3]
+  Importer --> Audit[public/game-data/import-report.json]
+
+  Browser[React browser client] <-->|same-origin JSON| API[Fastify local server]
+  API <-->|atomic read/write| Saves[saves/default.json]
+  Browser --> Phaser[Phaser battle scene]
+  Browser --> Domain[Pure TS learning + session state]
+  Data --> Browser
+  Audio --> Browser
+```
+
+Development runs Vite and Fastify concurrently, with `/api` proxied to Fastify. Production build output is served by Fastify so save calls remain same-origin.
+
+### Dependency direction
+
+```text
+React UI ───────┐
+                ├──> application/session coordinator ──> pure domain modules
+Phaser scene ───┘                                      ├── learning scheduler
+                                                       ├── encounter reducer
+                                                       ├── scoring
+                                                       └── shared schemas
+
+Fastify routes ──> save repository ──> filesystem
+Importer ────────> shared deck schemas (never imports client or server code)
+```
+
+Rules:
+
+1. `src/domain/` imports no React, Phaser, browser, Fastify, or filesystem APIs.
+2. Phaser does not decide learning outcomes or modify mastery directly; it emits typed events.
+3. React does not calculate enemy positions; it reads a view snapshot.
+4. The server validates every save payload and owns atomic file replacement.
+5. Generated game data is disposable and reproducible from `decks/*.apkg`.
+
+## 4. Target repository shape
+
+```text
+.
+├── decks/                         # immutable .apkg source packages + checksums
+├── designs/                       # this plan and PNG references
+├── public/
+│   ├── fonts/                     # bundled pixel Latin + readable CJK fonts
+│   └── game-data/                 # generated, gitignored runtime JSON/audio
+├── saves/                         # local save files, entirely gitignored
+├── src/
+│   ├── client/
+│   │   ├── app/                   # routes/screens and composition
+│   │   ├── components/            # HUD, command panel, choices, dialogs
+│   │   ├── game/                  # Phaser config, BattleScene, sprites/effects
+│   │   ├── state/                 # application coordinator and Zustand adapter
+│   │   └── styles/                # tokens, layout, reduced-motion rules
+│   ├── domain/
+│   │   ├── deck/                  # runtime deck contracts and pinyin matching
+│   │   ├── learning/              # weights, cooldowns, weighted selection
+│   │   ├── session/               # encounter state machine and scoring
+│   │   └── random/                # seeded PRNG and truncated Gaussian
+│   ├── server/
+│   │   ├── routes/                # health/save endpoints
+│   │   ├── saves/                 # validation, migration, atomic repository
+│   │   └── index.ts
+│   └── shared/                    # API schemas and cross-process constants
+├── tools/
+│   └── import-decks/              # APKG parser, normalizers, report, overrides
+├── tests/
+│   ├── fixtures/                  # tiny legal synthetic APKG/save fixtures
+│   ├── integration/
+│   └── e2e/
+├── package.json
+├── tsconfig*.json
+└── vite.config.ts
+```
+
+Do not commit `public/game-data/` or `saves/`. Do commit importer reports generated in CI only if a later decision wants audit history; the source packages and `decks/SHA256SUMS` are currently the durable inputs.
+
+## 5. Core state and event model
+
+### Session state machine
+
+```mermaid
+stateDiagram-v2
+  [*] --> DeckSelect
+  DeckSelect --> Loading: choose HSK
+  Loading --> Pinyin: data + save ready
+  Pinyin --> Meaning: non-empty pinyin accepted
+  Pinyin --> FeedbackMiss: non-empty pinyin rejected
+  Pinyin --> FeedbackMiss: active enemy lands
+  Meaning --> FeedbackHit: correct ASDFHJKL key
+  Meaning --> FeedbackMiss: wrong ASDFHJKL key
+  Meaning --> FeedbackMiss: active enemy lands
+  FeedbackHit --> Pinyin: delay complete / nearest enemy exists
+  FeedbackMiss --> Pinyin: delay complete / nearest enemy exists
+  Pinyin --> AwaitTarget: no active enemy
+  AwaitTarget --> Pinyin: enemy spawned
+  Pinyin --> Paused: Esc/settings
+  Meaning --> Paused: Esc/settings
+  Paused --> Pinyin: resume to saved phase
+  Paused --> Meaning: resume to saved phase
+  Paused --> Summary: end session
+  Summary --> DeckSelect
+```
+
+World spawning and descent continue during `Pinyin` and `Meaning`. They freeze in `Paused`, settings, and blocking feedback only if the configured feedback policy says so. For MVP, feedback is a short **non-blocking world animation**: enemies keep descending, while answer input is disabled for 800 ms. This preserves pressure without allowing accidental inputs.
+
+The active target is derived, not independently mutable:
+
+```ts
+activeEnemy = enemies
+  .filter(enemy => enemy.status === "descending")
+  .sort((a, b) => b.y - a.y || a.spawnOrdinal - b.spawnOrdinal)[0]
+```
+
+All enemies use the same `pixelsPerSecond = BASE_SPEED * settings.enemySpeedMultiplier`. A settings change therefore preserves their relative ordering.
+
+### Event boundary
+
+Representative domain events:
+
+```ts
+type SessionEvent =
+  | { type: "enemySpawned"; enemyId: string; wordId: string; spawnOrdinal: number }
+  | { type: "targetActivated"; enemyId: string; atMs: number }
+  | { type: "pinyinSubmitted"; enemyId: string; raw: string; atMs: number }
+  | { type: "meaningSelected"; enemyId: string; key: ChoiceKey; atMs: number }
+  | { type: "enemyLanded"; enemyId: string; atMs: number }
+  | { type: "feedbackFinished"; enemyId: string }
+  | { type: "settingsApplied"; settings: DifficultySettings }
+  | { type: "sessionEnded"; atMs: number };
+```
+
+A reducer returns commands such as `playWordAudio`, `destroyEnemy`, `breachEnemy`, `checkpointSave`, or `showSummary`. Side effects execute outside the reducer. Duplicate landing/submission events for an already resolved enemy are ignored by enemy ID, ensuring exactly one learning update.
+
+## 6. Data and persistence boundaries
+
+### Build-time deck compilation
+
+The browser never reads SQLite or `.apkg`. `npm run import:decks`:
+
+1. verifies each package against `decks/SHA256SUMS` when a hash is present;
+2. streams out `collection.anki21`, `media`, and the 5,401 referenced word-audio entries;
+3. converts source notes into versioned `RuntimeDeck` JSON;
+4. applies Unicode, HTML, pinyin, sense-label, and exact-duplicate normalization;
+5. precomputes meaning pools and reverse indexes;
+6. copies only word audio under safe content-derived filenames;
+7. emits a blocking validation report.
+
+See [`DATA_PIPELINE.md`](DATA_PIPELINE.md) for exact schemas and known source anomalies.
+
+### Save files
+
+Browser sandboxing makes a repository-local Node API mandatory. The client checkpoints scheduler state, word progress, settings, aggregate statistics, and a revision number to `/api/saves/default`. The server writes `saves/default.json.tmp`, fsyncs/closes it, then renames it over `saves/default.json`.
+
+No active enemy positions need to survive a voluntary end-session action. Spawn ordinals, word cooldown eligibility, mastery, and PRNG state do survive, so ending and restarting cannot bypass the 10–25 intervening-spawn rule.
+
+See [`LEARNING_AND_SAVES.md`](LEARNING_AND_SAVES.md) for the schema and migration policy.
+
+## 7. Quality gates
+
+An implementation is not feature-complete until all gates pass.
+
+### Gate A — source data
+
+- All six source archives pass checksum and ZIP tests.
+- Import count matches the documented source count before deduplication.
+- Every emitted logical word has non-empty Hanzi, at least one accepted pinyin form, a meaning, and a resolvable word-audio asset.
+- Meaning generation can produce eight unique labels for every word and never includes another sense of the same displayed Hanzi as a distractor.
+- Import output is byte-for-byte deterministic for the same inputs and importer version.
+
+### Gate B — deterministic learning
+
+- A word never respawns until its stored number of **other** spawns (10–25 inclusive) has occurred.
+- Repair words are preferred, then the 30-word active curriculum, then mastered fallback filler.
+- Wrong/landing outcomes increase weight substantially and create three repair-priority recalls; faster complete answers reduce weight more than slow complete answers.
+- One enemy causes at most one weight update.
+- Every word at weight `1` sets live level mastery to complete.
+
+### Gate C — game behavior
+
+- At least two enemies can be visible simultaneously under default settings.
+- All active enemies move at exactly the same configured speed.
+- The lowest enemy is highlighted and is the only word accepted by the command panel.
+- Removing/landing the target immediately highlights the next-lowest enemy.
+- Spawn and speed sliders work, persist, and do not create a spawn burst.
+- Wrong answer and natural landing both reset streak; neither ends the game.
+
+### Gate D — persistence
+
+- Refresh after a resolved answer loads the same mastery, stats, settings, cooldowns, and revision from `saves/default.json`.
+- Writes are atomic and schema validated; a malformed file is quarantined and reported instead of silently overwritten.
+- Ending at any time reaches a summary only after the latest checkpoint is acknowledged or a clear retry warning is shown.
+- `saves/` and generated runtime deck assets remain ignored by Git.
+
+### Gate E — UX and accessibility
+
+- Desktop gameplay is fully usable from the keyboard.
+- Touch controls expose all eight choices and a mobile pinyin keyboard path.
+- Canvas information required to answer is duplicated in accessible DOM.
+- Correctness is never conveyed by color alone.
+- Reduced-motion mode replaces shake/flashes with static state changes.
+- At 360×640 and 1440×900, controls do not overlap the battlefield or clip meanings.
+
+## 8. Execution sequence
+
+Use the detailed task contracts in [`AGENT_WORK.md`](AGENT_WORK.md). The safe dependency order is:
+
+```mermaid
+flowchart TD
+  P0[P0 scaffold + frozen schemas]
+  P1[P1 deck importer]
+  P2[P2 learning scheduler]
+  P3[P3 save server]
+  P4[P4 encounter reducer + scoring]
+  P5[P5 Phaser multi-enemy scene]
+  P6[P6 React screens + settings]
+  P7[P7 integration + audio]
+  P8[P8 responsive/a11y/pixel polish]
+  P9[P9 end-to-end hardening]
+
+  P0 --> P1
+  P0 --> P2
+  P0 --> P3
+  P0 --> P4
+  P2 --> P4
+  P4 --> P5
+  P4 --> P6
+  P1 --> P7
+  P3 --> P7
+  P5 --> P7
+  P6 --> P7
+  P7 --> P8
+  P8 --> P9
+```
+
+P1, P2, and P3 may run in parallel only after P0 freezes shared contracts. P5 and P6 may run in parallel after the encounter event API is stable. Each package must arrive with tests and a handoff note; agents should not casually edit another package's owned paths.
+
+## 9. Definition of done
+
+The first release is done when a fresh clone with source decks can run:
+
+```text
+npm ci
+npm run import:decks
+npm test
+npm run build
+npm start
+```
+
+and then, from the browser:
+
+1. choose any HSK deck;
+2. see a growing queue of same-speed descending Hanzi enemies;
+3. answer the highlighted nearest enemy with pinyin then one of eight meaning keys;
+4. hear local word audio after correct pinyin;
+5. change spawn rate and global speed from settings;
+6. accumulate score/streak without a death state;
+7. end voluntarily, see a report, and verify progress in `saves/default.json`;
+8. resume with mastery and 10–25-spawn cooldown state intact;
+9. eventually reduce every logical word to weight `1` and earn the level-cleared milestone.
