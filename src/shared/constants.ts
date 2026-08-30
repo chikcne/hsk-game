@@ -15,12 +15,12 @@ export const MAX_ACTIVE_ENEMIES = 32;
 /** Learning defaults are deliberately explicit so every tuning value can be
  * changed from Settings without changing scheduler code. */
 export const DEFAULT_SETTINGS = {
-  spawnIntervalMs: 3000,
-  enemySpeedMultiplier: 1,
+  spawnIntervalMs: 5000,
+  enemySpeedMultiplier: 0.9,
   masterVolume: 0.8,
   reducedMotion: false,
   levelSize: 20,
-  struggleThresholdMs: 5000,
+  struggleThresholdMs: 8000,
   correctRepeatBasePhrases: 20,
   pinyinSecondsPerPhrase: 1,
   minimumCorrectRepeatPhrases: 1,
