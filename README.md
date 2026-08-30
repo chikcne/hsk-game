@@ -29,7 +29,11 @@ Progress is written atomically to the gitignored `saves/default.json`. If the lo
 - **Esc** — pause or resume
 - **1–6** — choose an HSK sector
 
-Settings control the spawn interval, one global enemy speed, volume, and reduced motion. There are no lives or game-over screen; misses reset the streak and increase that word's reinforcement priority.
+Regular sectors are split into adjustable 20-word levels. Each level also checks every previously mastered word from that sector once; a slow pinyin response (over five seconds by default), wrong answer, or landing adds that word to the current level's repair pool. Mastery and repeat timing use pinyin response time only—meaning-selection time still affects arcade score, but not learning progress.
+
+The sector screen also includes an Anki-style review mode across mastered words from all sectors. Review keeps a separate recall score (pinyin milliseconds per character), ease, and interval, and its end-of-round report ranks the words with the most struggles and misses. Review recall never changes regular-sector mastery.
+
+Settings control the spawn interval, global enemy speed, level size, struggle threshold, response-time interval formula, mistake interval, mastery gains/losses, Anki review intervals/ease, volume, and reduced motion. Defaults schedule a ten-second correct pinyin response ten phrases later and a wrong answer or landing five phrases later. There are no lives or game-over screen.
 
 ## Verification
 

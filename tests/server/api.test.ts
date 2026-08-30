@@ -36,7 +36,7 @@ describe("save API", () => {
     const response = await app.inject({ method: "GET", url: "/api/saves/default" });
     expect(response.statusCode).toBe(200);
     expect(response.headers["cache-control"]).toBe("no-store");
-    expect(response.json()).toMatchObject({ schemaVersion: 1, profileId: "default", revision: 0 });
+    expect(response.json()).toMatchObject({ schemaVersion: 2, profileId: "default", revision: 0 });
     await app.close();
   });
 
@@ -88,7 +88,7 @@ describe("save API", () => {
     await app.close();
   });
 
-  it("rejects request bodies over 2 MiB", async () => {
+  it("rejects request bodies over the configured save limit", async () => {
     const { app } = await makeApp();
     const response = await app.inject({
       method: "PUT",

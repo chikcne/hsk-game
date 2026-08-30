@@ -15,7 +15,7 @@ describe("playable runtime slice", () => {
     expect(generateChoices(deck, word, "enemy-1")).toHaveLength(8);
     const result = applyOutcomeToLevel(spawn.level, deck, word.id, { kind: "correct", pinyinMs: 1200, meaningMs: 900 }, new Date("2026-01-01T00:00:00Z"));
     expect(result.progress.attempts).toBe(1);
-    expect(result.progress.appearanceWeight).toBe(54);
+    expect(result.progress.appearanceWeight).toBe(45);
     expect(result.level.nextSpawnOrdinal).toBe(1);
   });
 });

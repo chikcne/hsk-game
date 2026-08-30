@@ -8,4 +8,4 @@ __pycache__/
 decks/*.apkg
 
 # Local player profiles and progress. Keep this directory on the machine only.
-saves/
+/saves/

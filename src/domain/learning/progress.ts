@@ -1,11 +1,9 @@
-import type { LevelProgress, WordProgress } from "../../shared/schemas";
+import type { DifficultySettings, LevelProgress, WordProgress } from "../../shared/schemas";
+import { DEFAULT_SETTINGS } from "../../shared/constants";
 import { createSecureRandomState, type RandomState } from "../random";
-import { refillCurriculum } from "./curriculum";
+import { curriculumOrder } from "./curriculum";
 import type { LearningDeck } from "./types";
-import {
-  INITIAL_APPEARANCE_WEIGHT,
-  MIN_ARCADE_WORDS,
-} from "./constants";
+import { INITIAL_APPEARANCE_WEIGHT } from "./constants";
 
 export function createWordProgress(): WordProgress {
   return {
@@ -17,6 +15,9 @@ export function createWordProgress(): WordProgress {
     landed: 0,
     totalThinkingMs: 0,
     fastestCorrectMs: null,
+    totalPinyinMs: 0,
+    fastestPinyinMs: null,
+    lastPinyinMs: null,
     lastOutcome: null,
     lastSeenAt: null,
     introducedAtOrdinal: null,
@@ -29,6 +30,7 @@ export function createWordProgress(): WordProgress {
 export type CreateLevelOptions = {
   schedulerRng: RandomState;
   curriculumSeed: string;
+  levelSize?: number;
 };
 
 export function createLevelProgress(
@@ -37,43 +39,44 @@ export function createLevelProgress(
 ): LevelProgress {
   const ids = deck.words.map((word) => word.id);
   if (new Set(ids).size !== ids.length) throw new Error("Deck word IDs must be unique");
-  if (ids.length < MIN_ARCADE_WORDS) {
-    throw new RangeError(`Arcade scheduling requires at least ${MIN_ARCADE_WORDS} logical words`);
-  }
+  if (ids.length === 0) throw new RangeError("A learning sector must contain at least one word");
 
   const words: Record<string, WordProgress> = {};
   for (const id of ids) words[id] = createWordProgress();
+  const levelSize = Math.max(1, Math.min(options.levelSize ?? DEFAULT_SETTINGS.levelSize, ids.length));
+  const firstIds = curriculumOrder(deck, options.curriculumSeed).slice(0, levelSize);
+  for (const id of firstIds) words[id] = { ...words[id]!, introducedAtOrdinal: 0 };
 
-  const level: LevelProgress = {
+  return {
     deckId: deck.id,
     deckFingerprint: deck.fingerprint,
     nextSpawnOrdinal: 0,
     schedulerRng: [...options.schedulerRng],
     curriculumSeed: options.curriculumSeed,
-    curriculumCursor: 0,
-    activeLearningWordIds: [],
+    curriculumCursor: firstIds.length,
+    currentLevelIndex: 0,
+    currentLevelWordIds: firstIds,
+    activeLearningWordIds: [...firstIds],
+    reviewedOlderWordIds: [],
     firstCompletedAt: null,
     words,
     orphanedProgress: {},
   };
-  return refillCurriculum(level, deck);
 }
 
 /** First-run factory using independent cryptographic seeds for schedule and curriculum. */
-export function createSecureLevelProgress(deck: LearningDeck): LevelProgress {
+export function createSecureLevelProgress(
+  deck: LearningDeck,
+  settings: Pick<DifficultySettings, "levelSize"> = DEFAULT_SETTINGS,
+): LevelProgress {
   const schedulerRng = createSecureRandomState();
   const curriculumWords = createSecureRandomState();
-  const curriculumSeed = curriculumWords
-    .map((word) => word.toString(16).padStart(8, "0"))
-    .join("");
-  return createLevelProgress(deck, { schedulerRng, curriculumSeed });
+  const curriculumSeed = curriculumWords.map((word) => word.toString(16).padStart(8, "0")).join("");
+  return createLevelProgress(deck, { schedulerRng, curriculumSeed, levelSize: settings.levelSize });
 }
 
 export function countMastered(level: LevelProgress): number {
-  return Object.values(level.words).reduce(
-    (count, word) => count + (word.appearanceWeight === 1 ? 1 : 0),
-    0,
-  );
+  return Object.values(level.words).reduce((count, word) => count + (word.appearanceWeight === 1 ? 1 : 0), 0);
 }
 
 export function isLiveMastered(level: LevelProgress): boolean {

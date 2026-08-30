@@ -17,7 +17,10 @@ export function makeSnapshotWithWord(wordId = "word-1"): SaveSnapshot {
     schedulerRng: [0, 1, 2, 0xffff_ffff],
     curriculumSeed: "fixture-seed",
     curriculumCursor: 1,
+    currentLevelIndex: 0,
+    currentLevelWordIds: [wordId],
     activeLearningWordIds: [wordId],
+    reviewedOlderWordIds: [],
     firstCompletedAt: null,
     words: {
       [wordId]: {
@@ -29,6 +32,9 @@ export function makeSnapshotWithWord(wordId = "word-1"): SaveSnapshot {
         landed: 0,
         totalThinkingMs: 0,
         fastestCorrectMs: null,
+        totalPinyinMs: 0,
+        fastestPinyinMs: null,
+        lastPinyinMs: null,
         lastOutcome: null,
         lastSeenAt: null,
         introducedAtOrdinal: 0,

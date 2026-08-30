@@ -4,7 +4,7 @@ export type LearningDeck = Pick<RuntimeDeck, "id" | "fingerprint"> & {
   words: ReadonlyArray<Pick<RuntimeDeck["words"][number], "id">>;
 };
 
-export type SpawnTier = "repair" | "learning" | "fallback";
+export type SpawnTier = "repair" | "learning" | "checkpoint" | "fallback";
 
 export type SpawnResult =
   | {
@@ -26,7 +26,7 @@ export type SpawnResult =
       };
     };
 
-export type LearningTransition = "levelCompleted" | "levelMasteryRegressed";
+export type LearningTransition = "levelCompleted" | "sectorCompleted" | "sectorMasteryRegressed";
 
 export type ReconciliationReport = {
   retained: number;
@@ -44,4 +44,6 @@ export type ProgressUpdate = {
   weightDelta: number;
   becameMastered: boolean;
   relapsed: boolean;
+  struggled: boolean;
+  repeatAfterPhrases: number;
 };

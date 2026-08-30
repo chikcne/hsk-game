@@ -3,7 +3,6 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import type { DeckCatalog } from "../../src/server/saves/manifests";
-import { migrateSave, UnsupportedSaveVersionError } from "../../src/server/saves/migrations";
 import {
   CorruptSaveError,
   RevisionConflictError,
@@ -153,16 +152,10 @@ describe("SaveRepository", () => {
   });
 });
 
-describe("save validation and migrations", () => {
-  it("preserves the source object while validating the current migration", () => {
-    const raw = { ...makeSnapshot(), revision: 4, savedAt: "2025-01-01T00:00:00.000Z" };
-    const before = structuredClone(raw);
-    expect(migrateSave(raw).revision).toBe(4);
-    expect(raw).toEqual(before);
-  });
-
-  it("rejects unknown versions", () => {
-    expect(() => migrateSave({ schemaVersion: 99 })).toThrow(UnsupportedSaveVersionError);
+describe("save validation", () => {
+  it("rejects unsupported save schema versions", () => {
+    const raw = { ...makeSnapshot(), schemaVersion: 1 };
+    expect(() => parseSaveSnapshot(raw)).toThrow();
   });
 
   it("enforces scheduler and counter invariants", () => {

@@ -1,5 +1,6 @@
-import type { LevelProgress, WordProgress } from "../../shared/schemas";
-import { drawCooldown, type RandomSource, Xoshiro128StarStar } from "../random";
+import { DEFAULT_SETTINGS } from "../../shared/constants";
+import type { DifficultySettings, LevelProgress, WordProgress } from "../../shared/schemas";
+import { type RandomSource, Xoshiro128StarStar } from "../random";
 import { ANTI_STARVATION_AGE, MAX_ELIGIBLE_AGE_BOOST } from "./constants";
 import { refillCurriculum } from "./curriculum";
 import type { LearningDeck, SpawnResult, SpawnTier } from "./types";
@@ -16,8 +17,7 @@ export function isEligible(progress: WordProgress, spawnOrdinal: number): boolea
 }
 
 export function eligibleAge(progress: WordProgress, spawnOrdinal: number): number {
-  const origin = progress.lastSpawnOrdinal ?? progress.introducedAtOrdinal ?? spawnOrdinal;
-  return Math.max(0, spawnOrdinal - origin - 25);
+  return Math.max(0, spawnOrdinal - progress.nextEligibleSpawn);
 }
 
 export function effectiveAppearanceWeight(progress: WordProgress, spawnOrdinal: number): number {
@@ -27,35 +27,66 @@ export function effectiveAppearanceWeight(progress: WordProgress, spawnOrdinal: 
 }
 
 function candidate(id: string, progress: WordProgress, ordinal: number): Candidate {
-  return {
-    id,
-    progress,
-    eligibleAge: eligibleAge(progress, ordinal),
-    effectiveWeight: effectiveAppearanceWeight(progress, ordinal),
-  };
+  return { id, progress, eligibleAge: eligibleAge(progress, ordinal), effectiveWeight: effectiveAppearanceWeight(progress, ordinal) };
 }
 
+/** Returns the highest-priority eligible tier. Older mastered words form a
+ * sector-only checkpoint tier and must all be answered before advancement. */
 export function eligibleTier(
   level: LevelProgress,
+  excludedWordIds: ReadonlySet<string> = new Set(),
 ): { tier: SpawnTier; candidates: Candidate[] } | null {
   const ordinal = level.nextSpawnOrdinal;
   const active = level.activeLearningWordIds.flatMap((id) => {
     const progress = level.words[id];
-    return progress === undefined || !isEligible(progress, ordinal)
-      ? []
-      : [candidate(id, progress, ordinal)];
+    return !progress || excludedWordIds.has(id) || !isEligible(progress, ordinal) ? [] : [candidate(id, progress, ordinal)];
   });
-
   const repair = active.filter((entry) => entry.progress.reinforcementRemaining > 0);
   if (repair.length > 0) return { tier: "repair", candidates: repair };
 
   const learning = active.filter((entry) => entry.progress.appearanceWeight > 1);
   if (learning.length > 0) return { tier: "learning", candidates: learning };
 
+  const current = new Set(level.currentLevelWordIds);
+  const reviewed = new Set(level.reviewedOlderWordIds);
+  const checkpoint = Object.entries(level.words).flatMap(([id, progress]) =>
+    !excludedWordIds.has(id) && !current.has(id) && !reviewed.has(id)
+      && progress.appearanceWeight === 1 && isEligible(progress, ordinal)
+      ? [candidate(id, progress, ordinal)] : [],
+  );
+  if (checkpoint.length > 0) return { tier: "checkpoint", candidates: checkpoint };
+
   const fallback = Object.entries(level.words).flatMap(([id, progress]) =>
-    progress.appearanceWeight === 1 && isEligible(progress, ordinal)
-      ? [candidate(id, progress, ordinal)]
-      : [],
+    !excludedWordIds.has(id) && progress.appearanceWeight === 1 && isEligible(progress, ordinal)
+      ? [candidate(id, progress, ordinal)] : [],
+  );
+  return fallback.length > 0 ? { tier: "fallback", candidates: fallback } : null;
+}
+
+function coolingTier(
+  level: LevelProgress,
+  excludedWordIds: ReadonlySet<string>,
+): { tier: SpawnTier; candidates: Candidate[] } | null {
+  const ordinal = level.nextSpawnOrdinal;
+  const active = level.activeLearningWordIds.flatMap((id) => {
+    const progress = level.words[id];
+    return !progress || excludedWordIds.has(id) ? [] : [candidate(id, progress, ordinal)];
+  });
+  const repair = active.filter((entry) => entry.progress.reinforcementRemaining > 0);
+  if (repair.length > 0) return { tier: "repair", candidates: repair };
+  if (active.length > 0) return { tier: "learning", candidates: active };
+
+  const current = new Set(level.currentLevelWordIds);
+  const reviewed = new Set(level.reviewedOlderWordIds);
+  const checkpoint = Object.entries(level.words).flatMap(([id, progress]) =>
+    !excludedWordIds.has(id) && !current.has(id) && !reviewed.has(id)
+      && progress.introducedAtOrdinal !== null && progress.appearanceWeight === 1
+      ? [candidate(id, progress, ordinal)] : [],
+  );
+  if (checkpoint.length > 0) return { tier: "checkpoint", candidates: checkpoint };
+  const fallback = Object.entries(level.words).flatMap(([id, progress]) =>
+    !excludedWordIds.has(id) && progress.introducedAtOrdinal !== null && progress.appearanceWeight === 1
+      ? [candidate(id, progress, ordinal)] : [],
   );
   return fallback.length > 0 ? { tier: "fallback", candidates: fallback } : null;
 }
@@ -67,44 +98,40 @@ function compareStableId(left: string, right: string): number {
 function chooseCandidate(candidates: Candidate[], rng: RandomSource): Candidate {
   const starved = candidates.filter((entry) => entry.eligibleAge >= ANTI_STARVATION_AGE);
   if (starved.length > 0) {
-    starved.sort(
-      (left, right) =>
-        right.eligibleAge - left.eligibleAge ||
-        right.progress.appearanceWeight - left.progress.appearanceWeight ||
-        compareStableId(left.id, right.id),
-    );
-    const selected = starved[0];
-    if (selected === undefined) throw new Error("Internal scheduler error: empty starvation tier");
-    return selected;
+    starved.sort((left, right) => right.eligibleAge - left.eligibleAge || right.progress.appearanceWeight - left.progress.appearanceWeight || compareStableId(left.id, right.id));
+    return starved[0]!;
   }
 
-  const total = candidates.reduce((sum, entry) => sum + entry.effectiveWeight, 0);
+  // Honor forced spacing before weighting: cards with the earliest due point
+  // are selected first, while ties retain a deterministic weighted lottery.
+  const earliestDue = Math.min(...candidates.map((entry) => entry.progress.nextEligibleSpawn));
+  const due = candidates.filter((entry) => entry.progress.nextEligibleSpawn === earliestDue);
+  const total = due.reduce((sum, entry) => sum + entry.effectiveWeight, 0);
   const unit = rng.nextUnit();
-  if (!Number.isFinite(unit) || unit < 0 || unit >= 1) {
-    throw new RangeError("RandomSource.nextUnit() must return a finite value in [0, 1)");
-  }
+  if (!Number.isFinite(unit) || unit < 0 || unit >= 1) throw new RangeError("RandomSource.nextUnit() must return a finite value in [0, 1)");
   let position = unit * total;
-  for (const entry of candidates) {
+  for (const entry of due) {
     if (position < entry.effectiveWeight) return entry;
     position -= entry.effectiveWeight;
   }
-  const selected = candidates[candidates.length - 1];
-  if (selected === undefined) throw new Error("Internal scheduler error: empty candidate tier");
-  return selected;
+  return due[due.length - 1]!;
 }
 
-/**
- * Selects and cooldowns one word. The returned level contains the consumed RNG state;
- * callers must persist it rather than reusing the input level.
- */
+/** Selects one regular-level word and reserves it against a simultaneous enemy.
+ * The final outcome replaces this reservation with its response-based interval. */
 export function spawnNextWord(
   sourceLevel: LevelProgress,
   deck: LearningDeck,
   sourceRng?: RandomSource,
+  settings: DifficultySettings = DEFAULT_SETTINGS,
+  excludedWordIds: ReadonlySet<string> = new Set(),
 ): SpawnResult {
   const level = refillCurriculum(sourceLevel, deck);
   const ordinal = level.nextSpawnOrdinal;
-  const selectedTier = eligibleTier(level);
+  // A small or completely missed pool can put every available card before its
+  // due point. Falling back to the earliest cooling card keeps the arcade from
+  // deadlocking; under ordinary load the due tier above remains authoritative.
+  const selectedTier = eligibleTier(level, excludedWordIds) ?? coolingTier(level, excludedWordIds);
   if (selectedTier === null) {
     const records = Object.values(level.words);
     return {
@@ -114,17 +141,14 @@ export function spawnNextWord(
       diagnostics: {
         activeCount: level.activeLearningWordIds.length,
         introducedCount: records.filter((progress) => progress.introducedAtOrdinal !== null).length,
-        coolingCount: records.filter(
-          (progress) =>
-            progress.introducedAtOrdinal !== null && progress.nextEligibleSpawn > ordinal,
-        ).length,
+        coolingCount: records.filter((progress) => progress.introducedAtOrdinal !== null && progress.nextEligibleSpawn > ordinal).length,
       },
     };
   }
 
   const rng = sourceRng ?? new Xoshiro128StarStar(level.schedulerRng);
   const selected = chooseCandidate(selectedTier.candidates, rng);
-  const cooldown = drawCooldown(rng);
+  const cooldown = settings.mistakeRepeatPhrases;
   const progress: WordProgress = {
     ...selected.progress,
     lastSpawnOrdinal: ordinal,
@@ -137,12 +161,5 @@ export function spawnNextWord(
     words: { ...level.words, [selected.id]: progress },
   };
 
-  return {
-    status: "spawned",
-    level: nextLevel,
-    wordId: selected.id,
-    spawnOrdinal: ordinal,
-    cooldown,
-    tier: selectedTier.tier,
-  };
+  return { status: "spawned", level: nextLevel, wordId: selected.id, spawnOrdinal: ordinal, cooldown, tier: selectedTier.tier };
 }

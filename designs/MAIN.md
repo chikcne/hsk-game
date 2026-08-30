@@ -148,7 +148,7 @@ Rules:
 │   │   └── random/                # seeded PRNG and truncated Gaussian
 │   ├── server/
 │   │   ├── routes/                # health/save endpoints
-│   │   ├── saves/                 # validation, migration, atomic repository
+│   │   ├── saves/                 # validation and atomic repository
 │   │   └── index.ts
 │   └── shared/                    # API schemas and cross-process constants
 ├── tools/
@@ -243,7 +243,7 @@ Browser sandboxing makes a repository-local Node API mandatory. The client check
 
 No active enemy positions need to survive a voluntary end-session action. Spawn ordinals, word cooldown eligibility, mastery, and PRNG state do survive, so ending and restarting cannot bypass the 10–25 intervening-spawn rule.
 
-See [`LEARNING_AND_SAVES.md`](LEARNING_AND_SAVES.md) for the schema and migration policy.
+See [`LEARNING_AND_SAVES.md`](LEARNING_AND_SAVES.md) for the current schema and persistence policy.
 
 ## 7. Quality gates
 

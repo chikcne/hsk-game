@@ -1,29 +1,26 @@
-import type { LevelProgress, WordProgress } from "../../shared/schemas";
+import { DEFAULT_SETTINGS } from "../../shared/constants";
+import type { DifficultySettings, LevelProgress, WordProgress } from "../../shared/schemas";
 import type { EncounterOutcome } from "../session/types";
-import { refillCurriculum } from "./curriculum";
+import { beginNextCurriculumLevel, refillCurriculum } from "./curriculum";
 import { isLiveMastered } from "./progress";
 import type { LearningDeck, LearningTransition, ProgressUpdate } from "./types";
 
 function finiteDuration(value: number, label: string): number {
-  if (!Number.isFinite(value) || value < 0) {
-    throw new RangeError(`${label} must be a finite nonnegative duration`);
-  }
+  if (!Number.isFinite(value) || value < 0) throw new RangeError(`${label} must be a finite nonnegative duration`);
   return value;
 }
 
 function outcomeThinkingMs(outcome: EncounterOutcome): number {
   switch (outcome.kind) {
-    case "correct":
-      return finiteDuration(outcome.pinyinMs, "pinyinMs") + finiteDuration(outcome.meaningMs, "meaningMs");
-    case "wrongPinyin":
-      return finiteDuration(outcome.pinyinMs, "pinyinMs");
-    case "wrongMeaning":
-      return finiteDuration(outcome.pinyinMs, "pinyinMs") + finiteDuration(outcome.meaningMs, "meaningMs");
-    case "landed":
-      return outcome.activeThinkingMs === null
-        ? 0
-        : finiteDuration(outcome.activeThinkingMs, "activeThinkingMs");
+    case "correct": return finiteDuration(outcome.pinyinMs, "pinyinMs") + finiteDuration(outcome.meaningMs, "meaningMs");
+    case "wrongPinyin": return finiteDuration(outcome.pinyinMs, "pinyinMs");
+    case "wrongMeaning": return finiteDuration(outcome.pinyinMs, "pinyinMs") + finiteDuration(outcome.meaningMs, "meaningMs");
+    case "landed": return outcome.activeThinkingMs === null ? 0 : finiteDuration(outcome.activeThinkingMs, "activeThinkingMs");
   }
+}
+
+export function outcomePinyinMs(outcome: EncounterOutcome): number | null {
+  return outcome.kind === "landed" ? null : finiteDuration(outcome.pinyinMs, "pinyinMs");
 }
 
 function isoTimestamp(now: string | Date): string {
@@ -32,37 +29,52 @@ function isoTimestamp(now: string | Date): string {
   return date.toISOString();
 }
 
-export function correctWeightDecrease(thinkingMs: number): number {
-  finiteDuration(thinkingMs, "thinkingMs");
-  const speedScore = Math.min(1, Math.max(0, (12_000 - thinkingMs) / 9_500));
-  return 4 + Math.round(12 * speedScore);
+/** Kept as a small public helper: mastery now uses pinyin time only. */
+export function correctWeightDecrease(
+  pinyinMs: number,
+  settings: Pick<DifficultySettings, "struggleThresholdMs" | "masteryCorrectDecrease"> = DEFAULT_SETTINGS,
+): number {
+  finiteDuration(pinyinMs, "pinyinMs");
+  return pinyinMs <= settings.struggleThresholdMs ? settings.masteryCorrectDecrease : 0;
 }
 
-/** Applies one resolved encounter to a word, without mutating the source record. */
+/** Number of intervening phrases before a correct card is due. With defaults a
+ * ten-second pinyin response is due ten phrases later. */
+export function correctRepeatInterval(
+  pinyinMs: number,
+  settings: Pick<DifficultySettings, "correctRepeatBasePhrases" | "pinyinSecondsPerPhrase" | "minimumCorrectRepeatPhrases"> = DEFAULT_SETTINGS,
+): number {
+  finiteDuration(pinyinMs, "pinyinMs");
+  return Math.max(
+    settings.minimumCorrectRepeatPhrases,
+    Math.round(settings.correctRepeatBasePhrases - (pinyinMs / 1000) * settings.pinyinSecondsPerPhrase),
+  );
+}
+
+/** Applies one regular-level result. Meaning response time is recorded for
+ * score/statistics, but never enters mastery or repeat timing. */
 export function applyOutcome(
   progress: WordProgress,
   outcome: EncounterOutcome,
   now: string | Date,
+  settings: DifficultySettings = DEFAULT_SETTINGS,
 ): ProgressUpdate {
   const thinkingMs = outcomeThinkingMs(outcome);
+  const pinyinMs = outcomePinyinMs(outcome);
   const oldWeight = progress.appearanceWeight;
+  const slowCorrect = outcome.kind === "correct" && pinyinMs !== null && pinyinMs > settings.struggleThresholdMs;
   let appearanceWeight: number;
   let reinforcementRemaining: number;
 
-  switch (outcome.kind) {
-    case "correct":
-      appearanceWeight = Math.max(1, oldWeight - correctWeightDecrease(thinkingMs));
-      reinforcementRemaining = Math.max(0, progress.reinforcementRemaining - 1);
-      break;
-    case "wrongPinyin":
-    case "wrongMeaning":
-      appearanceWeight = Math.min(100, oldWeight + 30);
-      reinforcementRemaining = 3;
-      break;
-    case "landed":
-      appearanceWeight = Math.min(100, oldWeight + 35);
-      reinforcementRemaining = 3;
-      break;
+  if (outcome.kind === "correct" && !slowCorrect) {
+    appearanceWeight = Math.max(1, oldWeight - settings.masteryCorrectDecrease);
+    reinforcementRemaining = Math.max(0, progress.reinforcementRemaining - 1);
+  } else if (outcome.kind === "correct") {
+    appearanceWeight = Math.min(100, oldWeight + settings.masteryStruggleIncrease);
+    reinforcementRemaining = settings.repairRepetitions;
+  } else {
+    appearanceWeight = Math.min(100, oldWeight + settings.masteryMistakeIncrease);
+    reinforcementRemaining = settings.repairRepetitions;
   }
   if (appearanceWeight === 1) reinforcementRemaining = 0;
 
@@ -77,20 +89,28 @@ export function applyOutcome(
     landed: progress.landed + (outcome.kind === "landed" ? 1 : 0),
     totalThinkingMs: progress.totalThinkingMs + thinkingMs,
     fastestCorrectMs: correct
-      ? progress.fastestCorrectMs === null
-        ? thinkingMs
-        : Math.min(progress.fastestCorrectMs, thinkingMs)
+      ? progress.fastestCorrectMs === null ? thinkingMs : Math.min(progress.fastestCorrectMs, thinkingMs)
       : progress.fastestCorrectMs,
+    totalPinyinMs: progress.totalPinyinMs + (pinyinMs ?? 0),
+    fastestPinyinMs: pinyinMs === null
+      ? progress.fastestPinyinMs
+      : progress.fastestPinyinMs === null ? pinyinMs : Math.min(progress.fastestPinyinMs, pinyinMs),
+    lastPinyinMs: pinyinMs,
     lastOutcome: outcome.kind,
     lastSeenAt: isoTimestamp(now),
-    reinforcementRemaining: reinforcementRemaining as 0 | 1 | 2 | 3,
+    reinforcementRemaining,
   };
+  const repeatAfterPhrases = outcome.kind === "correct"
+    ? correctRepeatInterval(outcome.pinyinMs, settings)
+    : settings.mistakeRepeatPhrases;
 
   return {
     progress: updated,
     weightDelta: appearanceWeight - oldWeight,
     becameMastered: oldWeight > 1 && appearanceWeight === 1,
     relapsed: oldWeight === 1 && appearanceWeight > 1,
+    struggled: slowCorrect || outcome.kind !== "correct",
+    repeatAfterPhrases,
   };
 }
 
@@ -98,46 +118,63 @@ export type LevelOutcomeResult = {
   level: LevelProgress;
   progress: WordProgress;
   transitions: LearningTransition[];
+  struggled: boolean;
+  repeatAfterPhrases: number;
 };
 
-/** Applies mastery, curriculum, relapse, and completion semantics as one immutable operation. */
+/** Applies mastery, fixed-level pools, older-word checkpoints, and advancement
+ * as one immutable operation. */
 export function applyOutcomeToLevel(
   level: LevelProgress,
   deck: LearningDeck,
   wordId: string,
   outcome: EncounterOutcome,
   now: string | Date,
+  settings: DifficultySettings = DEFAULT_SETTINGS,
 ): LevelOutcomeResult {
   const previous = level.words[wordId];
   if (previous === undefined) throw new Error(`Unknown word ID: ${wordId}`);
   const wasLiveMastered = isLiveMastered(level);
-  const update = applyOutcome(previous, outcome, now);
-
-  let active = level.activeLearningWordIds;
-  if (update.progress.appearanceWeight === 1) {
-    active = active.filter((id) => id !== wordId);
-  } else if (!active.includes(wordId)) {
-    // A mastered fallback lapse rejoins without evicting one of the 30 weak words.
-    active = [...active, wordId];
-  }
-
-  let next: LevelProgress = {
-    ...level,
-    words: { ...level.words, [wordId]: update.progress },
-    activeLearningWordIds: active,
+  const update = applyOutcome(previous, outcome, now, settings);
+  const progress = {
+    ...update.progress,
+    nextEligibleSpawn: level.nextSpawnOrdinal + update.repeatAfterPhrases,
   };
-  next = refillCurriculum(next, deck);
+
+  const currentIds = new Set(level.currentLevelWordIds);
+  const isIntroducedOlder = previous.introducedAtOrdinal !== null && !currentIds.has(wordId);
+  const reviewed = new Set(level.reviewedOlderWordIds);
+  if (isIntroducedOlder) reviewed.add(wordId);
+
+  const active = new Set(level.activeLearningWordIds);
+  if (progress.appearanceWeight === 1) active.delete(wordId);
+  else if (currentIds.has(wordId) || isIntroducedOlder) active.add(wordId);
+
+  let next: LevelProgress = refillCurriculum({
+    ...level,
+    words: { ...level.words, [wordId]: progress },
+    activeLearningWordIds: [...active],
+    reviewedOlderWordIds: [...reviewed],
+  }, deck);
 
   const transitions: LearningTransition[] = [];
-  const liveMastered = isLiveMastered(next);
-  if (liveMastered && !wasLiveMastered) {
-    if (next.firstCompletedAt === null) {
-      next = { ...next, firstCompletedAt: isoTimestamp(now) };
+  const olderIds = Object.entries(next.words)
+    .filter(([id, item]) => item.introducedAtOrdinal !== null && !next.currentLevelWordIds.includes(id))
+    .map(([id]) => id);
+  const levelPoolMastered = next.currentLevelWordIds.every((id) => next.words[id]?.appearanceWeight === 1)
+    && next.activeLearningWordIds.length === 0;
+  const olderChecked = olderIds.every((id) => next.reviewedOlderWordIds.includes(id));
+
+  if (levelPoolMastered && olderChecked) {
+    if (next.curriculumCursor < deck.words.length) {
+      next = beginNextCurriculumLevel(next, deck, settings.levelSize);
+      transitions.push("levelCompleted");
+    } else if (isLiveMastered(next) && (next.firstCompletedAt === null || !wasLiveMastered)) {
+      if (next.firstCompletedAt === null) next = { ...next, firstCompletedAt: isoTimestamp(now) };
+      transitions.push("sectorCompleted");
     }
-    transitions.push("levelCompleted");
-  } else if (!liveMastered && wasLiveMastered) {
-    transitions.push("levelMasteryRegressed");
   }
 
-  return { level: next, progress: update.progress, transitions };
+  if (level.firstCompletedAt !== null && wasLiveMastered && !isLiveMastered(next)) transitions.push("sectorMasteryRegressed");
+  return { level: next, progress, transitions, struggled: update.struggled, repeatAfterPhrases: update.repeatAfterPhrases };
 }

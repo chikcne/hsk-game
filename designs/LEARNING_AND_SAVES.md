@@ -328,17 +328,9 @@ A failed save does not stop play immediately, but the immutable latest snapshot 
 
 `pagehide`/beacon is only best effort. Routine checkpoints are the reliability mechanism.
 
-## 12. Loading, corruption, and migrations
+## 12. Loading, corruption, and deck reconciliation
 
-### Schema migrations
-
-Server owns pure, sequential save migrations:
-
-```text
-unknown JSON -> parse -> V1 validator -> current validator
-```
-
-Every migration has fixture tests and never mutates the source object in place.
+Only the current save schema is accepted. During development, incompatible save files should be deleted and recreated rather than migrated.
 
 ### Corrupt file
 

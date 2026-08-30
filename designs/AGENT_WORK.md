@@ -272,7 +272,7 @@ tests/server/api*.test.ts
 - single serialized/coalescing write queue.
 - exclusive temp write, flush, atomic rename, backup, directory sync where supported.
 - temp cleanup, corrupt quarantine, backup recovery.
-- V1 migration framework and fixtures.
+- Current-schema validation fixtures (development saves are reset on incompatible changes).
 - loopback binding and no profile/path traversal surface.
 - fault-injection tests at write stages.
 

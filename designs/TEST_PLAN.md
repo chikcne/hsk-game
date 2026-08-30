@@ -252,11 +252,10 @@ Use a temporary directory, never real `saves/`.
 
 Inject failures after temp open, partial write, flush, and before rename. Original valid save remains readable. Temp files are cleaned on startup. Successful rename leaves complete JSON with final newline.
 
-### Recovery/migration
+### Recovery/reconciliation
 
 - malformed main + valid backup recovers backup and reports it;
 - malformed main without backup is quarantined, not overwritten;
-- each schema fixture migrates deterministically;
 - deck fingerprint migration retains matching IDs, initializes new IDs, orphans removed IDs, and reports counts;
 - load-save-load round trip preserves scheduler RNG/cooldowns exactly.
 
