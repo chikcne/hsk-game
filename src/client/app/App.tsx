@@ -11,6 +11,7 @@ import { unlockSoundEffects } from "../audio/soundEffects";
 
 const deckLabel = (id: DeckId) => `HSK ${id.at(-1)}`;
 const masteredCount = (level?: LevelProgress) => level ? Object.values(level.words).filter((word) => word.appearanceWeight === 1).length : 0;
+const sectorActionLabel = (level?: LevelProgress) => level && level.nextSpawnOrdinal > 0 ? "CONTINUE" : "START";
 
 async function loadRuntimeDeck(id: DeckId): Promise<RuntimeDeck> {
   try {
@@ -192,11 +193,11 @@ function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, on
       return <button key={id} className={`deck-card ${active ? "selected" : ""} ${level?.firstCompletedAt ? "cleared" : ""}`} onFocus={() => onSelect(id)} onMouseEnter={() => onSelect(id)} onClick={() => void onDeploy(id)}>
         <div className="deck-title"><strong>HSK {index + 1}</strong><em>{level?.firstCompletedAt ? "✦ CLEARED" : `LEVEL ${levelNumber}/${levelTotal}`}</em></div>
         <div className="deck-meta"><span>WORDS MASTERED</span><b>{mastered} / {total}</b></div>
-        <div className="segment-bar"><i style={{ width: `${percent}%` }} /></div><div className="deploy">▸ {level ? "CONTINUE" : "DEPLOY"}</div>
+        <div className="segment-bar"><i style={{ width: `${percent}%` }} /></div><div className="deploy">▸ {sectorActionLabel(level)}</div>
       </button>;
     })}</section>
     <section className="review-launch"><div><small>ANKI-STYLE CROSS-SECTOR REVIEW</small><strong>{totalMastered} MASTERED WORDS READY</strong></div><button className="pink-button" disabled={totalMastered === 0} onClick={() => void onReview()}>START REVIEW</button></section>
-    <footer className="mission-strip"><div><small>NEXT MISSION</small><strong>{deckLabel(selected)} <span>•</span> DEFENSE GRID READY</strong></div><button onClick={() => void onDeploy(selected)}>DEPLOY <span>→</span></button></footer>
+    <footer className="mission-strip"><div><small>NEXT MISSION</small><strong>{deckLabel(selected)} <span>•</span> DEFENSE GRID READY</strong></div><button onClick={() => void onDeploy(selected)}>{sectorActionLabel(save.levels[selected])} <span>→</span></button></footer>
   </main>;
 }
 
