@@ -3,10 +3,20 @@ import { choiceShortcutForLabel, generateChoices } from "../../src/domain/sessio
 import { createDemoDeck } from "../../src/client/data/demoDeck";
 
 describe("meaning choices", () => {
-  it("uses the first content word after leading prepositions", () => {
+  it("uses the operative word after grammatical scaffolding", () => {
     expect(choiceShortcutForLabel("to drink")).toEqual({ key: "D", index: 3 });
+    expect(choiceShortcutForLabel("to get sick")).toEqual({ key: "S", index: 7 });
+    expect(choiceShortcutForLabel("to be afraid")).toEqual({ key: "A", index: 6 });
+    expect(choiceShortcutForLabel("to make a phone call")).toEqual({ key: "P", index: 10 });
+    expect(choiceShortcutForLabel("to keep warm")).toEqual({ key: "W", index: 8 });
+    expect(choiceShortcutForLabel("to fall in love")).toEqual({ key: "L", index: 11 });
     expect(choiceShortcutForLabel("from behind cover")).toEqual({ key: "C", index: 12 });
     expect(choiceShortcutForLabel("school")).toEqual({ key: "S", index: 0 });
+  });
+
+  it("falls back to a bare light verb within the first gloss", () => {
+    expect(choiceShortcutForLabel("to get")).toEqual({ key: "G", index: 3 });
+    expect(choiceShortcutForLabel("to get, to obtain")).toEqual({ key: "G", index: 3 });
     expect(choiceShortcutForLabel("to")).toEqual({ key: "T", index: 0 });
   });
 
