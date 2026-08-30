@@ -37,7 +37,13 @@ C = {
 MONO = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 MONO_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf"
 CJK = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
-CJK_BOLD = "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc"
+CJK_BOLD = "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"
+
+# Latin UI and pixel art are composed at the low logical resolution and scaled
+# with nearest-neighbour filtering. CJK glyphs are intentionally deferred and
+# rendered directly at output resolution so their strokes remain smooth and
+# readable, as required by UI_SPEC.md.
+_HIGH_RES_CJK: list[tuple[tuple[int, int], str, int, str, bool, str | None]] = []
 
 
 def font(size: int, bold: bool = False, cjk: bool = False) -> ImageFont.FreeTypeFont:
@@ -47,7 +53,10 @@ def font(size: int, bold: bool = False, cjk: bool = False) -> ImageFont.FreeType
 def txt(d: ImageDraw.ImageDraw, xy: tuple[int, int], value: str, size: int = 7,
         fill: str = C["white"], bold: bool = False, cjk: bool = False,
         anchor: str | None = None) -> None:
-    d.text(xy, value, font=font(size, bold, cjk), fill=fill, anchor=anchor,
+    if cjk:
+        _HIGH_RES_CJK.append((xy, value, size, fill, bold, anchor))
+        return
+    d.text(xy, value, font=font(size, bold, False), fill=fill, anchor=anchor,
            stroke_width=0)
 
 
@@ -100,21 +109,44 @@ def keycap(d: ImageDraw.ImageDraw, x: int, y: int, key: str, active: bool = Fals
 
 
 def alien(d: ImageDraw.ImageDraw, x: int, y: int, hanzi: str, active: bool = False,
-          danger: bool = False, small: bool = False) -> None:
-    w = 34 if not small else 29
+          danger: bool = False, small: bool = False, show_hanzi: bool = True) -> None:
+    glyph_size = 10 if small else 12
+    # Expand the cockpit to the measured character count instead of forcing
+    # multi-character words through the old one-glyph window. The generous
+    # vertical area keeps ascenders/descenders away from the saucer bezel.
+    glyph_count = max(1, len(hanzi))
+    screen_w = max(22 if small else 24, glyph_count * glyph_size + 8)
+    body_w = max(31 if small else 36, screen_w + 8)
+    screen_half = screen_w // 2
+    body_half = body_w // 2
+    screen_top = y - (13 if small else 15)
+    screen_bottom = y + 5
+    body_top = screen_bottom + 1
+    body_bottom = body_top + 7
+    leg_bottom = body_bottom + 5
     color = C["red"] if danger else C["pink"] if active else C["cyan"]
     if active:
-        d.rectangle((x - w // 2 - 4, y - 12, x + w // 2 + 4, y + 19), outline=C["orange"])
-        d.line((x - w // 2 - 4, y - 12, x - w // 2 + 1, y - 12), fill=C["white"])
-    # Antennae and cockpit.
-    d.line((x - 8, y - 7, x - 11, y - 11), fill=color)
-    d.line((x + 8, y - 7, x + 11, y - 11), fill=color)
-    d.rectangle((x - 10, y - 7, x + 10, y + 2), fill=C["panel2"], outline=color)
-    d.rectangle((x - w // 2, y + 2, x + w // 2, y + 9), fill=color)
-    d.rectangle((x - w // 2 + 4, y + 4, x + w // 2 - 4, y + 6), fill=C["panel"])
-    d.rectangle((x - 13, y + 10, x - 7, y + 13), fill=color)
-    d.rectangle((x + 7, y + 10, x + 13, y + 13), fill=color)
-    txt(d, (x, y - 2), hanzi, 12 if not small else 10, C["white"], True, True, "mm")
+        d.rectangle((x - body_half - 4, screen_top - 4,
+                     x + body_half + 4, leg_bottom + 4), outline=C["orange"])
+        d.line((x - body_half - 4, screen_top - 4,
+                x - body_half + 1, screen_top - 4), fill=C["white"])
+    # Antennae, enlarged character screen, and saucer body.
+    d.line((x - screen_half + 4, screen_top,
+            x - screen_half + 1, screen_top - 5), fill=color)
+    d.line((x + screen_half - 4, screen_top,
+            x + screen_half - 1, screen_top - 5), fill=color)
+    d.rectangle((x - screen_half, screen_top, x + screen_half, screen_bottom),
+                fill=C["panel2"], outline=color)
+    d.rectangle((x - body_half, body_top, x + body_half, body_bottom), fill=color)
+    d.rectangle((x - body_half + 4, body_top + 2,
+                 x + body_half - 4, body_top + 4), fill=C["panel"])
+    d.rectangle((x - body_half + 4, body_bottom + 1,
+                 x - body_half + 10, leg_bottom), fill=color)
+    d.rectangle((x + body_half - 10, body_bottom + 1,
+                 x + body_half - 4, leg_bottom), fill=color)
+    if show_hanzi:
+        txt(d, (x, (screen_top + screen_bottom) // 2), hanzi, glyph_size,
+            C["white"], True, True, "mm")
 
 
 def base(d: ImageDraw.ImageDraw, y: int = 195) -> None:
@@ -143,6 +175,7 @@ def hud(d: ImageDraw.ImageDraw, streak: str = "12", score: str = "018420",
 
 
 def new_canvas(seed: int, arena: bool = False) -> tuple[Image.Image, ImageDraw.ImageDraw]:
+    _HIGH_RES_CJK.clear()
     im = Image.new("RGB", (W, H), C["space"])
     d = ImageDraw.Draw(im)
     stars(d, seed, 0, 215 if arena else H)
@@ -151,8 +184,14 @@ def new_canvas(seed: int, arena: bool = False) -> tuple[Image.Image, ImageDraw.I
 
 
 def save(im: Image.Image, name: str, scale: int = SCALE) -> None:
-    im.resize((im.width * scale, im.height * scale), Image.Resampling.NEAREST).save(OUT / name,
-                                                                                 optimize=True)
+    output = im.resize((im.width * scale, im.height * scale), Image.Resampling.NEAREST)
+    high_res = ImageDraw.Draw(output)
+    for (x, y), value, size, fill, bold, anchor in _HIGH_RES_CJK:
+        high_res.text((x * scale, y * scale), value,
+                      font=font(size * scale, bold, True), fill=fill,
+                      anchor=anchor, stroke_width=0)
+    output.save(OUT / name, optimize=True)
+    _HIGH_RES_CJK.clear()
 
 
 def deck_select() -> None:
@@ -228,7 +267,7 @@ def battle_meaning() -> None:
     panel(d, (15, 222, 122, 287), C["space2"], C["line"])
     txt(d, (25, 231), "PINYIN CONFIRMED", 5, C["mint"], True)
     txt(d, (68, 249), "学习", 19, C["white"], True, True, "mm")
-    txt(d, (68, 266), "xuéxí  ♪", 8, C["cyan"], True, cjk=True, anchor="mm")
+    txt(d, (68, 266), "xuéxí  ♪", 8, C["cyan"], True, anchor="mm")
     txt(d, (68, 280), "SELECT MEANING", 5, C["orange"], True, anchor="mm")
     choices = [("A", "to practice"), ("S", "to explain"), ("D", "to study / learn"),
                ("F", "to prepare"), ("H", "a classroom"), ("J", "a question"),
@@ -252,18 +291,20 @@ def miss_feedback() -> None:
     im, d = new_canvas(44, True)
     hud(d, "00", "018668")
     # Danger beam and landed alien.
-    alien(d, 80, 72, "朋友")
-    alien(d, 352, 66, "水")
+    # These background enemies sit behind the later correction panel; omit
+    # their deferred glyph layer so it cannot draw over that foreground panel.
+    alien(d, 80, 72, "朋友", show_hanzi=False)
+    alien(d, 352, 66, "水", show_hanzi=False)
     d.polygon([(183, 108), (219, 108), (240, 199), (161, 199)], fill="#25132B")
     for x in range(166, 238, 9):
         d.line((201, 112, x, 196), fill=C["red"])
-    alien(d, 201, 181, "学习", danger=True)
+    alien(d, 201, 181, "学习", danger=True, show_hanzi=False)
     base(d)
     # Feedback overlay.
     panel(d, (91, 45, 389, 173), C["panel"], C["red"], C["red"])
     txt(d, (240, 61), "// SIGNAL BREACH //", 9, C["red"], True, anchor="mm")
     txt(d, (240, 84), "学习", 26, C["white"], True, True, "mm")
-    txt(d, (240, 105), "xuéxí", 10, C["cyan"], True, cjk=True, anchor="mm")
+    txt(d, (240, 105), "xuéxí", 10, C["cyan"], True, anchor="mm")
     txt(d, (240, 123), "TO STUDY; TO LEARN", 9, C["orange"], True, anchor="mm")
     d.line((110, 137, 370, 137), fill=C["line"])
     txt(d, (115, 151), "STREAK RESET", 6, C["muted"], True)
@@ -348,6 +389,7 @@ def settings() -> None:
 
 
 def mobile() -> None:
+    _HIGH_RES_CJK.clear()
     w, h = 240, 420
     im = Image.new("RGB", (w, h), C["space"])
     d = ImageDraw.Draw(im)
@@ -370,7 +412,7 @@ def mobile() -> None:
     d.rectangle((117, 213, 123, 224), fill=C["white"])
     panel(d, (5, 250, 235, 414), C["panel"], C["line"], C["mint"])
     txt(d, (15, 261), "学习", 15, C["white"], True, True)
-    txt(d, (58, 262), "xuéxí  ♪", 7, C["cyan"], True, cjk=True)
+    txt(d, (58, 262), "xuéxí  ♪", 7, C["cyan"], True)
     txt(d, (225, 262), "TAP A MEANING", 5, C["orange"], True, anchor="ra")
     choices = [("A", "to practice"), ("S", "to explain"), ("D", "to study / learn"),
                ("F", "to prepare"), ("H", "a classroom"), ("J", "a question"),

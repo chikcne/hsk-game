@@ -53,7 +53,7 @@ This document is the implementation authority. Supporting details live in:
 
 ## 2. Reference experience
 
-The PNGs are visual acceptance references rather than exact pixel-coordinate mandates. Implementations should match their hierarchy, palette, density, and state clarity.
+The PNGs are visual acceptance references rather than exact pixel-coordinate mandates. Implementations should match their hierarchy, palette, density, and state clarity. Their CJK glyphs are intentionally rendered at full output resolution over the low-resolution pixel-art layer; implementation agents must preserve that mixed-resolution treatment.
 
 | State | Reference |
 |---|---|

@@ -70,6 +70,8 @@ Configure Phaser:
 
 Use a 480×210 logical battle arena on desktop references; the React command panel occupies the rest of the viewport. World positions derive from normalized lane/progress, not DOM pixel measurements.
 
+**Mixed-resolution rule:** sprites, panels, particles, and Latin arcade labels may be drawn at logical resolution and nearest-neighbour scaled, but CJK text must not be baked into that low-resolution layer. Render every Hanzi at output/device resolution with an anti-aliased Noto/Fusion CJK font (for example a high-resolution Phaser Text overlay or synchronized DOM/canvas text layer). Enemy Hanzi should retain smooth, high-resolution strokes even while the saucer beneath it remains pixel art. The supplied mockups use this same split-rendering treatment.
+
 ## 3. Screen map
 
 ```text
@@ -156,7 +158,7 @@ Hanzi sizing by display length:
 | 5–7 | smaller single line if readable, otherwise two balanced lines |
 | >7 | fit within max box and mirror full text in command panel; never truncate semantically |
 
-The importer currently contains mostly short vocabulary, but layout must measure actual glyph bounds.
+The importer currently contains mostly short vocabulary, but layout must measure actual glyph bounds. The alien's dark character screen and saucer body expand with those measured bounds: keep at least 12 output pixels of horizontal padding and 8 output pixels of vertical padding around the CJK ink box. Antennae, screen borders, body bezels, targeting corners, and danger effects must remain outside that padded box—no alien graphic may cross or crop a character stroke.
 
 ### Base
 
