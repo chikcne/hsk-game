@@ -237,7 +237,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     playSoundEffect(feedback.kind === "correct" ? "blaster" : "buzzer", settings.masterVolume);
     if (outcome.kind === "wrongPinyin" || outcome.kind === "wrongMeaning") playWordAudio(word);
     setFeedback(feedback);
-    if (feedback.kind === "miss") {
+    if (feedback.kind !== "correct") {
       learningPausedRef.current = true; setLearningPaused(true);
     } else {
       window.setTimeout(() => setFeedback((item) => item?.id === enemy.id ? null : item), 1100);
@@ -338,7 +338,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const dismissFeedback = useCallback(() => {
     if (!learningPausedRef.current) return;
     learningPausedRef.current = false; setLearningPaused(false);
-    setFeedback((item) => item?.kind === "miss" ? null : item);
+    setFeedback((item) => item?.kind !== "correct" ? null : item);
     const now = performance.now();
     suspendedAt.current = null;
     phaseStarted.current = now; lastFrame.current = now;
