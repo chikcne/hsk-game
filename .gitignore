@@ -9,3 +9,5 @@ decks/*.apkg
 
 # Local player profiles and progress. Keep this directory on the machine only.
 /saves/
+/screenshots
+/.vite/deps
