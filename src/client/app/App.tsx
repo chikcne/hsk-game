@@ -237,7 +237,6 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
       if (paused || event.repeat || battle.phase !== "meaning") return;
       const key = event.key.toUpperCase();
       if (CHOICE_KEYS.includes(key as ChoiceKey)) battle.chooseMeaning(key as ChoiceKey);
-      else if (key === "R") battle.replay();
     };
     window.addEventListener("keydown", listener);
     return () => window.removeEventListener("keydown", listener);
@@ -261,7 +260,7 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
     <section className="arena"><GameCanvas enemies={enemyViews} targetId={battle.target?.id ?? null} /></section>
     <section className={`command-panel ${battle.phase}`} aria-label="Answer console"><div className="target-card"><small>{battle.phase === "meaning" ? "PINYIN CONFIRMED ✓" : battle.target ? "LOCKED TARGET" : "SCANNING"}</small><strong lang="zh-Hans">{battle.targetWord?.displayHanzi ?? "—"}</strong>{battle.phase === "meaning" && <span>{battle.targetWord?.displayPinyin}</span>}<em>{battle.target ? `ALTITUDE ${Math.max(0, Math.round((1 - battle.target.progress) * 100))}%` : "AWAITING SIGNAL"}</em></div>
       {battle.phase === "pinyin" ? <form className="pinyin-form" onSubmit={submit}><label htmlFor="pinyin">TYPE PINYIN — NO TONE MARKS</label><input id="pinyin" ref={input} value={pinyin} onChange={(event) => setPinyin(event.target.value)} onCompositionStart={() => setComposing(true)} onCompositionEnd={() => setComposing(false)} autoComplete="off" autoCapitalize="none" spellCheck={false} placeholder={battle.target ? "type answer…" : "waiting for target…"} disabled={!battle.target || paused || battle.learningPaused} /><div className="form-help"><span><kbd>ENTER</kbd> FIRE</span><span>ü = v</span><span><kbd>ESC</kbd> PAUSE</span></div></form>
-      : <div className="meaning-zone"><div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : "SELECT THE MEANING"}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ R REPLAY AUDIO</button></div><div className="meaning-grid">{battle.choices.map((choice) => <button key={choice.key} onClick={() => battle.chooseMeaning(choice.key)} disabled={battle.learningPaused}><kbd>{choice.key}</kbd><span>{choice.label}</span></button>)}</div></div>}
+      : <div className="meaning-zone"><div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : "PRESS THE HIGHLIGHTED FIRST LETTER"}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ REPLAY AUDIO</button></div><div className="meaning-grid">{battle.choices.map((choice) => <button key={choice.key} aria-label={`Press ${choice.key}: ${choice.label}`} onClick={() => battle.chooseMeaning(choice.key)} disabled={battle.learningPaused}><span className="meaning-label"><mark>{choice.label.charAt(0)}</mark>{choice.label.slice(1)}</span></button>)}</div></div>}
     </section>
     <div className="sr-live" aria-live="polite">{battle.targetWord ? `Target ${battle.targetWord.displayHanzi}. ${battle.phase === "pinyin" ? "Type pinyin" : "Choose meaning"}.` : "Waiting for target"}</div>
     {battle.feedback && <FeedbackNotice feedback={battle.feedback} onDismiss={battle.dismissFeedback} />}
@@ -279,7 +278,7 @@ function FeedbackNotice({ feedback, onDismiss }: { feedback: NonNullable<ReturnT
 }
 
 function PauseDialog({ onResume, onSettings, onEnd }: { onResume: () => void; onSettings: () => void; onEnd: () => void }) {
-  return <div className="modal-backdrop"><section className="pause-dialog" role="dialog" aria-modal="true" aria-labelledby="pause-title"><small>SIMULATION HALTED</small><h2 id="pause-title">PAUSED</h2><button autoFocus className="primary" onClick={onResume}>RESUME DEFENSE</button><button onClick={onSettings}>SYSTEM SETTINGS</button><button className="danger" onClick={onEnd}>END SESSION</button><p><kbd>ENTER</kbd> fire · <kbd>A S D F H J K L</kbd> meaning · <kbd>R</kbd> replay</p></section></div>;
+  return <div className="modal-backdrop"><section className="pause-dialog" role="dialog" aria-modal="true" aria-labelledby="pause-title"><small>SIMULATION HALTED</small><h2 id="pause-title">PAUSED</h2><button autoFocus className="primary" onClick={onResume}>RESUME DEFENSE</button><button onClick={onSettings}>SYSTEM SETTINGS</button><button className="danger" onClick={onEnd}>END SESSION</button><p><kbd>ENTER</kbd> fire · press a meaning's highlighted first letter</p></section></div>;
 }
 
 function NumberSetting({ label, value, min, max, step, suffix = "", onChange }: { label: string; value: number; min: number; max: number; step: number; suffix?: string; onChange: (value: number) => void }) {

@@ -1,6 +1,6 @@
 # Hanzi Defender
 
-A local-first arcade vocabulary game built from the six HSK Anki packages in `decks/`. Descending Hanzi share one speed; answer the closest invader with pinyin, then choose its English meaning using **A S D F H J K L**.
+A local-first arcade vocabulary game built from the six HSK Anki packages in `decks/`. Descending Hanzi share one speed; answer the closest invader with pinyin, then choose its English meaning by pressing that choice's highlighted first letter.
 
 ## Run
 
@@ -24,8 +24,8 @@ Progress is written atomically to the gitignored `saves/default.json`. If the lo
 ## Controls
 
 - **Enter** — submit pinyin
-- **A S D F H J K L** — select a meaning
-- **R** — replay word audio
+- **Highlighted first letter** — select a meaning (every choice starts with a different letter)
+- **Replay Audio button** — replay word audio
 - **Esc** — pause or resume
 - **1–6** — choose an HSK sector
 
