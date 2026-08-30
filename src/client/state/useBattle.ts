@@ -295,7 +295,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const chooseMeaning = (key: ChoiceKey) => {
     const enemy = targetRef.current;
     if (!enemy || phase !== "meaning" || pausedRef.current || learningPausedRef.current) return;
-    const choice = choices.find((item) => item.key === key); if (!choice) return;
+    const choice = choices.find((item) => item.shortcuts.some((shortcut) => shortcut.key === key)); if (!choice) return;
     const meaningMs = performance.now() - phaseStarted.current;
     resolveEnemy(enemy, choice.correct
       ? { kind: "correct", pinyinMs: meaningPinyinMs.current, meaningMs }

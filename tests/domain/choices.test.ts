@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { choiceShortcutForLabel, generateChoices } from "../../src/domain/session/choices";
+import { choiceShortcutForLabel, choiceShortcutsForLabel, generateChoices } from "../../src/domain/session/choices";
 import { createDemoDeck } from "../../src/client/data/demoDeck";
 
 describe("meaning choices", () => {
@@ -20,6 +20,17 @@ describe("meaning choices", () => {
     expect(choiceShortcutForLabel("to")).toEqual({ key: "T", index: 0 });
   });
 
+  it("creates a shortcut for every semicolon-separated meaning", () => {
+    expect(choiceShortcutsForLabel("to think; to want")).toEqual([
+      { key: "T", index: 3 },
+      { key: "W", index: 13 },
+    ]);
+    expect(choiceShortcutsForLabel("to get, to obtain; to be afraid")).toEqual([
+      { key: "G", index: 3 },
+      { key: "A", index: 25 },
+    ]);
+  });
+
   it("makes deterministic safe choices with distinct highlighted-letter shortcuts", () => {
     const deck = createDemoDeck("hsk-1");
     const first = generateChoices(deck, deck.words[0]!, "enemy-1");
@@ -29,11 +40,19 @@ describe("meaning choices", () => {
     expect(first).toHaveLength(8);
     expect(first.filter((choice) => choice.correct)).toHaveLength(1);
     expect(new Set(first.map((choice) => choice.label)).size).toBe(8);
-    expect(new Set(first.map((choice) => choice.key)).size).toBe(8);
     expect(first.filter((choice) => choice.label.startsWith("to ")).length).toBeGreaterThan(1);
+    const owners = new Map<string, string>();
     for (const choice of first) {
-      expect(choice.key).toBe(choice.label.charAt(choice.shortcutIndex).toUpperCase());
+      for (const shortcut of choice.shortcuts) {
+        expect(shortcut.key).toBe(choice.label.charAt(shortcut.index).toUpperCase());
+        const owner = owners.get(shortcut.key);
+        expect(owner === undefined || owner === choice.label).toBe(true);
+        owners.set(shortcut.key, choice.label);
+      }
     }
-    expect(first.find((choice) => choice.correct)).toMatchObject({ key: "S", shortcutIndex: 3 });
+    expect(first.find((choice) => choice.correct)?.shortcuts).toEqual([
+      { key: "S", index: 3 },
+      { key: "L", index: 13 },
+    ]);
   });
 });

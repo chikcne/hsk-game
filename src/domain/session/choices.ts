@@ -1,7 +1,7 @@
 import { CHOICE_KEYS, type ChoiceKey } from "../../shared/constants";
 import type { RuntimeDeck, RuntimeWord } from "../../shared/schemas";
 
-export type MeaningChoice = { key: ChoiceKey; label: string; shortcutIndex: number; correct: boolean };
+export type MeaningChoice = { shortcuts: MeaningShortcut[]; label: string; correct: boolean };
 
 const LEADING_PREPOSITIONS = new Set([
   "aboard", "about", "above", "across", "after", "against", "along", "amid", "among", "around", "as", "at",
@@ -33,12 +33,8 @@ function random(seed: number) {
   return () => ((state = Math.imul(state ^ (state >>> 15), 1 | state) + 0x6d2b79f5 | 0) >>> 0) / 4294967296;
 }
 
-/** Uses the operative word in the first gloss, skipping leading
- * prepositions, determiners, and light verbs. The returned index identifies
- * the exact letter the UI should highlight. */
-export function choiceShortcutForLabel(label: string): MeaningShortcut | null {
-  const firstGloss = label.split(/[,;/]/u, 1)[0]!;
-  const words = [...firstGloss.matchAll(/[A-Za-z]+(?:['’][A-Za-z]+)*/g)];
+function shortcutForGloss(gloss: string, offset: number): MeaningShortcut | null {
+  const words = [...gloss.matchAll(/[A-Za-z]+(?:['’][A-Za-z]+)*/g)];
   if (words.length === 0) return null;
 
   const isScaffolding = (word: RegExpMatchArray) => {
@@ -51,7 +47,28 @@ export function choiceShortcutForLabel(label: string): MeaningShortcut | null {
     ?? words.find((word) => !LEADING_PREPOSITIONS.has(word[0].toLowerCase()) && !LEADING_DETERMINERS.has(word[0].toLowerCase()))
     ?? words[0]!;
   const key = contentWord[0].charAt(0).toUpperCase();
-  return CHOICE_KEYS.includes(key as ChoiceKey) ? { key: key as ChoiceKey, index: contentWord.index! } : null;
+  return CHOICE_KEYS.includes(key as ChoiceKey) ? { key: key as ChoiceKey, index: offset + contentWord.index! } : null;
+}
+
+/** Returns one shortcut for each semicolon-separated meaning. Within each
+ * meaning, the operative word skips leading grammatical scaffolding. */
+export function choiceShortcutsForLabel(label: string): MeaningShortcut[] {
+  const shortcuts: MeaningShortcut[] = [];
+  let offset = 0;
+  for (const meaning of label.split(";")) {
+    // Commas and slashes are variants within a meaning, rather than additional
+    // meanings with their own shortcuts.
+    const firstGloss = meaning.split(/[,/]/u, 1)[0]!;
+    const shortcut = shortcutForGloss(firstGloss, offset);
+    if (shortcut) shortcuts.push(shortcut);
+    offset += meaning.length + 1;
+  }
+  return shortcuts;
+}
+
+/** Backwards-compatible primary shortcut for callers that need one key. */
+export function choiceShortcutForLabel(label: string): MeaningShortcut | null {
+  return choiceShortcutsForLabel(label)[0] ?? null;
 }
 
 export function choiceKeyForLabel(label: string): ChoiceKey | null {
@@ -69,22 +86,22 @@ export function generateChoices(deck: RuntimeDeck, word: RuntimeWord, seed: stri
   }
 
   const correctLabel = word.meaning.trim();
-  const correctShortcut = choiceShortcutForLabel(correctLabel);
-  if (!correctShortcut) throw new Error(`Meaning must contain A-Z: ${word.meaning}`);
+  const correctShortcuts = choiceShortcutsForLabel(correctLabel);
+  if (correctShortcuts.length === 0) throw new Error(`Meaning must contain A-Z: ${word.meaning}`);
 
-  const choices: MeaningChoice[] = [{ key: correctShortcut.key, label: correctLabel, shortcutIndex: correctShortcut.index, correct: true }];
-  const usedKeys = new Set<ChoiceKey>([correctShortcut.key]);
+  const choices: MeaningChoice[] = [{ shortcuts: correctShortcuts, label: correctLabel, correct: true }];
+  const usedKeys = new Set<ChoiceKey>(correctShortcuts.map((shortcut) => shortcut.key));
   for (const meaningKey of pool) {
     const label = (deck.meaningIndex[meaningKey]?.label ?? meaningKey).trim();
-    const shortcut = choiceShortcutForLabel(label);
-    if (!shortcut || usedKeys.has(shortcut.key)) continue;
-    choices.push({ key: shortcut.key, label, shortcutIndex: shortcut.index, correct: false });
-    usedKeys.add(shortcut.key);
+    const shortcuts = choiceShortcutsForLabel(label);
+    if (shortcuts.length === 0 || shortcuts.some((shortcut) => usedKeys.has(shortcut.key))) continue;
+    choices.push({ shortcuts, label, correct: false });
+    for (const shortcut of shortcuts) usedKeys.add(shortcut.key);
     if (choices.length === 8) break;
   }
 
   if (choices.length < 8) {
-    throw new Error(`Not enough meanings with distinct first letters for ${word.id}`);
+    throw new Error(`Not enough meanings with non-colliding shortcuts for ${word.id}`);
   }
   for (let i = choices.length - 1; i > 0; i -= 1) {
     const j = Math.floor(next() * (i + 1));
