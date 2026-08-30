@@ -13,7 +13,30 @@ export function canonicalizePinyin(value: string): string {
   return result;
 }
 
+function hasAtMostOneExtraLetter(answer: string, expected: string): boolean {
+  if (expected.length === 0) return false;
+  if (answer === expected) return true;
+  if (answer.length !== expected.length + 1) return false;
+
+  let answerIndex = 0;
+  let expectedIndex = 0;
+  let skipped = false;
+
+  while (answerIndex < answer.length && expectedIndex < expected.length) {
+    if (answer[answerIndex] === expected[expectedIndex]) {
+      answerIndex += 1;
+      expectedIndex += 1;
+      continue;
+    }
+    if (skipped) return false;
+    skipped = true;
+    answerIndex += 1;
+  }
+
+  return true;
+}
+
 export function acceptsPinyin(accepted: readonly string[], raw: string): boolean {
   const answer = canonicalizePinyin(raw);
-  return answer.length > 0 && accepted.includes(answer);
+  return answer.length > 0 && accepted.some((expected) => hasAtMostOneExtraLetter(answer, expected));
 }
