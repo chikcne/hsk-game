@@ -237,7 +237,12 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
       if (event.key === "Escape") { event.preventDefault(); paused ? onResume() : onPause(); return; }
       if (paused || event.repeat || battle.phase !== "meaning") return;
       const key = event.key.toUpperCase();
-      if (CHOICE_KEYS.includes(key as ChoiceKey)) battle.chooseMeaning(key as ChoiceKey);
+      if (CHOICE_KEYS.includes(key as ChoiceKey)) {
+        // Resolving the choice immediately focuses the next pinyin input. Prevent
+        // this keydown's default text insertion from following that focus change.
+        event.preventDefault();
+        battle.chooseMeaning(key as ChoiceKey);
+      }
     };
     window.addEventListener("keydown", listener);
     return () => window.removeEventListener("keydown", listener);
