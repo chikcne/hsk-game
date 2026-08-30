@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BASE_TRAVEL_MS, MAX_ACTIVE_ENEMIES, type ChoiceKey } from "../../shared/constants";
 import type { DifficultySettings, LevelProgress, ReviewProgress, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
 import { acceptsPinyin, canonicalizePinyin } from "../../domain/deck/pinyin";
-import { applyOutcomeToLevel, createLevelProgress, spawnNextWord } from "../../domain/learning";
+import { applyOutcomeToLevel, createLevelProgress, curriculumOrder, spawnNextWord } from "../../domain/learning";
 import { applyReviewOutcome, prepareReviewRound, spawnNextReviewWord } from "../../domain/review";
 import { randomStateFromSeed } from "../../domain/random";
 import { generateChoices, type MeaningChoice } from "../../domain/session/choices";
@@ -12,7 +12,7 @@ import { wordSpeedMultiplierFromAppearanceWeight } from "../../domain/session/sp
 import { selectLockedTarget } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
 import { playSoundEffect } from "../audio/soundEffects";
-import { WordAudioPlayer, wordAudioSource } from "../audio/wordAudio";
+import { audioPoolWordIds, WordAudioPlayer, wordAudioSource } from "../audio/wordAudio";
 
 export type Feedback = {
   id: string;
@@ -113,11 +113,19 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const pausedRef = useRef(paused); pausedRef.current = paused;
   const optionsRef = useRef(options); optionsRef.current = options;
   const suspendedAt = useRef<number | null>(null);
+  const curriculumIds = useMemo(
+    () => level ? curriculumOrder(deck, level.curriculumSeed) : [],
+    [deck, level?.curriculumSeed],
+  );
 
   const preloadRegularPool = useCallback((poolLevel: LevelProgress | null) => {
-    const pool = deck.words.filter((word) => typeof poolLevel?.words[word.id]?.introducedAtOrdinal === "number");
-    wordAudioPlayer.preload(pool.map((word) => wordAudioSource(deck.id, word)));
-  }, [deck.id, deck.words, wordAudioPlayer]);
+    if (!poolLevel) return;
+    const sources = audioPoolWordIds(poolLevel, curriculumIds).flatMap((id) => {
+      const word = words.get(id);
+      return word ? [wordAudioSource(deck.id, word)] : [];
+    });
+    wordAudioPlayer.preload(sources);
+  }, [curriculumIds, deck.id, wordAudioPlayer, words]);
   useEffect(() => {
     if (options.kind === "regular") preloadRegularPool(level);
     else wordAudioPlayer.preload(deck.words.map((word) => wordAudioSource(deck.id, word)));
