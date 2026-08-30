@@ -12,6 +12,7 @@ import { wordSpeedMultiplierFromAppearanceWeight } from "../../domain/session/sp
 import { selectLockedTarget } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
 import { playSoundEffect } from "../audio/soundEffects";
+import { WordAudioPlayer, wordAudioSource } from "../audio/wordAudio";
 
 export type Feedback = {
   id: string;
@@ -77,6 +78,7 @@ const initialStats = (mode: "regular" | "review"): SessionStats => ({
 export function useBattle(options: BattleOptions, settings: DifficultySettings, paused: boolean) {
   const { deck } = options;
   const words = useMemo(() => new Map(deck.words.map((word) => [word.id, word])), [deck]);
+  const wordAudioPlayer = useMemo(() => new WordAudioPlayer(), [deck.fingerprint]);
   const [level, setLevel] = useState<LevelProgress | null>(() => options.kind === "regular"
     ? options.initialLevel?.deckFingerprint === deck.fingerprint ? options.initialLevel : createLevel(deck, settings)
     : null);
@@ -111,6 +113,16 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const pausedRef = useRef(paused); pausedRef.current = paused;
   const optionsRef = useRef(options); optionsRef.current = options;
   const suspendedAt = useRef<number | null>(null);
+
+  const preloadRegularPool = useCallback((poolLevel: LevelProgress | null) => {
+    const pool = deck.words.filter((word) => typeof poolLevel?.words[word.id]?.introducedAtOrdinal === "number");
+    wordAudioPlayer.preload(pool.map((word) => wordAudioSource(deck.id, word)));
+  }, [deck.id, deck.words, wordAudioPlayer]);
+  useEffect(() => {
+    if (options.kind === "regular") preloadRegularPool(level);
+    else wordAudioPlayer.preload(deck.words.map((word) => wordAudioSource(deck.id, word)));
+  }, [deck.id, deck.words, level, options.kind, preloadRegularPool, wordAudioPlayer]);
+  useEffect(() => () => wordAudioPlayer.dispose(), [wordAudioPlayer]);
 
   const commitEnemies = useCallback((nextEnemies: Enemy[], now = performance.now()) => {
     const nextTarget = selectLockedTarget(nextEnemies, targetIdRef.current);
@@ -186,12 +198,12 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   }, []);
 
   const playWordAudio = useCallback((word: RuntimeWord) => {
-    if (!word.audioUrl) return;
-    const source = word.audioUrl.startsWith("/") ? word.audioUrl : `/game-data/${deck.id}/${word.audioUrl}`;
-    const audio = new Audio(source);
-    audio.volume = settings.masterVolume;
-    void audio.play().catch(() => setAudioError(true));
-  }, [deck.id, settings.masterVolume]);
+    const source = wordAudioSource(deck.id, word);
+    if (!source) return;
+    void wordAudioPlayer.play(source, settings.masterVolume)
+      .then(() => setAudioError(false))
+      .catch(() => setAudioError(true));
+  }, [deck.id, settings.masterVolume, wordAudioPlayer]);
 
   const updateWord = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     const word = words.get(enemy.wordId); if (!word) return;
@@ -209,6 +221,9 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       const current = levelRef.current; const previous = current?.words[word.id];
       if (!current || !previous) return;
       const result = applyOutcomeToLevel(current, deck, word.id, outcome, new Date(), settings);
+      // Level advancement introduces the next pool here. Start those requests
+      // synchronously so the next animation frame cannot spawn first.
+      preloadRegularPool(result.level);
       levelRef.current = result.level; setLevel(result.level);
       const levelsCompleted = result.transitions.filter((item) => item === "levelCompleted" || item === "sectorCompleted").length;
       updateSessionStats(word, outcome, pinyinMs, points, previous.appearanceWeight > 1 && result.progress.appearanceWeight === 1, result.struggled, null, levelsCompleted);
@@ -242,7 +257,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     } else {
       window.setTimeout(() => setFeedback((item) => item?.id === enemy.id ? null : item), 1100);
     }
-  }, [deck, playWordAudio, settings, updateSessionStats, words]);
+  }, [deck, playWordAudio, preloadRegularPool, settings, updateSessionStats, words]);
 
   const resolveEnemy = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     if (!enemiesRef.current.some((item) => item.id === enemy.id)) return;
