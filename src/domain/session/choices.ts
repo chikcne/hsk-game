@@ -50,18 +50,17 @@ function shortcutForGloss(gloss: string, offset: number): MeaningShortcut | null
   return CHOICE_KEYS.includes(key as ChoiceKey) ? { key: key as ChoiceKey, index: offset + contentWord.index! } : null;
 }
 
-/** Returns one shortcut for each semicolon-separated meaning. Within each
- * meaning, the operative word skips leading grammatical scaffolding. */
+/** Returns one shortcut for each comma- or semicolon-separated gloss.
+ * Within each gloss, the operative word skips leading grammatical scaffolding. */
 export function choiceShortcutsForLabel(label: string): MeaningShortcut[] {
   const shortcuts: MeaningShortcut[] = [];
   let offset = 0;
-  for (const meaning of label.split(";")) {
-    // Commas and slashes are variants within a meaning, rather than additional
-    // meanings with their own shortcuts.
-    const firstGloss = meaning.split(/[,/]/u, 1)[0]!;
-    const shortcut = shortcutForGloss(firstGloss, offset);
+  for (const gloss of label.split(/[;,]/u)) {
+    // Slashes remain variants within a gloss rather than additional shortcuts.
+    const firstVariant = gloss.split("/", 1)[0]!;
+    const shortcut = shortcutForGloss(firstVariant, offset);
     if (shortcut) shortcuts.push(shortcut);
-    offset += meaning.length + 1;
+    offset += gloss.length + 1;
   }
   return shortcuts;
 }

@@ -20,14 +20,19 @@ describe("meaning choices", () => {
     expect(choiceShortcutForLabel("to")).toEqual({ key: "T", index: 0 });
   });
 
-  it("creates a shortcut for every semicolon-separated meaning", () => {
+  it("creates a shortcut for every comma- or semicolon-separated gloss", () => {
     expect(choiceShortcutsForLabel("to think; to want")).toEqual([
       { key: "T", index: 3 },
       { key: "W", index: 13 },
     ]);
     expect(choiceShortcutsForLabel("to get, to obtain; to be afraid")).toEqual([
       { key: "G", index: 3 },
+      { key: "O", index: 11 },
       { key: "A", index: 25 },
+    ]);
+    expect(choiceShortcutsForLabel("cup, glass")).toEqual([
+      { key: "C", index: 0 },
+      { key: "G", index: 5 },
     ]);
   });
 
