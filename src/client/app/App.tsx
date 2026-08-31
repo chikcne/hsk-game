@@ -14,7 +14,7 @@ const masteredCount = (level?: LevelProgress) => level ? Object.values(level.wor
 const sectorActionLabel = (level?: LevelProgress) => level && level.nextSpawnOrdinal > 0 ? "CONTINUE" : "START";
 const LEVEL_HANZI = ["一", "二", "三", "四", "五", "六"] as const;
 const LEVEL_DESCRIPTIONS = ["基础词卷", "日常词卷", "进阶词卷", "长篇词卷", "高阶词卷", "通达词卷"] as const;
-const statusLabel = (status: string) => status === "saved" ? "进度已存" : status === "saving" ? "正在存卷" : status === "offline" ? "离线存卷" : "存卷有误";
+const statusLabel = (status: string) => status === "saved" ? "PROGRESS SAVED" : status === "saving" ? "SAVING PROGRESS" : status === "offline" ? "SAVED OFFLINE" : "SAVE ERROR";
 
 function useMobileLayout() {
   const [mobile, setMobile] = useState(() => typeof window !== "undefined" && window.matchMedia("(max-width: 599px)").matches);
@@ -347,21 +347,20 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
   });
   const levelIndex = battle.level?.currentLevelIndex ?? 0;
   const hudLabel = mode === "review" ? "REVIEW" : deckLabel(deck.id);
-  const levelLabel = battle.level ? `第${levelIndex + 1}课` : `${battle.stats.seen.size} REVIEWED`;
+  const levelLabel = battle.level ? `LESSON ${levelIndex + 1}` : `${battle.stats.seen.size} REVIEWED`;
   const solvedId = battle.feedback?.kind === "correct" ? battle.feedback.id : null;
 
   return <main className={`paper battle-screen ${battle.phase}-phase ${settings.reducedMotion ? "reduce-motion" : ""}`}>
     <header className="battle-hud">
-      <div className="hud-level"><span className="seal">{mode === "review" ? "习" : LEVEL_HANZI[Number(deck.id.at(-1)) - 1]}</span><p><b>{hudLabel}</b><small>{levelLabel} · {progressCount} / {total}</small></p></div>
+      <div className="hud-level"><span className="seal">{mode === "review" ? "R" : deck.id.at(-1)}</span><p><b>{hudLabel}</b><small>{levelLabel} · {progressCount} / {total}</small></p></div>
       <div className="hud-item"><small>SCORE</small><b>{battle.stats.score.toLocaleString()}</b></div>
-      <div className="hud-item"><small>STREAK · PRESSURE</small><b className="cinnabar">{battle.streak} 连 · {battle.performanceMultiplier.toFixed(2)}×</b></div>
-      <div className="hud-mastery"><small>{mode === "review" ? "本轮温故" : "本课习得"}</small><span><i style={{ width: `${total ? progressCount / total * 100 : 0}%` }} /></span><b>{progressCount} / {total}</b></div>
+      <div className="hud-item"><small>STREAK · PRESSURE</small><b className="cinnabar">{battle.streak} IN A ROW · {battle.performanceMultiplier.toFixed(2)}×</b></div>
+      <div className="hud-mastery"><small>{mode === "review" ? "REVIEW MASTERY" : "LESSON MASTERY"}</small><span><i style={{ width: `${total ? progressCount / total * 100 : 0}%` }} /></span><b>{progressCount} / {total}</b></div>
       <span className={`save-state ${saveStatus}`}><i /> {statusLabel(saveStatus)}</span>
       <button className="pause-button" onClick={onPause} aria-label="Pause game">Ⅱ</button>
     </header>
 
     <section className="practice-sheet" aria-hidden="true">
-      <span className="margin-note" aria-hidden="true">右起落墨 · 从右至左</span>
       <GameCanvas enemies={enemyViews} targetId={battle.target?.id ?? null} solvedId={solvedId} reducedMotion={settings.reducedMotion} />
     </section>
 
