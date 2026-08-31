@@ -6,7 +6,7 @@ export type EnemyView = Enemy & { word: RuntimeWord };
 
 /**
  * Phaser no longer rasterizes Hanzi or owns encounter layout. The production
- * field is rendered in semantic-adjacent DOM by GameCanvas so Noto Serif SC
+ * field is rendered in semantic-adjacent DOM by GameCanvas so the CJK font
  * remains crisp. This scene is retained as the home for future paper/ink
  * particle effects; it deliberately has no targetable game objects.
  */

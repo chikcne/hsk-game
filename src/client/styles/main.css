@@ -13,10 +13,10 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Noto Serif SC";
-  src: url("/fonts/NotoSerifSC-Variable.ttf") format("truetype-variations");
+  font-family: "AR PL UKai";
+  src: url("/fonts/ukai.ttc") format("collection");
   font-style: normal;
-  font-weight: 200 900;
+  font-weight: 400;
   font-display: swap;
 }
 
@@ -37,7 +37,7 @@
   --cinnabar: #a94332;
   --cinnabar-dark: #772f26;
   --jade: #476d61;
-  --serif-cjk: "Noto Serif SC", "Songti SC", "STSong", serif;
+  --serif-cjk: "AR PL UKai", "KaiTi", "STKaiti", serif;
   --ui: "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
 }
 
