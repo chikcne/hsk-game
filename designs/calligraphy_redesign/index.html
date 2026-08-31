@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calligraphy redesign mockups</title>
+  <style>
+    :root{color-scheme:dark;font-family:Inter,system-ui,sans-serif;background:#1d1c19;color:#eee8da}*{box-sizing:border-box}body{margin:0;padding:32px}header{max-width:1200px;margin:0 auto 28px}h1{font-size:clamp(28px,4vw,52px);margin:0 0 10px;font-weight:600}p{color:#aaa294}nav{display:flex;gap:10px;flex-wrap:wrap}a{color:#eee8da;text-decoration:none;border:1px solid #5e594f;padding:9px 13px;border-radius:999px}a:hover{border-color:#bf5845;color:#e99380}.gallery{max-width:1500px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:34px}.shot{margin:0;background:#292722;border:1px solid #444036;padding:12px}.shot img{display:block;width:100%;height:auto;background:#e8dec7}.shot.mobile{justify-self:center;width:min(100%,430px)}figcaption{padding:12px 3px 2px;color:#aaa294;font-size:13px;letter-spacing:.05em}.wide{grid-column:1/-1}@media(max-width:850px){body{padding:18px}.gallery{grid-template-columns:1fr}.wide{grid-column:auto}.shot.mobile{width:min(100%,430px)}}
+  </style>
+</head>
+<body>
+  <header><h1>Calligraphy redesign</h1><p>Responsive menu and gameplay direction for Hanzi Defender.</p><nav><a href="menu.html">Open menu prototype</a><a href="gameplay.html">Open gameplay prototype</a><a href="README.md">Read overview</a><a href="IMPLEMENTATION_HANDOFF.md">Implementation handoff</a></nav></header>
+  <section class="gallery">
+    <figure class="shot wide"><img src="desktop-menu.png" alt="Desktop calligraphy menu mockup"><figcaption>Desktop · menu · 1440 × 900</figcaption></figure>
+    <figure class="shot mobile"><img src="mobile-menu.png" alt="Mobile calligraphy menu mockup"><figcaption>Mobile · menu · 390 × 844</figcaption></figure>
+    <figure class="shot wide"><img src="desktop-gameplay.png" alt="Desktop calligraphy gameplay mockup"><figcaption>Desktop · gameplay · 12 columns</figcaption></figure>
+    <figure class="shot mobile"><img src="mobile-gameplay.png" alt="Mobile calligraphy gameplay mockup"><figcaption>Mobile · gameplay · 6 columns and custom keyboard</figcaption></figure>
+  </section>
+</body>
+</html>

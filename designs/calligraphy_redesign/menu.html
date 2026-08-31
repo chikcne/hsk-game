@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Calligraphy redesign — menu mockup</title>
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+  <main class="paper menu-page">
+    <div class="safe-area"><span>9:41</span><i class="camera-pill"></i></div>
+    <button class="settings" aria-label="Settings">设</button>
+
+    <header class="menu-masthead">
+      <div class="brand-mark" lang="zh-Hans">字</div>
+      <div>
+        <p>HANZI DEFENDER · 习字守卷</p>
+        <h1>择卷而习</h1>
+      </div>
+      <div class="folio">LOCAL—01<br><span>卷一 · 第四课</span></div>
+    </header>
+
+    <div class="indigo-rule" aria-hidden="true"><i></i></div>
+
+    <section class="scroll-menu" aria-label="Choose a mission or review">
+      <button class="scroll-column mission active" data-label="HSK 2 · 第四课">
+        <span class="column-kicker">NEXT MISSION</span>
+        <strong lang="zh-Hans">续习</strong>
+        <em>HSK 2 · 第四课</em>
+        <span class="progress"><i style="--progress: 46%"></i></span>
+        <span class="count">18 / 40</span>
+        <span class="seal action-seal">开始</span>
+      </button>
+
+      <button class="scroll-column level complete" data-label="HSK 1">
+        <span class="column-kicker">HSK 01</span>
+        <strong lang="zh-Hans">一级</strong>
+        <em>基础词卷</em>
+        <span class="progress"><i style="--progress: 100%"></i></span>
+        <span class="count">300 / 300</span>
+        <span class="seal mini-seal">成</span>
+      </button>
+
+      <button class="scroll-column level selected" data-label="HSK 2">
+        <span class="column-kicker">HSK 02</span>
+        <strong lang="zh-Hans">二级</strong>
+        <em>日常词卷</em>
+        <span class="progress"><i style="--progress: 46%"></i></span>
+        <span class="count">92 / 200</span>
+        <span class="selection-brush" aria-hidden="true"></span>
+      </button>
+
+      <button class="scroll-column level" data-label="HSK 3">
+        <span class="column-kicker">HSK 03</span>
+        <strong lang="zh-Hans">三级</strong>
+        <em>进阶词卷</em>
+        <span class="progress"><i style="--progress: 24%"></i></span>
+        <span class="count">120 / 500</span>
+      </button>
+
+      <button class="scroll-column level" data-label="HSK 4">
+        <span class="column-kicker">HSK 04</span>
+        <strong lang="zh-Hans">四级</strong>
+        <em>长篇词卷</em>
+        <span class="progress"><i style="--progress: 8%"></i></span>
+        <span class="count">80 / 1000</span>
+      </button>
+
+      <button class="scroll-column level" data-label="HSK 5">
+        <span class="column-kicker">HSK 05</span>
+        <strong lang="zh-Hans">五级</strong>
+        <em>高阶词卷</em>
+        <span class="progress"><i style="--progress: 0%"></i></span>
+        <span class="count">0 / 1600</span>
+      </button>
+
+      <button class="scroll-column level" data-label="HSK 6">
+        <span class="column-kicker">HSK 06</span>
+        <strong lang="zh-Hans">六级</strong>
+        <em>通达词卷</em>
+        <span class="progress"><i style="--progress: 0%"></i></span>
+        <span class="count">0 / 1798</span>
+      </button>
+
+      <button class="scroll-column review" data-label="Cross-sector review">
+        <span class="column-kicker">REVIEW</span>
+        <strong lang="zh-Hans">温故</strong>
+        <em>跨卷复习</em>
+        <span class="progress"><i style="--progress: 62%"></i></span>
+        <span class="count">186 待复习</span>
+        <span class="seal action-seal">习</span>
+      </button>
+    </section>
+
+    <footer class="menu-footer">
+      <p><span class="ink-dot"></span><b>进度已存</b> · JUST NOW</p>
+      <p class="current-choice">续习 · HSK 2 · 第四课</p>
+      <p>点击 / ENTER 进入</p>
+    </footer>
+  </main>
+  <script src="prototype.js"></script>
+</body>
+</html>

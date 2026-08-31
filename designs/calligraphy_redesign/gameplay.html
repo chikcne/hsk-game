@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Calligraphy redesign — gameplay mockup</title>
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="gameplay.css" />
+</head>
+<body>
+  <main class="paper game-page">
+    <div class="safe-area"><span>9:41</span><i class="camera-pill"></i></div>
+
+    <header class="game-hud">
+      <div class="hud-level"><span class="seal">二</span><p><b>HSK 2</b><small>第四课 · 18 / 40</small></p></div>
+      <div class="hud-item"><small>SCORE</small><b>12,840</b></div>
+      <div class="hud-item"><small>STREAK</small><b class="cinnabar">九连</b></div>
+      <div class="hud-mastery"><small>本课习得</small><span><i></i></span><b>18 / 40</b></div>
+      <div class="saved"><i></i> 已存</div>
+      <button class="pause" aria-label="Pause">Ⅱ</button>
+    </header>
+
+    <section class="practice-sheet" aria-label="Descending calligraphy columns">
+      <div class="margin-note top-note" aria-hidden="true"></div>
+      <div class="lanes">
+        <div class="lane"><div class="phrase solved" style="--y:61%"><span>朋</span><span>友</span></div></div>
+        <div class="lane"></div>
+        <div class="lane"><div class="phrase" style="--y:47%"><span>老</span><span>师</span></div></div>
+        <div class="lane"></div>
+        <div class="lane"><div class="phrase" style="--y:34%"><span>学</span><span>习</span></div></div>
+        <div class="lane"><div class="phrase" style="--y:21%"><span>天</span><span>气</span></div></div>
+        <div class="lane"><div class="phrase solved late" style="--y:58%"><span>再</span><span>见</span></div></div>
+        <div class="lane"><div class="phrase" style="--y:43%"><span>今</span><span>天</span></div></div>
+        <div class="lane"><div class="phrase" style="--y:31%"><span>喝</span><span>茶</span></div></div>
+        <div class="lane"><div class="phrase" style="--y:19%"><span>中</span><span>国</span></div></div>
+        <div class="lane"><div class="phrase danger" style="--y:8%"><span>喜</span><span>欢</span></div></div>
+        <div class="lane active-lane"><div class="phrase writing" style="--y:1%"><span style="--fill:72%">你</span><span style="--fill:38%">好</span></div><b class="active-mark">当前</b></div>
+      </div>
+      <div class="fall-line"><span>落卷线</span></div>
+    </section>
+
+    <section class="answer-area" aria-label="Pinyin answer">
+      <p>为右上字词输入拼音 <span>·</span> TYPE PINYIN</p>
+      <div class="typed-answer" aria-label="Typed answer">niha<span class="caret"></span></div>
+      <div class="answer-help"><span>ü = v</span><span>ENTER 确认</span><span>ESC 暂停</span></div>
+    </section>
+
+    <section class="touch-keyboard" aria-label="Custom QWERTY keyboard">
+      <div class="key-row row-1">
+        <button><span>Q</span></button><button><span>W</span></button><button><span>E</span></button><button><span>R</span></button><button><span>T</span></button><button><span>Y</span></button><button><span>U</span></button><button><span>I</span></button><button><span>O</span></button><button><span>P</span></button>
+      </div>
+      <div class="key-row row-2">
+        <button><span>A</span></button><button><span>S</span></button><button><span>D</span></button><button><span>F</span></button><button><span>G</span></button><button><span>H</span></button><button><span>J</span></button><button><span>K</span></button><button><span>L</span></button>
+      </div>
+      <div class="key-row row-3">
+        <button><span>Z</span></button><button><span>X</span></button><button><span>C</span></button><button><span>V</span></button><button class="pressed"><i aria-hidden="true">B</i><span>B</span></button><button><span>N</span></button><button><span>M</span></button>
+      </div>
+      <div class="key-row row-4">
+        <button class="backspace"><span>⌫</span></button><button class="enter"><span>SUBMIT</span></button>
+      </div>
+    </section>
+  </main>
+  <script src="prototype.js"></script>
+</body>
+</html>
