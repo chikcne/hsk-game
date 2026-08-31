@@ -2,11 +2,17 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BASE_TRAVEL_MS, DANGER_ZONE_PROGRESS, MAX_ACTIVE_ENEMIES, type ChoiceKey } from "../../shared/constants";
 import type { DifficultySettings, LevelProgress, ReviewProgress, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
 import { acceptsPinyin, canonicalizePinyin } from "../../domain/deck/pinyin";
-import { applyOutcomeToLevel, createLevelProgress, curriculumOrder, spawnNextWord } from "../../domain/learning";
+import {
+  applyOutcomeToLevel,
+  createLevelProgress,
+  curriculumOrder,
+  spawnNextWord,
+  ZERO_MASTERY_APPEARANCE_WEIGHT,
+} from "../../domain/learning";
 import { applyReviewOutcome, prepareReviewRound, spawnNextReviewWord } from "../../domain/review";
 import { randomStateFromSeed } from "../../domain/random";
 import { generateChoices, type MeaningChoice } from "../../domain/session/choices";
-import { calculatePoints } from "../../domain/session/scoring";
+import { calculatePoints, nextStreak } from "../../domain/session/scoring";
 import {
   EMPTY_BATTLEFIELD_SPAWN_DELAY_MS,
   nextPerformanceMultiplier,
@@ -186,8 +192,8 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     return () => document.removeEventListener("visibilitychange", visibility);
   }, [settings.spawnIntervalMs]);
 
-  const updateSessionStats = useCallback((word: RuntimeWord, outcome: EncounterOutcome, pinyinMs: number, points: number, newlyMastered: boolean, struggled: boolean, recallScore: number | null, levelsCompleted: number) => {
-    const nowStreak = outcome.kind === "correct" ? streakRef.current + 1 : 0;
+  const updateSessionStats = useCallback((word: RuntimeWord, outcome: EncounterOutcome, pinyinMs: number, points: number, newlyMastered: boolean, struggled: boolean, recallScore: number | null, levelsCompleted: number, protectsMiss: boolean) => {
+    const nowStreak = nextStreak(streakRef.current, outcome.kind === "correct", protectsMiss);
     setStreak(nowStreak);
     setStats((old) => {
       const seen = new Set(old.seen).add(word.id);
@@ -256,17 +262,19 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       )
       : 0;
     let feedback: Feedback;
+    let protectsMiss = false;
 
     if (config.kind === "regular") {
       const current = levelRef.current; const previous = current?.words[word.id];
       if (!current || !previous) return;
+      protectsMiss = outcome.kind !== "correct" && previous.appearanceWeight === ZERO_MASTERY_APPEARANCE_WEIGHT;
       const result = applyOutcomeToLevel(current, deck, word.id, outcome, new Date(), settings);
       // Level advancement introduces the next pool here. Start those requests
       // synchronously so the next animation frame cannot spawn first.
       preloadRegularPool(result.level);
       levelRef.current = result.level; setLevel(result.level);
       const levelsCompleted = result.transitions.filter((item) => item === "levelCompleted" || item === "sectorCompleted").length;
-      updateSessionStats(word, outcome, pinyinMs, points, previous.appearanceWeight > 1 && result.progress.appearanceWeight === 1, result.struggled, null, levelsCompleted);
+      updateSessionStats(word, outcome, pinyinMs, points, previous.appearanceWeight > 1 && result.progress.appearanceWeight === 1, result.struggled, null, levelsCompleted, protectsMiss);
       config.onChange(result.level, outcome, points);
       feedback = {
         id: enemy.id, kind: outcome.kind === "correct" ? "correct" : outcome.kind === "landed" ? "landed" : "miss",
@@ -278,7 +286,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       const pinyinLength = Math.max(1, canonicalizePinyin(word.acceptedPinyin[0] ?? word.displayPinyin).length);
       const result = applyReviewOutcome(current, word.id, outcome, pinyinLength, new Date(), settings);
       reviewRef.current = result.review; setReview(result.review); setReviewComplete(false);
-      updateSessionStats(word, outcome, pinyinMs, points, false, result.struggled, result.recallScoreMsPerChar, 0);
+      updateSessionStats(word, outcome, pinyinMs, points, false, result.struggled, result.recallScoreMsPerChar, 0, false);
       config.onChange(result.review, outcome, points);
       feedback = {
         id: enemy.id, kind: outcome.kind === "correct" ? "correct" : outcome.kind === "landed" ? "landed" : "miss",
@@ -287,7 +295,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       };
     }
 
-    const nowStreak = outcome.kind === "correct" ? streakRef.current + 1 : 0;
+    const nowStreak = nextStreak(streakRef.current, outcome.kind === "correct", protectsMiss);
     streakRef.current = nowStreak;
 
     const nextMultiplier = nextPerformanceMultiplier(
@@ -338,7 +346,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       if (result.status !== "spawned") return;
       levelRef.current = result.level; setLevel(result.level); config.onChange(result.level);
       wordId = result.wordId; ordinal = result.spawnOrdinal;
-      appearanceWeight = result.level.words[wordId]?.appearanceWeight ?? 100;
+      appearanceWeight = result.level.words[wordId]?.appearanceWeight ?? ZERO_MASTERY_APPEARANCE_WEIGHT;
     } else {
       const current = reviewRef.current; if (!current) return;
       const result = spawnNextReviewWord(current, config.masteredWordKeys, excluded, undefined, settings);
@@ -357,6 +365,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       wordId,
       progress: 0,
       speedMultiplier: wordSpeedMultiplierFromAppearanceWeight(appearanceWeight),
+      isNewWord: config.kind === "regular" && appearanceWeight === ZERO_MASTERY_APPEARANCE_WEIGHT,
       lane,
       spawnOrdinal: ordinal,
       status: "descending",

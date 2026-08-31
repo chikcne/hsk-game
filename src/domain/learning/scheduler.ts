@@ -30,8 +30,8 @@ function candidate(id: string, progress: WordProgress, ordinal: number): Candida
   return { id, progress, eligibleAge: eligibleAge(progress, ordinal), effectiveWeight: effectiveAppearanceWeight(progress, ordinal) };
 }
 
-/** Returns the highest-priority eligible tier. Older mastered words form a
- * sector-only checkpoint tier and must all be answered before advancement. */
+/** Returns the highest-priority eligible tier. Repair words stay urgent;
+ * ordinary learning mixes practiced and completely new words. */
 export function eligibleTier(
   level: LevelProgress,
   excludedWordIds: ReadonlySet<string> = new Set(),
@@ -46,15 +46,6 @@ export function eligibleTier(
 
   const learning = active.filter((entry) => entry.progress.appearanceWeight > 1);
   if (learning.length > 0) return { tier: "learning", candidates: learning };
-
-  const current = new Set(level.currentLevelWordIds);
-  const reviewed = new Set(level.reviewedOlderWordIds);
-  const checkpoint = Object.entries(level.words).flatMap(([id, progress]) =>
-    !excludedWordIds.has(id) && !current.has(id) && !reviewed.has(id)
-      && progress.appearanceWeight === 1 && isEligible(progress, ordinal)
-      ? [candidate(id, progress, ordinal)] : [],
-  );
-  if (checkpoint.length > 0) return { tier: "checkpoint", candidates: checkpoint };
 
   const fallback = Object.entries(level.words).flatMap(([id, progress]) =>
     !excludedWordIds.has(id) && progress.appearanceWeight === 1 && isEligible(progress, ordinal)
@@ -76,14 +67,6 @@ function coolingTier(
   if (repair.length > 0) return { tier: "repair", candidates: repair };
   if (active.length > 0) return { tier: "learning", candidates: active };
 
-  const current = new Set(level.currentLevelWordIds);
-  const reviewed = new Set(level.reviewedOlderWordIds);
-  const checkpoint = Object.entries(level.words).flatMap(([id, progress]) =>
-    !excludedWordIds.has(id) && !current.has(id) && !reviewed.has(id)
-      && progress.introducedAtOrdinal !== null && progress.appearanceWeight === 1
-      ? [candidate(id, progress, ordinal)] : [],
-  );
-  if (checkpoint.length > 0) return { tier: "checkpoint", candidates: checkpoint };
   const fallback = Object.entries(level.words).flatMap(([id, progress]) =>
     !excludedWordIds.has(id) && progress.introducedAtOrdinal !== null && progress.appearanceWeight === 1
       ? [candidate(id, progress, ordinal)] : [],
@@ -95,26 +78,39 @@ function compareStableId(left: string, right: string): number {
   return left < right ? -1 : left > right ? 1 : 0;
 }
 
-function chooseCandidate(candidates: Candidate[], rng: RandomSource): Candidate {
+function chooseCandidate(candidates: Candidate[], rng: RandomSource, tier: SpawnTier): Candidate {
   const starved = candidates.filter((entry) => entry.eligibleAge >= ANTI_STARVATION_AGE);
   if (starved.length > 0) {
     starved.sort((left, right) => right.eligibleAge - left.eligibleAge || right.progress.appearanceWeight - left.progress.appearanceWeight || compareStableId(left.id, right.id));
     return starved[0]!;
   }
 
-  // Honor forced spacing before weighting: cards with the earliest due point
-  // are selected first, while ties retain a deterministic weighted lottery.
-  const earliestDue = Math.min(...candidates.map((entry) => entry.progress.nextEligibleSpawn));
-  const due = candidates.filter((entry) => entry.progress.nextEligibleSpawn === earliestDue);
-  const total = due.reduce((sum, entry) => sum + entry.effectiveWeight, 0);
+  let weighted = candidates.map((entry) => ({ entry, weight: entry.effectiveWeight }));
+  if (tier === "learning") {
+    const practicedTotal = candidates.reduce((sum, entry) => sum + (entry.progress.attempts > 0 ? entry.effectiveWeight : 0), 0);
+    const newTotal = candidates.reduce((sum, entry) => sum + (entry.progress.attempts === 0 ? entry.effectiveWeight : 0), 0);
+    if (practicedTotal > 0 && newTotal > 0) {
+      // At pool level, practiced-but-unmastered words receive 55% of ordinary
+      // learning spawns and completely new words receive 45%. Their mastery
+      // weights still decide selection within each group.
+      weighted = candidates.map((entry) => ({
+        entry,
+        weight: entry.progress.attempts > 0
+          ? 0.55 * entry.effectiveWeight / practicedTotal
+          : 0.45 * entry.effectiveWeight / newTotal,
+      }));
+    }
+  }
+
+  const total = weighted.reduce((sum, item) => sum + item.weight, 0);
   const unit = rng.nextUnit();
   if (!Number.isFinite(unit) || unit < 0 || unit >= 1) throw new RangeError("RandomSource.nextUnit() must return a finite value in [0, 1)");
   let position = unit * total;
-  for (const entry of due) {
-    if (position < entry.effectiveWeight) return entry;
-    position -= entry.effectiveWeight;
+  for (const item of weighted) {
+    if (position < item.weight) return item.entry;
+    position -= item.weight;
   }
-  return due[due.length - 1]!;
+  return weighted[weighted.length - 1]!.entry;
 }
 
 /** Selects one regular-level word and reserves it against a simultaneous enemy.
@@ -147,7 +143,7 @@ export function spawnNextWord(
   }
 
   const rng = sourceRng ?? new Xoshiro128StarStar(level.schedulerRng);
-  const selected = chooseCandidate(selectedTier.candidates, rng);
+  const selected = chooseCandidate(selectedTier.candidates, rng, selectedTier.tier);
   const cooldown = settings.mistakeRepeatPhrases;
   const progress: WordProgress = {
     ...selected.progress,

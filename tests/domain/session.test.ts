@@ -5,7 +5,7 @@ import {
   wordSpeedMultiplierFromAppearanceWeight,
 } from "../../src/domain/session/speed";
 import { selectLockedTarget, soonestLandingEnemy } from "../../src/domain/session/targeting";
-import { calculatePoints } from "../../src/domain/session/scoring";
+import { calculatePoints, nextStreak } from "../../src/domain/session/scoring";
 import {
   nextPerformanceMultiplier,
   performanceAdjustedSpawnDelayMs,
@@ -17,6 +17,7 @@ const enemy = (id: string, progress: number, spawnOrdinal: number, speedMultipli
   wordId: id,
   progress,
   speedMultiplier,
+  isNewWord: false,
   spawnOrdinal,
   lane: 0,
   status: "descending",
@@ -24,7 +25,8 @@ const enemy = (id: string, progress: number, spawnOrdinal: number, speedMultipli
 
 describe("session rules", () => {
   it("scales alien speed up with word mastery", () => {
-    expect(masteryLevelFromAppearanceWeight(100)).toBe(1);
+    expect(masteryLevelFromAppearanceWeight(100)).toBe(0);
+    expect(masteryLevelFromAppearanceWeight(21)).toBe(80);
     expect(masteryLevelFromAppearanceWeight(1)).toBe(100);
     expect(wordSpeedMultiplierFromAppearanceWeight(100)).toBeCloseTo(0.65);
     expect(wordSpeedMultiplierFromAppearanceWeight(1)).toBeCloseTo(1.5);
@@ -62,6 +64,9 @@ describe("session rules", () => {
     expect(calculatePoints(2500, 0, 3000, 1)).toBe(400);
     expect(calculatePoints(12000, 0, 3000, 1)).toBe(200);
     expect(calculatePoints(2500, 10, 1500, 1.5)).toBeGreaterThan(400);
+    expect(nextStreak(7, false, true)).toBe(7);
+    expect(nextStreak(7, false, false)).toBe(0);
+    expect(nextStreak(7, true, true)).toBe(8);
   });
 
   it("smoothly adapts pressure to current answer performance", () => {

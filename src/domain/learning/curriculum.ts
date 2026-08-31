@@ -29,41 +29,38 @@ export function curriculumOrder(deck: LearningDeck, curriculumSeed: string): str
   });
 }
 
-/** Normalizes the active pool. Unlike the old rolling curriculum this never
- * introduces a replacement word inside a level. */
+/** Keeps a rolling learning pool. Each mastered pool word opens one slot for
+ * the next unseen curriculum word; other unmastered words remain active. A
+ * relapsed older word expands the active pool instead of displacing new work. */
 export function refillCurriculum(level: LevelProgress, deck: LearningDeck): LevelProgress {
-  const known = new Set(deck.words.map((word) => word.id));
-  const required = new Set(level.currentLevelWordIds);
-  const active: string[] = [];
-  const seen = new Set<string>();
-  for (const id of [...level.activeLearningWordIds, ...level.currentLevelWordIds]) {
-    const progress = level.words[id];
-    if (!known.has(id) || !progress || progress.appearanceWeight === 1 || seen.has(id)) continue;
-    if (required.has(id) || progress.introducedAtOrdinal !== null) {
-      active.push(id);
-      seen.add(id);
-    }
-  }
-  const reviewedOlderWordIds = [...new Set(level.reviewedOlderWordIds)].filter((id) => known.has(id));
-  if (
-    active.length === level.activeLearningWordIds.length &&
-    active.every((id, index) => id === level.activeLearningWordIds[index]) &&
-    reviewedOlderWordIds.length === level.reviewedOlderWordIds.length
-  ) return level;
-  return { ...level, activeLearningWordIds: active, reviewedOlderWordIds };
-}
-
-/** Starts the next fixed-size level and introduces no more than levelSize new words. */
-export function beginNextCurriculumLevel(
-  level: LevelProgress,
-  deck: LearningDeck,
-  levelSize: number,
-): LevelProgress {
-  const order = curriculumOrder(deck, level.curriculumSeed);
-  let cursor = Math.min(level.curriculumCursor, order.length);
+  const deckIds = deck.words.map((word) => word.id);
+  const known = new Set(deckIds);
+  if (known.size !== deckIds.length) throw new Error("Deck word IDs must be unique");
+  const poolSize = level.currentLevelWordIds.length;
   const currentLevelWordIds: string[] = [];
+  const currentSeen = new Set<string>();
+  for (const id of level.currentLevelWordIds) {
+    const progress = level.words[id];
+    if (!known.has(id) || !progress || progress.appearanceWeight === 1 || currentSeen.has(id)) continue;
+    currentLevelWordIds.push(id);
+    currentSeen.add(id);
+  }
+
+  const activeLearningWordIds: string[] = [];
+  const activeSeen = new Set<string>();
+  for (const id of [...level.activeLearningWordIds, ...currentLevelWordIds]) {
+    const progress = level.words[id];
+    if (!known.has(id) || !progress || progress.introducedAtOrdinal === null || progress.appearanceWeight === 1 || activeSeen.has(id)) continue;
+    activeLearningWordIds.push(id);
+    activeSeen.add(id);
+  }
+
+  let cursor = Math.min(level.curriculumCursor, deckIds.length);
   let words: Record<string, WordProgress> = level.words;
-  while (currentLevelWordIds.length < levelSize && cursor < order.length) {
+  const order = currentLevelWordIds.length < poolSize && cursor < deckIds.length
+    ? curriculumOrder(deck, level.curriculumSeed)
+    : null;
+  while (order && currentLevelWordIds.length < poolSize && cursor < order.length) {
     const id = order[cursor++];
     if (!id) continue;
     const progress = words[id];
@@ -71,13 +68,26 @@ export function beginNextCurriculumLevel(
     if (words === level.words) words = { ...level.words };
     words[id] = { ...progress, introducedAtOrdinal: level.nextSpawnOrdinal };
     currentLevelWordIds.push(id);
+    currentSeen.add(id);
+    if (progress.appearanceWeight > 1 && !activeSeen.has(id)) {
+      activeLearningWordIds.push(id);
+      activeSeen.add(id);
+    }
   }
+
+  const unchanged = cursor === level.curriculumCursor
+    && words === level.words
+    && currentLevelWordIds.length === level.currentLevelWordIds.length
+    && currentLevelWordIds.every((id, index) => id === level.currentLevelWordIds[index])
+    && activeLearningWordIds.length === level.activeLearningWordIds.length
+    && activeLearningWordIds.every((id, index) => id === level.activeLearningWordIds[index])
+    && level.reviewedOlderWordIds.length === 0;
+  if (unchanged) return level;
   return {
     ...level,
-    currentLevelIndex: level.currentLevelIndex + 1,
     curriculumCursor: cursor,
     currentLevelWordIds,
-    activeLearningWordIds: currentLevelWordIds.filter((id) => words[id]?.appearanceWeight !== 1),
+    activeLearningWordIds,
     reviewedOlderWordIds: [],
     words,
   };

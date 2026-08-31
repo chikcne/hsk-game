@@ -10,6 +10,8 @@ export type Enemy = {
   progress: number;
   /** Word-mastery speed factor; the global settings multiplier is separate. */
   speedMultiplier: number;
+  /** True when this encounter spawned at 0% mastery. */
+  isNewWord: boolean;
   lane: number;
   spawnOrdinal: number;
   /** Active-recall clock value when the target first exhausted its pinyin

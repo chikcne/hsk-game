@@ -36,6 +36,7 @@ function Phrase({ enemy, target, remnant = false }: { enemy: EnemyView; target: 
     className={`calligraphy-phrase ${target ? "is-target" : ""} ${!remnant && enemy.progress > DANGER_ZONE_PROGRESS ? "is-danger" : ""} ${remnant ? "is-solved" : "is-writing"}`}
     style={phraseStyle(enemy)}
   >
+    {enemy.isNewWord && <b className="new-word-mark">新</b>}
     {[...enemy.word.displayHanzi].map((character, index) => <span key={`${character}-${index}`}>{character}</span>)}
     {target && !remnant && <b className="active-mark">当前</b>}
   </div>;

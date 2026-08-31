@@ -32,11 +32,12 @@ describe("Anki-style mastered-word review", () => {
   it("keeps slow and wrong cards in the review pool without changing regular mastery", () => {
     const key = "hsk-1:word";
     const review = syncReviewProgress(createReviewProgress(), [key]);
-    const slow = applyReviewOutcome(review, key, { kind: "correct", pinyinMs: 6000, meaningMs: 0 }, 3, NOW, settings);
+    const slowPinyinMs = settings.struggleThresholdMs + 1;
+    const slow = applyReviewOutcome(review, key, { kind: "correct", pinyinMs: slowPinyinMs, meaningMs: 0 }, 3, NOW, settings);
     expect(slow.struggled).toBe(true);
     expect(slow.interval).toBe(settings.reviewLapseInterval);
     expect(slow.review.activePoolWordKeys).toContain(key);
-    expect(slow.progress.recallScoreMsPerChar).toBe(2000);
+    expect(slow.progress.recallScoreMsPerChar).toBe(slowPinyinMs / 3);
 
     const wrong = applyReviewOutcome(slow.review, key, { kind: "wrongMeaning", pinyinMs: 900, meaningMs: 100 }, 3, NOW, settings);
     expect(wrong.progress.wrongMeaning).toBe(1);

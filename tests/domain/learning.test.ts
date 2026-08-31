@@ -23,77 +23,95 @@ function updateWord(level: LevelProgress, id: string, patch: Partial<WordProgres
   return { ...level, words: { ...level.words, [id]: { ...progress, ...patch } } };
 }
 
-describe("fixed sector levels and scheduler", () => {
-  it("creates 20-word levels (600 words = 30 levels) without rolling replacements", () => {
+describe("rolling sector curriculum and scheduler", () => {
+  it("replaces an individually mastered word without waiting for the rest of the pool", () => {
     const source = deck(600);
     const level = freshLevel(source);
-    expect(level.currentLevelWordIds).toHaveLength(20);
+    const order = curriculumOrder(source, "curriculum");
+    expect(level.currentLevelWordIds).toEqual(order.slice(0, 20));
     expect(level.activeLearningWordIds).toEqual(level.currentLevelWordIds);
-    expect(level.currentLevelWordIds).toEqual(curriculumOrder(source, "curriculum").slice(0, 20));
-    expect(Math.ceil(source.words.length / settings.levelSize)).toBe(30);
 
     const masteredId = level.currentLevelWordIds[0]!;
-    const result = applyOutcomeToLevel(updateWord(level, masteredId, { appearanceWeight: 2 }), source, masteredId, { kind: "correct", pinyinMs: 1000, meaningMs: 99_000 }, NOW, settings);
+    const result = applyOutcomeToLevel(
+      updateWord(level, masteredId, { appearanceWeight: 1 + settings.masteryCorrectDecrease }),
+      source,
+      masteredId,
+      { kind: "correct", pinyinMs: 1000, meaningMs: 99_000 },
+      NOW,
+      settings,
+    );
     expect(result.progress.appearanceWeight).toBe(1);
-    expect(result.level.currentLevelWordIds).toEqual(level.currentLevelWordIds);
-    expect(result.level.curriculumCursor).toBe(20);
+    expect(result.level.currentLevelWordIds).not.toContain(masteredId);
+    expect(result.level.currentLevelWordIds).toContain(order[20]);
+    expect(result.level.currentLevelWordIds.filter((id) => level.currentLevelWordIds.includes(id))).toHaveLength(19);
+    expect(result.level.curriculumCursor).toBe(21);
+    expect(result.transitions).toEqual([]);
   });
 
-  it("advances only after the complete current pool is mastered", () => {
+  it("keeps a fixed-size rolling pool while unseen words remain", () => {
     const source = deck(40);
     let level = freshLevel(source);
-    const final = level.currentLevelWordIds.at(-1)!;
-    for (const id of level.currentLevelWordIds) level = updateWord(level, id, { appearanceWeight: 1, reinforcementRemaining: 0 });
-    level = updateWord(level, final, { appearanceWeight: 2 });
-    level = { ...level, activeLearningWordIds: [final] };
-    const result = applyOutcomeToLevel(level, source, final, { kind: "correct", pinyinMs: 1000, meaningMs: 50_000 }, NOW, settings);
-    expect(result.transitions).toEqual(["levelCompleted"]);
-    expect(result.level.currentLevelIndex).toBe(1);
-    expect(result.level.currentLevelWordIds).toHaveLength(20);
-    expect(result.level.activeLearningWordIds).toHaveLength(20);
-    expect(result.level.reviewedOlderWordIds).toEqual([]);
+    for (let index = 0; index < 20; index += 1) {
+      const id = level.currentLevelWordIds[0]!;
+      const result = applyOutcomeToLevel(
+        updateWord(level, id, { appearanceWeight: 1 + settings.masteryCorrectDecrease }),
+        source,
+        id,
+        { kind: "correct", pinyinMs: 1000, meaningMs: 0 },
+        NOW,
+        settings,
+      );
+      level = result.level;
+    }
+    expect(level.curriculumCursor).toBe(40);
+    expect(level.currentLevelWordIds).toHaveLength(20);
+    expect(level.currentLevelIndex).toBe(1);
   });
 
-  it("requires every older sector word once and puts a lapsed older word in the level pool", () => {
+  it("gives practiced unmastered words a slight aggregate edge over new words", () => {
     const source = deck(40);
     let level = freshLevel(source);
-    const oldIds = [...level.currentLevelWordIds];
-    for (const id of oldIds) level = updateWord(level, id, { appearanceWeight: 1, reinforcementRemaining: 0 });
-    level = { ...level, activeLearningWordIds: [] };
-    // An outcome on the completed first level starts level two.
-    level = applyOutcomeToLevel(level, source, oldIds[0]!, { kind: "correct", pinyinMs: 1000, meaningMs: 0 }, NOW, settings).level;
-    for (const id of level.currentLevelWordIds) level = updateWord(level, id, { appearanceWeight: 1, reinforcementRemaining: 0 });
-    level = { ...level, activeLearningWordIds: [] };
+    const [practicedId, newId] = level.currentLevelWordIds;
+    for (const id of level.currentLevelWordIds) level = updateWord(level, id, { nextEligibleSpawn: 1_000_000 });
+    let practicedSelections = 0;
+    for (let trial = 0; trial < 1000; trial += 1) {
+      level = updateWord(level, practicedId!, { attempts: 1, completeCorrect: 1, appearanceWeight: 70, nextEligibleSpawn: level.nextSpawnOrdinal });
+      level = updateWord(level, newId!, { attempts: 0, completeCorrect: 0, appearanceWeight: 70, nextEligibleSpawn: level.nextSpawnOrdinal });
+      const result = spawnNextWord(level, source, undefined, settings);
+      expect(result.status).toBe("spawned");
+      if (result.status !== "spawned") return;
+      if (result.wordId === practicedId) practicedSelections += 1;
+      level = result.level;
+    }
+    expect(practicedSelections).toBeGreaterThan(510);
+    expect(practicedSelections).toBeLessThan(590);
+  });
 
-    const lapse = applyOutcomeToLevel(level, source, oldIds[0]!, { kind: "wrongMeaning", pinyinMs: 900, meaningMs: 100 }, NOW, settings);
-    expect(lapse.level.reviewedOlderWordIds).toContain(oldIds[0]);
-    expect(lapse.level.activeLearningWordIds).toContain(oldIds[0]);
-    expect(lapse.progress.appearanceWeight).toBe(41);
+  it("returns a lapsed mastered word to the active repair pool", () => {
+    const source = deck(40);
+    let level = freshLevel(source);
+    const lapsedId = level.currentLevelWordIds[0]!;
+    level = updateWord(level, lapsedId, { appearanceWeight: 1, reinforcementRemaining: 0 });
+    level = { ...level, activeLearningWordIds: level.activeLearningWordIds.filter((id) => id !== lapsedId) };
+    const lapse = applyOutcomeToLevel(level, source, lapsedId, { kind: "wrongMeaning", pinyinMs: 900, meaningMs: 100 }, NOW, settings);
+    expect(lapse.level.activeLearningWordIds).toContain(lapsedId);
+    expect(lapse.progress.reinforcementRemaining).toBe(settings.repairRepetitions);
     expect(lapse.transitions).toEqual([]);
   });
 
-  it("completes the sector only after every older word has been checked", () => {
-    const source = deck(40);
+  it("completes the sector when the final word masters", () => {
+    const source = deck(20);
     let level = freshLevel(source);
-    const oldIds = [...level.currentLevelWordIds];
-    for (const id of oldIds) level = updateWord(level, id, { appearanceWeight: 1, reinforcementRemaining: 0 });
-    level = { ...level, activeLearningWordIds: [] };
-    level = applyOutcomeToLevel(level, source, oldIds[0]!, { kind: "correct", pinyinMs: 1000, meaningMs: 0 }, NOW, settings).level;
+    const final = level.currentLevelWordIds.at(-1)!;
     for (const id of level.currentLevelWordIds) level = updateWord(level, id, { appearanceWeight: 1, reinforcementRemaining: 0 });
-    level = { ...level, activeLearningWordIds: [] };
-
-    let lastTransitions: string[] = [];
-    for (const id of oldIds) {
-      const result = applyOutcomeToLevel(level, source, id, { kind: "correct", pinyinMs: 1000, meaningMs: 0 }, NOW, settings);
-      level = result.level;
-      lastTransitions = result.transitions;
-    }
-    expect(lastTransitions).toEqual(["sectorCompleted"]);
-    expect(level.firstCompletedAt).toBe(NOW);
-    expect(level.reviewedOlderWordIds).toHaveLength(20);
+    level = updateWord(level, final, { appearanceWeight: 1 + settings.masteryCorrectDecrease });
+    level = { ...level, activeLearningWordIds: [final] };
+    const result = applyOutcomeToLevel(level, source, final, { kind: "correct", pinyinMs: 1000, meaningMs: 0 }, NOW, settings);
+    expect(result.transitions).toContain("sectorCompleted");
+    expect(result.level.firstCompletedAt).toBe(NOW);
   });
 
-  it("uses repair, learning, checkpoint, then sector-only fallback tiers", () => {
+  it("uses repair, learning, then mastered fallback tiers", () => {
     let level = freshLevel(deck(40));
     const [repairId, learningId] = level.activeLearningWordIds;
     for (const id of level.activeLearningWordIds) level = updateWord(level, id, { nextEligibleSpawn: 100 });
@@ -105,10 +123,8 @@ describe("fixed sector levels and scheduler", () => {
 
     level = updateWord(level, repairId!, { nextEligibleSpawn: 100 });
     level = updateWord(level, learningId!, { nextEligibleSpawn: 100 });
-    const olderId = Object.keys(level.words).find((id) => !level.currentLevelWordIds.includes(id))!;
-    level = updateWord(level, olderId, { appearanceWeight: 1, introducedAtOrdinal: 0, nextEligibleSpawn: 0 });
-    expect(eligibleTier(level)?.tier).toBe("checkpoint");
-    level = { ...level, reviewedOlderWordIds: [olderId] };
+    const fallbackId = Object.keys(level.words).find((id) => !level.currentLevelWordIds.includes(id))!;
+    level = updateWord(level, fallbackId, { appearanceWeight: 1, introducedAtOrdinal: 0, nextEligibleSpawn: 0 });
     expect(eligibleTier(level)?.tier).toBe("fallback");
   });
 
@@ -154,18 +170,27 @@ describe("pinyin-only mastery and forced repeat points", () => {
   it("ignores meaning time when determining mastery", () => {
     const quickMeaning = applyOutcome(createWordProgress(), { kind: "correct", pinyinMs: 2000, meaningMs: 10 }, NOW, settings);
     const slowMeaning = applyOutcome(createWordProgress(), { kind: "correct", pinyinMs: 2000, meaningMs: 100_000 }, NOW, settings);
-    expect(quickMeaning.progress.appearanceWeight).toBe(45);
-    expect(slowMeaning.progress.appearanceWeight).toBe(45);
+    expect(quickMeaning.progress.appearanceWeight).toBe(21);
+    expect(slowMeaning.progress.appearanceWeight).toBe(21);
     expect(quickMeaning.repeatAfterPhrases).toBe(slowMeaning.repeatAfterPhrases);
     expect(slowMeaning.progress.totalThinkingMs).toBeGreaterThan(quickMeaning.progress.totalThinkingMs);
   });
 
-  it("treats pinyin over five seconds as a struggle and reduces mastery", () => {
-    const update = applyOutcome({ ...createWordProgress(), appearanceWeight: 30 }, { kind: "correct", pinyinMs: 6000, meaningMs: 0 }, NOW, settings);
+  it("starts new words at zero, promotes a correct answer to 80%, and keeps misses at zero", () => {
+    const fresh = createWordProgress();
+    expect(fresh.appearanceWeight).toBe(100);
+    expect(applyOutcome(fresh, { kind: "correct", pinyinMs: 1000, meaningMs: 1000 }, NOW, settings).progress.appearanceWeight).toBe(21);
+    expect(applyOutcome(fresh, { kind: "correct", pinyinMs: 9000, meaningMs: 1000 }, NOW, settings).progress.appearanceWeight).toBe(21);
+    expect(applyOutcome(fresh, { kind: "wrongPinyin", pinyinMs: 1000 }, NOW, settings).progress.appearanceWeight).toBe(100);
+  });
+
+  it("treats pinyin over the configured threshold as a struggle", () => {
+    const pinyinMs = settings.struggleThresholdMs + 1;
+    const update = applyOutcome({ ...createWordProgress(), appearanceWeight: 30 }, { kind: "correct", pinyinMs, meaningMs: 0 }, NOW, settings);
     expect(update.struggled).toBe(true);
-    expect(update.progress.appearanceWeight).toBe(45);
-    expect(update.progress.reinforcementRemaining).toBe(3);
-    expect(update.repeatAfterPhrases).toBe(14);
+    expect(update.progress.appearanceWeight).toBe(30 + settings.masteryStruggleIncrease);
+    expect(update.progress.reinforcementRemaining).toBe(settings.repairRepetitions);
+    expect(update.repeatAfterPhrases).toBe(correctRepeatInterval(pinyinMs, settings));
   });
 
   it.each([

@@ -4,7 +4,7 @@ export type LearningDeck = Pick<RuntimeDeck, "id" | "fingerprint"> & {
   words: ReadonlyArray<Pick<RuntimeDeck["words"][number], "id">>;
 };
 
-export type SpawnTier = "repair" | "learning" | "checkpoint" | "fallback";
+export type SpawnTier = "repair" | "learning" | "fallback";
 
 export type SpawnResult =
   | {

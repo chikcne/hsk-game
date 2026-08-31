@@ -1,7 +1,8 @@
 import { DEFAULT_SETTINGS } from "../../shared/constants";
 import type { DifficultySettings, LevelProgress, WordProgress } from "../../shared/schemas";
 import type { EncounterOutcome } from "../session/types";
-import { beginNextCurriculumLevel, refillCurriculum } from "./curriculum";
+import { refillCurriculum } from "./curriculum";
+import { FIRST_CORRECT_APPEARANCE_WEIGHT, ZERO_MASTERY_APPEARANCE_WEIGHT } from "./constants";
 import { isLiveMastered } from "./progress";
 import type { LearningDeck, LearningTransition, ProgressUpdate } from "./types";
 
@@ -66,7 +67,13 @@ export function applyOutcome(
   let appearanceWeight: number;
   let reinforcementRemaining: number;
 
-  if (outcome.kind === "correct" && !slowCorrect) {
+  if (outcome.kind === "correct" && oldWeight === ZERO_MASTERY_APPEARANCE_WEIGHT) {
+    // A new word graduates immediately to 80%, even when recall was slow.
+    appearanceWeight = FIRST_CORRECT_APPEARANCE_WEIGHT;
+    reinforcementRemaining = slowCorrect
+      ? settings.repairRepetitions
+      : Math.max(0, progress.reinforcementRemaining - 1);
+  } else if (outcome.kind === "correct" && !slowCorrect) {
     appearanceWeight = Math.max(1, oldWeight - settings.masteryCorrectDecrease);
     reinforcementRemaining = Math.max(0, progress.reinforcementRemaining - 1);
   } else if (outcome.kind === "correct") {
@@ -122,8 +129,8 @@ export type LevelOutcomeResult = {
   repeatAfterPhrases: number;
 };
 
-/** Applies mastery, fixed-level pools, older-word checkpoints, and advancement
- * as one immutable operation. */
+/** Applies mastery, rolling curriculum refill, and sector completion as one
+ * immutable operation. */
 export function applyOutcomeToLevel(
   level: LevelProgress,
   deck: LearningDeck,
@@ -141,40 +148,28 @@ export function applyOutcomeToLevel(
     nextEligibleSpawn: level.nextSpawnOrdinal + update.repeatAfterPhrases,
   };
 
-  const currentIds = new Set(level.currentLevelWordIds);
-  const isIntroducedOlder = previous.introducedAtOrdinal !== null && !currentIds.has(wordId);
-  const reviewed = new Set(level.reviewedOlderWordIds);
-  if (isIntroducedOlder) reviewed.add(wordId);
-
   const active = new Set(level.activeLearningWordIds);
   if (progress.appearanceWeight === 1) active.delete(wordId);
-  else if (currentIds.has(wordId) || isIntroducedOlder) active.add(wordId);
+  else if (previous.introducedAtOrdinal !== null) active.add(wordId);
 
   let next: LevelProgress = refillCurriculum({
     ...level,
     words: { ...level.words, [wordId]: progress },
     activeLearningWordIds: [...active],
-    reviewedOlderWordIds: [...reviewed],
+    reviewedOlderWordIds: [],
   }, deck);
 
   const transitions: LearningTransition[] = [];
-  const olderIds = Object.entries(next.words)
-    .filter(([id, item]) => item.introducedAtOrdinal !== null && !next.currentLevelWordIds.includes(id))
-    .map(([id]) => id);
-  const levelPoolMastered = next.currentLevelWordIds.every((id) => next.words[id]?.appearanceWeight === 1)
-    && next.activeLearningWordIds.length === 0;
-  const olderChecked = olderIds.every((id) => next.reviewedOlderWordIds.includes(id));
-
-  if (levelPoolMastered && olderChecked) {
-    if (next.curriculumCursor < deck.words.length) {
-      next = beginNextCurriculumLevel(next, deck, settings.levelSize);
-      transitions.push("levelCompleted");
-    } else if (isLiveMastered(next) && (next.firstCompletedAt === null || !wasLiveMastered)) {
-      if (next.firstCompletedAt === null) next = { ...next, firstCompletedAt: isoTimestamp(now) };
-      transitions.push("sectorCompleted");
-    }
+  const nextLevelIndex = Math.max(0, Math.floor(next.curriculumCursor / settings.levelSize) - 1);
+  if (nextLevelIndex > level.currentLevelIndex) {
+    next = { ...next, currentLevelIndex: nextLevelIndex };
+    transitions.push("levelCompleted");
   }
 
+  if (isLiveMastered(next) && !wasLiveMastered) {
+    if (next.firstCompletedAt === null) next = { ...next, firstCompletedAt: isoTimestamp(now) };
+    transitions.push("sectorCompleted");
+  }
   if (level.firstCompletedAt !== null && wasLiveMastered && !isLiveMastered(next)) transitions.push("sectorMasteryRegressed");
   return { level: next, progress, transitions, struggled: update.struggled, repeatAfterPhrases: update.repeatAfterPhrases };
 }
