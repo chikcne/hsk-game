@@ -142,8 +142,8 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .settings-button {
   position: absolute;
   z-index: 60;
-  top: max(24px, env(safe-area-inset-top));
-  right: clamp(20px, 3vw, 34px);
+  top: max(59px, env(safe-area-inset-top));
+  right: clamp(40px, 5vw, 64px);
   width: 48px;
   height: 48px;
   padding: 0;
@@ -403,7 +403,7 @@ input.mint-range { accent-color: var(--jade); }
     padding: max(7px, env(safe-area-inset-top)) 12px max(7px, env(safe-area-inset-bottom));
     grid-template-rows: 96px minmax(0, 1fr) 42px;
   }
-  .settings-button { top: max(12px, env(safe-area-inset-top)); right: 14px; width: 42px; height: 42px; }
+  .settings-button { top: max(20px, env(safe-area-inset-top)); right: 30px; width: 42px; height: 42px; }
   .scroll-menu { width: 100%; min-width: 0; padding: 8px 0 4px; grid-template-columns: 1.14fr minmax(0,6fr) 1.08fr; }
   .level-columns { overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: none; }
   .level-columns::-webkit-scrollbar { display: none; }
