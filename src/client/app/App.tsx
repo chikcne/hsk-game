@@ -391,9 +391,8 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
           onCompositionStart={() => { composingRef.current = true; setComposing(true); }}
           onCompositionEnd={() => { composingRef.current = false; setComposing(false); }}
           autoComplete="off" autoCapitalize="none" spellCheck={false} inputMode={mobile ? "none" : "text"}
-          disabled={pinyinDisabled} aria-describedby="pinyin-help"
+          disabled={pinyinDisabled}
         />
-        <div className="form-help" id="pinyin-help"><span>ü = v</span><span>ENTER 确认</span><span>ESC 暂停</span></div>
       </form> : <div className="meaning-zone">
         <div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : battle.pinyinAutocompleted ? "TIME EXPIRED · PINYIN AUTOCOMPLETED" : "选择纸签释义 · CHOOSE MEANING"}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ REPLAY AUDIO</button></div>
         <div className="meaning-grid">{battle.choices.map((choice) => {
