@@ -79,6 +79,6 @@ export function GameCanvas({ enemies, targetId, solvedId, reducedMotion = false 
     {target && <div className="target-column" style={phraseStyle(target)} />}
     {enemies.map((enemy) => <Phrase key={enemy.id} enemy={enemy} target={enemy.id === targetId} />)}
     {remnants.map((item) => <SolvedPhrase key={item.key} item={item} reducedMotion={reducedMotion} onDone={(key) => setRemnants((items) => items.filter((candidate) => candidate.key !== key))} />)}
-    <div className="landing-rule"><span>落卷线</span></div>
+    <div className="landing-rule" />
   </div>;
 }
