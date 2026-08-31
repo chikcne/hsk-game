@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { BASE_TRAVEL_MS, MAX_ACTIVE_ENEMIES, type ChoiceKey } from "../../shared/constants";
+import { BASE_TRAVEL_MS, DANGER_ZONE_PROGRESS, MAX_ACTIVE_ENEMIES, type ChoiceKey } from "../../shared/constants";
 import type { DifficultySettings, LevelProgress, ReviewProgress, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
 import { acceptsPinyin, canonicalizePinyin } from "../../domain/deck/pinyin";
 import { applyOutcomeToLevel, createLevelProgress, curriculumOrder, spawnNextWord } from "../../domain/learning";
@@ -12,7 +12,7 @@ import {
   nextPerformanceMultiplier,
   performanceAdjustedSpawnDelayMs,
 } from "../../domain/session/performance";
-import { advanceEnemiesForRecallWindow } from "../../domain/session/landing";
+import { advanceEnemiesForRecallWindow, moveEnemiesUp } from "../../domain/session/landing";
 import { wordSpeedMultiplierFromAppearanceWeight } from "../../domain/session/speed";
 import { selectLockedTarget } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
@@ -99,6 +99,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const targetIdRef = useRef<string | null>(null);
   const [phase, setPhase] = useState<"pinyin" | "meaning">("pinyin");
   const phaseRef = useRef<"pinyin" | "meaning">("pinyin");
+  const [pinyinAutocompleted, setPinyinAutocompleted] = useState(false);
   const [choices, setChoices] = useState<MeaningChoice[]>([]);
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const [learningPaused, setLearningPaused] = useState(false);
@@ -150,7 +151,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       targetRef.current = nextTarget;
       setTargetId(nextTargetId);
       phaseRef.current = "pinyin"; setPhase("pinyin");
-      setChoices([]); setAudioError(false); phaseStarted.current = now;
+      setPinyinAutocompleted(false); setChoices([]); setAudioError(false); phaseStarted.current = now;
     }
     enemiesRef.current = nextEnemies;
     setEnemies(nextEnemies);
@@ -226,6 +227,16 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       .then(() => setAudioError(false))
       .catch(() => setAudioError(true));
   }, [deck.id, settings.masterVolume, wordAudioPlayer]);
+
+  const beginMeaning = useCallback((enemy: Enemy, word: RuntimeWord, pinyinMs: number, autocompleted = false) => {
+    if (targetIdRef.current !== enemy.id || phaseRef.current !== "pinyin") return;
+    meaningPinyinMs.current = pinyinMs;
+    setChoices(generateChoices(deck, word, enemy.id));
+    phaseRef.current = "meaning"; setPhase("meaning");
+    setPinyinAutocompleted(autocompleted);
+    phaseStarted.current = performance.now();
+    playWordAudio(word);
+  }, [deck, playWordAudio]);
 
   const updateWord = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     const word = words.get(enemy.wordId); if (!word) return;
@@ -307,7 +318,10 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const resolveEnemy = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     if (!enemiesRef.current.some((item) => item.id === enemy.id)) return;
     const remaining = enemiesRef.current.filter((item) => item.id !== enemy.id);
-    commitEnemies(remaining);
+    const relieved = outcome.kind === "correct" && enemy.progress > DANGER_ZONE_PROGRESS
+      ? moveEnemiesUp(remaining)
+      : remaining;
+    commitEnemies(relieved);
     updateWord(enemy, outcome, typed);
   }, [commitEnemies, updateWord]);
 
@@ -379,20 +393,21 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
         );
         commitEnemies(result.active, now);
         for (const enemy of result.landed) updateWord(enemy, { kind: "landed", activeThinkingMs: activeRecallMs });
+        const autocompleted = result.autocompleted[0];
+        const autocompletedWord = autocompleted ? words.get(autocompleted.wordId) : null;
+        if (autocompleted && autocompletedWord) beginMeaning(autocompleted, autocompletedWord, activeRecallMs, true);
       }
       frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick); return () => cancelAnimationFrame(frame);
-  }, [commitEnemies, settings.enemySpeedMultiplier, settings.spawnIntervalMs, spawn, updateWord]);
+  }, [beginMeaning, commitEnemies, settings.enemySpeedMultiplier, settings.spawnIntervalMs, spawn, updateWord, words]);
 
   const submitPinyin = (raw: string) => {
     const enemy = targetRef.current; const word = enemy ? words.get(enemy.wordId) : null;
     if (!enemy || !word || !raw.trim() || phase !== "pinyin" || pausedRef.current || learningPausedRef.current) return;
     const elapsed = performance.now() - phaseStarted.current;
-    if (acceptsPinyin(word.acceptedPinyin, raw)) {
-      meaningPinyinMs.current = elapsed; setChoices(generateChoices(deck, word, enemy.id));
-      phaseRef.current = "meaning"; setPhase("meaning"); phaseStarted.current = performance.now(); playWordAudio(word);
-    } else resolveEnemy(enemy, { kind: "wrongPinyin", pinyinMs: elapsed }, raw);
+    if (acceptsPinyin(word.acceptedPinyin, raw)) beginMeaning(enemy, word, elapsed);
+    else resolveEnemy(enemy, { kind: "wrongPinyin", pinyinMs: elapsed }, raw);
   };
   const chooseMeaning = (key: ChoiceKey) => {
     const enemy = targetRef.current;
@@ -417,5 +432,5 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     );
   }, [settings.spawnIntervalMs]);
   const replay = () => { if (targetWord) playWordAudio(targetWord); };
-  return { enemies, target, targetWord, phase, choices, feedback, learningPaused, audioError, streak, performanceMultiplier, stats, level, review, reviewComplete, submitPinyin, chooseMeaning, dismissFeedback, replay };
+  return { enemies, target, targetWord, phase, pinyinAutocompleted, choices, feedback, learningPaused, audioError, streak, performanceMultiplier, stats, level, review, reviewComplete, submitPinyin, chooseMeaning, dismissFeedback, replay };
 }

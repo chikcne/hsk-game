@@ -11,6 +11,7 @@ export const CHOICE_KEYS = [
 export type ChoiceKey = (typeof CHOICE_KEYS)[number];
 export const BASE_TRAVEL_MS = 24_000;
 export const MAX_ACTIVE_ENEMIES = 32;
+export const DANGER_ZONE_PROGRESS = 0.82;
 
 /** Learning defaults are deliberately explicit so every tuning value can be
  * changed from Settings without changing scheduler code. */

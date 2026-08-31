@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import type { Enemy } from "../../domain/session/types";
+import { DANGER_ZONE_PROGRESS } from "../../shared/constants";
 import type { RuntimeWord } from "../../shared/schemas";
 
 export type EnemyView = Enemy & { word: RuntimeWord };
@@ -32,7 +33,7 @@ const phraseStyle = (enemy: EnemyView): PhraseStyle => {
 
 function Phrase({ enemy, target, remnant = false }: { enemy: EnemyView; target: boolean; remnant?: boolean }) {
   return <div
-    className={`calligraphy-phrase ${target ? "is-target" : ""} ${!remnant && enemy.progress > 0.82 ? "is-danger" : ""} ${remnant ? "is-solved" : "is-writing"}`}
+    className={`calligraphy-phrase ${target ? "is-target" : ""} ${!remnant && enemy.progress > DANGER_ZONE_PROGRESS ? "is-danger" : ""} ${remnant ? "is-solved" : "is-writing"}`}
     style={phraseStyle(enemy)}
   >
     {[...enemy.word.displayHanzi].map((character, index) => <span key={`${character}-${index}`}>{character}</span>)}

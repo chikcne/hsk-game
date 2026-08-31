@@ -12,6 +12,9 @@ export type Enemy = {
   speedMultiplier: number;
   lane: number;
   spawnOrdinal: number;
+  /** Active-recall clock value when the target first exhausted its pinyin
+   * window. It remains answerable during the autocomplete grace period. */
+  pinyinTimeoutStartedAtMs?: number;
   status: "descending" | "resolved";
 };
 export type SessionPhase = "waiting" | "pinyin" | "meaning" | "feedback" | "paused";

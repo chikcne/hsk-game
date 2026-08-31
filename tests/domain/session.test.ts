@@ -79,14 +79,27 @@ describe("session rules", () => {
     expect(performanceAdjustedSpawnDelayMs(5_000, 0.7, false)).toBe(500);
   });
 
-  it("gives a selected word the full pinyin recall window regardless of altitude", () => {
+  it("gives a selected word its full recall window and a two-second autocomplete grace period", () => {
     const nearGround = enemy("target", 0.99, 1);
     const early = advanceEnemiesForRecallWindow([nearGround], 0.02, nearGround.id, "pinyin", 1_000, 5_000);
-    expect(early.landed).toEqual([]);
+    expect(early.autocompleted).toEqual([]);
     expect(early.active[0]?.progress).toBe(1);
 
     const timedOut = advanceEnemiesForRecallWindow(early.active, 0.02, nearGround.id, "pinyin", 5_000, 5_000);
-    expect(timedOut.landed.map((item) => item.id)).toEqual([nearGround.id]);
+    expect(timedOut.autocompleted).toEqual([]);
+    expect(timedOut.active[0]?.pinyinTimeoutStartedAtMs).toBe(5_000);
+
+    const graceElapsed = advanceEnemiesForRecallWindow(timedOut.active, 0, nearGround.id, "pinyin", 7_000, 5_000);
+    expect(graceElapsed.landed).toEqual([]);
+    expect(graceElapsed.autocompleted.map((item) => item.id)).toEqual([nearGround.id]);
+  });
+
+  it("moves every word up by 25% when a target is autocompleted", () => {
+    const target = { ...enemy("target", 1, 1), pinyinTimeoutStartedAtMs: 5_000 };
+    const other = enemy("other", 0.5, 2);
+    const result = advanceEnemiesForRecallWindow([target, other], 0, target.id, "pinyin", 7_000, 5_000);
+    expect(result.active.find((item) => item.id === target.id)?.progress).toBeCloseTo(0.75);
+    expect(result.active.find((item) => item.id === other.id)?.progress).toBeCloseTo(0.25);
   });
 
   it("does not turn altitude during meaning selection into a recall failure", () => {

@@ -376,7 +376,7 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
 
     <section className={`answer-console ${battle.phase}`} aria-label="Answer console">
       <div className="accessible-target-status">
-        <span>{battle.phase === "meaning" ? "Pinyin confirmed" : battle.target ? "Locked target" : "Scanning"}</span>
+        <span>{battle.phase === "meaning" ? battle.pinyinAutocompleted ? "Pinyin autocompleted" : "Pinyin confirmed" : battle.target ? "Locked target" : "Scanning"}</span>
         <strong lang="zh-Hans">{battle.targetWord?.displayHanzi ?? "No target"}</strong>
         {battle.phase === "meaning" && <span>{battle.targetWord?.displayPinyin}</span>}
         <em>{battle.target ? `Altitude ${Math.max(0, Math.round((1 - battle.target.progress) * 100))} percent` : "Awaiting target"}</em>
@@ -393,7 +393,7 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
         />
         <div className="form-help" id="pinyin-help"><span>ü = v</span><span>ENTER 确认</span><span>ESC 暂停</span></div>
       </form> : <div className="meaning-zone">
-        <div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : "选择纸签释义 · CHOOSE MEANING"}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ REPLAY AUDIO</button></div>
+        <div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : battle.pinyinAutocompleted ? "TIME EXPIRED · PINYIN AUTOCOMPLETED" : "选择纸签释义 · CHOOSE MEANING"}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ REPLAY AUDIO</button></div>
         <div className="meaning-grid">{battle.choices.map((choice) => {
           const keys = [...new Set(choice.shortcuts.map((shortcut) => shortcut.key))];
           const highlighted = new Set(choice.shortcuts.map((shortcut) => shortcut.index));
@@ -410,7 +410,7 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
       onLetter={(letter) => setPinyin((value) => value + letter.toLowerCase())}
       onBackspace={() => setPinyin((value) => value.slice(0, -1))} onPause={onPause} onSubmit={submitAnswer}
     />}
-    <div className="sr-live" aria-live="polite">{battle.targetWord ? `Target ${battle.targetWord.displayHanzi}. ${battle.phase === "pinyin" ? "Type pinyin" : "Choose meaning"}.` : "Waiting for target"}</div>
+    <div className="sr-live" aria-live="polite">{battle.targetWord ? `Target ${battle.targetWord.displayHanzi}. ${battle.phase === "pinyin" ? "Type pinyin" : battle.pinyinAutocompleted ? `Pinyin autocompleted as ${battle.targetWord.displayPinyin}. Choose meaning` : "Choose meaning"}.` : "Waiting for target"}</div>
     {battle.feedback && <FeedbackNotice feedback={battle.feedback} onDismiss={battle.dismissFeedback} />}
     {paused && !children && <PauseDialog onResume={onResume} onSettings={onSettings} onEnd={() => onEnd(battle.stats)} />}{children}
   </main>;
