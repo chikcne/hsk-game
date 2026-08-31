@@ -404,7 +404,7 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
       disabled={pinyinDisabled} submitDisabled={pinyinDisabled || composing || !pinyin.trim()}
       backspaceDisabled={pinyinDisabled || pinyin.length === 0}
       onLetter={(letter) => setPinyin((value) => value + letter.toLowerCase())}
-      onBackspace={() => setPinyin((value) => value.slice(0, -1))} onSubmit={submitAnswer}
+      onBackspace={() => setPinyin((value) => value.slice(0, -1))} onPause={onPause} onSubmit={submitAnswer}
     />}
     <div className="sr-live" aria-live="polite">{battle.targetWord ? `Target ${battle.targetWord.displayHanzi}. ${battle.phase === "pinyin" ? "Type pinyin" : "Choose meaning"}.` : "Waiting for target"}</div>
     {battle.feedback && <FeedbackNotice feedback={battle.feedback} onDismiss={battle.dismissFeedback} />}
@@ -415,9 +415,9 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
 const KEY_ROWS = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"] as const;
 type TouchKey = string | "Backspace" | "Submit";
 
-function MobileKeyboard({ disabled, submitDisabled, backspaceDisabled, onLetter, onBackspace, onSubmit }: {
+function MobileKeyboard({ disabled, submitDisabled, backspaceDisabled, onLetter, onBackspace, onPause, onSubmit }: {
   disabled: boolean; submitDisabled: boolean; backspaceDisabled: boolean;
-  onLetter: (letter: string) => void; onBackspace: () => void; onSubmit: () => void;
+  onLetter: (letter: string) => void; onBackspace: () => void; onPause: () => void; onSubmit: () => void;
 }) {
   const [preview, setPreview] = useState<string | null>(null);
   const active = useRef<{ pointerId: number; key: TouchKey; startY: number; backspaceCommitted: boolean } | null>(null);
@@ -471,7 +471,6 @@ function MobileKeyboard({ disabled, submitDisabled, backspaceDisabled, onLetter,
     setPreview(key.length === 1 ? key : null);
   };
   const pointerDown = (event: ReactPointerEvent<HTMLElement>) => {
-    if (disabled) return;
     if (active.current) { clearPointer(); return; }
     const button = (event.target as HTMLElement).closest<HTMLButtonElement>("[data-touch-key]");
     const key = button?.dataset.touchKey;
@@ -499,11 +498,13 @@ function MobileKeyboard({ disabled, submitDisabled, backspaceDisabled, onLetter,
     if (final && final.key.length === 1) onLetter(final.key);
     else if (final?.key === "Submit" && !submitDisabled) onSubmit();
     else if (final?.key === "Backspace" && !final.backspaceCommitted && !backspaceDisabled) onBackspace();
+    else if (final?.key === "Pause") onPause();
     clearPointer();
   };
   const keyboardActivate = (key: TouchKey) => {
     if (key.length === 1) onLetter(key);
     else if (key === "Backspace") onBackspace();
+    else if (key === "Pause") onPause();
     else onSubmit();
   };
 
@@ -514,9 +515,12 @@ function MobileKeyboard({ disabled, submitDisabled, backspaceDisabled, onLetter,
     {KEY_ROWS.map((row, rowIndex) => <div className={`key-row row-${rowIndex + 1}`} key={row}>{[...row].map((key) => <button
       type="button" key={key} data-touch-key={key} disabled={disabled}
       className={preview === key ? "pressed" : ""} onClick={(event) => { if (event.detail === 0) keyboardActivate(key); }}
-    >{preview === key && <i aria-hidden="true">{key}</i>}<span>{key}</span></button>)}</div>)}
+    >{preview === key && <i aria-hidden="true">{key}</i>}<span>{key}</span></button>)}{rowIndex === 2 && <button
+      type="button" className="backspace" data-touch-key="Backspace" disabled={backspaceDisabled} aria-label="Backspace"
+      onClick={(event) => { if (event.detail === 0) keyboardActivate("Backspace"); }}
+    >⌫</button>}</div>)}
     <div className="key-row row-4">
-      <button type="button" className="backspace" data-touch-key="Backspace" disabled={backspaceDisabled} aria-label="Backspace" onClick={(event) => { if (event.detail === 0) keyboardActivate("Backspace"); }}>⌫</button>
+      <button type="button" className="keyboard-pause" data-touch-key="Pause" aria-label="Pause game" onClick={(event) => { if (event.detail === 0) keyboardActivate("Pause"); }}>Ⅱ</button>
       <button type="button" className="enter" data-touch-key="Submit" disabled={submitDisabled} onClick={(event) => { if (event.detail === 0) keyboardActivate("Submit"); }}>SUBMIT</button>
     </div>
   </section>;

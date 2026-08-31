@@ -455,6 +455,7 @@ input.mint-range { accent-color: var(--jade); }
   .hud-item b { font-size: 10px; }
   .hud-mastery, .save-state { display: none; }
   .pause-button { width: 32px; height: 32px; font-size: 11px; }
+  .battle-screen.pinyin-phase .battle-hud .pause-button { visibility: hidden; }
   .practice-sheet { padding: 22px 0 15px; }
   .margin-note { top: 7px; font-size: 6px; }
   .calligraphy-field { inset: 22px 0 15px; }
@@ -503,12 +504,13 @@ input.mint-range { accent-color: var(--jade); }
   }
   .key-row button::after { content: ""; position: absolute; inset: -7px -2px 0; }
   .row-2 { padding-inline: 17px; }
-  .row-3 { padding-inline: 34px; gap: 5px; }
+  .row-3 { padding-inline: 17px; gap: 5px; }
   .row-3 button { max-width: 38px; }
-  .row-4 { height: 51px; padding: 1px 8px 0; justify-content: space-between; }
-  .row-4 button { flex: 0 0 88px; max-width: 88px; font-size: 10px; }
-  .row-4 .backspace { color: var(--indigo); font-size: 19px; }
-  .row-4 .enter { color: var(--paper-light); background: linear-gradient(145deg,#bd5541,#943829); border-color: var(--cinnabar-dark); box-shadow: inset 1px 1px 0 rgba(255,255,255,.22),inset -1px -1px 0 rgba(69,19,14,.18),0 3px 0 #70291f,0 4px 7px rgba(63,48,28,.12); }
+  .row-3 .backspace { flex-grow: 1.3; max-width: 48px; color: var(--indigo); font-size: 19px; }
+  .row-4 { height: 51px; padding: 1px 8px 0; gap: 12px; }
+  .row-4 button { font-size: 10px; }
+  .row-4 .keyboard-pause { flex: 0 0 88px; max-width: 88px; color: var(--indigo); font-size: 15px; }
+  .row-4 .enter { flex: 1; max-width: none; color: var(--paper-light); background: linear-gradient(145deg,#bd5541,#943829); border-color: var(--cinnabar-dark); box-shadow: inset 1px 1px 0 rgba(255,255,255,.22),inset -1px -1px 0 rgba(69,19,14,.18),0 3px 0 #70291f,0 4px 7px rgba(63,48,28,.12); }
   .key-row button:disabled { filter: saturate(.35); opacity: .45; }
   .key-row .pressed { color: var(--cinnabar-dark); transform: translateY(2px); box-shadow: inset 1px 1px 2px rgba(87,62,31,.17),0 1px 0 rgba(92,78,56,.2); }
   .pressed i { position: absolute; z-index: 5; left: 50%; bottom: 45px; width: 46px; height: 52px; transform: translateX(-50%); display: grid; place-items: center; border: 1px solid rgba(35,78,97,.42); background: var(--paper-light); box-shadow: 0 5px 10px rgba(53,39,22,.13); color: var(--cinnabar-dark); font: normal 21px var(--serif-cjk); }
