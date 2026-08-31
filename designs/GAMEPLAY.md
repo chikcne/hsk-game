@@ -185,6 +185,8 @@ Accuracy is `completeCorrect / resolvedEnemies`. Do not count blank or irrelevan
 
 The spawn clock runs while the battle is active, including pinyin, meaning, and non-blocking hit/landing feedback. It freezes during wrong-answer review, while paused/settings, while the page is hidden, and before deck/save loading completes.
 
+After a word spawns, its mastery sets the next interval. The multiplier interpolates linearly from `1.60` at mastery `0`, through `1.00` at mastery `50`, to `0.40` at mastery `100`: `masteryInterval = baseInterval * lerp(1.60, 0.40, mastery / 100)`. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
+
 When a timer is due:
 
 1. if 32 enemies are active, keep one pending spawn and retry when a slot opens;
@@ -203,7 +205,7 @@ Simulation uses a fixed 60 Hz step with accumulated active time and a maximum of
 Settings are reachable from deck selection and the pause overlay.
 
 - Opening settings pauses enemy motion, spawn clock, answer clocks, and streak state.
-- Spawn slider displays both “every N seconds” and rounded enemies/minute.
+- Base spawn slider displays both “every N seconds” and rounded enemies/minute; actual intervals also reflect the previous word's mastery and current performance pressure.
 - Speed slider displays multiplier and a text label: `SLOW`, `STANDARD`, or `FAST`.
 - “Apply” validates/clamps values, updates all active enemies uniformly, restarts the spawn interval from zero, saves settings, and returns to the prior screen.
 - “Cancel” restores the original values.

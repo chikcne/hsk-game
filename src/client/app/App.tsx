@@ -139,7 +139,7 @@ export function App() {
 
   if (!save || screen === "loading") return <LoadingScreen hasSave={Boolean(save)} />;
   if (screen === "decks") return <>
-    <DeckSelect save={save} settings={settings} selected={selected} onSelect={setSelected} onDeploy={deploy} onReview={deployReview} onSettings={() => setSettingsOpen(true)} saveStatus={saveStatus} />
+    <DeckSelect save={save} settings={settings} selected={selected} onSelect={setSelected} onDeploy={deploy} onReview={deployReview} onSettings={() => setSettingsOpen(true)} />
     {settingsOpen && <SettingsDialog settings={settings} onApply={applySettings} onClose={() => setSettingsOpen(false)} />}
   </>;
   if (screen === "summary" && summary) return <Summary
@@ -180,9 +180,9 @@ function LoadingScreen({ hasSave }: { hasSave: boolean }) {
   return <main className="loading-screen paper"><div className="loader-logo" lang="zh-Hans">汉</div><h1>HANZI DEFENDER</h1><p>{hasSave ? "LOADING SECTOR DATA" : "CONNECTING TO DEFENSE NETWORK"}</p><div className="loading-bar"><i /></div><small>LOCAL-FIRST • OFFLINE READY</small></main>;
 }
 
-function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, onSettings, saveStatus }: {
+function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, onSettings }: {
   save: SaveFile; settings: DifficultySettings; selected: DeckId; onSelect: (id: DeckId) => void;
-  onDeploy: (id: DeckId) => void; onReview: () => void; onSettings: () => void; saveStatus: string;
+  onDeploy: (id: DeckId) => void; onReview: () => void; onSettings: () => void;
 }) {
   const [activeIndex, setActiveIndex] = useState(() => DECK_IDS.indexOf(selected) + 1);
   const columnRefs = useRef<Array<HTMLButtonElement | null>>([]);
@@ -190,7 +190,6 @@ function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, on
   const selectedLevel = save.levels[selected];
   const selectedMastered = masteredCount(selectedLevel);
   const selectedTotal = selectedLevel ? Object.keys(selectedLevel.words).length : DECK_TOTALS[selected];
-  const selectedNumber = DECK_IDS.indexOf(selected);
   const lessonNumber = (selectedLevel?.currentLevelIndex ?? 0) + 1;
 
   useEffect(() => {
@@ -218,12 +217,6 @@ function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, on
     <button className="settings-button" onClick={onSettings} aria-label="System settings">
       <img className="mooncake-icon" src="/images/mooncake-settings.png" alt="" />
     </button>
-    <header className="menu-masthead">
-      <div className="brand-mark" lang="zh-Hans">字</div>
-      <div><p>HANZI DEFENDER · 习字守卷</p><h1 lang="zh-Hans">择卷而习</h1></div>
-      <div className="folio">LOCAL—01<br /><span>卷{LEVEL_HANZI[selectedNumber]} · 第{lessonNumber}课</span></div>
-    </header>
-    <div className="indigo-rule" aria-hidden="true"><i /></div>
     <section
       className="scroll-menu"
       aria-label="Choose a mission or review"
@@ -280,10 +273,6 @@ function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, on
         <span className="column-count">{totalMastered} 待复习</span><span className="seal action-seal">习</span>
       </button>
     </section>
-    <footer className="menu-footer">
-      <p><span className={`ink-dot ${saveStatus}`} /><b>{statusLabel(saveStatus)}</b> · JUST NOW</p>
-      <p className="current-choice">续习 · {deckLabel(selected)} · 第{lessonNumber}课</p><p>点击 / ENTER 进入</p>
-    </footer>
   </main>;
 }
 
@@ -559,7 +548,7 @@ function SettingsDialog({ settings, onApply, onClose }: { settings: DifficultySe
   const update = <K extends keyof DifficultySettings>(key: K, value: DifficultySettings[K]) => setDraft((old) => ({ ...old, [key]: value }));
   return <div className="modal-backdrop"><section className="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settings-title"><header><small>EVERY LEARNING AND REVIEW PARAMETER IS ADJUSTABLE</small><h2 id="settings-title">SYSTEM SETTINGS</h2></header><div className="settings-body">
     <h3>INVASION PRESSURE</h3>
-    <label><span>ENEMY SPAWN RATE <b>1 EVERY {(draft.spawnIntervalMs / 1000).toFixed(2)}s · {Math.round(60000 / draft.spawnIntervalMs)}/MIN</b></span><input type="range" min="1500" max="5000" step="250" value={draft.spawnIntervalMs} onChange={(event) => update("spawnIntervalMs", Number(event.target.value))} /></label>
+    <label><span>BASE ENEMY SPAWN RATE <b>1 EVERY {(draft.spawnIntervalMs / 1000).toFixed(2)}s · {Math.round(60000 / draft.spawnIntervalMs)}/MIN</b></span><input type="range" min="1500" max="5000" step="250" value={draft.spawnIntervalMs} onChange={(event) => update("spawnIntervalMs", Number(event.target.value))} /></label>
     <label><span>ENEMY SPEED <b>{speedLabel} · {draft.enemySpeedMultiplier.toFixed(2)}×</b></span><input className="mint-range" type="range" min="0.65" max="1.5" step="0.05" value={draft.enemySpeedMultiplier} onChange={(event) => update("enemySpeedMultiplier", Number(event.target.value))} /></label>
     <h3>REGULAR LEVELS</h3>
     <NumberSetting label="NEW WORDS PER LEVEL" value={draft.levelSize} min={5} max={100} step={5} onChange={(value) => update("levelSize", value)} />

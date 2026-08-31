@@ -7,6 +7,7 @@ import {
 import { selectLockedTarget, soonestLandingEnemy } from "../../src/domain/session/targeting";
 import { calculatePoints, nextStreak } from "../../src/domain/session/scoring";
 import {
+  masteryAdjustedSpawnDelayMs,
   nextPerformanceMultiplier,
   performanceAdjustedSpawnDelayMs,
 } from "../../src/domain/session/performance";
@@ -78,10 +79,20 @@ describe("session rules", () => {
     expect(miss).toBeCloseTo(0.91);
   });
 
-  it("multiplies configured pressure and fills an empty battlefield within half a second", () => {
+  it("scales the next spawn timer from the previous word's mastery", () => {
+    expect(masteryAdjustedSpawnDelayMs(5_000, 0)).toBe(8_000);
+    expect(masteryAdjustedSpawnDelayMs(5_000, 50)).toBe(5_000);
+    expect(masteryAdjustedSpawnDelayMs(5_000, 100)).toBe(2_000);
+    expect(masteryAdjustedSpawnDelayMs(5_000, -10)).toBe(8_000);
+    expect(masteryAdjustedSpawnDelayMs(5_000, 110)).toBe(2_000);
+  });
+
+  it("multiplies mastery-adjusted pressure and fills an empty battlefield within half a second", () => {
     expect(performanceAdjustedSpawnDelayMs(3_000, 1.5, true)).toBe(2_000);
     expect(performanceAdjustedSpawnDelayMs(3_000, 0.75, true)).toBe(4_000);
-    expect(performanceAdjustedSpawnDelayMs(5_000, 0.7, false)).toBe(500);
+    expect(performanceAdjustedSpawnDelayMs(5_000, 1, true, 0)).toBe(8_000);
+    expect(performanceAdjustedSpawnDelayMs(5_000, 1, true, 100)).toBe(2_000);
+    expect(performanceAdjustedSpawnDelayMs(5_000, 0.7, false, 0)).toBe(500);
   });
 
   it("gives a selected word its full recall window and a two-second autocomplete grace period", () => {

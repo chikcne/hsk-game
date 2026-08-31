@@ -19,7 +19,10 @@ import {
   performanceAdjustedSpawnDelayMs,
 } from "../../domain/session/performance";
 import { advanceEnemiesForRecallWindow, moveEnemiesUp } from "../../domain/session/landing";
-import { wordSpeedMultiplierFromAppearanceWeight } from "../../domain/session/speed";
+import {
+  masteryLevelFromAppearanceWeight,
+  wordSpeedMultiplierFromAppearanceWeight,
+} from "../../domain/session/speed";
 import { selectLockedTarget } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
 import { playSoundEffect } from "../audio/soundEffects";
@@ -122,6 +125,8 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const phaseStarted = useRef(performance.now());
   const meaningPinyinMs = useRef(0);
   const spawnDue = useRef(0);
+  // Until the first word spawns, 50% mastery keeps the configured base interval neutral.
+  const previousSpawnMastery = useRef(50);
   const lastFrame = useRef<number | null>(null);
   const enemySequence = useRef(0);
   const pausedRef = useRef(paused); pausedRef.current = paused;
@@ -185,6 +190,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
           settings.spawnIntervalMs,
           performanceMultiplierRef.current,
           enemiesRef.current.length > 0,
+          previousSpawnMastery.current,
         );
       }
     };
@@ -333,26 +339,26 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     updateWord(enemy, outcome, typed);
   }, [commitEnemies, updateWord]);
 
-  const spawn = useCallback(() => {
-    if (enemiesRef.current.length >= MAX_ACTIVE_ENEMIES) return;
+  const spawn = useCallback((): number | null => {
+    if (enemiesRef.current.length >= MAX_ACTIVE_ENEMIES) return null;
     const config = optionsRef.current;
     const excluded = new Set(enemiesRef.current.map((enemy) => enemy.wordId));
     let wordId: string;
     let ordinal: number;
     let appearanceWeight: number;
     if (config.kind === "regular") {
-      const current = levelRef.current; if (!current) return;
+      const current = levelRef.current; if (!current) return null;
       const result = spawnNextWord(current, deck, undefined, settings, excluded);
-      if (result.status !== "spawned") return;
+      if (result.status !== "spawned") return null;
       levelRef.current = result.level; setLevel(result.level); config.onChange(result.level);
       wordId = result.wordId; ordinal = result.spawnOrdinal;
       appearanceWeight = result.level.words[wordId]?.appearanceWeight ?? ZERO_MASTERY_APPEARANCE_WEIGHT;
     } else {
-      const current = reviewRef.current; if (!current) return;
+      const current = reviewRef.current; if (!current) return null;
       const result = spawnNextReviewWord(current, config.masteredWordKeys, excluded, undefined, settings);
       if (result.status !== "spawned") {
         if (enemiesRef.current.length === 0) setReviewComplete(true);
-        return;
+        return null;
       }
       reviewRef.current = result.review; setReview(result.review); config.onChange(result.review);
       wordId = result.wordKey; ordinal = result.spawnOrdinal;
@@ -371,6 +377,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       status: "descending",
     };
     commitEnemies([...enemiesRef.current, enemy]);
+    return masteryLevelFromAppearanceWeight(appearanceWeight);
   }, [commitEnemies, deck, settings]);
 
   useEffect(() => { spawnDue.current = performance.now(); }, [settings.spawnIntervalMs]);
@@ -382,11 +389,13 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       if (!pausedRef.current && !learningPausedRef.current && !document.hidden) {
         const currentPerformanceMultiplier = performanceMultiplierRef.current;
         if (now >= spawnDue.current) {
-          spawn();
+          const spawnedMastery = spawn();
+          if (spawnedMastery !== null) previousSpawnMastery.current = spawnedMastery;
           spawnDue.current = now + performanceAdjustedSpawnDelayMs(
             settings.spawnIntervalMs,
             currentPerformanceMultiplier,
             enemiesRef.current.length > 0,
+            previousSpawnMastery.current,
           );
         }
         const advance = delta / BASE_TRAVEL_MS * settings.enemySpeedMultiplier * currentPerformanceMultiplier;
@@ -438,6 +447,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       settings.spawnIntervalMs,
       performanceMultiplierRef.current,
       enemiesRef.current.length > 0,
+      previousSpawnMastery.current,
     );
   }, [settings.spawnIntervalMs]);
   const replay = () => { if (targetWord) playWordAudio(targetWord); };
