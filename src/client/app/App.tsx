@@ -318,7 +318,12 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
 
   useEffect(() => {
     setPinyin("");
-    if (!paused && !battle.learningPaused && battle.phase === "pinyin") input.current?.focus({ preventScroll: true });
+    const focusPinyin = () => {
+      if (!paused && !battle.learningPaused && battle.phase === "pinyin") input.current?.focus({ preventScroll: true });
+    };
+    focusPinyin();
+    window.addEventListener("focus", focusPinyin);
+    return () => window.removeEventListener("focus", focusPinyin);
   }, [battle.learningPaused, battle.phase, battle.target?.id, paused]);
   useEffect(() => {
     const listener = (event: KeyboardEvent) => {
@@ -377,10 +382,9 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
         <em>{battle.target ? `Altitude ${Math.max(0, Math.round((1 - battle.target.progress) * 100))} percent` : "Awaiting target"}</em>
       </div>
       {battle.phase === "pinyin" ? <form className="pinyin-form" onSubmit={submit} onClick={() => input.current?.focus({ preventScroll: true })}>
-        <label htmlFor="pinyin">为右上字词输入拼音 <span>·</span> TYPE PINYIN</label>
-        <div className={`typed-pinyin ${!pinyin ? "empty" : ""}`} aria-hidden="true">{pinyin || (battle.target ? "输入拼音" : "静候落墨")}<span className="caret" /></div>
+        <div className={`typed-pinyin ${!pinyin ? "empty" : ""}`} aria-hidden="true">{pinyin}<span className="caret" /></div>
         <input
-          className="pinyin-input" id="pinyin" ref={input} value={pinyin}
+          className="pinyin-input" id="pinyin" ref={input} value={pinyin} aria-label="Pinyin answer"
           onChange={(event) => setPinyin(event.target.value)}
           onCompositionStart={() => { composingRef.current = true; setComposing(true); }}
           onCompositionEnd={() => { composingRef.current = false; setComposing(false); }}

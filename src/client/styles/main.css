@@ -309,16 +309,14 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 
 /* Answers */
 .answer-console { z-index: 3; min-height: 0; display: flex; align-items: center; justify-content: center; }
-.pinyin-form { width: min(560px, 100%); display: flex; flex-direction: column; align-items: center; cursor: text; }
-.pinyin-form label { margin: 0 0 8px; color: var(--indigo-soft); font: 9px var(--ui); letter-spacing: .16em; text-transform: uppercase; }
-.pinyin-form label span { color: var(--cinnabar); }
+.pinyin-form { position: relative; width: min(560px, 100%); display: flex; flex-direction: column; align-items: center; transform: translateY(-8px); cursor: text; }
 .typed-pinyin { min-width: 260px; min-height: 38px; text-align: center; color: var(--ink); font: 400 clamp(24px, 2.3vw, 33px)/1.1 var(--serif-cjk); letter-spacing: .12em; }
 .typed-pinyin.empty { color: rgba(93,86,74,.42); font-size: 18px; }
 .caret { display: inline-block; width: 1px; height: .92em; margin-left: 4px; background: var(--cinnabar); vertical-align: -.08em; animation: blink 1.05s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .pinyin-input { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; opacity: .01; }
 .pinyin-form:focus-within .typed-pinyin { text-decoration: underline; text-decoration-color: rgba(169,67,50,.22); text-underline-offset: 7px; }
-.form-help { width: 100%; margin-top: 10px; display: flex; justify-content: space-between; color: var(--ghost); font: 8px var(--ui); letter-spacing: .09em; }
+.form-help { position: absolute; top: calc(100% + 10px); width: 100%; display: flex; justify-content: space-between; color: var(--ghost); font: 8px var(--ui); letter-spacing: .09em; }
 .meaning-zone { width: min(1100px, 100%); padding: 10px 14px 14px; border: 1px solid rgba(35,78,97,.28); background: rgba(242,234,215,.58); box-shadow: 0 10px 22px rgba(71,52,28,.06); }
 .meaning-heading { min-height: 26px; display: flex; align-items: center; justify-content: space-between; color: var(--indigo-soft); font-size: 9px; letter-spacing: .1em; }
 .meaning-heading button { padding: 4px 8px; border: 0; background: transparent; color: var(--indigo); cursor: pointer; }
@@ -466,7 +464,6 @@ input.mint-range { accent-color: var(--jade); }
   .active-mark { right: -17px; font-size: 7px; }
   .landing-rule { bottom: 7px; }
   .answer-console { min-height: 0; }
-  .pinyin-form label { margin-bottom: 4px; font-size: 7px; }
   .typed-pinyin { min-width: 180px; min-height: 29px; font-size: 25px; }
   .typed-pinyin.empty { font-size: 14px; }
   .form-help { display: none; }
