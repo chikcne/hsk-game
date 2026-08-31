@@ -38,5 +38,10 @@ function hasAtMostOneExtraLetter(answer: string, expected: string): boolean {
 
 export function acceptsPinyin(accepted: readonly string[], raw: string): boolean {
   const answer = canonicalizePinyin(raw);
-  return answer.length > 0 && accepted.some((expected) => hasAtMostOneExtraLetter(answer, expected));
+  return answer.length > 0 && accepted.some((expected) => {
+    if (hasAtMostOneExtraLetter(answer, expected)) return true;
+    // Many learners omit the umlaut when tone marks are unavailable. Keep `v`
+    // as the canonical spelling, but also accept plain `u` for expected `ü`.
+    return expected.includes("v") && hasAtMostOneExtraLetter(answer, expected.replaceAll("v", "u"));
+  });
 }

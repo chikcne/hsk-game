@@ -17,6 +17,10 @@ describe("pinyin canonicalization", () => {
     expect(acceptsPinyin(["shei", "shui"], "shuí")).toBe(true);
   });
 
+  it.each(["nuer", "nüer", "nu:er", "nver"])("accepts %s for nǚ’ér", (input) => {
+    expect(acceptsPinyin(["nver"], input)).toBe(true);
+  });
+
   it.each(["xxuexi", "xueexi", "xuexii", "xuéexí"])("tolerates one extra letter in %s", (input) => {
     expect(acceptsPinyin(["xuexi"], input)).toBe(true);
   });

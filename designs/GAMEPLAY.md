@@ -94,11 +94,11 @@ Examples:
 | Deck pinyin | Accepted examples | Rejected example |
 |---|---|---|
 | `xuéxí` | `xuexi`, `xue xi`, `xuéxí`, `xueexi` | `xuesi` |
-| `nǚ’ér` | `nver`, `nü er`, `nu:er`, `nvver` | `nuer` |
+| `nǚ’ér` | `nver`, `nuer`, `nü er`, `nu:er`, `nvver` | `ner` |
 | `shéi/shuí` | `shei`, `shui`, `shuui` | `shi` |
 | `hóng-lǜdēng` | `honglvdeng`, `hong lv deng`, `honglvvdeng` | `hongludeng` |
 
-Canonicalization is specified in [`DATA_PIPELINE.md`](DATA_PIPELINE.md). It is used both during import and submission, after which the insertion tolerance is applied. Do not perform incremental red/green character checking; a submission is judged only on Enter. This avoids leaking the answer and supports natural editing.
+Canonicalization is specified in [`DATA_PIPELINE.md`](DATA_PIPELINE.md). It is used both during import and submission, after which the insertion tolerance is applied. A plain `u` is also accepted where the expected canonical form contains `v` (`ü`), since learners commonly omit the umlaut when typing without tone marks. Do not perform incremental red/green character checking; a submission is judged only on Enter. This avoids leaking the answer and supports natural editing.
 
 Timing starts when the enemy first becomes the active target, not when it spawned. Pause, settings, and hidden-tab time are excluded. An enemy that reaches the ground before selection waits there, and a newly selected enemy always receives the full configured recall window regardless of altitude. Once pinyin is accepted, altitude cannot turn meaning-selection time into a recall failure.
 
