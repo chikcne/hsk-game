@@ -215,7 +215,9 @@ function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, on
   };
 
   return <main className={`paper deck-screen ${settings.reducedMotion ? "reduce-motion" : ""}`}>
-    <button className="settings-button" onClick={onSettings} aria-label="System settings">设</button>
+    <button className="settings-button" onClick={onSettings} aria-label="System settings">
+      <img className="mooncake-icon" src="/images/mooncake-settings.png" alt="" />
+    </button>
     <header className="menu-masthead">
       <div className="brand-mark" lang="zh-Hans">字</div>
       <div><p>HANZI DEFENDER · 习字守卷</p><h1 lang="zh-Hans">择卷而习</h1></div>

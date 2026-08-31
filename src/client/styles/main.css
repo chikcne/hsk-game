@@ -147,16 +147,18 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   width: 48px;
   height: 48px;
   padding: 0;
-  border: 1px solid rgba(35,78,97,.44);
+  display: grid;
+  place-items: center;
+  border: 0;
   border-radius: 50%;
-  background: rgba(232,222,199,.55);
+  background: transparent;
   color: var(--indigo);
   font: 400 18px var(--serif-cjk);
   cursor: pointer;
   transition: transform 360ms cubic-bezier(.16,1,.3,1), background 240ms ease, color 240ms ease;
 }
-.settings-button::after { content: ""; position: absolute; inset: 6px; border: 1px solid currentColor; border-radius: 50%; opacity: .42; }
-.settings-button:hover { transform: rotate(12deg) scale(1.06); color: var(--cinnabar); background: var(--paper-light); }
+.settings-button .mooncake-icon { width: 100%; height: 100%; display: block; object-fit: contain; }
+.settings-button:hover { transform: scale(1.06); }
 .menu-masthead { display: flex; align-items: center; gap: 20px; padding-right: 90px; }
 .brand-mark {
   width: 62px;
@@ -213,7 +215,7 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .scroll-menu:hover .scroll-column:not(:hover), .scroll-menu:focus-within .scroll-column:not(:focus) { opacity: .58; transform: translateY(7px); }
 .scroll-column:hover, .scroll-column:focus-visible, .scroll-column.selected { transform: translateY(-7px); opacity: 1 !important; }
 .scroll-column:hover::before, .scroll-column:focus-visible::before, .scroll-column.selected::before { background: rgba(242,234,215,.58); transform: scaleY(1); box-shadow: 0 14px 28px rgba(71,52,28,.08); }
-.column-kicker { height: 80px; color: var(--indigo-soft); font-size: 9px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; writing-mode: vertical-rl; }
+.column-kicker { height: 100px; color: var(--indigo-soft); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; writing-mode: vertical-rl; }
 .scroll-column strong { margin-top: 8px; writing-mode: vertical-rl; text-orientation: upright; font: 420 clamp(28px, 3.2vw, 47px)/1.1 var(--serif-cjk); letter-spacing: .13em; }
 .scroll-column em { margin-top: 16px; writing-mode: vertical-rl; text-orientation: upright; color: var(--ink-soft); font: normal 12px/1.4 var(--serif-cjk); letter-spacing: .14em; }
 .column-progress { position: relative; width: 3px; flex: 1; min-height: 68px; margin: 16px 0 8px; background: rgba(33,29,24,.14); overflow: hidden; }
@@ -428,7 +430,7 @@ input.mint-range { accent-color: var(--jade); }
   .level-columns::-webkit-scrollbar { display: none; }
   .scroll-column { min-width: 44px; padding: 10px 2px 7px; scroll-snap-align: center; }
   .scroll-column::before { inset: 3px 2px; }
-  .column-kicker { height: 61px; font-size: 6px; letter-spacing: .06em; }
+  .column-kicker { height: 66px; font-size: 7px; letter-spacing: .06em; }
   .scroll-column strong { margin-top: 4px; font-size: clamp(21px,6.5vw,27px); letter-spacing: .08em; }
   .scroll-column em { margin-top: 10px; font-size: 8px; letter-spacing: .04em; }
   .column-progress { min-height: 45px; margin: 10px 0 6px; width: 2px; }
