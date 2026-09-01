@@ -342,7 +342,14 @@ button.danger { color: var(--cinnabar); border-color: var(--cinnabar); }
 .settings-body label:not(.check) { display: block; margin: 30px 0; }
 .settings-body label span { display: flex; justify-content: space-between; color: var(--ink-soft); }
 .settings-body label b { color: var(--cinnabar-dark); }
-input[type="range"] { width: 100%; height: 18px; margin-top: 14px; accent-color: var(--cinnabar); }
+input[type="range"] {
+  width: 100%;
+  height: 18px;
+  margin-top: 14px;
+  accent-color: var(--cinnabar);
+  /* Keep a scrolling settings dialog from claiming horizontal thumb drags. */
+  touch-action: none;
+}
 input.mint-range { accent-color: var(--jade); }
 .rule { position: relative; padding: 22px; display: flex; flex-direction: column; gap: 10px; border: 1px solid rgba(35,78,97,.28); }
 .rule span { color: var(--ink-soft); }
