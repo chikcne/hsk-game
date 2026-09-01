@@ -28,25 +28,21 @@ type Props = {
   ink: StrokeInk;
 };
 
-/** Imperative Hanzi Writer wrapper. The instance is tied only to a mounted
- * enemy/character slot, so movement rerenders and target changes never replay
- * its stroke sequence. */
-function StrokeOrderCharacterComponent({ character, data, animate, startDelayMs, paused, ink }: Props) {
+type AnimatedProps = Omit<Props, "animate"> & { data: StrokeCharacterData };
+
+/** Hanzi Writer exists only during pre-spawn writing. Unmounting this component
+ * at gameplay spawn is a hard lifecycle boundary: no delayed writer callback
+ * can mutate or replay a live enemy's completed glyph. */
+function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, paused, ink }: AnimatedProps) {
   const hostRef = useRef<HTMLSpanElement>(null);
   const writerRef = useRef<HanziWriter | null>(null);
-  const animateOnMountRef = useRef(animate);
-  const animateOnMount = animateOnMountRef.current;
   const pausedRef = useRef(paused);
   pausedRef.current = paused;
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    if (!data) reportFallback(character, "character is absent from the loaded bundle");
-  }, [character, data]);
-
-  useEffect(() => {
     const host = hostRef.current;
-    if (!host || !data || failed) return;
+    if (!host || failed) return;
     let disposed = false;
     let delayFrame: number | null = null;
     const initialSize = Math.max(1, Math.round(host.getBoundingClientRect().width || 48));
@@ -55,10 +51,8 @@ function StrokeOrderCharacterComponent({ character, data, animate, startDelayMs,
       height: initialSize,
       padding: Math.max(1, initialSize * 0.035),
       renderer: "svg",
-      // Pre-spawn writing begins on a blank sheet: do not reveal the gray
-      // completed-glyph guide underneath the animated ink.
       showOutline: false,
-      showCharacter: !animateOnMount,
+      showCharacter: false,
       strokeColor: INK_COLORS[ink],
       strokeAnimationDuration: STROKE_DRAW_MS,
       strokeFadeDuration: 0,
@@ -97,7 +91,6 @@ function StrokeOrderCharacterComponent({ character, data, animate, startDelayMs,
         writer._hanziWriterRenderer?.destroy();
         return;
       }
-      if (!animateOnMount) return;
       await waitForSequenceTurn();
       if (disposed) return;
       void writer.animateCharacter().catch((error) => {
@@ -127,30 +120,39 @@ function StrokeOrderCharacterComponent({ character, data, animate, startDelayMs,
       if (writerRef.current === writer) writerRef.current = null;
       host.replaceChildren();
     };
-  }, [animateOnMount, character, data, failed, startDelayMs]);
-
-  useEffect(() => {
-    const writer = writerRef.current;
-    if (!writer || !animateOnMount) return;
-    void (paused ? writer.pauseAnimation() : writer.resumeAnimation());
-  }, [animateOnMount, paused]);
-
-  useEffect(() => {
-    const writer = writerRef.current;
-    if (!writer || animate || !animateOnMount) return;
-    writer._renderState?.cancelAll();
-    void writer.showCharacter({ duration: 0 });
-    void writer.hideOutline({ duration: 0 });
-  }, [animate, animateOnMount]);
+  }, [character, data, failed, ink, startDelayMs]);
 
   useEffect(() => {
     const writer = writerRef.current;
     if (!writer) return;
-    void writer.updateColor("strokeColor", INK_COLORS[ink], { duration: animate ? 90 : 0 });
-  }, [ink]);
+    void (paused ? writer.pauseAnimation() : writer.resumeAnimation());
+  }, [paused]);
 
-  if (!data || failed) return <span className="stroke-character-missing" aria-hidden="true" />;
+  if (failed) return <span className="stroke-character-missing" aria-hidden="true" />;
   return <span ref={hostRef} className="stroke-character" data-character={character} />;
+}
+
+/** Live and solved enemies are declarative SVG. They contain no animation
+ * state, timers, or imperative renderer that could redraw them later. */
+function StaticStrokeOrderCharacter({ character, data }: { character: string; data: StrokeCharacterData }) {
+  return <span className="stroke-character" data-character={character}>
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 1024 1024">
+      <g transform="translate(0 900) scale(1 -1)">
+        {data.strokes.map((path, index) => <path d={path} fill="currentColor" key={index} />)}
+      </g>
+    </svg>
+  </span>;
+}
+
+function StrokeOrderCharacterComponent(props: Props) {
+  useEffect(() => {
+    if (!props.data) reportFallback(props.character, "character is absent from the loaded bundle");
+  }, [props.character, props.data]);
+
+  if (!props.data) return <span className="stroke-character-missing" aria-hidden="true" />;
+  return props.animate
+    ? <AnimatedStrokeOrderCharacter {...props} data={props.data} />
+    : <StaticStrokeOrderCharacter character={props.character} data={props.data} />;
 }
 
 export const StrokeOrderCharacter = memo(StrokeOrderCharacterComponent);
