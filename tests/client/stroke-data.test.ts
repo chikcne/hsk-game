@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, test, vi } from "vitest";
-import { loadStrokeBundle, loadStrokeBundles } from "../../src/client/data/strokeData";
+import { loadStrokeBundle, loadStrokeBundles, phraseStrokeLeadMs, STROKE_DRAW_MS, STROKE_GAP_MS, type StrokeCharacterData } from "../../src/client/data/strokeData";
 
 const bundle = (character: string) => ({
   schemaVersion: 1,
@@ -16,6 +16,19 @@ afterEach(() => {
 });
 
 describe("stroke bundle loading", () => {
+  test("calculates the requested pre-spawn lead from every phrase stroke", () => {
+    const character = (count: number): StrokeCharacterData => ({
+      strokes: Array.from({ length: count }, () => "M 0 0 L 1 1 Z"),
+      medians: Array.from({ length: count }, () => [[0, 0], [1, 1]]),
+    });
+    const data = new Map([["人", character(2)], ["中", character(4)], ["文", character(4)]]);
+
+    expect(STROKE_DRAW_MS).toBe(150);
+    expect(STROKE_GAP_MS).toBe(50);
+    expect(phraseStrokeLeadMs("人", data)).toBe(400);
+    expect(phraseStrokeLeadMs("中文", data)).toBe(1600);
+  });
+
   test("uses local deck URLs, deduplicates requests, and merges review bundles", async () => {
     const fetchMock = vi.fn(async (input: string | URL | Request) => {
       const url = String(input);

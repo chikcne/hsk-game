@@ -27,6 +27,7 @@ import { selectLockedTarget } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
 import { playSoundEffect } from "../audio/soundEffects";
 import { audioPoolWordIds, WordAudioPlayer, wordAudioSource } from "../audio/wordAudio";
+import { phraseStrokeLeadMs, type StrokeDataMap } from "../data/strokeData";
 
 export type Feedback = {
   id: string;
@@ -89,7 +90,22 @@ const initialStats = (mode: "regular" | "review"): SessionStats => ({
   bestStreak: 0, seen: new Set(), newlyMastered: new Set(), levelsCompleted: 0, wordStats: new Map(),
 });
 
-export function useBattle(options: BattleOptions, settings: DifficultySettings, paused: boolean) {
+type PreparedSpawn = {
+  enemy: Enemy;
+  mastery: number;
+  leadMs: number;
+  startedAt: number;
+  spawnAt: number;
+};
+type SpawnPreview = { wordId: string; leadMs: number };
+
+export function useBattle(
+  options: BattleOptions,
+  settings: DifficultySettings,
+  paused: boolean,
+  strokeData: StrokeDataMap,
+  animateStrokes: boolean,
+) {
   const { deck } = options;
   const words = useMemo(() => new Map(deck.words.map((word) => [word.id, word])), [deck]);
   const wordAudioPlayer = useMemo(() => new WordAudioPlayer(), [deck.fingerprint]);
@@ -125,6 +141,9 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   const phaseStarted = useRef(performance.now());
   const meaningPinyinMs = useRef(0);
   const spawnDue = useRef(0);
+  const [preparingEnemy, setPreparingEnemy] = useState<Enemy | null>(null);
+  const preparingRef = useRef<PreparedSpawn | null>(null);
+  const nextSpawnPreview = useRef<SpawnPreview | null | undefined>(undefined);
   // Until the first word spawns, 50% mastery keeps the configured base interval neutral.
   const previousSpawnMastery = useRef(50);
   const lastFrame = useRef<number | null>(null);
@@ -152,7 +171,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
   useEffect(() => () => wordAudioPlayer.dispose(), [wordAudioPlayer]);
 
   const commitEnemies = useCallback((nextEnemies: Enemy[], now = performance.now()) => {
-    if (nextEnemies.length === 0) {
+    if (nextEnemies.length === 0 && preparingRef.current === null) {
       spawnDue.current = Math.min(spawnDue.current, now + EMPTY_BATTLEFIELD_SPAWN_DELAY_MS);
     }
     const nextTarget = selectLockedTarget(nextEnemies, targetIdRef.current);
@@ -173,7 +192,10 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     const now = performance.now();
     if (suspended && suspendedAt.current === null) suspendedAt.current = now;
     else if (!suspended && suspendedAt.current !== null) {
-      phaseStarted.current += now - suspendedAt.current;
+      const suspendedFor = now - suspendedAt.current;
+      phaseStarted.current += suspendedFor;
+      spawnDue.current += suspendedFor;
+      if (preparingRef.current) preparingRef.current.spawnAt += suspendedFor;
       suspendedAt.current = null;
       lastFrame.current = now;
     }
@@ -183,20 +205,17 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       const now = performance.now();
       if (document.hidden && suspendedAt.current === null) suspendedAt.current = now;
       else if (!document.hidden && suspendedAt.current !== null && !pausedRef.current && !learningPausedRef.current) {
-        phaseStarted.current += now - suspendedAt.current;
+        const suspendedFor = now - suspendedAt.current;
+        phaseStarted.current += suspendedFor;
+        spawnDue.current += suspendedFor;
+        if (preparingRef.current) preparingRef.current.spawnAt += suspendedFor;
         suspendedAt.current = null;
         lastFrame.current = now;
-        spawnDue.current = now + performanceAdjustedSpawnDelayMs(
-          settings.spawnIntervalMs,
-          performanceMultiplierRef.current,
-          enemiesRef.current.length > 0,
-          previousSpawnMastery.current,
-        );
       }
     };
     document.addEventListener("visibilitychange", visibility);
     return () => document.removeEventListener("visibilitychange", visibility);
-  }, [settings.spawnIntervalMs]);
+  }, []);
 
   const updateSessionStats = useCallback((word: RuntimeWord, outcome: EncounterOutcome, pinyinMs: number, points: number, newlyMastered: boolean, struggled: boolean, recallScore: number | null, levelsCompleted: number, protectsMiss: boolean) => {
     const nowStreak = nextStreak(streakRef.current, outcome.kind === "correct", protectsMiss);
@@ -252,6 +271,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
 
   const updateWord = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     const word = words.get(enemy.wordId); if (!word) return;
+    nextSpawnPreview.current = undefined;
     const config = optionsRef.current;
     const pinyinMs = outcome.kind === "landed" ? 0 : outcome.pinyinMs;
     const thinking = outcome.kind === "correct" || outcome.kind === "wrongMeaning"
@@ -315,7 +335,13 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     const now = performance.now();
     const adjustedRemaining = Math.max(0, spawnDue.current - now) * currentPerformanceMultiplier / nextMultiplier;
     spawnDue.current = now + adjustedRemaining;
-    if (enemiesRef.current.length === 0) {
+    const preparing = preparingRef.current;
+    if (preparing) {
+      // Never accelerate a gameplay spawn past the end of its already-visible
+      // pre-write animation.
+      preparing.spawnAt = Math.max(spawnDue.current, preparing.startedAt + preparing.leadMs);
+      spawnDue.current = preparing.spawnAt;
+    } else if (enemiesRef.current.length === 0) {
       spawnDue.current = Math.min(spawnDue.current, now + EMPTY_BATTLEFIELD_SPAWN_DELAY_MS);
     }
 
@@ -339,7 +365,36 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     updateWord(enemy, outcome, typed);
   }, [commitEnemies, updateWord]);
 
-  const spawn = useCallback((): number | null => {
+  const strokeLeadForWord = useCallback((wordId: string) => {
+    if (!animateStrokes) return 0;
+    const word = words.get(wordId);
+    return word ? phraseStrokeLeadMs(word.displayHanzi, strokeData) : 0;
+  }, [animateStrokes, strokeData, words]);
+
+  /** Purely peeks at the deterministic scheduler. Nothing is reserved until
+   * the phrase reaches its exact pre-write threshold. */
+  const previewSpawn = useCallback((): SpawnPreview | null => {
+    if (enemiesRef.current.length >= MAX_ACTIVE_ENEMIES) return null;
+    const config = optionsRef.current;
+    const excluded = new Set(enemiesRef.current.map((enemy) => enemy.wordId));
+    let wordId: string;
+    if (config.kind === "regular") {
+      const current = levelRef.current; if (!current) return null;
+      const result = spawnNextWord(current, deck, undefined, settings, excluded);
+      if (result.status !== "spawned") return null;
+      wordId = result.wordId;
+    } else {
+      const current = reviewRef.current; if (!current) return null;
+      const result = spawnNextReviewWord(current, config.masteredWordKeys, excluded, undefined, settings);
+      if (result.status !== "spawned") return null;
+      wordId = result.wordKey;
+    }
+    return { wordId, leadMs: strokeLeadForWord(wordId) };
+  }, [deck, settings, strokeLeadForWord]);
+
+  /** Reserves the previewed scheduler result, but does not add it to the live
+   * enemy list. It cannot be targeted, descend, land, or affect recall yet. */
+  const prepareSpawn = useCallback((): Omit<PreparedSpawn, "leadMs" | "startedAt" | "spawnAt"> | null => {
     if (enemiesRef.current.length >= MAX_ACTIVE_ENEMIES) return null;
     const config = optionsRef.current;
     const excluded = new Set(enemiesRef.current.map((enemy) => enemy.wordId));
@@ -356,31 +411,29 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     } else {
       const current = reviewRef.current; if (!current) return null;
       const result = spawnNextReviewWord(current, config.masteredWordKeys, excluded, undefined, settings);
-      if (result.status !== "spawned") {
-        if (enemiesRef.current.length === 0) setReviewComplete(true);
-        return null;
-      }
+      if (result.status !== "spawned") return null;
       reviewRef.current = result.review; setReview(result.review); config.onChange(result.review);
       wordId = result.wordKey; ordinal = result.spawnOrdinal;
       appearanceWeight = 1;
     }
     setReviewComplete(false);
-    const lane = (ordinal * 5 + 1) % 8;
     const enemy: Enemy = {
       id: `e-${Date.now()}-${enemySequence.current++}`,
       wordId,
       progress: 0,
       speedMultiplier: wordSpeedMultiplierFromAppearanceWeight(appearanceWeight),
       isNewWord: config.kind === "regular" && appearanceWeight === ZERO_MASTERY_APPEARANCE_WEIGHT,
-      lane,
+      lane: (ordinal * 5 + 1) % 8,
       spawnOrdinal: ordinal,
       status: "descending",
     };
-    commitEnemies([...enemiesRef.current, enemy]);
-    return masteryLevelFromAppearanceWeight(appearanceWeight);
-  }, [commitEnemies, deck, settings]);
+    return { enemy, mastery: masteryLevelFromAppearanceWeight(appearanceWeight) };
+  }, [deck, settings]);
 
-  useEffect(() => { spawnDue.current = performance.now(); }, [settings.spawnIntervalMs]);
+  useEffect(() => {
+    if (preparingRef.current === null) spawnDue.current = performance.now();
+    nextSpawnPreview.current = undefined;
+  }, [animateStrokes, settings.spawnIntervalMs, strokeData]);
   useEffect(() => {
     let frame = 0;
     const tick = (now: number) => {
@@ -388,16 +441,46 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       const delta = Math.min(100, now - lastFrame.current); lastFrame.current = now;
       if (!pausedRef.current && !learningPausedRef.current && !document.hidden) {
         const currentPerformanceMultiplier = performanceMultiplierRef.current;
-        if (now >= spawnDue.current) {
-          const spawnedMastery = spawn();
-          if (spawnedMastery !== null) previousSpawnMastery.current = spawnedMastery;
+
+        if (preparingRef.current === null && enemiesRef.current.length < MAX_ACTIVE_ENEMIES) {
+          if (nextSpawnPreview.current === undefined) nextSpawnPreview.current = previewSpawn();
+          const preview = nextSpawnPreview.current;
+          if (preview && now >= spawnDue.current - preview.leadMs) {
+            const reserved = prepareSpawn();
+            if (reserved) {
+              const leadMs = strokeLeadForWord(reserved.enemy.wordId);
+              const prepared: PreparedSpawn = {
+                ...reserved,
+                leadMs,
+                startedAt: now,
+                spawnAt: Math.max(spawnDue.current, now + leadMs),
+              };
+              preparingRef.current = prepared;
+              spawnDue.current = prepared.spawnAt;
+              setPreparingEnemy(prepared.enemy);
+            } else {
+              nextSpawnPreview.current = undefined;
+            }
+          } else if (preview === null && optionsRef.current.kind === "review" && enemiesRef.current.length === 0) {
+            setReviewComplete(true);
+          }
+        }
+
+        const prepared = preparingRef.current;
+        if (prepared && now >= prepared.spawnAt) {
+          preparingRef.current = null;
+          setPreparingEnemy(null);
+          commitEnemies([...enemiesRef.current, prepared.enemy], now);
+          previousSpawnMastery.current = prepared.mastery;
+          nextSpawnPreview.current = undefined;
           spawnDue.current = now + performanceAdjustedSpawnDelayMs(
             settings.spawnIntervalMs,
             currentPerformanceMultiplier,
-            enemiesRef.current.length > 0,
+            true,
             previousSpawnMastery.current,
           );
         }
+
         const advance = delta / BASE_TRAVEL_MS * settings.enemySpeedMultiplier * currentPerformanceMultiplier;
         const lockedTargetId = targetIdRef.current;
         const activeRecallMs = lockedTargetId === null ? 0 : Math.max(0, now - phaseStarted.current);
@@ -418,7 +501,7 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
       frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick); return () => cancelAnimationFrame(frame);
-  }, [beginMeaning, commitEnemies, settings.enemySpeedMultiplier, settings.spawnIntervalMs, spawn, updateWord, words]);
+  }, [beginMeaning, commitEnemies, prepareSpawn, previewSpawn, settings.enemySpeedMultiplier, settings.spawnIntervalMs, strokeLeadForWord, updateWord, words]);
 
   const submitPinyin = (raw: string) => {
     const enemy = targetRef.current; const word = enemy ? words.get(enemy.wordId) : null;
@@ -441,15 +524,22 @@ export function useBattle(options: BattleOptions, settings: DifficultySettings, 
     learningPausedRef.current = false; setLearningPaused(false);
     setFeedback((item) => item?.kind !== "correct" ? null : item);
     const now = performance.now();
+    if (suspendedAt.current !== null) {
+      const suspendedFor = now - suspendedAt.current;
+      spawnDue.current += suspendedFor;
+      if (preparingRef.current) preparingRef.current.spawnAt += suspendedFor;
+    }
     suspendedAt.current = null;
     phaseStarted.current = now; lastFrame.current = now;
-    spawnDue.current = now + performanceAdjustedSpawnDelayMs(
-      settings.spawnIntervalMs,
-      performanceMultiplierRef.current,
-      enemiesRef.current.length > 0,
-      previousSpawnMastery.current,
-    );
+    if (preparingRef.current === null) {
+      spawnDue.current = now + performanceAdjustedSpawnDelayMs(
+        settings.spawnIntervalMs,
+        performanceMultiplierRef.current,
+        enemiesRef.current.length > 0,
+        previousSpawnMastery.current,
+      );
+    }
   }, [settings.spawnIntervalMs]);
   const replay = () => { if (targetWord) playWordAudio(targetWord); };
-  return { enemies, target, targetWord, phase, pinyinAutocompleted, choices, feedback, learningPaused, audioError, streak, performanceMultiplier, stats, level, review, reviewComplete, submitPinyin, chooseMeaning, dismissFeedback, replay };
+  return { enemies, preparingEnemy, target, targetWord, phase, pinyinAutocompleted, choices, feedback, learningPaused, audioError, streak, performanceMultiplier, stats, level, review, reviewComplete, submitPinyin, chooseMeaning, dismissFeedback, replay };
 }

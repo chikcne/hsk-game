@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 import type { Enemy } from "../../domain/session/types";
 import { DANGER_ZONE_PROGRESS } from "../../shared/constants";
 import type { RuntimeWord } from "../../shared/schemas";
-import type { StrokeDataMap } from "../data/strokeData";
+import { STROKE_CADENCE_MS, type StrokeDataMap } from "../data/strokeData";
 import { StrokeOrderCharacter } from "./StrokeOrderCharacter";
 
 export type EnemyView = Enemy & { word: RuntimeWord };
@@ -33,27 +33,36 @@ const phraseStyle = (enemy: EnemyView): PhraseStyle => {
   };
 };
 
-function Phrase({ enemy, target, remnant = false, reducedMotion, paused, strokeData }: {
+function Phrase({ enemy, target, preparing = false, remnant = false, reducedMotion, paused, strokeData }: {
   enemy: EnemyView;
   target: boolean;
+  preparing?: boolean;
   remnant?: boolean;
   reducedMotion: boolean;
   paused: boolean;
   strokeData: StrokeDataMap;
 }) {
-  return <div
-    className={`calligraphy-phrase ${target ? "is-target" : ""} ${!remnant && enemy.progress > DANGER_ZONE_PROGRESS ? "is-danger" : ""} ${remnant ? "is-solved" : "is-writing"}`}
-    style={phraseStyle(enemy)}
-  >
-    {enemy.isNewWord && <b className="new-word-mark">新</b>}
-    {[...enemy.word.displayHanzi].map((character, index) => <StrokeOrderCharacter
+  let elapsedStrokeMs = 0;
+  const characters = [...enemy.word.displayHanzi].map((character, index) => {
+    const data = strokeData.get(character);
+    const startDelayMs = elapsedStrokeMs;
+    elapsedStrokeMs += (data?.strokes.length ?? 0) * STROKE_CADENCE_MS;
+    return <StrokeOrderCharacter
       key={`${enemy.id}-${index}`}
       character={character}
-      data={strokeData.get(character)}
+      data={data}
       animate={!remnant && !reducedMotion}
+      startDelayMs={startDelayMs}
       paused={paused}
       ink={remnant ? "solved" : target ? "target" : "ink"}
-    />)}
+    />;
+  });
+  return <div
+    className={`calligraphy-phrase ${target ? "is-target" : ""} ${preparing ? "is-preparing" : ""} ${!preparing && !remnant && enemy.progress > DANGER_ZONE_PROGRESS ? "is-danger" : ""} ${remnant ? "is-solved" : "is-writing"}`}
+    style={phraseStyle(enemy)}
+  >
+    {!preparing && enemy.isNewWord && <b className="new-word-mark">新</b>}
+    {characters}
     {target && !remnant && <b className="active-mark">当前</b>}
   </div>;
 }
@@ -76,8 +85,9 @@ function SolvedPhrase({ item, reducedMotion, strokeData, onDone }: {
  * ratio. Encounter timing and progress still come directly from useBattle;
  * columns are a cosmetic projection of spawnOrdinal only.
  */
-export function GameCanvas({ enemies, targetId, solvedId, strokeData, paused = false, reducedMotion = false }: {
+export function GameCanvas({ enemies, preparingEnemy, targetId, solvedId, strokeData, paused = false, reducedMotion = false }: {
   enemies: EnemyView[];
+  preparingEnemy: EnemyView | null;
   targetId: string | null;
   solvedId: string | null;
   strokeData: StrokeDataMap;
@@ -107,13 +117,17 @@ export function GameCanvas({ enemies, targetId, solvedId, strokeData, paused = f
   }, [enemies, solvedId]);
 
   const target = enemies.find((enemy) => enemy.id === targetId);
+  const visualEnemies = preparingEnemy && !enemies.some((enemy) => enemy.id === preparingEnemy.id)
+    ? [preparingEnemy, ...enemies]
+    : enemies;
   return <div className="calligraphy-field" aria-hidden="true">
     <div className="column-rules">
       {Array.from({ length: 12 }, (_, index) => <i key={index} />)}
     </div>
     {target && <div className="target-column" style={phraseStyle(target)} />}
-    {enemies.map((enemy) => <Phrase
+    {visualEnemies.map((enemy) => <Phrase
       key={enemy.id} enemy={enemy} target={enemy.id === targetId}
+      preparing={enemy.id === preparingEnemy?.id}
       reducedMotion={reducedMotion} paused={paused || pageHidden} strokeData={strokeData}
     />)}
     {remnants.map((item) => <SolvedPhrase

@@ -7,6 +7,16 @@ export type StrokeCharacterData = {
 
 export type StrokeDataMap = ReadonlyMap<string, StrokeCharacterData>;
 
+/** Each phrase writes one stroke at a time across all of its characters.
+ * A 150 ms draw plus 50 ms separation gives the requested 200 ms cadence. */
+export const STROKE_DRAW_MS = 150;
+export const STROKE_GAP_MS = 50;
+export const STROKE_CADENCE_MS = STROKE_DRAW_MS + STROKE_GAP_MS;
+
+export function phraseStrokeLeadMs(displayHanzi: string, data: StrokeDataMap): number {
+  return [...displayHanzi].reduce((total, character) => total + (data.get(character)?.strokes.length ?? 0), 0) * STROKE_CADENCE_MS;
+}
+
 type StrokeBundle = {
   schemaVersion: 1;
   sourceCommit: string;

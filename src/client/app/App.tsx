@@ -313,11 +313,11 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
     kind: "review" as const, deck, initialReview: review, masteredWordKeys: reviewWordKeys,
     onChange: (next: ReviewProgress, outcome?: EncounterOutcome, points?: number) => reviewChangeRef.current(next, outcome, points),
   }, [deck, mode, regularLevel, review, reviewWordKeys]);
-  const battle = useBattle(options, settings, paused);
-  const battleRef = useRef(battle); battleRef.current = battle;
   const mobile = useMobileLayout();
   const systemReducedMotion = usePrefersReducedMotion();
   const reducedMotion = settings.reducedMotion || systemReducedMotion;
+  const battle = useBattle(options, settings, paused, strokeData, !reducedMotion);
+  const battleRef = useRef(battle); battleRef.current = battle;
   const [pinyin, setPinyin] = useState("");
   const [composing, setComposing] = useState(false);
   const composingRef = useRef(false);
@@ -366,6 +366,12 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
     const word = wordMap.get(enemy.wordId);
     return word ? [{ ...enemy, word }] : [];
   });
+  const preparingView = battle.preparingEnemy
+    ? (() => {
+      const word = wordMap.get(battle.preparingEnemy.wordId);
+      return word ? { ...battle.preparingEnemy, word } : null;
+    })()
+    : null;
   const levelIndex = battle.level?.currentLevelIndex ?? 0;
   const hudLabel = mode === "review" ? "REVIEW" : deckLabel(deck.id);
   const levelLabel = battle.level ? `LESSON ${levelIndex + 1}` : `${battle.stats.seen.size} REVIEWED`;
@@ -383,7 +389,7 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
 
     <section className="practice-sheet" aria-hidden="true">
       <GameCanvas
-        enemies={enemyViews} targetId={battle.target?.id ?? null} solvedId={solvedId}
+        enemies={enemyViews} preparingEnemy={preparingView} targetId={battle.target?.id ?? null} solvedId={solvedId}
         strokeData={strokeData} paused={paused || battle.learningPaused} reducedMotion={reducedMotion}
       />
     </section>

@@ -1,6 +1,6 @@
 import HanziWriter from "hanzi-writer";
 import { memo, useEffect, useRef, useState } from "react";
-import type { StrokeCharacterData } from "../data/strokeData";
+import { STROKE_DRAW_MS, STROKE_GAP_MS, type StrokeCharacterData } from "../data/strokeData";
 
 export type StrokeInk = "ink" | "target" | "solved";
 
@@ -22,6 +22,8 @@ type Props = {
   character: string;
   data: StrokeCharacterData | undefined;
   animate: boolean;
+  /** Active (unpaused) time to wait before this character starts writing. */
+  startDelayMs: number;
   paused: boolean;
   ink: StrokeInk;
 };
@@ -29,7 +31,7 @@ type Props = {
 /** Imperative Hanzi Writer wrapper. The instance is tied only to a mounted
  * enemy/character slot, so movement rerenders and target changes never replay
  * its stroke sequence. */
-function StrokeOrderCharacterComponent({ character, data, animate, paused, ink }: Props) {
+function StrokeOrderCharacterComponent({ character, data, animate, startDelayMs, paused, ink }: Props) {
   const hostRef = useRef<HTMLSpanElement>(null);
   const writerRef = useRef<HanziWriter | null>(null);
   const animateOnMountRef = useRef(animate);
@@ -46,20 +48,21 @@ function StrokeOrderCharacterComponent({ character, data, animate, paused, ink }
     const host = hostRef.current;
     if (!host || !data || failed) return;
     let disposed = false;
+    let delayFrame: number | null = null;
     const initialSize = Math.max(1, Math.round(host.getBoundingClientRect().width || 48));
     const writer = new HanziWriter(host, {
       width: initialSize,
       height: initialSize,
       padding: Math.max(1, initialSize * 0.035),
       renderer: "svg",
-      showOutline: animateOnMount,
+      // Pre-spawn writing begins on a blank sheet: do not reveal the gray
+      // completed-glyph guide underneath the animated ink.
+      showOutline: false,
       showCharacter: !animateOnMount,
-      outlineColor: "#c4baa5",
-      outlineWidth: 1.35,
       strokeColor: INK_COLORS[ink],
-      strokeAnimationSpeed: 4,
-      strokeFadeDuration: 80,
-      delayBetweenStrokes: 20,
+      strokeAnimationDuration: STROKE_DRAW_MS,
+      strokeFadeDuration: 0,
+      delayBetweenStrokes: STROKE_GAP_MS,
       charDataLoader: (requested, _onLoad, onError) => {
         if (requested !== character) {
           onError(new Error(`Unexpected character request ${requested}`));
@@ -74,13 +77,29 @@ function StrokeOrderCharacterComponent({ character, data, animate, paused, ink }
       },
     });
     writerRef.current = writer;
-    void writer.setCharacter(character).then(() => {
+    const waitForSequenceTurn = () => new Promise<void>((resolve) => {
+      let remaining = Math.max(0, startDelayMs);
+      let previous = performance.now();
+      const tick = (now: number) => {
+        if (disposed) return;
+        const elapsed = Math.min(100, now - previous);
+        previous = now;
+        if (!pausedRef.current) remaining -= elapsed;
+        if (remaining <= 0) resolve();
+        else delayFrame = window.requestAnimationFrame(tick);
+      };
+      if (remaining === 0) resolve();
+      else delayFrame = window.requestAnimationFrame(tick);
+    });
+    void writer.setCharacter(character).then(async () => {
       if (disposed) {
         writer._renderState?.cancelAll();
         writer._hanziWriterRenderer?.destroy();
         return;
       }
       if (!animateOnMount) return;
+      await waitForSequenceTurn();
+      if (disposed) return;
       void writer.animateCharacter().catch((error) => {
         if (!disposed) {
           reportFallback(character, error);
@@ -101,13 +120,14 @@ function StrokeOrderCharacterComponent({ character, data, animate, paused, ink }
     observer?.observe(host);
     return () => {
       disposed = true;
+      if (delayFrame !== null) window.cancelAnimationFrame(delayFrame);
       observer?.disconnect();
       writer._renderState?.cancelAll();
       writer._hanziWriterRenderer?.destroy();
       if (writerRef.current === writer) writerRef.current = null;
       host.replaceChildren();
     };
-  }, [animateOnMount, character, data, failed]);
+  }, [animateOnMount, character, data, failed, startDelayMs]);
 
   useEffect(() => {
     const writer = writerRef.current;
