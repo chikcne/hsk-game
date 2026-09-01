@@ -129,16 +129,18 @@ export function GameCanvas({ enemies, preparingEnemy, targetId, solvedId, stroke
     <div className="column-rules">
       {Array.from({ length: 12 }, (_, index) => <i key={index} />)}
     </div>
-    {target && <div className="target-column" style={phraseStyle(target)} />}
-    {visualEnemies.map((enemy) => <Phrase
-      key={enemy.id} enemy={enemy} target={enemy.id === targetId}
-      preparing={enemy.id === preparingEnemy?.id}
-      reducedMotion={reducedMotion} paused={paused || pageHidden} strokeData={strokeData}
-    />)}
-    {remnants.map((item) => <SolvedPhrase
-      key={item.key} item={item} reducedMotion={reducedMotion} strokeData={strokeData}
-      onDone={(key) => setRemnants((items) => items.filter((candidate) => candidate.key !== key))}
-    />)}
-    <div className="landing-rule" />
+    <div className="calligraphy-contents">
+      {target && <div className="target-column" style={phraseStyle(target)} />}
+      {visualEnemies.map((enemy) => <Phrase
+        key={enemy.id} enemy={enemy} target={enemy.id === targetId}
+        preparing={enemy.id === preparingEnemy?.id}
+        reducedMotion={reducedMotion} paused={paused || pageHidden} strokeData={strokeData}
+      />)}
+      {remnants.map((item) => <SolvedPhrase
+        key={item.key} item={item} reducedMotion={reducedMotion} strokeData={strokeData}
+        onDone={(key) => setRemnants((items) => items.filter((candidate) => candidate.key !== key))}
+      />)}
+      <div className="landing-rule" />
+    </div>
   </div>;
 }
