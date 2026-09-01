@@ -2,7 +2,8 @@
 
 The JSON bundles in this directory are trimmed and reformatted derivatives of
 [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) `graphics.txt`. Only characters
-used by the six generated HSK decks and the bundled demo deck are retained.
+used by the six generated HSK decks, the bundled demo deck, and the fixed UI
+labels are retained.
 
 - Source commit: `618dbab8a8ddefb958763c8b4afbaa741a4460de`
 - Source `graphics.txt` SHA-256: `a28c478b5178e98f67f510b2d52fde08a69dc664654ef43498253b9b764d46ee`

@@ -37,7 +37,7 @@ Settings control the base spawn interval, global enemy speed, level size, strugg
 
 ## Stroke-order data
 
-Gameplay glyphs are rendered as inline SVG by the pinned `hanzi-writer` dependency. The browser loads only local, deck-scoped subsets in `public/stroke-data/`; it never requests character data from GitHub or a CDN. UKai remains the fallback if a local bundle cannot be loaded. Reduced-motion mode and solved remnants render complete SVG paths immediately.
+All visible Chinese text is rendered as inline SVG from local Make Me a Hanzi outlines. Animated gameplay glyphs use the pinned `hanzi-writer` dependency; static UI labels use a lightweight declarative renderer and the small `ui.json` bundle. Dynamic vocabulary loads only its deck-scoped subset from `public/stroke-data/`, and missing data displays a vector placeholder rather than requesting a CJK font. English and pinyin use a bundled Latin-only WOFF2 subset of AR PL UKai, with the operating system's UI sans-serif stack as fallback. The browser never requests character data or fonts from GitHub or a CDN.
 
 The subsets are deterministic derivatives of Make Me a Hanzi `graphics.txt` at commit `618dbab8a8ddefb958763c8b4afbaa741a4460de` (required SHA-256 `a28c478b5178e98f67f510b2d52fde08a69dc664654ef43498253b9b764d46ee`). To regenerate after compiling the decks:
 

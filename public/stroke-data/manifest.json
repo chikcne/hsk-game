@@ -7,7 +7,7 @@
     "commitDate": "2018-10-16T04:58:13Z"
   },
   "extractionDate": "2026-09-01",
-  "uniqueCharacterCount": 1940,
+  "uniqueCharacterCount": 1941,
   "appliedOverrides": [
     {
       "character": "滚",
@@ -31,6 +31,11 @@
     }
   ],
   "bundles": {
+    "ui": {
+      "characterCount": 43,
+      "bytes": 95260,
+      "sha256": "3a8dfd881cbefaa385d0ccba009c527a32e320b77baf9c495e604fd8eb516b43"
+    },
     "hsk-1": {
       "characterCount": 252,
       "bytes": 511747,
@@ -47,9 +52,9 @@
       "sha256": "f8c5b8b7823b010c0decf9611b8fbf56ba4d989dda0d4c95528af470e1e8d094"
     },
     "hsk-4": {
-      "characterCount": 823,
-      "bytes": 1928084,
-      "sha256": "213517e6b52a32d3430cb03b38173f91fa9e0461f56a2745931797ef8b2a7a8b"
+      "characterCount": 825,
+      "bytes": 1931207,
+      "sha256": "55d5311f94d47ee96b36c324d747c2cd0b878bc5ad7cd93939d4be755201c6d0"
     },
     "hsk-5": {
       "characterCount": 1145,

@@ -15,7 +15,7 @@ function reportFallback(character: string, reason: unknown) {
   const key = `${character}:${String(reason)}`;
   if (reportedMissing.has(key)) return;
   reportedMissing.add(key);
-  console.error(`[stroke-renderer] Static UKai fallback for ${character}.`, reason);
+  console.error(`[stroke-renderer] Missing vector for ${character}.`, reason);
 }
 
 type Props = {
@@ -149,7 +149,7 @@ function StrokeOrderCharacterComponent({ character, data, animate, startDelayMs,
     void writer.updateColor("strokeColor", INK_COLORS[ink], { duration: animate ? 90 : 0 });
   }, [ink]);
 
-  if (!data || failed) return <span className="stroke-character-fallback" lang="zh-Hans">{character}</span>;
+  if (!data || failed) return <span className="stroke-character-missing" aria-hidden="true" />;
   return <span ref={hostRef} className="stroke-character" data-character={character} />;
 }
 

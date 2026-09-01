@@ -23,6 +23,9 @@ export const STROKE_SOURCE = {
 
 export const EXTRACTION_DATE = "2026-09-01";
 const HAN_CHARACTER = /^\p{Script=Han}$/u;
+/** Every fixed Han character rendered by the application chrome. Dynamic
+ * vocabulary characters continue to come from their deck-scoped bundle. */
+export const UI_HANZI_TEXT = "汉续习第课开始一二三四五六级基础词卷日常进阶长篇高通达成温故跨复待选择纸签释义次新当前";
 const ALLOWED_TEXT_FALLBACK = new Set(["·", "・", "—", "–", "-", "…", "（", "）", "(", ")"]);
 const SVG_TOKEN = /([a-zA-Z])|([-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?)/g;
 const SVG_ARITY: Readonly<Record<string, number>> = { M: 2, L: 2, H: 1, V: 1, C: 6, S: 4, Q: 4, T: 2, A: 7, Z: 0 };
@@ -40,7 +43,12 @@ export function collectDeckCharacters(decks: ReadonlyMap<DeckId, RuntimeDeck>): 
     const deck = decks.get(id);
     if (!deck) throw new Error(`Missing generated deck ${id}`);
     const characters = new Set(demoCharacters);
-    for (const word of deck.words) for (const character of word.displayHanzi) characters.add(character);
+    for (const word of deck.words) {
+      for (const character of word.displayHanzi) characters.add(character);
+      // A few source definitions contain Chinese grammar examples. They are
+      // visible answer text and therefore need paths in the same deck bundle.
+      for (const character of word.meaning) if (HAN_CHARACTER.test(character)) characters.add(character);
+    }
     for (const character of characters) {
       if (!HAN_CHARACTER.test(character) && !ALLOWED_TEXT_FALLBACK.has(character)) {
         throw new Error(`Unsupported non-Hanzi character ${JSON.stringify(character)} (U+${character.codePointAt(0)?.toString(16).toUpperCase()}) in ${id}`);
@@ -183,13 +191,17 @@ export async function extractStrokeBundles(options: {
     throw new Error(`graphics.txt checksum mismatch: expected ${STROKE_SOURCE.graphicsSha256}, received ${sourceSha256}`);
   }
   const byDeck = collectDeckCharacters(options.decks);
-  const required = new Set(DECK_IDS.flatMap((id) => [...byDeck[id]].filter((character) => HAN_CHARACTER.test(character))));
+  const uiCharacters = charactersInText(UI_HANZI_TEXT);
+  const required = new Set([
+    ...uiCharacters,
+    ...DECK_IDS.flatMap((id) => [...byDeck[id]].filter((character) => HAN_CHARACTER.test(character))),
+  ]);
   const { characters, appliedOverrides } = await readRequiredGraphics(options.graphicsPath, required, options.overrides);
   await mkdir(options.outputDir, { recursive: true });
   const bundles = {} as StrokeBundleManifest["bundles"];
-  for (const id of DECK_IDS) {
+  const writeBundle = async (id: DeckId | "ui", selectedCharacters: ReadonlySet<string>) => {
     const selected: Record<string, StrokeCharacterData> = {};
-    const sorted = [...byDeck[id]].filter((character) => characters.has(character)).sort((a, b) => a.codePointAt(0)! - b.codePointAt(0)!);
+    const sorted = [...selectedCharacters].filter((character) => characters.has(character)).sort((a, b) => a.codePointAt(0)! - b.codePointAt(0)!);
     for (const character of sorted) selected[character] = characters.get(character)!;
     const bundle: StrokeBundle = {
       schemaVersion: 1,
@@ -200,7 +212,9 @@ export async function extractStrokeBundles(options: {
     const content = jsonLine(bundle);
     await writeFile(path.join(options.outputDir, `${id}.json`), content);
     bundles[id] = { characterCount: sorted.length, bytes: Buffer.byteLength(content), sha256: sha256Text(content) };
-  }
+  };
+  await writeBundle("ui", uiCharacters);
+  for (const id of DECK_IDS) await writeBundle(id, byDeck[id]);
   const manifest: StrokeBundleManifest = {
     schemaVersion: 1,
     source: { ...STROKE_SOURCE },

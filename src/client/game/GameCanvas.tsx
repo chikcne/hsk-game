@@ -3,6 +3,7 @@ import type { Enemy } from "../../domain/session/types";
 import { DANGER_ZONE_PROGRESS } from "../../shared/constants";
 import type { RuntimeWord } from "../../shared/schemas";
 import { STROKE_CADENCE_MS, type StrokeDataMap } from "../data/strokeData";
+import { HanziText } from "./HanziText";
 import { StrokeOrderCharacter } from "./StrokeOrderCharacter";
 
 export type EnemyView = Enemy & { word: RuntimeWord };
@@ -51,7 +52,10 @@ function Phrase({ enemy, target, preparing = false, remnant = false, reducedMoti
       key={`${enemy.id}-${index}`}
       character={character}
       data={data}
-      animate={!remnant && !reducedMotion}
+      // Writing belongs exclusively to the pre-spawn phase. Switching this
+      // off at gameplay spawn also makes any reconciliation remount render the
+      // completed glyph instead of replaying its strokes.
+      animate={preparing && !reducedMotion}
       startDelayMs={startDelayMs}
       paused={paused}
       ink={remnant ? "solved" : target ? "target" : "ink"}
@@ -61,9 +65,10 @@ function Phrase({ enemy, target, preparing = false, remnant = false, reducedMoti
     className={`calligraphy-phrase ${target ? "is-target" : ""} ${preparing ? "is-preparing" : ""} ${!preparing && !remnant && enemy.progress > DANGER_ZONE_PROGRESS ? "is-danger" : ""} ${remnant ? "is-solved" : "is-writing"}`}
     style={phraseStyle(enemy)}
   >
-    {!preparing && enemy.isNewWord && <b className="new-word-mark">新</b>}
+    {!preparing && enemy.isNewWord && <b className="new-word-mark"><HanziText text="新" data={strokeData} accessible={false} /></b>}
+    {!preparing && !remnant && enemy.progress > DANGER_ZONE_PROGRESS && <b className="danger-mark"><HanziText text="次" data={strokeData} accessible={false} /></b>}
     {characters}
-    {target && !remnant && <b className="active-mark">当前</b>}
+    {target && !remnant && <b className="active-mark"><HanziText text="当前" data={strokeData} vertical accessible={false} /></b>}
   </div>;
 }
 

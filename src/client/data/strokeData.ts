@@ -24,11 +24,12 @@ type StrokeBundle = {
   characters: Record<string, StrokeCharacterData>;
 };
 
-const bundlePromises = new Map<DeckId, Promise<StrokeDataMap>>();
+type StrokeBundleId = DeckId | "ui";
+const bundlePromises = new Map<StrokeBundleId, Promise<StrokeDataMap>>();
 const SOURCE_COMMIT = "618dbab8a8ddefb958763c8b4afbaa741a4460de";
 const SOURCE_SHA256 = "a28c478b5178e98f67f510b2d52fde08a69dc664654ef43498253b9b764d46ee";
 
-function parseBundle(value: unknown, id: DeckId): StrokeDataMap {
+function parseBundle(value: unknown, id: StrokeBundleId): StrokeDataMap {
   if (!value || typeof value !== "object") throw new Error(`${id} stroke bundle is not an object`);
   const bundle = value as Partial<StrokeBundle>;
   if (bundle.schemaVersion !== 1 || bundle.sourceCommit !== SOURCE_COMMIT || bundle.sourceSha256 !== SOURCE_SHA256 || !bundle.characters || typeof bundle.characters !== "object") {
@@ -44,9 +45,9 @@ function parseBundle(value: unknown, id: DeckId): StrokeDataMap {
   return result;
 }
 
-/** Loads one local, deck-scoped bundle. Failure is deliberately non-fatal: the
- * renderer will use its static UKai fallback and battle timing can continue. */
-export function loadStrokeBundle(id: DeckId): Promise<StrokeDataMap> {
+/** Loads one local vector bundle. Failure is deliberately non-fatal so the UI
+ * can retain its layout and accessible text while showing a missing-glyph box. */
+function loadBundle(id: StrokeBundleId): Promise<StrokeDataMap> {
   const cached = bundlePromises.get(id);
   if (cached) return cached;
   const request = fetch(`/stroke-data/${id}.json`)
@@ -55,16 +56,23 @@ export function loadStrokeBundle(id: DeckId): Promise<StrokeDataMap> {
       return parseBundle(await response.json(), id);
     })
     .catch((error: unknown) => {
-      console.error(`[stroke-data] Could not load ${id}; using static text fallback.`, error);
+      console.error(`[stroke-data] Could not load ${id}; using vector placeholders.`, error);
       return new Map<string, StrokeCharacterData>();
     });
   bundlePromises.set(id, request);
   return request;
 }
 
+export const loadStrokeBundle = (id: DeckId): Promise<StrokeDataMap> => loadBundle(id);
+export const loadUiStrokeBundle = (): Promise<StrokeDataMap> => loadBundle("ui");
+
+export function mergeStrokeData(...maps: readonly StrokeDataMap[]): StrokeDataMap {
+  const merged = new Map<string, StrokeCharacterData>();
+  for (const map of maps) for (const [character, data] of map) merged.set(character, data);
+  return merged;
+}
+
 export async function loadStrokeBundles(ids: readonly DeckId[]): Promise<StrokeDataMap> {
   const bundles = await Promise.all(ids.map(loadStrokeBundle));
-  const merged = new Map<string, StrokeCharacterData>();
-  for (const bundle of bundles) for (const [character, data] of bundle) merged.set(character, data);
-  return merged;
+  return mergeStrokeData(...bundles);
 }

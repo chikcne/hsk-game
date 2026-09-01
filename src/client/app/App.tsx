@@ -4,9 +4,10 @@ import { RuntimeDeckSchema, type DifficultySettings, type LevelProgress, type Re
 import type { EncounterOutcome } from "../../domain/session/types";
 import { createDemoDeck } from "../data/demoDeck";
 import { createReviewDeck } from "../data/reviewDeck";
-import { loadStrokeBundle, loadStrokeBundles, type StrokeDataMap } from "../data/strokeData";
+import { loadStrokeBundle, loadStrokeBundles, loadUiStrokeBundle, mergeStrokeData, type StrokeDataMap } from "../data/strokeData";
 import { loadSave, putSave } from "../api/saves";
 import { GameCanvas } from "../game/GameCanvas";
+import { HanziText } from "../game/HanziText";
 import { useBattle, type SessionStats } from "../state/useBattle";
 import { unlockSoundEffects } from "../audio/soundEffects";
 
@@ -16,6 +17,7 @@ const sectorActionLabel = (level?: LevelProgress) => level && level.nextSpawnOrd
 const LEVEL_HANZI = ["一", "二", "三", "四", "五", "六"] as const;
 const LEVEL_DESCRIPTIONS = ["基础词卷", "日常词卷", "进阶词卷", "长篇词卷", "高阶词卷", "通达词卷"] as const;
 const statusLabel = (status: string) => status === "saved" ? "PROGRESS SAVED" : status === "saving" ? "SAVING PROGRESS" : status === "offline" ? "SAVED OFFLINE" : "SAVE ERROR";
+const HAN_CHARACTER = /^\p{Script=Han}$/u;
 
 function usePrefersReducedMotion() {
   const [reduced, setReduced] = useState(() => typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
@@ -73,6 +75,7 @@ export function App() {
   const pendingSave = useRef<SaveFile | null>(null);
   const writing = useRef(false);
   const [deck, setDeck] = useState<RuntimeDeck | null>(null);
+  const [uiStrokeData, setUiStrokeData] = useState<StrokeDataMap>(() => new Map());
   const [strokeData, setStrokeData] = useState<StrokeDataMap>(() => new Map());
   const [reviewWordKeys, setReviewWordKeys] = useState<Set<string>>(new Set());
   const [selected, setSelected] = useState<DeckId>("hsk-1");
@@ -81,7 +84,11 @@ export function App() {
   const [summary, setSummary] = useState<SessionStats | null>(null);
 
   useEffect(() => {
-    void loadSave().then(({ save: loaded, online }) => {
+    const uiStrokes = loadUiStrokeBundle().then((loaded) => {
+      setUiStrokeData(loaded);
+      return loaded;
+    });
+    void Promise.all([loadSave(), uiStrokes]).then(([{ save: loaded, online }]) => {
       saveRef.current = loaded;
       setSave(loaded);
       setSaveStatus(online ? "saved" : "offline");
@@ -131,7 +138,7 @@ export function App() {
     unlockSoundEffects();
     setMode("regular"); setSelected(id); setScreen("loading");
     const [loadedDeck, loadedStrokes] = await Promise.all([loadRuntimeDeck(id), loadStrokeBundle(id)]);
-    setDeck(loadedDeck); setStrokeData(loadedStrokes);
+    setDeck(loadedDeck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
     setPaused(false); setScreen("battle");
   };
   const deployReview = async () => {
@@ -145,7 +152,7 @@ export function App() {
     const reviewDeck = createReviewDeck(new Map(loaded), saveRef.current.levels);
     if (reviewDeck.masteredWordKeys.size === 0) { setScreen("decks"); return; }
     setReviewWordKeys(reviewDeck.masteredWordKeys);
-    setDeck(reviewDeck.deck); setStrokeData(loadedStrokes);
+    setDeck(reviewDeck.deck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
     setPaused(false); setScreen("battle");
   };
   const applySettings = (settings: DifficultySettings) => {
@@ -155,17 +162,17 @@ export function App() {
   };
   const settings = save?.settings ?? { ...DEFAULT_SETTINGS };
 
-  if (!save || screen === "loading") return <LoadingScreen hasSave={Boolean(save)} />;
+  if (!save || screen === "loading") return <LoadingScreen hasSave={Boolean(save)} strokeData={uiStrokeData} />;
   if (screen === "decks") return <>
-    <DeckSelect save={save} settings={settings} selected={selected} onSelect={setSelected} onDeploy={deploy} onReview={deployReview} onSettings={() => setSettingsOpen(true)} />
+    <DeckSelect save={save} settings={settings} selected={selected} strokeData={uiStrokeData} onSelect={setSelected} onDeploy={deploy} onReview={deployReview} onSettings={() => setSettingsOpen(true)} />
     {settingsOpen && <SettingsDialog settings={settings} onApply={applySettings} onClose={() => setSettingsOpen(false)} />}
   </>;
   if (screen === "summary" && summary) return <Summary
-    stats={summary} deckId={selected} deck={deck} level={save.levels[selected]} saveStatus={saveStatus}
+    stats={summary} deckId={selected} deck={deck} level={save.levels[selected]} saveStatus={saveStatus} strokeData={strokeData}
     onAgain={() => void (summary.mode === "review" ? deployReview() : deploy(selected))}
     onSectors={() => setScreen("decks")}
   />;
-  if (!deck) return <LoadingScreen hasSave />;
+  if (!deck) return <LoadingScreen hasSave strokeData={uiStrokeData} />;
 
   return <BattleScreen
     key={`${mode}-${deck.fingerprint}-${screen}`}
@@ -195,12 +202,12 @@ export function App() {
   </BattleScreen>;
 }
 
-function LoadingScreen({ hasSave }: { hasSave: boolean }) {
-  return <main className="loading-screen paper"><div className="loader-logo" lang="zh-Hans">汉</div><h1>HANZI DEFENDER</h1><p>{hasSave ? "LOADING SECTOR DATA" : "CONNECTING TO DEFENSE NETWORK"}</p><div className="loading-bar"><i /></div><small>LOCAL-FIRST • OFFLINE READY</small></main>;
+function LoadingScreen({ hasSave, strokeData }: { hasSave: boolean; strokeData: StrokeDataMap }) {
+  return <main className="loading-screen paper"><div className="loader-logo"><HanziText text="汉" data={strokeData} /></div><h1>HANZI DEFENDER</h1><p>{hasSave ? "LOADING SECTOR DATA" : "CONNECTING TO DEFENSE NETWORK"}</p><div className="loading-bar"><i /></div><small>LOCAL-FIRST • OFFLINE READY</small></main>;
 }
 
-function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, onSettings }: {
-  save: SaveFile; settings: DifficultySettings; selected: DeckId; onSelect: (id: DeckId) => void;
+function DeckSelect({ save, settings, selected, strokeData, onSelect, onDeploy, onReview, onSettings }: {
+  save: SaveFile; settings: DifficultySettings; selected: DeckId; strokeData: StrokeDataMap; onSelect: (id: DeckId) => void;
   onDeploy: (id: DeckId) => void; onReview: () => void; onSettings: () => void;
 }) {
   const [activeIndex, setActiveIndex] = useState(() => DECK_IDS.indexOf(selected) + 1);
@@ -253,10 +260,10 @@ function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, on
         className={`scroll-column mission ${activeIndex === 0 ? "selected" : ""}`}
         onFocus={() => setActiveIndex(0)} onMouseEnter={() => setActiveIndex(0)} onClick={() => void onDeploy(selected)}
       >
-        <span className="column-kicker">NEXT MISSION</span><strong lang="zh-Hans">续习</strong>
-        <em>{deckLabel(selected)} · 第{lessonNumber}课</em>
+        <span className="column-kicker">NEXT MISSION</span><strong><HanziText text="续习" data={strokeData} vertical /></strong>
+        <em><HanziText text={`${deckLabel(selected)} · 第${lessonNumber}课`} data={strokeData} vertical /></em>
         <span className="column-progress"><i style={{ height: `${selectedTotal ? selectedMastered / selectedTotal * 100 : 0}%` }} /></span>
-        <span className="column-count">{selectedMastered} / {selectedTotal}</span><span className="seal action-seal">{sectorActionLabel(selectedLevel) === "START" ? "开始" : "续习"}</span>
+        <span className="column-count">{selectedMastered} / {selectedTotal}</span><span className="seal action-seal"><HanziText text={sectorActionLabel(selectedLevel) === "START" ? "开始" : "续习"} data={strokeData} /></span>
       </button>
       <div className="level-columns">
       {DECK_IDS.map((id, index) => {
@@ -274,9 +281,9 @@ function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, on
           onClick={() => void onDeploy(id)}
           aria-label={`${deckLabel(id)}, ${mastered} of ${total} words mastered`}
         >
-          <span className="column-kicker">HSK 0{index + 1}</span><strong lang="zh-Hans">{LEVEL_HANZI[index]}级</strong>
-          <em lang="zh-Hans">{LEVEL_DESCRIPTIONS[index]}</em><span className="column-progress"><i style={{ height: `${percent}%` }} /></span>
-          <span className="column-count">{mastered} / {total}</span>{level?.firstCompletedAt && <span className="seal mini-seal">成</span>}
+          <span className="column-kicker">HSK 0{index + 1}</span><strong><HanziText text={`${LEVEL_HANZI[index]}级`} data={strokeData} vertical /></strong>
+          <em><HanziText text={LEVEL_DESCRIPTIONS[index]!} data={strokeData} vertical /></em><span className="column-progress"><i style={{ height: `${percent}%` }} /></span>
+          <span className="column-count">{mastered} / {total}</span>{level?.firstCompletedAt && <span className="seal mini-seal"><HanziText text="成" data={strokeData} /></span>}
           {activeIndex === menuIndex && <span className="selection-brush" aria-hidden="true" />}
         </button>;
       })}
@@ -287,9 +294,9 @@ function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, on
         onFocus={() => setActiveIndex(7)} onMouseEnter={() => setActiveIndex(7)}
         onClick={() => { if (totalMastered > 0) void onReview(); }} aria-disabled={totalMastered === 0}
       >
-        <span className="column-kicker">REVIEW</span><strong lang="zh-Hans">温故</strong><em lang="zh-Hans">跨卷复习</em>
+        <span className="column-kicker">REVIEW</span><strong><HanziText text="温故" data={strokeData} vertical /></strong><em><HanziText text="跨卷复习" data={strokeData} vertical /></em>
         <span className="column-progress"><i style={{ height: totalMastered > 0 ? "100%" : "0%" }} /></span>
-        <span className="column-count">{totalMastered} 待复习</span><span className="seal action-seal">习</span>
+        <span className="column-count"><HanziText text={`${totalMastered} 待复习`} data={strokeData} vertical /></span><span className="seal action-seal"><HanziText text="习" data={strokeData} /></span>
       </button>
     </section>
   </main>;
@@ -402,7 +409,7 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
         <em>{battle.target ? `Altitude ${Math.max(0, Math.round((1 - battle.target.progress) * 100))} percent` : "Awaiting target"}</em>
       </div>
       {battle.phase === "pinyin" ? <form className="pinyin-form" onSubmit={submit} onClick={() => input.current?.focus({ preventScroll: true })}>
-        <div className={`typed-pinyin ${!pinyin ? "empty" : ""}`} aria-hidden="true">{pinyin}<span className="caret" /></div>
+        <div className={`typed-pinyin ${!pinyin ? "empty" : ""}`} aria-hidden="true"><HanziText text={pinyin} data={strokeData} accessible={false} /><span className="caret" /></div>
         <input
           className="pinyin-input" id="pinyin" ref={input} value={pinyin} aria-label="Pinyin answer"
           onChange={(event) => setPinyin(event.target.value)}
@@ -412,12 +419,14 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
           disabled={pinyinDisabled}
         />
       </form> : <div className="meaning-zone">
-        <div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : battle.pinyinAutocompleted ? "TIME EXPIRED · PINYIN AUTOCOMPLETED" : "选择纸签释义 · CHOOSE MEANING"}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ REPLAY AUDIO</button></div>
+        <div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : battle.pinyinAutocompleted ? "TIME EXPIRED · PINYIN AUTOCOMPLETED" : <HanziText text="选择纸签释义 · CHOOSE MEANING" data={strokeData} />}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ REPLAY AUDIO</button></div>
         <div className="meaning-grid">{battle.choices.map((choice) => {
           const keys = [...new Set(choice.shortcuts.map((shortcut) => shortcut.key))];
           const highlighted = new Set(choice.shortcuts.map((shortcut) => shortcut.index));
           return <button key={choice.label} aria-label={`Press ${keys.join(" or ")}: ${choice.label}`} onClick={() => battle.chooseMeaning(keys[0]!)} disabled={battle.learningPaused}>
-            <span className="meaning-label">{choice.label.split("").map((letter, index) => highlighted.has(index) ? <mark key={index}>{letter}</mark> : letter)}</span>
+            <span className="meaning-label">{choice.label.split("").map((letter, index) => highlighted.has(index)
+              ? <mark key={index}>{letter}</mark>
+              : HAN_CHARACTER.test(letter) ? <HanziText key={index} text={letter} data={strokeData} accessible={false} /> : letter)}</span>
           </button>;
         })}</div>
       </div>}
@@ -430,7 +439,7 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
       onBackspace={() => setPinyin((value) => value.slice(0, -1))} onPause={onPause} onSubmit={submitAnswer}
     />}
     <div className="sr-live" aria-live="polite">{battle.targetWord ? `${battle.target?.isNewWord ? "New word. " : ""}Target ${battle.targetWord.displayHanzi}. ${battle.phase === "pinyin" ? "Type pinyin" : battle.pinyinAutocompleted ? `Pinyin autocompleted as ${battle.targetWord.displayPinyin}. Choose meaning` : "Choose meaning"}.` : "Waiting for target"}</div>
-    {battle.feedback && <FeedbackNotice feedback={battle.feedback} onDismiss={battle.dismissFeedback} />}
+    {battle.feedback && <FeedbackNotice feedback={battle.feedback} strokeData={strokeData} onDismiss={battle.dismissFeedback} />}
     {paused && !children && <PauseDialog onResume={onResume} onSettings={onSettings} onEnd={() => onEnd(battle.stats)} />}{children}
   </main>;
 }
@@ -549,13 +558,13 @@ function MobileKeyboard({ disabled, submitDisabled, backspaceDisabled, onLetter,
   </section>;
 }
 
-function FeedbackNotice({ feedback, onDismiss }: { feedback: NonNullable<ReturnType<typeof useBattle>["feedback"]>; onDismiss: () => void }) {
+function FeedbackNotice({ feedback, strokeData, onDismiss }: { feedback: NonNullable<ReturnType<typeof useBattle>["feedback"]>; strokeData: StrokeDataMap; onDismiss: () => void }) {
   if (feedback.kind === "correct" && !feedback.struggled) return <aside className="hit-notice" role="status"><b>+{feedback.points}</b><span>DIRECT HIT</span></aside>;
   const priority = feedback.oldWeight !== undefined
     ? `MASTERY ${101 - feedback.oldWeight} → ${101 - (feedback.newWeight ?? feedback.oldWeight)} · DUE IN ${feedback.repeatAfterPhrases}`
     : `RECALL ${feedback.recallScoreMsPerChar === null || feedback.recallScoreMsPerChar === undefined ? "—" : `${Math.round(feedback.recallScoreMsPerChar)} MS/CHAR`} · INTERVAL ${feedback.repeatAfterPhrases}`;
   const blocking = feedback.kind !== "correct";
-  const notice = <aside className="breach-notice" role={blocking ? "dialog" : "alert"} aria-modal={blocking ? true : undefined} aria-labelledby={blocking ? "learning-feedback-title" : undefined}><small>// {feedback.kind === "landed" ? "ALIEN LANDED" : feedback.struggled ? "SLOW RECALL" : "ANSWER REVIEW"} //</small><strong id={blocking ? "learning-feedback-title" : undefined} lang="zh-Hans">{feedback.word.displayHanzi}</strong><span>{feedback.word.displayPinyin}</span><b>{feedback.word.meaning}</b>{feedback.typed && <em>YOU TYPED: {feedback.typed}</em>}<footer><span>{feedback.struggled ? "ADDED TO LEVEL POOL" : "RECALL RECORDED"}</span><span>{priority}</span></footer>{blocking && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE DEFENSE</button>}</aside>;
+  const notice = <aside className="breach-notice" role={blocking ? "dialog" : "alert"} aria-modal={blocking ? true : undefined} aria-labelledby={blocking ? "learning-feedback-title" : undefined}><small>// {feedback.kind === "landed" ? "ALIEN LANDED" : feedback.struggled ? "SLOW RECALL" : "ANSWER REVIEW"} //</small><strong id={blocking ? "learning-feedback-title" : undefined}><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b>{feedback.typed && <em><HanziText text={`YOU TYPED: ${feedback.typed}`} data={strokeData} /></em>}<footer><span>{feedback.struggled ? "ADDED TO LEVEL POOL" : "RECALL RECORDED"}</span><span>{priority}</span></footer>{blocking && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE DEFENSE</button>}</aside>;
   return blocking ? <div className="modal-backdrop learning-backdrop">{notice}</div> : notice;
 }
 
@@ -604,8 +613,8 @@ function SettingsDialog({ settings, onApply, onClose }: { settings: DifficultySe
   </div><footer><button onClick={onClose}>CANCEL</button><button onClick={() => setDraft({ ...DEFAULT_SETTINGS })}>RESET DEFAULTS</button><button autoFocus className="primary" onClick={() => onApply(draft)}>APPLY SETTINGS</button></footer></section></div>;
 }
 
-function Summary({ stats, deckId, deck, level, saveStatus, onAgain, onSectors }: {
-  stats: SessionStats; deckId: DeckId; deck: RuntimeDeck | null; level?: LevelProgress; saveStatus: string;
+function Summary({ stats, deckId, deck, level, saveStatus, strokeData, onAgain, onSectors }: {
+  stats: SessionStats; deckId: DeckId; deck: RuntimeDeck | null; level?: LevelProgress; saveStatus: string; strokeData: StrokeDataMap;
   onAgain: () => void; onSectors: () => void;
 }) {
   const resolved = stats.correct + stats.wrongPinyin + stats.wrongMeaning + stats.landed;
@@ -626,9 +635,9 @@ function Summary({ stats, deckId, deck, level, saveStatus, onAgain, onSectors }:
     <section className="stat-grid"><div><small>SCORE</small><b className="amber">+{stats.score.toLocaleString()}</b></div><div><small>ACCURACY</small><b className="mint">{accuracy}%</b></div><div><small>BEST STREAK</small><b className="pink">×{stats.bestStreak}</b></div><div><small>WORDS SEEN</small><b className="cyan">{stats.seen.size}</b></div></section>
     {isReview ? <section className="review-ranking"><h2>MOST REINFORCEMENT NEEDED</h2>{ranking.length === 0 ? <p>Perfect round — no struggles or misses.</p> : <div className="ranking-table">{ranking.map(([id, item], index) => {
       const word = wordMap.get(id); const errors = item.wrongPinyin + item.wrongMeaning + item.landed;
-      return <div key={id}><b>#{index + 1}</b><strong lang="zh-Hans">{word?.displayHanzi ?? id.split(":").at(-1)}</strong><span>{word?.displayPinyin}</span><span>{errors} WRONG · {item.struggles} STRUGGLES</span><em>{item.recallScoreMsPerChar === null ? "—" : `${Math.round(item.recallScoreMsPerChar)} ms/char`}</em></div>;
+      return <div key={id}><b>#{index + 1}</b><strong><HanziText text={word?.displayHanzi ?? id.split(":").at(-1) ?? ""} data={strokeData} /></strong><span>{word?.displayPinyin}</span><span>{errors} WRONG · {item.struggles} STRUGGLES</span><em>{item.recallScoreMsPerChar === null ? "—" : `${Math.round(item.recallScoreMsPerChar)} ms/char`}</em></div>;
     })}</div>}</section>
-    : <section className="summary-details"><div className="mastery-report"><h2>SECTOR MASTERY <span>{mastered} / {total}</span></h2><div className="segment-bar"><i style={{ width: `${mastered / total * 100}%` }} /></div><p><b className="mint">+{stats.newlyMastered.size}</b> NEW WORDS MASTERED</p><p><b className="red">{stats.wrongPinyin + stats.wrongMeaning + stats.landed}</b> WORDS NEED REINFORCEMENT</p><p><b className="cyan">{stats.levelsCompleted}</b> LEVELS COMPLETED</p><small>NEXT UP</small><div className="next-up">{next.map((item, index) => <span lang="zh-Hans" key={index}>{item}</span>)}</div></div><div className="save-report"><small>SAVE STATUS</small><b className={saveStatus === "saved" ? "mint" : "red"}>{saveStatus === "saved" ? "✓ ALL PROGRESS SAVED" : "! PROGRESS CACHED LOCALLY"}</b><span>LAST CHECKPOINT<br />JUST NOW</span><button className="primary" onClick={onAgain}>CONTINUE</button></div></section>}
+    : <section className="summary-details"><div className="mastery-report"><h2>SECTOR MASTERY <span>{mastered} / {total}</span></h2><div className="segment-bar"><i style={{ width: `${mastered / total * 100}%` }} /></div><p><b className="mint">+{stats.newlyMastered.size}</b> NEW WORDS MASTERED</p><p><b className="red">{stats.wrongPinyin + stats.wrongMeaning + stats.landed}</b> WORDS NEED REINFORCEMENT</p><p><b className="cyan">{stats.levelsCompleted}</b> LEVELS COMPLETED</p><small>NEXT UP</small><div className="next-up">{next.map((item, index) => <span key={index}><HanziText text={item} data={strokeData} /></span>)}</div></div><div className="save-report"><small>SAVE STATUS</small><b className={saveStatus === "saved" ? "mint" : "red"}>{saveStatus === "saved" ? "✓ ALL PROGRESS SAVED" : "! PROGRESS CACHED LOCALLY"}</b><span>LAST CHECKPOINT<br />JUST NOW</span><button className="primary" onClick={onAgain}>CONTINUE</button></div></section>}
     <footer><button onClick={onSectors}>RETURN TO SECTORS</button><button className="pink-button" onClick={onAgain}>{isReview ? "NEXT REVIEW ROUND" : "DEFEND AGAIN"}</button></footer>
   </main>;
 }

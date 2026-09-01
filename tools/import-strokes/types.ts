@@ -34,5 +34,5 @@ export type StrokeBundleManifest = {
   uniqueCharacterCount: number;
   appliedOverrides: Array<{ character: string; issue: string; note: string }>;
   qualityReviews: Array<{ characters: string[]; issue: string; decision: string }>;
-  bundles: Record<DeckId, { characterCount: number; bytes: number; sha256: string }>;
+  bundles: Record<DeckId | "ui", { characterCount: number; bytes: number; sha256: string }>;
 };

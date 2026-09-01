@@ -9,6 +9,7 @@ import { createDemoDeck } from "../../src/client/data/demoDeck";
 import {
   applyStrokeOrderOverride,
   readRequiredGraphics,
+  UI_HANZI_TEXT,
   validateCharacterData,
   validateSvgPath,
 } from "../../tools/import-strokes/extract";
@@ -57,8 +58,20 @@ describe("stroke data extraction", () => {
   test("committed bundles match their manifest checksums, remain sorted, and cover bundled words", async () => {
     const directory = path.resolve("public/stroke-data");
     const manifest = JSON.parse(await readFile(path.join(directory, "manifest.json"), "utf8")) as StrokeBundleManifest;
-    expect(manifest.uniqueCharacterCount).toBe(1940);
+    expect(manifest.uniqueCharacterCount).toBe(1941);
     expect(manifest.appliedOverrides.map((item) => item.character)).toEqual(["滚", "肠"]);
+
+    const uiContent = await readFile(path.join(directory, "ui.json"), "utf8");
+    const uiBundle = JSON.parse(uiContent) as StrokeBundle;
+    expect(Buffer.byteLength(uiContent)).toBe(manifest.bundles.ui.bytes);
+    expect(createHash("sha256").update(uiContent).digest("hex")).toBe(manifest.bundles.ui.sha256);
+    expect(Object.keys(uiBundle.characters)).toEqual([...new Set(UI_HANZI_TEXT)].sort((a, b) => a.codePointAt(0)! - b.codePointAt(0)!));
+    const uiSource = await Promise.all([
+      readFile(path.resolve("src/client/app/App.tsx"), "utf8"),
+      readFile(path.resolve("src/client/game/GameCanvas.tsx"), "utf8"),
+    ]);
+    const fixedUiCharacters = new Set(uiSource.join("\n").match(/\p{Script=Han}/gu) ?? []);
+    expect([...fixedUiCharacters].filter((character) => !uiBundle.characters[character])).toEqual([]);
 
     for (const id of DECK_IDS) {
       const content = await readFile(path.join(directory, `${id}.json`), "utf8");
@@ -74,8 +87,11 @@ describe("stroke data extraction", () => {
       const required = new Set(createDemoDeck(id).words.flatMap((word) => [...word.displayHanzi]));
       const deckPath = path.resolve("public/game-data", id, "deck.json");
       if (existsSync(deckPath)) {
-        const deck = JSON.parse(await readFile(deckPath, "utf8")) as { words: Array<{ displayHanzi: string }> };
-        for (const word of deck.words) for (const character of word.displayHanzi) required.add(character);
+        const deck = JSON.parse(await readFile(deckPath, "utf8")) as { words: Array<{ displayHanzi: string; meaning: string }> };
+        for (const word of deck.words) {
+          for (const character of word.displayHanzi) required.add(character);
+          for (const character of word.meaning) if (/^\p{Script=Han}$/u.test(character)) required.add(character);
+        }
       }
       expect([...required].filter((character) => !bundle.characters[character])).toEqual([]);
     }
