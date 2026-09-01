@@ -4,7 +4,7 @@ import { CHOICE_KEYS, DECK_IDS } from "./constants";
 export const DeckIdSchema = z.enum(DECK_IDS);
 export const ChoiceKeySchema = z.enum(CHOICE_KEYS);
 export const SettingsSchema = z.object({
-  spawnIntervalMs: z.number().int().min(1500).max(5000),
+  spawnIntervalMs: z.number().int().min(1500).max(10_000),
   enemySpeedMultiplier: z.number().min(0.65).max(1.5),
   masterVolume: z.number().min(0).max(1),
   reducedMotion: z.boolean(),
