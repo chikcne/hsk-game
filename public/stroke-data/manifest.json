@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "repository": "https://github.com/skishore/makemeahanzi",
+    "commit": "618dbab8a8ddefb958763c8b4afbaa741a4460de",
+    "graphicsSha256": "a28c478b5178e98f67f510b2d52fde08a69dc664654ef43498253b9b764d46ee",
+    "commitDate": "2018-10-16T04:58:13Z"
+  },
+  "extractionDate": "2026-09-01",
+  "uniqueCharacterCount": 1940,
+  "appliedOverrides": [
+    {
+      "character": "滚",
+      "issue": "https://github.com/skishore/makemeahanzi/issues/72",
+      "note": "Write the lower-left stroke of 六 before its lower-right stroke."
+    },
+    {
+      "character": "肠",
+      "issue": "https://github.com/skishore/makemeahanzi/issues/95",
+      "note": "Write the 横折折折钩 before the two final 撇 strokes."
+    }
+  ],
+  "qualityReviews": [
+    {
+      "characters": [
+        "愿",
+        "割"
+      ],
+      "issue": "https://github.com/skishore/makemeahanzi/issues/90",
+      "decision": "Retain the pinned upstream medians. The report provides no reviewed replacement data; these characters remain visual-regression cases and the faint guide limits gameplay impact."
+    }
+  ],
+  "bundles": {
+    "hsk-1": {
+      "characterCount": 252,
+      "bytes": 511747,
+      "sha256": "4557a19a4febbc8b3582730e117bd9125c9435ea297d610952765568e261783b"
+    },
+    "hsk-2": {
+      "characterCount": 244,
+      "bytes": 529323,
+      "sha256": "a4fb195eea890270f1afc334bc623606cab8c75e70159bb594c3dd861df4e814"
+    },
+    "hsk-3": {
+      "characterCount": 504,
+      "bytes": 1150528,
+      "sha256": "f8c5b8b7823b010c0decf9611b8fbf56ba4d989dda0d4c95528af470e1e8d094"
+    },
+    "hsk-4": {
+      "characterCount": 823,
+      "bytes": 1928084,
+      "sha256": "213517e6b52a32d3430cb03b38173f91fa9e0461f56a2745931797ef8b2a7a8b"
+    },
+    "hsk-5": {
+      "characterCount": 1145,
+      "bytes": 2765344,
+      "sha256": "32b678152e5ffe94a6c629953ffacbe92ae6abeddb5d174b488ed7de86c11529"
+    },
+    "hsk-6": {
+      "characterCount": 1354,
+      "bytes": 3346901,
+      "sha256": "db426c0578efba04be352bb937bab6e40dd04682fcaa624c6f79bd4f054052d6"
+    }
+  }
+}

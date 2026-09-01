@@ -2,6 +2,8 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 import type { Enemy } from "../../domain/session/types";
 import { DANGER_ZONE_PROGRESS } from "../../shared/constants";
 import type { RuntimeWord } from "../../shared/schemas";
+import type { StrokeDataMap } from "../data/strokeData";
+import { StrokeOrderCharacter } from "./StrokeOrderCharacter";
 
 export type EnemyView = Enemy & { word: RuntimeWord };
 
@@ -31,23 +33,42 @@ const phraseStyle = (enemy: EnemyView): PhraseStyle => {
   };
 };
 
-function Phrase({ enemy, target, remnant = false }: { enemy: EnemyView; target: boolean; remnant?: boolean }) {
+function Phrase({ enemy, target, remnant = false, reducedMotion, paused, strokeData }: {
+  enemy: EnemyView;
+  target: boolean;
+  remnant?: boolean;
+  reducedMotion: boolean;
+  paused: boolean;
+  strokeData: StrokeDataMap;
+}) {
   return <div
     className={`calligraphy-phrase ${target ? "is-target" : ""} ${!remnant && enemy.progress > DANGER_ZONE_PROGRESS ? "is-danger" : ""} ${remnant ? "is-solved" : "is-writing"}`}
     style={phraseStyle(enemy)}
   >
     {enemy.isNewWord && <b className="new-word-mark">新</b>}
-    {[...enemy.word.displayHanzi].map((character, index) => <span key={`${character}-${index}`}>{character}</span>)}
+    {[...enemy.word.displayHanzi].map((character, index) => <StrokeOrderCharacter
+      key={`${enemy.id}-${index}`}
+      character={character}
+      data={strokeData.get(character)}
+      animate={!remnant && !reducedMotion}
+      paused={paused}
+      ink={remnant ? "solved" : target ? "target" : "ink"}
+    />)}
     {target && !remnant && <b className="active-mark">当前</b>}
   </div>;
 }
 
-function SolvedPhrase({ item, reducedMotion, onDone }: { item: PhraseRemnant; reducedMotion: boolean; onDone: (key: string) => void }) {
+function SolvedPhrase({ item, reducedMotion, strokeData, onDone }: {
+  item: PhraseRemnant;
+  reducedMotion: boolean;
+  strokeData: StrokeDataMap;
+  onDone: (key: string) => void;
+}) {
   useEffect(() => {
     const timeout = window.setTimeout(() => onDone(item.key), reducedMotion ? 150 : 620);
     return () => window.clearTimeout(timeout);
   }, [item.key, reducedMotion]);
-  return <Phrase enemy={item.enemy} target={false} remnant />;
+  return <Phrase enemy={item.enemy} target={false} remnant reducedMotion={reducedMotion} paused={false} strokeData={strokeData} />;
 }
 
 /**
@@ -55,9 +76,23 @@ function SolvedPhrase({ item, reducedMotion, onDone }: { item: PhraseRemnant; re
  * ratio. Encounter timing and progress still come directly from useBattle;
  * columns are a cosmetic projection of spawnOrdinal only.
  */
-export function GameCanvas({ enemies, targetId, solvedId, reducedMotion = false }: { enemies: EnemyView[]; targetId: string | null; solvedId: string | null; reducedMotion?: boolean }) {
+export function GameCanvas({ enemies, targetId, solvedId, strokeData, paused = false, reducedMotion = false }: {
+  enemies: EnemyView[];
+  targetId: string | null;
+  solvedId: string | null;
+  strokeData: StrokeDataMap;
+  paused?: boolean;
+  reducedMotion?: boolean;
+}) {
   const previous = useRef(new Map<string, EnemyView>());
   const [remnants, setRemnants] = useState<PhraseRemnant[]>([]);
+  const [pageHidden, setPageHidden] = useState(() => typeof document !== "undefined" && document.hidden);
+
+  useEffect(() => {
+    const onVisibility = () => setPageHidden(document.hidden);
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => document.removeEventListener("visibilitychange", onVisibility);
+  }, []);
 
   useEffect(() => {
     const live = new Set(enemies.map((enemy) => enemy.id));
@@ -77,8 +112,14 @@ export function GameCanvas({ enemies, targetId, solvedId, reducedMotion = false 
       {Array.from({ length: 12 }, (_, index) => <i key={index} />)}
     </div>
     {target && <div className="target-column" style={phraseStyle(target)} />}
-    {enemies.map((enemy) => <Phrase key={enemy.id} enemy={enemy} target={enemy.id === targetId} />)}
-    {remnants.map((item) => <SolvedPhrase key={item.key} item={item} reducedMotion={reducedMotion} onDone={(key) => setRemnants((items) => items.filter((candidate) => candidate.key !== key))} />)}
+    {enemies.map((enemy) => <Phrase
+      key={enemy.id} enemy={enemy} target={enemy.id === targetId}
+      reducedMotion={reducedMotion} paused={paused || pageHidden} strokeData={strokeData}
+    />)}
+    {remnants.map((item) => <SolvedPhrase
+      key={item.key} item={item} reducedMotion={reducedMotion} strokeData={strokeData}
+      onDone={(key) => setRemnants((items) => items.filter((candidate) => candidate.key !== key))}
+    />)}
     <div className="landing-rule" />
   </div>;
 }

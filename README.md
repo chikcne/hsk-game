@@ -1,6 +1,6 @@
 # Hanzi Defender
 
-A local-first arcade vocabulary game built from the six HSK Anki packages in `decks/`. Descending Hanzi get faster as their words are mastered; answer the locked invader predicted to land soonest with pinyin, then choose its English meaning by pressing that choice's highlighted first letter.
+A local-first arcade vocabulary game built from the six HSK Anki packages in `decks/`. Descending Hanzi get faster as their words are mastered and are drawn in PRC stroke order; answer the locked invader predicted to land soonest with pinyin, then choose its English meaning by pressing that choice's highlighted first letter.
 
 ## Run
 
@@ -35,6 +35,19 @@ The sector screen also includes an Anki-style review mode across mastered words 
 
 Settings control the base spawn interval, global enemy speed, level size, struggle threshold, response-time interval formula, mistake interval, mastery gains/losses, Anki review intervals/ease, volume, and reduced motion. The interval after each spawn scales linearly from 160% of the base for a 0%-mastery word, through 100% at 50% mastery, to 40% at full mastery. During battle, a smoothed 0.70–1.50× performance multiplier increases pressure after fast correct answers and eases it after slow answers or misses; an empty battlefield refills within 0.5 seconds. Defaults schedule a ten-second correct pinyin response ten phrases later and a wrong answer or landing five phrases later. There are no lives or game-over screen.
 
+## Stroke-order data
+
+Gameplay glyphs are rendered as inline SVG by the pinned `hanzi-writer` dependency. The browser loads only local, deck-scoped subsets in `public/stroke-data/`; it never requests character data from GitHub or a CDN. UKai remains the fallback if a local bundle cannot be loaded. Reduced-motion mode and solved remnants render complete SVG paths immediately.
+
+The subsets are deterministic derivatives of Make Me a Hanzi `graphics.txt` at commit `618dbab8a8ddefb958763c8b4afbaa741a4460de` (required SHA-256 `a28c478b5178e98f67f510b2d52fde08a69dc664654ef43498253b9b764d46ee`). To regenerate after compiling the decks:
+
+```bash
+curl -L https://raw.githubusercontent.com/skishore/makemeahanzi/618dbab8a8ddefb958763c8b4afbaa741a4460de/graphics.txt -o /tmp/graphics.txt
+npm run import:strokes -- --source /tmp/graphics.txt
+```
+
+The extractor validates paths and medians, blocks missing HSK characters, applies the reviewed source-linked corrections in `tools/import-strokes/overrides.json`, and records bundle checksums in `public/stroke-data/manifest.json`. Provenance and licenses are in `public/stroke-data/SOURCE.md`, `COPYING`, `ARPHICPL.txt`, and `HANZI_WRITER_LICENSE.txt`. The stroke graphics credit Shaunak Kishore's Make Me a Hanzi and Arphic PL KaitiM GB / Arphic PL UKai.
+
 ## Verification
 
 ```bash
@@ -43,4 +56,4 @@ npm test
 npm run build
 ```
 
-Generated assets in `public/game-data/` and player progress in `saves/` are intentionally not committed.
+Generated deck/audio assets in `public/game-data/` and player progress in `saves/` are intentionally not committed. The trimmed, licensed stroke bundles in `public/stroke-data/` are committed so production and the demo fallback work without a generation step.

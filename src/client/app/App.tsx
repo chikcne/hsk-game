@@ -4,6 +4,7 @@ import { RuntimeDeckSchema, type DifficultySettings, type LevelProgress, type Re
 import type { EncounterOutcome } from "../../domain/session/types";
 import { createDemoDeck } from "../data/demoDeck";
 import { createReviewDeck } from "../data/reviewDeck";
+import { loadStrokeBundle, loadStrokeBundles, type StrokeDataMap } from "../data/strokeData";
 import { loadSave, putSave } from "../api/saves";
 import { GameCanvas } from "../game/GameCanvas";
 import { useBattle, type SessionStats } from "../state/useBattle";
@@ -15,6 +16,18 @@ const sectorActionLabel = (level?: LevelProgress) => level && level.nextSpawnOrd
 const LEVEL_HANZI = ["一", "二", "三", "四", "五", "六"] as const;
 const LEVEL_DESCRIPTIONS = ["基础词卷", "日常词卷", "进阶词卷", "长篇词卷", "高阶词卷", "通达词卷"] as const;
 const statusLabel = (status: string) => status === "saved" ? "PROGRESS SAVED" : status === "saving" ? "SAVING PROGRESS" : status === "offline" ? "SAVED OFFLINE" : "SAVE ERROR";
+
+function usePrefersReducedMotion() {
+  const [reduced, setReduced] = useState(() => typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  useEffect(() => {
+    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReduced(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+  return reduced;
+}
 
 function useMobileLayout() {
   const [mobile, setMobile] = useState(() => typeof window !== "undefined" && window.matchMedia("(max-width: 599px)").matches);
@@ -60,6 +73,7 @@ export function App() {
   const pendingSave = useRef<SaveFile | null>(null);
   const writing = useRef(false);
   const [deck, setDeck] = useState<RuntimeDeck | null>(null);
+  const [strokeData, setStrokeData] = useState<StrokeDataMap>(() => new Map());
   const [reviewWordKeys, setReviewWordKeys] = useState<Set<string>>(new Set());
   const [selected, setSelected] = useState<DeckId>("hsk-1");
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -116,18 +130,22 @@ export function App() {
   const deploy = async (id: DeckId) => {
     unlockSoundEffects();
     setMode("regular"); setSelected(id); setScreen("loading");
-    setDeck(await loadRuntimeDeck(id));
+    const [loadedDeck, loadedStrokes] = await Promise.all([loadRuntimeDeck(id), loadStrokeBundle(id)]);
+    setDeck(loadedDeck); setStrokeData(loadedStrokes);
     setPaused(false); setScreen("battle");
   };
   const deployReview = async () => {
     if (!saveRef.current) return;
     unlockSoundEffects();
     setMode("review"); setScreen("loading");
-    const loaded = await Promise.all(DECK_IDS.map(async (id) => [id, await loadRuntimeDeck(id)] as const));
+    const [loaded, loadedStrokes] = await Promise.all([
+      Promise.all(DECK_IDS.map(async (id) => [id, await loadRuntimeDeck(id)] as const)),
+      loadStrokeBundles(DECK_IDS),
+    ]);
     const reviewDeck = createReviewDeck(new Map(loaded), saveRef.current.levels);
     if (reviewDeck.masteredWordKeys.size === 0) { setScreen("decks"); return; }
     setReviewWordKeys(reviewDeck.masteredWordKeys);
-    setDeck(reviewDeck.deck);
+    setDeck(reviewDeck.deck); setStrokeData(loadedStrokes);
     setPaused(false); setScreen("battle");
   };
   const applySettings = (settings: DifficultySettings) => {
@@ -153,6 +171,7 @@ export function App() {
     key={`${mode}-${deck.fingerprint}-${screen}`}
     mode={mode}
     deck={deck}
+    strokeData={strokeData}
     regularLevel={mode === "regular" ? save.levels[deck.id] : undefined}
     review={save.review}
     reviewWordKeys={reviewWordKeys}
@@ -277,14 +296,14 @@ function DeckSelect({ save, settings, selected, onSelect, onDeploy, onReview, on
 }
 
 type BattleProps = {
-  mode: "regular" | "review"; deck: RuntimeDeck; regularLevel?: LevelProgress; review: ReviewProgress;
+  mode: "regular" | "review"; deck: RuntimeDeck; strokeData: StrokeDataMap; regularLevel?: LevelProgress; review: ReviewProgress;
   reviewWordKeys: ReadonlySet<string>; settings: DifficultySettings; paused: boolean; saveStatus: string;
   onPause: () => void; onResume: () => void; onSettings: () => void;
   onRegularChange: (level: LevelProgress, outcome?: EncounterOutcome, points?: number) => void;
   onReviewChange: (review: ReviewProgress, outcome?: EncounterOutcome, points?: number) => void;
   onEnd: (stats: SessionStats) => void; children: ReactNode;
 };
-function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settings, paused, saveStatus, onPause, onResume, onSettings, onRegularChange, onReviewChange, onEnd, children }: BattleProps) {
+function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWordKeys, settings, paused, saveStatus, onPause, onResume, onSettings, onRegularChange, onReviewChange, onEnd, children }: BattleProps) {
   const regularChangeRef = useRef(onRegularChange); regularChangeRef.current = onRegularChange;
   const reviewChangeRef = useRef(onReviewChange); reviewChangeRef.current = onReviewChange;
   const options = useMemo(() => mode === "regular" ? {
@@ -297,6 +316,8 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
   const battle = useBattle(options, settings, paused);
   const battleRef = useRef(battle); battleRef.current = battle;
   const mobile = useMobileLayout();
+  const systemReducedMotion = usePrefersReducedMotion();
+  const reducedMotion = settings.reducedMotion || systemReducedMotion;
   const [pinyin, setPinyin] = useState("");
   const [composing, setComposing] = useState(false);
   const composingRef = useRef(false);
@@ -350,7 +371,7 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
   const levelLabel = battle.level ? `LESSON ${levelIndex + 1}` : `${battle.stats.seen.size} REVIEWED`;
   const solvedId = battle.feedback?.kind === "correct" ? battle.feedback.id : null;
 
-  return <main className={`paper battle-screen ${battle.phase}-phase ${settings.reducedMotion ? "reduce-motion" : ""}`}>
+  return <main className={`paper battle-screen ${battle.phase}-phase ${reducedMotion ? "reduce-motion" : ""}`}>
     <header className="battle-hud">
       <div className="hud-level"><span className="seal">{mode === "review" ? "R" : deck.id.at(-1)}</span><p><b>{hudLabel}</b><small>{levelLabel} · {progressCount} / {total}</small></p></div>
       <div className="hud-item"><small>SCORE</small><b>{battle.stats.score.toLocaleString()}</b></div>
@@ -361,7 +382,10 @@ function BattleScreen({ mode, deck, regularLevel, review, reviewWordKeys, settin
     </header>
 
     <section className="practice-sheet" aria-hidden="true">
-      <GameCanvas enemies={enemyViews} targetId={battle.target?.id ?? null} solvedId={solvedId} reducedMotion={settings.reducedMotion} />
+      <GameCanvas
+        enemies={enemyViews} targetId={battle.target?.id ?? null} solvedId={solvedId}
+        strokeData={strokeData} paused={paused || battle.learningPaused} reducedMotion={reducedMotion}
+      />
     </section>
 
     <section className={`answer-console ${battle.phase}`} aria-label="Answer console">

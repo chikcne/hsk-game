@@ -266,19 +266,18 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   white-space: nowrap;
   pointer-events: none;
 }
-.calligraphy-phrase > span { display: block; }
-.calligraphy-phrase::after { content: ""; width: 21px; height: 2px; margin-top: 5px; background: radial-gradient(ellipse, rgba(33,29,24,.28), transparent 68%); }
-.calligraphy-phrase.is-writing > span {
-  color: transparent;
-  background-image: linear-gradient(to bottom, var(--phrase-ink, var(--ink)) 0 50%, transparent 50%), linear-gradient(rgba(170,159,136,.3), rgba(170,159,136,.3));
-  background-size: 100% 210%, 100% 100%;
-  background-position: 0 100%, 0 0;
-  background-repeat: no-repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: ink-write 340ms linear both;
+.stroke-character,
+.stroke-character-fallback {
+  display: block;
+  width: 1em;
+  height: 1em;
+  flex: 0 0 1em;
+  line-height: 1;
 }
-@keyframes ink-write { to { background-position: 0 0, 0 0; } }
+.stroke-character { overflow: hidden; }
+.stroke-character > svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.stroke-character-fallback { display: grid; place-items: center; font-family: var(--serif-cjk); }
+.calligraphy-phrase::after { content: ""; width: 21px; height: 2px; margin-top: 5px; background: radial-gradient(ellipse, rgba(33,29,24,.28), transparent 68%); }
 .calligraphy-phrase.is-danger::before { content: "次"; position: absolute; top: -15px; right: -18px; width: 22px; height: 22px; display: grid; place-items: center; border: 1px solid var(--cinnabar); color: var(--cinnabar); font: 10px var(--serif-cjk); transform: rotate(6deg); }
 .calligraphy-phrase.is-target { z-index: 3; --phrase-ink: var(--cinnabar); }
 .new-word-mark { position: absolute; top: -14px; left: -20px; width: 22px; height: 22px; display: grid; place-items: center; border: 1.5px solid var(--jade); color: var(--jade); background: rgba(242,234,215,.82); font: 700 11px/1 var(--serif-cjk); transform: rotate(-4deg); }

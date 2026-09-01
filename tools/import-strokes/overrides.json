@@ -1,0 +1,12 @@
+{
+  "滚": {
+    "issue": "https://github.com/skishore/makemeahanzi/issues/72",
+    "note": "Write the lower-left stroke of 六 before its lower-right stroke.",
+    "strokeOrder": [0, 1, 2, 3, 4, 6, 5, 7, 8, 9, 10, 11, 12]
+  },
+  "肠": {
+    "issue": "https://github.com/skishore/makemeahanzi/issues/95",
+    "note": "Write the 横折折折钩 before the two final 撇 strokes.",
+    "strokeOrder": [0, 1, 2, 3, 5, 4, 6]
+  }
+}

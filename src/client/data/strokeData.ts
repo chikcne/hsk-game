@@ -1,0 +1,60 @@
+import type { DeckId } from "../../shared/constants";
+
+export type StrokeCharacterData = {
+  strokes: string[];
+  medians: [number, number][][];
+};
+
+export type StrokeDataMap = ReadonlyMap<string, StrokeCharacterData>;
+
+type StrokeBundle = {
+  schemaVersion: 1;
+  sourceCommit: string;
+  sourceSha256: string;
+  characters: Record<string, StrokeCharacterData>;
+};
+
+const bundlePromises = new Map<DeckId, Promise<StrokeDataMap>>();
+const SOURCE_COMMIT = "618dbab8a8ddefb958763c8b4afbaa741a4460de";
+const SOURCE_SHA256 = "a28c478b5178e98f67f510b2d52fde08a69dc664654ef43498253b9b764d46ee";
+
+function parseBundle(value: unknown, id: DeckId): StrokeDataMap {
+  if (!value || typeof value !== "object") throw new Error(`${id} stroke bundle is not an object`);
+  const bundle = value as Partial<StrokeBundle>;
+  if (bundle.schemaVersion !== 1 || bundle.sourceCommit !== SOURCE_COMMIT || bundle.sourceSha256 !== SOURCE_SHA256 || !bundle.characters || typeof bundle.characters !== "object") {
+    throw new Error(`${id} stroke bundle has incompatible metadata`);
+  }
+  const result = new Map<string, StrokeCharacterData>();
+  for (const [character, data] of Object.entries(bundle.characters)) {
+    if (!data || !Array.isArray(data.strokes) || data.strokes.length === 0 || !Array.isArray(data.medians) || data.medians.length !== data.strokes.length) {
+      throw new Error(`${id} stroke data for ${character} is malformed`);
+    }
+    result.set(character, data);
+  }
+  return result;
+}
+
+/** Loads one local, deck-scoped bundle. Failure is deliberately non-fatal: the
+ * renderer will use its static UKai fallback and battle timing can continue. */
+export function loadStrokeBundle(id: DeckId): Promise<StrokeDataMap> {
+  const cached = bundlePromises.get(id);
+  if (cached) return cached;
+  const request = fetch(`/stroke-data/${id}.json`)
+    .then(async (response) => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return parseBundle(await response.json(), id);
+    })
+    .catch((error: unknown) => {
+      console.error(`[stroke-data] Could not load ${id}; using static text fallback.`, error);
+      return new Map<string, StrokeCharacterData>();
+    });
+  bundlePromises.set(id, request);
+  return request;
+}
+
+export async function loadStrokeBundles(ids: readonly DeckId[]): Promise<StrokeDataMap> {
+  const bundles = await Promise.all(ids.map(loadStrokeBundle));
+  const merged = new Map<string, StrokeCharacterData>();
+  for (const bundle of bundles) for (const [character, data] of bundle) merged.set(character, data);
+  return merged;
+}
