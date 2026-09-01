@@ -42,6 +42,9 @@ function shortcutForGloss(gloss: string, offset: number): MeaningShortcut | null
     return LEADING_PREPOSITIONS.has(normalized) || LEADING_LIGHT_VERBS.has(normalized) || LEADING_DETERMINERS.has(normalized);
   };
   const contentWord = words.find((word) => !isScaffolding(word))
+    // "Like" is a lexical verb after infinitive "to", even though both words
+    // are otherwise in the scaffolding list.
+    ?? (words[0]?.[0].toLowerCase() === "to" && words[1]?.[0].toLowerCase() === "like" ? words[1] : undefined)
     // If the gloss consists only of scaffolding (for example "to get"), use
     // its light verb rather than the infinitive marker.
     ?? words.find((word) => !LEADING_PREPOSITIONS.has(word[0].toLowerCase()) && !LEADING_DETERMINERS.has(word[0].toLowerCase()))

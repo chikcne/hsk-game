@@ -10,6 +10,7 @@ describe("meaning choices", () => {
     expect(choiceShortcutForLabel("to make a phone call")).toEqual({ key: "P", index: 10 });
     expect(choiceShortcutForLabel("to keep warm")).toEqual({ key: "W", index: 8 });
     expect(choiceShortcutForLabel("to fall in love")).toEqual({ key: "L", index: 11 });
+    expect(choiceShortcutForLabel("to like")).toEqual({ key: "L", index: 3 });
     expect(choiceShortcutForLabel("from behind cover")).toEqual({ key: "C", index: 12 });
     expect(choiceShortcutForLabel("school")).toEqual({ key: "S", index: 0 });
   });
