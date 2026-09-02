@@ -5,6 +5,7 @@ import { parseSoundReference } from "../archive/media";
 import { normalizeHanzi } from "./hanzi";
 import { acceptedPinyinForms } from "./pinyin";
 import { normalizedKey, nullableText, sanitizeText } from "./text";
+import { choiceShortcutsForLabel } from "../../../src/domain/session/choices";
 
 export type Override = { displayHanzi: string; reason: string };
 export type Overrides = Record<string, Override>;
@@ -126,6 +127,25 @@ export function normalizeAndDedupe(
   return { words, audit };
 }
 
+/** Largest set of labels whose hotkeys are pairwise disjoint and disjoint from `answerKeys`,
+ * packed greedily from the key-hungriest label down. `generateChoices` walks the pool in a
+ * seed-dependent order, so this pessimistic packing is a lower bound on what any round can fill. */
+function disjointShortcutCapacity(labels: string[], answerKeys: Set<string>): number {
+  const keySets = labels
+    .map((label) => choiceShortcutsForLabel(label).map((shortcut) => shortcut.key))
+    .filter((keys) => keys.length > 0 && keys.every((key) => !answerKeys.has(key)))
+    .sort((a, b) => b.length - a.length);
+  const taken = new Set(answerKeys);
+  let packed = 0;
+  for (const keys of keySets) {
+    if (keys.some((key) => taken.has(key))) continue;
+    for (const key of keys) taken.add(key);
+    packed += 1;
+    if (packed === 7) break;
+  }
+  return packed;
+}
+
 export function buildMeaningIndexes(words: RuntimeWord[]): Pick<RuntimeDeck, "meaningIndex" | "meaningKeysByPartOfSpeech" | "allMeaningKeys"> & { minimumSafeDistractors: number } {
   const mutable: Record<string, { labels: Set<string>; wordIds: Set<string>; hanziKeys: Set<string>; partOfSpeechKeys: Set<string> }> = {};
   const posPools = new Map<string, Set<string>>();
@@ -156,6 +176,12 @@ export function buildMeaningIndexes(words: RuntimeWord[]): Pick<RuntimeDeck, "me
     const safe = allMeaningKeys.filter((key) => key !== word.meaningKey && !meaningIndex[key]!.hanziKeys.includes(word.hanziKey));
     minimumSafeDistractors = Math.min(minimumSafeDistractors, safe.length);
     if (safe.length < 7) throw new Error(`Word ${word.id} (${word.displayHanzi}) has only ${safe.length} safe meaning distractors`);
+    // Being safe is not enough: a round also needs 7 distractors whose hotkeys do not collide,
+    // or generateChoices throws mid-battle instead of failing the import.
+    const answerKeys = new Set(choiceShortcutsForLabel(word.meaning.trim()).map((shortcut) => shortcut.key));
+    if (answerKeys.size === 0) throw new Error(`Word ${word.id} (${word.displayHanzi}) has a meaning with no A-Z hotkey: ${word.meaning}`);
+    const capacity = disjointShortcutCapacity(safe.map((key) => meaningIndex[key]!.label.trim()), answerKeys);
+    if (capacity < 7) throw new Error(`Word ${word.id} (${word.displayHanzi}) has only ${capacity} distractors with non-colliding shortcuts`);
   }
   return { meaningIndex, meaningKeysByPartOfSpeech, allMeaningKeys, minimumSafeDistractors };
 }

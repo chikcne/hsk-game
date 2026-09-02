@@ -12,6 +12,15 @@ const LEADING_PREPOSITIONS = new Set([
   "underneath", "unlike", "until", "up", "upon", "versus", "via", "with", "within", "without",
 ]);
 
+// Adverbial particles of a phrasal verb. The preposition list above covers only some of
+// them, so "to go out" anchored on "out" while "to go up" anchored on "go" — the same shape
+// keyed two different ways (see designs/preposition_handling.md §3). A phrasal verb now
+// always anchors on its verb and takes the particle as a second key.
+const PHRASAL_PARTICLES = new Set([
+  "across", "ahead", "along", "apart", "around", "aside", "away", "back", "down", "forth", "forward",
+  "in", "into", "off", "on", "onto", "out", "over", "through", "together", "up", "upon",
+]);
+
 // These verbs provide grammatical scaffolding when followed by a complement:
 // "to get sick" is about SICK, while a bare "to get" still falls back to G.
 const LEADING_LIGHT_VERBS = new Set([
@@ -19,8 +28,36 @@ const LEADING_LIGHT_VERBS = new Set([
   "make", "put", "remain", "seem", "stay", "take", "turn",
 ]);
 const LEADING_DETERMINERS = new Set(["a", "an", "her", "his", "its", "my", "one's", "one’s", "our", "the", "their", "your"]);
+// Coordinators join two meanings without being one: "inside and outside" is about INSIDE.
+const LEADING_CONJUNCTIONS = new Set(["and", "nor", "or", "yet"]);
+// Stand-ins for an argument the word does not itself mean: "to keep someone company" is about
+// COMPANY. Only mid-gloss — a gloss that opens with one is about the placeholder ("one-sided").
+const LEADING_PLACEHOLDERS = new Set([
+  "one", "ones", "oneself", "sb", "somebody", "someone", "someone's", "someone’s", "something", "sth",
+]);
+// Meta-vocabulary of a structural gloss. "measure word for books" is about BOOKS;
+// anchoring on "measure" made every such label share M and gave the answer away (§2).
+const STRUCTURAL_WORDS = new Set([
+  "auxiliary", "classifier", "denoting", "express", "expressing", "indicate", "indicating", "interjection",
+  "introduce", "introducing", "marking", "meaning", "measure", "modifying", "onomatopoeia", "particle",
+  "prefix", "suffix", "used", "word",
+]);
+const STRUCTURAL_PREFIX = /^(?:measure word|classifier|suffix|prefix|particle|auxiliary word)\b/i;
+
+// Prepositions used attributively or lexically rather than as scaffolding. Each is
+// a whole gloss, so the surrounding label cannot change the reading (§5).
+const PREPOSITION_HEADED_COMPOUNDS = new Set([
+  "above mentioned", "as if", "down jacket", "of course", "opposite side", "outside world",
+  "over the years", "past years", "per capita",
+]);
+
+/** Most keys a single choice may claim, so one label cannot drain the distractor pool (§7). */
+const MAX_SHORTCUTS_PER_CHOICE = 3;
 
 export type MeaningShortcut = { key: ChoiceKey; index: number };
+
+type GlossWord = { text: string; index: number };
+type Gloss = { words: GlossWord[]; structural: boolean };
 
 function hashSeed(input: string): number {
   let value = 2166136261;
@@ -33,39 +70,115 @@ function random(seed: number) {
   return () => ((state = Math.imul(state ^ (state >>> 15), 1 | state) + 0x6d2b79f5 | 0) >>> 0) / 4294967296;
 }
 
-function shortcutForGloss(gloss: string, offset: number): MeaningShortcut | null {
-  const words = [...gloss.matchAll(/[A-Za-z]+(?:['’][A-Za-z]+)*/g)];
-  if (words.length === 0) return null;
-
-  const isScaffolding = (word: RegExpMatchArray) => {
-    const normalized = word[0].toLowerCase();
-    return LEADING_PREPOSITIONS.has(normalized) || LEADING_LIGHT_VERBS.has(normalized) || LEADING_DETERMINERS.has(normalized);
-  };
-  const contentWord = words.find((word) => !isScaffolding(word))
-    // "Like" is a lexical verb after infinitive "to", even though both words
-    // are otherwise in the scaffolding list.
-    ?? (words[0]?.[0].toLowerCase() === "to" && words[1]?.[0].toLowerCase() === "like" ? words[1] : undefined)
-    // If the gloss consists only of scaffolding (for example "to get"), use
-    // its light verb rather than the infinitive marker.
-    ?? words.find((word) => !LEADING_PREPOSITIONS.has(word[0].toLowerCase()) && !LEADING_DETERMINERS.has(word[0].toLowerCase()))
-    ?? words[0]!;
-  const key = contentWord[0].charAt(0).toUpperCase();
-  return CHOICE_KEYS.includes(key as ChoiceKey) ? { key: key as ChoiceKey, index: offset + contentWord.index! } : null;
+/** Blanks out `(...)` / `（...）` spans, keeping length so indices stay valid for the
+ * original label. Register and grammar notes are not meanings and must not claim keys (§1). */
+function maskParentheticals(label: string): string {
+  // Split into UTF-16 units, not code points, so a masked span keeps the exact
+  // length the original had and shortcut indices stay valid.
+  const characters = label.split("");
+  let depth = 0;
+  for (let i = 0; i < characters.length; i += 1) {
+    const character = characters[i]!;
+    if (character === "(" || character === "（") { depth += 1; characters[i] = " "; continue; }
+    if (depth > 0) {
+      const closing = character === ")" || character === "）";
+      characters[i] = " ";
+      if (closing) depth -= 1;
+    }
+  }
+  return characters.join("");
 }
 
-/** Returns one shortcut for each comma- or semicolon-separated gloss.
- * Within each gloss, the operative word skips leading grammatical scaffolding. */
-export function choiceShortcutsForLabel(label: string): MeaningShortcut[] {
-  const shortcuts: MeaningShortcut[] = [];
-  let offset = 0;
-  for (const gloss of label.split(/[;,]/u)) {
+function wordsIn(text: string, offset: number): GlossWord[] {
+  return [...text.matchAll(/[A-Za-z]+(?:['’][A-Za-z]+)*/g)].map((match) => ({
+    text: match[0].toLowerCase(),
+    index: offset + match.index!,
+  }));
+}
+
+/** Splits a masked label into glosses. Semicolons always separate; commas separate only
+ * within an ordinary gloss, because the enumeration in "measure word for pieces, chunks,
+ * money" names one measure word rather than three meanings (§2). */
+function glossesForLabel(masked: string): Gloss[] {
+  const glosses: Gloss[] = [];
+  let segmentStart = 0;
+  for (const segment of masked.split(";")) {
+    const structural = STRUCTURAL_PREFIX.test(segment.trim());
     // Slashes remain variants within a gloss rather than additional shortcuts.
-    const firstVariant = gloss.split("/", 1)[0]!;
-    const shortcut = shortcutForGloss(firstVariant, offset);
-    if (shortcut) shortcuts.push(shortcut);
-    offset += gloss.length + 1;
+    const spans = structural ? [segment] : segment.split(",");
+    let spanStart = segmentStart;
+    for (const span of spans) {
+      const firstVariant = span.split("/", 1)[0]!;
+      const words = wordsIn(firstVariant, spanStart);
+      if (words.length > 0) glosses.push({ words, structural });
+      spanStart += span.length + 1;
+    }
+    segmentStart += segment.length + 1;
   }
-  return shortcuts;
+  return glosses;
+}
+
+const isPreposition = (word: GlossWord) => LEADING_PREPOSITIONS.has(word.text);
+const isParticle = (word: GlossWord) => PHRASAL_PARTICLES.has(word.text);
+const isLightVerb = (word: GlossWord) => LEADING_LIGHT_VERBS.has(word.text);
+const isScaffolding = (word: GlossWord, position: number) =>
+  isPreposition(word) || isParticle(word) || isLightVerb(word)
+  || LEADING_DETERMINERS.has(word.text) || LEADING_CONJUNCTIONS.has(word.text)
+  || (position > 0 && LEADING_PLACEHOLDERS.has(word.text));
+
+/** Primary key plus, for a phrasal verb, the particle as a second key. */
+function shortcutWordsForGloss(gloss: Gloss): GlossWord[] {
+  const { words } = gloss;
+  if (gloss.structural) {
+    return [words.find((word, i) => !STRUCTURAL_WORDS.has(word.text) && !isScaffolding(word, i)) ?? words[0]!];
+  }
+
+  const compound = words.map((word) => word.text).join(" ");
+  if (PREPOSITION_HEADED_COMPOUNDS.has(compound)) return [words[0]!];
+
+  const content = words.find((word, i) => !isScaffolding(word, i));
+  if (content) return [content];
+
+  // Every word is scaffolding ("to go out", "to be like", "up and down"). Prefer the
+  // lexical verb, then a particle, then any non-infinitive word.
+  const verb = words.find((word) => isLightVerb(word) && word.text !== "be");
+  if (verb) {
+    const particle = words[words.indexOf(verb) + 1];
+    return particle && isParticle(particle) ? [verb, particle] : [verb];
+  }
+  const head = words.find(isParticle)
+    ?? words.find((word) => isPreposition(word) && word.text !== "to")
+    ?? words.find(isLightVerb)
+    ?? words.find((word) => !LEADING_DETERMINERS.has(word.text));
+  return [head ?? words[0]!];
+}
+
+function toShortcut(word: GlossWord): MeaningShortcut | null {
+  const key = word.text.charAt(0).toUpperCase();
+  return CHOICE_KEYS.includes(key as ChoiceKey) ? { key: key as ChoiceKey, index: word.index } : null;
+}
+
+/** Returns up to `MAX_SHORTCUTS_PER_CHOICE` distinct keys: one per comma- or
+ * semicolon-separated gloss, then any phrasal-verb particles. Within each gloss the
+ * operative word skips grammatical scaffolding. */
+export function choiceShortcutsForLabel(label: string): MeaningShortcut[] {
+  const collect = (source: string): MeaningShortcut[] => {
+    const perGloss = glossesForLabel(source).map(shortcutWordsForGloss);
+    const ordered = [...perGloss.map((words) => words[0]!), ...perGloss.flatMap((words) => words.slice(1))];
+    const shortcuts: MeaningShortcut[] = [];
+    const seen = new Set<ChoiceKey>();
+    for (const word of ordered) {
+      const shortcut = toShortcut(word);
+      if (!shortcut || seen.has(shortcut.key)) continue;
+      seen.add(shortcut.key);
+      shortcuts.push(shortcut);
+      if (shortcuts.length === MAX_SHORTCUTS_PER_CHOICE) break;
+    }
+    return shortcuts;
+  };
+  // A label that is nothing but a parenthetical still needs a key.
+  const masked = collect(maskParentheticals(label));
+  return masked.length > 0 ? masked : collect(label);
 }
 
 /** Backwards-compatible primary shortcut for callers that need one key. */
@@ -77,15 +190,25 @@ export function choiceKeyForLabel(label: string): ChoiceKey | null {
   return choiceShortcutForLabel(label)?.key ?? null;
 }
 
+function shuffle(items: string[], next: () => number): string[] {
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(next() * (i + 1));
+    [result[i], result[j]] = [result[j]!, result[i]!];
+  }
+  return result;
+}
+
 export function generateChoices(deck: RuntimeDeck, word: RuntimeWord, seed: string): MeaningChoice[] {
   const eligible = deck.allMeaningKeys.filter((key) => key !== word.meaningKey && !deck.meaningIndex[key]?.hanziKeys.includes(word.hanziKey));
-  const preferred = word.partOfSpeechKey ? (deck.meaningKeysByPartOfSpeech[word.partOfSpeechKey] ?? []).filter((key) => eligible.includes(key)) : [];
-  const pool = [...new Set([...preferred, ...eligible])];
+  const preferredKeys = new Set(word.partOfSpeechKey ? (deck.meaningKeysByPartOfSpeech[word.partOfSpeechKey] ?? []) : []);
   const next = random(hashSeed(seed));
-  for (let i = pool.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(next() * (i + 1));
-    [pool[i], pool[j]] = [pool[j]!, pool[i]!];
-  }
+  // Shuffle the two tiers separately: shuffling the union would discard the
+  // same-part-of-speech preference this ordering exists to express (§8a).
+  const pool = [
+    ...shuffle(eligible.filter((key) => preferredKeys.has(key)), next),
+    ...shuffle(eligible.filter((key) => !preferredKeys.has(key)), next),
+  ];
 
   const correctLabel = word.meaning.trim();
   const correctShortcuts = choiceShortcutsForLabel(correctLabel);

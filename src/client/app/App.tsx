@@ -350,6 +350,8 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
       if (current.learningPaused) return;
       if (event.key === "Escape") { if (children) return; event.preventDefault(); paused ? onResume() : onPause(); return; }
       if (paused || event.repeat || current.phase !== "meaning") return;
+      // Ctrl+R / Cmd+F and friends belong to the browser, not to the answer keys.
+      if (event.altKey || event.ctrlKey || event.metaKey) return;
       const key = event.key.toUpperCase();
       if (CHOICE_KEYS.includes(key as ChoiceKey)) {
         event.preventDefault();

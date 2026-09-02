@@ -327,3 +327,48 @@ Regression tests worth adding to `tests/domain/choices.test.ts` as each is fixed
 labels tabulated above, plus the two corpus-level invariants that already hold (highlight index
 matches key for every label; no `generateChoices` throw over the full corpus) so they are not
 lost while the anchoring rules change.
+
+---
+
+## Outcome
+
+Implemented in `src/domain/session/choices.ts`, `src/client/app/App.tsx` and
+`tools/import-decks/normalize/words.ts`; regression tests in `tests/domain/choices.test.ts`.
+
+Decisions taken where this document deferred:
+
+- **Key model: fixed per label.** `choiceShortcutsForLabel` remains the sole authority and
+  `generateChoices` still rejects any distractor sharing a key. Resolving keys per round
+  (each label offering ranked candidates) was considered and rejected as too costly to
+  per-word muscle memory.
+- **Phrasal verbs: verb primary, particle second.** `to go out` → `G` `O`, `to go up` → `G` `U`,
+  `to come back` → `C` `B`. Anchoring on the particle instead was measured over the corpus and
+  is much worse: `out`/`on`/`over`/`off` collapse 51 glosses onto `O` and `up` collapses 37 onto
+  `U`, while verb initials spread across the alphabet (worst bucket `go`, 13).
+- **Key cap: 3, deduped.**
+
+Measured over the full corpus (4,998 labels; 32,388 simulated draws):
+
+| Metric | Before | After |
+|---|---|---|
+| `measure word for …` rounds with exactly one such option | 366/366 (100%) | 140/384 (36%) |
+| `particle …` rounds, same | 46/48 (96%) | 6/60 (10%) |
+| `suffix …` rounds, same | 33/33 (100%) | 36/66 (55%) |
+| Distractors sharing the target's part of speech | 26.8% | 91.2% |
+| Maximum keys claimed by one label | 9 | 3 |
+| Near-duplicate label pairs sharing a primary key | 4,610 | 3,380 |
+| Labels whose highlight index mismatches its key | 0 | 0 |
+| Rounds that fail to fill | 0 | 0 |
+
+### Not fixed, deliberately
+
+- **§6 pairs that share their best anchor.** `to turn on device` / `to turn off device` are both
+  `D`, `the day after tomorrow` / `the day before yesterday` both `D`, `the year after next` /
+  `the year before last` both `Y`. Under a fixed-key model no anchoring rule separates these:
+  the discriminating word is the one both labels share. They need the per-round candidate model.
+- **`to go out` / `to come out`.** Now `G` `O` and `C` `O`; the primaries differ but the shared
+  particle key still blocks co-occurrence. Dropping the particle as a second key would let this
+  pair meet, at the cost of the particle mark on every phrasal verb.
+- **§4 degree adverbs.** `to take good care of` still keys `G`. The list is open-ended and the
+  document ranks it lowest.
+- **§8d** is recorded as an asymmetry, not a defect; unchanged.

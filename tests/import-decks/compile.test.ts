@@ -16,11 +16,20 @@ const entries = [
   ["七", "qī", "seven"], ["八", "bā", "eight"], ["九", "jiǔ", "nine"],
 ] as const;
 
-function note(id: number, guid: string, hanzi: string, pinyin: string, meaning: string): RawNote {
+// The numbers alone only reach six distinct hotkeys (one/two/three/four/five/six/seven ->
+// O T T F F S S), too few for a round of eight. These fillers give the deck enough key
+// diversity to satisfy the non-colliding-distractor check in buildMeaningIndexes.
+const fillers = [
+  ["书", "shū", "book"], ["猫", "māo", "cat"], ["狗", "gǒu", "dog"],
+  ["水", "shuǐ", "water"], ["山", "shān", "mountain"], ["雨", "yǔ", "rain"],
+  ["人", "rén", "person"], ["车", "chē", "vehicle"], ["门", "mén", "gate"],
+] as const;
+
+function note(id: number, guid: string, hanzi: string, pinyin: string, meaning: string, partOfSpeech = "number"): RawNote {
   return {
     id, guid, modelId: 1,
     fields: {
-      hanzi, pinyin, partOfSpeech: "<b>number</b>", meaning,
+      hanzi, pinyin, partOfSpeech: `<b>${partOfSpeech}</b>`, meaning,
       sentenceHanzi: `${hanzi}个`, sentencePinyin: `${pinyin} ge`, sentenceMeaning: `${meaning} item`,
       audioHanzi: `[sound:${guid}.mp3]`, audioSentence: "", image: "",
     },
@@ -29,6 +38,8 @@ function note(id: number, guid: string, hanzi: string, pinyin: string, meaning: 
 
 function fixture() {
   const notes = entries.map(([hanzi, pinyin, meaning], index) => note(index + 1, `g${index + 1}`, hanzi, pinyin, meaning));
+  notes.push(...fillers.map(([hanzi, pinyin, meaning], index) =>
+    note(index + 20, `f${index + 1}`, hanzi, pinyin, meaning, "noun")));
   notes.push(note(99, "duplicate-guid", "一", "yī", "one"));
   const mediaValue: Record<string, string> = {};
   notes.forEach((item, index) => { mediaValue[String(index)] = `${item.guid}.mp3`; });
@@ -39,7 +50,7 @@ describe("runtime deck compilation primitives", () => {
   it("uses semantic hashes, merges only exact duplicates, and builds safe sorted indexes", () => {
     const { notes, media } = fixture();
     const result = normalizeAndDedupe(notes, media, {});
-    expect(result.words).toHaveLength(9);
+    expect(result.words).toHaveLength(18);
     const one = result.words.find((word) => word.displayHanzi === "一")!;
     const expectedId = createHash("sha256").update("word-v1\0一\0yī\0one").digest("hex").slice(0, 24);
     expect(one.id).toBe(expectedId);
@@ -50,7 +61,7 @@ describe("runtime deck compilation primitives", () => {
     const runtimeWords = result.words.map(({ audioFilename: _audio, sourceNoteId: _source, ...word }) => ({ ...word, audioUrl: `audio/${word.id}.mp3` }));
     const indexes = buildMeaningIndexes(runtimeWords);
     expect(indexes.allMeaningKeys).toEqual([...indexes.allMeaningKeys].sort());
-    expect(indexes.minimumSafeDistractors).toBe(8);
+    expect(indexes.minimumSafeDistractors).toBe(17);
     expect(indexes.meaningIndex.one).toMatchObject({ label: "one", wordIds: [expectedId], hanziKeys: ["一"] });
     expect(indexes.meaningKeysByPartOfSpeech.number).toHaveLength(9);
 
