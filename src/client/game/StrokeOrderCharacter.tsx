@@ -5,9 +5,9 @@ import { STROKE_DRAW_MS, STROKE_GAP_MS, type StrokeCharacterData } from "../data
 export type StrokeInk = "ink" | "target" | "solved";
 
 const INK_COLORS: Record<StrokeInk, string> = {
-  ink: "#211d18",
-  target: "#a94332",
-  solved: "#8d8a82",
+  ink: "#221a11",
+  target: "#c03a1e",
+  solved: "#8f8163",
 };
 const reportedMissing = new Set<string>();
 
