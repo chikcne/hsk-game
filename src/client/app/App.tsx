@@ -344,6 +344,32 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
     window.addEventListener("focus", focusPinyin);
     return () => window.removeEventListener("focus", focusPinyin);
   }, [battle.learningPaused, battle.phase, battle.target?.id, paused]);
+  // Desktop: while the battle screen is up during the pinyin phase, the hidden input always keeps focus.
+  useEffect(() => {
+    if (mobile || paused || battle.learningPaused || battle.phase !== "pinyin" || !battle.target) return;
+    const interactive = "button, a, input, textarea, select, label";
+    const focusPinyin = () => {
+      if (document.querySelector('[aria-modal="true"]')) return;
+      const active = document.activeElement;
+      if (active === input.current) return;
+      if (active instanceof HTMLElement && active.closest(interactive)) return;
+      input.current?.focus({ preventScroll: true });
+    };
+    const onPointerDown = (event: PointerEvent) => {
+      if (event.target instanceof Element && event.target.closest(interactive)) return;
+      // Pressing anywhere else on the battlefield keeps typing focus instead of blurring the input.
+      event.preventDefault();
+      focusPinyin();
+    };
+    document.addEventListener("pointerdown", onPointerDown, true);
+    document.addEventListener("focusin", focusPinyin);
+    window.addEventListener("focus", focusPinyin);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown, true);
+      document.removeEventListener("focusin", focusPinyin);
+      window.removeEventListener("focus", focusPinyin);
+    };
+  }, [battle.learningPaused, battle.phase, battle.target, mobile, paused]);
   useEffect(() => {
     const listener = (event: KeyboardEvent) => {
       const current = battleRef.current;
