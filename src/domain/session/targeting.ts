@@ -24,7 +24,7 @@ export function soonestLandingEnemy(enemies: readonly Enemy[]): Enemy | null {
   return selected;
 }
 
-/** Keeps a live target locked. A newly spawned faster alien cannot steal the
+/** Keeps a live target locked. A newly spawned faster word cannot steal the
  * selection; prediction is run again only after the locked target disappears. */
 export function selectLockedTarget(enemies: readonly Enemy[], lockedTargetId: string | null): Enemy | null {
   const locked = lockedTargetId === null

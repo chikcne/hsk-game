@@ -10,7 +10,7 @@ export function masteryLevelFromAppearanceWeight(appearanceWeight: number): numb
 }
 
 /** Better-mastered words descend faster. The global speed setting is applied
- * separately, so it can still speed up or slow down the entire invasion. */
+ * separately, so it can still speed up or slow down the entire session. */
 export function wordSpeedMultiplierForMastery(masteryLevel: number): number {
   if (!Number.isFinite(masteryLevel)) throw new RangeError("masteryLevel must be finite");
   const normalized = (Math.min(100, Math.max(1, masteryLevel)) - 1) / 99;

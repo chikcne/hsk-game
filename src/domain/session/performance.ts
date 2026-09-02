@@ -9,7 +9,7 @@ export const EMPTY_BATTLEFIELD_SPAWN_DELAY_MS = 500;
 const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
 
 /**
- * Updates invasion pressure from the latest result. Fast correct answers push
+ * Updates arcade pressure from the latest result. Fast correct answers push
  * toward 1.5x, an answer at the struggle threshold is neutral, and mistakes or
  * very slow answers push toward 0.7x. Smoothing keeps one result from causing a
  * jarring speed change.

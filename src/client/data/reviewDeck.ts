@@ -3,7 +3,7 @@ import type { LevelProgress, RuntimeDeck, RuntimeWord } from "../../shared/schem
 import { reviewWordKey } from "../../domain/review";
 
 /** Builds one runtime-only deck from mastered cards. IDs and indexes are scoped
- * by sector so identical source IDs/meanings cannot collide. */
+ * by grade so identical source IDs/meanings cannot collide. */
 export function createReviewDeck(
   decks: ReadonlyMap<DeckId, RuntimeDeck>,
   levels: Partial<Record<DeckId, LevelProgress>>,

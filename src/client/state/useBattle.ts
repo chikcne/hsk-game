@@ -299,7 +299,7 @@ export function useBattle(
       // synchronously so the next animation frame cannot spawn first.
       preloadRegularPool(result.level);
       levelRef.current = result.level; setLevel(result.level);
-      const levelsCompleted = result.transitions.filter((item) => item === "levelCompleted" || item === "sectorCompleted").length;
+      const levelsCompleted = result.transitions.filter((item) => item === "levelCompleted" || item === "gradeCompleted").length;
       updateSessionStats(word, outcome, pinyinMs, points, previous.appearanceWeight > 1 && result.progress.appearanceWeight === 1, result.struggled, null, levelsCompleted, protectsMiss);
       config.onChange(result.level, outcome, points);
       feedback = {

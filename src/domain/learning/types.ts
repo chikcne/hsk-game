@@ -26,7 +26,7 @@ export type SpawnResult =
       };
     };
 
-export type LearningTransition = "levelCompleted" | "sectorCompleted" | "sectorMasteryRegressed";
+export type LearningTransition = "levelCompleted" | "gradeCompleted" | "gradeMasteryRegressed";
 
 export type ReconciliationReport = {
   retained: number;

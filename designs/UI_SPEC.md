@@ -87,8 +87,8 @@ Battle
   └─ first all-mastered event -> Completion Celebration -> Battle/Summary
 
 Summary
-  ├─ Defend Again -> Battle (same HSK)
-  └─ Return to Sectors -> Deck Select
+  ├─ Play Again -> Battle (same HSK)
+  └─ Return to Grades -> Deck Select
 ```
 
 There is no game-over or death screen.
@@ -99,13 +99,13 @@ Reference: [`01-deck-select.png`](01-deck-select.png)
 
 ### Content
 
-- Logo: **HANZI DEFENDER**
-- Subtitle: **CHOOSE A SECTOR TO DEFEND**
+- Logo: **ZIDUODUO** with the 字多多 seal mark
+- Subtitle: **CHOOSE A GRADE TO STUDY**
 - Pilot profile and save status
 - Six always-enabled deck cards
 - Current mastered/logical count and segmented progress
 - `DEPLOY`, `CONTINUE`, or `CLEARED` state
-- Last-played/next-mission strip
+- Last-played/next-lesson strip
 - Settings gear/button in top-right, keyboard reachable
 
 Deck totals reflect logical imported words: 300, 200, 500, 1,000, 1,600, and 1,798 for the audited current packages.
@@ -158,7 +158,7 @@ Hanzi sizing by display length:
 | 5–7 | smaller single line if readable, otherwise two balanced lines |
 | >7 | fit within max box and mirror full text in command panel; never truncate semantically |
 
-The importer currently contains mostly short vocabulary, but layout must measure actual glyph bounds. The alien's dark character screen and saucer body expand with those measured bounds: keep at least 12 output pixels of horizontal padding and 8 output pixels of vertical padding around the CJK ink box. Antennae, screen borders, body bezels, targeting corners, and danger effects must remain outside that padded box—no alien graphic may cross or crop a character stroke.
+The importer currently contains mostly short vocabulary, but layout must measure actual glyph bounds. Each descending word's character tile expands with those measured bounds: keep at least 12 output pixels of horizontal padding and 8 output pixels of vertical padding around the CJK ink box. Tile borders, bezels, targeting corners, and danger effects must remain outside that padded box—no graphic may cross or crop a character stroke.
 
 ### Base
 
@@ -220,7 +220,6 @@ Reference: [`04-miss-feedback.png`](04-miss-feedback.png)
 
 Show for about 800 ms without stopping other enemies:
 
-- `SIGNAL BREACH` for a wrong answer or `ALIEN LANDED` for timeout;
 - correct Hanzi;
 - toned pinyin;
 - full correct meaning;
@@ -281,7 +280,7 @@ Include:
 - words needing reinforcement;
 - up to four “next up” words by highest weight;
 - authoritative save state/revision;
-- Continue/Defend Again and Return to Sectors.
+- Continue/Play Again and Return to Grades.
 
 If save has not succeeded, replace the green status with Retry, Export Progress JSON, and Cancel navigation. Do not claim `ALL PROGRESS SAVED` optimistically.
 

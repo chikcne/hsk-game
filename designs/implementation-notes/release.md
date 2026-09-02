@@ -1,4 +1,4 @@
-# Hanzi Defender implementation handoff
+# Ziduoduo implementation handoff
 
 - Scope completed: strict TypeScript/Vite/React/Phaser client, pure deterministic learning scheduler, real APKG compiler, local Fastify save API, responsive arcade UI, settings, audio, feedback, summary, and production serving.
 - Paths changed: `src/**`, `tools/import-decks/**`, `tests/**`, root package/build files, `README.md`.

@@ -112,9 +112,9 @@
 .count { color: var(--ink-soft); font-size: 9px; letter-spacing: .06em; white-space: nowrap; }
 .action-seal { width: 34px; height: 34px; margin-top: 12px; transform: rotate(-3deg); }
 .mini-seal { position: absolute; top: 38%; right: 15%; width: 27px; height: 27px; transform: rotate(7deg); opacity: .8; }
-.mission { color: var(--cinnabar-dark); }
-.mission::before { background: rgba(169,67,50,.055); }
-.mission strong, .review strong { color: var(--cinnabar-dark); }
+.lesson { color: var(--cinnabar-dark); }
+.lesson::before { background: rgba(169,67,50,.055); }
+.lesson strong, .review strong { color: var(--cinnabar-dark); }
 .review { color: var(--jade); }
 .review .action-seal { color: var(--jade); }
 .selected .selection-brush {

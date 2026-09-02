@@ -126,7 +126,7 @@ describe("production static server", () => {
     const root = await temporaryDirectory();
     const dist = join(root, "dist");
     await mkdir(dist);
-    await writeFile(join(dist, "index.html"), "<!doctype html><title>Hanzi Defender</title>");
+    await writeFile(join(dist, "index.html"), "<!doctype html><title>Ziduoduo</title>");
     await writeFile(join(dist, "asset.txt"), "local asset");
     const app = await buildApp({
       saveDirectory: join(root, "saves"),
@@ -136,7 +136,7 @@ describe("production static server", () => {
     });
 
     expect((await app.inject({ method: "GET", url: "/asset.txt" })).body).toBe("local asset");
-    expect((await app.inject({ method: "GET", url: "/battle/hsk-1" })).body).toContain("Hanzi Defender");
+    expect((await app.inject({ method: "GET", url: "/battle/hsk-1" })).body).toContain("Ziduoduo");
     expect((await app.inject({ method: "GET", url: "/api/unknown" })).statusCode).toBe(404);
     await app.close();
   });

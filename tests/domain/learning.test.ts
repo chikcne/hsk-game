@@ -23,7 +23,7 @@ function updateWord(level: LevelProgress, id: string, patch: Partial<WordProgres
   return { ...level, words: { ...level.words, [id]: { ...progress, ...patch } } };
 }
 
-describe("rolling sector curriculum and scheduler", () => {
+describe("rolling grade curriculum and scheduler", () => {
   it("replaces an individually mastered word without waiting for the rest of the pool", () => {
     const source = deck(600);
     const level = freshLevel(source);
@@ -99,7 +99,7 @@ describe("rolling sector curriculum and scheduler", () => {
     expect(lapse.transitions).toEqual([]);
   });
 
-  it("completes the sector when the final word masters", () => {
+  it("completes the grade when the final word masters", () => {
     const source = deck(20);
     let level = freshLevel(source);
     const final = level.currentLevelWordIds.at(-1)!;
@@ -107,7 +107,7 @@ describe("rolling sector curriculum and scheduler", () => {
     level = updateWord(level, final, { appearanceWeight: 1 + settings.masteryCorrectDecrease });
     level = { ...level, activeLearningWordIds: [final] };
     const result = applyOutcomeToLevel(level, source, final, { kind: "correct", pinyinMs: 1000, meaningMs: 0 }, NOW, settings);
-    expect(result.transitions).toContain("sectorCompleted");
+    expect(result.transitions).toContain("gradeCompleted");
     expect(result.level.firstCompletedAt).toBe(NOW);
   });
 

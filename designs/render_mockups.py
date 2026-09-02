@@ -108,7 +108,7 @@ def keycap(d: ImageDraw.ImageDraw, x: int, y: int, key: str, active: bool = Fals
     txt(d, (x + 7, y + 6), key.upper(), 7, fg, True, anchor="mm")
 
 
-def alien(d: ImageDraw.ImageDraw, x: int, y: int, hanzi: str, active: bool = False,
+def descending_word(d: ImageDraw.ImageDraw, x: int, y: int, hanzi: str, active: bool = False,
           danger: bool = False, small: bool = False, show_hanzi: bool = True) -> None:
     glyph_size = 10 if small else 12
     # Expand the cockpit to the measured character count instead of forcing
@@ -196,9 +196,9 @@ def save(im: Image.Image, name: str, scale: int = SCALE) -> None:
 
 def deck_select() -> None:
     im, d = new_canvas(11)
-    txt(d, (W // 2 + 1, 23), "HANZI DEFENDER", 19, C["pink"], True, anchor="mm")
-    txt(d, (W // 2, 21), "HANZI DEFENDER", 19, C["white"], True, anchor="mm")
-    txt(d, (W // 2, 39), "CHOOSE A SECTOR TO DEFEND", 7, C["cyan"], True, anchor="mm")
+    txt(d, (W // 2 + 1, 23), "ZIDUODUO", 19, C["pink"], True, anchor="mm")
+    txt(d, (W // 2, 21), "ZIDUODUO", 19, C["white"], True, anchor="mm")
+    txt(d, (W // 2, 39), "CHOOSE A GRADE TO STUDY", 7, C["cyan"], True, anchor="mm")
     txt(d, (17, 55), "PILOT  LOCAL-01", 6, C["muted"], True)
     txt(d, (464, 55), "AUTO-SAVE  ONLINE", 6, C["mint"], True, anchor="ra")
 
@@ -221,7 +221,7 @@ def deck_select() -> None:
         txt(d, (x + 70, y + 63), "▶ " + action, 6, C["deep"] if i == 0 else C["muted"],
             True, anchor="mm")
     panel(d, (16, 251, 464, 287), C["panel"])
-    txt(d, (28, 264), "NEXT MISSION", 6, C["muted"], True)
+    txt(d, (28, 264), "NEXT LESSON", 6, C["muted"], True)
     txt(d, (28, 278), "HSK 1  •  216 WORDS REMAIN  •  LAST PLAYED 2H AGO", 7, C["white"], True)
     keycap(d, 428, 261, "↵", True)
     save(im, "01-deck-select.png")
@@ -230,11 +230,11 @@ def deck_select() -> None:
 def battle_pinyin() -> None:
     im, d = new_canvas(21, True)
     hud(d)
-    alien(d, 83, 70, "爱")
-    alien(d, 211, 91, "朋友")
-    alien(d, 360, 58, "水")
-    alien(d, 297, 139, "学习", True)
-    alien(d, 128, 151, "学校", danger=True)
+    descending_word(d, 83, 70, "爱")
+    descending_word(d, 211, 91, "朋友")
+    descending_word(d, 360, 58, "水")
+    descending_word(d, 297, 139, "学习", True)
+    descending_word(d, 128, 151, "学校", danger=True)
     d.line((297, 158, 297, 183), fill=C["orange"])
     for y in range(162, 184, 5):
         d.rectangle((294, y, 300, y + 1), fill=C["orange"])
@@ -256,11 +256,11 @@ def battle_pinyin() -> None:
 def battle_meaning() -> None:
     im, d = new_canvas(31, True)
     hud(d, "13", "018668")
-    alien(d, 83, 70, "爱")
-    alien(d, 211, 91, "朋友")
-    alien(d, 360, 58, "水")
-    alien(d, 297, 139, "学习", True)
-    alien(d, 128, 151, "学校", danger=True)
+    descending_word(d, 83, 70, "爱")
+    descending_word(d, 211, 91, "朋友")
+    descending_word(d, 360, 58, "水")
+    descending_word(d, 297, 139, "学习", True)
+    descending_word(d, 128, 151, "学校", danger=True)
     d.line((297, 158, 297, 184), fill=C["mint"])
     base(d)
     panel(d, (7, 214, 473, 295), C["panel"], C["line"], C["mint"])
@@ -290,15 +290,15 @@ def battle_meaning() -> None:
 def miss_feedback() -> None:
     im, d = new_canvas(44, True)
     hud(d, "00", "018668")
-    # Danger beam and landed alien.
+    # Danger beam and landed word.
     # These background enemies sit behind the later correction panel; omit
     # their deferred glyph layer so it cannot draw over that foreground panel.
-    alien(d, 80, 72, "朋友", show_hanzi=False)
-    alien(d, 352, 66, "水", show_hanzi=False)
+    descending_word(d, 80, 72, "朋友", show_hanzi=False)
+    descending_word(d, 352, 66, "水", show_hanzi=False)
     d.polygon([(183, 108), (219, 108), (240, 199), (161, 199)], fill="#25132B")
     for x in range(166, 238, 9):
         d.line((201, 112, x, 196), fill=C["red"])
-    alien(d, 201, 181, "学习", danger=True, show_hanzi=False)
+    descending_word(d, 201, 181, "学习", danger=True, show_hanzi=False)
     base(d)
     # Feedback overlay.
     panel(d, (91, 45, 389, 173), C["panel"], C["red"], C["red"])
@@ -311,8 +311,8 @@ def miss_feedback() -> None:
     txt(d, (365, 151), "PRIORITY 70  ▶  100", 6, C["red"], True, anchor="ra")
     txt(d, (240, 164), "CORRECTION LOGGED • THIS WORD WILL RETURN", 5, C["mint"], True, anchor="mm")
     panel(d, (7, 218, 473, 293), C["panel"], C["line"])
-    txt(d, (240, 240), "AN ALIEN LANDED — NO LIVES LOST", 8, C["white"], True, anchor="mm")
-    txt(d, (240, 258), "KEEP DEFENDING. PROGRESS WAS AUTO-SAVED.", 6, C["muted"], True, anchor="mm")
+    txt(d, (240, 240), "A WORD LANDED — NO LIVES LOST", 8, C["white"], True, anchor="mm")
+    txt(d, (240, 258), "KEEP STUDYING. PROGRESS WAS AUTO-SAVED.", 6, C["muted"], True, anchor="mm")
     progress(d, (146, 271, 334, 280), .68, C["red"], 20)
     txt(d, (240, 288), "NEXT TARGET IN 0.8s", 5, C["cyan"], True, anchor="mm")
     save(im, "04-miss-feedback.png")
@@ -320,7 +320,7 @@ def miss_feedback() -> None:
 
 def summary() -> None:
     im, d = new_canvas(55)
-    txt(d, (W // 2, 22), "DEFENSE REPORT", 16, C["white"], True, anchor="mm")
+    txt(d, (W // 2, 22), "GRADE REPORT", 16, C["white"], True, anchor="mm")
     txt(d, (W // 2, 40), "HSK 1  •  18:42 SESSION", 7, C["cyan"], True, anchor="mm")
     stats = [("SCORE", "+24,860", C["orange"]), ("ACCURACY", "91%", C["mint"]),
              ("BEST STREAK", "x27", C["pink"]), ("WORDS SEEN", "146", C["cyan"])]
@@ -330,7 +330,7 @@ def summary() -> None:
         txt(d, (x + 51, 70), label, 5, C["muted"], True, anchor="mm")
         txt(d, (x + 51, 88), value, 12, color, True, anchor="mm")
     panel(d, (16, 114, 305, 245), C["panel"], C["line"], C["mint"])
-    txt(d, (29, 130), "SECTOR MASTERY", 8, C["white"], True)
+    txt(d, (29, 130), "GRADE MASTERY", 8, C["white"], True)
     txt(d, (292, 130), "84 / 300", 7, C["mint"], True, anchor="ra")
     progress(d, (29, 139, 292, 151), .28, C["mint"], 24)
     txt(d, (29, 168), "+12", 14, C["mint"], True)
@@ -349,18 +349,18 @@ def summary() -> None:
     d.rectangle((329, 203, 451, 230), fill=C["cyan"], outline=C["white"])
     txt(d, (390, 216), "CONTINUE", 8, C["deep"], True, anchor="mm")
     d.rectangle((16, 258, 232, 285), fill=C["panel2"], outline=C["line"])
-    txt(d, (124, 271), "RETURN TO SECTORS", 7, C["muted"], True, anchor="mm")
+    txt(d, (124, 271), "RETURN TO GRADES", 7, C["muted"], True, anchor="mm")
     d.rectangle((248, 258, 464, 285), fill=C["pink"], outline=C["white"])
-    txt(d, (356, 271), "DEFEND AGAIN", 7, C["deep"], True, anchor="mm")
+    txt(d, (356, 271), "PLAY AGAIN", 7, C["deep"], True, anchor="mm")
     save(im, "05-session-summary.png")
 
 
 def settings() -> None:
     im, d = new_canvas(66)
     txt(d, (W // 2, 24), "SYSTEM SETTINGS", 16, C["white"], True, anchor="mm")
-    txt(d, (W // 2, 42), "TUNE THE INVASION — ALL ENEMIES SHARE ONE SPEED", 6, C["cyan"], True, anchor="mm")
+    txt(d, (W // 2, 42), "TUNE THE PACE — ALL WORDS SHARE ONE SPEED", 6, C["cyan"], True, anchor="mm")
     panel(d, (54, 59, 426, 249), C["panel"], C["line"], C["cyan"])
-    txt(d, (75, 78), "INVASION PRESSURE", 8, C["white"], True)
+    txt(d, (75, 78), "ARCADE PRESSURE", 8, C["white"], True)
     txt(d, (75, 97), "ENEMY SPAWN RATE", 6, C["muted"], True)
     txt(d, (402, 97), "1 EVERY 3.0s", 7, C["orange"], True, anchor="ra")
     # Spawn-rate slider.
@@ -402,10 +402,10 @@ def mobile() -> None:
     txt(d, (12, 17), "HSK 1", 7, C["cyan"], True, anchor="lm")
     txt(d, (68, 17), "018668", 7, C["white"], True, anchor="lm")
     txt(d, (131, 17), "STREAK x13", 6, C["orange"], True, anchor="lm")
-    alien(d, 47, 68, "爱", small=True)
-    alien(d, 180, 83, "水", small=True)
-    alien(d, 119, 145, "学习", active=True, small=True)
-    alien(d, 55, 191, "学校", danger=True, small=True)
+    descending_word(d, 47, 68, "爱", small=True)
+    descending_word(d, 180, 83, "水", small=True)
+    descending_word(d, 119, 145, "学习", active=True, small=True)
+    descending_word(d, 55, 191, "学校", danger=True, small=True)
     # Compact base.
     d.rectangle((0, 232, w, 241), fill=C["base"])
     d.rectangle((108, 222, 132, 239), fill=C["orange"])

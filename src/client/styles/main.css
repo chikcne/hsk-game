@@ -118,7 +118,7 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   place-items: center;
   border: 2px solid var(--cinnabar);
   color: var(--cinnabar);
-  font: 600 45px var(--ui);
+  font: 600 21px var(--ui);
   transform: rotate(-2deg);
 }
 .loading-screen h1 { margin: 18px 0 0; color: var(--ink); font: 500 clamp(28px, 5vw, 52px) var(--ui); letter-spacing: .12em; }
@@ -127,7 +127,7 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .loading-bar i { display: block; width: 42%; height: 100%; background: var(--indigo); animation: load 1.4s ease-in-out infinite alternate; }
 @keyframes load { to { transform: translateX(140%); } }
 
-/* Mission menu */
+/* Grade menu */
 .deck-screen {
   width: 100%;
   height: 100dvh;
@@ -232,9 +232,9 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .column-count { color: var(--ink-soft); font-size: 9px; letter-spacing: .06em; white-space: nowrap; }
 .action-seal { width: 34px; height: 34px; margin-top: 12px; transform: rotate(-3deg); }
 .mini-seal { position: absolute; top: 38%; right: 15%; width: 27px; height: 27px; transform: rotate(7deg); opacity: .8; }
-.mission { color: var(--cinnabar-dark); }
-.mission::before { background: linear-gradient(to bottom, transparent, rgba(169,67,50,.025) 12%, rgba(169,67,50,.055) 25%, rgba(169,67,50,.05) 78%, transparent); }
-.mission strong, .review strong { color: var(--cinnabar-dark); }
+.lesson { color: var(--cinnabar-dark); }
+.lesson::before { background: linear-gradient(to bottom, transparent, rgba(169,67,50,.025) 12%, rgba(169,67,50,.055) 25%, rgba(169,67,50,.05) 78%, transparent); }
+.lesson strong, .review strong { color: var(--cinnabar-dark); }
 .review { color: var(--jade); }
 .review .action-seal { color: var(--jade); }
 .selection-brush { position: absolute; top: 25%; left: 50%; width: 62px; height: 10px; transform: translateX(-50%) rotate(-2deg); background: linear-gradient(90deg, transparent, rgba(169,67,50,.23) 12%, rgba(169,67,50,.5) 84%, transparent); filter: blur(.3px); }

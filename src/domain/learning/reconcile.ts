@@ -4,7 +4,7 @@ import { createWordProgress } from "./progress";
 import type { LearningDeck, ReconciliationResult } from "./types";
 
 /** Reconciles stable IDs after a deck fingerprint change. Newly added words join
- * the current level so a previously cleared sector cannot silently skip them. */
+ * the current level so a previously cleared grade cannot silently skip them. */
 export function reconcileLevelProgress(source: LevelProgress, deck: LearningDeck): ReconciliationResult {
   if (source.deckId !== deck.id) throw new Error(`Cannot reconcile ${source.deckId} progress with ${deck.id}`);
   const ids = deck.words.map((word) => word.id);

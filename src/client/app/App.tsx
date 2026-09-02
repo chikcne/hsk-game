@@ -13,7 +13,7 @@ import { unlockSoundEffects } from "../audio/soundEffects";
 
 const deckLabel = (id: DeckId) => `HSK ${id.at(-1)}`;
 const masteredCount = (level?: LevelProgress) => level ? Object.values(level.words).filter((word) => word.appearanceWeight === 1).length : 0;
-const sectorActionLabel = (level?: LevelProgress) => level && level.nextSpawnOrdinal > 0 ? "CONTINUE" : "START";
+const gradeActionLabel = (level?: LevelProgress) => level && level.nextSpawnOrdinal > 0 ? "CONTINUE" : "START";
 const LEVEL_HANZI = ["一", "二", "三", "四", "五", "六"] as const;
 const LEVEL_DESCRIPTIONS = ["基础词卷", "日常词卷", "进阶词卷", "长篇词卷", "高阶词卷", "通达词卷"] as const;
 const statusLabel = (status: string) => status === "saved" ? "PROGRESS SAVED" : status === "saving" ? "SAVING PROGRESS" : status === "offline" ? "SAVED OFFLINE" : "SAVE ERROR";
@@ -170,7 +170,7 @@ export function App() {
   if (screen === "summary" && summary) return <Summary
     stats={summary} deckId={selected} deck={deck} level={save.levels[selected]} saveStatus={saveStatus} strokeData={strokeData}
     onAgain={() => void (summary.mode === "review" ? deployReview() : deploy(selected))}
-    onSectors={() => setScreen("decks")}
+    onGrades={() => setScreen("decks")}
   />;
   if (!deck) return <LoadingScreen hasSave strokeData={uiStrokeData} />;
 
@@ -203,7 +203,7 @@ export function App() {
 }
 
 function LoadingScreen({ hasSave, strokeData }: { hasSave: boolean; strokeData: StrokeDataMap }) {
-  return <main className="loading-screen paper"><div className="loader-logo"><HanziText text="汉" data={strokeData} /></div><h1>HANZI DEFENDER</h1><p>{hasSave ? "LOADING SECTOR DATA" : "CONNECTING TO DEFENSE NETWORK"}</p><div className="loading-bar"><i /></div><small>LOCAL-FIRST • OFFLINE READY</small></main>;
+  return <main className="loading-screen paper"><div className="loader-logo"><HanziText text="字多多" data={strokeData} /></div><h1>ZIDUODUO</h1><p>{hasSave ? "LOADING GRADE DATA" : "CONNECTING TO SERVER"}</p><div className="loading-bar"><i /></div><small>LOCAL-FIRST • OFFLINE READY</small></main>;
 }
 
 function DeckSelect({ save, settings, selected, strokeData, onSelect, onDeploy, onReview, onSettings }: {
@@ -245,7 +245,7 @@ function DeckSelect({ save, settings, selected, strokeData, onSelect, onDeploy, 
     </button>
     <section
       className="scroll-menu"
-      aria-label="Choose a mission or review"
+      aria-label="Choose a grade or review"
       onKeyDown={(event) => {
         const focusedIndex = columnRefs.current.findIndex((item) => item === document.activeElement);
         const currentIndex = focusedIndex >= 0 ? focusedIndex : activeIndex;
@@ -257,13 +257,13 @@ function DeckSelect({ save, settings, selected, strokeData, onSelect, onDeploy, 
     >
       <button
         ref={(node) => { columnRefs.current[0] = node; }}
-        className={`scroll-column mission ${activeIndex === 0 ? "selected" : ""}`}
+        className={`scroll-column lesson ${activeIndex === 0 ? "selected" : ""}`}
         onFocus={() => setActiveIndex(0)} onMouseEnter={() => setActiveIndex(0)} onClick={() => void onDeploy(selected)}
       >
-        <span className="column-kicker">NEXT MISSION</span><strong><HanziText text="续习" data={strokeData} vertical /></strong>
+        <span className="column-kicker">NEXT LESSON</span><strong><HanziText text="续习" data={strokeData} vertical /></strong>
         <em><HanziText text={`${deckLabel(selected)} · 第${lessonNumber}课`} data={strokeData} vertical /></em>
         <span className="column-progress"><i style={{ height: `${selectedTotal ? selectedMastered / selectedTotal * 100 : 0}%` }} /></span>
-        <span className="column-count">{selectedMastered} / {selectedTotal}</span><span className="seal action-seal"><HanziText text={sectorActionLabel(selectedLevel) === "START" ? "开始" : "续习"} data={strokeData} /></span>
+        <span className="column-count">{selectedMastered} / {selectedTotal}</span><span className="seal action-seal"><HanziText text={gradeActionLabel(selectedLevel) === "START" ? "开始" : "续习"} data={strokeData} /></span>
       </button>
       <div className="level-columns">
       {DECK_IDS.map((id, index) => {
@@ -566,12 +566,12 @@ function FeedbackNotice({ feedback, strokeData, onDismiss }: { feedback: NonNull
     ? `MASTERY ${101 - feedback.oldWeight} → ${101 - (feedback.newWeight ?? feedback.oldWeight)} · DUE IN ${feedback.repeatAfterPhrases}`
     : `RECALL ${feedback.recallScoreMsPerChar === null || feedback.recallScoreMsPerChar === undefined ? "—" : `${Math.round(feedback.recallScoreMsPerChar)} MS/CHAR`} · INTERVAL ${feedback.repeatAfterPhrases}`;
   const blocking = feedback.kind !== "correct";
-  const notice = <aside className="breach-notice" role={blocking ? "dialog" : "alert"} aria-modal={blocking ? true : undefined} aria-labelledby={blocking ? "learning-feedback-title" : undefined}><small>// {feedback.kind === "landed" ? "ALIEN LANDED" : feedback.struggled ? "SLOW RECALL" : "ANSWER REVIEW"} //</small><strong id={blocking ? "learning-feedback-title" : undefined}><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b>{feedback.typed && <em><HanziText text={`YOU TYPED: ${feedback.typed}`} data={strokeData} /></em>}<footer><span>{feedback.struggled ? "ADDED TO LEVEL POOL" : "RECALL RECORDED"}</span><span>{priority}</span></footer>{blocking && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE DEFENSE</button>}</aside>;
+  const notice = <aside className="breach-notice" role={blocking ? "dialog" : "alert"} aria-modal={blocking ? true : undefined} aria-labelledby={blocking ? "learning-feedback-title" : undefined}><strong id={blocking ? "learning-feedback-title" : undefined}><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b>{feedback.typed && <em><HanziText text={`YOU TYPED: ${feedback.typed}`} data={strokeData} /></em>}<footer><span>{feedback.struggled ? "ADDED TO LEVEL POOL" : "RECALL RECORDED"}</span><span>{priority}</span></footer>{blocking && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE</button>}</aside>;
   return blocking ? <div className="modal-backdrop learning-backdrop">{notice}</div> : notice;
 }
 
 function PauseDialog({ onResume, onSettings, onEnd }: { onResume: () => void; onSettings: () => void; onEnd: () => void }) {
-  return <div className="modal-backdrop"><section className="pause-dialog" role="dialog" aria-modal="true" aria-labelledby="pause-title"><small>SIMULATION HALTED</small><h2 id="pause-title">PAUSED</h2><button autoFocus className="primary" onClick={onResume}>RESUME DEFENSE</button><button onClick={onSettings}>SYSTEM SETTINGS</button><button className="danger" onClick={onEnd}>END SESSION</button></section></div>;
+  return <div className="modal-backdrop"><section className="pause-dialog" role="dialog" aria-modal="true" aria-labelledby="pause-title"><small>SIMULATION HALTED</small><h2 id="pause-title">PAUSED</h2><button autoFocus className="primary" onClick={onResume}>RESUME</button><button onClick={onSettings}>SYSTEM SETTINGS</button><button className="danger" onClick={onEnd}>END SESSION</button></section></div>;
 }
 
 function NumberSetting({ label, value, min, max, step, suffix = "", onChange }: { label: string; value: number; min: number; max: number; step: number; suffix?: string; onChange: (value: number) => void }) {
@@ -587,9 +587,9 @@ function SettingsDialog({ settings, onApply, onClose }: { settings: DifficultySe
   const speedLabel = draft.enemySpeedMultiplier < 0.9 ? "SLOW" : draft.enemySpeedMultiplier > 1.1 ? "FAST" : "STANDARD";
   const update = <K extends keyof DifficultySettings>(key: K, value: DifficultySettings[K]) => setDraft((old) => ({ ...old, [key]: value }));
   return <div className="modal-backdrop"><section className="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settings-title"><header><small>EVERY LEARNING AND REVIEW PARAMETER IS ADJUSTABLE</small><h2 id="settings-title">SYSTEM SETTINGS</h2></header><div className="settings-body">
-    <h3>INVASION PRESSURE</h3>
-    <label><span>BASE ENEMY SPAWN RATE <b>1 EVERY {(draft.spawnIntervalMs / 1000).toFixed(2)}s · {Math.round(60000 / draft.spawnIntervalMs)}/MIN</b></span><input type="range" min="1500" max="10000" step="250" value={draft.spawnIntervalMs} onChange={(event) => update("spawnIntervalMs", Number(event.target.value))} /></label>
-    <label><span>ENEMY SPEED <b>{speedLabel} · {draft.enemySpeedMultiplier.toFixed(2)}×</b></span><input className="mint-range" type="range" min="0.65" max="1.5" step="0.05" value={draft.enemySpeedMultiplier} onChange={(event) => update("enemySpeedMultiplier", Number(event.target.value))} /></label>
+    <h3>ARCADE PRESSURE</h3>
+    <label><span>BASE WORD SPAWN RATE <b>1 EVERY {(draft.spawnIntervalMs / 1000).toFixed(2)}s · {Math.round(60000 / draft.spawnIntervalMs)}/MIN</b></span><input type="range" min="1500" max="10000" step="250" value={draft.spawnIntervalMs} onChange={(event) => update("spawnIntervalMs", Number(event.target.value))} /></label>
+    <label><span>WORD SPEED <b>{speedLabel} · {draft.enemySpeedMultiplier.toFixed(2)}×</b></span><input className="mint-range" type="range" min="0.65" max="1.5" step="0.05" value={draft.enemySpeedMultiplier} onChange={(event) => update("enemySpeedMultiplier", Number(event.target.value))} /></label>
     <h3>REGULAR LEVELS</h3>
     <NumberSetting label="NEW WORDS PER LEVEL" value={draft.levelSize} min={5} max={100} step={5} onChange={(value) => update("levelSize", value)} />
     <NumberSetting label="STRUGGLE THRESHOLD" value={draft.struggleThresholdMs / 1000} min={1} max={20} step={0.5} suffix="s" onChange={(value) => update("struggleThresholdMs", value * 1000)} />
@@ -615,9 +615,9 @@ function SettingsDialog({ settings, onApply, onClose }: { settings: DifficultySe
   </div><footer><button onClick={onClose}>CANCEL</button><button onClick={() => setDraft({ ...DEFAULT_SETTINGS })}>RESET DEFAULTS</button><button autoFocus className="primary" onClick={() => onApply(draft)}>APPLY SETTINGS</button></footer></section></div>;
 }
 
-function Summary({ stats, deckId, deck, level, saveStatus, strokeData, onAgain, onSectors }: {
+function Summary({ stats, deckId, deck, level, saveStatus, strokeData, onAgain, onGrades }: {
   stats: SessionStats; deckId: DeckId; deck: RuntimeDeck | null; level?: LevelProgress; saveStatus: string; strokeData: StrokeDataMap;
-  onAgain: () => void; onSectors: () => void;
+  onAgain: () => void; onGrades: () => void;
 }) {
   const resolved = stats.correct + stats.wrongPinyin + stats.wrongMeaning + stats.landed;
   const accuracy = resolved ? Math.round(stats.correct / resolved * 100) : 0;
@@ -633,13 +633,13 @@ function Summary({ stats, deckId, deck, level, saveStatus, strokeData, onAgain, 
     }).slice(0, 12);
   const next = level ? Object.entries(level.words).filter(([, item]) => item.introducedAtOrdinal !== null).sort((a, b) => b[1].appearanceWeight - a[1].appearanceWeight).slice(0, 4).map(([id]) => wordMap.get(id)?.displayHanzi ?? "?") : [];
   const isReview = stats.mode === "review";
-  return <main className="summary-screen paper"><header><h1>{isReview ? "REVIEW RANKINGS" : "DEFENSE REPORT"}</h1><p>{isReview ? "ALL MASTERED SECTORS • ROUND COMPLETE" : `${deckLabel(deckId)} • SESSION COMPLETE`}</p></header>
+  return <main className="summary-screen paper"><header><h1>{isReview ? "REVIEW RANKINGS" : "GRADE REPORT"}</h1><p>{isReview ? "ALL MASTERED GRADES • ROUND COMPLETE" : `${deckLabel(deckId)} • SESSION COMPLETE`}</p></header>
     <section className="stat-grid"><div><small>SCORE</small><b className="amber">+{stats.score.toLocaleString()}</b></div><div><small>ACCURACY</small><b className="mint">{accuracy}%</b></div><div><small>BEST STREAK</small><b className="pink">×{stats.bestStreak}</b></div><div><small>WORDS SEEN</small><b className="cyan">{stats.seen.size}</b></div></section>
     {isReview ? <section className="review-ranking"><h2>MOST REINFORCEMENT NEEDED</h2>{ranking.length === 0 ? <p>Perfect round — no struggles or misses.</p> : <div className="ranking-table">{ranking.map(([id, item], index) => {
       const word = wordMap.get(id); const errors = item.wrongPinyin + item.wrongMeaning + item.landed;
       return <div key={id}><b>#{index + 1}</b><strong><HanziText text={word?.displayHanzi ?? id.split(":").at(-1) ?? ""} data={strokeData} /></strong><span>{word?.displayPinyin}</span><span>{errors} WRONG · {item.struggles} STRUGGLES</span><em>{item.recallScoreMsPerChar === null ? "—" : `${Math.round(item.recallScoreMsPerChar)} ms/char`}</em></div>;
     })}</div>}</section>
-    : <section className="summary-details"><div className="mastery-report"><h2>SECTOR MASTERY <span>{mastered} / {total}</span></h2><div className="segment-bar"><i style={{ width: `${mastered / total * 100}%` }} /></div><p><b className="mint">+{stats.newlyMastered.size}</b> NEW WORDS MASTERED</p><p><b className="red">{stats.wrongPinyin + stats.wrongMeaning + stats.landed}</b> WORDS NEED REINFORCEMENT</p><p><b className="cyan">{stats.levelsCompleted}</b> LEVELS COMPLETED</p><small>NEXT UP</small><div className="next-up">{next.map((item, index) => <span key={index}><HanziText text={item} data={strokeData} /></span>)}</div></div><div className="save-report"><small>SAVE STATUS</small><b className={saveStatus === "saved" ? "mint" : "red"}>{saveStatus === "saved" ? "✓ ALL PROGRESS SAVED" : "! PROGRESS CACHED LOCALLY"}</b><span>LAST CHECKPOINT<br />JUST NOW</span><button className="primary" onClick={onAgain}>CONTINUE</button></div></section>}
-    <footer><button onClick={onSectors}>RETURN TO SECTORS</button><button className="pink-button" onClick={onAgain}>{isReview ? "NEXT REVIEW ROUND" : "DEFEND AGAIN"}</button></footer>
+    : <section className="summary-details"><div className="mastery-report"><h2>GRADE MASTERY <span>{mastered} / {total}</span></h2><div className="segment-bar"><i style={{ width: `${mastered / total * 100}%` }} /></div><p><b className="mint">+{stats.newlyMastered.size}</b> NEW WORDS MASTERED</p><p><b className="red">{stats.wrongPinyin + stats.wrongMeaning + stats.landed}</b> WORDS NEED REINFORCEMENT</p><p><b className="cyan">{stats.levelsCompleted}</b> LEVELS COMPLETED</p><small>NEXT UP</small><div className="next-up">{next.map((item, index) => <span key={index}><HanziText text={item} data={strokeData} /></span>)}</div></div><div className="save-report"><small>SAVE STATUS</small><b className={saveStatus === "saved" ? "mint" : "red"}>{saveStatus === "saved" ? "✓ ALL PROGRESS SAVED" : "! PROGRESS CACHED LOCALLY"}</b><span>LAST CHECKPOINT<br />JUST NOW</span><button className="primary" onClick={onAgain}>CONTINUE</button></div></section>}
+    <footer><button onClick={onGrades}>RETURN TO GRADES</button><button className="pink-button" onClick={onAgain}>{isReview ? "NEXT REVIEW ROUND" : "PLAY AGAIN"}</button></footer>
   </main>;
 }

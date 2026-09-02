@@ -4,7 +4,7 @@
 
 This redesign is a presentation-layer replacement. Preserve:
 
-- regular HSK and cross-sector review modes;
+- regular HSK and cross-grade review modes;
 - deterministic scheduling, cooldowns, mastery, pressure, score, streak, and saves;
 - pinyin normalization and submission rules;
 - the meaning-choice phase and audio replay;
@@ -37,7 +37,7 @@ Use a locally bundled, licensed Chinese serif or restrained calligraphy face for
 <CalligraphyMenu>
   <MenuMasthead />
   <VerticalMenuRail>
-    <NextMissionColumn />
+    <NextLessonColumn />
     <HskColumn level={1} /> … <HskColumn level={6} />
     <ReviewColumn />
   </VerticalMenuRail>
@@ -46,7 +46,7 @@ Use a locally bundled, licensed Chinese serif or restrained calligraphy face for
 </CalligraphyMenu>
 ```
 
-The order is explicit and does **not** follow traditional right-to-left reading: next mission is leftmost, HSK 1–6 proceed left-to-right, review is rightmost. Keep the settings button top-right.
+The order is explicit and does **not** follow traditional right-to-left reading: next lesson is leftmost, HSK 1–6 proceed left-to-right, review is rightmost. Keep the settings button top-right.
 
 Each entire column is one button. Use `writing-mode: vertical-rl` only for the visible label; do not vertically rotate a horizontal button with transforms. Retain number shortcuts 1–6, arrows, Enter, touch, focus states, and truthful mastered totals.
 
@@ -58,7 +58,7 @@ Each entire column is one button. Use `writing-mode: vertical-rl` only for the v
 - Click/tap deploy remains a user gesture so audio unlock behavior is preserved.
 - Reduced motion: no translation; use the light paper wash plus cinnabar focus rule.
 
-On mobile all eight columns remain visible. Their visual width may be narrow, but each button's interactive width must be at least 44 CSS px. If a 320 px viewport cannot provide that without collision, make the rail horizontally scrollable with snap points and pin next mission/review affordances at the edges; do not shrink touch targets below 44 px.
+On mobile all eight columns remain visible. Their visual width may be narrow, but each button's interactive width must be at least 44 CSS px. If a 320 px viewport cannot provide that without collision, make the rail horizontally scrollable with snap points and pin next lesson/review affordances at the edges; do not shrink touch targets below 44 px.
 
 ## 4. Gameplay field
 
@@ -148,7 +148,7 @@ Do not implement the design by changing domain code under `src/domain/`.
 
 ## 7. Acceptance checklist
 
-- [ ] Menu order is next mission, HSK 1–6, review, left-to-right.
+- [ ] Menu order is next lesson, HSK 1–6, review, left-to-right.
 - [ ] Settings remains top-right and keyboard reachable.
 - [ ] Desktop has exactly 12 visual columns; mobile has exactly 6.
 - [ ] Spawn cursor wraps right-to-left and permits occupied columns.

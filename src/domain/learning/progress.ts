@@ -39,7 +39,7 @@ export function createLevelProgress(
 ): LevelProgress {
   const ids = deck.words.map((word) => word.id);
   if (new Set(ids).size !== ids.length) throw new Error("Deck word IDs must be unique");
-  if (ids.length === 0) throw new RangeError("A learning sector must contain at least one word");
+  if (ids.length === 0) throw new RangeError("A learning grade must contain at least one word");
 
   const words: Record<string, WordProgress> = {};
   for (const id of ids) words[id] = createWordProgress();

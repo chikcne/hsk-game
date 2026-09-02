@@ -7,7 +7,7 @@ import { AtomicSaveWriter, type AtomicWriterOptions } from "./atomic-writer";
 import type { DeckCatalog } from "./manifests";
 import { parseSaveFile, parseSaveSnapshot, type SaveSnapshot } from "./validation";
 
-// Full mastery plus independent cross-sector recall history can exceed the old
+// Full mastery plus independent cross-grade recall history can exceed the old
 // 2 MiB V1 ceiling. Keep a bounded but realistic local-profile limit.
 export const MAX_SAVE_BYTES = 16 * 1024 * 1024;
 

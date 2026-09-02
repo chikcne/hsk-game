@@ -10,7 +10,7 @@ const settings = { ...DEFAULT_SETTINGS };
 const NOW = "2026-01-01T00:00:00.000Z";
 
 describe("Anki-style mastered-word review", () => {
-  it("syncs mastered words from every sector and starts new cards due", () => {
+  it("syncs mastered words from every grade and starts new cards due", () => {
     const keys = new Set(["hsk-1:a", "hsk-4:b"]);
     const review = prepareReviewRound(createReviewProgress(randomStateFromSeed("review")), keys);
     expect(Object.keys(review.words).sort()).toEqual([...keys].sort());

@@ -4,7 +4,7 @@ import type { LearningDeck } from "./types";
 const HASH_MASK = 0xffff_ffff_ffff_ffffn;
 const FNV_OFFSET = 0xcbf2_9ce4_8422_2325n;
 const FNV_PRIME = 0x100_0000_01b3n;
-const CURRICULUM_VERSION = "hanzi-defender-curriculum-v2";
+const CURRICULUM_VERSION = "ziduoduo-curriculum-v2";
 
 /** Stable 64-bit FNV-1a over UTF-16 code units, encoded as fixed-width hex. */
 function curriculumHash(value: string): string {

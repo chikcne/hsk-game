@@ -1,7 +1,7 @@
-# Hanzi Defender — main execution plan
+# Ziduoduo — main execution plan
 
 **Status:** architecture and implementation plan, ready to split into focused agent tasks  
-**Product:** a local-first TypeScript web game that turns HSK vocabulary into descending pixel-art aliens  
+**Product:** Ziduoduo (字多多) — a local-first TypeScript web game that turns HSK vocabulary into descending words  
 **Source decks:** the six `.apkg` files in [`../decks/`](../decks/README.md)
 
 This document is the implementation authority. Supporting details live in:
@@ -42,7 +42,7 @@ This document is the implementation authority. Supporting details live in:
 | Deck scope | One selected source deck per session, not cumulative HSK 1–N. |
 | Enemy population | Multiple simultaneous enemies; maximum 32 active as a rendering safety ceiling. |
 | Targeting | Shortest predicted time to ground, then lowest `spawnOrdinal` as tie-breaker. Lock until resolution; no spawn-time or manual switching. |
-| Wrong answer | One scored/mastery outcome per enemy. A wrong non-empty pinyin or wrong meaning key removes the enemy and opens a blocking correction panel; descent and spawning resume only after **Continue Defense**. |
+| Wrong answer | One scored/mastery outcome per enemy. A wrong non-empty pinyin or wrong meaning key removes the enemy and opens a blocking correction panel; descent and spawning resume only after **Continue**. |
 | Blank/irrelevant input | Blank Enter and keys outside the current phase are ignored, not counted wrong. |
 | Audio timing | Play word audio after pinyin succeeds, before the meaning choice; **R** replays it in the meaning phase. Play a blaster on a complete correct answer and a buzzer on wrong answers or natural landings. |
 | Persistence | Authoritative JSON file in `saves/`; browser storage may only be an emergency retry cache. |
@@ -191,7 +191,7 @@ stateDiagram-v2
   Summary --> DeckSelect
 ```
 
-World spawning and descent continue during `Pinyin`, `Meaning`, hit feedback, and natural-landing feedback. They freeze in `Paused`, settings, and wrong-answer review. Wrong-answer review remains visible until **Continue Defense** is pressed; response timing and the spawn interval restart on dismissal so review time cannot penalize the player or cause a spawn burst.
+World spawning and descent continue during `Pinyin`, `Meaning`, hit feedback, and natural-landing feedback. They freeze in `Paused`, settings, and wrong-answer review. Wrong-answer review remains visible until **Continue** is pressed; response timing and the spawn interval restart on dismissal so review time cannot penalize the player or cause a spawn burst.
 
 The active target is a lock. Keep it while that enemy remains descending; only then choose a replacement:
 

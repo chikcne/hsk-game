@@ -129,7 +129,7 @@ export type LevelOutcomeResult = {
   repeatAfterPhrases: number;
 };
 
-/** Applies mastery, rolling curriculum refill, and sector completion as one
+/** Applies mastery, rolling curriculum refill, and grade completion as one
  * immutable operation. */
 export function applyOutcomeToLevel(
   level: LevelProgress,
@@ -168,8 +168,8 @@ export function applyOutcomeToLevel(
 
   if (isLiveMastered(next) && !wasLiveMastered) {
     if (next.firstCompletedAt === null) next = { ...next, firstCompletedAt: isoTimestamp(now) };
-    transitions.push("sectorCompleted");
+    transitions.push("gradeCompleted");
   }
-  if (level.firstCompletedAt !== null && wasLiveMastered && !isLiveMastered(next)) transitions.push("sectorMasteryRegressed");
+  if (level.firstCompletedAt !== null && wasLiveMastered && !isLiveMastered(next)) transitions.push("gradeMasteryRegressed");
   return { level: next, progress, transitions, struggled: update.struggled, repeatAfterPhrases: update.repeatAfterPhrases };
 }

@@ -25,7 +25,7 @@ const enemy = (id: string, progress: number, spawnOrdinal: number, speedMultipli
 });
 
 describe("session rules", () => {
-  it("scales alien speed up with word mastery", () => {
+  it("scales word speed up with mastery", () => {
     expect(masteryLevelFromAppearanceWeight(100)).toBe(0);
     expect(masteryLevelFromAppearanceWeight(21)).toBe(80);
     expect(masteryLevelFromAppearanceWeight(1)).toBe(100);
@@ -48,7 +48,7 @@ describe("session rules", () => {
     expect(selectLockedTarget([fasterArrival], selected.id)?.id).toBe(fasterArrival.id);
   });
 
-  it("advances each alien at its mastery-scaled speed", () => {
+  it("advances each word at its mastery-scaled speed", () => {
     const result = advanceEnemiesForRecallWindow(
       [enemy("slow", 0, 1, 0.5), enemy("fast", 0, 2, 1.5)],
       0.1,

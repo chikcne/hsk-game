@@ -1,6 +1,6 @@
 # Calligraphy visual redesign mockups
 
-A paper-and-ink visual direction for the existing Hanzi Defender mechanics. The concept borrows the **material mood** of old practice books and the **textual motion** of fluid menu systems without reproducing either reference.
+A paper-and-ink visual direction for the existing Ziduoduo mechanics. The concept borrows the **material mood** of old practice books and the **textual motion** of fluid menu systems without reproducing either reference.
 
 ## Open the mockups
 
@@ -20,7 +20,7 @@ Resize either HTML file across the 600 px breakpoint to compare desktop and mobi
 MENU — explicit left-to-right order
 ┌──────────┬──────┬──────┬──────┬──────┬──────┬──────┬────────┐
 │ NEXT     │ HSK1 │ HSK2 │ HSK3 │ HSK4 │ HSK5 │ HSK6 │ REVIEW │
-│ MISSION  │      │      │      │      │      │      │        │
+│ LESSON   │      │      │      │      │      │      │        │
 └──────────┴──────┴──────┴──────┴──────┴──────┴──────┴────────┘
 
 GAMEPLAY — spawn cursor travels right-to-left

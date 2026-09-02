@@ -25,7 +25,7 @@ export const EXTRACTION_DATE = "2026-09-01";
 const HAN_CHARACTER = /^\p{Script=Han}$/u;
 /** Every fixed Han character rendered by the application chrome. Dynamic
  * vocabulary characters continue to come from their deck-scoped bundle. */
-export const UI_HANZI_TEXT = "汉续习第课开始一二三四五六级基础词卷日常进阶长篇高通达成温故跨复待选择纸签释义次新当前";
+export const UI_HANZI_TEXT = "字多多汉续习第课开始一二三四五六级基础词卷日常进阶长篇高通达成温故跨复待选择纸签释义次新当前";
 const ALLOWED_TEXT_FALLBACK = new Set(["·", "・", "—", "–", "-", "…", "（", "）", "(", ")"]);
 const SVG_TOKEN = /([a-zA-Z])|([-+]?(?:\d+\.?\d*|\.\d+)(?:[eE][-+]?\d+)?)/g;
 const SVG_ARITY: Readonly<Record<string, number>> = { M: 2, L: 2, H: 1, V: 1, C: 6, S: 4, Q: 4, T: 2, A: 7, Z: 0 };

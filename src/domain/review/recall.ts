@@ -18,7 +18,7 @@ export type RecallUpdateResult = {
 };
 
 /** SM-2-style review update. It is intentionally independent of regular
- * appearanceWeight: reviews can never master or unmaster a sector word. */
+ * appearanceWeight: reviews can never master or unmaster a grade word. */
 export function applyReviewOutcome(
   review: ReviewProgress,
   wordKey: string,

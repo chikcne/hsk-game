@@ -11,7 +11,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 - The global speed setting multiplies every word-specific speed; there is no random velocity.
 - When a target is needed, choose the descending enemy with the shortest predicted time to ground, not the lowest altitude. An amber box/beam and the command panel identify it.
 - Equal predicted arrival times are broken by lower `spawnOrdinal`.
-- Once selected, the target stays locked until it is resolved or lands. A newly spawned alien never steals the lock, even if its predicted arrival is earlier.
+- Once selected, the target stays locked until it is resolved or lands. A newly spawned word never steals the lock, even if its predicted arrival is earlier.
 - There is no manual target switching in MVP.
 
 Use normalized progress in the domain/simulation layer rather than canvas pixels:

@@ -24,7 +24,7 @@ export function createReviewWordProgress(dueOrdinal = 0): ReviewWordProgress {
 }
 
 export function createReviewProgress(
-  schedulerRng: RandomState = randomStateFromSeed("hanzi-defender-review"),
+  schedulerRng: RandomState = randomStateFromSeed("ziduoduo-review"),
 ): ReviewProgress {
   return { nextSpawnOrdinal: 0, schedulerRng: [...schedulerRng], activePoolWordKeys: [], words: {} };
 }
