@@ -387,7 +387,10 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .breach-notice small, .breach-notice em { color: var(--cinnabar); }
 .breach-notice strong { color: var(--ink); font: 450 58px var(--ui); }
 .breach-notice > span { color: var(--indigo); font-size: 18px; }
-.breach-notice > b { margin: 9px; color: var(--cinnabar-dark); }
+.breach-notice { text-align: center; }
+.breach-notice .vector-text-literal { white-space: pre-wrap; line-height: 1.45; }
+.breach-notice > b { margin: 9px; max-width: 100%; color: var(--cinnabar-dark); overflow-wrap: break-word; }
+.breach-notice em { max-width: 100%; overflow-wrap: break-word; }
 .breach-notice footer { width: 100%; padding-top: 12px; display: flex; justify-content: space-between; border-top: 1px solid rgba(93,86,74,.25); color: var(--ink-soft); font-size: 10px; }
 .breach-notice .primary { width: 100%; margin-top: 18px; }
 .pause-dialog, .settings-dialog { color: var(--ink); background: var(--paper-light); box-shadow: 10px 10px 0 rgba(35,78,97,.14); }
