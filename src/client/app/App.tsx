@@ -644,7 +644,7 @@ function FeedbackNotice({ feedback, strokeData, onDismiss }: { feedback: NonNull
 }
 
 function PauseDialog({ onResume, onSettings, onEnd }: { onResume: () => void; onSettings: () => void; onEnd: () => void }) {
-  return <div className="modal-backdrop"><section className="pause-dialog" role="dialog" aria-modal="true" aria-labelledby="pause-title"><small>SIMULATION HALTED</small><h2 id="pause-title">PAUSED</h2><button autoFocus className="primary" onClick={onResume}>RESUME</button><button onClick={onSettings}>SYSTEM SETTINGS</button><button className="danger" onClick={onEnd}>END SESSION</button></section></div>;
+  return <div className="modal-backdrop"><section className="pause-dialog" role="dialog" aria-modal="true" aria-labelledby="pause-title"><h2 id="pause-title">PAUSED</h2><button autoFocus className="primary" onClick={onResume}>RESUME</button><button onClick={onSettings}>SYSTEM SETTINGS</button><button className="danger" onClick={onEnd}>END SESSION</button></section></div>;
 }
 
 function NumberSetting({ label, value, min, max, step, suffix = "", onChange }: { label: string; value: number; min: number; max: number; step: number; suffix?: string; onChange: (value: number) => void }) {
