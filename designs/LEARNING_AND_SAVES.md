@@ -130,9 +130,12 @@ on outcome:   word.nextEligibleSpawn = currentOrdinal + cooldownPhrases (3 or 8)
 
 A due word whose cooldown has not elapsed must never spawn. When the
 battlefield is empty and the only blocked words are due-but-cooling, the
-client advances the global ordinal on its empty-field clock
-(`EMPTY_BATTLEFIELD_SPAWN_DELAY_MS` cadence, via `advanceOrdinal`) — cooldowns
-elapse in seconds of calm instead of ever being violated. FSRS short-term
+scheduler reports `blockedUntilOrdinal` — the smallest `nextEligibleSpawn`
+among those words — and the client fast-forwards the global ordinal straight
+to it (`advanceOrdinal(snapshot, target)`). Eligibility is re-checked against
+`nextEligibleSpawn` afterwards, so the cooldown invariant still holds; only
+the idle waiting disappears, keeping the next word within the two-second
+empty-field budget. FSRS short-term
 learning steps (default ≈ [1m, 10m] learning, [10m] relearning) give roughly
 one or two same-session reinforcement tests, then scheduling hands over to
 real elapsed time.
@@ -151,7 +154,7 @@ Each regular session:
    exact ties;
 4. if nothing is eligible, reports:
    - `empty (coolingOnly)` — due words are ordinal-blocked; keep the session
-     alive and advance ordinals on the empty-field clock;
+     alive and fast-forward the ordinal to `blockedUntilOrdinal`;
    - `empty` — something comes due within `SESSION_WAIT_HORIZON_MS` (120 s);
      wait;
    - `complete` — nothing due within the horizon: **end the session** rather

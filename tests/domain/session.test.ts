@@ -4,6 +4,8 @@ import { wordSpeedMultiplierForFamiliarity } from "../../src/domain/session/spee
 import { selectLockedTarget, soonestLandingEnemy } from "../../src/domain/session/targeting";
 import { calculatePoints, nextStreak } from "../../src/domain/session/scoring";
 import {
+  emptyFieldWriteSchedule,
+  gameplayWriteSchedule,
   masteryAdjustedSpawnDelayMs,
   nextPerformanceMultiplier,
   performanceAdjustedSpawnDelayMs,
@@ -87,6 +89,21 @@ describe("session rules", () => {
     expect(performanceAdjustedSpawnDelayMs(5_000, 1, true, 0)).toBe(8_000);
     expect(performanceAdjustedSpawnDelayMs(5_000, 1, true, 100)).toBe(2_000);
     expect(performanceAdjustedSpawnDelayMs(5_000, 0.7, false, 0)).toBe(500);
+  });
+
+  it("compresses an empty-board pre-write into the two-second budget but never gameplay writes", () => {
+    // A short lead keeps natural cadence and lands after the due floor.
+    expect(emptyFieldWriteSchedule(1_000, 500, 800)).toEqual({ spawnAtMs: 1_800, writeMs: 800, writeSpeed: 1 });
+    // An 8-second lead compresses 4x to finish exactly at the budget.
+    expect(emptyFieldWriteSchedule(0, 0, 8_000)).toEqual({ spawnAtMs: 2_000, writeMs: 2_000, writeSpeed: 4 });
+    // Extreme leads clamp at the maximum speedup; spawn still honors the budget.
+    const clamped = emptyFieldWriteSchedule(0, 0, 40_000);
+    expect(clamped.writeSpeed).toBe(8);
+    expect(clamped.spawnAtMs).toBe(2_000);
+    // The due floor still delays a spawn even with no writing to do.
+    expect(emptyFieldWriteSchedule(0, 5_000, 0).spawnAtMs).toBe(5_000);
+    // Gameplay pacing is untouched: full lead, natural speed.
+    expect(gameplayWriteSchedule(100, 6_000, 8_000)).toEqual({ spawnAtMs: 8_100, writeMs: 8_000, writeSpeed: 1 });
   });
 
   it("gives a selected word its full recall window and a two-second autocomplete grace period", () => {

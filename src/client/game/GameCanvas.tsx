@@ -44,10 +44,13 @@ function Phrase({ enemy, target, preparing = false, remnant = false, reducedMoti
   strokeData: StrokeDataMap;
 }) {
   let elapsedStrokeMs = 0;
+  // An empty-battlefield prepare may compress the write cadence so the word is
+  // playable within the two-second budget; gameplay and solved phrases are 1.
+  const writeSpeed = Math.max(1, enemy.writeSpeed ?? 1);
   const characters = [...enemy.word.displayHanzi].map((character, index) => {
     const data = strokeData.get(character);
     const startDelayMs = elapsedStrokeMs;
-    elapsedStrokeMs += (data?.strokes.length ?? 0) * STROKE_CADENCE_MS;
+    elapsedStrokeMs += (data?.strokes.length ?? 0) * STROKE_CADENCE_MS / writeSpeed;
     return <StrokeOrderCharacter
       key={`${enemy.id}-${index}`}
       character={character}
@@ -57,6 +60,7 @@ function Phrase({ enemy, target, preparing = false, remnant = false, reducedMoti
       // completed glyph instead of replaying its strokes.
       animate={preparing && !reducedMotion}
       startDelayMs={startDelayMs}
+      writeSpeed={preparing ? writeSpeed : 1}
       paused={paused}
       ink={remnant ? "solved" : target ? "target" : "ink"}
     />;

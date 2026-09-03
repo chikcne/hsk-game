@@ -110,16 +110,25 @@ export function spawnNextWord(
   // caller advances ordinals on the empty-field clock) from "nothing due
   // within the horizon" (end it).
   let coolingOnly = false;
+  let blockedUntilOrdinal: number | null = null;
   let soonestFutureDueMs = Infinity;
   for (const [id, progress] of Object.entries(poolLevel.words)) {
     if (progress.introducedAtOrdinal === null) continue;
     if (isMemoryDue(progress, nowMs)) {
-      if (excludedWordIds.has(id) || progress.nextEligibleSpawn > ordinal) coolingOnly = true;
+      if (excludedWordIds.has(id) || progress.nextEligibleSpawn > ordinal) {
+        coolingOnly = true;
+        blockedUntilOrdinal = Math.min(blockedUntilOrdinal ?? Infinity, progress.nextEligibleSpawn);
+      }
       continue;
     }
     soonestFutureDueMs = Math.min(soonestFutureDueMs, nextDueAtMs(progress));
   }
-  if (coolingOnly) return { status: "empty", level: poolLevel, snapshot, coolingOnly: true };
+  if (coolingOnly) {
+    return {
+      status: "empty", level: poolLevel, snapshot, coolingOnly: true,
+      ...(blockedUntilOrdinal === null ? {} : { blockedUntilOrdinal }),
+    };
+  }
   if (Number.isFinite(soonestFutureDueMs) && soonestFutureDueMs <= nowMs + SESSION_WAIT_HORIZON_MS) {
     return { status: "empty", level: poolLevel, snapshot, coolingOnly: false };
   }
@@ -128,7 +137,13 @@ export function spawnNextWord(
 
 /** Advances the global spawn counter without reserving a word. Callers use it
  * to let ordinal cooldowns elapse while the battlefield is empty, so a due
- * word becomes spawnable again without ever spawning early. */
-export function advanceOrdinal(snapshot: SchedulerSnapshot): SchedulerSnapshot {
-  return { ...snapshot, spawnOrdinal: snapshot.spawnOrdinal + 1 };
+ * word becomes spawnable again without ever spawning early. Passing `to`
+ * fast-forwards straight to a target ordinal (never backwards) — the cooldown
+ * invariant still holds because eligibility keeps comparing against
+ * `nextEligibleSpawn`; only the idle per-ordinal waiting disappears. */
+export function advanceOrdinal(snapshot: SchedulerSnapshot, to?: number): SchedulerSnapshot {
+  if (to === undefined) return { ...snapshot, spawnOrdinal: snapshot.spawnOrdinal + 1 };
+  const target = Math.trunc(to);
+  if (!Number.isFinite(target)) throw new RangeError("target ordinal must be finite");
+  return { ...snapshot, spawnOrdinal: Math.max(snapshot.spawnOrdinal, target) };
 }

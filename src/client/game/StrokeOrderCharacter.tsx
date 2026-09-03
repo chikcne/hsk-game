@@ -24,6 +24,10 @@ type Props = {
   animate: boolean;
   /** Active (unpaused) time to wait before this character starts writing. */
   startDelayMs: number;
+  /** Write-cadence multiplier (1 = natural). Scales stroke draw/gap durations
+   * and the sequence delay together, so the phrase finishes proportionally
+   * faster — used to honor the empty-battlefield spawn budget. */
+  writeSpeed: number;
   paused: boolean;
   ink: StrokeInk;
 };
@@ -33,7 +37,7 @@ type AnimatedProps = Omit<Props, "animate"> & { data: StrokeCharacterData };
 /** Hanzi Writer exists only during pre-spawn writing. Unmounting this component
  * at gameplay spawn is a hard lifecycle boundary: no delayed writer callback
  * can mutate or replay a live enemy's completed glyph. */
-function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, paused, ink }: AnimatedProps) {
+function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, writeSpeed, paused, ink }: AnimatedProps) {
   const hostRef = useRef<HTMLSpanElement>(null);
   const writerRef = useRef<HanziWriter | null>(null);
   const pausedRef = useRef(paused);
@@ -54,9 +58,9 @@ function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, paused, i
       showOutline: false,
       showCharacter: false,
       strokeColor: INK_COLORS[ink],
-      strokeAnimationDuration: STROKE_DRAW_MS,
+      strokeAnimationDuration: STROKE_DRAW_MS / writeSpeed,
       strokeFadeDuration: 0,
-      delayBetweenStrokes: STROKE_GAP_MS,
+      delayBetweenStrokes: STROKE_GAP_MS / writeSpeed,
       charDataLoader: (requested, _onLoad, onError) => {
         if (requested !== character) {
           onError(new Error(`Unexpected character request ${requested}`));
@@ -120,7 +124,7 @@ function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, paused, i
       if (writerRef.current === writer) writerRef.current = null;
       host.replaceChildren();
     };
-  }, [character, data, failed, ink, startDelayMs]);
+  }, [character, data, failed, ink, startDelayMs, writeSpeed]);
 
   useEffect(() => {
     const writer = writerRef.current;

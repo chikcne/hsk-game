@@ -130,6 +130,45 @@ describe("rolling grade curriculum and scheduler", () => {
     expect(guard).toBeGreaterThanOrEqual(3); // cooldown was actually respected
   });
 
+  it("reports the earliest cooling ordinal so an empty board can fast-forward to it", () => {
+    const source = deck(40);
+    let level = freshLevel(source);
+    for (const id of acquisitionWordIds(level)) {
+      const applied = applyOutcomeToLevels(
+        { [source.id]: level }, source.id, id,
+        { kind: "correct", pinyinMs: 2000, meaningMs: 1000 }, new Date(NOW), SNAPSHOT.spawnOrdinal, { pinyinLength: 5 },
+      );
+      level = applied.levels[source.id]!;
+    }
+    // Two due-but-blocked words with different cooldown remainders.
+    const [first, second] = acquisitionWordIds(level);
+    level = makeDue(level, first!);
+    level = makeDue(level, second!);
+    // Differ the cooldowns: `first` keeps its pass cooldown, `second` gets an
+    // earlier eligibility so the reported target must be the minimum.
+    const secondProgress = level.words[second!]!;
+    level = updateWord(level, second!, { ...secondProgress, nextEligibleSpawn: 2 });
+
+    const cooling = spawnNextWord(level, source, new Date(NOW), SNAPSHOT, settings);
+    expect(cooling.status).toBe("empty");
+    if (cooling.status !== "empty") return;
+    expect(cooling.blockedUntilOrdinal).toBe(2);
+
+    // A single jump to the reported target unblocks the spawn — no per-tick
+    // idling — and it is exactly the word whose cooldown elapsed.
+    const jumped = spawnNextWord(level, source, new Date(NOW), advanceOrdinal(SNAPSHOT, cooling.blockedUntilOrdinal!), settings);
+    expect(jumped.status).toBe("spawned");
+    if (jumped.status === "spawned") expect(jumped.wordId).toBe(second);
+  });
+
+  it("never fast-forwards the ordinal clock backwards", () => {
+    const snapshot: SchedulerSnapshot = { spawnOrdinal: 10, schedulerRng: SNAPSHOT.schedulerRng };
+    expect(advanceOrdinal(snapshot, 5).spawnOrdinal).toBe(10);
+    expect(advanceOrdinal(snapshot, 12).spawnOrdinal).toBe(12);
+    expect(advanceOrdinal(snapshot).spawnOrdinal).toBe(11);
+    expect(() => advanceOrdinal(snapshot, Number.NaN)).toThrow(RangeError);
+  });
+
   it("ends the session when nothing comes due within the horizon", () => {
     const source = deck(40);
     const base = freshLevel(source);

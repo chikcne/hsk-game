@@ -17,6 +17,11 @@ export type Enemy = {
   /** Active-recall clock value when the target first exhausted its pinyin
    * window. It remains answerable during the autocomplete grace period. */
   pinyinTimeoutStartedAtMs?: number;
+  /** Pre-spawn write cadence multiplier (1 = natural). Only a preparing enemy
+   * carries it: on an empty battlefield the stroke animation compresses so the
+   * word is playable within the two-second empty-field budget. Gameplay
+   * rendering ignores it because live phrases are static SVG. */
+  writeSpeed?: number;
   status: "descending" | "resolved";
 };
 export type SessionPhase = "waiting" | "pinyin" | "meaning" | "feedback" | "paused";

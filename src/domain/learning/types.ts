@@ -39,6 +39,11 @@ export type RegularSpawnResult =
       level: LevelProgress;
       snapshot: SchedulerSnapshot;
       coolingOnly: boolean;
+      /** When `coolingOnly`, the smallest `nextEligibleSpawn` among due-but-
+       * blocked words: the ordinal at which the next spawn becomes possible.
+       * Callers may fast-forward the empty-field clock straight here instead
+       * of ticking one ordinal at a time. */
+      blockedUntilOrdinal?: number;
     }
   | { status: "complete"; level: LevelProgress; snapshot: SchedulerSnapshot };
 

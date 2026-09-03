@@ -186,6 +186,8 @@ The spawn clock runs while the battle is active, including pinyin, meaning, and 
 
 After a word spawns, its FSRS-derived familiarity sets the next interval. The multiplier interpolates linearly from `1.60` at familiarity `0`, through `1.00` at familiarity `0.5`, to `0.40` at familiarity `1`: `masteryInterval = baseInterval * lerp(1.60, 0.40, familiarity)` where familiarity is `wordFamiliarity(word) * 100`. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
 
+Empty battlefield: after the board clears, the next word must be playable within two seconds (`EMPTY_FIELD_MAX_WRITE_MS`). The pre-write stroke animation compresses (`emptyFieldWriteSchedule`, speedup capped at 8x) instead of serializing its full natural-cadence lead, and ordinal cooldowns fast-forward via `blockedUntilOrdinal`. With enemies still active, pacing is unchanged.
+
 When a timer is due:
 
 1. if 32 enemies are active, keep one pending spawn and retry when a slot opens;

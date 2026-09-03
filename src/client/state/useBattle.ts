@@ -20,6 +20,8 @@ import { generateChoices, type MeaningChoice } from "../../domain/session/choice
 import { calculatePoints, nextStreak } from "../../domain/session/scoring";
 import {
   EMPTY_BATTLEFIELD_SPAWN_DELAY_MS,
+  emptyFieldWriteSchedule,
+  gameplayWriteSchedule,
   nextPerformanceMultiplier,
   performanceAdjustedSpawnDelayMs,
 } from "../../domain/session/performance";
@@ -166,7 +168,9 @@ export function useBattle(
   const preparingRef = useRef<PreparedSpawn | null>(null);
   const nextSpawnPreview = useRef<SpawnPreview | null | undefined>(undefined);
   const availabilityRef = useRef<Availability>("ready");
-  const lastOrdinalAdvance = useRef(0);
+  /** Earliest ordinal at which the next due word cools down; reported by the
+   * scheduler whenever the empty battlefield is ordinal-blocked. */
+  const blockedUntilOrdinalRef = useRef<number | null>(null);
   const lastWaitingCheck = useRef(0);
   /** Enemy ids whose pinyin was revealed by the recall window; their meaning
    * phase still counts, but the pinyin component grades Again. */
@@ -423,9 +427,13 @@ export function useBattle(
       const result = spawnNextWord(level, config.deck, now, snapshotRef.current, settings, excluded);
       if (result.status !== "spawned") {
         availabilityRef.current = result.status === "complete" ? "complete" : result.coolingOnly ? "cooling" : "waiting";
+        blockedUntilOrdinalRef.current = result.status === "empty" && result.coolingOnly
+          ? result.blockedUntilOrdinal ?? null
+          : null;
         return null;
       }
       availabilityRef.current = "ready";
+      blockedUntilOrdinalRef.current = null;
       return { wordId: result.wordId, leadMs: strokeLeadForWord(result.wordId) };
     }
     const result = spawnNextReviewWord(levelsRef.current, now, snapshotRef.current, excluded, settings);
@@ -508,30 +516,38 @@ export function useBattle(
           if (preview && now >= spawnDue.current - preview.leadMs) {
             const reserved = prepareSpawn();
             if (reserved) {
-              const leadMs = strokeLeadForWord(reserved.enemy.wordId);
+              const fullLeadMs = strokeLeadForWord(reserved.enemy.wordId);
+              // An empty battlefield must serve the next word within the
+              // two-second budget: its write compresses instead of serializing
+              // the full stroke lead after the board already cleared. With
+              // enemies still up, gameplay pacing keeps natural cadence.
+              const schedule = enemiesRef.current.length === 0
+                ? emptyFieldWriteSchedule(now, spawnDue.current, fullLeadMs)
+                : gameplayWriteSchedule(now, spawnDue.current, fullLeadMs);
               const prepared: PreparedSpawn = {
                 ...reserved,
-                leadMs,
+                leadMs: schedule.writeMs,
                 startedAt: now,
-                spawnAt: Math.max(spawnDue.current, now + leadMs),
+                spawnAt: schedule.spawnAtMs,
               };
               preparingRef.current = prepared;
               spawnDue.current = prepared.spawnAt;
-              setPreparingEnemy(prepared.enemy);
+              setPreparingEnemy(schedule.writeSpeed === 1 ? reserved.enemy : { ...reserved.enemy, writeSpeed: schedule.writeSpeed });
             } else {
               nextSpawnPreview.current = undefined;
             }
           } else if (preview === null && enemiesRef.current.length === 0 && preparingRef.current === null) {
             if (availabilityRef.current === "cooling") {
               // Nothing can spawn because every due word is still ordinal-
-              // blocked. Let cooldowns elapse on the empty-field clock instead
-              // of ever spawning a cooling word early.
-              if (now - lastOrdinalAdvance.current >= EMPTY_BATTLEFIELD_SPAWN_DELAY_MS) {
-                lastOrdinalAdvance.current = now;
-                snapshotRef.current = advanceOrdinal(snapshotRef.current);
-                setSnapshot(snapshotRef.current);
-                nextSpawnPreview.current = undefined;
-              }
+              // blocked. Fast-forward the empty-field clock straight to the
+              // earliest ordinal where the next due word cools down: the hard
+              // `nextEligibleSpawn` microspacing still holds (eligibility is
+              // re-checked by the scheduler), the board just no longer idles
+              // one ordinal per tick near the end of a session.
+              const target = blockedUntilOrdinalRef.current ?? snapshotRef.current.spawnOrdinal + 1;
+              snapshotRef.current = advanceOrdinal(snapshotRef.current, target);
+              setSnapshot(snapshotRef.current);
+              nextSpawnPreview.current = undefined;
             } else if (availabilityRef.current === "waiting") {
               // FSRS due-ness changes with wall time. A null preview cannot be
               // cached indefinitely or a card that becomes due inside the

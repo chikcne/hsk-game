@@ -15,6 +15,7 @@ describe("gameplay stroke character lifecycle", () => {
       data={vector}
       animate={false}
       startDelayMs={0}
+      writeSpeed={1}
       paused={false}
       ink="target"
     />);
