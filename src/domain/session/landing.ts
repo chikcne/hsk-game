@@ -2,6 +2,9 @@ import type { Enemy } from "./types";
 
 export const PINYIN_AUTOCOMPLETE_DELAY_MS = 2_000;
 export const AUTOCOMPLETE_RELIEF_PROGRESS = 0.25;
+/** Unaided pinyin recall window before the autocomplete grace period begins.
+ * Deliberately hardcoded: it defines the game's difficulty, not the SRS. */
+export const PINYIN_RECALL_WINDOW_MS = 8_000;
 
 export function moveEnemiesUp(enemies: readonly Enemy[]): Enemy[] {
   return enemies.map((enemy) => ({

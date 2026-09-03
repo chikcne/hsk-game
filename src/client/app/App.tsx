@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent as ReactPointerEvent, type ReactNode } from "react";
 import { CHOICE_KEYS, DECK_IDS, DECK_TOTALS, DEFAULT_SETTINGS, type ChoiceKey, type DeckId } from "../../shared/constants";
-import { RuntimeDeckSchema, type DifficultySettings, type LevelProgress, type ReviewProgress, type SaveFile, type RuntimeDeck } from "../../shared/schemas";
+import { RuntimeDeckSchema, type DifficultySettings, type LevelProgress, type SaveFile, type RuntimeDeck } from "../../shared/schemas";
+import { countDueReviewWords } from "../../domain/review";
+import { countGraduated, curriculumLessonNumber } from "../../domain/learning";
 import type { EncounterOutcome } from "../../domain/session/types";
 import { createDemoDeck } from "../data/demoDeck";
 import { createReviewDeck } from "../data/reviewDeck";
@@ -8,12 +10,12 @@ import { loadStrokeBundle, loadStrokeBundles, loadUiStrokeBundle, mergeStrokeDat
 import { loadSave, putSave } from "../api/saves";
 import { GameCanvas } from "../game/GameCanvas";
 import { HanziText } from "../game/HanziText";
-import { useBattle, type SessionStats } from "../state/useBattle";
+import { useBattle, type SaveProgressUpdate, type SessionStats, type BattleOptions } from "../state/useBattle";
 import { unlockSoundEffects } from "../audio/soundEffects";
 
 const deckLabel = (id: DeckId) => `HSK ${id.at(-1)}`;
-const masteredCount = (level?: LevelProgress) => level ? Object.values(level.words).filter((word) => word.appearanceWeight === 1).length : 0;
-const gradeActionLabel = (level?: LevelProgress) => level && level.nextSpawnOrdinal > 0 ? "CONTINUE" : "START";
+const masteredCount = (level?: LevelProgress) => level ? countGraduated(level) : 0;
+const gradeActionLabel = (level?: LevelProgress) => level && level.curriculumCursor > 0 ? "CONTINUE" : "START";
 const LEVEL_HANZI = ["一", "二", "三", "四", "五", "六"] as const;
 const LEVEL_DESCRIPTIONS = ["基础词卷", "日常词卷", "进阶词卷", "长篇词卷", "高阶词卷", "通达词卷"] as const;
 const statusLabel = (status: string) => status === "saved" ? "PROGRESS SAVED" : status === "saving" ? "SAVING PROGRESS" : status === "offline" ? "SAVED OFFLINE" : "SAVE ERROR";
@@ -77,7 +79,6 @@ export function App() {
   const [deck, setDeck] = useState<RuntimeDeck | null>(null);
   const [uiStrokeData, setUiStrokeData] = useState<StrokeDataMap>(() => new Map());
   const [strokeData, setStrokeData] = useState<StrokeDataMap>(() => new Map());
-  const [reviewWordKeys, setReviewWordKeys] = useState<Set<string>>(new Set());
   const [selected, setSelected] = useState<DeckId>("hsk-1");
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [paused, setPaused] = useState(false);
@@ -143,6 +144,8 @@ export function App() {
   };
   const deployReview = async () => {
     if (!saveRef.current) return;
+    // Review rounds are finite: they contain exactly the cards that are due.
+    if (countDueReviewWords(saveRef.current.levels, new Date()) === 0) return;
     unlockSoundEffects();
     setMode("review"); setScreen("loading");
     const [loaded, loadedStrokes] = await Promise.all([
@@ -150,8 +153,6 @@ export function App() {
       loadStrokeBundles(DECK_IDS),
     ]);
     const reviewDeck = createReviewDeck(new Map(loaded), saveRef.current.levels);
-    if (reviewDeck.masteredWordKeys.size === 0) { setScreen("decks"); return; }
-    setReviewWordKeys(reviewDeck.masteredWordKeys);
     setDeck(reviewDeck.deck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
     setPaused(false); setScreen("battle");
   };
@@ -180,21 +181,23 @@ export function App() {
     deck={deck}
     strokeData={strokeData}
     regularLevel={mode === "regular" ? save.levels[deck.id] : undefined}
-    review={save.review}
-    reviewWordKeys={reviewWordKeys}
+    levels={save.levels}
+    snapshot={{ spawnOrdinal: save.spawnOrdinal, schedulerRng: save.schedulerRng }}
     settings={settings}
     paused={paused || settingsOpen}
     saveStatus={saveStatus}
     onPause={() => setPaused(true)}
     onResume={() => setPaused(false)}
     onSettings={() => setSettingsOpen(true)}
-    onRegularChange={(level, outcome, points) => {
+    onProgressChange={(update, outcome, points) => {
       const current = saveRef.current; if (!current) return;
-      queueSnapshot({ ...current, levels: { ...current.levels, [level.deckId]: level }, lifetime: updateLifetime(current, outcome, points) });
-    }}
-    onReviewChange={(review, outcome, points) => {
-      const current = saveRef.current; if (!current) return;
-      queueSnapshot({ ...current, review, lifetime: updateLifetime(current, outcome, points) });
+      queueSnapshot({
+        ...current,
+        levels: { ...current.levels, ...update.levels } as SaveFile["levels"],
+        spawnOrdinal: update.snapshot.spawnOrdinal,
+        schedulerRng: update.snapshot.schedulerRng,
+        lifetime: updateLifetime(current, outcome, points),
+      });
     }}
     onEnd={(stats) => { setSummary(stats); setPaused(false); setSettingsOpen(false); setScreen("summary"); }}
   >
@@ -213,10 +216,11 @@ function DeckSelect({ save, settings, selected, strokeData, onSelect, onDeploy, 
   const [activeIndex, setActiveIndex] = useState(() => DECK_IDS.indexOf(selected) + 1);
   const columnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const totalMastered = DECK_IDS.reduce((sum, id) => sum + masteredCount(save.levels[id]), 0);
+  const dueReviewCount = countDueReviewWords(save.levels, new Date());
   const selectedLevel = save.levels[selected];
   const selectedMastered = masteredCount(selectedLevel);
   const selectedTotal = selectedLevel ? Object.keys(selectedLevel.words).length : DECK_TOTALS[selected];
-  const lessonNumber = (selectedLevel?.currentLevelIndex ?? 0) + 1;
+  const lessonNumber = selectedLevel ? curriculumLessonNumber(selectedLevel, settings.levelSize) : 1;
 
   useEffect(() => {
     const listener = (event: KeyboardEvent) => {
@@ -292,34 +296,34 @@ function DeckSelect({ save, settings, selected, strokeData, onSelect, onDeploy, 
         ref={(node) => { columnRefs.current[7] = node; }}
         className={`scroll-column review ${activeIndex === 7 ? "selected" : ""}`}
         onFocus={() => setActiveIndex(7)} onMouseEnter={() => setActiveIndex(7)}
-        onClick={() => { if (totalMastered > 0) void onReview(); }} aria-disabled={totalMastered === 0}
+        onClick={() => { if (dueReviewCount > 0) void onReview(); }} aria-disabled={dueReviewCount === 0}
       >
         <span className="column-kicker">REVIEW</span><strong><HanziText text="温故" data={strokeData} vertical /></strong><em><HanziText text="跨卷复习" data={strokeData} vertical /></em>
-        <span className="column-progress"><i style={{ height: totalMastered > 0 ? "100%" : "0%" }} /></span>
-        <span className="column-count"><HanziText text={`${totalMastered} 待复习`} data={strokeData} vertical /></span><span className="seal action-seal"><HanziText text="习" data={strokeData} /></span>
+        <span className="column-progress"><i style={{ height: dueReviewCount > 0 ? "100%" : "0%" }} /></span>
+        <span className="column-count"><HanziText text={`${dueReviewCount} 待复习`} data={strokeData} vertical /></span><span className="seal action-seal"><HanziText text="习" data={strokeData} /></span>
       </button>
     </section>
   </main>;
 }
 
 type BattleProps = {
-  mode: "regular" | "review"; deck: RuntimeDeck; strokeData: StrokeDataMap; regularLevel?: LevelProgress; review: ReviewProgress;
-  reviewWordKeys: ReadonlySet<string>; settings: DifficultySettings; paused: boolean; saveStatus: string;
+  mode: "regular" | "review"; deck: RuntimeDeck; strokeData: StrokeDataMap; regularLevel?: LevelProgress;
+  levels: Partial<Record<DeckId, LevelProgress>>;
+  snapshot: { spawnOrdinal: number; schedulerRng: [number, number, number, number] };
+  settings: DifficultySettings; paused: boolean; saveStatus: string;
   onPause: () => void; onResume: () => void; onSettings: () => void;
-  onRegularChange: (level: LevelProgress, outcome?: EncounterOutcome, points?: number) => void;
-  onReviewChange: (review: ReviewProgress, outcome?: EncounterOutcome, points?: number) => void;
+  onProgressChange: (update: SaveProgressUpdate, outcome?: EncounterOutcome, points?: number) => void;
   onEnd: (stats: SessionStats) => void; children: ReactNode;
 };
-function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWordKeys, settings, paused, saveStatus, onPause, onResume, onSettings, onRegularChange, onReviewChange, onEnd, children }: BattleProps) {
-  const regularChangeRef = useRef(onRegularChange); regularChangeRef.current = onRegularChange;
-  const reviewChangeRef = useRef(onReviewChange); reviewChangeRef.current = onReviewChange;
-  const options = useMemo(() => mode === "regular" ? {
-    kind: "regular" as const, deck, initialLevel: regularLevel,
-    onChange: (level: LevelProgress, outcome?: EncounterOutcome, points?: number) => regularChangeRef.current(level, outcome, points),
+function BattleScreen({ mode, deck, strokeData, regularLevel, levels, snapshot, settings, paused, saveStatus, onPause, onResume, onSettings, onProgressChange, onEnd, children }: BattleProps) {
+  const progressChangeRef = useRef(onProgressChange); progressChangeRef.current = onProgressChange;
+  const options = useMemo<BattleOptions>(() => mode === "regular" ? {
+    kind: "regular" as const, deck, initialLevel: regularLevel, initialSnapshot: snapshot,
+    onChange: (update, outcome, points) => progressChangeRef.current(update, outcome, points),
   } : {
-    kind: "review" as const, deck, initialReview: review, masteredWordKeys: reviewWordKeys,
-    onChange: (next: ReviewProgress, outcome?: EncounterOutcome, points?: number) => reviewChangeRef.current(next, outcome, points),
-  }, [deck, mode, regularLevel, review, reviewWordKeys]);
+    kind: "review" as const, deck, initialLevels: levels, initialSnapshot: snapshot,
+    onChange: (update, outcome, points) => progressChangeRef.current(update, outcome, points),
+  }, [deck, levels, mode, regularLevel, snapshot]);
   const mobile = useMobileLayout();
   const systemReducedMotion = usePrefersReducedMotion();
   const reducedMotion = settings.reducedMotion || systemReducedMotion;
@@ -331,7 +335,7 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
   const input = useRef<HTMLInputElement>(null);
   const ended = useRef(false);
   const mastered = battle.level ? masteredCount(battle.level) : 0;
-  const total = mode === "regular" ? deck.words.length : reviewWordKeys.size;
+  const total = deck.words.length;
   const progressCount = mode === "review" ? battle.stats.seen.size : mastered;
   const pinyinDisabled = !battle.target || paused || battle.learningPaused || battle.phase !== "pinyin";
 
@@ -388,11 +392,11 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
     return () => window.removeEventListener("keydown", listener);
   }, [children, onPause, onResume, paused]);
   useEffect(() => {
-    if (mode === "review" && battle.reviewComplete && !ended.current) {
+    if (battle.sessionComplete && !ended.current) {
       ended.current = true;
       onEnd(battle.stats);
     }
-  }, [battle.reviewComplete, battle.stats, mode, onEnd]);
+  }, [battle.sessionComplete, battle.stats, onEnd]);
 
   const submitAnswer = () => { if (!composingRef.current) battle.submitPinyin(pinyin); };
   const submit = (event: FormEvent) => { event.preventDefault(); submitAnswer(); };
@@ -407,9 +411,9 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
       return word ? { ...battle.preparingEnemy, word } : null;
     })()
     : null;
-  const levelIndex = battle.level?.currentLevelIndex ?? 0;
+  const levelIndex = battle.level ? curriculumLessonNumber(battle.level, settings.levelSize) : 0;
   const hudLabel = mode === "review" ? "REVIEW" : deckLabel(deck.id);
-  const levelLabel = battle.level ? `LESSON ${levelIndex + 1}` : `${battle.stats.seen.size} REVIEWED`;
+  const levelLabel = battle.level ? `LESSON ${levelIndex}` : `${battle.stats.seen.size} REVIEWED`;
   const solvedId = battle.feedback?.kind === "correct" ? battle.feedback.id : null;
 
   return <main className={`paper battle-screen ${battle.phase}-phase ${reducedMotion ? "reduce-motion" : ""}`}>
@@ -417,7 +421,7 @@ function BattleScreen({ mode, deck, strokeData, regularLevel, review, reviewWord
       <div className="hud-level"><span className="seal">{mode === "review" ? "R" : deck.id.at(-1)}</span><p><b>{hudLabel}</b><small>{levelLabel} · {progressCount} / {total}</small></p></div>
       <div className="hud-item"><small>SCORE</small><b>{battle.stats.score.toLocaleString()}</b></div>
       <div className="hud-item"><small>STREAK · PRESSURE</small><b className="cinnabar">{battle.streak} IN A ROW · {battle.performanceMultiplier.toFixed(2)}×</b></div>
-      <div className="hud-mastery"><small>{mode === "review" ? "REVIEW MASTERY" : "LESSON MASTERY"}</small><span><i style={{ width: `${total ? progressCount / total * 100 : 0}%` }} /></span><b>{progressCount} / {total}</b></div>
+      <div className="hud-mastery"><small>{mode === "review" ? "REVIEW PROGRESS" : "LESSON MASTERY"}</small><span><i style={{ width: `${total ? progressCount / total * 100 : 0}%` }} /></span><b>{progressCount} / {total}</b></div>
       <span className={`save-state ${saveStatus}`}><i /> {statusLabel(saveStatus)}</span>
       <button className="pause-button" onClick={onPause} aria-label="Pause game">Ⅱ</button>
     </header>
@@ -586,13 +590,21 @@ function MobileKeyboard({ disabled, submitDisabled, backspaceDisabled, onLetter,
   </section>;
 }
 
+/** Humanizes milliseconds-until-due for the recall feedback footer. */
+function formatDue(ms: number): string {
+  if (!Number.isFinite(ms) || ms <= 0) return "NOW";
+  const minutes = ms / 60_000;
+  if (minutes < 60) return `${Math.max(1, Math.round(minutes))}M`;
+  if (minutes < 24 * 60) return `${(minutes / 60).toFixed(1)}H`;
+  const days = minutes / (24 * 60);
+  return `${days < 10 ? days.toFixed(1) : Math.round(days)}D`;
+}
+
 function FeedbackNotice({ feedback, strokeData, onDismiss }: { feedback: NonNullable<ReturnType<typeof useBattle>["feedback"]>; strokeData: StrokeDataMap; onDismiss: () => void }) {
   if (feedback.kind === "correct" && !feedback.struggled) return <aside className="hit-notice" role="status"><b>+{feedback.points}</b><span>DIRECT HIT</span></aside>;
-  const priority = feedback.oldWeight !== undefined
-    ? `MASTERY ${101 - feedback.oldWeight} → ${101 - (feedback.newWeight ?? feedback.oldWeight)} · DUE IN ${feedback.repeatAfterPhrases}`
-    : `RECALL ${feedback.recallScoreMsPerChar === null || feedback.recallScoreMsPerChar === undefined ? "—" : `${Math.round(feedback.recallScoreMsPerChar)} MS/CHAR`} · INTERVAL ${feedback.repeatAfterPhrases}`;
+  const priority = `PINYIN ${feedback.ratings.pinyin.toUpperCase()}${feedback.ratings.meaning ? ` · MEANING ${feedback.ratings.meaning.toUpperCase()}` : ""} · NEXT ${feedback.nextDueInMs === null ? "—" : formatDue(feedback.nextDueInMs)}`;
   const blocking = feedback.kind !== "correct";
-  const notice = <aside className="breach-notice" role={blocking ? "dialog" : "alert"} aria-modal={blocking ? true : undefined} aria-labelledby={blocking ? "learning-feedback-title" : undefined}><strong id={blocking ? "learning-feedback-title" : undefined}><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b>{feedback.typed && <em><HanziText text={`YOU TYPED: ${feedback.typed}`} data={strokeData} /></em>}<footer><span>{feedback.struggled ? "ADDED TO LEVEL POOL" : "RECALL RECORDED"}</span><span>{priority}</span></footer>{blocking && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE</button>}</aside>;
+  const notice = <aside className="breach-notice" role={blocking ? "dialog" : "alert"} aria-modal={blocking ? true : undefined} aria-labelledby={blocking ? "learning-feedback-title" : undefined}><strong id={blocking ? "learning-feedback-title" : undefined}><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b>{feedback.typed && <em><HanziText text={`YOU TYPED: ${feedback.typed}`} data={strokeData} /></em>}<footer><span>{feedback.struggled ? "REPAIR SCHEDULED" : "RECALL RECORDED"}</span><span>{priority}</span></footer>{blocking && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE</button>}</aside>;
   return blocking ? <div className="modal-backdrop learning-backdrop">{notice}</div> : notice;
 }
 
@@ -612,29 +624,12 @@ function SettingsDialog({ settings, onApply, onClose }: { settings: DifficultySe
   }, [onClose]);
   const speedLabel = draft.enemySpeedMultiplier < 0.9 ? "SLOW" : draft.enemySpeedMultiplier > 1.1 ? "FAST" : "STANDARD";
   const update = <K extends keyof DifficultySettings>(key: K, value: DifficultySettings[K]) => setDraft((old) => ({ ...old, [key]: value }));
-  return <div className="modal-backdrop"><section className="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settings-title"><header><small>EVERY LEARNING AND REVIEW PARAMETER IS ADJUSTABLE</small><h2 id="settings-title">SYSTEM SETTINGS</h2></header><div className="settings-body">
+  return <div className="modal-backdrop"><section className="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settings-title"><header><small>ARCADE PRESSURE IS ADJUSTABLE · MEMORY SCHEDULING RUNS ON FSRS</small><h2 id="settings-title">SYSTEM SETTINGS</h2></header><div className="settings-body">
     <h3>ARCADE PRESSURE</h3>
     <label><span>BASE WORD SPAWN RATE <b>1 EVERY {(draft.spawnIntervalMs / 1000).toFixed(2)}s · {Math.round(60000 / draft.spawnIntervalMs)}/MIN</b></span><input type="range" min="1500" max="10000" step="250" value={draft.spawnIntervalMs} onChange={(event) => update("spawnIntervalMs", Number(event.target.value))} /></label>
     <label><span>WORD SPEED <b>{speedLabel} · {draft.enemySpeedMultiplier.toFixed(2)}×</b></span><input className="mint-range" type="range" min="0.65" max="1.5" step="0.05" value={draft.enemySpeedMultiplier} onChange={(event) => update("enemySpeedMultiplier", Number(event.target.value))} /></label>
     <h3>REGULAR LEVELS</h3>
     <NumberSetting label="NEW WORDS PER LEVEL" value={draft.levelSize} min={5} max={100} step={5} onChange={(value) => update("levelSize", value)} />
-    <NumberSetting label="STRUGGLE THRESHOLD" value={draft.struggleThresholdMs / 1000} min={1} max={20} step={0.5} suffix="s" onChange={(value) => update("struggleThresholdMs", value * 1000)} />
-    <NumberSetting label="CORRECT REPEAT BASE" value={draft.correctRepeatBasePhrases} min={5} max={100} step={1} suffix=" phrases" onChange={(value) => update("correctRepeatBasePhrases", value)} />
-    <NumberSetting label="PHRASES SUBTRACTED PER PINYIN SECOND" value={draft.pinyinSecondsPerPhrase} min={0} max={5} step={0.25} onChange={(value) => update("pinyinSecondsPerPhrase", value)} />
-    <NumberSetting label="MINIMUM CORRECT INTERVAL" value={draft.minimumCorrectRepeatPhrases} min={1} max={Math.min(50, draft.correctRepeatBasePhrases)} step={1} onChange={(value) => update("minimumCorrectRepeatPhrases", value)} />
-    <NumberSetting label="MISTAKE REPEAT INTERVAL" value={draft.mistakeRepeatPhrases} min={1} max={30} step={1} suffix=" phrases" onChange={(value) => update("mistakeRepeatPhrases", value)} />
-    <NumberSetting label="FAST-CORRECT MASTERY GAIN" value={draft.masteryCorrectDecrease} min={1} max={50} step={1} onChange={(value) => update("masteryCorrectDecrease", value)} />
-    <NumberSetting label="SLOW-RECALL MASTERY LOSS" value={draft.masteryStruggleIncrease} min={1} max={50} step={1} onChange={(value) => update("masteryStruggleIncrease", value)} />
-    <NumberSetting label="MISTAKE MASTERY LOSS" value={draft.masteryMistakeIncrease} min={1} max={99} step={1} onChange={(value) => update("masteryMistakeIncrease", value)} />
-    <NumberSetting label="REPAIR RECALLS" value={draft.repairRepetitions} min={0} max={10} step={1} onChange={(value) => update("repairRepetitions", value)} />
-    <div className="rule"><span>DEFAULT RESPONSE FORMULA</span><b>DUE = {draft.correctRepeatBasePhrases} − PINYIN SECONDS × {draft.pinyinSecondsPerPhrase}</b><em>10s → {Math.max(draft.minimumCorrectRepeatPhrases, Math.round(draft.correctRepeatBasePhrases - 10 * draft.pinyinSecondsPerPhrase))} PHRASES</em></div>
-    <h3>ANKI-STYLE REVIEW</h3>
-    <NumberSetting label="FIRST INTERVAL" value={draft.reviewInitialInterval} min={1} max={100} step={1} onChange={(value) => update("reviewInitialInterval", value)} />
-    <NumberSetting label="GRADUATING INTERVAL" value={draft.reviewGraduatingInterval} min={2} max={500} step={1} onChange={(value) => update("reviewGraduatingInterval", value)} />
-    <NumberSetting label="LAPSE INTERVAL" value={draft.reviewLapseInterval} min={1} max={30} step={1} onChange={(value) => update("reviewLapseInterval", value)} />
-    <NumberSetting label="EASY MULTIPLIER" value={draft.reviewEasyMultiplier} min={1.3} max={4} step={0.1} suffix="×" onChange={(value) => update("reviewEasyMultiplier", value)} />
-    <NumberSetting label="HARD MULTIPLIER" value={draft.reviewHardMultiplier} min={0.5} max={1.5} step={0.05} suffix="×" onChange={(value) => update("reviewHardMultiplier", value)} />
-    <NumberSetting label="RECALL SCORE NEW-ANSWER WEIGHT" value={draft.recallScoreSmoothing} min={0.05} max={1} step={0.05} onChange={(value) => update("recallScoreSmoothing", value)} />
     <h3>ACCESSIBILITY</h3>
     <label className="volume"><span>MASTER VOLUME <b>{Math.round(draft.masterVolume * 100)}%</b></span><input type="range" min="0" max="1" step="0.05" value={draft.masterVolume} onChange={(event) => update("masterVolume", Number(event.target.value))} /></label>
     <label className="check"><input type="checkbox" checked={draft.reducedMotion} onChange={(event) => update("reducedMotion", event.target.checked)} /> REDUCED MOTION</label>
@@ -655,17 +650,23 @@ function Summary({ stats, deckId, deck, level, saveStatus, strokeData, onAgain, 
     .sort((left, right) => {
       const leftProblems = left[1].wrongPinyin + left[1].wrongMeaning + left[1].landed;
       const rightProblems = right[1].wrongPinyin + right[1].wrongMeaning + right[1].landed;
-      return rightProblems - leftProblems || right[1].struggles - left[1].struggles || (right[1].recallScoreMsPerChar ?? 0) - (left[1].recallScoreMsPerChar ?? 0);
+      return rightProblems - leftProblems || right[1].struggles - left[1].struggles || right[1].totalPinyinMs - left[1].totalPinyinMs;
     }).slice(0, 12);
-  const next = level ? Object.entries(level.words).filter(([, item]) => item.introducedAtOrdinal !== null).sort((a, b) => b[1].appearanceWeight - a[1].appearanceWeight).slice(0, 4).map(([id]) => wordMap.get(id)?.displayHanzi ?? "?") : [];
+  // Weakest in-progress words first: never-seen before learning, then by how
+  // recently they were last due.
+  const next = level ? Object.entries(level.words)
+    .filter(([, item]) => item.introducedAtOrdinal !== null && item.pinyin.state !== "review")
+    .sort((a, b) => a[1].pinyin.reps - b[1].pinyin.reps || a[0].localeCompare(b[0]))
+    .slice(0, 4)
+    .map(([id]) => wordMap.get(id)?.displayHanzi ?? "?") : [];
   const isReview = stats.mode === "review";
   return <main className="summary-screen paper"><header><h1>{isReview ? "REVIEW RANKINGS" : "GRADE REPORT"}</h1><p>{isReview ? "ALL MASTERED GRADES • ROUND COMPLETE" : `${deckLabel(deckId)} • SESSION COMPLETE`}</p></header>
     <section className="stat-grid"><div><small>SCORE</small><b className="amber">+{stats.score.toLocaleString()}</b></div><div><small>ACCURACY</small><b className="mint">{accuracy}%</b></div><div><small>BEST STREAK</small><b className="pink">×{stats.bestStreak}</b></div><div><small>WORDS SEEN</small><b className="cyan">{stats.seen.size}</b></div></section>
     {isReview ? <section className="review-ranking"><h2>MOST REINFORCEMENT NEEDED</h2>{ranking.length === 0 ? <p>Perfect round — no struggles or misses.</p> : <div className="ranking-table">{ranking.map(([id, item], index) => {
       const word = wordMap.get(id); const errors = item.wrongPinyin + item.wrongMeaning + item.landed;
-      return <div key={id}><b>#{index + 1}</b><strong><HanziText text={word?.displayHanzi ?? id.split(":").at(-1) ?? ""} data={strokeData} /></strong><span>{word?.displayPinyin}</span><span>{errors} WRONG · {item.struggles} STRUGGLES</span><em>{item.recallScoreMsPerChar === null ? "—" : `${Math.round(item.recallScoreMsPerChar)} ms/char`}</em></div>;
+      return <div key={id}><b>#{index + 1}</b><strong><HanziText text={word?.displayHanzi ?? id.split(":").at(-1) ?? ""} data={strokeData} /></strong><span>{word?.displayPinyin}</span><span>{errors} WRONG · {item.struggles} STRUGGLES</span><em>{item.attempts > 0 ? `${(item.totalPinyinMs / item.attempts / 1000).toFixed(1)}s AVG` : "—"}</em></div>;
     })}</div>}</section>
-    : <section className="summary-details"><div className="mastery-report"><h2>GRADE MASTERY <span>{mastered} / {total}</span></h2><div className="segment-bar"><i style={{ width: `${mastered / total * 100}%` }} /></div><p><b className="mint">+{stats.newlyMastered.size}</b> NEW WORDS MASTERED</p><p><b className="red">{stats.wrongPinyin + stats.wrongMeaning + stats.landed}</b> WORDS NEED REINFORCEMENT</p><p><b className="cyan">{stats.levelsCompleted}</b> LEVELS COMPLETED</p><small>NEXT UP</small><div className="next-up">{next.map((item, index) => <span key={index}><HanziText text={item} data={strokeData} /></span>)}</div></div><div className="save-report"><small>SAVE STATUS</small><b className={saveStatus === "saved" ? "mint" : "red"}>{saveStatus === "saved" ? "✓ ALL PROGRESS SAVED" : "! PROGRESS CACHED LOCALLY"}</b><span>LAST CHECKPOINT<br />JUST NOW</span><button className="primary" onClick={onAgain}>CONTINUE</button></div></section>}
+    : <section className="summary-details"><div className="mastery-report"><h2>GRADE MASTERY <span>{mastered} / {total}</span></h2><div className="segment-bar"><i style={{ width: `${mastered / total * 100}%` }} /></div><p><b className="mint">+{stats.newlyMastered.size}</b> WORDS GRADUATED</p><p><b className="red">{stats.wrongPinyin + stats.wrongMeaning + stats.landed}</b> WORDS NEED REINFORCEMENT</p><p><b className="cyan">{stats.levelsCompleted}</b> LEVELS COMPLETED</p><small>NEXT UP</small><div className="next-up">{next.map((item, index) => <span key={index}><HanziText text={item} data={strokeData} /></span>)}</div></div><div className="save-report"><small>SAVE STATUS</small><b className={saveStatus === "saved" ? "mint" : "red"}>{saveStatus === "saved" ? "✓ ALL PROGRESS SAVED" : "! PROGRESS CACHED LOCALLY"}</b><span>LAST CHECKPOINT<br />JUST NOW</span><button className="primary" onClick={onAgain}>CONTINUE</button></div></section>}
     <footer><button onClick={onGrades}>RETURN TO GRADES</button><button className="pink-button" onClick={onAgain}>{isReview ? "NEXT REVIEW ROUND" : "PLAY AGAIN"}</button></footer>
   </main>;
 }

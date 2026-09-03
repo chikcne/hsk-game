@@ -1,0 +1,34 @@
+# FSRS hybrid scheduler implementation handoff
+
+- Scope completed: replaced the inverse-weight learning model and the SM-2-inspired ordinal review scheduler with a hybrid FSRS + arcade microspacing model built on `ts-fsrs` v5.4.2. Dual pinyin/meaning memory per word, FSRS as the single source of truth in both regular and review modes, hardcoded rating thresholds, stripped mastery settings knobs, fixed the review-filler and stale-repair-pool bugs plus the regular cooldown bypass and fingerprint reconciliation, save schema v3 (fresh start, no migration), deterministic tests including a 90-day workload simulation.
+- Paths changed:
+  - `package.json` (adds `ts-fsrs`)
+  - `src/shared/constants.ts`, `src/shared/schemas.ts` (v3 contracts)
+  - `src/domain/memory/**` (new: card round-trip, ratings, familiarity, outcome application)
+  - `src/domain/learning/**` (scheduler, curriculum, outcomes, reconcile, invariants rewritten; `constants.ts`/`mastery.ts` removed)
+  - `src/domain/review/**` (due-only finite review scheduler; `progress.ts`/`recall.ts` removed)
+  - `src/domain/session/{types,speed,performance,landing}.ts`
+  - `src/client/state/useBattle.ts`, `src/client/app/App.tsx`, `src/client/data/reviewDeck.ts`, `src/client/api/saves.ts`
+  - `src/server/saves/{validation,repository}.ts`
+  - `tests/domain/{learning,memory,review,session,workload}.test.ts`, `tests/integration/runtime.test.ts`, `tests/server/helpers.ts`
+  - `designs/LEARNING_AND_SAVES.md` (rewritten), `designs/GAMEPLAY.md`, `designs/TEST_PLAN.md`, `designs/UI_SPEC.md`
+- Public contracts used/added:
+  - Save schema v3: global `spawnOrdinal` + `schedulerRng` in the save root; `levels[].words[id].{pinyin,meaning}` `ComponentMemory`; no `review` section, no `appearanceWeight`/`reinforcementRemaining`/`activeLearningWordIds`/`activePoolWordKeys`.
+  - `applyOutcomeToLevels(levels, deckId, wordId, outcome, now, currentOrdinal, options)` — one immutable step for both modes.
+  - `spawnNextWord` returns `spawned | empty(+coolingOnly) | complete`; `spawnNextReviewWord` returns `spawned | complete`; both take the shared `SchedulerSnapshot`.
+  - `EncounterOutcome.correct/wrongMeaning` carry optional `pinyinAutocompleted`; revealed pinyin grades pinyin Again.
+  - Rating constants: Easy ≤ 800 ms/char, Hard > 2500 ms/char, meaning Hard > 5 s; Easy capped to Good on first exposure; cooldowns Again = 3 / pass = 8 phrases; session wait horizon 120 s.
+- Commands/results:
+  - `npm run typecheck` — clean.
+  - `npm test` — 19 files, 133 tests passed.
+  - `npm run build` — passed (vite bundle 384 KiB / 117 KiB gzip).
+  - Live API smoke: old v2 save quarantined by the v3 validation; blank v3 fallback; `expectedRevision 0` start-fresh PUT accepted; a domain-produced save (real FSRS states) round-tripped through strict server validation.
+- Bug fixes covered by tests:
+  - regular cooldown bypass (`coolingTier`) removed — cooling words never spawn; empty-field ordinal clock lets cooldowns elapse instead (`tests/domain/learning.test.ts`).
+  - review fillers no longer overwrite future due dates; review rounds are finite and due-only (`tests/domain/review.test.ts`).
+  - stale `activePoolWordKeys` repairs are structurally impossible (relearning is per-card FSRS state; the review section is gone).
+  - fingerprint mismatch now calls `reconcileLevelProgress` instead of resetting the level (`useBattle.ts`).
+  - autocomplete no longer counts as fully correct pinyin.
+- Assumptions/decisions (confirmed with the product owner): dual pinyin/meaning memory; FSRS governs regular mode too; "mastered" = both components graduated to review; all mastery/review settings knobs removed (arcade pressure, level size, volume, reduced motion remain); regular sessions end when nothing is due within the horizon; no sibling burying in this pass; deterministic tests plus workload simulation (full log-loss/Brier calibration deferred until real review history exists).
+- Known limitations: parameter optimization (FSRS `optimize`) intentionally deferred until a few hundred real reviews; fuzz disabled so intervals are identical across players for now; the rAF-loop client wiring is covered only by typecheck/build plus domain-level simulations (no in-repo browser harness).
+- Suggested next agent: retention calibration once real review logs accumulate; per-component baseline latency adaptation; optional FSRS fuzz toggle.

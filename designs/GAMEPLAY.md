@@ -7,7 +7,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 - Enemies spawn at normalized vertical progress `0` and land at `1`.
 - More than one enemy may be descending at once; default settings produce roughly eight visible enemies once the queue stabilizes.
 - Every enemy displays its own normalized Hanzi.
-- Each enemy has a word-specific speed derived from mastery: mastery `1` uses `0.65×` and mastery `100` uses `1.50×`, linearly interpolated between them.
+- Each enemy has a word-specific speed derived from its FSRS familiarity (`wordFamiliarity`: 0 for new, 0.25 for learning/relearning, logarithmic in stability for review): familiarity `0` uses `0.65×` and familiarity `1` uses `1.50×`, linearly interpolated between them.
 - The global speed setting multiplies every word-specific speed; there is no random velocity.
 - When a target is needed, choose the descending enemy with the shortest predicted time to ground, not the lowest altitude. An amber box/beam and the command panel identify it.
 - Equal predicted arrival times are broken by lower `spawnOrdinal`.
@@ -17,8 +17,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 Use normalized progress in the domain/simulation layer rather than canvas pixels:
 
 ```ts
-mastery = 101 - appearanceWeight
-wordSpeed = lerp(0.65, 1.50, (mastery - 1) / 99)
+wordSpeed = lerp(0.65, 1.50, wordFamiliarity(word))
 progress += (deltaMs / BASE_TRAVEL_MS) * enemySpeedMultiplier * wordSpeed
 arrivalTime = (1 - progress) / wordSpeed
 ```
@@ -77,7 +76,7 @@ A resolved target is removed from answer state immediately. Its explosion or bre
 MVP allows one learning outcome per enemy. Retrying the same enemy would complicate timing, allow repeated weight changes, and let one enemy block the whole pressure queue. A wrong answer therefore:
 
 1. resets streak;
-2. records one miss, raises appearance weight, and gives that word three repair-priority recalls (still subject to cooldown);
+2. records one miss, grades the tested FSRS component Again, and schedules the repair: the word is due again after FSRS relearning steps and a hard 3-phrase ordinal cooldown (see designs/LEARNING_AND_SAVES.md);
 3. reveals Hanzi, toned pinyin, and correct meaning;
 4. starts a short breach animation;
 5. removes the enemy from target eligibility;
@@ -130,9 +129,9 @@ Each enemy produces exactly one of:
 
 ```ts
 type EncounterOutcome =
-  | { kind: "correct"; pinyinMs: number; meaningMs: number }
+  | { kind: "correct"; pinyinMs: number; meaningMs: number; pinyinAutocompleted?: boolean }
   | { kind: "wrongPinyin"; pinyinMs: number }
-  | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number }
+  | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number; pinyinAutocompleted?: boolean }
   | { kind: "landed"; activeThinkingMs: number | null };
 ```
 
@@ -185,7 +184,7 @@ Accuracy is `completeCorrect / resolvedEnemies`. Do not count blank or irrelevan
 
 The spawn clock runs while the battle is active, including pinyin, meaning, and non-blocking hit/landing feedback. It freezes during wrong-answer review, while paused/settings, while the page is hidden, and before deck/save loading completes.
 
-After a word spawns, its mastery sets the next interval. The multiplier interpolates linearly from `1.60` at mastery `0`, through `1.00` at mastery `50`, to `0.40` at mastery `100`: `masteryInterval = baseInterval * lerp(1.60, 0.40, mastery / 100)`. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
+After a word spawns, its FSRS-derived familiarity sets the next interval. The multiplier interpolates linearly from `1.60` at familiarity `0`, through `1.00` at familiarity `0.5`, to `0.40` at familiarity `1`: `masteryInterval = baseInterval * lerp(1.60, 0.40, familiarity)` where familiarity is `wordFamiliarity(word) * 100`. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
 
 When a timer is due:
 

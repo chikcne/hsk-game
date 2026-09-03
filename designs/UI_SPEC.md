@@ -110,7 +110,7 @@ Reference: [`01-deck-select.png`](01-deck-select.png)
 
 Deck totals reflect logical imported words: 300, 200, 500, 1,000, 1,600, and 1,798 for the audited current packages.
 
-A `CLEARED` badge means `firstCompletedAt` exists. Still show current live mastery if it later regressed.
+A `CLEARED` badge means `firstCompletedAt` exists. Still show current graduated counts if a lapse later regressed them.
 
 ### Interaction
 
@@ -147,7 +147,7 @@ Every descending enemy carries its own Hanzi. The one **soonest to land** must a
 - command panel repeats exactly the same Hanzi;
 - assistive status announces it once when target changes.
 
-Non-target enemies use cyan. An enemy in its final 20% may pulse/red-mark as danger, but red must not override the active amber outline. Enemy speed rises with word mastery and is multiplied by the configured global speed.
+Non-target enemies use cyan. An enemy in its final 20% may pulse/red-mark as danger, but red must not override the active amber outline. Enemy speed rises with the word's FSRS-derived familiarity and is multiplied by the configured global speed.
 
 Hanzi sizing by display length:
 

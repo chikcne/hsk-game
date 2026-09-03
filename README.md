@@ -1,6 +1,6 @@
 # Ziduoduo (字多多)
 
-A local-first arcade vocabulary game built from the six HSK Anki packages in `decks/`. Descending Hanzi get faster as their words are mastered and are drawn in PRC stroke order; answer the locked word predicted to land soonest with pinyin, then choose its English meaning by pressing that choice's highlighted first letter.
+A local-first arcade vocabulary game built from the six HSK Anki packages in `decks/`. Descending Hanzi get faster as their words become familiar and are drawn in PRC stroke order; answer the locked word predicted to land soonest with pinyin, then choose its English meaning by pressing that choice's highlighted first letter. Long-term memory runs on FSRS (via `ts-fsrs`) with separate pinyin and meaning states per word, combined with hard arcade spacing cooldowns.
 
 ## Run
 
@@ -31,9 +31,9 @@ Progress is written atomically to the gitignored `saves/default.json`. If the lo
 
 Regular grades use an adjustable 20-word rolling pool: mastering any one word introduces the next new word without waiting for the rest of the pool. During ordinary learning, practiced but not-yet-mastered words receive 55% of spawns and completely new words receive 45%; mistakes remain in the higher-priority repair pool. The recall window begins when the word becomes the selected target, regardless of its altitude; a target that reaches the ground waits until that full window expires. Mastery and repeat timing use pinyin response time only—meaning-selection time still affects arcade score, but not learning progress.
 
-The grade screen also includes an Anki-style review mode across mastered words from all grades. Review keeps a separate recall score (pinyin milliseconds per character), ease, and interval, and its end-of-round report ranks the words with the most struggles and misses. Review recall never changes regular-grade mastery.
+The grade screen also includes a cross-grade review mode for words that have graduated (both pinyin and meaning memory through their learning steps) from any grade. Review rounds are finite: they contain exactly the cards whose FSRS due date has passed — relearning repairs first, then the graduated cards closest to being forgotten — and end when nothing is due. Their end-of-round report ranks the words with the most struggles and misses.
 
-Settings control the base spawn interval, global word speed, level size, struggle threshold, response-time interval formula, mistake interval, mastery gains/losses, Anki review intervals/ease, volume, and reduced motion. The interval after each spawn scales linearly from 160% of the base for a 0%-mastery word, through 100% at 50% mastery, to 40% at full mastery. During battle, a smoothed 0.70–1.50× performance multiplier increases pressure after fast correct answers and eases it after slow answers or misses; an empty battlefield refills within 0.5 seconds. Defaults schedule a ten-second correct pinyin response ten phrases later and a wrong answer or landing five phrases later. There are no lives or game-over screen.
+Settings control the base spawn interval, global word speed, level size, volume, and reduced motion. All memory parameters (FSRS weights, retention target, latency rating thresholds) are fixed constants in `src/domain/memory` so scheduling cannot drift from the science. The interval after each spawn scales linearly from 160% of the base for a brand-new word, through 100% at mid familiarity, to 40% for well-known words, derived from FSRS state. During battle, a smoothed 0.70–1.50× performance multiplier increases pressure after fast correct answers and eases it after slow answers or misses; an empty battlefield refills within 0.5 seconds. Answers are auto-graded: wrong or revealed pinyin is Again, effortful-but-correct recall is Hard, normal recall is Good, and fast recall is Easy (never on a first exposure). There are no lives or game-over screen.
 
 ## Stroke-order data
 

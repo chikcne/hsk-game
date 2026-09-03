@@ -119,39 +119,31 @@ With fixed seed and 100,000 draws:
 
 Test rejection behavior with a scripted RNG that first produces out-of-range values and then a valid value.
 
-### Tier and weighting
+### Tiers, cooldowns, and due selection
 
-- deterministic curriculum introduces exactly 30 words initially and never introduces one twice;
-- mastering an active word removes it and introduces the next unseen word;
-- a mastered fallback lapse rejoins active learning without evicting another weak word;
-- eligible repair words exclude ordinary learning and mastered candidates;
-- eligible ordinary active words exclude mastered candidates;
-- when all active words are cooling down, mastered eligible words fill spawns;
-- after all words master, mastered words still spawn;
-- not-yet-introduced and ineligible weight-100 words have zero selections;
-- among equal-age candidates, weight 100 wins statistically more than weight 10 using broad deterministic bounds;
-- age boost increases a neglected word's effective weight but never exceeds configured cap;
-- anti-starvation deterministically selects a candidate at 150 eligible spawns;
-- selected word gets cooldown before a second scheduler call;
-- official minimum deck size never produces `noEligibleWord` in long simulation.
+- deterministic curriculum introduces exactly `levelSize` words initially and never introduces one twice;
+- graduating a pool word (both components `review`) removes it from the derived pool and introduces the next unseen word;
+- a lapsed graduate rejoins the acquisition pool automatically (derived, never stored);
+- cooling words are never selected: an empty battlefield with due-but-cooling words reports `coolingOnly` and the ordinal advances instead of spawning early (regression test for the old cooldown bypass);
+- not-yet-due words are never selected; sessions end when nothing comes due within the 120 s horizon;
+- review mode serves only due graduated/relearning cards, ends finite rounds with no graded fillers (regression tests for the old filler and stale-pool bugs), prioritizes relearning, and orders maintenance by lowest retrievability;
+- reservations set `nextEligibleSpawn` against the global ordinal so a word cannot respawn in the other mode either;
+- official minimum deck size never produces a deadlock in long simulation (workload simulation test).
 
 Property test random save states satisfying invariants, then ensure selected IDs are always from the calculated eligible tier.
 
-## 5. Mastery tests
+## 5. Memory and rating tests
 
-Boundary values:
+Automatic FSRS rating boundaries (constants in `src/domain/memory/ratings.ts`):
 
-- correct in ≤2,500 ms decreases weight by 16;
-- correct in 12,000 ms or more decreases by 4;
-- midpoint yields expected intermediate decrease;
-- weight never falls below 1;
-- wrong pinyin/meaning adds 30, cap 100, and sets three repairs;
-- landing adds 35, cap 100, and sets three repairs;
-- each complete correct decrements repair count; reaching weight 1 clears it;
-- mastered miss moves 1 → 31/36 and returns the word to active repair;
-- audio failure does not change outcome;
-- pause/hidden time is excluded;
-- speed/spawn settings do not change mastery for same response milliseconds.
+- revealed (autocompleted) pinyin grades pinyin Again even when the meaning choice succeeds;
+- per-character latency: ≤ 800 ms/char is Easy (capped to Good on a first exposure), > 2500 ms/char is Hard (still a pass), otherwise Good;
+- wrong pinyin grades pinyin Again and never touches the meaning component;
+- correct meaning ≤ 5 s is Good, > 5 s is Hard; wrong meaning is Again;
+- a word is graduated only when both components are in the review state;
+- familiarity for speed/pressure derives from FSRS state only;
+- audio failure does not change outcome; pause/hidden time is excluded;
+- speed/spawn settings do not change scheduling for the same response milliseconds.
 
 Counter invariant after arbitrary outcome sequence:
 
@@ -161,10 +153,15 @@ attempts = completeCorrect + wrongPinyin + wrongMeaning + landed
 
 Completion:
 
-- final word reaching 1 sets `firstCompletedAt` once;
+- the final word graduating sets `firstCompletedAt` once;
 - another correct does not change timestamp;
-- later miss regresses live mastery but preserves timestamp;
-- migrated added word makes live mastery incomplete while preserving prior clear milestone.
+- a later lapse emits grade regression but preserves the timestamp;
+- reconciled added words join the pool while preserving the prior clear milestone.
+
+A seeded 90-day workload simulation drives the real scheduler + FSRS with a
+retrievability-driven synthetic player and asserts bounded backlogs, finite
+sessions, stability growth, graduation throughput, and no card regressing to
+an unseen state (see `tests/domain/workload.test.ts`).
 
 ## 6. Encounter reducer tests
 
@@ -190,7 +187,7 @@ Define and test ordering: input events captured before a fixed simulation step a
 ## 7. Multi-enemy simulation tests
 
 - default spawn settings produce multiple visible enemies;
-- progress deltas scale linearly with each word's mastery-derived speed;
+- progress deltas scale linearly with each word's familiarity-derived speed;
 - a higher but faster enemy is selected when its predicted landing is sooner;
 - equal predicted landing times choose lower spawn ordinal;
 - a newly spawned earlier arrival does not steal the current target lock;
@@ -229,7 +226,7 @@ When same-POS pool has fewer than seven candidates, verify global fallback fills
 - streak factor caps at 20 prior hits;
 - difficulty factor clamps to 0.5–2.0;
 - easier settings produce lower points than harder settings for same response;
-- settings do not alter mastery delta;
+- settings do not alter memory scheduling;
 - score never becomes `NaN`, negative, or non-integer;
 - session summary counters and accuracy match resolved outcomes.
 
@@ -270,7 +267,7 @@ With a fake game renderer:
 - transient failure retries latest snapshot;
 - End Session waits for flush;
 - permanent failure offers retry/export and never says saved;
-- refresh loads same mastery/settings/cooldowns/revision;
+- refresh loads same progress/settings/cooldowns/revision;
 - second-tab conflict presents reload path rather than overwriting.
 
 ## 12. Playwright end-to-end journeys
@@ -278,7 +275,7 @@ With a fake game renderer:
 Use a tiny generated test deck and deterministic clock.
 
 1. **Keyboard success**: select HSK, see several enemies, confirm lowest highlighted, type pinyin, hear mocked audio call, press correct letter, score/streak increase, save file updates.
-2. **Wrong pinyin**: wrong non-empty Enter shows correction, resets streak, breaches once, raises weight, selects next enemy.
+2. **Wrong pinyin**: wrong non-empty Enter shows correction, resets streak, breaches once, grades the FSRS component Again, and selects the next enemy.
 3. **Wrong meaning**: correct pinyin then wrong letter shows chosen/correct labels and one miss.
 4. **Natural landing**: put the target at ground, verify it receives a full selection-based pinyin window, then advance the recall clock and verify no game over and the next target highlight.
 5. **Cooldown across restart**: spawn a word, end, reload, verify it does not reappear before stored eligibility.

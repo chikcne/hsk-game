@@ -2,7 +2,7 @@ import { link, mkdir, readFile, readdir, unlink } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { DEFAULT_SETTINGS } from "../../shared/constants";
 import type { SaveFile } from "../../shared/schemas";
-import { createReviewProgress } from "../../domain/review";
+import { createSecureRandomState } from "../../domain/random";
 import { AtomicSaveWriter, type AtomicWriterOptions } from "./atomic-writer";
 import type { DeckCatalog } from "./manifests";
 import { parseSaveFile, parseSaveSnapshot, type SaveSnapshot } from "./validation";
@@ -56,13 +56,14 @@ export type SaveRepositoryOptions = {
 
 export function createDefaultSave(now = new Date()): SaveFile {
   return {
-    schemaVersion: 2,
+    schemaVersion: 3,
     profileId: "default",
     revision: 0,
     savedAt: now.toISOString(),
     settings: { ...DEFAULT_SETTINGS },
+    spawnOrdinal: 0,
+    schedulerRng: createSecureRandomState(),
     levels: {},
-    review: createReviewProgress(),
     lifetime: {
       score: 0,
       resolvedEnemies: 0,

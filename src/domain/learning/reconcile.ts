@@ -1,11 +1,16 @@
 import type { LevelProgress, WordProgress } from "../../shared/schemas";
-import { refillCurriculum } from "./curriculum";
 import { createWordProgress } from "./progress";
 import type { LearningDeck, ReconciliationResult } from "./types";
 
-/** Reconciles stable IDs after a deck fingerprint change. Newly added words join
- * the current level so a previously cleared grade cannot silently skip them. */
-export function reconcileLevelProgress(source: LevelProgress, deck: LearningDeck): ReconciliationResult {
+/** Reconciles stable IDs after a deck fingerprint change. Newly added words
+ * join the current pool so a previously cleared grade cannot silently skip
+ * them; removed words are preserved as orphans. Memory states ride along with
+ * their word ID, so no recall history is lost. */
+export function reconcileLevelProgress(
+  source: LevelProgress,
+  deck: LearningDeck,
+  spawnOrdinal: number,
+): ReconciliationResult {
   if (source.deckId !== deck.id) throw new Error(`Cannot reconcile ${source.deckId} progress with ${deck.id}`);
   const ids = deck.words.map((word) => word.id);
   if (new Set(ids).size !== ids.length) throw new Error("Deck word IDs must be unique");
@@ -18,7 +23,7 @@ export function reconcileLevelProgress(source: LevelProgress, deck: LearningDeck
   for (const id of ids) {
     const existing = source.words[id] ?? source.orphanedProgress[id];
     if (existing === undefined) {
-      words[id] = { ...createWordProgress(), introducedAtOrdinal: source.nextSpawnOrdinal };
+      words[id] = { ...createWordProgress(), introducedAtOrdinal: spawnOrdinal };
       addedIds.push(id);
     } else {
       words[id] = existing;
@@ -31,27 +36,17 @@ export function reconcileLevelProgress(source: LevelProgress, deck: LearningDeck
     if (!currentIds.has(id)) { orphanedProgress[id] = progress; removed += 1; }
   }
 
-  const currentLevelWordIds = [...new Set([
-    ...source.currentLevelWordIds.filter((id) => currentIds.has(id)),
-    ...addedIds,
-  ])];
-  const activeLearningWordIds = [...new Set([
-    ...source.activeLearningWordIds.filter((id) => currentIds.has(id) && words[id]?.appearanceWeight !== 1),
-    ...addedIds,
-  ])];
   const reconciled: LevelProgress = {
     ...source,
     deckFingerprint: deck.fingerprint,
     curriculumCursor: Object.values(words).filter((word) => word.introducedAtOrdinal !== null).length,
-    currentLevelWordIds,
-    activeLearningWordIds,
-    reviewedOlderWordIds: source.reviewedOlderWordIds.filter((id) => currentIds.has(id)),
+    firstCompletedAt: source.firstCompletedAt,
     words,
     orphanedProgress,
   };
 
   return {
-    level: refillCurriculum(reconciled, deck),
+    level: reconciled,
     report: { retained, added: addedIds.length, removed },
   };
 }

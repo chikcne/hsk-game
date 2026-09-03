@@ -1,161 +1,134 @@
-import { DEFAULT_SETTINGS } from "../../shared/constants";
 import type { DifficultySettings, LevelProgress, WordProgress } from "../../shared/schemas";
+import { DEFAULT_SETTINGS } from "../../shared/constants";
+import { RESERVED_COOLDOWN_PHRASES, isMemoryDue, isUnseenWord, nextDueAtMs, wordFamiliarity } from "../memory";
 import { type RandomSource, Xoshiro128StarStar } from "../random";
-import { ANTI_STARVATION_AGE, MAX_ELIGIBLE_AGE_BOOST } from "./constants";
-import { refillCurriculum } from "./curriculum";
-import type { LearningDeck, SpawnResult, SpawnTier } from "./types";
+import { introduceNewWords } from "./curriculum";
+import { acquisitionWordIds } from "./progress";
+import type { RegularSpawnResult, SchedulerSnapshot, SpawnTier, LearningDeck } from "./types";
 
-type Candidate = {
-  id: string;
-  progress: WordProgress;
-  eligibleAge: number;
-  effectiveWeight: number;
-};
+/** When nothing is eligible, a regular session waits this long for the next
+ * FSRS due date before ending itself. Ordinal-only blockage (cooling words)
+ * never counts toward the horizon: the caller advances ordinals instead. */
+export const SESSION_WAIT_HORIZON_MS = 120_000;
 
-export function isEligible(progress: WordProgress, spawnOrdinal: number): boolean {
-  return progress.introducedAtOrdinal !== null && progress.nextEligibleSpawn <= spawnOrdinal;
+const TIER_PRIORITY: Record<SpawnTier, number> = { relearning: 0, learning: 1, new: 2, review: 3 };
+
+export function spawnTierOf(progress: WordProgress): SpawnTier {
+  if (progress.pinyin.state === "relearning" || progress.meaning.state === "relearning") return "relearning";
+  if (progress.pinyin.state === "learning" || progress.meaning.state === "learning") return "learning";
+  if (progress.pinyin.state === "new" && progress.meaning.state === "new") return "new";
+  return "review";
 }
 
-export function eligibleAge(progress: WordProgress, spawnOrdinal: number): number {
-  return Math.max(0, spawnOrdinal - progress.nextEligibleSpawn);
-}
+type Candidate = { id: string; progress: WordProgress; tier: SpawnTier; dueMs: number };
 
-export function effectiveAppearanceWeight(progress: WordProgress, spawnOrdinal: number): number {
-  const age = eligibleAge(progress, spawnOrdinal);
-  const ageBoost = 1 + Math.min(MAX_ELIGIBLE_AGE_BOOST, age / 100);
-  return progress.appearanceWeight * ageBoost;
-}
-
-function candidate(id: string, progress: WordProgress, ordinal: number): Candidate {
-  return { id, progress, eligibleAge: eligibleAge(progress, ordinal), effectiveWeight: effectiveAppearanceWeight(progress, ordinal) };
-}
-
-/** Returns the highest-priority eligible tier. Repair words stay urgent;
- * ordinary learning mixes practiced and completely new words. */
-export function eligibleTier(
-  level: LevelProgress,
-  excludedWordIds: ReadonlySet<string> = new Set(),
-): { tier: SpawnTier; candidates: Candidate[] } | null {
-  const ordinal = level.nextSpawnOrdinal;
-  const active = level.activeLearningWordIds.flatMap((id) => {
-    const progress = level.words[id];
-    return !progress || excludedWordIds.has(id) || !isEligible(progress, ordinal) ? [] : [candidate(id, progress, ordinal)];
-  });
-  const repair = active.filter((entry) => entry.progress.reinforcementRemaining > 0);
-  if (repair.length > 0) return { tier: "repair", candidates: repair };
-
-  const learning = active.filter((entry) => entry.progress.appearanceWeight > 1);
-  if (learning.length > 0) return { tier: "learning", candidates: learning };
-
-  const fallback = Object.entries(level.words).flatMap(([id, progress]) =>
-    !excludedWordIds.has(id) && progress.appearanceWeight === 1 && isEligible(progress, ordinal)
-      ? [candidate(id, progress, ordinal)] : [],
-  );
-  return fallback.length > 0 ? { tier: "fallback", candidates: fallback } : null;
-}
-
-function coolingTier(
-  level: LevelProgress,
-  excludedWordIds: ReadonlySet<string>,
-): { tier: SpawnTier; candidates: Candidate[] } | null {
-  const ordinal = level.nextSpawnOrdinal;
-  const active = level.activeLearningWordIds.flatMap((id) => {
-    const progress = level.words[id];
-    return !progress || excludedWordIds.has(id) ? [] : [candidate(id, progress, ordinal)];
-  });
-  const repair = active.filter((entry) => entry.progress.reinforcementRemaining > 0);
-  if (repair.length > 0) return { tier: "repair", candidates: repair };
-  if (active.length > 0) return { tier: "learning", candidates: active };
-
-  const fallback = Object.entries(level.words).flatMap(([id, progress]) =>
-    !excludedWordIds.has(id) && progress.introducedAtOrdinal !== null && progress.appearanceWeight === 1
-      ? [candidate(id, progress, ordinal)] : [],
-  );
-  return fallback.length > 0 ? { tier: "fallback", candidates: fallback } : null;
+function collectCandidates(level: LevelProgress, ordinal: number, nowMs: number, excludedWordIds: ReadonlySet<string>): Candidate[] {
+  const candidates: Candidate[] = [];
+  for (const [id, progress] of Object.entries(level.words)) {
+    if (progress.introducedAtOrdinal === null) continue;
+    if (excludedWordIds.has(id)) continue;
+    if (progress.nextEligibleSpawn > ordinal) continue;
+    if (!isMemoryDue(progress, nowMs)) continue;
+    candidates.push({ id, progress, tier: spawnTierOf(progress), dueMs: nextDueAtMs(progress) });
+  }
+  return candidates;
 }
 
 function compareStableId(left: string, right: string): number {
   return left < right ? -1 : left > right ? 1 : 0;
 }
 
-function chooseCandidate(candidates: Candidate[], rng: RandomSource, tier: SpawnTier): Candidate {
-  const starved = candidates.filter((entry) => entry.eligibleAge >= ANTI_STARVATION_AGE);
-  if (starved.length > 0) {
-    starved.sort((left, right) => right.eligibleAge - left.eligibleAge || right.progress.appearanceWeight - left.progress.appearanceWeight || compareStableId(left.id, right.id));
-    return starved[0]!;
-  }
-
-  let weighted = candidates.map((entry) => ({ entry, weight: entry.effectiveWeight }));
-  if (tier === "learning") {
-    const practicedTotal = candidates.reduce((sum, entry) => sum + (entry.progress.attempts > 0 ? entry.effectiveWeight : 0), 0);
-    const newTotal = candidates.reduce((sum, entry) => sum + (entry.progress.attempts === 0 ? entry.effectiveWeight : 0), 0);
-    if (practicedTotal > 0 && newTotal > 0) {
-      // At pool level, practiced-but-unmastered words receive 55% of ordinary
-      // learning spawns and completely new words receive 45%. Their mastery
-      // weights still decide selection within each group.
-      weighted = candidates.map((entry) => ({
-        entry,
-        weight: entry.progress.attempts > 0
-          ? 0.55 * entry.effectiveWeight / practicedTotal
-          : 0.45 * entry.effectiveWeight / newTotal,
-      }));
-    }
-  }
-
-  const total = weighted.reduce((sum, item) => sum + item.weight, 0);
-  const unit = rng.nextUnit();
-  if (!Number.isFinite(unit) || unit < 0 || unit >= 1) throw new RangeError("RandomSource.nextUnit() must return a finite value in [0, 1)");
-  let position = unit * total;
-  for (const item of weighted) {
-    if (position < item.weight) return item.entry;
-    position -= item.weight;
-  }
-  return weighted[weighted.length - 1]!.entry;
+/** Highest-priority tier first, then earliest due, then a uniform random pick
+ * among exact ties. Deterministic given the scheduler RNG state. */
+function pickCandidate(candidates: Candidate[], rng: RandomSource): Candidate {
+  const topPriority = Math.min(...candidates.map((entry) => TIER_PRIORITY[entry.tier]));
+  const topTier = candidates.filter((entry) => TIER_PRIORITY[entry.tier] === topPriority);
+  const earliest = Math.min(...topTier.map((entry) => entry.dueMs));
+  const due = topTier.filter((entry) => entry.dueMs === earliest)
+    .sort((left, right) => compareStableId(left.id, right.id));
+  return due[Math.floor(rng.nextUnit() * due.length)] ?? due[due.length - 1]!;
 }
 
-/** Selects one regular-level word and reserves it against a simultaneous enemy.
- * The final outcome replaces this reservation with its response-based interval. */
+function isoTime(value: string | Date): number {
+  const time = typeof value === "string" ? Date.parse(value) : value.getTime();
+  if (!Number.isFinite(time)) throw new RangeError("now must be a valid timestamp");
+  return time;
+}
+
+/**
+ * Selects one regular-mode word. A word spawns only when ALL of the following
+ * hold — none may be bypassed:
+ *
+ * 1. it has been introduced into the grade;
+ * 2. its FSRS due date has passed (`pinyin`/`meaning` whichever is weaker) —
+ *    graduated words therefore appear only for due maintenance;
+ * 3. its ordinal cooldown has elapsed (`nextEligibleSpawn`);
+ * 4. it is not already an active enemy.
+ *
+ * When nothing is eligible the scheduler reports `empty` (plus whether the
+ * blockage is ordinal-only) or `complete` when nothing comes due within the
+ * session horizon. It never selects a cooling or not-yet-due word.
+ */
 export function spawnNextWord(
-  sourceLevel: LevelProgress,
+  level: LevelProgress,
   deck: LearningDeck,
-  sourceRng?: RandomSource,
+  now: string | Date,
+  snapshot: SchedulerSnapshot,
   settings: DifficultySettings = DEFAULT_SETTINGS,
   excludedWordIds: ReadonlySet<string> = new Set(),
-): SpawnResult {
-  const level = refillCurriculum(sourceLevel, deck);
-  const ordinal = level.nextSpawnOrdinal;
-  // A small or completely missed pool can put every available card before its
-  // due point. Falling back to the earliest cooling card keeps the arcade from
-  // deadlocking; under ordinary load the due tier above remains authoritative.
-  const selectedTier = eligibleTier(level, excludedWordIds) ?? coolingTier(level, excludedWordIds);
-  if (selectedTier === null) {
-    const records = Object.values(level.words);
+): RegularSpawnResult {
+  const { level: poolLevel } = introduceNewWords(level, deck, settings.levelSize, snapshot.spawnOrdinal);
+  const ordinal = snapshot.spawnOrdinal;
+  const nowMs = isoTime(now);
+
+  const candidates = collectCandidates(poolLevel, ordinal, nowMs, excludedWordIds);
+  if (candidates.length > 0) {
+    const rng = new Xoshiro128StarStar(snapshot.schedulerRng);
+    const selected = pickCandidate(candidates, rng);
+    const reserved: WordProgress = {
+      ...selected.progress,
+      lastSpawnOrdinal: ordinal,
+      // Overwritten with the resolution cooldown when the outcome lands; this
+      // placeholder only matters if the session ends mid-flight.
+      nextEligibleSpawn: ordinal + RESERVED_COOLDOWN_PHRASES + 1,
+    };
     return {
-      status: "noEligibleWord",
-      level,
+      status: "spawned",
+      level: { ...poolLevel, words: { ...poolLevel.words, [selected.id]: reserved } },
+      snapshot: { spawnOrdinal: ordinal + 1, schedulerRng: rng.state() },
+      wordId: selected.id,
       spawnOrdinal: ordinal,
-      diagnostics: {
-        activeCount: level.activeLearningWordIds.length,
-        introducedCount: records.filter((progress) => progress.introducedAtOrdinal !== null).length,
-        coolingCount: records.filter((progress) => progress.introducedAtOrdinal !== null && progress.nextEligibleSpawn > ordinal).length,
-      },
+      tier: selected.tier,
+      cooldownPhrases: RESERVED_COOLDOWN_PHRASES,
+      familiarity: wordFamiliarity(selected.progress),
+      unseen: isUnseenWord(selected.progress),
     };
   }
 
-  const rng = sourceRng ?? new Xoshiro128StarStar(level.schedulerRng);
-  const selected = chooseCandidate(selectedTier.candidates, rng, selectedTier.tier);
-  const cooldown = settings.mistakeRepeatPhrases;
-  const progress: WordProgress = {
-    ...selected.progress,
-    lastSpawnOrdinal: ordinal,
-    nextEligibleSpawn: ordinal + cooldown + 1,
-  };
-  const nextLevel: LevelProgress = {
-    ...level,
-    nextSpawnOrdinal: ordinal + 1,
-    schedulerRng: rng.state(),
-    words: { ...level.words, [selected.id]: progress },
-  };
+  // Nothing eligible. Distinguish "a due word exists but cannot spawn yet"
+  // (cooling or reserved for an active enemy — keep the session alive; the
+  // caller advances ordinals on the empty-field clock) from "nothing due
+  // within the horizon" (end it).
+  let coolingOnly = false;
+  let soonestFutureDueMs = Infinity;
+  for (const [id, progress] of Object.entries(poolLevel.words)) {
+    if (progress.introducedAtOrdinal === null) continue;
+    if (isMemoryDue(progress, nowMs)) {
+      if (excludedWordIds.has(id) || progress.nextEligibleSpawn > ordinal) coolingOnly = true;
+      continue;
+    }
+    soonestFutureDueMs = Math.min(soonestFutureDueMs, nextDueAtMs(progress));
+  }
+  if (coolingOnly) return { status: "empty", level: poolLevel, snapshot, coolingOnly: true };
+  if (Number.isFinite(soonestFutureDueMs) && soonestFutureDueMs <= nowMs + SESSION_WAIT_HORIZON_MS) {
+    return { status: "empty", level: poolLevel, snapshot, coolingOnly: false };
+  }
+  return { status: "complete", level: poolLevel, snapshot };
+}
 
-  return { status: "spawned", level: nextLevel, wordId: selected.id, spawnOrdinal: ordinal, cooldown, tier: selectedTier.tier };
+/** Advances the global spawn counter without reserving a word. Callers use it
+ * to let ordinal cooldowns elapse while the battlefield is empty, so a due
+ * word becomes spawnable again without ever spawning early. */
+export function advanceOrdinal(snapshot: SchedulerSnapshot): SchedulerSnapshot {
+  return { ...snapshot, spawnOrdinal: snapshot.spawnOrdinal + 1 };
 }

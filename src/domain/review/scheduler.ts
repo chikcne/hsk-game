@@ -1,79 +1,110 @@
+import type { DifficultySettings, LevelProgress } from "../../shared/schemas";
 import { DEFAULT_SETTINGS } from "../../shared/constants";
-import type { DifficultySettings, ReviewProgress, ReviewWordProgress } from "../../shared/schemas";
+import {
+  RESERVED_COOLDOWN_PHRASES,
+  componentRetrievability,
+  isGraduated,
+  isMemoryDue,
+  isRelearning,
+  nextDueAtMs,
+  wordFamiliarity,
+} from "../memory";
 import { type RandomSource, Xoshiro128StarStar } from "../random";
+import type { LevelsMap, ReviewSpawnResult, SchedulerSnapshot } from "./types";
 
-export type ReviewSpawnResult =
-  | { status: "spawned"; review: ReviewProgress; wordKey: string; spawnOrdinal: number; tier: "repair" | "due" | "filler" }
-  | { status: "complete"; review: ReviewProgress; spawnOrdinal: number };
+type Candidate = {
+  deckId: string;
+  wordId: string;
+  progress: LevelProgress["words"][string];
+  tier: "relearning" | "review";
+  dueMs: number;
+  retrievability: number;
+};
 
-type Candidate = { key: string; progress: ReviewWordProgress };
-
-function choose(candidates: Candidate[], rng: RandomSource): Candidate {
-  const earliest = Math.min(...candidates.map((item) => item.progress.dueOrdinal));
-  const due = candidates.filter((item) => item.progress.dueOrdinal === earliest);
-  const weights = due.map((item) => {
-    const recallBias = item.progress.recallScoreMsPerChar === null ? 1 : 1 + Math.min(4, item.progress.recallScoreMsPerChar / 1000);
-    const lapseBias = 1 + item.progress.wrongPinyin + item.progress.wrongMeaning + item.progress.landed + item.progress.struggles * 0.5;
-    return recallBias * lapseBias;
-  });
-  const total = weights.reduce((sum, weight) => sum + weight, 0);
-  let position = rng.nextUnit() * total;
-  for (let index = 0; index < due.length; index += 1) {
-    if (position < weights[index]!) return due[index]!;
-    position -= weights[index]!;
+function collectCandidates(levels: LevelsMap, ordinal: number, nowMs: number, excludedWordKeys: ReadonlySet<string>): Candidate[] {
+  const candidates: Candidate[] = [];
+  for (const [deckId, level] of Object.entries(levels)) {
+    if (!level) continue;
+    for (const [wordId, progress] of Object.entries(level.words)) {
+      const key = `${deckId}:${wordId}`;
+      if (excludedWordKeys.has(key)) continue;
+      if (progress.introducedAtOrdinal === null) continue;
+      // Review mode serves graduated maintenance and lapsed repairs; new and
+      // mid-learning words belong to their grade's regular mode.
+      const tier = isRelearning(progress.pinyin) || isRelearning(progress.meaning)
+        ? "relearning" as const
+        : isGraduated(progress) ? "review" as const : null;
+      if (tier === null) continue;
+      if (progress.nextEligibleSpawn > ordinal) continue;
+      if (!isMemoryDue(progress, nowMs)) continue;
+      candidates.push({
+        deckId, wordId, progress, tier,
+        dueMs: nextDueAtMs(progress),
+        retrievability: Math.min(
+          componentRetrievability(progress.pinyin, nowMs),
+          componentRetrievability(progress.meaning, nowMs),
+        ),
+      });
+    }
   }
-  return due[due.length - 1]!;
+  return candidates;
 }
 
-/** Schedules only mastered cards supplied by the caller. Repair cards take
- * priority; slow recall therefore remains in the current review pool. */
-export function spawnNextReviewWord(
-  source: ReviewProgress,
-  masteredWordKeys: ReadonlySet<string>,
-  excludedWordKeys: ReadonlySet<string> = new Set(),
-  sourceRng?: RandomSource,
-  settings: DifficultySettings = DEFAULT_SETTINGS,
-): ReviewSpawnResult {
-  const ordinal = source.nextSpawnOrdinal;
-  const active = new Set(source.activePoolWordKeys);
-  const candidates = [...masteredWordKeys].flatMap((key) => {
-    const progress = source.words[key];
-    return !progress || excludedWordKeys.has(key) ? [] : [{ key, progress }];
-  });
-  const repair = candidates.filter((item) => active.has(item.key) && item.progress.dueOrdinal <= ordinal);
-  const due = candidates.filter((item) => !active.has(item.key) && item.progress.dueOrdinal <= ordinal);
-  let tier: "repair" | "due" | "filler";
-  let pool: Candidate[];
-  if (repair.length > 0) { tier = "repair"; pool = repair; }
-  else if (due.length > 0) { tier = "due"; pool = due; }
-  else if (active.size > 0) {
-    // Keep the round alive until repair cards graduate. Other mastered cards
-    // provide the intervening phrases while a repair card is cooling.
-    const fillers = candidates.filter((item) => !active.has(item.key));
-    tier = "filler";
-    pool = fillers.length > 0 ? fillers : candidates.filter((item) => active.has(item.key));
-    if (pool.length === 0) return { status: "complete", review: source, spawnOrdinal: ordinal };
-  } else {
-    return { status: "complete", review: source, spawnOrdinal: ordinal };
-  }
+function compareStable(left: string, right: string): number {
+  return left < right ? -1 : left > right ? 1 : 0;
+}
 
-  const rng = sourceRng ?? new Xoshiro128StarStar(source.schedulerRng);
-  const selected = choose(pool, rng);
-  const reserved: ReviewWordProgress = {
+/** Relearning repairs come first (earliest due); graduated maintenance is
+ * ordered by lowest retrievability — the material closest to being forgotten.
+ * Ties break on stable ID, then a uniform random pick. */
+function pickCandidate(candidates: Candidate[], rng: RandomSource): Candidate {
+  const topTier = candidates.filter((entry) => entry.tier === "relearning");
+  const pool = topTier.length > 0 ? topTier : candidates;
+  const sortKeyOf = (entry: Candidate): number => entry.tier === "relearning" ? entry.dueMs : entry.retrievability;
+  const best = Math.min(...pool.map(sortKeyOf));
+  const tied = pool.filter((entry) => sortKeyOf(entry) === best)
+    .sort((left, right) => compareStable(`${left.deckId}:${left.wordId}`, `${right.deckId}:${right.wordId}`));
+  return tied[Math.floor(rng.nextUnit() * tied.length)] ?? tied[tied.length - 1]!;
+}
+
+/**
+ * Schedules one cross-grade review word from currently eligible cards.
+ *
+ * Unlike the old pool-based scheduler there are no fillers: a round contains
+ * exactly the graduated/relearning cards whose FSRS due date has passed, and
+ * it ends the moment nothing is due. Stale repair pools are structurally
+ * impossible because relearning is per-card FSRS state, never a key list.
+ */
+export function spawnNextReviewWord(
+  levels: LevelsMap,
+  now: string | Date,
+  snapshot: SchedulerSnapshot,
+  excludedWordKeys: ReadonlySet<string> = new Set(),
+  _settings: DifficultySettings = DEFAULT_SETTINGS,
+): ReviewSpawnResult {
+  const ordinal = snapshot.spawnOrdinal;
+  const nowMs = typeof now === "string" ? Date.parse(now) : now.getTime();
+  if (!Number.isFinite(nowMs)) throw new RangeError("now must be a valid timestamp");
+
+  const candidates = collectCandidates(levels, ordinal, nowMs, excludedWordKeys);
+  if (candidates.length === 0) return { status: "complete", levels, snapshot };
+
+  const rng = new Xoshiro128StarStar(snapshot.schedulerRng);
+  const selected = pickCandidate(candidates, rng);
+  const level = levels[selected.deckId]!;
+  const reserved: LevelProgress["words"][string] = {
     ...selected.progress,
     lastSpawnOrdinal: ordinal,
-    dueOrdinal: ordinal + settings.reviewLapseInterval + 1,
+    nextEligibleSpawn: ordinal + RESERVED_COOLDOWN_PHRASES + 1,
   };
   return {
     status: "spawned",
-    review: {
-      ...source,
-      nextSpawnOrdinal: ordinal + 1,
-      schedulerRng: rng.state(),
-      words: { ...source.words, [selected.key]: reserved },
-    },
-    wordKey: selected.key,
+    levels: { ...levels, [selected.deckId]: { ...level, words: { ...level.words, [selected.wordId]: reserved } } },
+    snapshot: { spawnOrdinal: ordinal + 1, schedulerRng: rng.state() },
+    wordKey: `${selected.deckId}:${selected.wordId}`,
     spawnOrdinal: ordinal,
-    tier,
+    tier: selected.tier,
+    cooldownPhrases: RESERVED_COOLDOWN_PHRASES,
+    familiarity: wordFamiliarity(selected.progress),
   };
 }

@@ -13,27 +13,14 @@ export const BASE_TRAVEL_MS = 24_000;
 export const MAX_ACTIVE_ENEMIES = 32;
 export const DANGER_ZONE_PROGRESS = 0.82;
 
-/** Learning defaults are deliberately explicit so every tuning value can be
- * changed from Settings without changing scheduler code. */
+/** Arcade-facing settings only. Every long-term memory parameter (FSRS
+ * weights, desired retention, learning steps) and every latency rating
+ * threshold lives as a named constant in src/domain/memory so the science
+ * stays out of the settings dialog. */
 export const DEFAULT_SETTINGS = {
   spawnIntervalMs: 5000,
   enemySpeedMultiplier: 0.9,
+  levelSize: 20,
   masterVolume: 0.8,
   reducedMotion: false,
-  levelSize: 20,
-  struggleThresholdMs: 8000,
-  correctRepeatBasePhrases: 20,
-  pinyinSecondsPerPhrase: 1,
-  minimumCorrectRepeatPhrases: 1,
-  mistakeRepeatPhrases: 5,
-  masteryCorrectDecrease: 25,
-  masteryStruggleIncrease: 15,
-  masteryMistakeIncrease: 40,
-  repairRepetitions: 3,
-  reviewInitialInterval: 10,
-  reviewGraduatingInterval: 30,
-  reviewLapseInterval: 5,
-  reviewEasyMultiplier: 2.5,
-  reviewHardMultiplier: 0.8,
-  recallScoreSmoothing: 0.3,
 } as const;

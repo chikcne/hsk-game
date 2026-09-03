@@ -1,16 +1,21 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BASE_TRAVEL_MS, DANGER_ZONE_PROGRESS, MAX_ACTIVE_ENEMIES, type ChoiceKey } from "../../shared/constants";
-import type { DifficultySettings, LevelProgress, ReviewProgress, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
+import type { DifficultySettings, LevelProgress, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
 import { acceptsPinyin, canonicalizePinyin } from "../../domain/deck/pinyin";
 import {
-  applyOutcomeToLevel,
+  advanceOrdinal,
+  applyOutcomeToLevels,
   createLevelProgress,
+  curriculumLessonNumber,
   curriculumOrder,
+  reconcileLevelProgress,
   spawnNextWord,
-  ZERO_MASTERY_APPEARANCE_WEIGHT,
+  type LevelsMap,
+  type SchedulerSnapshot,
 } from "../../domain/learning";
-import { applyReviewOutcome, prepareReviewRound, spawnNextReviewWord } from "../../domain/review";
-import { randomStateFromSeed } from "../../domain/random";
+import { reviewWordIdOf, spawnNextReviewWord } from "../../domain/review";
+import { isUnseenWord, nextDueAtMs, type WordRatings } from "../../domain/memory";
+import { createSecureRandomState } from "../../domain/random";
 import { generateChoices, type MeaningChoice } from "../../domain/session/choices";
 import { calculatePoints, nextStreak } from "../../domain/session/scoring";
 import {
@@ -18,11 +23,8 @@ import {
   nextPerformanceMultiplier,
   performanceAdjustedSpawnDelayMs,
 } from "../../domain/session/performance";
-import { advanceEnemiesForRecallWindow, moveEnemiesUp } from "../../domain/session/landing";
-import {
-  masteryLevelFromAppearanceWeight,
-  wordSpeedMultiplierFromAppearanceWeight,
-} from "../../domain/session/speed";
+import { advanceEnemiesForRecallWindow, moveEnemiesUp, PINYIN_RECALL_WINDOW_MS } from "../../domain/session/landing";
+import { wordSpeedMultiplierForFamiliarity } from "../../domain/session/speed";
 import { selectLockedTarget } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
 import { playSoundEffect } from "../audio/soundEffects";
@@ -35,10 +37,9 @@ export type Feedback = {
   word: RuntimeWord;
   typed?: string;
   points?: number;
-  oldWeight?: number;
-  newWeight?: number;
-  recallScoreMsPerChar?: number | null;
-  repeatAfterPhrases?: number;
+  ratings: WordRatings;
+  /** Milliseconds until the weaker memory component is next due. */
+  nextDueInMs: number | null;
   struggled: boolean;
 };
 export type WordSessionStats = {
@@ -48,7 +49,6 @@ export type WordSessionStats = {
   wrongMeaning: number;
   landed: number;
   totalPinyinMs: number;
-  recallScoreMsPerChar: number | null;
 };
 export type SessionStats = {
   mode: "regular" | "review";
@@ -64,24 +64,23 @@ export type SessionStats = {
   wordStats: Map<string, WordSessionStats>;
 };
 
-export const createLevel = (deck: RuntimeDeck, settings: DifficultySettings): LevelProgress => createLevelProgress(deck, {
-  schedulerRng: randomStateFromSeed(`schedule:${deck.fingerprint}`),
-  curriculumSeed: `curriculum:${deck.fingerprint}`,
-  levelSize: settings.levelSize,
-});
+/** Progress deltas the battle applies back into the save. */
+export type SaveProgressUpdate = { levels: LevelsMap; snapshot: SchedulerSnapshot };
 
 type RegularBattleOptions = {
   kind: "regular";
   deck: RuntimeDeck;
   initialLevel: LevelProgress | undefined;
-  onChange: (level: LevelProgress, outcome?: EncounterOutcome, points?: number) => void;
+  initialSnapshot: SchedulerSnapshot;
+  onChange: (update: SaveProgressUpdate, outcome?: EncounterOutcome, points?: number) => void;
 };
 type ReviewBattleOptions = {
   kind: "review";
+  /** Merged cross-grade deck; word IDs are review keys (`deckId:wordId`). */
   deck: RuntimeDeck;
-  initialReview: ReviewProgress;
-  masteredWordKeys: ReadonlySet<string>;
-  onChange: (review: ReviewProgress, outcome?: EncounterOutcome, points?: number) => void;
+  initialLevels: LevelsMap;
+  initialSnapshot: SchedulerSnapshot;
+  onChange: (update: SaveProgressUpdate, outcome?: EncounterOutcome, points?: number) => void;
 };
 export type BattleOptions = RegularBattleOptions | ReviewBattleOptions;
 
@@ -92,12 +91,19 @@ const initialStats = (mode: "regular" | "review"): SessionStats => ({
 
 type PreparedSpawn = {
   enemy: Enemy;
-  mastery: number;
+  familiarity: number;
   leadMs: number;
   startedAt: number;
   spawnAt: number;
 };
 type SpawnPreview = { wordId: string; leadMs: number };
+type Availability = "ready" | "cooling" | "waiting" | "complete";
+
+/** Per-profile curriculum seed so two players never share an introduction
+ * order (the seeded fallback only exists for deterministic tests). */
+function secureCurriculumSeed(): string {
+  return createSecureRandomState().map((word) => word.toString(16).padStart(8, "0")).join("");
+}
 
 export function useBattle(
   options: BattleOptions,
@@ -109,15 +115,30 @@ export function useBattle(
   const { deck } = options;
   const words = useMemo(() => new Map(deck.words.map((word) => [word.id, word])), [deck]);
   const wordAudioPlayer = useMemo(() => new WordAudioPlayer(), [deck.fingerprint]);
-  const [level, setLevel] = useState<LevelProgress | null>(() => options.kind === "regular"
-    ? options.initialLevel?.deckFingerprint === deck.fingerprint ? options.initialLevel : createLevel(deck, settings)
-    : null);
-  const levelRef = useRef(level); levelRef.current = level;
-  const [review, setReview] = useState<ReviewProgress | null>(() => options.kind === "review"
-    ? prepareReviewRound(options.initialReview, options.masteredWordKeys)
-    : null);
-  const reviewRef = useRef(review); reviewRef.current = review;
-  const [reviewComplete, setReviewComplete] = useState(false);
+
+  const [levels, setLevels] = useState<LevelsMap>(() => {
+    const snapshot = options.initialSnapshot;
+    if (options.kind === "review") return { ...options.initialLevels };
+    const existing = options.initialLevel;
+    if (existing && existing.deckFingerprint === deck.fingerprint) return { [deck.id]: existing };
+    if (existing) {
+      // A deck update changed the fingerprint: reconcile stable word IDs
+      // instead of silently resetting the grade's history.
+      const { level } = reconcileLevelProgress(existing, deck, snapshot.spawnOrdinal);
+      return { [deck.id]: level };
+    }
+    return {
+      [deck.id]: createLevelProgress(deck, {
+        curriculumSeed: secureCurriculumSeed(),
+        levelSize: settings.levelSize,
+        spawnOrdinal: snapshot.spawnOrdinal,
+      }),
+    };
+  });
+  const levelsRef = useRef(levels); levelsRef.current = levels;
+  const [snapshot, setSnapshot] = useState<SchedulerSnapshot>(options.initialSnapshot);
+  const snapshotRef = useRef(snapshot); snapshotRef.current = snapshot;
+  const [sessionComplete, setSessionComplete] = useState(false);
   const [enemies, setEnemies] = useState<Enemy[]>([]);
   const enemiesRef = useRef(enemies); enemiesRef.current = enemies;
   const [targetId, setTargetId] = useState<string | null>(null);
@@ -144,16 +165,22 @@ export function useBattle(
   const [preparingEnemy, setPreparingEnemy] = useState<Enemy | null>(null);
   const preparingRef = useRef<PreparedSpawn | null>(null);
   const nextSpawnPreview = useRef<SpawnPreview | null | undefined>(undefined);
-  // Until the first word spawns, 50% mastery keeps the configured base interval neutral.
-  const previousSpawnMastery = useRef(50);
+  const availabilityRef = useRef<Availability>("ready");
+  const lastOrdinalAdvance = useRef(0);
+  /** Enemy ids whose pinyin was revealed by the recall window; their meaning
+   * phase still counts, but the pinyin component grades Again. */
+  const autocompleteRevealed = useRef(new Set<string>());
+  // Mid-range familiarity keeps the configured base spawn interval neutral at session start.
+  const previousFamiliarity = useRef(0.5);
+  const startLesson = useRef<number | null>(null);
   const lastFrame = useRef<number | null>(null);
   const enemySequence = useRef(0);
   const pausedRef = useRef(paused); pausedRef.current = paused;
   const optionsRef = useRef(options); optionsRef.current = options;
   const suspendedAt = useRef<number | null>(null);
   const curriculumIds = useMemo(
-    () => level ? curriculumOrder(deck, level.curriculumSeed) : [],
-    [deck, level?.curriculumSeed],
+    () => options.kind === "regular" ? curriculumOrder(deck, levels[deck.id]?.curriculumSeed ?? "") : [],
+    [deck, options.kind, levels[deck.id]?.curriculumSeed],
   );
 
   const preloadRegularPool = useCallback((poolLevel: LevelProgress | null) => {
@@ -165,9 +192,15 @@ export function useBattle(
     wordAudioPlayer.preload(sources);
   }, [curriculumIds, deck.id, wordAudioPlayer, words]);
   useEffect(() => {
-    if (options.kind === "regular") preloadRegularPool(level);
-    else wordAudioPlayer.preload(deck.words.map((word) => wordAudioSource(deck.id, word)));
-  }, [deck.id, deck.words, level, options.kind, preloadRegularPool, wordAudioPlayer]);
+    if (options.kind === "regular") {
+      const level = levels[deck.id];
+      if (level && startLesson.current === null) startLesson.current = curriculumLessonNumber(level, settings.levelSize);
+      preloadRegularPool(level ?? null);
+    } else {
+      startLesson.current = null;
+      wordAudioPlayer.preload(deck.words.map((word) => wordAudioSource(deck.id, word)));
+    }
+  }, [deck.id, deck.words, levelKey(levels), options.kind, preloadRegularPool, settings.levelSize, wordAudioPlayer]);
   useEffect(() => () => wordAudioPlayer.dispose(), [wordAudioPlayer]);
 
   const commitEnemies = useCallback((nextEnemies: Enemy[], now = performance.now()) => {
@@ -217,7 +250,7 @@ export function useBattle(
     return () => document.removeEventListener("visibilitychange", visibility);
   }, []);
 
-  const updateSessionStats = useCallback((word: RuntimeWord, outcome: EncounterOutcome, pinyinMs: number, points: number, newlyMastered: boolean, struggled: boolean, recallScore: number | null, levelsCompleted: number, protectsMiss: boolean) => {
+  const updateSessionStats = useCallback((word: RuntimeWord, outcome: EncounterOutcome, pinyinMs: number, points: number, newlyMastered: boolean, struggled: boolean, levelsCompleted: number, protectsMiss: boolean) => {
     const nowStreak = nextStreak(streakRef.current, outcome.kind === "correct", protectsMiss);
     setStreak(nowStreak);
     setStats((old) => {
@@ -225,7 +258,7 @@ export function useBattle(
       const mastered = new Set(old.newlyMastered);
       if (newlyMastered) mastered.add(word.id);
       const wordStats = new Map(old.wordStats);
-      const previous = wordStats.get(word.id) ?? { attempts: 0, struggles: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0, totalPinyinMs: 0, recallScoreMsPerChar: null };
+      const previous = wordStats.get(word.id) ?? { attempts: 0, struggles: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0, totalPinyinMs: 0 };
       wordStats.set(word.id, {
         attempts: previous.attempts + 1,
         struggles: previous.struggles + (struggled ? 1 : 0),
@@ -233,7 +266,6 @@ export function useBattle(
         wrongMeaning: previous.wrongMeaning + (outcome.kind === "wrongMeaning" ? 1 : 0),
         landed: previous.landed + (outcome.kind === "landed" ? 1 : 0),
         totalPinyinMs: previous.totalPinyinMs + pinyinMs,
-        recallScoreMsPerChar: recallScore,
       });
       return {
         ...old,
@@ -245,7 +277,7 @@ export function useBattle(
         bestStreak: Math.max(old.bestStreak, nowStreak),
         seen,
         newlyMastered: mastered,
-        levelsCompleted: old.levelsCompleted + levelsCompleted,
+        levelsCompleted: Math.max(old.levelsCompleted, levelsCompleted),
         wordStats,
       };
     });
@@ -262,6 +294,7 @@ export function useBattle(
   const beginMeaning = useCallback((enemy: Enemy, word: RuntimeWord, pinyinMs: number, autocompleted = false) => {
     if (targetIdRef.current !== enemy.id || phaseRef.current !== "pinyin") return;
     meaningPinyinMs.current = pinyinMs;
+    if (autocompleted) autocompleteRevealed.current.add(enemy.id);
     setChoices(generateChoices(deck, word, enemy.id));
     phaseRef.current = "meaning"; setPhase("meaning");
     setPinyinAutocompleted(autocompleted);
@@ -271,6 +304,7 @@ export function useBattle(
 
   const updateWord = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     const word = words.get(enemy.wordId); if (!word) return;
+    autocompleteRevealed.current.delete(enemy.id);
     nextSpawnPreview.current = undefined;
     const config = optionsRef.current;
     const pinyinMs = outcome.kind === "landed" ? 0 : outcome.pinyinMs;
@@ -287,39 +321,38 @@ export function useBattle(
         settings.enemySpeedMultiplier * enemy.speedMultiplier * currentPerformanceMultiplier,
       )
       : 0;
+    const now = new Date();
+    const pinyinAutocompleted = (outcome.kind === "correct" || outcome.kind === "wrongMeaning")
+      && outcome.pinyinAutocompleted === true;
+    const pinyinLength = Math.max(1, canonicalizePinyin(word.acceptedPinyin[0] ?? word.displayPinyin).length);
+
     let feedback: Feedback;
     let protectsMiss = false;
+    const deckId = config.kind === "regular" ? config.deck.id : reviewWordIdOf(word.id).deckId;
+    const wordId = config.kind === "regular" ? word.id : reviewWordIdOf(word.id).wordId;
 
-    if (config.kind === "regular") {
-      const current = levelRef.current; const previous = current?.words[word.id];
-      if (!current || !previous) return;
-      protectsMiss = outcome.kind !== "correct" && previous.appearanceWeight === ZERO_MASTERY_APPEARANCE_WEIGHT;
-      const result = applyOutcomeToLevel(current, deck, word.id, outcome, new Date(), settings);
-      // Level advancement introduces the next pool here. Start those requests
-      // synchronously so the next animation frame cannot spawn first.
-      preloadRegularPool(result.level);
-      levelRef.current = result.level; setLevel(result.level);
-      const levelsCompleted = result.transitions.filter((item) => item === "levelCompleted" || item === "gradeCompleted").length;
-      updateSessionStats(word, outcome, pinyinMs, points, previous.appearanceWeight > 1 && result.progress.appearanceWeight === 1, result.struggled, null, levelsCompleted, protectsMiss);
-      config.onChange(result.level, outcome, points);
-      feedback = {
-        id: enemy.id, kind: outcome.kind === "correct" ? "correct" : outcome.kind === "landed" ? "landed" : "miss",
-        word, typed, points, oldWeight: previous.appearanceWeight, newWeight: result.progress.appearanceWeight,
-        repeatAfterPhrases: result.repeatAfterPhrases, struggled: result.struggled,
-      };
-    } else {
-      const current = reviewRef.current; if (!current) return;
-      const pinyinLength = Math.max(1, canonicalizePinyin(word.acceptedPinyin[0] ?? word.displayPinyin).length);
-      const result = applyReviewOutcome(current, word.id, outcome, pinyinLength, new Date(), settings);
-      reviewRef.current = result.review; setReview(result.review); setReviewComplete(false);
-      updateSessionStats(word, outcome, pinyinMs, points, false, result.struggled, result.recallScoreMsPerChar, 0, false);
-      config.onChange(result.review, outcome, points);
-      feedback = {
-        id: enemy.id, kind: outcome.kind === "correct" ? "correct" : outcome.kind === "landed" ? "landed" : "miss",
-        word, typed, points, recallScoreMsPerChar: result.recallScoreMsPerChar,
-        repeatAfterPhrases: result.interval, struggled: result.struggled,
-      };
-    }
+    const previous = levelsRef.current[deckId]?.words[wordId];
+    if (!previous) return;
+    if (config.kind === "regular") protectsMiss = outcome.kind !== "correct" && isUnseenWord(previous);
+
+    const result = applyOutcomeToLevels(
+      levelsRef.current, deckId, wordId, outcome, now, snapshotRef.current.spawnOrdinal,
+      { pinyinAutocompleted, pinyinLength },
+    );
+    levelsRef.current = result.levels; setLevels(result.levels);
+    if (config.kind === "regular") preloadRegularPool(result.levels[config.deck.id] ?? null);
+
+    const lessonCompleted = config.kind === "regular" && startLesson.current !== null
+      ? Math.max(0, curriculumLessonNumber(result.levels[config.deck.id]!, settings.levelSize) - startLesson.current)
+      : 0;
+    updateSessionStats(word, outcome, pinyinMs, points, result.newlyGraduated, result.struggled, lessonCompleted, protectsMiss);
+    config.onChange({ levels: result.levels, snapshot: snapshotRef.current }, outcome, points);
+    feedback = {
+      id: enemy.id, kind: outcome.kind === "correct" ? "correct" : outcome.kind === "landed" ? "landed" : "miss",
+      word, typed, points, ratings: result.ratings,
+      nextDueInMs: nextDueAtMs(result.progress) - now.getTime(),
+      struggled: result.struggled,
+    };
 
     const nowStreak = nextStreak(streakRef.current, outcome.kind === "correct", protectsMiss);
     streakRef.current = nowStreak;
@@ -328,13 +361,12 @@ export function useBattle(
       currentPerformanceMultiplier,
       outcome.kind === "correct",
       thinking,
-      settings.struggleThresholdMs,
     );
     performanceMultiplierRef.current = nextMultiplier;
     setPerformanceMultiplier(nextMultiplier);
-    const now = performance.now();
-    const adjustedRemaining = Math.max(0, spawnDue.current - now) * currentPerformanceMultiplier / nextMultiplier;
-    spawnDue.current = now + adjustedRemaining;
+    const at = performance.now();
+    const adjustedRemaining = Math.max(0, spawnDue.current - at) * currentPerformanceMultiplier / nextMultiplier;
+    spawnDue.current = at + adjustedRemaining;
     const preparing = preparingRef.current;
     if (preparing) {
       // Never accelerate a gameplay spawn past the end of its already-visible
@@ -342,7 +374,7 @@ export function useBattle(
       preparing.spawnAt = Math.max(spawnDue.current, preparing.startedAt + preparing.leadMs);
       spawnDue.current = preparing.spawnAt;
     } else if (enemiesRef.current.length === 0) {
-      spawnDue.current = Math.min(spawnDue.current, now + EMPTY_BATTLEFIELD_SPAWN_DELAY_MS);
+      spawnDue.current = Math.min(spawnDue.current, at + EMPTY_BATTLEFIELD_SPAWN_DELAY_MS);
     }
 
     playSoundEffect(feedback.kind === "correct" ? "blaster" : "buzzer", settings.masterVolume);
@@ -377,20 +409,26 @@ export function useBattle(
     if (enemiesRef.current.length >= MAX_ACTIVE_ENEMIES) return null;
     const config = optionsRef.current;
     const excluded = new Set(enemiesRef.current.map((enemy) => enemy.wordId));
-    let wordId: string;
+    const now = new Date();
     if (config.kind === "regular") {
-      const current = levelRef.current; if (!current) return null;
-      const result = spawnNextWord(current, deck, undefined, settings, excluded);
-      if (result.status !== "spawned") return null;
-      wordId = result.wordId;
-    } else {
-      const current = reviewRef.current; if (!current) return null;
-      const result = spawnNextReviewWord(current, config.masteredWordKeys, excluded, undefined, settings);
-      if (result.status !== "spawned") return null;
-      wordId = result.wordKey;
+      const level = levelsRef.current[config.deck.id];
+      if (!level) return null;
+      const result = spawnNextWord(level, config.deck, now, snapshotRef.current, settings, excluded);
+      if (result.status !== "spawned") {
+        availabilityRef.current = result.status === "complete" ? "complete" : result.coolingOnly ? "cooling" : "waiting";
+        return null;
+      }
+      availabilityRef.current = "ready";
+      return { wordId: result.wordId, leadMs: strokeLeadForWord(result.wordId) };
     }
-    return { wordId, leadMs: strokeLeadForWord(wordId) };
-  }, [deck, settings, strokeLeadForWord]);
+    const result = spawnNextReviewWord(levelsRef.current, now, snapshotRef.current, excluded, settings);
+    if (result.status !== "spawned") {
+      availabilityRef.current = "complete";
+      return null;
+    }
+    availabilityRef.current = "ready";
+    return { wordId: result.wordKey, leadMs: strokeLeadForWord(result.wordKey) };
+  }, [settings, strokeLeadForWord]);
 
   /** Reserves the previewed scheduler result, but does not add it to the live
    * enemy list. It cannot be targeted, descend, land, or affect recall yet. */
@@ -398,37 +436,52 @@ export function useBattle(
     if (enemiesRef.current.length >= MAX_ACTIVE_ENEMIES) return null;
     const config = optionsRef.current;
     const excluded = new Set(enemiesRef.current.map((enemy) => enemy.wordId));
+    const now = new Date();
     let wordId: string;
     let ordinal: number;
-    let appearanceWeight: number;
+    let familiarity: number;
+    let unseen: boolean;
+    let nextSnapshot: SchedulerSnapshot;
     if (config.kind === "regular") {
-      const current = levelRef.current; if (!current) return null;
-      const result = spawnNextWord(current, deck, undefined, settings, excluded);
-      if (result.status !== "spawned") return null;
-      levelRef.current = result.level; setLevel(result.level); config.onChange(result.level);
+      const level = levelsRef.current[config.deck.id];
+      if (!level) return null;
+      const result = spawnNextWord(level, config.deck, now, snapshotRef.current, settings, excluded);
+      if (result.status !== "spawned") {
+        availabilityRef.current = result.status === "complete" ? "complete" : result.coolingOnly ? "cooling" : "waiting";
+        return null;
+      }
       wordId = result.wordId; ordinal = result.spawnOrdinal;
-      appearanceWeight = result.level.words[wordId]?.appearanceWeight ?? ZERO_MASTERY_APPEARANCE_WEIGHT;
+      familiarity = result.familiarity; unseen = result.unseen;
+      nextSnapshot = result.snapshot;
+      levelsRef.current = { ...levelsRef.current, [config.deck.id]: result.level };
     } else {
-      const current = reviewRef.current; if (!current) return null;
-      const result = spawnNextReviewWord(current, config.masteredWordKeys, excluded, undefined, settings);
-      if (result.status !== "spawned") return null;
-      reviewRef.current = result.review; setReview(result.review); config.onChange(result.review);
+      const result = spawnNextReviewWord(levelsRef.current, now, snapshotRef.current, excluded, settings);
+      if (result.status !== "spawned") {
+        availabilityRef.current = "complete";
+        return null;
+      }
       wordId = result.wordKey; ordinal = result.spawnOrdinal;
-      appearanceWeight = 1;
+      familiarity = result.familiarity; unseen = false;
+      nextSnapshot = result.snapshot;
+      levelsRef.current = result.levels;
     }
-    setReviewComplete(false);
+    setLevels(levelsRef.current);
+    snapshotRef.current = nextSnapshot;
+    setSnapshot(nextSnapshot);
+    config.onChange({ levels: levelsRef.current, snapshot: nextSnapshot });
+    setSessionComplete(false);
     const enemy: Enemy = {
       id: `e-${Date.now()}-${enemySequence.current++}`,
       wordId,
       progress: 0,
-      speedMultiplier: wordSpeedMultiplierFromAppearanceWeight(appearanceWeight),
-      isNewWord: config.kind === "regular" && appearanceWeight === ZERO_MASTERY_APPEARANCE_WEIGHT,
+      speedMultiplier: wordSpeedMultiplierForFamiliarity(familiarity),
+      isNewWord: unseen,
       lane: (ordinal * 5 + 1) % 8,
       spawnOrdinal: ordinal,
       status: "descending",
     };
-    return { enemy, mastery: masteryLevelFromAppearanceWeight(appearanceWeight) };
-  }, [deck, settings]);
+    return { enemy, familiarity };
+  }, [settings]);
 
   useEffect(() => {
     if (preparingRef.current === null) spawnDue.current = performance.now();
@@ -461,8 +514,20 @@ export function useBattle(
             } else {
               nextSpawnPreview.current = undefined;
             }
-          } else if (preview === null && optionsRef.current.kind === "review" && enemiesRef.current.length === 0) {
-            setReviewComplete(true);
+          } else if (preview === null && enemiesRef.current.length === 0 && preparingRef.current === null) {
+            if (availabilityRef.current === "cooling") {
+              // Nothing can spawn because every due word is still ordinal-
+              // blocked. Let cooldowns elapse on the empty-field clock instead
+              // of ever spawning a cooling word early.
+              if (now - lastOrdinalAdvance.current >= EMPTY_BATTLEFIELD_SPAWN_DELAY_MS) {
+                lastOrdinalAdvance.current = now;
+                snapshotRef.current = advanceOrdinal(snapshotRef.current);
+                setSnapshot(snapshotRef.current);
+                nextSpawnPreview.current = undefined;
+              }
+            } else if (availabilityRef.current === "complete") {
+              setSessionComplete(true);
+            }
           }
         }
 
@@ -471,13 +536,13 @@ export function useBattle(
           preparingRef.current = null;
           setPreparingEnemy(null);
           commitEnemies([...enemiesRef.current, prepared.enemy], now);
-          previousSpawnMastery.current = prepared.mastery;
+          previousFamiliarity.current = prepared.familiarity;
           nextSpawnPreview.current = undefined;
           spawnDue.current = now + performanceAdjustedSpawnDelayMs(
             settings.spawnIntervalMs,
             currentPerformanceMultiplier,
             true,
-            previousSpawnMastery.current,
+            previousFamiliarity.current * 100,
           );
         }
 
@@ -490,7 +555,7 @@ export function useBattle(
           lockedTargetId,
           phaseRef.current,
           activeRecallMs,
-          settings.struggleThresholdMs,
+          PINYIN_RECALL_WINDOW_MS,
         );
         commitEnemies(result.active, now);
         for (const enemy of result.landed) updateWord(enemy, { kind: "landed", activeThinkingMs: activeRecallMs });
@@ -515,9 +580,10 @@ export function useBattle(
     if (!enemy || phase !== "meaning" || pausedRef.current || learningPausedRef.current) return;
     const choice = choices.find((item) => item.shortcuts.some((shortcut) => shortcut.key === key)); if (!choice) return;
     const meaningMs = performance.now() - phaseStarted.current;
+    const pinyinAutocompleted = autocompleteRevealed.current.has(enemy.id) || undefined;
     resolveEnemy(enemy, choice.correct
-      ? { kind: "correct", pinyinMs: meaningPinyinMs.current, meaningMs }
-      : { kind: "wrongMeaning", pinyinMs: meaningPinyinMs.current, meaningMs });
+      ? { kind: "correct", pinyinMs: meaningPinyinMs.current, meaningMs, pinyinAutocompleted }
+      : { kind: "wrongMeaning", pinyinMs: meaningPinyinMs.current, meaningMs, pinyinAutocompleted });
   };
   const dismissFeedback = useCallback(() => {
     if (!learningPausedRef.current) return;
@@ -536,10 +602,23 @@ export function useBattle(
         settings.spawnIntervalMs,
         performanceMultiplierRef.current,
         enemiesRef.current.length > 0,
-        previousSpawnMastery.current,
+        previousFamiliarity.current * 100,
       );
     }
   }, [settings.spawnIntervalMs]);
   const replay = () => { if (targetWord) playWordAudio(targetWord); };
-  return { enemies, preparingEnemy, target, targetWord, phase, pinyinAutocompleted, choices, feedback, learningPaused, audioError, streak, performanceMultiplier, stats, level, review, reviewComplete, submitPinyin, chooseMeaning, dismissFeedback, replay };
+  const level = options.kind === "regular" ? levels[deck.id] ?? null : null;
+  return {
+    enemies, preparingEnemy, target, targetWord, phase, pinyinAutocompleted, choices, feedback, learningPaused,
+    audioError, streak, performanceMultiplier, stats, level, sessionComplete, submitPinyin, chooseMeaning,
+    dismissFeedback, replay,
+  };
+}
+
+/** Only re-run audio preloading when the pool's identity changes, not on every
+ * single progress write. */
+function levelKey(levels: LevelsMap): string {
+  return Object.entries(levels)
+    .map(([id, level]) => `${id}:${level?.curriculumCursor ?? 0}:${Object.keys(level?.words ?? {}).length}`)
+    .join("|");
 }

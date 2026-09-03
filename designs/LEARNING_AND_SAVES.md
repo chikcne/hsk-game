@@ -1,378 +1,250 @@
-# Learning scheduler, mastery, and local saves
+# Learning scheduler, memory, and local saves
 
-## 1. Terminology
+> Status: implemented (save schema v3). The pre-FSRS weight-based model
+> described here previously is gone; this document describes the shipping
+> hybrid FSRS + arcade microspacing design.
 
-The user's “appearance threshold” is represented as an integer `appearanceWeight`:
+## 1. Model overview
 
-- minimum `1` = mastered and least frequent;
-- initial `70` = new/unpracticed;
-- maximum `100` = highest reinforcement priority.
+The game runs a **hybrid FSRS + arcade microspacing** model:
 
-A level's **live mastery** is complete only when every logical word is at `1`. A permanent `firstCompletedAt` milestone records that the level was beaten at least once. If a mastered fallback word is later missed, its weight rises and live mastery regresses, but the earned cleared milestone remains.
+1. **Long-term memory** is modeled per tested component with
+   [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs) (FSRS-5,
+   desired retention 0.9, fuzz disabled for determinism). Every word carries
+   **two independent memory states** — `pinyin` (productive recall) and
+   `meaning` (recognition) — so a wrong meaning choice no longer discards
+   evidence that pronunciation was recalled, and vice versa.
+2. **Arcade microspacing** is an independent ordinal constraint
+   (`lastSpawnOrdinal` / `nextEligibleSpawn`) against a **global spawn
+   ordinal** shared by regular and review modes. A word spawns only when it is
+   *due* **AND** *cooled down* **AND** not already an active enemy. The
+   cooldown is never bypassed.
 
-This is intentionally Anki-like rather than an attempt to reuse Anki's original card scheduling. Source cards and review history are not imported.
+A word is **graduated** (the product's "mastered" milestone and the review
+deck's entry requirement) only when **both** components have passed their
+learning steps into the `review` state. Graduation frees a curriculum slot;
+a lapse puts the word back into `relearning` and re-enters the arcade pool
+automatically (pool membership is derived, never stored).
+
+Familiarity for arcade presentation (word speed 0.65×–1.5×, spawn-delay
+interpolation 160%→40%) is **derived from FSRS state** (`wordFamiliarity`):
+0 for new, 0.25 for learning/relearning, logarithmic in stability up to one
+year for review. It is a presentation value only and never feeds back into
+scheduling.
 
 ## 2. Progress records
 
 ```ts
+// One FSRS card per tested component. Mirrors the ts-fsrs Card exactly;
+// dates are ISO strings so the save round-trips losslessly.
+type ComponentMemory = {
+  state: "new" | "learning" | "review" | "relearning";
+  due: string;               // ISO timestamp
+  stability: number;         // days
+  difficulty: number;        // 0 (new) .. 10
+  elapsedDays: number;
+  scheduledDays: number;
+  learningSteps: number;
+  reps: number;
+  lapses: number;
+  lastReview: string | null;
+};
+
 type WordProgress = {
-  appearanceWeight: number;       // integer 1..100
-  attempts: number;
-  completeCorrect: number;
-  wrongPinyin: number;
-  wrongMeaning: number;
-  landed: number;
-  totalThinkingMs: number;
-  fastestCorrectMs: number | null;
+  pinyin: ComponentMemory;
+  meaning: ComponentMemory;
+  attempts: number; completeCorrect: number; wrongPinyin: number;
+  wrongMeaning: number; landed: number;
+  totalThinkingMs: number; fastestCorrectMs: number | null;
+  totalPinyinMs: number; fastestPinyinMs: number | null; lastPinyinMs: number | null;
   lastOutcome: EncounterOutcomeKind | null;
-  lastSeenAt: string | null;       // ISO timestamp, display/statistics only
-  introducedAtOrdinal: number | null;
+  lastSeenAt: string | null;
+  introducedAtOrdinal: number | null;   // vs the save's global spawnOrdinal
   lastSpawnOrdinal: number | null;
-  nextEligibleSpawn: number;       // absolute ordinal, enforces cooldown
-  reinforcementRemaining: 0 | 1 | 2 | 3;
+  nextEligibleSpawn: number;            // hard microspacing floor
 };
 
 type LevelProgress = {
   deckId: DeckId;
   deckFingerprint: string;
-  nextSpawnOrdinal: number;
-  schedulerRng: [number, number, number, number];
-  curriculumSeed: string;
+  curriculumSeed: string;      // per-profile random hex: no shared orders
   curriculumCursor: number;
-  activeLearningWordIds: WordId[]; // normally 30, may temporarily expand after relapse
-  firstCompletedAt: string | null;
-  words: Record<WordId, WordProgress>;
+  firstCompletedAt: string | null;      // permanent milestone
+  words: Record<WordId, WordProgress>;  // complete record for the grade
   orphanedProgress: Record<WordId, WordProgress>;
 };
-```
 
-Fresh words start with:
-
-```ts
-{
-  appearanceWeight: 70,
-  attempts: 0,
-  completeCorrect: 0,
-  wrongPinyin: 0,
-  wrongMeaning: 0,
-  landed: 0,
-  totalThinkingMs: 0,
-  fastestCorrectMs: null,
-  lastOutcome: null,
-  lastSeenAt: null,
-  introducedAtOrdinal: null,
-  lastSpawnOrdinal: null,
-  nextEligibleSpawn: 0,
-  reinforcementRemaining: 0
-}
-```
-
-Keep `nextEligibleSpawn` per word even when it is mastered. That is what prevents a player from quitting and restarting to bypass repetition spacing.
-
-Do not put all 1,800 HSK 6 words into one flat lottery: a missed word would still take too long to return. Each level has a deterministic curriculum order and normally **30 active learning words**. On first play, introduce the first 30; whenever one reaches weight `1`, introduce the next unseen word. This gives errors meaningful near-term priority while still progressing through every source word.
-
-## 3. Scheduler random streams
-
-Use a small deterministic `xoshiro128**` implementation behind a `RandomSource` interface. Seed a level from cryptographically random bytes on first creation, then persist its four-word state.
-
-Use independent streams for:
-
-1. **scheduler RNG** — word lottery and cooldown values; persisted;
-2. **choice RNG** — distractors/key positions, derived from session seed and enemy ID;
-3. **visual RNG** — lanes/stars/effects, never used by learning.
-
-A visual change must not alter which vocabulary appears next.
-
-## 4. Gaussian cooldown
-
-After every spawn, draw the required number of **other enemy spawns** before that word can appear again.
-
-```ts
-function drawCooldown(rng: RandomSource): number {
-  while (true) {
-    const u1 = nonZeroUnit(rng);
-    const u2 = rng.nextUnit();
-    const z = Math.sqrt(-2 * Math.log(u1)) * Math.cos(2 * Math.PI * u2);
-    const candidate = Math.round(17.5 + 3.25 * z);
-    if (candidate >= 10 && candidate <= 25) return candidate;
-  }
-}
-```
-
-This is a truncated Gaussian, not a clamped Gaussian. Rejection avoids artificial piles at 10 and 25.
-
-If a word is spawned at ordinal `s` with cooldown `c`:
-
-```ts
-word.lastSpawnOrdinal = s;
-word.nextEligibleSpawn = s + c + 1;
-level.nextSpawnOrdinal = s + 1;
-```
-
-For `c = 10`, ordinals `s+1` through `s+10` must be other words, and the original word first becomes eligible at `s+11`.
-
-Arcade mode requires at least 26 logical words. The six HSK sources have at least 200. A 30-word active curriculum guarantees a candidate during initial learning: at most 25 distinct words can be cooling from the preceding 25 spawns. Near level completion, the full mastered set is the fallback reserve. If corruption still produces no eligible candidate, return `noEligibleWord` and stop spawning with diagnostics; never violate cooldown to recover.
-
-## 5. Curriculum and word selection
-
-Create curriculum order by sorting all word IDs on a versioned hash of `(curriculumSeed, deckFingerprint, wordId)`. This is a deterministic seeded shuffle without storing a second 1,800-ID array. `curriculumCursor` points after the last introduced word.
-
-Before scheduling, refill `activeLearningWordIds` to 30 with unseen words, setting each `introducedAtOrdinal` to the current `nextSpawnOrdinal`. Remove an active word when it reaches weight `1`. If a mastered fallback word is missed, add it back to active learning without evicting an existing weak word; temporary expansion above 30 is intentional.
-
-At each spawn ordinal `s`, construct eligible tiers:
-
-```text
-repair = eligible active words where reinforcementRemaining > 0
-learning = eligible active words where appearanceWeight > 1
-fallback = eligible mastered words where appearanceWeight == 1
-pool = first non-empty tier: repair, then learning, then fallback
-```
-
-This implements both “wrong words much more frequently” and “spawn mastered words if you must”:
-
-- a miss creates three repair-priority opportunities, each still separated by its hard cooldown;
-- ordinary active learning words do not compete with the entire 1,800-word deck;
-- when repair/learning words are cooling, eligible mastered words fill the required 10–25 intervening spawns;
-- after all words are mastered, play continues using fallback words.
-
-Choose within the selected tier by weighted lottery:
-
-```ts
-ageOrigin = lastSpawnOrdinal ?? introducedAtOrdinal ?? s;
-eligibleAge = Math.max(0, s - ageOrigin - 25);
-ageBoost = 1 + Math.min(1.5, eligibleAge / 100);
-effectiveWeight = appearanceWeight * ageBoost;
-```
-
-Use one scheduler RNG draw over cumulative effective weights. If any candidate has `eligibleAge >= 150`, use an anti-starvation override: choose greatest eligible age, then greatest weight, then stable word ID. This supplies a deterministic upper bound instead of relying forever on lottery luck.
-
-### Selection invariants
-
-- Ineligible and not-yet-introduced words have zero probability.
-- A non-empty repair tier excludes ordinary learning and fallback candidates.
-- A non-empty learning tier excludes mastered fallback candidates.
-- Higher weight means higher probability among otherwise equal candidates.
-- A candidate eligible but unselected for 150 spawns is selected by the anti-starvation override.
-- Any chosen word receives a new cooldown before the next scheduler call.
-- The same word ID cannot occupy two simultaneous enemies because its cooldown is already set when spawned.
-
-## 6. Updating appearance weight
-
-An enemy updates its word exactly once.
-
-### Correct pinyin and meaning
-
-```ts
-thinkingMs = pinyinMs + meaningMs;
-speedScore = clamp((12_000 - thinkingMs) / 9_500, 0, 1);
-decrease = 4 + Math.round(12 * speedScore); // 4..16
-newWeight = Math.max(1, oldWeight - decrease);
-reinforcementRemaining = Math.max(0, reinforcementRemaining - 1);
-if (newWeight === 1) reinforcementRemaining = 0;
-```
-
-- 2.5 seconds or faster: decrease by 16.
-- 7.25 seconds: decrease by about 10.
-- 12 seconds or slower: decrease by 4.
-
-This meets the requirement that faster retrieval lowers future frequency more strongly while still allowing slow correct answers to progress.
-
-### Misses
-
-```ts
-wrongPinyin: newWeight = Math.min(100, oldWeight + 30)
-wrongMeaning: newWeight = Math.min(100, oldWeight + 30)
-landed: newWeight = Math.min(100, oldWeight + 35)
-reinforcementRemaining = 3
-```
-
-A single miss therefore reverses roughly two fast successes and as many as seven slow successes, then promotes the word into the repair tier for up to three clean recalls. It becomes much more frequent once its cooldown expires without ever breaking the required spacing. Landing is slightly stronger because no complete retrieval occurred.
-
-Correct at weight `1` remains `1`. A miss at weight `1` moves it to `31` or `36`, making it unmastered again.
-
-### Clocks
-
-Response clocks use active simulation time:
-
-- pinyin clock begins when the word first becomes the highlighted target;
-- meaning clock begins after accepted pinyin;
-- pause, settings, hidden tab, and feedback are excluded;
-- changing game speed does not change measured milliseconds;
-- audio load/play duration is excluded;
-- reaching the ground does not end an encounter until the highlighted target has received the full pinyin recall window;
-- after accepted pinyin, altitude cannot convert meaning-selection time into a recall failure.
-
-Game settings influence points but not mastery formulas.
-
-## 7. Completion transitions
-
-After every word update:
-
-```ts
-masteredCount = count(words where appearanceWeight === 1);
-isLiveMastered = masteredCount === logicalWordCount;
-```
-
-If this becomes true and `firstCompletedAt` is null, set it and emit `levelCompleted`. The celebration waits for a safe UI transition but saving does not.
-
-If a miss later lowers `masteredCount`, emit `levelMasteryRegressed` for UI statistics; do not clear `firstCompletedAt`.
-
-Deck selection should show both:
-
-- live fraction, e.g. `286 / 300 mastered`;
-- a permanent `CLEARED` badge if `firstCompletedAt` exists.
-
-## 8. Authoritative save schema
-
-One local profile is sufficient for MVP: `saves/default.json`.
-
-```ts
-type SaveFileV1 = {
-  schemaVersion: 1;
+type SaveFile = {
+  schemaVersion: 3;
   profileId: "default";
-  revision: number;                // assigned by server
-  savedAt: string;
-  settings: {
-    spawnIntervalMs: number;       // 1500..5000
-    enemySpeedMultiplier: number;  // 0.65..1.50
-    masterVolume: number;          // 0..1
-    reducedMotion: boolean;
-  };
-  levels: Partial<Record<DeckId, LevelProgress>>;
-  lifetime: {
-    score: number;
-    resolvedEnemies: number;
-    completeCorrect: number;
-    wrongPinyin: number;
-    wrongMeaning: number;
-    landed: number;
-    bestStreak: number;
-    totalThinkingMs: number;
-  };
+  revision: number; savedAt: string;
+  settings: { spawnIntervalMs; enemySpeedMultiplier; levelSize; masterVolume; reducedMotion };
+  spawnOrdinal: number;                    // global spawn counter
+  schedulerRng: [u32, u32, u32, u32];      // global scheduler stream
+  levels: Record<DeckId, LevelProgress>;
+  lifetime: { …outcome counters… };
 };
 ```
 
-All values have Zod bounds. Reject `NaN`, infinities, negative counters, unknown deck IDs, unknown word IDs outside migration, out-of-range weights/cooldowns/settings, and inconsistent spawn ordinals.
+The old per-level `nextSpawnOrdinal`/`schedulerRng`, `activeLearningWordIds`,
+`reviewedOlderWordIds`, `appearanceWeight`, `reinforcementRemaining`, and the
+whole cross-grade `review` section (with its `activePoolWordKeys`) are gone.
+Review-mode repairs are per-card FSRS `relearning` state, so stale repair
+pools are structurally impossible.
 
-The file contains progress and scheduler state, not active sprites. Voluntary session ending leaves current enemies unpenalized and starts a fresh battlefield next time.
+## 3. Automatic FSRS ratings
 
-## 9. Save API
+Every encounter grades up to two components at the resolution timestamp:
 
-Fastify, bound to `100.65.64.80`, exposes:
+| Situation | Pinyin rating | Meaning rating |
+| --- | --- | --- |
+| Wrong pinyin typed | Again | — (not tested) |
+| Pinyin revealed by recall-window timeout (autocomplete) | **Again** | graded normally |
+| Correct pinyin, ≤ 800 ms/char (after first exposure) | Easy | graded normally |
+| Correct pinyin, normal latency | Good | graded normally |
+| Correct pinyin, > 2500 ms/char | **Hard** (still a pass) | graded normally |
+| Correct meaning choice ≤ 5 s | — | Good |
+| Correct meaning choice > 5 s | — | Hard |
+| Wrong meaning choice | — | Again |
+| Landed (defensive; unreachable since autocomplete) | Again | Again |
 
-```text
-GET  /api/health
-GET  /api/saves/default
-PUT  /api/saves/default
-POST /api/saves/default/beacon    # best-effort pagehide only
-```
+Latency is normalized **per canonical pinyin character**, removing the old
+bias against long multi-syllable answers. Easy is used conservatively: a
+component with `reps === 0` caps Easy to Good so a first exposure can never
+skip the learning steps. Thresholds are hardcoded constants in
+`src/domain/memory/ratings.ts` — deliberately not settings.
 
-`GET` returns either a validated snapshot or a first-run default based on generated deck manifests.
+Struggled (for stats/UI) = any Again or Hard rating. The resolution cooldown
+is `AGAIN_COOLDOWN_PHRASES = 3` when any component graded Again, otherwise
+`PASS_COOLDOWN_PHRASES = 8`.
 
-`PUT` body:
+## 4. Microspacing (hard ordinal cooldowns)
 
-```ts
-{
-  expectedRevision: number;
-  snapshot: Omit<SaveFileV1, "revision" | "savedAt">;
-}
-```
-
-The server:
-
-1. validates request size (maximum 2 MiB) and schema;
-2. compares `expectedRevision` with disk revision;
-3. returns `409` with current metadata on conflict;
-4. assigns `revision + 1` and `savedAt`;
-5. atomically writes;
-6. returns the authoritative revision/timestamp.
-
-Do not use last-writer-wins across tabs. A second tab sees a clear conflict dialog and must reload current progress.
-
-Profile/path parameters are not accepted in MVP, eliminating path traversal. If profiles are added, IDs must match a strict allowlist and resolved paths must remain under `saves/`.
-
-## 10. Atomic repository writes
-
-For each accepted snapshot:
-
-1. serialize stable, human-readable JSON with a final newline;
-2. write `saves/default.json.tmp-<pid>-<nonce>` using an exclusive create;
-3. flush and close the file;
-4. optionally preserve the prior valid file as `default.json.bak`;
-5. rename temporary file over `default.json` atomically;
-6. fsync the directory where supported;
-7. clean stale temp files on startup.
-
-Only one in-process save queue writes at a time. If events arrive during a write, coalesce them to the latest immutable snapshot and immediately perform another write. Never run parallel writes.
-
-## 11. Checkpoint policy
-
-Checkpoint after anything that changes durable behavior:
-
-- every enemy spawn (ordinal, RNG, and cooldown changed);
-- every resolved enemy (word progress/stats changed);
-- settings apply/reset;
-- level completion/regression;
-- voluntary end session.
-
-At the fastest allowed spawn rate this is at most one spawn checkpoint every 1.5 seconds plus answer outcomes, acceptable for a local JSON file. Coalescing avoids redundant writes when spawn and answer occur together.
-
-UI save states:
+Spawns consume a single global ordinal series (`save.spawnOrdinal`) so
+cooldowns survive crossings between regular and review sessions.
 
 ```text
-SAVED -> SAVING -> SAVED
-                 -> RETRYING
-                 -> SAVE ERROR (End Session must offer retry/export)
+on spawn:     word.lastSpawnOrdinal = s; word.nextEligibleSpawn = s + RESERVED_COOLDOWN_PHRASES + 1
+on outcome:   word.nextEligibleSpawn = currentOrdinal + cooldownPhrases (3 or 8)
 ```
 
-A failed save does not stop play immediately, but the immutable latest snapshot remains queued and the HUD shows a persistent warning. End Session waits for it or offers JSON export; it must not falsely claim success.
+A due word whose cooldown has not elapsed must never spawn. When the
+battlefield is empty and the only blocked words are due-but-cooling, the
+client advances the global ordinal on its empty-field clock
+(`EMPTY_BATTLEFIELD_SPAWN_DELAY_MS` cadence, via `advanceOrdinal`) — cooldowns
+elapse in seconds of calm instead of ever being violated. FSRS short-term
+learning steps (default ≈ [1m, 10m] learning, [10m] relearning) give roughly
+one or two same-session reinforcement tests, then scheduling hands over to
+real elapsed time.
 
-`pagehide`/beacon is only best effort. Routine checkpoints are the reliability mechanism.
+## 5. Regular-mode scheduler
 
-## 12. Loading, corruption, and deck reconciliation
+Each regular session:
 
-Only the current save schema is accepted. During development, incompatible save files should be deleted and recreated rather than migrated.
+1. tops the **acquisition pool** up to `settings.levelSize` words by
+   introducing the next unseen curriculum word whenever the pool has room
+   (pool = introduced && not graduated; lapses re-enter automatically);
+2. collects candidates: introduced, due (`min(pinyin.due, meaning.due)` ≤
+   now), cooled down, not an active enemy;
+3. picks by tier priority **relearning → learning → new → review**
+   (graduated maintenance), then earliest due, then a uniform RNG pick among
+   exact ties;
+4. if nothing is eligible, reports:
+   - `empty (coolingOnly)` — due words are ordinal-blocked; keep the session
+     alive and advance ordinals on the empty-field clock;
+   - `empty` — something comes due within `SESSION_WAIT_HORIZON_MS` (120 s);
+     wait;
+   - `complete` — nothing due within the horizon: **end the session** rather
+     than grading not-yet-due cards as fillers.
 
-### Corrupt file
+A fully graduated grade therefore ends a fresh session immediately when none
+of its cards are due — continued practice happens in review mode as cards
+come due.
 
-If parsing/validation fails:
+## 6. Review mode (cross-grade)
 
-1. rename it to `default.corrupt-<timestamp>.json` without overwriting;
-2. try a valid `.bak`;
-3. if backup succeeds, report recovery in UI;
-4. otherwise return an explicit recovery response with options to start fresh or download the corrupt file;
-5. never silently replace corruption with a blank save.
+Review sessions serve exactly the due subset of introduced cards that are
+graduated or relearning, across all grades:
 
-### Deck fingerprint changes
+- relearning repairs first (earliest due);
+- graduated maintenance ordered by **lowest retrievability**
+  (`fsrs.get_retrievability` on the weaker component);
+- rounds are **finite**: when nothing is due the round ends — no fillers, no
+  active key pools, no ordinal jumping. The deck-select review column shows
+  the honest due count and is disabled at zero.
 
-When generated deck fingerprint differs:
+Un-graduated (`new`/`learning`) words belong to their grade's regular mode
+and never appear in review.
 
-- match current logical word IDs to saved IDs;
-- retain exact matches;
-- initialize newly added words at weight `70` and eligible now;
-- move removed IDs to `orphanedProgress`;
-- clamp `nextEligibleSpawn` only if schema invariants require it;
-- report retained/added/removed counts to the player;
-- checkpoint migrated state before play.
+## 7. Curriculum
 
-Source GUIDs aid audits, but semantic logical IDs are the progress key.
+Deterministic hash order over `(curriculumVersion, curriculumSeed,
+deckFingerprint, wordId)` — unchanged from the previous design, except the
+seed is per-profile random hex (created with `crypto` on first run), so two
+players no longer share an introduction order. `curriculumCursor` counts
+introduced words; `introduceNewWords` only ever runs during regular play,
+never as a side effect of reviewing another grade.
 
-## 13. Invariants to assert on every reducer result
+## 8. Completion transitions
+
+After every outcome:
 
 ```text
-1 <= appearanceWeight <= 100 and integer
-nextEligibleSpawn >= 0 and integer
-nextSpawnOrdinal >= 0 and integer
-lastSpawnOrdinal is null or < nextSpawnOrdinal
-if lastSpawnOrdinal != null, nextEligibleSpawn >= lastSpawnOrdinal + 11
-reinforcementRemaining is integer 0..3 and is 0 whenever weight == 1
-active learning IDs are known, unique, and unmastered
-curriculum cursor/order never reintroduces a word
-all scheduler RNG words are uint32
+graduated(word)  = pinyin.state === "review" && meaning.state === "review"
+grade complete   = every word in the level record is graduated
+```
+
+- becoming complete with `firstCompletedAt === null`: set it (permanent) and
+  emit `gradeCompleted`;
+- a completed grade regressing (any word lapsing): emit
+  `gradeMasteryRegressed`; the milestone is never cleared.
+
+## 9. Save API and validation
+
+Unchanged endpoints (`GET/PUT /api/saves/default`, beacon POST). The
+persistent schema is v3 with strict component-memory checks: ISO `due`/
+`lastReview`, nonnegative integer `reps`/`lapses`/`learningSteps`, finite
+`stability`/`difficulty`/`elapsedDays`/`scheduledDays`, `attempts ==
+outcome-counter sum`, ordinals before the global `spawnOrdinal`, and
+`state !== "new"` ⇒ `lastReview !== null`.
+
+**No migrations.** Save files from earlier schema versions fail validation
+and are quarantined (existing corruption flow); the client then starts from a
+blank v3 save. The game has not shipped, so no data is converted.
+
+## 10. Corruption and deck reconciliation
+
+Corruption handling is unchanged (quarantine → `.bak` → explicit
+start-fresh/download recovery; first PUT with `expectedRevision 0` after an
+observed quarantine is the explicit "start fresh" action).
+
+On a deck fingerprint mismatch the client now calls `reconcileLevelProgress`
+(matching stable word IDs, preserving memory, orphaning removals, introducing
+added words at the current ordinal) instead of silently recreating the level.
+
+## 11. Invariants
+
+```text
+component memories satisfy the strict Zod bounds (see §9)
+nextEligibleSpawn >= 0, integer; lastSpawnOrdinal < global spawnOrdinal
 attempts == completeCorrect + wrongPinyin + wrongMeaning + landed
-live mastered count equals number of weight-1 records
+curriculumCursor <= deck size and >= introduced count
+a (re)learning/review/relearning card always records lastReview
 firstCompletedAt never changes from a timestamp back to null
-settings remain in supported bounds/steps
+settings remain in supported bounds
 ```
 
-Development builds may assert eagerly. Production server validation remains mandatory before persistence.
+## 12. Testing
+
+- `tests/domain/memory.test.ts` — rating mapping, due-ness, familiarity,
+  counter bookkeeping.
+- `tests/domain/learning.test.ts` — pool derivation, hard cooldowns (no
+  bypass, `coolingOnly`, ordinal advance), horizon-based session end, tier
+  priority, graduation transitions, reconciliation, invariants.
+- `tests/domain/review.test.ts` — due-only finite rounds (filler-bug
+  regression), relearning priority, retrievability ordering, stale-pool
+  impossibility, cross-mode cooldown reservation.
+- `tests/domain/workload.test.ts` — 90-day seeded simulation of the real
+  scheduler + FSRS with a retrievability-driven synthetic player: bounded
+  backlogs, finite sessions, stability growth, graduation throughput, no
+  card regressing to unseen state.

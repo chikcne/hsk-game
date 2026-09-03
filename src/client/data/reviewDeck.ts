@@ -1,13 +1,17 @@
 import type { DeckId } from "../../shared/constants";
 import type { LevelProgress, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
+import { isGraduated, isRelearning } from "../../domain/memory";
 import { reviewWordKey } from "../../domain/review";
 
-/** Builds one runtime-only deck from mastered cards. IDs and indexes are scoped
- * by grade so identical source IDs/meanings cannot collide. */
+/** Builds one runtime-only deck from every reviewable card: graduated words
+ * plus lapsed words currently relearning. The session itself only spawns the
+ * subset whose FSRS due date has passed — the deck is presentation data, the
+ * scheduler decides what actually appears. IDs and indexes are scoped by
+ * grade so identical source IDs/meanings cannot collide. */
 export function createReviewDeck(
   decks: ReadonlyMap<DeckId, RuntimeDeck>,
   levels: Partial<Record<DeckId, LevelProgress>>,
-): { deck: RuntimeDeck; masteredWordKeys: Set<string> } {
+): { deck: RuntimeDeck } {
   const words: RuntimeWord[] = [];
   const meaningIndex: RuntimeDeck["meaningIndex"] = {};
   const meaningKeysByPartOfSpeech: RuntimeDeck["meaningKeysByPartOfSpeech"] = {};
@@ -16,7 +20,9 @@ export function createReviewDeck(
   for (const [deckId, source] of decks) {
     const progress = levels[deckId];
     for (const word of source.words) {
-      if (progress?.words[word.id]?.appearanceWeight !== 1) continue;
+      const record = progress?.words[word.id];
+      if (!record || record.introducedAtOrdinal === null) continue;
+      if (!isGraduated(record) && !isRelearning(record.pinyin) && !isRelearning(record.meaning)) continue;
       const id = reviewWordKey(deckId, word.id);
       const meaningKey = `${deckId}:${word.meaningKey}`;
       const partOfSpeechKey = word.partOfSpeechKey ? `${deckId}:${word.partOfSpeechKey}` : null;
@@ -47,7 +53,7 @@ export function createReviewDeck(
   return {
     deck: {
       schemaVersion: 1,
-      importerVersion: "review-v1",
+      importerVersion: "review-v2",
       id: "hsk-1",
       hskLevel: 1,
       title: "Mastery Review",
@@ -58,6 +64,5 @@ export function createReviewDeck(
       meaningKeysByPartOfSpeech,
       allMeaningKeys,
     },
-    masteredWordKeys: new Set(words.map((word) => word.id)),
   };
 }

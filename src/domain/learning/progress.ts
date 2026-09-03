@@ -1,13 +1,12 @@
-import type { DifficultySettings, LevelProgress, WordProgress } from "../../shared/schemas";
-import { DEFAULT_SETTINGS } from "../../shared/constants";
-import { createSecureRandomState, type RandomState } from "../random";
-import { curriculumOrder } from "./curriculum";
+import type { LevelProgress, WordProgress } from "../../shared/schemas";
+import { createComponentMemory, isGraduated } from "../memory";
+import { curriculumOrder, introduceNewWords } from "./curriculum";
 import type { LearningDeck } from "./types";
-import { INITIAL_APPEARANCE_WEIGHT } from "./constants";
 
 export function createWordProgress(): WordProgress {
   return {
-    appearanceWeight: INITIAL_APPEARANCE_WEIGHT,
+    pinyin: createComponentMemory(),
+    meaning: createComponentMemory(),
     attempts: 0,
     completeCorrect: 0,
     wrongPinyin: 0,
@@ -23,14 +22,14 @@ export function createWordProgress(): WordProgress {
     introducedAtOrdinal: null,
     lastSpawnOrdinal: null,
     nextEligibleSpawn: 0,
-    reinforcementRemaining: 0,
   };
 }
 
 export type CreateLevelOptions = {
-  schedulerRng: RandomState;
   curriculumSeed: string;
-  levelSize?: number;
+  levelSize: number;
+  /** Global spawn ordinal at creation; introduced words join immediately. */
+  spawnOrdinal: number;
 };
 
 export function createLevelProgress(
@@ -43,43 +42,36 @@ export function createLevelProgress(
 
   const words: Record<string, WordProgress> = {};
   for (const id of ids) words[id] = createWordProgress();
-  const levelSize = Math.max(1, Math.min(options.levelSize ?? DEFAULT_SETTINGS.levelSize, ids.length));
-  const firstIds = curriculumOrder(deck, options.curriculumSeed).slice(0, levelSize);
-  for (const id of firstIds) words[id] = { ...words[id]!, introducedAtOrdinal: 0 };
-
-  return {
+  const level: LevelProgress = {
     deckId: deck.id,
     deckFingerprint: deck.fingerprint,
-    nextSpawnOrdinal: 0,
-    schedulerRng: [...options.schedulerRng],
     curriculumSeed: options.curriculumSeed,
-    curriculumCursor: firstIds.length,
-    currentLevelIndex: 0,
-    currentLevelWordIds: firstIds,
-    activeLearningWordIds: [...firstIds],
-    reviewedOlderWordIds: [],
+    curriculumCursor: 0,
     firstCompletedAt: null,
     words,
     orphanedProgress: {},
   };
+  return introduceNewWords(level, deck, Math.max(1, options.levelSize), options.spawnOrdinal).level;
 }
 
-/** First-run factory using independent cryptographic seeds for schedule and curriculum. */
-export function createSecureLevelProgress(
-  deck: LearningDeck,
-  settings: Pick<DifficultySettings, "levelSize"> = DEFAULT_SETTINGS,
-): LevelProgress {
-  const schedulerRng = createSecureRandomState();
-  const curriculumWords = createSecureRandomState();
-  const curriculumSeed = curriculumWords.map((word) => word.toString(16).padStart(8, "0")).join("");
-  return createLevelProgress(deck, { schedulerRng, curriculumSeed, levelSize: settings.levelSize });
+/** Introduced words that have not yet graduated in both components: the
+ * arcade's working pool. Derived, never stored, so lapses rejoin it and
+ * graduations leave it without any bookkeeping. */
+export function acquisitionWordIds(level: LevelProgress): string[] {
+  return Object.entries(level.words)
+    .filter(([, progress]) => progress.introducedAtOrdinal !== null && !isGraduated(progress))
+    .map(([id]) => id);
 }
 
-export function countMastered(level: LevelProgress): number {
-  return Object.values(level.words).reduce((count, word) => count + (word.appearanceWeight === 1 ? 1 : 0), 0);
+export function countGraduated(level: LevelProgress): number {
+  return Object.values(level.words).reduce((count, word) => count + (isGraduated(word) ? 1 : 0), 0);
 }
 
-export function isLiveMastered(level: LevelProgress): boolean {
-  const records = Object.values(level.words);
-  return records.length > 0 && records.every((word) => word.appearanceWeight === 1);
+/** 1-based lesson label derived from how far the curriculum has advanced. */
+export function curriculumLessonNumber(level: LevelProgress, levelSize: number): number {
+  return Math.max(1, Math.floor(level.curriculumCursor / Math.max(1, levelSize)));
 }
+
+/** Stable FNV-based curriculum ordering (see curriculum.ts) exposed for
+ * callers that need the full order, e.g. audio preloading. */
+export { curriculumOrder };

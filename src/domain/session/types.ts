@@ -1,16 +1,16 @@
 import type { ChoiceKey } from "../../shared/constants";
 export type EncounterOutcome =
-  | { kind: "correct"; pinyinMs: number; meaningMs: number }
+  | { kind: "correct"; pinyinMs: number; meaningMs: number; pinyinAutocompleted?: boolean }
   | { kind: "wrongPinyin"; pinyinMs: number }
-  | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number }
+  | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number; pinyinAutocompleted?: boolean }
   | { kind: "landed"; activeThinkingMs: number | null };
 export type Enemy = {
   id: string;
   wordId: string;
   progress: number;
-  /** Word-mastery speed factor; the global settings multiplier is separate. */
+  /** Word-familiarity speed factor; the global settings multiplier is separate. */
   speedMultiplier: number;
-  /** True when this encounter spawned at 0% mastery. */
+  /** True when this encounter spawned at 0% familiarity (never reviewed). */
   isNewWord: boolean;
   lane: number;
   spawnOrdinal: number;

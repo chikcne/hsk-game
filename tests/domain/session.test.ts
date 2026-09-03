@@ -1,9 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { advanceEnemiesForRecallWindow } from "../../src/domain/session/landing";
-import {
-  masteryLevelFromAppearanceWeight,
-  wordSpeedMultiplierFromAppearanceWeight,
-} from "../../src/domain/session/speed";
+import { wordSpeedMultiplierForFamiliarity } from "../../src/domain/session/speed";
 import { selectLockedTarget, soonestLandingEnemy } from "../../src/domain/session/targeting";
 import { calculatePoints, nextStreak } from "../../src/domain/session/scoring";
 import {
@@ -25,13 +22,10 @@ const enemy = (id: string, progress: number, spawnOrdinal: number, speedMultipli
 });
 
 describe("session rules", () => {
-  it("scales word speed up with mastery", () => {
-    expect(masteryLevelFromAppearanceWeight(100)).toBe(0);
-    expect(masteryLevelFromAppearanceWeight(21)).toBe(80);
-    expect(masteryLevelFromAppearanceWeight(1)).toBe(100);
-    expect(wordSpeedMultiplierFromAppearanceWeight(100)).toBeCloseTo(0.65);
-    expect(wordSpeedMultiplierFromAppearanceWeight(1)).toBeCloseTo(1.5);
-    expect(wordSpeedMultiplierFromAppearanceWeight(30)).toBeGreaterThan(wordSpeedMultiplierFromAppearanceWeight(70));
+  it("scales word speed up with FSRS-derived familiarity", () => {
+    expect(wordSpeedMultiplierForFamiliarity(0)).toBeCloseTo(0.65);
+    expect(wordSpeedMultiplierForFamiliarity(1)).toBeCloseTo(1.5);
+    expect(wordSpeedMultiplierForFamiliarity(0.3)).toBeLessThan(wordSpeedMultiplierForFamiliarity(0.7));
   });
 
   it("targets predicted landing time rather than altitude, then breaks ties by age", () => {
@@ -71,9 +65,9 @@ describe("session rules", () => {
   });
 
   it("smoothly adapts pressure to current answer performance", () => {
-    const fast = nextPerformanceMultiplier(1, true, 0, 8_000);
-    const slow = nextPerformanceMultiplier(1, true, 16_000, 8_000);
-    const miss = nextPerformanceMultiplier(1, false, 1_000, 8_000);
+    const fast = nextPerformanceMultiplier(1, true, 0);
+    const slow = nextPerformanceMultiplier(1, true, 20_000);
+    const miss = nextPerformanceMultiplier(1, false, 1_000);
     expect(fast).toBeCloseTo(1.15);
     expect(slow).toBeCloseTo(0.91);
     expect(miss).toBeCloseTo(0.91);
