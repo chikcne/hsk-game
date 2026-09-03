@@ -205,7 +205,7 @@ Embed generated JSON/audio in source code, use array index as word ID, render so
 
 ### Goal
 
-Implement deterministic selection, Gaussian cooldown, weight updates, completion, and migration helpers.
+Implement deterministic selection, hard spacing, continuous grades, step scheduling, completion, and reconciliation helpers.
 
 ### Prerequisite
 
@@ -223,11 +223,11 @@ tests/domain/learning*.test.ts
 ### Deliverables
 
 - Serializable xoshiro128** `RandomSource`.
-- Truncated Gaussian 10–25 cooldown draw.
-- Absolute-ordinal eligibility with exact “other spawns” semantics.
+- Hard minimum spacing (two intervening words) reserved at every spawn.
+- Absolute-ordinal eligibility with exact “other spawns” semantics; wall-clock dueAt for graduated words.
 - Deterministic 30-word curriculum/refill and mastered-relapse reinsertion.
-- Repair → active learning → mastered fallback tiers, weighted/age-boost lottery, and anti-starvation override.
-- Correct/wrong/landing weight formulas, three-repair priority, and counters.
+- Due-state buckets with 50/30/20 target mix, urgency lottery, ungraded practice fallback, and anti-starvation override.
+- Again/Hard/Good/Easy continuous grading, 3/10/30 learning steps, 2/6/18 relearning steps, and stability/difficulty growth.
 - live completion/permanent milestone transition.
 - deck-fingerprint progress reconciliation by stable ID.
 - invariant validator/assertions.

@@ -36,7 +36,7 @@ export function reconcileLevelProgress(source: LevelProgress, deck: LearningDeck
     ...addedIds,
   ])];
   const activeLearningWordIds = [...new Set([
-    ...source.activeLearningWordIds.filter((id) => currentIds.has(id) && words[id]?.appearanceWeight !== 1),
+    ...source.activeLearningWordIds.filter((id) => currentIds.has(id) && words[id]?.phase !== "review"),
     ...addedIds,
   ])];
   const reconciled: LevelProgress = {

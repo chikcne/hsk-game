@@ -3,11 +3,18 @@ import { DEFAULT_SETTINGS } from "../../shared/constants";
 import { createSecureRandomState, type RandomState } from "../random";
 import { curriculumOrder } from "./curriculum";
 import type { LearningDeck } from "./types";
-import { INITIAL_APPEARANCE_WEIGHT } from "./constants";
+import { INITIAL_DIFFICULTY } from "./constants";
 
 export function createWordProgress(): WordProgress {
   return {
-    appearanceWeight: INITIAL_APPEARANCE_WEIGHT,
+    phase: "new",
+    stepIndex: 0,
+    dueOrdinal: null,
+    dueAt: null,
+    stability: 0,
+    difficulty: INITIAL_DIFFICULTY,
+    lapses: 0,
+    lastGrade: null,
     attempts: 0,
     completeCorrect: 0,
     wrongPinyin: 0,
@@ -23,7 +30,6 @@ export function createWordProgress(): WordProgress {
     introducedAtOrdinal: null,
     lastSpawnOrdinal: null,
     nextEligibleSpawn: 0,
-    reinforcementRemaining: 0,
   };
 }
 
@@ -75,11 +81,13 @@ export function createSecureLevelProgress(
   return createLevelProgress(deck, { schedulerRng, curriculumSeed, levelSize: settings.levelSize });
 }
 
+/** A word is mastered once it has graduated into long-term review and has
+ * not lapsed back into relearning. */
 export function countMastered(level: LevelProgress): number {
-  return Object.values(level.words).reduce((count, word) => count + (word.appearanceWeight === 1 ? 1 : 0), 0);
+  return Object.values(level.words).reduce((count, word) => count + (word.phase === "review" ? 1 : 0), 0);
 }
 
 export function isLiveMastered(level: LevelProgress): boolean {
   const records = Object.values(level.words);
-  return records.length > 0 && records.every((word) => word.appearanceWeight === 1);
+  return records.length > 0 && records.every((word) => word.phase === "review");
 }

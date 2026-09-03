@@ -1,8 +1,8 @@
 import type { ChoiceKey } from "../../shared/constants";
 export type EncounterOutcome =
-  | { kind: "correct"; pinyinMs: number; meaningMs: number }
+  | { kind: "correct"; pinyinMs: number; meaningMs: number; /** Set when pinyin was autocompleted: the grade is always Again. */ autocompleted?: boolean }
   | { kind: "wrongPinyin"; pinyinMs: number }
-  | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number }
+  | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number; /** Set when pinyin was autocompleted: the grade is always Again. */ autocompleted?: boolean }
   | { kind: "landed"; activeThinkingMs: number | null };
 export type Enemy = {
   id: string;
@@ -12,6 +12,8 @@ export type Enemy = {
   speedMultiplier: number;
   /** True when this encounter spawned at 0% mastery. */
   isNewWord: boolean;
+  /** True for ungraded practice spawns: the outcome never changes the schedule. */
+  practice?: boolean;
   lane: number;
   spawnOrdinal: number;
   /** Active-recall clock value when the target first exhausted its pinyin

@@ -7,7 +7,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 - Enemies spawn at normalized vertical progress `0` and land at `1`.
 - More than one enemy may be descending at once; default settings produce roughly eight visible enemies once the queue stabilizes.
 - Every enemy displays its own normalized Hanzi.
-- Each enemy has a word-specific speed derived from mastery: mastery `1` uses `0.65×` and mastery `100` uses `1.50×`, linearly interpolated between them.
+- Each enemy has a word-specific speed derived from displayed mastery, kept inside a narrow band so the SRS decides which word appears while pacing stays a performance concern: mastery `0` uses `0.90×` and mastery `100` uses `1.10×`, linearly interpolated between them.
 - The global speed setting multiplies every word-specific speed; there is no random velocity.
 - When a target is needed, choose the descending enemy with the shortest predicted time to ground, not the lowest altitude. An amber box/beam and the command panel identify it.
 - Equal predicted arrival times are broken by lower `spawnOrdinal`.
@@ -17,8 +17,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 Use normalized progress in the domain/simulation layer rather than canvas pixels:
 
 ```ts
-mastery = 101 - appearanceWeight
-wordSpeed = lerp(0.65, 1.50, (mastery - 1) / 99)
+wordSpeed = lerp(0.90, 1.10, mastery / 100)
 progress += (deltaMs / BASE_TRAVEL_MS) * enemySpeedMultiplier * wordSpeed
 arrivalTime = (1 - progress) / wordSpeed
 ```
@@ -74,10 +73,10 @@ A resolved target is removed from answer state immediately. Its explosion or bre
 
 ### Why a wrong answer resolves the enemy
 
-MVP allows one learning outcome per enemy. Retrying the same enemy would complicate timing, allow repeated weight changes, and let one enemy block the whole pressure queue. A wrong answer therefore:
+MVP allows one learning outcome per enemy. Retrying the same enemy would complicate timing and let one enemy block the whole pressure queue. A wrong answer therefore:
 
 1. resets streak;
-2. records one miss, raises appearance weight, and gives that word three repair-priority recalls (still subject to cooldown);
+2. records one miss and grades the word `Again`, restarting its current step or sending graduated words into relearning (still subject to the hard spacing floor);
 3. reveals Hanzi, toned pinyin, and correct meaning;
 4. starts a short breach animation;
 5. removes the enemy from target eligibility;
@@ -130,11 +129,20 @@ Each enemy produces exactly one of:
 
 ```ts
 type EncounterOutcome =
-  | { kind: "correct"; pinyinMs: number; meaningMs: number }
+  | { kind: "correct"; pinyinMs: number; meaningMs: number; autocompleted?: boolean }
   | { kind: "wrongPinyin"; pinyinMs: number }
-  | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number }
+  | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number; autocompleted?: boolean }
   | { kind: "landed"; activeThinkingMs: number | null };
 ```
+
+The learning module infers one spaced-repetition grade from the outcome:
+
+- `Again` — wrong pinyin, wrong meaning, landing, or an autocompleted pinyin (even when the meaning choice is correct);
+- `Hard` — correct, with slow pinyin (above 4,000 ms per canonical pinyin character);
+- `Good` — correct, normal speed;
+- `Easy` — correct, very fast pinyin (at or below 1,600 ms per character).
+
+Normalizing latency by canonical pinyin length keeps the grade continuous: a response just past a boundary grades almost identically to one just before it.
 
 The encounter reducer marks an enemy resolved before emitting its outcome. Any late key, animation, or landing callback with that ID becomes a no-op. The learning module consumes one outcome and returns one updated word record.
 
@@ -185,14 +193,14 @@ Accuracy is `completeCorrect / resolvedEnemies`. Do not count blank or irrelevan
 
 The spawn clock runs while the battle is active, including pinyin, meaning, and non-blocking hit/landing feedback. It freezes during wrong-answer review, while paused/settings, while the page is hidden, and before deck/save loading completes.
 
-After a word spawns, its mastery sets the next interval. The multiplier interpolates linearly from `1.60` at mastery `0`, through `1.00` at mastery `50`, to `0.40` at mastery `100`: `masteryInterval = baseInterval * lerp(1.60, 0.40, mastery / 100)`. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
+After a word spawns, the next interval is driven only by the performance multiplier; word mastery no longer scales the spawn timer. The empty-battlefield 0.5-second refill remains the safety override.
 
 When a timer is due:
 
 1. if 32 enemies are active, keep one pending spawn and retry when a slot opens;
-2. let the scheduler refill its deterministic 30-word curriculum, then choose from repair, active-learning, or mastered-fallback tier;
+2. let the scheduler refill its deterministic curriculum pool, then choose by target mix — 50% due review/relearning, 30% due learning steps, 20% new words, with empty buckets redistributing their share. When nothing is due, ungraded practice keeps the battlefield alive;
 3. assign enemy ID, ordinal, visual lane, and choice seed;
-4. set word cooldown from the scheduler;
+4. reserve the hard spacing floor (two intervening words) for the spawned word;
 5. checkpoint scheduler state;
 6. create the Phaser enemy.
 
@@ -205,7 +213,7 @@ Simulation uses a fixed 60 Hz step with accumulated active time and a maximum of
 Settings are reachable from deck selection and the pause overlay.
 
 - Opening settings pauses enemy motion, spawn clock, answer clocks, and streak state.
-- Base spawn slider displays both “every N seconds” and rounded enemies/minute; actual intervals also reflect the previous word's mastery and current performance pressure.
+- Base spawn slider displays both “every N seconds” and rounded enemies/minute; actual intervals also reflect current performance pressure.
 - Speed slider displays multiplier and a text label: `SLOW`, `STANDARD`, or `FAST`.
 - “Apply” validates/clamps values, updates all active enemies uniformly, restarts the spawn interval from zero, saves settings, and returns to the prior screen.
 - “Cancel” restores the original values.

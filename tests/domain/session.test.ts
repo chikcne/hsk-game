@@ -1,13 +1,10 @@
 import { describe, expect, it } from "vitest";
 import { advanceEnemiesForRecallWindow } from "../../src/domain/session/landing";
-import {
-  masteryLevelFromAppearanceWeight,
-  wordSpeedMultiplierFromAppearanceWeight,
-} from "../../src/domain/session/speed";
+import { displayedMastery } from "../../src/domain/learning/mastery";
+import { wordSpeedMultiplierForMastery } from "../../src/domain/session/speed";
 import { selectLockedTarget, soonestLandingEnemy } from "../../src/domain/session/targeting";
 import { calculatePoints, nextStreak } from "../../src/domain/session/scoring";
 import {
-  masteryAdjustedSpawnDelayMs,
   nextPerformanceMultiplier,
   performanceAdjustedSpawnDelayMs,
 } from "../../src/domain/session/performance";
@@ -25,13 +22,21 @@ const enemy = (id: string, progress: number, spawnOrdinal: number, speedMultipli
 });
 
 describe("session rules", () => {
-  it("scales word speed up with mastery", () => {
-    expect(masteryLevelFromAppearanceWeight(100)).toBe(0);
-    expect(masteryLevelFromAppearanceWeight(21)).toBe(80);
-    expect(masteryLevelFromAppearanceWeight(1)).toBe(100);
-    expect(wordSpeedMultiplierFromAppearanceWeight(100)).toBeCloseTo(0.65);
-    expect(wordSpeedMultiplierFromAppearanceWeight(1)).toBeCloseTo(1.5);
-    expect(wordSpeedMultiplierFromAppearanceWeight(30)).toBeGreaterThan(wordSpeedMultiplierFromAppearanceWeight(70));
+  it("keeps word speed inside the narrow mastery band, decoupled from pressure", () => {
+    expect(wordSpeedMultiplierForMastery(0)).toBeCloseTo(0.9);
+    expect(wordSpeedMultiplierForMastery(50)).toBeCloseTo(1);
+    expect(wordSpeedMultiplierForMastery(100)).toBeCloseTo(1.1);
+    expect(wordSpeedMultiplierForMastery(80)).toBeGreaterThan(wordSpeedMultiplierForMastery(25));
+  });
+
+  it("derives displayed mastery smoothly from stage and stability", () => {
+    expect(displayedMastery({ phase: "new", stepIndex: 0, stability: 0 })).toBe(0);
+    expect(displayedMastery({ phase: "learning", stepIndex: 0, stability: 0 })).toBe(25);
+    expect(displayedMastery({ phase: "learning", stepIndex: 1, stability: 0 })).toBe(50);
+    expect(displayedMastery({ phase: "relearning", stepIndex: 2, stability: 2 })).toBe(75);
+    expect(displayedMastery({ phase: "review", stepIndex: 0, stability: 0 })).toBe(80);
+    expect(displayedMastery({ phase: "review", stepIndex: 0, stability: 7 })).toBe(90);
+    expect(displayedMastery({ phase: "review", stepIndex: 0, stability: 100 })).toBe(99);
   });
 
   it("targets predicted landing time rather than altitude, then breaks ties by age", () => {
@@ -79,20 +84,10 @@ describe("session rules", () => {
     expect(miss).toBeCloseTo(0.91);
   });
 
-  it("scales the next spawn timer from the previous word's mastery", () => {
-    expect(masteryAdjustedSpawnDelayMs(5_000, 0)).toBe(8_000);
-    expect(masteryAdjustedSpawnDelayMs(5_000, 50)).toBe(5_000);
-    expect(masteryAdjustedSpawnDelayMs(5_000, 100)).toBe(2_000);
-    expect(masteryAdjustedSpawnDelayMs(5_000, -10)).toBe(8_000);
-    expect(masteryAdjustedSpawnDelayMs(5_000, 110)).toBe(2_000);
-  });
-
-  it("multiplies mastery-adjusted pressure and fills an empty battlefield within half a second", () => {
+  it("paces spawns from performance alone, never from word mastery", () => {
     expect(performanceAdjustedSpawnDelayMs(3_000, 1.5, true)).toBe(2_000);
     expect(performanceAdjustedSpawnDelayMs(3_000, 0.75, true)).toBe(4_000);
-    expect(performanceAdjustedSpawnDelayMs(5_000, 1, true, 0)).toBe(8_000);
-    expect(performanceAdjustedSpawnDelayMs(5_000, 1, true, 100)).toBe(2_000);
-    expect(performanceAdjustedSpawnDelayMs(5_000, 0.7, false, 0)).toBe(500);
+    expect(performanceAdjustedSpawnDelayMs(5_000, 1, false)).toBe(500);
   });
 
   it("gives a selected word its full recall window and a two-second autocomplete grace period", () => {

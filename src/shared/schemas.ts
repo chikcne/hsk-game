@@ -9,22 +9,16 @@ export const SettingsSchema = z.object({
   masterVolume: z.number().min(0).max(1),
   reducedMotion: z.boolean(),
   levelSize: z.number().int().min(5).max(100),
-  struggleThresholdMs: z.number().int().min(1000).max(20_000),
-  correctRepeatBasePhrases: z.number().int().min(5).max(100),
-  pinyinSecondsPerPhrase: z.number().min(0).max(5),
-  minimumCorrectRepeatPhrases: z.number().int().min(1).max(50),
-  mistakeRepeatPhrases: z.number().int().min(1).max(30),
-  masteryCorrectDecrease: z.number().int().min(1).max(50),
-  masteryStruggleIncrease: z.number().int().min(1).max(50),
-  masteryMistakeIncrease: z.number().int().min(1).max(99),
-  repairRepetitions: z.number().int().min(0).max(10),
-  reviewInitialInterval: z.number().int().min(1).max(100),
-  reviewGraduatingInterval: z.number().int().min(2).max(500),
-  reviewLapseInterval: z.number().int().min(1).max(30),
-  reviewEasyMultiplier: z.number().min(1.3).max(4),
-  reviewHardMultiplier: z.number().min(0.5).max(1.5),
-  recallScoreSmoothing: z.number().min(0.05).max(1),
 });
+
+/** Explicit SRS stage. `new` words have never been tested; `learning` words
+ * walk the fixed learning steps; `relearning` words are graduated words that
+ * lapsed; `review` words are graduated and scheduled by wall-clock time. */
+export const WordPhaseSchema = z.enum(["new", "learning", "review", "relearning"]);
+export type WordPhase = z.infer<typeof WordPhaseSchema>;
+/** Continuous recall grade inferred from the encounter (replaces weight deltas). */
+export const RecallGradeSchema = z.enum(["again", "hard", "good", "easy"]);
+export type RecallGrade = z.infer<typeof RecallGradeSchema>;
 export type DifficultySettings = z.infer<typeof SettingsSchema>;
 
 export const RuntimeWordSchema = z.object({
@@ -49,7 +43,20 @@ export const RuntimeDeckSchema = z.object({
 export type RuntimeDeck = z.infer<typeof RuntimeDeckSchema>;
 
 export const WordProgressSchema = z.object({
-  appearanceWeight: z.number().int().min(1).max(100), attempts: z.number().int().nonnegative(),
+  phase: WordPhaseSchema,
+  /** Index into the active phase's step intervals (learning/relearning only). */
+  stepIndex: z.number().int().nonnegative(),
+  /** Intra-session due point, in spawn ordinals, for learning/relearning words. */
+  dueOrdinal: z.number().int().nonnegative().nullable(),
+  /** Wall-clock due point for graduated (review) words. */
+  dueAt: z.string().nullable(),
+  /** Long-term memory stability in days (graduated words). */
+  stability: z.number().nonnegative(),
+  /** 1 (easy) .. 10 (treacherous); shapes long-term stability growth. */
+  difficulty: z.number().min(1).max(10),
+  lapses: z.number().int().nonnegative(),
+  lastGrade: RecallGradeSchema.nullable(),
+  attempts: z.number().int().nonnegative(),
   completeCorrect: z.number().int().nonnegative(), wrongPinyin: z.number().int().nonnegative(),
   wrongMeaning: z.number().int().nonnegative(), landed: z.number().int().nonnegative(),
   totalThinkingMs: z.number().nonnegative(), fastestCorrectMs: z.number().nonnegative().nullable(),
@@ -57,8 +64,9 @@ export const WordProgressSchema = z.object({
   lastPinyinMs: z.number().nonnegative().nullable(),
   lastOutcome: z.enum(["correct", "wrongPinyin", "wrongMeaning", "landed"]).nullable(),
   lastSeenAt: z.string().nullable(), introducedAtOrdinal: z.number().int().nonnegative().nullable(),
-  lastSpawnOrdinal: z.number().int().nonnegative().nullable(), nextEligibleSpawn: z.number().int().nonnegative(),
-  reinforcementRemaining: z.number().int().min(0).max(10),
+  lastSpawnOrdinal: z.number().int().nonnegative().nullable(),
+  /** Hard spacing floor: this word cannot respawn before this ordinal. */
+  nextEligibleSpawn: z.number().int().nonnegative(),
 });
 export type WordProgress = z.infer<typeof WordProgressSchema>;
 export const LevelProgressSchema = z.object({
@@ -72,8 +80,19 @@ export const LevelProgressSchema = z.object({
 export type LevelProgress = z.infer<typeof LevelProgressSchema>;
 
 export const ReviewWordProgressSchema = z.object({
-  recallScoreMsPerChar: z.number().nonnegative().nullable(), easeFactor: z.number().min(1.3).max(4),
-  interval: z.number().int().nonnegative(), dueOrdinal: z.number().int().nonnegative(), repetitions: z.number().int().nonnegative(),
+  /** Review cards are graduated; `relearning` marks a lapsed card repeating
+   * the relearning steps before its next long-term review. */
+  phase: z.enum(["review", "relearning"]),
+  stepIndex: z.number().int().nonnegative(),
+  /** Intra-session due point for relearning cards, in spawn ordinals. */
+  dueOrdinal: z.number().int().nonnegative().nullable(),
+  /** Wall-clock due point for review cards. */
+  dueAt: z.string().nullable(),
+  stability: z.number().nonnegative(),
+  difficulty: z.number().min(1).max(10),
+  lapses: z.number().int().nonnegative(),
+  lastGrade: RecallGradeSchema.nullable(),
+  recallScoreMsPerChar: z.number().nonnegative().nullable(),
   attempts: z.number().int().nonnegative(), completeCorrect: z.number().int().nonnegative(),
   wrongPinyin: z.number().int().nonnegative(), wrongMeaning: z.number().int().nonnegative(),
   landed: z.number().int().nonnegative(), struggles: z.number().int().nonnegative(),
@@ -94,7 +113,7 @@ export const LifetimeSchema = z.object({
   bestStreak: z.number().int().nonnegative(), totalThinkingMs: z.number().nonnegative(),
 });
 export const SaveFileSchema = z.object({
-  schemaVersion: z.literal(2), profileId: z.literal("default"), revision: z.number().int().nonnegative(), savedAt: z.string(),
+  schemaVersion: z.literal(3), profileId: z.literal("default"), revision: z.number().int().nonnegative(), savedAt: z.string(),
   settings: SettingsSchema, levels: z.record(DeckIdSchema, LevelProgressSchema), review: ReviewProgressSchema, lifetime: LifetimeSchema,
 });
 export type SaveFile = z.infer<typeof SaveFileSchema>;

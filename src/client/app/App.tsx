@@ -6,13 +6,14 @@ import { createDemoDeck } from "../data/demoDeck";
 import { createReviewDeck } from "../data/reviewDeck";
 import { loadStrokeBundle, loadStrokeBundles, loadUiStrokeBundle, mergeStrokeData, type StrokeDataMap } from "../data/strokeData";
 import { loadSave, putSave } from "../api/saves";
+import { displayedMastery } from "../../domain/learning";
 import { GameCanvas } from "../game/GameCanvas";
 import { HanziText } from "../game/HanziText";
 import { useBattle, type SessionStats } from "../state/useBattle";
 import { unlockSoundEffects } from "../audio/soundEffects";
 
 const deckLabel = (id: DeckId) => `HSK ${id.at(-1)}`;
-const masteredCount = (level?: LevelProgress) => level ? Object.values(level.words).filter((word) => word.appearanceWeight === 1).length : 0;
+const masteredCount = (level?: LevelProgress) => level ? Object.values(level.words).filter((word) => word.phase === "review").length : 0;
 const gradeActionLabel = (level?: LevelProgress) => level && level.nextSpawnOrdinal > 0 ? "CONTINUE" : "START";
 const LEVEL_HANZI = ["一", "二", "三", "四", "五", "六"] as const;
 const LEVEL_DESCRIPTIONS = ["基础词卷", "日常词卷", "进阶词卷", "长篇词卷", "高阶词卷", "通达词卷"] as const;
@@ -586,13 +587,19 @@ function MobileKeyboard({ disabled, submitDisabled, backspaceDisabled, onLetter,
   </section>;
 }
 
+const dueLabel = (feedback: { dueInDays?: number | null; dueInWords?: number | null }) => {
+  if (feedback.dueInDays != null) return `NEXT REVIEW IN ${feedback.dueInDays} DAY${feedback.dueInDays === 1 ? "" : "S"}`;
+  if (feedback.dueInWords != null) return `DUE IN ${feedback.dueInWords} WORD${feedback.dueInWords === 1 ? "" : "S"}`;
+  return "SCHEDULE UPDATED";
+};
+
 function FeedbackNotice({ feedback, strokeData, onDismiss }: { feedback: NonNullable<ReturnType<typeof useBattle>["feedback"]>; strokeData: StrokeDataMap; onDismiss: () => void }) {
   if (feedback.kind === "correct" && !feedback.struggled) return <aside className="hit-notice" role="status"><b>+{feedback.points}</b><span>DIRECT HIT</span></aside>;
-  const priority = feedback.oldWeight !== undefined
-    ? `MASTERY ${101 - feedback.oldWeight} → ${101 - (feedback.newWeight ?? feedback.oldWeight)} · DUE IN ${feedback.repeatAfterPhrases}`
-    : `RECALL ${feedback.recallScoreMsPerChar === null || feedback.recallScoreMsPerChar === undefined ? "—" : `${Math.round(feedback.recallScoreMsPerChar)} MS/CHAR`} · INTERVAL ${feedback.repeatAfterPhrases}`;
+  const priority = feedback.oldMastery !== undefined
+    ? `MASTERY ${feedback.oldMastery}% → ${feedback.newMastery ?? feedback.oldMastery}% · ${dueLabel(feedback)}`
+    : `RECALL ${feedback.recallScoreMsPerChar === null || feedback.recallScoreMsPerChar === undefined ? "—" : `${Math.round(feedback.recallScoreMsPerChar)} MS/CHAR`} · ${dueLabel(feedback)}`;
   const blocking = feedback.kind !== "correct";
-  const notice = <aside className="breach-notice" role={blocking ? "dialog" : "alert"} aria-modal={blocking ? true : undefined} aria-labelledby={blocking ? "learning-feedback-title" : undefined}><strong id={blocking ? "learning-feedback-title" : undefined}><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b>{feedback.typed && <em><HanziText text={`YOU TYPED: ${feedback.typed}`} data={strokeData} /></em>}<footer><span>{feedback.struggled ? "ADDED TO LEVEL POOL" : "RECALL RECORDED"}</span><span>{priority}</span></footer>{blocking && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE</button>}</aside>;
+  const notice = <aside className="breach-notice" role={blocking ? "dialog" : "alert"} aria-modal={blocking ? true : undefined} aria-labelledby={blocking ? "learning-feedback-title" : undefined}><strong id={blocking ? "learning-feedback-title" : undefined}><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b>{feedback.typed && <em><HanziText text={`YOU TYPED: ${feedback.typed}`} data={strokeData} /></em>}<footer><span>{feedback.struggled ? "SCHEDULED TO RETURN SOON" : "RECALL RECORDED"}</span><span>{priority}</span></footer>{blocking && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE</button>}</aside>;
   return blocking ? <div className="modal-backdrop learning-backdrop">{notice}</div> : notice;
 }
 
@@ -612,29 +619,13 @@ function SettingsDialog({ settings, onApply, onClose }: { settings: DifficultySe
   }, [onClose]);
   const speedLabel = draft.enemySpeedMultiplier < 0.9 ? "SLOW" : draft.enemySpeedMultiplier > 1.1 ? "FAST" : "STANDARD";
   const update = <K extends keyof DifficultySettings>(key: K, value: DifficultySettings[K]) => setDraft((old) => ({ ...old, [key]: value }));
-  return <div className="modal-backdrop"><section className="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settings-title"><header><small>EVERY LEARNING AND REVIEW PARAMETER IS ADJUSTABLE</small><h2 id="settings-title">SYSTEM SETTINGS</h2></header><div className="settings-body">
+  return <div className="modal-backdrop"><section className="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settings-title"><header><small>ARCADE PRESSURE AND ACCESSIBILITY</small><h2 id="settings-title">SYSTEM SETTINGS</h2></header><div className="settings-body">
     <h3>ARCADE PRESSURE</h3>
     <label><span>BASE WORD SPAWN RATE <b>1 EVERY {(draft.spawnIntervalMs / 1000).toFixed(2)}s · {Math.round(60000 / draft.spawnIntervalMs)}/MIN</b></span><input type="range" min="1500" max="10000" step="250" value={draft.spawnIntervalMs} onChange={(event) => update("spawnIntervalMs", Number(event.target.value))} /></label>
     <label><span>WORD SPEED <b>{speedLabel} · {draft.enemySpeedMultiplier.toFixed(2)}×</b></span><input className="mint-range" type="range" min="0.65" max="1.5" step="0.05" value={draft.enemySpeedMultiplier} onChange={(event) => update("enemySpeedMultiplier", Number(event.target.value))} /></label>
     <h3>REGULAR LEVELS</h3>
     <NumberSetting label="NEW WORDS PER LEVEL" value={draft.levelSize} min={5} max={100} step={5} onChange={(value) => update("levelSize", value)} />
-    <NumberSetting label="STRUGGLE THRESHOLD" value={draft.struggleThresholdMs / 1000} min={1} max={20} step={0.5} suffix="s" onChange={(value) => update("struggleThresholdMs", value * 1000)} />
-    <NumberSetting label="CORRECT REPEAT BASE" value={draft.correctRepeatBasePhrases} min={5} max={100} step={1} suffix=" phrases" onChange={(value) => update("correctRepeatBasePhrases", value)} />
-    <NumberSetting label="PHRASES SUBTRACTED PER PINYIN SECOND" value={draft.pinyinSecondsPerPhrase} min={0} max={5} step={0.25} onChange={(value) => update("pinyinSecondsPerPhrase", value)} />
-    <NumberSetting label="MINIMUM CORRECT INTERVAL" value={draft.minimumCorrectRepeatPhrases} min={1} max={Math.min(50, draft.correctRepeatBasePhrases)} step={1} onChange={(value) => update("minimumCorrectRepeatPhrases", value)} />
-    <NumberSetting label="MISTAKE REPEAT INTERVAL" value={draft.mistakeRepeatPhrases} min={1} max={30} step={1} suffix=" phrases" onChange={(value) => update("mistakeRepeatPhrases", value)} />
-    <NumberSetting label="FAST-CORRECT MASTERY GAIN" value={draft.masteryCorrectDecrease} min={1} max={50} step={1} onChange={(value) => update("masteryCorrectDecrease", value)} />
-    <NumberSetting label="SLOW-RECALL MASTERY LOSS" value={draft.masteryStruggleIncrease} min={1} max={50} step={1} onChange={(value) => update("masteryStruggleIncrease", value)} />
-    <NumberSetting label="MISTAKE MASTERY LOSS" value={draft.masteryMistakeIncrease} min={1} max={99} step={1} onChange={(value) => update("masteryMistakeIncrease", value)} />
-    <NumberSetting label="REPAIR RECALLS" value={draft.repairRepetitions} min={0} max={10} step={1} onChange={(value) => update("repairRepetitions", value)} />
-    <div className="rule"><span>DEFAULT RESPONSE FORMULA</span><b>DUE = {draft.correctRepeatBasePhrases} − PINYIN SECONDS × {draft.pinyinSecondsPerPhrase}</b><em>10s → {Math.max(draft.minimumCorrectRepeatPhrases, Math.round(draft.correctRepeatBasePhrases - 10 * draft.pinyinSecondsPerPhrase))} PHRASES</em></div>
-    <h3>ANKI-STYLE REVIEW</h3>
-    <NumberSetting label="FIRST INTERVAL" value={draft.reviewInitialInterval} min={1} max={100} step={1} onChange={(value) => update("reviewInitialInterval", value)} />
-    <NumberSetting label="GRADUATING INTERVAL" value={draft.reviewGraduatingInterval} min={2} max={500} step={1} onChange={(value) => update("reviewGraduatingInterval", value)} />
-    <NumberSetting label="LAPSE INTERVAL" value={draft.reviewLapseInterval} min={1} max={30} step={1} onChange={(value) => update("reviewLapseInterval", value)} />
-    <NumberSetting label="EASY MULTIPLIER" value={draft.reviewEasyMultiplier} min={1.3} max={4} step={0.1} suffix="×" onChange={(value) => update("reviewEasyMultiplier", value)} />
-    <NumberSetting label="HARD MULTIPLIER" value={draft.reviewHardMultiplier} min={0.5} max={1.5} step={0.05} suffix="×" onChange={(value) => update("reviewHardMultiplier", value)} />
-    <NumberSetting label="RECALL SCORE NEW-ANSWER WEIGHT" value={draft.recallScoreSmoothing} min={0.05} max={1} step={0.05} onChange={(value) => update("recallScoreSmoothing", value)} />
+    <div className="rule"><span>SPACED REPETITION</span><b>STEPS 3 · 10 · 30 WORDS</b><em>MASTERY GROWS THROUGH GRADED RECALLS, NOT SETTINGS</em></div>
     <h3>ACCESSIBILITY</h3>
     <label className="volume"><span>MASTER VOLUME <b>{Math.round(draft.masterVolume * 100)}%</b></span><input type="range" min="0" max="1" step="0.05" value={draft.masterVolume} onChange={(event) => update("masterVolume", Number(event.target.value))} /></label>
     <label className="check"><input type="checkbox" checked={draft.reducedMotion} onChange={(event) => update("reducedMotion", event.target.checked)} /> REDUCED MOTION</label>
@@ -657,7 +648,7 @@ function Summary({ stats, deckId, deck, level, saveStatus, strokeData, onAgain, 
       const rightProblems = right[1].wrongPinyin + right[1].wrongMeaning + right[1].landed;
       return rightProblems - leftProblems || right[1].struggles - left[1].struggles || (right[1].recallScoreMsPerChar ?? 0) - (left[1].recallScoreMsPerChar ?? 0);
     }).slice(0, 12);
-  const next = level ? Object.entries(level.words).filter(([, item]) => item.introducedAtOrdinal !== null).sort((a, b) => b[1].appearanceWeight - a[1].appearanceWeight).slice(0, 4).map(([id]) => wordMap.get(id)?.displayHanzi ?? "?") : [];
+  const next = level ? Object.entries(level.words).filter(([, item]) => item.introducedAtOrdinal !== null).sort((a, b) => displayedMastery(a[1]) - displayedMastery(b[1])).slice(0, 4).map(([id]) => wordMap.get(id)?.displayHanzi ?? "?") : [];
   const isReview = stats.mode === "review";
   return <main className="summary-screen paper"><header><h1>{isReview ? "REVIEW RANKINGS" : "GRADE REPORT"}</h1><p>{isReview ? "ALL MASTERED GRADES • ROUND COMPLETE" : `${deckLabel(deckId)} • SESSION COMPLETE`}</p></header>
     <section className="stat-grid"><div><small>SCORE</small><b className="amber">+{stats.score.toLocaleString()}</b></div><div><small>ACCURACY</small><b className="mint">{accuracy}%</b></div><div><small>BEST STREAK</small><b className="pink">×{stats.bestStreak}</b></div><div><small>WORDS SEEN</small><b className="cyan">{stats.seen.size}</b></div></section>

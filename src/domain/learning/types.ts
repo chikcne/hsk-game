@@ -1,10 +1,10 @@
-import type { RuntimeDeck, WordProgress, LevelProgress } from "../../shared/schemas";
+import type { LevelProgress, RecallGrade, RuntimeDeck, WordProgress } from "../../shared/schemas";
 
 export type LearningDeck = Pick<RuntimeDeck, "id" | "fingerprint"> & {
   words: ReadonlyArray<Pick<RuntimeDeck["words"][number], "id">>;
 };
 
-export type SpawnTier = "repair" | "learning" | "fallback";
+export type SpawnTier = "due" | "learning" | "new" | "practice";
 
 export type SpawnResult =
   | {
@@ -12,7 +12,6 @@ export type SpawnResult =
       level: LevelProgress;
       wordId: string;
       spawnOrdinal: number;
-      cooldown: number;
       tier: SpawnTier;
     }
   | {
@@ -39,11 +38,26 @@ export type ReconciliationResult = {
   report: ReconciliationReport;
 };
 
+export type OutcomeOptions = {
+  /** Ungraded practice never changes the schedule; counters only. */
+  graded?: boolean;
+  /** Canonical pinyin character count used to normalise answer latency. */
+  pinyinCharLength?: number;
+};
+
 export type ProgressUpdate = {
   progress: WordProgress;
-  weightDelta: number;
+  grade: RecallGrade;
+  graded: boolean;
+  masteryBefore: number;
+  masteryAfter: number;
+  /** The word entered long-term review (graduated or re-graduated). */
   becameMastered: boolean;
+  /** A graduated word lapsed into relearning. */
   relapsed: boolean;
   struggled: boolean;
-  repeatAfterPhrases: number;
+  /** Words until the next scheduled test, for step-based phases. */
+  dueInWords: number | null;
+  /** Days until the next long-term review, for graduated words. */
+  dueInDays: number | null;
 };

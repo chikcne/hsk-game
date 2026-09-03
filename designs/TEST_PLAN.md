@@ -98,60 +98,51 @@ Property: canonicalization is idempotent for canonical output.
 
 ## 4. Cooldown and scheduler tests
 
-### Exact cooldown examples
+### Exact hard-spacing examples
 
 For a word spawned at ordinal 100:
 
-- cooldown 10 → ineligible at 101–110, eligible at 111;
-- cooldown 25 → ineligible at 101–125, eligible at 126.
+- the floor is fixed: `nextEligibleSpawn = 103`, i.e. ineligible at 101–102, eligible at 103;
+- every step due point is at least the floor (minimum interval 2 → due at 103).
 
-Run a 100,000-spawn seeded simulation over 200 words and assert no repeated word has fewer than ten intervening spawns. Persist/load midway and assert the resulting second half exactly matches an uninterrupted run.
+Run a 100,000-spawn seeded simulation over 200 words and assert no repeated word has fewer than two intervening spawns. Persist/load midway and assert the resulting second half exactly matches an uninterrupted run.
 
-### Gaussian distribution
+### Due-state mix
 
-With fixed seed and 100,000 draws:
-
-- every integer is in `[10, 25]`;
-- all values 10–25 occur;
-- sample mean lies in a broad non-flaky band around 17.5 (for example 17.35–17.65);
-- central bins occur more often than endpoint bins;
-- no clamping pile appears at 10 or 25.
-
-Test rejection behavior with a scripted RNG that first produces out-of-range values and then a valid value.
-
-### Tier and weighting
-
-- deterministic curriculum introduces exactly 30 words initially and never introduces one twice;
-- mastering an active word removes it and introduces the next unseen word;
-- a mastered fallback lapse rejoins active learning without evicting another weak word;
-- eligible repair words exclude ordinary learning and mastered candidates;
-- eligible ordinary active words exclude mastered candidates;
-- when all active words are cooling down, mastered eligible words fill spawns;
-- after all words master, mastered words still spawn;
-- not-yet-introduced and ineligible weight-100 words have zero selections;
-- among equal-age candidates, weight 100 wins statistically more than weight 10 using broad deterministic bounds;
-- age boost increases a neglected word's effective weight but never exceeds configured cap;
+- deterministic curriculum introduces exactly `levelSize` words initially and never introduces one twice;
+- a word graduating from the active pool removes it and introduces the next unseen word;
+- a lapsed graduated word rejoins active learning without evicting another weak word;
+- graded spawns draw only from due buckets: due review/relearning words, due learning words, and new words;
+- a learning word before its `dueOrdinal` is never graded, even when it is past the hard floor;
+- a graduated word before its `dueAt` is never graded in regular play;
+- when nothing is due, ungraded practice fills spawns least-recently-seen first and never changes schedules;
+- when every word is under its spacing floor (all in flight), the scheduler returns `noEligibleWord` instead of violating spacing;
+- not-yet-introduced and ineligible words have zero selections;
+- broad deterministic bounds hold for the 50/30/20 bucket shares while all buckets are non-empty;
 - anti-starvation deterministically selects a candidate at 150 eligible spawns;
-- selected word gets cooldown before a second scheduler call;
+- selected word gets its spacing reservation before a second scheduler call;
 - official minimum deck size never produces `noEligibleWord` in long simulation.
 
-Property test random save states satisfying invariants, then ensure selected IDs are always from the calculated eligible tier.
+Property test random save states satisfying invariants, then ensure selected IDs are always from the calculated due buckets or the practice pool.
 
-## 5. Mastery tests
+## 5. Grading tests
 
-Boundary values:
+Boundary values (latency normalized per canonical pinyin character):
 
-- correct in ≤2,500 ms decreases weight by 16;
-- correct in 12,000 ms or more decreases by 4;
-- midpoint yields expected intermediate decrease;
-- weight never falls below 1;
-- wrong pinyin/meaning adds 30, cap 100, and sets three repairs;
-- landing adds 35, cap 100, and sets three repairs;
-- each complete correct decrements repair count; reaching weight 1 clears it;
-- mastered miss moves 1 → 31/36 and returns the word to active repair;
+- correct at ≤1,600 ms/char grades Easy;
+- correct at ≤4,000 ms/char grades Good;
+- correct above 4,000 ms/char grades Hard and never reduces stage or stability below roughly flat;
+- wrong pinyin/meaning, landing, and autocompleted pinyin grade Again, even with a correct meaning choice;
+- phase paths: new → learning steps 3/10/30 → review; a word cannot graduate in fewer than four spaced successes;
+- Again restarts the current phase's steps at step 1 and counts a lapse;
+- graduated Good grows stability by `2.5 − 0.15 × difficulty`; Hard is roughly flat; Easy grows fastest;
+- graduated Again collapses stability ×0.25, raises difficulty, and enters the 2/6/18 relearning steps;
+- completing relearning returns the word to review with wall-clock `dueAt`;
+- ungraded practice updates counters but never the schedule;
+- displayed mastery reads 0 / 25 / 50 / 75% by phase and 80–100% saturating with stability;
 - audio failure does not change outcome;
 - pause/hidden time is excluded;
-- speed/spawn settings do not change mastery for same response milliseconds.
+- speed/spawn settings do not change grading for same response milliseconds.
 
 Counter invariant after arbitrary outcome sequence:
 
@@ -278,13 +269,13 @@ With a fake game renderer:
 Use a tiny generated test deck and deterministic clock.
 
 1. **Keyboard success**: select HSK, see several enemies, confirm lowest highlighted, type pinyin, hear mocked audio call, press correct letter, score/streak increase, save file updates.
-2. **Wrong pinyin**: wrong non-empty Enter shows correction, resets streak, breaches once, raises weight, selects next enemy.
+2. **Wrong pinyin**: wrong non-empty Enter shows correction, resets streak, breaches once, grades the word Again (scheduled back into its steps), selects next enemy.
 3. **Wrong meaning**: correct pinyin then wrong letter shows chosen/correct labels and one miss.
 4. **Natural landing**: put the target at ground, verify it receives a full selection-based pinyin window, then advance the recall clock and verify no game over and the next target highlight.
 5. **Cooldown across restart**: spawn a word, end, reload, verify it does not reappear before stored eligibility.
 6. **Settings**: pause, adjust rate/speed, assert scene frozen, apply, assert all enemies same new speed and no burst, reload and verify persistence.
 7. **End session**: end with enemies active, verify they are not misses, report waits for save, resume fresh arena with progress retained.
-8. **Completion/regression**: drive all fixture words to 1, see cleared milestone, miss fallback word, retain badge but show live regression.
+8. **Completion/regression**: drive all fixture words to the review phase, see cleared milestone, lapse a graduated word, retain badge but show live regression.
 9. **Mobile touch**: 360×640 emulation, pinyin input visible above keyboard viewport, all eight meaning choices tappable.
 10. **Audio failure**: reject play promise, answer still succeeds and visible warning appears.
 

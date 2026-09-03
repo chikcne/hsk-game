@@ -56,7 +56,7 @@ export type SaveRepositoryOptions = {
 
 export function createDefaultSave(now = new Date()): SaveFile {
   return {
-    schemaVersion: 2,
+    schemaVersion: 3,
     profileId: "default",
     revision: 0,
     savedAt: now.toISOString(),

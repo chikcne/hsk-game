@@ -41,7 +41,7 @@ export function refillCurriculum(level: LevelProgress, deck: LearningDeck): Leve
   const currentSeen = new Set<string>();
   for (const id of level.currentLevelWordIds) {
     const progress = level.words[id];
-    if (!known.has(id) || !progress || progress.appearanceWeight === 1 || currentSeen.has(id)) continue;
+    if (!known.has(id) || !progress || progress.phase === "review" || currentSeen.has(id)) continue;
     currentLevelWordIds.push(id);
     currentSeen.add(id);
   }
@@ -50,7 +50,7 @@ export function refillCurriculum(level: LevelProgress, deck: LearningDeck): Leve
   const activeSeen = new Set<string>();
   for (const id of [...level.activeLearningWordIds, ...currentLevelWordIds]) {
     const progress = level.words[id];
-    if (!known.has(id) || !progress || progress.introducedAtOrdinal === null || progress.appearanceWeight === 1 || activeSeen.has(id)) continue;
+    if (!known.has(id) || !progress || progress.introducedAtOrdinal === null || progress.phase === "review" || activeSeen.has(id)) continue;
     activeLearningWordIds.push(id);
     activeSeen.add(id);
   }
@@ -69,7 +69,7 @@ export function refillCurriculum(level: LevelProgress, deck: LearningDeck): Leve
     words[id] = { ...progress, introducedAtOrdinal: level.nextSpawnOrdinal };
     currentLevelWordIds.push(id);
     currentSeen.add(id);
-    if (progress.appearanceWeight > 1 && !activeSeen.has(id)) {
+    if (progress.phase !== "review" && !activeSeen.has(id)) {
       activeLearningWordIds.push(id);
       activeSeen.add(id);
     }

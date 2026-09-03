@@ -16,7 +16,7 @@ export function createReviewDeck(
   for (const [deckId, source] of decks) {
     const progress = levels[deckId];
     for (const word of source.words) {
-      if (progress?.words[word.id]?.appearanceWeight !== 1) continue;
+      if (progress?.words[word.id]?.phase !== "review") continue;
       const id = reviewWordKey(deckId, word.id);
       const meaningKey = `${deckId}:${word.meaningKey}`;
       const partOfSpeechKey = word.partOfSpeechKey ? `${deckId}:${word.partOfSpeechKey}` : null;

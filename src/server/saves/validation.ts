@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { DECK_IDS, type DeckId } from "../../shared/constants";
+import { HARD_MIN_INTERVENING_WORDS } from "../../domain/learning/constants";
 import {
   LevelProgressSchema, LifetimeSchema, ReviewProgressSchema, ReviewWordProgressSchema,
   SaveFileSchema, SettingsSchema, WordProgressSchema, type SaveFile,
@@ -48,9 +49,6 @@ function addIssue(context: z.RefinementCtx, path: Array<string | number>, messag
 function checkSemanticInvariants(save: z.infer<typeof SaveSnapshotSchema>, context: z.RefinementCtx, catalog?: DeckCatalog): void {
   const resolved = save.lifetime.completeCorrect + save.lifetime.wrongPinyin + save.lifetime.wrongMeaning + save.lifetime.landed;
   if (save.lifetime.resolvedEnemies !== resolved) addIssue(context, ["lifetime", "resolvedEnemies"], "must equal the sum of outcome counters");
-  if (save.settings.minimumCorrectRepeatPhrases > save.settings.correctRepeatBasePhrases) {
-    addIssue(context, ["settings", "minimumCorrectRepeatPhrases"], "cannot exceed correctRepeatBasePhrases");
-  }
 
   for (const [deckKey, level] of Object.entries(save.levels)) {
     if (!level) continue;
@@ -71,10 +69,10 @@ function checkSemanticInvariants(save: z.infer<typeof SaveSnapshotSchema>, conte
       activeIds.add(wordId);
       const word = level.words[wordId];
       if (!word) addIssue(context, [...base, "activeLearningWordIds", index], "active word must exist in words");
-      else if (word.appearanceWeight === 1) addIssue(context, [...base, "activeLearningWordIds", index], "active word must be unmastered");
+      else if (word.phase === "review") addIssue(context, [...base, "activeLearningWordIds", index], "graduated word must not be active");
     }
     for (const wordId of currentIds) {
-      if (level.words[wordId]?.appearanceWeight !== 1 && !activeIds.has(wordId)) addIssue(context, [...base, "activeLearningWordIds"], `must contain unmastered current word ${wordId}`);
+      if (level.words[wordId]?.phase !== "review" && !activeIds.has(wordId)) addIssue(context, [...base, "activeLearningWordIds"], `must contain ungraduated current word ${wordId}`);
     }
 
     const reviewed = new Set<string>();
@@ -96,10 +94,22 @@ function checkSemanticInvariants(save: z.infer<typeof SaveSnapshotSchema>, conte
         const path = [...base, collectionName, wordId];
         const outcomes = word.completeCorrect + word.wrongPinyin + word.wrongMeaning + word.landed;
         if (word.attempts !== outcomes) addIssue(context, [...path, "attempts"], "must equal the sum of outcome counters");
-        if (word.appearanceWeight === 1 && word.reinforcementRemaining !== 0) addIssue(context, [...path, "reinforcementRemaining"], "must be zero for a mastered word");
+        if (word.phase === "learning" || word.phase === "relearning") {
+          if (word.dueOrdinal === null) addIssue(context, [...path, "dueOrdinal"], `is required while ${word.phase}`);
+          if (word.dueAt !== null) addIssue(context, [...path, "dueAt"], `must be null while ${word.phase}`);
+        } else {
+          if (word.dueOrdinal !== null) addIssue(context, [...path, "dueOrdinal"], `must be null while ${word.phase}`);
+          if (word.phase === "review" && word.dueAt === null) addIssue(context, [...path, "dueAt"], "is required while graduated");
+        }
+        if (word.dueOrdinal !== null && word.dueOrdinal < word.nextEligibleSpawn) {
+          addIssue(context, [...path, "dueOrdinal"], "cannot precede the hard spacing floor");
+        }
+        if (word.lastSpawnOrdinal !== null && word.nextEligibleSpawn < word.lastSpawnOrdinal + 1 + HARD_MIN_INTERVENING_WORDS) {
+          addIssue(context, [...path, "nextEligibleSpawn"], `must reserve at least ${HARD_MIN_INTERVENING_WORDS} intervening words`);
+        }
         if (word.introducedAtOrdinal !== null && word.introducedAtOrdinal > level.nextSpawnOrdinal) addIssue(context, [...path, "introducedAtOrdinal"], "cannot be after nextSpawnOrdinal");
         if (word.lastSpawnOrdinal !== null && word.lastSpawnOrdinal >= level.nextSpawnOrdinal) addIssue(context, [...path, "lastSpawnOrdinal"], "must be before nextSpawnOrdinal");
-        if (collectionName === "words" && word.introducedAtOrdinal !== null && word.appearanceWeight > 1 && !activeIds.has(wordId)) addIssue(context, [...base, "activeLearningWordIds"], `must contain introduced unmastered word ${wordId}`);
+        if (collectionName === "words" && word.introducedAtOrdinal !== null && word.phase !== "review" && !activeIds.has(wordId)) addIssue(context, [...base, "activeLearningWordIds"], `must contain introduced ungraduated word ${wordId}`);
       }
     }
   }
@@ -114,6 +124,8 @@ function checkSemanticInvariants(save: z.infer<typeof SaveSnapshotSchema>, conte
     const outcomes = word.completeCorrect + word.wrongPinyin + word.wrongMeaning + word.landed;
     if (word.attempts !== outcomes) addIssue(context, ["review", "words", key, "attempts"], "must equal the sum of outcome counters");
     if (word.struggles > word.attempts) addIssue(context, ["review", "words", key, "struggles"], "cannot exceed attempts");
+    if (word.phase === "relearning" && word.dueOrdinal === null) addIssue(context, ["review", "words", key, "dueOrdinal"], "is required while relearning");
+    if (word.phase === "review" && word.dueAt === null) addIssue(context, ["review", "words", key, "dueAt"], "is required while graduated");
     if (word.lastSpawnOrdinal !== null && word.lastSpawnOrdinal >= save.review.nextSpawnOrdinal) addIssue(context, ["review", "words", key, "lastSpawnOrdinal"], "must be before nextSpawnOrdinal");
     const separator = key.indexOf(":");
     const deckId = key.slice(0, separator) as DeckId;

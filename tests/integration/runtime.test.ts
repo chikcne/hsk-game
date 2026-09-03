@@ -13,9 +13,12 @@ describe("playable runtime slice", () => {
     if (spawn.status !== "spawned") return;
     const word = deck.words.find((item) => item.id === spawn.wordId)!;
     expect(generateChoices(deck, word, "enemy-1")).toHaveLength(8);
-    const result = applyOutcomeToLevel(spawn.level, deck, word.id, { kind: "correct", pinyinMs: 1200, meaningMs: 900 }, new Date("2026-01-01T00:00:00Z"));
+    const result = applyOutcomeToLevel(spawn.level, deck, word.id, { kind: "correct", pinyinMs: 2500, meaningMs: 900 }, new Date("2026-01-01T00:00:00Z"));
     expect(result.progress.attempts).toBe(1);
-    expect(result.progress.appearanceWeight).toBe(21);
+    expect(result.progress.phase).toBe("learning");
+    expect(result.progress.stepIndex).toBe(0);
+    expect(result.grade).toBe("good");
+    expect(result.dueInWords).toBe(3);
     expect(result.level.nextSpawnOrdinal).toBe(1);
   });
 });

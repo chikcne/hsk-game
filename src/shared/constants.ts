@@ -12,28 +12,16 @@ export type ChoiceKey = (typeof CHOICE_KEYS)[number];
 export const BASE_TRAVEL_MS = 24_000;
 export const MAX_ACTIVE_ENEMIES = 32;
 export const DANGER_ZONE_PROGRESS = 0.82;
+/** Active-thinking window before a landing target may autocomplete pinyin, and
+ * the neutral thinking-time reference for the performance multiplier. */
+export const RECALL_WINDOW_MS = 8000;
 
-/** Learning defaults are deliberately explicit so every tuning value can be
- * changed from Settings without changing scheduler code. */
+/** Gameplay-only settings. Spaced-repetition behavior is fixed by the
+ * constants in src/domain/learning and is intentionally not tunable. */
 export const DEFAULT_SETTINGS = {
   spawnIntervalMs: 5000,
   enemySpeedMultiplier: 0.9,
   masterVolume: 0.8,
   reducedMotion: false,
   levelSize: 20,
-  struggleThresholdMs: 8000,
-  correctRepeatBasePhrases: 20,
-  pinyinSecondsPerPhrase: 1,
-  minimumCorrectRepeatPhrases: 1,
-  mistakeRepeatPhrases: 5,
-  masteryCorrectDecrease: 25,
-  masteryStruggleIncrease: 15,
-  masteryMistakeIncrease: 40,
-  repairRepetitions: 3,
-  reviewInitialInterval: 10,
-  reviewGraduatingInterval: 30,
-  reviewLapseInterval: 5,
-  reviewEasyMultiplier: 2.5,
-  reviewHardMultiplier: 0.8,
-  recallScoreSmoothing: 0.3,
 } as const;

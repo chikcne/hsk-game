@@ -3,7 +3,7 @@ import type { SaveFile } from "../../shared/schemas";
 import { createReviewProgress } from "../../domain/review";
 
 const blankSave = (): SaveFile => ({
-  schemaVersion: 2, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
+  schemaVersion: 3, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
   settings: { ...DEFAULT_SETTINGS }, levels: {}, review: createReviewProgress(),
   lifetime: { score: 0, resolvedEnemies: 0, completeCorrect: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0, bestStreak: 0, totalThinkingMs: 0 },
 });
@@ -17,7 +17,7 @@ export async function loadSave(): Promise<{ save: SaveFile; online: boolean }> {
     const cached = localStorage.getItem("ziduoduo-emergency-save");
     if (cached) {
       const parsed = JSON.parse(cached) as { schemaVersion?: number };
-      if (parsed.schemaVersion === 2) return { save: parsed as SaveFile, online: false };
+      if (parsed.schemaVersion === 3) return { save: parsed as SaveFile, online: false };
     }
     return { save: blankSave(), online: false };
   }

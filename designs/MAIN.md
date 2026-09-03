@@ -46,9 +46,9 @@ This document is the implementation authority. Supporting details live in:
 | Blank/irrelevant input | Blank Enter and keys outside the current phase are ignored, not counted wrong. |
 | Audio timing | Play word audio after pinyin succeeds, before the meaning choice; **R** replays it in the meaning phase. Play a blaster on a complete correct answer and a buzzer on wrong answers or natural landings. |
 | Persistence | Authoritative JSON file in `saves/`; browser storage may only be an emergency retry cache. |
-| Completion | `firstCompletedAt` is a permanent achievement; current mastery can regress if a mastered fallback word is later missed. |
+| Completion | `firstCompletedAt` is a permanent achievement; current mastery can regress if a graduated word later lapses. |
 | Source duplicates | Exact semantic duplicates become one logical word with multiple source GUIDs; distinct senses remain distinct. |
-| Learning set | A deterministic 30-word active curriculum advances as words master; misses enter a three-review repair tier. This prevents a hard word from disappearing inside a 1,800-word flat lottery. |
+| Learning set | A deterministic rolling curriculum advances as words graduate into long-term review; lapses repeat short relearning steps. Target spawn shares (50% due, 30% learning steps, 20% new) prevent a hard word from disappearing inside a 1,800-word flat lottery. |
 | Offline behavior | Runtime uses only local generated deck data, fonts, audio, and server APIs. No CDN is required. |
 
 ## 2. Reference experience
@@ -145,7 +145,7 @@ Rules:
 │   │   ├── deck/                  # runtime deck contracts and pinyin matching
 │   │   ├── learning/              # weights, cooldowns, weighted selection
 │   │   ├── session/               # encounter state machine and scoring
-│   │   └── random/                # seeded PRNG and truncated Gaussian
+│   │   └── random/                # seeded PRNG (xoshiro128**) and utilities
 │   ├── server/
 │   │   ├── routes/                # health/save endpoints
 │   │   ├── saves/                 # validation and atomic repository
@@ -260,11 +260,11 @@ An implementation is not feature-complete until all gates pass.
 
 ### Gate B — deterministic learning
 
-- A word never respawns until its stored number of **other** spawns (10–25 inclusive) has occurred.
-- Repair words are preferred, then the 30-word active curriculum, then mastered fallback filler.
-- Wrong/landing outcomes increase weight substantially and create three repair-priority recalls; faster complete answers reduce weight more than slow complete answers.
-- One enemy causes at most one weight update.
-- Every word at weight `1` sets live level mastery to complete.
+- A word never respawns until at least two full intervening spawns have occurred; spacing is never violated to keep the arcade alive.
+- Graded spawns draw from due review/relearning, due learning steps, and new words by the 50/30/20 target mix; when nothing is due, ungraded practice fills in.
+- Encounters grade continuously as Again/Hard/Good/Easy; words walk 3/10/30-word learning steps before graduating, and lapses run 2/6/18-word relearning steps.
+- One enemy causes at most one schedule update.
+- Every word in the `review` phase sets live level mastery to complete.
 
 ### Gate C — game behavior
 
