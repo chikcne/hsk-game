@@ -51,13 +51,15 @@ const PREPOSITION_HEADED_COMPOUNDS = new Set([
   "over the years", "past years", "per capita",
 ]);
 
-/** Most keys a single choice may claim, so one label cannot drain the distractor pool (§7). */
-const MAX_SHORTCUTS_PER_CHOICE = 3;
+/** Most keys a single choice may claim: the first key is primary, up to four more are
+ * secondary conveniences. Extra claimed letters block distractors, which is accepted —
+ * answering convenience outweighs distractor-pool width. */
+const MAX_SHORTCUTS_PER_CHOICE = 5;
 
 export type MeaningShortcut = { key: ChoiceKey; index: number };
 
 type GlossWord = { text: string; index: number };
-type Gloss = { words: GlossWord[]; structural: boolean };
+type Gloss = { words: GlossWord[]; structural: boolean; secondary: boolean };
 
 function hashSeed(input: string): number {
   let value = 2166136261;
@@ -96,23 +98,24 @@ function wordsIn(text: string, offset: number): GlossWord[] {
   }));
 }
 
-/** Splits a masked label into glosses. Semicolons always separate; commas separate only
- * within an ordinary gloss, because the enumeration in "measure word for pieces, chunks,
- * money" names one measure word rather than three meanings (§2). */
+/** Splits a masked label into glosses. Semicolons always separate. Commas separate ordinary
+ * glosses; inside a structural gloss ("measure word for pieces, chunks, money") they instead
+ * enumerate counted nouns of one meaning, so those anchors are ranked `secondary` — below
+ * every gloss's primary key — rather than dropped (§2, revised: 块 needs P, C and M). */
 function glossesForLabel(masked: string): Gloss[] {
   const glosses: Gloss[] = [];
   let segmentStart = 0;
   for (const segment of masked.split(";")) {
     const structural = STRUCTURAL_PREFIX.test(segment.trim());
-    // Slashes remain variants within a gloss rather than additional shortcuts.
-    const spans = structural ? [segment] : segment.split(",");
     let spanStart = segmentStart;
-    for (const span of spans) {
+    // Slashes remain variants within a gloss rather than additional shortcuts.
+    segment.split(",").forEach((span, index) => {
+      const secondary = structural && index > 0;
       const firstVariant = span.split("/", 1)[0]!;
       const words = wordsIn(firstVariant, spanStart);
-      if (words.length > 0) glosses.push({ words, structural });
+      if (words.length > 0) glosses.push({ words, structural, secondary });
       spanStart += span.length + 1;
-    }
+    });
     segmentStart += segment.length + 1;
   }
   return glosses;
@@ -130,6 +133,8 @@ const isScaffolding = (word: GlossWord, position: number) =>
 function shortcutWordsForGloss(gloss: Gloss): GlossWord[] {
   const { words } = gloss;
   if (gloss.structural) {
+    // Also anchors an enumerated noun after "measure word for …"; the structural branch is
+    // what keeps such anchors off the meta-word ("measure", "suffix", …).
     return [words.find((word, i) => !STRUCTURAL_WORDS.has(word.text) && !isScaffolding(word, i)) ?? words[0]!];
   }
 
@@ -159,12 +164,17 @@ function toShortcut(word: GlossWord): MeaningShortcut | null {
 }
 
 /** Returns up to `MAX_SHORTCUTS_PER_CHOICE` distinct keys: one per comma- or
- * semicolon-separated gloss, then any phrasal-verb particles. Within each gloss the
- * operative word skips grammatical scaffolding. */
+ * semicolon-separated gloss, then structural-enumeration nouns and phrasal-verb particles.
+ * Within each gloss the operative word skips grammatical scaffolding. */
 export function choiceShortcutsForLabel(label: string): MeaningShortcut[] {
   const collect = (source: string): MeaningShortcut[] => {
-    const perGloss = glossesForLabel(source).map(shortcutWordsForGloss);
-    const ordered = [...perGloss.map((words) => words[0]!), ...perGloss.flatMap((words) => words.slice(1))];
+    const analyzed = glossesForLabel(source).map((gloss) => ({ secondary: gloss.secondary, words: shortcutWordsForGloss(gloss) }));
+    const heads = analyzed.filter((entry) => !entry.secondary).map((entry) => entry.words[0]!);
+    const tails = [
+      ...analyzed.filter((entry) => entry.secondary).flatMap((entry) => entry.words),
+      ...analyzed.filter((entry) => !entry.secondary).flatMap((entry) => entry.words.slice(1)),
+    ];
+    const ordered = [...heads, ...tails];
     const shortcuts: MeaningShortcut[] = [];
     const seen = new Set<ChoiceKey>();
     for (const word of ordered) {

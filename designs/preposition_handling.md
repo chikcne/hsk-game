@@ -95,6 +95,8 @@ disabling a whole question category.
 A secondary effect: within `measure word for pieces, chunks, money`, the enumerated nouns
 become glosses, so `C` ("chunks") and `M` ("money") become hotkeys for things the word does not
 mean. Same for `measure word for trees, plants, and other similar objects` → an `A` on "and".
+(Revised during implementation, see the Outcome — the enumeration nouns are back as keys, but
+ranked below every gloss's primary.)
 
 **Suggested handling:** anchor structural glosses on the *counted noun* rather than on
 "measure" (`measure word for books` → `B`), and do not split the enumeration after
@@ -345,7 +347,17 @@ Decisions taken where this document deferred:
   `to come back` → `C` `B`. Anchoring on the particle instead was measured over the corpus and
   is much worse: `out`/`on`/`over`/`off` collapse 51 glosses onto `O` and `up` collapses 37 onto
   `U`, while verb initials spread across the alphabet (worst bucket `go`, 13).
-- **Key cap: 3, deduped.**
+- **Key cap: 5 — first key primary, up to four secondary; deduped.** Raised from 3 by
+  decision that answering convenience outranks distractor-pool width: extra claimed letters
+  block a few more distractors, and all six decks still pack ≥ 7 non-colliding distractors
+  per word at import time. 66 labels claim 4–5 keys at this cap.
+- **Structural enumerations keyed, ranked second.** The first cut dropped the nouns after
+  `measure word for` entirely (`measure word for pieces, chunks, money` → only `P`), which
+  stripped legitimate alternate keys from words like 块 (which really does mean money). Commas
+  inside a structural gloss now enumerate its counted nouns as *secondary* anchors, ordered
+  below every gloss's primary key: the label answers to `P`, `C` or `M`, while the primary
+  still comes from the counted noun and the meta-word ("measure", "suffix", …) never claims a
+  key. All six decks still pack ≥ 7 non-colliding distractors per word at import time.
 
 Measured over the full corpus (4,998 labels; 32,388 simulated draws):
 
@@ -355,7 +367,7 @@ Measured over the full corpus (4,998 labels; 32,388 simulated draws):
 | `particle …` rounds, same | 46/48 (96%) | 6/60 (10%) |
 | `suffix …` rounds, same | 33/33 (100%) | 36/66 (55%) |
 | Distractors sharing the target's part of speech | 26.8% | 91.2% |
-| Maximum keys claimed by one label | 9 | 3 |
+| Maximum keys claimed by one label | 9 | 5 |
 | Near-duplicate label pairs sharing a primary key | 4,610 | 3,380 |
 | Labels whose highlight index mismatches its key | 0 | 0 |
 | Rounds that fail to fill | 0 | 0 |

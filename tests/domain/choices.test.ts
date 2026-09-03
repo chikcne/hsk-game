@@ -87,13 +87,14 @@ describe("meaning choices", () => {
     expect(choiceShortcutForLabel("measure word for books")).toEqual({ key: "B", index: 17 });
     expect(keys("measure word for people")).toBe("P");
     expect(keys("measure word for an indefinite amount")).toBe("I");
-    // The enumeration names one measure word, not three meanings.
-    expect(keys("measure word for pieces, chunks, money")).toBe("P");
-    expect(keys("measure word for trees, plants, and other similar objects")).toBe("T");
+    // The enumeration names one measure word, not three meanings, so its nouns rank below
+    // every gloss's primary key — but they still claim keys (块 answers with P, C or M).
+    expect(keys("measure word for pieces, chunks, money")).toBe("PCM");
+    expect(keys("measure word for trees, plants, and other similar objects")).toBe("TPO");
     // A semicolon still starts a new gloss.
     expect(keys("measure word for books; volume")).toBe("BV");
-    expect(keys("suffix meaning person, one who")).toBe("P");
-    expect(keys("particle indicating suggestion, confirmation, or hesitation")).toBe("S");
+    expect(keys("suffix meaning person, one who")).toBe("PO");
+    expect(keys("particle indicating suggestion, confirmation, or hesitation")).toBe("SCH");
     expect(keys("prefix for ordinal numbers")).toBe("O");
     expect(keys("auxiliary word (classical)")).toBe("A");
   });
@@ -140,9 +141,9 @@ describe("meaning choices", () => {
   it("caps and dedupes the keys one choice may claim", () => {
     expect(keys("he, him")).toBe("H");
     expect(keys("not, no")).toBe("N");
-    expect(keys("light, rayl smooth, shiny, used up; bare, expose; only, merely, solely")).toBe("LRS");
-    expect(keys("to be certain, to be sure, to affirm; positive, affirmative, definite; surely, certainly, definitely")).toBe("CSA");
-    for (const label of everyLabel) expect(choiceShortcutsForLabel(label).length).toBeLessThanOrEqual(3);
+    expect(keys("light, rayl smooth, shiny, used up; bare, expose; only, merely, solely")).toBe("LRSUB");
+    expect(keys("to be certain, to be sure, to affirm; positive, affirmative, definite; surely, certainly, definitely")).toBe("CSAPD");
+    for (const label of everyLabel) expect(choiceShortcutsForLabel(label).length).toBeLessThanOrEqual(5);
   });
 
   it("marks the letter it keys, for every label in every compiled deck", () => {
