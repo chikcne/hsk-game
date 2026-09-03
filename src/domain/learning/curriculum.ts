@@ -45,19 +45,26 @@ export function introduceNewWords(
   const known = new Set(deckIds);
   if (known.size !== deckIds.length) throw new Error("Deck word IDs must be unique");
 
-  let poolCount = Object.values(level.words).filter(
+  const existingIntroduced = Object.values(level.words).filter(
+    (progress) => progress.introducedAtOrdinal !== null,
+  ).length;
+  const poolCount = Object.values(level.words).filter(
     (progress) => progress.introducedAtOrdinal !== null && !isGraduated(progress),
   ).length;
-  let cursor = Math.min(level.curriculumCursor, deckIds.length);
-  if (poolCount >= poolSize || cursor >= deckIds.length) return { level, introduced: 0 };
+  if (poolCount >= poolSize || existingIntroduced >= deckIds.length) {
+    const curriculumCursor = Math.min(existingIntroduced, deckIds.length);
+    return { level: curriculumCursor === level.curriculumCursor ? level : { ...level, curriculumCursor }, introduced: 0 };
+  }
 
+  // Scan the complete deterministic order rather than assuming every item
+  // before curriculumCursor is introduced. A deck fingerprint change can
+  // reshuffle that order; filtering by the persisted introduction marker
+  // prevents newly earlier words from being skipped forever.
   const order = curriculumOrder(deck, level.curriculumSeed);
   let words: Record<string, WordProgress> = level.words;
   let introduced = 0;
-  while (poolCount + introduced < poolSize && cursor < order.length) {
-    const id = order[cursor];
-    cursor += 1;
-    if (id === undefined) continue;
+  for (const id of order) {
+    if (poolCount + introduced >= poolSize) break;
     const progress = words[id];
     if (!progress || progress.introducedAtOrdinal !== null) continue;
     if (words === level.words) words = { ...level.words };
@@ -66,7 +73,7 @@ export function introduceNewWords(
   }
 
   return {
-    level: { ...level, curriculumCursor: cursor, words },
+    level: { ...level, curriculumCursor: Math.min(existingIntroduced + introduced, deckIds.length), words },
     introduced,
   };
 }

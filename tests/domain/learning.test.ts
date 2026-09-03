@@ -262,6 +262,27 @@ describe("reconciliation and invariants", () => {
     expect(validateLevelInvariants(result.level, newDeck, 7)).toEqual([]);
   });
 
+  it("does not skip words when a fingerprint change reshuffles the curriculum", () => {
+    const oldDeck = deck(30, "old-fingerprint", "stable");
+    const original = freshLevel(oldDeck);
+    const newDeck = deck(30, "new-fingerprint", "stable");
+    let level = reconcileLevelProgress(original, newDeck, 7).level;
+
+    for (const [id, progress] of Object.entries(level.words)) {
+      if (progress.introducedAtOrdinal === null) continue;
+      const due = new Date(NOW + 86_400_000).toISOString();
+      const lastReview = new Date(NOW).toISOString();
+      level = updateWord(level, id, {
+        pinyin: { ...progress.pinyin, state: "review", reps: 2, stability: 3, difficulty: 5, due, lastReview },
+        meaning: { ...progress.meaning, state: "review", reps: 2, stability: 3, difficulty: 5, due, lastReview },
+      });
+    }
+
+    level = introduceNewWords(level, newDeck, 20, 8).level;
+    expect(Object.values(level.words).filter((word) => word.introducedAtOrdinal === null)).toEqual([]);
+    expect(level.curriculumCursor).toBe(30);
+  });
+
   it("diagnoses malformed progress", () => {
     const source = deck(30);
     const valid = freshLevel(source);

@@ -22,6 +22,9 @@ describe("automatic FSRS rating mapping", () => {
     expect(autocompleted.ratings.meaning).toBe("good");
     expect(autocompleted.progress.pinyin.state).toBe("learning");
     expect(autocompleted.progress.meaning.reps).toBe(1);
+    expect(autocompleted.progress.completeCorrect).toBe(0);
+    expect(autocompleted.progress.wrongPinyin).toBe(1);
+    expect(autocompleted.progress.lastOutcome).toBe("wrongPinyin");
     expect(autocompleted.struggled).toBe(true);
     expect(autocompleted.cooldownPhrases).toBe(3);
   });

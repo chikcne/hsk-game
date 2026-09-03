@@ -10,7 +10,9 @@ const isoTimestamp = z.string().datetime({ offset: true });
 const rngSchema = z.tuple([
   z.number().int().min(0).max(UINT32_MAX), z.number().int().min(0).max(UINT32_MAX),
   z.number().int().min(0).max(UINT32_MAX), z.number().int().min(0).max(UINT32_MAX),
-]);
+]).refine((state) => state.some((word) => word !== 0), {
+  message: "scheduler RNG state must not be all zero",
+});
 
 const StrictSettingsSchema = SettingsSchema.strict();
 const StrictComponentMemorySchema = WordProgressSchema.shape.pinyin.extend({
@@ -80,8 +82,21 @@ function checkSemanticInvariants(save: z.infer<typeof SaveSnapshotSchema>, conte
         for (const component of ["pinyin", "meaning"] as const) {
           const memory = word[component];
           const memoryPath = [...path, component];
-          if (memory.state !== "new" && memory.lastReview === null) {
-            addIssue(context, [...memoryPath, "lastReview"], `a ${memory.state} card must record its last review`);
+          if (memory.state !== "new") {
+            if (memory.lastReview === null) {
+              addIssue(context, [...memoryPath, "lastReview"], `a ${memory.state} card must record its last review`);
+            }
+            if (memory.difficulty < 1) {
+              addIssue(context, [...memoryPath, "difficulty"], `a ${memory.state} card must have difficulty of at least 1`);
+            }
+            if (memory.stability <= 0) {
+              addIssue(context, [...memoryPath, "stability"], `a ${memory.state} card must have positive stability`);
+            }
+          } else if (memory.lastReview !== null) {
+            addIssue(context, [...memoryPath, "lastReview"], "a new card cannot have a last review");
+          }
+          if (memory.lastReview !== null && Date.parse(memory.due) < Date.parse(memory.lastReview)) {
+            addIssue(context, [...memoryPath, "due"], "must not precede the last review");
           }
         }
       }

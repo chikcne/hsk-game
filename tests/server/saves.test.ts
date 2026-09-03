@@ -165,6 +165,35 @@ describe("save validation", () => {
     expect(() => parseSaveSnapshot(snapshot)).toThrow(/sum of outcome counters|intervening spawns/);
   });
 
+  it("rejects scheduler states that domain constructors cannot use", () => {
+    const zeroRng = makeSnapshot();
+    zeroRng.schedulerRng = [0, 0, 0, 0];
+    expect(() => parseSaveSnapshot(zeroRng)).toThrow(/must not be all zero/);
+
+    const invalidCard = makeSnapshotWithWord();
+    invalidCard.levels["hsk-1"]!.words["word-1"]!.pinyin = {
+      ...invalidCard.levels["hsk-1"]!.words["word-1"]!.pinyin,
+      state: "review",
+      reps: 3,
+      stability: 3,
+      difficulty: 0,
+      lastReview: "2024-12-29T00:00:00.000Z",
+    };
+    expect(() => parseSaveSnapshot(invalidCard)).toThrow(/difficulty of at least 1/);
+
+    const reversedDates = makeSnapshotWithWord();
+    reversedDates.levels["hsk-1"]!.words["word-1"]!.pinyin = {
+      ...reversedDates.levels["hsk-1"]!.words["word-1"]!.pinyin,
+      state: "review",
+      reps: 3,
+      stability: 3,
+      difficulty: 5,
+      due: "2025-01-01T00:00:00.000Z",
+      lastReview: "2099-01-01T00:00:00.000Z",
+    };
+    expect(() => parseSaveSnapshot(reversedDates)).toThrow(/must not precede/);
+  });
+
   it("rejects unknown current word IDs when a generated manifest is available", () => {
     const catalog: DeckCatalog = new Map([
       ["hsk-1", { fingerprint: "fixture-fingerprint", wordIds: new Set(["known"]) }],

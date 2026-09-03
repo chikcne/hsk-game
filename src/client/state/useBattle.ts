@@ -167,6 +167,7 @@ export function useBattle(
   const nextSpawnPreview = useRef<SpawnPreview | null | undefined>(undefined);
   const availabilityRef = useRef<Availability>("ready");
   const lastOrdinalAdvance = useRef(0);
+  const lastWaitingCheck = useRef(0);
   /** Enemy ids whose pinyin was revealed by the recall window; their meaning
    * phase still counts, but the pinyin component grades Again. */
   const autocompleteRevealed = useRef(new Set<string>());
@@ -311,9 +312,17 @@ export function useBattle(
     const thinking = outcome.kind === "correct" || outcome.kind === "wrongMeaning"
       ? outcome.pinyinMs + outcome.meaningMs
       : outcome.kind === "wrongPinyin" ? outcome.pinyinMs : outcome.activeThinkingMs ?? 0;
+    const pinyinAutocompleted = (outcome.kind === "correct" || outcome.kind === "wrongMeaning")
+      && outcome.pinyinAutocompleted === true;
+    // The domain still receives the full two-component result so meaning can
+    // be graded, but arcade/lifetime accounting treats a reveal as the pinyin
+    // miss it was rather than as a complete success.
+    const accountedOutcome: EncounterOutcome = pinyinAutocompleted
+      ? { kind: "wrongPinyin", pinyinMs: outcome.pinyinMs }
+      : outcome;
     const currentPerformanceMultiplier = performanceMultiplierRef.current;
     const effectiveSpawnIntervalMs = settings.spawnIntervalMs / currentPerformanceMultiplier;
-    const points = outcome.kind === "correct"
+    const points = accountedOutcome.kind === "correct"
       ? calculatePoints(
         thinking,
         streakRef.current,
@@ -322,8 +331,6 @@ export function useBattle(
       )
       : 0;
     const now = new Date();
-    const pinyinAutocompleted = (outcome.kind === "correct" || outcome.kind === "wrongMeaning")
-      && outcome.pinyinAutocompleted === true;
     const pinyinLength = Math.max(1, canonicalizePinyin(word.acceptedPinyin[0] ?? word.displayPinyin).length);
 
     let feedback: Feedback;
@@ -333,7 +340,7 @@ export function useBattle(
 
     const previous = levelsRef.current[deckId]?.words[wordId];
     if (!previous) return;
-    if (config.kind === "regular") protectsMiss = outcome.kind !== "correct" && isUnseenWord(previous);
+    if (config.kind === "regular") protectsMiss = accountedOutcome.kind !== "correct" && isUnseenWord(previous);
 
     const result = applyOutcomeToLevels(
       levelsRef.current, deckId, wordId, outcome, now, snapshotRef.current.spawnOrdinal,
@@ -345,21 +352,21 @@ export function useBattle(
     const lessonCompleted = config.kind === "regular" && startLesson.current !== null
       ? Math.max(0, curriculumLessonNumber(result.levels[config.deck.id]!, settings.levelSize) - startLesson.current)
       : 0;
-    updateSessionStats(word, outcome, pinyinMs, points, result.newlyGraduated, result.struggled, lessonCompleted, protectsMiss);
-    config.onChange({ levels: result.levels, snapshot: snapshotRef.current }, outcome, points);
+    updateSessionStats(word, accountedOutcome, pinyinMs, points, result.newlyGraduated, result.struggled, lessonCompleted, protectsMiss);
+    config.onChange({ levels: result.levels, snapshot: snapshotRef.current }, accountedOutcome, points);
     feedback = {
-      id: enemy.id, kind: outcome.kind === "correct" ? "correct" : outcome.kind === "landed" ? "landed" : "miss",
+      id: enemy.id, kind: accountedOutcome.kind === "correct" ? "correct" : accountedOutcome.kind === "landed" ? "landed" : "miss",
       word, typed, points, ratings: result.ratings,
       nextDueInMs: nextDueAtMs(result.progress) - now.getTime(),
       struggled: result.struggled,
     };
 
-    const nowStreak = nextStreak(streakRef.current, outcome.kind === "correct", protectsMiss);
+    const nowStreak = nextStreak(streakRef.current, accountedOutcome.kind === "correct", protectsMiss);
     streakRef.current = nowStreak;
 
     const nextMultiplier = nextPerformanceMultiplier(
       currentPerformanceMultiplier,
-      outcome.kind === "correct",
+      accountedOutcome.kind === "correct",
       thinking,
     );
     performanceMultiplierRef.current = nextMultiplier;
@@ -378,7 +385,7 @@ export function useBattle(
     }
 
     playSoundEffect(feedback.kind === "correct" ? "blaster" : "buzzer", settings.masterVolume);
-    if (outcome.kind === "wrongPinyin" || outcome.kind === "wrongMeaning") playWordAudio(word);
+    if (accountedOutcome.kind === "wrongPinyin" || accountedOutcome.kind === "wrongMeaning") playWordAudio(word);
     setFeedback(feedback);
     if (feedback.kind !== "correct") {
       learningPausedRef.current = true; setLearningPaused(true);
@@ -523,6 +530,14 @@ export function useBattle(
                 lastOrdinalAdvance.current = now;
                 snapshotRef.current = advanceOrdinal(snapshotRef.current);
                 setSnapshot(snapshotRef.current);
+                nextSpawnPreview.current = undefined;
+              }
+            } else if (availabilityRef.current === "waiting") {
+              // FSRS due-ness changes with wall time. A null preview cannot be
+              // cached indefinitely or a card that becomes due inside the
+              // session horizon will never be observed.
+              if (now - lastWaitingCheck.current >= EMPTY_BATTLEFIELD_SPAWN_DELAY_MS) {
+                lastWaitingCheck.current = now;
                 nextSpawnPreview.current = undefined;
               }
             } else if (availabilityRef.current === "complete") {

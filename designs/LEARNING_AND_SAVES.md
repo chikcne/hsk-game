@@ -171,7 +171,8 @@ graduated or relearning, across all grades:
   (`fsrs.get_retrievability` on the weaker component);
 - rounds are **finite**: when nothing is due the round ends — no fillers, no
   active key pools, no ordinal jumping. The deck-select review column shows
-  the honest due count and is disabled at zero.
+  the actionable count (due and clear of ordinal cooldown) and is disabled at
+  zero.
 
 Un-graduated (`new`/`learning`) words belong to their grade's regular mode
 and never appear in review.

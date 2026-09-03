@@ -134,6 +134,21 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 @keyframes load { to { transform: translateX(140%); } }
 
 /* Grade menu */
+.deck-load-error {
+  position: fixed;
+  z-index: 80;
+  top: max(18px, env(safe-area-inset-top));
+  left: 50%;
+  width: min(680px, calc(100vw - 40px));
+  margin: 0;
+  padding: 10px 14px;
+  transform: translateX(-50%);
+  border: 1px solid var(--cinnabar-dark);
+  background: var(--paper-light);
+  color: var(--cinnabar-dark);
+  text-align: center;
+  font-size: 13px;
+}
 .deck-screen {
   width: 100%;
   height: 100dvh;

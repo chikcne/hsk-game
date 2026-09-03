@@ -133,7 +133,14 @@ describe("cross-grade FSRS review scheduling", () => {
         unstarted: { ...reviewedWord(), introducedAtOrdinal: null },
       }),
     };
-    expect(countDueReviewWords(levels, new Date(NOW))).toBe(2); // `due` + `lapsed`
+    expect(countDueReviewWords(levels, new Date(NOW), SNAPSHOT.spawnOrdinal)).toBe(2); // `due` + `lapsed`
+  });
+
+  it("does not advertise due cards that are still under ordinal cooldown", () => {
+    const cooling = { ...reviewedWord(), nextEligibleSpawn: 4 };
+    const levels: LevelsMap = { "hsk-1": level("hsk-1", { cooling }) };
+    expect(countDueReviewWords(levels, new Date(NOW), 1)).toBe(0);
+    expect(countDueReviewWords(levels, new Date(NOW), 4)).toBe(1);
   });
 
   it("maps review keys to their grade and word", () => {

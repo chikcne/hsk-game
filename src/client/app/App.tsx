@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent, type
 import { CHOICE_KEYS, DECK_IDS, DECK_TOTALS, DEFAULT_SETTINGS, type ChoiceKey, type DeckId } from "../../shared/constants";
 import { RuntimeDeckSchema, type DifficultySettings, type LevelProgress, type SaveFile, type RuntimeDeck } from "../../shared/schemas";
 import { countDueReviewWords } from "../../domain/review";
-import { countGraduated, curriculumLessonNumber } from "../../domain/learning";
+import { countGraduated, curriculumLessonNumber, reconcileLevelProgress } from "../../domain/learning";
 import type { EncounterOutcome } from "../../domain/session/types";
 import { createDemoDeck } from "../data/demoDeck";
 import { createReviewDeck } from "../data/reviewDeck";
@@ -45,12 +45,15 @@ function useMobileLayout() {
   return mobile;
 }
 
-async function loadRuntimeDeck(id: DeckId): Promise<RuntimeDeck> {
+async function loadRuntimeDeck(id: DeckId, allowDemoFallback = true): Promise<RuntimeDeck> {
   try {
     const response = await fetch(`/game-data/${id}/deck.json`);
     if (!response.ok) throw new Error("Generated deck not found");
     return RuntimeDeckSchema.parse(await response.json());
-  } catch {
+  } catch (error) {
+    // Never reconcile persisted progress against a transient demo deck: doing
+    // so can orphan the real vocabulary and create unresolvable review cards.
+    if (!allowDemoFallback) throw error;
     return createDemoDeck(id);
   }
 }
@@ -83,6 +86,7 @@ export function App() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [paused, setPaused] = useState(false);
   const [summary, setSummary] = useState<SessionStats | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
     const uiStrokes = loadUiStrokeBundle().then((loaded) => {
@@ -137,24 +141,54 @@ export function App() {
 
   const deploy = async (id: DeckId) => {
     unlockSoundEffects();
+    setLoadError(null);
     setMode("regular"); setSelected(id); setScreen("loading");
-    const [loadedDeck, loadedStrokes] = await Promise.all([loadRuntimeDeck(id), loadStrokeBundle(id)]);
-    setDeck(loadedDeck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
-    setPaused(false); setScreen("battle");
+    try {
+      const hasProgress = saveRef.current?.levels[id] !== undefined;
+      const [loadedDeck, loadedStrokes] = await Promise.all([loadRuntimeDeck(id, !hasProgress), loadStrokeBundle(id)]);
+      setDeck(loadedDeck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
+      setPaused(false); setScreen("battle");
+    } catch {
+      setDeck(null);
+      setLoadError(`Could not load ${deckLabel(id)} data. Your saved progress was not changed.`);
+      setScreen("decks");
+    }
   };
   const deployReview = async () => {
-    if (!saveRef.current) return;
-    // Review rounds are finite: they contain exactly the cards that are due.
-    if (countDueReviewWords(saveRef.current.levels, new Date()) === 0) return;
+    const current = saveRef.current;
+    if (!current) return;
+    // Review rounds are finite and only start when at least one due card has
+    // also cleared its global ordinal cooldown.
+    if (countDueReviewWords(current.levels, new Date(), current.spawnOrdinal) === 0) return;
     unlockSoundEffects();
+    setLoadError(null);
     setMode("review"); setScreen("loading");
-    const [loaded, loadedStrokes] = await Promise.all([
-      Promise.all(DECK_IDS.map(async (id) => [id, await loadRuntimeDeck(id)] as const)),
-      loadStrokeBundles(DECK_IDS),
-    ]);
-    const reviewDeck = createReviewDeck(new Map(loaded), saveRef.current.levels);
-    setDeck(reviewDeck.deck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
-    setPaused(false); setScreen("battle");
+    try {
+      const [loaded, loadedStrokes] = await Promise.all([
+        Promise.all(DECK_IDS.map(async (id) => [id, await loadRuntimeDeck(id, current.levels[id] === undefined)] as const)),
+        loadStrokeBundles(DECK_IDS),
+      ]);
+      const loadedDecks = new Map(loaded);
+      let levels = current.levels;
+      for (const [id, loadedDeck] of loaded) {
+        const existing = levels[id];
+        if (!existing || existing.deckFingerprint === loadedDeck.fingerprint) continue;
+        const reconciled = reconcileLevelProgress(existing, loadedDeck, current.spawnOrdinal).level;
+        levels = { ...levels, [id]: reconciled };
+      }
+      if (levels !== current.levels) queueSnapshot({ ...current, levels });
+      if (countDueReviewWords(levels, new Date(), current.spawnOrdinal) === 0) {
+        setScreen("decks");
+        return;
+      }
+      const reviewDeck = createReviewDeck(loadedDecks, levels);
+      setDeck(reviewDeck.deck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
+      setPaused(false); setScreen("battle");
+    } catch {
+      setDeck(null);
+      setLoadError("Could not load all saved grade data. Review was not started and progress was not changed.");
+      setScreen("decks");
+    }
   };
   const applySettings = (settings: DifficultySettings) => {
     if (!saveRef.current) return;
@@ -165,6 +199,7 @@ export function App() {
 
   if (!save || screen === "loading") return <LoadingScreen hasSave={Boolean(save)} strokeData={uiStrokeData} />;
   if (screen === "decks") return <>
+    {loadError && <p className="deck-load-error" role="alert">{loadError}</p>}
     <DeckSelect save={save} settings={settings} selected={selected} strokeData={uiStrokeData} onSelect={setSelected} onDeploy={deploy} onReview={deployReview} onSettings={() => setSettingsOpen(true)} />
     {settingsOpen && <SettingsDialog settings={settings} onApply={applySettings} onClose={() => setSettingsOpen(false)} />}
   </>;
@@ -216,7 +251,7 @@ function DeckSelect({ save, settings, selected, strokeData, onSelect, onDeploy, 
   const [activeIndex, setActiveIndex] = useState(() => DECK_IDS.indexOf(selected) + 1);
   const columnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const totalMastered = DECK_IDS.reduce((sum, id) => sum + masteredCount(save.levels[id]), 0);
-  const dueReviewCount = countDueReviewWords(save.levels, new Date());
+  const dueReviewCount = countDueReviewWords(save.levels, new Date(), save.spawnOrdinal);
   const selectedLevel = save.levels[selected];
   const selectedMastered = masteredCount(selectedLevel);
   const selectedTotal = selectedLevel ? Object.keys(selectedLevel.words).length : DECK_TOTALS[selected];

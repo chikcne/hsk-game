@@ -81,18 +81,26 @@ export function applyWordOutcome(
     ? finiteDuration(outcome.pinyinMs, "pinyinMs") + finiteDuration(outcome.meaningMs, "meaningMs")
     : outcome.kind === "wrongPinyin" ? finiteDuration(outcome.pinyinMs, "pinyinMs")
     : outcome.activeThinkingMs === null ? 0 : finiteDuration(outcome.activeThinkingMs, "activeThinkingMs");
+  // Aggregate outcomes are mutually exclusive. A revealed pinyin is a pinyin
+  // miss even when the subsequent meaning recognition succeeds (or also
+  // fails), so it must not inflate complete-correct counts or accuracy.
+  const recordedOutcome: WordProgress["lastOutcome"] = revealed &&
+    (outcome.kind === "correct" || outcome.kind === "wrongMeaning")
+    ? "wrongPinyin"
+    : outcome.kind;
+  const completedWithoutReveal = outcome.kind === "correct" && !revealed;
 
   const updated: WordProgress = {
     ...progress,
     pinyin: reviewComponentMemory(progress.pinyin, pinyinRating, now),
     meaning: meaningRating === null ? progress.meaning : reviewComponentMemory(progress.meaning, meaningRating, now),
     attempts: progress.attempts + 1,
-    completeCorrect: progress.completeCorrect + (outcome.kind === "correct" ? 1 : 0),
-    wrongPinyin: progress.wrongPinyin + (outcome.kind === "wrongPinyin" ? 1 : 0),
-    wrongMeaning: progress.wrongMeaning + (outcome.kind === "wrongMeaning" ? 1 : 0),
-    landed: progress.landed + (outcome.kind === "landed" ? 1 : 0),
+    completeCorrect: progress.completeCorrect + (completedWithoutReveal ? 1 : 0),
+    wrongPinyin: progress.wrongPinyin + (recordedOutcome === "wrongPinyin" ? 1 : 0),
+    wrongMeaning: progress.wrongMeaning + (recordedOutcome === "wrongMeaning" ? 1 : 0),
+    landed: progress.landed + (recordedOutcome === "landed" ? 1 : 0),
     totalThinkingMs: progress.totalThinkingMs + thinkingMs,
-    fastestCorrectMs: outcome.kind === "correct"
+    fastestCorrectMs: completedWithoutReveal
       ? progress.fastestCorrectMs === null ? thinkingMs : Math.min(progress.fastestCorrectMs, thinkingMs)
       : progress.fastestCorrectMs,
     totalPinyinMs: progress.totalPinyinMs + (pinyinMs ?? 0),
@@ -100,7 +108,7 @@ export function applyWordOutcome(
       ? progress.fastestPinyinMs
       : progress.fastestPinyinMs === null ? pinyinMs : Math.min(progress.fastestPinyinMs, pinyinMs),
     lastPinyinMs: pinyinMs,
-    lastOutcome: outcome.kind,
+    lastOutcome: recordedOutcome,
     lastSeenAt: new Date(now).toISOString(),
   };
 

@@ -26,16 +26,16 @@ export function reviewWordIdOf(key: string): { deckId: string; wordId: string } 
   return { deckId: key.slice(0, separator), wordId: key.slice(separator + 1) };
 }
 
-/** Counts introduced graduated-or-relearning words that are due right now —
- * the honest size of a review session. */
-export function countDueReviewWords(levels: LevelsMap, now: string | Date): number {
+/** Counts introduced graduated-or-relearning words that are due and eligible
+ * at the current global ordinal — the actionable size of a review session. */
+export function countDueReviewWords(levels: LevelsMap, now: string | Date, spawnOrdinal: number): number {
   let count = 0;
   for (const level of Object.values(levels)) {
     if (!level) continue;
     for (const progress of Object.values(level.words)) {
       if (progress.introducedAtOrdinal === null) continue;
       const repairable = isRelearning(progress.pinyin) || isRelearning(progress.meaning) || isGraduated(progress);
-      if (repairable && isMemoryDue(progress, now)) count += 1;
+      if (repairable && isMemoryDue(progress, now) && progress.nextEligibleSpawn <= spawnOrdinal) count += 1;
     }
   }
   return count;
