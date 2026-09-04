@@ -119,49 +119,47 @@ With fixed seed and 100,000 draws:
 
 Test rejection behavior with a scripted RNG that first produces out-of-range values and then a valid value.
 
-### Tiers, cooldowns, and due selection
+### Learn sessions and due selection
 
-- deterministic curriculum introduces exactly `levelSize` words initially and never introduces one twice;
-- graduating a pool word (both components `review`) removes it from the derived pool and introduces the next unseen word;
-- a lapsed graduate rejoins the acquisition pool automatically (derived, never stored);
-- cooling words are never selected: an empty battlefield with due-but-cooling words reports `coolingOnly` and the ordinal advances instead of spawning early (regression test for the old cooldown bypass);
-- not-yet-due words are never selected; sessions end when nothing comes due within the 120 s horizon;
-- review mode serves only due graduated/relearning cards, ends finite rounds with no graded fillers (regression tests for the old filler and stale-pool bugs), prioritizes relearning, and orders maintenance by lowest retrievability;
-- reservations set `nextEligibleSpawn` against the global ordinal so a word cannot respawn in the other mode either;
+- deterministic curriculum introduces exactly the capped new cards per session, in stable order, never introducing one twice;
+- a fresh grade starts fully unintroduced; introduction happens only inside `createLearnSession` (or reconciliation);
+- a session contains every due introduced word plus up to `levelSize` new cards, due words first, persisted verbatim (`tests/domain/learn.test.ts`);
+- the next card is always the earliest due remaining member; ties break on stable ID;
+- learn-ahead: with nothing currently due the earliest future member is served rather than waiting (regression test for "make the user wait");
+- a word leaves the session only when a rating leaves its card in review (`completedWordIds`); a due maintenance card that already sat in review is still served; an Again keeps it in the session until it passes;
+- the session clears when the last member completes, so the next grade click starts fresh;
+- exact resume: JSON round-trip of the save reproduces the same served card and identical subsequent state;
+- review mode draws only from the `acquired_words` recency log, never from FSRS due dates: the deterministic base plan guarantees exact quotas (ranks 0–19 twice, 20–99 once, Old fillers; boundaries 19/20/99/100; exact 200/500 counts; small/empty pools via Recent/New fallbacks), interleaves tiers, and the pure spawn-session reducer enforces delayed (10 base spawns) additive retries until a clean correct encounter, never spawning a word concurrently, and completing only when all base spawns resolved, no enemy remains, and every obligation is cleared; battle outcomes never write word records;
+- relearn keeps one cross-grade session with independent per-member cards and counters (never copied to `save.levels`), serves earliest-due with learn-ahead, resumes exactly, moves finished keys to the front of `acquired_words`, and clears on completion;
 - official minimum deck size never produces a deadlock in long simulation (workload simulation test).
 
 Property test random save states satisfying invariants, then ensure selected IDs are always from the calculated eligible tier.
 
 ## 5. Memory and rating tests
 
-Automatic FSRS rating boundaries (constants in `src/domain/memory/ratings.ts`):
+Learn Mode uses explicit self-ratings (no latency auto-grading):
 
-- revealed (autocompleted) pinyin grades pinyin Again even when the meaning choice succeeds;
-- per-character latency: ≤ 800 ms/char is Easy (capped to Good on a first exposure), > 2500 ms/char is Hard (still a pass), otherwise Good;
-- wrong pinyin grades pinyin Again and never touches the meaning component;
-- correct meaning ≤ 5 s is Good, > 5 s is Hard; wrong meaning is Again;
-- a word is graduated only when both components are in the review state;
-- familiarity for speed/pressure derives from FSRS state only;
-- audio failure does not change outcome; pause/hidden time is excluded;
-- speed/spawn settings do not change scheduling for the same response milliseconds.
-
-Counter invariant after arbitrary outcome sequence:
-
-```text
-attempts = completeCorrect + wrongPinyin + wrongMeaning + landed
-```
+- the four ratings apply to the single card via `reviewCardMemory`; the input card is never mutated;
+- with default parameters a new card lands at `Again → learning ~1m`, `Hard → learning ~6m`, `Good → learning ~10m`, `Easy → review ~8d`;
+- interval previews (`previewLearnCard` + `formatLearnInterval`) equal the applied result and are formatted as minutes/hours/days;
+- acquisition: the first review-state rating prepends the cross-grade key to `acquired_words` exactly once; later ratings never reorder or duplicate; lapses keep the word in the table;
+- `learnReviews`/`lastSeenAt` advance with every rating; card `reps`/`lapses` follow FSRS;
+- acquisition and due-ness predicates: review/relearning are acquired; never-reviewed cards are due immediately;
+- review-arcade enemy speed and spawn pressure derive from acquisition recency only (never FSRS state);
+- review battles never mutate card memory (spawn returns no word records; the plan + obligation reducer makes sessions finite);
+- relearn ratings mutate only the session's independent cards; strict validation rejects incoherent relearn sessions (duplicate keys, member/card mismatches, non-acquired members, counter/card-state contradictions) but never compares relearn cards to main cards;
+- counter coherence of the save: strict server validation rejects learning/review cards without `lastReview`, new cards with one, due-before-lastReview, unknown or duplicate session members, duplicate acquired keys, and incoherent `relearnSession` structures.
 
 Completion:
 
 - the final word graduating sets `firstCompletedAt` once;
-- another correct does not change timestamp;
 - a later lapse emits grade regression but preserves the timestamp;
-- reconciled added words join the pool while preserving the prior clear milestone.
+- reconciled added words join the next session's due set while preserving the prior clear milestone.
 
-A seeded 90-day workload simulation drives the real scheduler + FSRS with a
-retrievability-driven synthetic player and asserts bounded backlogs, finite
-sessions, stability growth, graduation throughput, and no card regressing to
-an unseen state (see `tests/domain/workload.test.ts`).
+A seeded 90-day Learn-session workload simulation drives the real session
+engine + FSRS with a seeded synthetic player and asserts bounded backlogs,
+finite sessions, acquisition throughput with exact-once ordering, and no card
+regressing to an unseen state (see `tests/domain/workload.test.ts`).
 
 ## 6. Encounter reducer tests
 
@@ -239,8 +237,10 @@ Use a temporary directory, never real `saves/`.
 - first GET returns valid default;
 - valid PUT increments server-owned revision;
 - stale expected revision returns 409 and does not write;
-- payload >2 MiB returns 413;
+- payload over the configured limit returns 413;
 - malformed JSON/schema/out-of-range values return 400;
+- a v3 save is quarantined, not migrated (fresh-start schema v4);
+- a v4 snapshot with an active learn session, completed-word subset checks, and acquired_words coherence round-trips; violations return 400 with actionable issue paths;
 - unknown profile/path cannot be requested;
 - server binds loopback by default;
 - two concurrent PUTs serialize and only one wins expected revision.
@@ -254,7 +254,7 @@ Inject failures after temp open, partial write, flush, and before rename. Origin
 - malformed main + valid backup recovers backup and reports it;
 - malformed main without backup is quarantined, not overwritten;
 - deck fingerprint migration retains matching IDs, initializes new IDs, orphans removed IDs, and reports counts;
-- load-save-load round trip preserves scheduler RNG/cooldowns exactly.
+- load-save-load round trip preserves scheduler RNG, active learn sessions, and acquired_words exactly.
 
 ## 11. Client/server integration tests
 

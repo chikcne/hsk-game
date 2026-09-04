@@ -8,7 +8,7 @@ This document is the implementation authority. Supporting details live in:
 
 - [`GAMEPLAY.md`](GAMEPLAY.md) — encounter rules, multi-enemy targeting, scoring, and settings
 - [`DATA_PIPELINE.md`](DATA_PIPELINE.md) — Anki import, normalization, indexes, audio, and source audit
-- [`LEARNING_AND_SAVES.md`](LEARNING_AND_SAVES.md) — mastery weights, cooldown scheduler, and local save schema
+- [`LEARNING_AND_SAVES.md`](LEARNING_AND_SAVES.md) — single-card FSRS memory, Learn sessions, acquisition log, and local save schema (v4)
 - [`UI_SPEC.md`](UI_SPEC.md) — screens, responsive behavior, controls, visual tokens, and accessibility
 - [`TEST_PLAN.md`](TEST_PLAN.md) — unit, integration, browser, importer, and statistical tests
 - [`AGENT_WORK.md`](AGENT_WORK.md) — small-agent work packages, dependencies, ownership, and handoff rules
@@ -17,15 +17,14 @@ This document is the implementation authority. Supporting details live in:
 
 ### Core loop
 
-1. The player selects exactly one HSK deck (HSK 1–6). Levels are never locked.
-2. Enemies spawn continuously and descend at word-specific speeds that rise with mastery. Multiple enemies coexist to create queue pressure.
-3. Every enemy carries its own Hanzi. When no target is locked, the enemy predicted to reach the base soonest becomes the only active target and receives the amber highlight. Ties go to the older spawn; the lock remains until resolution even if a faster arrival later spawns.
-4. The player types the active Hanzi's pinyin and presses **Enter**. Comparison ignores tone marks and formatting; accepted variants are precompiled from the deck.
-5. Correct pinyin immediately plays that word's audio and opens eight English meanings mapped to **A S D F H J K L**.
-6. The matching letter destroys the enemy and plays the blaster effect. A wrong submission at either stage resolves that encounter as a miss, plays the buzzer, and opens a blocking answer review until the player continues.
-7. A wrong answer or an enemy landing naturally resets the streak; a natural landing also plays the buzzer. There is no health, life counter, game-over state, or progress loss beyond the affected word becoming more frequent.
-8. Progress is checkpointed to a file under gitignored `saves/` after scheduler-changing events. The player may end a session at any time.
-9. A level's live mastery is complete when every logical word has reached the minimum appearance weight.
+1. The player selects exactly one HSK grade (HSK 1–6). Grades are never locked. **A grade click launches Learn Mode — never a battle.**
+2. Learn Mode creates (or resumes) a session: every currently due introduced word of the grade plus up to the configured number of new curriculum words, presented one card at a time.
+3. Each card keeps pinyin and meaning visible, auto-plays local word audio, and is completed by guided stroke-order writing on a single large tian-zi square; a first presentation loops the stroke-order demo, later ones offer Show Demo.
+4. After writing, the player sees the elapsed writing time and rates the card **Again / Hard / Good / Easy**; each choice displays its computed next interval before selection. FSRS applies the rating to the word's single card and progress checkpoints atomically.
+5. A word leaves the session when its card reaches the FSRS review state; the earliest due remaining card is always served next (Anki-style learn-ahead). The session ends when every word has passed. A word enters the ordered `acquired_words` table exactly once, at its first review-state rating.
+6. Acquired words feed the cross-grade **Review arcade**: a deterministic base plan of exactly `reviewSessionLength` spawns (200–500) drawn from the `acquired_words` recency log alone — newest 20 words twice, ranks 20–99 once, the rest from Old fillers — scored arcade-style, with delayed additive retries for missed words until every obligation is cleared by a clean correct answer. Review answers never mutate FSRS state, and a finished summary can hand its most-missed words to the **Re-Learn session**.
+7. Progress is checkpointed to a file under gitignored `saves/` after every rating. The player may leave a Learn session at any time; clicking the grade resumes it exactly. Review sessions are deliberately not resumable; the single cross-grade Re-Learn session is.
+8. A grade's milestone (`firstCompletedAt`) is permanent once every word's card has reached review.
 
 ### Settings added to the contract
 
@@ -48,7 +47,7 @@ This document is the implementation authority. Supporting details live in:
 | Persistence | Authoritative JSON file in `saves/`; browser storage may only be an emergency retry cache. |
 | Completion | `firstCompletedAt` is a permanent achievement; current mastery can regress if a mastered fallback word is later missed. |
 | Source duplicates | Exact semantic duplicates become one logical word with multiple source GUIDs; distinct senses remain distinct. |
-| Learning set | A deterministic 30-word active curriculum advances as words master; misses enter a three-review repair tier. This prevents a hard word from disappearing inside a 1,800-word flat lottery. |
+| Learning set | Learn Mode introduces up to `levelSize` new curriculum words per session (plus all due words). Every word owns exactly one FSRS card rated explicitly (Again/Hard/Good/Easy); acquisition is recorded once in the ordered `acquired_words` table when the card first reaches review. |
 | Offline behavior | Runtime uses only local generated deck data, fonts, audio, and server APIs. No CDN is required. |
 
 ## 2. Reference experience
@@ -242,7 +241,7 @@ See [`DATA_PIPELINE.md`](DATA_PIPELINE.md) for exact schemas and known source an
 
 Browser sandboxing makes a repository-local Node API mandatory. The client checkpoints scheduler state, word progress, settings, aggregate statistics, and a revision number to `/api/saves/default`. The server writes `saves/default.json.tmp`, fsyncs/closes it, then renames it over `saves/default.json`.
 
-No active enemy positions need to survive a voluntary end-session action. Spawn ordinals, word cooldown eligibility, mastery, and PRNG state do survive, so ending and restarting cannot bypass the 10–25 intervening-spawn rule.
+No active enemy positions need to survive a voluntary end-session action. Spawn ordinals, long-term FSRS memory, and PRNG state do survive, so ending and restarting cannot erase progress or replay an identical battle (review plans are re-drawn from the advanced persisted RNG).
 
 See [`LEARNING_AND_SAVES.md`](LEARNING_AND_SAVES.md) for the current schema and persistence policy.
 
@@ -278,7 +277,7 @@ An implementation is not feature-complete until all gates pass.
 
 ### Gate D — persistence
 
-- Refresh after a resolved answer loads the same mastery, stats, settings, cooldowns, and revision from `saves/default.json`.
+- Refresh after a resolved answer loads the same memory state, stats, settings, scheduler snapshot, and revision from `saves/default.json`.
 - Writes are atomic and schema validated; a malformed file is quarantined and reported instead of silently overwritten.
 - Ending at any time reaches a summary only after the latest checkpoint is acknowledged or a clear retry warning is shown.
 - `saves/` and generated runtime deck assets remain ignored by Git.
@@ -347,5 +346,5 @@ and then, from the browser:
 5. change spawn rate and global speed from settings;
 6. accumulate score/streak without a death state;
 7. end voluntarily, see a report, and verify progress in `saves/default.json`;
-8. resume with mastery and 10–25-spawn cooldown state intact;
+8. resume with memory state and scheduler snapshot intact (the FSRS rewrite replaced the old 10–25-spawn cooldown with per-card due dates);
 9. eventually reduce every logical word to weight `1` and earn the level-cleared milestone.

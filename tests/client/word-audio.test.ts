@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { audioPoolWordIds, WordAudioPlayer, wordAudioSource } from "../../src/client/audio/wordAudio";
-import type { LevelProgress, RuntimeWord } from "../../src/shared/schemas";
+import { WordAudioPlayer, wordAudioSource } from "../../src/client/audio/wordAudio";
+import type { RuntimeWord } from "../../src/shared/schemas";
 
 function fakeWord(audioUrl: string): RuntimeWord {
   return {
@@ -21,23 +21,6 @@ function fakeWord(audioUrl: string): RuntimeWord {
 }
 
 describe("WordAudioPlayer", () => {
-  it("includes the next three curriculum words beyond the introduced pool", () => {
-    const level = {
-      curriculumCursor: 2,
-      words: {
-        first: { introducedAtOrdinal: 0 },
-        second: { introducedAtOrdinal: 0 },
-        third: { introducedAtOrdinal: null },
-        fourth: { introducedAtOrdinal: null },
-        fifth: { introducedAtOrdinal: null },
-        sixth: { introducedAtOrdinal: null },
-      },
-    } as unknown as LevelProgress;
-
-    expect(audioPoolWordIds(level, ["first", "second", "third", "fourth", "fifth", "sixth"]))
-      .toEqual(["first", "second", "third", "fourth", "fifth"]);
-  });
-
   it("starts loading each pooled asset once and reuses it for playback", async () => {
     const load = vi.fn();
     const play = vi.fn(async () => undefined);
@@ -81,5 +64,19 @@ describe("WordAudioPlayer", () => {
     expect(wordAudioSource("hsk-3", fakeWord("audio/hash.mp3"))).toBe("/game-data/hsk-3/audio/hash.mp3");
     expect(wordAudioSource("hsk-3", fakeWord("/game-data/hsk-1/audio/hash.mp3"))).toBe("/game-data/hsk-1/audio/hash.mp3");
     expect(wordAudioSource("hsk-3", fakeWord(""))).toBe("");
+  });
+});
+
+describe("stale audio player guard", () => {
+  it("ignores rejections from a disposed (no longer current) player — StrictMode remounts", async () => {
+    const { isStaleAudioPlayer } = await import("../../src/client/writing/useCardAudio");
+    const live = new WordAudioPlayer();
+    const disposed = new WordAudioPlayer();
+    // StrictMode discards the first player: a rejection arriving from it must
+    // NOT surface as the live card's audio error.
+    expect(isStaleAudioPlayer(live, disposed)).toBe(true);
+    expect(isStaleAudioPlayer(null, disposed)).toBe(true); // unmounted entirely
+    expect(isStaleAudioPlayer(disposed, disposed)).toBe(false); // the live player failing is real
+    disposed.dispose();
   });
 });

@@ -32,11 +32,12 @@ const RATING_TO_FSRS: Record<MemoryRating, Grade> = {
   easy: Rating.Easy,
 };
 
-export function createComponentMemory(): ComponentMemory {
-  return toComponentMemory(createEmptyCard(new Date(0)));
+/** A fresh, never-reviewed card: due immediately (epoch), state New. */
+export function createCardMemory(): ComponentMemory {
+  return toCardMemory(createEmptyCard(new Date(0)));
 }
 
-export function toComponentMemory(card: Card): ComponentMemory {
+export function toCardMemory(card: Card): ComponentMemory {
   return {
     state: FSRS_STATE_TO_MEMORY[card.state],
     due: card.due.toISOString(),
@@ -51,7 +52,7 @@ export function toComponentMemory(card: Card): ComponentMemory {
   };
 }
 
-export function fromComponentMemory(memory: ComponentMemory): Card {
+export function fromCardMemory(memory: ComponentMemory): Card {
   return {
     due: new Date(memory.due),
     stability: memory.stability,
@@ -66,17 +67,28 @@ export function fromComponentMemory(memory: ComponentMemory): Card {
   };
 }
 
-/** Applies one graded recall to one component and returns the next memory state. */
-export function reviewComponentMemory(memory: ComponentMemory, rating: MemoryRating, now: string | number | Date): ComponentMemory {
-  const date = new Date(now);
+/** Applies one explicit Learn self-rating to a card and returns its next
+ * memory state. Pure: the input card is never mutated.
+ *
+ * Clock-skew guard: FSRS derives elapsed time from `lastReview`, so a wall
+ * clock that moved backwards between ratings would produce negative elapsed
+ * days and corrupt stability. `now` is clamped to the card's last review —
+ * the rating applies at that instant instead of trapping the UI or writing
+ * a regressive schedule. */
+export function reviewCardMemory(memory: ComponentMemory, rating: MemoryRating, now: string | number | Date): ComponentMemory {
+  let date = new Date(now);
   if (!Number.isFinite(date.getTime())) throw new RangeError("now must be a valid timestamp");
-  const { card } = scheduler.next(fromComponentMemory(memory), date, RATING_TO_FSRS[rating]);
-  return toComponentMemory(card);
+  const lastReviewMs = memory.lastReview === null ? null : Date.parse(memory.lastReview);
+  if (lastReviewMs !== null && Number.isFinite(lastReviewMs) && date.getTime() < lastReviewMs) {
+    date = new Date(lastReviewMs);
+  }
+  const { card } = scheduler.next(fromCardMemory(memory), date, RATING_TO_FSRS[rating]);
+  return toCardMemory(card);
 }
 
 /** Estimated recall probability right now (0..1). New cards have no history
  * and deliberately score 0 so they never outrank known material. */
-export function componentRetrievability(memory: ComponentMemory, now: string | number | Date): number {
+export function cardRetrievability(memory: ComponentMemory, now: string | number | Date): number {
   if (memory.state === "new") return 0;
-  return scheduler.get_retrievability(fromComponentMemory(memory), new Date(now), false);
+  return scheduler.get_retrievability(fromCardMemory(memory), new Date(now), false);
 }

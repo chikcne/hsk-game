@@ -1,8 +1,8 @@
 import type { ComponentMemory, WordProgress } from "../../shared/schemas";
 
-/** Per-component familiarity in 0..1. Short-term (re)learning states sit low;
- * review-stage familiarity grows logarithmically with stability up to one year. */
-export function componentFamiliarity(memory: ComponentMemory): number {
+/** Card familiarity in 0..1. Short-term (re)learning states sit low; review-
+ * stage familiarity grows logarithmically with stability up to one year. */
+export function cardFamiliarity(memory: ComponentMemory): number {
   switch (memory.state) {
     case "new": return 0;
     case "learning":
@@ -14,12 +14,13 @@ export function componentFamiliarity(memory: ComponentMemory): number {
   }
 }
 
-/** Battle-facing familiarity for the whole word: average of both components. */
-export function wordFamiliarity(progress: Pick<WordProgress, "pinyin" | "meaning">): number {
-  return (componentFamiliarity(progress.pinyin) + componentFamiliarity(progress.meaning)) / 2;
+/** Presentation familiarity for review-arcade enemy speed (never feeds back
+ * into scheduling). */
+export function wordFamiliarity(progress: Pick<WordProgress, "card">): number {
+  return cardFamiliarity(progress.card);
 }
 
-/** A word is brand new when no component has ever been reviewed. */
-export function isUnseenWord(progress: Pick<WordProgress, "pinyin" | "meaning">): boolean {
-  return progress.pinyin.reps === 0 && progress.meaning.reps === 0;
+/** A word is brand new when its card has never been reviewed. */
+export function isUnseenWord(progress: Pick<WordProgress, "card">): boolean {
+  return progress.card.reps === 0;
 }

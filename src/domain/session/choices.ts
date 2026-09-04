@@ -244,3 +244,41 @@ export function generateChoices(deck: RuntimeDeck, word: RuntimeWord, seed: stri
   }
   return choices;
 }
+
+/** Degrade path for pathologically small distractor pools (a one-word
+ * acquired pool whose merged deck cannot supply eight unique keys): the
+ * correct choice is ALWAYS present, and as many unique-key distractors as
+ * the pool affords follow. Only throws when even the correct label cannot
+ * produce a shortcut. */
+export function generateChoicesLenient(deck: RuntimeDeck, word: RuntimeWord, seed: string): MeaningChoice[] {
+  try {
+    return generateChoices(deck, word, seed);
+  } catch {
+    const correctLabel = word.meaning.trim();
+    const correctShortcuts = choiceShortcutsForLabel(correctLabel);
+    if (correctShortcuts.length === 0) throw new Error(`Meaning must contain A-Z: ${word.meaning}`);
+    const choices: MeaningChoice[] = [{ shortcuts: correctShortcuts, label: correctLabel, correct: true }];
+    const usedKeys = new Set<ChoiceKey>(correctShortcuts.map((shortcut) => shortcut.key));
+    for (const meaningKey of deck.allMeaningKeys) {
+      if (meaningKey === word.meaningKey) continue;
+      const label = (deck.meaningIndex[meaningKey]?.label ?? meaningKey).trim();
+      if (!label) continue;
+      const shortcuts = choiceShortcutsForLabel(label);
+      if (shortcuts.length === 0 || shortcuts.some((shortcut) => usedKeys.has(shortcut.key))) continue;
+      choices.push({ shortcuts, label, correct: false });
+      for (const shortcut of shortcuts) usedKeys.add(shortcut.key);
+    }
+    return choices;
+  }
+}
+
+/** The battle loop's only entry point: NEVER throws, so a pathological deck
+ * can never terminate the requestAnimationFrame frame loop. Falls all the
+ * way back to a single correct-letter choice as the last resort. */
+export function safeMeaningChoices(deck: RuntimeDeck, word: RuntimeWord, seed: string): MeaningChoice[] {
+  try {
+    return generateChoicesLenient(deck, word, seed);
+  } catch {
+    return [{ shortcuts: [{ key: "A", index: 0 }], label: word.meaning.trim(), correct: true }];
+  }
+}

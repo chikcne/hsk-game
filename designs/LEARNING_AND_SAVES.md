@@ -1,42 +1,39 @@
 # Learning scheduler, memory, and local saves
 
-> Status: implemented (save schema v3). The pre-FSRS weight-based model
-> described here previously is gone; this document describes the shipping
-> hybrid FSRS + arcade microspacing design.
+> Status: implemented (save schema v4, Learn Mode + Review Mode + Relearn
+> shipped). This document describes the shipping single-card FSRS design
+> with Learn Mode as the only path that mutates the main cards, the
+> acquired-word Review arcade, and the independent Relearn session. Save v4
+> is a fresh start: v3 saves are quarantined, never migrated.
 
 ## 1. Model overview
 
-The game runs a **hybrid FSRS + arcade microspacing** model:
+1. **One FSRS card per word/phrase.** The old separate `pinyin`/`meaning`
+   memory states are gone. A single card (`ComponentMemory`, mirroring the
+   ts-fsrs Card) is each word's whole long-term memory. It is mutated
+   exclusively by **Learn Mode's four explicit self-ratings**
+   (Again / Hard / Good / Easy) — never by the arcade.
+2. **Review battles never touch the main card.** The cross-grade review
+   arcade is a retrieval *game* over already-acquired words. It draws
+   **solely from the ordered `acquired_words` log** (recency ranks), never
+   from FSRS due dates or retrievability; its auto-graded outcomes update
+   only session stats and lifetime counters.
+3. **Learn sessions are the unit of study.** A grade's click always launches
+   Learn Mode — never a battle. An active session persists in the save and is
+   resumed exactly.
+4. **Relearning is one independent, persisted session.** Lapsed acquired
+   words are re-taught with fresh, independent cards stored inside the
+   session; finishing a member moves its key to the front of
+   `acquired_words`.
 
-1. **Long-term memory** is modeled per tested component with
-   [ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs) (FSRS-5,
-   desired retention 0.9, fuzz disabled for determinism). Every word carries
-   **two independent memory states** — `pinyin` (productive recall) and
-   `meaning` (recognition) — so a wrong meaning choice no longer discards
-   evidence that pronunciation was recalled, and vice versa.
-2. **Arcade microspacing** is an independent ordinal constraint
-   (`lastSpawnOrdinal` / `nextEligibleSpawn`) against a **global spawn
-   ordinal** shared by regular and review modes. A word spawns only when it is
-   *due* **AND** *cooled down* **AND** not already an active enemy. The
-   cooldown is never bypassed.
+Acquisition milestone: the first time a Learn rating leaves a card in FSRS
+state `review`, the word enters the ordered `acquired_words` table (see §4).
 
-A word is **graduated** (the product's "mastered" milestone and the review
-deck's entry requirement) only when **both** components have passed their
-learning steps into the `review` state. Graduation frees a curriculum slot;
-a lapse puts the word back into `relearning` and re-enters the arcade pool
-automatically (pool membership is derived, never stored).
-
-Familiarity for arcade presentation (word speed 0.65×–1.5×, spawn-delay
-interpolation 160%→40%) is **derived from FSRS state** (`wordFamiliarity`):
-0 for new, 0.25 for learning/relearning, logarithmic in stability up to one
-year for review. It is a presentation value only and never feeds back into
-scheduling.
-
-## 2. Progress records
+## 2. Progress records (schema v4)
 
 ```ts
-// One FSRS card per tested component. Mirrors the ts-fsrs Card exactly;
-// dates are ISO strings so the save round-trips losslessly.
+// The one card for a word/phrase. Mirrors the ts-fsrs Card exactly; dates
+// are ISO strings so the save round-trips losslessly.
 type ComponentMemory = {
   state: "new" | "learning" | "review" | "relearning";
   due: string;               // ISO timestamp
@@ -51,204 +48,283 @@ type ComponentMemory = {
 };
 
 type WordProgress = {
-  pinyin: ComponentMemory;
-  meaning: ComponentMemory;
-  attempts: number; completeCorrect: number; wrongPinyin: number;
-  wrongMeaning: number; landed: number;
-  totalThinkingMs: number; fastestCorrectMs: number | null;
-  totalPinyinMs: number; fastestPinyinMs: number | null; lastPinyinMs: number | null;
-  lastOutcome: EncounterOutcomeKind | null;
-  lastSeenAt: string | null;
-  introducedAtOrdinal: number | null;   // vs the save's global spawnOrdinal
-  lastSpawnOrdinal: number | null;
-  nextEligibleSpawn: number;            // hard microspacing floor
+  card: ComponentMemory;                 // the only memory authority
+  learnReviews: number;                  // explicit Learn ratings applied
+  lastSeenAt: string | null;             // Learn ratings only (review battles never write word records)
+  introducedAtOrdinal: number | null;    // vs the save's global spawnOrdinal
 };
 
 type LevelProgress = {
   deckId: DeckId;
   deckFingerprint: string;
-  curriculumSeed: string;      // per-profile random hex: no shared orders
-  curriculumCursor: number;
+  curriculumSeed: string;      // per-profile random hex
+  curriculumCursor: number;    // introduced word count
   firstCompletedAt: string | null;      // permanent milestone
-  words: Record<WordId, WordProgress>;  // complete record for the grade
+  words: Record<WordId, WordProgress>;
   orphanedProgress: Record<WordId, WordProgress>;
 };
 
+type LearnSession = {           // logical table: learn_sessions (per grade)
+  deckId: DeckId;
+  deckFingerprint: string;
+  startedAt: string;            // ISO
+  wordIds: string[];            // membership, frozen at creation
+  completedWordIds: string[];   // members removed by a Review-state rating
+};
+type RelearnCardState = {        // one member of the active relearn session
+  card: ComponentMemory;         // fresh INDEPENDENT card (never the main card)
+  reviews: number;               // ratings applied to it this session
+};
+type RelearnSession = {          // logical table: relearn_sessions (one cross-grade row)
+  startedAt: string;             // ISO
+  wordKeys: string[];            // selected `deckId:wordId` keys, selection order
+  cards: Record<wordKey, RelearnCardState>; // keys match wordKeys exactly
+};
+
 type SaveFile = {
-  schemaVersion: 3;
+  schemaVersion: 4;
   profileId: "default";
   revision: number; savedAt: string;
-  settings: { spawnIntervalMs; enemySpeedMultiplier; levelSize; masterVolume; reducedMotion };
-  spawnOrdinal: number;                    // global spawn counter
+  settings: { spawnIntervalMs; enemySpeedMultiplier; levelSize; reviewSessionLength; masterVolume; reducedMotion };
+  spawnOrdinal: number;                    // global counter (review advances it)
   schedulerRng: [u32, u32, u32, u32];      // global scheduler stream
   levels: Record<DeckId, LevelProgress>;
-  lifetime: { …outcome counters… };
+  acquiredWords: string[];                 // logical table: acquired_words
+  learnSessions: Record<DeckId, LearnSession | null>;
+  relearnSession: RelearnSession | null;   // the one active cross-grade session
+  lifetime: { …review-arcade outcome counters… };
 };
 ```
 
-The old per-level `nextSpawnOrdinal`/`schedulerRng`, `activeLearningWordIds`,
-`reviewedOlderWordIds`, `appearanceWeight`, `reinforcementRemaining`, and the
-whole cross-grade `review` section (with its `activePoolWordKeys`) are gone.
-Review-mode repairs are per-card FSRS `relearning` state, so stale repair
-pools are structurally impossible.
+The old per-word battle counters (`attempts`, `completeCorrect`,
+`wrongPinyin`, …) and microspacing ordinals (`lastSpawnOrdinal`,
+`nextEligibleSpawn`) are gone: with Learn Mode there is no per-word spawn
+cooldown to enforce, and review outcomes no longer write word records.
 
-## 3. Automatic FSRS ratings
+## 3. Learn Mode
 
-Every encounter grades up to two components at the resolution timestamp:
+### Session shape
 
-| Situation | Pinyin rating | Meaning rating |
-| --- | --- | --- |
-| Wrong pinyin typed | Again | — (not tested) |
-| Pinyin revealed by recall-window timeout (autocomplete) | **Again** | graded normally |
-| Correct pinyin, ≤ 800 ms/char (after first exposure) | Easy | graded normally |
-| Correct pinyin, normal latency | Good | graded normally |
-| Correct pinyin, > 2500 ms/char | **Hard** (still a pass) | graded normally |
-| Correct meaning choice ≤ 5 s | — | Good |
-| Correct meaning choice > 5 s | — | Hard |
-| Wrong meaning choice | — | Again |
-| Landed (defensive; unreachable since autocomplete) | Again | Again |
+Clicking a grade (or the "learn" column) creates — or resumes — that grade's
+active session. A fresh session contains:
 
-Latency is normalized **per canonical pinyin character**, removing the old
-bias against long multi-syllable answers. Easy is used conservatively: a
-component with `reps === 0` caps Easy to Good so a first exposure can never
-skip the learning steps. Thresholds are hardcoded constants in
-`src/domain/memory/ratings.ts` — deliberately not settings.
+1. **every currently due introduced word** of the grade (a card is due when
+   its FSRS due date has passed; never-reviewed cards are immediately due),
+   in stable curriculum order;
+2. **plus up to `settings.levelSize` brand-new curriculum words** (the
+   setting is "new cards per session"), pulled in curriculum order and
+   introduced immediately (`introducedAtOrdinal` recorded, cursor advanced).
 
-Struggled (for stats/UI) = any Again or Hard rating. The resolution cooldown
-is `AGAIN_COOLDOWN_PHRASES = 3` when any component graded Again, otherwise
-`PASS_COOLDOWN_PHRASES = 8`.
+Membership is frozen and persisted. If both sets are empty (every word
+introduced, healthy, and not yet due) no session is created; the grade screen
+shows an "all caught up" message with the next due time.
 
-## 4. Microspacing (hard ordinal cooldowns)
+### Presentation loop
 
-Spawns consume a single global ordinal series (`save.spawnOrdinal`) so
-cooldowns survive crossings between regular and review sessions.
+Each session word is presented with the Writing Screen card: pinyin and
+meaning stay visible, word audio auto-plays with a working replay button,
+and guided stroke-order writing completes character by character. The first
+presentation of a word (`card.reps === 0`) starts a looping stroke-order demo
+until the player engages; every later appearance starts straight in writing
+mode with a **Show Demo** control. When the writing completes, the card shows
+the writing elapsed time (demo-watching excluded) plus the four ratings.
+
+### Ratings and interval previews
+
+The player chooses explicitly: **Again / Hard / Good / Easy** (keys 1–4).
+Each button displays the interval that choice will produce, computed live by
+applying the rating to a *preview copy* of the card
+(`previewLearnCard` + `formatLearnInterval`: `10m`, `1.5h`, `8.0d`). With the
+default FSRS-5 parameters (fuzz disabled), a new card lands at roughly
+`Again → learning ~1m`, `Hard → learning ~6m`, `Good → learning ~10m`,
+`Easy → review ~8d`; a final learning-step pass graduates into review.
+
+Applying a rating (`applyLearnRating`) is one pure, immutable step that:
+
+1. advances the card with FSRS and bumps `learnReviews` / `lastSeenAt` — the
+   only place any card is ever mutated (Learn Mode is the only writer;
+   review battles are FSRS-write-neutral);
+2. when the post-rating card reaches `review`, prepends the word's
+   cross-grade key to `acquired_words` **if absent** (exactly-once
+   acquisition; later ratings never reorder or duplicate);
+3. when the rated word is a session member and its card is now in `review`,
+   appends it to the session's `completedWordIds` (rating-time removal);
+4. when no un-completed members remain, clears the grade's active session
+   (`learnSessions[grade] = null`) — the session is complete.
+
+Every rating is checkpointed through the existing atomic save queue
+(`queueSnapshot` → `PUT /api/saves/default`). Learn never touches score,
+streak, or lifetime counters.
+
+### Serving order and learn-ahead
+
+The next card is always the **earliest due remaining member** (ties break on
+stable word ID). Currently-due cards sort before future ones by definition,
+so this single rule gives both the due-first discipline and **Anki-style
+learn-ahead**: when nothing is currently due, the earliest future card is
+served immediately rather than making the player wait. The session ends only
+when every member has been removed by a passing (Review-state) rating — an
+Again keeps the card in the session (lapsed to `relearning`) and it recurs
+via learn-ahead until it passes.
+
+### Resume
+
+Because membership, completions, and card states are all persisted, clicking
+the grade again resumes the exact same session; the served card is a
+deterministic function of the persisted state. A mid-session deck update
+(fingerprint change) reconciles the level and drops the stale session so the
+next launch creates a fresh one.
+
+## 4. Acquired words (logical table `acquired_words`)
+
+`save.acquiredWords` is the ordered acquisition log, newest first. Entries
+are cross-grade keys `"<deckId>:<wordId>"` (the same identity the review deck
+uses). A word enters **exactly once**, at the moment its main Learn card
+first enters FSRS state `review` via a Learn rating; later ratings neither
+reorder nor duplicate it. A lapse moves the card to `relearning` but the
+word stays in the table. Finishing a Relearn member removes nothing:
+the key is **moved to the front** (newest acquisition). The table is the
+entry ticket AND the selection order for Review Mode, and the membership
+source for Relearn.
+
+## 5. Curriculum
+
+Unchanged hash order over `(curriculumVersion, curriculumSeed,
+deckFingerprint, wordId)` with a per-profile random hex seed. `createLevelProgress`
+now starts a grade fully unintroduced; introduction happens exclusively
+inside `createLearnSession` (or deck reconciliation, which introduces added
+words immediately so the next session's due set cannot miss them).
+
+## 6. Review Mode (cross-grade arcade)
+
+Selection is driven entirely by the recency of the acquisition log:
+
+- **Membership**: a word is reviewable iff its key is in `acquired_words` —
+  including a word whose main FSRS card later lapses or reschedules. The
+  Review column is enabled whenever the table is non-empty and shows the
+  acquired count, never a due count.
+- **Base plan** (`buildReviewPlan`, deterministic, nonpersisted): exactly
+  `settings.reviewSessionLength` spawns (integer slider 200–500, default
+  200), built once at session start from the persisted RNG. Guaranteed
+  quotas: ranks 0–19 ("New") exactly twice each, ranks 20–99 ("Recent")
+  exactly once each; every remaining slot draws uniformly from rank ≥ 100
+  ("Old"), falling back to Recent then New so small pools still hit the
+  exact target (an empty pool yields no session). Quota and filler entries
+  are Fisher–Yates-shuffled together, so tiers interleave while counts are
+  preserved exactly. Duplicate occurrences are sequential, never concurrent.
+- **Recency drives difficulty, not FSRS**: the label (New/Recent/Old) is
+  captured at session start for the summary chips; a 0..1 pressure value
+  (`min(rank,100)/100`) maps to enemy speed (gentlest 0.65× at rank 0,
+  maximum 1.5× by rank 100) and to the mastery-adjusted spawn delay. The
+  global speed/spawn-interval settings and the live performance multiplier
+  still apply.
+- **Misses and repairs**: a miss is `wrongPinyin`, `wrongMeaning`, a
+  landing, or a pinyin autocomplete/reveal even when the meaning is then
+  answered correctly. A missed word enters a delayed repair obligation that
+  re-enters the stream after `REVIEW_REPAIR_DELAY_SPAWNS` (10) further base
+  spawns, oldest miss first; a later **clean** encounter (typed pinyin,
+  correct meaning, no reveal) clears it — whether that encounter is a base
+  occurrence or a repair. Obligations that survive the base plan are served
+  as **additive forced retries** beyond the slider target (immediately due
+  once the plan is exhausted, so lag cannot deadlock the endgame). The same
+  word never spawns while an encounter of it is active or preparing.
+- **Completion**: the session ends only when every base spawn has resolved,
+  no active/preparing enemy remains, and every repair obligation has been
+  cleared. The session is **not resumable**; the plan-consumed RNG and
+  ordinal advances are checkpointed so a fresh session differs
+  deterministically.
+- **Summary**: the most-missed words ranked with wrong/miss counts and
+  New/Recent/Old chips; struggle rows are selectable (errors preselected)
+  and feed **START RE-LEARNING (N)**; **START NEW REVIEW** rebuilds a fresh
+  plan; due-based "next review round" semantics are gone.
+- **Spawns write nothing**: review cannot mutate FSRS state. Outcomes
+  update lifetime counters and the global spawn ordinal, nothing else.
+
+### 6.1 Relearn (the one cross-grade session)
+
+`save.relearnSession` holds THE active relearn session (null when idle):
+selected word keys plus a **fresh, independent** `ComponentMemory` and
+rating counter per member. Relearn ratings go through `applyRelearnRating`,
+which never reads or writes `save.levels`. The presentation reuses the
+Learn/Writing UX (pinyin + meaning, looping demo on a member's first
+presentation, elapsed writing time, four ratings with interval previews,
+earliest-due learn-ahead via `nextRelearnKey`). Each member finishes when
+its independent card reaches FSRS `review`: the key is removed from the
+session and **prepended to `acquired_words`** (moved to newest/front,
+deduped); when the last member finishes the session clears to null.
+Progress saves after every rating, so exiting preserves exact state; the
+title screen's dedicated Re-Learn column resumes it and is disabled
+(visually + `aria-disabled`) when no session exists. Starting a new session
+is refused while one is active.
+
+## 7. Save API and validation
+
+Unchanged endpoints (`GET/PUT /api/saves/default`, beacon POST), server-owned
+revisions, atomic writer, quarantine/backup recovery. Strict v4 validation
+adds, on top of per-field bounds:
+
+- ISO `due` / `lastReview` / `lastSeenAt` / `startedAt`;
+- `state !== "new"` ⇒ `lastReview !== null`, positive stability, difficulty ≥ 1;
+- due never precedes lastReview;
+- learn sessions: key matches grade, fingerprint matches the level, members
+  and completions unique, members present in the level record, completions
+  ⊆ members;
+- `acquired_words`: `deckId:wordId` key format, no duplicates, and (when the
+  word record exists) an acquired word's card must be review/relearning with
+  at least one Learn rating;
+- `relearnSession` (when present): unique `deckId:wordId` keys, every member
+  an acquired word, `cards` keys exactly matching the member keys, and each
+  independent card following the same memory-shape rules (new ⇔ zero
+  ratings; non-new ⇒ lastReview + difficulty/stability bounds + ≥ 1
+  rating). Independent cards are never compared against the member's main
+  Learn card;
+- settings bounds include `reviewSessionLength` (integer 200–500).
+
+**No migrations.** A v3 (or older) file fails validation and follows the
+existing corruption flow: quarantine → `.bak` → explicit start-fresh. The
+game has not shipped, so no data is converted.
+
+## 8. Invariants
 
 ```text
-on spawn:     word.lastSpawnOrdinal = s; word.nextEligibleSpawn = s + RESERVED_COOLDOWN_PHRASES + 1
-on outcome:   word.nextEligibleSpawn = currentOrdinal + cooldownPhrases (3 or 8)
-```
-
-A due word whose cooldown has not elapsed must never spawn. When the
-battlefield is empty and the only blocked words are due-but-cooling, the
-scheduler reports `blockedUntilOrdinal` — the smallest `nextEligibleSpawn`
-among those words — and the client fast-forwards the global ordinal straight
-to it (`advanceOrdinal(snapshot, target)`). Eligibility is re-checked against
-`nextEligibleSpawn` afterwards, so the cooldown invariant still holds; only
-the idle waiting disappears, keeping the next word within the two-second
-empty-field budget. FSRS short-term
-learning steps (default ≈ [1m, 10m] learning, [10m] relearning) give roughly
-one or two same-session reinforcement tests, then scheduling hands over to
-real elapsed time.
-
-## 5. Regular-mode scheduler
-
-Each regular session:
-
-1. tops the **acquisition pool** up to `settings.levelSize` words by
-   introducing the next unseen curriculum word whenever the pool has room
-   (pool = introduced && not graduated; lapses re-enter automatically);
-2. collects candidates: introduced, due (`min(pinyin.due, meaning.due)` ≤
-   now), cooled down, not an active enemy;
-3. picks by tier priority **relearning → learning → new → review**
-   (graduated maintenance), then earliest due, then a uniform RNG pick among
-   exact ties;
-4. if nothing is eligible, reports:
-   - `empty (coolingOnly)` — due words are ordinal-blocked; keep the session
-     alive and fast-forward the ordinal to `blockedUntilOrdinal`;
-   - `empty` — something comes due within `SESSION_WAIT_HORIZON_MS` (120 s);
-     wait;
-   - `complete` — nothing due within the horizon: **end the session** rather
-     than grading not-yet-due cards as fillers.
-
-A fully graduated grade therefore ends a fresh session immediately when none
-of its cards are due — continued practice happens in review mode as cards
-come due.
-
-## 6. Review mode (cross-grade)
-
-Review sessions serve exactly the due subset of introduced cards that are
-graduated or relearning, across all grades:
-
-- relearning repairs first (earliest due);
-- graduated maintenance ordered by **lowest retrievability**
-  (`fsrs.get_retrievability` on the weaker component);
-- rounds are **finite**: when nothing is due the round ends — no fillers, no
-  active key pools, no ordinal jumping. The deck-select review column shows
-  the actionable count (due and clear of ordinal cooldown) and is disabled at
-  zero.
-
-Un-graduated (`new`/`learning`) words belong to their grade's regular mode
-and never appear in review.
-
-## 7. Curriculum
-
-Deterministic hash order over `(curriculumVersion, curriculumSeed,
-deckFingerprint, wordId)` — unchanged from the previous design, except the
-seed is per-profile random hex (created with `crypto` on first run), so two
-players no longer share an introduction order. `curriculumCursor` counts
-introduced words; `introduceNewWords` only ever runs during regular play,
-never as a side effect of reviewing another grade.
-
-## 8. Completion transitions
-
-After every outcome:
-
-```text
-graduated(word)  = pinyin.state === "review" && meaning.state === "review"
-grade complete   = every word in the level record is graduated
-```
-
-- becoming complete with `firstCompletedAt === null`: set it (permanent) and
-  emit `gradeCompleted`;
-- a completed grade regressing (any word lapsing): emit
-  `gradeMasteryRegressed`; the milestone is never cleared.
-
-## 9. Save API and validation
-
-Unchanged endpoints (`GET/PUT /api/saves/default`, beacon POST). The
-persistent schema is v3 with strict component-memory checks: ISO `due`/
-`lastReview`, nonnegative integer `reps`/`lapses`/`learningSteps`, finite
-`stability`/`difficulty`/`elapsedDays`/`scheduledDays`, `attempts ==
-outcome-counter sum`, ordinals before the global `spawnOrdinal`, and
-`state !== "new"` ⇒ `lastReview !== null`.
-
-**No migrations.** Save files from earlier schema versions fail validation
-and are quarantined (existing corruption flow); the client then starts from a
-blank v3 save. The game has not shipped, so no data is converted.
-
-## 10. Corruption and deck reconciliation
-
-Corruption handling is unchanged (quarantine → `.bak` → explicit
-start-fresh/download recovery; first PUT with `expectedRevision 0` after an
-observed quarantine is the explicit "start fresh" action).
-
-On a deck fingerprint mismatch the client now calls `reconcileLevelProgress`
-(matching stable word IDs, preserving memory, orphaning removals, introducing
-added words at the current ordinal) instead of silently recreating the level.
-
-## 11. Invariants
-
-```text
-component memories satisfy the strict Zod bounds (see §9)
-nextEligibleSpawn >= 0, integer; lastSpawnOrdinal < global spawnOrdinal
-attempts == completeCorrect + wrongPinyin + wrongMeaning + landed
-curriculumCursor <= deck size and >= introduced count
-a (re)learning/review/relearning card always records lastReview
-firstCompletedAt never changes from a timestamp back to null
+a card satisfies the strict Zod bounds (see §7)
+only applyLearnRating mutates a main card; review battles never do
+relearn ratings mutate only the session's independent cards, never save.levels
+acquired_words is duplicate-free, newest-first, and consistent with card states
+relearn members ⊆ acquired_words; relearn cards keys == member keys
+learn session members exist in their level; completions ⊆ membership
+curriculumCursor >= introduced count and <= deck size
+introducedAtOrdinal <= global spawnOrdinal
 settings remain in supported bounds
 ```
 
-## 12. Testing
+## 9. Testing
 
-- `tests/domain/memory.test.ts` — rating mapping, due-ness, familiarity,
-  counter bookkeeping.
-- `tests/domain/learning.test.ts` — pool derivation, hard cooldowns (no
-  bypass, `coolingOnly`, ordinal advance), horizon-based session end, tier
-  priority, graduation transitions, reconciliation, invariants.
-- `tests/domain/review.test.ts` — due-only finite rounds (filler-bug
-  regression), relearning priority, retrievability ordering, stale-pool
-  impossibility, cross-mode cooldown reservation.
-- `tests/domain/workload.test.ts` — 90-day seeded simulation of the real
-  scheduler + FSRS with a retrievability-driven synthetic player: bounded
-  backlogs, finite sessions, stability growth, graduation throughput, no
-  card regressing to unseen state.
+- `tests/domain/learn.test.ts` — session creation (due + capped new),
+  explicit ratings and previews, learn-ahead ordering, exact resume
+  (JSON round-trip), acquisition transition/order/dedupe, session completion
+  including the due-maintenance repair loop.
+- `tests/domain/learning.test.ts` — curriculum order, session-only
+  introduction, graduation counting, reconciliation, invariants.
+- `tests/domain/memory.test.ts` — single-card FSRS rating behavior,
+  acquisition/due-ness predicates, familiarity.
+- `tests/domain/review.test.ts` — recency tiers and pressure (boundaries
+  19/20/99/100), deterministic base-plan quotas at 500 acquired words,
+  exact 200/500 counts, small-pool/empty-pool fallbacks, tier interleaving,
+  RNG replay/advance; the spawn-session reducer: delayed repairs (10 base
+  spawns), additive forced retries until clean correct, active/preparing
+  exclusion, oldest-first draining, base-occurrence clearing, immutability.
+- `tests/domain/relearn.test.ts` — independent fresh cards, main-card
+  immunity, earliest-due serving with learn-ahead, move-to-front
+  acquisition, session clearing, exact resume.
+- `tests/domain/workload.test.ts` — 90-day Learn-session simulation:
+  finite sessions, bounded backlog, acquisition throughput and ordering.
+- `tests/server/*.test.ts` — v4 fixtures, learn-session and acquired-words
+  and relearn-session validation, v3 quarantine (no migration), API
+  surfaces.
+- `tests/client/learn-screen.test.tsx`, `tests/client/relearn-screen.test.tsx`
+  — Learn/Relearn screen markup: HUD, looping-demo first presentation vs
+  Show Demo later ones, summary states.
+- `tests/integration/runtime.test.ts` — learn flow slice and the full
+  acquired_words pipeline: plan → battle reducer (miss → forced clean
+  repair) → relearn → move-to-front, with the main card untouched.

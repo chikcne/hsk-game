@@ -1,5 +1,3 @@
-import type { LevelProgress, WordProgress } from "../../shared/schemas";
-import { isGraduated } from "../memory";
 import type { LearningDeck } from "./types";
 
 const HASH_MASK = 0xffff_ffff_ffff_ffffn;
@@ -28,52 +26,4 @@ export function curriculumOrder(deck: LearningDeck, curriculumSeed: string): str
     const rightKey = curriculumHash(`${CURRICULUM_VERSION}\0${curriculumSeed}\0${deck.fingerprint}\0${right}`);
     return leftKey < rightKey ? -1 : leftKey > rightKey ? 1 : left < right ? -1 : left > right ? 1 : 0;
   });
-}
-
-/** Introduces curriculum words until the acquisition pool holds `poolSize`
- * words. The pool is derived (introduced && not graduated), so graduations
- * free slots and lapsed graduates rejoin automatically; this only ever pulls
- * forward brand-new words, and only during regular play — never as a side
- * effect of reviewing another grade. */
-export function introduceNewWords(
-  level: LevelProgress,
-  deck: LearningDeck,
-  poolSize: number,
-  spawnOrdinal: number,
-): { level: LevelProgress; introduced: number } {
-  const deckIds = deck.words.map((word) => word.id);
-  const known = new Set(deckIds);
-  if (known.size !== deckIds.length) throw new Error("Deck word IDs must be unique");
-
-  const existingIntroduced = Object.values(level.words).filter(
-    (progress) => progress.introducedAtOrdinal !== null,
-  ).length;
-  const poolCount = Object.values(level.words).filter(
-    (progress) => progress.introducedAtOrdinal !== null && !isGraduated(progress),
-  ).length;
-  if (poolCount >= poolSize || existingIntroduced >= deckIds.length) {
-    const curriculumCursor = Math.min(existingIntroduced, deckIds.length);
-    return { level: curriculumCursor === level.curriculumCursor ? level : { ...level, curriculumCursor }, introduced: 0 };
-  }
-
-  // Scan the complete deterministic order rather than assuming every item
-  // before curriculumCursor is introduced. A deck fingerprint change can
-  // reshuffle that order; filtering by the persisted introduction marker
-  // prevents newly earlier words from being skipped forever.
-  const order = curriculumOrder(deck, level.curriculumSeed);
-  let words: Record<string, WordProgress> = level.words;
-  let introduced = 0;
-  for (const id of order) {
-    if (poolCount + introduced >= poolSize) break;
-    const progress = words[id];
-    if (!progress || progress.introducedAtOrdinal !== null) continue;
-    if (words === level.words) words = { ...level.words };
-    words[id] = { ...progress, introducedAtOrdinal: spawnOrdinal };
-    introduced += 1;
-  }
-
-  return {
-    level: { ...level, curriculumCursor: Math.min(existingIntroduced + introduced, deckIds.length), words },
-    introduced,
-  };
 }

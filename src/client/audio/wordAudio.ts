@@ -1,22 +1,6 @@
-import type { LevelProgress, RuntimeWord } from "../../shared/schemas";
+import type { RuntimeWord } from "../../shared/schemas";
 
 export type AudioFactory = (source: string) => HTMLAudioElement;
-
-export const AUDIO_POOL_LOOKAHEAD = 3;
-
-/** Includes already introduced cards plus the next curriculum cards that will
- * enter the pool, giving their audio a full level of gameplay to load. */
-export function audioPoolWordIds(
-  level: LevelProgress,
-  curriculumIds: readonly string[],
-  lookahead = AUDIO_POOL_LOOKAHEAD,
-): string[] {
-  const ids = new Set(Object.entries(level.words)
-    .filter(([, progress]) => progress.introducedAtOrdinal !== null)
-    .map(([id]) => id));
-  for (const id of curriculumIds.slice(level.curriculumCursor, level.curriculumCursor + lookahead)) ids.add(id);
-  return [...ids];
-}
 
 export function wordAudioSource(deckId: string, word: RuntimeWord): string {
   if (!word.audioUrl) return "";

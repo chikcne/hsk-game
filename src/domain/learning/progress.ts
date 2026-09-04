@@ -1,37 +1,24 @@
 import type { LevelProgress, WordProgress } from "../../shared/schemas";
-import { createComponentMemory, isGraduated } from "../memory";
-import { curriculumOrder, introduceNewWords } from "./curriculum";
+import { createCardMemory } from "../memory";
+import { curriculumOrder } from "./curriculum";
 import type { LearningDeck } from "./types";
 
 export function createWordProgress(): WordProgress {
   return {
-    pinyin: createComponentMemory(),
-    meaning: createComponentMemory(),
-    attempts: 0,
-    completeCorrect: 0,
-    wrongPinyin: 0,
-    wrongMeaning: 0,
-    landed: 0,
-    totalThinkingMs: 0,
-    fastestCorrectMs: null,
-    totalPinyinMs: 0,
-    fastestPinyinMs: null,
-    lastPinyinMs: null,
-    lastOutcome: null,
+    card: createCardMemory(),
+    learnReviews: 0,
     lastSeenAt: null,
     introducedAtOrdinal: null,
-    lastSpawnOrdinal: null,
-    nextEligibleSpawn: 0,
   };
 }
 
 export type CreateLevelOptions = {
   curriculumSeed: string;
-  levelSize: number;
-  /** Global spawn ordinal at creation; introduced words join immediately. */
-  spawnOrdinal: number;
 };
 
+/** A fresh grade record: every curriculum word present and untouched. Words
+ * are introduced exclusively by Learn sessions (or reconciliation), never at
+ * creation time. */
 export function createLevelProgress(
   deck: LearningDeck,
   options: CreateLevelOptions,
@@ -42,7 +29,7 @@ export function createLevelProgress(
 
   const words: Record<string, WordProgress> = {};
   for (const id of ids) words[id] = createWordProgress();
-  const level: LevelProgress = {
+  return {
     deckId: deck.id,
     deckFingerprint: deck.fingerprint,
     curriculumSeed: options.curriculumSeed,
@@ -51,20 +38,13 @@ export function createLevelProgress(
     words,
     orphanedProgress: {},
   };
-  return introduceNewWords(level, deck, Math.max(1, options.levelSize), options.spawnOrdinal).level;
 }
 
-/** Introduced words that have not yet graduated in both components: the
- * arcade's working pool. Derived, never stored, so lapses rejoin it and
- * graduations leave it without any bookkeeping. */
-export function acquisitionWordIds(level: LevelProgress): string[] {
-  return Object.entries(level.words)
-    .filter(([, progress]) => progress.introducedAtOrdinal !== null && !isGraduated(progress))
-    .map(([id]) => id);
-}
-
+/** Words whose card sits in the review stage (the product's "mastered" count
+ * on the grade screen). Lapsed cards sit in `relearning` and dip out of this
+ * derived count until repaired — while staying in the acquired_words table. */
 export function countGraduated(level: LevelProgress): number {
-  return Object.values(level.words).reduce((count, word) => count + (isGraduated(word) ? 1 : 0), 0);
+  return Object.values(level.words).reduce((count, word) => count + (word.card.state === "review" ? 1 : 0), 0);
 }
 
 /** 1-based lesson label derived from how far the curriculum has advanced. */

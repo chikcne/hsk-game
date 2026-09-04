@@ -1,23 +1,17 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { BASE_TRAVEL_MS, DANGER_ZONE_PROGRESS, MAX_ACTIVE_ENEMIES, type ChoiceKey } from "../../shared/constants";
-import type { DifficultySettings, LevelProgress, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
-import { acceptsPinyin, canonicalizePinyin } from "../../domain/deck/pinyin";
 import {
-  advanceOrdinal,
-  applyOutcomeToLevels,
-  createLevelProgress,
-  curriculumLessonNumber,
-  curriculumOrder,
-  reconcileLevelProgress,
-  spawnNextWord,
-  type LevelsMap,
-  type SchedulerSnapshot,
-} from "../../domain/learning";
-import { reviewWordIdOf, spawnNextReviewWord } from "../../domain/review";
-import { isUnseenWord, nextDueAtMs, type WordRatings } from "../../domain/memory";
-import { createSecureRandomState } from "../../domain/random";
-import { generateChoices, type MeaningChoice } from "../../domain/session/choices";
+  BASE_TRAVEL_MS, DANGER_ZONE_PROGRESS, MAX_ACTIVE_ENEMIES, type ChoiceKey,
+} from "../../shared/constants";
+import type { DifficultySettings, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
+import { acceptsPinyin } from "../../domain/deck/pinyin";
+import type { SchedulerSnapshot } from "../../domain/learning";
+import type { RecencyLabel, ReviewPlan, ReviewSession, ReviewSpawnDecision } from "../../domain/review";
+import {
+  applyReviewOutcome, createReviewSession, decideReviewSpawn, pendingReviewWork, reserveReviewSpawn,
+} from "../../domain/review";
+import { safeMeaningChoices, type MeaningChoice } from "../../domain/session/choices";
 import { calculatePoints, nextStreak } from "../../domain/session/scoring";
+import { encounterCredit } from "../../domain/session/credit";
 import {
   EMPTY_BATTLEFIELD_SPAWN_DELAY_MS,
   emptyFieldWriteSchedule,
@@ -30,7 +24,7 @@ import { wordSpeedMultiplierForFamiliarity } from "../../domain/session/speed";
 import { selectLockedTarget } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
 import { playSoundEffect } from "../audio/soundEffects";
-import { audioPoolWordIds, WordAudioPlayer, wordAudioSource } from "../audio/wordAudio";
+import { WordAudioPlayer, wordAudioSource } from "../audio/wordAudio";
 import { phraseStrokeLeadMs, type StrokeDataMap } from "../data/strokeData";
 
 export type Feedback = {
@@ -39,73 +33,79 @@ export type Feedback = {
   word: RuntimeWord;
   typed?: string;
   points?: number;
-  ratings: WordRatings;
-  /** Milliseconds until the weaker memory component is next due. */
-  nextDueInMs: number | null;
-  struggled: boolean;
+  /** True when the pinyin was revealed by the recall window and the meaning
+   * answer then succeeded: a miss with a retry obligation — never presented
+   * as a clean DIRECT HIT, scoring no points and resetting the streak. */
+  revealed?: boolean;
 };
 export type WordSessionStats = {
   attempts: number;
-  struggles: number;
+  /** Total miss events: wrong pinyin/meaning, landings, and pinyin
+   * autocomplete reveals — even when the meaning was then correct. */
+  misses: number;
   wrongPinyin: number;
   wrongMeaning: number;
   landed: number;
+  /** Pinyin autocomplete reveals (a subset of `misses`). */
+  autocompleted: number;
   totalPinyinMs: number;
+  /** New/Recent/Old tier captured when the session started. */
+  recency: RecencyLabel;
 };
 export type SessionStats = {
-  mode: "regular" | "review";
+  mode: "review";
   score: number;
   correct: number;
   wrongPinyin: number;
   wrongMeaning: number;
   landed: number;
   bestStreak: number;
+  /** Unique word keys served (a word can serve multiple times). */
   seen: Set<string>;
-  newlyMastered: Set<string>;
-  levelsCompleted: number;
   wordStats: Map<string, WordSessionStats>;
+  /** Exact length of the deterministic base plan (the settings target). */
+  baseSpawns: number;
+  /** Every resolved enemy: base-plan spawns plus additive repair retries.
+   * Progress is tracked per resolved spawn, not per unique word. */
+  resolvedSpawns: number;
+  /** Additive retry spawns served beyond the base plan so far. */
+  repairSpawns: number;
+  /** Repair obligations cleared by a clean, fully correct encounter. */
+  clearedRepairs: number;
 };
 
-/** Progress deltas the battle applies back into the save. */
-export type SaveProgressUpdate = { levels: LevelsMap; snapshot: SchedulerSnapshot };
-
-type RegularBattleOptions = {
-  kind: "regular";
-  deck: RuntimeDeck;
-  initialLevel: LevelProgress | undefined;
-  initialSnapshot: SchedulerSnapshot;
-  onChange: (update: SaveProgressUpdate, outcome?: EncounterOutcome, points?: number) => void;
+/** Review battles never mutate the main FSRS cards; the coordinator receives
+ * the advanced scheduler snapshot plus the outcome for lifetime counters. */
+export type ReviewProgressReport = {
+  snapshot: SchedulerSnapshot;
+  outcome?: EncounterOutcome;
+  points: number;
 };
-type ReviewBattleOptions = {
-  kind: "review";
+
+export type BattleOptions = {
   /** Merged cross-grade deck; word IDs are review keys (`deckId:wordId`). */
   deck: RuntimeDeck;
-  initialLevels: LevelsMap;
+  /** Deterministic nonpersisted spawn plan built from `acquired_words`. */
+  plan: ReviewPlan;
+  /** Snapshot after plan creation; spawns advance its ordinal. */
   initialSnapshot: SchedulerSnapshot;
-  onChange: (update: SaveProgressUpdate, outcome?: EncounterOutcome, points?: number) => void;
+  onChange: (report: ReviewProgressReport) => void;
 };
-export type BattleOptions = RegularBattleOptions | ReviewBattleOptions;
 
-const initialStats = (mode: "regular" | "review"): SessionStats => ({
-  mode, score: 0, correct: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0,
-  bestStreak: 0, seen: new Set(), newlyMastered: new Set(), levelsCompleted: 0, wordStats: new Map(),
+const initialStats = (baseSpawns: number): SessionStats => ({
+  mode: "review", score: 0, correct: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0,
+  bestStreak: 0, seen: new Set(), wordStats: new Map(),
+  baseSpawns, resolvedSpawns: 0, repairSpawns: 0, clearedRepairs: 0,
 });
 
 type PreparedSpawn = {
   enemy: Enemy;
-  familiarity: number;
+  /** Recency pressure 0..1 of the spawned word (spawn-delay adjustment). */
+  pressure: number;
   leadMs: number;
   startedAt: number;
   spawnAt: number;
 };
-type SpawnPreview = { wordId: string; leadMs: number };
-type Availability = "ready" | "cooling" | "waiting" | "complete";
-
-/** Per-profile curriculum seed so two players never share an introduction
- * order (the seeded fallback only exists for deterministic tests). */
-function secureCurriculumSeed(): string {
-  return createSecureRandomState().map((word) => word.toString(16).padStart(8, "0")).join("");
-}
 
 export function useBattle(
   options: BattleOptions,
@@ -118,29 +118,14 @@ export function useBattle(
   const words = useMemo(() => new Map(deck.words.map((word) => [word.id, word])), [deck]);
   const wordAudioPlayer = useMemo(() => new WordAudioPlayer(), [deck.fingerprint]);
 
-  const [levels, setLevels] = useState<LevelsMap>(() => {
-    const snapshot = options.initialSnapshot;
-    if (options.kind === "review") return { ...options.initialLevels };
-    const existing = options.initialLevel;
-    if (existing && existing.deckFingerprint === deck.fingerprint) return { [deck.id]: existing };
-    if (existing) {
-      // A deck update changed the fingerprint: reconcile stable word IDs
-      // instead of silently resetting the grade's history.
-      const { level } = reconcileLevelProgress(existing, deck, snapshot.spawnOrdinal);
-      return { [deck.id]: level };
-    }
-    return {
-      [deck.id]: createLevelProgress(deck, {
-        curriculumSeed: secureCurriculumSeed(),
-        levelSize: settings.levelSize,
-        spawnOrdinal: snapshot.spawnOrdinal,
-      }),
-    };
-  });
-  const levelsRef = useRef(levels); levelsRef.current = levels;
+  const planRecencyRef = useRef(options.plan.recency);
+  const planPressureRef = useRef(options.plan.pressure);
+  /** Pure spawn/obligation coordination over the immutable plan. */
+  const reviewSessionRef = useRef<ReviewSession>(createReviewSession(options.plan.spawns));
   const [snapshot, setSnapshot] = useState<SchedulerSnapshot>(options.initialSnapshot);
   const snapshotRef = useRef(snapshot); snapshotRef.current = snapshot;
   const [sessionComplete, setSessionComplete] = useState(false);
+  const sessionCompleteRef = useRef(false);
   const [enemies, setEnemies] = useState<Enemy[]>([]);
   const enemiesRef = useRef(enemies); enemiesRef.current = enemies;
   const [targetId, setTargetId] = useState<string | null>(null);
@@ -157,7 +142,7 @@ export function useBattle(
   const streakRef = useRef(0); streakRef.current = streak;
   const [performanceMultiplier, setPerformanceMultiplier] = useState(1);
   const performanceMultiplierRef = useRef(1);
-  const [stats, setStats] = useState<SessionStats>(() => initialStats(options.kind));
+  const [stats, setStats] = useState<SessionStats>(() => initialStats(options.plan.spawns.length));
   const target = targetId === null ? null : enemies.find((enemy) => enemy.id === targetId) ?? null;
   const targetRef = useRef(target); targetRef.current = target;
   const targetWord = target ? words.get(target.wordId) ?? null : null;
@@ -166,47 +151,22 @@ export function useBattle(
   const spawnDue = useRef(0);
   const [preparingEnemy, setPreparingEnemy] = useState<Enemy | null>(null);
   const preparingRef = useRef<PreparedSpawn | null>(null);
-  const nextSpawnPreview = useRef<SpawnPreview | null | undefined>(undefined);
-  const availabilityRef = useRef<Availability>("ready");
-  /** Earliest ordinal at which the next due word cools down; reported by the
-   * scheduler whenever the empty battlefield is ordinal-blocked. */
-  const blockedUntilOrdinalRef = useRef<number | null>(null);
-  const lastWaitingCheck = useRef(0);
   /** Enemy ids whose pinyin was revealed by the recall window; their meaning
-   * phase still counts, but the pinyin component grades Again. */
+   * phase still counts toward session stats — and counts as a miss even if
+   * the meaning answer is correct. */
   const autocompleteRevealed = useRef(new Set<string>());
-  // Mid-range familiarity keeps the configured base spawn interval neutral at session start.
-  const previousFamiliarity = useRef(0.5);
-  const startLesson = useRef<number | null>(null);
+  // Neutral 0.5 pressure keeps the configured base spawn interval at session start.
+  const previousPressure = useRef(0.5);
   const lastFrame = useRef<number | null>(null);
   const enemySequence = useRef(0);
   const pausedRef = useRef(paused); pausedRef.current = paused;
   const optionsRef = useRef(options); optionsRef.current = options;
   const suspendedAt = useRef<number | null>(null);
-  const curriculumIds = useMemo(
-    () => options.kind === "regular" ? curriculumOrder(deck, levels[deck.id]?.curriculumSeed ?? "") : [],
-    [deck, options.kind, levels[deck.id]?.curriculumSeed],
-  );
 
-  const preloadRegularPool = useCallback((poolLevel: LevelProgress | null) => {
-    if (!poolLevel) return;
-    const sources = audioPoolWordIds(poolLevel, curriculumIds).flatMap((id) => {
-      const word = words.get(id);
-      return word ? [wordAudioSource(deck.id, word)] : [];
-    });
-    wordAudioPlayer.preload(sources);
-  }, [curriculumIds, deck.id, wordAudioPlayer, words]);
   useEffect(() => {
-    if (options.kind === "regular") {
-      const level = levels[deck.id];
-      if (level && startLesson.current === null) startLesson.current = curriculumLessonNumber(level, settings.levelSize);
-      preloadRegularPool(level ?? null);
-    } else {
-      startLesson.current = null;
-      wordAudioPlayer.preload(deck.words.map((word) => wordAudioSource(deck.id, word)));
-    }
-  }, [deck.id, deck.words, levelKey(levels), options.kind, preloadRegularPool, settings.levelSize, wordAudioPlayer]);
-  useEffect(() => () => wordAudioPlayer.dispose(), [wordAudioPlayer]);
+    wordAudioPlayer.preload(deck.words.map((word) => wordAudioSource(deck.id, word)));
+    return () => wordAudioPlayer.dispose();
+  }, [deck, wordAudioPlayer]);
 
   const commitEnemies = useCallback((nextEnemies: Enemy[], now = performance.now()) => {
     if (nextEnemies.length === 0 && preparingRef.current === null) {
@@ -255,35 +215,49 @@ export function useBattle(
     return () => document.removeEventListener("visibilitychange", visibility);
   }, []);
 
-  const updateSessionStats = useCallback((word: RuntimeWord, outcome: EncounterOutcome, pinyinMs: number, points: number, newlyMastered: boolean, struggled: boolean, levelsCompleted: number, protectsMiss: boolean) => {
-    const nowStreak = nextStreak(streakRef.current, outcome.kind === "correct", protectsMiss);
+  const updateSessionStats = useCallback((
+    word: RuntimeWord,
+    outcome: EncounterOutcome,
+    pinyinMs: number,
+    points: number,
+    missed: boolean,
+    autocompleted: boolean,
+    clearedRepair: boolean,
+  ) => {
+    const credit = encounterCredit(outcome, autocompleted);
+    const nowStreak = nextStreak(streakRef.current, credit.streakContinues, false);
     setStreak(nowStreak);
     setStats((old) => {
       const seen = new Set(old.seen).add(word.id);
-      const mastered = new Set(old.newlyMastered);
-      if (newlyMastered) mastered.add(word.id);
       const wordStats = new Map(old.wordStats);
-      const previous = wordStats.get(word.id) ?? { attempts: 0, struggles: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0, totalPinyinMs: 0 };
+      const previous = wordStats.get(word.id) ?? {
+        attempts: 0, misses: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0, autocompleted: 0,
+        totalPinyinMs: 0, recency: planRecencyRef.current.get(word.id) ?? "old",
+      };
       wordStats.set(word.id, {
         attempts: previous.attempts + 1,
-        struggles: previous.struggles + (struggled ? 1 : 0),
+        misses: previous.misses + (missed ? 1 : 0),
         wrongPinyin: previous.wrongPinyin + (outcome.kind === "wrongPinyin" ? 1 : 0),
         wrongMeaning: previous.wrongMeaning + (outcome.kind === "wrongMeaning" ? 1 : 0),
         landed: previous.landed + (outcome.kind === "landed" ? 1 : 0),
+        autocompleted: previous.autocompleted + (autocompleted ? 1 : 0),
         totalPinyinMs: previous.totalPinyinMs + pinyinMs,
+        recency: previous.recency,
       });
       return {
         ...old,
         score: old.score + points,
-        correct: old.correct + (outcome.kind === "correct" ? 1 : 0),
+        // A revealed-then-meaning-correct encounter is a miss, not a clean
+        // recall: it counts toward misses and never inflates accuracy.
+        correct: old.correct + (credit.countsAsCorrect ? 1 : 0),
         wrongPinyin: old.wrongPinyin + (outcome.kind === "wrongPinyin" ? 1 : 0),
         wrongMeaning: old.wrongMeaning + (outcome.kind === "wrongMeaning" ? 1 : 0),
         landed: old.landed + (outcome.kind === "landed" ? 1 : 0),
         bestStreak: Math.max(old.bestStreak, nowStreak),
         seen,
-        newlyMastered: mastered,
-        levelsCompleted: Math.max(old.levelsCompleted, levelsCompleted),
         wordStats,
+        resolvedSpawns: old.resolvedSpawns + 1,
+        clearedRepairs: old.clearedRepairs + (clearedRepair ? 1 : 0),
       };
     });
   }, []);
@@ -300,33 +274,80 @@ export function useBattle(
     if (targetIdRef.current !== enemy.id || phaseRef.current !== "pinyin") return;
     meaningPinyinMs.current = pinyinMs;
     if (autocompleted) autocompleteRevealed.current.add(enemy.id);
-    setChoices(generateChoices(deck, word, enemy.id));
+    // Safe by contract: choice generation can never throw here, so a
+    // pathological deck can never terminate the rAF frame loop.
+    setChoices(safeMeaningChoices(deck, word, enemy.id));
     phaseRef.current = "meaning"; setPhase("meaning");
     setPinyinAutocompleted(autocompleted);
     phaseStarted.current = performance.now();
     playWordAudio(word);
   }, [deck, playWordAudio]);
 
+  /**
+   * Picks what the next spawn should be via the pure review-session
+   * reducer: due repair obligations (oldest first, never concurrently
+   * active) outrank the next base-plan spawn; waiting is safe only while a
+   * candidate word is still active; completion additionally requires an
+   * empty battlefield (checked at the call site).
+   */
+  const decideSpawn = useCallback((): ReviewSpawnDecision => {
+    const activeKeys = new Set(enemiesRef.current.map((enemy) => enemy.wordId));
+    if (preparingRef.current) activeKeys.add(preparingRef.current.enemy.wordId);
+    return decideReviewSpawn(reviewSessionRef.current, activeKeys);
+  }, []);
+
+  /** Reserves a decided spawn: advances the snapshot ordinal, consumes one
+   * base-plan slot or counts one additive repair, and builds the enemy. The
+   * reservation is atomic with the decision — both happen in one frame. */
+  const reserveSpawn = useCallback((decision: Extract<ReviewSpawnDecision, { kind: "spawn" }>): PreparedSpawn | null => {
+    const word = words.get(decision.wordKey);
+    if (!word) return null;
+    reviewSessionRef.current = reserveReviewSpawn(reviewSessionRef.current, decision);
+    const ordinal = snapshotRef.current.spawnOrdinal;
+    const nextSnapshot: SchedulerSnapshot = {
+      spawnOrdinal: ordinal + 1,
+      schedulerRng: snapshotRef.current.schedulerRng,
+    };
+    snapshotRef.current = nextSnapshot;
+    setSnapshot(nextSnapshot);
+    optionsRef.current.onChange({ snapshot: nextSnapshot, points: 0 });
+    if (decision.source === "repair") setStats((old) => ({ ...old, repairSpawns: old.repairSpawns + 1 }));
+    const pressure = planPressureRef.current.get(decision.wordKey) ?? 0.5;
+    const enemy: Enemy = {
+      id: `e-${Date.now()}-${enemySequence.current++}`,
+      wordId: decision.wordKey,
+      progress: 0,
+      speedMultiplier: wordSpeedMultiplierForFamiliarity(pressure),
+      isNewWord: false,
+      lane: (ordinal * 5 + 1) % 8,
+      spawnOrdinal: ordinal,
+      status: "descending",
+    };
+    return { enemy, pressure, leadMs: 0, startedAt: 0, spawnAt: 0 };
+  }, [words]);
+
   const updateWord = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     const word = words.get(enemy.wordId); if (!word) return;
+    const wasRevealed = autocompleteRevealed.current.has(enemy.id);
     autocompleteRevealed.current.delete(enemy.id);
-    nextSpawnPreview.current = undefined;
-    const config = optionsRef.current;
+    // A clean, fully correct encounter (typed pinyin, correct meaning, no
+    // reveal) clears the word's repair obligation. Any miss — wrong pinyin,
+    // wrong meaning, a landing, or an autocomplete reveal even when the
+    // meaning is then correct — (re)queues it with a fresh delay.
+    const cleanCorrect = outcome.kind === "correct" && !wasRevealed;
+    const appliedOutcome = applyReviewOutcome(reviewSessionRef.current, word.id, cleanCorrect);
+    reviewSessionRef.current = appliedOutcome.session;
+    const clearedRepair = appliedOutcome.cleared;
     const pinyinMs = outcome.kind === "landed" ? 0 : outcome.pinyinMs;
     const thinking = outcome.kind === "correct" || outcome.kind === "wrongMeaning"
       ? outcome.pinyinMs + outcome.meaningMs
       : outcome.kind === "wrongPinyin" ? outcome.pinyinMs : outcome.activeThinkingMs ?? 0;
-    const pinyinAutocompleted = (outcome.kind === "correct" || outcome.kind === "wrongMeaning")
-      && outcome.pinyinAutocompleted === true;
-    // The domain still receives the full two-component result so meaning can
-    // be graded, but arcade/lifetime accounting treats a reveal as the pinyin
-    // miss it was rather than as a complete success.
-    const accountedOutcome: EncounterOutcome = pinyinAutocompleted
-      ? { kind: "wrongPinyin", pinyinMs: outcome.pinyinMs }
-      : outcome;
     const currentPerformanceMultiplier = performanceMultiplierRef.current;
     const effectiveSpawnIntervalMs = settings.spawnIntervalMs / currentPerformanceMultiplier;
-    const points = accountedOutcome.kind === "correct"
+    const credit = encounterCredit(outcome, wasRevealed);
+    // A revealed pinyin forfeits the round's reward: the encounter resolves
+    // (the meaning answer stands) but scores nothing and resets the streak.
+    const points = credit.earnsPoints
       ? calculatePoints(
         thinking,
         streakRef.current,
@@ -334,43 +355,26 @@ export function useBattle(
         settings.enemySpeedMultiplier * enemy.speedMultiplier * currentPerformanceMultiplier,
       )
       : 0;
-    const now = new Date();
-    const pinyinLength = Math.max(1, canonicalizePinyin(word.acceptedPinyin[0] ?? word.displayPinyin).length);
 
-    let feedback: Feedback;
-    let protectsMiss = false;
-    const deckId = config.kind === "regular" ? config.deck.id : reviewWordIdOf(word.id).deckId;
-    const wordId = config.kind === "regular" ? word.id : reviewWordIdOf(word.id).wordId;
+    // Review battles leave every FSRS card untouched; only the lifetime
+    // counters and the global scheduler snapshot advance.
+    const report: ReviewProgressReport = { snapshot: snapshotRef.current, outcome, points };
+    optionsRef.current.onChange(report);
+    updateSessionStats(word, outcome, pinyinMs, points, !cleanCorrect, wasRevealed, clearedRepair);
 
-    const previous = levelsRef.current[deckId]?.words[wordId];
-    if (!previous) return;
-    if (config.kind === "regular") protectsMiss = accountedOutcome.kind !== "correct" && isUnseenWord(previous);
-
-    const result = applyOutcomeToLevels(
-      levelsRef.current, deckId, wordId, outcome, now, snapshotRef.current.spawnOrdinal,
-      { pinyinAutocompleted, pinyinLength },
-    );
-    levelsRef.current = result.levels; setLevels(result.levels);
-    if (config.kind === "regular") preloadRegularPool(result.levels[config.deck.id] ?? null);
-
-    const lessonCompleted = config.kind === "regular" && startLesson.current !== null
-      ? Math.max(0, curriculumLessonNumber(result.levels[config.deck.id]!, settings.levelSize) - startLesson.current)
-      : 0;
-    updateSessionStats(word, accountedOutcome, pinyinMs, points, result.newlyGraduated, result.struggled, lessonCompleted, protectsMiss);
-    config.onChange({ levels: result.levels, snapshot: snapshotRef.current }, accountedOutcome, points);
-    feedback = {
-      id: enemy.id, kind: accountedOutcome.kind === "correct" ? "correct" : accountedOutcome.kind === "landed" ? "landed" : "miss",
-      word, typed, points, ratings: result.ratings,
-      nextDueInMs: nextDueAtMs(result.progress) - now.getTime(),
-      struggled: result.struggled,
+    const feedback: Feedback = {
+      id: enemy.id,
+      kind: outcome.kind === "correct" ? "correct" : outcome.kind === "landed" ? "landed" : "miss",
+      word, typed, points,
+      revealed: wasRevealed || undefined,
     };
 
-    const nowStreak = nextStreak(streakRef.current, accountedOutcome.kind === "correct", protectsMiss);
+    const nowStreak = nextStreak(streakRef.current, credit.streakContinues, false);
     streakRef.current = nowStreak;
 
     const nextMultiplier = nextPerformanceMultiplier(
       currentPerformanceMultiplier,
-      accountedOutcome.kind === "correct",
+      outcome.kind === "correct",
       thinking,
     );
     performanceMultiplierRef.current = nextMultiplier;
@@ -389,14 +393,14 @@ export function useBattle(
     }
 
     playSoundEffect(feedback.kind === "correct" ? "blaster" : "buzzer", settings.masterVolume);
-    if (accountedOutcome.kind === "wrongPinyin" || accountedOutcome.kind === "wrongMeaning") playWordAudio(word);
+    if (outcome.kind === "wrongPinyin" || outcome.kind === "wrongMeaning") playWordAudio(word);
     setFeedback(feedback);
     if (feedback.kind !== "correct") {
       learningPausedRef.current = true; setLearningPaused(true);
     } else {
       window.setTimeout(() => setFeedback((item) => item?.id === enemy.id ? null : item), 1100);
     }
-  }, [deck, playWordAudio, preloadRegularPool, settings, updateSessionStats, words]);
+  }, [playWordAudio, settings, updateSessionStats, words]);
 
   const resolveEnemy = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     if (!enemiesRef.current.some((item) => item.id === enemy.id)) return;
@@ -414,93 +418,8 @@ export function useBattle(
     return word ? phraseStrokeLeadMs(word.displayHanzi, strokeData) : 0;
   }, [animateStrokes, strokeData, words]);
 
-  /** Purely peeks at the deterministic scheduler. Nothing is reserved until
-   * the phrase reaches its exact pre-write threshold. */
-  const previewSpawn = useCallback((): SpawnPreview | null => {
-    if (enemiesRef.current.length >= MAX_ACTIVE_ENEMIES) return null;
-    const config = optionsRef.current;
-    const excluded = new Set(enemiesRef.current.map((enemy) => enemy.wordId));
-    const now = new Date();
-    if (config.kind === "regular") {
-      const level = levelsRef.current[config.deck.id];
-      if (!level) return null;
-      const result = spawnNextWord(level, config.deck, now, snapshotRef.current, settings, excluded);
-      if (result.status !== "spawned") {
-        availabilityRef.current = result.status === "complete" ? "complete" : result.coolingOnly ? "cooling" : "waiting";
-        blockedUntilOrdinalRef.current = result.status === "empty" && result.coolingOnly
-          ? result.blockedUntilOrdinal ?? null
-          : null;
-        return null;
-      }
-      availabilityRef.current = "ready";
-      blockedUntilOrdinalRef.current = null;
-      return { wordId: result.wordId, leadMs: strokeLeadForWord(result.wordId) };
-    }
-    const result = spawnNextReviewWord(levelsRef.current, now, snapshotRef.current, excluded, settings);
-    if (result.status !== "spawned") {
-      availabilityRef.current = "complete";
-      return null;
-    }
-    availabilityRef.current = "ready";
-    return { wordId: result.wordKey, leadMs: strokeLeadForWord(result.wordKey) };
-  }, [settings, strokeLeadForWord]);
-
-  /** Reserves the previewed scheduler result, but does not add it to the live
-   * enemy list. It cannot be targeted, descend, land, or affect recall yet. */
-  const prepareSpawn = useCallback((): Omit<PreparedSpawn, "leadMs" | "startedAt" | "spawnAt"> | null => {
-    if (enemiesRef.current.length >= MAX_ACTIVE_ENEMIES) return null;
-    const config = optionsRef.current;
-    const excluded = new Set(enemiesRef.current.map((enemy) => enemy.wordId));
-    const now = new Date();
-    let wordId: string;
-    let ordinal: number;
-    let familiarity: number;
-    let unseen: boolean;
-    let nextSnapshot: SchedulerSnapshot;
-    if (config.kind === "regular") {
-      const level = levelsRef.current[config.deck.id];
-      if (!level) return null;
-      const result = spawnNextWord(level, config.deck, now, snapshotRef.current, settings, excluded);
-      if (result.status !== "spawned") {
-        availabilityRef.current = result.status === "complete" ? "complete" : result.coolingOnly ? "cooling" : "waiting";
-        return null;
-      }
-      wordId = result.wordId; ordinal = result.spawnOrdinal;
-      familiarity = result.familiarity; unseen = result.unseen;
-      nextSnapshot = result.snapshot;
-      levelsRef.current = { ...levelsRef.current, [config.deck.id]: result.level };
-    } else {
-      const result = spawnNextReviewWord(levelsRef.current, now, snapshotRef.current, excluded, settings);
-      if (result.status !== "spawned") {
-        availabilityRef.current = "complete";
-        return null;
-      }
-      wordId = result.wordKey; ordinal = result.spawnOrdinal;
-      familiarity = result.familiarity; unseen = false;
-      nextSnapshot = result.snapshot;
-      levelsRef.current = result.levels;
-    }
-    setLevels(levelsRef.current);
-    snapshotRef.current = nextSnapshot;
-    setSnapshot(nextSnapshot);
-    config.onChange({ levels: levelsRef.current, snapshot: nextSnapshot });
-    setSessionComplete(false);
-    const enemy: Enemy = {
-      id: `e-${Date.now()}-${enemySequence.current++}`,
-      wordId,
-      progress: 0,
-      speedMultiplier: wordSpeedMultiplierForFamiliarity(familiarity),
-      isNewWord: unseen,
-      lane: (ordinal * 5 + 1) % 8,
-      spawnOrdinal: ordinal,
-      status: "descending",
-    };
-    return { enemy, familiarity };
-  }, [settings]);
-
   useEffect(() => {
     if (preparingRef.current === null) spawnDue.current = performance.now();
-    nextSpawnPreview.current = undefined;
   }, [animateStrokes, settings.spawnIntervalMs, strokeData]);
   useEffect(() => {
     let frame = 0;
@@ -511,54 +430,39 @@ export function useBattle(
         const currentPerformanceMultiplier = performanceMultiplierRef.current;
 
         if (preparingRef.current === null && enemiesRef.current.length < MAX_ACTIVE_ENEMIES) {
-          if (nextSpawnPreview.current === undefined) nextSpawnPreview.current = previewSpawn();
-          const preview = nextSpawnPreview.current;
-          if (preview && now >= spawnDue.current - preview.leadMs) {
-            const reserved = prepareSpawn();
-            if (reserved) {
-              const fullLeadMs = strokeLeadForWord(reserved.enemy.wordId);
-              // An empty battlefield must serve the next word within the
-              // two-second budget: its write compresses instead of serializing
-              // the full stroke lead after the board already cleared. With
-              // enemies still up, gameplay pacing keeps natural cadence.
-              const schedule = enemiesRef.current.length === 0
-                ? emptyFieldWriteSchedule(now, spawnDue.current, fullLeadMs)
-                : gameplayWriteSchedule(now, spawnDue.current, fullLeadMs);
-              const prepared: PreparedSpawn = {
-                ...reserved,
-                leadMs: schedule.writeMs,
-                startedAt: now,
-                spawnAt: schedule.spawnAtMs,
-              };
-              preparingRef.current = prepared;
-              spawnDue.current = prepared.spawnAt;
-              setPreparingEnemy(schedule.writeSpeed === 1 ? reserved.enemy : { ...reserved.enemy, writeSpeed: schedule.writeSpeed });
-            } else {
-              nextSpawnPreview.current = undefined;
-            }
-          } else if (preview === null && enemiesRef.current.length === 0 && preparingRef.current === null) {
-            if (availabilityRef.current === "cooling") {
-              // Nothing can spawn because every due word is still ordinal-
-              // blocked. Fast-forward the empty-field clock straight to the
-              // earliest ordinal where the next due word cools down: the hard
-              // `nextEligibleSpawn` microspacing still holds (eligibility is
-              // re-checked by the scheduler), the board just no longer idles
-              // one ordinal per tick near the end of a session.
-              const target = blockedUntilOrdinalRef.current ?? snapshotRef.current.spawnOrdinal + 1;
-              snapshotRef.current = advanceOrdinal(snapshotRef.current, target);
-              setSnapshot(snapshotRef.current);
-              nextSpawnPreview.current = undefined;
-            } else if (availabilityRef.current === "waiting") {
-              // FSRS due-ness changes with wall time. A null preview cannot be
-              // cached indefinitely or a card that becomes due inside the
-              // session horizon will never be observed.
-              if (now - lastWaitingCheck.current >= EMPTY_BATTLEFIELD_SPAWN_DELAY_MS) {
-                lastWaitingCheck.current = now;
-                nextSpawnPreview.current = undefined;
+          const decision = decideSpawn();
+          if (decision.kind === "spawn") {
+            const fullLeadMs = strokeLeadForWord(decision.wordKey);
+            if (now >= spawnDue.current - fullLeadMs) {
+              const reserved = reserveSpawn(decision);
+              if (reserved) {
+                // An empty battlefield must serve the next word within the
+                // two-second budget: its write compresses instead of serializing
+                // the full stroke lead after the board already cleared. With
+                // enemies still up, gameplay pacing keeps natural cadence.
+                const schedule = enemiesRef.current.length === 0
+                  ? emptyFieldWriteSchedule(now, spawnDue.current, fullLeadMs)
+                  : gameplayWriteSchedule(now, spawnDue.current, fullLeadMs);
+                const prepared: PreparedSpawn = {
+                  ...reserved,
+                  leadMs: schedule.writeMs,
+                  startedAt: now,
+                  spawnAt: schedule.spawnAtMs,
+                };
+                preparingRef.current = prepared;
+                spawnDue.current = prepared.spawnAt;
+                setPreparingEnemy(schedule.writeSpeed === 1 ? reserved.enemy : { ...reserved.enemy, writeSpeed: schedule.writeSpeed });
               }
-            } else if (availabilityRef.current === "complete") {
-              setSessionComplete(true);
             }
+          } else if (
+            decision.kind === "complete"
+            && enemiesRef.current.length === 0
+            && !sessionCompleteRef.current
+          ) {
+            // The base plan is fully resolved, no repair obligation remains,
+            // and the battlefield (active AND preparing enemies) is empty.
+            sessionCompleteRef.current = true;
+            setSessionComplete(true);
           }
         }
 
@@ -567,13 +471,12 @@ export function useBattle(
           preparingRef.current = null;
           setPreparingEnemy(null);
           commitEnemies([...enemiesRef.current, prepared.enemy], now);
-          previousFamiliarity.current = prepared.familiarity;
-          nextSpawnPreview.current = undefined;
+          previousPressure.current = prepared.pressure;
           spawnDue.current = now + performanceAdjustedSpawnDelayMs(
             settings.spawnIntervalMs,
             currentPerformanceMultiplier,
             true,
-            previousFamiliarity.current * 100,
+            previousPressure.current * 100,
           );
         }
 
@@ -597,7 +500,7 @@ export function useBattle(
       frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick); return () => cancelAnimationFrame(frame);
-  }, [beginMeaning, commitEnemies, prepareSpawn, previewSpawn, settings.enemySpeedMultiplier, settings.spawnIntervalMs, strokeLeadForWord, updateWord, words]);
+  }, [beginMeaning, commitEnemies, decideSpawn, reserveSpawn, settings.enemySpeedMultiplier, settings.spawnIntervalMs, strokeLeadForWord, updateWord, words]);
 
   const submitPinyin = (raw: string) => {
     const enemy = targetRef.current; const word = enemy ? words.get(enemy.wordId) : null;
@@ -611,10 +514,9 @@ export function useBattle(
     if (!enemy || phase !== "meaning" || pausedRef.current || learningPausedRef.current) return;
     const choice = choices.find((item) => item.shortcuts.some((shortcut) => shortcut.key === key)); if (!choice) return;
     const meaningMs = performance.now() - phaseStarted.current;
-    const pinyinAutocompleted = autocompleteRevealed.current.has(enemy.id) || undefined;
     resolveEnemy(enemy, choice.correct
-      ? { kind: "correct", pinyinMs: meaningPinyinMs.current, meaningMs, pinyinAutocompleted }
-      : { kind: "wrongMeaning", pinyinMs: meaningPinyinMs.current, meaningMs, pinyinAutocompleted });
+      ? { kind: "correct", pinyinMs: meaningPinyinMs.current, meaningMs }
+      : { kind: "wrongMeaning", pinyinMs: meaningPinyinMs.current, meaningMs });
   };
   const dismissFeedback = useCallback(() => {
     if (!learningPausedRef.current) return;
@@ -633,23 +535,22 @@ export function useBattle(
         settings.spawnIntervalMs,
         performanceMultiplierRef.current,
         enemiesRef.current.length > 0,
-        previousFamiliarity.current * 100,
+        previousPressure.current * 100,
       );
     }
   }, [settings.spawnIntervalMs]);
   const replay = () => { if (targetWord) playWordAudio(targetWord); };
-  const level = options.kind === "regular" ? levels[deck.id] ?? null : null;
+  /** Unresolved committed work at render time (see `pendingReviewWork`).
+   * The refs it reads only change inside reserveSpawn/updateWord, both of
+   * which also setState — so every render observing them is fresh. */
+  const pendingWork = (() => {
+    const inFlightKeys = new Set(enemies.map((enemy) => enemy.wordId));
+    if (preparingEnemy) inFlightKeys.add(preparingEnemy.wordId);
+    return pendingReviewWork(reviewSessionRef.current, options.plan.spawns.length, inFlightKeys);
+  })();
   return {
     enemies, preparingEnemy, target, targetWord, phase, pinyinAutocompleted, choices, feedback, learningPaused,
-    audioError, streak, performanceMultiplier, stats, level, sessionComplete, submitPinyin, chooseMeaning,
+    audioError, streak, performanceMultiplier, stats, sessionComplete, pendingWork, submitPinyin, chooseMeaning,
     dismissFeedback, replay,
   };
-}
-
-/** Only re-run audio preloading when the pool's identity changes, not on every
- * single progress write. */
-function levelKey(levels: LevelsMap): string {
-  return Object.entries(levels)
-    .map(([id, level]) => `${id}:${level?.curriculumCursor ?? 0}:${Object.keys(level?.words ?? {}).length}`)
-    .join("|");
 }

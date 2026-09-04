@@ -1,0 +1,158 @@
+/* Writing Screen — Inkstone-inspired single large tian-zi square.
+   All colors come from the :root tokens in main.css (album-leaf palette:
+   aged paper, black ink, cinnabar, jade); this file adds no new hues. */
+
+.writing-card {
+  width: min(560px, 100%);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+}
+
+/* Pinyin and meaning always sit above the grid. */
+.writing-card-head { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 3px; text-align: center; }
+.writing-card-word { display: flex; align-items: center; gap: 10px; }
+.writing-audio {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--cinnabar);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--cinnabar);
+  font-size: 15px;
+  cursor: pointer;
+}
+.writing-audio:hover { background: rgba(192, 58, 30, .08); }
+.writing-audio.is-error { border-style: dashed; }
+.writing-pinyin { margin: 0; font: 500 clamp(22px, 3vw, 30px)/1.2 var(--ui); letter-spacing: .08em; }
+.writing-meaning { margin: 0; max-width: 46ch; color: var(--ink-soft); font-size: 13px; line-height: 1.45; }
+.writing-count { margin: 0; color: var(--umber-soft); font: 9px var(--ui); letter-spacing: .16em; text-transform: uppercase; }
+
+/* The tian-zi square: solid frame, dashed center cross. The hanzi-writer SVG
+   (grey outline + strokes) is layered on top of the guide cross. */
+.writing-grid { position: relative; width: min(100%, 58dvh, 430px); aspect-ratio: 1; touch-action: none; }
+.writing-grid-surface {
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(34, 26, 17, .72);
+  background-image:
+    repeating-linear-gradient(to bottom, rgba(180, 163, 126, .55) 0 8px, transparent 8px 15px),
+    repeating-linear-gradient(to right, rgba(180, 163, 126, .55) 0 8px, transparent 8px 15px),
+    linear-gradient(var(--paper-light), var(--paper-light));
+  background-size: 1.5px 100%, 100% 1.5px, auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 26px rgba(96, 58, 20, .08);
+}
+.writing-grid-writer { position: absolute; inset: 0; cursor: crosshair; }
+.writing-grid-writer svg { display: block; width: 100%; height: 100%; }
+.writing-grid.is-demo .writing-grid-writer { cursor: pointer; }
+.writing-grid-prompt {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  padding: 5px 12px;
+  border: 1px solid rgba(192, 58, 30, .5);
+  background: rgba(247, 237, 211, .92);
+  color: var(--cinnabar-dark);
+  font: 700 10px var(--ui);
+  letter-spacing: .18em;
+  pointer-events: none;
+  animation: writing-prompt-in 420ms ease-out both;
+}
+@keyframes writing-prompt-in { from { opacity: 0; } to { opacity: 1; } }
+
+.writing-grid-missing {
+  width: min(100%, 430px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 2px dashed rgba(34, 26, 17, .4);
+  color: var(--ink-soft);
+}
+.writing-grid-missing-glyph { font-size: 64px; opacity: .4; }
+.writing-grid-done .writing-grid-surface.is-complete {
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(var(--paper-light), var(--paper-light));
+  background-size: auto;
+  font-size: clamp(48px, 16dvh, 120px);
+  line-height: 1;
+}
+
+.writing-status { margin: 0; min-height: 1.3em; text-align: center; color: var(--ink-soft); font-size: 12px; letter-spacing: .04em; }
+.writing-status.is-good { color: var(--jade); }
+.writing-status.is-gentle { color: var(--cinnabar-dark); }
+
+.writing-controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+.writing-controls button {
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid rgba(107, 61, 14, .45);
+  background: transparent;
+  color: var(--ink);
+  font-size: 11px;
+  letter-spacing: .12em;
+  cursor: pointer;
+}
+.writing-controls button:hover { border-color: var(--cinnabar); color: var(--cinnabar); }
+.writing-danger { border-color: var(--cinnabar) !important; color: var(--cinnabar) !important; }
+.writing-skip-confirm { display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; color: var(--ink-soft); font-size: 12px; }
+
+/* Hangman-style row: completed characters in ink, the active and pending
+ * ones as dashed slots. */
+.writing-row {
+  margin: 4px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+  min-height: 1.2em;
+  font-size: clamp(26px, 4.4dvh, 40px);
+}
+.writing-slot { position: relative; display: grid; place-items: center; width: 1.15em; height: 1.15em; }
+.writing-slot .hanzi-glyph { color: var(--ink); }
+.writing-slot.is-skipped .hanzi-glyph,
+.writing-slot.is-missing .hanzi-glyph { color: var(--ink-soft); opacity: .6; }
+.writing-slot.is-missing .hanzi-glyph { text-decoration: underline dotted rgba(107, 61, 14, .6); text-underline-offset: .12em; }
+.writing-slot-blank { width: .92em; height: .92em; border: 1.5px dashed rgba(180, 163, 126, .9); border-radius: 2px; }
+.writing-slot.is-active .writing-slot-blank { border-color: var(--cinnabar); border-style: solid; }
+.writing-slot.is-pending .writing-slot-blank { opacity: .55; }
+
+.writing-sr {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.reduce-motion .writing-grid-prompt { animation: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .writing-grid-prompt { animation: none; }
+}
+
+@media (max-width: 599px) {
+  .writing-card { gap: 8px; }
+  .writing-grid { width: min(100%, 52dvh, 340px); }
+  .writing-pinyin { font-size: 22px; }
+  .writing-meaning { font-size: 12px; }
+  .writing-row { font-size: clamp(24px, 4.2dvh, 34px); }
+}

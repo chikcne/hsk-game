@@ -1,10 +1,6 @@
 import type { FastifyInstance, FastifyReply } from "fastify";
 import { z } from "zod";
-import {
-  CorruptSaveError,
-  RevisionConflictError,
-  type SaveRepository,
-} from "../saves/repository";
+import { RevisionConflictError, type SaveRepository } from "../saves/repository";
 import { parseSaveRequest } from "../saves/validation";
 import type { DeckCatalog } from "../saves/manifests";
 
@@ -28,18 +24,6 @@ function errorResponse(error: unknown, reply: FastifyReply): unknown {
       current: error.current,
     });
   }
-  if (error instanceof CorruptSaveError) {
-    return reply.code(503).send({
-      error: "save_corrupt",
-      message: error.message,
-      recovery: {
-        canStartFresh: true,
-        canDownloadQuarantined: error.quarantinedFile !== null,
-        quarantinedFile: error.quarantinedFile,
-        backupError: error.backupError,
-      },
-    });
-  }
   throw error;
 }
 
@@ -53,12 +37,6 @@ export async function registerSaveRoutes(
     reply.header("cache-control", "no-store");
     try {
       const loaded = await repository.load();
-      if (loaded.recovery) {
-        reply.header("x-hanzi-save-recovery", loaded.recovery.source);
-        if (loaded.recovery.quarantinedFile) {
-          reply.header("x-hanzi-quarantined-save", loaded.recovery.quarantinedFile);
-        }
-      }
       return loaded.save;
     } catch (error) {
       return errorResponse(error, reply);

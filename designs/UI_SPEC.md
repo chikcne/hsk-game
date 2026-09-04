@@ -75,20 +75,40 @@ Use a 480×210 logical battle arena on desktop references; the React command pan
 ## 3. Screen map
 
 ```text
-Deck Select
-  ├─ Deploy/Continue -> Battle
+Deck Select (nine columns: Next Learn · HSK 1–6 · Re-Learn · Review)
+  ├─ Grade click / Enter -> Learn
+  │                          └─ Settings -> Settings over Learn
+  ├─ Re-Learn column (enabled only with an active session) -> Relearn
+  ├─ Review column (enabled only with acquired words) -> Review Battle
   └─ Settings -> Settings -> Deck Select
 
-Battle
+Learn
+  ├─ GRADES -> Deck Select (active session is kept and resumed later)
+  ├─ writing complete -> Rating panel (elapsed time + Again/Hard/Good/Easy
+  │                       with per-choice interval previews; keys 1–4)
+  └─ last member passed -> Learn Summary
+                              ├─ LEARN AGAIN -> Learn (new session if any)
+                              └─ RETURN TO GRADES -> Deck Select
+
+Relearn (the one cross-grade active session; same card UX as Learn)
+  ├─ GRADES -> Deck Select (session preserved; column resumes it)
+  ├─ writing complete -> Rating panel on the member's INDEPENDENT card
+  └─ last member re-acquired -> Relearn Summary
+                              └─ RETURN TO GRADES -> Deck Select
+
+Review Battle
   ├─ Esc/Pause -> Pause
   │                  ├─ Resume -> Battle
   │                  ├─ Settings -> Settings -> Pause/Battle
   │                  └─ End Session -> Summary
-  └─ first all-mastered event -> Completion Celebration -> Battle/Summary
+  └─ session complete (base plan resolved, no enemies, repairs cleared) -> Summary
 
-Summary
-  ├─ Play Again -> Battle (same HSK)
-  └─ Return to Grades -> Deck Select
+Summary (review)
+  ├─ selectable struggle rows (errors preselected)
+  ├─ START RE-LEARNING (N) -> Relearn (omitted/disabled when nothing to repair
+  │                            or a session is already active)
+  ├─ START NEW REVIEW -> Review Battle (fresh deterministic plan)
+  └─ RETURN TO GRADES -> Deck Select
 ```
 
 There is no game-over or death screen.
@@ -114,11 +134,43 @@ A `CLEARED` badge means `firstCompletedAt` exists. Still show current graduated 
 
 ### Interaction
 
-- Arrow keys move between cards; Enter deploys.
+- Arrow keys cycle the nine columns; Home/End jump to the first/last.
 - Number keys 1–6 may directly choose a deck when focus is not in a field.
-- Mouse/touch card activates the same action.
-- Deploy is a user gesture that unlocks the Web Audio context before loading battle.
-- Loading shows separate progress for deck JSON, required font, and initial active audio; it does not show a blank canvas.
+- Mouse/touch card activates the same action: grade clicks launch Learn Mode, never a battle. The Re-Learn column is visually and semantically disabled (`aria-disabled`, dimmed, unresponsive) while no relearn session is active; the Review column likewise while there are no acquired words, where it shows the acquired count instead of any due count.
+- Launching is a user gesture that unlocks the Web Audio context before loading data.
+- Loading shows progress for deck JSON and stroke data; it does not show a blank canvas.
+- If the grade has nothing to learn (all words introduced, healthy, not due), a paper notice explains "all caught up" with the next due time instead of navigating.
+
+## 4b. Learn screen
+
+Learn Mode presents one card at a time on the Writing Screen and keeps the
+paper/ink visual language.
+
+### HUD
+
+Left to right: grade + `LEARN` seal, `N TO GO · LESSON k`, save state, settings, and a `GRADES` exit. The exit keeps the active session; the grade resumes it later.
+
+### Card
+
+The reusable Writing Card (see `src/client/writing/`): pinyin + audio replay button above the meaning, one large tian-zi square, hangman-style phrase progress row. A never-reviewed card (`reps === 0`) mounts with the looping stroke-order demo and a `TAP TO BEGIN` prompt; later appearances mount straight in writing mode with `SHOW DEMO`.
+
+### Rating panel
+
+When writing completes, the panel shows the word, the writing elapsed time (stroke-count feedback included), and four buttons — `AGAIN 忘记 / HARD 困难 / GOOD 良好 / EASY 简单` — each with the interval that choice produces (e.g. `10m`, `1.5h`, `8.0d`), computed from a preview application of the rating. Keys `1–4` select. After the save checkpoint, the next card mounts immediately.
+
+### Learn summary
+
+Session completion (every member passed into review) shows words finished, newly acquired words (entered `acquired_words`), Again/Hard counts, total writing time, save status, and `LEARN AGAIN` / `RETURN TO GRADES`.
+
+### 4c. Relearn screen
+
+Mirrors the Learn screen for the single cross-grade session: HUD shows
+`RE-LEARN · N TO GO` with save status and settings; the Writing Card mounts
+with the looping demo on a member's first presentation (its independent card
+has `reps === 0`), and ratings preview intervals against that independent
+card — never the main Learn card. Completion moves the key to the front of
+`acquired_words`; finishing everything shows `RE-LEARN COMPLETE` with the
+re-acquired words and `RETURN TO GRADES`.
 
 ## 5. Battle HUD and arena
 
@@ -131,7 +183,7 @@ Left to right:
 - selected HSK;
 - score;
 - streak (`xN`, amber);
-- live mastered segmented bar and count;
+- session progress bar (resolved spawns vs the base plan plus additive retries);
 - save state icon/text;
 - pause/settings control.
 
@@ -147,7 +199,7 @@ Every descending enemy carries its own Hanzi. The one **soonest to land** must a
 - command panel repeats exactly the same Hanzi;
 - assistive status announces it once when target changes.
 
-Non-target enemies use cyan. An enemy in its final 20% may pulse/red-mark as danger, but red must not override the active amber outline. Enemy speed rises with the word's FSRS-derived familiarity and is multiplied by the configured global speed.
+Non-target enemies use cyan. An enemy in its final 20% may pulse/red-mark as danger, but red must not override the active amber outline. In Review Mode, enemy speed rises with the word's recency pressure (newest words gentlest, maximum by rank 100 of the acquisition log — never FSRS state) and is multiplied by the configured global speed.
 
 Hanzi sizing by display length:
 
@@ -269,18 +321,17 @@ Reference: [`05-session-summary.png`](05-session-summary.png)
 
 Displayed only after End Session or explicit completion transition, never because the player “died.”
 
-Include:
+Review summary includes:
 
-- session score;
-- accuracy;
-- best streak;
-- total and unique words seen;
-- current mastered/logical count;
-- newly mastered count;
-- words needing reinforcement;
-- up to four “next up” words by highest weight;
-- authoritative save state/revision;
-- Continue/Play Again and Return to Grades.
+- session score, accuracy, best streak;
+- base-plan size, resolved spawns, and additive retry count;
+- unique words served;
+- ranked most-missed words with wrong/miss counts, a New/Recent/Old recency chip (captured at session start), and average recall time;
+- selectable struggle rows (errors preselected) feeding `START RE-LEARNING (N)` — omitted/disabled for a perfect round or while a relearn session is already active;
+- `START NEW REVIEW` (fresh deterministic plan) and `RETURN TO GRADES`;
+- authoritative save state.
+
+Learn/Relearn summaries keep their own completion stats (words finished, newly/re-acquired words, rating counts, writing time).
 
 If save has not succeeded, replace the green status with Retry, Export Progress JSON, and Cancel navigation. Do not claim `ALL PROGRESS SAVED` optimistically.
 

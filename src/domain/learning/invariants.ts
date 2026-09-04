@@ -5,7 +5,7 @@ function isNonnegativeInteger(value: number): boolean { return Number.isInteger(
 
 function isIsoTimestamp(value: string): boolean { return Number.isFinite(Date.parse(value)); }
 
-function validateMemory(prefix: string, memory: WordProgress["pinyin"]): string[] {
+function validateMemory(prefix: string, memory: WordProgress["card"]): string[] {
   const errors: string[] = [];
   if (!["new", "learning", "review", "relearning"].includes(memory.state)) errors.push(`${prefix}.state is invalid`);
   if (!isIsoTimestamp(memory.due)) errors.push(`${prefix}.due must be an ISO-compatible timestamp`);
@@ -23,35 +23,13 @@ function validateMemory(prefix: string, memory: WordProgress["pinyin"]): string[
 
 function validateRecord(id: string, progress: WordProgress, spawnOrdinal: number, checkCurrentOrdinals: boolean): string[] {
   const errors: string[] = [];
-  errors.push(...validateMemory(`words[${JSON.stringify(id)}].pinyin`, progress.pinyin));
-  errors.push(...validateMemory(`words[${JSON.stringify(id)}].meaning`, progress.meaning));
-  for (const key of ["attempts", "completeCorrect", "wrongPinyin", "wrongMeaning", "landed"] as const) {
-    if (!isNonnegativeInteger(progress[key])) errors.push(`${prefix(id)}.${key} must be a nonnegative integer`);
-  }
-  if (progress.attempts !== progress.completeCorrect + progress.wrongPinyin + progress.wrongMeaning + progress.landed) {
-    errors.push(`${prefix(id)}.attempts does not equal its outcome counters`);
-  }
-  for (const key of ["totalThinkingMs", "totalPinyinMs"] as const) {
-    if (!Number.isFinite(progress[key]) || progress[key] < 0) errors.push(`${prefix(id)}.${key} must be finite and nonnegative`);
-  }
-  for (const key of ["fastestCorrectMs", "fastestPinyinMs", "lastPinyinMs"] as const) {
-    const value = progress[key];
-    if (value !== null && (!Number.isFinite(value) || value < 0)) errors.push(`${prefix(id)}.${key} must be null or finite and nonnegative`);
-  }
-  if (!isNonnegativeInteger(progress.nextEligibleSpawn)) errors.push(`${prefix(id)}.nextEligibleSpawn must be a nonnegative integer`);
+  errors.push(...validateMemory(`words[${JSON.stringify(id)}].card`, progress.card));
+  if (!isNonnegativeInteger(progress.learnReviews)) errors.push(`${prefix(id)}.learnReviews must be a nonnegative integer`);
+  if (progress.lastSeenAt !== null && !isIsoTimestamp(progress.lastSeenAt)) errors.push(`${prefix(id)}.lastSeenAt must be null or an ISO-compatible timestamp`);
   if (progress.introducedAtOrdinal !== null) {
     if (!isNonnegativeInteger(progress.introducedAtOrdinal)) errors.push(`${prefix(id)}.introducedAtOrdinal must be null or a nonnegative integer`);
     else if (checkCurrentOrdinals && progress.introducedAtOrdinal > spawnOrdinal) errors.push(`${prefix(id)}.introducedAtOrdinal cannot be in the future`);
   }
-  if (progress.lastSpawnOrdinal !== null) {
-    if (!isNonnegativeInteger(progress.lastSpawnOrdinal)) errors.push(`${prefix(id)}.lastSpawnOrdinal must be null or a nonnegative integer`);
-    else {
-      if (checkCurrentOrdinals && progress.lastSpawnOrdinal >= spawnOrdinal) errors.push(`${prefix(id)}.lastSpawnOrdinal must precede the current spawn ordinal`);
-      if (progress.introducedAtOrdinal === null) errors.push(`${prefix(id)} was spawned before it was introduced`);
-      else if (progress.lastSpawnOrdinal < progress.introducedAtOrdinal) errors.push(`${prefix(id)}.lastSpawnOrdinal precedes introduction`);
-    }
-  }
-  if (progress.lastSeenAt !== null && !isIsoTimestamp(progress.lastSeenAt)) errors.push(`${prefix(id)}.lastSeenAt must be null or an ISO-compatible timestamp`);
   return errors;
 }
 
@@ -72,7 +50,7 @@ export function validateLevelInvariants(level: LevelProgress, deck: LearningDeck
   for (const id of Object.keys(level.words)) if (!known.has(id)) errors.push(`unknown current word ID: ${id}`);
   for (const id of deckIds) if (level.words[id] === undefined) errors.push(`missing current word progress: ${id}`);
 
-  const introduced = Object.entries(level.words).filter(([, progress]) => progress.introducedAtOrdinal !== null).length;
+  const introduced = Object.values(level.words).filter((progress) => progress.introducedAtOrdinal !== null).length;
   if (introduced > level.curriculumCursor) errors.push("curriculumCursor is smaller than the introduced word count");
 
   for (const [id, progress] of Object.entries(level.words)) {

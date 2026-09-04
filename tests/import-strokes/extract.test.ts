@@ -66,9 +66,17 @@ describe("stroke data extraction", () => {
     expect(Buffer.byteLength(uiContent)).toBe(manifest.bundles.ui.bytes);
     expect(createHash("sha256").update(uiContent).digest("hex")).toBe(manifest.bundles.ui.sha256);
     expect(Object.keys(uiBundle.characters)).toEqual([...new Set(UI_HANZI_TEXT)].sort((a, b) => a.codePointAt(0)! - b.codePointAt(0)!));
+    // The four rating labels (Again/Hard/Good/Easy) are fixed UI chrome and
+    // MUST ship stroke data — the rating buttons render them as HanziText.
+    for (const character of "忘记困难良好简单") {
+      expect(uiBundle.characters[character]).toBeDefined();
+      expect(UI_HANZI_TEXT).toContain(character);
+    }
     const uiSource = await Promise.all([
       readFile(path.resolve("src/client/app/App.tsx"), "utf8"),
       readFile(path.resolve("src/client/game/GameCanvas.tsx"), "utf8"),
+      readFile(path.resolve("src/client/app/LearnScreen.tsx"), "utf8"),
+      readFile(path.resolve("src/client/app/RelearnScreen.tsx"), "utf8"),
     ]);
     const fixedUiCharacters = new Set(uiSource.join("\n").match(/\p{Script=Han}/gu) ?? []);
     expect([...fixedUiCharacters].filter((character) => !uiBundle.characters[character])).toEqual([]);

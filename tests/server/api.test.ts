@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import { buildApp } from "../../src/server/app";
 import { MAX_SAVE_BYTES } from "../../src/server/saves/repository";
-import { makeSnapshot } from "./helpers";
+import { makeSnapshot, makeSnapshotWithRelearn, makeSnapshotWithSession } from "./helpers";
 
 const directories: string[] = [];
 async function temporaryDirectory(): Promise<string> {
@@ -36,7 +36,7 @@ describe("save API", () => {
     const response = await app.inject({ method: "GET", url: "/api/saves/default" });
     expect(response.statusCode).toBe(200);
     expect(response.headers["cache-control"]).toBe("no-store");
-    expect(response.json()).toMatchObject({ schemaVersion: 3, profileId: "default", revision: 0 });
+    expect(response.json()).toMatchObject({ schemaVersion: 4, profileId: "default", revision: 0 });
     await app.close();
   });
 
@@ -50,6 +50,40 @@ describe("save API", () => {
     const conflict = await app.inject({ method: "PUT", url: "/api/saves/default", payload });
     expect(conflict.statusCode).toBe(409);
     expect(conflict.json()).toMatchObject({ error: "revision_conflict", current: { revision: 1 } });
+    await app.close();
+  });
+
+  it("accepts a save with an active Learn session and acquired words", async () => {
+    const { app } = await makeApp();
+    const snapshot = makeSnapshotWithSession("hsk-1", ["word-1"]);
+    snapshot.acquiredWords = ["hsk-1:word-1"];
+    snapshot.levels["hsk-1"]!.words["word-1"]!.card = {
+      state: "review", due: "2025-01-01T00:00:00.000Z", stability: 3, difficulty: 5,
+      elapsedDays: 0, scheduledDays: 3, learningSteps: 0, reps: 2, lapses: 0,
+      lastReview: "2024-12-29T00:00:00.000Z",
+    };
+    snapshot.levels["hsk-1"]!.words["word-1"]!.learnReviews = 1;
+    const response = await app.inject({ method: "PUT", url: "/api/saves/default", payload: { expectedRevision: 0, snapshot } });
+    expect(response.statusCode).toBe(200);
+    await app.close();
+  });
+
+  it("accepts a save with the active relearn session and rejects an incoherent one", async () => {
+    const { app } = await makeApp();
+    const accepted = await app.inject({
+      method: "PUT", url: "/api/saves/default",
+      payload: { expectedRevision: 0, snapshot: makeSnapshotWithRelearn(["hsk-1:word-1"]) },
+    });
+    expect(accepted.statusCode).toBe(200);
+
+    const invalid = makeSnapshotWithRelearn(["hsk-1:word-1"]);
+    invalid.acquiredWords = []; // member no longer acquired
+    const rejected = await app.inject({
+      method: "PUT", url: "/api/saves/default",
+      payload: { expectedRevision: 1, snapshot: invalid },
+    });
+    expect(rejected.statusCode).toBe(400);
+    expect(rejected.json()).toMatchObject({ error: "invalid_save" });
     await app.close();
   });
 
@@ -108,15 +142,12 @@ describe("save API", () => {
     await app.close();
   });
 
-  it("reports quarantine rather than replacing corruption", async () => {
+  it("starts fresh when the stored save is corrupt", async () => {
     const { root, app } = await makeApp();
     await writeFile(join(root, "saves", "default.json"), "broken");
     const response = await app.inject({ method: "GET", url: "/api/saves/default" });
-    expect(response.statusCode).toBe(503);
-    expect(response.json()).toMatchObject({
-      error: "save_corrupt",
-      recovery: { canStartFresh: true, canDownloadQuarantined: true },
-    });
+    expect(response.statusCode).toBe(200);
+    expect(response.json()).toMatchObject({ schemaVersion: 4, profileId: "default", revision: 0 });
     await app.close();
   });
 });

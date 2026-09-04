@@ -1,4 +1,4 @@
-import { link, mkdir, readFile, readdir, unlink } from "node:fs/promises";
+import { mkdir, readFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { DEFAULT_SETTINGS } from "../../shared/constants";
 import type { SaveFile } from "../../shared/schemas";
@@ -11,14 +11,8 @@ import { parseSaveFile, parseSaveSnapshot, type SaveSnapshot } from "./validatio
 // 2 MiB V1 ceiling. Keep a bounded but realistic local-profile limit.
 export const MAX_SAVE_BYTES = 16 * 1024 * 1024;
 
-export type SaveRecovery = {
-  source: "backup";
-  quarantinedFile: string | null;
-};
-
 export type LoadSaveResult = {
   save: SaveFile;
-  recovery: SaveRecovery | null;
   firstRun: boolean;
 };
 
@@ -26,24 +20,6 @@ export class RevisionConflictError extends Error {
   constructor(readonly current: Pick<SaveFile, "revision" | "savedAt">) {
     super(`Expected save revision does not match current revision ${current.revision}`);
     this.name = "RevisionConflictError";
-  }
-}
-
-export class CorruptSaveError extends Error {
-  constructor(
-    readonly quarantinedFile: string | null,
-    readonly backupError: string | null,
-    readonly newlyQuarantined: boolean,
-  ) {
-    super("The authoritative save is corrupt and no valid backup is available");
-    this.name = "CorruptSaveError";
-  }
-}
-
-class InvalidSaveFileError extends Error {
-  constructor(message: string, options?: ErrorOptions) {
-    super(message, options);
-    this.name = "InvalidSaveFileError";
   }
 }
 
@@ -56,7 +32,7 @@ export type SaveRepositoryOptions = {
 
 export function createDefaultSave(now = new Date()): SaveFile {
   return {
-    schemaVersion: 3,
+    schemaVersion: 4,
     profileId: "default",
     revision: 0,
     savedAt: now.toISOString(),
@@ -64,6 +40,9 @@ export function createDefaultSave(now = new Date()): SaveFile {
     spawnOrdinal: 0,
     schedulerRng: createSecureRandomState(),
     levels: {},
+    acquiredWords: [],
+    learnSessions: {},
+    relearnSession: null,
     lifetime: {
       score: 0,
       resolvedEnemies: 0,
@@ -81,7 +60,6 @@ export function createDefaultSave(now = new Date()): SaveFile {
  * in one serialized operation, so concurrent requests can never both win. */
 export class SaveRepository {
   readonly savePath: string;
-  readonly backupPath: string;
   private readonly catalog?: DeckCatalog;
   private readonly now: () => Date;
   private readonly writer: AtomicSaveWriter;
@@ -89,7 +67,6 @@ export class SaveRepository {
 
   constructor(options: SaveRepositoryOptions) {
     this.savePath = join(options.directory, "default.json");
-    this.backupPath = `${this.savePath}.bak`;
     this.catalog = options.catalog;
     this.now = options.now ?? (() => new Date());
     this.writer = new AtomicSaveWriter(this.savePath, options.writer);
@@ -107,20 +84,7 @@ export class SaveRepository {
   save(expectedRevision: number, input: unknown): Promise<SaveFile> {
     return this.enqueue(async () => {
       const snapshot = parseSaveSnapshot(input, this.catalog);
-      let loaded: LoadSaveResult;
-      try {
-        loaded = await this.loadUnsafe();
-      } catch (error) {
-        // A PUT after the client has observed a prior quarantine is the explicit
-        // "start fresh" action. If this request itself discovers corruption,
-        // fail first so an ordinary checkpoint can never erase it silently.
-        if (error instanceof CorruptSaveError && !error.newlyQuarantined && expectedRevision === 0) {
-          loaded = { save: createDefaultSave(this.now()), recovery: null, firstRun: true };
-        } else {
-          throw error;
-        }
-      }
-
+      const loaded = await this.loadUnsafe();
       if (expectedRevision !== loaded.save.revision) {
         throw new RevisionConflictError({
           revision: loaded.save.revision,
@@ -145,51 +109,19 @@ export class SaveRepository {
   }
 
   private async loadUnsafe(): Promise<LoadSaveResult> {
-    const main = await this.readCandidate(this.savePath);
-    if (main.kind === "valid") {
-      return { save: main.save, recovery: null, firstRun: false };
-    }
-
-    let quarantinedFile: string | null = null;
-    if (main.kind === "invalid") {
-      quarantinedFile = await this.quarantineMain();
-    }
-
-    const backup = await this.readCandidate(this.backupPath);
-    if (backup.kind === "valid") {
-      await this.writer.write(backup.save, false);
-      return {
-        save: backup.save,
-        recovery: { source: "backup", quarantinedFile },
-        firstRun: false,
-      };
-    }
-
-    if (main.kind === "invalid" || backup.kind === "invalid") {
-      throw new CorruptSaveError(
-        quarantinedFile,
-        backup.kind === "invalid" ? backup.error.message : null,
-        main.kind === "invalid",
-      );
-    }
-
-    const unresolvedQuarantine = await this.latestQuarantinedFile();
-    if (unresolvedQuarantine) {
-      throw new CorruptSaveError(unresolvedQuarantine, null, false);
-    }
-    return { save: createDefaultSave(this.now()), recovery: null, firstRun: true };
+    const save = await this.readSave();
+    if (save) return { save, firstRun: false };
+    return { save: createDefaultSave(this.now()), firstRun: true };
   }
 
-  private async readCandidate(path: string): Promise<
-    | { kind: "missing" }
-    | { kind: "valid"; save: SaveFile }
-    | { kind: "invalid"; error: InvalidSaveFileError }
-  > {
+  /** A missing or invalid file is a first run: schema v4 has no predecessors,
+   * so there is nothing to migrate or preserve — the next PUT replaces it. */
+  private async readSave(): Promise<SaveFile | null> {
     let data: Buffer;
     try {
-      data = await readFile(path);
+      data = await readFile(this.savePath);
     } catch (error) {
-      if ((error as NodeJS.ErrnoException).code === "ENOENT") return { kind: "missing" };
+      if ((error as NodeJS.ErrnoException).code === "ENOENT") return null;
       throw error;
     }
 
@@ -197,44 +129,9 @@ export class SaveRepository {
       const raw: unknown = JSON.parse(data.toString("utf8"));
       // Validate only the current save format. A changed deck fingerprint is
       // reconciled by stable word ID and catalog-validated on the next PUT.
-      return { kind: "valid", save: parseSaveFile(raw) };
-    } catch (error) {
-      return {
-        kind: "invalid",
-        error: new InvalidSaveFileError("Save JSON or schema is invalid", { cause: error }),
-      };
-    }
-  }
-
-  private async latestQuarantinedFile(): Promise<string | null> {
-    const names = await readdir(dirname(this.savePath));
-    return names
-      .filter((name) => /^default\.corrupt-.+\.json$/u.test(name))
-      .sort()
-      .at(-1) ?? null;
-  }
-
-  private async quarantineMain(): Promise<string> {
-    const stamp = this.now().toISOString().replaceAll(":", "-");
-    let attempt = 0;
-    while (true) {
-      const suffix = attempt === 0 ? "" : `-${attempt}`;
-      const name = `default.corrupt-${stamp}${suffix}.json`;
-      try {
-        // Hard-link then unlink provides a no-overwrite quarantine operation on
-        // the same filesystem (rename would replace an existing destination).
-        await link(this.savePath, join(dirname(this.savePath), name));
-        await unlink(this.savePath);
-        return name;
-      } catch (error) {
-        const code = (error as NodeJS.ErrnoException).code;
-        if (code === "EEXIST") {
-          attempt += 1;
-          continue;
-        }
-        if (code === "ENOENT") return name;
-        throw error;
-      }
+      return parseSaveFile(raw);
+    } catch {
+      return null;
     }
   }
 }

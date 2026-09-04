@@ -1,6 +1,6 @@
 import type { SaveSnapshot } from "../../src/server/saves/validation";
 import { createDefaultSave } from "../../src/server/saves/repository";
-import type { ComponentMemory, WordProgress } from "../../src/shared/schemas";
+import type { ComponentMemory, LevelProgress, WordProgress } from "../../src/shared/schemas";
 
 export function makeMemory(state: ComponentMemory["state"] = "new"): ComponentMemory {
   return {
@@ -11,25 +11,24 @@ export function makeMemory(state: ComponentMemory["state"] = "new"): ComponentMe
   };
 }
 
-export function makeWordProgress(): WordProgress {
+export function makeWordProgress(introducedAtOrdinal: number | null = 0): WordProgress {
   return {
-    pinyin: makeMemory(),
-    meaning: makeMemory(),
-    attempts: 0,
-    completeCorrect: 0,
-    wrongPinyin: 0,
-    wrongMeaning: 0,
-    landed: 0,
-    totalThinkingMs: 0,
-    fastestCorrectMs: null,
-    totalPinyinMs: 0,
-    fastestPinyinMs: null,
-    lastPinyinMs: null,
-    lastOutcome: null,
+    card: makeMemory(),
+    learnReviews: 0,
     lastSeenAt: null,
-    introducedAtOrdinal: 0,
-    lastSpawnOrdinal: 0,
-    nextEligibleSpawn: 11,
+    introducedAtOrdinal,
+  };
+}
+
+export function makeLevel(deckId: LevelProgress["deckId"], words: Record<string, WordProgress> = {}): LevelProgress {
+  return {
+    deckId,
+    deckFingerprint: "fixture-fingerprint",
+    curriculumSeed: "fixture-seed",
+    curriculumCursor: Object.keys(words).length,
+    firstCompletedAt: null,
+    words,
+    orphanedProgress: {},
   };
 }
 
@@ -40,19 +39,50 @@ export function makeSnapshot(): SaveSnapshot {
   return snapshot;
 }
 
+export function makeAcquiredReviewCard(): ComponentMemory {
+  return {
+    state: "review", due: "2025-01-01T00:00:00.000Z", stability: 3, difficulty: 5,
+    elapsedDays: 0, scheduledDays: 3, learningSteps: 0, reps: 2, lapses: 0,
+    lastReview: "2024-12-29T00:00:00.000Z",
+  };
+}
+
+export function makeSnapshotWithAcquiredWord(wordId = "word-1"): SaveSnapshot {
+  const snapshot = makeSnapshotWithWord(wordId);
+  snapshot.levels["hsk-1"]!.words[wordId]!.card = makeAcquiredReviewCard();
+  snapshot.levels["hsk-1"]!.words[wordId]!.learnReviews = 1;
+  snapshot.acquiredWords = [`hsk-1:${wordId}`];
+  return snapshot;
+}
+
+export function makeSnapshotWithRelearn(wordKeys: string[] = ["hsk-1:word-1"]): SaveSnapshot {
+  const snapshot = makeSnapshotWithAcquiredWord(wordKeys[0]!.split(":")[1]!);
+  snapshot.relearnSession = {
+    startedAt: "2025-01-01T00:00:00.000Z",
+    wordKeys,
+    cards: Object.fromEntries(wordKeys.map((key) => [key, {
+      card: makeMemory(),
+      reviews: 0,
+    }])),
+  };
+  return snapshot;
+}
+
 export function makeSnapshotWithWord(wordId = "word-1"): SaveSnapshot {
   const snapshot = makeSnapshot();
-  snapshot.spawnOrdinal = 1; // the word's lastSpawnOrdinal(0) must precede the current ordinal
-  snapshot.levels["hsk-1"] = {
-    deckId: "hsk-1",
+  snapshot.levels["hsk-1"] = makeLevel("hsk-1", { [wordId]: makeWordProgress() });
+  return snapshot;
+}
+
+export function makeSnapshotWithSession(deckId: LevelProgress["deckId"], wordIds: string[]): SaveSnapshot {
+  const snapshot = makeSnapshot();
+  snapshot.levels[deckId] = makeLevel(deckId, Object.fromEntries(wordIds.map((id) => [id, makeWordProgress()])));
+  snapshot.learnSessions[deckId] = {
+    deckId,
     deckFingerprint: "fixture-fingerprint",
-    curriculumSeed: "fixture-seed",
-    curriculumCursor: 1,
-    firstCompletedAt: null,
-    words: {
-      [wordId]: makeWordProgress(),
-    },
-    orphanedProgress: {},
+    startedAt: "2025-01-01T00:00:00.000Z",
+    wordIds,
+    completedWordIds: [],
   };
   return snapshot;
 }

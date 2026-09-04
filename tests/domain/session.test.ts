@@ -24,7 +24,7 @@ const enemy = (id: string, progress: number, spawnOrdinal: number, speedMultipli
 });
 
 describe("session rules", () => {
-  it("scales word speed up with FSRS-derived familiarity", () => {
+  it("scales word speed with the 0..1 pressure value (review recency pressure)", () => {
     expect(wordSpeedMultiplierForFamiliarity(0)).toBeCloseTo(0.65);
     expect(wordSpeedMultiplierForFamiliarity(1)).toBeCloseTo(1.5);
     expect(wordSpeedMultiplierForFamiliarity(0.3)).toBeLessThan(wordSpeedMultiplierForFamiliarity(0.7));

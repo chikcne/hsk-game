@@ -1,6 +1,6 @@
 # Ziduoduo (字多多)
 
-A local-first arcade vocabulary game built from the six HSK Anki packages in `decks/`. Descending Hanzi get faster as their words become familiar and are drawn in PRC stroke order; answer the locked word predicted to land soonest with pinyin, then choose its English meaning by pressing that choice's highlighted first letter. Long-term memory runs on FSRS (via `ts-fsrs`) with separate pinyin and meaning states per word, combined with hard arcade spacing cooldowns.
+A local-first vocabulary game built from the six HSK Anki packages in `decks/`. Clicking an HSK grade launches **Learn Mode**: every currently due word of the grade plus a fresh batch of new curriculum words, presented one card at a time with pinyin, meaning, and audio while you write each character in PRC stroke order. Long-term memory runs on FSRS (via `ts-fsrs`) with **one card per word** and four explicit self-ratings — Again, Hard, Good, Easy — each showing the interval it will produce before you commit. Graduated words feed the cross-grade **Review arcade** and the independent **Re-Learn workflow**.
 
 ## Run
 
@@ -19,21 +19,52 @@ npm run build
 npm start              # http://100.65.64.80:5757
 ```
 
-Progress is written atomically to the gitignored `saves/default.json`. If the local API is unavailable, the browser keeps an emergency retry copy and clearly marks the HUD `OFFLINE`.
+Progress is written atomically to the gitignored `saves/default.json` after every rating. If the local API is unavailable, the browser keeps an emergency retry copy and clearly marks the save state `OFFLINE`.
 
-## Controls
+## Learn Mode
 
-- **Enter** — submit pinyin
-- **Highlighted first letter** — select a meaning (every choice starts with a different letter)
-- **Replay Audio button** — replay word audio
-- **Esc** — pause or resume
-- **1–6** — choose an HSK grade
+Each Learn session is created (or resumed exactly) when you click a grade:
 
-Regular grades use an adjustable 20-word rolling pool: mastering any one word introduces the next new word without waiting for the rest of the pool. During ordinary learning, practiced but not-yet-mastered words receive 55% of spawns and completely new words receive 45%; mistakes remain in the higher-priority repair pool. The recall window begins when the word becomes the selected target, regardless of its altitude; a target that reaches the ground waits until that full window expires. Mastery and repeat timing use pinyin response time only—meaning-selection time still affects arcade score, but not learning progress.
+1. it contains **every currently due introduced word** of that grade plus **up to "new cards per session" brand-new curriculum words** (a settings slider);
+2. every card shows pinyin and meaning, auto-plays its audio (replayable), and is completed by guided, forgiving stroke-order writing; a word's very first presentation loops the stroke-order demo until you start writing, later appearances offer **Show Demo** instead;
+3. after writing, the card shows the writing elapsed time and the four ratings with live next-interval previews; FSRS applies the chosen rating to the word's single card;
+4. a word leaves the session when its card reaches the FSRS review state — a lapsed repair recurs via **learn-ahead** (the earliest due remaining card is always served, even if not yet due) — and the session ends only when every word has passed. Words enter the ordered `acquired_words` table exactly once, the moment their card first reaches review.
 
-The grade screen also includes a cross-grade review mode for words that have graduated (both pinyin and meaning memory through their learning steps) from any grade. Review rounds are finite: they contain exactly the cards whose FSRS due date has passed — relearning repairs first, then the graduated cards closest to being forgotten — and end when nothing is due. Their end-of-round report ranks the words with the most struggles and misses.
+Leaving mid-session keeps the session; clicking the grade resumes it.
 
-Settings control the base spawn interval, global word speed, level size, volume, and reduced motion. All memory parameters (FSRS weights, retention target, latency rating thresholds) are fixed constants in `src/domain/memory` so scheduling cannot drift from the science. The interval after each spawn scales linearly from 160% of the base for a brand-new word, through 100% at mid familiarity, to 40% for well-known words, derived from FSRS state. During battle, a smoothed 0.70–1.50× performance multiplier increases pressure after fast correct answers and eases it after slow answers or misses; an empty battlefield refills within 0.5 seconds. Answers are auto-graded: wrong or revealed pinyin is Again, effortful-but-correct recall is Hard, normal recall is Good, and fast recall is Easy (never on a first exposure). There are no lives or game-over screen.
+## Controls (Learn Mode)
+
+- **Tap / Enter** on the writing square — start writing (after a demo)
+- **1–4** or the buttons — rate Again / Hard / Good / Easy
+- **Replay audio button (♪)** — replay word audio
+
+## Review Mode
+
+The rightmost title-screen column opens the cross-grade Review arcade. It is enabled whenever **acquired words** exist (the column shows the acquired count, never a due count) and battles draw **solely from the ordered `acquired_words` log** — never from FSRS due dates or retrievability, and battle answers never mutate any main Learn card.
+
+Each session gets a **deterministic, nonpersisted base plan** of exactly `settings.reviewSessionLength` spawns (integer slider, 200–500, default 200), built once at session start from the persisted RNG:
+
+- ranks 0–19 in the acquisition log (**New**, the 20 newest words) are served **exactly twice**;
+- ranks 20–99 (**Recent**) exactly once;
+- every remaining slot draws uniformly at random from rank 100+ (**Old**); if that pool is empty the fallback is Recent, then New, so even small pools reach the exact target. Quota and filler entries are shuffled together, so tiers interleave instead of arriving in blocks.
+
+Recency is decided at session start and drives difficulty instead of FSRS: New words are gentlest, rising linearly to maximum speed and spawn pressure by rank 100. The global spawn-rate and word-speed settings and the live performance multiplier still apply on top.
+
+A **miss** is a wrong pinyin, a wrong meaning, a word reaching the ground, or a pinyin autocomplete/reveal — even if the meaning is then answered correctly. A missed word enters a delayed repair queue and re-enters the stream after 10 further base spawns; it remains an obligation until one later encounter is **clean** (typed pinyin, correct meaning, no reveal). Base occurrences can clear a repair. If obligations survive the base plan, retries are **additive beyond the slider target** and forced, so the session always ends: every base spawn resolved, no enemies left, all repairs cleared. The session is **not resumable** — leaving ends it (progress and RNG advances are checkpointed throughout).
+
+The summary ranks the most-missed words with wrong/miss counts and New/Recent/Old chips. Struggle rows are selectable (errors preselected) and **START RE-LEARNING (N)** hands the selection to the Re-Learn workflow; a perfect round simply omits it. **START NEW REVIEW** rebuilds a fresh plan; **RETURN TO GRADES** exits.
+
+## Re-Learn
+
+Struggling acquired words can be sent to the single cross-grade **Re-Learn session** (重学). It persists in the save, holds each selected word's **fresh, independent FSRS card** inside the session (ratings never copy back to the main Learn cards), and uses the same Learn/Writing UX: pinyin + meaning, looping demo on a member's first presentation, elapsed writing time, four ratings with interval previews, and earliest-due learn-ahead. Progress saves after every rating, so exiting preserves exact state. Each word finishes the moment its independent card reaches the FSRS review state — its key is then **removed and prepended to `acquired_words`** (moved to newest/front) — and completing the session clears it. The title screen's dedicated Re-Learn column (between the grades and Review) resumes the active session and is visually and semantically disabled when none exists.
+
+## Title screen navigation
+
+Nine columns: **Next Learn**, the six HSK grades (keyboard **1–6**), **Re-Learn**, **Review**. Arrow keys cycle, Home/End jump; disabled columns are focusable (so their state is discoverable) but refuse activation.
+
+## Settings
+
+Learn Mode's **new cards per session**, Review Mode's **session length (base spawns, 200–500)**, base spawn rate and global word speed, volume, and reduced motion are adjustable. All memory parameters (FSRS weights, retention target, learning steps) are fixed constants in `src/domain/memory` so scheduling cannot drift from the science. During Review, a smoothed 0.70–1.50× performance multiplier increases pressure after fast correct answers and eases it after misses; answers are auto-graded for arcade score only.
 
 ## Stroke-order data
 
@@ -57,3 +88,5 @@ npm run build
 ```
 
 Generated deck/audio assets in `public/game-data/` and player progress in `saves/` are intentionally not committed. The trimmed, licensed stroke bundles in `public/stroke-data/` are committed so production and the demo fallback work without a generation step.
+
+Save schema v4 is a fresh start: older or corrupt saves fail validation and simply start over on the next save.

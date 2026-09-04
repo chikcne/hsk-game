@@ -1,7 +1,8 @@
 import { z } from "zod";
 import { DECK_IDS, type DeckId } from "../../shared/constants";
 import {
-  LevelProgressSchema, LifetimeSchema, SaveFileSchema, SettingsSchema, WordProgressSchema, type SaveFile,
+  LearnSessionSchema, LevelProgressSchema, LifetimeSchema, RelearnCardStateSchema, RelearnSessionSchema, SaveFileSchema,
+  SettingsSchema, WordProgressSchema,
 } from "../../shared/schemas";
 import type { DeckCatalog } from "./manifests";
 
@@ -15,13 +16,12 @@ const rngSchema = z.tuple([
 });
 
 const StrictSettingsSchema = SettingsSchema.strict();
-const StrictComponentMemorySchema = WordProgressSchema.shape.pinyin.extend({
+const StrictCardMemorySchema = WordProgressSchema.shape.card.extend({
   due: isoTimestamp,
   lastReview: isoTimestamp.nullable(),
 }).strict();
 const StrictWordProgressSchema = WordProgressSchema.extend({
-  pinyin: StrictComponentMemorySchema,
-  meaning: StrictComponentMemorySchema,
+  card: StrictCardMemorySchema,
   lastSeenAt: isoTimestamp.nullable(),
 }).strict();
 const StrictLevelProgressSchema = LevelProgressSchema.extend({
@@ -29,13 +29,36 @@ const StrictLevelProgressSchema = LevelProgressSchema.extend({
   words: z.record(z.string().min(1), StrictWordProgressSchema),
   orphanedProgress: z.record(z.string().min(1), StrictWordProgressSchema),
 }).strict();
+const StrictLearnSessionSchema = LearnSessionSchema.extend({
+  startedAt: isoTimestamp,
+}).strict();
+const StrictRelearnCardStateSchema = RelearnCardStateSchema.extend({
+  card: StrictCardMemorySchema,
+}).strict();
+const StrictRelearnSessionSchema = RelearnSessionSchema.extend({
+  startedAt: isoTimestamp,
+  cards: z.record(z.string().min(1), StrictRelearnCardStateSchema),
+}).strict();
 const StrictLifetimeSchema = LifetimeSchema.strict();
+
+/** `deckId:wordId` — the cross-grade identity used by the review deck and the
+ * `acquired_words` table. */
+const AcquiredKeySchema = z.string().refine(
+  (key) => {
+    const separator = key.indexOf(":");
+    return separator > 0 && (DECK_IDS as readonly string[]).includes(key.slice(0, separator)) && key.length > separator + 1;
+  },
+  { message: "acquired word keys must be `<deckId>:<wordId>`" },
+);
 
 export const PersistedSaveSchema = SaveFileSchema.extend({
   savedAt: isoTimestamp,
   settings: StrictSettingsSchema,
   schedulerRng: rngSchema,
   levels: z.record(z.enum(DECK_IDS), StrictLevelProgressSchema),
+  acquiredWords: z.array(AcquiredKeySchema),
+  learnSessions: z.record(z.enum(DECK_IDS), StrictLearnSessionSchema.nullable()),
+  relearnSession: StrictRelearnSessionSchema.nullable(),
   lifetime: StrictLifetimeSchema,
 }).strict();
 
@@ -49,9 +72,6 @@ function addIssue(context: z.RefinementCtx, path: Array<string | number>, messag
 }
 
 function checkSemanticInvariants(save: z.infer<typeof SaveSnapshotSchema>, context: z.RefinementCtx, catalog?: DeckCatalog): void {
-  const resolved = save.lifetime.completeCorrect + save.lifetime.wrongPinyin + save.lifetime.wrongMeaning + save.lifetime.landed;
-  if (save.lifetime.resolvedEnemies !== resolved) addIssue(context, ["lifetime", "resolvedEnemies"], "must equal the sum of outcome counters");
-
   for (const [deckKey, level] of Object.entries(save.levels)) {
     if (!level) continue;
     const base = ["levels", deckKey];
@@ -69,42 +89,148 @@ function checkSemanticInvariants(save: z.infer<typeof SaveSnapshotSchema>, conte
     for (const [collectionName, records] of [["words", level.words], ["orphanedProgress", level.orphanedProgress]] as const) {
       for (const [wordId, word] of Object.entries(records)) {
         const path = [...base, collectionName, wordId];
-        const outcomes = word.completeCorrect + word.wrongPinyin + word.wrongMeaning + word.landed;
-        if (word.attempts !== outcomes) addIssue(context, [...path, "attempts"], "must equal the sum of outcome counters");
+        const memory = word.card;
+        if (memory.state !== "new") {
+          if (memory.lastReview === null) {
+            addIssue(context, [...path, "card", "lastReview"], `a ${memory.state} card must record its last review`);
+          }
+          if (memory.difficulty < 1) {
+            addIssue(context, [...path, "card", "difficulty"], `a ${memory.state} card must have difficulty of at least 1`);
+          }
+          if (memory.stability <= 0) {
+            addIssue(context, [...path, "card", "stability"], `a ${memory.state} card must have positive stability`);
+          }
+        } else if (memory.lastReview !== null) {
+          addIssue(context, [...path, "card", "lastReview"], "a new card cannot have a last review");
+        }
+        if (memory.lastReview !== null && Date.parse(memory.due) < Date.parse(memory.lastReview)) {
+          addIssue(context, [...path, "card", "due"], "must not precede the last review");
+        }
         if (word.introducedAtOrdinal !== null && word.introducedAtOrdinal > save.spawnOrdinal) {
-          addIssue(context, [...path, "introducedAtOrdinal"], "cannot be after the current spawn ordinal");
+          addIssue(context, [...path, "introducedAtOrdinal"], "cannot exceed the save's spawn ordinal");
         }
-        if (word.lastSpawnOrdinal !== null) {
-          if (word.lastSpawnOrdinal >= save.spawnOrdinal) addIssue(context, [...path, "lastSpawnOrdinal"], "must be before the current spawn ordinal");
-          if (word.introducedAtOrdinal === null) addIssue(context, [...path, "lastSpawnOrdinal"], "cannot precede introduction");
-          else if (word.lastSpawnOrdinal < word.introducedAtOrdinal) addIssue(context, [...path, "lastSpawnOrdinal"], "must not precede introduction");
+      }
+    }
+
+    // Introduction must stay behind the cursor: the cursor advances exactly
+    // with (introduced) words. With a catalog the introduced count is fully
+    // known (every word ID was just checked against the deck), so equality
+    // is enforceable; without one, the cursor must at least cover every
+    // introduced word.
+    const introducedCount = Object.values(level.words).filter((word) => word.introducedAtOrdinal !== null).length;
+    if (knownDeck) {
+      if (level.curriculumCursor !== introducedCount) {
+        addIssue(context, [...base, "curriculumCursor"], `must equal the introduced word count (${introducedCount})`);
+      }
+    } else if (level.curriculumCursor < introducedCount) {
+      addIssue(context, [...base, "curriculumCursor"], "cannot be smaller than the introduced word count");
+    }
+  }
+
+  // Sessions are validated even when their grade has no level record (a
+  // session row is never silently trusted just because its level vanished).
+  for (const [deckKey, session] of Object.entries(save.learnSessions) as Array<[DeckId, z.infer<typeof StrictLearnSessionSchema> | null]>) {
+    if (!session) continue;
+    const sessionPath = ["learnSessions", deckKey];
+    const level = save.levels[deckKey];
+    if (level) {
+      if (session.deckId !== deckKey) addIssue(context, [...sessionPath, "deckId"], "must match its learnSessions record key");
+      if (session.deckFingerprint !== level.deckFingerprint) {
+        addIssue(context, [...sessionPath, "deckFingerprint"], "must match the level's deck fingerprint");
+      }
+    } else if (session.deckId !== deckKey) {
+      addIssue(context, [...sessionPath, "deckId"], "must match its learnSessions record key");
+    }
+    const memberIds = new Set(session.wordIds);
+    if (memberIds.size !== session.wordIds.length) {
+      addIssue(context, [...sessionPath, "wordIds"], "must not contain duplicate word IDs");
+    }
+    for (const [index, wordId] of session.wordIds.entries()) {
+      if (level && !level.words[wordId]) addIssue(context, [...sessionPath, "wordIds", index], "member word is not present in the level record");
+    }
+    const completed = new Set(session.completedWordIds);
+    if (completed.size !== session.completedWordIds.length) {
+      addIssue(context, [...sessionPath, "completedWordIds"], "must not contain duplicate word IDs");
+    }
+    for (const [index, wordId] of session.completedWordIds.entries()) {
+      if (!memberIds.has(wordId)) addIssue(context, [...sessionPath, "completedWordIds", index], "completed word must be a session member");
+    }
+  }
+
+  const seenAcquired = new Set<string>();
+  for (const [index, key] of save.acquiredWords.entries()) {
+    if (seenAcquired.has(key)) addIssue(context, ["acquiredWords", index], "must not contain duplicate word keys");
+    seenAcquired.add(key);
+    const separator = key.indexOf(":");
+    const deckKey = key.slice(0, separator) as DeckId;
+    const wordId = key.slice(separator + 1);
+    const level = save.levels[deckKey];
+    // The word record may be temporarily orphaned by a deck update; when it
+    // is present, an acquired word must be in (or recovering from) review.
+    const word = level?.words[wordId];
+    if (word && word.card.state !== "review" && word.card.state !== "relearning") {
+      addIssue(context, ["acquiredWords", index], "an acquired word's card must be in review or relearning state");
+    }
+    if (word && word.learnReviews === 0) {
+      addIssue(context, ["acquiredWords", index], "an acquired word must have at least one Learn rating");
+    }
+  }
+
+  const relearn = save.relearnSession;
+  if (relearn) {
+    const basePath = ["relearnSession"];
+    const memberKeys = new Set(relearn.wordKeys);
+    if (memberKeys.size !== relearn.wordKeys.length) {
+      addIssue(context, [...basePath, "wordKeys"], "must not contain duplicate word keys");
+    }
+    const acquired = new Set(save.acquiredWords);
+    for (const [index, key] of relearn.wordKeys.entries()) {
+      if (!AcquiredKeySchema.safeParse(key).success) {
+        addIssue(context, [...basePath, "wordKeys", index], "relearn word keys must be `<deckId>:<wordId>`");
+      } else if (!acquired.has(key)) {
+        addIssue(context, [...basePath, "wordKeys", index], "relearn member must be an acquired word");
+      }
+    }
+    // Every member owns exactly one independent card; no orphan cards.
+    const cardKeys = new Set(Object.keys(relearn.cards));
+    for (const key of cardKeys) {
+      if (!memberKeys.has(key)) addIssue(context, [...basePath, "cards", key], "independent card has no session member");
+    }
+    for (const key of relearn.wordKeys) {
+      const state = relearn.cards[key];
+      if (!state) {
+        addIssue(context, [...basePath, "cards", key], "session member is missing its independent card");
+        continue;
+      }
+      const path = [...basePath, "cards", key];
+      if (!Number.isInteger(state.reviews) || state.reviews < 0) {
+        addIssue(context, [...path, "reviews"], "must be a nonnegative integer");
+      }
+      // A member whose independent card already sits in review should have
+      // been removed at rating time (applyRelearnRating); persisting one
+      // means the runtime leaked a finished member back into the session.
+      if (state.card.state === "review") {
+        addIssue(context, [...path, "card", "state"], "a member whose independent card is in review must have been removed from the session");
+      }
+      // Independent relearn cards follow the same shape rules as main cards,
+      // but are NEVER compared against the member's main Learn card.
+      const memory = state.card;
+      if (memory.state === "new") {
+        if (state.reviews !== 0) addIssue(context, [...path, "reviews"], "a new independent card cannot have reviews");
+        if (memory.lastReview !== null) addIssue(context, [...path, "card", "lastReview"], "a new card cannot have a last review");
+      } else {
+        if (state.reviews < 1) addIssue(context, [...path, "reviews"], `a ${memory.state} independent card must record at least one rating`);
+        if (memory.lastReview === null) {
+          addIssue(context, [...path, "card", "lastReview"], `a ${memory.state} card must record its last review`);
         }
-        for (const component of ["pinyin", "meaning"] as const) {
-          const memory = word[component];
-          const memoryPath = [...path, component];
-          if (memory.state !== "new") {
-            if (memory.lastReview === null) {
-              addIssue(context, [...memoryPath, "lastReview"], `a ${memory.state} card must record its last review`);
-            }
-            if (memory.difficulty < 1) {
-              addIssue(context, [...memoryPath, "difficulty"], `a ${memory.state} card must have difficulty of at least 1`);
-            }
-            if (memory.stability <= 0) {
-              addIssue(context, [...memoryPath, "stability"], `a ${memory.state} card must have positive stability`);
-            }
-          } else if (memory.lastReview !== null) {
-            addIssue(context, [...memoryPath, "lastReview"], "a new card cannot have a last review");
-          }
-          if (memory.lastReview !== null && Date.parse(memory.due) < Date.parse(memory.lastReview)) {
-            addIssue(context, [...memoryPath, "due"], "must not precede the last review");
-          }
-        }
+        if (memory.difficulty < 1) addIssue(context, [...path, "card", "difficulty"], `a ${memory.state} card must have difficulty of at least 1`);
+        if (memory.stability <= 0) addIssue(context, [...path, "card", "stability"], `a ${memory.state} card must have positive stability`);
       }
     }
   }
 }
 
-export function parseSaveFile(input: unknown, catalog?: DeckCatalog): SaveFile {
+export function parseSaveFile(input: unknown, catalog?: DeckCatalog): z.infer<typeof PersistedSaveSchema> {
   return PersistedSaveSchema.superRefine((save, context) => checkSemanticInvariants(save, context, catalog)).parse(input);
 }
 export function parseSaveSnapshot(input: unknown, catalog?: DeckCatalog): SaveSnapshot {

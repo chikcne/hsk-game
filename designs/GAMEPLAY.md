@@ -7,7 +7,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 - Enemies spawn at normalized vertical progress `0` and land at `1`.
 - More than one enemy may be descending at once; default settings produce roughly eight visible enemies once the queue stabilizes.
 - Every enemy displays its own normalized Hanzi.
-- Each enemy has a word-specific speed derived from its FSRS familiarity (`wordFamiliarity`: 0 for new, 0.25 for learning/relearning, logarithmic in stability for review): familiarity `0` uses `0.65×` and familiarity `1` uses `1.50×`, linearly interpolated between them.
+- Each Review enemy has a word-specific speed derived from its **acquisition recency**, not FSRS: pressure `min(rank,100)/100` over the `acquired_words` log (rank 0 = newest) maps linearly from `0.65×` (gentlest, brand-new acquisitions) to `1.50×` (rank 100+, all Old words at maximum pressure). The global speed setting multiplies it uniformly.
 - The global speed setting multiplies every word-specific speed; there is no random velocity.
 - When a target is needed, choose the descending enemy with the shortest predicted time to ground, not the lowest altitude. An amber box/beam and the command panel identify it.
 - Equal predicted arrival times are broken by lower `spawnOrdinal`.
@@ -17,7 +17,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 Use normalized progress in the domain/simulation layer rather than canvas pixels:
 
 ```ts
-wordSpeed = lerp(0.65, 1.50, wordFamiliarity(word))
+wordSpeed = lerp(0.65, 1.50, recencyPressure(word)) // min(rank,100)/100 over acquired_words
 progress += (deltaMs / BASE_TRAVEL_MS) * enemySpeedMultiplier * wordSpeed
 arrivalTime = (1 - progress) / wordSpeed
 ```
@@ -76,7 +76,7 @@ A resolved target is removed from answer state immediately. Its explosion or bre
 MVP allows one learning outcome per enemy. Retrying the same enemy would complicate timing, allow repeated weight changes, and let one enemy block the whole pressure queue. A wrong answer therefore:
 
 1. resets streak;
-2. records one miss, grades the tested FSRS component Again, and schedules the repair: the word is due again after FSRS relearning steps and a hard 3-phrase ordinal cooldown (see designs/LEARNING_AND_SAVES.md);
+2. records one miss in the session/lifetime stats: Review battles never mutate FSRS memory (Learn Mode owns the single card per word, see designs/LEARNING_AND_SAVES.md);
 3. reveals Hanzi, toned pinyin, and correct meaning;
 4. starts a short breach animation;
 5. removes the enemy from target eligibility;
@@ -184,17 +184,17 @@ Accuracy is `completeCorrect / resolvedEnemies`. Do not count blank or irrelevan
 
 The spawn clock runs while the battle is active, including pinyin, meaning, and non-blocking hit/landing feedback. It freezes during wrong-answer review, while paused/settings, while the page is hidden, and before deck/save loading completes.
 
-After a word spawns, its FSRS-derived familiarity sets the next interval. The multiplier interpolates linearly from `1.60` at familiarity `0`, through `1.00` at familiarity `0.5`, to `0.40` at familiarity `1`: `masteryInterval = baseInterval * lerp(1.60, 0.40, familiarity)` where familiarity is `wordFamiliarity(word) * 100`. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
+After a word spawns, its acquisition recency sets the next interval. The multiplier interpolates linearly from `1.60` at pressure `0` (newest words, gentlest), through `1.00` at pressure `0.5`, to `0.40` at pressure `1` (rank 100+/Old, maximum pressure): `masteryInterval = baseInterval * lerp(1.60, 0.40, pressure)` where pressure is `min(rank,100)` over the `acquired_words` log, captured at session start. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
 
-Empty battlefield: after the board clears, the next word must be playable within two seconds (`EMPTY_FIELD_MAX_WRITE_MS`). The pre-write stroke animation compresses (`emptyFieldWriteSchedule`, speedup capped at 8x) instead of serializing its full natural-cadence lead, and ordinal cooldowns fast-forward via `blockedUntilOrdinal`. With enemies still active, pacing is unchanged.
+Empty battlefield: after the board clears, the next word must be playable within two seconds (`EMPTY_FIELD_MAX_WRITE_MS`). The pre-write stroke animation compresses (`emptyFieldWriteSchedule`, speedup capped at 8x) instead of serializing its full natural-cadence lead. With enemies still active, pacing is unchanged.
 
 When a timer is due:
 
 1. if 32 enemies are active, keep one pending spawn and retry when a slot opens;
-2. let the scheduler refill its deterministic 30-word curriculum, then choose from repair, active-learning, or mastered-fallback tier;
+2. take the next word from the deterministic review base plan — or the oldest due repair obligation (delayed 10 base spawns; forced immediately once the base plan is exhausted) — never spawning a word that is already active or preparing;
 3. assign enemy ID, ordinal, visual lane, and choice seed;
-4. set word cooldown from the scheduler;
-5. checkpoint scheduler state;
+4. advance the global spawn ordinal;
+5. checkpoint the scheduler snapshot;
 6. create the Phaser enemy.
 
 Do not “catch up” with several immediate spawns after a pause, settings dialog, hidden tab, lag spike, or frame clamp. Set `nextSpawnAt = activeClock + currentInterval` after one spawn. This prevents bursts unrelated to player-selected pressure.
