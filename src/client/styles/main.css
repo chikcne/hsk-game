@@ -183,10 +183,11 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   width: min(1220px, 100%);
   justify-self: center;
   display: grid;
-  grid-template-columns: 1.18fr minmax(0, 6fr) .8fr 1fr;
   align-items: stretch;
   padding: 18px 0 10px;
 }
+.scroll-menu.mode-menu { grid-template-columns: 1.12fr 1fr 1fr 1fr; }
+.scroll-menu.grade-menu { grid-template-columns: .95fr minmax(0, 6fr); }
 .level-columns { min-width: 0; display: grid; grid-template-columns: repeat(6, minmax(44px, 1fr)); align-items: stretch; }
 .scroll-column {
   appearance: none;
@@ -255,11 +256,31 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .mini-seal { position: absolute; top: 38%; right: 15%; width: 27px; height: 27px; transform: rotate(7deg); opacity: .8; }
 .lesson { color: var(--cinnabar-dark); }
 .lesson::before { background: linear-gradient(to bottom, transparent, rgba(192,58,30,.025) 12%, rgba(192,58,30,.055) 25%, rgba(192,58,30,.05) 78%, transparent); }
-.lesson strong, .relearn strong, .review strong { color: var(--cinnabar-dark); }
+.lesson strong, .grades strong, .relearn strong, .review strong { color: var(--cinnabar-dark); }
+.grades { color: var(--umber); }
+.grades .action-seal { color: var(--umber); }
 .relearn { color: var(--umber-soft); }
 .relearn .action-seal { color: var(--umber-soft); }
 .review { color: var(--jade); }
 .review .action-seal { color: var(--jade); }
+.return-column { color: var(--umber-soft); }
+.return-column em { letter-spacing: .22em; }
+.return-arrow {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(34px, 3.6vw, 52px);
+  line-height: 1;
+}
+.return-column.selected::before, .return-column:hover::before, .return-column:focus-visible::before {
+  background: transparent;
+  box-shadow: none;
+  transform: scaleY(.94);
+}
+/* The return slot reads as empty margin, not a column: no pencil rule and no
+ * highlight band. The shared lift and menu dimming still acknowledge focus. */
+.return-column::after { content: none; }
 /* Semantically disabled columns (no active relearn session / no acquired
  * words): keep focusable for keyboard discovery, refuse activation. */
 .scroll-column.is-disabled { cursor: default; }
@@ -517,7 +538,9 @@ input.mint-range { accent-color: var(--jade); }
     grid-template-rows: 96px minmax(0, 1fr) 42px;
   }
   .settings-button { top: max(20px, env(safe-area-inset-top)); right: 30px; width: 42px; height: 42px; }
-  .scroll-menu { width: 100%; min-width: 0; padding: 8px 0 4px; grid-template-columns: 1.14fr minmax(0,6fr) .8fr 1fr; }
+  .scroll-menu.mode-menu { width: 100%; min-width: 0; grid-template-columns: repeat(4, 1fr); }
+  .scroll-menu.grade-menu { width: 100%; min-width: 0; grid-template-columns: minmax(52px, .8fr) minmax(0, 6fr); }
+  .return-arrow { height: 66px; font-size: 30px; }
   .level-columns { overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: none; }
   .level-columns::-webkit-scrollbar { display: none; }
   .scroll-column { min-width: 44px; padding: 10px 2px 7px; scroll-snap-align: center; }
@@ -628,7 +651,7 @@ input.mint-range { accent-color: var(--jade); }
 }
 
 @media (max-width: 359px) {
-  .scroll-menu { grid-template-columns: 44px minmax(0,1fr) 40px 44px; }
+  .scroll-menu.grade-menu { grid-template-columns: 44px minmax(0,1fr); }
   .level-columns { grid-template-columns: repeat(6,44px); scroll-snap-type: x mandatory; }
 }
 

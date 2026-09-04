@@ -92,6 +92,7 @@ export function App() {
   const [uiStrokeData, setUiStrokeData] = useState<StrokeDataMap>(() => new Map());
   const [strokeData, setStrokeData] = useState<StrokeDataMap>(() => new Map());
   const [selected, setSelected] = useState<DeckId>("hsk-1");
+  const [menu, setMenu] = useState<"main" | "grades">("main");
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [paused, setPaused] = useState(false);
   const [summary, setSummary] = useState<SessionStats | null>(null);
@@ -336,7 +337,7 @@ export function App() {
   if (!save || screen === "loading") return <LoadingScreen hasSave={Boolean(save)} strokeData={uiStrokeData} />;
   if (screen === "decks") return <>
     {loadError && <p className="deck-load-error" role="alert">{loadError}</p>}
-    <DeckSelect save={save} settings={settings} selected={selected} strokeData={uiStrokeData} onSelect={setSelected} onLearn={deployLearn} onReview={() => void deployReview()} onRelearn={() => void deployRelearn()} onSettings={() => setSettingsOpen(true)} />
+    <DeckSelect save={save} settings={settings} selected={selected} strokeData={uiStrokeData} menu={menu} onMenuChange={setMenu} onSelect={setSelected} onLearn={deployLearn} onReview={() => void deployReview()} onRelearn={() => void deployRelearn()} onSettings={() => setSettingsOpen(true)} />
     {settingsOpen && <SettingsDialog settings={settings} onApply={applySettings} onClose={() => setSettingsOpen(false)} />}
   </>;
   if (screen === "learn" && deck) return <>
@@ -405,14 +406,39 @@ function LoadingScreen({ hasSave, strokeData }: { hasSave: boolean; strokeData: 
   return <main className="loading-screen paper"><div className="loader-logo"><HanziText text="字多多" data={strokeData} /></div><h1>ZIDUODUO</h1><p>{hasSave ? "LOADING GRADE DATA" : "CONNECTING TO SERVER"}</p><div className="loading-bar"><i /></div><small>LOCAL-FIRST • OFFLINE READY</small></main>;
 }
 
-function DeckSelect({ save, settings, selected, strokeData, onSelect, onLearn, onReview, onRelearn, onSettings }: {
-  save: SaveFile; settings: DifficultySettings; selected: DeckId; strokeData: StrokeDataMap; onSelect: (id: DeckId) => void;
+/** The title screen has two levels: the main menu offers the four modes, and
+ * the grade submenu lists the six HSK volumes with a return column. The menu
+ * level lives in App so a failed launch drops the player back where they
+ * started (the grades submenu after a grade click, the main menu otherwise). */
+function DeckSelect({ save, settings, selected, strokeData, menu, onMenuChange, onSelect, onLearn, onReview, onRelearn, onSettings }: {
+  save: SaveFile; settings: DifficultySettings; selected: DeckId; strokeData: StrokeDataMap; menu: "main" | "grades"; onMenuChange: (menu: "main" | "grades") => void; onSelect: (id: DeckId) => void;
   onLearn: (id: DeckId) => void; onReview: () => void; onRelearn: () => void; onSettings: () => void;
 }) {
-  const COLUMN_COUNT = 9;
-  const [activeIndex, setActiveIndex] = useState(() => DECK_IDS.indexOf(selected) + 1);
-  const columnRefs = useRef<Array<HTMLButtonElement | null>>([]);
-  const totalMastered = DECK_IDS.reduce((sum, id) => sum + masteredCount(save.levels[id]), 0);
+  return <main className={`paper deck-screen ${settings.reducedMotion ? "reduce-motion" : ""}`}>
+    <button className="settings-button" onClick={onSettings} aria-label="System settings">
+      <img className="mooncake-icon" src="/images/mooncake-settings.png" alt="" />
+    </button>
+    {menu === "main"
+      ? <ModeMenu
+          save={save} settings={settings} selected={selected} strokeData={strokeData}
+          onSelect={onSelect} onLearn={onLearn} onReview={onReview} onRelearn={onRelearn}
+          onOpenGrades={() => onMenuChange("grades")}
+        />
+      : <GradeMenu
+          save={save} selected={selected} strokeData={strokeData} reducedMotion={settings.reducedMotion}
+          onSelect={onSelect} onLearn={onLearn} onReturn={() => onMenuChange("main")}
+        />}
+  </main>;
+}
+
+const MODE_COUNT = 4;
+
+function ModeMenu({ save, settings, selected, strokeData, onSelect, onLearn, onReview, onRelearn, onOpenGrades }: {
+  save: SaveFile; settings: DifficultySettings; selected: DeckId; strokeData: StrokeDataMap; onSelect: (id: DeckId) => void;
+  onLearn: (id: DeckId) => void; onReview: () => void; onRelearn: () => void; onOpenGrades: () => void;
+}) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const buttonRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const acquiredCount = save.acquiredWords.length;
   const reviewEnabled = acquiredCount >= REVIEW_MIN_ACQUIRED_WORDS;
   const relearnSession = save.relearnSession;
@@ -421,11 +447,97 @@ function DeckSelect({ save, settings, selected, strokeData, onSelect, onLearn, o
   const selectedMastered = masteredCount(selectedLevel);
   const selectedTotal = selectedLevel ? Object.keys(selectedLevel.words).length : DECK_TOTALS[selected];
   const lessonNumber = selectedLevel ? curriculumLessonNumber(selectedLevel, settings.levelSize) : 1;
+  const totalMastered = DECK_IDS.reduce((sum, id) => sum + masteredCount(save.levels[id]), 0);
+  const totalWords = DECK_IDS.reduce((sum, id) => {
+    const level = save.levels[id];
+    return sum + (level ? Object.keys(level.words).length : DECK_TOTALS[id]);
+  }, 0);
+
+  const moveFocus = (index: number) => {
+    const next = Math.max(0, Math.min(MODE_COUNT - 1, index));
+    setActiveIndex(next);
+    buttonRefs.current[next]?.focus();
+  };
+
+  return <section
+    className="scroll-menu mode-menu"
+    aria-label="Choose a mode"
+    onKeyDown={(event) => {
+      const focusedIndex = buttonRefs.current.findIndex((item) => item === document.activeElement);
+      const currentIndex = focusedIndex >= 0 ? focusedIndex : activeIndex;
+      if (event.key === "ArrowRight" || event.key === "ArrowDown") { event.preventDefault(); moveFocus((currentIndex + 1) % MODE_COUNT); }
+      else if (event.key === "ArrowLeft" || event.key === "ArrowUp") { event.preventDefault(); moveFocus((currentIndex + MODE_COUNT - 1) % MODE_COUNT); }
+      else if (event.key === "Home") { event.preventDefault(); moveFocus(0); }
+      else if (event.key === "End") { event.preventDefault(); moveFocus(MODE_COUNT - 1); }
+    }}
+  >
+    <button
+      ref={(node) => { buttonRefs.current[0] = node; }}
+      className={`scroll-column lesson ${activeIndex === 0 ? "selected" : ""}`}
+      onFocus={() => setActiveIndex(0)} onMouseEnter={() => setActiveIndex(0)} onClick={() => void onLearn(selected)}
+    >
+      <span className="column-kicker">LEARN MODE</span><strong><HanziText text="续习" data={strokeData} vertical /></strong>
+      <em><HanziText text={`${deckLabel(selected)} · 第${lessonNumber}课`} data={strokeData} vertical /></em>
+      <span className="column-progress"><i style={{ height: `${selectedTotal ? selectedMastered / selectedTotal * 100 : 0}%` }} /></span>
+      <span className="column-count">{selectedMastered} / {selectedTotal}</span><span className="seal action-seal"><HanziText text={gradeActionLabel(selectedLevel) === "START" ? "开始" : "续习"} data={strokeData} /></span>
+    </button>
+    <button
+      ref={(node) => { buttonRefs.current[1] = node; }}
+      className={`scroll-column grades ${activeIndex === 1 ? "selected" : ""}`}
+      onFocus={() => setActiveIndex(1)} onMouseEnter={() => setActiveIndex(1)} onClick={onOpenGrades}
+      aria-label="Select a grade"
+    >
+      <span className="column-kicker">SELECT GRADE</span><strong><HanziText text="选级" data={strokeData} vertical /></strong>
+      <em><HanziText text="六级词卷" data={strokeData} vertical /></em>
+      <span className="column-progress"><i style={{ height: `${totalWords ? totalMastered / totalWords * 100 : 0}%` }} /></span>
+      <span className="column-count">{totalMastered} / {totalWords}</span><span className="seal action-seal"><HanziText text="级" data={strokeData} /></span>
+    </button>
+    <button
+      ref={(node) => { buttonRefs.current[2] = node; }}
+      className={`scroll-column review ${activeIndex === 2 ? "selected" : ""} ${reviewEnabled ? "" : "is-disabled"}`}
+      onFocus={() => setActiveIndex(2)} onMouseEnter={() => setActiveIndex(2)}
+      onClick={() => { if (reviewEnabled) void onReview(); }} aria-disabled={!reviewEnabled}
+      aria-label={reviewEnabled
+        ? `Start review, ${acquiredCount} acquired words`
+        : `Review needs at least ${REVIEW_MIN_ACQUIRED_WORDS} acquired words; ${acquiredCount} acquired`}
+    >
+      <span className="column-kicker">REVIEW MODE</span><strong><HanziText text="温故" data={strokeData} vertical /></strong><em><HanziText text="跨卷复习" data={strokeData} vertical /></em>
+      <span className="column-progress"><i style={{ height: reviewEnabled ? "100%" : "0%" }} /></span>
+      <span className="column-count"><HanziText text={`${acquiredCount} 已习得`} data={strokeData} vertical /></span><span className="seal action-seal"><HanziText text="习" data={strokeData} /></span>
+    </button>
+    <button
+      ref={(node) => { buttonRefs.current[3] = node; }}
+      className={`scroll-column relearn ${activeIndex === 3 ? "selected" : ""} ${relearnEnabled ? "" : "is-disabled"}`}
+      onFocus={() => setActiveIndex(3)} onMouseEnter={() => setActiveIndex(3)}
+      onClick={() => { if (relearnEnabled) void onRelearn(); }}
+      aria-disabled={!relearnEnabled}
+      aria-label={relearnEnabled
+        ? `Resume re-learning, ${relearnSession!.wordKeys.length} words remaining`
+        : "Re-learning is idle. Start a session from a review summary."}
+    >
+      <span className="column-kicker">RE-LEARN MODE</span><strong><HanziText text="重学" data={strokeData} vertical /></strong><em><HanziText text="巩固错词" data={strokeData} vertical /></em>
+      <span className="column-progress"><i style={{ height: relearnEnabled ? "100%" : "0%" }} /></span>
+      <span className="column-count"><HanziText text={relearnEnabled ? `${relearnSession!.wordKeys.length} 重学中` : "无进行中"} data={strokeData} vertical /></span><span className="seal action-seal"><HanziText text="重" data={strokeData} /></span>
+    </button>
+  </section>;
+}
+
+/** Grade submenu: the return column occupies the left slot and the six HSK
+ * volumes fill the rest. Digit keys 1–6 jump straight to (and launch from) a
+ * grade, exactly as the old single-level menu did. */
+const GRADE_COUNT = 7;
+
+function GradeMenu({ save, selected, strokeData, reducedMotion, onSelect, onLearn, onReturn }: {
+  save: SaveFile; selected: DeckId; strokeData: StrokeDataMap; reducedMotion: boolean; onSelect: (id: DeckId) => void;
+  onLearn: (id: DeckId) => void; onReturn: () => void;
+}) {
+  const [activeIndex, setActiveIndex] = useState(() => DECK_IDS.indexOf(selected) + 1);
+  const columnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   // Ref mirror so the window-level digit listener honors the CURRENT motion
   // preference without re-subscribing on every settings change (the listener
   // closure would otherwise go stale on a reduced-motion toggle).
-  const reducedMotionRef = useRef(settings.reducedMotion);
-  reducedMotionRef.current = settings.reducedMotion;
+  const reducedMotionRef = useRef(reducedMotion);
+  reducedMotionRef.current = reducedMotion;
 
   const scrollColumnIntoView = (index: number) => {
     columnRefs.current[index]?.scrollIntoView({
@@ -450,91 +562,59 @@ function DeckSelect({ save, settings, selected, strokeData, onSelect, onLearn, o
   }, [onSelect]);
 
   const moveFocus = (index: number) => {
-    const next = Math.max(0, Math.min(COLUMN_COUNT - 1, index));
+    const next = Math.max(0, Math.min(GRADE_COUNT - 1, index));
     setActiveIndex(next);
     if (next >= 1 && next <= 6) onSelect(DECK_IDS[next - 1]!);
     columnRefs.current[next]?.focus();
     scrollColumnIntoView(next);
   };
 
-  return <main className={`paper deck-screen ${settings.reducedMotion ? "reduce-motion" : ""}`}>
-    <button className="settings-button" onClick={onSettings} aria-label="System settings">
-      <img className="mooncake-icon" src="/images/mooncake-settings.png" alt="" />
-    </button>
-    <section
-      className="scroll-menu"
-      aria-label="Choose a grade, re-learning, or review"
-      onKeyDown={(event) => {
-        const focusedIndex = columnRefs.current.findIndex((item) => item === document.activeElement);
-        const currentIndex = focusedIndex >= 0 ? focusedIndex : activeIndex;
-        if (event.key === "ArrowRight" || event.key === "ArrowDown") { event.preventDefault(); moveFocus((currentIndex + 1) % COLUMN_COUNT); }
-        else if (event.key === "ArrowLeft" || event.key === "ArrowUp") { event.preventDefault(); moveFocus((currentIndex + COLUMN_COUNT - 1) % COLUMN_COUNT); }
-        else if (event.key === "Home") { event.preventDefault(); moveFocus(0); }
-        else if (event.key === "End") { event.preventDefault(); moveFocus(COLUMN_COUNT - 1); }
-      }}
+  return <section
+    className="scroll-menu grade-menu"
+    aria-label="Choose a grade"
+    onKeyDown={(event) => {
+      const focusedIndex = columnRefs.current.findIndex((item) => item === document.activeElement);
+      const currentIndex = focusedIndex >= 0 ? focusedIndex : activeIndex;
+      if (event.key === "ArrowRight" || event.key === "ArrowDown") { event.preventDefault(); moveFocus((currentIndex + 1) % GRADE_COUNT); }
+      else if (event.key === "ArrowLeft" || event.key === "ArrowUp") { event.preventDefault(); moveFocus((currentIndex + GRADE_COUNT - 1) % GRADE_COUNT); }
+      else if (event.key === "Home") { event.preventDefault(); moveFocus(0); }
+      else if (event.key === "End") { event.preventDefault(); moveFocus(GRADE_COUNT - 1); }
+    }}
+  >
+    <button
+      ref={(node) => { columnRefs.current[0] = node; }}
+      className={`scroll-column return-column ${activeIndex === 0 ? "selected" : ""}`}
+      onFocus={() => setActiveIndex(0)} onMouseEnter={() => setActiveIndex(0)} onClick={onReturn}
+      aria-label="Return to the main menu"
     >
-      <button
-        ref={(node) => { columnRefs.current[0] = node; }}
-        className={`scroll-column lesson ${activeIndex === 0 ? "selected" : ""}`}
-        onFocus={() => setActiveIndex(0)} onMouseEnter={() => setActiveIndex(0)} onClick={() => void onLearn(selected)}
+      <span className="return-arrow" aria-hidden="true">←</span>
+      <strong><HanziText text="返回" data={strokeData} vertical /></strong>
+      <em>RETURN</em>
+    </button>
+    <div className="level-columns">
+    {DECK_IDS.map((id, index) => {
+      const level = save.levels[id];
+      const mastered = masteredCount(level);
+      const total = level ? Object.keys(level.words).length : DECK_TOTALS[id];
+      const percent = total ? mastered / total * 100 : 0;
+      const menuIndex = index + 1;
+      return <button
+        key={id}
+        ref={(node) => { columnRefs.current[menuIndex] = node; }}
+        className={`scroll-column level ${activeIndex === menuIndex ? "selected" : ""} ${level?.firstCompletedAt ? "complete" : ""}`}
+        onFocus={() => { setActiveIndex(menuIndex); onSelect(id); }}
+        onMouseEnter={() => { setActiveIndex(menuIndex); onSelect(id); }}
+        onClick={() => void onLearn(id)}
+        aria-label={`${deckLabel(id)}, ${mastered} of ${total} words acquired`}
       >
-        <span className="column-kicker">LEARN MODE</span><strong><HanziText text="续习" data={strokeData} vertical /></strong>
-        <em><HanziText text={`${deckLabel(selected)} · 第${lessonNumber}课`} data={strokeData} vertical /></em>
-        <span className="column-progress"><i style={{ height: `${selectedTotal ? selectedMastered / selectedTotal * 100 : 0}%` }} /></span>
-        <span className="column-count">{selectedMastered} / {selectedTotal}</span><span className="seal action-seal"><HanziText text={gradeActionLabel(selectedLevel) === "START" ? "开始" : "续习"} data={strokeData} /></span>
-      </button>
-      <div className="level-columns">
-      {DECK_IDS.map((id, index) => {
-        const level = save.levels[id];
-        const mastered = masteredCount(level);
-        const total = level ? Object.keys(level.words).length : DECK_TOTALS[id];
-        const percent = total ? mastered / total * 100 : 0;
-        const menuIndex = index + 1;
-        return <button
-          key={id}
-          ref={(node) => { columnRefs.current[menuIndex] = node; }}
-          className={`scroll-column level ${activeIndex === menuIndex ? "selected" : ""} ${level?.firstCompletedAt ? "complete" : ""}`}
-          onFocus={() => { setActiveIndex(menuIndex); onSelect(id); }}
-          onMouseEnter={() => { setActiveIndex(menuIndex); onSelect(id); }}
-          onClick={() => void onLearn(id)}
-          aria-label={`${deckLabel(id)}, ${mastered} of ${total} words acquired`}
-        >
-          <span className="column-kicker">HSK 0{index + 1}</span><strong><HanziText text={`${LEVEL_HANZI[index]}级`} data={strokeData} vertical /></strong>
-          <em><HanziText text={LEVEL_DESCRIPTIONS[index]!} data={strokeData} vertical /></em><span className="column-progress"><i style={{ height: `${percent}%` }} /></span>
-          <span className="column-count">{mastered} / {total}</span>{level?.firstCompletedAt && <span className="seal mini-seal"><HanziText text="成" data={strokeData} /></span>}
-          {activeIndex === menuIndex && <span className="selection-brush" aria-hidden="true" />}
-        </button>;
-      })}
-      </div>
-      <button
-        ref={(node) => { columnRefs.current[7] = node; }}
-        className={`scroll-column relearn ${activeIndex === 7 ? "selected" : ""} ${relearnEnabled ? "" : "is-disabled"}`}
-        onFocus={() => setActiveIndex(7)} onMouseEnter={() => setActiveIndex(7)}
-        onClick={() => { if (relearnEnabled) void onRelearn(); }}
-        aria-disabled={!relearnEnabled}
-        aria-label={relearnEnabled
-          ? `Resume re-learning, ${relearnSession!.wordKeys.length} words remaining`
-          : "Re-learning is idle. Start a session from a review summary."}
-      >
-        <span className="column-kicker">RE-LEARN MODE</span><strong><HanziText text="重学" data={strokeData} vertical /></strong><em><HanziText text="巩固错词" data={strokeData} vertical /></em>
-        <span className="column-progress"><i style={{ height: relearnEnabled ? "100%" : "0%" }} /></span>
-        <span className="column-count"><HanziText text={relearnEnabled ? `${relearnSession!.wordKeys.length} 重学中` : "无进行中"} data={strokeData} vertical /></span><span className="seal action-seal"><HanziText text="重" data={strokeData} /></span>
-      </button>
-      <button
-        ref={(node) => { columnRefs.current[8] = node; }}
-        className={`scroll-column review ${activeIndex === 8 ? "selected" : ""} ${reviewEnabled ? "" : "is-disabled"}`}
-        onFocus={() => setActiveIndex(8)} onMouseEnter={() => setActiveIndex(8)}
-        onClick={() => { if (reviewEnabled) void onReview(); }} aria-disabled={!reviewEnabled}
-        aria-label={reviewEnabled
-          ? `Start review, ${acquiredCount} acquired words`
-          : `Review needs at least ${REVIEW_MIN_ACQUIRED_WORDS} acquired words; ${acquiredCount} acquired`}
-      >
-        <span className="column-kicker">REVIEW MODE</span><strong><HanziText text="温故" data={strokeData} vertical /></strong><em><HanziText text="跨卷复习" data={strokeData} vertical /></em>
-        <span className="column-progress"><i style={{ height: reviewEnabled ? "100%" : "0%" }} /></span>
-        <span className="column-count"><HanziText text={`${acquiredCount} 已习得`} data={strokeData} vertical /></span><span className="seal action-seal"><HanziText text="习" data={strokeData} /></span>
-      </button>
-    </section>
-  </main>;
+        <span className="column-kicker">HSK 0{index + 1}</span><strong><HanziText text={`${LEVEL_HANZI[index]}级`} data={strokeData} vertical /></strong>
+        <em><HanziText text={LEVEL_DESCRIPTIONS[index]!} data={strokeData} vertical /></em><span className="column-progress"><i style={{ height: `${percent}%` }} /></span>
+        <span className="column-count">{mastered} / {total}</span>{level?.firstCompletedAt && <span className="seal mini-seal"><HanziText text="成" data={strokeData} /></span>}
+        {activeIndex === menuIndex && <span className="selection-brush" aria-hidden="true" />}
+      </button>;
+    })}
+    </div>
+  </section>;
 }
 
 type BattleProps = {
