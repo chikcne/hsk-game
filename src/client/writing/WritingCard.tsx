@@ -130,6 +130,10 @@ export function WritingCard({ word, strokeData, isNewCard, reducedMotion: reduce
   }, [state.wordKey, state.activeIndex]);
 
   const handleEngage = useCallback(() => {
+    // Switch the grid immediately as well as advancing the progress state.
+    // WritingGrid preserves the pointer gesture that triggered this handoff,
+    // so that same gesture becomes the first quiz stroke.
+    setGridMode({ kind: "writing" });
     dispatch({ type: "begin-writing", nowMs: performance.now() });
   }, []);
   // The clock starts at the first quiz stroke — correct or mistaken — so the

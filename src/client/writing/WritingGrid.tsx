@@ -1,5 +1,13 @@
-import HanziWriter from "hanzi-writer";
-import { useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent, type PointerEvent as ReactPointerEvent } from "react";
+import HanziWriter, { type Point } from "hanzi-writer";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type KeyboardEvent as ReactKeyboardEvent,
+  type MouseEvent as ReactMouseEvent,
+  type PointerEvent as ReactPointerEvent,
+  type TouchEvent as ReactTouchEvent,
+} from "react";
 import type { StrokeCharacterData } from "../data/strokeData";
 
 /** Palette-matched writer colors; keep in sync with the :root tokens in
@@ -57,6 +65,13 @@ type GridCallbacks = {
   onDemoFinished?: () => void;
 };
 
+type PendingDemoPointer = {
+  pointerId: number;
+  points: Point[];
+  ended: boolean;
+  started: boolean;
+};
+
 type Props = GridCallbacks & {
   character: string;
   data: StrokeCharacterData | undefined;
@@ -87,6 +102,10 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const holdTimerRef = useRef<number | null>(null);
+  // A demo's opening pointer gesture begins before React can switch the writer
+  // to quiz mode. Keep that gesture and feed it into the quiz once ready so
+  // the first mouse/pen stroke or finger swipe is not discarded.
+  const pendingDemoPointerRef = useRef<PendingDemoPointer | null>(null);
   const callbacksRef = useRef<GridCallbacks>({});
   callbacksRef.current = { onEngage, onCorrectStroke, onMistake, onCharacterComplete, onDemoFinished };
 
@@ -196,6 +215,23 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
             if (!canceled) callbacksRef.current.onCharacterComplete?.(summary);
           },
         });
+        if (canceled) return;
+
+        // Hanzi Writer listens for mouse/touch start itself, but that event has
+        // already happened when it caused a demo-to-quiz transition. Replay
+        // the captured Pointer Events into the newly active quiz instead.
+        const pending = pendingDemoPointerRef.current;
+        if (pending && !pending.started && writer._quiz && pending.points[0]) {
+          pending.started = true;
+          void writer._quiz.startUserStroke(pending.points[0]);
+          for (const point of pending.points.slice(1)) {
+            void writer._quiz.continueUserStroke(point);
+          }
+          if (pending.ended) {
+            writer._quiz.endUserStroke();
+            pendingDemoPointerRef.current = null;
+          }
+        }
       } else if (mode.kind === "demo-loop") {
         if (reducedMotion) {
           await writer.showCharacter({ duration: 0 });
@@ -249,13 +285,32 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
     </div>;
   }
 
-  const engageable = mode.kind === "demo-loop";
-  const engageProps = engageable ? {
+  const pointFromPointer = (event: ReactPointerEvent<HTMLDivElement>): Point => {
+    const bounds = (hostRef.current ?? event.currentTarget).getBoundingClientRect();
+    return { x: event.clientX - bounds.left, y: event.clientY - bounds.top };
+  };
+  const demoPlaying = mode.kind !== "writing";
+  const engageProps = demoPlaying ? {
     role: "button" as const,
     tabIndex: 0,
-    "aria-label": `${label}. Stroke-order preview playing. Press Enter or tap the square to start writing.`,
+    "aria-label": mode.kind === "demo-loop"
+      ? `${label}. Stroke-order preview playing. Press Enter or tap the square to start writing.`
+      : `${label}. Stroke-order preview playing. Press Enter or draw on the square to start writing.`,
     onPointerDown: (event: ReactPointerEvent<HTMLDivElement>) => {
+      if (event.pointerType === "mouse" && event.button !== 0) return;
       event.preventDefault();
+      pendingDemoPointerRef.current = {
+        pointerId: event.pointerId,
+        points: [pointFromPointer(event)],
+        ended: false,
+        started: false,
+      };
+      try {
+        event.currentTarget.setPointerCapture(event.pointerId);
+      } catch {
+        // Pointer capture is only an optimization; normal in-bounds pointer
+        // events still preserve the stroke on older implementations.
+      }
       callbacksRef.current.onEngage?.();
     },
     onKeyDown: (event: ReactKeyboardEvent<HTMLDivElement>) => {
@@ -270,15 +325,58 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
     "aria-label": `${label}. Writing square. Draw with a mouse, pen, or finger. If you cannot write, use the finish button below.`,
   };
 
+  const continuePendingDemoPointer = (event: ReactPointerEvent<HTMLDivElement>) => {
+    const pending = pendingDemoPointerRef.current;
+    if (!pending || pending.pointerId !== event.pointerId) return;
+    event.preventDefault();
+    const point = pointFromPointer(event);
+    if (pending.started) {
+      void writerRef.current?._quiz?.continueUserStroke(point);
+    } else {
+      pending.points.push(point);
+    }
+  };
+  const endPendingDemoPointer = (event: ReactPointerEvent<HTMLDivElement>) => {
+    const pending = pendingDemoPointerRef.current;
+    if (!pending || pending.pointerId !== event.pointerId) return;
+    event.preventDefault();
+    if (pending.started) {
+      writerRef.current?._quiz?.endUserStroke();
+      pendingDemoPointerRef.current = null;
+    } else {
+      pending.ended = true;
+    }
+    try {
+      event.currentTarget.releasePointerCapture(event.pointerId);
+    } catch {
+      // The browser may already have released capture for a canceled pointer.
+    }
+  };
+  // Once a Pointer Event owns the handoff, suppress its compatibility
+  // mouse/touch events before Hanzi Writer's native target listeners see
+  // them; otherwise the same opening stroke could be started twice.
+  const suppressCompatibilityEvent = (event: ReactMouseEvent | ReactTouchEvent) => {
+    if (!pendingDemoPointerRef.current) return;
+    event.preventDefault();
+    event.stopPropagation();
+  };
+
   return <div
     ref={gridRef}
-    className={`writing-grid ${engageable ? "is-demo" : ""}`}
+    className={`writing-grid ${demoPlaying ? "is-demo" : ""}`}
     {...engageProps}
-    data-writing-mode={engageable ? "demo-loop" : mode.kind}
+    onPointerMove={continuePendingDemoPointer}
+    onPointerUp={endPendingDemoPointer}
+    onPointerCancel={endPendingDemoPointer}
+    onMouseDownCapture={suppressCompatibilityEvent}
+    onMouseMoveCapture={suppressCompatibilityEvent}
+    onTouchStartCapture={suppressCompatibilityEvent}
+    onTouchMoveCapture={suppressCompatibilityEvent}
+    data-writing-mode={mode.kind}
   >
     <div className="writing-grid-surface" aria-hidden="true">
       <div className="writing-grid-writer" ref={hostRef} />
     </div>
-    {engageable && <span className="writing-grid-prompt" aria-hidden="true">TAP TO BEGIN</span>}
+    {mode.kind === "demo-loop" && <span className="writing-grid-prompt" aria-hidden="true">TAP TO BEGIN</span>}
   </div>;
 }
