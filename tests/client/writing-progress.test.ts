@@ -43,6 +43,23 @@ describe("word writing state", () => {
     expect(begin(engaged, 2500).startedAtMs).toBe(800);
   });
 
+  test("a new multi-character card demos every character and excludes each demo from writing time", () => {
+    let state = begin(createWordWritingState("你好", { newCard: true }), 100);
+    state = complete(state, 0, 1100);
+    expect(state.activeIndex).toBe(1);
+    expect(activeCharacter(state)).toBe("好");
+    expect(state.phase).toBe("demo");
+    // Waiting on the second character's demo does not advance writing time.
+    expect(elapsedWritingMs(state, 5100)).toBe(1000);
+
+    state = begin(state, 5100);
+    expect(state.phase).toBe("writing");
+    expect(state.startedAtMs).toBe(100);
+    state = complete(state, 1, 6100);
+    expect(state.phase).toBe("complete");
+    expect(elapsedWritingMs(state, 9999)).toBe(2000);
+  });
+
   test("a later card's clock starts at the first stroke, not at completion", () => {
     // A later card is created in the writing phase but the clock is still
     // stopped until the player's first quiz stroke (correct or mistaken) so

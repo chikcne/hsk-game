@@ -26,7 +26,7 @@ Progress is written atomically to the gitignored `saves/default.json` after ever
 Each Learn session is created (or resumed exactly) when you click a grade:
 
 1. it contains **every currently due introduced word** of that grade plus **up to "new cards per session" brand-new curriculum words** (a settings slider);
-2. every card shows pinyin and meaning, auto-plays its audio (replayable), and is completed by guided, forgiving stroke-order writing; a word's very first presentation loops the stroke-order demo until you start writing, later appearances offer **Show Demo** instead;
+2. every card shows pinyin and meaning, auto-plays its audio (replayable), and is completed by guided, forgiving stroke-order writing; on a word's very first presentation, each character loops its stroke-order demo until you start writing it, while later appearances offer **Show Demo** instead;
 3. after writing, the card shows the writing elapsed time and the four ratings with live next-interval previews; FSRS applies the chosen rating to the word's single card;
 4. a word leaves the session when its card reaches the FSRS review state — a lapsed repair recurs via **learn-ahead** (the earliest due remaining card is always served, even if not yet due) — and the session ends only when every word has passed. Words enter the ordered `acquired_words` table exactly once, the moment their card first reaches review.
 

@@ -55,8 +55,9 @@ type Props = {
    * map is finished automatically and reported via
    * `missingDataCharacters`, but the word cannot be written properly. */
   strokeData: StrokeDataMap;
-  /** First-ever presentation of the word: an indefinitely replaying
-   * stroke-order demo runs until the writing surface is engaged. */
+  /** First-ever presentation of the word: every character gets an
+   * indefinitely replaying stroke-order demo until its writing surface is
+   * engaged. */
   isNewCard: boolean;
   /** Combine the app's settings value with the system preference; the OS
    * preference is honored directly even when this is omitted. */
@@ -108,8 +109,8 @@ export function WritingCard({ word, strokeData, isNewCard, reducedMotion: reduce
     dispatch({ type: "reset", wordKey: word.displayHanzi, newCard: isNewCard });
   }, [word.id, word.displayHanzi, isNewCard]);
 
-  // The grid mode follows the phase: demo phase loops the stroke-order demo,
-  // writing phases quiz. demo-once is the only transient override.
+  // The grid mode follows the phase: on new cards each active character gets
+  // a looping demo before its quiz. demo-once is the only transient override.
   const [gridMode, setGridMode] = useState<GridMode>(() => ({ kind: state.phase === "demo" ? "demo-loop" : "writing" }));
   useEffect(() => {
     setGridMode({ kind: state.phase === "demo" ? "demo-loop" : "writing" });

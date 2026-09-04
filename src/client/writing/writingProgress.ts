@@ -3,8 +3,9 @@
  * A word is written one character at a time. The clock starts when writing
  * begins: at demo engagement for new cards, or at the first quiz stroke
  * (correct or mistaken) for later cards, so the first character's writing
- * time is counted. Stroke-order demo watching is never counted. The clock
- * stops when the last writable character completes. Every action is
+ * time is counted. On a new card, every character gets its own demo before
+ * its quiz; time spent watching those demos is excluded. The clock stops
+ * when the last writable character completes. Every action is
  * idempotent where StrictMode double-dispatch or duplicated writer callbacks
  * can occur: `complete-unit` is guarded by the active index.
  *
@@ -27,8 +28,16 @@ export type WordWritingState = {
   /** Index of the unit being written; -1 once the word is complete. */
   activeIndex: number;
   phase: WritingPhase;
+  /** New cards preview every writable character, not only the first one. */
+  demoEachCharacter: boolean;
   startedAtMs: number | null;
   completedAtMs: number | null;
+  /** Start of an inter-character demo after writing has begun. The initial
+   * demo needs no timestamp because the writing clock has not started. */
+  demoStartedAtMs: number | null;
+  /** Time spent in completed inter-character demos, excluded from elapsed
+   * writing time. */
+  demoElapsedMs: number;
   /** Characters the player finished via the accessible finish control. */
   skippedCount: number;
   /** Characters auto-finished because their stroke data was absent. */
@@ -55,8 +64,11 @@ export function createWordWritingState(wordKey: string, options: { newCard: bool
     statuses,
     activeIndex: writable ? firstActive : -1,
     phase: writable ? (options.newCard ? "demo" : "writing") : "complete",
+    demoEachCharacter: options.newCard,
     startedAtMs: writable ? null : 0,
     completedAtMs: writable ? null : 0,
+    demoStartedAtMs: null,
+    demoElapsedMs: 0,
     skippedCount: 0,
     missingCount: 0,
     totalMisses: 0,
@@ -68,7 +80,17 @@ export function writingReducer(state: WordWritingState, action: WritingAction): 
     case "begin-writing": {
       if (state.phase === "complete") return state;
       if (state.phase === "writing" && state.startedAtMs !== null) return state;
-      return { ...state, phase: "writing", startedAtMs: action.nowMs };
+      const resumedDemoMs = state.demoStartedAtMs === null
+        ? 0
+        : Math.max(0, action.nowMs - state.demoStartedAtMs);
+      return {
+        ...state,
+        phase: "writing",
+        // Engaging later character demos resumes the same word-level clock.
+        startedAtMs: state.startedAtMs ?? action.nowMs,
+        demoStartedAtMs: null,
+        demoElapsedMs: state.demoElapsedMs + resumedDemoMs,
+      };
     }
     case "complete-unit": {
       if (state.phase === "complete" || action.index !== state.activeIndex) return state;
@@ -76,13 +98,19 @@ export function writingReducer(state: WordWritingState, action: WritingAction): 
       statuses[action.index] = action.outcome === "written" ? "done" : action.outcome;
       const activeIndex = statuses.indexOf("pending");
       const complete = activeIndex === -1;
+      const nextPhase: WritingPhase = complete ? "complete" : state.demoEachCharacter ? "demo" : "writing";
+      const interruptedDemoMs = state.demoStartedAtMs === null
+        ? 0
+        : Math.max(0, action.nowMs - state.demoStartedAtMs);
       return {
         ...state,
         statuses,
         activeIndex,
-        phase: complete ? "complete" : "writing",
+        phase: nextPhase,
         startedAtMs: state.startedAtMs ?? action.nowMs,
         completedAtMs: complete ? action.nowMs : null,
+        demoStartedAtMs: nextPhase === "demo" ? action.nowMs : null,
+        demoElapsedMs: state.demoElapsedMs + interruptedDemoMs,
         skippedCount: state.skippedCount + (action.outcome === "skipped" ? 1 : 0),
         missingCount: state.missingCount + (action.outcome === "missing" ? 1 : 0),
       };
@@ -127,7 +155,10 @@ export function completedUnitCount(state: WordWritingState): number {
 export function elapsedWritingMs(state: WordWritingState, nowMs: number): number | null {
   if (state.startedAtMs === null) return null;
   const end = state.phase === "complete" ? state.completedAtMs ?? nowMs : nowMs;
-  return Math.max(0, end - state.startedAtMs);
+  const activeDemoMs = state.demoStartedAtMs === null
+    ? 0
+    : Math.max(0, end - state.demoStartedAtMs);
+  return Math.max(0, end - state.startedAtMs - state.demoElapsedMs - activeDemoMs);
 }
 
 export function formatElapsedSeconds(ms: number): string {
