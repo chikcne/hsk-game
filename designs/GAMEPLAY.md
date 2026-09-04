@@ -7,7 +7,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 - Enemies spawn at normalized vertical progress `0` and land at `1`.
 - More than one enemy may be descending at once; default settings produce roughly eight visible enemies once the queue stabilizes.
 - Every enemy displays its own normalized Hanzi.
-- Each Review enemy has a word-specific speed derived from its **acquisition recency**, not FSRS: pressure `min(rank,100)/100` over the `acquired_words` log (rank 0 = newest) maps linearly from `0.65×` (gentlest, brand-new acquisitions) to `1.50×` (rank 100+, all Old words at maximum pressure). The global speed setting multiplies it uniformly.
+- Each Review enemy has a word-specific speed derived from its **acquisition recency**, not FSRS: pressure `min(rank / min(acquiredCount, 100), 1)` over the `acquired_words` log (rank 0 = newest) maps linearly from `0.65×` to `1.50×`. Eligible pools below 100 scale through the same pressure range proportionally; rank 100+ is maximum in full-size pools. The global speed setting multiplies it uniformly.
 - The global speed setting multiplies every word-specific speed; there is no random velocity.
 - When a target is needed, choose the descending enemy with the shortest predicted time to ground, not the lowest altitude. An amber box/beam and the command panel identify it.
 - Equal predicted arrival times are broken by lower `spawnOrdinal`.
@@ -17,7 +17,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 Use normalized progress in the domain/simulation layer rather than canvas pixels:
 
 ```ts
-wordSpeed = lerp(0.65, 1.50, recencyPressure(word)) // min(rank,100)/100 over acquired_words
+wordSpeed = lerp(0.65, 1.50, recencyPressure(word)) // min(rank / min(acquiredCount,100), 1)
 progress += (deltaMs / BASE_TRAVEL_MS) * enemySpeedMultiplier * wordSpeed
 arrivalTime = (1 - progress) / wordSpeed
 ```
@@ -184,7 +184,7 @@ Accuracy is `completeCorrect / resolvedEnemies`. Do not count blank or irrelevan
 
 The spawn clock runs while the battle is active, including pinyin, meaning, and non-blocking hit/landing feedback. It freezes during wrong-answer review, while paused/settings, while the page is hidden, and before deck/save loading completes.
 
-After a word spawns, its acquisition recency sets the next interval. The multiplier interpolates linearly from `1.60` at pressure `0` (newest words, gentlest), through `1.00` at pressure `0.5`, to `0.40` at pressure `1` (rank 100+/Old, maximum pressure): `masteryInterval = baseInterval * lerp(1.60, 0.40, pressure)` where pressure is `min(rank,100)` over the `acquired_words` log, captured at session start. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
+After a word spawns, its acquisition recency sets the next interval. The multiplier interpolates linearly from `1.60` at pressure `0` (newest words, gentlest), through `1.00` at pressure `0.5`, to `0.40` at pressure `1` (maximum pressure): `masteryInterval = baseInterval * lerp(1.60, 0.40, pressure)` where pressure is `min(rank / min(acquiredCount, 100), 1)` over the `acquired_words` log, captured at session start. Eligible pools below 100 scale pressure proportionally. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
 
 Empty battlefield: after the board clears, the next word must be playable within two seconds (`EMPTY_FIELD_MAX_WRITE_MS`). The pre-write stroke animation compresses (`emptyFieldWriteSchedule`, speedup capped at 8x) instead of serializing its full natural-cadence lead. With enemies still active, pacing is unchanged.
 

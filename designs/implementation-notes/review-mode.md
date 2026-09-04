@@ -12,15 +12,17 @@ mutate any main Learn card — only lifetime counters, the global spawn
 ordinal, and the RNG advances get checkpointed.
 
 At session start the app builds a **deterministic, nonpersisted base plan**
-(`buildReviewPlan`) of exactly `settings.reviewSessionLength` spawns (new
-integer slider 200–500, default 200, under the REVIEW MODE settings section
-next to spawn interval/speed):
+(`buildReviewPlan`). Review requires at least 20 acquired words. At 100+
+words, the plan has exactly `settings.reviewSessionLength` spawns (integer
+slider 200–500, default 200):
 
 - ranks 0–19 ("New"): exactly 2 occurrences each;
 - ranks 20–99 ("Recent"): exactly 1 each;
 - every remaining slot: uniform random draw from rank ≥ 100 ("Old"),
-  falling back uniformly to Recent, then New, so small pools reach the
-  exact target (an empty pool yields no session);
+  falling back uniformly to Recent, then New;
+- from 20–99 words, tier boundaries, pressure, and base length scale by
+  `acquiredWords.length / 100` (for example, 50 words means 10 New + 40
+  Recent and 100 default base spawns);
 - guaranteed + filler entries are Fisher–Yates-shuffled together, so tiers
   interleave while counts are exact; duplicates are sequential and never
   concurrent;
@@ -28,11 +30,12 @@ next to spawn interval/speed):
   checkpointed immediately so restarted sessions differ deterministically.
   The session itself is **not resumable**.
 
-Recency labels (New/Recent/Old at boundaries 19/20/99/100) are captured at
-session start into per-word stats and shown as summary chips. Spawn
-pressure interpolates `min(rank,100)/100`: it drives enemy speed (0.65× →
-1.50× by rank 100) and the mastery-adjusted spawn delay; global speed /
-spawn interval and the live performance multiplier still apply.
+Recency labels (New/Recent/Old at full-size boundaries 19/20/99/100) are
+captured at session start into per-word stats and shown as summary chips.
+Spawn pressure interpolates `min(rank / min(acquiredCount, 100), 1)`, so an
+eligible pool below 100 scales the same difficulty range proportionally. It
+drives enemy speed and the mastery-adjusted spawn delay; global settings and
+the live performance multiplier still apply.
 
 A **miss** is wrongPinyin, wrongMeaning, landed, or a pinyin
 autocomplete/reveal — even when the meaning is then correct. Misses enter a
@@ -50,7 +53,7 @@ offers selectable struggle rows (errors preselected) and **START
 RE-LEARNING (N)** (omitted for a perfect round, refused while a relearn
 session is active), plus **START NEW REVIEW** (fresh plan) and **RETURN**.
 Due-based NEXT REVIEW ROUND semantics are removed; the Review column is
-enabled whenever `acquiredWords.length > 0` and shows the acquired count.
+enabled at 20 acquired words and shows the acquired count.
 
 **Relearn** replaces the placeholder: ONE cross-grade persisted session
 (`save.relearnSession`, logical table `relearn_sessions`) storing selected

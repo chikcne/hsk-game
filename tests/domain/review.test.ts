@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
-  REVIEW_NEW_TIER_RANK_LIMIT, REVIEW_RECENT_TIER_RANK_LIMIT, REVIEW_REPAIR_DELAY_SPAWNS,
+  REVIEW_FULL_SCALE_WORD_COUNT, REVIEW_MIN_ACQUIRED_WORDS, REVIEW_NEW_TIER_RANK_LIMIT,
+  REVIEW_RECENT_TIER_RANK_LIMIT, REVIEW_REPAIR_DELAY_SPAWNS,
 } from "../../src/shared/constants";
 import {
   applyReviewOutcome, createReviewSession, decideReviewSpawn, isReviewSessionSettled,
@@ -247,7 +248,18 @@ describe("recency tiers", () => {
     expect(recencyPressureOfRank(50)).toBeCloseTo(0.5);
   });
 
-  it("exposes the tier constants the plan relies on", () => {
+  it("scales tier boundaries and pressure with eligible pools below 100 words", () => {
+    expect(recencyLabelOfRank(9, 50)).toBe("new");
+    expect(recencyLabelOfRank(10, 50)).toBe("recent");
+    expect(recencyLabelOfRank(49, 50)).toBe("recent");
+    expect(recencyLabelOfRank(50, 50)).toBe("old");
+    expect(recencyPressureOfRank(25, 50)).toBeCloseTo(0.5);
+    expect(recencyPressureOfRank(49, 50)).toBeCloseTo(0.98);
+  });
+
+  it("exposes the eligibility and tier constants the plan relies on", () => {
+    expect(REVIEW_MIN_ACQUIRED_WORDS).toBe(20);
+    expect(REVIEW_FULL_SCALE_WORD_COUNT).toBe(100);
     expect(REVIEW_NEW_TIER_RANK_LIMIT).toBe(20);
     expect(REVIEW_RECENT_TIER_RANK_LIMIT).toBe(100);
     expect(REVIEW_REPAIR_DELAY_SPAWNS).toBe(10);
@@ -283,36 +295,45 @@ describe("deterministic review base plan", () => {
     expect(oldTier).toBe(500 - guaranteed);
   });
 
-  it("falls back Recent → New when the Old pool is empty, still hitting the exact target", () => {
-    // 50 acquired words: ranks 0–19 New, 20–49 Recent, no Old.
+  it("scales a 50-word pool's tiers and default game length by one half", () => {
     const log = acquiredLog(50);
     const plan = buildReviewPlan(log, 200, SEED_STATE);
-    expect(plan.spawns).toHaveLength(200);
-    for (const key of new Set(plan.spawns)) expect(log.indexOf(key)).toBeLessThan(50);
-    // Recent fallback keeps Recent at least at its guaranteed once-per-plan.
-    for (let rank = 20; rank < 50; rank += 1) expect(countOf(plan.spawns, log[rank]!)).toBeGreaterThanOrEqual(1);
+    expect(plan.spawns).toHaveLength(100);
+    expect([...plan.recency.values()].filter((label) => label === "new")).toHaveLength(10);
+    expect([...plan.recency.values()].filter((label) => label === "recent")).toHaveLength(40);
+    expect([...plan.recency.values()].filter((label) => label === "old")).toHaveLength(0);
+    expect(plan.pressure.get(log[25]!)).toBeCloseTo(0.5);
+    expect(plan.pressure.get(log[49]!)).toBeCloseTo(0.98);
+    // The 10 scaled New words retain their twice-per-plan quota. Remaining
+    // filler slots come from Recent because an under-100 pool has no Old.
+    for (let rank = 0; rank < 10; rank += 1) expect(countOf(plan.spawns, log[rank]!)).toBe(2);
+    for (let rank = 10; rank < 50; rank += 1) expect(countOf(plan.spawns, log[rank]!)).toBeGreaterThanOrEqual(1);
   });
 
-  it("handles a tiny all-New pool via the final fallback without violating quotas", () => {
-    const log = acquiredLog(3);
+  it("allows exactly 20 words and scales the default game to 40 spawns", () => {
+    const log = acquiredLog(20);
     const plan = buildReviewPlan(log, 200, SEED_STATE);
-    expect(plan.spawns).toHaveLength(200);
-    // Quota floor: every New word at least twice.
-    for (const key of log) expect(countOf(plan.spawns, key)).toBeGreaterThanOrEqual(2);
+    expect(plan.spawns).toHaveLength(40);
+    expect([...plan.recency.values()].filter((label) => label === "new")).toHaveLength(4);
+    expect([...plan.recency.values()].filter((label) => label === "recent")).toHaveLength(16);
+    for (let rank = 0; rank < 4; rank += 1) expect(countOf(plan.spawns, log[rank]!)).toBe(2);
     for (const key of new Set(plan.spawns)) expect(log).toContain(key);
   });
 
-  it("returns an empty plan for an empty acquired pool", () => {
-    const plan = buildReviewPlan([], 200, SEED_STATE);
-    expect(plan.spawns).toEqual([]);
-    expect(plan.recency.size).toBe(0);
-    expect(plan.pressure.size).toBe(0);
+  it("returns an empty plan below the 20-word minimum without consuming RNG", () => {
+    for (const size of [0, 1, 19]) {
+      const plan = buildReviewPlan(acquiredLog(size), 200, SEED_STATE);
+      expect(plan.spawns).toEqual([]);
+      expect(plan.recency.size).toBe(0);
+      expect(plan.pressure.size).toBe(0);
+      expect(plan.snapshot.schedulerRng).toEqual(SEED_STATE);
+    }
   });
 
-  it("keeps a single word pool servable", () => {
-    const plan = buildReviewPlan(["hsk-1:solo"], 200, SEED_STATE);
-    expect(plan.spawns).toHaveLength(200);
-    expect(new Set(plan.spawns)).toEqual(new Set(["hsk-1:solo"]));
+  it("uses the configured session length as the value to scale and rounds to an integer", () => {
+    expect(buildReviewPlan(acquiredLog(50), 500, SEED_STATE).spawns).toHaveLength(250);
+    expect(buildReviewPlan(acquiredLog(75), 200, SEED_STATE).spawns).toHaveLength(150);
+    expect(buildReviewPlan(acquiredLog(49), 210, SEED_STATE).spawns).toHaveLength(103);
   });
 
   it("is deterministic: identical inputs produce identical plans", () => {

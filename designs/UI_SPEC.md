@@ -199,7 +199,7 @@ Every descending enemy carries its own Hanzi. The one **soonest to land** must a
 - command panel repeats exactly the same Hanzi;
 - assistive status announces it once when target changes.
 
-Non-target enemies use cyan. An enemy in its final 20% may pulse/red-mark as danger, but red must not override the active amber outline. In Review Mode, enemy speed rises with the word's recency pressure (newest words gentlest, maximum by rank 100 of the acquisition log — never FSRS state) and is multiplied by the configured global speed.
+Non-target enemies use cyan. An enemy in its final 20% may pulse/red-mark as danger, but red must not override the active amber outline. In Review Mode, enemy speed rises with the word's recency pressure (newest words gentlest, scaling proportionally across eligible pools below 100 and reaching maximum by rank 100 in full pools — never FSRS state) and is multiplied by the configured global speed.
 
 Hanzi sizing by display length:
 

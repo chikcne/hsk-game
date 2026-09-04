@@ -1,4 +1,6 @@
 import {
+  REVIEW_FULL_SCALE_WORD_COUNT,
+  REVIEW_MIN_ACQUIRED_WORDS,
   REVIEW_NEW_TIER_RANK_LIMIT,
   REVIEW_RECENT_TIER_RANK_LIMIT,
 } from "../../shared/constants";
@@ -6,31 +8,56 @@ import type { SchedulerSnapshot } from "../learning";
 import { Xoshiro128StarStar, type RandomSource, type RandomState } from "../random";
 
 /** Recency tier of an acquired word, judged purely by its position in the
- * `acquired_words` log at session start (rank 0 = newest acquisition):
- * "new" ranks 0–19, "recent" ranks 20–99, "old" ranks 100+. FSRS state,
- * due dates, and retrievability play no part in review selection. */
+ * `acquired_words` log at session start (rank 0 = newest acquisition).
+ * At 100+ acquired words, "new" is ranks 0–19, "recent" is 20–99, and
+ * "old" is 100+. For eligible pools below 100, both boundaries scale by
+ * acquiredWordCount / 100 (for example, 50 words means 10 New + 40 Recent).
+ * FSRS state, due dates, and retrievability play no part in selection. */
 export type RecencyLabel = "new" | "recent" | "old";
 
-export function recencyLabelOfRank(rank: number): RecencyLabel {
+function reviewScale(acquiredWordCount: number): number {
+  if (!Number.isInteger(acquiredWordCount) || acquiredWordCount <= 0) {
+    throw new RangeError("acquiredWordCount must be a positive integer");
+  }
+  return Math.min(1, acquiredWordCount / REVIEW_FULL_SCALE_WORD_COUNT);
+}
+
+function tierRankLimits(acquiredWordCount: number): { newLimit: number; recentLimit: number } {
+  const scale = reviewScale(acquiredWordCount);
+  return {
+    newLimit: Math.max(1, Math.round(REVIEW_NEW_TIER_RANK_LIMIT * scale)),
+    recentLimit: Math.max(1, Math.round(REVIEW_RECENT_TIER_RANK_LIMIT * scale)),
+  };
+}
+
+export function recencyLabelOfRank(
+  rank: number,
+  acquiredWordCount = REVIEW_FULL_SCALE_WORD_COUNT,
+): RecencyLabel {
   if (!Number.isInteger(rank) || rank < 0) throw new RangeError("rank must be a nonnegative integer");
-  if (rank < REVIEW_NEW_TIER_RANK_LIMIT) return "new";
-  if (rank < REVIEW_RECENT_TIER_RANK_LIMIT) return "recent";
+  const { newLimit, recentLimit } = tierRankLimits(acquiredWordCount);
+  if (rank < newLimit) return "new";
+  if (rank < recentLimit) return "recent";
   return "old";
 }
 
-/** Spawn pressure in 0..1 derived from the recency rank: New words are the
- * gentlest (0), pressure interpolates linearly and reaches its maximum (1)
- * by rank 100 — every "Old" word presses equally. Drives enemy speed and
- * the mastery-adjusted spawn delay; never FSRS memory. */
-export function recencyPressureOfRank(rank: number): number {
+/** Spawn pressure in 0..1 derived from the recency rank. Pressure normally
+ * reaches its maximum by rank 100; for eligible pools below 100, that range
+ * scales with the pool (rank / acquiredWordCount). Drives enemy speed and
+ * spawn delay; never FSRS memory. */
+export function recencyPressureOfRank(
+  rank: number,
+  acquiredWordCount = REVIEW_FULL_SCALE_WORD_COUNT,
+): number {
   if (!Number.isInteger(rank) || rank < 0) throw new RangeError("rank must be a nonnegative integer");
-  return Math.min(1, rank / REVIEW_RECENT_TIER_RANK_LIMIT);
+  const { recentLimit } = tierRankLimits(acquiredWordCount);
+  return Math.min(1, rank / recentLimit);
 }
 
 /** The deterministic, nonpersisted Review battle plan.
  *
- * - `spawns`: exactly `targetLength` word keys (see buildReviewPlan), in
- *   serving order. Duplicate keys are intentional: tier-quota occurrences
+ * - `spawns`: the scaled target number of word keys (see buildReviewPlan),
+ *   in serving order. Duplicate keys are intentional: tier-quota occurrences
  *   repeat sequentially at runtime, never concurrently.
  * - `recency`: per unique key, the label captured at session start (summary
  *   chips). Never recomputed mid-session, even if the save's ordering moves.
@@ -61,24 +88,27 @@ function fisherYates<T>(items: T[], rng: RandomSource): void {
  * Builds the base spawn plan for one Review battle from the ordered
  * `acquired_words` log (newest first) and the persisted RNG.
  *
- * Guaranteed tier quotas (ranks are positions in `acquiredWords`):
+ * Review is unavailable with fewer than 20 unique acquired words, yielding
+ * an empty plan. From 20–99 words, the New/Recent boundaries, pressure, and
+ * target length all scale by acquiredWordCount / 100. Thus a 50-word pool
+ * has 10 New + 40 Recent words and a configured 200-spawn target becomes
+ * 100 spawns. At 100+ words the full-size contract applies:
  * - ranks 0–19 ("New"): exactly 2 occurrences each;
  * - ranks 20–99 ("Recent"): exactly 1 occurrence each;
  * - ranks 100+ ("Old"): 0 guaranteed occurrences.
  *
  * Every remaining slot is filled by a uniform random draw from the "Old"
- * pool (rank ≥ 100). When that pool is empty the fallback is a uniform draw
- * from "Recent", then "New", then all available — so small pools still
- * reach the exact target length. A empty log yields an empty plan.
+ * pool. When that pool is empty the fallback is a uniform draw from
+ * "Recent", then "New". Quotas and scaled target lengths are integer-rounded.
  *
  * The guaranteed quota entries and the filler draws are shuffled together
  * (Fisher–Yates over the whole list), so tiers interleave instead of
  * arriving in blocks, while every guaranteed count is preserved exactly.
  * The same inputs always produce the same plan (deterministic RNG).
  *
- * If the guaranteed quota ever exceeded `targetLength` (impossible with the
- * settings bounds: the maximum quota is 2×20 + 80 = 120 < 200), the plan is
- * extended to fit the quota rather than dropping guaranteed occurrences.
+ * If the guaranteed quota ever exceeded the scaled target (only possible
+ * when called outside the settings bounds), the plan extends to fit the
+ * quota rather than dropping guaranteed occurrences.
  */
 export function buildReviewPlan(
   acquiredWords: readonly string[],
@@ -89,6 +119,22 @@ export function buildReviewPlan(
     throw new RangeError("targetLength must be a nonnegative integer");
   }
   const rng = new Xoshiro128StarStar(rngState);
+  const uniqueWords = [...new Set(acquiredWords)];
+
+  // Review cannot start below the minimum; consuming no random draws keeps
+  // the scheduler state unchanged when callers probe an ineligible pool.
+  if (uniqueWords.length < REVIEW_MIN_ACQUIRED_WORDS) {
+    return {
+      spawns: [],
+      recency: new Map(),
+      pressure: new Map(),
+      snapshot: { spawnOrdinal: 0, schedulerRng: rng.state() },
+    };
+  }
+
+  const acquiredWordCount = uniqueWords.length;
+  const scale = reviewScale(acquiredWordCount);
+  const { newLimit, recentLimit } = tierRankLimits(acquiredWordCount);
 
   // Recency bookkeeping at session start.
   const recency = new Map<string, RecencyLabel>();
@@ -97,16 +143,13 @@ export function buildReviewPlan(
   const recentPool: string[] = [];
   const oldPool: string[] = [];
   const quotaEntries: string[] = [];
-  const seen = new Set<string>();
-  for (const [rank, key] of acquiredWords.entries()) {
-    if (seen.has(key)) continue; // defensive: tolerate duplicate keys, first occurrence wins
-    seen.add(key);
-    recency.set(key, recencyLabelOfRank(rank));
-    pressure.set(key, recencyPressureOfRank(rank));
-    if (rank < REVIEW_NEW_TIER_RANK_LIMIT) {
+  for (const [rank, key] of uniqueWords.entries()) {
+    recency.set(key, recencyLabelOfRank(rank, acquiredWordCount));
+    pressure.set(key, recencyPressureOfRank(rank, acquiredWordCount));
+    if (rank < newLimit) {
       newPool.push(key);
       quotaEntries.push(key, key); // exactly two guaranteed occurrences
-    } else if (rank < REVIEW_RECENT_TIER_RANK_LIMIT) {
+    } else if (rank < recentLimit) {
       recentPool.push(key);
       quotaEntries.push(key); // exactly one guaranteed occurrence
     } else {
@@ -115,7 +158,8 @@ export function buildReviewPlan(
   }
 
   const guaranteedCount = quotaEntries.length;
-  const length = Math.max(targetLength, guaranteedCount);
+  const scaledTargetLength = Math.round(targetLength * scale);
+  const length = Math.max(scaledTargetLength, guaranteedCount);
   const fillerCount = Math.max(0, length - guaranteedCount);
 
   // Filler draws: uniform from Old, falling back to Recent, then New.

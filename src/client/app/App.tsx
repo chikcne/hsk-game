@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent as ReactPointerEvent, type ReactNode } from "react";
-import { CHOICE_KEYS, DECK_IDS, DECK_TOTALS, DEFAULT_SETTINGS, type ChoiceKey, type DeckId } from "../../shared/constants";
+import { CHOICE_KEYS, DECK_IDS, DECK_TOTALS, DEFAULT_SETTINGS, REVIEW_MIN_ACQUIRED_WORDS, type ChoiceKey, type DeckId } from "../../shared/constants";
 import { RuntimeDeckSchema, type DifficultySettings, type LevelProgress, type RuntimeDeck, type SaveFile } from "../../shared/schemas";
 import { applyLearnRating, nextLearnDueAtMs, prepareLearnLaunch, type LearnRating, type LearnRatingApplication } from "../../domain/learn";
 import { applyRelearnRating, createRelearnSession, type RelearnRatingApplication } from "../../domain/relearn";
@@ -210,7 +210,7 @@ export function App() {
    * session is not resumable. */
   const deployReview = async () => {
     const current = saveRef.current;
-    if (!current || current.acquiredWords.length === 0) return;
+    if (!current || current.acquiredWords.length < REVIEW_MIN_ACQUIRED_WORDS) return;
     unlockSoundEffects();
     setLoadError(null);
     setScreen("loading");
@@ -240,6 +240,7 @@ export function App() {
         { spawnOrdinal: current.spawnOrdinal, schedulerRng: current.schedulerRng },
       );
       if (plan.spawns.length === 0) {
+        setLoadError(`Review needs at least ${REVIEW_MIN_ACQUIRED_WORDS} available acquired words.`);
         setScreen("decks");
         return;
       }
@@ -413,7 +414,7 @@ function DeckSelect({ save, settings, selected, strokeData, onSelect, onLearn, o
   const columnRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const totalMastered = DECK_IDS.reduce((sum, id) => sum + masteredCount(save.levels[id]), 0);
   const acquiredCount = save.acquiredWords.length;
-  const reviewEnabled = acquiredCount > 0;
+  const reviewEnabled = acquiredCount >= REVIEW_MIN_ACQUIRED_WORDS;
   const relearnSession = save.relearnSession;
   const relearnEnabled = relearnSession !== null;
   const selectedLevel = save.levels[selected];
@@ -526,7 +527,7 @@ function DeckSelect({ save, settings, selected, strokeData, onSelect, onLearn, o
         onClick={() => { if (reviewEnabled) void onReview(); }} aria-disabled={!reviewEnabled}
         aria-label={reviewEnabled
           ? `Start review, ${acquiredCount} acquired words`
-          : "Review needs at least one acquired word"}
+          : `Review needs at least ${REVIEW_MIN_ACQUIRED_WORDS} acquired words; ${acquiredCount} acquired`}
       >
         <span className="column-kicker">REVIEW MODE</span><strong><HanziText text="温故" data={strokeData} vertical /></strong><em><HanziText text="跨卷复习" data={strokeData} vertical /></em>
         <span className="column-progress"><i style={{ height: reviewEnabled ? "100%" : "0%" }} /></span>

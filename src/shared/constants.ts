@@ -13,12 +13,18 @@ export const BASE_TRAVEL_MS = 24_000;
 export const MAX_ACTIVE_ENEMIES = 32;
 export const DANGER_ZONE_PROGRESS = 0.82;
 
-/** Review Mode selection tiers over the `acquired_words` recency ranking
- * (rank 0 = newest acquisition). Ranks 0–19 ("New") are served twice per
- * base plan, ranks 20–99 ("Recent") once, and ranks 100+ ("Old") only via
- * the random filler pool. See src/domain/review/plan.ts. */
+/** Review Mode needs this many entries in `acquired_words` before it can
+ * start. Between this threshold and the full-size pool, tier boundaries,
+ * recency pressure, and base session length scale by the same pool-size
+ * ratio. See src/domain/review/plan.ts. */
+export const REVIEW_MIN_ACQUIRED_WORDS = 20;
+export const REVIEW_FULL_SCALE_WORD_COUNT = 100;
+/** Full-size Review selection tiers over the `acquired_words` ranking
+ * (rank 0 = newest acquisition). At 100+ words, ranks 0–19 ("New") are
+ * served twice, ranks 20–99 ("Recent") once, and ranks 100+ ("Old") only
+ * via the random filler pool. Smaller eligible pools scale these boundaries. */
 export const REVIEW_NEW_TIER_RANK_LIMIT = 20;
-export const REVIEW_RECENT_TIER_RANK_LIMIT = 100;
+export const REVIEW_RECENT_TIER_RANK_LIMIT = REVIEW_FULL_SCALE_WORD_COUNT;
 /** A missed review word re-enters the spawn stream after this many further
  * base-plan spawns (or immediately once the base plan is exhausted). */
 export const REVIEW_REPAIR_DELAY_SPAWNS = 10;

@@ -79,15 +79,15 @@ describe("playable runtime slice", () => {
     const deckOfSave = createDemoDeck("hsk-1");
     let save = baseSave(deckOfSave);
 
-    // 1. Learn and acquire 6 words (Easy ratings graduate immediately).
-    const created = createLearnSession(deckOfSave, save.levels["hsk-1"]!, NOW, { newCardLimit: 6, spawnOrdinal: 0 });
+    // 1. Learn and acquire the 20-word minimum (Easy ratings graduate immediately).
+    const created = createLearnSession(deckOfSave, save.levels["hsk-1"]!, NOW, { newCardLimit: 20, spawnOrdinal: 0 });
     save = { ...save, levels: { ...save.levels, "hsk-1": created.level }, learnSessions: { ...save.learnSessions, "hsk-1": created.session } };
     let ordinal = save.spawnOrdinal;
     for (const wordId of created.session.wordIds) {
       save = applyLearnRating(save, "hsk-1", wordId, "easy", NOW).save;
       ordinal += 1;
     }
-    expect(save.acquiredWords).toHaveLength(6);
+    expect(save.acquiredWords).toHaveLength(20);
     expect(save.learnSessions["hsk-1"]).toBeNull();
 
     // 2. The review deck presents exactly the acquired log — regardless of
@@ -95,17 +95,16 @@ describe("playable runtime slice", () => {
     const merged = createReviewDeck(new Map([["hsk-1", deckOfSave as never]]), save.acquiredWords);
     expect(merged.deck.words.map((word) => word.id)).toEqual(save.acquiredWords);
 
-    // 3. The base plan is exactly the settings target and consumes the RNG.
+    // 3. At the minimum pool size, the base plan scales to 20/100 of the
+    // configured target and consumes the RNG. Four words are New (twice
+    // guaranteed); the other 16 are Recent (once guaranteed + filler).
     const before = save.schedulerRng;
     const plan = buildReviewPlanFromSnapshot(save.acquiredWords, save.settings.reviewSessionLength, { spawnOrdinal: ordinal, schedulerRng: save.schedulerRng });
-    expect(plan.spawns).toHaveLength(DEFAULT_SETTINGS.reviewSessionLength);
+    expect(plan.spawns).toHaveLength(DEFAULT_SETTINGS.reviewSessionLength * 20 / 100);
     expect(plan.snapshot.schedulerRng).not.toEqual(before);
-    // Small pool: ranks 0–5 are all New, quota 2 each; the Old and Recent
-    // pools are empty so every filler falls back to New uniformly. Every
-    // key therefore appears at least its guaranteed twice, nothing else
-    // intrudes, and the plan total stays exact.
-    for (const key of save.acquiredWords) {
-      expect(plan.spawns.filter((spawn) => spawn === key).length).toBeGreaterThanOrEqual(2);
+    for (let rank = 0; rank < save.acquiredWords.length; rank += 1) {
+      const minimumOccurrences = rank < 4 ? 2 : 1;
+      expect(plan.spawns.filter((spawn) => spawn === save.acquiredWords[rank]).length).toBeGreaterThanOrEqual(minimumOccurrences);
     }
     expect(new Set(plan.spawns)).toEqual(new Set(save.acquiredWords));
 

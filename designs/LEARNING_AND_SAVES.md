@@ -201,24 +201,25 @@ words immediately so the next session's due set cannot miss them).
 Selection is driven entirely by the recency of the acquisition log:
 
 - **Membership**: a word is reviewable iff its key is in `acquired_words` —
-  including a word whose main FSRS card later lapses or reschedules. The
-  Review column is enabled whenever the table is non-empty and shows the
-  acquired count, never a due count.
-- **Base plan** (`buildReviewPlan`, deterministic, nonpersisted): exactly
-  `settings.reviewSessionLength` spawns (integer slider 200–500, default
-  200), built once at session start from the persisted RNG. Guaranteed
-  quotas: ranks 0–19 ("New") exactly twice each, ranks 20–99 ("Recent")
-  exactly once each; every remaining slot draws uniformly from rank ≥ 100
-  ("Old"), falling back to Recent then New so small pools still hit the
-  exact target (an empty pool yields no session). Quota and filler entries
-  are Fisher–Yates-shuffled together, so tiers interleave while counts are
-  preserved exactly. Duplicate occurrences are sequential, never concurrent.
+  including a word whose main FSRS card later lapses or reschedules. Review
+  is unavailable below 20 acquired words; the column shows the acquired
+  count, never a due count.
+- **Base plan** (`buildReviewPlan`, deterministic, nonpersisted): built once
+  at session start from the persisted RNG. At 100+ acquired words it has
+  exactly `settings.reviewSessionLength` spawns (integer slider 200–500,
+  default 200). Guaranteed quotas: ranks 0–19 ("New") exactly twice each,
+  ranks 20–99 ("Recent") exactly once each; every remaining slot draws
+  uniformly from rank ≥ 100 ("Old"), falling back to Recent then New. At
+  20–99 acquired words, tier boundaries and target length scale by
+  `acquiredWords.length / 100` (integer-rounded): 50 words therefore means
+  10 New + 40 Recent and 100 default base spawns. Quota and filler entries
+  are Fisher–Yates-shuffled together. Duplicate occurrences are sequential,
+  never concurrent.
 - **Recency drives difficulty, not FSRS**: the label (New/Recent/Old) is
   captured at session start for the summary chips; a 0..1 pressure value
-  (`min(rank,100)/100`) maps to enemy speed (gentlest 0.65× at rank 0,
-  maximum 1.5× by rank 100) and to the mastery-adjusted spawn delay. The
-  global speed/spawn-interval settings and the live performance multiplier
-  still apply.
+  (`min(rank / min(acquiredCount, 100), 1)`) maps to enemy speed and the
+  mastery-adjusted spawn delay. Smaller eligible pools therefore traverse
+  the same pressure range proportionally. Global settings still apply.
 - **Misses and repairs**: a miss is `wrongPinyin`, `wrongMeaning`, a
   landing, or a pinyin autocomplete/reveal even when the meaning is then
   answered correctly. A missed word enters a delayed repair obligation that
@@ -309,9 +310,10 @@ settings remain in supported bounds
   introduction, graduation counting, reconciliation, invariants.
 - `tests/domain/memory.test.ts` — single-card FSRS rating behavior,
   acquisition/due-ness predicates, familiarity.
-- `tests/domain/review.test.ts` — recency tiers and pressure (boundaries
-  19/20/99/100), deterministic base-plan quotas at 500 acquired words,
-  exact 200/500 counts, small-pool/empty-pool fallbacks, tier interleaving,
+- `tests/domain/review.test.ts` — recency tiers and pressure (full-size
+  boundaries 19/20/99/100 plus proportional small-pool boundaries),
+  deterministic quotas, the 20-word eligibility boundary, proportional
+  base lengths, tier interleaving,
   RNG replay/advance; the spawn-session reducer: delayed repairs (10 base
   spawns), additive forced retries until clean correct, active/preparing
   exclusion, oldest-first draining, base-occurrence clearing, immutability.

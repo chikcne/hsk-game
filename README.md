@@ -40,15 +40,15 @@ Leaving mid-session keeps the session; clicking the grade resumes it.
 
 ## Review Mode
 
-The rightmost title-screen column opens the cross-grade Review arcade. It is enabled whenever **acquired words** exist (the column shows the acquired count, never a due count) and battles draw **solely from the ordered `acquired_words` log** — never from FSRS due dates or retrievability, and battle answers never mutate any main Learn card.
+The rightmost title-screen column opens the cross-grade Review arcade. It is enabled at **20 acquired words** (the column shows the acquired count, never a due count) and battles draw **solely from the ordered `acquired_words` log** — never from FSRS due dates or retrievability, and battle answers never mutate any main Learn card.
 
-Each session gets a **deterministic, nonpersisted base plan** of exactly `settings.reviewSessionLength` spawns (integer slider, 200–500, default 200), built once at session start from the persisted RNG:
+Each session gets a **deterministic, nonpersisted base plan** built once at session start from the persisted RNG. At 100+ acquired words, it uses exactly `settings.reviewSessionLength` spawns (integer slider, 200–500, default 200):
 
 - ranks 0–19 in the acquisition log (**New**, the 20 newest words) are served **exactly twice**;
 - ranks 20–99 (**Recent**) exactly once;
-- every remaining slot draws uniformly at random from rank 100+ (**Old**); if that pool is empty the fallback is Recent, then New, so even small pools reach the exact target. Quota and filler entries are shuffled together, so tiers interleave instead of arriving in blocks.
+- every remaining slot draws uniformly at random from rank 100+ (**Old**), with Recent then New as fallbacks. Quota and filler entries are shuffled together, so tiers interleave instead of arriving in blocks.
 
-Recency is decided at session start and drives difficulty instead of FSRS: New words are gentlest, rising linearly to maximum speed and spawn pressure by rank 100. The global spawn-rate and word-speed settings and the live performance multiplier still apply on top.
+For 20–99 acquired words, the New/Recent boundaries, recency pressure, and base session length all scale by `acquiredWords.length / 100`. For example, 50 acquired words produce 10 New + 40 Recent words and a default 100-spawn battle. Recency drives difficulty instead of FSRS: New words are gentlest, rising linearly to near-maximum pressure at the end of a smaller pool or maximum by rank 100 in a full pool. The global spawn-rate and word-speed settings and the live performance multiplier still apply on top.
 
 A **miss** is a wrong pinyin, a wrong meaning, a word reaching the ground, or a pinyin autocomplete/reveal — even if the meaning is then answered correctly. A missed word enters a delayed repair queue and re-enters the stream after 10 further base spawns; it remains an obligation until one later encounter is **clean** (typed pinyin, correct meaning, no reveal). Base occurrences can clear a repair. If obligations survive the base plan, retries are **additive beyond the slider target** and forced, so the session always ends: every base spawn resolved, no enemies left, all repairs cleared. The session is **not resumable** — leaving ends it (progress and RNG advances are checkpointed throughout).
 
