@@ -40,8 +40,8 @@ type Props = {
 };
 
 /** Re-Learn Mode: the one cross-grade active session, presented with the
- * same Learn/Writing UX — pinyin + meaning, looping demo on a member's first
- * presentation, elapsed writing time, four explicit ratings with live
+ * same Learn/Writing UX — pinyin + meaning, writing with an optional demo,
+ * elapsed writing time, four explicit ratings with live
  * interval previews, and earliest-due learn-ahead. Ratings advance the
  * member's INDEPENDENT card stored inside the session (never the main Learn
  * card); a member finishes the moment its card reaches FSRS review, moving
@@ -142,10 +142,9 @@ export function RelearnScreen({ save, deck, strokeData, settings, saveStatus, on
     return <RelearnSummary deck={deck} log={log} saveStatus={saveStatus} strokeData={strokeData} onExit={onExit} />;
   }
 
-  // First presentation inside the relearn session: the independent card has
-  // never been rated, so the looping stroke-order demo runs.
-  const isFirstPresentation = currentCardState.card.reps === 0;
-
+  // A fresh independent relearn card is not a genuinely new word for the
+  // player: every relearn member was previously acquired. Automatic looping
+  // demos are reserved for first-ever presentations in Learn Mode.
   return <main className={`paper learn-screen ${settings.reducedMotion ? "reduce-motion" : ""}`}>
     <header className="learn-hud">
       <div className="hud-level"><span className="seal">重</span><p><b>RE-LEARN</b><small>{remaining} TO GO</small></p></div>
@@ -161,7 +160,7 @@ export function RelearnScreen({ save, deck, strokeData, settings, saveStatus, on
         key={presentationKey(serving, currentWord.id)}
         word={{ id: currentWord.id, displayHanzi: currentWord.displayHanzi, displayPinyin: currentWord.displayPinyin, meaning: currentWord.meaning }}
         strokeData={strokeData}
-        isNewCard={isFirstPresentation}
+        isNewCard={false}
         reducedMotion={settings.reducedMotion}
         audioSource={wordAudioSource(reviewWordIdOf(currentWord.id).deckId, currentWord)}
         audioVolume={settings.masterVolume}

@@ -56,8 +56,8 @@ enabled whenever `acquiredWords.length > 0` and shows the acquired count.
 (`save.relearnSession`, logical table `relearn_sessions`) storing selected
 keys and fresh **independent** per-member FSRS cards + counters. Ratings go
 through `applyRelearnRating` (never touches `save.levels`), use the same
-Learn/Writing UX (pinyin+meaning, first/new demo, elapsed time, four
-ratings with interval previews, earliest-due learn-ahead via
+Learn/Writing UX (pinyin+meaning, immediate writing with optional Show Demo,
+elapsed time, four ratings with interval previews, earliest-due learn-ahead via
 `nextRelearnKey`), and save after each rating (exact resume). A member
 finishes when its independent card reaches Review: the key is removed from
 the session and **prepended to `acquired_words`** (moved to newest/front,

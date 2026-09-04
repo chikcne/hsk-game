@@ -123,10 +123,11 @@ shows an "all caught up" message with the next due time.
 
 Each session word is presented with the Writing Screen card: pinyin and
 meaning stay visible, word audio auto-plays with a working replay button,
-and guided stroke-order writing completes character by character. The first
+and guided stroke-order writing completes character by character. In Learn Mode, the first
 presentation of a word (`card.reps === 0`) starts a looping stroke-order demo
 until the player engages; every later appearance starts straight in writing
-mode with a **Show Demo** control. When the writing completes, the card shows
+mode with a **Show Demo** control. Relearn always starts in writing mode with
+**Show Demo**, because those words have already appeared to the player. When the writing completes, the card shows
 the writing elapsed time (demo-watching excluded) plus the four ratings.
 
 ### Ratings and interval previews
@@ -246,9 +247,9 @@ Selection is driven entirely by the recency of the acquisition log:
 selected word keys plus a **fresh, independent** `ComponentMemory` and
 rating counter per member. Relearn ratings go through `applyRelearnRating`,
 which never reads or writes `save.levels`. The presentation reuses the
-Learn/Writing UX (pinyin + meaning, looping demo on a member's first
-presentation, elapsed writing time, four ratings with interval previews,
-earliest-due learn-ahead via `nextRelearnKey`). Each member finishes when
+Learn/Writing UX (pinyin + meaning, immediate writing with an optional **Show
+Demo** control and no automatic demo, elapsed writing time, four ratings with
+interval previews, earliest-due learn-ahead via `nextRelearnKey`). Each member finishes when
 its independent card reaches FSRS `review`: the key is removed from the
 session and **prepended to `acquired_words`** (moved to newest/front,
 deduped); when the last member finishes the session clears to null.

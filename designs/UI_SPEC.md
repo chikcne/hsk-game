@@ -152,7 +152,7 @@ Left to right: grade + `LEARN` seal, `N TO GO · LESSON k`, save state, settings
 
 ### Card
 
-The reusable Writing Card (see `src/client/writing/`): pinyin + audio replay button above the meaning, one large tian-zi square, hangman-style phrase progress row. A never-reviewed card (`reps === 0`) mounts with the looping stroke-order demo and a `TAP TO BEGIN` prompt; later appearances mount straight in writing mode with `SHOW DEMO`.
+The reusable Writing Card (see `src/client/writing/`): pinyin + audio replay button above the meaning, one large tian-zi square, hangman-style phrase progress row. In Learn Mode, a never-reviewed card (`reps === 0`) mounts with the looping stroke-order demo and a `TAP TO BEGIN` prompt; later appearances mount straight in writing mode with `SHOW DEMO`. Relearn always uses the latter behavior because its members have already been learned.
 
 ### Rating panel
 
@@ -166,8 +166,8 @@ Session completion (every member passed into review) shows words finished, newly
 
 Mirrors the Learn screen for the single cross-grade session: HUD shows
 `RE-LEARN · N TO GO` with save status and settings; the Writing Card mounts
-with the looping demo on a member's first presentation (its independent card
-has `reps === 0`), and ratings preview intervals against that independent
+straight in writing mode with `SHOW DEMO`, even when the fresh independent
+card has `reps === 0`, and ratings preview intervals against that independent
 card — never the main Learn card. Completion moves the key to the front of
 `acquired_words`; finishing everything shows `RE-LEARN COMPLETE` with the
 re-acquired words and `RETURN TO GRADES`.

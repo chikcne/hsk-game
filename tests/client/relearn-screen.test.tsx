@@ -61,9 +61,12 @@ describe("RelearnScreen markup", () => {
     expect(html).toContain("writing-meaning");
   });
 
-  test("a member's first presentation mounts the looping demo (independent fresh card)", () => {
+  test("a member's first relearn presentation starts in writing mode without an automatic demo", () => {
     const { save, mergedDeck } = baseSaveWithSession([0]);
-    expect(renderRelearn(save, mergedDeck)).toContain('data-writing-mode="demo-loop"');
+    const html = renderRelearn(save, mergedDeck);
+    expect(html).toContain('data-writing-mode="writing"');
+    expect(html).toContain("SHOW DEMO");
+    expect(html).not.toContain('data-writing-mode="demo-loop"');
   });
 
   test("an empty session renders the completion summary instead of a card", () => {
