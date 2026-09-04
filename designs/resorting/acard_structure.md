@@ -168,7 +168,7 @@ Considered and rejected:
 | Format | Why not |
 |---|---|
 | YAML | New runtime dependency; indentation-sensitive multi-line glosses; `是`-style values and unquoted strings invite type-coercion surprises. |
-| TOML | New dependency; awkward for the nested `example` object; no clear win over JSON. |
+| TOML | New dependency; awkward for the nested `curriculum` block; no clear win over JSON. |
 | Markdown + front matter | Two parsers instead of one, and the payload is structured data, not prose. |
 | One TSV/JSONL per grade | Cheaper to parse but loses the per-card diff, per-card review, and per-card blame that motivate the change. |
 
@@ -221,11 +221,6 @@ two-line diff: the gloss and the `id`, with the consequence visible in review.
   "pos": "verb",                       // nullable
   "senseLabel": null,                  // "classifier", "sense 2", … ; nullable
   "meaning": "to thank, thanks",
-  "example": {                          // nullable
-    "hanzi": "谢谢你的帮助。",
-    "pinyin": "Xièxie nǐ de bāngzhù.",
-    "meaning": "Thank you for your help."
-  },
 
   // ── audio ───────────────────────────────────────────────────────────────
   "audio": "b3d1…64hex.mp3",           // filename in cards/audio/; nullable
@@ -263,13 +258,37 @@ Field-by-field contract:
 | `pos` | string \| null | yes | `、`-joined when the source lists several. |
 | `senseLabel` | string \| null | yes | Disambiguates the 62 homograph groups in the UI. |
 | `meaning` | string | yes | Full gloss, never truncated (longest is ~120 chars). |
-| `example` | object \| null | yes | All three sub-fields required when present. |
 | `audio` | string \| null | yes | Must exist in `cards/audio/`. Every one of the 5 398 words currently has audio; the type stays nullable for hand-authored cards. |
 | `curriculum` | object | yes | §5. Present but may be all-null before the sort lands. |
 | `source` | object | yes | Extraction provenance. Hand-editing it is a review smell. |
 
 Unknown keys are a **hard error**, not a warning: a typo'd key that silently
 does nothing is exactly the failure this format exists to prevent.
+
+**Example sentences are deliberately excluded.** The source decks carry
+`SentenceHanzi` / `SentencePinyin` / `SentenceMeaning`, and
+`tools/import-decks/normalize/words.ts:119` reads all three into a nullable
+`example` object today. `tools/import-acards/` must **not** extract them, and
+there is no `example` field in `acard/1`. Two reasons, either sufficient alone:
+
+- **Licensing.** The source decks are CC BY-NC-SA 4.0, and that licence
+  explicitly carves the sentences *out* of even the non-commercial grant:
+  "except for the sentences — for permission to reuse the sentences, please
+  contact the author of the original sentence deck". The uploader does not hold
+  redistribution rights in them and cannot sublicense them, so the sentences
+  carry no licence from any identifiable party. Committing them to `cards/`
+  would put unlicensed third-party text in the repository permanently, in
+  5,398 files, for a feature that does not exist.
+- **Nothing reads them.** No component under `src/` renders an example
+  sentence; `grep -ril sentence src/` is empty.
+
+D9 in [`sorting_rules.md`](sorting_rules.md) used the sentences to decide
+whether 红 黑 白 认 超 同 公 气 ever appear standalone. That decision stands
+unchanged: it is a factual determination materialised as a reviewed
+`curriculum.boundMorpheme` flag, and it never needed the sentence text to ship.
+
+If example sentences are wanted later they come from a cleanly licensed source
+— Tatoeba is CC BY 2.0 FR — as an additive `acard/2` field, not from the decks.
 
 ### 4.4 Worked example
 
@@ -287,11 +306,6 @@ does nothing is exactly the failure this format exists to prevent.
     "pin": null,
     "seed": true,
     "topics": ["social-interaction"]
-  },
-  "example": {
-    "hanzi": "谢谢你的帮助。",
-    "meaning": "Thank you for your help.",
-    "pinyin": "Xièxie nǐ de bāngzhù."
   },
   "hanzi": "谢谢",
   "id": "0f2b9c1d4e6a8b0c2d4e6f81",
@@ -479,6 +493,9 @@ against a tree that by then contains human corrections. It therefore:
 `npm run validate:cards`, run by CI and as the compile step's first phase:
 
 - every `.acard` parses, matches the Zod schema, and has no unknown keys;
+- no card carries an `example` key or any other sentence field — implied by the
+  unknown-key rule, asserted separately so that a later schema bump cannot
+  reintroduce the decks' sentence text without review (§4.3);
 - `id` re-derives from `(hanzi, pinyin, meaningKey)`;
 - `level` matches the parent directory;
 - filename matches the §3.1 rule and is globally unique;
@@ -674,6 +691,8 @@ than left to contradict this one.
 ## 10. Implementation plan
 
 1. Land `tools/import-acards/` and run it against the five intact packages.
+   It reads `Hanzi`, `Pinyin`, `Part of Speech`, `Meaning` and `AudioHanzi`
+   only; the `Sentence*` fields and `Image` are not extracted (§4.3).
 2. **Recover HSK 1** — its `.apkg` is corrupt (§1.2). Rebuild those 300 cards
    from the surviving `public/game-data/hsk-1/deck.json`, which is a complete
    record of the extraction, and note the provenance in each card's `source`
