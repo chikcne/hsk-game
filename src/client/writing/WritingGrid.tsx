@@ -9,6 +9,7 @@ import {
   type TouchEvent as ReactTouchEvent,
 } from "react";
 import type { StrokeCharacterData } from "../data/strokeData";
+import { Data, Effect } from "effect";
 
 /** Palette-matched writer colors; keep in sync with the :root tokens in
  * src/client/styles/main.css (ghost / ink / cinnabar). */
@@ -27,7 +28,19 @@ const STATIC_DEMO_HOLD_MS = 1600;
  * so a partial Show Demo paces like a full one. */
 const DEMO_STROKE_GAP_MS = 160;
 
-const delay = (ms: number) => new Promise<void>((resolve) => { window.setTimeout(resolve, ms); });
+/** Any rejected hanzi-writer operation (setCharacter, quiz, animations, …);
+ * surfaced to the player as the missing-glyph fallback. `cause` is the raw
+ * rejection at this third-party boundary. */
+class WriterOperationError extends Data.TaggedError("WriterOperationError")<{ readonly cause: Error }> {}
+
+/** Pointer capture failures are always a non-fatal optimization loss. */
+class PointerCaptureError extends Data.TaggedError("PointerCaptureError")<{ readonly cause: Error }> {}
+
+const toError = (cause: unknown): Error => cause instanceof Error ? cause : new Error(String(cause));
+
+/** Adapts one already-started hanzi-writer promise into the Effect channel. */
+const writerOperation = <A,>(operation: Promise<A>): Effect.Effect<A, WriterOperationError, never> =>
+  Effect.tryPromise({ try: () => operation, catch: (cause) => new WriterOperationError({ cause: toError(cause) }) });
 
 export type GridMode = { kind: "demo-loop" } | { kind: "demo-once" } | { kind: "writing" };
 
@@ -109,7 +122,6 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
   const writerRef = useRef<HanziWriter | null>(null);
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
-  const holdTimerRef = useRef<number | null>(null);
   // A demo's opening pointer gesture begins before React can switch the writer
   // to quiz mode. Keep that gesture and feed it into the quiz once ready so
   // the first mouse/pen stroke or finger swipe is not discarded.
@@ -172,15 +184,18 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
       },
     });
     writerRef.current = writer;
-    void writer.setCharacter(character)
-      .then(() => {
-        if (!disposed) setReady(true);
-      })
-      .catch((error: unknown) => {
-        if (disposed) return;
-        reportMissing(character, error);
-        setFailed(true);
-      });
+    // Character handoff as a typed Effect: readiness flips only on success;
+    // the disposed flag guards the continuations because unmount destroys
+    // the writer, so no delayed callback may touch the torn-down host.
+    const initialize: Effect.Effect<void, never, never> = Effect.gen(function* () {
+      yield* writerOperation(writer.setCharacter(character));
+      if (!disposed) setReady(true);
+    }).pipe(Effect.catchAll((error) => Effect.sync(() => {
+      if (disposed) return;
+      reportMissing(character, error.cause);
+      setFailed(true);
+    })));
+    Effect.runFork(initialize);
     const observer = typeof ResizeObserver === "undefined" ? null : new ResizeObserver((entries) => {
       const size = Math.max(1, Math.round(entries[0]?.contentRect.width ?? initialSize));
       writer.updateDimensions({ width: size, height: size, padding: Math.max(2, Math.round(size * PADDING_RATIO)) });
@@ -203,8 +218,11 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
     const writer = writerRef.current;
     if (!writer || !ready || failed) return;
     let canceled = false;
-    const run = async () => {
-      try {
+    // The whole mode workflow as one typed Effect: every writer promise is a
+    // `writerOperation`, every pause an `Effect.sleep`, and the `canceled`
+    // flag (set by cleanup) retires pending continuations exactly like the
+    // cleared timers used to.
+    const runMode: Effect.Effect<void, never, never> = Effect.gen(function* () {
       // Capture progress before any teardown. A live quiz's internal stroke
       // index is the truth (mistakes do not advance it); the ref carries it
       // across the demo and is consumed by the writing run that follows.
@@ -214,12 +232,10 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
       if (mode.kind === "writing") demoProgressStrokeRef.current = 0;
       writer.cancelQuiz();
       writer._renderState?.cancelAll();
-      if (holdTimerRef.current !== null) window.clearTimeout(holdTimerRef.current);
-      holdTimerRef.current = null;
       if (mode.kind === "writing") {
-        await writer.hideOutline({ duration: 0 });
+        yield* writerOperation(writer.hideOutline({ duration: 0 }));
         if (canceled) return;
-        await writer.quiz({
+        yield* writerOperation(writer.quiz({
           leniency: QUIZ_LENIENCY,
           showHintAfterMisses: SHOW_HINT_AFTER_MISSES,
           markStrokeCorrectAfterMisses: MARK_STROKE_CORRECT_AFTER_MISSES,
@@ -239,7 +255,7 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
           onComplete: (summary) => {
             if (!canceled) callbacksRef.current.onCharacterComplete?.(summary);
           },
-        });
+        }));
         if (canceled) return;
 
         // Hanzi Writer listens for mouse/touch start itself, but that event has
@@ -258,27 +274,29 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
           }
         }
       } else if (mode.kind === "demo-loop") {
-        await writer.showOutline({ duration: 0 });
+        yield* writerOperation(writer.showOutline({ duration: 0 }));
         if (canceled) return;
         if (reducedMotion) {
-          await writer.showCharacter({ duration: 0 });
+          yield* writerOperation(writer.showCharacter({ duration: 0 }));
           return;
         }
-        await writer.hideCharacter({ duration: 0 });
+        yield* writerOperation(writer.hideCharacter({ duration: 0 }));
         if (canceled) return;
         // Indefinite stroke-order demo until the surface is engaged. New
         // cards only, so it always starts from the blank square.
-        await writer.loopCharacterAnimation();
+        yield* writerOperation(writer.loopCharacterAnimation());
       } else {
-        await writer.showOutline({ duration: 0 });
+        yield* writerOperation(writer.showOutline({ duration: 0 }));
         if (canceled) return;
         if (reducedMotion) {
-          await writer.showCharacter({ duration: 0 });
+          yield* writerOperation(writer.showCharacter({ duration: 0 }));
           if (canceled) return;
-          holdTimerRef.current = window.setTimeout(() => {
-            holdTimerRef.current = null;
-            if (!canceled) callbacksRef.current.onDemoFinished?.();
-          }, STATIC_DEMO_HOLD_MS);
+          // Reduced-motion "demo": hold the finished glyph without animating
+          // before signalling the parent; a cleanup during the hold leaves
+          // the callback retired via `canceled`.
+          yield* Effect.sleep(STATIC_DEMO_HOLD_MS);
+          if (canceled) return;
+          callbacksRef.current.onDemoFinished?.();
           return;
         }
         // Show Demo mid-writing: animate only the strokes not yet written,
@@ -288,26 +306,24 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
         const totalStrokes = data?.strokes.length ?? 0;
         for (let strokeNum = startStroke; strokeNum < totalStrokes; strokeNum += 1) {
           if (strokeNum > startStroke) {
-            await delay(DEMO_STROKE_GAP_MS);
+            yield* Effect.sleep(DEMO_STROKE_GAP_MS);
             if (canceled) return;
           }
-          await writer.animateStroke(strokeNum);
+          yield* writerOperation(writer.animateStroke(strokeNum));
           if (canceled) return;
         }
         callbacksRef.current.onDemoFinished?.();
       }
-      } catch (error: unknown) {
-        if (!canceled) {
-          reportMissing(character, error);
-          setFailed(true);
-        }
+    }).pipe(Effect.catchAll((error) => Effect.sync(() => {
+      if (!canceled) {
+        reportMissing(character, error.cause);
+        setFailed(true);
       }
-    };
-    void run();
+    })));
+    const fiber = Effect.runFork(runMode);
     return () => {
       canceled = true;
-      if (holdTimerRef.current !== null) window.clearTimeout(holdTimerRef.current);
-      holdTimerRef.current = null;
+      fiber.unsafeInterruptAsFork(fiber.id());
     };
   }, [ready, failed, mode.kind, reducedMotion]);
 
@@ -342,12 +358,12 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
         ended: false,
         started: false,
       };
-      try {
-        event.currentTarget.setPointerCapture(event.pointerId);
-      } catch {
-        // Pointer capture is only an optimization; normal in-bounds pointer
-        // events still preserve the stroke on older implementations.
-      }
+      // Pointer capture is only an optimization; normal in-bounds pointer
+      // events still preserve the stroke on older implementations.
+      Effect.runFork(Effect.ignore(Effect.try({
+        try: () => event.currentTarget.setPointerCapture(event.pointerId),
+        catch: (cause) => new PointerCaptureError({ cause: toError(cause) }),
+      })));
       callbacksRef.current.onEngage?.();
     },
     onKeyDown: (event: ReactKeyboardEvent<HTMLDivElement>) => {
@@ -383,11 +399,11 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
     } else {
       pending.ended = true;
     }
-    try {
-      event.currentTarget.releasePointerCapture(event.pointerId);
-    } catch {
-      // The browser may already have released capture for a canceled pointer.
-    }
+    // The browser may already have released capture for a canceled pointer.
+    Effect.runFork(Effect.ignore(Effect.try({
+      try: () => event.currentTarget.releasePointerCapture(event.pointerId),
+      catch: (cause) => new PointerCaptureError({ cause: toError(cause) }),
+    })));
   };
   // Once a Pointer Event owns the handoff, suppress its compatibility
   // mouse/touch events before Hanzi Writer's native target listeners see

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { Effect, Exit } from "effect";
 import { WordAudioPlayer } from "../audio/wordAudio";
 
 /** Pure guard for the play-rejection handler: a player that is no longer
@@ -14,7 +15,11 @@ export function isStaleAudioPlayer(current: WordAudioPlayer | null, failing: Wor
  * A missing source is inert; playback failures (for example an autoplay
  * policy before the first user gesture) surface as an error flag while the
  * replay button stays available for another try. Volume changes apply on the
- * next play instead of restarting the current card. */
+ * next play instead of restarting the current card.
+ *
+ * The playback program is Effect-native (`WordAudioPlayer.playEffect`) and
+ * only forks at this hook boundary; the Exit observer applies the same
+ * stale-player semantics the promise-catch handler used to. */
 export function useCardAudio(source: string, volume = 1): { replay: () => void; error: boolean } {
   const playerRef = useRef<WordAudioPlayer | null>(null);
   const volumeRef = useRef(volume);
@@ -34,12 +39,18 @@ export function useCardAudio(source: string, volume = 1): { replay: () => void; 
     const player = playerRef.current;
     if (!player || !source) return;
     setError(false);
-    player.play(source, volumeRef.current).catch(() => {
-      // StrictMode's discarded first player rejects after disposal; only a
-      // failure from the CURRENT player is a real, surfaceable error.
-      if (isStaleAudioPlayer(playerRef.current, player)) return;
-      setError(true);
-    });
+    // Hook/event compatibility boundary: the typed Effect workflow ends here.
+    Effect.runFork(player.playEffect(source, volumeRef.current).pipe(
+      Effect.onExit((exit) =>
+        Effect.sync(() => {
+          if (!Exit.isFailure(exit)) return;
+          // StrictMode's discarded first player rejects after disposal; only a
+          // failure from the CURRENT player is a real, surfaceable error.
+          if (isStaleAudioPlayer(playerRef.current, player)) return;
+          setError(true);
+        }),
+      ),
+    ));
   }, [source]);
 
   useEffect(() => {

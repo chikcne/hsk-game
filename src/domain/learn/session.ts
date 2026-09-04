@@ -1,13 +1,44 @@
+import { Effect } from "effect";
 import type { LearnSession, LevelProgress } from "../../shared/schemas";
+import { runDomain, validTimestamp } from "../effect";
+import { DuplicateWordIdsError, InvalidTimestampError, NegativeLimitError, NoLearnCandidatesError } from "../errors";
+import { curriculumOrderEffect, type LearningDeck } from "../learning";
 import { cardDueAtMs, isCardDue } from "../memory";
-import { curriculumOrder } from "../learning";
-import type { LearningDeck } from "../learning";
 import type { CreateLearnSessionOptions, CreateLearnSessionResult, NextLearnCard } from "./types";
 
-function isoTimestamp(now: string | Date): string {
-  const date = typeof now === "string" ? new Date(now) : now;
-  if (!Number.isFinite(date.getTime())) throw new RangeError("now must be a valid timestamp");
-  return date.toISOString();
+function isoTimestamp(nowMs: number): string {
+  return new Date(nowMs).toISOString();
+}
+
+export type CreateLearnSessionFailure =
+  | DuplicateWordIdsError
+  | InvalidTimestampError
+  | NegativeLimitError
+  | NoLearnCandidatesError;
+
+export type NextLearnCardFailure = InvalidTimestampError;
+
+/** Membership selection shared by the typed and legacy session builders:
+ * every currently due introduced word (in curriculum order) plus up to
+ * `options.newCardLimit` brand-new curriculum words. */
+function selectLearnCandidates(
+  order: readonly string[],
+  level: LevelProgress,
+  nowMs: number,
+  options: CreateLearnSessionOptions,
+): { dueIds: string[]; newIds: string[] } {
+  const dueIds: string[] = [];
+  const newIds: string[] = [];
+  for (const id of order) {
+    const progress = level.words[id];
+    if (!progress) continue; // reconciled decks can lag their level record
+    if (progress.introducedAtOrdinal !== null) {
+      if (isCardDue(progress.card, nowMs)) dueIds.push(id);
+    } else if (newIds.length < options.newCardLimit) {
+      newIds.push(id);
+    }
+  }
+  return { dueIds, newIds };
 }
 
 /**
@@ -20,36 +51,37 @@ function isoTimestamp(now: string | Date): string {
  * 2. plus up to `settings.levelSize` **brand-new curriculum words**, pulled
  *    in curriculum order and introduced immediately.
  *
- * Throws when both sets are empty: a grade whose every word is introduced,
- * healthy (review), and not due has nothing to learn — the caller should show
- * the "all caught up" state instead of opening an empty session.
- */
-export function createLearnSession(
+ * Fails with `NoLearnCandidatesError` when both sets are empty: a grade whose
+ * every word is introduced, healthy (review), and not due has nothing to
+ * learn — the caller should show the "all caught up" state instead of
+ * opening an empty session. */
+export function createLearnSessionEffect(
   deck: LearningDeck,
   level: LevelProgress,
   now: string | Date,
   options: CreateLearnSessionOptions,
-): CreateLearnSessionResult {
-  const nowMs = typeof now === "string" ? Date.parse(now) : now.getTime();
-  if (!Number.isFinite(nowMs)) throw new RangeError("now must be a valid timestamp");
-  if (options.newCardLimit < 0) throw new RangeError("newCardLimit must be nonnegative");
+): Effect.Effect<CreateLearnSessionResult, CreateLearnSessionFailure, never> {
+  return Effect.gen(function* () {
+    const nowMs = yield* validTimestamp(now);
+    if (options.newCardLimit < 0) return yield* Effect.fail(new NegativeLimitError({ param: "newCardLimit" }));
 
-  const order = curriculumOrder(deck, level.curriculumSeed);
-  const dueIds: string[] = [];
-  const newIds: string[] = [];
-  for (const id of order) {
-    const progress = level.words[id];
-    if (!progress) continue; // reconciled decks can lag their level record
-    if (progress.introducedAtOrdinal !== null) {
-      if (isCardDue(progress.card, nowMs)) dueIds.push(id);
-    } else if (newIds.length < options.newCardLimit) {
-      newIds.push(id);
+    const order = yield* curriculumOrderEffect(deck, level.curriculumSeed);
+    const { dueIds, newIds } = selectLearnCandidates(order, level, nowMs, options);
+    if (dueIds.length === 0 && newIds.length === 0) {
+      return yield* Effect.fail(new NoLearnCandidatesError());
     }
-  }
-  if (dueIds.length === 0 && newIds.length === 0) {
-    throw new RangeError("No learn candidates: nothing is due and no new curriculum words remain");
-  }
+    return yield* Effect.sync(() => createLearnSessionUnchecked(deck, level, nowMs, options, dueIds, newIds));
+  });
+}
 
+function createLearnSessionUnchecked(
+  deck: LearningDeck,
+  level: LevelProgress,
+  nowMs: number,
+  options: CreateLearnSessionOptions,
+  dueIds: string[],
+  newIds: string[],
+): CreateLearnSessionResult {
   // Introduce the new words right away so a resumed session never re-picks
   // different words, and so the curriculum cursor reflects the introduction.
   let words = level.words;
@@ -67,14 +99,31 @@ export function createLearnSession(
   const initialSession: LearnSession = {
     deckId: deck.id,
     deckFingerprint: deck.fingerprint,
-    startedAt: isoTimestamp(now),
+    startedAt: isoTimestamp(nowMs),
     wordIds,
     completedWordIds: [],
     currentWordId: wordIds[0]!,
   };
-  const first = nextLearnCardId(initialSession, nextLevel, now);
+  const first = nextLearnCardIdUnchecked(initialSession, nextLevel, nowMs);
+  // Impossible after the candidate check above; surfaces as a defect.
   if (first.status !== "card") throw new Error("A newly created Learn session must contain a displayable word");
   return { level: nextLevel, session: { ...initialSession, currentWordId: first.wordId } };
+}
+
+/**
+ * Creates one active Learn session for a grade (see
+ * {@link createLearnSessionEffect}).
+ *
+ * Legacy throwing adapter: raises the same `RangeError`s as before —
+ * including for the all-caught-up grade — and the same `Error` for duplicate
+ * deck word IDs. */
+export function createLearnSession(
+  deck: LearningDeck,
+  level: LevelProgress,
+  now: string | Date,
+  options: CreateLearnSessionOptions,
+): CreateLearnSessionResult {
+  return runDomain(createLearnSessionEffect(deck, level, now, options));
 }
 
 /** Members still owed work: membership minus rating-time completions. A card
@@ -93,11 +142,12 @@ export function remainingLearnWordIds(session: LearnSession, level: LevelProgres
  * Currently-due cards sort before future cards by definition, and when every
  * remaining card is in the future the earliest one is served anyway —
  * Anki-style learn-ahead, so the player never stares at a waiting screen.
- * Ties break on stable word ID for determinism.
- */
-export function nextLearnCardId(session: LearnSession, level: LevelProgress, now: string | Date): NextLearnCard {
-  const nowMs = typeof now === "string" ? Date.parse(now) : now.getTime();
-  if (!Number.isFinite(nowMs)) throw new RangeError("now must be a valid timestamp");
+ * Ties break on stable word ID for determinism. */
+export function nextLearnCardIdEffect(session: LearnSession, level: LevelProgress, now: string | Date): Effect.Effect<NextLearnCard, NextLearnCardFailure, never> {
+  return Effect.map(validTimestamp(now), (nowMs) => nextLearnCardIdUnchecked(session, level, nowMs));
+}
+
+export function nextLearnCardIdUnchecked(session: LearnSession, level: LevelProgress, nowMs: number): NextLearnCard {
   const remaining = remainingLearnWordIds(session, level);
   if (remaining.length === 0) return { status: "complete" };
   let best: { id: string; dueMs: number } | null = null;
@@ -106,6 +156,10 @@ export function nextLearnCardId(session: LearnSession, level: LevelProgress, now
     if (best === null || dueMs < best.dueMs || (dueMs === best.dueMs && id < best.id)) best = { id, dueMs };
   }
   return { status: "card", wordId: best!.id, dueNow: best!.dueMs <= nowMs };
+}
+
+export function nextLearnCardId(session: LearnSession, level: LevelProgress, now: string | Date): NextLearnCard {
+  return runDomain(nextLearnCardIdEffect(session, level, now));
 }
 
 /** The earliest moment any introduced card of the grade becomes due, for the

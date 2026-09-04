@@ -1,5 +1,8 @@
 import { createEmptyCard, fsrs, generatorParameters, Rating, State, type Card, type Grade } from "ts-fsrs";
+import { Effect } from "effect";
 import type { ComponentMemory } from "../../shared/schemas";
+import { runDomain, validTimestamp } from "../effect";
+import type { InvalidTimestampError } from "../errors";
 import type { MemoryRating } from "./types";
 
 /**
@@ -75,15 +78,27 @@ export function fromCardMemory(memory: ComponentMemory): Card {
  * days and corrupt stability. `now` is clamped to the card's last review —
  * the rating applies at that instant instead of trapping the UI or writing
  * a regressive schedule. */
-export function reviewCardMemory(memory: ComponentMemory, rating: MemoryRating, now: string | number | Date): ComponentMemory {
-  let date = new Date(now);
-  if (!Number.isFinite(date.getTime())) throw new RangeError("now must be a valid timestamp");
+/** Typed variant of {@link reviewCardMemory}: fails with an
+ * `InvalidTimestampError` instead of throwing a `RangeError`. */
+export function reviewCardMemoryEffect(memory: ComponentMemory, rating: MemoryRating, now: string | number | Date): Effect.Effect<ComponentMemory, InvalidTimestampError, never> {
+  return Effect.map(validTimestamp(now), (nowMs) => reviewCardMemoryUnchecked(memory, rating, nowMs));
+}
+
+/** Validated clock core shared by {@link reviewCardMemory}, the typed
+ * variant, and the sibling modules' rating paths (`nowMs` must already be
+ * finite — see `validTimestamp`). */
+export function reviewCardMemoryUnchecked(memory: ComponentMemory, rating: MemoryRating, nowMs: number): ComponentMemory {
+  let date = new Date(nowMs);
   const lastReviewMs = memory.lastReview === null ? null : Date.parse(memory.lastReview);
   if (lastReviewMs !== null && Number.isFinite(lastReviewMs) && date.getTime() < lastReviewMs) {
     date = new Date(lastReviewMs);
   }
   const { card } = scheduler.next(fromCardMemory(memory), date, RATING_TO_FSRS[rating]);
   return toCardMemory(card);
+}
+
+export function reviewCardMemory(memory: ComponentMemory, rating: MemoryRating, now: string | number | Date): ComponentMemory {
+  return runDomain(reviewCardMemoryEffect(memory, rating, now));
 }
 
 /** Estimated recall probability right now (0..1). New cards have no history

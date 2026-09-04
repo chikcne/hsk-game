@@ -1,16 +1,19 @@
 import { createHash, randomUUID } from "node:crypto";
-import { basename, dirname, join, resolve } from "node:path";
-import { mkdtemp, mkdir, readFile, rename, rm, stat, writeFile } from "node:fs/promises";
+import { dirname, join, resolve } from "node:path";
 import { tmpdir } from "node:os";
 import { fileURLToPath } from "node:url";
+import { Data, Effect, Layer } from "effect";
 import { RuntimeDeckSchema, type RuntimeDeck } from "../../../src/shared/schemas";
 import { type DeckId } from "../../../src/shared/constants";
-import { extractArchiveEssentials, readChecksumFile, sha256File } from "../archive/zip";
-import { readMediaMap } from "../archive/media";
-import { readCollection } from "../sqlite/read-collection";
-import { buildMeaningIndexes, normalizeAndDedupe, type Overrides, type WordAudit } from "../normalize/words";
-import { extractSelectedAudio } from "./audio";
+import { extractArchiveEssentialsEffect, readChecksumFileEffect, ArchiveError } from "../archive/zip";
+import { readMediaMapEffect, MediaError, SoundReferenceError } from "../archive/media";
+import { AnkiDatabase, CollectionError } from "../sqlite/read-collection";
+import { buildMeaningIndexesEffect, normalizeAndDedupeEffect, type Overrides, type WordAudit, type WordImportError } from "../normalize/words";
+import { HanziError } from "../normalize/hanzi";
+import { extractSelectedAudio, AudioError } from "./audio";
 import { stableJson } from "./stable-json";
+import { Fs, FsError } from "../../shared/fs";
+import { sha256File as sha256FileEffect } from "../../shared/hash";
 
 export const IMPORTER_VERSION = "1.0.0";
 
@@ -62,20 +65,49 @@ function digest(value: string): string {
   return createHash("sha256").update(value).digest("hex");
 }
 
-function parseOverrides(text: string): Overrides {
-  const value: unknown = JSON.parse(text);
-  if (!value || typeof value !== "object" || Array.isArray(value)) throw new Error("overrides.json must be an object");
-  const result: Overrides = {};
-  for (const [guid, item] of Object.entries(value)) {
-    if (!item || typeof item !== "object" || Array.isArray(item)) throw new Error(`Override ${guid} must be an object`);
-    const candidate = item as Record<string, unknown>;
-    if (typeof candidate.displayHanzi !== "string" || typeof candidate.reason !== "string" || !candidate.reason.trim()) {
-      throw new Error(`Override ${guid} must contain displayHanzi and a nonblank reason`);
-    }
-    result[guid] = { displayHanzi: candidate.displayHanzi, reason: candidate.reason };
+/** Typed failure for deck compilation and generated-data verification. */
+export class ImportError extends Data.TaggedError("ImportError")<{
+  readonly detail: string;
+}> {
+  get message(): string {
+    return this.detail;
   }
-  return result;
 }
+
+/** Union of every typed failure the deck compilation pipeline can emit. */
+export type CompileError =
+  | ImportError
+  | FsError
+  | ArchiveError
+  | MediaError
+  | SoundReferenceError
+  | WordImportError
+  | HanziError
+  | AudioError
+  | CollectionError;
+
+const parseOverridesEffect = (text: string): Effect.Effect<Overrides, ImportError, never> =>
+  Effect.gen(function* () {
+    const value: unknown = yield* Effect.try({
+      try: () => JSON.parse(text),
+      catch: (error) => new ImportError({ detail: error instanceof Error ? error.message : String(error) }),
+    });
+    if (!value || typeof value !== "object" || Array.isArray(value)) {
+      return yield* Effect.fail(new ImportError({ detail: "overrides.json must be an object" }));
+    }
+    const result: Overrides = {};
+    for (const [guid, item] of Object.entries(value)) {
+      if (!item || typeof item !== "object" || Array.isArray(item)) {
+        return yield* Effect.fail(new ImportError({ detail: `Override ${guid} must be an object` }));
+      }
+      const candidate = item as Record<string, unknown>;
+      if (typeof candidate.displayHanzi !== "string" || typeof candidate.reason !== "string" || !candidate.reason.trim()) {
+        return yield* Effect.fail(new ImportError({ detail: `Override ${guid} must contain displayHanzi and a nonblank reason` }));
+      }
+      result[guid] = { displayHanzi: candidate.displayHanzi, reason: candidate.reason };
+    }
+    return result;
+  });
 
 export type CompileOptions = {
   repositoryRoot?: string;
@@ -85,185 +117,265 @@ export type CompileOptions = {
 
 type CompiledDeck = { deck: RuntimeDeck; report: DeckReport; indexEntry: Record<string, unknown> };
 
-async function compileOneDeck(
+const compileOneDeckEffect = (
   source: DeckSource,
   repositoryRoot: string,
   outputRoot: string,
   expectedChecksum: string,
   overrides: Overrides,
   overrideSha256: string,
-): Promise<CompiledDeck> {
-  const apkgPath = join(repositoryRoot, "decks", source.filename);
-  const packageSha256 = await sha256File(apkgPath);
-  if (packageSha256 !== expectedChecksum) {
-    throw new Error(`Checksum mismatch for ${source.filename}: expected ${expectedChecksum}, got ${packageSha256}`);
-  }
-  const extractionDirectory = await mkdtemp(join(tmpdir(), `hsk-import-${source.id}-`));
-  try {
-    const essentials = await extractArchiveEssentials(apkgPath, extractionDirectory);
-    const collection = readCollection(essentials.collectionPath);
-    if (collection.noteCount !== source.expectedSourceNotes) {
-      throw new Error(`${source.id} has ${collection.noteCount} source notes; expected ${source.expectedSourceNotes}`);
-    }
-    const media = await readMediaMap(essentials.mediaPath);
-    const normalized = normalizeAndDedupe(collection.notes, media, overrides);
-    if (normalized.words.length !== source.expectedLogicalWords) {
-      throw new Error(`${source.id} has ${normalized.words.length} logical words; expected ${source.expectedLogicalWords}`);
-    }
-    const deckOutput = join(outputRoot, source.id);
-    const selectedMedia = new Map<string, string>();
-    for (const word of normalized.words) selectedMedia.set(word.audioFilename, media.memberByFilename.get(word.audioFilename)!);
-    const audio = await extractSelectedAudio(apkgPath, selectedMedia, join(deckOutput, "audio"));
-    for (const word of normalized.words) {
-      const url = audio.urlByFilename.get(word.audioFilename);
-      if (!url) throw new Error(`No extracted audio URL for ${word.audioFilename}`);
-      word.audioUrl = url;
-    }
-    const runtimeWords = normalized.words.map(({ audioFilename: _audio, sourceNoteId: _note, ...word }) => word);
-    const indexes = buildMeaningIndexes(runtimeWords);
-    const fingerprint = digest(`deck-v1\0${IMPORTER_VERSION}\0${packageSha256}\0${overrideSha256}`);
-    const deck = RuntimeDeckSchema.parse({
-      schemaVersion: 1, importerVersion: IMPORTER_VERSION, id: source.id, hskLevel: source.hskLevel,
-      title: source.title, fingerprint,
-      source: {
-        sharedId: source.sharedId, url: `https://ankiweb.net/shared/info/${source.sharedId}`,
-        packageSha256, sourceNoteCount: collection.noteCount, logicalWordCount: runtimeWords.length,
-      },
-      words: runtimeWords, meaningIndex: indexes.meaningIndex,
-      meaningKeysByPartOfSpeech: indexes.meaningKeysByPartOfSpeech, allMeaningKeys: indexes.allMeaningKeys,
-    });
-    const deckJson = stableJson(deck);
-    await mkdir(deckOutput, { recursive: true });
-    await writeFile(join(deckOutput, "deck.json"), deckJson, { flag: "wx" });
-    const warnings = normalized.audit.blankFields.length ? ["Some optional source fields are blank; see blankFields."] : [];
-    if (normalized.audit.canonicalPinyinCollisions.length) warnings.push("Tone-insensitive pinyin forms collide; words remain separate.");
-    const report: DeckReport = {
-      id: source.id, fingerprint, packageSha256, checksumStatus: "verified",
-      sourceNoteCount: collection.noteCount, sourceCardCount: collection.cardCount, sourceMediaCount: media.filenameByMember.size,
-      logicalWordCount: runtimeWords.length, exactDuplicateGroups: normalized.audit.exactDuplicateGroups,
-      appliedOverrides: normalized.audit.appliedOverrides, nfkcChangedValues: normalized.audit.nfkcChangedValues,
-      parsedSenseLabels: normalized.audit.parsedSenseLabels, blankFields: normalized.audit.blankFields,
-      malformedAudio: [], missingAudio: [], pinyinAlternatives: normalized.audit.pinyinAlternatives,
-      canonicalPinyinCollisions: normalized.audit.canonicalPinyinCollisions,
-      maxMeaningLength: normalized.audit.maxMeaningLength,
-      distractorPool: { minimumSafeDistractors: indexes.minimumSafeDistractors, valid: true },
-      output: { deckJsonBytes: Buffer.byteLength(deckJson), audioBytes: audio.totalBytes, audioAssetCount: audio.assetCount },
-      blockingErrors: [], warnings,
-    };
-    return {
-      deck, report,
-      indexEntry: {
-        id: source.id, hskLevel: source.hskLevel, title: source.title, fingerprint,
-        logicalWordCount: runtimeWords.length, deckUrl: `${source.id}/deck.json`,
-      },
-    };
-  } finally {
-    await rm(extractionDirectory, { recursive: true, force: true });
-  }
-}
+): Effect.Effect<CompiledDeck, CompileError, Fs | AnkiDatabase> =>
+  Effect.scoped(
+    Effect.gen(function* () {
+      const fs = yield* Fs;
+      const apkgPath = join(repositoryRoot, "decks", source.filename);
+      const packageSha256 = yield* sha256FileEffect(apkgPath);
+      if (packageSha256 !== expectedChecksum) {
+        return yield* Effect.fail(new ImportError({
+          detail: `Checksum mismatch for ${source.filename}: expected ${expectedChecksum}, got ${packageSha256}`,
+        }));
+      }
+      const extractionDirectory = yield* Effect.acquireRelease(
+        fs.mkdtemp(join(tmpdir(), `hsk-import-${source.id}-`)),
+        (directory) => Effect.ignore(fs.rmRecursive(directory)),
+      );
+      const essentials = yield* extractArchiveEssentialsEffect(apkgPath, extractionDirectory);
+      const anki = yield* AnkiDatabase;
+      const collection = yield* anki.readCollection(essentials.collectionPath);
+      if (collection.noteCount !== source.expectedSourceNotes) {
+        return yield* Effect.fail(new ImportError({
+          detail: `${source.id} has ${collection.noteCount} source notes; expected ${source.expectedSourceNotes}`,
+        }));
+      }
+      const media = yield* readMediaMapEffect(essentials.mediaPath);
+      const normalized = yield* normalizeAndDedupeEffect(collection.notes, media, overrides);
+      if (normalized.words.length !== source.expectedLogicalWords) {
+        return yield* Effect.fail(new ImportError({
+          detail: `${source.id} has ${normalized.words.length} logical words; expected ${source.expectedLogicalWords}`,
+        }));
+      }
+      const deckOutput = join(outputRoot, source.id);
+      const selectedMedia = new Map<string, string>();
+      for (const word of normalized.words) selectedMedia.set(word.audioFilename, media.memberByFilename.get(word.audioFilename)!);
+      const audio = yield* extractSelectedAudio(apkgPath, selectedMedia, join(deckOutput, "audio"));
+      for (const word of normalized.words) {
+        const url = audio.urlByFilename.get(word.audioFilename);
+        if (!url) {
+          return yield* Effect.fail(new ImportError({ detail: `No extracted audio URL for ${word.audioFilename}` }));
+        }
+        word.audioUrl = url;
+      }
+      const runtimeWords = normalized.words.map(({ audioFilename: _audio, sourceNoteId: _note, ...word }) => word);
+      const indexes = yield* buildMeaningIndexesEffect(runtimeWords);
+      const fingerprint = digest(`deck-v1\0${IMPORTER_VERSION}\0${packageSha256}\0${overrideSha256}`);
+      const deck = yield* Effect.try({
+        try: () =>
+          RuntimeDeckSchema.parse({
+            schemaVersion: 1, importerVersion: IMPORTER_VERSION, id: source.id, hskLevel: source.hskLevel,
+            title: source.title, fingerprint,
+            source: {
+              sharedId: source.sharedId, url: `https://ankiweb.net/shared/info/${source.sharedId}`,
+              packageSha256, sourceNoteCount: collection.noteCount, logicalWordCount: runtimeWords.length,
+            },
+            words: runtimeWords, meaningIndex: indexes.meaningIndex,
+            meaningKeysByPartOfSpeech: indexes.meaningKeysByPartOfSpeech, allMeaningKeys: indexes.allMeaningKeys,
+          }),
+        catch: (error) => new ImportError({ detail: error instanceof Error ? error.message : String(error) }),
+      });
+      const deckJson = stableJson(deck);
+      yield* fs.mkdirRecursive(deckOutput);
+      yield* fs.writeFile(join(deckOutput, "deck.json"), deckJson, { exclusive: true });
+      const warnings = normalized.audit.blankFields.length ? ["Some optional source fields are blank; see blankFields."] : [];
+      if (normalized.audit.canonicalPinyinCollisions.length) warnings.push("Tone-insensitive pinyin forms collide; words remain separate.");
+      const report: DeckReport = {
+        id: source.id, fingerprint, packageSha256, checksumStatus: "verified",
+        sourceNoteCount: collection.noteCount, sourceCardCount: collection.cardCount, sourceMediaCount: media.filenameByMember.size,
+        logicalWordCount: runtimeWords.length, exactDuplicateGroups: normalized.audit.exactDuplicateGroups,
+        appliedOverrides: normalized.audit.appliedOverrides, nfkcChangedValues: normalized.audit.nfkcChangedValues,
+        parsedSenseLabels: normalized.audit.parsedSenseLabels, blankFields: normalized.audit.blankFields,
+        malformedAudio: [], missingAudio: [], pinyinAlternatives: normalized.audit.pinyinAlternatives,
+        canonicalPinyinCollisions: normalized.audit.canonicalPinyinCollisions,
+        maxMeaningLength: normalized.audit.maxMeaningLength,
+        distractorPool: { minimumSafeDistractors: indexes.minimumSafeDistractors, valid: true },
+        output: { deckJsonBytes: Buffer.byteLength(deckJson), audioBytes: audio.totalBytes, audioAssetCount: audio.assetCount },
+        blockingErrors: [], warnings,
+      };
+      return {
+        deck, report,
+        indexEntry: {
+          id: source.id, hskLevel: source.hskLevel, title: source.title, fingerprint,
+          logicalWordCount: runtimeWords.length, deckUrl: `${source.id}/deck.json`,
+        },
+      };
+    }),
+  );
 
-async function atomicReplace(tempOutput: string, outputDirectory: string): Promise<void> {
-  const backup = `${outputDirectory}.old-${randomUUID()}`;
-  let hadPrevious = false;
-  try {
-    await rename(outputDirectory, backup);
-    hadPrevious = true;
-  } catch (error) {
-    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-  }
-  try {
-    await rename(tempOutput, outputDirectory);
-  } catch (error) {
-    if (hadPrevious) await rename(backup, outputDirectory);
-    throw error;
-  }
-  if (hadPrevious) await rm(backup, { recursive: true, force: true });
-}
+/** Atomically swaps `tempOutput` into `outputDirectory`, restoring the previous
+ * directory if the final rename fails. */
+const atomicReplaceEffect = (tempOutput: string, outputDirectory: string): Effect.Effect<void, FsError, Fs> =>
+  Effect.gen(function* () {
+    const fs = yield* Fs;
+    const backup = `${outputDirectory}.old-${randomUUID()}`;
+    const hadPrevious = yield* fs.rename(outputDirectory, backup).pipe(
+      Effect.as(true),
+      Effect.catchTag("FsError", (error) => (error.code === "ENOENT" ? Effect.succeed(false) : Effect.fail(error))),
+    );
+    yield* fs.rename(tempOutput, outputDirectory).pipe(
+      Effect.catchTag("FsError", (error) =>
+        hadPrevious
+          ? Effect.zipRight(fs.rename(backup, outputDirectory), Effect.fail(error))
+          : Effect.fail(error)),
+    );
+    if (hadPrevious) yield* fs.rmRecursive(backup);
+  });
 
-export async function compileDecks(options: CompileOptions = {}): Promise<{ decks: RuntimeDeck[]; reports: DeckReport[] }> {
-  const defaultRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../../..");
-  const repositoryRoot = resolve(options.repositoryRoot ?? defaultRoot);
-  const outputDirectory = resolve(options.outputDirectory ?? join(repositoryRoot, "public/game-data"));
-  const selectedIds = options.deckIds ? new Set(options.deckIds) : null;
-  const sources = DECK_SOURCES.filter((source) => !selectedIds || selectedIds.has(source.id));
-  if (!sources.length) throw new Error("No decks selected");
-  if (selectedIds && sources.length !== selectedIds.size) throw new Error("Unknown deck ID selected");
+/** Compiles the selected decks into a temporary output tree and atomically
+ * replaces the generated data directory on success. */
+export const compileDecksEffect = (
+  options: CompileOptions = {},
+): Effect.Effect<{ decks: RuntimeDeck[]; reports: DeckReport[] }, CompileError, Fs | AnkiDatabase> =>
+  Effect.scoped(
+    Effect.gen(function* () {
+      const fs = yield* Fs;
+      const defaultRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../../..");
+      const repositoryRoot = resolve(options.repositoryRoot ?? defaultRoot);
+      const outputDirectory = resolve(options.outputDirectory ?? join(repositoryRoot, "public/game-data"));
+      const selectedIds = options.deckIds ? new Set(options.deckIds) : null;
+      const sources = DECK_SOURCES.filter((source) => !selectedIds || selectedIds.has(source.id));
+      if (!sources.length) {
+        return yield* Effect.fail(new ImportError({ detail: "No decks selected" }));
+      }
+      if (selectedIds && sources.length !== selectedIds.size) {
+        return yield* Effect.fail(new ImportError({ detail: "Unknown deck ID selected" }));
+      }
 
-  const checksumByFilename = await readChecksumFile(join(repositoryRoot, "decks/SHA256SUMS"));
-  const overridesPath = join(repositoryRoot, "tools/import-decks/overrides.json");
-  const overridesText = await readFile(overridesPath, "utf8");
-  const overrides = parseOverrides(overridesText);
-  const overrideSha256 = digest(overridesText);
-  await mkdir(dirname(outputDirectory), { recursive: true });
-  const tempOutput = `${outputDirectory}.tmp-${randomUUID()}`;
-  await mkdir(tempOutput, { recursive: true });
-  try {
-    const compiled: CompiledDeck[] = [];
-    for (const source of sources) {
-      const expected = checksumByFilename.get(source.filename);
-      if (!expected) throw new Error(`No SHA-256 entry for ${source.filename}`);
-      compiled.push(await compileOneDeck(source, repositoryRoot, tempOutput, expected, overrides, overrideSha256));
-    }
-    if (!selectedIds) {
-      const applied = new Set(compiled.flatMap((item) => item.report.appliedOverrides.map((entry) => entry.guid)));
-      for (const guid of Object.keys(overrides)) if (!applied.has(guid)) throw new Error(`Reviewed override GUID was not found: ${guid}`);
-    }
-    const index = {
-      schemaVersion: 1, importerVersion: IMPORTER_VERSION,
-      decks: compiled.map((item) => item.indexEntry).sort((a, b) => String(a.id).localeCompare(String(b.id))),
-    };
-    const report = {
-      schemaVersion: 1, importerVersion: IMPORTER_VERSION, overrideSha256,
-      decks: compiled.map((item) => item.report).sort((a, b) => a.id.localeCompare(b.id)),
-    };
-    await writeFile(join(tempOutput, "index.json"), stableJson(index), { flag: "wx" });
-    await writeFile(join(tempOutput, "import-report.json"), stableJson(report), { flag: "wx" });
-    await atomicReplace(tempOutput, outputDirectory);
-    return { decks: compiled.map((item) => item.deck), reports: compiled.map((item) => item.report) };
-  } catch (error) {
-    await rm(tempOutput, { recursive: true, force: true });
-    throw error;
-  }
-}
+      const checksumByFilename = yield* readChecksumFileEffect(join(repositoryRoot, "decks/SHA256SUMS"));
+      const overridesText = yield* fs.readTextFile(join(repositoryRoot, "tools/import-decks/overrides.json"));
+      const overrides = yield* parseOverridesEffect(overridesText);
+      const overrideSha256 = digest(overridesText);
+      yield* fs.mkdirRecursive(dirname(outputDirectory));
+      const tempOutput = `${outputDirectory}.tmp-${randomUUID()}`;
+      yield* Effect.acquireRelease(
+        Effect.as(fs.mkdirRecursive(tempOutput), tempOutput),
+        () => Effect.ignore(fs.rmRecursive(tempOutput)),
+      );
+      const compiled = yield* Effect.forEach(
+        sources,
+        (source) =>
+          Effect.gen(function* () {
+            const expected = checksumByFilename.get(source.filename);
+            if (!expected) {
+              return yield* Effect.fail(new ImportError({ detail: `No SHA-256 entry for ${source.filename}` }));
+            }
+            return yield* compileOneDeckEffect(source, repositoryRoot, tempOutput, expected, overrides, overrideSha256);
+          }),
+        { concurrency: 1 },
+      );
+      if (!selectedIds) {
+        const applied = new Set(compiled.flatMap((item) => item.report.appliedOverrides.map((entry) => entry.guid)));
+        for (const guid of Object.keys(overrides)) {
+          if (!applied.has(guid)) {
+            return yield* Effect.fail(new ImportError({ detail: `Reviewed override GUID was not found: ${guid}` }));
+          }
+        }
+      }
+      const index = {
+        schemaVersion: 1, importerVersion: IMPORTER_VERSION,
+        decks: compiled.map((item) => item.indexEntry).sort((a, b) => String(a.id).localeCompare(String(b.id))),
+      };
+      const report = {
+        schemaVersion: 1, importerVersion: IMPORTER_VERSION, overrideSha256,
+        decks: compiled.map((item) => item.report).sort((a, b) => a.id.localeCompare(b.id)),
+      };
+      yield* fs.writeFile(join(tempOutput, "index.json"), stableJson(index), { exclusive: true });
+      yield* fs.writeFile(join(tempOutput, "import-report.json"), stableJson(report), { exclusive: true });
+      yield* atomicReplaceEffect(tempOutput, outputDirectory);
+      return { decks: compiled.map((item) => item.deck), reports: compiled.map((item) => item.report) };
+    }),
+  );
 
-export async function checkGeneratedData(options: Omit<CompileOptions, "outputDirectory"> = {}): Promise<void> {
-  const defaultRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../../..");
-  const repositoryRoot = resolve(options.repositoryRoot ?? defaultRoot);
-  const indexPath = join(repositoryRoot, "public/game-data/index.json");
-  let index: { importerVersion?: unknown; decks?: Array<{ id?: unknown; fingerprint?: unknown; deckUrl?: unknown }> };
-  try {
-    index = JSON.parse(await readFile(indexPath, "utf8")) as typeof index;
-  } catch {
-    throw new Error("Generated deck data is missing. Run npm run import:decks.");
-  }
-  if (index.importerVersion !== IMPORTER_VERSION || !Array.isArray(index.decks)) {
-    throw new Error("Generated deck data is stale. Run npm run import:decks.");
-  }
-  const checksumByFilename = await readChecksumFile(join(repositoryRoot, "decks/SHA256SUMS"));
-  const overridesText = await readFile(join(repositoryRoot, "tools/import-decks/overrides.json"), "utf8");
-  const overrideSha256 = digest(overridesText);
-  const selectedIds = options.deckIds ? new Set(options.deckIds) : null;
-  const sources = DECK_SOURCES.filter((source) => !selectedIds || selectedIds.has(source.id));
-  for (const source of sources) {
-    const recordedSha256 = checksumByFilename.get(source.filename);
-    const packageSha256 = await sha256File(join(repositoryRoot, "decks", source.filename));
-    if (!recordedSha256 || packageSha256 !== recordedSha256) {
-      throw new Error(`Source checksum mismatch for ${source.id}; generated data cannot be trusted.`);
+type GeneratedIndexFile = {
+  importerVersion?: unknown;
+  decks?: Array<{ id?: unknown; fingerprint?: unknown; deckUrl?: unknown }>;
+};
+
+/** Verifies the committed generated deck data is present, checksum-fresh, and
+ * internally consistent with its index. */
+export const checkGeneratedDataEffect = (
+  options: Omit<CompileOptions, "outputDirectory"> = {},
+): Effect.Effect<void, CompileError, Fs> =>
+  Effect.gen(function* () {
+    const fs = yield* Fs;
+    const defaultRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../../..");
+    const repositoryRoot = resolve(options.repositoryRoot ?? defaultRoot);
+    const indexPath = join(repositoryRoot, "public/game-data/index.json");
+    const index: GeneratedIndexFile = yield* Effect.gen(function* () {
+      const text = yield* fs.readTextFile(indexPath);
+      return yield* Effect.try({
+        try: () => JSON.parse(text) as GeneratedIndexFile,
+        catch: (error) => new ImportError({ detail: error instanceof Error ? error.message : String(error) }),
+      });
+    }).pipe(
+      Effect.catchAll(() => Effect.fail(new ImportError({ detail: "Generated deck data is missing. Run npm run import:decks." }))),
+    );
+    if (index.importerVersion !== IMPORTER_VERSION || !Array.isArray(index.decks)) {
+      return yield* Effect.fail(new ImportError({ detail: "Generated deck data is stale. Run npm run import:decks." }));
     }
-    const expectedFingerprint = digest(`deck-v1\0${IMPORTER_VERSION}\0${packageSha256}\0${overrideSha256}`);
-    const entry = index.decks.find((candidate) => candidate.id === source.id);
-    if (!entry || entry.fingerprint !== expectedFingerprint || entry.deckUrl !== `${source.id}/deck.json`) {
-      throw new Error(`Generated ${source.id} data is stale. Run npm run import:decks.`);
-    }
-    const deckPath = join(repositoryRoot, "public/game-data", entry.deckUrl);
-    const deck = RuntimeDeckSchema.parse(JSON.parse(await readFile(deckPath, "utf8")));
-    if (deck.id !== source.id || deck.fingerprint !== expectedFingerprint || deck.words.length !== source.expectedLogicalWords) {
-      throw new Error(`Generated ${source.id} deck does not match its index. Run npm run import:decks.`);
-    }
-    for (const word of deck.words) {
-      if (!/^audio\/[a-f0-9]{64}\.mp3$/u.test(word.audioUrl)) throw new Error(`Generated ${source.id} has an unsafe audio URL.`);
-      await stat(join(dirname(deckPath), word.audioUrl));
-    }
-  }
-  await stat(indexPath);
-}
+    const indexDecks = index.decks;
+    const checksumByFilename = yield* readChecksumFileEffect(join(repositoryRoot, "decks/SHA256SUMS"));
+    const overridesText = yield* fs.readTextFile(join(repositoryRoot, "tools/import-decks/overrides.json"));
+    const overrideSha256 = digest(overridesText);
+    const selectedIds = options.deckIds ? new Set(options.deckIds) : null;
+    const sources = DECK_SOURCES.filter((source) => !selectedIds || selectedIds.has(source.id));
+    yield* Effect.forEach(
+      sources,
+      (source) =>
+        Effect.gen(function* () {
+          const recordedSha256 = checksumByFilename.get(source.filename);
+          const packageSha256 = yield* sha256FileEffect(join(repositoryRoot, "decks", source.filename));
+          if (!recordedSha256 || packageSha256 !== recordedSha256) {
+            return yield* Effect.fail(new ImportError({
+              detail: `Source checksum mismatch for ${source.id}; generated data cannot be trusted.`,
+            }));
+          }
+          const expectedFingerprint = digest(`deck-v1\0${IMPORTER_VERSION}\0${packageSha256}\0${overrideSha256}`);
+          const entry = indexDecks.find((candidate) => candidate.id === source.id);
+          if (!entry || entry.fingerprint !== expectedFingerprint || entry.deckUrl !== `${source.id}/deck.json`) {
+            return yield* Effect.fail(new ImportError({ detail: `Generated ${source.id} data is stale. Run npm run import:decks.` }));
+          }
+          const deckPath = join(repositoryRoot, "public/game-data", entry.deckUrl);
+          const deckText = yield* fs.readTextFile(deckPath);
+          const deck = yield* Effect.try({
+            try: () => RuntimeDeckSchema.parse(JSON.parse(deckText)),
+            catch: (error) => new ImportError({ detail: error instanceof Error ? error.message : String(error) }),
+          });
+          if (deck.id !== source.id || deck.fingerprint !== expectedFingerprint || deck.words.length !== source.expectedLogicalWords) {
+            return yield* Effect.fail(new ImportError({ detail: `Generated ${source.id} deck does not match its index. Run npm run import:decks.` }));
+          }
+          for (const word of deck.words) {
+            if (!/^audio\/[a-f0-9]{64}\.mp3$/u.test(word.audioUrl)) {
+              return yield* Effect.fail(new ImportError({ detail: `Generated ${source.id} has an unsafe audio URL.` }));
+            }
+            yield* fs.statSize(join(dirname(deckPath), word.audioUrl));
+          }
+        }),
+      { concurrency: 1 },
+    );
+    yield* fs.statSize(indexPath);
+  });
+
+// --- compatibility boundaries -------------------------------------------------
+// The CLI and the test suite consume plain Promises; the live layers bind the
+// filesystem and database capability services.
+
+const liveDependencies: Layer.Layer<Fs | AnkiDatabase> = Layer.mergeAll(Fs.layer, AnkiDatabase.layer);
+
+/** Promise boundary: rejects with a typed `CompileError` on failure. */
+export const compileDecks = (
+  options: CompileOptions = {},
+): Promise<{ decks: RuntimeDeck[]; reports: DeckReport[] }> =>
+  Effect.runPromise(Effect.provide(compileDecksEffect(options), liveDependencies));
+
+/** Promise boundary: rejects with a typed `CompileError` on failure. */
+export const checkGeneratedData = (options: Omit<CompileOptions, "outputDirectory"> = {}): Promise<void> =>
+  Effect.runPromise(Effect.provide(checkGeneratedDataEffect(options), liveDependencies));

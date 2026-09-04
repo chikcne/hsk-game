@@ -1,3 +1,6 @@
+import { Effect } from "effect";
+import { runDomain } from "../effect";
+import { CryptoUnavailableError, InsufficientSeedBytesError, InvalidRandomStateError } from "../errors";
 import type { RandomSource, RandomState } from "./types";
 
 const UINT32_RANGE = 0x1_0000_0000;
@@ -18,7 +21,11 @@ function validateState(state: readonly number[]): asserts state is RandomState {
   }
 }
 
-/** Serializable xoshiro128** (Blackman/Vigna) random source. */
+/** Serializable xoshiro128** (Blackman/Vigna) random source.
+ *
+ * The constructor keeps its throwing validation (the RNG contract is a
+ * programming invariant); typed construction goes through
+ * {@link makeXoshiro128StarStar}. */
 export class Xoshiro128StarStar implements RandomSource {
   readonly #words: RandomState;
 
@@ -51,6 +58,19 @@ export class Xoshiro128StarStar implements RandomSource {
   }
 }
 
+/** Typed constructor for {@link Xoshiro128StarStar}: fails with an
+ * `InvalidRandomStateError` for malformed or all-zero states instead of
+ * throwing from a class constructor. */
+export function makeXoshiro128StarStar(state: readonly [number, number, number, number]): Effect.Effect<Xoshiro128StarStar, InvalidRandomStateError, never> {
+  return Effect.suspend(() => {
+    if (state.length !== 4 || state.some((word) => !Number.isInteger(word) || word < 0 || word > 0xffff_ffff)) {
+      return Effect.fail(new InvalidRandomStateError({ reason: "shape" }));
+    }
+    if (state.every((word) => word === 0)) return Effect.fail(new InvalidRandomStateError({ reason: "all-zero" }));
+    return Effect.succeed(new Xoshiro128StarStar(state));
+  });
+}
+
 /** Deterministically derives a valid state from a string (useful for tests/session streams). */
 export function randomStateFromSeed(seed: string): RandomState {
   // cyrb128 is a compact, stable 128-bit string mixer. It is not used for security.
@@ -79,8 +99,17 @@ export function randomStateFromSeed(seed: string): RandomState {
   return state;
 }
 
-export function randomStateFromBytes(bytes: Uint8Array): RandomState {
-  if (bytes.byteLength < 16) throw new RangeError("At least 16 seed bytes are required");
+/** Derives state from raw seed bytes; all-zero outcomes are repaired.
+ * Fails with an `InsufficientSeedBytesError` instead of throwing a
+ * `RangeError` when fewer than 16 bytes are provided. */
+export function randomStateFromBytesEffect(bytes: Uint8Array): Effect.Effect<RandomState, InsufficientSeedBytesError, never> {
+  return Effect.gen(function* () {
+    if (bytes.byteLength < 16) return yield* Effect.fail(new InsufficientSeedBytesError());
+    return yield* Effect.sync(() => randomStateFromBytesUnchecked(bytes));
+  });
+}
+
+function randomStateFromBytesUnchecked(bytes: Uint8Array): RandomState {
   const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
   const state: RandomState = [
     view.getUint32(0, true),
@@ -92,9 +121,22 @@ export function randomStateFromBytes(bytes: Uint8Array): RandomState {
   return state;
 }
 
+export function randomStateFromBytes(bytes: Uint8Array): RandomState {
+  return runDomain(randomStateFromBytesEffect(bytes));
+}
+
+/** Typed variant of {@link createSecureRandomState}: fails with a
+ * `CryptoUnavailableError` when the platform has no WebCrypto, or an
+ * `InsufficientSeedBytesError` should the platform return short buffers. */
+export function createSecureRandomStateEffect(): Effect.Effect<RandomState, CryptoUnavailableError | InsufficientSeedBytesError, never> {
+  return Effect.gen(function* () {
+    const cryptoApi = globalThis.crypto;
+    if (cryptoApi === undefined) return yield* Effect.fail(new CryptoUnavailableError());
+    return yield* randomStateFromBytesEffect(cryptoApi.getRandomValues(new Uint8Array(16)));
+  });
+}
+
 /** Creates first-run state from the platform cryptographic random generator. */
 export function createSecureRandomState(): RandomState {
-  const cryptoApi = globalThis.crypto;
-  if (cryptoApi === undefined) throw new Error("A cryptographic random source is unavailable");
-  return randomStateFromBytes(cryptoApi.getRandomValues(new Uint8Array(16)));
+  return runDomain(createSecureRandomStateEffect());
 }

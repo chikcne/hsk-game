@@ -1,3 +1,4 @@
+import { Data, Effect } from "effect";
 import { CHOICE_KEYS, type ChoiceKey } from "../../shared/constants";
 import type { RuntimeDeck, RuntimeWord } from "../../shared/schemas";
 
@@ -209,21 +210,75 @@ function shuffle(items: string[], next: () => number): string[] {
   return result;
 }
 
+export class ChoiceGenerationError extends Data.TaggedError("ChoiceGenerationError")<{
+  readonly reason: "missing-shortcut" | "insufficient-distractors";
+  readonly wordId: string;
+  readonly message: string;
+}> {}
+
+export function generateChoicesEffect(
+  deck: RuntimeDeck,
+  word: RuntimeWord,
+  seed: string,
+): Effect.Effect<MeaningChoice[], ChoiceGenerationError, never> {
+  return Effect.gen(function* () {
+    const eligible = deck.allMeaningKeys.filter((key) => key !== word.meaningKey && !deck.meaningIndex[key]?.hanziKeys.includes(word.hanziKey));
+    const preferredKeys = new Set(word.partOfSpeechKey ? (deck.meaningKeysByPartOfSpeech[word.partOfSpeechKey] ?? []) : []);
+    const next = random(hashSeed(seed));
+    // Shuffle the two tiers separately: shuffling the union would discard the
+    // same-part-of-speech preference this ordering exists to express (§8a).
+    const pool = [
+      ...shuffle(eligible.filter((key) => preferredKeys.has(key)), next),
+      ...shuffle(eligible.filter((key) => !preferredKeys.has(key)), next),
+    ];
+
+    const correctLabel = word.meaning.trim();
+    const correctShortcuts = choiceShortcutsForLabel(correctLabel);
+    if (correctShortcuts.length === 0) {
+      return yield* Effect.fail(new ChoiceGenerationError({
+        reason: "missing-shortcut",
+        wordId: word.id,
+        message: `Meaning must contain A-Z: ${word.meaning}`,
+      }));
+    }
+
+    const choices: MeaningChoice[] = [{ shortcuts: correctShortcuts, label: correctLabel, correct: true }];
+    const usedKeys = new Set<ChoiceKey>(correctShortcuts.map((shortcut) => shortcut.key));
+    for (const meaningKey of pool) {
+      const label = (deck.meaningIndex[meaningKey]?.label ?? meaningKey).trim();
+      const shortcuts = choiceShortcutsForLabel(label);
+      if (shortcuts.length === 0 || shortcuts.some((shortcut) => usedKeys.has(shortcut.key))) continue;
+      choices.push({ shortcuts, label, correct: false });
+      for (const shortcut of shortcuts) usedKeys.add(shortcut.key);
+      if (choices.length === 8) break;
+    }
+
+    if (choices.length < 8) {
+      return yield* Effect.fail(new ChoiceGenerationError({
+        reason: "insufficient-distractors",
+        wordId: word.id,
+        message: `Not enough meanings with non-colliding shortcuts for ${word.id}`,
+      }));
+    }
+    for (let i = choices.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(next() * (i + 1));
+      [choices[i], choices[j]] = [choices[j]!, choices[i]!];
+    }
+    return choices;
+  });
+}
+
 export function generateChoices(deck: RuntimeDeck, word: RuntimeWord, seed: string): MeaningChoice[] {
   const eligible = deck.allMeaningKeys.filter((key) => key !== word.meaningKey && !deck.meaningIndex[key]?.hanziKeys.includes(word.hanziKey));
   const preferredKeys = new Set(word.partOfSpeechKey ? (deck.meaningKeysByPartOfSpeech[word.partOfSpeechKey] ?? []) : []);
   const next = random(hashSeed(seed));
-  // Shuffle the two tiers separately: shuffling the union would discard the
-  // same-part-of-speech preference this ordering exists to express (§8a).
   const pool = [
     ...shuffle(eligible.filter((key) => preferredKeys.has(key)), next),
     ...shuffle(eligible.filter((key) => !preferredKeys.has(key)), next),
   ];
-
   const correctLabel = word.meaning.trim();
   const correctShortcuts = choiceShortcutsForLabel(correctLabel);
   if (correctShortcuts.length === 0) throw new Error(`Meaning must contain A-Z: ${word.meaning}`);
-
   const choices: MeaningChoice[] = [{ shortcuts: correctShortcuts, label: correctLabel, correct: true }];
   const usedKeys = new Set<ChoiceKey>(correctShortcuts.map((shortcut) => shortcut.key));
   for (const meaningKey of pool) {
@@ -234,10 +289,7 @@ export function generateChoices(deck: RuntimeDeck, word: RuntimeWord, seed: stri
     for (const shortcut of shortcuts) usedKeys.add(shortcut.key);
     if (choices.length === 8) break;
   }
-
-  if (choices.length < 8) {
-    throw new Error(`Not enough meanings with non-colliding shortcuts for ${word.id}`);
-  }
+  if (choices.length < 8) throw new Error(`Not enough meanings with non-colliding shortcuts for ${word.id}`);
   for (let i = choices.length - 1; i > 0; i -= 1) {
     const j = Math.floor(next() * (i + 1));
     [choices[i], choices[j]] = [choices[j]!, choices[i]!];
@@ -248,37 +300,57 @@ export function generateChoices(deck: RuntimeDeck, word: RuntimeWord, seed: stri
 /** Degrade path for pathologically small distractor pools (a one-word
  * acquired pool whose merged deck cannot supply eight unique keys): the
  * correct choice is ALWAYS present, and as many unique-key distractors as
- * the pool affords follow. Only throws when even the correct label cannot
- * produce a shortcut. */
+ * the pool affords follow. */
+export function generateChoicesLenientEffect(
+  deck: RuntimeDeck,
+  word: RuntimeWord,
+  seed: string,
+): Effect.Effect<MeaningChoice[], ChoiceGenerationError, never> {
+  return generateChoicesEffect(deck, word, seed).pipe(
+    Effect.catchTag("ChoiceGenerationError", () => Effect.gen(function* () {
+      const correctLabel = word.meaning.trim();
+      const correctShortcuts = choiceShortcutsForLabel(correctLabel);
+      if (correctShortcuts.length === 0) {
+        return yield* Effect.fail(new ChoiceGenerationError({
+          reason: "missing-shortcut",
+          wordId: word.id,
+          message: `Meaning must contain A-Z: ${word.meaning}`,
+        }));
+      }
+      const choices: MeaningChoice[] = [{ shortcuts: correctShortcuts, label: correctLabel, correct: true }];
+      const usedKeys = new Set<ChoiceKey>(correctShortcuts.map((shortcut) => shortcut.key));
+      for (const meaningKey of deck.allMeaningKeys) {
+        if (meaningKey === word.meaningKey) continue;
+        const label = (deck.meaningIndex[meaningKey]?.label ?? meaningKey).trim();
+        if (!label) continue;
+        const shortcuts = choiceShortcutsForLabel(label);
+        if (shortcuts.length === 0 || shortcuts.some((shortcut) => usedKeys.has(shortcut.key))) continue;
+        choices.push({ shortcuts, label, correct: false });
+        for (const shortcut of shortcuts) usedKeys.add(shortcut.key);
+      }
+      return choices;
+    })),
+  );
+}
+
 export function generateChoicesLenient(deck: RuntimeDeck, word: RuntimeWord, seed: string): MeaningChoice[] {
-  try {
-    return generateChoices(deck, word, seed);
-  } catch {
-    const correctLabel = word.meaning.trim();
-    const correctShortcuts = choiceShortcutsForLabel(correctLabel);
-    if (correctShortcuts.length === 0) throw new Error(`Meaning must contain A-Z: ${word.meaning}`);
-    const choices: MeaningChoice[] = [{ shortcuts: correctShortcuts, label: correctLabel, correct: true }];
-    const usedKeys = new Set<ChoiceKey>(correctShortcuts.map((shortcut) => shortcut.key));
-    for (const meaningKey of deck.allMeaningKeys) {
-      if (meaningKey === word.meaningKey) continue;
-      const label = (deck.meaningIndex[meaningKey]?.label ?? meaningKey).trim();
-      if (!label) continue;
-      const shortcuts = choiceShortcutsForLabel(label);
-      if (shortcuts.length === 0 || shortcuts.some((shortcut) => usedKeys.has(shortcut.key))) continue;
-      choices.push({ shortcuts, label, correct: false });
-      for (const shortcut of shortcuts) usedKeys.add(shortcut.key);
-    }
-    return choices;
-  }
+  return Effect.runSync(generateChoicesLenientEffect(deck, word, seed));
 }
 
 /** The battle loop's only entry point: NEVER throws, so a pathological deck
- * can never terminate the requestAnimationFrame frame loop. Falls all the
- * way back to a single correct-letter choice as the last resort. */
+ * can never terminate the requestAnimationFrame frame loop. */
+export function safeMeaningChoicesEffect(
+  deck: RuntimeDeck,
+  word: RuntimeWord,
+  seed: string,
+): Effect.Effect<MeaningChoice[], never, never> {
+  return generateChoicesLenientEffect(deck, word, seed).pipe(
+    Effect.catchAll(() => Effect.succeed([
+      { shortcuts: [{ key: "A" as ChoiceKey, index: 0 }], label: word.meaning.trim(), correct: true },
+    ])),
+  );
+}
+
 export function safeMeaningChoices(deck: RuntimeDeck, word: RuntimeWord, seed: string): MeaningChoice[] {
-  try {
-    return generateChoicesLenient(deck, word, seed);
-  } catch {
-    return [{ shortcuts: [{ key: "A", index: 0 }], label: word.meaning.trim(), correct: true }];
-  }
+  return Effect.runSync(safeMeaningChoicesEffect(deck, word, seed));
 }

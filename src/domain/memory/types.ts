@@ -1,4 +1,7 @@
+import { Effect } from "effect";
 import type { ComponentMemory } from "../../shared/schemas";
+import { runDomain, validTimestamp } from "../effect";
+import type { InvalidTimestampError } from "../errors";
 
 /** An explicit self-rating for the word's single card, applied in Learn Mode.
  * Mirrors the FSRS grade scale. */
@@ -17,17 +20,17 @@ export function cardDueAtMs(card: ComponentMemory): number {
   return Date.parse(card.due);
 }
 
+/** A card is due when its FSRS due date has passed; never-reviewed (new)
+ * cards carry epoch dues and are therefore immediately due. */
+export function isCardDueEffect(card: ComponentMemory, now: string | number | Date): Effect.Effect<boolean, InvalidTimestampError, never> {
+  return Effect.map(validTimestamp(now), (nowMs) => cardDueAtMs(card) <= nowMs);
+}
+
 export function isCardDue(card: ComponentMemory, now: string | number | Date): boolean {
-  return cardDueAtMs(card) <= isoTime(now);
+  return runDomain(isCardDueEffect(card, now));
 }
 
 /** Never-reviewed words are immediately due; a real review is always late or on time. */
 export function hasBeenSeen(card: ComponentMemory): boolean {
   return card.reps > 0;
-}
-
-function isoTime(value: string | number | Date): number {
-  const time = typeof value === "string" ? Date.parse(value) : typeof value === "number" ? value : value.getTime();
-  if (!Number.isFinite(time)) throw new RangeError("now must be a valid timestamp");
-  return time;
 }

@@ -1,6 +1,8 @@
-import { open, readdir, rename, unlink } from "node:fs/promises";
 import { basename, dirname, join } from "node:path";
+import { Data, Effect } from "effect";
 import type { SaveFile } from "../../shared/schemas";
+import { FsError, isEnoent, normalizeError } from "../errors";
+import { FileSystem, type FileWriteHandle } from "../filesystem";
 
 export type AtomicWriteStage =
   | "afterTempOpen"
@@ -14,6 +16,19 @@ export type AtomicWriterOptions = {
   faultInjector?: FaultInjector;
   nonce?: () => string;
 };
+
+/** A fault injector (or another step of the atomic write) raised an error; the
+ * original failure is preserved in `cause`. */
+export class FaultInjectedError extends Data.TaggedError("FaultInjectedError")<{
+  readonly stage: AtomicWriteStage;
+  readonly cause: Error;
+}> {
+  override get message(): string {
+    return this.cause instanceof Error ? this.cause.message : String(this.cause);
+  }
+}
+
+export type AtomicWriteError = FsError | FaultInjectedError;
 
 function sortJson(value: unknown): unknown {
   if (Array.isArray(value)) return value.map(sortJson);
@@ -31,19 +46,6 @@ export function serializeSave(save: SaveFile): string {
   return `${JSON.stringify(sortJson(save), null, 2)}\n`;
 }
 
-async function syncDirectory(directory: string): Promise<void> {
-  let handle;
-  try {
-    handle = await open(directory, "r");
-    await handle.sync();
-  } catch (error) {
-    const code = (error as NodeJS.ErrnoException).code;
-    if (!["EINVAL", "ENOTSUP", "EISDIR", "EPERM"].includes(code ?? "")) throw error;
-  } finally {
-    await handle?.close();
-  }
-}
-
 export class AtomicSaveWriter {
   private readonly faultInjector?: FaultInjector;
   private readonly nonce: () => string;
@@ -56,54 +58,64 @@ export class AtomicSaveWriter {
     this.nonce = options.nonce ?? (() => `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`);
   }
 
-  async cleanupStaleTemps(): Promise<void> {
-    const directory = dirname(this.savePath);
-    const prefixes = [`${basename(this.savePath)}.tmp-`];
-    let entries: string[];
-    try {
-      entries = await readdir(directory);
-    } catch (error) {
-      if ((error as NodeJS.ErrnoException).code === "ENOENT") return;
-      throw error;
-    }
-    await Promise.all(entries
-      .filter((entry) => prefixes.some((prefix) => entry.startsWith(prefix)))
-      .map(async (entry) => {
-        try {
-          await unlink(join(directory, entry));
-        } catch (error) {
-          if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
-        }
-      }));
+  cleanupStaleTemps(): Effect.Effect<void, FsError, FileSystem> {
+    return Effect.gen(this, function* () {
+      const fs = yield* FileSystem;
+      const directory = dirname(this.savePath);
+      const prefixes = [`${basename(this.savePath)}.tmp-`];
+      const entries = yield* fs.readdir(directory).pipe(
+        Effect.catchIf(isEnoent, () => Effect.succeed(null)),
+      );
+      if (entries === null) return;
+      yield* Effect.forEach(
+        entries.filter((entry) => prefixes.some((prefix) => entry.startsWith(prefix))),
+        (entry) => fs.unlink(join(directory, entry)).pipe(Effect.catchIf(isEnoent, () => Effect.void)),
+        { concurrency: "unbounded", discard: true },
+      );
+    });
   }
 
-  async write(save: SaveFile): Promise<void> {
+  /** Temp file, fsync, atomic rename, directory sync — a failure at any stage
+   * never leaves a temp file behind nor truncates the live save. */
+  write(save: SaveFile): Effect.Effect<void, AtomicWriteError, FileSystem> {
     const serialized = serializeSave(save);
     const directory = dirname(this.savePath);
-    const tempPath = `${this.savePath}.tmp-${process.pid}-${this.nonce()}`;
-    let handle;
-    let renamed = false;
+    return Effect.gen(this, function* () {
+      const fs = yield* FileSystem;
+      const tempPath = `${this.savePath}.tmp-${process.pid}-${this.nonce()}`;
+      let handle: FileWriteHandle | undefined;
+      let renamed = false;
+      const cleanup: Effect.Effect<void, never, never> = Effect.gen(function* () {
+        if (handle !== undefined) yield* Effect.ignore(handle.close());
+        if (!renamed) yield* Effect.ignore(fs.unlink(tempPath));
+      });
+      return yield* Effect.gen(this, function* () {
+        handle = yield* fs.openWriteExclusive(tempPath);
+        yield* this.injectFault("afterTempOpen");
 
-    try {
-      handle = await open(tempPath, "wx", 0o600);
-      await this.faultInjector?.("afterTempOpen");
+        const midpoint = Math.max(1, Math.floor(serialized.length / 2));
+        yield* handle.writeText(serialized.slice(0, midpoint));
+        yield* this.injectFault("afterPartialWrite");
+        yield* handle.writeText(serialized.slice(midpoint));
+        yield* handle.sync();
+        yield* this.injectFault("afterFlush");
+        yield* handle.close();
+        handle = undefined;
 
-      const midpoint = Math.max(1, Math.floor(serialized.length / 2));
-      await handle.writeFile(serialized.slice(0, midpoint), "utf8");
-      await this.faultInjector?.("afterPartialWrite");
-      await handle.writeFile(serialized.slice(midpoint), "utf8");
-      await handle.sync();
-      await this.faultInjector?.("afterFlush");
-      await handle.close();
-      handle = undefined;
+        yield* this.injectFault("beforeRename");
+        yield* fs.rename(tempPath, this.savePath);
+        renamed = true;
+        yield* fs.syncDirectory(directory);
+      }).pipe(Effect.ensuring(cleanup));
+    });
+  }
 
-      await this.faultInjector?.("beforeRename");
-      await rename(tempPath, this.savePath);
-      renamed = true;
-      await syncDirectory(directory);
-    } finally {
-      await handle?.close().catch(() => undefined);
-      if (!renamed) await unlink(tempPath).catch(() => undefined);
-    }
+  private injectFault(stage: AtomicWriteStage): Effect.Effect<void, FaultInjectedError, never> {
+    const faultInjector = this.faultInjector;
+    if (faultInjector === undefined) return Effect.void;
+    return Effect.tryPromise({
+      try: () => Promise.resolve(faultInjector(stage)),
+      catch: (cause) => new FaultInjectedError({ stage, cause: normalizeError(cause) }),
+    });
   }
 }

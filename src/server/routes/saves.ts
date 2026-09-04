@@ -1,66 +1,78 @@
 import type { FastifyInstance, FastifyReply } from "fastify";
-import { z } from "zod";
-import { RevisionConflictError, type SaveRepository } from "../saves/repository";
-import { parseSaveRequest } from "../saves/validation";
+import { Effect } from "effect";
+import { FsError, JsonParseError, normalizeError } from "../errors";
+import { FileSystem } from "../filesystem";
+import { runPromiseUnchecked } from "../runtime";
+import type { AtomicWriteError } from "../saves/atomic-writer";
 import type { DeckCatalog } from "../saves/manifests";
+import { RevisionConflictError, type SaveRepository } from "../saves/repository";
+import { parseSaveRequestEffect, SaveValidationError } from "../saves/validation";
 
 export type SaveRoutesOptions = {
   repository: SaveRepository;
   catalog?: DeckCatalog;
 };
 
-function errorResponse(error: unknown, reply: FastifyReply): unknown {
-  if (error instanceof z.ZodError) {
-    return reply.code(400).send({
-      error: "invalid_save",
-      message: "The save request failed validation",
-      issues: error.issues.map((issue) => ({ path: issue.path, message: issue.message })),
-    });
-  }
-  if (error instanceof RevisionConflictError) {
-    return reply.code(409).send({
-      error: "revision_conflict",
-      message: error.message,
-      current: error.current,
-    });
-  }
-  throw error;
-}
+const setNoStore = (reply: FastifyReply): Effect.Effect<void, never, never> =>
+  Effect.sync(() => reply.header("cache-control", "no-store"));
 
-export async function registerSaveRoutes(
-  app: FastifyInstance,
-  options: SaveRoutesOptions,
-): Promise<void> {
+const sendJson = (reply: FastifyReply, code: number, payload: unknown): Effect.Effect<void, never, never> =>
+  Effect.sync(() => reply.code(code).send(payload));
+
+const decodeJsonBody = (body: string): Effect.Effect<unknown, JsonParseError, never> =>
+  Effect.try({ try: () => JSON.parse(body) as unknown, catch: (cause) => new JsonParseError({ cause: normalizeError(cause) }) });
+
+export function registerSaveRoutes(app: FastifyInstance, options: SaveRoutesOptions): void {
   const { repository, catalog } = options;
 
-  app.get("/api/saves/default", async (_request, reply) => {
-    reply.header("cache-control", "no-store");
-    try {
-      const loaded = await repository.load();
-      return loaded.save;
-    } catch (error) {
-      return errorResponse(error, reply);
-    }
-  });
+  const loadDefault = (reply: FastifyReply): Effect.Effect<void, FsError, FileSystem> =>
+    Effect.gen(function* () {
+      yield* setNoStore(reply);
+      const loaded = yield* repository.loadEffect();
+      yield* sendJson(reply, 200, loaded.save);
+    });
 
-  const save = async (body: unknown, reply: FastifyReply, beacon: boolean): Promise<unknown> => {
-    reply.header("cache-control", "no-store");
-    try {
-      const decoded = typeof body === "string" ? JSON.parse(body) as unknown : body;
-      const request = parseSaveRequest(decoded, catalog);
-      const authoritative = await repository.save(request.expectedRevision, request.snapshot);
-      return reply.code(beacon ? 202 : 200).send({
+  /** Expected failures map onto their API responses; unexpected failures
+   * (e.g. fs errors) reject the handler promise and become Fastify 500s. */
+  const save = (
+    body: unknown,
+    reply: FastifyReply,
+    beacon: boolean,
+  ): Effect.Effect<void, FsError | AtomicWriteError, FileSystem> =>
+    Effect.gen(function* () {
+      yield* setNoStore(reply);
+      const decoded = typeof body === "string" ? yield* decodeJsonBody(body) : body;
+      const request = yield* parseSaveRequestEffect(decoded, catalog);
+      const authoritative = yield* repository.saveEffect(request.expectedRevision, request.snapshot);
+      yield* sendJson(reply, beacon ? 202 : 200, {
         revision: authoritative.revision,
         savedAt: authoritative.savedAt,
       });
-    } catch (error) {
-      if (error instanceof SyntaxError) {
-        return reply.code(400).send({ error: "invalid_json", message: "Request body is not valid JSON" });
-      }
-      return errorResponse(error, reply);
-    }
-  };
+    }).pipe(
+      Effect.catchTags({
+        JsonParseError: () =>
+          sendJson(reply, 400, { error: "invalid_json", message: "Request body is not valid JSON" }),
+        SaveValidationError: (error) =>
+          sendJson(reply, 400, {
+            error: "invalid_save",
+            message: "The save request failed validation",
+            issues: error.cause.issues.map((issue) => ({ path: issue.path, message: issue.message })),
+          }),
+        RevisionConflictError: (error) =>
+          sendJson(reply, 409, {
+            error: "revision_conflict",
+            message: error.message,
+            current: error.current,
+          }),
+      }),
+    );
 
-  app.put("/api/saves/default", async (request, reply) => save(request.body, reply, false));
-  app.post("/api/saves/default/beacon", async (request, reply) => save(request.body, reply, true));
+  // Each Fastify handler is a thin Effect boundary; rejections surface the
+  // original error (no FiberFailure wrapper) for Fastify's error logger.
+  app.get("/api/saves/default", (_request, reply) =>
+    runPromiseUnchecked(loadDefault(reply).pipe(Effect.provide(FileSystem.layer))));
+  app.put("/api/saves/default", (request, reply) =>
+    runPromiseUnchecked(save(request.body, reply, false).pipe(Effect.provide(FileSystem.layer))));
+  app.post("/api/saves/default/beacon", (request, reply) =>
+    runPromiseUnchecked(save(request.body, reply, true).pipe(Effect.provide(FileSystem.layer))));
 }

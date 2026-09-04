@@ -1,3 +1,4 @@
+import { Data, Effect } from "effect";
 import { z } from "zod";
 import { DECK_IDS, type DeckId } from "../../shared/constants";
 import {
@@ -240,3 +241,34 @@ export function parseSaveRequest(input: unknown, catalog?: DeckCatalog): SaveReq
   const request = SaveRequestSchema.parse(input);
   return { expectedRevision: request.expectedRevision, snapshot: parseSaveSnapshot(request.snapshot, catalog) };
 }
+
+/** A save payload failed schema or semantic validation. The original Zod
+ * error — with its per-field issues — is preserved for API responses. */
+export class SaveValidationError extends Data.TaggedError("SaveValidationError")<{
+  readonly cause: z.ZodError;
+}> {
+  override get message(): string {
+    return this.cause.message;
+  }
+}
+
+const toValidationError = (cause: unknown): SaveValidationError =>
+  new SaveValidationError({ cause: cause instanceof z.ZodError ? cause : new z.ZodError([]) });
+
+export const parseSaveFileEffect = (
+  input: unknown,
+  catalog?: DeckCatalog,
+): Effect.Effect<z.infer<typeof PersistedSaveSchema>, SaveValidationError, never> =>
+  Effect.try({ try: () => parseSaveFile(input, catalog), catch: toValidationError });
+
+export const parseSaveSnapshotEffect = (
+  input: unknown,
+  catalog?: DeckCatalog,
+): Effect.Effect<SaveSnapshot, SaveValidationError, never> =>
+  Effect.try({ try: () => parseSaveSnapshot(input, catalog), catch: toValidationError });
+
+export const parseSaveRequestEffect = (
+  input: unknown,
+  catalog?: DeckCatalog,
+): Effect.Effect<SaveRequest, SaveValidationError, never> =>
+  Effect.try({ try: () => parseSaveRequest(input, catalog), catch: toValidationError });

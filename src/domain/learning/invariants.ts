@@ -1,4 +1,7 @@
+import { Effect } from "effect";
 import type { LevelProgress, WordProgress } from "../../shared/schemas";
+import { runDomain } from "../effect";
+import { InvalidLevelProgressError } from "../errors";
 import type { LearningDeck } from "./types";
 
 function isNonnegativeInteger(value: number): boolean { return Number.isInteger(value) && value >= 0; }
@@ -64,7 +67,15 @@ export function validateLevelInvariants(level: LevelProgress, deck: LearningDeck
   return errors;
 }
 
+/** Typed variant of {@link assertLevelInvariants}: fails with an
+ * `InvalidLevelProgressError` carrying every violation instead of throwing. */
+export function validateLevelInvariantsEffect(level: LevelProgress, deck: LearningDeck, spawnOrdinal: number): Effect.Effect<void, InvalidLevelProgressError, never> {
+  return Effect.suspend(() => {
+    const errors = validateLevelInvariants(level, deck, spawnOrdinal);
+    return errors.length > 0 ? Effect.fail(new InvalidLevelProgressError({ violations: errors })) : Effect.void;
+  });
+}
+
 export function assertLevelInvariants(level: LevelProgress, deck: LearningDeck, spawnOrdinal: number): void {
-  const errors = validateLevelInvariants(level, deck, spawnOrdinal);
-  if (errors.length > 0) throw new Error(`Invalid level progress:\n- ${errors.join("\n- ")}`);
+  runDomain(validateLevelInvariantsEffect(level, deck, spawnOrdinal));
 }

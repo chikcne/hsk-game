@@ -1,35 +1,65 @@
+import { Effect } from "effect";
 import type { ComponentMemory, RelearnSession, SaveFile } from "../../shared/schemas";
-import { createCardMemory, reviewCardMemory, type MemoryRating } from "../memory";
+import { runDomain, validTimestamp } from "../effect";
+import {
+  DuplicateWordKeysError,
+  EmptyWordSetError,
+  InvalidTimestampError,
+  NoActiveRelearnSessionError,
+  RelearnMembershipError,
+} from "../errors";
+import { createCardMemory, reviewCardMemoryUnchecked, type MemoryRating } from "../memory";
 
 export type { RelearnSession };
 
 export type { MemoryRating as RelearnRating };
 
-/** Creates THE one active Relearn session from selected acquired word keys.
- * Every member receives a fresh, fully independent FSRS card (state New,
- * due epoch, zero counters) stored inside the session — deliberately not
- * the word's main Learn card, which relearn ratings never touch. */
-export function createRelearnSession(wordKeys: readonly string[], now: string | Date): RelearnSession {
-  if (wordKeys.length === 0) throw new RangeError("A relearn session needs at least one word");
-  if (new Set(wordKeys).size !== wordKeys.length) throw new RangeError("Relearn session word keys must be unique");
-  const date = typeof now === "string" ? new Date(now) : now;
-  if (!Number.isFinite(date.getTime())) throw new RangeError("now must be a valid timestamp");
+export type CreateRelearnSessionFailure = DuplicateWordKeysError | EmptyWordSetError | InvalidTimestampError;
+
+/** Typed variant of {@link createRelearnSession}: fails with an
+ * `EmptyWordSetError`, a `DuplicateWordKeysError`, or an
+ * `InvalidTimestampError` instead of throwing. */
+export function createRelearnSessionEffect(wordKeys: readonly string[], now: string | Date): Effect.Effect<RelearnSession, CreateRelearnSessionFailure, never> {
+  return Effect.gen(function* () {
+    if (wordKeys.length === 0) return yield* Effect.fail(new EmptyWordSetError({ subject: "relearn session" }));
+    if (new Set(wordKeys).size !== wordKeys.length) return yield* Effect.fail(new DuplicateWordKeysError());
+    const nowMs = yield* validTimestamp(now);
+    return yield* Effect.sync(() => createRelearnSessionUnchecked(wordKeys, nowMs));
+  });
+}
+
+function createRelearnSessionUnchecked(wordKeys: readonly string[], nowMs: number): RelearnSession {
+  const date = new Date(nowMs);
   const cards: RelearnSession["cards"] = {};
   for (const key of wordKeys) cards[key] = { card: createCardMemory(), reviews: 0 };
   return { startedAt: date.toISOString(), wordKeys: [...wordKeys], cards };
+}
+
+/** Creates THE one active Relearn session from selected acquired word keys.
+ * Every member receives a fresh, fully independent FSRS card (state New,
+ * due epoch, zero counters) stored inside the session — deliberately not
+ * the word's main Learn card, which relearn ratings never touch.
+ *
+ * Legacy throwing adapter: raises the same `RangeError`s as before. */
+export function createRelearnSession(wordKeys: readonly string[], now: string | Date): RelearnSession {
+  return runDomain(createRelearnSessionEffect(wordKeys, now));
 }
 
 export type NextRelearnCard =
   | { status: "card"; wordKey: string; /** True when the independent card is due right now (false = learn-ahead). */ dueNow: boolean }
   | { status: "complete" };
 
+/** Typed variant of {@link nextRelearnKey}: fails with an
+ * `InvalidTimestampError` instead of throwing a `RangeError`. */
+export function nextRelearnKeyEffect(session: RelearnSession, now: string | Date): Effect.Effect<NextRelearnCard, InvalidTimestampError, never> {
+  return Effect.map(validTimestamp(now), (nowMs) => nextRelearnKeyUnchecked(session, nowMs));
+}
+
 /** Picks the next member to serve: the earliest due independent card, ties
  * broken by selection order (wordKeys order) for determinism. When nothing
  * is currently due the earliest future card is served anyway — Anki-style
  * learn-ahead, exactly like Learn Mode. */
-export function nextRelearnKey(session: RelearnSession, now: string | Date): NextRelearnCard {
-  const nowMs = typeof now === "string" ? Date.parse(now) : now.getTime();
-  if (!Number.isFinite(nowMs)) throw new RangeError("now must be a valid timestamp");
+function nextRelearnKeyUnchecked(session: RelearnSession, nowMs: number): NextRelearnCard {
   let best: { key: string; dueMs: number } | null = null;
   for (const key of session.wordKeys) {
     const state = session.cards[key];
@@ -39,6 +69,10 @@ export function nextRelearnKey(session: RelearnSession, now: string | Date): Nex
   }
   if (best === null) return { status: "complete" };
   return { status: "card", wordKey: best.key, dueNow: best.dueMs <= nowMs };
+}
+
+export function nextRelearnKey(session: RelearnSession, now: string | Date): NextRelearnCard {
+  return runDomain(nextRelearnKeyEffect(session, now));
 }
 
 export type RelearnRatingApplication = {
@@ -58,36 +92,35 @@ export type RelearnRatingApplication = {
   sessionCompleted: boolean;
 };
 
-/**
- * Applies one explicit rating to a member's INDEPENDENT card inside the
- * active Relearn session. One pure, immutable step:
- *
- * 1. the session card advances with FSRS and its `reviews` counter bumps —
- *    main Learn cards in `save.levels` are never read or written here;
- * 2. when the post-rating card reaches FSRS state `review` the word has
- *    re-finished: its key is removed from the session and prepended to
- *    `acquired_words` (moved to newest/front, deduped);
- * 3. when no members remain the session clears to null.
- *
- * Persistence is the caller's job (the atomic save queue); save after every
- * rating so exiting mid-session preserves exact state.
- */
-export function applyRelearnRating(
+export type ApplyRelearnRatingFailure = InvalidTimestampError | NoActiveRelearnSessionError | RelearnMembershipError;
+
+/** Typed variant of {@link applyRelearnRating}: fails with an
+ * `InvalidTimestampError`, a `NoActiveRelearnSessionError`, or a
+ * `RelearnMembershipError` instead of throwing. */
+export function applyRelearnRatingEffect(
   save: SaveFile,
   wordKey: string,
   rating: MemoryRating,
   now: string | Date = new Date(),
-): RelearnRatingApplication {
-  const date = typeof now === "string" ? new Date(now) : now;
-  if (!Number.isFinite(date.getTime())) throw new RangeError("now must be a valid timestamp");
-  const session = save.relearnSession;
-  if (!session) throw new Error("No active relearn session");
-  const state = session.cards[wordKey];
-  if (!state || !session.wordKeys.includes(wordKey)) {
-    throw new Error(`Word key is not a member of the active relearn session: ${wordKey}`);
-  }
+): Effect.Effect<RelearnRatingApplication, ApplyRelearnRatingFailure, never> {
+  return Effect.gen(function* () {
+    const date = typeof now === "string" ? new Date(now) : now;
+    if (!Number.isFinite(date.getTime())) return yield* Effect.fail(new InvalidTimestampError({ param: "now" }));
+    const session = save.relearnSession;
+    if (!session) return yield* Effect.fail(new NoActiveRelearnSessionError());
+    const state = session.cards[wordKey];
+    if (!state || !session.wordKeys.includes(wordKey)) {
+      return yield* Effect.fail(new RelearnMembershipError({ wordKey }));
+    }
+    return yield* Effect.sync(() => applyRelearnRatingUnchecked(save, wordKey, rating, date));
+  });
+}
 
-  const card = reviewCardMemory(state.card, rating, date);
+function applyRelearnRatingUnchecked(save: SaveFile, wordKey: string, rating: MemoryRating, date: Date): RelearnRatingApplication {
+  const session = save.relearnSession!;
+  const state = session.cards[wordKey]!;
+
+  const card = reviewCardMemoryUnchecked(state.card, rating, date.getTime());
   const keyFinished = card.state === "review";
 
   let nextSession: RelearnSession | null = {
@@ -114,4 +147,30 @@ export function applyRelearnRating(
     reacquired,
     sessionCompleted: nextSession === null,
   };
+}
+
+/**
+ * Applies one explicit rating to a member's INDEPENDENT card inside the
+ * active Relearn session (see {@link applyRelearnRatingEffect}). One pure,
+ * immutable step:
+ *
+ * 1. the session card advances with FSRS and its `reviews` counter bumps —
+ *    main Learn cards in `save.levels` are never read or written here;
+ * 2. when the post-rating card reaches FSRS state `review` the word has
+ *    re-finished: its key is removed from the session and prepended to
+ *    `acquired_words` (moved to newest/front, deduped);
+ * 3. when no members remain the session clears to null.
+ *
+ * Persistence is the caller's job (the atomic save queue); save after every
+ * rating so exiting mid-session preserves exact state.
+ *
+ * Legacy throwing adapter: raises the same `RangeError`/`Error`s as before.
+ */
+export function applyRelearnRating(
+  save: SaveFile,
+  wordKey: string,
+  rating: MemoryRating,
+  now: string | Date = new Date(),
+): RelearnRatingApplication {
+  return runDomain(applyRelearnRatingEffect(save, wordKey, rating, now));
 }

@@ -1,4 +1,6 @@
+import { Data, Effect } from "effect";
 import type { DeckId } from "../../shared/constants";
+import { HttpFetch, HttpFetchLive } from "../api/saves";
 
 export type StrokeCharacterData = {
   strokes: string[];
@@ -25,46 +27,92 @@ type StrokeBundle = {
 };
 
 type StrokeBundleId = DeckId | "ui";
-const bundlePromises = new Map<StrokeBundleId, Promise<StrokeDataMap>>();
+
 const SOURCE_COMMIT = "618dbab8a8ddefb958763c8b4afbaa741a4460de";
 const SOURCE_SHA256 = "a28c478b5178e98f67f510b2d52fde08a69dc664654ef43498253b9b764d46ee";
 
-function parseBundle(value: unknown, id: StrokeBundleId): StrokeDataMap {
-  if (!value || typeof value !== "object") throw new Error(`${id} stroke bundle is not an object`);
+/** The bundle at `/stroke-data/<id>.json` did not match the expected schema
+ * or could not be fetched. Non-fatal: callers fall back to placeholders. */
+export class StrokeBundleError extends Data.TaggedError("StrokeBundleError")<{
+  readonly message: string;
+  readonly cause?: Error;
+}> {}
+
+/** Validates an untrusted bundle payload against the expected schema. */
+const parseBundle = (value: unknown, id: StrokeBundleId): Effect.Effect<StrokeDataMap, StrokeBundleError, never> => {
+  if (!value || typeof value !== "object") {
+    return Effect.fail(new StrokeBundleError({ message: `${id} stroke bundle is not an object` }));
+  }
   const bundle = value as Partial<StrokeBundle>;
   if (bundle.schemaVersion !== 1 || bundle.sourceCommit !== SOURCE_COMMIT || bundle.sourceSha256 !== SOURCE_SHA256 || !bundle.characters || typeof bundle.characters !== "object") {
-    throw new Error(`${id} stroke bundle has incompatible metadata`);
+    return Effect.fail(new StrokeBundleError({ message: `${id} stroke bundle has incompatible metadata` }));
   }
   const result = new Map<string, StrokeCharacterData>();
   for (const [character, data] of Object.entries(bundle.characters)) {
     if (!data || !Array.isArray(data.strokes) || data.strokes.length === 0 || !Array.isArray(data.medians) || data.medians.length !== data.strokes.length) {
-      throw new Error(`${id} stroke data for ${character} is malformed`);
+      return Effect.fail(new StrokeBundleError({ message: `${id} stroke data for ${character} is malformed` }));
     }
     result.set(character, data);
   }
-  return result;
-}
+  return Effect.succeed(result);
+};
 
-/** Loads one local vector bundle. Failure is deliberately non-fatal so the UI
- * can retain its layout and accessible text while showing a missing-glyph box. */
-function loadBundle(id: StrokeBundleId): Promise<StrokeDataMap> {
-  const cached = bundlePromises.get(id);
-  if (cached) return cached;
-  const request = fetch(`/stroke-data/${id}.json`)
-    .then(async (response) => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return parseBundle(await response.json(), id);
-    })
-    .catch((error: unknown) => {
-      console.error(`[stroke-data] Could not load ${id}; using vector placeholders.`, error);
-      return new Map<string, StrokeCharacterData>();
+const fetchBundle = (id: StrokeBundleId): Effect.Effect<StrokeDataMap, StrokeBundleError, HttpFetch> =>
+  Effect.gen(function* () {
+    const fetch = yield* HttpFetch;
+    const response = yield* fetch(`/stroke-data/${id}.json`).pipe(
+      Effect.mapError((cause) => new StrokeBundleError({ message: `${id} stroke bundle request failed`, cause })),
+    );
+    if (!response.ok) {
+      return yield* Effect.fail(new StrokeBundleError({ message: `HTTP ${response.status}` }));
+    }
+    const json = yield* Effect.tryPromise({
+      try: () => response.json() as Promise<unknown>,
+      catch: (cause) =>
+        new StrokeBundleError({
+          message: `${id} stroke bundle is not readable JSON`,
+          cause: cause instanceof Error ? cause : new Error(String(cause)),
+        }),
     });
-  bundlePromises.set(id, request);
-  return request;
-}
+    return yield* parseBundle(json, id);
+  });
 
-export const loadStrokeBundle = (id: DeckId): Promise<StrokeDataMap> => loadBundle(id);
-export const loadUiStrokeBundle = (): Promise<StrokeDataMap> => loadBundle("ui");
+/** First request per bundle wins (memoized, shared across callers). A failed
+ * bundle is deliberately non-fatal: it logs once and falls back to an empty
+ * map so the UI can retain its layout and accessible text while showing a
+ * missing-glyph box. */
+const bundlePrograms = new Map<StrokeBundleId, Effect.Effect<StrokeDataMap, never, HttpFetch>>();
+
+const bundleProgram = (id: StrokeBundleId): Effect.Effect<StrokeDataMap, never, HttpFetch> => {
+  const cached = bundlePrograms.get(id);
+  if (cached) return cached;
+  const program = Effect.runSync(Effect.cached(fetchBundle(id).pipe(
+    Effect.catchAll((error) =>
+      Effect.sync(() => {
+        console.error(`[stroke-data] Could not load ${id}; using vector placeholders.`, error);
+        return new Map<string, StrokeCharacterData>();
+      })
+    ),
+  )));
+  bundlePrograms.set(id, program);
+  return program;
+};
+
+const provideLive = <A>(program: Effect.Effect<A, never, HttpFetch>): Effect.Effect<A, never, never> =>
+  Effect.provide(program, HttpFetchLive);
+
+export const loadStrokeBundleEffect = (
+  id: DeckId,
+): Effect.Effect<StrokeDataMap, never, never> => provideLive(bundleProgram(id));
+
+export const loadUiStrokeBundleEffect: Effect.Effect<StrokeDataMap, never, never> =
+  provideLive(bundleProgram("ui"));
+
+export const loadStrokeBundle = (id: DeckId): Promise<StrokeDataMap> =>
+  Effect.runPromise(loadStrokeBundleEffect(id));
+
+export const loadUiStrokeBundle = (): Promise<StrokeDataMap> =>
+  Effect.runPromise(loadUiStrokeBundleEffect);
 
 export function mergeStrokeData(...maps: readonly StrokeDataMap[]): StrokeDataMap {
   const merged = new Map<string, StrokeCharacterData>();
@@ -72,7 +120,12 @@ export function mergeStrokeData(...maps: readonly StrokeDataMap[]): StrokeDataMa
   return merged;
 }
 
-export async function loadStrokeBundles(ids: readonly DeckId[]): Promise<StrokeDataMap> {
-  const bundles = await Promise.all(ids.map(loadStrokeBundle));
-  return mergeStrokeData(...bundles);
-}
+export const loadStrokeBundlesEffect = (
+  ids: readonly DeckId[],
+): Effect.Effect<StrokeDataMap, never, never> => Effect.map(
+  provideLive(Effect.all(ids.map(bundleProgram), { concurrency: "unbounded" })),
+  (bundles) => mergeStrokeData(...bundles),
+);
+
+export const loadStrokeBundles = (ids: readonly DeckId[]): Promise<StrokeDataMap> =>
+  Effect.runPromise(loadStrokeBundlesEffect(ids));

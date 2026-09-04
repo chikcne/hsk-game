@@ -1,4 +1,5 @@
 import HanziWriter from "hanzi-writer";
+import { Data, Effect } from "effect";
 import { memo, useEffect, useRef, useState } from "react";
 import { STROKE_DRAW_MS, STROKE_GAP_MS, type StrokeCharacterData } from "../data/strokeData";
 
@@ -9,14 +10,71 @@ const INK_COLORS: Record<StrokeInk, string> = {
   target: "#c03a1e",
   solved: "#8f8163",
 };
+
+/** A Hanzi Writer operation failed (rejected local data, animation error, or
+ * a character missing from the loaded bundle). The glyph falls back to a
+ * missing-vector box. */
+export class HanziWriterError extends Data.TaggedError("HanziWriterError")<{
+  readonly message: string;
+  readonly cause?: Error;
+}> {}
+
+const toError = (cause: unknown): Error => (cause instanceof Error ? cause : new Error(String(cause)));
+
 const reportedMissing = new Set<string>();
 
-function reportFallback(character: string, reason: unknown) {
-  const key = `${character}:${String(reason)}`;
+function reportFallback(character: string, reason: HanziWriterError) {
+  const key = `${character}:${reason.message}`;
   if (reportedMissing.has(key)) return;
   reportedMissing.add(key);
   console.error(`[stroke-renderer] Missing vector for ${character}.`, reason);
 }
+
+const setCharacter = (writer: HanziWriter, character: string): Effect.Effect<void, HanziWriterError, never> =>
+  Effect.tryPromise({
+    try: () => writer.setCharacter(character),
+    catch: (cause) =>
+      new HanziWriterError({ message: `Hanzi Writer rejected data for ${character}`, cause: toError(cause) }),
+  });
+
+const animateCharacter = (writer: HanziWriter): Effect.Effect<void, HanziWriterError, never> =>
+  Effect.tryPromise({
+    try: () => writer.animateCharacter(),
+    catch: (cause) => new HanziWriterError({ message: "stroke animation failed", cause: toError(cause) }),
+  });
+
+const pauseAnimation = (writer: HanziWriter): Effect.Effect<void, HanziWriterError, never> =>
+  Effect.tryPromise({
+    try: () => writer.pauseAnimation(),
+    catch: (cause) => new HanziWriterError({ message: "pausing animation failed", cause: toError(cause) }),
+  });
+
+const toggleAnimation = (writer: HanziWriter, paused: boolean): Effect.Effect<void, HanziWriterError, never> =>
+  Effect.tryPromise({
+    try: () => (paused ? writer.pauseAnimation() : writer.resumeAnimation()),
+    catch: (cause) => new HanziWriterError({ message: "toggling animation failed", cause: toError(cause) }),
+  });
+
+/** Active (unpaused) time counted down on animation frames. Interruption
+ * cancels the pending frame via the async canceler. */
+const waitForSequenceTurn = (isPaused: () => boolean, budgetMs: number): Effect.Effect<void, never, never> =>
+  Effect.async<void>((resume) => {
+    let remaining = Math.max(0, budgetMs);
+    let previous = performance.now();
+    let frame: number | null = null;
+    const tick = (now: number) => {
+      const elapsed = Math.min(100, now - previous);
+      previous = now;
+      if (!isPaused()) remaining -= elapsed;
+      if (remaining <= 0) resume(Effect.void);
+      else frame = window.requestAnimationFrame(tick);
+    };
+    if (remaining === 0) resume(Effect.void);
+    else frame = window.requestAnimationFrame(tick);
+    return Effect.sync(() => {
+      if (frame !== null) window.cancelAnimationFrame(frame);
+    });
+  });
 
 type Props = {
   character: string;
@@ -48,7 +106,6 @@ function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, writeSpee
     const host = hostRef.current;
     if (!host || failed) return;
     let disposed = false;
-    let delayFrame: number | null = null;
     const initialSize = Math.max(1, Math.round(host.getBoundingClientRect().width || 48));
     const writer = new HanziWriter(host, {
       width: initialSize,
@@ -70,46 +127,30 @@ function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, writeSpee
       },
       onLoadCharDataError: (error) => {
         if (disposed) return;
-        reportFallback(character, error ?? "Hanzi Writer rejected local data");
+        reportFallback(character, new HanziWriterError({
+          message: "Hanzi Writer rejected local data",
+          cause: error instanceof Error ? error : undefined,
+        }));
         setFailed(true);
       },
     });
     writerRef.current = writer;
-    const waitForSequenceTurn = () => new Promise<void>((resolve) => {
-      let remaining = Math.max(0, startDelayMs);
-      let previous = performance.now();
-      const tick = (now: number) => {
+    const onSequenceFailure = (error: HanziWriterError) =>
+      Effect.sync(() => {
         if (disposed) return;
-        const elapsed = Math.min(100, now - previous);
-        previous = now;
-        if (!pausedRef.current) remaining -= elapsed;
-        if (remaining <= 0) resolve();
-        else delayFrame = window.requestAnimationFrame(tick);
-      };
-      if (remaining === 0) resolve();
-      else delayFrame = window.requestAnimationFrame(tick);
-    });
-    void writer.setCharacter(character).then(async () => {
-      if (disposed) {
-        writer._renderState?.cancelAll();
-        writer._hanziWriterRenderer?.destroy();
-        return;
-      }
-      await waitForSequenceTurn();
-      if (disposed) return;
-      void writer.animateCharacter().catch((error) => {
-        if (!disposed) {
-          reportFallback(character, error);
-          setFailed(true);
-        }
-      });
-      if (pausedRef.current) void writer.pauseAnimation();
-    }).catch((error) => {
-      if (!disposed) {
         reportFallback(character, error);
         setFailed(true);
-      }
+      });
+    // Load local data, wait for this character's turn in the phrase cadence,
+    // then animate; a paused start arms the writer in place.
+    const sequence = Effect.gen(function* () {
+      yield* setCharacter(writer, character);
+      yield* waitForSequenceTurn(() => pausedRef.current, startDelayMs);
+      yield* Effect.fork(animateCharacter(writer).pipe(Effect.catchAll(onSequenceFailure)));
+      if (pausedRef.current) yield* Effect.ignore(pauseAnimation(writer));
     });
+    const fiber = Effect.runFork(Effect.catchAll(sequence, onSequenceFailure));
+
     const observer = typeof ResizeObserver === "undefined" ? null : new ResizeObserver((entries) => {
       const size = Math.max(1, Math.round(entries[0]?.contentRect.width ?? initialSize));
       writer.updateDimensions({ width: size, height: size, padding: Math.max(1, size * 0.035) });
@@ -117,7 +158,7 @@ function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, writeSpee
     observer?.observe(host);
     return () => {
       disposed = true;
-      if (delayFrame !== null) window.cancelAnimationFrame(delayFrame);
+      fiber.unsafeInterruptAsFork(fiber.id());
       observer?.disconnect();
       writer._renderState?.cancelAll();
       writer._hanziWriterRenderer?.destroy();
@@ -129,7 +170,7 @@ function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, writeSpee
   useEffect(() => {
     const writer = writerRef.current;
     if (!writer) return;
-    void (paused ? writer.pauseAnimation() : writer.resumeAnimation());
+    Effect.runFork(Effect.ignore(toggleAnimation(writer, paused)));
   }, [paused]);
 
   if (failed) return <span className="stroke-character-missing" aria-hidden="true" />;
@@ -150,7 +191,9 @@ function StaticStrokeOrderCharacter({ character, data }: { character: string; da
 
 function StrokeOrderCharacterComponent(props: Props) {
   useEffect(() => {
-    if (!props.data) reportFallback(props.character, "character is absent from the loaded bundle");
+    if (!props.data) {
+      reportFallback(props.character, new HanziWriterError({ message: "character is absent from the loaded bundle" }));
+    }
   }, [props.character, props.data]);
 
   if (!props.data) return <span className="stroke-character-missing" aria-hidden="true" />;

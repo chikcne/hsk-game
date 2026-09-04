@@ -1,8 +1,11 @@
+import { Effect } from "effect";
 import type { DeckId } from "../../shared/constants";
 import type { SaveFile } from "../../shared/schemas";
-import { reviewCardMemory } from "../memory";
+import { runDomain } from "../effect";
+import { InvalidTimestampError, MissingLevelProgressError, UnknownWordError } from "../errors";
+import { reviewCardMemoryUnchecked } from "../memory";
 import { reviewWordKey } from "../review";
-import { nextLearnCardId, remainingLearnWordIds } from "./session";
+import { nextLearnCardIdUnchecked, remainingLearnWordIds } from "./session";
 import type { LearnRating, LearnRatingApplication } from "./types";
 
 /** Prepends a key to the ordered `acquired_words` table unless already
@@ -32,21 +35,40 @@ export function acquireWordKey(acquiredWords: readonly string[], key: string): {
  * Persistence is the caller's job (the existing atomic save queue); this
  * function only produces the next snapshot.
  */
-export function applyLearnRating(
+export type ApplyLearnRatingFailure = InvalidTimestampError | MissingLevelProgressError | UnknownWordError;
+
+/** Typed variant of {@link applyLearnRating}: fails with an
+ * `InvalidTimestampError`, a `MissingLevelProgressError`, or an
+ * `UnknownWordError` instead of throwing. */
+export function applyLearnRatingEffect(
   save: SaveFile,
   deckId: DeckId,
   wordId: string,
   rating: LearnRating,
   now: string | Date = new Date(),
-): LearnRatingApplication {
-  const date = typeof now === "string" ? new Date(now) : now;
-  if (!Number.isFinite(date.getTime())) throw new RangeError("now must be a valid timestamp");
-  const level = save.levels[deckId];
-  if (!level) throw new Error(`Missing level progress for ${deckId}`);
-  const word = level.words[wordId];
-  if (!word) throw new Error(`Unknown word ID: ${wordId}`);
+): Effect.Effect<LearnRatingApplication, ApplyLearnRatingFailure, never> {
+  return Effect.gen(function* () {
+    const date = typeof now === "string" ? new Date(now) : now;
+    if (!Number.isFinite(date.getTime())) return yield* Effect.fail(new InvalidTimestampError({ param: "now" }));
+    const level = save.levels[deckId];
+    if (!level) return yield* Effect.fail(new MissingLevelProgressError({ deckId }));
+    const word = level.words[wordId];
+    if (!word) return yield* Effect.fail(new UnknownWordError({ wordId }));
+    return yield* Effect.sync(() => applyLearnRatingUnchecked(save, deckId, wordId, rating, date));
+  });
+}
 
-  const card = reviewCardMemory(word.card, rating, date);
+function applyLearnRatingUnchecked(
+  save: SaveFile,
+  deckId: DeckId,
+  wordId: string,
+  rating: LearnRating,
+  date: Date,
+): LearnRatingApplication {
+  const level = save.levels[deckId]!;
+  const word = level.words[wordId]!;
+
+  const card = reviewCardMemoryUnchecked(word.card, rating, date.getTime());
   const updatedWord = {
     ...word,
     card,
@@ -85,7 +107,8 @@ export function applyLearnRating(
     const remaining = remainingLearnWordIds(updated, nextLevel);
     sessionCompleted = remaining.length === 0;
     if (!sessionCompleted) {
-      const next = nextLearnCardId(updated, nextLevel, date);
+      const next = nextLearnCardIdUnchecked(updated, nextLevel, date.getTime());
+      // Impossible for a nonempty remaining membership; surfaces as a defect.
       if (next.status !== "card") throw new Error("An active Learn session must have a next word");
       // Persist the next presentation in the same snapshot as this rating.
       // A refresh can now resume the exact displayed card without rerunning
@@ -107,4 +130,20 @@ export function applyLearnRating(
     wordCompleted,
     sessionCompleted,
   };
+}
+
+/**
+ * Applies one explicit Learn self-rating to a word's card (see
+ * {@link applyLearnRatingEffect}).
+ *
+ * Legacy throwing adapter: raises the same `RangeError`/`Error`s as before.
+ */
+export function applyLearnRating(
+  save: SaveFile,
+  deckId: DeckId,
+  wordId: string,
+  rating: LearnRating,
+  now: string | Date = new Date(),
+): LearnRatingApplication {
+  return runDomain(applyLearnRatingEffect(save, deckId, wordId, rating, now));
 }

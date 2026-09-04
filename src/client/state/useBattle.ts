@@ -1,3 +1,4 @@
+import { Effect } from "effect";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   BASE_TRAVEL_MS, DANGER_ZONE_PROGRESS, MAX_ACTIVE_ENEMIES, type ChoiceKey,
@@ -265,9 +266,12 @@ export function useBattle(
   const playWordAudio = useCallback((word: RuntimeWord) => {
     const source = wordAudioSource(deck.id, word);
     if (!source) return;
-    void wordAudioPlayer.play(source, settings.masterVolume)
-      .then(() => setAudioError(false))
-      .catch(() => setAudioError(true));
+    Effect.runFork(wordAudioPlayer.playEffect(source, settings.masterVolume).pipe(
+      Effect.match({
+        onFailure: () => setAudioError(true),
+        onSuccess: () => setAudioError(false),
+      }),
+    ));
   }, [deck.id, settings.masterVolume, wordAudioPlayer]);
 
   const beginMeaning = useCallback((enemy: Enemy, word: RuntimeWord, pinyinMs: number, autocompleted = false) => {

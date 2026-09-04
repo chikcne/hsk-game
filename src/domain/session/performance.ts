@@ -1,3 +1,7 @@
+import { Effect } from "effect";
+import { runDomain } from "../effect";
+import { NonFiniteNumberError } from "../errors";
+
 const MIN_PERFORMANCE_MULTIPLIER = 0.7;
 const MAX_PERFORMANCE_MULTIPLIER = 1.5;
 const PERFORMANCE_SMOOTHING = 0.3;
@@ -50,29 +54,65 @@ export function nextPerformanceMultiplier(
   return clamp(safeCurrent + (target - safeCurrent) * PERFORMANCE_SMOOTHING, MIN_PERFORMANCE_MULTIPLIER, MAX_PERFORMANCE_MULTIPLIER);
 }
 
-/**
- * Scales the base spawn timer according to the mastery of the word that just
- * spawned. New words leave 160% of the base interval before the next word,
- * 50%-mastered words leave 100%, and mastered words leave 40%.
- */
-export function masteryAdjustedSpawnDelayMs(configuredIntervalMs: number, masteryLevel: number): number {
-  if (!Number.isFinite(masteryLevel)) throw new RangeError("masteryLevel must be finite");
+export type MasteryAdjustedSpawnDelayFailure = NonFiniteNumberError;
+
+function masteryAdjustedSpawnDelayMsUnchecked(configuredIntervalMs: number, masteryLevel: number): number {
   const normalizedMastery = clamp(masteryLevel, 0, 100) / 100;
   const delayPercent = MAX_NEW_WORD_SPAWN_DELAY_PERCENT
     + normalizedMastery * (MIN_MASTERED_WORD_SPAWN_DELAY_PERCENT - MAX_NEW_WORD_SPAWN_DELAY_PERCENT);
   return configuredIntervalMs * delayPercent / 100;
 }
 
-/** Strong performance shortens the mastery-adjusted timer; weak performance extends it. */
+/** Typed variant of {@link masteryAdjustedSpawnDelayMs}: fails with a
+ * `NonFiniteNumberError` instead of throwing a `RangeError`. */
+export function masteryAdjustedSpawnDelayMsEffect(configuredIntervalMs: number, masteryLevel: number): Effect.Effect<number, MasteryAdjustedSpawnDelayFailure, never> {
+  return Effect.suspend(() =>
+    Number.isFinite(masteryLevel)
+      ? Effect.succeed(masteryAdjustedSpawnDelayMsUnchecked(configuredIntervalMs, masteryLevel))
+      : Effect.fail(new NonFiniteNumberError({ param: "masteryLevel" })),
+  );
+}
+
+/**
+ * Scales the base spawn timer according to the mastery of the word that just
+ * spawned. New words leave 160% of the base interval before the next word,
+ * 50%-mastered words leave 100%, and mastered words leave 40%.
+ *
+ * Legacy throwing adapter: raises the same `RangeError` as before.
+ */
+export function masteryAdjustedSpawnDelayMs(configuredIntervalMs: number, masteryLevel: number): number {
+  return runDomain(masteryAdjustedSpawnDelayMsEffect(configuredIntervalMs, masteryLevel));
+}
+
+export type PerformanceAdjustedSpawnDelayFailure = NonFiniteNumberError;
+
+/** Typed variant of {@link performanceAdjustedSpawnDelayMs}. */
+export function performanceAdjustedSpawnDelayMsEffect(
+  configuredIntervalMs: number,
+  performanceMultiplier: number,
+  hasActiveEnemies: boolean,
+  previousWordMastery = 50,
+): Effect.Effect<number, PerformanceAdjustedSpawnDelayFailure, never> {
+  return Effect.gen(function* () {
+    const base = yield* masteryAdjustedSpawnDelayMsEffect(configuredIntervalMs, previousWordMastery);
+    return yield* Effect.sync(() => {
+      const multiplier = clamp(performanceMultiplier, MIN_PERFORMANCE_MULTIPLIER, MAX_PERFORMANCE_MULTIPLIER);
+      const adjusted = base / multiplier;
+      return hasActiveEnemies ? adjusted : Math.min(adjusted, EMPTY_BATTLEFIELD_SPAWN_DELAY_MS);
+    });
+  });
+}
+
+/** Strong performance shortens the mastery-adjusted timer; weak performance extends it.
+ *
+ * Legacy throwing adapter: raises the same `RangeError` as before. */
 export function performanceAdjustedSpawnDelayMs(
   configuredIntervalMs: number,
   performanceMultiplier: number,
   hasActiveEnemies: boolean,
   previousWordMastery = 50,
 ): number {
-  const multiplier = clamp(performanceMultiplier, MIN_PERFORMANCE_MULTIPLIER, MAX_PERFORMANCE_MULTIPLIER);
-  const adjusted = masteryAdjustedSpawnDelayMs(configuredIntervalMs, previousWordMastery) / multiplier;
-  return hasActiveEnemies ? adjusted : Math.min(adjusted, EMPTY_BATTLEFIELD_SPAWN_DELAY_MS);
+  return runDomain(performanceAdjustedSpawnDelayMsEffect(configuredIntervalMs, performanceMultiplier, hasActiveEnemies, previousWordMastery));
 }
 
 /** Natural cadence for a pre-spawn write of `fullLeadMs` when the battlefield

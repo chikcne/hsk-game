@@ -1,3 +1,4 @@
+import { Effect } from "effect";
 import {
   REVIEW_FULL_SCALE_WORD_COUNT,
   REVIEW_MIN_ACQUIRED_WORDS,
@@ -5,6 +6,8 @@ import {
   REVIEW_RECENT_TIER_RANK_LIMIT,
 } from "../../shared/constants";
 import type { SchedulerSnapshot } from "../learning";
+import { runDomain } from "../effect";
+import { NonNegativeIntegerError, PositiveIntegerError } from "../errors";
 import { Xoshiro128StarStar, type RandomSource, type RandomState } from "../random";
 
 /** Recency tier of an acquired word, judged purely by its position in the
@@ -15,9 +18,14 @@ import { Xoshiro128StarStar, type RandomSource, type RandomState } from "../rand
  * FSRS state, due dates, and retrievability play no part in selection. */
 export type RecencyLabel = "new" | "recent" | "old";
 
+export type RecencyOfRankFailure = NonNegativeIntegerError | PositiveIntegerError;
+
+export type BuildReviewPlanFailure = NonNegativeIntegerError;
+
 function reviewScale(acquiredWordCount: number): number {
+  // Validated by every typed entry point below; kept as a defect guard.
   if (!Number.isInteger(acquiredWordCount) || acquiredWordCount <= 0) {
-    throw new RangeError("acquiredWordCount must be a positive integer");
+    throw new PositiveIntegerError({ param: "acquiredWordCount" });
   }
   return Math.min(1, acquiredWordCount / REVIEW_FULL_SCALE_WORD_COUNT);
 }
@@ -30,28 +38,45 @@ function tierRankLimits(acquiredWordCount: number): { newLimit: number; recentLi
   };
 }
 
+/** Typed variant of {@link recencyLabelOfRank}: fails with a
+ * `NonNegativeIntegerError` or a `PositiveIntegerError` instead of throwing
+ * `RangeError`s. */
+export function recencyLabelOfRankEffect(rank: number, acquiredWordCount = REVIEW_FULL_SCALE_WORD_COUNT): Effect.Effect<RecencyLabel, RecencyOfRankFailure, never> {
+  return Effect.gen(function* () {
+    if (!Number.isInteger(rank) || rank < 0) return yield* Effect.fail(new NonNegativeIntegerError({ param: "rank" }));
+    if (!Number.isInteger(acquiredWordCount) || acquiredWordCount <= 0) return yield* Effect.fail(new PositiveIntegerError({ param: "acquiredWordCount" }));
+    const { newLimit, recentLimit } = tierRankLimits(acquiredWordCount);
+    if (rank < newLimit) return "new";
+    if (rank < recentLimit) return "recent";
+    return "old";
+  });
+}
+
 export function recencyLabelOfRank(
   rank: number,
   acquiredWordCount = REVIEW_FULL_SCALE_WORD_COUNT,
 ): RecencyLabel {
-  if (!Number.isInteger(rank) || rank < 0) throw new RangeError("rank must be a nonnegative integer");
-  const { newLimit, recentLimit } = tierRankLimits(acquiredWordCount);
-  if (rank < newLimit) return "new";
-  if (rank < recentLimit) return "recent";
-  return "old";
+  return runDomain(recencyLabelOfRankEffect(rank, acquiredWordCount));
 }
 
 /** Spawn pressure in 0..1 derived from the recency rank. Pressure normally
  * reaches its maximum by rank 100; for eligible pools below 100, that range
  * scales with the pool (rank / acquiredWordCount). Drives enemy speed and
  * spawn delay; never FSRS memory. */
+export function recencyPressureOfRankEffect(rank: number, acquiredWordCount = REVIEW_FULL_SCALE_WORD_COUNT): Effect.Effect<number, RecencyOfRankFailure, never> {
+  return Effect.gen(function* () {
+    if (!Number.isInteger(rank) || rank < 0) return yield* Effect.fail(new NonNegativeIntegerError({ param: "rank" }));
+    if (!Number.isInteger(acquiredWordCount) || acquiredWordCount <= 0) return yield* Effect.fail(new PositiveIntegerError({ param: "acquiredWordCount" }));
+    const { recentLimit } = tierRankLimits(acquiredWordCount);
+    return Math.min(1, rank / recentLimit);
+  });
+}
+
 export function recencyPressureOfRank(
   rank: number,
   acquiredWordCount = REVIEW_FULL_SCALE_WORD_COUNT,
 ): number {
-  if (!Number.isInteger(rank) || rank < 0) throw new RangeError("rank must be a nonnegative integer");
-  const { recentLimit } = tierRankLimits(acquiredWordCount);
-  return Math.min(1, rank / recentLimit);
+  return runDomain(recencyPressureOfRankEffect(rank, acquiredWordCount));
 }
 
 /** The deterministic, nonpersisted Review battle plan.
@@ -110,14 +135,24 @@ function fisherYates<T>(items: T[], rng: RandomSource): void {
  * when called outside the settings bounds), the plan extends to fit the
  * quota rather than dropping guaranteed occurrences.
  */
-export function buildReviewPlan(
+export function buildReviewPlanEffect(
+  acquiredWords: readonly string[],
+  targetLength: number,
+  rngState: RandomState,
+): Effect.Effect<ReviewPlan, BuildReviewPlanFailure, never> {
+  return Effect.gen(function* () {
+    if (!Number.isInteger(targetLength) || targetLength < 0) {
+      return yield* Effect.fail(new NonNegativeIntegerError({ param: "targetLength" }));
+    }
+    return yield* Effect.sync(() => buildReviewPlanUnchecked(acquiredWords, targetLength, rngState));
+  });
+}
+
+function buildReviewPlanUnchecked(
   acquiredWords: readonly string[],
   targetLength: number,
   rngState: RandomState,
 ): ReviewPlan {
-  if (!Number.isInteger(targetLength) || targetLength < 0) {
-    throw new RangeError("targetLength must be a nonnegative integer");
-  }
   const rng = new Xoshiro128StarStar(rngState);
   const uniqueWords = [...new Set(acquiredWords)];
 
@@ -181,6 +216,26 @@ export function buildReviewPlan(
   };
 }
 
+export function buildReviewPlan(
+  acquiredWords: readonly string[],
+  targetLength: number,
+  rngState: RandomState,
+): ReviewPlan {
+  return runDomain(buildReviewPlanEffect(acquiredWords, targetLength, rngState));
+}
+
+/** Typed variant of {@link buildReviewPlanFromSnapshot}. */
+export function buildReviewPlanFromSnapshotEffect(
+  acquiredWords: readonly string[],
+  targetLength: number,
+  snapshot: SchedulerSnapshot,
+): Effect.Effect<ReviewPlan, BuildReviewPlanFailure, never> {
+  return Effect.map(
+    buildReviewPlanEffect(acquiredWords, targetLength, snapshot.schedulerRng),
+    (plan) => ({ ...plan, snapshot: { spawnOrdinal: snapshot.spawnOrdinal, schedulerRng: plan.snapshot.schedulerRng } }),
+  );
+}
+
 /** Convenience for callers that already hold a snapshot: builds the plan and
  * returns it with the ORIGINAL spawn ordinal preserved (the plan builder
  * never allocates ordinals; the runtime does, one per served spawn). */
@@ -189,6 +244,5 @@ export function buildReviewPlanFromSnapshot(
   targetLength: number,
   snapshot: SchedulerSnapshot,
 ): ReviewPlan {
-  const plan = buildReviewPlan(acquiredWords, targetLength, snapshot.schedulerRng);
-  return { ...plan, snapshot: { spawnOrdinal: snapshot.spawnOrdinal, schedulerRng: plan.snapshot.schedulerRng } };
+  return runDomain(buildReviewPlanFromSnapshotEffect(acquiredWords, targetLength, snapshot));
 }

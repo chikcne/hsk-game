@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent, type PointerEvent as ReactPointerEvent, type ReactNode } from "react";
+import { Data, Effect } from "effect";
 import { CHOICE_KEYS, DECK_IDS, DECK_TOTALS, DEFAULT_SETTINGS, REVIEW_MIN_ACQUIRED_WORDS, type ChoiceKey, type DeckId } from "../../shared/constants";
 import { RuntimeDeckSchema, type DifficultySettings, type LevelProgress, type RuntimeDeck, type SaveFile } from "../../shared/schemas";
 import { applyLearnRating, nextLearnDueAtMs, prepareLearnLaunch, type LearnRating, type LearnRatingApplication } from "../../domain/learn";
@@ -9,8 +10,14 @@ import type { EncounterOutcome } from "../../domain/session/types";
 import { createSecureRandomState } from "../../domain/random";
 import { createDemoDeck } from "../data/demoDeck";
 import { createReviewDeck } from "../data/reviewDeck";
-import { loadStrokeBundle, loadStrokeBundles, loadUiStrokeBundle, mergeStrokeData, type StrokeDataMap } from "../data/strokeData";
-import { loadSave, putSave } from "../api/saves";
+import {
+  loadStrokeBundleEffect,
+  loadStrokeBundlesEffect,
+  loadUiStrokeBundleEffect,
+  mergeStrokeData,
+  type StrokeDataMap,
+} from "../data/strokeData";
+import { SavesApiLive, loadSaveEffect, putSaveEffect, type StorageError } from "../api/saves";
 import { GameCanvas } from "../game/GameCanvas";
 import { HanziText } from "../game/HanziText";
 import { useBattle, type ReviewProgressReport, type SessionStats, type BattleOptions } from "../state/useBattle";
@@ -50,18 +57,45 @@ function useMobileLayout() {
   return mobile;
 }
 
-async function loadRuntimeDeck(id: DeckId, allowDemoFallback = true): Promise<RuntimeDeck> {
-  try {
-    const response = await fetch(`/game-data/${id}/deck.json`);
-    if (!response.ok) throw new Error("Generated deck not found");
-    return RuntimeDeckSchema.parse(await response.json());
-  } catch (error) {
-    // Never reconcile persisted progress against a transient demo deck: doing
-    // so can orphan the real vocabulary and create unresolvable review cards.
-    if (!allowDemoFallback) throw error;
-    return createDemoDeck(id);
-  }
-}
+/** A generated deck failed to fetch or validate. */
+class DeckLoadError extends Data.TaggedError("DeckLoadError")<{
+  readonly message: string;
+  readonly cause?: Error;
+}> {}
+/** The pure launch step reported that every grade word is done and no new
+ * curriculum words remain. */
+class LearnCaughtUpError extends Data.TaggedError("LearnCaughtUpError") {}
+
+const toError = (cause: unknown): Error => cause instanceof Error ? cause : new Error(String(cause));
+
+const fetchRuntimeDeck = (id: DeckId): Effect.Effect<RuntimeDeck, DeckLoadError, never> =>
+  Effect.tryPromise({
+    try: () => fetch(`/game-data/${id}/deck.json`),
+    catch: (cause) => new DeckLoadError({ message: "Generated deck request failed", cause: toError(cause) }),
+  }).pipe(
+    Effect.flatMap((response) => response.ok
+      ? Effect.succeed(response)
+      : Effect.fail(new DeckLoadError({ message: `Generated deck not found (${response.status})` }))),
+    Effect.flatMap((response) => Effect.tryPromise({
+      try: (): Promise<unknown> => response.json(),
+      catch: (cause) => new DeckLoadError({ message: "Generated deck response was not JSON", cause: toError(cause) }),
+    })),
+    Effect.flatMap((json) => Effect.try({
+      try: () => RuntimeDeckSchema.parse(json),
+      catch: (cause) => new DeckLoadError({ message: "Generated deck failed validation", cause: toError(cause) }),
+    })),
+  );
+
+const loadRuntimeDeck = (
+  id: DeckId,
+  allowDemoFallback = true,
+): Effect.Effect<RuntimeDeck, DeckLoadError, never> => {
+  // Never reconcile persisted progress against a transient demo deck: doing
+  // so can orphan the real vocabulary and create unresolvable review cards.
+  return allowDemoFallback
+    ? Effect.catchAll(fetchRuntimeDeck(id), () => Effect.sync(() => createDemoDeck(id)))
+    : fetchRuntimeDeck(id);
+};
 
 function updateLifetime(save: SaveFile, outcome: EncounterOutcome, points: number): SaveFile["lifetime"] {
   const lifetime = { ...save.lifetime };
@@ -100,16 +134,24 @@ export function App() {
   const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
-    const uiStrokes = loadUiStrokeBundle().then((loaded) => {
-      setUiStrokeData(loaded);
-      return loaded;
-    });
-    void Promise.all([loadSave(), uiStrokes]).then(([{ save: loaded, online }]) => {
+    // Boot workflow: the UI stroke bundle resolves into state as soon as it
+    // lands, while the save load gates the transition to the deck screen.
+    const boot: Effect.Effect<void, StorageError, never> = Effect.gen(function* () {
+      const [{ save: loaded, online }, uiStrokes] = yield* Effect.all(
+        [
+          Effect.provide(loadSaveEffect, SavesApiLive),
+          loadUiStrokeBundleEffect.pipe(
+            Effect.tap((bundle) => Effect.sync(() => setUiStrokeData(bundle))),
+          ),
+        ],
+        { concurrency: "unbounded" },
+      );
       saveRef.current = loaded;
       setSave(loaded);
       setSaveStatus(online ? "saved" : "offline");
       setScreen("decks");
     });
+    Effect.runFork(boot);
   }, []);
   useEffect(() => {
     const pagehide = () => {
@@ -122,25 +164,31 @@ export function App() {
     return () => window.removeEventListener("pagehide", pagehide);
   }, []);
 
-  const drainSaves = useCallback(async () => {
+  const drainSaves = useCallback(() => {
     if (writing.current) return;
     writing.current = true;
-    while (pendingSave.current) {
-      const payload = pendingSave.current;
-      pendingSave.current = null;
-      setSaveStatus("saving");
-      try {
-        const authoritative = await putSave(payload);
+    // Serial save queue: each iteration writes the queued snapshot; a
+    // snapshot queued DURING the write is rebased with the authoritative
+    // revision/savedAt so no intermediate write is ever lost.
+    const drainProgram: Effect.Effect<void, never, never> = Effect.gen(function* () {
+      while (pendingSave.current) {
+        const payload = pendingSave.current;
+        pendingSave.current = null;
+        setSaveStatus("saving");
+        const written = yield* Effect.either(Effect.provide(putSaveEffect(payload), SavesApiLive));
+        if (written._tag === "Left") {
+          setSaveStatus(navigator.onLine ? "error" : "offline");
+          break;
+        }
+        const authoritative = written.right;
         const queuedAfterWrite = pendingSave.current as SaveFile | null;
         if (queuedAfterWrite) pendingSave.current = { ...queuedAfterWrite, revision: authoritative.revision, savedAt: authoritative.savedAt };
         else { saveRef.current = authoritative; setSave(authoritative); }
         setSaveStatus("saved");
-      } catch {
-        setSaveStatus(navigator.onLine ? "error" : "offline");
-        break;
       }
-    }
-    writing.current = false;
+      writing.current = false;
+    });
+    Effect.runFork(drainProgram);
   }, []);
 
   const queueSnapshot = useCallback((snapshot: SaveFile) => {
@@ -165,19 +213,27 @@ export function App() {
    * `prepareLearnLaunch` step produces BOTH the level record (with the new
    * words' introductions and the advanced curriculum cursor) and the session,
    * and this caller persists them together in one atomic snapshot. */
-  const deployLearn = async (id: DeckId) => {
+  const deployLearn = (id: DeckId) => {
     unlockSoundEffects();
     setLoadError(null);
     setSelected(id);
     setScreen("loading");
     const current = saveRef.current;
     if (!current) { setScreen("decks"); return; }
-    try {
+    const deployLearnProgram: Effect.Effect<void, DeckLoadError | LearnCaughtUpError, never> = Effect.gen(function* () {
       const hasProgress = current.levels[id] !== undefined;
-      const [loadedDeck, loadedStrokes] = await Promise.all([loadRuntimeDeck(id, !hasProgress), loadStrokeBundle(id)]);
-      const launch = prepareLearnLaunch(current, loadedDeck, new Date(), {
-        levelSize: current.settings.levelSize,
-        newLevelSeed: secureCurriculumSeed(),
+      const [loadedDeck, loadedStrokes] = yield* Effect.all(
+        [loadRuntimeDeck(id, !hasProgress), loadStrokeBundleEffect(id)],
+        { concurrency: "unbounded" },
+      );
+      const launch = yield* Effect.try({
+        try: () => prepareLearnLaunch(current, loadedDeck, new Date(), {
+          levelSize: current.settings.levelSize,
+          newLevelSeed: secureCurriculumSeed(),
+        }),
+        catch: (error) => error instanceof RangeError
+          ? new LearnCaughtUpError()
+          : new DeckLoadError({ message: "Could not prepare the learning session", cause: toError(error) }),
       });
       const { levels, session } = launch;
       if (launch.changed) {
@@ -189,9 +245,10 @@ export function App() {
       }
       setDeck(loadedDeck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
       setPaused(false); setScreen("learn");
-    } catch (error) {
+    });
+    Effect.runFork(deployLearnProgram.pipe(Effect.catchAll((error) => Effect.sync(() => {
       setDeck(null);
-      const caughtUp = error instanceof RangeError;
+      const caughtUp = error._tag === "LearnCaughtUpError";
       const level = saveRef.current?.levels[id];
       const nextDueMs = level ? nextLearnDueAtMs(level, new Date()) : null;
       const nextDue = caughtUp && nextDueMs !== null
@@ -201,7 +258,7 @@ export function App() {
         ? `${deckLabel(id)} is all caught up — nothing is due and no new words remain.${nextDue}`
         : `Could not load ${deckLabel(id)} data. Your saved progress was not changed.`);
       setScreen("decks");
-    }
+    }))));
   };
 
   /** Review Mode battles draw ONLY from `acquired_words` (the recency log).
@@ -209,17 +266,23 @@ export function App() {
    * RNG and is never persisted itself — only its advanced scheduler snapshot
    * is checkpointed, so a restarted session differs deterministically. The
    * session is not resumable. */
-  const deployReview = async () => {
+  const deployReview = () => {
     const current = saveRef.current;
     if (!current || current.acquiredWords.length < REVIEW_MIN_ACQUIRED_WORDS) return;
     unlockSoundEffects();
     setLoadError(null);
     setScreen("loading");
-    try {
-      const [loaded, loadedStrokes] = await Promise.all([
-        Promise.all(DECK_IDS.map(async (id) => [id, await loadRuntimeDeck(id, current.levels[id] === undefined)] as const)),
-        loadStrokeBundles(DECK_IDS),
-      ]);
+    const deployReviewProgram: Effect.Effect<void, DeckLoadError, never> = Effect.gen(function* () {
+      const [loaded, loadedStrokes] = yield* Effect.all(
+        [
+          Effect.all(
+            DECK_IDS.map((id) => Effect.map(loadRuntimeDeck(id, current.levels[id] === undefined), (loadedDeck) => [id, loadedDeck] as const)),
+            { concurrency: "unbounded" },
+          ),
+          loadStrokeBundlesEffect(DECK_IDS),
+        ],
+        { concurrency: "unbounded" },
+      );
       const loadedDecks = new Map(loaded);
       let levels = current.levels;
       let learnSessions = current.learnSessions;
@@ -258,27 +321,34 @@ export function App() {
       setDeck(reviewDeck.deck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
       setReviewPlan(plan);
       setPaused(false); setScreen("battle");
-    } catch {
+    });
+    Effect.runFork(deployReviewProgram.pipe(Effect.catchAll(() => Effect.sync(() => {
       setDeck(null);
       setLoadError("Could not load all saved grade data. Review was not started and progress was not changed.");
       setScreen("decks");
-    }
+    }))));
   };
 
   /** Re-learning resumes THE one cross-grade active session; exiting
    * preserves it, so the title-screen column is the dedicated resume entry. */
-  const deployRelearn = async () => {
+  const deployRelearn = () => {
     const current = saveRef.current;
     const session = current?.relearnSession ?? null;
     if (!current || !session) return;
     unlockSoundEffects();
     setLoadError(null);
     setScreen("loading");
-    try {
-      const [loaded, loadedStrokes] = await Promise.all([
-        Promise.all(DECK_IDS.map(async (id) => [id, await loadRuntimeDeck(id, current.levels[id] === undefined)] as const)),
-        loadStrokeBundles(DECK_IDS),
-      ]);
+    const deployRelearnProgram: Effect.Effect<void, DeckLoadError, never> = Effect.gen(function* () {
+      const [loaded, loadedStrokes] = yield* Effect.all(
+        [
+          Effect.all(
+            DECK_IDS.map((id) => Effect.map(loadRuntimeDeck(id, current.levels[id] === undefined), (loadedDeck) => [id, loadedDeck] as const)),
+            { concurrency: "unbounded" },
+          ),
+          loadStrokeBundlesEffect(DECK_IDS),
+        ],
+        { concurrency: "unbounded" },
+      );
       const loadedDecks = new Map(loaded);
       const mergedDeck = createReviewDeck(loadedDecks, session.wordKeys, { title: "Relearn" });
       const presentable = new Set(mergedDeck.deck.words.map((word) => word.id));
@@ -302,11 +372,12 @@ export function App() {
       }
       setDeck(mergedDeck.deck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
       setPaused(false); setScreen("relearn");
-    } catch {
+    });
+    Effect.runFork(deployRelearnProgram.pipe(Effect.catchAll(() => Effect.sync(() => {
       setDeck(null);
       setLoadError("Could not load the relearn session data. Your saved progress was not changed.");
       setScreen("decks");
-    }
+    }))));
   };
 
   /** Applies one rating to the member's INDEPENDENT relearn card through the

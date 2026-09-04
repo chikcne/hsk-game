@@ -1,3 +1,6 @@
+import { Effect } from "effect";
+import { runDomain } from "../effect";
+import { DuplicateWordIdsError } from "../errors";
 import type { LearningDeck } from "./types";
 
 const HASH_MASK = 0xffff_ffff_ffff_ffffn;
@@ -18,12 +21,22 @@ function curriculumHash(value: string): string {
   return hash.toString(16).padStart(16, "0");
 }
 
-export function curriculumOrder(deck: LearningDeck, curriculumSeed: string): string[] {
-  const ids = deck.words.map((word) => word.id);
-  if (new Set(ids).size !== ids.length) throw new Error("Deck word IDs must be unique");
-  return ids.sort((left, right) => {
-    const leftKey = curriculumHash(`${CURRICULUM_VERSION}\0${curriculumSeed}\0${deck.fingerprint}\0${left}`);
-    const rightKey = curriculumHash(`${CURRICULUM_VERSION}\0${curriculumSeed}\0${deck.fingerprint}\0${right}`);
-    return leftKey < rightKey ? -1 : leftKey > rightKey ? 1 : left < right ? -1 : left > right ? 1 : 0;
+export type CurriculumOrderFailure = DuplicateWordIdsError;
+
+/** Typed variant of {@link curriculumOrder}: fails with a
+ * `DuplicateWordIdsError` instead of throwing. */
+export function curriculumOrderEffect(deck: LearningDeck, curriculumSeed: string): Effect.Effect<string[], CurriculumOrderFailure, never> {
+  return Effect.gen(function* () {
+    const ids = deck.words.map((word) => word.id);
+    if (new Set(ids).size !== ids.length) return yield* Effect.fail(new DuplicateWordIdsError());
+    return ids.sort((left, right) => {
+      const leftKey = curriculumHash(`${CURRICULUM_VERSION}\0${curriculumSeed}\0${deck.fingerprint}\0${left}`);
+      const rightKey = curriculumHash(`${CURRICULUM_VERSION}\0${curriculumSeed}\0${deck.fingerprint}\0${right}`);
+      return leftKey < rightKey ? -1 : leftKey > rightKey ? 1 : left < right ? -1 : left > right ? 1 : 0;
+    });
   });
+}
+
+export function curriculumOrder(deck: LearningDeck, curriculumSeed: string): string[] {
+  return runDomain(curriculumOrderEffect(deck, curriculumSeed));
 }
