@@ -83,6 +83,7 @@ export function makeSnapshotWithSession(deckId: LevelProgress["deckId"], wordIds
     startedAt: "2025-01-01T00:00:00.000Z",
     wordIds,
     completedWordIds: [],
+    currentWordId: wordIds[0]!,
   };
   return snapshot;
 }

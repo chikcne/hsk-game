@@ -70,6 +70,7 @@ type LearnSession = {           // logical table: learn_sessions (per grade)
   startedAt: string;            // ISO
   wordIds: string[];            // membership, frozen at creation
   completedWordIds: string[];   // members removed by a Review-state rating
+  currentWordId: string;        // exact card displayed
 };
 type RelearnCardState = {        // one member of the active relearn session
   card: ComponentMemory;         // fresh INDEPENDENT card (never the main card)
@@ -150,7 +151,9 @@ Applying a rating (`applyLearnRating`) is one pure, immutable step that:
    acquisition; later ratings never reorder or duplicate);
 3. when the rated word is a session member and its card is now in `review`,
    appends it to the session's `completedWordIds` (rating-time removal);
-4. when no un-completed members remain, clears the grade's active session
+4. selects and persists the next presentation as `currentWordId` in the same
+   snapshot as the rating;
+5. when no un-completed members remain, clears the grade's active session
    (`learnSessions[grade] = null`) — the session is complete.
 
 Every rating is checkpointed through the existing atomic save queue
@@ -170,11 +173,10 @@ via learn-ahead until it passes.
 
 ### Resume
 
-Because membership, completions, and card states are all persisted, clicking
-the grade again resumes the exact same session; the served card is a
-deterministic function of the persisted state. A mid-session deck update
-(fingerprint change) reconciles the level and drops the stale session so the
-next launch creates a fresh one.
+Because membership, completions, card states, and `currentWordId` are all
+persisted, clicking the grade again resumes the exact same session and exact
+displayed card. A mid-session deck update (fingerprint change) reconciles the
+level and drops the stale session so the next launch creates a fresh one.
 
 ## 4. Acquired words (logical table `acquired_words`)
 

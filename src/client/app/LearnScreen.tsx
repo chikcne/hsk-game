@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { DeckId } from "../../shared/constants";
 import type { DifficultySettings, RuntimeDeck, SaveFile } from "../../shared/schemas";
 import {
-  formatLearnInterval, nextLearnCardId, previewLearnCard, remainingLearnWordIds,
+  formatLearnInterval, previewLearnCard, remainingLearnWordIds,
   type LearnRating, type LearnRatingApplication,
 } from "../../domain/learn";
 import { wordAudioSource } from "../audio/wordAudio";
@@ -50,11 +50,7 @@ type Props = {
 export function LearnScreen({ save, deck, strokeData, settings, saveStatus, onRate, onExit, onAgain, onSettings }: Props) {
   const session = save.learnSessions[deck.id] ?? null;
   const level = save.levels[deck.id] ?? null;
-  const [currentWordId, setCurrentWordId] = useState<string | null>(() => {
-    if (!session || !level) return null;
-    const next = nextLearnCardId(session, level, new Date());
-    return next.status === "card" ? next.wordId : null;
-  });
+  const [currentWordId, setCurrentWordId] = useState<string | null>(() => session?.currentWordId ?? null);
   const [ratingPhase, setRatingPhase] = useState<WordWritingResult | null>(null);
   const [log, setLog] = useState<SessionEntry[]>([]);
   const [finished, setFinished] = useState(() => session === null || currentWordId === null);
@@ -107,20 +103,13 @@ export function LearnScreen({ save, deck, strokeData, settings, saveStatus, onRa
     }]);
     setRatingPhase(null);
     const nextSession = applied.save.learnSessions[deck.id] ?? null;
-    const nextLevel = applied.save.levels[deck.id]!;
     if (!nextSession || applied.sessionCompleted) {
       setFinished(true);
       setCurrentWordId(null);
       return;
     }
-    const next = nextLearnCardId(nextSession, nextLevel, new Date());
-    if (next.status === "complete") {
-      setFinished(true);
-      setCurrentWordId(null);
-      return;
-    }
     setServing((generation) => generation + 1);
-    setCurrentWordId(next.wordId);
+    setCurrentWordId(nextSession.currentWordId);
   }, [currentWordId, deck.id, level, onRate, ratingPhase, session]);
 
   // Keyboard: 1–4 choose the rating while the rating panel is open.

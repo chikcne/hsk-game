@@ -90,7 +90,7 @@ tests/client/word-audio.test.ts              # dropped audioPoolWordIds test
 - `remainingLearnWordIds(session, level)`, `acquireWordKey`.
 - Save v4 root: `acquiredWords: string[]` (`"deckId:wordId"` keys, newest
   first), `learnSessions: Record<DeckId, LearnSession | null>` with
-  `{ deckId, deckFingerprint, startedAt, wordIds, completedWordIds }`,
+  `{ deckId, deckFingerprint, startedAt, wordIds, completedWordIds, currentWordId }`,
   `relearnSessions` (reserved, always null for now).
 
 ## Commands run and results

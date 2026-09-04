@@ -79,6 +79,18 @@ describe("LearnScreen markup", () => {
     expect(html).not.toContain("TAP TO BEGIN");
   });
 
+  test("renders the persisted current word instead of recalculating the scheduler choice", () => {
+    const save = withSession(baseSave());
+    const session = save.learnSessions["hsk-1"]!;
+    const persisted = session.wordIds.find((id) => id !== session.currentWordId)!;
+    const selected = runtimeDeck.words.find((word) => word.id === persisted)!;
+    const html = renderLearn({
+      ...save,
+      learnSessions: { ...save.learnSessions, "hsk-1": { ...session, currentWordId: persisted } },
+    });
+    expect(html).toContain(`aria-label="Write ${selected.displayHanzi} (${selected.displayPinyin})"`);
+  });
+
   test("a completed session renders the Learn summary instead of a card", () => {
     const save = baseSave(); // no active session for the grade
     const html = renderLearn(save);

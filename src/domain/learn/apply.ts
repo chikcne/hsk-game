@@ -2,7 +2,7 @@ import type { DeckId } from "../../shared/constants";
 import type { SaveFile } from "../../shared/schemas";
 import { reviewCardMemory } from "../memory";
 import { reviewWordKey } from "../review";
-import { remainingLearnWordIds } from "./session";
+import { nextLearnCardId, remainingLearnWordIds } from "./session";
 import type { LearnRating, LearnRatingApplication } from "./types";
 
 /** Prepends a key to the ordered `acquired_words` table unless already
@@ -84,6 +84,14 @@ export function applyLearnRating(
     }
     const remaining = remainingLearnWordIds(updated, nextLevel);
     sessionCompleted = remaining.length === 0;
+    if (!sessionCompleted) {
+      const next = nextLearnCardId(updated, nextLevel, date);
+      if (next.status !== "card") throw new Error("An active Learn session must have a next word");
+      // Persist the next presentation in the same snapshot as this rating.
+      // A refresh can now resume the exact displayed card without rerunning
+      // scheduler selection against a later clock.
+      updated = { ...updated, currentWordId: next.wordId };
+    }
     learnSessions = { ...learnSessions, [deckId]: sessionCompleted ? null : updated };
   }
 

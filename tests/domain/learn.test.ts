@@ -82,6 +82,9 @@ describe("learn session creation", () => {
     expect(session.deckId).toBe("hsk-1");
     expect(session.deckFingerprint).toBe("fp-a");
     expect(session.startedAt).toBe(NOW_DATE.toISOString());
+    const firstCard = nextLearnCardId(session, nextLevel, NOW_DATE);
+    expect(firstCard.status).toBe("card");
+    if (firstCard.status === "card") expect(session.currentWordId).toBe(firstCard.wordId);
   });
 
   it("throws when nothing is due and no new words remain, and reports the next due time", () => {
@@ -208,6 +211,37 @@ describe("learn-ahead ordering", () => {
 });
 
 describe("resume exactness", () => {
+  it("persists and advances the exact displayed word pointer with each rating", () => {
+    const source = deck(10);
+    let save = startSession(baseSave(source), source);
+    const displayed = save.learnSessions["hsk-1"]!.currentWordId!;
+
+    const applied = applyLearnRating(save, "hsk-1", displayed, "easy", NOW_DATE);
+    const nextSession = applied.save.learnSessions["hsk-1"]!;
+    expect(nextSession.currentWordId).not.toBe(displayed);
+    expect(nextSession.wordIds).toContain(nextSession.currentWordId);
+    expect(nextSession.completedWordIds).not.toContain(nextSession.currentWordId);
+
+    const restored = JSON.parse(JSON.stringify(applied.save)) as SaveFile;
+    expect(restored.learnSessions["hsk-1"]!.currentWordId).toBe(nextSession.currentWordId);
+  });
+
+  it("preserves a persisted displayed word instead of recalculating it on launch", () => {
+    const source = deck(10);
+    const save = startSession(baseSave(source), source);
+    const session = save.learnSessions["hsk-1"]!;
+    const persisted = session.wordIds.find((id) => id !== session.currentWordId)!;
+    const withPointer: SaveFile = {
+      ...save,
+      learnSessions: { ...save.learnSessions, "hsk-1": { ...session, currentWordId: persisted } },
+    };
+
+    const launch = prepareLearnLaunch(withPointer, source, LATER, { levelSize: 5, newLevelSeed: "unused" });
+    expect(launch.session.currentWordId).toBe(persisted);
+    expect(launch.changed).toBe(false);
+  });
+
+
   it("reloads the same session, membership, and next card from a persisted save", () => {
     const source = deck(10);
     let save = startSession(baseSave(source), source);

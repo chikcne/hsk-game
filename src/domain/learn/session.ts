@@ -63,14 +63,18 @@ export function createLearnSession(
     curriculumCursor: Math.min(introducedCount, deck.words.length),
   };
 
-  const session: LearnSession = {
+  const wordIds = [...dueIds, ...newIds];
+  const initialSession: LearnSession = {
     deckId: deck.id,
     deckFingerprint: deck.fingerprint,
     startedAt: isoTimestamp(now),
-    wordIds: [...dueIds, ...newIds],
+    wordIds,
     completedWordIds: [],
+    currentWordId: wordIds[0]!,
   };
-  return { level: nextLevel, session };
+  const first = nextLearnCardId(initialSession, nextLevel, now);
+  if (first.status !== "card") throw new Error("A newly created Learn session must contain a displayable word");
+  return { level: nextLevel, session: { ...initialSession, currentWordId: first.wordId } };
 }
 
 /** Members still owed work: membership minus rating-time completions. A card

@@ -88,8 +88,10 @@ export type LevelProgress = z.infer<typeof LevelProgressSchema>;
  * grade resumes exactly this session. A member leaves the session only when
  * a rating leaves its card in FSRS state `review`: the rating-time removal
  * is recorded in `completedWordIds` (a due maintenance card that already sat
- * in review stays in the session until it has earned its pass). The session
- * completes and is cleared when no members remain. */
+ * in review stays in the session until it has earned its pass). The currently
+ * displayed word is persisted as `currentWordId`, so reopening a grade resumes
+ * the exact card rather than recalculating it. The session completes and is
+ * cleared when no members remain. */
 export const LearnSessionSchema = z.object({
   deckId: DeckIdSchema,
   deckFingerprint: z.string(),
@@ -98,6 +100,8 @@ export const LearnSessionSchema = z.object({
   wordIds: z.array(z.string().min(1)).min(1),
   /** Members already finished by a Review-state post-rating card. */
   completedWordIds: z.array(z.string().min(1)),
+  /** Exact word currently displayed. */
+  currentWordId: z.string().min(1),
 });
 export type LearnSession = z.infer<typeof LearnSessionSchema>;
 
