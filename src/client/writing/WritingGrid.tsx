@@ -23,6 +23,11 @@ const SHOW_HINT_AFTER_MISSES = 2;
 const MARK_STROKE_CORRECT_AFTER_MISSES = 5;
 /** Reduced-motion "demo": the finished glyph is held briefly without animating. */
 const STATIC_DEMO_HOLD_MS = 1600;
+/** Pause between animated strokes; matches the writer's delayBetweenStrokes
+ * so a partial Show Demo paces like a full one. */
+const DEMO_STROKE_GAP_MS = 160;
+
+const delay = (ms: number) => new Promise<void>((resolve) => { window.setTimeout(resolve, ms); });
 
 export type GridMode = { kind: "demo-loop" } | { kind: "demo-once" } | { kind: "writing" };
 
@@ -95,7 +100,9 @@ function reportMissing(character: string, reason: unknown) {
  * lifecycle boundary exactly like StrokeOrderCharacter: no delayed writer
  * callback can touch a host that has been torn down. The grey outline is
  * shown only while a demo plays (new-card loop or Show Demo); the quiz runs
- * on a blank square. */
+ * without the outline, and strokes already accepted stay on the square — a
+ * Show Demo pressed mid-writing animates only the unwritten strokes on top
+ * of them and the quiz resumes at the stroke the player was on. */
 export function WritingGrid({ character, data, mode, reducedMotion, label, onEngage, onCorrectStroke, onMistake, onCharacterComplete, onDemoFinished }: Props) {
   const hostRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
@@ -107,6 +114,11 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
   // to quiz mode. Keep that gesture and feed it into the quiz once ready so
   // the first mouse/pen stroke or finger swipe is not discarded.
   const pendingDemoPointerRef = useRef<PendingDemoPointer | null>(null);
+  // Quiz progress at the moment a demo starts. While the quiz is live its
+  // internal stroke index is authoritative; once the demo has canceled it,
+  // this captured value is the only record left, and the post-demo quiz
+  // resumes from it so Show Demo never wipes written strokes.
+  const demoProgressStrokeRef = useRef(0);
   const callbacksRef = useRef<GridCallbacks>({});
   callbacksRef.current = { onEngage, onCorrectStroke, onMistake, onCharacterComplete, onDemoFinished };
 
@@ -142,7 +154,7 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
       highlightColor: HINT_COLOR,
       strokeAnimationSpeed: 1,
       strokeFadeDuration: 0,
-      delayBetweenStrokes: 160,
+      delayBetweenStrokes: DEMO_STROKE_GAP_MS,
       delayBetweenLoops: 900,
       drawingFadeDuration: 240,
       drawingWidth: 7,
@@ -193,13 +205,18 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
     let canceled = false;
     const run = async () => {
       try {
+      // Capture progress before any teardown. A live quiz's internal stroke
+      // index is the truth (mistakes do not advance it); the ref carries it
+      // across the demo and is consumed by the writing run that follows.
+      const liveStrokeNum = writer._quiz?._currentStrokeIndex ?? null;
+      if (liveStrokeNum !== null) demoProgressStrokeRef.current = liveStrokeNum;
+      const startStroke = liveStrokeNum ?? demoProgressStrokeRef.current;
+      if (mode.kind === "writing") demoProgressStrokeRef.current = 0;
       writer.cancelQuiz();
       writer._renderState?.cancelAll();
       if (holdTimerRef.current !== null) window.clearTimeout(holdTimerRef.current);
       holdTimerRef.current = null;
       if (mode.kind === "writing") {
-        await writer.hideCharacter({ duration: 0 });
-        if (canceled) return;
         await writer.hideOutline({ duration: 0 });
         if (canceled) return;
         await writer.quiz({
@@ -208,6 +225,11 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
           markStrokeCorrectAfterMisses: MARK_STROKE_CORRECT_AFTER_MISSES,
           acceptBackwardsStrokes: false,
           highlightOnComplete: false,
+          // Resume at the stroke the player was on: the quiz's own opening
+          // mutations show strokes before startStroke as already drawn (the
+          // explicit hideCharacter is gone — hanzi-writer does it itself).
+          // Always passed explicitly because the writer persists quiz options.
+          quizStartStrokeNum: startStroke,
           onCorrectStroke: (strokeData) => {
             if (!canceled) callbacksRef.current.onCorrectStroke?.(toGridStrokeEvent(strokeData, true));
           },
@@ -244,7 +266,8 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
         }
         await writer.hideCharacter({ duration: 0 });
         if (canceled) return;
-        // Indefinite stroke-order demo until the surface is engaged.
+        // Indefinite stroke-order demo until the surface is engaged. New
+        // cards only, so it always starts from the blank square.
         await writer.loopCharacterAnimation();
       } else {
         await writer.showOutline({ duration: 0 });
@@ -258,13 +281,20 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
           }, STATIC_DEMO_HOLD_MS);
           return;
         }
-        await writer.hideCharacter({ duration: 0 });
-        if (canceled) return;
-        await writer.animateCharacter({
-          onComplete: () => {
-            if (!canceled) callbacksRef.current.onDemoFinished?.();
-          },
-        });
+        // Show Demo mid-writing: animate only the strokes not yet written,
+        // building on top of the drawn ones (animateStroke leaves every
+        // other stroke at its current opacity). The quiz resumes at
+        // startStroke when onDemoFinished flips the mode back.
+        const totalStrokes = data?.strokes.length ?? 0;
+        for (let strokeNum = startStroke; strokeNum < totalStrokes; strokeNum += 1) {
+          if (strokeNum > startStroke) {
+            await delay(DEMO_STROKE_GAP_MS);
+            if (canceled) return;
+          }
+          await writer.animateStroke(strokeNum);
+          if (canceled) return;
+        }
+        callbacksRef.current.onDemoFinished?.();
       }
       } catch (error: unknown) {
         if (!canceled) {
