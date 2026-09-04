@@ -12,11 +12,11 @@ import { curriculumLessonNumber } from "../../domain/learning";
 import { formatElapsedSeconds, presentationKey } from "../writing/writingProgress";
 import { WritingCard, type WordWritingResult } from "../writing/WritingCard";
 
-const RATING_ORDER: Array<{ rating: LearnRating; label: string; hanzi: string; key: string }> = [
-  { rating: "again", label: "AGAIN", hanzi: "忘记", key: "1" },
-  { rating: "hard", label: "HARD", hanzi: "困难", key: "2" },
-  { rating: "good", label: "GOOD", hanzi: "良好", key: "3" },
-  { rating: "easy", label: "EASY", hanzi: "简单", key: "4" },
+const RATING_ORDER: Array<{ rating: LearnRating; label: string; key: string }> = [
+  { rating: "again", label: "AGAIN", key: "1" },
+  { rating: "hard", label: "HARD", key: "2" },
+  { rating: "good", label: "GOOD", key: "3" },
+  { rating: "easy", label: "EASY", key: "4" },
 ];
 
 const statusLabel = (status: string) => status === "saved" ? "PROGRESS SAVED" : status === "saving" ? "SAVING PROGRESS" : status === "offline" ? "SAVED OFFLINE" : "SAVE ERROR";
@@ -183,7 +183,7 @@ export function LearnScreen({ save, deck, strokeData, settings, saveStatus, onRa
         </p>
         <p className="learn-rating-prompt">HOW WELL DID YOU RECALL IT?</p>
         <div className="learn-rating-grid">
-          {RATING_ORDER.map(({ rating, label, hanzi, key }, index) => (
+          {RATING_ORDER.map(({ rating, label, key }, index) => (
             <button
               key={rating}
               ref={index === 0 ? firstRatingButtonRef : undefined}
@@ -192,7 +192,6 @@ export function LearnScreen({ save, deck, strokeData, settings, saveStatus, onRa
             >
               <span className="learn-rating-key">{key}</span>
               <b>{label}</b>
-              <HanziText text={hanzi} data={strokeData} accessible={false} />
               <em>{ratingPreviews ? `${ratingPreviews[index]!.interval}` : "—"}</em>
             </button>
           ))}

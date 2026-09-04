@@ -682,7 +682,26 @@ input.mint-range { accent-color: var(--jade); }
 .learn-rating-button.is-again em { color: var(--cinnabar); }
 .learn-rating-button.is-easy em { color: var(--jade); }
 
+@media (orientation: portrait) {
+  .learn-hud { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto; row-gap: 6px; }
+  .learn-hud .hud-level { grid-column: 1 / -1; grid-row: 1; margin-right: 0; }
+  .learn-hud .save-state { grid-column: 2; grid-row: 2; align-self: center; }
+  .learn-exit { grid-column: 1; grid-row: 2; justify-self: start; margin-left: 46px; }
+}
+
 @media (max-width: 599px) {
   .learn-screen { padding: 10px 10px 12px; }
-  .learn-rating-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .learn-exit { padding: 5px 9px; font-size: 10px; }
+  .learn-rating { padding: 8px 6px; }
+  .learn-rating-head { font-size: 12px; }
+  .learn-rating-prompt { margin-bottom: 6px; font-size: 10px; letter-spacing: .08em; }
+  .learn-rating-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; }
+  .learn-rating-button { min-width: 0; gap: 1px; padding: 7px 2px 5px; border-radius: 7px; }
+  .learn-rating-button b { font-size: 10px; letter-spacing: .06em; }
+  .learn-rating-button em { min-width: 36px; padding-top: 2px; font-size: 10px; }
+  .learn-rating-button .learn-rating-key { display: none; }
+}
+
+@media (max-width: 599px) and (orientation: portrait) {
+  .learn-exit { margin-left: 33px; }
 }
