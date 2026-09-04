@@ -21,7 +21,6 @@ function sourceDeck(id: DeckId, wordCount = 4, fingerprint = `${id}-fp`): Runtim
     senseLabel: null,
     meaning: `${String.fromCharCode(97 + letterOffset + index)}meaning ${id} ${index}`,
     meaningKey: `meaning-${index}`,
-    example: null,
     audioUrl: "",
   }));
   const meaningIndex = Object.fromEntries(words.map((word) => [word.meaningKey, {

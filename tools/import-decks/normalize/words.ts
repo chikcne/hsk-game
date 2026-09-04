@@ -116,10 +116,6 @@ export const normalizeAndDedupeEffect = (
           detail: `Word audio ${JSON.stringify(audioFilename)} for note ${note.guid} is absent from media map`,
         }));
       }
-      const exampleValues = [note.fields.sentenceHanzi, note.fields.sentencePinyin, note.fields.sentenceMeaning].map(sanitizeText);
-      const example = exampleValues.some(Boolean)
-        ? { hanzi: exampleValues[0]!, pinyin: exampleValues[1]!, meaning: exampleValues[2]! }
-        : null;
       const semanticIdentity = `${hanzi.displayHanzi}\0${displayPinyin}\0${meaningKey}`;
       const fullId = hash(`word-v1\0${semanticIdentity}`);
       const id = fullId.slice(0, 24);
@@ -137,7 +133,7 @@ export const normalizeAndDedupeEffect = (
       groups.set(semanticIdentity, {
         id, sourceGuids: [note.guid], displayHanzi: hanzi.displayHanzi, hanziKey: hanzi.hanziKey,
         displayPinyin, acceptedPinyin, partOfSpeech, partOfSpeechKey, senseLabel: hanzi.senseLabel,
-        meaning, meaningKey, example, audioUrl: "", audioFilename, sourceNoteId: note.id,
+        meaning, meaningKey, audioUrl: "", audioFilename, sourceNoteId: note.id,
       });
     }
 

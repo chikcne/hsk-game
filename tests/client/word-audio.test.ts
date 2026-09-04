@@ -15,7 +15,6 @@ function fakeWord(audioUrl: string): RuntimeWord {
     senseLabel: null,
     meaning: "character",
     meaningKey: "character",
-    example: null,
     audioUrl,
   };
 }

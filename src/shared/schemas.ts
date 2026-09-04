@@ -21,7 +21,6 @@ export const RuntimeWordSchema = z.object({
   hanziKey: z.string().min(1), displayPinyin: z.string().min(1), acceptedPinyin: z.array(z.string().min(1)).min(1),
   partOfSpeech: z.string().nullable(), partOfSpeechKey: z.string().nullable(), senseLabel: z.string().nullable(),
   meaning: z.string().min(1), meaningKey: z.string().min(1),
-  example: z.object({ hanzi: z.string(), pinyin: z.string(), meaning: z.string() }).nullable(),
   audioUrl: z.string(),
 });
 export type RuntimeWord = z.infer<typeof RuntimeWordSchema>;

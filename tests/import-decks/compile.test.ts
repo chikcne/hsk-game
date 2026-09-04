@@ -30,8 +30,7 @@ function note(id: number, guid: string, hanzi: string, pinyin: string, meaning: 
     id, guid, modelId: 1,
     fields: {
       hanzi, pinyin, partOfSpeech: `<b>${partOfSpeech}</b>`, meaning,
-      sentenceHanzi: `${hanzi}个`, sentencePinyin: `${pinyin} ge`, sentenceMeaning: `${meaning} item`,
-      audioHanzi: `[sound:${guid}.mp3]`, audioSentence: "", image: "",
+      audioHanzi: `[sound:${guid}.mp3]`, image: "",
     },
   };
 }

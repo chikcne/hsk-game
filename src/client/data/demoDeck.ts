@@ -19,7 +19,7 @@ export function createDemoDeck(id: DeckId): RuntimeDeck {
   const words: RuntimeWord[] = vocabulary.map(([hanzi, pinyin, accepted, meaning], index) => ({
     id: `${id}-demo-${index.toString().padStart(3, "0")}`, sourceGuids: [], displayHanzi: hanzi, hanziKey: hanzi,
     displayPinyin: pinyin, acceptedPinyin: [accepted], partOfSpeech: null, partOfSpeechKey: null, senseLabel: null,
-    meaning, meaningKey: `meaning-${index}`, example: null, audioUrl: "",
+    meaning, meaningKey: `meaning-${index}`, audioUrl: "",
   }));
   const meaningIndex = Object.fromEntries(words.map((word) => [word.meaningKey, { label: word.meaning, wordIds: [word.id], hanziKeys: [word.hanziKey], partOfSpeechKeys: [] }]));
   return { schemaVersion: 1, importerVersion: "demo-1", id, hskLevel: level, title: `HSK ${level}`,

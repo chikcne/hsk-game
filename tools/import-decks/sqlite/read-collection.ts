@@ -31,9 +31,10 @@ const decodeDriverError = (error: unknown): CollectionReadError =>
 
 function fieldsFromArray(fields: string[]): RawNoteFields {
   return {
+    // Indices 4-6 (Sentence*) and 8 (AudioSentence) are skipped, not stored:
+    // the sentences are excluded from the source decks' licence grant.
     hanzi: fields[0]!, pinyin: fields[1]!, partOfSpeech: fields[2]!, meaning: fields[3]!,
-    sentenceHanzi: fields[4]!, sentencePinyin: fields[5]!, sentenceMeaning: fields[6]!,
-    audioHanzi: fields[7]!, audioSentence: fields[8]!, image: fields[9]!,
+    audioHanzi: fields[7]!, image: fields[9]!,
   };
 }
 
