@@ -181,7 +181,7 @@ export function LearnScreen({ save, deck, strokeData, settings, saveStatus, onRa
           {" "}in <b>{formatElapsedSeconds(ratingPhase.elapsedMs)}</b>
           {ratingPhase.totalMisses > 0 && <> · <span>{ratingPhase.totalMisses} {ratingPhase.totalMisses === 1 ? "stroke" : "strokes"} rejected</span></>}
         </p>
-        <p className="learn-rating-prompt">HOW WELL DID YOU RECALL IT?</p>
+        <p className="learn-rating-prompt">{isNewCard ? "HOW EASY WAS THIS WORD?" : "HOW WELL DID YOU RECALL IT?"}</p>
         <div className="learn-rating-grid">
           {RATING_ORDER.map(({ rating, label, key }, index) => (
             <button
