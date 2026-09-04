@@ -94,7 +94,8 @@ function reportMissing(character: string, reason: unknown) {
  * for every character of the word (via key), so unmounting here is a hard
  * lifecycle boundary exactly like StrokeOrderCharacter: no delayed writer
  * callback can touch a host that has been torn down. The grey outline is
- * always shown and persists through demo and quiz. */
+ * shown only while a demo plays (new-card loop or Show Demo); the quiz runs
+ * on a blank square. */
 export function WritingGrid({ character, data, mode, reducedMotion, label, onEngage, onCorrectStroke, onMistake, onCharacterComplete, onDemoFinished }: Props) {
   const hostRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
@@ -133,7 +134,7 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
       height: initialSize,
       padding: Math.max(2, Math.round(initialSize * PADDING_RATIO)),
       renderer: "svg",
-      showOutline: true,
+      showOutline: mode.kind !== "writing",
       showCharacter: false,
       outlineColor: OUTLINE_COLOR,
       strokeColor: INK_COLOR,
@@ -199,6 +200,8 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
       if (mode.kind === "writing") {
         await writer.hideCharacter({ duration: 0 });
         if (canceled) return;
+        await writer.hideOutline({ duration: 0 });
+        if (canceled) return;
         await writer.quiz({
           leniency: QUIZ_LENIENCY,
           showHintAfterMisses: SHOW_HINT_AFTER_MISSES,
@@ -233,6 +236,8 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
           }
         }
       } else if (mode.kind === "demo-loop") {
+        await writer.showOutline({ duration: 0 });
+        if (canceled) return;
         if (reducedMotion) {
           await writer.showCharacter({ duration: 0 });
           return;
@@ -242,6 +247,8 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
         // Indefinite stroke-order demo until the surface is engaged.
         await writer.loopCharacterAnimation();
       } else {
+        await writer.showOutline({ duration: 0 });
+        if (canceled) return;
         if (reducedMotion) {
           await writer.showCharacter({ duration: 0 });
           if (canceled) return;

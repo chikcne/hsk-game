@@ -6,7 +6,9 @@ Reusable, isolated Writing Screen card implementing the Inkstone-inspired
 single large tian-zi square: pinyin + meaning pinned above the grid, one
 active character at a time for phrases of any length, word audio on card
 appearance with a replay button, guided forgiving stroke-order/shape quiz with
-hints, persistent grey character outline, looping stroke-order demo for new
+hints, a grey character outline shown only while a demo plays (looping demo
+for new cards, or Show Demo — the quiz runs on a blank square), looping
+stroke-order demo for new
 cards until the surface is engaged, a Show Demo control for later cards, a
 bottom-center hangman-style progress row, elapsed writing time + completion
 callback, an explicitly labeled accessible finish control with confirmation,
@@ -76,7 +78,8 @@ Guarantees:
   reset-on-`word.id`-change; both are safe. Unmounting pauses and discards
   audio and destroys the writer (StrictMode double-mount safe).
 - `Show Demo` mid-character cancels the quiz and restarts that character from
-  stroke 0 afterwards; the grey outline never disappears.
+  stroke 0 afterwards; the grey outline is visible only during demos (new-card
+loop and Show Demo) and hides as soon as the quiz starts.
 - Keyboard focus is preserved: canceling the skip confirm (KEEP WRITING or
   Escape) returns focus to the FINISH WITHOUT WRITING opener, and when a demo
   hands over to the quiz (new-card engagement or Show Demo finishing) focus
