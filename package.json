@@ -10,8 +10,10 @@
     "typecheck": "tsc --noEmit",
     "test:unit": "vitest run",
     "test:integration": "vitest run tests/integration",
-    "test": "npm run typecheck && npm run test:unit",
+    "test": "npm run typecheck && npm run validate:cards && npm run test:unit",
     "import:decks": "tsx tools/import-decks/cli.ts",
+    "import:acards": "tsx tools/import-acards/cli.ts",
+    "validate:cards": "tsx tools/import-acards/validate-cli.ts",
     "import:strokes": "tsx tools/import-strokes/cli.ts",
     "preview": "vite preview"
   },
