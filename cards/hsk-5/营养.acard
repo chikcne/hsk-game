@@ -1,16 +1,20 @@
 {
   "audio": "224a7da07b19ea8e72e5207cf3bad22d0a5dccfbec7c0b2ac5f4ca06d14f615a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "养"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11022,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "营养",
   "id": "9358d1c6f025f8822d2c06c2",

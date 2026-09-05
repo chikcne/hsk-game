@@ -1,17 +1,21 @@
 {
   "audio": "40614ece4c43be162f9b6342fd02816457735b8ce0c4e2a96e051ce4028c985e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "减",
       "弱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22112,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "减弱",
   "id": "76e6b3eb3e6c4ffc214b3b78",

@@ -1,14 +1,18 @@
 {
   "audio": "b1a33c28846b905d07aa5c71f2877b49585800fccf8fd6cf184cecf513e2f3fc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7406,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "编",
   "id": "a676258eca5c922c9bddee0c",

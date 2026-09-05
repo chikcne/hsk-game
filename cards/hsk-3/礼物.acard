@@ -1,14 +1,18 @@
 {
   "audio": "1f4fb681e248e69adab08664dc13d4fe11bb8032118e196be12bb8bc017e83a4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1054,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "礼物",
   "id": "8147e71bd60432c43814219f",

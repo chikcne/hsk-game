@@ -1,17 +1,21 @@
 {
   "audio": "2ae30e26b4e837fd6f3cfde06725e58402ebf6c2e8f3ea330029e444bde08663.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "念",
       "想"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1825,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "想念",
   "id": "749eaff44230a12134ea5bab",

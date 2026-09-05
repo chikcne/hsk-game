@@ -1,17 +1,21 @@
 {
   "audio": "be0de1d462bdc81c9a4a0dce13e0cd3af5284aab6d887d0b0dd640420342a53d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生",
       "花"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10416,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "花生",
   "id": "eb120bcb636592e413ee103f",

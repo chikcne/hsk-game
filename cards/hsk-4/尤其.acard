@@ -1,16 +1,20 @@
 {
   "audio": "c78ed75162da2ca39947ffd941773db5c47ddab16897dae3e18134c81f67bd28.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "其"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1720,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "尤其",
   "id": "d3092a5b4b7db3924085ac6f",

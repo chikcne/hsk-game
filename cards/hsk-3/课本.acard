@@ -1,17 +1,21 @@
 {
   "audio": "8847b4ab9d1cfd938d3fa214722598a3f8b4ec5b0b3afb0b8cb2c4293ab45f6b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本",
       "课"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24897,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "课本",
   "id": "8fd301d0b025c784074f8c28",

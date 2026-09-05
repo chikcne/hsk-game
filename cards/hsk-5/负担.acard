@@ -1,14 +1,18 @@
 {
   "audio": "8ca5f184c917fa03f590215aaf7110bcfb1a9c4077e2a145cabc34de500e8f38.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5850,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "负担",
   "id": "f728e434cbfaddd234e0b26d",

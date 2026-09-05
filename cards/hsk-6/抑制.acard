@@ -1,16 +1,20 @@
 {
   "audio": "90e4126ea88fa5794c13dc95eb34848c4fe09ab0dfbb788cda83f45fb4535426.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "制"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10786,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "抑制",
   "id": "527f93881c3bff664cbc800f",

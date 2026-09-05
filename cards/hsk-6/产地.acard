@@ -1,17 +1,21 @@
 {
   "audio": "95a52fdcd3122396fc85211c777dc111c50bd3e81de066279d97328b61eb1d28.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "产",
       "地"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 73131,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "产地",
   "id": "9025b2cc78b5bfec29be21d9",

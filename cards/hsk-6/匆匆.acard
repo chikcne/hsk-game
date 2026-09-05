@@ -1,14 +1,18 @@
 {
   "audio": "b2f417046f2d973a7bfccf2ca67018feee0862e58d6c594bd0b96303aecc2478.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 16061,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "匆匆",
   "id": "399017ad687e0ad8aef2fb84",

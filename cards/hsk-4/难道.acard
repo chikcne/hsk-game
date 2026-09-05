@@ -1,17 +1,21 @@
 {
   "audio": "28b1416b00bc5b2999a6a4972ed1d3963bc5478b7ab9101610b2b6f0d8ba17c1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "道",
       "难"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 574,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "难道",
   "id": "f7ea1e17211d665eb38ac503",

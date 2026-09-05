@@ -1,16 +1,20 @@
 {
   "audio": "b8aff04ea8f5ec84c93be09c3b946f1a3b0b76a4d4053239ac9fd73a3346196c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 999,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "手机",
   "id": "84bba28f2d5a7bfc4910f31f",

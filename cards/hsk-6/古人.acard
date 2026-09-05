@@ -1,17 +1,21 @@
 {
   "audio": "138027c4be2c8d70acf0dc72b4f8db5edfbb92d605bb93c675448d5b373db468.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "古"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26465,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "古人",
   "id": "89770bc58664b975433982b3",

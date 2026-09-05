@@ -1,17 +1,21 @@
 {
   "audio": "1fdea44badbc4157881cb4811e66ef5dd5f0712abbcd9d3d7e500644740b19f2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "与",
       "其"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10141,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "与其",
   "id": "1c48f8b1033f5eb5b5284cde",

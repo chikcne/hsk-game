@@ -1,17 +1,21 @@
 {
   "audio": "5b2c9f3fd63c8c613be8a1b647d6c189fec61e895c059c95107e49e6cfc0d5cf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "批"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15424,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "大批",
   "id": "9e98ec319132560bc29b45d4",

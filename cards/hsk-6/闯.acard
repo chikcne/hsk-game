@@ -1,14 +1,18 @@
 {
   "audio": "dcc2ba14679b0e74e094bd20039194f579d6fd0cbc6a0e8900b2cc80984159f2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9080,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "闯",
   "id": "11da20dca4edb155c1f1f7c5",

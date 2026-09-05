@@ -1,14 +1,18 @@
 {
   "audio": "71f1f0ef95210ef7fca1073211c9daf147371e6b60a58468825f23c29f39ddab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1681,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "装",
   "id": "01840e6a244bb0b9b9fd4faa",

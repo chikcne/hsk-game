@@ -1,17 +1,21 @@
 {
   "audio": "918da844e06703f71d5e216b293ce86f232dd7636416b8ed3a4692b1d4517796.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "取",
       "提"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10690,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "提取",
   "id": "fccccf2deb71e2285066a231",

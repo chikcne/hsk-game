@@ -1,16 +1,20 @@
 {
   "audio": "352cb9ddb91320a5040ca244c9e95103842f1184c9db1cc6d4d072caf1660dc2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "率"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15746,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "概率",
   "id": "fd1ef95c151fb6e7ea1d0c86",

@@ -1,17 +1,21 @@
 {
   "audio": "d7cdbd0c877f16b5d556de20c54cfd1805269126ea253ef168c1722cf40f21f0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "切",
       "密"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12138,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "密切",
   "id": "b82968dd0baeff54460f70f2",

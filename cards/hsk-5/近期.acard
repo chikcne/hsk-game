@@ -1,17 +1,21 @@
 {
   "audio": "f50fbe472fbad8f7d8b524a2835a1edcc8c29ea398a08e9246527ed342ad32e3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "期",
       "近"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16038,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "近期",
   "id": "e1cc7ecff558be6f13b40774",

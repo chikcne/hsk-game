@@ -1,17 +1,21 @@
 {
   "audio": "494f6d372c99e47d3326cc272b0610bb99c4bcecd3fa52ea5881aa716822bf98.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "网"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3972,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "网上",
   "id": "ba70d6b5be6d1c2d2e641064",

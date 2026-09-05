@@ -1,16 +1,20 @@
 {
   "audio": "f9f6e2a7996569df2d49c0bf13bc1a5ebea1e2272761334511c906e58a4ccefe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "总"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8822,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "总裁",
   "id": "6d658b3f405c38d9af334b36",

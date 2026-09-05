@@ -1,16 +1,20 @@
 {
   "audio": "c1668db7dd0a93d8ff2533b496b3860f56c22e4a2d71d653c8b9dec9eba78da6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 61475,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "师生",
   "id": "5f0d3a3b92abf50bc14aeb18",

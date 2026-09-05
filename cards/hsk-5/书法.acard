@@ -1,17 +1,21 @@
 {
   "audio": "7112b4063fd35ef809c9248854617c17f73e76cd75d4ae22e6e16565d9f5e169.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "书",
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 53259,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "书法",
   "id": "8b90e04b5e87814e215bfec8",

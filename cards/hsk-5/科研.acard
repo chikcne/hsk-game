@@ -1,16 +1,20 @@
 {
   "audio": "3bb4b91f0da813952b7fa4d5bc438d9fb274a3221c6f2234250987e00361777a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "科"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20446,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "科研",
   "id": "0a3c7991d282b6a44c3f4b92",

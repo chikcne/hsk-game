@@ -1,16 +1,20 @@
 {
   "audio": "d3e5aa5b942c7f98700c584c8994298e9d3bb9c140e6fe328d84dacf2c79928e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 156,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "今天",
   "id": "12b34b0698b8b7389b80b48c",

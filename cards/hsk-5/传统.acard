@@ -1,16 +1,20 @@
 {
   "audio": "5ed0f46cdd760540bcc5be5c38965c55520162f4dc3b00b8a9035932ea721afb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2537,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "传统",
   "id": "b91a8ec4412aec49005f6aab",

@@ -1,17 +1,21 @@
 {
   "audio": "550adb8543d483a261ef170467357d0b8e8d96fe8264739da06eb734dcf1f3a2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "输",
       "运"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7956,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "运输",
   "id": "3ec0cf007e3226fa2e4c28f8",

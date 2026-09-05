@@ -1,17 +1,21 @@
 {
   "audio": "449413396e2cee60a2bad49d7041869827ce2024f414cbca3c7c5bad4449c460.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "之"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1833,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "之中",
   "id": "3a66ed658bc7249d56327ffb",

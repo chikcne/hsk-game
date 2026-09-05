@@ -1,16 +1,20 @@
 {
   "audio": "1f096fbe1f9a626a5260d052f6f7c5b7850fe037196f2e470a4786e64e9dc54c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2710,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "事物",
   "id": "e984b9c6e28fed4841924b4c",

@@ -1,16 +1,20 @@
 {
   "audio": "bbcbc35aa8dbc3feba5e78cabb122fa5734d4c0d397f329456c407beaa7bf49c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2928,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "基本",
   "id": "dea8d303e746e1a3dcc2d8c2",

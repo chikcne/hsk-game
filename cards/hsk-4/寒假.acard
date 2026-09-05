@@ -1,16 +1,20 @@
 {
   "audio": "b521510a8fef99d3acafd3cef09404799b067bc8dc224ce9b973bf9db8424658.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "假"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 63145,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "寒假",
   "id": "f50fb5e2554e82e561f617c3",

@@ -1,17 +1,21 @@
 {
   "audio": "fca5b8fd0c34370c9c3bf4ac1dea338da776aac97bcd929c7459f6c8ba3d387c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开",
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27360,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "开水",
   "id": "ee73c8370c4cb77e315d61ff",

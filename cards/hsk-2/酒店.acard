@@ -1,17 +1,21 @@
 {
   "audio": "10f3d3cde3e83d2f1a00b644ed760982bb11f8b39a9d99ab68fd13c0cf9f5258.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "店",
       "酒"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1406,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "酒店",
   "id": "a6e6f71fdcadde33cc810f9b",

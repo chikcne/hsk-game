@@ -1,14 +1,18 @@
 {
   "audio": "e07fe4c8ff433ce7de69717b11cbc91b820987577b52288920fbc1d0c2f7e274.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2621,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "挖",
   "id": "89556b07a86532cafc53e464",

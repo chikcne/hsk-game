@@ -1,14 +1,18 @@
 {
   "audio": "b27044a3ab1d70dc7d9d04b7a2f4ecd70cd6a55dcdd87111fbf7c00f142f4482.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1112,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "恨",
   "id": "772c339d3106af306fdbb7f0",

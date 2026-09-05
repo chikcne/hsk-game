@@ -1,14 +1,18 @@
 {
   "audio": "7af407d999ee0c2dca85ad203eb5aad94b179495ad8673ec7cd675c63e3112d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 23542,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "景观",
   "id": "fdd078537347fa2c5b3f1397",

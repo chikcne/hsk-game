@@ -1,14 +1,18 @@
 {
   "audio": "28c9e20f859cfbd1fabfd2889d2897e03cdcdb95e8ca3a1a7f2ce97c879db3c5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 52942,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "姥爷",
   "id": "674fa30a2c6251e586185e62",

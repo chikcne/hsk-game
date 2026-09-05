@@ -1,14 +1,18 @@
 {
   "audio": "c4393ff5184633d0d9631dd79a8c40bf34401727b36789177de8ab3995b03ad6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4092,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "相机",
   "id": "e29d2f838d14259222897584",

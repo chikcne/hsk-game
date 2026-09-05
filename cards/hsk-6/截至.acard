@@ -1,16 +1,20 @@
 {
   "audio": "904eb6ae39d73266e278c93e1d5eb04f26b90a57247820c9ae6d4a6fb345b500.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "至"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 32803,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "截至",
   "id": "caf43438bde33fc550ed48c6",

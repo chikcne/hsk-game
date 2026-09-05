@@ -1,16 +1,20 @@
 {
   "audio": "e082163b9030112def9fdada78d9bf4516e7942012e1a494ccee04b82d72bd0f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 997,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "打扰",
   "id": "f7e7061f2690c8be80697885",

@@ -1,17 +1,21 @@
 {
   "audio": "d9937b00ab5943255fb3021b575ed156ad28025a6fb3a7507a17de9c4d8a1ca8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "保",
       "管"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5879,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "保管",
   "id": "af76a14de2b242614663bf27",

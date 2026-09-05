@@ -1,17 +1,21 @@
 {
   "audio": "37a099ed151dbf91964d2af954fac8c3775588e1bc3b5e1201cf4c427f276d4b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "比"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16534,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "比分",
   "id": "194549746e03fa4d6bd66e52",

@@ -1,16 +1,20 @@
 {
   "audio": "4ee3a4a5fec3cbf72289430b4fe9095b86735c98639d30192c21af32ddb52c9d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "日"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20567,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "日历",
   "id": "fca69300ee4c5ebd301d2267",

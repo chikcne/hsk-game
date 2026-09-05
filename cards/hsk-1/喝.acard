@@ -1,14 +1,18 @@
 {
   "audio": "c8db6230a3cb1f8ac2b5d8abfa0b0e76d9ddd5edd2950cc6a6dd7dcc76c9050f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 394,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "喝",
   "id": "5c7a30713138ffb9df1573aa",

@@ -1,17 +1,21 @@
 {
   "audio": "11313129567f9a1abdaea3d15a03efeef94932a9cde05580150cb9e7cfa2c158.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "好",
       "转"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7895,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "好转",
   "id": "45c588d800681835240bc4ce",

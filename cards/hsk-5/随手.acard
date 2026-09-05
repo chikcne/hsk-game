@@ -1,17 +1,21 @@
 {
   "audio": "03d9e26c4ba3acb08fdc93224aa74f8d1e0b789698d7789f31f8d49b29acfdae.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "随"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31792,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "随手",
   "id": "bca8b0466219a883336535f6",

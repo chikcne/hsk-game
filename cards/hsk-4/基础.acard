@@ -1,14 +1,18 @@
 {
   "audio": "73d2744b658eb38be2f1d92a2cd2019603ec633ea03c78f17fb923fb42707660.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5352,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "基础",
   "id": "3b8e081c7bc0b081b8a06b58",

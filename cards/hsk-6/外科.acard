@@ -1,17 +1,21 @@
 {
   "audio": "ac46da2315d63e7c729d21dbeebb24a6b3372d1d79cf11541b613103421f6f64.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外",
       "科"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12091,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "外科",
   "id": "d920bb8efc86a13c24f32c84",

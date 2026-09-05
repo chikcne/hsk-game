@@ -1,14 +1,18 @@
 {
   "audio": "994b19b8851bc9e580dc93158f7d476064173290e9dfb383f258f0545ad4f637.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3517,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "挡",
   "id": "7a4a6135d3698c7b74224920",

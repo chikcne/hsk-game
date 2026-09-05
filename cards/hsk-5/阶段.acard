@@ -1,16 +1,20 @@
 {
   "audio": "632d2b94e5c94f2b645f2f7308865a68247ddfaa2d2dcd81880360ff7f589d78.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "段"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4242,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "阶段",
   "id": "23a8b8e85a7efe0730903e29",

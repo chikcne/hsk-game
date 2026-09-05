@@ -1,16 +1,20 @@
 {
   "audio": "3e2da9987a5a4facea7381b8893f3afeb8bc32daee04de0c5fee8d57ac08d4da.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2061,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "桌子",
   "id": "9f75870e0354b405195dfacc",

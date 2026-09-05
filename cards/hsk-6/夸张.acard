@@ -1,17 +1,21 @@
 {
   "audio": "38392a94fcc8cafc362ddacd3ccc53b07dc0bac6420541ed8930648034deaed0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "夸",
       "张"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4676,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "夸张",
   "id": "2e84a1eef6dccfa05abd0e2f",

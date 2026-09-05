@@ -1,17 +1,21 @@
 {
   "audio": "f19490fc08b6c0308a4fd26586bc16b797fb9b4318505be9008b06e779c86da4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "处",
       "好"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1809,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "好处",
   "id": "91e0bc7a9068a64147e291bc",

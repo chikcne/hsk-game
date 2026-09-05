@@ -1,17 +1,21 @@
 {
   "audio": "5ffc37b25db9af95899bcf5e3cbecf126fae39ecf15c0eb296e334a8575a0a27.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场",
       "立"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4976,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "立场",
   "id": "14dd97dfc00346d48272afdf",

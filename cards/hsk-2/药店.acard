@@ -1,17 +1,21 @@
 {
   "audio": "17ad77ae67d3a180f7bf4ae1ab20691900b71345e3d04e2d8b3abda6e2b68c6f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "店",
       "药"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14727,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "药店",
   "id": "cf1e4e77d80676b214c7d49b",

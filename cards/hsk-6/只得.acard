@@ -1,17 +1,21 @@
 {
   "audio": "c85a22ab259cade714666fcd9238305a5b0e6fa21c10914fb8a95fd8c364cf75.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "只",
       "得"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14067,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "只得",
   "id": "5315132371f6bf40253a9c6a",

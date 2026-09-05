@@ -1,16 +1,20 @@
 {
   "audio": "24d2e387588dbb240107eb9deb5e5542dc745951b5dae0e30ac251fb46a91b69.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "缺"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4858,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "缺乏",
   "id": "cdd83886250f6077594e6ac9",

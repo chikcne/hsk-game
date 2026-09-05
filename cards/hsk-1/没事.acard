@@ -1,16 +1,20 @@
 {
   "audio": "e0be12d6b085199c4ca5cd872c41c64a2c64025592408ccc5de6fed028fc521d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 176,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "没事",
   "id": "dfc0dde487ba950d15a538be",

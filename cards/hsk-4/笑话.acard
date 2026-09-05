@@ -1,16 +1,20 @@
 {
   "audio": "b391e182c08a5d267a32b872ad30af27748697c000dd7a862e9f5ff1941359ab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "笑"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2496,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "笑话",
   "id": "0e375e783285fa70e8ab4bef",

@@ -1,17 +1,21 @@
 {
   "audio": "e915812903cbc1b2f60e049c444b6cebd5553dd8f3d4b86183501cdd31031077.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "乱",
       "混"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2663,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "混乱",
   "id": "ee81c379366c676c6fb5067a",

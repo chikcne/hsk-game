@@ -114,13 +114,13 @@ describe("loadSave against stubbed endpoints", () => {
     vi.stubGlobal("fetch", vi.fn(async () => new Response("{}", { status: 404 })));
     const result = await loadSave();
     expect(result.online).toBe(false);
-    expect(result.save.schemaVersion).toBe(4);
+    expect(result.save.schemaVersion).toBe(5);
     expect(result.save.spawnOrdinal).toBe(0);
     expect(result.save.levels).toEqual({});
 
     vi.stubGlobal("localStorage", localStorageStub({ [CACHE_KEY]: JSON.stringify({ schemaVersion: 3 }) }));
     const fresh = await loadSave();
-    expect(fresh.save.schemaVersion).toBe(4);
+    expect(fresh.save.schemaVersion).toBe(5);
     expect(fresh.save.acquiredWords).toEqual([]);
   });
 });

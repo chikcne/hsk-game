@@ -1,17 +1,21 @@
 {
   "audio": "11eb8a2f0433fb7c46f54f2e26b9a2cb6be58a3b8ecb8a729fbcd4a9852b584d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "种"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 49678,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "种地",
   "id": "92c1c1bf67d684490bc323b8",

@@ -1,17 +1,21 @@
 {
   "audio": "85af545374dc61f4730fa44a740621f447018080fcd2172bc9d2caf947307299.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "取",
       "领"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24458,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "领取",
   "id": "1cae0484f4ded8348c0a3041",

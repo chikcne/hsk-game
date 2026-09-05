@@ -1,17 +1,21 @@
 {
   "audio": "018384a9d446e64da7b808a4e43338fb2defa12e1966ba4ff9e918394537b6bd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "渡",
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20494,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "过渡",
   "id": "93c1ff1a62e7106d7a41b923",

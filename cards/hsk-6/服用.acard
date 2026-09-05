@@ -1,17 +1,21 @@
 {
   "audio": "0016021fcd50a31658b56e4d1fa92d3477d0ff1666ea4bf03e910b8039167a07.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "服",
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5735,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "服用",
   "id": "bc05b14fb6f0fd3162a67406",

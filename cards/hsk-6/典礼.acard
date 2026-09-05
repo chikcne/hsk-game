@@ -1,14 +1,18 @@
 {
   "audio": "cd9b5b29cbfc94480102e2bca447cda3a3ada06fb48183317fcf38e0e8d76da2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 14765,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "典礼",
   "id": "88d8d50bd4645e8eeee3e114",

@@ -1,16 +1,20 @@
 {
   "audio": "a7f4b2af55aebcac6f8869cb04f8f8cf8fe5262ae1b4583c53cc5ba37fe883a8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 34529,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "理财",
   "id": "d5c8725aaad9b301483a2858",

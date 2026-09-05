@@ -1,17 +1,21 @@
 {
   "audio": "36cadeb9ef6616d7de282307d8d46100b467a81cd30646ad1466f0aa03623512.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "带",
       "领"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4970,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "带领",
   "id": "c0e8a45266c802bf474b8d48",

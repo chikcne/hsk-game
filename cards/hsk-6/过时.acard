@@ -1,17 +1,21 @@
 {
   "audio": "0f322378fe9b9d6b8ba0baa3063cff26823aac6e7f5548a14e088e20f969764c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "时",
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8820,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "过时",
   "id": "2cc27dc16a21fa4d97a472ff",

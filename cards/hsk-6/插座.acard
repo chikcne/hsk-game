@@ -1,17 +1,21 @@
 {
   "audio": "8595e8077641f272922f763b74428e8b9120ffed85e9869eb869630cf08b8c7d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "座",
       "插"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 36139,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "插座",
   "id": "f69530e1437e8307005eb69a",

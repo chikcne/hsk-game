@@ -1,16 +1,20 @@
 {
   "audio": "51132c9cf28abc9ecb7aadcb7db553a34df7a4b717ca6f4aeb4b5ca64999ded5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "笑"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2723,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "微笑",
   "id": "31d772b068de47469c23cc60",

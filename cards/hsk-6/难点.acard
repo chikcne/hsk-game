@@ -1,17 +1,21 @@
 {
   "audio": "6281e6fbf81c6b14f7fd129f41f570b2d06269682018cbfcff93fd646bd7d1a9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "点",
       "难"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 76726,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "难点",
   "id": "1219b14e6cf5b347d3ed2835",

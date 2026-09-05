@@ -1,17 +1,21 @@
 {
   "audio": "32fdebd95aa98ada9f0cd2ec79b4cd93b682dd967ffd9992a3c23f80ab853299.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "吵",
       "架"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3016,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "吵架",
   "id": "7bdbdfca4444e4e719daf5fb",

@@ -1,16 +1,20 @@
 {
   "audio": "7a904450e5b9c274796c10cb150663e352eca181afa36c6ec2e0a97a67a8599f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "台"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10802,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "台阶",
   "id": "7585ffcc1f1ae3acca4060f0",

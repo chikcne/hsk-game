@@ -1,17 +1,21 @@
 {
   "audio": "3099684c7a7a0c100c7f001cad7a3cab64891160471ae78f39f0e0b83abe3bb4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本",
       "根"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 435,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "根本",
   "id": "b24a6e0980ec48b388a6b857",

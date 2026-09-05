@@ -1,17 +1,21 @@
 {
   "audio": "920144ad419ddfa489b5fbc4ae930d7be98348d9b0b44aef8453e36a5ae40aa1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "进"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 110238,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "上进",
   "id": "3ec8731c7dce324745c9e170",

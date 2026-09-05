@@ -1,14 +1,18 @@
 {
   "audio": "89dfce64221646b120b4fa84afefd960869f974ba05af6cf07e8db8ff781e452.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5266,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "宠物",
   "id": "3dc6f6d12554a527094a09f7",

@@ -1,17 +1,21 @@
 {
   "audio": "bb039a0c09d68d0cfd82ec660513f198541a3c4495e85b8b45c7b0ac45d6e9d0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "电",
       "闪"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6897,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "闪电",
   "id": "63c15693b8956ca119baf4fa",

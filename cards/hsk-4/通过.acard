@@ -1,17 +1,21 @@
 {
   "audio": "5a31618d1daa6a1e2aa918f34502551a11bf490070950efb4182c712d294283a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "过",
       "通"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 614,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "通过",
   "id": "3019618f135338270ef0535a",

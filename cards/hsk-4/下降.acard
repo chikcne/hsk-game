@@ -1,17 +1,21 @@
 {
   "audio": "12bd7f472139a405ef553aeac0c1035bda654fdf3269d08c02b23f1488ca7abd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "降"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3400,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "下降",
   "id": "aadbf2c83afcd0f2ffc18184",

@@ -1,16 +1,20 @@
 {
   "audio": "9ee1439d3c78e85ebb7e50d0191d559dccb2b87360fdf98f1a8ed82b8fdb87c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "局"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11099,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "邮局",
   "id": "80cc1c4896daf08951516f3d",

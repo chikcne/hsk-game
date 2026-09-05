@@ -1,14 +1,18 @@
 {
   "audio": "ce479720fa21fde4251ac1217b7c5f5c3a1b52ef3d019861a7e92cf07c589930.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 28978,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "功效",
   "id": "44d0482e6708b52587ba5dae",

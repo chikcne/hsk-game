@@ -1,17 +1,21 @@
 {
   "audio": "38295c67a614e2b013d3eb612aa866bf8b6621dca99b96e3ebf5d06bf2d8f03d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "跑",
       "逃"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1789,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "逃跑",
   "id": "e91e44647e1e9d2e52052f1e",

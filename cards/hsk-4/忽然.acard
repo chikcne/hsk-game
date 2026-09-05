@@ -1,14 +1,18 @@
 {
   "audio": "c5bf04d3a3bc64b0e6398e1e115363899e36d652ee49ec9fd7e49b5e5e65d950.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7401,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "忽然",
   "id": "2b5d34e0f123d539656c3c1c",

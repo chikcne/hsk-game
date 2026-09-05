@@ -1,16 +1,20 @@
 {
   "audio": "169c43242c85315d7d095ef0e4927e70168f9199301abbf26b1ea33cf663602e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "远"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4886,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "遥远",
   "id": "cc04eb6602ba8c340ef97e4c",

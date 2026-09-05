@@ -1,17 +1,21 @@
 {
   "audio": "0eb131b4e3913f0f86a433104d57105cce9731ea700bf62facfe25af9d5df447.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "以",
       "可"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 42,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "可以",
   "id": "2d2edb301195593a3bf4c948",

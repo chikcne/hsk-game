@@ -1,14 +1,18 @@
 {
   "audio": "3942416eef928ab729511190208f5a41e3451ddb268714d2778ba16f36180531.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 3,
+    "frequency": {
+      "rank": 1629,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "关",
   "id": "47fd0a0c15a24c60fd9812c0",

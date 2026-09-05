@@ -1,14 +1,18 @@
 {
   "audio": "855dc1234ea37e31072245ae678ab19dc2339131d99928f95c99631a24c9bc34.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1225,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "经历",
   "id": "f1b82f38342c3282a5366744",

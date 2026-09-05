@@ -1,17 +1,21 @@
 {
   "audio": "fa72fbffa1e60a8103ff4437a3dcc1fac90031a151c66f11e0618f4e9b60c7c0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "捐",
       "赠"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11669,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "捐赠",
   "id": "7cd508d264f4253a42e46aea",

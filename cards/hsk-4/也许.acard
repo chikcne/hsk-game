@@ -1,16 +1,20 @@
 {
   "audio": "c904e78e4e7af2013d06bdf9841bbbf655c15542889ca6f24b1e4f5fcad51f2a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "也"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 212,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "也许",
   "id": "fd736595e86fde23970022c1",

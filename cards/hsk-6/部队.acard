@@ -1,17 +1,21 @@
 {
   "audio": "8c34e97423dbfd662b2396f75e3f0a12b9110197f8512f7e032d3c47ac169b2a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "部",
       "队"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1970,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "部队",
   "id": "a6c10a24d9844625dfec2efb",

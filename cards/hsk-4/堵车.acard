@@ -1,17 +1,21 @@
 {
   "audio": "1c0b5afef525175920932774483fc45635d9ddce73f8113f74500ab032617362.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "堵",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19496,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "堵车",
   "id": "7f1575d6e8901b3db2dfffbb",

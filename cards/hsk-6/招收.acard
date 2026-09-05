@@ -1,17 +1,21 @@
 {
   "audio": "9302d11ff35d4f64727fd3e136adb7da537fb931eded9c975f5cb15dd82df81b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "招",
       "收"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 52431,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "招收",
   "id": "c9a88c681b55257a8c85ce76",

@@ -1,17 +1,21 @@
 {
   "audio": "bc1eebbaf769f1d8521aec461248381dd934dbf5e2eed806087a076af83844f0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "台",
       "窗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 54950,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "窗台",
   "id": "890d235b04a29ea1b7c8bb3d",

@@ -1,17 +1,21 @@
 {
   "audio": "4bbb0f3b345ba2d533727807222e0fbf4327bf373a360ed66e265413b21d3d96.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "打"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10045,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "打动",
   "id": "0f5e7fc09bdd5a9e9d735505",

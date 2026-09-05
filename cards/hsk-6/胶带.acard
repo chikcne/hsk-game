@@ -1,16 +1,20 @@
 {
   "audio": "d767f2affc039e8efeb074da09457b9327bed59a74b0518664c3134988fccab3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "带"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12937,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "胶带",
   "id": "2a59b31ccba658c390945973",

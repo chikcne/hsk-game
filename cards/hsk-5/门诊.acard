@@ -1,16 +1,20 @@
 {
   "audio": "6e2cc6347ad0295a6ee19b5e08aaf99222de5e68c069f6f8a928ce9c8a905a71.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "门"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 48450,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "门诊",
   "id": "175c20731ef0d4553a4c3070",

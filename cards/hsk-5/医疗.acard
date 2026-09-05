@@ -1,14 +1,18 @@
 {
   "audio": "fbe591c6c1a1b473412c0187429f4637f446b7ffd9f64da33c862f72f5c6eb0d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4130,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "医疗",
   "id": "3a8425bd3ba5cc8b81eda281",

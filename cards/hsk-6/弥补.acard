@@ -1,16 +1,20 @@
 {
   "audio": "b6a67cf038102dad701ec6590bc9277a6bbf4bd0103886118e0774d0e9b21d93.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "补"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5521,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "弥补",
   "id": "f4d50886f21cd2b6d8a31205",

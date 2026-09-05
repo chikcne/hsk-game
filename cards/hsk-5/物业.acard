@@ -1,16 +1,20 @@
 {
   "audio": "52a7a25a31eb6a32a86808184f06707ad0a440a5195d981e20b5556e230b18a7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 32271,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "物业",
   "id": "c992d7069084a8fd859bfa1d",

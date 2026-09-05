@@ -1,18 +1,22 @@
 {
   "audio": "122f799c139365a1c6ca049f3ca249a42fa368dbb2c2e76bb0b4bc3ed898d9ea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "自",
       "行",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4605,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "自行车",
   "id": "9e01b7f53c318edef9e2d882",

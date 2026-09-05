@@ -1,17 +1,21 @@
 {
   "audio": "de4eb4646b8354e3ad922d1c49cf55980066f442b8c398f57af190a5be61be1f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "内",
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2619,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "内心",
   "id": "6008ceca10c43d4b13aa202e",

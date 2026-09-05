@@ -1,16 +1,20 @@
 {
   "audio": "2b696e15b1feab161e4e507e52043a9943eed4f939b91ecb20ef75456862d019.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12949,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "精心",
   "id": "761bcacc157717760cb7fa69",

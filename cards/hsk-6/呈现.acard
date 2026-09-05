@@ -1,14 +1,18 @@
 {
   "audio": "70bab08ea0874acb604a52b4edd3da9e5a91aca1c31f9ada579143f5297a47db.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9932,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "呈现",
   "id": "7b6850b39fe3c904ba04cca1",

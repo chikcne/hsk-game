@@ -1,14 +1,18 @@
 {
   "audio": "53d987b1d7d52ca2079ade2fbb4654388a087101fbb32ff250b76d84ab9ce18c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1003,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "攻击",
   "id": "ccd9bcf9a57bf4d9d7bfb53b",

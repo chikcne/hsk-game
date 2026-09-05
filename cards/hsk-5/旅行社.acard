@@ -1,18 +1,22 @@
 {
   "audio": "1d50f1451950c3a88bdf186bb0049eae94a3f30e03a3cd63acf50c2ab9b24075.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "旅行",
       "社",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22727,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "旅行社",
   "id": "d93cb25cb9e8c7765f31320d",

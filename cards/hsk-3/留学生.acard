@@ -1,7 +1,6 @@
 {
   "audio": "217423791e0e3190dfd42a9cda922a6e291f1e981394b49494e0fd7767153cb2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "学生",
@@ -9,12 +8,17 @@
       "留",
       "留学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 59982,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "留学生",
   "id": "04a83c291465a05a8b83f5ed",

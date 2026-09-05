@@ -1,14 +1,18 @@
 {
   "audio": "7371bd7f399a1c6688ab76da5ef671d4c17115d3f7423795a80ffcdf1ffb5e40.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2635,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "现金",
   "id": "474b45fa5f9df2b4db6cbbe9",

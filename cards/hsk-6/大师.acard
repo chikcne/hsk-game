@@ -1,16 +1,20 @@
 {
   "audio": "dbf8efb7f078b70b3bb01b5111e901e8e67b1bfca7ac43e4cceab7a4b2eaf2c6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2660,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "大师",
   "id": "fe852e0470840853050bf68b",

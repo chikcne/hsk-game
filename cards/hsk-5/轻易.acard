@@ -1,16 +1,20 @@
 {
   "audio": "3f3dc1ebaa292b5976986bc55374d8b9a8f437ac88c2b17e9f27d625380de59f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "轻"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4506,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "轻易",
   "id": "d31becee86e38792a8fec637",

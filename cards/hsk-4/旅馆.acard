@@ -1,14 +1,18 @@
 {
   "audio": "39270848abc0fc17a6caca210d5c1e81f9024aa864115ff58cc6fde72621c714.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2127,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "旅馆",
   "id": "541c6c40b461111c34b058d2",

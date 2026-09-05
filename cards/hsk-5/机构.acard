@@ -1,14 +1,18 @@
 {
   "audio": "db336b8853a6d12703c4e6ee8c1408534d3c6d8148e23b6c2b9a8bd0b5547567.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3602,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "机构",
   "id": "979dfe5094cad2242cf657b0",

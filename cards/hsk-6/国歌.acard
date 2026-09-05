@@ -1,17 +1,21 @@
 {
   "audio": "eb5b4a9782636beadcda27d0ad9dc088b8932275ea1daa30c5b78a7c2e932c76.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "国",
       "歌"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 29366,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "国歌",
   "id": "a13dd875c9fd528f6a0a1e48",

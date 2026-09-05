@@ -1,16 +1,20 @@
 {
   "audio": "634a11dfa0262d06c775e1f5866f4d5f81803912fac6e489dbe983f26a16af32.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "环"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9391,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "循环",
   "id": "e3a334f5322c10fb222f4e2e",

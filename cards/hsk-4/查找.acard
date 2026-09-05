@@ -1,17 +1,21 @@
 {
   "audio": "676a5e7aa9217911b21c3e844949f27839e51f7dbe1bd251c39a98019213b8be.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "找",
       "查"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14998,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "查找",
   "id": "7b5423ebb9711995e67aefcf",

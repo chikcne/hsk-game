@@ -1,14 +1,18 @@
 {
   "audio": "5d15c775c70b77f7f2bfe7cceac6e78a08e92ade05645aee2c5e54d3fe9ea38a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4934,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "情形",
   "id": "5d75288f3ac8fbcc7ca1edf9",

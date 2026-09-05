@@ -1,19 +1,23 @@
 {
   "audio": "cc9c9645a4044f026b19246ffe735bcdeb808fe8edb13c8ff931f7d284125c77.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "甜",
       "苦",
       "辣",
       "酸"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 90657,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "酸甜苦辣",
   "id": "0abbb3bc8c191cd633e5a2b9",

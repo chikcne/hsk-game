@@ -1,17 +1,21 @@
 {
   "audio": "b32fe2f983b0cebdba48165e96ffd1463ce6959ef0727a39b46ac8de7380b7f5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "排",
       "放"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27936,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "排放",
   "id": "3a98450cabdb84fc12ff64a0",

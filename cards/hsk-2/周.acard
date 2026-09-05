@@ -1,14 +1,18 @@
 {
   "audio": "6456407cf7f0952951c3c89569c14258f42e206ed718aefdac85c2fb15abda6d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3609,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "周",
   "id": "a506b236ded7e072c7530285",

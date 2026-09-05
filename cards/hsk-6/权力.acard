@@ -1,17 +1,21 @@
 {
   "audio": "47bb769db91e9d2dc78ce3791fa180f8e61e9e670d1da99dc4b2766c93dd4770.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "权"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2403,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "权力",
   "id": "5300d1e35a48076ee3bb084a",

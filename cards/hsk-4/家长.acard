@@ -1,17 +1,21 @@
 {
   "audio": "6332987f195cd2253854c4c3444e0e52fc426a5c2ca05de4e7eb6eb43abfaad5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家",
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5548,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "家长",
   "id": "8a2a96c40f703540ec1803e9",

@@ -1,17 +1,21 @@
 {
   "audio": "ae6d8864d36733c0186fa32394a62f92b46ad7c029a54aa8643bbd398df44fe7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "先",
       "首"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 964,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "首先",
   "id": "47994b7f324f8265d5b863a1",

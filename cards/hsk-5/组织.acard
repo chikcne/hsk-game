@@ -1,16 +1,20 @@
 {
   "audio": "e145cf2c01a13447003a663c7e0deadb1c5b079b667cc014cb57bc01c454d14f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "组"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1064,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "组织",
   "id": "397970880906cda819dca49c",

@@ -1,16 +1,20 @@
 {
   "audio": "bb6f765e0af91c0ccb55a384d75ff0d58244f59089d971fefddf714d0613bbcd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "养"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8109,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "培养",
   "id": "e578f4d1d625c5f6327a67e4",

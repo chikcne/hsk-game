@@ -1,17 +1,21 @@
 {
   "audio": "7034061965b88e6c183a07c4508aecb4fc6f97ef6ec59cdd1599250991565235.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "空"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17972,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "空地",
   "id": "3d6040db8703b94447846fd7",

@@ -1,17 +1,21 @@
 {
   "audio": "0fc80828048c9072180b7f1d7734a3a700dbbb15ee42e8e3c9efcfe0573f411f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "位",
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8902,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "方位",
   "id": "12d8283ed7c6ac977f9130fb",

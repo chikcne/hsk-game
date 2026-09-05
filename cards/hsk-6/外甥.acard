@@ -1,16 +1,20 @@
 {
   "audio": "5b241163c6395c52ad7c7c1cf99ea2bc55a7a5fbc97d7945d0fb570ca00f89a8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14623,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "外甥",
   "id": "7f189deaf0357f308d6e2784",

@@ -1,17 +1,21 @@
 {
   "audio": "9216b16141928219097c488f8073f9372ee1fc6b09630cad9880004ced6ab2d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "凉",
       "着"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20155,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "着凉",
   "id": "9775121491f9378c07737c35",

@@ -1,16 +1,20 @@
 {
   "audio": "91c4704e08830fd031c2e1af9344736426db1aa5b0c9f8db6159639a58fac7c9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "公"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1360,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "公寓",
   "id": "030a60671864ceb74af140a6",

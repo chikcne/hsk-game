@@ -1,16 +1,20 @@
 {
   "audio": "6e7f110597a47555edaa9685a7a00e84294791f47cf44e0ad34c404d003c369f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "教"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6366,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "教师",
   "id": "b3c8faaa4789b1526f60caef",

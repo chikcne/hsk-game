@@ -1,14 +1,18 @@
 {
   "audio": "6589cf914a76c2b8e2373aed4a1c2e3a8e08c0e4b96ab32ff29974a4bdb51f84.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3290,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "顿",
   "id": "00261f83d8207784f8c070bf",

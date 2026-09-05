@@ -1,17 +1,21 @@
 {
   "audio": "a3fbe4728df584702452d470f60f434133f5dd4bfca4086103f6b50abad9b2ea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "补",
       "贴"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25870,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "补贴",
   "id": "5afb6a9f8b0baa79f079d696",

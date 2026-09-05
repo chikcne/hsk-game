@@ -1,17 +1,21 @@
 {
   "audio": "7d917d609f49aaa4a034abfe9c35a1d1b9c3d6da6d2761d257a2b2f6585e0c5d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19343,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "生动",
   "id": "d83b238916bc89f245e85b4a",

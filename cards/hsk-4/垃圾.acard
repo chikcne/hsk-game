@@ -1,14 +1,18 @@
 {
   "audio": "c90a9524b303ece86b8f60fb41fd9ce337f11571eb1601d3919b89363eb9d093.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1536,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "垃圾",
   "id": "fa3b1e27a1ab5630ea6da323",

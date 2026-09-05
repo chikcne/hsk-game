@@ -1,16 +1,20 @@
 {
   "audio": "47bf7c8c0c72d6e2c6cc7a3c4cbfe25214e839e40df5ee0226303ef2c00c1d4f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "租"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8120,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "租金",
   "id": "9f273c643066b1e7107788cf",

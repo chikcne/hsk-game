@@ -1,16 +1,20 @@
 {
   "audio": "eb9b4b474e21155451ccf42398ebde9d52e92c2b34f19cd0beee9123c0fb044c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "神"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2049,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "神秘",
   "id": "8f3e904b2b2eff03e9448ea2",

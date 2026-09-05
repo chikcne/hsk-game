@@ -1,14 +1,18 @@
 {
   "audio": "27342a900d256b451d5a5e3e2c0f5a78c835d4b36774f03222b523d2194e633e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5539,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "脏",
   "id": "e11263809483726f9800a277",

@@ -1,14 +1,18 @@
 {
   "audio": "733f38140e4560b4993b4a12e7a4727ca4e7877f9528c457bedd1322d3cfe278.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2145,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "导致",
   "id": "fc0b9b6c41c456d1d4377dfd",

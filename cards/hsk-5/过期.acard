@@ -1,17 +1,21 @@
 {
   "audio": "68fd6d829a4838031ab7047e2fc0e2a9f51d437cc197d9339146618dd178d30f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "期",
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14520,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "过期",
   "id": "1b52cf59e0545ad1b1d4ef1e",

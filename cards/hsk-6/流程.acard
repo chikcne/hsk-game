@@ -1,16 +1,20 @@
 {
   "audio": "865390d172940a46456dea18547806470ab5526bb9279891c2aa48d4d49de60d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "流"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16312,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "流程",
   "id": "da9b3c3b8de182bb91851f7b",

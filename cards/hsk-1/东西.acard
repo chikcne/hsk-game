@@ -1,17 +1,21 @@
 {
   "audio": "4335f6b7b429016e26ed725bb798278a8f923277d715c29c7dd3fd76c1b97d6d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "东",
       "西"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 111,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "东西",
   "id": "bc9cccdae135f61c393eaaf2",

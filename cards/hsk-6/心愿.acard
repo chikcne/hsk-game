@@ -1,17 +1,21 @@
 {
   "audio": "e64812e72ebb860c8db4f5e3f6c2476dc3d766d86a6a3fb2a1b0ecd59affb8c7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "愿"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11083,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "心愿",
   "id": "14263802bab1822898678acc",

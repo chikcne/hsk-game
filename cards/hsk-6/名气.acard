@@ -1,17 +1,21 @@
 {
   "audio": "0b1f3db9ca3355b727c9a152bb49b1ac9816f056d25b9c9861996b029f91fba2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "名",
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18412,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "名气",
   "id": "764a86643c6a080266e55f08",

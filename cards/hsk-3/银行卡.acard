@@ -1,19 +1,23 @@
 {
   "audio": "d889292fe057a1ca6f35f9d972bc316b564ceef5dd5210c5573cb42a1c2422aa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "卡",
       "行",
       "银",
       "银行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 51835,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "银行卡",
   "id": "f6092fdc87b3fc7b0f408e30",

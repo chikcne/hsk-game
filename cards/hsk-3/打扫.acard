@@ -1,17 +1,21 @@
 {
   "audio": "5b5c2a04c94a7af4254dba984405a5636f4420ed9c3ddfc6fafc9665b835b1e5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打",
       "扫"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4368,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "打扫",
   "id": "785f3bc4dc9d976b22e4e7dd",

@@ -1,17 +1,21 @@
 {
   "audio": "0609f47825eafc15058e5c81c13b47b919c13b8b361d87c68b9fb793e57484e1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "对",
       "针"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3445,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "针对",
   "id": "f2ca64780f5e770b358893a3",

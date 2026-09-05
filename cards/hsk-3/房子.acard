@@ -1,16 +1,20 @@
 {
   "audio": "1527406ebf7bfc3d88f718cacd15078a10a4eb5688a4c1328a815792364375c2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 434,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "房子",
   "id": "5f0f6ed1286ee41edf1d3739",

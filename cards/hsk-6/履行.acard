@@ -1,16 +1,20 @@
 {
   "audio": "a03a004c45d7b663696a1d86a2d1254dc2ad81712f8dccc92c4afc99ce2b0ac6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8352,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "履行",
   "id": "0fc3d98cd83c88bf1619372e",

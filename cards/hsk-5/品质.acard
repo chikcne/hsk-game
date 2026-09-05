@@ -1,16 +1,20 @@
 {
   "audio": "cdad57b9d5ab35a2e772f79a5aea2425312feac53d9da749ff54ba73531c3c47.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "品"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11815,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-evaluation"
+    ]
   },
   "hanzi": "品质",
   "id": "aaaeb4b7611badd458890d6e",

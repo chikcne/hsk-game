@@ -1,16 +1,20 @@
 {
   "audio": "c039e82f0a45854002cf443dcecf398b2f2d89f2f0915050ebcd11ca24a527fa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "所"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1814,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "厕所",
   "id": "7dcb18c91439bcf04c4fe922",

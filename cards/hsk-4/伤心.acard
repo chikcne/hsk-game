@@ -1,17 +1,21 @@
 {
   "audio": "1db371a3dac2e24664ecced429f4e246de4d5371ec729574466eb48194e0f393.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "伤",
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2297,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "伤心",
   "id": "ba8330f25f51b361570f2f66",

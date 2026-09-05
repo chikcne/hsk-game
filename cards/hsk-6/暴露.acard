@@ -1,16 +1,20 @@
 {
   "audio": "3b7325671674970b0c1a569086514223a9469cd8c9db4df65bc3be15d6c498b1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "露"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3757,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "暴露",
   "id": "8fcf8970263305adc5581c42",

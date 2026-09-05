@@ -1,17 +1,21 @@
 {
   "audio": "171b1d889fd4ede9ce4d5c15fec819e9bf0251e0c547148203a96550afca4989.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "将",
       "来"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2623,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "将来",
   "id": "4c110a4dd139c681ddc64b4a",

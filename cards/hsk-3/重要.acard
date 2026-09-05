@@ -1,17 +1,21 @@
 {
   "audio": "69435ad255808f30dea53a5fb00fe415e39d0a8a7ecdbd00940635c05927353e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "要",
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 318,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-evaluation"
+    ]
   },
   "hanzi": "重要",
   "id": "cec1d87d780e3eeaa490a222",

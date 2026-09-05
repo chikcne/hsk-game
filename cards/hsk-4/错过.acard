@@ -1,17 +1,21 @@
 {
   "audio": "4628501cc7d9bad75d053a1f8e837b4c0344317f96f278d904020d38b28b21b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "过",
       "错"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1647,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "错过",
   "id": "7faf246dec9570eb309e6347",

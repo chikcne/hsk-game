@@ -1,17 +1,21 @@
 {
   "audio": "5a5085bd4f67bc216d1e135a3815beafe96c8b7ea41a7c1d0eef3e24439ecd49.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "够",
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 734,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "能够",
   "id": "434e1d72798ac98375e8e885",

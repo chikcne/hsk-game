@@ -1,17 +1,21 @@
 {
   "audio": "650535219f2118093e119161d2661943e99b97296d8013832fac04bf39be0c05.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "热",
       "量"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14058,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "热量",
   "id": "1e378ead49e7f71a9674ed5c",

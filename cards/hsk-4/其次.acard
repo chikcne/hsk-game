@@ -1,17 +1,21 @@
 {
   "audio": "8548c80ec48c9cb9a2ad6f045236f08893dc8ca5552716dee9118d900054acf7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "其",
       "次"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10139,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "其次",
   "id": "be42ce07304f8e11fe4072bf",

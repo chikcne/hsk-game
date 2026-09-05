@@ -1,17 +1,21 @@
 {
   "audio": "96040fb17be6fe990fede477d98911bf35d2f066d8300b7d6ccf225514bf00ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "向",
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1367,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "方向",
   "id": "26e466a2b2c6995d4bf47aa7",

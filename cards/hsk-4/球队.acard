@@ -1,17 +1,21 @@
 {
   "audio": "08913278660f79ab47eb4f87583a2ce4ce94c53e3cf957ea87e5f3f884ecc49a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "球",
       "队"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5114,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "球队",
   "id": "263aff7bfa0f62b02d2e98f3",

@@ -1,17 +1,21 @@
 {
   "audio": "f04c06028caef3bd0317c4222e8067a220dc6eb584453002cfaa51875ecc540a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "活"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1600,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "活动",
   "id": "63a0af302e7438e3362c3a32",

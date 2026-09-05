@@ -1,16 +1,20 @@
 {
   "audio": "fc84a2775ef89dc749a151c25ea435b4b369f5fe6e8ac5d06bc059fd63c504d2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "厂"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 40961,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "厂商",
   "id": "eacc4c0bf81e289998395113",

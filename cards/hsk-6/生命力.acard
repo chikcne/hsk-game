@@ -1,19 +1,23 @@
 {
   "audio": "c55396bf078233314e43c75716c6ab739e14330a9aba8341e75a747e7716e136.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "命",
       "生",
       "生命"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21529,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "生命力",
   "id": "d433feec2ec6272a33da1985",

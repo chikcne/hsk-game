@@ -1,17 +1,21 @@
 {
   "audio": "6a2287305ce0ba3e03ebd5bf0bf54de13ccb963f6ae3d672be086dff01deb067.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "名",
       "胜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 114271,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "名胜",
   "id": "1b9566b37efb62480c150371",

@@ -1,16 +1,20 @@
 {
   "audio": "8e85fd7056dd1d6987d3381958b67debb69bf2de42f03a9870d78cecc3235158.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2367,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "裤子",
   "id": "608396b5457dfae1fb9b1429",

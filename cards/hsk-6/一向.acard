@@ -1,17 +1,21 @@
 {
   "audio": "f5456df7c93ece266eeed2b41cf5351ba745818fe329f186ad4012e77abdfe2c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "向"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3797,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一向",
   "id": "e4d66630208ea7118133a3a5",

@@ -1,14 +1,18 @@
 {
   "audio": "00afa1831059486202937cf9bcbec11da6f2244edb902fba532f68b64eaaab6e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 785,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "怕",
   "id": "5dfde5170df5d5857ac368b1",

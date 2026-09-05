@@ -1,16 +1,20 @@
 {
   "audio": "f6b49ca292f3a409095e3891c363630298ad0b63cd0b48e9d2ded42a1667ddb7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "样"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11073,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "榜样",
   "id": "27b4b7b5ef94cc2bf78e300f",

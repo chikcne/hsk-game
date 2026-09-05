@@ -1,14 +1,18 @@
 {
   "audio": "f434e7673a1b9ff8213a9985e13cd5303d0bb55721cb04f92286918ed2d09605.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9910,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "灭",
   "id": "abfc7e449e404051f6454e0a",

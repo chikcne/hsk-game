@@ -1,17 +1,21 @@
 {
   "audio": "9ee39372c9cfa9bb93c4119084fdb9720342c6c91b5fd580cf2c42c519d587a2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "含",
       "有"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12494,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "含有",
   "id": "d510756f95a871868ef19339",

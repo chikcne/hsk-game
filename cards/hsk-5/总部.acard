@@ -1,17 +1,21 @@
 {
   "audio": "3d8748c95d9f35d9fad046db09e68330318a99c9d4b4b03dba35e08f9d851b81.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "总",
       "部"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2838,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "总部",
   "id": "069b4cd969273ce81fd97ece",

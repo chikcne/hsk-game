@@ -1,14 +1,18 @@
 {
   "audio": "bafc34c0525bb60cfa6a0fb3ccd6308fba8a5df51e9bb04a9377168a89b9af86.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1430,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "祝",
   "id": "26ea40c6fb186e47e001d883",

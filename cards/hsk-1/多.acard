@@ -1,14 +1,18 @@
 {
   "audio": "1fa5fc4b17899c5e9ef7d06e9b0004c3bf22884eb3aaa838f8f0ffd48788e6e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 114,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "多",
   "id": "e6f3e1b632eaf5d8de04befb",

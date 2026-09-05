@@ -1,17 +1,21 @@
 {
   "audio": "4e6a9c7b5d862161cdaf78f9d2f4699c1e3e6ca0ccf84d9b1832e42fbc55c5d0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "同",
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1777,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "同学",
   "id": "8c6831bf2a09961465f28205",

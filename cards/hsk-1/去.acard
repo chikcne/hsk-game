@@ -1,14 +1,18 @@
 {
   "audio": "410fdc5656e37d5c11f9d7604eab3a046cc019cd81cd99a244e5d5d5a39cee7f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 21,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "去",
   "id": "b275e1a63d9abfe68a87d6f5",

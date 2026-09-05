@@ -1,16 +1,20 @@
 {
   "audio": "62c232f622a85f2b0cefe40067fe417059b86ed756fd870b6e5d614e5a5959de.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4373,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "助手",
   "id": "d0cf796941ec7d5d32c3dd03",

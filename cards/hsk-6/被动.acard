@@ -1,17 +1,21 @@
 {
   "audio": "1908a5d18cabd2f199722b4d409b7617b1214bee9488b1a9f0494dfd4db294b4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "被"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21704,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "被动",
   "id": "30909f88ab346dd60b4adb4e",

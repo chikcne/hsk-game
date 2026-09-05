@@ -1,17 +1,21 @@
 {
   "audio": "00003df6ed7c0b5397b579a34269f806d4aec6dbe5e1eafb7f49a9a13a6b8b8c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "了",
       "得"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": null,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "得了",
   "id": "250674a0cfa10ddc40551c2e",

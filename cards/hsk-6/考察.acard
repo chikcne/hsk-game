@@ -1,16 +1,20 @@
 {
   "audio": "738a94169e12b0caeb38f564d2269604d78a610e29c11b199b34c888f0de0834.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "考"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18943,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "考察",
   "id": "9cf0d0fa6ac1e468a07b5f18",

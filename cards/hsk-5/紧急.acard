@@ -1,17 +1,21 @@
 {
   "audio": "6bc041f67e1e663027f3d6ded6ccd9ce6ddc04136d3af06ad515639756415fde.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "急",
       "紧"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2300,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "紧急",
   "id": "85c8f2f057ca7690d1c912c2",

@@ -1,16 +1,20 @@
 {
   "audio": "d71740942fd8aad0ad5052d2583d67221d4f91e133b597f6ae7d17d76f1ad51d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "牛"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2792,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "牛奶",
   "id": "a7b9c8a98e9f45f624e079eb",

@@ -1,17 +1,21 @@
 {
   "audio": "6d1535d05bbf2a00da6f4280d14fd227208c716018ea04ad9535960f42e62b46.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "好",
       "感"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11597,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "好感",
   "id": "8fe0275003f6c4f61d956fb4",

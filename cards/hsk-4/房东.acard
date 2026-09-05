@@ -1,16 +1,20 @@
 {
   "audio": "03649eb7f11218632efa53dc263bc6474c944c6cbd3272b9a9a4589749e86702.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "东"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10386,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "房东",
   "id": "4bd44f366cece37ea18a6470",

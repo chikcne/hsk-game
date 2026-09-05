@@ -1,17 +1,21 @@
 {
   "audio": "26d524b6c874e88572e5268420fbe0d6a60e12a1223e2265dbf476d50a48032e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3282,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "当中",
   "id": "da5b1e9d0f73c2388bb5d11b",

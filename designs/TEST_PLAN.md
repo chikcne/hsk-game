@@ -239,7 +239,7 @@ Use a temporary directory, never real `saves/`.
 - stale expected revision returns 409 and does not write;
 - payload over the configured limit returns 413;
 - malformed JSON/schema/out-of-range values return 400;
-- a v3 save is quarantined, not migrated (fresh-start schema v4);
+- an older save is quarantined, not migrated (fresh-start schema v5);
 - a v4 snapshot with an active learn session, completed-word subset checks, and acquired_words coherence round-trips; violations return 400 with actionable issue paths;
 - unknown profile/path cannot be requested;
 - server binds loopback by default;

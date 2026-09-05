@@ -1,16 +1,20 @@
 {
   "audio": "49f59502835deabc23ad5e2f85398b670f48f9b84b4b8a171c363691c8ffb948.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4114,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "达成",
   "id": "cd402d0889b9620ed7fcc690",

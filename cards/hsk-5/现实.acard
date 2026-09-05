@@ -1,14 +1,18 @@
 {
   "audio": "4e093d589c1f3547416525c6d939301cb0b29057528d28aed039c426073b3cbd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1943,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "现实",
   "id": "4571cc665af06c9ec5b16ddf",

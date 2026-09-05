@@ -1,16 +1,20 @@
 {
   "audio": "6596352ae414ef9183d19a9e119cf16f3970e486f8aec980a42290474c11a2e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "老"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2186,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "老鼠",
   "id": "aca8c9caa4ed3bf5c29cf94f",

@@ -1,16 +1,20 @@
 {
   "audio": "7cc16ae65892c854969e631293c530b6f0f2e02e22e6cca532bbade9ed90edaf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "山"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17596,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "山峰",
   "id": "52d3b8652c1905ae3b5b38cb",

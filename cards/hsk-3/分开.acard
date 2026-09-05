@@ -1,17 +1,21 @@
 {
   "audio": "8c69f83cd73c7292b7f4a1bd202e3737ac9530e8561c3b0529302cf0beffbcd5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "开"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2232,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "分开",
   "id": "5e06025711e2440c960d9438",

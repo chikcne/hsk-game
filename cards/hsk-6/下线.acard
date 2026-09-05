@@ -1,17 +1,21 @@
 {
   "audio": "283516bfcc878dea4665c61e062428bcfe929734e4e79f717bdaf5b2895e2389.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "线"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 37568,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "下线",
   "id": "841ecdf19ec2d5eb2a3ea7fa",

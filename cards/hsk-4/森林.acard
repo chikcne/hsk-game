@@ -1,14 +1,18 @@
 {
   "audio": "90ab5aa1123b6f2743f5466fd296d49ecf537a4505081c3befcf95ba0cf62375.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1811,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "森林",
   "id": "60979aa4e2ecab6c041f7d9a",

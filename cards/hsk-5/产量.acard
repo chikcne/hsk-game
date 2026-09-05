@@ -1,17 +1,21 @@
 {
   "audio": "d85359cbfe332dcac684a6d020d29632f83c43d4f4ed692f6d8f6e0f2194a7f4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "产",
       "量"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28216,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "产量",
   "id": "2d7329f50ef1584bdb8322f4",

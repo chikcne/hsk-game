@@ -1,17 +1,21 @@
 {
   "audio": "6254e615022f6543c763fed1e8385089bfcde118fbd8b5c372524246778e4a65.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "卖",
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13318,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "外卖",
   "id": "8ff3c4f878cb29d5e212cc8d",

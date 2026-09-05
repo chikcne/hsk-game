@@ -1,17 +1,21 @@
 {
   "audio": "06318e2cb12201e12163d6f0eb75266c295ff6218e42f602303ed006562bc4c5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "电"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23803,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "发电",
   "id": "416e5a2ed9c525c84528ad56",

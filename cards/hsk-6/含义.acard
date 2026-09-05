@@ -1,16 +1,20 @@
 {
   "audio": "080f57052434b1dc12d8dc85369115f322be2aa5e45c8f1ffbfcb5298b8631da.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "含"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10464,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "含义",
   "id": "6bd47bd2ced162283d1afa65",

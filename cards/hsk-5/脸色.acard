@@ -1,16 +1,20 @@
 {
   "audio": "fec433739eaa895e5e8d0b9328fb4782674336445eed906e4372be8464b09a2a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "脸"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7537,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "脸色",
   "id": "34aedce2b1ffa5bbc4e4ca13",

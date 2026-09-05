@@ -1,16 +1,20 @@
 {
   "audio": "48eb02db1d6180dbe97c0dacbbf9753054a355c65eedc5d0f32ed9db4e7256a2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8433,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "统一",
   "id": "0d5022290cbb091119684c9c",

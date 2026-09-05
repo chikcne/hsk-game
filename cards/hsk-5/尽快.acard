@@ -1,17 +1,21 @@
 {
   "audio": "73f182b281ab3a57eb1710075689736c02e3719b25979db69ac8d7a80955a0dd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "尽",
       "快"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1836,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "尽快",
   "id": "29e3515adc62029369009bfa",

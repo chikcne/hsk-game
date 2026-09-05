@@ -1,17 +1,21 @@
 {
   "audio": "5055c767c581b49f079fc53b6de1c2dd9549968a5dd4e8aa913d5a9eeca61110.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水",
       "汗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22998,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "汗水",
   "id": "3b7ebc85e2a83aef856e16f8",

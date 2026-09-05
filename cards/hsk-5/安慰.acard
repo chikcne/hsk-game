@@ -1,16 +1,20 @@
 {
   "audio": "5d73f07a0d72407693abafc406337cd6f7c2263b9e8b9781a44f808de3cdbde4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "安"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3582,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "安慰",
   "id": "fc3bc31c08d3d271d37acd4d",

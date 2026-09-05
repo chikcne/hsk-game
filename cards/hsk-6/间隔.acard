@@ -1,17 +1,21 @@
 {
   "audio": "57e80ebdecfe01db090b005d723c68d5cd012d19650877badac9ab5f1c2571b7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "间",
       "隔"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25536,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "间隔",
   "id": "74d11c7a4608c82091399ec4",

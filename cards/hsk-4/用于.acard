@@ -1,17 +1,21 @@
 {
   "audio": "81a7c9984b23c8357e2112311a4e72eeb4d60e6330b7937b4342efe6218c3494.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2893,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "用于",
   "id": "ce6385c59e338cf10fde2401",

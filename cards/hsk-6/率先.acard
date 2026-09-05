@@ -1,17 +1,21 @@
 {
   "audio": "2d94b88c028b2b0ef468212ac1839f91547de422900df48645609c206d9c22a1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "先",
       "率"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28254,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "率先",
   "id": "31e1933f59f1c02676ba866f",

@@ -1,17 +1,21 @@
 {
   "audio": "2f305ca22a595d381004d3ba05412933898e2aead3c95c144c5055464f3b7616.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "握"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6385,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "握手",
   "id": "bda96e5ac7d187bac55f10c2",

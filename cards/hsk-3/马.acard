@@ -1,14 +1,18 @@
 {
   "audio": "2260b18c1715f7aafa0dc1e7790a4969ef16a960d59988a215100898c3924911.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1030,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "马",
   "id": "da8eb4fc24e0cc2f3c2b33ae",

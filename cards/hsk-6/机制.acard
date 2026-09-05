@@ -1,16 +1,20 @@
 {
   "audio": "73f04074f64c442a06c102af5254a0e9b7ff04f0cf5698314d273c916709bd32.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "制"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16704,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "机制",
   "id": "53de663a6ecdbfb46a8e8315",

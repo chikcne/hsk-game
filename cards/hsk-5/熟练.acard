@@ -1,17 +1,21 @@
 {
   "audio": "cc1a01b25840d676578150c1fa0146b9b6fb84e2d9dd9932217a14c9dc54fe9b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "熟",
       "练"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17966,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "熟练",
   "id": "230a531bcf822a588e43f968",

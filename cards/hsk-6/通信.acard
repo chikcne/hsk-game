@@ -1,17 +1,21 @@
 {
   "audio": "71fd58496545bb709ed8996b0922a0b4b58f3c10066d5010124ae4af4d27f212.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "信",
       "通"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8158,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "通信",
   "id": "07aec4abbd0d05edadf1da3b",

@@ -1,14 +1,18 @@
 {
   "audio": "daf8ad3f15307bf1310f463a5b564d0ab475662ac1b740d90bee7986704b54b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4110,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "悲剧",
   "id": "d4df7ca92f25ec590a98a1d5",

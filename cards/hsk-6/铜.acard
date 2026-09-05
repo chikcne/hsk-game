@@ -1,14 +1,18 @@
 {
   "audio": "a276f0e5abf58c8b93699aceeb13403a367da1524f2c07297af35306adf89ea3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 20132,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "铜",
   "id": "8eb5ce9c17ea951ffd574b3b",

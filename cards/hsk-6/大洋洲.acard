@@ -1,16 +1,20 @@
 {
   "audio": "10d6df8ba3cf5712aaca55704d0ca5e0254fe631d277ec37675a57f122d88f22.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 128710,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "大洋洲",
   "id": "46a841008a9c3a3e2d01e1e1",

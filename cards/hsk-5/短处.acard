@@ -1,17 +1,21 @@
 {
   "audio": "2620b856e1525d34b4560b4644ef2f62ccf36315674e09c579d3b0b014c56d22.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "处",
       "短"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 110783,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "短处",
   "id": "5cc27ba64afcf85bce0c6965",

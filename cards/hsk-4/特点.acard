@@ -1,17 +1,21 @@
 {
   "audio": "52a9a391e045eaf053965bd6b25ce1c5e9bf0693379299d81f85955aaf26b477.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "点",
       "特"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14467,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "特点",
   "id": "803f2c4c97fb57df8031c203",

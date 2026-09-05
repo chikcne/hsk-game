@@ -1,16 +1,20 @@
 {
   "audio": "89a3de99b5518658c88a4d3b2f8af1f070178afbc55da5220f4215d2c439b95b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11759,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "剧场",
   "id": "b93fc577079d67fa0b862f23",

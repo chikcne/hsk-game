@@ -1,16 +1,20 @@
 {
   "audio": "b6eeb54ff18f2a22e95f138f1a48a8c3c0e16e5e6aa84f999e101ed9d4a29070.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "超"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15105,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "超速",
   "id": "6905a5d40d622850b67f971c",

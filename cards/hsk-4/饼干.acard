@@ -1,17 +1,21 @@
 {
   "audio": "643cb38bf532f9df491591eb90b48089cce0dfd97c23bdc4e870b4a58bb9a6c2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "干",
       "饼"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3253,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "饼干",
   "id": "f793a5ca6094a0c9f5e5a42f",

@@ -1,14 +1,18 @@
 {
   "audio": "468d780fcda1744e6c758a25047bd8e31a2d169e102876a92220e94fd95b135b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 30044,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "话剧",
   "id": "2ba8514d330e2c23d3297f56",

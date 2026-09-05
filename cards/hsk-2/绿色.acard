@@ -1,14 +1,18 @@
 {
   "audio": "34caf61e8d5962277335b3910966dd3ea3ffb6a9f9d7557b47432819cd5323da.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3584,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "绿色",
   "id": "b1b8bbd78a900e0ab55df16e",

@@ -1,17 +1,21 @@
 {
   "audio": "93ed30cb7335f7226005492a8cbe1a692011908eea02cce5d508981a093079df.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "落"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6971,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "落后",
   "id": "d57f4cf770dab8be0bb358e8",

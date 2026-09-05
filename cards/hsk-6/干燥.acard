@@ -1,16 +1,20 @@
 {
   "audio": "c6cc46e601eea94e1fd6905c8222edf4a4fd329e64098ef5e28a9059fb6242c1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "干"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15226,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "干燥",
   "id": "0290a113082c36453ad53ab6",

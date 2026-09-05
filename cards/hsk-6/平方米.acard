@@ -1,19 +1,23 @@
 {
   "audio": "71fa9ab4f6c631dca57d8b089cc8055070ac6845be406320783433ad50e24c53.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "平",
       "平方",
       "方",
       "米"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 60489,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "平方米",
   "id": "827b785758d51f7476861779",

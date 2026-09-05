@@ -1,17 +1,21 @@
 {
   "audio": "d7adf2a536f18e659fd7ccd3577115d738111e29d1d202c265236a9fedd03a0c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传",
       "流"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13539,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "流传",
   "id": "518df24adcbe1f2f723b6e38",

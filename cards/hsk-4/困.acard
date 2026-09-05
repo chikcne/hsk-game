@@ -1,14 +1,18 @@
 {
   "audio": "6ede5e53a694ef782e366924c9087ba581577454f5d6654d5c6b3098515d1197.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 12835,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "困",
   "id": "f007e65db652ee88ca0619bb",

@@ -1,16 +1,20 @@
 {
   "audio": "d334fc13f9900484b889e71b14d6d10d0bb680593bbb17c6439df5c44cfd5e20.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "播"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22798,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "主播",
   "id": "3e0dfa55d4f0a09b55f02d74",

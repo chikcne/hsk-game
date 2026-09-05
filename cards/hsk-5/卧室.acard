@@ -1,16 +1,20 @@
 {
   "audio": "58eefc6d005225730114fb116d72ae06e5f637e48a17d77dc4e6364cbf3ab36f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "室"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3321,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "卧室",
   "id": "cd5485b110d6c24dadf97aed",

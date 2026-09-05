@@ -1,16 +1,20 @@
 {
   "audio": "ad150d7761cc258cb74c103200b418ec6ce45e734c9adcf8953cc18c24429c04.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "防"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12099,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "消防",
   "id": "3ec3b61c77c023b456faaf53",

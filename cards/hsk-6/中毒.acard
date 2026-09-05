@@ -1,17 +1,21 @@
 {
   "audio": "120d365f48c716375c93a0f5f50d48e7d67815ed6b5a03e5fb43934c4088f13f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "毒"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10501,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "中毒",
   "id": "e20ee7b6c051919374c5452a",

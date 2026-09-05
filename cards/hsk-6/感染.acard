@@ -1,17 +1,21 @@
 {
   "audio": "1a586cedf03d3806b62a71ae148bcb16e9167bb8fb1b97a2f5aa5995c5926e4a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "感",
       "染"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2807,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "感染",
   "id": "05099c2e8d429ad001bcfabd",

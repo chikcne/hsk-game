@@ -1,14 +1,18 @@
 {
   "audio": "18b81142111b3561ea38d255403bd0d18cbf24759c17e0d69f90e62aa3a926e8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3003,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "儿童",
   "id": "bb1c05924785ea18c7bf7a8c",

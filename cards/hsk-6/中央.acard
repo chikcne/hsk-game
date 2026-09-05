@@ -1,16 +1,20 @@
 {
   "audio": "61dff7728fd29172bbd6e3c37625b91c132906e997d2d4e2352f8c97873ec753.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3316,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "中央",
   "id": "017ea5069b7c23e57dcdd14a",

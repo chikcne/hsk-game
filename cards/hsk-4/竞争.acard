@@ -1,16 +1,20 @@
 {
   "audio": "80ecd180b19db0944ab7cad7603ea8a3cbfa02e0955a3fdc44f2b87cbc3000a6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "争"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5019,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "竞争",
   "id": "5013e9881202364f9a22620a",

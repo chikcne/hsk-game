@@ -1,17 +1,21 @@
 {
   "audio": "f6b5bc7798dca94140adbd29dc4f1eaddd0535cedf91513d752710b3b02037fb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "班",
       "级"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16890,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "班级",
   "id": "75d2d7dd80bee635464f80d7",

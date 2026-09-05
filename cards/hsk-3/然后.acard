@@ -1,16 +1,20 @@
 {
   "audio": "c2f78127fdbd3df6bf708f3b1b141509a6ada07e7c677de5616b8ec1f235eef2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 148,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "然后",
   "id": "6514c8d8d5432e74f780adcf",

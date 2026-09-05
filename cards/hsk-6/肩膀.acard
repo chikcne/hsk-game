@@ -1,14 +1,18 @@
 {
   "audio": "411b3d50cfc10396f25f6fa0f8a71a73c49f371ca3591a4ae93b5e3b59db7afc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4063,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "肩膀",
   "id": "29b0b88b151896e45771a75e",

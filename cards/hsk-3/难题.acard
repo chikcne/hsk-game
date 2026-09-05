@@ -1,17 +1,21 @@
 {
   "audio": "f71c5c5dc731dfe9c64baf32cac8aa31219d9e1f980feccd154918ee8d52ea92.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "难",
       "题"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9505,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "难题",
   "id": "18b5f9f250a4f2b24ad89eb3",

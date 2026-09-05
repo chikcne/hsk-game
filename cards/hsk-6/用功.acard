@@ -1,16 +1,20 @@
 {
   "audio": "ffc15a3b068ef53ac6a98b74104ba66e9cdf960c4fec143f667257535abb5733.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18985,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "用功",
   "id": "3fd080bfa20f981ebf960adf",

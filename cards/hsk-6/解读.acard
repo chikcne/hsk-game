@@ -1,17 +1,21 @@
 {
   "audio": "2cd262b830ec0cd7d41322c8e0441990ceb682d894859d7d1c424521fb0bce67.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "解",
       "读"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17777,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "解读",
   "id": "144ea8fb8b6a18dc38c33260",

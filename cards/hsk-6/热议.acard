@@ -1,16 +1,20 @@
 {
   "audio": "fbe76bef314e10b15f67e6d3dbf7946ce2261083681f72163405d59b2170aaba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "热"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 78647,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "热议",
   "id": "4be0f49b527c3bea2539175a",

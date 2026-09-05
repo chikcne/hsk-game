@@ -1,17 +1,21 @@
 {
   "audio": "eb03d646fe94a20f57b886e3e96881b5bcad377e189ca7125327f959c68fd8b2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家",
       "电"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 62740,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "家电",
   "id": "dfc09318b3b7ff778a114ae7",

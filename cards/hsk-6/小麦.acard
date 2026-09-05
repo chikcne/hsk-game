@@ -1,16 +1,20 @@
 {
   "audio": "a3c99a069883c24d685fbbf5b3ad7ddf563473835ab733ac1780c61c3b208ebf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14309,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "小麦",
   "id": "59483bc3f9c88efcd98af5e4",

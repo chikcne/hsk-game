@@ -1,16 +1,20 @@
 {
   "audio": "602df0386a40c91260ea3118ffae8a646996afbd3dec6160abb6ecdac13cc41c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "受"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2919,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "承受",
   "id": "3ca9780782d36ad5affa6a7f",

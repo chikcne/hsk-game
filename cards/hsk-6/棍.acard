@@ -1,14 +1,18 @@
 {
   "audio": "5b7a3734a4cef6b71a3f214471a604e8f50c4512b9d4df70f873aa321ffa43f1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 13713,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "棍",
   "id": "b15801085a59a7b919e85639",

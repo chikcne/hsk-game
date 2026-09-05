@@ -1,16 +1,20 @@
 {
   "audio": "286fe7ab755cc9e0ad7bb5ee72f3ab548fdbe6f532c61e559bfcfd33e49bbb47.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "套"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20064,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "套餐",
   "id": "fc6c523f8de2c9fe3fe243ba",

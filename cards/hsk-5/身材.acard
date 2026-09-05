@@ -1,16 +1,20 @@
 {
   "audio": "4ab8596868b9ba73b5ce41dfb858bd54ae4b9ef2d6be3754adb76de7085efda9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "身"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4630,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "身材",
   "id": "1a1af22c5bb94e9f1743e8b8",

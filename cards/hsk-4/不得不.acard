@@ -1,18 +1,22 @@
 {
   "audio": "e95a16dee5bb71fd6ee0ca61df6dbdf0c493fb8870a8cad8c49aa40ba903aa01.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "不得",
       "得"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 990,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "不得不",
   "id": "21e5e87c9ab3f0d3be8fdd42",

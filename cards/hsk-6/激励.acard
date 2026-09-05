@@ -1,14 +1,18 @@
 {
   "audio": "9fc1cca87cfd8455d71b3bed6fa6cd8bb7947ff691f8204f98f34f01a63446f6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10496,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "激励",
   "id": "6f351eacc35b9d87bfdb5263",

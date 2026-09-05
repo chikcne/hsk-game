@@ -1,17 +1,21 @@
 {
   "audio": "016b161170183d5997b01ad3b43386e981f1ea1cf6b68efafd6e7c827b1748d5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "排",
       "队"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6262,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "排队",
   "id": "3a59035d7a00af0966db6c23",

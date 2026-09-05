@@ -1,17 +1,21 @@
 {
   "audio": "48121ed8df2bf60bd2c8fe9053359e097daaafcc537904bce1bad38c0f0f3999.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "力"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20292,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "出力",
   "id": "9bc2d2ad346777af7bce3eef",

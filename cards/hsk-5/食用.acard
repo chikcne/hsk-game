@@ -1,16 +1,20 @@
 {
   "audio": "3174f5546e8fe9e7a8c1ac9edfa83db146cd636eaff776eb4b2dffb022967ecf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22121,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "食用",
   "id": "7be5afa022c685398fba7037",

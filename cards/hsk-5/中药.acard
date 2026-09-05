@@ -1,17 +1,21 @@
 {
   "audio": "a9475608cd59c3aadbee1601716da1de0de8ea1d344d98716c2858748d73b0f7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "药"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 63582,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "中药",
   "id": "cd5e93a022f3d21a326d8218",

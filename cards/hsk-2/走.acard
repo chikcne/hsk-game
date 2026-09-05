@@ -1,14 +1,18 @@
 {
   "audio": "b317089dd0fd13428bb68bcf04c3f31675b629b610e7109b32a6b59a204642b5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 60,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "走",
   "id": "b62fc23d98494f9b30d10ca0",

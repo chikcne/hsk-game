@@ -1,17 +1,21 @@
 {
   "audio": "3ce9b3d55315bc7904483a38f8c01035246c5875fa616c1350254a70561c3346.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "条",
       "油"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 65326,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "油条",
   "id": "551e1d42617c11ad34679f27",

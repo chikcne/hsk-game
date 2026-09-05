@@ -1,14 +1,18 @@
 {
   "audio": "fece59b5ac346a71d6a25e6e5d6e76bc571f61a978f3989defe65cef8f35070b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-particles-modals"
+    ]
   },
   "hanzi": "了",
   "id": "9a2e83580c9a639f9a618672",

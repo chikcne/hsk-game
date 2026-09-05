@@ -1,16 +1,20 @@
 {
   "audio": "011e422a63a982aff680e394339ad0754cea51945441bc23cd8c8fb5030a8da6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "聚"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21854,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "聚餐",
   "id": "028ebc3e2f7027bae558afe3",

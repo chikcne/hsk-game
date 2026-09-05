@@ -1,17 +1,21 @@
 {
   "audio": "e270c9ba973c8f6c60b0ce127b7678ec5bd0679b3e36282d5f9ce5ed450aa8f8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "保",
       "证"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 559,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "保证",
   "id": "ccf04534f86cbd6e9f5af1f5",

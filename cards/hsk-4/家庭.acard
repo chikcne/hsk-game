@@ -1,16 +1,20 @@
 {
   "audio": "d11c47ba51679f1f277e45b517360ae3bb8230db38b06d2836a48970e31e5d02.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 842,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "家庭",
   "id": "74cd19a647728c9369fe8949",

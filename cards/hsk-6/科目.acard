@@ -1,16 +1,20 @@
 {
   "audio": "c03b7a88068c2c584b246c270b9e82f362ffeb431ab91afc42cf9de7286ef29f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "科"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25701,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "科目",
   "id": "d6726cd9b5769d3e2bc8b699",

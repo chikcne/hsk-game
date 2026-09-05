@@ -1,16 +1,20 @@
 {
   "audio": "7d15d3c2beeee280f338cc60760f5f75cc47becafd87db9817e92ee37f0dc8a1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3100,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "猴子",
   "id": "fbabc2ed5d838888fcb965b1",

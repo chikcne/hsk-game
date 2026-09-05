@@ -1,14 +1,18 @@
 {
   "audio": "bfc15d58dc74ed7a660a88f3b90add86378d04b9372d6ae4af6a62dddd1a2ee9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 8550,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "网",
   "id": "1cdbcb8f08d2c5035fd04783",

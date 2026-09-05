@@ -1,14 +1,18 @@
 {
   "audio": "0d633e07d6574f7dbf236845edf05a6060976839d53c82afde3b4176c4c4ce9d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1162,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "腿",
   "id": "909d9a19e3069d35d6d46f9d",

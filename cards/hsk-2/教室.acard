@@ -1,17 +1,21 @@
 {
   "audio": "0d85d067b1a5fae9c5c0765fa26a6127390131513eb26388d74cd6966b6b30eb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "室",
       "教"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6507,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "教室",
   "id": "73d73e8ba7224e8b7c13eba1",

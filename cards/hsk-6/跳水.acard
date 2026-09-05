@@ -1,17 +1,21 @@
 {
   "audio": "71db94fd4e6d8f49bded3cb65f1250591d08a83eb4b32997e8f979054250b7dc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水",
       "跳"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20334,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "跳水",
   "id": "b762b9023f0019957ba1a649",

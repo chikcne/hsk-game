@@ -1,16 +1,20 @@
 {
   "audio": "d0742bcd12884b1c9ced308c1650df6937be3abdacc33211699779d000b40bbf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "有"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 36,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "没有",
   "id": "9b9f4c7345eaf3bfbc206f45",

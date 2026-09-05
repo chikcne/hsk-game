@@ -1,17 +1,21 @@
 {
   "audio": "230ecb7a86673a7bb88369d92e46e263ea5dc02f001bfa5cb5677e58982eef0b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "毛",
       "笔"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 65784,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "毛笔",
   "id": "f16b2fbbf0d1fd039c08f657",

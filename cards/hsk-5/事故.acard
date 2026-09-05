@@ -1,16 +1,20 @@
 {
   "audio": "aaa6977031565ede9cb1bc006da219beb446e4dbf545032882e8a4815a09463d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2627,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "事故",
   "id": "dc1ffd43369865213c50ca26",

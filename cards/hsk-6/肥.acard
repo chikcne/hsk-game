@@ -1,14 +1,18 @@
 {
   "audio": "211c68fcee0763b90113b77f02248dbfd6a5a97e8c25c0f4dcf75039e010b0c6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 8295,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "肥",
   "id": "d6dcb9c93b3fb15bfb36325d",

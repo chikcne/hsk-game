@@ -1,17 +1,21 @@
 {
   "audio": "c6a1a0f5b661fa24c4f3a19381497762ff278307d633f41da6bea16d7fdeadc5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "从",
       "来"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 536,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "从来",
   "id": "331ebc34088bd2380a18cf41",

@@ -1,17 +1,21 @@
 {
   "audio": "951586f821b0e9f6f410150b91e6b0515e6fc7a6e4124f320c5f40636de50148.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "总",
       "数"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30640,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "总数",
   "id": "afc2a303a38986fb51ab1477",

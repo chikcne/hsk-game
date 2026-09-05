@@ -1,17 +1,21 @@
 {
   "audio": "ba1021514f3b1c36c689006af5620572e7d8c4e6ca0dade928825f828c1c1f07.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事",
       "后"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7878,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "事后",
   "id": "715bf48ac4f7716db40bd2a0",

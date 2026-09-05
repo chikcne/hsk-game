@@ -1,14 +1,18 @@
 {
   "audio": "49fc6d72c4c7ab0e730bfab6b2b0fa9a5e19bf91bc99dfdbeeb19d96b51f372b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 503,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "注意",
   "id": "22751fb697adb7056aea0491",

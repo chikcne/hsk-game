@@ -1,17 +1,21 @@
 {
   "audio": "89799ecc51844cea0ad029fb4b9b83dfc5fdb5343c0d95a7a0abde695e08402a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "卡",
       "片"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6570,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "卡片",
   "id": "0d84b10b2e4f6458d8300c0b",

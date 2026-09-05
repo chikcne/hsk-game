@@ -1,17 +1,21 @@
 {
   "audio": "1713be80ded162ef0c94aaf58621acd9d82759d6f030fa258c113e9528f26c43.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "自",
       "身"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5972,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "自身",
   "id": "14fb72ba6d80f0223735bd1c",

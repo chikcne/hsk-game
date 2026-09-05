@@ -1,16 +1,20 @@
 {
   "audio": "a2fee5bb23a2c2c82b939ede306d2d72a6208c2289c33c7d721ca6b84a2e000c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "演"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2142,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "导演",
   "id": "1302849e41ad3bf8ae2068a9",

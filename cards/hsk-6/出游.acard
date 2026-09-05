@@ -1,17 +1,21 @@
 {
   "audio": "7c8d172b9a8f674ab5dba3d3d220484d62fea1125ea3e90b240916ad8e23e4a7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "游"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26324,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "出游",
   "id": "01e48f33b6a5e523c0cac61e",

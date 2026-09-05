@@ -1,17 +1,21 @@
 {
   "audio": "230982d7e0367c194581c850256289630099ae0832aa28e2f2760830491b8b56.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "轻",
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 57659,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "轻重",
   "id": "d707226bd9c54c59e1f43f24",

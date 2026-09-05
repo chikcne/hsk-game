@@ -1,14 +1,18 @@
 {
   "audio": "31f5670444e15cf8e9cd42bbffcb3c5b63c02323a078573ee9f5bcd915a0c685.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 20539,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "肿",
   "id": "ee630698375b083ba7995841",

@@ -1,17 +1,21 @@
 {
   "audio": "9874ff946bc9183f31617c33ebe8996cd7912c99c96069c31d5e99bfe7d3af22.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "特",
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22075,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "特长",
   "id": "f58265ddfd0abe25babf294d",

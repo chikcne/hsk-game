@@ -1,16 +1,20 @@
 {
   "audio": "b59d27d712570d3f417d99e61dbc1c9bbbe00aab4c48efa1d268a7b2f5de6eba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "对"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7906,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "相对",
   "id": "26ca433b393e5ec655fbebd7",

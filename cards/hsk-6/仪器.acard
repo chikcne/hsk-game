@@ -1,14 +1,18 @@
 {
   "audio": "f62a1e97e06d4d36f488e9c433e20708a4b4441aa6e521cf87ecdea9624ac406.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9993,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "仪器",
   "id": "63911416b1b0bef37b7e88f5",

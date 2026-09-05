@@ -1,16 +1,20 @@
 {
   "audio": "7b57121da977caee9220ce6068b9e804b6ca1298b88fefc0bd668b81e5166727.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "住"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9875,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "住址",
   "id": "a07fa141f1f828f7a018c757",

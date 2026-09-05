@@ -1,17 +1,21 @@
 {
   "audio": "0243501c8dfb7cf06a9567e68e4a64fd9c7e95ffaa3cb67b917ecbb98de42a8d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "包",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2487,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "面包",
   "id": "6548005b7aa7ba8f1ff71319",

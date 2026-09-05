@@ -1,16 +1,20 @@
 {
   "audio": "419000752ecdfeb04371b0cad279085eddfacf413ce312056e6dae55baf05dd8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "科"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 72367,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "文科",
   "id": "7566fa95e213543afbd75e53",

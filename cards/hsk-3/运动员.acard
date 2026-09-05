@@ -1,19 +1,23 @@
 {
   "audio": "d7c63acbfd54eed1cc74b01820a1d6020014d66c453dea45eda507def5b1aea6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "员",
       "运",
       "运动"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5373,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "运动员",
   "id": "1464c569bdc1e7fe19434dde",

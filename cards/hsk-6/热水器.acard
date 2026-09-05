@@ -1,17 +1,21 @@
 {
   "audio": "e5c18e4f120536b48b177963128a69a31f33727f83475be124a4907f6dfa9cfd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水",
       "热"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 55312,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "热水器",
   "id": "527d94b86ca847e88ecf084d",

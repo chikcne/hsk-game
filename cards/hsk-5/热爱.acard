@@ -1,17 +1,21 @@
 {
   "audio": "e890684fe933e05a3d4a70f98b25baf8dd1ad8c630b29d292e3cfaf16ddc0aeb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "热",
       "爱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5837,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "热爱",
   "id": "c7dc424fa92acd6e083720d3",

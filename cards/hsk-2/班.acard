@@ -1,14 +1,18 @@
 {
   "audio": "7a6b8019579054d0b597856a7c79956a36bf598d1648e86fedff5bac691bd130.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 2,
+    "frequency": {
+      "rank": 1852,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "班",
   "id": "ead4324cbde83b8b58b82576",

@@ -1,16 +1,20 @@
 {
   "audio": "9b0bbe86a4fa3cf81b89433b58b16a0cce62443a8308857ba173f0d502dd411d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3528,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "春天",
   "id": "b7937e5b0fee26b56e938578",

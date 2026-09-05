@@ -1,17 +1,21 @@
 {
   "audio": "de962a1c0558a83b52a0f8c7b7022f48cd2c301bd0f6dfdde61b7f0b12b9674b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "端",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23775,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "高端",
   "id": "56438308ae8eeb7b87e0c92d",

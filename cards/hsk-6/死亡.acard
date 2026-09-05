@@ -1,16 +1,20 @@
 {
   "audio": "73911ca297301fe5eac00854cf5deb3cdd1e053b7f9fb395d1b124218afd1943.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "死"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 662,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "死亡",
   "id": "100885778f4651b2582989af",

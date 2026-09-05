@@ -1,16 +1,20 @@
 {
   "audio": "8d772cac7fd944b15e59ec794a0d768991cd4a0b288584765fc5bd9ab7b8cff3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15446,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "注重",
   "id": "32351d70df482d3528a11238",

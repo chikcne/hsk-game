@@ -1,17 +1,21 @@
 {
   "audio": "a7c696f9554a965f01b52a040cc97fa40ac1700fe62554a9dc92a35576486b2a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生",
       "野"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11711,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "野生",
   "id": "d90038a607f52f0fd3488bc9",

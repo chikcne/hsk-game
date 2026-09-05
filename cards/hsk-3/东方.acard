@@ -1,17 +1,21 @@
 {
   "audio": "7d472d103614473796a98da9dc452eea1409a37c66aaed1c0c50ffbd4659c842.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "东",
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7927,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "东方",
   "id": "4d1b48e64899ecb8c4207073",

@@ -1,17 +1,21 @@
 {
   "audio": "8eae1136e194f157ac6cf3cd11d6338a669e722d17b15ad8a9da6d3066f9da5f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "代",
       "近"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 45364,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "近代",
   "id": "ccb2dd7e6d96d4504bd256d3",

@@ -1,16 +1,20 @@
 {
   "audio": "b5d78f993bed63a9a0386170d2e4bb99d2b2c488d6c2f501fa11ba64283c3b82.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 58362,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "中医",
   "id": "d0283b204ede25b3a4dabe0f",

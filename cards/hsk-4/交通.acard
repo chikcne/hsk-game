@@ -1,17 +1,21 @@
 {
   "audio": "17c05898ac985ed25fd5f2f5b4955299ac3b92a348bebf668e1c3c4e0e376cb1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交",
       "通"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5648,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "交通",
   "id": "1888d9e88b16c1dc73bc0ef6",

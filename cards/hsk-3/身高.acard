@@ -1,17 +1,21 @@
 {
   "audio": "c39bbc5f4029e058c39e44755140af3615c1b5ac5467bb86e3b0aae36d34446d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "身",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9499,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "身高",
   "id": "ce5fdae7f300b0353efd4c55",

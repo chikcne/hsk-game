@@ -1,14 +1,18 @@
 {
   "audio": "c5507c227356789d2eb6a35c40ecafd8ac10c10e2ba93e3c393a4b795d03ba85.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1376,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "躲",
   "id": "b1a881471692020d2e4c94e4",

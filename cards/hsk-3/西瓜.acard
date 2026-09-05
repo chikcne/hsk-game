@@ -1,16 +1,20 @@
 {
   "audio": "b43ad1fe6a5badbb931a5af034f6154296051e54c4b90ad1602644c30785513d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "西"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11302,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "西瓜",
   "id": "dbbb230d57266b613c64f485",

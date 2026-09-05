@@ -1,17 +1,21 @@
 {
   "audio": "c17e695727724169b32515bb26f655f1b07c041fc6812fbf468d7d586416687f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "跳",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 71157,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "跳高",
   "id": "5ead781334f475ab2ed2ddc3",

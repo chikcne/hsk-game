@@ -1,16 +1,20 @@
 {
   "audio": "db25a6b161904f95a50362517287374c3c3b62586526c107e5216d9347832d5a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "而"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2045,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "然而",
   "id": "d9bc0d737780ecd5b5095fcc",

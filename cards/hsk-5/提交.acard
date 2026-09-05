@@ -1,17 +1,21 @@
 {
   "audio": "51b2656f90615af47c74347c98ef38891b88b4ba4b144c2bedd780939710f6ec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交",
       "提"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8754,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "提交",
   "id": "f78185e62855f4d3d1efd703",

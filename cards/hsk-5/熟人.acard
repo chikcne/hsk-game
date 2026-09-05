@@ -1,17 +1,21 @@
 {
   "audio": "0069c88e241e9d7bc3d9d6ff3bbcb9d3e99d0b21bb753de921204cd8f81cfa41.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "熟"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10185,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "熟人",
   "id": "e5a8e041f38d4adf4e649365",

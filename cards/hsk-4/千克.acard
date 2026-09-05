@@ -1,17 +1,21 @@
 {
   "audio": "0306fd0249ba34405d90085fe3ad2d3244cc5277c07548fc2c9582d491d1352f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "克",
       "千"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 32792,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "千克",
   "id": "9c4505d346f54ca4cf30e51e",

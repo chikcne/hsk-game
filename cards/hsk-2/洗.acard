@@ -1,14 +1,18 @@
 {
   "audio": "962df347b53ca288554b7a252f12bcc1283a7894d1d4ada94cc83b0df07896ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1841,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "洗",
   "id": "22a67266f4ab60367d2166f6",

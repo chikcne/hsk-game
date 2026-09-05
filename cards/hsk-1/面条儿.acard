@@ -1,17 +1,21 @@
 {
   "audio": "6df03428365e95cd7368cb4bed77c8ba4c806f487334423e6619bde1942b1557.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "条",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 536525,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "面条儿",
   "id": "55d94362eb6cac846b908fc4",

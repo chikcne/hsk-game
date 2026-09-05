@@ -1,14 +1,18 @@
 {
   "audio": "907772382c93f9f70d5bfac92e0c3f1a014e0a3d41e9e821d18a0a7a4ca7b22a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10149,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "露",
   "id": "7910b69473015c8f1a24c530",

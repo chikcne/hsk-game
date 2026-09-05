@@ -1,17 +1,21 @@
 {
   "audio": "502b04dc1d3a0e061e73ada9f3415567cc586eddb336a95d37e41dc2a041360d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "便",
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2209,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "方便",
   "id": "e169ef7756f552a5dcaaf59b",

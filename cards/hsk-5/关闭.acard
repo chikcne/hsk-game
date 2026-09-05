@@ -1,17 +1,21 @@
 {
   "audio": "bb65921a7732d244f8a993efed88baa10053745c4e22064a73eeb8e1e8381c7a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "关",
       "闭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1618,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "关闭",
   "id": "5c83117a885b6f54859636a2",

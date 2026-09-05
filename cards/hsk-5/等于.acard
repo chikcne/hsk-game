@@ -1,17 +1,21 @@
 {
   "audio": "dd78d2a78573d50aea49f5637a692b28de943df70cdf34602bdd702f5c5e3b9f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "等"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4954,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "等于",
   "id": "8fe62f7ef56c99fc02fa608a",

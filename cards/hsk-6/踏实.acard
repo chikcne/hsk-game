@@ -1,14 +1,18 @@
 {
   "audio": "83af8e623241a796db4ebb40ac9fa536e8b3db317201f38f9dd8f774db9d15cb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 26023,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "踏实",
   "id": "8778b57404dc38629c4fde6c",

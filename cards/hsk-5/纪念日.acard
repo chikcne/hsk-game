@@ -1,18 +1,22 @@
 {
   "audio": "dec7f777309953f10fb45d812566be872bfdfb70466efc1df83f0a6c6200db66.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "念",
       "日",
       "纪念"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9464,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "纪念日",
   "id": "77038c25386624e57ad2f77f",

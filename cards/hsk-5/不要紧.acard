@@ -1,19 +1,23 @@
 {
   "audio": "52b7be48ddde60db95037a58cd5996bdaea902a1832cfc4550883020a18fb1dd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "不要",
       "紧",
       "要"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2995,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "不要紧",
   "id": "495c6d23eec25c1b727bc637",

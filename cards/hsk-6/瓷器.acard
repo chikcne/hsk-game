@@ -1,14 +1,18 @@
 {
   "audio": "12b6001a6b5ffd877d9fd37b05aa9d1b1c58f3f11ef3328d86d59895a94a514f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 26144,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "瓷器",
   "id": "bb7190c90ce890ce80a1666a",

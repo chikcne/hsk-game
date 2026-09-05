@@ -1,17 +1,21 @@
 {
   "audio": "c2c56a3c264f22fbb56d971cd2ce4c2407fb1e29d0f4f409ab67cc47bddab5c8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "可",
       "见"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13820,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "可见",
   "id": "da5cab946f30a9eb653dc356",

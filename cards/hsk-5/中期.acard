@@ -1,17 +1,21 @@
 {
   "audio": "6714571e0ed9b32c15685097d24c457ddb2c6cd6beff205a8c662fc34024d16b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21126,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "中期",
   "id": "b6d9a8b1af0abb5bce64035e",

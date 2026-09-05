@@ -1,17 +1,21 @@
 {
   "audio": "9eac731cf491159c31cb4c37c7904e797a470e6a54ee5c4667e625912db367c5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "品",
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13511,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "用品",
   "id": "9e8b660bd3d8d63b34bcd471",

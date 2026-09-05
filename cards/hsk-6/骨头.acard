@@ -1,16 +1,20 @@
 {
   "audio": "a6eb49e81527ce6f75e8718c770248ad515f4d3ef1937bb4be555c638e71dc33.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3973,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "骨头",
   "id": "0c43cf9b8f5e58be81c33556",

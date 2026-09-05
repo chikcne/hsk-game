@@ -1,17 +1,21 @@
 {
   "audio": "7eea57d7327a92686ecadd5e738ba463ff22668ff3d617a7acf49b465d24053f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "举",
       "办"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5826,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "举办",
   "id": "9bd2965408493888ab5ec236",

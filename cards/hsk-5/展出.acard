@@ -1,16 +1,20 @@
 {
   "audio": "9c21fcd6be4a9a7509914b1fa4ec8c108624786b823b04a7919163a51695b348.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19775,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "展出",
   "id": "f611ec14444a3dc4dd3f99a7",

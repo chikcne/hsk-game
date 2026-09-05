@@ -1,17 +1,21 @@
 {
   "audio": "ed186c4a6477008332d0826f097b1aa17bf0f133d70ae984e0627dba280c0801.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "挑",
       "选"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6362,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "挑选",
   "id": "735dcf395b40faa4f306f5d5",

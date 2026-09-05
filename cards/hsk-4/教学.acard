@@ -1,17 +1,21 @@
 {
   "audio": "fbc7e23a3dfd6a013349448dc321938e37e6f1946582c34cfc21ec25636bdee9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "教"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13778,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "教学",
   "id": "aff5950cb8e7c84955e08d94",

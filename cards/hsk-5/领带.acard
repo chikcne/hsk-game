@@ -1,17 +1,21 @@
 {
   "audio": "0e64be2b2a88db4579e9f6f11d58b8ba9a2a7e04be8bc91f08fb2d990bc88651.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "带",
       "领"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6110,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "领带",
   "id": "48b08cf6809167f9222cba9a",

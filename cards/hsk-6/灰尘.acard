@@ -1,16 +1,20 @@
 {
   "audio": "061d4480015be3a06f11899c937ecf1b829a3a6bc0cd654daf0fb808e3ea6501.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "灰"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10153,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "灰尘",
   "id": "bf51ca9e4665f5eff4c6f3ed",

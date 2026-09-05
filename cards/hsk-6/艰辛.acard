@@ -1,14 +1,18 @@
 {
   "audio": "853f0f8a3902300a5002072833a51856ceadf079d955a7fea6c6814b773e71f1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 16873,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "艰辛",
   "id": "bb43e12faba1c2fa4897963d",

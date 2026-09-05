@@ -1,17 +1,21 @@
 {
   "audio": "bf0f5bfc6a7c91db7060ce87e595cf442af6f996c9c4a27179b743e0cebf1341.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "举",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2786,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "举行",
   "id": "18a2890ad1a467c7237cc44a",

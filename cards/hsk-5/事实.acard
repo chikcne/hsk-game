@@ -1,16 +1,20 @@
 {
   "audio": "19f79a4f172a05c7fc4df7ebe781d6f435d48f46f8436ba34b397e8ab0e65c38.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 945,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "事实",
   "id": "d7e5b12f1d51e92ac249f2f9",

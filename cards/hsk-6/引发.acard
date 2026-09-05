@@ -1,17 +1,21 @@
 {
   "audio": "97e6fff32664e814c449a01db68d5b48902fc92ac3202cd4e588561b3f2e82ff.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "引"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5607,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "引发",
   "id": "e28e947ccd916d3346288150",

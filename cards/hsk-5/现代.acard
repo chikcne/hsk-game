@@ -1,16 +1,20 @@
 {
   "audio": "7860ba7f092762a883a1f51c5f863d83c512261b1195783960da390dd69935e2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "代"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4821,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "现代",
   "id": "0ca7a44fcdc1e1fde8b575e9",

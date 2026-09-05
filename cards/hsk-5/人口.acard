@@ -1,17 +1,21 @@
 {
   "audio": "c7986c60a90a75c0bfa40ecc87b5b336f37646bc2a5c3ba0546d3ea61211adb5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "口"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5288,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "人口",
   "id": "30549143a3b82329564ffff6",

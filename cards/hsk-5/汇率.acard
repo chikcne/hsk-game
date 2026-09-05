@@ -1,17 +1,21 @@
 {
   "audio": "cf04df55e27d8fe417984bd7ad9325de6e70964c5781a0b4f651ea1f59d21e40.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "汇",
       "率"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 53977,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "汇率",
   "id": "33e0574e61bb04895b87f817",

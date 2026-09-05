@@ -1,17 +1,21 @@
 {
   "audio": "e6353b14695c9f4d1d552e585e7a63d7882f05812f47f58ebd35e6345aca48ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "等",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28876,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "高等",
   "id": "c8c1869858b0c2fc7086c180",

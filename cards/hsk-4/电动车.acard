@@ -1,7 +1,6 @@
 {
   "audio": "289efc07f79638b31337a618cd9cf683f838f27ea14d47fc7b0a40abca9f2cf6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "动车",
@@ -9,12 +8,17 @@
       "电动",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 74188,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "电动车",
   "id": "136fad44b201540d60dda502",

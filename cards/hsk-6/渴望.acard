@@ -1,17 +1,21 @@
 {
   "audio": "e5466f6ea1cf0eddb35c2dcac4c96d9308bc0760ea57fe98a4b00c2ca011764e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "望",
       "渴"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2617,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "渴望",
   "id": "48e771b63fabf6b52040fcb7",

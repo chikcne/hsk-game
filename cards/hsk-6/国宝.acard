@@ -1,17 +1,21 @@
 {
   "audio": "5ffe3d32e10581bcdab4de5daba97ea6199c7faca2afb5497d821700ea1a8bd9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "国",
       "宝"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 47997,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "国宝",
   "id": "0bf146a0a34b80459dbd2288",

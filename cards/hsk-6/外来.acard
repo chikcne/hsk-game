@@ -1,17 +1,21 @@
 {
   "audio": "10ea4a06f6042aec96dd8c601d5344050896922d6753d3e730a57901ccfb0530.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外",
       "来"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19795,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "外来",
   "id": "70bfa5df927c3869043c36e9",

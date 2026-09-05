@@ -1,16 +1,20 @@
 {
   "audio": "b6b1005333e09a007a8367992a382b437cf2d3c122e6c0dc23524fbade3e5d9f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "多"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7500,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "多余",
   "id": "d928df907eac1016a749076c",

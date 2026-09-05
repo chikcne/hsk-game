@@ -1,17 +1,21 @@
 {
   "audio": "0103f55c25f3aa8ccad2f662e0a16e4759a48417d2c0ab8c483b11c36edcd415.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2905,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "心理",
   "id": "0b0b4b89fea6a5852427301d",

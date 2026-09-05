@@ -1,14 +1,18 @@
 {
   "audio": "1912558939403e09d7263e76fcc47959fdd44eb21483fb2fed5cccbf12ddb86e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11895,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "实习",
   "id": "5779694d9ebc9ea9ac61bc91",

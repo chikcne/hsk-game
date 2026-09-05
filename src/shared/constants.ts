@@ -1,8 +1,8 @@
 export const DECK_IDS = ["hsk-1", "hsk-2", "hsk-3", "hsk-4", "hsk-5", "hsk-6"] as const;
 export type DeckId = (typeof DECK_IDS)[number];
 export const DECK_TOTALS: Record<DeckId, number> = {
-  "hsk-1": 300, "hsk-2": 200, "hsk-3": 500,
-  "hsk-4": 1000, "hsk-5": 1600, "hsk-6": 1798,
+  "hsk-1": 352, "hsk-2": 210, "hsk-3": 567,
+  "hsk-4": 1028, "hsk-5": 1534, "hsk-6": 1707,
 };
 export const CHOICE_KEYS = [
   "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",

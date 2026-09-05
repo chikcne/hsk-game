@@ -1,16 +1,20 @@
 {
   "audio": "bb8afe611685919ec497c38299380ed38a315d10e393df16349083a7a661fbf9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1539,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "相当",
   "id": "442f9e620f86c740fd4b7cd0",

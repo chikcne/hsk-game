@@ -1,16 +1,20 @@
 {
   "audio": "18e6ef6bd2146623c2029e3a910e0ad5ec51ba43b91baed0c69482e551d6a8e1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "们"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 719,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "咱们",
   "id": "1368bc8c0b54caded02c00a2",

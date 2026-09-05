@@ -1,17 +1,21 @@
 {
   "audio": "751bf3bcff18a804da34ac289c003ce083054d228f105b3205d73d9e9c8aa458.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "座",
       "讲"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21819,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "讲座",
   "id": "65cf22603cf5975425899d9e",

@@ -1,17 +1,21 @@
 {
   "audio": "42a588705bb1d242394c7a28bc92a1a2a35b4de43d40bbc1b4a6d7115199eb31.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "推",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 29926,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "推行",
   "id": "63adee54cfd6a99c8510dc58",

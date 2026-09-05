@@ -1,16 +1,20 @@
 {
   "audio": "2b90716a6ecb4b2b94a99ea7f083a9ffc7eb6690834916774b72a8a1c00f889e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "清"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7519,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "清晨",
   "id": "bafc6dcbca57bdf1374cc576",

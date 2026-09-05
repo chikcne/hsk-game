@@ -1,14 +1,18 @@
 {
   "audio": "35d9ff71e9d5a3d2dd296dd1f4485ffe21d050aae6fa10af1a29987fc57a088e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3940,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "翅膀",
   "id": "3b7b39a5b6175a8e2f8c4e0b",

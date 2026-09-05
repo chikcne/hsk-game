@@ -1,14 +1,18 @@
 {
   "audio": "7432523c80c5eb2f0d6df49cea9d573eedc48a208e66d9a160b53b7058e5a4e3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6443,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "康复",
   "id": "77ba1307119a2e23385d2122",

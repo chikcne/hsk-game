@@ -1,16 +1,20 @@
 {
   "audio": "6c34b231fef3571e920158e55f7ae0da004baee42e1a5a2757feb8f531c8f744.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "正"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3303,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "正义",
   "id": "2d42711610945de413fe62ef",

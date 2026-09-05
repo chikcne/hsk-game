@@ -1,17 +1,21 @@
 {
   "audio": "da07562c2f3be576a642ba313d2cf31c158f899cc814ba038e58471998ab885d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "照",
       "顾"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 672,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "照顾",
   "id": "9cc848a20785537d3f96627d",

@@ -1,17 +1,21 @@
 {
   "audio": "340fe3d91107acfe9cdb2ac83e2af1c6bf0fbe5753f65d4d0a1227c1491baee2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "捐",
       "款"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14515,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "捐款",
   "id": "772648611b3ff8739d454148",

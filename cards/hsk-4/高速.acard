@@ -1,16 +1,20 @@
 {
   "audio": "6f18c34892735ca71a76e3c438c468aca7dc0d400df10ecaf9294e211d1186a8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8287,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "高速",
   "id": "8790d5fd0433795233d5c416",

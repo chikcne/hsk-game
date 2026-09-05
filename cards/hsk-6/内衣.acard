@@ -1,16 +1,20 @@
 {
   "audio": "3fbb65ef1f936ed3dc3ae268edd2cef5274e1fede46f44598b6f784072a857ba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "内"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5153,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "内衣",
   "id": "dfd5955198d55b957e02f032",

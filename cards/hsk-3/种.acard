@@ -1,14 +1,18 @@
 {
   "audio": "a9abe6b31bad309f958e8ce545af4a09c80e2891b7f499e72317b73ccbf54b88.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2113,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "种",
   "id": "d3cde1701ff570b62b11f083",

@@ -1,17 +1,21 @@
 {
   "audio": "577b8dc0b5967a8c99ce29bbaf989ba0456c11e2c5cc59c71d134916e3e9b8ae.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业",
       "就"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19687,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "就业",
   "id": "db2877af8c4f352dc1cdf5ea",

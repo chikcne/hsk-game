@@ -1,16 +1,20 @@
 {
   "audio": "f68663fa8e65141f5f75380e8e022eeb620e5a19b987004a17651adcc3bf54e0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "使"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17623,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "促使",
   "id": "4a24f348ddb0208ab182468c",

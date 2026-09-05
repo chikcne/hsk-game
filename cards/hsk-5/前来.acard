@@ -1,17 +1,21 @@
 {
   "audio": "814747cc1d0212e850ba43c055828a055ad08127d5b726a33abb661ab419e523.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前",
       "来"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4357,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "前来",
   "id": "2e93dc7bfe52458e994c8f7e",

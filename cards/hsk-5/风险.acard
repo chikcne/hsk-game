@@ -1,17 +1,21 @@
 {
   "audio": "ee3fd66e4d8b85319a449ca7c6e7ca82496e1a1708eea1b4b5c64cba68119ed5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "险",
       "风"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3147,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "风险",
   "id": "56e876c2c072f02bcf3ed948",

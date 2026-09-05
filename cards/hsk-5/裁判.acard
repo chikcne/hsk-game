@@ -1,14 +1,18 @@
 {
   "audio": "1d461ef044fcf19a4f9e9793c6671ed53027e3570ac6b405f13ae8e9b7a3f876.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7590,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "裁判",
   "id": "5e6c12f46766cb2b178d0405",

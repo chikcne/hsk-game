@@ -1,17 +1,21 @@
 {
   "audio": "76dd2ef0719d3da1497464f0c7ece94031c067cf2f0bc6f8fdd1da80f7520ee4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "信",
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2624,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "信心",
   "id": "da508f95bcae9e650e327412",

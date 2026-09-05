@@ -1,16 +1,20 @@
 {
   "audio": "cc26188915d262a28cd2ec2cc603b7ab355d252ec32f3cd1f17696e20f877ce4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "常"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 184034,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "常温",
   "id": "44993db22689ced88ad4cd89",

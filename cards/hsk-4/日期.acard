@@ -1,17 +1,21 @@
 {
   "audio": "11158b9b7b274af352ff28b78a5f8a59ef0cc54c1f0e8ce0d554e7b2e7ae2dd0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "日",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3910,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "日期",
   "id": "f732ded4775987b4ac0608f7",

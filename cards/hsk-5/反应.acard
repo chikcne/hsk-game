@@ -1,16 +1,20 @@
 {
   "audio": "69487e785f0d96b262898ecfc1dd3974d01acadc0116987c60bb024e18060d4d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "反"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1571,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "反应",
   "id": "3d51aafb8f647a717758267b",

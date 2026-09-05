@@ -1,17 +1,21 @@
 {
   "audio": "139c53520f8098a5376d639885272dbdc564ba3a7bbe3cae51b508de7a57e25d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "红",
       "西"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18764,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "西红柿",
   "id": "e9e41c970616e47c174854bb",

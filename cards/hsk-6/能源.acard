@@ -1,16 +1,20 @@
 {
   "audio": "4813d18a90afdd27003133b77baebd924ba503fafb752aea4702f32ba8f761a6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6455,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "能源",
   "id": "4bcbc806d07612fb5a10a158",

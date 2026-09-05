@@ -1,16 +1,20 @@
 {
   "audio": "e8d3eee609bf742ecc7f27baaabd0ca81c7b5279ee813b77c4c28755df6f47b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "算"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4680,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "计算",
   "id": "9b09dc680b0593809337eec4",

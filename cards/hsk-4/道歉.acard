@@ -1,16 +1,20 @@
 {
   "audio": "e6b13ca3233bc00f17f22438660aabd9c34786a3eb92f25b781c4e6ef8ade420.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1048,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "道歉",
   "id": "086e2bc7adf8e3a9873336f6",

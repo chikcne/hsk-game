@@ -1,17 +1,21 @@
 {
   "audio": "6d959b56f2cca1de64c0da222c52916a6c566e5f153235d2cb5f3cce88515b2b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "总",
       "是"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 395,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "总是",
   "id": "b184582c795b4056e22eb0fe",

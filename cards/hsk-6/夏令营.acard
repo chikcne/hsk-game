@@ -1,16 +1,20 @@
 {
   "audio": "e4c4ec75a86481f684ee5d2b953e0800761a93cae7bf3901bbbc3125085af5ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "令"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14840,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "夏令营",
   "id": "2381f480bfb251adc87a65cc",

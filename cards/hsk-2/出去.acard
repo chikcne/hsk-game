@@ -1,17 +1,21 @@
 {
   "audio": "cec5befa0b23b6469958a88d7f43e196a0ee6cfdbbd05e53a929416eff39a877.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "去"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 293,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "出去",
   "id": "aef43ae4e9adffe3b7191097",

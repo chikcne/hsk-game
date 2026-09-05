@@ -1,16 +1,20 @@
 {
   "audio": "10a57f2e874425cbdff306546f25a723e9be527878617049498850e691afbd02.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "指"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2116,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "戒指",
   "id": "ec1e53b7bde2384080a51559",

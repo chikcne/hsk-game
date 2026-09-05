@@ -1,17 +1,21 @@
 {
   "audio": "00374ef29e1de405864381dee8c23175840ef08cec6c5a66363ea6c50568fc2d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "得",
       "难"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5567,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "难得",
   "id": "cd60561488198ce80336a697",

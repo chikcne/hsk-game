@@ -1,17 +1,21 @@
 {
   "audio": "90ae31f14aac2075c5d51aefe0851ca498465a47ac0295023462072a262f2135.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "属"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1118,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "属于",
   "id": "7e1b92c9e4723c854443b019",

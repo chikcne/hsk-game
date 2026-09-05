@@ -1,16 +1,20 @@
 {
   "audio": "fd1da8018b95e0aacf2a0583d6ac482088557112290bf5a79f770d1f136ee66a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "烧"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4190,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "燃烧",
   "id": "66a0f439dc7b809db7ead349",

@@ -1,16 +1,20 @@
 {
   "audio": "c73151097edd886e056f19358419239da14e4853da9dbb20b7b9f6d6776a2fe0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "至"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 464,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "甚至",
   "id": "74721046212433a7506906cd",

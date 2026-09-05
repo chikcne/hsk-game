@@ -1,17 +1,21 @@
 {
   "audio": "c2bec3535d508bfbb6674275ecdf1c4557ea9c5fdba5844223b7fb14101ca0ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "里"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1584,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "心里",
   "id": "a3d8df3e2fbcff4d4a226f4c",

@@ -1,16 +1,20 @@
 {
   "audio": "07db174bddb24af474d7e154eaf1d3b0388b2db01ec408e4f9f5e8f178c1acaf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "放"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 789,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "放弃",
   "id": "f223172d9ae6b7932de4d4f7",

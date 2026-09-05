@@ -1,17 +1,21 @@
 {
   "audio": "a410d7d41c604ff4fd25e42aef87ae4965e1e39b6ec1af5cfb25738bc7cf0e9b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "指",
       "挥"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2674,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "指挥",
   "id": "0a9453524148ca917fde6bd1",

@@ -1,17 +1,21 @@
 {
   "audio": "8347ba93b789b8fe46c5b0b6fac8f5ed39bb43eb34ad03cf873047503d188d28.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "看",
       "眼"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8874,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "眼看",
   "id": "2256e63f7133844070f7089c",

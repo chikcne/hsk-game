@@ -1,14 +1,18 @@
 {
   "audio": "d7d3563238ca2fd87a6967045c59b739b129da3ffa7c478d3b0f17394e2e904b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11132,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "刻",
   "id": "8fd927e6ce89bcf77a04f606",

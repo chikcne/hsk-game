@@ -1,17 +1,21 @@
 {
   "audio": "ce8a8a34a73ecc3134176e286cc8c0188cc2ca2ca622c177523083e319d921b3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "信",
       "念"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4967,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "信念",
   "id": "774269da94da1d89b11361d9",

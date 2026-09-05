@@ -1,17 +1,21 @@
 {
   "audio": "b052d351b1371a5660bdfa75fa8ac2b07c9d9be910bf84004876911abaf5a05b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11820,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "大方",
   "id": "b82841a7b19d92b6b0cb1149",

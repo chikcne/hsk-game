@@ -1,17 +1,21 @@
 {
   "audio": "f40790dd84d69cfee54bd68d090ba02bab58707be408df517fa075574ca984fd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "算",
       "计算"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6519,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "计算机",
   "id": "9bc0c30059ea798d288bb86d",

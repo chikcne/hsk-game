@@ -1,17 +1,21 @@
 {
   "audio": "253a0ae5bced7ae6e265900acc0e022b56c068bb7bae413778f89e0293104ea4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "净",
       "干"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1490,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "干净",
   "id": "56bfde84f9922a609f106e5f",

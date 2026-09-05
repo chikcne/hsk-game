@@ -1,14 +1,18 @@
 {
   "audio": "4388f94b60a0200a8cff2eecfb2980bdbfb90fa7aeaf716d603ae06b344b261a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9136,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "利息",
   "id": "271ee4d657631f9c7bad5691",

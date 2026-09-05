@@ -1,16 +1,20 @@
 {
   "audio": "84f493d14f1e700468e6e5238bf37b28db73b0a713211cf643fcb31bcf7104a9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "茶"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24241,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "茶叶",
   "id": "85a2feb816ae777a937de1b8",

@@ -1,17 +1,21 @@
 {
   "audio": "4db12587fcb8410f7fc4704906eb96df3cef5952d7b27282ca613b29cf829cf6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "种",
       "类"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11227,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "种类",
   "id": "e4160c6c6297261f1582bc94",

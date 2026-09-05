@@ -1,17 +1,21 @@
 {
   "audio": "a9512372a2a73f9562cd1cc4e87655395f2d67d848bbb68f4eeb530a99f75869.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "初",
       "步"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11949,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "初步",
   "id": "b09185ca3c7491860de3b292",

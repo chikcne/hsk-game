@@ -1,17 +1,21 @@
 {
   "audio": "fdafeaf9d6ae57ace3bf59339a6d281dcc3025f974644feedab7efa6e140e03b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "较"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 47111,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "较为",
   "id": "e65b4544208fed512e24e5dc",

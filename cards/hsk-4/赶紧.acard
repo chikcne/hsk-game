@@ -1,17 +1,21 @@
 {
   "audio": "c1a8ce0ad40a6fc559c4f3a151ae776ae3a3b79667ca205ac99457204934eadd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "紧",
       "赶"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1460,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "赶紧",
   "id": "79a7383982ca7d8fb2f95508",

@@ -1,16 +1,20 @@
 {
   "audio": "fe02d9fda7152314e5f42abc7796c60b05e40f8e07bc380a58357263886eb0df.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 121199,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "上旬",
   "id": "32a1ef84eddb444ae64ed0e3",

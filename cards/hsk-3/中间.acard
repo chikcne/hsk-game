@@ -1,17 +1,21 @@
 {
   "audio": "e10f77ba98933a2bfc19d9457950b67486a56e07c26166047db6d565299caf2c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "间"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2081,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "中间",
   "id": "190a0201685e866d43f33b45",

@@ -1,16 +1,20 @@
 {
   "audio": "fd2168c711e0a09b79a1c3c5079546824b2422058e92112aaa68861ca12770f8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2279,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "肚子",
   "id": "e04768067dbab6d9317ec846",

@@ -1,16 +1,20 @@
 {
   "audio": "66ac384912d288993bd4181646d87defcf7aec53795ff228b56266ee6330e550.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "便"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20509,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "便利",
   "id": "726793aded2f794feaccd8c7",

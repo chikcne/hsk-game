@@ -1,14 +1,18 @@
 {
   "audio": "008ca3716aac7304665b7173c1c10e111f76ab19f9797f1afd582920fa36280d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1545,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "鱼",
   "id": "0993dbeb00b4a71632e9b176",

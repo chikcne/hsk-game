@@ -1,16 +1,20 @@
 {
   "audio": "d9487748561495a8dd521dfd2969d70eddbaae010b2594ed97d2e99f9d896612.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "建"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1006,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "建议",
   "id": "d13886ce8a39eb945f2c34c4",

@@ -1,17 +1,21 @@
 {
   "audio": "947761afb1becf01790c529b9de06ca4414c2b80276f05c47c25e04ebe29cab4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "久",
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9650,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "长久",
   "id": "c5770aaa870a818ab3dc6db9",

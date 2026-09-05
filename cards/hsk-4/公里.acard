@@ -1,17 +1,21 @@
 {
   "audio": "e527a77df182fc23f357f1efa72827db2ca170eb929a89ebb72e8d3552d9db4c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "公",
       "里"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3184,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "公里",
   "id": "ba816d3a50f56d19f3c33c09",

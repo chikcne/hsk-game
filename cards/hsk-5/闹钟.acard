@@ -1,16 +1,20 @@
 {
   "audio": "ea83e5e3ff74e3d91901d34a6040e661da4814ffd45dd15f3aa06b8ce1e5f42c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "闹"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16788,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "闹钟",
   "id": "4c308eba81c74ae8a49cea95",

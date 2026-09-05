@@ -1,17 +1,21 @@
 {
   "audio": "46f957150aabd07aa0c1eba831809de7688c2dcb4332c32971dce6f39e515f06.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5033,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "高手",
   "id": "5020db537eb5295c19c06c02",

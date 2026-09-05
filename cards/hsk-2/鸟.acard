@@ -1,14 +1,18 @@
 {
   "audio": "4abc1d05668309e854d1da4aa3fab4de1bcf70be83c9a43cc9dc5b6abf44ce5f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1962,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "鸟",
   "id": "5da845234880f876e4ad3521",

@@ -1,17 +1,21 @@
 {
   "audio": "2734e5ea64055d8e93cd833b509d1299cea50ea0a2742dc9d9cd5e6ee7e6628e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "国"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9972,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "出国",
   "id": "eb713043d48ece94445c5b07",

@@ -1,14 +1,18 @@
 {
   "audio": "343db70436a8a558e48f91be02d3a33824c602b3401cae7471e6c3e85fad5909.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1128,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "战斗",
   "id": "13ce3bec3e623dea452ced35",

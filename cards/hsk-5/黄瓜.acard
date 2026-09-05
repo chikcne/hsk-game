@@ -1,16 +1,20 @@
 {
   "audio": "0bacb440beebf39b15e9cfede11141e63af20d78eb49ba820bf3f106ed966b0b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "黄"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17410,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "黄瓜",
   "id": "cf91ea67bb4ec5d07b618b8d",

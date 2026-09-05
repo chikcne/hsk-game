@@ -1,16 +1,20 @@
 {
   "audio": "6c6646a59ce2f884c97d5ac73591805f374f60dbcf189792c60b6e4b5113db5a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "低"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 34865,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "低价",
   "id": "8f9edfc8a3c4e1fd1b1d471e",

@@ -1,16 +1,20 @@
 {
   "audio": "f17fb4d2c1cb035cde97cc6f73f511752c5990c2063e7eb320d132cf0bf7080f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "爱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21539,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "爱护",
   "id": "739fd6530aa4666416cdffa0",

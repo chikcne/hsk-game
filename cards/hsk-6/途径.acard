@@ -1,14 +1,18 @@
 {
   "audio": "0346bbd575a5e1a565a74e5bdad6b1c20012aff82fef2c1931e6873a06bfef30.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6112,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "途径",
   "id": "cdff3dc2b6e4fcca0234c585",

@@ -1,19 +1,23 @@
 {
   "audio": "ebff8f30b060e13f1ea3b181e57a73df738fa37142a459d029fe4a361c917520.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "假",
       "假日",
       "日",
       "节"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 65051,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "节假日",
   "id": "aebb40adfb28ae948eea9282",

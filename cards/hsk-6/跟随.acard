@@ -1,17 +1,21 @@
 {
   "audio": "6ebc91577524d04e84e6408cf7534bc4720dd183145075b92ee40b6f7cfbbe1b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "跟",
       "随"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5924,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "跟随",
   "id": "a16990fba7c6c66a9ea06213",

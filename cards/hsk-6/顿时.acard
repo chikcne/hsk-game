@@ -1,17 +1,21 @@
 {
   "audio": "b4c3389cc10a264ca1c61b9d0a9f3f7cdc1215cef0ea2ea62a8388fce3b2ccca.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "时",
       "顿"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 50357,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "顿时",
   "id": "9415a1f2c88f7d5dda8007ab",

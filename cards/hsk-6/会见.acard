@@ -1,17 +1,21 @@
 {
   "audio": "e1f7bab158202a2db5acd2167f79a6e25573da7e44bbf78b7cf822700d13f424.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会",
       "见"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3889,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "会见",
   "id": "c2bcead46b8b26b7819a28af",

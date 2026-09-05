@@ -1,17 +1,21 @@
 {
   "audio": "c5f102161c7aee04aa920123c064eed51466c08a048b525b6a985da41caa7efe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "理",
       "管"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2513,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "管理",
   "id": "4ee733f1045447e1ffda01aa",

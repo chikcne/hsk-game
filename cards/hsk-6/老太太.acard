@@ -1,18 +1,22 @@
 {
   "audio": "17b0bae382e2d3a613396182399a460cce145ae896480db5cdda8122ee5bcb66.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "太",
       "太太",
       "老"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7522,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "老太太",
   "id": "ff846eac73420a0b2a7b333c",

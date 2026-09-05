@@ -1,16 +1,20 @@
 {
   "audio": "709e0bb4b9709dcdbefacdc28029f445a732e7f2c99d7261b9e51e78fc8fa57f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "伤"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9122,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "伤亡",
   "id": "8cbd22d017fdc3253847eb9b",

@@ -1,17 +1,21 @@
 {
   "audio": "d410c5683e0f6ff255f5982bb20e8fa3fc0901d9474fc59059e21193baf87b4d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "产",
       "特"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 43129,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "特产",
   "id": "a781df1cacca118c8bee79c5",

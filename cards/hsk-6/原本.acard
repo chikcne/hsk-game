@@ -1,17 +1,21 @@
 {
   "audio": "70dfafd6c4de1476fa360afb028023310aac37c43c0176c4e42b2328a42dcf1b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "原",
       "本"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2991,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "原本",
   "id": "cdbc10e75019932be9164b71",

@@ -1,14 +1,18 @@
 {
   "audio": "99e109a9a9fb1cc01981a8fdd51b4000d51187888d7b84696aaf4c95ab17f68a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 69095,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "灾",
   "id": "19004ce443c0f0629d15bd26",

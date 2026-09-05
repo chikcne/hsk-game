@@ -1,17 +1,21 @@
 {
   "audio": "bc3db6dd16eb2d6212468cf84a064c2d1ed3036e492197b56309e9f3e976fb2a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "建",
       "建筑"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8921,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "建筑物",
   "id": "c0e4ad5ce843b1dbc91722e1",

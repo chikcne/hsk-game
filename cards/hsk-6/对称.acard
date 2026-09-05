@@ -1,17 +1,21 @@
 {
   "audio": "386895577a20309b2365a90491f020e55e2f35dd8d7a4a706bc90968fb23bccb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "对",
       "称"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26783,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "对称",
   "id": "b16d492b3ab52cb7432d232b",

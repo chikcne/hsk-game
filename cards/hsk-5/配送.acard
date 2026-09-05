@@ -1,17 +1,21 @@
 {
   "audio": "5c93f47192b3c417447210a9d436545a3a5bd1cf6856ed695e6028a2c9d88a15.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "送",
       "配"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 86862,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "配送",
   "id": "9a1f102da329b1dcc5add30c",

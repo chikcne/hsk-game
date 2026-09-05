@@ -1,14 +1,18 @@
 {
   "audio": "12a13f3715de9189ec28be4d4d4f550da7268c3726afe22078fc2226ad970b48.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3297,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "牌",
   "id": "97fa5dc49c36e8caefd0a297",

@@ -1,16 +1,20 @@
 {
   "audio": "c559fa5b6026ccec4e74ee20dbaf54eac2026e73266069bae8067d8415adabcd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "有"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7143,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "持有",
   "id": "04ec760249ec5751e14d0451",

@@ -1,17 +1,21 @@
 {
   "audio": "0397faa491db361bd8e5383f83ece80bd4e8f54c40cc815a55eacc654a1f6df0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "停",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1942,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "停车",
   "id": "aebb90812cd40795357ab741",

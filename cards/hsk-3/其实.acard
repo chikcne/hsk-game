@@ -1,16 +1,20 @@
 {
   "audio": "f75fb2c71bea895dc641230d093efad5e1a498f6adf9b5cb3856d9beaf1324f7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "其"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 456,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "其实",
   "id": "5106da3c7802956cf3b936b9",

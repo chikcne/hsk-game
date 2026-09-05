@@ -1,16 +1,20 @@
 {
   "audio": "4a4f82a99a73c2e8569bfd0c57b642599aa2a10a1cb7819b9f70b9a4c460456e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "雪"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18032,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "雪糕",
   "id": "663eaf0a75051f88334475fd",

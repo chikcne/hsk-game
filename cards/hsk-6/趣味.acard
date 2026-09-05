@@ -1,16 +1,20 @@
 {
   "audio": "cecb94c806268ee49a289af38ac1d77673ec6e98369dd1fa8ba60b357a2f9fed.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "味"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31234,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "趣味",
   "id": "58791cf4a7995bf26e2bb3dc",

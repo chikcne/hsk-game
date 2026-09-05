@@ -1,17 +1,21 @@
 {
   "audio": "d6706f63e979e16d2a9fa0864447be2d0b85aeeb6545c2c0e41abff4df2b567e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "移"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1646,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "移动",
   "id": "ae135324b7243e60881dc38f",

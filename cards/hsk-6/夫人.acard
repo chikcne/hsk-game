@@ -1,16 +1,20 @@
 {
   "audio": "f064a6be665dbb9829c243735ad25f14ff87c8fd2bb923c80700cf121773a8d3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 474,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "夫人",
   "id": "8f82ed222d9cb9aab99c805d",

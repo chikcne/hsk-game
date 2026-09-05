@@ -1,17 +1,21 @@
 {
   "audio": "24baf0be4e11bcc4368fa62ea29ee47075d67ab8cf662d1351b2fdb3b514fb5e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "健身",
       "身"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10233,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "健身房",
   "id": "ef4aa09ef50e97c7937c1994",

@@ -1,16 +1,20 @@
 {
   "audio": "909ce0518c267615bfee1fddc8413005c64f6e8ca543270698aabf9d2c176972.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1295,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "经过",
   "id": "8443d29d31c368eeeec5b272",

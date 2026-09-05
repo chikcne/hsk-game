@@ -7,7 +7,6 @@ import { applyRelearnRating, createRelearnSession, type RelearnRatingApplication
 import { buildReviewPlanFromSnapshot, reviewWordIdOf, type ReviewPlan } from "../../domain/review";
 import { countGraduated, curriculumLessonNumber, reconcileLevelProgress } from "../../domain/learning";
 import type { EncounterOutcome } from "../../domain/session/types";
-import { createSecureRandomState } from "../../domain/random";
 import { createDemoDeck } from "../data/demoDeck";
 import { createReviewDeck } from "../data/reviewDeck";
 import {
@@ -109,12 +108,6 @@ function updateLifetime(save: SaveFile, outcome: EncounterOutcome, points: numbe
   return lifetime;
 }
 
-/** Per-profile curriculum seed so two players never share an introduction
- * order (the seeded fallback only exists for deterministic tests). */
-function secureCurriculumSeed(): string {
-  return createSecureRandomState().map((word) => word.toString(16).padStart(8, "0")).join("");
-}
-
 export function App() {
   const [screen, setScreen] = useState<"decks" | "loading" | "learn" | "relearn" | "battle" | "summary">("loading");
   const [save, setSave] = useState<SaveFile | null>(null);
@@ -209,7 +202,8 @@ export function App() {
 
   /** Grade clicks launch Learn Mode — never the arcade. An active session for
    * the grade is resumed exactly; otherwise one is created from every due
-   * introduced word plus up to `levelSize` new curriculum words. The pure
+   * introduced word plus up to `levelSize` new words from the current
+   * authored lesson. The pure
    * `prepareLearnLaunch` step produces BOTH the level record (with the new
    * words' introductions and the advanced curriculum cursor) and the session,
    * and this caller persists them together in one atomic snapshot. */
@@ -229,7 +223,6 @@ export function App() {
       const launch = yield* Effect.try({
         try: () => prepareLearnLaunch(current, loadedDeck, new Date(), {
           levelSize: current.settings.levelSize,
-          newLevelSeed: secureCurriculumSeed(),
         }),
         catch: (error) => error instanceof RangeError
           ? new LearnCaughtUpError()
@@ -517,7 +510,7 @@ function ModeMenu({ save, settings, selected, strokeData, onSelect, onLearn, onR
   const selectedLevel = save.levels[selected];
   const selectedMastered = masteredCount(selectedLevel);
   const selectedTotal = selectedLevel ? Object.keys(selectedLevel.words).length : DECK_TOTALS[selected];
-  const lessonNumber = selectedLevel ? curriculumLessonNumber(selectedLevel, settings.levelSize) : 1;
+  const lessonNumber = selectedLevel ? curriculumLessonNumber(selectedLevel) : 1;
   const totalMastered = DECK_IDS.reduce((sum, id) => sum + masteredCount(save.levels[id]), 0);
   const totalWords = DECK_IDS.reduce((sum, id) => {
     const level = save.levels[id];
@@ -1002,7 +995,7 @@ function SettingsDialog({ settings, onApply, onClose }: { settings: DifficultySe
   const update = <K extends keyof DifficultySettings>(key: K, value: DifficultySettings[K]) => setDraft((old) => ({ ...old, [key]: value }));
   return <div className="modal-backdrop"><section className="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settings-title"><header><small>MEMORY SCHEDULING RUNS ON FSRS · REVIEW PRESSURE IS ADJUSTABLE</small><h2 id="settings-title">SYSTEM SETTINGS</h2></header><div className="settings-body">
     <h3>LEARN MODE</h3>
-    <NumberSetting label="NEW CARDS PER SESSION" value={draft.levelSize} min={5} max={100} step={5} onChange={(value) => update("levelSize", value)} />
+    <NumberSetting label="NEW CARDS PER SESSION" value={draft.levelSize} min={5} max={20} step={5} onChange={(value) => update("levelSize", value)} />
     <h3>REVIEW MODE</h3>
     <NumberSetting label="SESSION LENGTH (BASE SPAWNS)" value={draft.reviewSessionLength} min={200} max={500} step={10} suffix=" WORDS" onChange={(value) => update("reviewSessionLength", value)} />
     <label><span>BASE WORD SPAWN RATE <b>1 EVERY {(draft.spawnIntervalMs / 1000).toFixed(2)}s · {Math.round(60000 / draft.spawnIntervalMs)}/MIN</b></span><input type="range" min="1500" max="10000" step="250" value={draft.spawnIntervalMs} onChange={(event) => update("spawnIntervalMs", Number(event.target.value))} /></label>

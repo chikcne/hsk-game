@@ -1,14 +1,18 @@
 {
   "audio": "baea25b7a8ca73c22596e527e30ada4ff1afc31a9b01965c8c8836080c21883d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6939,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "挣",
   "id": "c95fc7dbe331069a57fbded3",

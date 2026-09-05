@@ -1,16 +1,20 @@
 {
   "audio": "ffc5268ee99ae597241036742af02f2c8c53e76f25502cf9c4fdd4aa98db1c28.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "到"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 900,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "遇到",
   "id": "7d373bef88cc1be8dd337305",

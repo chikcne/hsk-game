@@ -1,17 +1,21 @@
 {
   "audio": "5dd487a992c691c05e80f8dce5398a526c835ceeeb56ec127726441d5efc0543.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "假",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4571,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "假期",
   "id": "18189ba98d10abf17eb3e2ef",

@@ -1,14 +1,18 @@
 {
   "audio": "583d8817c5cad4d7342af0b734d1c5c99b41c9cf0ba3ecb1694a865e05c65f8c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1286,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "历史",
   "id": "78d56f6e941a74e9a1c1bb46",

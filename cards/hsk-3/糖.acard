@@ -1,14 +1,18 @@
 {
   "audio": "66352a658cde4c70c63082de54d5b2dcd7317d0033979523a296225c766ec8b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2917,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "糖",
   "id": "61513fb4ecf59cf6b41f1a83",

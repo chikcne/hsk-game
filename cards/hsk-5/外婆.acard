@@ -1,16 +1,20 @@
 {
   "audio": "05a4f481445ba89c5dbc87ce587a7de0219ffdfa01300bf2b701391e96778ee8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5332,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "外婆",
   "id": "ba7cfe7f7b1d0c4d075cd95e",

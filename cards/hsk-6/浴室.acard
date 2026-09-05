@@ -1,16 +1,20 @@
 {
   "audio": "7d915bec5a07642a2c99b0a0eaff457355a5ca12e38e486acaaf60fa50a2ad28.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "室"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3277,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "浴室",
   "id": "3d33e2cab969ab59a56ab17e",

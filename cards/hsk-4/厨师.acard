@@ -1,14 +1,18 @@
 {
   "audio": "812b521e38cf9c79854616f1cf855bd1601277ec7f25ba131f2e37cd95bda2a5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4579,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "厨师",
   "id": "09396a10f7966ddd43104905",

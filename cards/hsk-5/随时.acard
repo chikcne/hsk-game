@@ -1,17 +1,21 @@
 {
   "audio": "cfab169df1c00d7a06cbefd0804b049f4128ab55d1ad9aef8722ed609b76341e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "时",
       "随"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1554,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "随时",
   "id": "6478614e40c19b7045687e1c",

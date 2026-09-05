@@ -1,17 +1,21 @@
 {
   "audio": "7cd640811e49b7330deb74172ab477314fe11cdd0640de571282f057ab965e32.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "和",
       "暖"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6993,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "暖和",
   "id": "7c93d07d7e0607754d76a2da",

@@ -1,16 +1,20 @@
 {
   "audio": "695f157812b5d52ed0b30787610cdaa2cdcbad997ae548e04a971508a9f8acb5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "包"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4670,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "包裹",
   "id": "1ae093b0211e0e195d39ee28",

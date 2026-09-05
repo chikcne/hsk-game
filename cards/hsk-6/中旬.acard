@@ -1,16 +1,20 @@
 {
   "audio": "f1373e3b2b6a952fbf14e8b45ee6ea73b5139a366ea7eaa31397c37f1a4b694b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 45267,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "中旬",
   "id": "48af295c5e711f4682eb2a47",

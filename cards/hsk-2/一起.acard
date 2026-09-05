@@ -1,17 +1,21 @@
 {
   "audio": "46fe5a77c33b13d21efc98839fa3a78f60d0799a92584c508c1b532fa1874fe6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "起"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 117,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一起",
   "id": "fc01a0b72973cde7b0c7f0a9",

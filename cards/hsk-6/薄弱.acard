@@ -1,17 +1,21 @@
 {
   "audio": "0e63cfa61eb94fe54add77af6321ec50db1ca0d674435d326f043eb4952718ef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "弱",
       "薄"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25587,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "薄弱",
   "id": "e0b600077c8b3059e9909e2a",

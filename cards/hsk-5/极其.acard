@@ -1,17 +1,21 @@
 {
   "audio": "af051f688d0704bc55e789944e763b95ba993525579ad0f53af63ba5164fae32.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "其",
       "极"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7367,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "极其",
   "id": "6b0d329f5723b7b2d6ed881e",

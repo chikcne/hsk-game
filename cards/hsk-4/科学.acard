@@ -1,17 +1,21 @@
 {
   "audio": "6372cae5736064529d05787bcb1165b30bd205616887d3249aec950fdef17fec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "科"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2255,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "science-research"
+    ]
   },
   "hanzi": "科学",
   "id": "637c79d21e7c8a0bde016a82",

@@ -1,16 +1,20 @@
 {
   "audio": "9ae1ffbca8b54ea2c48ce6c0a9ebeb0d0922166bc044609fb76cc9f209b8ed83.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "饭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27179,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "饭馆",
   "id": "4ac05657b2bee22210cb5193",

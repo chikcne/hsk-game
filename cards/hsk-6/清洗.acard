@@ -1,17 +1,21 @@
 {
   "audio": "3032f5be5eefa369a32c63549215dca5673d7833933c4d3f027bbfbc8adc4617.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "洗",
       "清"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6884,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "清洗",
   "id": "cebd38b9ee47347512400237",

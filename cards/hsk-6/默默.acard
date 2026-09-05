@@ -1,14 +1,18 @@
 {
   "audio": "aeff15ac3ad680207c7e590216d405b7c25f4029768f2968e0929611089e14bf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 16142,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "默默",
   "id": "6ac3afcac10cbe973f030a88",

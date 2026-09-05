@@ -1,19 +1,23 @@
 {
   "audio": "e34195b4ae422d703b2a1d6b6f319a9c17efc2ddf2f15dce8b48b727c65f12b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "列",
       "系",
       "系列"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6566,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "一系列",
   "id": "3eef9d9f0e63053fd63875de",

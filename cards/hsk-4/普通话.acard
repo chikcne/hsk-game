@@ -1,18 +1,22 @@
 {
   "audio": "8eadc96475b37e75498d03f6214acdfb3baa956571437f271702feb1ef1d562d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "普通",
       "通",
       "通话"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 32773,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "普通话",
   "id": "47c4004703f619cd4de7510d",

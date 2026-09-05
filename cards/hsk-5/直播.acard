@@ -1,17 +1,21 @@
 {
   "audio": "a1f5c777a8a612defdb12659f2d166634279b7f51c1659b33a58be523e81b9b5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "播",
       "直"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5218,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "直播",
   "id": "02db0360392d8eace5a5511f",

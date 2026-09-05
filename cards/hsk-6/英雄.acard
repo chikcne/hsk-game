@@ -1,14 +1,18 @@
 {
   "audio": "7ca4a26fecd1c5b29b60498f0a8dd398291b3098ded8413030e562b555dc3355.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1177,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "英雄",
   "id": "26199fc5c7052455edf082ac",

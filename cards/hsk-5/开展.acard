@@ -1,16 +1,20 @@
 {
   "audio": "2c7dd164e7113dc1f19e690c0c8af7370bbd59f7d0cdcbd65e3d44c4acef35f9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16134,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "开展",
   "id": "af6c303bcbf2b3a64b9612ae",

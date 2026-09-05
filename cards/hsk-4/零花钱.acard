@@ -1,18 +1,22 @@
 {
   "audio": "ea8e85effb1212156528d94b3a18d0a8f4eb671e8b6d623dbbeb84641b45e74b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "花",
       "钱",
       "零"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28875,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "零花钱",
   "id": "93b568537c4321114871e57c",

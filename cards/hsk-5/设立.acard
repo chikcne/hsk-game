@@ -1,16 +1,20 @@
 {
   "audio": "30fa7bca6ca6922899883f16b2638a3126f8b6129c61b77fed1f7882eb53ecd8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "立"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12843,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "设立",
   "id": "d695a6c609faac06914df530",

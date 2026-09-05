@@ -1,16 +1,20 @@
 {
   "audio": "97e7663c60ba6da1205f53ccff9a1fdb27f1e79ed9bc5f3944816dac459620c4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "命"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2897,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "革命",
   "id": "633e03a21e04e3d8507b981f",

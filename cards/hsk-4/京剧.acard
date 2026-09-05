@@ -1,14 +1,18 @@
 {
   "audio": "51879b8113a9d5ae17230a4657316a1b484cee823646e7f60888fec5f3d5b320.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 103357,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "京剧",
   "id": "722d0fcf786d56c294996d35",

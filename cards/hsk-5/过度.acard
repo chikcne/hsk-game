@@ -1,17 +1,21 @@
 {
   "audio": "018384a9d446e64da7b808a4e43338fb2defa12e1966ba4ff9e918394537b6bd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "度",
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5845,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "过度",
   "id": "bbc1cc198923bf40f4d44253",

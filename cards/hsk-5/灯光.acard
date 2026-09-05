@@ -1,17 +1,21 @@
 {
   "audio": "2fa3aac1c6176c72fa2d18f332ede26a3c4575b029dfa33f443ed442a7834651.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光",
       "灯"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5290,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "灯光",
   "id": "819fe18afa5cdc8164f88a40",

@@ -1,14 +1,18 @@
 {
   "audio": "7fb80076df319f933169099e4e2e56599eec2d1377ed6b07a9acc2aaf3e81ce0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2997,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "烟",
   "id": "973d058b71045eba0faf495e",

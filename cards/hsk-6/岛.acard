@@ -1,14 +1,18 @@
 {
   "audio": "81910378cc9ea05e401851f2f3b45e000dfcd97f2a9c9d15e4a55ede900c987e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2589,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "岛",
   "id": "fbc6ae4decf5f91e16908643",

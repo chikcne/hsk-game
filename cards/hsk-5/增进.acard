@@ -1,17 +1,21 @@
 {
   "audio": "f86e571c7975ce760f981e0cc2e66fa65f9b808e813be1ec6a704586436aa08c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "增",
       "进"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 38222,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "增进",
   "id": "5050e037430650f76ed7d3d2",

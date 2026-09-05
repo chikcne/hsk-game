@@ -1,14 +1,18 @@
 {
   "audio": "26daf49aec8bbcdf41230771b99c44668af785ef3911dce5ab917440008ca8cd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 17358,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "优惠",
   "id": "129263c39281cb2be5102cc8",

@@ -1,17 +1,21 @@
 {
   "audio": "7eecb2385d091102d6f298814144420cebd484dc6df07303ac5d003ceb904793.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "久"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2491,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "不久",
   "id": "513d9bb682a4ac40023d1a40",

@@ -38,7 +38,7 @@ export type SaveRepositoryOptions = {
 
 export function createDefaultSave(now = new Date()): SaveFile {
   return {
-    schemaVersion: 4,
+    schemaVersion: 5,
     profileId: "default",
     revision: 0,
     savedAt: now.toISOString(),
@@ -138,7 +138,7 @@ export class SaveRepository {
     });
   }
 
-  /** A missing or invalid file is a first run: schema v4 has no predecessors,
+  /** A missing or invalid file is a first run: schema v5 has no predecessors,
    * so there is nothing to migrate or preserve — the next PUT replaces it. */
   private readSaveEffect(): Effect.Effect<SaveFile | null, FsError, FileSystem> {
     return Effect.gen(this, function* () {

@@ -1,16 +1,20 @@
 {
   "audio": "228febbaa5f3221b22cedcb6a9566b170e86c5fda69e0dbd906ab265ae6e89c6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5636,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "氧气",
   "id": "d190d3ae52fad2dac78a719e",

@@ -1,16 +1,20 @@
 {
   "audio": "10684b495655adc2adbb8b3e7c82e539c824acf2c570336cef213becabafddac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "米"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5277,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "玉米",
   "id": "3938a09700431712e357ecc5",

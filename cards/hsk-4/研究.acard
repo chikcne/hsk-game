@@ -1,14 +1,18 @@
 {
   "audio": "0edff6c4c0bf4a7524a8a23c6ea0e1134468f6da748ad68826e88e245b0d3767.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 882,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "研究",
   "id": "776817cddd6fec7d98bb79e7",

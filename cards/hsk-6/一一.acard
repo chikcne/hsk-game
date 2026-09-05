@@ -1,16 +1,20 @@
 {
   "audio": "6fc128d36bc889eebecf8f7e12fd5f13d36d0a140f3f6ad44e213a72df870d56.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7174,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一一",
   "id": "1fde2dda4fe3d787b62e43b5",

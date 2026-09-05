@@ -1,16 +1,20 @@
 {
   "audio": "dc9cca703a2a09133c935ad2145d71c4a98be994dcb80cd1daeb0aedc66be4ae.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "风"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6158,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "风景",
   "id": "16dccc74dd163f7fd4e44197",

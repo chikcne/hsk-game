@@ -1,17 +1,21 @@
 {
   "audio": "cc96b39abf6a05eda0b4c9ed51769ef3f9d2532938f5b7ab8ed0833c302979f6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "粘",
       "贴"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 95291,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "粘贴",
   "id": "c0dd7a811362d6d73d201a4c",

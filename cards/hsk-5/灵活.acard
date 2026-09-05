@@ -1,16 +1,20 @@
 {
   "audio": "14fc12ceb2186830aa7466c9db8c99530113cede80decdde0e0df696c3794035.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "活"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12988,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "灵活",
   "id": "a4fb36c15bd8066085b545a2",

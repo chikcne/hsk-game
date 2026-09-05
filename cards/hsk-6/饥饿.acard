@@ -1,16 +1,20 @@
 {
   "audio": "b0659aff12bf6cdb0d304f819600bdd631a93b368393c915f8d6715650b42f0c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "饿"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6764,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "饥饿",
   "id": "de4a5ca4f8ba6d41ad18c587",

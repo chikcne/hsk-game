@@ -1,16 +1,20 @@
 {
   "audio": "c1f49a56b6a35a31b6ce4b38b64b61d6db89eedeac922a4752dec9c34d09ce7f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "处"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 34737,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "益处",
   "id": "65286f891048d8909b1c25dc",

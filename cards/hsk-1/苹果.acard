@@ -1,14 +1,18 @@
 {
   "audio": "8a14bf5fa19fe0a9891b703664a402b511e1e1d8e480bff32b44f2ab3dc852b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3424,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "苹果",
   "id": "3fb53fdbf6cf0b6f5e728b8e",

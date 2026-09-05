@@ -1,14 +1,18 @@
 {
   "audio": "81df3b46c0370f4e664f53890c7217913bf5fa0d08a6718a3decfa75aa1cb16f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 107,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "找",
   "id": "f2f9035cfd310511add9b5ee",

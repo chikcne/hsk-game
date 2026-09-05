@@ -1,17 +1,21 @@
 {
   "audio": "3b59cde02a482b359c4a4b738e0bd18a132a85747538e11143cccefb393c4b52.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "弯",
       "曲"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12913,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "弯曲",
   "id": "478d153dd9e954bb1b51a84b",

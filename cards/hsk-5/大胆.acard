@@ -1,16 +1,20 @@
 {
   "audio": "b88c22091ba2c26b3c2877441f66565be7f3daedeb10a90be02fc96730a05652.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5322,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "大胆",
   "id": "e8f19fcf06aa68693542d012",

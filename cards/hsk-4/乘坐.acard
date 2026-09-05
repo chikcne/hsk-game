@@ -1,17 +1,21 @@
 {
   "audio": "88b5dcaca79a7a20f4a4d4dbd7ac25cb76ffcbbf0505ec8250df17ab40b14273.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "乘",
       "坐"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8288,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "乘坐",
   "id": "69fe2deb724f3683bdaf2497",

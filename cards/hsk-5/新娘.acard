@@ -1,16 +1,20 @@
 {
   "audio": "dd261ff703165e41b27a15770cf6005d867446b0cb5a90aab8b2cf1aa1636d2d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "新"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3179,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "新娘",
   "id": "d6733c113631120d39f109cf",

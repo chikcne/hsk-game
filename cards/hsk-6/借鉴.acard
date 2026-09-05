@@ -1,16 +1,20 @@
 {
   "audio": "bfe8725d8504fb9056d34c7e5ddabc19a00713672bfcd9f87c90aab24f878d87.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "借"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 44792,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "借鉴",
   "id": "f4ebb167844c1f00699b454d",

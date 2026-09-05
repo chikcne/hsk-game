@@ -1,16 +1,20 @@
 {
   "audio": "0c03c3d85fdea40c0db82a14bbc1ac08e852473287ee587f98362753760fffb4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "讲"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17581,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "讲究",
   "id": "c009aaa73510508e2de8b8cd",

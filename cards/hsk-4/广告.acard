@@ -1,16 +1,20 @@
 {
   "audio": "9a673ba4c87c3498d6e7213d409a17d4ffa1fd1e70f9e196fc92f4e43c42d8eb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "广"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2818,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "广告",
   "id": "df66be08c8b665cc7ddba02a",

@@ -1,17 +1,21 @@
 {
   "audio": "649ad254f62c4f8aa80239d21ad1f402f98f1542224c7953255e0746c8f1df09.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "加",
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21836,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "加重",
   "id": "ef57bf35585750746bdb7e93",

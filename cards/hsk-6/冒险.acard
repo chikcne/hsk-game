@@ -1,17 +1,21 @@
 {
   "audio": "d575ffe0a881f026c3974ce15d7de829a6bffee55fac7a9ee6f66407e5317550.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "冒",
       "险"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1968,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "冒险",
   "id": "509c4774187bfc92807ee78b",

@@ -1,17 +1,21 @@
 {
   "audio": "f5e55b57d8c3d1c40f4521a9ee1becc10ecf293f61deeebd69b1808ac2d8c0e8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "球",
       "网"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12268,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "网球",
   "id": "d8bc15dd1a9203ce319da0be",

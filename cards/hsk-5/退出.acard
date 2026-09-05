@@ -1,17 +1,21 @@
 {
   "audio": "ad7b0e0a242c56c5089fe4fb5dd6b1a97da1d0255bb758e42a6a4d43b53a2aa2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "退"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2550,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "退出",
   "id": "65aafe6a8854956d65a1fd59",

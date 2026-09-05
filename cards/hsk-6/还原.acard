@@ -1,17 +1,21 @@
 {
   "audio": "e74e540d3245129de80a3b2e534f6b8d714d8b733e388f4ab9c87d7fa1bbeb7f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "原",
       "还"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27048,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "还原",
   "id": "37957be2f26ba95032f2f7ac",

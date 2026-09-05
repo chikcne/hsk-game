@@ -1,16 +1,20 @@
 {
   "audio": "88dc339cbeaa63ce5bc95cbd3e567b191785c8075275b0e074fb76dfd27cb4ab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "神"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3692,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "神经",
   "id": "147326b5b7e52adff74438a2",

@@ -1,16 +1,20 @@
 {
   "audio": "708304faa43a6e1f053b046f66cfa3f07ef42dac4917e04dbaba688c1c49726c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16408,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "郊外",
   "id": "6d5d53e3c58e46e32696e4ab",

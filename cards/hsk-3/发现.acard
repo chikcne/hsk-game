@@ -1,16 +1,20 @@
 {
   "audio": "11fb7a5d1f3821c7fae3567775c98c06fcf73d430c902c11d238cd5ad9c4a405.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 262,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "发现",
   "id": "8b2a2805410da70512f10430",

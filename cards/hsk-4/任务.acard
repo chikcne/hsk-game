@@ -1,14 +1,18 @@
 {
   "audio": "2e6f842950117c879775e4fb853861c893edcd7213ac8d4b52eab07372ba0aab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 770,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "任务",
   "id": "18c477e0b4f65dd1705ce169",

@@ -1,16 +1,20 @@
 {
   "audio": "55b24a736cd373a9c9f9bda13cd767da2bf8da43ee2b2f726758eed20a2c5c04.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "冲"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8713,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "冲击",
   "id": "62fb50d60c20b2d9d910bde2",

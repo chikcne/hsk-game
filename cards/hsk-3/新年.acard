@@ -1,17 +1,21 @@
 {
   "audio": "caae8e23b4a6c8789f2fbb661f670ab367bbdec53ce7986ceaa36b8a30e9250c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "年",
       "新"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7628,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "新年",
   "id": "b7d79e0b6660d0053727418c",

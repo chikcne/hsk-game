@@ -1,17 +1,21 @@
 {
   "audio": "1bb2cad3fe153be920cf8f9bb557b0de2c261cdd70c2e2fdc54a45c4fa808fa7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "快",
       "递"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11019,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "快递",
   "id": "968b974bd0fd6514fc0d80ff",

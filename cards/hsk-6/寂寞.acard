@@ -1,14 +1,18 @@
 {
   "audio": "88da7c0da9a01e8007a18d54fd362343c6ebb6bad029a456805332545af4c5b8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3351,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "寂寞",
   "id": "d0a8e89c767dd9e8cb9728d7",

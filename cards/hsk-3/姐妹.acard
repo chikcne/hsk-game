@@ -1,14 +1,18 @@
 {
   "audio": "a727c1bb5793e225c88385adcead2786bb16a3cd3f446b64b16928cb9a83709e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3086,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "姐妹",
   "id": "9b50cf176e62ee82e1277810",

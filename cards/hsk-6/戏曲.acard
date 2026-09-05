@@ -1,17 +1,21 @@
 {
   "audio": "855a68cee7820991053ebd681be8a3522f11c3e830e39303e5f6e99c2c2391ef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "戏",
       "曲"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 146051,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "戏曲",
   "id": "03a0de8c2834997248a6d11f",

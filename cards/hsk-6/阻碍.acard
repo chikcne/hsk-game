@@ -1,14 +1,18 @@
 {
   "audio": "97cf6c6f875e47202e48ccdf328441c89ed8bb08f30b6da04cdc8c59a0502ca0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8096,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "阻碍",
   "id": "e28c2b60db300c17e1ca2df7",

@@ -1,17 +1,21 @@
 {
   "audio": "630bcb0ed0b6129886ced09617085e78510c581e8ed86c36412e7056a58059f9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "还",
       "退"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 49282,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "退还",
   "id": "2d3990959a983b6b36e47983",

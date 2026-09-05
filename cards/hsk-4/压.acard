@@ -1,14 +1,18 @@
 {
   "audio": "402c26618b58e9bf9cebd1dd48410eddb6fd9f551fc837881fe8ae2081f1b77e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8196,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "压",
   "id": "8827daccdcf43608ecd9b87d",

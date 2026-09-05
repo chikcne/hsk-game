@@ -1,14 +1,18 @@
 {
   "audio": "afc9d675fe48d07ae208dec7b2af894969afdfd3f86348ffe01dd359f4919484.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3731,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "墙",
   "id": "3bb34dfb5756139459fe8c5f",

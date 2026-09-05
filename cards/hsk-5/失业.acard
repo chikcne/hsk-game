@@ -1,16 +1,20 @@
 {
   "audio": "5d60dd59984fdd79c895e4002a645724552dc08d7249f5aaadb349038dfe9728.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6770,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "失业",
   "id": "8eb6d679ed8d9f31c9c9810b",

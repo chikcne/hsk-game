@@ -1,14 +1,18 @@
 {
   "audio": "0762a6708dad7f94f1a29056dc2ca5bb44ab224c7a32c11457b96dc61890596e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 19702,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "体检",
   "id": "3f97e9a5b51d362d846c6b0e",

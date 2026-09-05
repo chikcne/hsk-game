@@ -1,14 +1,18 @@
 {
   "audio": "d5ac11a7c8284bb1a71b3cb520b021a8d8f9e3934da3f905208fcfaf84da5e16.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 242,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "任何",
   "id": "19ff959c7085838a3e0ad13f",

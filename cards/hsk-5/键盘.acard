@@ -1,17 +1,21 @@
 {
   "audio": "cf3d0d5abc2a621521f0566d828569cc4fd14f532d7cd85ad926bff68c5b3934.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "盘",
       "键"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18028,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "键盘",
   "id": "f9049e58efe342acc83d6be9",

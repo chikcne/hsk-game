@@ -1,16 +1,20 @@
 {
   "audio": "f96388836c584537a94401b9ddd0e30094b8beea91d3d8109ea0198b61988cb7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "怀"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1126,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "怀疑",
   "id": "887f7b81a9d3186eee611a93",

@@ -1,16 +1,20 @@
 {
   "audio": "8ce061876b2a17f9fe7fbee195cde521359999ee9491f9265bb0ca3e1ab35c4b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5284,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "作业",
   "id": "a364ceb8ea935fbb438ea95d",

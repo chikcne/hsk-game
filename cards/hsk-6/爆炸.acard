@@ -1,17 +1,21 @@
 {
   "audio": "2ed57f49bd8c8f657008cdccb22c53d4e33a781810033ab363e86048d0e4aeef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "炸",
       "爆"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1341,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "爆炸",
   "id": "80cdeee64f6bf4b8cd9c37ed",

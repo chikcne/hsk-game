@@ -1,16 +1,20 @@
 {
   "audio": "009962a937cd1e3f7489f8d625ea4f0eaf3dbd8ee78734391924b213c64fa3ea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19306,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "胶水",
   "id": "70628a714df878710fe38b3c",

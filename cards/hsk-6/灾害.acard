@@ -1,17 +1,21 @@
 {
   "audio": "6a6acc11fd2a60028d8612600b80471b61e393e85ccf24a1a92cb31996b3271a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "害",
       "灾"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 36129,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "灾害",
   "id": "e135123abe75829323518799",

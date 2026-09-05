@@ -1,16 +1,20 @@
 {
   "audio": "b9d2f1044298f8f076ba0da6c1d8be28e7ec6400cfcbf974e1903a819dd0c381.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5935,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "大厦",
   "id": "df7ab3360afa03e11cc680df",

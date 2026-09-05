@@ -1,16 +1,20 @@
 {
   "audio": "b3c426f6b080d0f2c3583c47da69e81b47753cfc169031621609dbf5a58978ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "玩"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2630,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "玩具",
   "id": "5f90ab7f4ba3ade45176303b",

@@ -1,17 +1,21 @@
 {
   "audio": "3855b53f51ae70e3ccd44ffd242718f6ac03914397ff6f5a692ba1bb3e9f728d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "葡萄",
       "酒"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6489,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "葡萄酒",
   "id": "00ec9c219baa86eabba58779",

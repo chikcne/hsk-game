@@ -1,17 +1,21 @@
 {
   "audio": "e35ad92be72fc2186a129ff9c472bf881066cb21df10466fa72c68ac4810cec8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 194,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "发生",
   "id": "e322a39fb68e0aee179b0cce",

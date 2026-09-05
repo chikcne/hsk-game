@@ -1,17 +1,21 @@
 {
   "audio": "9e78a8330c6f66710ebed0b6460b881776cb38942c6d5e93ccb313878c7a65b2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "命",
       "运"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1604,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "命运",
   "id": "5e90032c17363e87c74e56d9",

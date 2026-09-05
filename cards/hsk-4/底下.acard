@@ -1,17 +1,21 @@
 {
   "audio": "9526d0696a35b629a88bafa69546cffe85aed4d1532f2675ef149457f8b0272f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "底"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3939,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "底下",
   "id": "085c59d095a3061d618884d0",

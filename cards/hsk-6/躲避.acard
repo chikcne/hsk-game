@@ -1,17 +1,21 @@
 {
   "audio": "1889566af626a7248faba65707e92d560cc4741c6739700de8a9e0635d928692.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "躲",
       "避"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7841,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "躲避",
   "id": "c0d2982be51195f93138bd15",

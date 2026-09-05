@@ -1,7 +1,6 @@
 {
   "audio": "5b59b1dba850ce40c95f048310343511f7ccd7627e7cf784f5f1391cf5f433bc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "关",
       "至",
@@ -9,12 +8,17 @@
       "重",
       "重要"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11141,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "至关重要",
   "id": "c614090162e9c4169a5ce3e3",

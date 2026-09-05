@@ -1,17 +1,21 @@
 {
   "audio": "1fc216b3c777ff763d90f1df2db0aad2c3e8a7b4a77454f61f8edeb8d3f9377c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打",
       "招"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5783,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "打招呼",
   "id": "a3b86d2e4568051f0fecab86",

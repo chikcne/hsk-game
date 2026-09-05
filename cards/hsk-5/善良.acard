@@ -1,14 +1,18 @@
 {
   "audio": "9a4f8ac3e7a1cda51b59d8a41e28dfa8a96314a402a52ec9ca1f9927e4210c1c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3561,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "善良",
   "id": "2aeb9b881cfdfe3bcca59ab9",

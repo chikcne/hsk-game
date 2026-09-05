@@ -1,16 +1,20 @@
 {
   "audio": "d816ea88e410fe324b2ad14f3feebfb8d2db678ac6ef0b5af488fb97bd0bb934.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8898,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "时速",
   "id": "107f718f41672c8dc5f0dcf1",

@@ -1,14 +1,18 @@
 {
   "audio": "bb87478ca81ef3fabe15a7d471a0e32b6d3b8f0dcbc6dc082d961620247127c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 14111,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "耳机",
   "id": "c20501a8f87402973ac8d5bc",

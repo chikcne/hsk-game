@@ -1,17 +1,21 @@
 {
   "audio": "93ae938d6ab77ba7903fa3c43131b4b8a75aab22d72b769710b91df8465c0225.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "加",
       "油"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 792,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "加油",
   "id": "a1b2e471d235b36b42bd653d",

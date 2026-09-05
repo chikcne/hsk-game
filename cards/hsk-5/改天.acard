@@ -1,17 +1,21 @@
 {
   "audio": "5ed5fc2c660e2892be08c52e9c302086ad58aa6879b4f804f8ec179c394ab4c2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天",
       "改"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6129,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "改天",
   "id": "c4146215bff8d7ad6e983779",

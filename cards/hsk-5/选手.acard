@@ -1,17 +1,21 @@
 {
   "audio": "411355d44e45a466b225fd7bc04d015fd2882c162f9c9e28f93a3234c9b151f2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "选"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2885,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "选手",
   "id": "30710fe8881b73ba945e6e48",

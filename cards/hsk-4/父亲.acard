@@ -1,16 +1,20 @@
 {
   "audio": "e3d5700cf23e3833cdefd9202aa3d5cf985b3b043fb429812c8ca49c3e345af5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "亲"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 315,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "父亲",
   "id": "d756a44ac3fedc50882355c1",

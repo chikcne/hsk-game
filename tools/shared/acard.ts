@@ -34,9 +34,6 @@ export const AcardPinSchema = z.union([
 
 export const AcardCurriculumSchema = z
   .object({
-    /** Exempt from rule 3 (components before compounds): never hoisted, never
-     * a prerequisite, so its compounds are taught whole. Decision D9. */
-    boundMorpheme: z.boolean(),
     /** In-corpus words contained in `hanzi` — single characters plus shorter
      * multi-character words. Derived, but stored because it is the input to
      * the component-before-compound constraint and reviewers need to see it.
@@ -50,14 +47,11 @@ export const AcardCurriculumSchema = z
       })
       .strict()
       .nullable(),
-    /** Effective grade after component hoisting; always `<= level`. The
-     * directory a card lives in follows this, not `level`. */
+    /** Effective grade after component hoisting; always `<= level`. Source
+     * files remain in their official-grade directory. */
     grade: HskGradeSchema,
     notes: z.string().min(1).nullable(),
     pin: AcardPinSchema.nullable(),
-    /** Member of the hand-authored survival block pinned to the front of its
-     * grade, ahead of the frequency order. Decision D1. */
-    seed: z.boolean(),
     /** Controlled vocabulary from `cards/topics.json`; `topics[0]` is the
      * block the card sorts into. */
     topics: z.array(z.string().min(1)),

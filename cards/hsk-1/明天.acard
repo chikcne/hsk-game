@@ -1,16 +1,20 @@
 {
   "audio": "9de046db2265448b2a4f2ae63a065f7d1c544f74f96cd2a75a75ff4dbdb8b529.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 317,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "明天",
   "id": "b43f38991774b2896e3aad53",

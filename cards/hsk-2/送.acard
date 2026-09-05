@@ -1,14 +1,18 @@
 {
   "audio": "345f1b0c24c1158cb16f65451e394c4a72f69ee34e92636854044eae4698a94e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 387,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "送",
   "id": "4d387e1ae1a48beecf3a2446",

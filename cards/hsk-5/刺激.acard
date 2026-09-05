@@ -1,16 +1,20 @@
 {
   "audio": "e211f788f12fded04ffe2555b99c22d221354a9937f7bf1bd37940999dee89cb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "刺"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2166,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "刺激",
   "id": "4b2e52258dda727dc11f7664",

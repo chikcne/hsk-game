@@ -1,16 +1,20 @@
 {
   "audio": "be550cc9548514e5c8c9a9796de15e9d169f75cef59dbc4438630685927b44b4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "睡"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 820,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "睡觉",
   "id": "f9970785ed5700224cc110f3",

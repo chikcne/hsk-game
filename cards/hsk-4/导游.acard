@@ -1,16 +1,20 @@
 {
   "audio": "10acdc1952b7a18696dbe2e7ab5247b5ec5684873aba248c6ad683130c516d82.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "游"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15361,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "导游",
   "id": "8ac5ec08d2d8289811641a9e",

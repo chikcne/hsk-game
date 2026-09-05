@@ -1,17 +1,21 @@
 {
   "audio": "2952fc80d0a77b9b6c7e2a9a091edcb71c107855a035714b3f8b1f6f260c9ab0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "台"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6590,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "上台",
   "id": "ead828c959be6bf68b9efba6",

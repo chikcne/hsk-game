@@ -1,17 +1,21 @@
 {
   "audio": "ab3b764a758cc1279feb37565130a7038087a35ab8cd8ec458f602f8fada2b1a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "好",
       "正"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1640,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "正好",
   "id": "f27278f9366cbb304bfcc18d",

@@ -1,17 +1,21 @@
 {
   "audio": "4961e74a7cdf2140e8dc2e5eaf431b7a8a00a1deb74ca9f7f133fed256daeceb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "尽"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2162,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "尽力",
   "id": "24b233bb8f959064747f214f",

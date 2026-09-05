@@ -1,16 +1,20 @@
 {
   "audio": "e7416cf9bf576b094e7c843674582f4a313db1f6858ca8f10a72189b0ae2ecfa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "员"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8542,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "职员",
   "id": "dcc4a22ab9075748048ba561",

@@ -1,16 +1,20 @@
 {
   "audio": "c955f2cc7822e3fe6488a468ad6d0849f7ea0c9386d66815622b1aa053687edf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 762,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "终于",
   "id": "02d315c04b60437da76fe645",

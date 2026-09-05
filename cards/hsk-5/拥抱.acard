@@ -1,16 +1,20 @@
 {
   "audio": "91e512893dbbbc43f41350ef3ad54fa05ba25be5768bea5f0cbac4d29da79d24.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "抱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3596,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "拥抱",
   "id": "1da5f5eabb03511a568a588c",

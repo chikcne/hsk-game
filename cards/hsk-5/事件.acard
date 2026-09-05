@@ -1,17 +1,21 @@
 {
   "audio": "854088723ba0872709f30f3d1bcd2b4dd5237bb96025b00e0daff401c44ad035.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事",
       "件"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1168,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "事件",
   "id": "e0743faa3409895f18bed366",

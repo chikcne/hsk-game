@@ -1,17 +1,21 @@
 {
   "audio": "582baedfd01e8247965d5a03cf5606bbfee9ac7339ec12110a8331e0420e09e4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "船",
       "轮"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25496,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "轮船",
   "id": "faf84b9b4ea188b92f890cf9",

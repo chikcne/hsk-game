@@ -1,16 +1,20 @@
 {
   "audio": "09f5b903b70853d064243209ca4f6c4ff42e98e7274952c9907d13929d6a5e28.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "电"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 304573,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "电商",
   "id": "9a23087ad780eba5f3e9fd9e",

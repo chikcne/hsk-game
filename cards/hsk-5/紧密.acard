@@ -1,17 +1,21 @@
 {
   "audio": "25bf799be32f746aabad5f96e4da6cea81a81ef58e0efdd9a194efcbae826684.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "密",
       "紧"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13518,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "紧密",
   "id": "3f701dd2465ee941d0262532",

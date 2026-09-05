@@ -1,17 +1,21 @@
 {
   "audio": "26d8444a8bc0c0da8ff17e3b50d002c14cddedc26831fe14e22cc64ae8bae7d0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "布"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5278,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "发布",
   "id": "3ce651458038aa0a258ed2e6",

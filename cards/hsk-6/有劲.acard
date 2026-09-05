@@ -1,16 +1,20 @@
 {
   "audio": "537c99096f75f9d70fc7e7a56b62ae89d25a5e115f8e1051e14777a4f3ecd968.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "有"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 36203,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "有劲",
   "id": "d14d27b930fd2b9ebe4db690",

@@ -1,19 +1,23 @@
 {
   "audio": "5e2afaed9b127d75cb9fbde72860d557b114ecbfbea39a31cc1c2823cdb74933.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "时",
       "时间",
       "表",
       "间"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13488,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "时间表",
   "id": "afb006a1a4b6b43a71ee080a",

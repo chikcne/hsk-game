@@ -1,16 +1,20 @@
 {
   "audio": "19528779903d823fbe33218682620645adb86fe25f588644583455c78a6f8cac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "围"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10882,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "围巾",
   "id": "408f6acb5dee3bf58b2c6ee4",

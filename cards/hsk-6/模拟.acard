@@ -1,14 +1,18 @@
 {
   "audio": "2e5ef2a23b55804c084cd8ef00ec305d85cf2a5b669cc90f7d42f0c4f858f241.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8474,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "模拟",
   "id": "2944f7ad4537b83b7de0bb95",

@@ -1,16 +1,20 @@
 {
   "audio": "6ec257336ade00d6c2c7b4a947189bdd6416cb2bb1979eba54ed2362635f57d4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "完"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13531,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "完善",
   "id": "bc2d63634d6de7cb0b7dfc55",

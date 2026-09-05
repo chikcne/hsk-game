@@ -1,17 +1,21 @@
 {
   "audio": "31fdaf84be34a50255b7f02205bc0da81ccd8d9455623478df6703053ce43e8a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "试",
       "题"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 78514,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "试题",
   "id": "e39bae22201bb228f4bc42b1",

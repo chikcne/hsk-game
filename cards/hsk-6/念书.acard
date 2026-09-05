@@ -1,17 +1,21 @@
 {
   "audio": "8e2387f211344e7f8c0fcf48de4c307e343b5a9d66b4bdc507c6be6f90b3c0ca.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "书",
       "念"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9110,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "念书",
   "id": "53f38948ae3ce6e89f743347",

@@ -1,17 +1,21 @@
 {
   "audio": "d57690e03e3b7d15903855dde748a0cfd04acf5e22e2be9966b29de17b869d96.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "路",
       "迷"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3500,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "迷路",
   "id": "6a79b4d0508bac1e5606a407",

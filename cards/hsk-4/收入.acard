@@ -1,17 +1,21 @@
 {
   "audio": "d8a5a0a698ed53e3a15e7089da22b1733b22e447e18603407fbf603b7d5befbd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "入",
       "收"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4583,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "收入",
   "id": "6d6fa0438d57dc9874ba7a8d",

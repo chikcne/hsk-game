@@ -1,14 +1,18 @@
 {
   "audio": "2a64ca8b955bc6859627c623a198d76cb419980d1c4d8df6caf7e1a17279741d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6631,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "果汁",
   "id": "599afa3492a3064a04a3a824",

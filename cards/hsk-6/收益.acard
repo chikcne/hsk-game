@@ -1,16 +1,20 @@
 {
   "audio": "5ec60ef29355bef166e193115e3afe4946976be154850fb128d9a60226209b12.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "收"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15711,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "收益",
   "id": "8565db90912d758ba986cdab",

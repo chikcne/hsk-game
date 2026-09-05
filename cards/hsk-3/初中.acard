@@ -1,17 +1,21 @@
 {
   "audio": "c03c705b26c75769d8eda01d54247469ae9507575fd80171749b428ccbea0671.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "初"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12813,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "初中",
   "id": "0ab13907455d85cbd3dc0339",

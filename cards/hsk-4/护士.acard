@@ -1,14 +1,18 @@
 {
   "audio": "2c17538fcc1bdc823f6ae552abc051cf93089b8a54c97c8cc828674ddfeeffd4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2469,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "护士",
   "id": "c5e63a7a6876e36b9fbe5641",

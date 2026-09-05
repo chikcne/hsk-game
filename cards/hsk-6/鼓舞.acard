@@ -1,16 +1,20 @@
 {
   "audio": "ee93c17421fc1dc84bc83c7f961675fa67aa69bd8eb0077eb18d1cdb02302396.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "鼓"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14426,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "鼓舞",
   "id": "e7763adb4e462b9e171a10c2",

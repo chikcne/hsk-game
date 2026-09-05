@@ -1,16 +1,20 @@
 {
   "audio": "7d21b2c6a04cc494093244d52a927ecde8f2d4e7c4afadf9b8e91e9284fa0746.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "想"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2568,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "思想",
   "id": "0667a8fa14193143a2801c99",

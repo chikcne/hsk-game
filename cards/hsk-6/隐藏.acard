@@ -1,16 +1,20 @@
 {
   "audio": "835db172b105ccf1bbf18ea8b7b7d3b4d2e1b7453fea7d504fb7165f28902300.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "藏"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2564,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "隐藏",
   "id": "f327f440803e9a60d85a5f86",

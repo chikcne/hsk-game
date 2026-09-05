@@ -1,17 +1,21 @@
 {
   "audio": "9b72c07152edcdcb26c35a294387eb6180aed6358c357e601ed64ffe3090435d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "据",
       "证"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 860,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "证据",
   "id": "c507b4b1d8da38581cf37e86",

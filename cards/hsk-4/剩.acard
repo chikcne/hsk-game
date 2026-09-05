@@ -1,14 +1,18 @@
 {
   "audio": "80270d59890b9e162bc1bbe27d711c6a5fa5b1dc0b208f6fd296717395276131.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1799,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "剩",
   "id": "49ebc0a16ff1c35b7d134584",

@@ -1,14 +1,18 @@
 {
   "audio": "f87bb94f69caaf10f7a57ff2f2b641e8c5fb5e6d7b4580ec0d6aa2e74dfe3c59.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4912,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "仿佛",
   "id": "9dbcda235e549d6944d2e9d7",

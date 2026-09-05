@@ -1,14 +1,18 @@
 {
   "audio": "f76232c2f87e4f184213750c3ba1d45464358ed0e58b0c166ae6047e5797641a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 19642,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "复习",
   "id": "f4fcc2c036c7e97bd24d7802",

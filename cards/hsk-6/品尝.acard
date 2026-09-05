@@ -1,17 +1,21 @@
 {
   "audio": "9baecf416b9560c4668500715d3553b8bb08260f1215eeccfa04a4898f66210d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "品",
       "尝"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10122,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "品尝",
   "id": "3ed94bb14053e1ff32c6d515",

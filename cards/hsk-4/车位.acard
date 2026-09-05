@@ -1,17 +1,21 @@
 {
   "audio": "65809cc9b7f52c82c912cf1b03859b647d8dfd3c6505aa09c40cd20f9af27808.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "位",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27829,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "车位",
   "id": "befbb35f691f6bbbc0d89f10",

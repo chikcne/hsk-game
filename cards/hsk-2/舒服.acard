@@ -1,16 +1,20 @@
 {
   "audio": "99f95ef1a394a912cb964c93494d9df0618c009d1d14c8ca2ab8134b3d126e92.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "服"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 976,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "舒服",
   "id": "708435312bccb78175c3ad3d",

@@ -1,17 +1,21 @@
 {
   "audio": "5d0d24ff4f96c95cdc1410f71cca8986b29602bae048df50d3cb01a13578231e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "免",
       "避"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3014,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "避免",
   "id": "d09ea3a7e87246cb1feaf76a",

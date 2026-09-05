@@ -1,17 +1,21 @@
 {
   "audio": "a74189535e9af15b1c3a50ce6bb030958e736ab294f47e7e452b1fb57bf13afe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "可",
       "是"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 264,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "可是",
   "id": "f541399545b9a38eb74cd375",

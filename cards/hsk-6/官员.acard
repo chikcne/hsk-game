@@ -1,17 +1,21 @@
 {
   "audio": "7d093264d49130ea065eb331d308b1b7f6b7aa3b8128cb4fea84bd8650f724a0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "员",
       "官"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4492,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "官员",
   "id": "007ee561067f80fc0ac5c3e8",

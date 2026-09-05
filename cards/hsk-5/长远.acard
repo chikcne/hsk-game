@@ -1,17 +1,21 @@
 {
   "audio": "7f3d611a108a13ff7cdf02495ee4a96faeb5be9b7ff4b75a3a548c7c5671e3e5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "远",
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21555,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "长远",
   "id": "f22003c10ce144235a2d85a7",

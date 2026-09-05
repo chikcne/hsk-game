@@ -1,16 +1,20 @@
 {
   "audio": "aacafe7102557561becf164e56434b32dcbf553ec2ee4ca25bbd33a769c49cd9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "感"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3394,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "情感",
   "id": "ebbe5239b7fd43094023c337",

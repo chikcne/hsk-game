@@ -1,17 +1,21 @@
 {
   "audio": "381e163b82758519c1f2c61f17b2282f344f9e86296251cee814dca75da8de81.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "信",
       "短"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4208,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "短信",
   "id": "ae3955bbaff732b2f68496e9",

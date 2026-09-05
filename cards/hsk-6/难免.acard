@@ -1,17 +1,21 @@
 {
   "audio": "ea13fa74336ebb2eb77b0b2df165b625830f6e0836c41942f9c847f40bd3a6f7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "免",
       "难"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17757,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "难免",
   "id": "a3834bdffc92cbcd7b57495e",

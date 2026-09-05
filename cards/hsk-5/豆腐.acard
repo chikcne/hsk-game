@@ -1,14 +1,18 @@
 {
   "audio": "05ad845c5b9c87a85ea73b127d5e291ba995ce2b03ae474da5c46e557b48f767.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10466,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "豆腐",
   "id": "a82f99e225d756548c6f4ff1",

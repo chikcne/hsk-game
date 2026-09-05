@@ -1,16 +1,20 @@
 {
   "audio": "75552aed049b2eae8047d655b4e0eecaff77ae1f17c4ee61f42cef8876d790e5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9127,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "哲学",
   "id": "383bfbd5132585d257c818e5",

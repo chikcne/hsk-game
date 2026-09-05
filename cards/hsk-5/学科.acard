@@ -1,17 +1,21 @@
 {
   "audio": "0ab7c10f206ca80854d4397c95e99e77fd8fc1346e53290dad7df38e9241cd31.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "科"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 46941,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "学科",
   "id": "be1ea740d18e7a41504c97bb",

@@ -1,17 +1,21 @@
 {
   "audio": "f74cbacc1139477655b5b8273ed51cf64e52cf0670064a4b618a5bf1c9e7df5c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "空"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3294,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "空中",
   "id": "7fc13a905c9cc75082c87e87",

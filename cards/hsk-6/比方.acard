@@ -1,17 +1,21 @@
 {
   "audio": "86d16c3ef11d6cf73b803a32902f8fa7c9dea5909baad4f69c29deb902aa72b5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "方",
       "比"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27552,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "比方",
   "id": "26ac3b06e62304f910727300",

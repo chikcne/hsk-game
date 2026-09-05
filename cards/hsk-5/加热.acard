@@ -1,17 +1,21 @@
 {
   "audio": "faffe8d176f399f47fea31acfc0fc8eda139b21b77a2ed68b51369221cd4e853.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "加",
       "热"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14196,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "加热",
   "id": "0d373cbf2a38ce19bfe6557b",

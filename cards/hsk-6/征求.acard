@@ -1,16 +1,20 @@
 {
   "audio": "7efffd6ed65983ec83ba56b2c77899ad6b987761a05b59ee7ce94b437be58f6c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "求"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17939,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "征求",
   "id": "ddcfa44c947d62b53f80bcda",

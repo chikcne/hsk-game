@@ -1,17 +1,21 @@
 {
   "audio": "4f72c10adb4631a6bcda77349af204a36b0c12429d890db362727801c2360171.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "度",
       "角"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3237,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "角度",
   "id": "854c41ffe2fb60faa5850f49",

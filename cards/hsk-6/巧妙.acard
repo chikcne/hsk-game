@@ -1,17 +1,21 @@
 {
   "audio": "5b3a7f3e3bd7e327cec047f471e2969fbfbb2324e9b0b898400b342fb925ea40.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "妙",
       "巧"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14361,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "巧妙",
   "id": "74d7ebd796177c311f2cac0c",

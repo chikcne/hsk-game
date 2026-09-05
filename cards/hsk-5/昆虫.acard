@@ -1,14 +1,18 @@
 {
   "audio": "4ec27c6240f34bab1102fd5830b2d2392cc09f3c8176ae78e9257479c69704ec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8063,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "昆虫",
   "id": "54e7f82cfe78346ac1921395",

@@ -1,17 +1,21 @@
 {
   "audio": "458b13c78bbe12f5c195daa0c02c4d10020d7c059b9210bd578c86dee8c064e8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "定"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 152,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一定",
   "id": "1d285b6ee36684d7e4b8629f",

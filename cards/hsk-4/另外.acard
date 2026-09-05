@@ -1,17 +1,21 @@
 {
   "audio": "a50c86e82a0977c3f9c9e8e00d582e03bac4ce1d1eb89e1d8a61272254049427.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "另",
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 965,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "另外",
   "id": "821ea2f48e289f5f53a095a8",

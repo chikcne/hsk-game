@@ -1,16 +1,20 @@
 {
   "audio": "06e937250379a9dda8731b56c0f00534a1d0522259f8889e2c9621ed0b57cdde.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14683,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "心态",
   "id": "57693d58536602368e0217a6",

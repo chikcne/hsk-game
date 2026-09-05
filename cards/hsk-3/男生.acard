@@ -1,17 +1,21 @@
 {
   "audio": "a99ffd1eb59d4c541ca0f1c78fd5ac75fea89db7e012c660cbab330247fe48d3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生",
       "男"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3043,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "男生",
   "id": "cf02d69d7cad7b156908ee8a",

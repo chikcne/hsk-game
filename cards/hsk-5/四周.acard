@@ -1,17 +1,21 @@
 {
   "audio": "23d549a3886d9462880cd29571f8caa84173d0e4a81ead083c569a6833190fb7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "周",
       "四"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6138,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "四周",
   "id": "c5f365f403268c199e27ad08",

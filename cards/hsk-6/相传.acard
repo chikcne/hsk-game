@@ -1,16 +1,20 @@
 {
   "audio": "7b85271fa524f83bfbc581761b5d32b2647917ca9b3a64866d26273a8c346be2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 43258,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "相传",
   "id": "9962dda5c5a55061623c2b0d",

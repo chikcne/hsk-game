@@ -1,14 +1,18 @@
 {
   "audio": "5048b1f16a47becdf1f4655ffb787c73af4a0b96f09bf764ec66a47ed9d08b08.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8648,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "粉",
   "id": "e4be54fdad3daeca051b2620",

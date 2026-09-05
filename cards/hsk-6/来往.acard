@@ -1,17 +1,21 @@
 {
   "audio": "e899389d5355f664a4ac2ee81de434ede0cfbb991b64f5f256800a95b09da521.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "往",
       "来"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11560,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "来往",
   "id": "77c82557d19788a1feea04ce",

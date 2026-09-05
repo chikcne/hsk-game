@@ -1,17 +1,21 @@
 {
   "audio": "48213e6ccf6cbb8e7ee259378b805ef1730a47249bf8485dc3425e9e4b6d3ade.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "在",
       "正"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 313,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "正在",
   "id": "279c7f36fa459ffd99515475",

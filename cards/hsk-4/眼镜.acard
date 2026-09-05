@@ -1,16 +1,20 @@
 {
   "audio": "aaacf1c6a98aadc2b622d372f1cbad380cba7eb6db13be4c6f16f2bc72f9b8b3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "眼"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3678,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "眼镜",
   "id": "2830cc29ae7710091585b2cd",

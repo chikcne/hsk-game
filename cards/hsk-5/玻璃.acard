@@ -1,14 +1,18 @@
 {
   "audio": "4d6ed3597352189a64ad6a3a4776e23fb2854a4d8adafa7f7af5d763b1883f5b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3093,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "玻璃",
   "id": "9cc0295421db0a949e7477b2",

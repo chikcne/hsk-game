@@ -1,18 +1,22 @@
 {
   "audio": "f8cdc5702e45b4d7e9fd5ab2f3676c9b53a748ff34f11d495b4e3e52ce28b873.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "顺",
       "风"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26994,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "一帆风顺",
   "id": "0aba342ac18dc69073b8acb5",

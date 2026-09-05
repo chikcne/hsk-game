@@ -1,17 +1,21 @@
 {
   "audio": "45ef0f5b222271f7d3afb7b124000c0c20360b1cae63c5dc6749e75b6a2f3d3d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "差"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8266,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "出差",
   "id": "a1a2dfb4fa3c700c4f3fa345",

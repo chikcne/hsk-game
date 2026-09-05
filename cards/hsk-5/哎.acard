@@ -1,14 +1,18 @@
 {
   "audio": "93c9f428f22625fa6bb9f0960d4fb448282f5e45fc4d4ce1ab2fdcd279f36fb5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1028,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "哎",
   "id": "5a48fa89e9d8502306d60744",

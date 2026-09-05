@@ -1,16 +1,20 @@
 {
   "audio": "7e91a7947a4c27c79e736efd45cba2d95ad6b8d1451194cdf46908a823313a47.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "建"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2970,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "建筑",
   "id": "8abd069562eb990c98b55cf1",

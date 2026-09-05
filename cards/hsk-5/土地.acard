@@ -1,17 +1,21 @@
 {
   "audio": "f5387d28f84f240090762e300a14aab6f12e50b8b13dcac4d5c693b9d8a53cf2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "土",
       "地"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1752,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "土地",
   "id": "6a5450d7c7798d471998ad1a",

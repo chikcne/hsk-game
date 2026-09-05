@@ -1,16 +1,20 @@
 {
   "audio": "96dfdae0f36b370cc052ee90c294024c8898ad2b0242dc1ecd6ba83b6e639aa4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "姨"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2253,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "阿姨",
   "id": "44cf75be35aa9cca824eaf91",

@@ -1,17 +1,21 @@
 {
   "audio": "c845608e19676d9be124cbe4b0afb49c63b126c78d27bbdf374ae730c875d06b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "份",
       "身"
     ],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 1209,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "身份",
   "id": "d49b6e56147dee65c98bbd67",

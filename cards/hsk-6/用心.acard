@@ -1,17 +1,21 @@
 {
   "audio": "a54237f8944960ce2fc57fdc58932f4d4b1acdef0ccc112738a6948ceae9b69c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7700,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "用心",
   "id": "2b5ce59b62fb0c82724f15de",

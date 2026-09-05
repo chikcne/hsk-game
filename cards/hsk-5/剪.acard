@@ -1,14 +1,18 @@
 {
   "audio": "332a362663af5c40aa28d835f58aaf17b11340a6e5fff04c0e4f9cd81b99679f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4901,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "剪",
   "id": "904a265ab18aeab0ca960312",

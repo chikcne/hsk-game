@@ -1,16 +1,20 @@
 {
   "audio": "53e4a1cb13da42e53f4d8cf52ad766654b3aead9a4481cc05afaa1d52b2ed4ba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "在"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 50,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "现在",
   "id": "8c0f926b974b7138bd4044f7",

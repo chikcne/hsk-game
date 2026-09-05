@@ -1,16 +1,20 @@
 {
   "audio": "516c3ad35b99479e74074ea54fc42b29d0e4ba8ef9edc0b66f68f2631030f922.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 76022,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "粽子",
   "id": "fea35c57e7d78f0849580665",

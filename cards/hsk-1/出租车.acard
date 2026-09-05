@@ -1,19 +1,23 @@
 {
   "audio": "19784442b77a187aa9ac28e637b365b14c2112f5994ddf2403defe3dece50bb3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "出租",
       "租",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3559,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "出租车",
   "id": "3ecf2244cc16ce9d5baf6112",

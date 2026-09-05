@@ -1,16 +1,20 @@
 {
   "audio": "f46efb3c012ac5c4b94ce36167387a7df4d47e8358290dc0910c7e10d5e2bd27.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2439,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "weather-climate"
+    ]
   },
   "hanzi": "大脑",
   "id": "7c4e1d5f6fd12451381470b4",

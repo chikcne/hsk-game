@@ -1,17 +1,21 @@
 {
   "audio": "bc97458be6f593e27992c814f80e65d2b2cf1925318a99144194f49997168251.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "公",
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6318,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "外公",
   "id": "76e6604f3a9f9734691a3603",

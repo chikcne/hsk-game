@@ -1,17 +1,21 @@
 {
   "audio": "2e559cfcb09d12cebc6dcd861b90659c1cda49031a04122e19d51837a452f4c8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场",
       "次"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 102981,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "场次",
   "id": "b01b1bc0fd5db5a036924fdb",

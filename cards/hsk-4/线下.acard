@@ -1,17 +1,21 @@
 {
   "audio": "376728e3a9f551941ac90a52e815987daf9b6222bbc820d02a4470fb977a17d6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "线"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 135616,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "线下",
   "id": "64a573c72dc8c9af4cbf954b",

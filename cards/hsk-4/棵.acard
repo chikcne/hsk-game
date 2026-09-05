@@ -1,14 +1,18 @@
 {
   "audio": "4d4fe841199dfac82f8249441b02adb0c7147cf6790bf4a84897874474e49cfc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 14081,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "棵",
   "id": "fd2af1abc35ec0c3439518da",

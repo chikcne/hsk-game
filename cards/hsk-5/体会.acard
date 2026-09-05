@@ -1,16 +1,20 @@
 {
   "audio": "524461752aed2668bafd930d06e5ea3506444fcb9bc5cfc2f6f61653e64b9050.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7148,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "体会",
   "id": "4a68ba873dbedf8c392d9025",

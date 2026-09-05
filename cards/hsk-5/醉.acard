@@ -1,14 +1,18 @@
 {
   "audio": "8ffddabb29bb9c654c8f5dc27a4c144b8e7ea6b398f39379db88af49b97cf177.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3986,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "醉",
   "id": "d7920d84cc775f0e6595ffe4",

@@ -1,17 +1,21 @@
 {
   "audio": "039f2f369a888f86575879e030391f8bb0bb8f1185ad53a0b5c9d70386e2ffe1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "平",
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33039,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "平方",
   "id": "8fe76dc8fdc380bf2dfa02c3",

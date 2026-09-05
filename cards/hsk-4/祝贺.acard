@@ -1,16 +1,20 @@
 {
   "audio": "4749435f52849cbdd388cd2aadc20c2c90217a60119b5107e616cfdc7cb5233d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "祝"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3535,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "祝贺",
   "id": "d5b29d95d9ce7cb2d448bc06",

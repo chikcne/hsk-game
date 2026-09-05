@@ -1,17 +1,21 @@
 {
   "audio": "e93d78f477348d8798710714dc58d3a17b33b3d38c7dafedc5d8a808a16949f3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "拖",
       "鞋"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13724,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "拖鞋",
   "id": "9b269679d21be7285388ea71",

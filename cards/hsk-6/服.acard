@@ -1,14 +1,18 @@
 {
   "audio": "9a407362d37d199e00a9c4f0529eeae4309de59a42bcfe0044d614f715245f99.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 6741,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "服",
   "id": "651c286a96a18b2bcc1934b7",

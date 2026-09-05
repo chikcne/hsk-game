@@ -1,14 +1,18 @@
 {
   "audio": "2322b7f738639ad2f03775427132a958c514e6e53eab9368de43d461b5719d4a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 13959,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-particles-modals"
+    ]
   },
   "hanzi": "率",
   "id": "c11277c0bdc898d9de41ca3e",

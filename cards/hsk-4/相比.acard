@@ -1,16 +1,20 @@
 {
   "audio": "3a26446068fa5ec17a5774a7dea2a13a666564b9d9e16dbdf26e04cf08118705.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "比"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5907,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "相比",
   "id": "3f992bfaf83e733249e33904",

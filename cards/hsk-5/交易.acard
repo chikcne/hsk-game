@@ -1,16 +1,20 @@
 {
   "audio": "303f3b9f25d1873a15713e0deac95d46f377c4bf9466089ea6e63047b809ca4c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1147,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "交易",
   "id": "2b58336537959967bb84bb10",

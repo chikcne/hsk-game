@@ -1,17 +1,21 @@
 {
   "audio": "514662d9782c37ca007900fe98a067cc2e48c0689b391f06260bea226228b57e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "票"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21675,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "发票",
   "id": "7b0ae4c5534c5bb4563551ad",

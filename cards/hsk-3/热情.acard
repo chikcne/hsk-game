@@ -1,16 +1,20 @@
 {
   "audio": "95e236813251fc9783d9539b9dce0b3f661361358e4d547d9fd0a37ff8a3eacc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "热"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3616,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "热情",
   "id": "2c72993de8b2fb0242b65243",

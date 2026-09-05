@@ -1,16 +1,20 @@
 {
   "audio": "91e63ca26c879c682c4da2e141c8fb5a108e8c51e53ae7cb601411cc2d41aeac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "像"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5421,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "偶像",
   "id": "c4f5876d9954d436f3a5c122",

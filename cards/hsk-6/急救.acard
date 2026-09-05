@@ -1,17 +1,21 @@
 {
   "audio": "73fe0464083cabdc63a3be39739ac140258a8d115e9b7b8999afccb9a8cf9e60.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "急",
       "救"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8479,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "急救",
   "id": "05c62ce709d37082fbef33ee",

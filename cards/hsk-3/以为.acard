@@ -1,17 +1,21 @@
 {
   "audio": "ec92cf2fcfb9088ce7c031eab94f3803518bc4f95b6c0abb0ef0777f99798129.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "以"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 251,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "以为",
   "id": "779d0f6b5ad806bdad669058",

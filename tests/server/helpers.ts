@@ -24,7 +24,6 @@ export function makeLevel(deckId: LevelProgress["deckId"], words: Record<string,
   return {
     deckId,
     deckFingerprint: "fixture-fingerprint",
-    curriculumSeed: "fixture-seed",
     curriculumCursor: Object.keys(words).length,
     firstCompletedAt: null,
     words,

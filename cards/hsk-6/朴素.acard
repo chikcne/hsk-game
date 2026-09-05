@@ -1,14 +1,18 @@
 {
   "audio": "4cf98c0af3ac16cb1e0dedac5ab6371f046fc16e3688a8fdc2c4e2e0536eda9a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 36623,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "朴素",
   "id": "4de5fe2491ced7c08625a60c",

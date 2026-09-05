@@ -1,17 +1,21 @@
 {
   "audio": "987f7e1f8895f18bb0146b55c161d5e219d5f68a75d1d46b9e614d876b0802ff.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前",
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13119,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "前天",
   "id": "c376d1e070b8d07033b0b75d",

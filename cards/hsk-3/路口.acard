@@ -1,17 +1,21 @@
 {
   "audio": "b61747334fcc426a142c3b9860d7f9eecc2a0cb38ea0499ecfeab0b89eee7cfa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "口",
       "路"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11599,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "路口",
   "id": "e298271b04b460fb014d52f7",

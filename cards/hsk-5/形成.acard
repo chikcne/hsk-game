@@ -1,16 +1,20 @@
 {
   "audio": "215f20cb0dcce9a1c755c67638a67658260a6f4dfea065496054d0f7b188b5db.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3188,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "形成",
   "id": "bcd8cd47d20c11c5108ebc90",

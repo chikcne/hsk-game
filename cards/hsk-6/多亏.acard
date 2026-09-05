@@ -1,17 +1,21 @@
 {
   "audio": "f6fa7501e1c231c194080913d44666ea581e918c0b94a0da73ad26347f92458c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "亏",
       "多"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5036,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "多亏",
   "id": "900677d97e1220af979ae8ee",

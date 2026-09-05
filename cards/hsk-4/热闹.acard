@@ -1,17 +1,21 @@
 {
   "audio": "165dc62f0627066d47abd3450542cf7706baf85ea0b990804979312668186660.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "热",
       "闹"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7743,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "热闹",
   "id": "330ddd543342fabe47d5e43f",

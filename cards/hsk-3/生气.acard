@@ -1,17 +1,21 @@
 {
   "audio": "a5ba24189eeec3201c707f1ca55b3792944afecc2a7237e487ef6caf10970592.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "气",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1013,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "生气",
   "id": "6b162cd88195535698099e10",

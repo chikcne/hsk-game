@@ -1,17 +1,21 @@
 {
   "audio": "0198801e9f294a14817dde955b4ab655e57a6acfa12324fd19892132656878a1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "了",
       "算"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1238,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "算了",
   "id": "bee7f601c151226a90054b69",

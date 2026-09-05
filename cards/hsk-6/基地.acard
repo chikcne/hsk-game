@@ -1,16 +1,20 @@
 {
   "audio": "27db4555e66d7ed3c541d638185eebc2bae33e5c0bc3952f02f293c525fe1e05.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2100,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "基地",
   "id": "e31e47b5bc123bb792ae44d4",

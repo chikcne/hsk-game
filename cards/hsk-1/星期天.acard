@@ -1,18 +1,22 @@
 {
   "audio": "a07d7e296955869a64ce7db132d713b09e9d6bf0b8b7946e1c1275bafa99c5ca.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天",
       "星期",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5335,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "星期天",
   "id": "9d143f1721a924dbe7bc7e96",

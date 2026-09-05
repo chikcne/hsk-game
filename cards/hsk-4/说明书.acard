@@ -1,18 +1,22 @@
 {
   "audio": "f87783f9993b4346620ad2f2da5a235a7927fcc92d6b6bd34cf07926f7c85495.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "书",
       "说",
       "说明"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26410,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "说明书",
   "id": "012b27190765afe50c7a7ba8",

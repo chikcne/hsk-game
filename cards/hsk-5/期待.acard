@@ -1,17 +1,21 @@
 {
   "audio": "126c191419aeb84706c8a2f14351fc2352cbd9fe47e74b24830cc74944cc2dcc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "待",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1621,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "期待",
   "id": "c2752070f43f06e55bf4bd10",

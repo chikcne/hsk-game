@@ -1,17 +1,21 @@
 {
   "audio": "b24414afad8340a5700f0d199e45d8992071356ceb01d4b7ad95c880ee9ad731.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "测",
       "量"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10515,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "测量",
   "id": "a4f93c25f00a90e4efe175e2",

@@ -1,7 +1,6 @@
 {
   "audio": "81e8d32ad477acaa28d8a1a89c48b62154b5ee8a53cecc1a90a000906657bfe6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "一路",
@@ -9,12 +8,17 @@
       "顺",
       "风"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12863,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "一路顺风",
   "id": "1b9706795696da7c606fca10",

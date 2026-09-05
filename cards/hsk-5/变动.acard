@@ -1,17 +1,21 @@
 {
   "audio": "fe7bad475cd7d1841b10e8282947719a178ccbb64425fb31b5869382db083d36.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "变"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18863,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "变动",
   "id": "63670ae6da47fdd6208426ef",

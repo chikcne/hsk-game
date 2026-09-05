@@ -1,14 +1,18 @@
 {
   "audio": "9c4f2f2fe23597d32dc5f434ac6235dedca9a6f64363ae8a7b2697a9a3d91150.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1255,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "戴",
   "id": "fa0551d6e536670298eecbd9",

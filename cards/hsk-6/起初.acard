@@ -1,17 +1,21 @@
 {
   "audio": "ee261c38f749544d164e84a4b66dea9a494915fb5c0cfe583677c28245c1c9b1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "初",
       "起"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8129,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "起初",
   "id": "afffd076ee6b1e38afcc0e71",

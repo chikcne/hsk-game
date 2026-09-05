@@ -1,17 +1,21 @@
 {
   "audio": "046088a8f44abc6dde4a4a37bad5e757aef57a05086ae2f890f41dcaa3868776.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "待",
       "接"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8492,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "接待",
   "id": "9e85d29dde27c6d6b1842d4b",

@@ -1,16 +1,20 @@
 {
   "audio": "5b8a7eb5b6c91a4dfa126f931f1703caaaf8c708cdd55fa6b0bc07b08e5517d5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11388,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "胆小",
   "id": "9c97745d4b5f68702055d105",

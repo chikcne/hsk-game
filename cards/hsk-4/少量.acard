@@ -1,17 +1,21 @@
 {
   "audio": "d4270b06df7060ae852ebabde47d6f134686eaa775200eaddb68ada8a981c158.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "少",
       "量"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22156,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "少量",
   "id": "0525ebc831009a18596b5d75",

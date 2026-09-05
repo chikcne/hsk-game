@@ -1,17 +1,21 @@
 {
   "audio": "c8a3f43c438b473930a41a94cf196c8c3455660922b3446bbc2cfbd6bea7c838.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "感"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4378,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "感动",
   "id": "d296ac48447a10dbfd4ee591",

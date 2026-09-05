@@ -1,17 +1,21 @@
 {
   "audio": "dda340ff2f1bf97ab04ddbf7425e00962f9f337f99c213b41c206ee0f8c7e721.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20454,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "重心",
   "id": "6024a075e5f4f7bf8071c61b",

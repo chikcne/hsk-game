@@ -1,17 +1,21 @@
 {
   "audio": "f7ac6a04cd801ad63e6602eaab1eadb1a305c6ff77db1759ebdf07a4bb9f9b66.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "吸",
       "管"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24029,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "吸管",
   "id": "76b94de8c5dafaab96835c41",

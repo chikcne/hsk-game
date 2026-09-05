@@ -1,17 +1,21 @@
 {
   "audio": "72b8ec9f3ba6e3a8753edae9e2494bbb7b157c68ff6a8b97ed1d3d76ddf318a1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业",
       "从"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 84135,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "从业",
   "id": "1dfb29d15f4381186815d332",

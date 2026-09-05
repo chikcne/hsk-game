@@ -1,16 +1,20 @@
 {
   "audio": "904312965d140725798d558ec7a67ebd5376f9531f6d4a9b65ad30bc8e6f205c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3610,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "当作",
   "id": "d5e326fab8b4c95f35718b4a",

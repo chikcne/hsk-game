@@ -1,17 +1,21 @@
 {
   "audio": "cb4dcf6f901b46640e130c2a49265310d6f76537db4424fd8a4ea28974bed187.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "日",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1364,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "生日",
   "id": "add9e632f9319bc493bb46b0",

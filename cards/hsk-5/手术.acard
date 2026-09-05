@@ -1,16 +1,20 @@
 {
   "audio": "258735a4f3d48cceb410a38064f1f67bd4149fd4835615098ca7a715bfc93393.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2222,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "手术",
   "id": "c49f49e64e13929718fc8b23",

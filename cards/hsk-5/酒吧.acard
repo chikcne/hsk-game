@@ -1,17 +1,21 @@
 {
   "audio": "bbb52ee591403c3573542474e2f25bbb59a0091dd83762ec0f2c11854ad0b4ec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "吧",
       "酒"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1170,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "酒吧",
   "id": "75011cf9f3655a839565184b",

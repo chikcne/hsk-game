@@ -1,17 +1,21 @@
 {
   "audio": "fba309aee81eb85953e8601b087df841e0ddb0a93481173bf47419eb6f450a50.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "别"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5389,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "分别",
   "id": "d823e7a5585c73280c14c955",

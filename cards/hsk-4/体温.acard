@@ -1,14 +1,18 @@
 {
   "audio": "da2b7a6940e0c3590b19da0c1c125f8df0165208018bb1d9f401c3cb9abb62d7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11971,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "体温",
   "id": "73ece5904165a9fe286c4bdb",

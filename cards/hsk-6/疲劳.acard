@@ -1,14 +1,18 @@
 {
   "audio": "de8138ae29be3f2e7de6cdbe19762b85f4bf276c98835f29d2857d1e66d5b7a8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 17846,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "疲劳",
   "id": "a93c2d3925d0a61d0a297719",

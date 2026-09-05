@@ -12,6 +12,7 @@ import { normalizedKey } from "../normalize/text";
 import { stableJson } from "./stable-json";
 import { Fs, type FsError } from "../../shared/fs";
 import { loadGradeCards, CardLoadError, type LoadedCard } from "../../shared/load-cards";
+import { CurriculumManifestSchema, type CurriculumManifest } from "../../sort-curriculum/types";
 
 /** Typed failure for compiling `cards/` into the runtime bundles. */
 export class CardCompileError extends Data.TaggedError("CardCompileError")<{
@@ -33,6 +34,50 @@ export type CardDeckReport = {
 };
 
 const digest = (value: string): string => createHash("sha256").update(value).digest("hex");
+
+function validateManifestAgainstCards(
+  manifest: CurriculumManifest,
+  loadedByFile: ReadonlyMap<string, LoadedCard>,
+): string | null {
+  const expectedDeckIds = new Set(DECK_SOURCES.map((source) => source.id));
+  const seenDeckIds = new Set<string>();
+  const seenFiles = new Set<string>();
+  const firstPlacementById = new Map<string, { grade: number; lesson: number }>();
+
+  for (const level of manifest.levels) {
+    if (!expectedDeckIds.has(level.deckId as DeckId) || seenDeckIds.has(level.deckId)) return `duplicate or unknown curriculum level ${level.deckId}`;
+    seenDeckIds.add(level.deckId);
+    if (level.hskLevel !== Number(level.deckId.at(-1))) return `${level.deckId}: hskLevel does not match deckId`;
+    const entries = level.lessons.flatMap((lesson) => lesson.cards);
+    if (level.cardCount !== entries.length) return `${level.deckId}: cardCount does not match its lessons`;
+    if (new Set(entries.map((entry) => entry.id)).size !== entries.length) return `${level.deckId}: duplicate IDs within effective grade`;
+    if (new Set(level.lessons.map((lesson) => lesson.id)).size !== level.lessons.length) return `${level.deckId}: duplicate lesson IDs`;
+    for (const [lessonIndex, lesson] of level.lessons.entries()) {
+      for (const entry of lesson.cards) {
+        if (seenFiles.has(entry.file)) return `${entry.file}: source card appears more than once in curriculum`;
+        seenFiles.add(entry.file);
+        const loaded = loadedByFile.get(entry.file);
+        if (!loaded) return `${entry.file}: curriculum references a missing source card`;
+        if (loaded.card.id !== entry.id || loaded.card.hanzi !== entry.hanzi) return `${entry.file}: curriculum metadata is stale`;
+        if (loaded.card.curriculum.grade !== level.hskLevel) return `${entry.file}: effective grade does not match ${level.deckId}`;
+        if (!firstPlacementById.has(entry.id)) firstPlacementById.set(entry.id, { grade: level.hskLevel, lesson: lessonIndex });
+      }
+    }
+  }
+  if (seenDeckIds.size !== expectedDeckIds.size) return "curriculum does not contain every HSK grade";
+  if (seenFiles.size !== loadedByFile.size) return "curriculum does not contain every source card exactly once";
+
+  for (const level of manifest.levels) for (const [lessonIndex, lesson] of level.lessons.entries()) for (const entry of lesson.cards) {
+    for (const prerequisiteId of entry.prerequisiteIds) {
+      const prerequisite = firstPlacementById.get(prerequisiteId);
+      if (!prerequisite) return `${entry.file}: prerequisite ${prerequisiteId} is missing`;
+      if (prerequisite.grade > level.hskLevel || (prerequisite.grade === level.hskLevel && prerequisite.lesson >= lessonIndex)) {
+        return `${entry.file}: prerequisite ${prerequisiteId} is not in an earlier grade or lesson`;
+      }
+    }
+  }
+  return null;
+}
 
 /** The deck fingerprint once the `.apkg` packages stop being build inputs: a
  * digest over the `cards/` content that actually determines the compiled deck.
@@ -69,19 +114,13 @@ const compileOneGrade = (
   source: DeckSource,
   cardsRoot: string,
   outputRoot: string,
+  cards: LoadedCard[],
+  curriculum: { rulesVersion: string; lessonSize: 20; lessons: Array<{ id: string; wordIds: string[] }> },
 ): Effect.Effect<{ deck: RuntimeDeck; report: CardDeckReport; indexEntry: Record<string, unknown> }, CardCompileFailure, Fs> =>
   Effect.gen(function* () {
     const fs = yield* Fs;
-    const cards = yield* loadGradeCards(cardsRoot, source.id);
     if (!cards.length) {
-      return yield* Effect.fail(new CardCompileError({ detail: `${source.id}: no .acard files found under ${cardsRoot}` }));
-    }
-    for (const { relative, card } of cards) {
-      if (card.curriculum.grade !== source.hskLevel) {
-        return yield* Effect.fail(new CardCompileError({
-          detail: `${relative}: curriculum.grade ${card.curriculum.grade} does not match its directory`,
-        }));
-      }
+      return yield* Effect.fail(new CardCompileError({ detail: `${source.id}: curriculum contains no cards` }));
     }
     const words = cards.map(({ card }) => toRuntimeWord(card));
     const indexes = yield* buildMeaningIndexesEffect(words);
@@ -119,6 +158,7 @@ const compileOneGrade = (
             sourceNoteCount: cards.length,
             logicalWordCount: words.length,
           },
+          curriculum,
           words,
           meaningIndex: indexes.meaningIndex,
           meaningKeysByPartOfSpeech: indexes.meaningKeysByPartOfSpeech,
@@ -186,11 +226,41 @@ export const compileFromCardsEffect = (
 
     return yield* Effect.gen(function* () {
       yield* fs.mkdirRecursive(tempOutput);
+      const manifest = yield* fs.readTextFile(join(cardsRoot, "curriculum.json")).pipe(
+        Effect.flatMap((text) => Effect.try({
+          try: () => CurriculumManifestSchema.parse(JSON.parse(text)),
+          catch: (error) => new CardCompileError({ detail: `Invalid cards/curriculum.json: ${String(error)}` }),
+        })),
+      );
+      const loadedByFile = new Map<string, LoadedCard>();
+      for (const grade of DECK_SOURCES) {
+        for (const loaded of yield* loadGradeCards(cardsRoot, grade.id)) loadedByFile.set(loaded.relative, loaded);
+      }
+      const manifestError = validateManifestAgainstCards(manifest, loadedByFile);
+      if (manifestError) return yield* Effect.fail(new CardCompileError({ detail: manifestError }));
       const decks: RuntimeDeck[] = [];
       const reports: CardDeckReport[] = [];
       const indexEntries: Array<Record<string, unknown>> = [];
       for (const source of sources) {
-        const compiled = yield* compileOneGrade(source, cardsRoot, tempOutput);
+        const level = manifest.levels.find((candidate) => candidate.deckId === source.id);
+        if (!level) return yield* Effect.fail(new CardCompileError({ detail: `Curriculum is missing ${source.id}` }));
+        const entries = level.lessons.flatMap((lesson) => lesson.cards);
+        const cards: LoadedCard[] = [];
+        for (const entry of entries) {
+          const loaded = loadedByFile.get(entry.file);
+          if (!loaded || loaded.card.id !== entry.id) {
+            return yield* Effect.fail(new CardCompileError({ detail: `Curriculum entry ${entry.file} does not match its card` }));
+          }
+          if (loaded.card.curriculum.grade !== source.hskLevel) {
+            return yield* Effect.fail(new CardCompileError({ detail: `${entry.file}: effective grade does not match ${source.id}` }));
+          }
+          cards.push(loaded);
+        }
+        const compiled = yield* compileOneGrade(source, cardsRoot, tempOutput, cards, {
+          rulesVersion: manifest.generator.rulesVersion,
+          lessonSize: manifest.lessonSize,
+          lessons: level.lessons.map((lesson) => ({ id: lesson.id, wordIds: lesson.cards.map((card) => card.id) })),
+        });
         decks.push(compiled.deck);
         reports.push(compiled.report);
         indexEntries.push(compiled.indexEntry);

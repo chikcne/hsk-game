@@ -1,17 +1,21 @@
 {
   "audio": "bed013327c793e57b1e88222ed27b9a46939432a7771cc011c883bc6642b78aa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "双",
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5375,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "双方",
   "id": "54b4a769ea04aff97f397cc3",

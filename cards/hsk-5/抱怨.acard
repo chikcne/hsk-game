@@ -1,16 +1,20 @@
 {
   "audio": "5e6f0034d94ae6f6cb2463945238ee24919006009938429a80e86dee12d9adf1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "抱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2643,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "抱怨",
   "id": "d0555a1f56e836b39b07519e",

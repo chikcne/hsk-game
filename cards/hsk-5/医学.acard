@@ -1,16 +1,20 @@
 {
   "audio": "3d5165bb67fd8c81559330f80ff9f20e83e406827c2dc1ee483c3f42e343012b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6550,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "医学",
   "id": "0d8d094e5fa1b21371e20b02",

@@ -1,17 +1,21 @@
 {
   "audio": "1f019f7a086f98e82a65c6951c0ef4feb058901f38cabd59c567381e0ad9bb71.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "困",
       "难"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1765,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "困难",
   "id": "1ce8c521a6b4d3606f8a0b97",

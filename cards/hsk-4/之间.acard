@@ -1,17 +1,21 @@
 {
   "audio": "7c160c67d885647dccd20db1fe499fe63598c579722aba569265ce066ca2f555.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "之",
       "间"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 747,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "之间",
   "id": "983fc21c8954f8fd1ce40494",

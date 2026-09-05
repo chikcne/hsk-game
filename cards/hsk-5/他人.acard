@@ -1,17 +1,21 @@
 {
   "audio": "27de4fa922a053528cbca6e3e721a7b846a4e56eb8ba24b083d3358fd70ce414.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "他"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2315,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "他人",
   "id": "9f49a36131fe9dbc61919e11",

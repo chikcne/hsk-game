@@ -1,17 +1,21 @@
 {
   "audio": "b4bb24b892b9dcc7a2566a70b676c1de2000c191e41c0b426aa3cbef44e2b1d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "干",
       "活"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25896,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "干活儿",
   "id": "bd4d20af090bbbdd178c72a6",

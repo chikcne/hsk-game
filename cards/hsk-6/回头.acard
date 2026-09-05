@@ -1,17 +1,21 @@
 {
   "audio": "6929deec461db37c593eebdca81428c1078f0b93e17fd26cae635fd3ee177e1f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "回",
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2782,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "回头",
   "id": "84c82709bb22124cc966dc40",

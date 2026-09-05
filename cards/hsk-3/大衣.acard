@@ -1,16 +1,20 @@
 {
   "audio": "06febe1fcd7d0c930ee77b0293e0c6bd99f22a0dd79b91fe4bba74989dec0d9b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7862,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "大衣",
   "id": "a9e2e71e557f6954fb92776a",

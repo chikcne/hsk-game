@@ -1,16 +1,20 @@
 {
   "audio": "c8891d7ac2f4b111bf7d96118aab0ba8b76aa710c209535b31a91882cb97159a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7220,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "精力",
   "id": "e7e6a047974d298fda48452d",

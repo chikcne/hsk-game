@@ -1,17 +1,21 @@
 {
   "audio": "e704d3356f55bdd4f9d87679e935c8ea7c83dbec0e8c8916701882c6b14fda51.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "笔",
       "记"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7259,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "笔记",
   "id": "d96dc32faf6276b135a9dc92",

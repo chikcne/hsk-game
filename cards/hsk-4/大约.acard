@@ -1,17 +1,21 @@
 {
   "audio": "361f320120e46ea1ee7f5002385d20f8149c1e65822a63634ca808557435f1d4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "约"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1827,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "大约",
   "id": "6a3444ba9da1f735c473e6f1",

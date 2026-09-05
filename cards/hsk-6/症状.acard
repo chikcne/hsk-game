@@ -1,14 +1,18 @@
 {
   "audio": "c7e3876d1279820361d68a3ac93be8dbc6faeed255fdcef8a5c8aa854f3301a3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5216,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "症状",
   "id": "0d800fb7fb538a1895a311ea",

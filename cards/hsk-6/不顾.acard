@@ -1,17 +1,21 @@
 {
   "audio": "12acad9a85a5dec74d2ba7951326e654fce221e1817a640577e7fa2aa03ee0ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "顾"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9643,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "不顾",
   "id": "91ea99429a14064c421ce92a",

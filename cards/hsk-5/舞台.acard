@@ -1,16 +1,20 @@
 {
   "audio": "ad375507ff279666521a1441d99dbac4a4362446a2e1f221bad21ad1320cf0ed.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "台"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3255,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "舞台",
   "id": "7cbc7c104a7290f5a317de4b",

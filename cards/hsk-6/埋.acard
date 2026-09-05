@@ -1,14 +1,18 @@
 {
   "audio": "725754eb93ba55e4e036a5e32d7f82a717d0284a52574fcb847d56836c287b80.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2705,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "埋",
   "id": "10ac1b5865b22b558b20ea66",

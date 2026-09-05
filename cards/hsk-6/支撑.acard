@@ -1,17 +1,21 @@
 {
   "audio": "632904b2ea4af2ab72d208679d3b833a6b8a5b38a4499f749ab6f9add2f3224f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "撑",
       "支"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9034,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "支撑",
   "id": "059758f230683135726746ff",

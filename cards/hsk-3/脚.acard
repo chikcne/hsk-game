@@ -1,14 +1,18 @@
 {
   "audio": "968589eaefbc359dff449b80d1a89e5d0ec70a3d7748d63691dee9738eab9b54.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1591,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "脚",
   "id": "90e50fe8b96e0b61c2b1e32d",

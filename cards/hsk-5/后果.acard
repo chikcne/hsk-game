@@ -1,16 +1,20 @@
 {
   "audio": "5f40e2275ed927f88b43f2f8acb600b2878f47081820e388193791a05ecc50c7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3357,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "后果",
   "id": "e3d82c43cf8f12793398487f",

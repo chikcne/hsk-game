@@ -1,17 +1,21 @@
 {
   "audio": "a8a6ff916f271547e6d52e8ce792b61e51da5cc8e68ba7ca9cfd335382e56af0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "要",
       "需"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 89,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "需要",
   "id": "8df642acc05326219308f10a",

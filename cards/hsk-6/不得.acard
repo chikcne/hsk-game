@@ -1,17 +1,21 @@
 {
   "audio": "87317487907cd8ddfd7688590cb31bdf3bcaf96f08a48a1f32e886494e5997c5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "得"
     ],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 3773,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "不得",
   "id": "0bdebd854575d3ea3c280db7",

@@ -1,16 +1,20 @@
 {
   "audio": "379918fb9f541f8d84b3d0570b5dd3cd37ffed17fd61433b39d2ec95c73641af.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2839,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "weather-climate"
+    ]
   },
   "hanzi": "脑子",
   "id": "5428e8854fc1275ee9ced1de",

@@ -1,18 +1,22 @@
 {
   "audio": "ec8673bbfabcc7d75074443e44c1da1235fdbcaacd11bf48b9967357b5f92841.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "自",
       "自然"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6707,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "大自然",
   "id": "e53ca47de376307adaf39d4d",

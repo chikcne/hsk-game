@@ -1,17 +1,21 @@
 {
   "audio": "387fe10511428ba044f4090e680f263eeeee68405d1dd2571a0d2efa012aedb0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "别",
       "区"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3167,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "区别",
   "id": "6e03ab6403742ac78fcb2c82",

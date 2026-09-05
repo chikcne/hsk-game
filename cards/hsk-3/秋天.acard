@@ -1,16 +1,20 @@
 {
   "audio": "8f4e8c75f4f3c44b1d63b3e83d5aa6d033ee520961d7da9efc96a86f0669abaf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7337,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "秋天",
   "id": "720a401052a741e1b7ad36f2",

@@ -1,16 +1,20 @@
 {
   "audio": "06ad2612c45eb426d0e7cf96b44653abf159107469d4b4b1b947553cfe1dcbb7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "料"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3854,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "材料",
   "id": "c093b1e040dc2df8a360e7bb",

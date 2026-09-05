@@ -1,17 +1,21 @@
 {
   "audio": "d7d628da7bac0ac08248f40b9a0a5d7acb15d540b9481f216f47b6c8983db612.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前",
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11828,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "当前",
   "id": "3798eca1ddb4a99386658d43",

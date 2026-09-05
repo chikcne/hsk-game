@@ -1,17 +1,21 @@
 {
   "audio": "def88bf85fe785d017491c8ca8e82e0b733cb30e6210b373d47efbddeda80d2e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "以",
       "加"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13829,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "加以",
   "id": "37d202ae5c13cc0e53773aa9",

@@ -1,16 +1,20 @@
 {
   "audio": "0e2680babc44bd601d8df49270624f93e5ada8140b65f48db118c1e06d9afbbc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "女"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8084,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "女孩儿",
   "id": "d48f989abb515888b86bb313",

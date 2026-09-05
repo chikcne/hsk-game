@@ -1,17 +1,21 @@
 {
   "audio": "0976d55d0acba85ab55c7a16cb1bbb70dc8df0059cc9a808c0ca484e301a1edb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "日",
       "记"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4724,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "日记",
   "id": "417a979b3215ba8d1f51e508",

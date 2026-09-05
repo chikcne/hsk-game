@@ -1,16 +1,20 @@
 {
   "audio": "aad6d7f8893ee7e297435bcfd672d43701c4b7a53b6aa87d2b7e2964c5ff7baa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "亲"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4851,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "亲戚",
   "id": "6c825bf4881d256d817f2d15",

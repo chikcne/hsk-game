@@ -1,17 +1,21 @@
 {
   "audio": "7f7c12566a04a3464be775bfd7651e96056cff4d51506a043b4f33488f462ac7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "烤",
       "烧"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9732,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "烧烤",
   "id": "dddb7df0af9ba5ec8862f548",

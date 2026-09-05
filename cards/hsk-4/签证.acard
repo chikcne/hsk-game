@@ -1,17 +1,21 @@
 {
   "audio": "19fedb9735c5d522a42deed7c02b396c397cd9e914a638434cfe3fecdccd86b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "签",
       "证"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11789,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "签证",
   "id": "8c626b719c53c61abd973f81",

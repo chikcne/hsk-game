@@ -1,17 +1,21 @@
 {
   "audio": "68a2a96aa6a8cd09832a9486e8080c31594110e5a6d74dad6e3a628e4acdbbb0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "小",
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 377,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "小心",
   "id": "7d55eacd6611fd477d1632dd",

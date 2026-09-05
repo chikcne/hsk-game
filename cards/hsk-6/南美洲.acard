@@ -1,17 +1,21 @@
 {
   "audio": "4fc3dc15a9d442f00733fd622428053e8817e25dad6dcd6348221baa5c81a0d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "南",
       "美"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21693,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "南美洲",
   "id": "7f5f2b7f684113ec7fdabc23",

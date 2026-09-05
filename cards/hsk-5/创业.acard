@@ -1,16 +1,20 @@
 {
   "audio": "df907d46421a886125218bf52f7202ecaf748e35f09e4dc47d8957db98d24109.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22676,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "创业",
   "id": "9f7f668507e3988a2d1ce7dc",

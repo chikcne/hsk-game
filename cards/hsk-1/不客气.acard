@@ -1,18 +1,22 @@
 {
   "audio": "5fdb3e6d328106f4a7d16c3d0fbde76a5266183b935a54c195349830ea6b8566.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "客气",
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": null,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "不客气",
   "id": "9b336a17d3daf13ba183f188",

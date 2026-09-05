@@ -1,17 +1,21 @@
 {
   "audio": "63ed57e3852a2a61782db46c0a9679154e6577de6218a08fa8e118f113d0e4e0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "到",
       "迟"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1333,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "迟到",
   "id": "355756666bf5209d67233d57",

@@ -1,17 +1,21 @@
 {
   "audio": "69e477a0801ac347ae9fbeda033c7e348f72cbc73457802c91050094c7ae3ac1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "运"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1887,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "运动",
   "id": "c550d124f04ab767b45bdb4d",

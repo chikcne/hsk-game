@@ -1,16 +1,20 @@
 {
   "audio": "d41219daf93b4ea99506ea2d816251dcc745ba18c81cfc3f5b5b421807cf7158.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "树"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3749,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "树林",
   "id": "04aedf63e5a18945613645c5",

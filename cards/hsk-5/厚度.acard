@@ -1,17 +1,21 @@
 {
   "audio": "870b5fbae5421796681784240537797f8a725839bd35897709840b21ec6ca379.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "厚",
       "度"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 40075,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "厚度",
   "id": "0b3485f63366e4aebd87effc",

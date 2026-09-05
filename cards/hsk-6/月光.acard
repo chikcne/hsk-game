@@ -1,17 +1,21 @@
 {
   "audio": "14a7824d65b66ba6c4438d64823fc4f329a1c9360756ccb317a2431699ee04d7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光",
       "月"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8860,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "月光",
   "id": "2441d6921643109678e01f05",

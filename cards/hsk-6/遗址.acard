@@ -1,14 +1,18 @@
 {
   "audio": "011a92f7b9ee76d4b92d41f5d4f8f23aae11305fd879125db4b8c6346b5b1a88.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 29983,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "遗址",
   "id": "df3a36120dad5fe3bb28d63a",

@@ -1,17 +1,21 @@
 {
   "audio": "317abce7db913b179de385ac63f16e1c82ff131198f6fe080bc11437c68ffeb6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "去",
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 350,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "过去",
   "id": "1c829f2e65afb01db2c486c6",

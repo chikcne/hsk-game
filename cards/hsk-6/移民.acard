@@ -1,16 +1,20 @@
 {
   "audio": "03a74dec94ae0ddcb8df9af97b7ca2d95a7a903b2dc366f4cf2c1a05a39abd90.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "移"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4825,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "移民",
   "id": "95291cdf0e6ef101bf85f32f",

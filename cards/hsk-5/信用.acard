@@ -1,17 +1,21 @@
 {
   "audio": "41f42c58e292753220947927090c9faaa3a7b438718d05646a5b36b1dd9c4a66.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "信",
       "用"
     ],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 11411,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "信用",
   "id": "249150014f5d07fbdcd6d92d",

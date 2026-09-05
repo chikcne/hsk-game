@@ -1,14 +1,18 @@
 {
   "audio": "df6793fd50d3359ea3713859ebd69dea69ab4dcaddd1a1d23283bb6cd55f2884.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8304,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "蚂蚁",
   "id": "b459d8e2c9c2ec0f148df7ed",

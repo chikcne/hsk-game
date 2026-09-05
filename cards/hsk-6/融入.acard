@@ -1,16 +1,20 @@
 {
   "audio": "91bbc5bf5c66e0b52bea3c411978b05ed2713297ea9116c09bb338e03e19c846.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "入"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7846,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "融入",
   "id": "f72c7a5a6a794622fd99aeeb",

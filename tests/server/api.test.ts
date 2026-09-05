@@ -36,7 +36,7 @@ describe("save API", () => {
     const response = await app.inject({ method: "GET", url: "/api/saves/default" });
     expect(response.statusCode).toBe(200);
     expect(response.headers["cache-control"]).toBe("no-store");
-    expect(response.json()).toMatchObject({ schemaVersion: 4, profileId: "default", revision: 0 });
+    expect(response.json()).toMatchObject({ schemaVersion: 5, profileId: "default", revision: 0 });
     await app.close();
   });
 
@@ -147,7 +147,7 @@ describe("save API", () => {
     await writeFile(join(root, "saves", "default.json"), "broken");
     const response = await app.inject({ method: "GET", url: "/api/saves/default" });
     expect(response.statusCode).toBe(200);
-    expect(response.json()).toMatchObject({ schemaVersion: 4, profileId: "default", revision: 0 });
+    expect(response.json()).toMatchObject({ schemaVersion: 5, profileId: "default", revision: 0 });
     await app.close();
   });
 });

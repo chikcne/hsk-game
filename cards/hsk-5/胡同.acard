@@ -1,16 +1,20 @@
 {
   "audio": "f9b2d4950ffc2791364206d93cb6e2ffb191bad1a98dad61c8a1a68ad7e369ca.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "同"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31845,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "胡同",
   "id": "4a36f007f98959593ac4fdb5",

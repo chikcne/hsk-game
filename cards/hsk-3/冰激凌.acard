@@ -1,16 +1,20 @@
 {
   "audio": "44ce71248d041d84b63a3af807e017e357d43ae4000edec7ba9a65488fa18a32.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "冰"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10694,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "冰激凌",
   "id": "5c5cc2d6f012c4f9a3977dab",

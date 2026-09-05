@@ -1,17 +1,21 @@
 {
   "audio": "aacb6e167f30b4ed20f4a9464e3c022613abfede31e5379bca7286003d0a76ca.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "种"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6395,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "种子",
   "id": "9cefd87804a83a5b2d285a34",

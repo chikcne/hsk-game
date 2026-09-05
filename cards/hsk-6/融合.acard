@@ -1,16 +1,20 @@
 {
   "audio": "c178999c6b5d24520645abc486e715fa8e0672f35729171456006105a5f64815.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "合"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11079,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "融合",
   "id": "74f6c14ba85eb8f7e5f7cfbe",

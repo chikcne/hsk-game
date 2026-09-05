@@ -1,16 +1,20 @@
 {
   "audio": "caf52cfb947bda17f93747675a0236cb091386ee0046e8fd7e889fcee6e01148.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "服"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 39015,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "客服",
   "id": "3efa7db36bea25ad5aae35cc",

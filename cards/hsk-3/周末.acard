@@ -1,17 +1,21 @@
 {
   "audio": "a26340e5003f4178cb3fa920283c6647ac6a5df79c7774d72d706059c3f011b2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "周",
       "末"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1709,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "周末",
   "id": "891d0b6186605ba008a6f375",

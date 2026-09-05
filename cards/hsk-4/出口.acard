@@ -1,17 +1,21 @@
 {
   "audio": "1796a56b869d3504af77ac272c30cf505a03af70592d9daa7b00e8cfbabde048.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "口"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2607,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "出口",
   "id": "225c14d7a5967648075a8635",

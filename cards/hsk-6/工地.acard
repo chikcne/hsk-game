@@ -1,16 +1,20 @@
 {
   "audio": "542d6a72d441e334df206122d0e8c67a6db07e5aa67eeba110519c53eaa394aa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13935,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "工地",
   "id": "1f071d0dbe27963f011c1de2",

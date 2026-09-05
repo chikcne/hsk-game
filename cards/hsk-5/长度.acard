@@ -1,17 +1,21 @@
 {
   "audio": "2372148d4545e63ebeeeea0770fee3d4d74702d3e03742386e2e8978ada9d99e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "度",
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17433,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "长度",
   "id": "27b8556b566077377934ee8a",

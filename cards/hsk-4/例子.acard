@@ -1,16 +1,20 @@
 {
   "audio": "234e15858da4cb83a9743a6c9d10802ca141353615b53ddd24a510e3879f3c9c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5742,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "例子",
   "id": "a3ea5039460b3ac44a68be34",

@@ -1,16 +1,20 @@
 {
   "audio": "6b55239c678a94084dedd5a38dcf3329b6e1ed4fced3653c40b081bb4909649d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 903,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "伟大",
   "id": "f3af110febdfa4e093c1eff6",

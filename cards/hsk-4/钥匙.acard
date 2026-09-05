@@ -1,14 +1,18 @@
 {
   "audio": "3ada8c8bf6903838422e5a0fc8d5a870e066232730c384ae304d2a2b584f925b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 992,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "钥匙",
   "id": "7b0e4d16de0e3966d96f0c6a",

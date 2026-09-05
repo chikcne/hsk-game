@@ -1,17 +1,21 @@
 {
   "audio": "8b01c30603d170301c71aa9abac20b1dde1c43620be0010291b879571ea960ed.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "里",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 416,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "里面",
   "id": "2d3e1530e1f0d4000a898480",

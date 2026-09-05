@@ -1,16 +1,20 @@
 {
   "audio": "090a89b6657a0381efd2732902b23ecee42c8f85bc47bfabd8ac8d7fcd469c85.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "装"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3935,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "装备",
   "id": "18da2e848dc481f90c1b5e69",

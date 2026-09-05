@@ -1,17 +1,21 @@
 {
   "audio": "18f7b610cc30e4e574eabef8ebbec7484e57050f98e6d8a29ae8bfa0bf795fa1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "包",
       "打"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5888,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "打包",
   "id": "8b14dc9ea3074eabe131ce14",

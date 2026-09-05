@@ -1,16 +1,20 @@
 {
   "audio": "dfced366a90925bc4bdb6c9cdd55c829710e3941aee1825d910f09c08e78eec2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "化"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6421,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "融化",
   "id": "497e77e010d0c2a70eedefc0",

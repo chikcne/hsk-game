@@ -1,14 +1,18 @@
 {
   "audio": "2dc7268d2422c3c33a96a3f7ca73df8d46ec4cbb6db4b379d104e48e240be80e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3084,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "乐趣",
   "id": "7a1a88f485ca38b39fb762ec",

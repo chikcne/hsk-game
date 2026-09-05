@@ -1,16 +1,20 @@
 {
   "audio": "b33e952152d8971c1d3a24bdd9a7c276b475c8946b1ea53360035cd6eb1c891d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "败"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5572,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "击败",
   "id": "fb24cecbf2dbc2f5cbf1aa27",

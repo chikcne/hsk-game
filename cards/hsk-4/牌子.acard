@@ -1,17 +1,21 @@
 {
   "audio": "7825493997c7f5bb3a1725745adf5aed8f9dd859e9084f3ad8c885112ffe8424.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "牌"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7282,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "牌子",
   "id": "e3067276efc4f1a045c33b88",

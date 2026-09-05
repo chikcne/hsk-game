@@ -1,16 +1,20 @@
 {
   "audio": "389ec3365ec9d517dbe9471bc7dcce2bf0d3583bbf3914b554701919ddb048de.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "茶"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27230,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "奶茶",
   "id": "1244eff0ed9390a4bf9dc852",

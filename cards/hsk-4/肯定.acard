@@ -1,17 +1,21 @@
 {
   "audio": "473d404b26c15eaa82bbcceca4b283bc35cf4855d25fa21c2e9b74fa2fce0d73.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "定",
       "肯"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 287,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "肯定",
   "id": "3459c7757dae6843d78a0433",

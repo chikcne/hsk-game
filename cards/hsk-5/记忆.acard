@@ -1,16 +1,20 @@
 {
   "audio": "cc9ff9f6d512392d8874984071b49f7be80970ad1a374c322b114de823b1d7f3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "记"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1635,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "记忆",
   "id": "919b723ad668915bca0b7d00",

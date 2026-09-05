@@ -1,17 +1,21 @@
 {
   "audio": "dbe88e48ab916ecea7089dda4bc4cf11acb95d533565ff5e7e8928cef9214702.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "加",
       "班"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8182,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "加班",
   "id": "0015d78f7cc5437c29f28d0a",

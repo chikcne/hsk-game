@@ -1,17 +1,21 @@
 {
   "audio": "5fe0e642d7e66ff3365565c44998d2d1e0c21bca3a0587e8d6f851cda2a18a10.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "通",
       "风"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21418,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "通风",
   "id": "9ffa085c9517cd6d8505aec0",

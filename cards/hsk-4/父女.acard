@@ -1,16 +1,20 @@
 {
   "audio": "8e8a7e171c03ef313d572938fff8daedc88daab491faee3945d12f0479da4da7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "女"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27248,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "父女",
   "id": "632f86f25c93964bcccb63dc",

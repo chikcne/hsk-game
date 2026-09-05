@@ -1,17 +1,21 @@
 {
   "audio": "941811ca7636651f8b8f7dc93e85e3b87b373daa4f34dc3be8a248fbf6f01373.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "随"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7294,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "随后",
   "id": "8ea3c4213d363c2ff7a57a9c",

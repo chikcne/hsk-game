@@ -1,14 +1,18 @@
 {
   "audio": "4cbeedef6d67b076263584f7580450221bbfe4d3f73d175b4045f2c319f674cb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 19714,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "披",
   "id": "1b88bf7f3fdc6f328c0cf702",

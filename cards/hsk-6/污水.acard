@@ -1,16 +1,20 @@
 {
   "audio": "5dbb25321082b9370bbbd560c762d373d26650c05e4f13c0755a64b032b21cbf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28369,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "污水",
   "id": "1b1ec2f035ba327e72e10714",

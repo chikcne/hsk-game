@@ -1,14 +1,18 @@
 {
   "audio": "37a14a049c0cad08cefd4231ff3779a94de55f7e3b4a6056f6a2d7faf436db86.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 4,
+    "frequency": {
+      "rank": 2136,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "火",
   "id": "93d40769809b936633d2a1d8",

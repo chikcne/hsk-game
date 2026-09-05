@@ -1,17 +1,21 @@
 {
   "audio": "973f09f96e8a975de3da5d6ca7bb1f143dbab1c6ca03d7fddd7910e546e91feb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "来",
       "看"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 605,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "看来",
   "id": "616a8a0740f6c772eb98dc43",

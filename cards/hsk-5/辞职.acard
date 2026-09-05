@@ -1,14 +1,18 @@
 {
   "audio": "557d903aab2c879367a7a1815290db633687f11a2a2e201c20b7b6e502cceb65.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3578,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "辞职",
   "id": "4764a4f2a3889024f9588fe6",

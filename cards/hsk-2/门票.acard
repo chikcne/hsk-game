@@ -1,17 +1,21 @@
 {
   "audio": "752f0d4ae3f297523025ac0240c42aff0e46addd0c15a8a8c9c2a72fc3d4f73e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "票",
       "门"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11354,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "门票",
   "id": "801488e6b323535498a529a6",

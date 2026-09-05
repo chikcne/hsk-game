@@ -1,16 +1,20 @@
 {
   "audio": "b49511e3db9324d3de8872d7358369bd341dc5e652bdb0563d407fb8277f631f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "网"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 35133,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "网友",
   "id": "b1ca3cfde71f923ef0e1f648",

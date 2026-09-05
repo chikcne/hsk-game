@@ -1,17 +1,21 @@
 {
   "audio": "024e5704eea57888c912249d5dc1510651fe5afd12de9dce5cae0422f73d1844.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "比",
       "较"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 915,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "比较",
   "id": "cb7c3fe535bc6b15ea2dd0a4",

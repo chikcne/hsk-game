@@ -1,17 +1,21 @@
 {
   "audio": "88c9f576faaf48a95c9b473e181e2ced5e4424e55432b3230dc21422a04a9554.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "动"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5232,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "动力",
   "id": "5fa2dd3bb78d67157706c74f",

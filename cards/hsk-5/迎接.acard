@@ -1,17 +1,21 @@
 {
   "audio": "d9e4a75612269fb15f6958a5e51028137f9a5e89cad6f8f51c0b027f81ef5758.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "接",
       "迎"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5491,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "迎接",
   "id": "3a7c157aef8e02efdd9bc768",

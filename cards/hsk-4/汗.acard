@@ -1,14 +1,18 @@
 {
   "audio": "14782caf653f76d9f318eeda94e6a3bbcd4aa73b39182ee9d5358d32971763e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8279,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "汗",
   "id": "1a33e6896469a6f84bb3e8b0",

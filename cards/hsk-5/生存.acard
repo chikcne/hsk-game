@@ -1,17 +1,21 @@
 {
   "audio": "0f3a269616e7348ad44072e155d1812c7ef1c369e998e8e021dff2d4db5a7acb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "存",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1813,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "生存",
   "id": "d1c6ad880cc1ed26fc1e1d65",

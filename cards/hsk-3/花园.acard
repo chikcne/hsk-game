@@ -1,17 +1,21 @@
 {
   "audio": "f1221093061d4b30443c1edd94ee6b64aae5bcaf3cdaa2f6d129fa06e0819dd3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "园",
       "花"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3615,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "花园",
   "id": "efa1c2c77658b5613070c3cc",

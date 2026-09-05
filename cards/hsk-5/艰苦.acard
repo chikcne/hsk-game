@@ -1,16 +1,20 @@
 {
   "audio": "dad038c9fa1e7a95a862dc994b1a8c18a74116548e6f4165edb6a1337a55ed06.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "苦"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10952,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "艰苦",
   "id": "47d9df865b9ed9e7f99a9c27",

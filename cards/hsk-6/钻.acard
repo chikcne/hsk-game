@@ -1,14 +1,18 @@
 {
   "audio": "fb0ba37eb1e26003f2d9cf8e1bbf919619bc2066c16e05738ee46a90917f5819.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7136,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "钻",
   "id": "6995cb6e9a4d52b645fe9ce4",

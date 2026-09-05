@@ -1,17 +1,21 @@
 {
   "audio": "b3c4897c25cc2ab2775215295a63d21a73768bf4f14aa8e343bd341220f677c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "放",
       "飞"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 48503,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "放飞",
   "id": "bd69eac91e53a65638a9e8be",

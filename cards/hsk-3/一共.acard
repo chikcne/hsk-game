@@ -1,17 +1,21 @@
 {
   "audio": "c91e67a21fbd13285f6893066f77150dbdae85c57462ac90e6c33d648b97f4ed.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "共"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4416,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一共",
   "id": "bcb4789a73485d460c46a042",

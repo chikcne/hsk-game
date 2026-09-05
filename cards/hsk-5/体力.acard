@@ -1,16 +1,20 @@
 {
   "audio": "11cda53ee28a68761ffb0292f689f6e804e11cfedb829dcd733c011543909037.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9890,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "体力",
   "id": "7f04f15fdeb75b93a408731a",

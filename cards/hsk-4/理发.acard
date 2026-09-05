@@ -1,17 +1,21 @@
 {
   "audio": "44c10544a63ae7d6035dcc3884afc0735911c65e528c6efb6fff88f2fb8be3ea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16515,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "理发",
   "id": "859db03eab94deee0423ad43",

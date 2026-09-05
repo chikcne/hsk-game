@@ -1,17 +1,21 @@
 {
   "audio": "2b148e2c256fc89d63c0ac0e1363387fe47b33f19532a70498c4222b97857bf0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "曾"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7172,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "不曾",
   "id": "ce56dd1a69dfa2d9ba48f92c",

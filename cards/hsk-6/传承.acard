@@ -1,16 +1,20 @@
 {
   "audio": "9689f37f4cfdd6e81b1a86c742d59732686fa719e9b5210e4893ae9f3dcb7660.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20880,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "传承",
   "id": "bcc21d9534739c9c696227e5",

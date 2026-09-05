@@ -1,17 +1,21 @@
 {
   "audio": "06e8ec3ba09152282d54f69419cc15bb806d87b1e47242dd462addd6ef6dd157.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "至"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3212,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "至于",
   "id": "a0f6b46658f7fa41762ec1d6",

@@ -1,16 +1,20 @@
 {
   "audio": "7d1273fe99dd094eedb91819a44f1f0369acdd1d15ffdfa0c2e0466a832b8e58.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6423,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "行程",
   "id": "4ec78cbd426e32737f87f77f",

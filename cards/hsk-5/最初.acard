@@ -1,17 +1,21 @@
 {
   "audio": "bf83ce484c9d724f4df3066fefaa0c9f48a396c21653630210bdcf71729c09b6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "初",
       "最"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4420,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "最初",
   "id": "c54753f782c0b547c4f1997e",

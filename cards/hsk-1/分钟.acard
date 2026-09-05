@@ -1,16 +1,20 @@
 {
   "audio": "182c971c35a5a8d8d827f25ae85a8731e1e695a919fccc4f2cde67490b78e387.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 822,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "分钟",
   "id": "f48d139d079208c657985b2a",

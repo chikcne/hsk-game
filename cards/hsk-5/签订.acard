@@ -1,17 +1,21 @@
 {
   "audio": "e46781321be49cf33f8a58a2d0c5fd17632aa450b340f39fe0a466084d0faf37.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "签",
       "订"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23604,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "签订",
   "id": "2249f8f641041e60d34161a1",

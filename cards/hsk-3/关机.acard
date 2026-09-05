@@ -1,16 +1,20 @@
 {
   "audio": "4ae3a01e5cf9025f759c6b151399e2552c517adbbf4b82b357df85959f11bd36.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "关"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12218,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "关机",
   "id": "39c43f1eeb7d5ccef89caf0e",

@@ -1,17 +1,21 @@
 {
   "audio": "0a8bcea9865772418be7a9e9f33623148dba3b5e2e4444940287949412939b01.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "多",
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5603,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "大多",
   "id": "fd28d5500b66954cc29dbd91",

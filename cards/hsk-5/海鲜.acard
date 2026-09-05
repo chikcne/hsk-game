@@ -1,17 +1,21 @@
 {
   "audio": "e51b0c0d324e49737d45ed4b8203669e706d549cad9fc92ce32ac9f69e1e5866.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "海",
       "鲜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15260,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "海鲜",
   "id": "f96848c6b8739bb8d3fe6e09",

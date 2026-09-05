@@ -1,17 +1,21 @@
 {
   "audio": "1c278867ab3afd4009e9756da9894f7df6dafbace60a32f72f8ed45dcae011c0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "差",
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20657,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "时差",
   "id": "a2e99b2d3ba2670313dc7063",

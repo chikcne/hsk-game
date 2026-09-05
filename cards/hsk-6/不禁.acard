@@ -1,16 +1,20 @@
 {
   "audio": "8833f7b882780eee7a2c040566c547af970a4dd39316dd4ccf907ba60be581e2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13031,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "不禁",
   "id": "37ea9298c9328c7c49c71ecc",

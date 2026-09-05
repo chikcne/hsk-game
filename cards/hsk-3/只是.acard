@@ -1,17 +1,21 @@
 {
   "audio": "75aa921c9a3968cc89b9438508cc3ef7917ae4650cd7d960e2796f5c361ab909.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "只",
       "是"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 83,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "只是",
   "id": "a32e710457c7f9e589e8dc4e",

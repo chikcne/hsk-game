@@ -1,17 +1,21 @@
 {
   "audio": "edf24cfb63f726d0be0452cc936a8909c5350e865616bcd8e0da0c69a0baebc1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "暖",
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16988,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "暖气",
   "id": "b6116e4763c2bb7e4c722a5b",

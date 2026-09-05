@@ -1,14 +1,18 @@
 {
   "audio": "32de0159dea1c5f25910010b9384c0b59ebcf26a3e10ab8b4cbbaef0eeacfe3d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3405,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "协助",
   "id": "fd2051a4db55aa876be6fd63",

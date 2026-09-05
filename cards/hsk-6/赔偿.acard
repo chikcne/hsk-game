@@ -1,16 +1,20 @@
 {
   "audio": "c5ac91f7a129eb8bead149a444495e49c3773950c6f60842a487a0e9cc42ca20.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "赔"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8168,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "赔偿",
   "id": "38790329054084a9fc4aa15e",

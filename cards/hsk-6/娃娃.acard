@@ -1,14 +1,18 @@
 {
   "audio": "d25e0f6f58608ff3501b9591c25b1b6ed5d81fa208e825a7ff58038a5382c8f0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4640,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "娃娃",
   "id": "478e0deea3fab67089a209cc",

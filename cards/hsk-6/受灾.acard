@@ -1,17 +1,21 @@
 {
   "audio": "0dcc92b0da82b6f53754e2b2e667b50417b57b73367d712b0de0fdb5d99ed135.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "受",
       "灾"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 90072,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "受灾",
   "id": "235022d3e231700704a66f40",

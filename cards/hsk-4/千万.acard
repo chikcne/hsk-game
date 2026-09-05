@@ -1,17 +1,21 @@
 {
   "audio": "4f317c72ca2aa094fad21809f1f4796a14f5b6a1c4e7bb946caf203fd0e562ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "万",
       "千"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2924,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "千万",
   "id": "014c8bbd32db43c5cefd4051",

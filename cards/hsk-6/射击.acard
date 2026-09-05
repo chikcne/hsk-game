@@ -1,16 +1,20 @@
 {
   "audio": "36c686d6e0b5bcd5f4252e3fda579c5dc561303c45e561338a9a120f7d86e0a3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "射"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2696,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "射击",
   "id": "70cbcb1add99e9666c32bb9e",

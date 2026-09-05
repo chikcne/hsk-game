@@ -1,17 +1,21 @@
 {
   "audio": "6824789eae31fc6e0cc0156a87234c137c20223db6575e88d2689e69da589c3b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "来",
       "近"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8664,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "近来",
   "id": "86eef0002559bdaa4dc2469e",

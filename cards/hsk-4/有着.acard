@@ -1,17 +1,21 @@
 {
   "audio": "3bc3acfe9013eb495d3b8cb937d7f0aea94c6dfced0d69ed880e0c0f8bafb728.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "有",
       "着"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3031,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "有着",
   "id": "62ce2ff65966b40637dd38eb",

@@ -1,17 +1,21 @@
 {
   "audio": "59d25b198730e959c7916a72c8c8d2f14f2d6d0cdf0a630550a096de72bb8b0f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "特"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9134,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "特地",
   "id": "221beb75cc69aef7a05c151d",

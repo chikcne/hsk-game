@@ -1,17 +1,21 @@
 {
   "audio": "1998327ff2c43e59bd37c14ec33416996ba594656d2642d31bbe8ce374ed04b7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头",
       "里"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6212,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "里头",
   "id": "aae4bbc4acaa43b10cd01901",

@@ -1,14 +1,18 @@
 {
   "audio": "c5507c227356789d2eb6a35c40ecafd8ac10c10e2ba93e3c393a4b795d03ba85.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 13615,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "朵",
   "id": "f560f294295d6d3973d2d90c",

@@ -1,17 +1,21 @@
 {
   "audio": "d15f13925663a066006daaa376e20ad15d6796bd5be4941259f529b3e6b400b7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "处",
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11839,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-evaluation"
+    ]
   },
   "hanzi": "用处",
   "id": "91fd2620bd2984eaa2b024f7",

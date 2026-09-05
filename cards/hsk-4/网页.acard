@@ -1,17 +1,21 @@
 {
   "audio": "921b75968bb036b3adf83f1faf5ea9c6a0d8e5cff04f0e78996b62ca7b6903f0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "网",
       "页"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19256,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "网页",
   "id": "851844f2f99cf1594d9b2f24",

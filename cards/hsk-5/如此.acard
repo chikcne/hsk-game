@@ -1,17 +1,21 @@
 {
   "audio": "31a4be2414030d6815772ea03af64a38f68eb06982b4a2af5944ffe70dacc684.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "如",
       "此"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 399,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "如此",
   "id": "72689925f693ad8a6bb09f55",

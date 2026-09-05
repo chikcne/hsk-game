@@ -1,17 +1,21 @@
 {
   "audio": "6953f2000e596ec93299bf713c63f37ee340929cd094d571a20d9c24f900fc7a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "画"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13459,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "动画",
   "id": "c70e48c543dfefe0289b7c8f",

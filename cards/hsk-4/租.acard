@@ -1,14 +1,18 @@
 {
   "audio": "eb734f9b63bcee00d0b174c25b6f31ed7093c12321a3fa608f5d0ca3845ba284.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 4,
+    "frequency": {
+      "rank": 5276,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "租",
   "id": "8dbbbbcdc5ebd59cf7ac2fcf",

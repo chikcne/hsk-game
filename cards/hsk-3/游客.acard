@@ -1,16 +1,20 @@
 {
   "audio": "e8725bfb55059e0cf7c01b64b443e51b828ad4a229db7146e1a08e2e33b3963d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "游"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6582,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "游客",
   "id": "90c837bc3598c047e2c9d05b",

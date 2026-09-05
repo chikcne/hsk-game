@@ -1,18 +1,22 @@
 {
   "audio": "601d2fc16e8cb0872eb9b804ef964d3f59ce924ee7c8d76dff4a42644aa9428a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "伙",
       "子",
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2153,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "小伙子",
   "id": "51328a1f784482e2d1a2c190",

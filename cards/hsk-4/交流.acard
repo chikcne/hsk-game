@@ -1,17 +1,21 @@
 {
   "audio": "c1cd709cbc5ea0a89373ec4184111564b957aaaf9881caecb30f2510a80f63f6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交",
       "流"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2065,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "交流",
   "id": "1460af872a4456d689473a5f",

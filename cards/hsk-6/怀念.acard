@@ -1,17 +1,21 @@
 {
   "audio": "9e46bd0a09e914f4486367bed783a3c3a1d4ef2ea676a3d5acf8763ea005211f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "念",
       "怀"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5186,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "怀念",
   "id": "f745157bd5b0f97fe9502b73",

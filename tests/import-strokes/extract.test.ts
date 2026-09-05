@@ -58,7 +58,7 @@ describe("stroke data extraction", () => {
   test("committed bundles match their manifest checksums, remain sorted, and cover bundled words", async () => {
     const directory = path.resolve("public/stroke-data");
     const manifest = JSON.parse(await readFile(path.join(directory, "manifest.json"), "utf8")) as StrokeBundleManifest;
-    expect(manifest.uniqueCharacterCount).toBe(1943);
+    expect(manifest.uniqueCharacterCount).toBe(1941);
     expect(manifest.appliedOverrides.map((item) => item.character)).toEqual(["滚", "肠"]);
 
     const uiContent = await readFile(path.join(directory, "ui.json"), "utf8");

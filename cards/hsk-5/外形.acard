@@ -1,16 +1,20 @@
 {
   "audio": "60961a19161af3146e692dba6d25ff24e2cc02e2bdb3c83ffb4fe1b4b671434d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20282,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "外形",
   "id": "38af4eeb3ff784ade8b3862c",

@@ -1,17 +1,21 @@
 {
   "audio": "e1fca2d82cd3b4f708e95574f434a5459dc76202373a1c7a673a21a5bbe4dfea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "油",
       "酱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18340,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "酱油",
   "id": "cd32aeb9311ae4b0d10b5ced",

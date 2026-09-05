@@ -1,14 +1,18 @@
 {
   "audio": "b7d0f949364aad53ca3076dc3063abe81658fa5667ef149d1bfb4ffa83e44dea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 39095,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "文艺",
   "id": "d4f4d5a9ec460d625b8d4e8a",

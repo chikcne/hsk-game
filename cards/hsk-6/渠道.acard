@@ -1,16 +1,20 @@
 {
   "audio": "8d6d4de02ca16d168403aa282791b9af797033713c9f208b7fa45d5c20a582fc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17650,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "渠道",
   "id": "94ed8d443ed93132eabef79f",

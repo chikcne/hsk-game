@@ -1,17 +1,21 @@
 {
   "audio": "a6448c2803d7b5f77a4ab830e4f65a5f44f0d70f24dee1435c91e91c70775316.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "行",
       "运"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3027,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "运行",
   "id": "9119a2ea9cc9f316a6f50b4d",

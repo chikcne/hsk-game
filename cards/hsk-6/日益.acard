@@ -1,16 +1,20 @@
 {
   "audio": "0f0e8363f6239262ac33e65db9c7a92179f42af6ba81193b73b2b8f7ae46fb70.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "日"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19137,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "日益",
   "id": "7881be5b53da4445450431c4",

@@ -1,17 +1,21 @@
 {
   "audio": "6533125b9ba4e559cf8f5129f6aa21e790caf01aca15f067f21c5cb0d2fab8b7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "指"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1896,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "手指",
   "id": "cbdbe60d5898db104e49f72c",

@@ -1,14 +1,18 @@
 {
   "audio": "4d9bc6ed6e9010b54ca2f52b83a51ed59388fa2a7a28f1030dc230df7b169e88.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 573,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "够",
   "id": "f3d24fa6e611a3399a8bb691",

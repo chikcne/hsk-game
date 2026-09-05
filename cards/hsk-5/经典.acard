@@ -1,14 +1,18 @@
 {
   "audio": "7a6fc83b95a61c2e70483ecf0c5738cb0b8867b1843d2de480bb74a0b7ea74d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2500,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "经典",
   "id": "cb41f801bde3188631906373",

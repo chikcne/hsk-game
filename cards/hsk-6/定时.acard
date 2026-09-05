@@ -1,17 +1,21 @@
 {
   "audio": "2827ef0a1197f50eb6001c62c03d212ae96a6f165eca539fd6c3790b1ce13778.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "定",
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28353,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "定时",
   "id": "7766094f3ba28c281f229004",

@@ -1,17 +1,21 @@
 {
   "audio": "3fa97067e92b166b0ced8ce4df040db06b8c1db2c345391dac87a85d46709edc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "处",
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33761,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "长处",
   "id": "d2f7ad0f2c57e61d8159585e",

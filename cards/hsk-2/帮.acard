@@ -1,14 +1,18 @@
 {
   "audio": "638dc8881a7fcc601f4d411a21fa485c9440e6be2b6dfcdcaded37dbbbdbe1f2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 174,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "帮",
   "id": "d31ea6aa882a7b4f56a2d3c2",

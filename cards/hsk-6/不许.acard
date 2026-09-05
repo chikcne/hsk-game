@@ -1,16 +1,20 @@
 {
   "audio": "ffb410ff536498a9fe0343520f643d33f7b5a2f86e8c55f9e12eee19e281d89f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1954,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "不许",
   "id": "8c72359794d62cd76ec61194",

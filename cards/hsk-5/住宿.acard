@@ -1,16 +1,20 @@
 {
   "audio": "a0bed2b8b6ca18b16090374bb320df01dc14aa097eec3ed05dd6f3bb9542ba3f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "住"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15681,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "住宿",
   "id": "31cc50835e7e58041386bdba",

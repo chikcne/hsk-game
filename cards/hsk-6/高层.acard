@@ -1,17 +1,21 @@
 {
   "audio": "d4e97042c8af5e07892d05aa97fcb2ab67b8480dde43103cc607b175a24b2be1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "层",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10163,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "高层",
   "id": "072cd5707474641985bc237a",

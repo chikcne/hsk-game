@@ -1,14 +1,18 @@
 {
   "audio": "276a93e42d62ffd9b199d95a57a0fd389cd6668ec9e79a170bb19775831fcfa0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 4,
+    "frequency": {
+      "rank": 9678,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "步",
   "id": "ce7979a7626b22ac3e7bad45",

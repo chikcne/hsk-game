@@ -1,16 +1,20 @@
 {
   "audio": "80b9d60e9815546eae63dfa27b3f1d1ad02705054978b5327537e1e37f1f28f5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23281,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "生态",
   "id": "436455df773b9f94f03aca7e",

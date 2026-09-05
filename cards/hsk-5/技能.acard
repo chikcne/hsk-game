@@ -1,16 +1,20 @@
 {
   "audio": "75d583e50b7c73360b2d83b385910e699658fcfad3145619e64a769125413aa5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7601,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "技能",
   "id": "1ca5d01d8f059caab7545c58",

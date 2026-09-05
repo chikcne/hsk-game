@@ -1,16 +1,20 @@
 {
   "audio": "940a4a3241011894597f435362ab655c0957a0dfe5e2a69a7923ed50082cc132.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21476,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "小孩儿",
   "id": "a8210342a3ff8218aa8a860e",

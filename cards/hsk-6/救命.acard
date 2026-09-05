@@ -1,17 +1,21 @@
 {
   "audio": "4f60028c6189be9da8b2fd43f601fb82bc5aae62794e9ad10a6b3b6d5e7cc6ad.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "命",
       "救"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1091,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "救命",
   "id": "06a22d7e716183ab2f6f9a91",

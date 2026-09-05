@@ -1,14 +1,18 @@
 {
   "audio": "4ecc428f25c7036bbc2ec95210babdeace97f3cc711856b15ce8d2c5f546179a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9557,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "届",
   "id": "be64a20c5d2e0a63bedc807b",

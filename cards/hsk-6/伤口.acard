@@ -1,17 +1,21 @@
 {
   "audio": "2af94d5cb9627a350848f6361e04b8eb882aa719d237905b93684e7ce71d2f0d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "伤",
       "口"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2857,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "伤口",
   "id": "2e4bf5d785811e76e04e62ad",

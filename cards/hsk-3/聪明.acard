@@ -1,14 +1,18 @@
 {
   "audio": "7a82bf5e599d56cc6021e52715e455d4f9555e33f62bdb1a2804118c54d53a19.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 827,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "聪明",
   "id": "49b19d7faaaa5c4db9f7998d",

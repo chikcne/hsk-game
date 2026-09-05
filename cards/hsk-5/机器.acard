@@ -1,14 +1,18 @@
 {
   "audio": "44c636d09f0ef0a78a6bbce1df47a38039c9949029392e5087e509dbfc3a8d49.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1626,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "机器",
   "id": "f801c0eef6deb3c50c7fbb68",

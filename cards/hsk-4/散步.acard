@@ -1,17 +1,21 @@
 {
   "audio": "2290d3036fe1e218824b6e51f89eae21aa39a3bb8b4c77a363fed1a70124edf8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "散",
       "步"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3564,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "散步",
   "id": "e9315bb32a5013e306a341eb",

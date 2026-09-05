@@ -1,17 +1,21 @@
 {
   "audio": "c1c8b973d1a1ecd68894f0d566eaacdfb922b868c5230dd9d284c07a847d0af3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光",
       "风"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17701,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "风光",
   "id": "9d0cbc84d4a1c6695874b31d",

@@ -1,17 +1,21 @@
 {
   "audio": "8ee4117d257f7de161de53f3a663f5f8dbad62ab9b94f8fe92221ede4a36250d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "刷",
       "牙"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12858,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "牙刷",
   "id": "8283aaf47c9c032d697c4218",

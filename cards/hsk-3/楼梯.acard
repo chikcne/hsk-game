@@ -1,16 +1,20 @@
 {
   "audio": "3551148827869b94649f015ae847d8629804fdc2c569b40b34d8429583b9848a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "楼"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3600,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "楼梯",
   "id": "d1c64fa32b0cea2fcde583bf",

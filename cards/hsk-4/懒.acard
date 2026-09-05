@@ -1,14 +1,18 @@
 {
   "audio": "a00eb5671f29b266f0a462a4b25306984ad61845d7faf70d8235b004b321e65e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 14752,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "懒",
   "id": "138fcf00d913030c5e2bba0e",

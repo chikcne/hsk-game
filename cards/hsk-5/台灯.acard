@@ -1,17 +1,21 @@
 {
   "audio": "467a633835b3ecc4417000c69dec394200e7b52ee739254a499f25ae5e8b9e52.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "台",
       "灯"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 36271,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "台灯",
   "id": "bf7b54afd6466fd9f792cef0",

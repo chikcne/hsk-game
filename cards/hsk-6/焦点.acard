@@ -1,16 +1,20 @@
 {
   "audio": "974e628ff1bc5fee602a3362356debff45e78843501fd4fd17f7424d30c34cfb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10880,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "焦点",
   "id": "3fab7c9cd2be99e8ad129745",

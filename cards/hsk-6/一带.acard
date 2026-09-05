@@ -1,17 +1,21 @@
 {
   "audio": "6207ad3b89563059d27f4ea9eb46bfed1dbd880ee3801b012e5cd36b22466a96.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "带"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9202,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "一带",
   "id": "2587a13df9d93ace1e51da4c",

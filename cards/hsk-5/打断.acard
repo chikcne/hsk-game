@@ -1,17 +1,21 @@
 {
   "audio": "84cf0306a0b6bf26f866a81a7a846a8ed82aeb061ff12f4d3745001b1edfd7e6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打",
       "断"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3623,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "打断",
   "id": "5dd36668a609466fa4602c74",

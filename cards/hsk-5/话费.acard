@@ -1,16 +1,20 @@
 {
   "audio": "7ad08b38ad97a512fda78b698017768cbd8d07660c2f881ae721313614f7ec92.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "费"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 65512,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "话费",
   "id": "c3d2d5aaa5c56e23b558ae5a",

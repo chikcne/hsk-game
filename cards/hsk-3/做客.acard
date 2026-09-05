@@ -1,16 +1,20 @@
 {
   "audio": "2307d8babe01048e5fe0d5d7ed1e2138027965d3a4f54e127ce95937b7e25578.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "做"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21761,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "做客",
   "id": "3f58b7a975e2f312cc5a8a94",

@@ -1,17 +1,21 @@
 {
   "audio": "9137724d1d35896b029dee893691673add3f252cfbf14d8c9808b9afc555d498.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "提",
       "起"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3372,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "提起",
   "id": "ad1300f3e9c6a5de0c57b44d",

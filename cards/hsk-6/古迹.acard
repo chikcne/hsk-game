@@ -1,16 +1,20 @@
 {
   "audio": "f5a28819eb4084e71355f9aa3b2f4ce7082f1623d4c9a914ca4104d16fe8912f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "古"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 43298,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "古迹",
   "id": "91358e16861944fe77e1b187",

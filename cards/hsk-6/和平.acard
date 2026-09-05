@@ -1,17 +1,21 @@
 {
   "audio": "4ac13bd808641df67d5887fcec124704965788d69022841317e0b8c1e0dc1101.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "和",
       "平"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1769,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "和平",
   "id": "e69b94f6f5b731fbe60b01a4",

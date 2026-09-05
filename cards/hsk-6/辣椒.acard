@@ -1,16 +1,20 @@
 {
   "audio": "7f341c77cb8c6e41c05b611e498990860eb57705d61df8991e84866b6b49f35d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "辣"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11103,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "辣椒",
   "id": "ea80ccf39efe42e193a3c8fe",

@@ -1,16 +1,20 @@
 {
   "audio": "7ad1ee4ed7ff289817f925800ed5337ff3d19661ad84ee3e0a3fa06681824c9a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7580,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "大众",
   "id": "6c708e0fd3b3e9e608e65ff6",

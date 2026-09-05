@@ -1,14 +1,18 @@
 {
   "audio": "36efbec78106311ebc34bf035b3f5f2e8a67bd41bf5317915779bd92b56d0ff0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 18074,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "泼",
   "id": "37018a38d9ce75fb4afcc251",

@@ -1,17 +1,21 @@
 {
   "audio": "554b2970d7722be61d690919e1cfad98f74ba219715237453c254ae222618a1e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "有"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7105,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "有力",
   "id": "2cf65e62b99c7bb0fe2e18b6",

@@ -1,17 +1,21 @@
 {
   "audio": "dede88fb543c9c41d42f4195811b4b96e358746294ebf44954328ee3392323b2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "歌",
       "词"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7214,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "歌词",
   "id": "b0ab1a6d7fbb03e5b3f3916d",

@@ -1,17 +1,21 @@
 {
   "audio": "47e0db817d4d37231b4973f07fdabd00db1332153105dabf0ff22c31d4a485e4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "变",
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 572,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "变成",
   "id": "8bb42d98adec660e1c5812d1",

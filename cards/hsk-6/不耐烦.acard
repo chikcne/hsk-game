@@ -1,17 +1,21 @@
 {
   "audio": "0012e41b4659470b3be10cf1fa2a13ad29729b553a3ea32dde95c4d8e87f4fdc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "烦"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16457,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "不耐烦",
   "id": "c00c4486b8322398d37a3dfc",

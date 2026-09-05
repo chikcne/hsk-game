@@ -1,16 +1,20 @@
 {
   "audio": "5adf58467f33398975ada68abd46a36219d9d6e3c545910d4078091ec703112c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5544,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "大象",
   "id": "6f06818b1a81e1cb80f69a05",

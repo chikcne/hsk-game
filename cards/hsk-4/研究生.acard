@@ -1,17 +1,21 @@
 {
   "audio": "7614a33dbd25f27935da97f282d22f1f030acdb26649b7715e44c3b214e04c98.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生",
       "研究"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21791,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "研究生",
   "id": "aee890e1f3e408ef6c41b3e7",

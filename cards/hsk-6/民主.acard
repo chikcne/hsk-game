@@ -1,14 +1,18 @@
 {
   "audio": "8356a9142c075fcb1dd556485c48418283e6dc9b9a2aff67230105e222565c40.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4693,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "民主",
   "id": "13d43a9dc5a6a7ca30429eee",

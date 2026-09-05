@@ -1,17 +1,21 @@
 {
   "audio": "073bb75da88b2c06b4da68a4fe9d9c3f31c11a5c265bf5976e0c0363fab3676f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "害",
       "有"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13516,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "有害",
   "id": "4ff29c3bfab5da7bf74b17ff",

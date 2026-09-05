@@ -1,16 +1,20 @@
 {
   "audio": "906e68766331e1ad54ee4ef04927688036569dea95f08190010554af165e9f16.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "举"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 39769,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "举例",
   "id": "b048d363e61868eef7eac633",

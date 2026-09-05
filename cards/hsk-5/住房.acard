@@ -1,16 +1,20 @@
 {
   "audio": "2ebd639fcc2bea64952f3fe83058aa791b63ee43094655b44b6d0d6aaed3b0b7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "住"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19595,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "住房",
   "id": "c6c51a1f52b3085f5a78c537",

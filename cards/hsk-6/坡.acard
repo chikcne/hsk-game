@@ -1,14 +1,18 @@
 {
   "audio": "9b5ae46717f644b2ba6ca4b5cf0e6eb41d484bbb70992b848faf929cf2869f4b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 20867,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "坡",
   "id": "efd1d2ef7725991c64479e7d",

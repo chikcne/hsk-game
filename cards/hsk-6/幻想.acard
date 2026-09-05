@@ -1,16 +1,20 @@
 {
   "audio": "a14a0b2568f150d65f9e33609a261e8f3f041587bd7ece5d6a98414aac03c6ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "想"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2737,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "幻想",
   "id": "405fe2e6f58fd9acb0b4bd44",

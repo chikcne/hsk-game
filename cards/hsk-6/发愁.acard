@@ -1,17 +1,21 @@
 {
   "audio": "d479e3ed47b2acc52b9746cb2bfb291069e575075f11a4a8e566b8ecb21173ea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "愁"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 37461,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "发愁",
   "id": "ee9f136d7c7e20d7a425c200",

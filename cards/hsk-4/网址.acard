@@ -1,16 +1,20 @@
 {
   "audio": "7d639921e5b7c381dd791f77ca7f43672c80d38d55be8c42a5db5cdaf263432b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "网"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 47431,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "网址",
   "id": "c9bde8a3348954f1b006c10a",

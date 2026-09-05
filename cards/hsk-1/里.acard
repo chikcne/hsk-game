@@ -1,14 +1,18 @@
 {
   "audio": "6f69cbe4e6e30121b70657a1a5b081b243335fa9fc2b9e2cfc534dec8d84f291.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 108,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "里",
   "id": "c0ac7131390a58e8bfe8fd8e",

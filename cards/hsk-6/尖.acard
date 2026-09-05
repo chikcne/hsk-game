@@ -1,14 +1,18 @@
 {
   "audio": "39b0d051ed1a6c3a309e8f03224fb27e64d1c2e74fccc4e6cebb6fdfbc51ff9f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11861,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "尖",
   "id": "999f199ada237dc1a2815098",

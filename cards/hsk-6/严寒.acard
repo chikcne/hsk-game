@@ -1,16 +1,20 @@
 {
   "audio": "91815d838e74432d183c8de8019e3f3c2efcfadafbfae5996509225d5813dd9a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "严"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27060,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "严寒",
   "id": "bf58e133d89902c7758d582b",

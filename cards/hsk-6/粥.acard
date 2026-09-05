@@ -1,14 +1,18 @@
 {
   "audio": "da89c2578f13482a76f736d24bfdd5d682306adda2343944a4a1cb36c7700aac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 13087,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "粥",
   "id": "44c3ab8459ffcee36f977325",

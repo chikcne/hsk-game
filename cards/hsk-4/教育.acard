@@ -1,16 +1,20 @@
 {
   "audio": "a8fc017e9d04fb9b428365c197b9cf4393ccbe1d959be2c734b48b74dc712e14.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "教"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2452,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "教育",
   "id": "53790e742d1465c9a816f3f6",

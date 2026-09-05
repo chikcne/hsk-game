@@ -1,19 +1,23 @@
 {
   "audio": "70ae89b99415369efbda6d47b27c068db29dcd5a98b294ab0ce9c74fa6ae75fd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "于",
       "至",
       "至于"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10379,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "不至于",
   "id": "ad0d322d3320d93a31844007",

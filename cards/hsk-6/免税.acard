@@ -1,17 +1,21 @@
 {
   "audio": "5645be774bb58561690958e67a774b01c2f421499d2cfad07331c3f3b188db7b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "免",
       "税"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 45955,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "免税",
   "id": "b3707240bdf38dc4d8a5b836",

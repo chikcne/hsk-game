@@ -1,14 +1,18 @@
 {
   "audio": "066a5769ba62dbab4a09ad2bc3936457d19583620c9bae8a4a66d1d3c783c070.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 29,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "想",
   "id": "c1e3de58772f731676d518cf",

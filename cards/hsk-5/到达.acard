@@ -1,16 +1,20 @@
 {
   "audio": "117c8edb2d1283d353e647743df9cea4737d7e3c1edccc1dd0d6618b4cb5dafb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "到"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1414,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "到达",
   "id": "7e625d552793523c0066bee8",

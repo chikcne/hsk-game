@@ -1,16 +1,20 @@
 {
   "audio": "12c26a31951ac5f68ae1754964ff45f0a08e4c788fadb7a5d458d2333b6d8b2f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "放"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2181,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "释放",
   "id": "501ce39adf15122dc29408f6",

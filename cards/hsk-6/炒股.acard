@@ -1,16 +1,20 @@
 {
   "audio": "70cfe196f584b13dbdad232ef0f0bef273c8e9159906e3c10146fe93a2191c09.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "炒"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 84666,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "炒股",
   "id": "8f8ab9bba27be39ffe89ee58",

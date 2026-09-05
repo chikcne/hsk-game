@@ -1,16 +1,20 @@
 {
   "audio": "859233281f6739d62b3ea4f56fdf0b7ebf80b5ab6f911ef1c0cbe36fc27a3a81.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "海"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2541,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "海洋",
   "id": "a6cd55f7a99262d44b3c1c1d",

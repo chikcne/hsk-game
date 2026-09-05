@@ -1,17 +1,21 @@
 {
   "audio": "2ce97d3369c28a81958e00b449972d0877caef8405871cc05ef09aa70f4df7b8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "度",
       "湿"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 40325,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "湿度",
   "id": "4958fbee1a05a90494cc2da8",

@@ -1,17 +1,21 @@
 {
   "audio": "5785cb5e6ef70b709aadc9cb8b4f8a5eda6ef595332b380af101d490ecc0f6ec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "者"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10021,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "学者",
   "id": "dca5f50e91005baf1fb579d6",

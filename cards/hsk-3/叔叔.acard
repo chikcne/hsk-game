@@ -1,14 +1,18 @@
 {
   "audio": "a6709678d8b1f1ed65b59c988716c15ca12eca818c83c8a78723840a1faaf49a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 942,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "叔叔",
   "id": "9ee9ff97ac69c8b7c7ee8172",

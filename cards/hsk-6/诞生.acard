@@ -1,16 +1,20 @@
 {
   "audio": "d49d5e18f4b0cf4714ebf654252b0a65fb04482b205d7b8c7706e2c40a2de2b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4896,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "诞生",
   "id": "5eb2d0edc1ed6fdd34e0891c",

@@ -1,16 +1,20 @@
 {
   "audio": "4861325acd6bb73837adca1c480e45e4b087610423f6ca9a6cb12e3920110788.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5046,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "脾气",
   "id": "f8b6dfc5d099d7431194ce1f",

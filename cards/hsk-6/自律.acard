@@ -1,16 +1,20 @@
 {
   "audio": "2bcdd51087dc6b81563afb3dd4595679072c663d57cf80967abafda659621774.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 39020,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "自律",
   "id": "90766cb2e0dc22f1c1daa904",

@@ -1,17 +1,21 @@
 {
   "audio": "f9c0d5f5ec8c1f5b6aaaf7956f3eb9d2275af5a94f25b6a4289c999f9b67ebf6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "满",
       "足"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1938,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "满足",
   "id": "7a4af6400eb73dfc328238a3",

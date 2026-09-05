@@ -1,16 +1,20 @@
 {
   "audio": "ee72bdc3eabdba3f5a175480b8e553170915dabca88218e5bf52ac01f9c62624.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "近"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 38415,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "近视",
   "id": "f7d5434b6974aaee57c47676",

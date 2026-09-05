@@ -1,14 +1,18 @@
 {
   "audio": "e29ba38994053ec418406ebe05e3ce011b3f3ce535bd517a3be96a2bfcff98fb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 1022,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
+    "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "神",
   "id": "f003050bba0d04ab19ab2a29",

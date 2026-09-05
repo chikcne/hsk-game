@@ -1,17 +1,21 @@
 {
   "audio": "8e069f6517629ce9897239dac6c71355be2390554f19d02ecb77cb664cb82e34.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "官",
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5213,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "官方",
   "id": "b9ee72b92f82afe0061191f4",

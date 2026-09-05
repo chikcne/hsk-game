@@ -1,16 +1,20 @@
 {
   "audio": "f3dd1576fa9aaef5e661332966a37f65dddb0e28ba32e89f9192da618decc825.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "得"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4584,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "得知",
   "id": "cad9b5566a86c0a2745d248c",

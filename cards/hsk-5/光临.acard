@@ -1,16 +1,20 @@
 {
   "audio": "e02e888dd228552047dbb74bd9710e08381c1392a0d3a0dbebc4e90e62658597.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7263,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "光临",
   "id": "9f15ecf83f3746a011a75773",

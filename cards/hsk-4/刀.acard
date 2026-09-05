@@ -1,14 +1,18 @@
 {
   "audio": "b4da785ffa00f5161d3f61fad913bef217c1ed08a692c0efaededb6751c412e2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1717,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "刀",
   "id": "eaee4d6586768aba09021551",

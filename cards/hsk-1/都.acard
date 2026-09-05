@@ -1,14 +1,18 @@
 {
   "audio": "c85289538f99dadbbb5e0badae72b7cd640b373370e2a4645d454a946e5551a1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 20,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "都",
   "id": "bd5c2dbb390fb21ef9e57467",

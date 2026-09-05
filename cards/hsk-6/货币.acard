@@ -1,16 +1,20 @@
 {
   "audio": "24ec8c87fceebfae791c62f10abd545c57cf8f76bdb2b75700a8bc7868536676.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "货"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12862,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "货币",
   "id": "6e25cbce7f2dc34acc48889c",

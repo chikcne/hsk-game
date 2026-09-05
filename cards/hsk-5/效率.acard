@@ -1,16 +1,20 @@
 {
   "audio": "d6e354060fd77a591f3eb890a2993a87f52cf22607018dc7abfd95dc6145389e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "率"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14949,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "效率",
   "id": "899098161f32861487a26601",

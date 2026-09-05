@@ -1,17 +1,21 @@
 {
   "audio": "b2c0391243b84067660dfc87005cf44b1e8ef0d388c6565e06c0cd37a4629d53.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "都",
       "首"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6746,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "首都",
   "id": "1ca7e0d624356110fa1603c7",

@@ -1,17 +1,21 @@
 {
   "audio": "e4ffa3d39af92e306f8d443ab556bea924eab24f8bb916cc191fd67bb7c0b312.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 77008,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "期中",
   "id": "63be335651d48f05c5668592",

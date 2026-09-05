@@ -1,17 +1,21 @@
 {
   "audio": "130b58716e9b5126f842795578e222d01be7818a7ba7e303b5de2e7e47bb9c29.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "再",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10830,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "再生",
   "id": "ff332ce4b09a22019da5507f",

@@ -1,16 +1,20 @@
 {
   "audio": "61de0e75cedcd4c038dff0c929b5820b74e31f8cfb93932aa1b9910264592943.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "桥"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16833,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "桥梁",
   "id": "310c3e0c9e57517b20ce0ab4",

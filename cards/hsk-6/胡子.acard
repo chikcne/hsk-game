@@ -1,16 +1,20 @@
 {
   "audio": "518b2df81dc3a6b888f1def38cb354af53b58092e9c6d1e7bdc62b59729447e4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5047,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "胡子",
   "id": "e0e28523b32de0fcd95348b1",

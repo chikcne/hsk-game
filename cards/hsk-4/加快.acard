@@ -1,17 +1,21 @@
 {
   "audio": "8f4ef0b0e8fc78116d1b03c2cd8b598613596edf89178fd99a31f6ccd385f1fd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "加",
       "快"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10675,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "加快",
   "id": "1d992c60406c28b9d0ecb4ae",

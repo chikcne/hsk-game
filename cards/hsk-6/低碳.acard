@@ -1,16 +1,20 @@
 {
   "audio": "75b4feab6824988440ef6929f6c0f7db99cc66c0048ca8445cf8018ce8453c9b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "低"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 357846,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "低碳",
   "id": "d10335e2af49571a4126b842",

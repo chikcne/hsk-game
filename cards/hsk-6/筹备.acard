@@ -1,14 +1,18 @@
 {
   "audio": "b59a0cc3b8ef040493cffa4bb2959f6eb30a80424265e3086c849722d17fc757.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 17622,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "筹备",
   "id": "7c603f4487d75179c16fa48b",

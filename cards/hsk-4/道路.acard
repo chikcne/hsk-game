@@ -1,17 +1,21 @@
 {
   "audio": "1438c2e69e15d499732527f9572f35bb6b48c6cca7b7ad1f51e8943686ac1eab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "路",
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2834,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "道路",
   "id": "1893464e5b385dde2d1cf0ae",

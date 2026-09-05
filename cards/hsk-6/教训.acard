@@ -1,16 +1,20 @@
 {
   "audio": "d3a93eff844c2001bbc5cc0f1441aaf11e4162b68234ffb648fa1deb9f275e7d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "教"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2900,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "教训",
   "id": "06798cae9d978d28f0c24cca",

@@ -1,14 +1,18 @@
 {
   "audio": "d4cfa6f79b23de1693b2ba7aca90505dfc1a51c72cc845664de05c956cbe15ae.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10451,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "竞赛",
   "id": "2c87c237fbe01d9c8df0c588",

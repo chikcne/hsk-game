@@ -1,16 +1,20 @@
 {
   "audio": "382c9ba5cc76c30a905a627440d6d5324a31279f68550859982d5de1e855cf21.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "同"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3599,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "同情",
   "id": "429b4175baea6499e266cfd4",

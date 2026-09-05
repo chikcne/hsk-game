@@ -1,17 +1,21 @@
 {
   "audio": "30f4106117a339cdb267c9adc2e75de8d5c4b2916dc34f0e292ba1631ae0d846.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "费"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9679,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "学费",
   "id": "5cfb5d5bf222def1f77c34bd",

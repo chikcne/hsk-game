@@ -1,16 +1,20 @@
 {
   "audio": "39512cc682ff7e4b72c795a61468811dbf4312e245228ae0ba70a1ae614aabc0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "极"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6492,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "积极",
   "id": "e851085f190e2dae2d51497e",

@@ -1,17 +1,21 @@
 {
   "audio": "7d3aa92ad6d00517779a7ffce6afba76de6b42b06c2039c649594c4bef9c71eb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "放",
       "松"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 994,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "放松",
   "id": "a7a4b60d04ca36e8a2a44181",

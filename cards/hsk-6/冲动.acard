@@ -1,17 +1,21 @@
 {
   "audio": "94d54f3de622af14cf1d3841db040c1a328d1d8f84001e0fa51817b7951251c1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "冲",
       "动"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4648,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "冲动",
   "id": "964448b08afeaa6f3a3bddc9",

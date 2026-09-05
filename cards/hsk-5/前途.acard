@@ -1,16 +1,20 @@
 {
   "audio": "d41ee3ff206348bc979b78bb1dc8a80e572b980e8323d9803ad177b9b079c8d2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5418,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "前途",
   "id": "4f5d6c0a4f7d3d5b01d7439c",

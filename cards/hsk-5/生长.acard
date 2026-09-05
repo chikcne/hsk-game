@@ -1,17 +1,21 @@
 {
   "audio": "eb679fc00e7a370acb62a4df7df8cdc6e3c5c0ccb3d9d03f97430e59e89f8e6a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生",
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6275,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "生长",
   "id": "83fd4d1b5dc00bfff50fa855",

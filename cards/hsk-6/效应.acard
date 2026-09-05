@@ -1,14 +1,18 @@
 {
   "audio": "8996cea2aec0a1a17714371533e42453f8ec4be9106cf7783728568fa1f7cfd6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 17243,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "效应",
   "id": "febaa2cbeedebd178843c82b",

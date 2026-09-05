@@ -1,16 +1,20 @@
 {
   "audio": "08417884ab96696fb6e0e99b7f628a250d64fa55cfb01f41c2c914828d044b4b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "买"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5233,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "购买",
   "id": "30f4882ce70dd2d9a202781c",

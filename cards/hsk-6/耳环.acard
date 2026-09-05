@@ -1,16 +1,20 @@
 {
   "audio": "9fb10f0d6adb34861b51182ed811027cd91e1d09ed9e2ccf6a2cfa79a6befa8a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "环"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10000,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "耳环",
   "id": "1c4e6454e3606ca3731c2648",

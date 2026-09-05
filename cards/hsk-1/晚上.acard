@@ -1,17 +1,21 @@
 {
   "audio": "11897e7838cf51f0447ba597a5b04ccfc324b9747f70f0a8669d9c6d52988e2f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "晚"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 393,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "晚上",
   "id": "2482b3d1354042144bc3c136",

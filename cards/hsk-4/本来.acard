@@ -1,17 +1,21 @@
 {
   "audio": "456b89a54820640ebd41a8e9aba8f2e8a6334cfa6c95d0e318b99e4c5beb43f4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本",
       "来"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 861,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "本来",
   "id": "fdad75a3abbabe5c08e14cea",

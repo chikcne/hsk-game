@@ -1,16 +1,20 @@
 {
   "audio": "cce88fe943239e22c2489b33e0413de49dbf3be3f984d6df9f684f4adc396533.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "烦"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 479,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "麻烦",
   "id": "3a0216d7f5f1c8a1c4528f7d",

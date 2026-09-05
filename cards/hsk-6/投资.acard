@@ -1,16 +1,20 @@
 {
   "audio": "1205c6bade01b2cc7e8ceb74992c1cc8b8242e72beaaf7b8b74231f4d7a69891.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "投"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2860,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "投资",
   "id": "189d98d5eb7244d96913be1e",

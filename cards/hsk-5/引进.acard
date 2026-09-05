@@ -1,17 +1,21 @@
 {
   "audio": "28b6e34d9470ea430ecac615368c12ae99f8af7206c04aa811530a40c49ed0ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "引",
       "进"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21334,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "引进",
   "id": "4bf95fc7ed0ffe8dcaef94fc",

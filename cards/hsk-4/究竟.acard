@@ -1,14 +1,18 @@
 {
   "audio": "0382ee0b36face2bc17ed0d45706d5c051d2934c5d0f37e2fc2cfe984bb8f575.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1254,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "究竟",
   "id": "a4f907dc9bcf7ea9659440c5",

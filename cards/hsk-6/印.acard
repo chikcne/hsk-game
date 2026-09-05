@@ -1,14 +1,18 @@
 {
   "audio": "9a3d18819b344b6c735ff6ea71fa5befa9f475d6a7de3a83aded2004be5a7f33.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 8638,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "印",
   "id": "b2a8abf862e19c623e730ce5",

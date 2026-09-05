@@ -1,14 +1,18 @@
 {
   "audio": "a0c10e3ddfca31d5911712c0ab912252a60f0f0786836b3d4c4deeaa1867476e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10284,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "捧",
   "id": "42ebcbbb1b894397469c4939",

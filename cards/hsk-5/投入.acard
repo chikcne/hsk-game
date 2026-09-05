@@ -1,17 +1,21 @@
 {
   "audio": "4b434d6bbb64348cc2028db370f4d0de6eba442848e88757ef29db3fb4fde108.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "入",
       "投"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3579,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "投入",
   "id": "090fcea6afd4d05609c0a155",

@@ -1,16 +1,20 @@
 {
   "audio": "325f6ff2c88e8b539e92a01b967e6a40f675c15654c1ca1814102781cf1da4e3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "球"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10074,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "篮球",
   "id": "498fb848809021ac031c47ce",

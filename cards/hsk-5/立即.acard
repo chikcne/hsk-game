@@ -1,16 +1,20 @@
 {
   "audio": "a84cc363bfc976645eedb90fff4e96e7c2f0fa09bc72ce892916d719dc6c28cb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "立"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2118,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "立即",
   "id": "e889053c84161c00cffc56ca",

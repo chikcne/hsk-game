@@ -1,17 +1,21 @@
 {
   "audio": "8bfe73d8b277323c8a6fbcb1c1e3178b9a0d0529880dc124f2e58b37b055100a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "期",
       "末"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 45221,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "期末",
   "id": "e6bbbcf0e863b25f062c53cc",

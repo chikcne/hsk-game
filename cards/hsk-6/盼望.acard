@@ -1,16 +1,20 @@
 {
   "audio": "db1dc275f62ec54da171fed323384e3997108511a0d463e1b97b103bf1c155ad.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "望"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15704,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "盼望",
   "id": "389587d20f62d781d0c7008d",

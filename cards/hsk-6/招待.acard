@@ -1,17 +1,21 @@
 {
   "audio": "1c7b52f13c1ebf06f8eb930e0afd1db2dd286e8b1f882be0b63b2bc677d61bb1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "待",
       "招"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5247,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "招待",
   "id": "ef15f10074b013f1788b7591",

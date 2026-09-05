@@ -1,17 +1,21 @@
 {
   "audio": "eddc882a1a9ab7c6c69285e074b2e1dd2add32af1a8105c6fa22713e30cb58ef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5600,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "大地",
   "id": "5319800d950574be2c76c48e",

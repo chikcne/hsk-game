@@ -1,17 +1,21 @@
 {
   "audio": "e9ca3d3a1b4c3e90a084cc0458fc95d56783ed503535be3990269db03efc5d75.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "过",
       "难"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1633,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "难过",
   "id": "1f11e88a92f7f08c91b25b98",

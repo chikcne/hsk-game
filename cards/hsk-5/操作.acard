@@ -1,14 +1,18 @@
 {
   "audio": "67e63305fd05e02efff599f517a4c8195a3de029ed27c27a1d8a83b1498448fd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4105,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "操作",
   "id": "0de10045bbf4168bb8e16de9",

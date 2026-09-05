@@ -1,19 +1,23 @@
 {
   "audio": "98c565eb723defd3fb8f9d04f95de6be12b58c25221ed48c30de0af5a8f1bb3e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "员",
       "行",
       "飞",
       "飞行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3525,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "飞行员",
   "id": "d5439212a19d05f063f9eed4",

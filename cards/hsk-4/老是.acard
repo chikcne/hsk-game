@@ -1,17 +1,21 @@
 {
   "audio": "fd8db62df32e771359743f18244297d69a3f46d0ec8d2304ebf3ebeb509918fc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "是",
       "老"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3833,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "老是",
   "id": "3b71f2993dda1004270c935e",

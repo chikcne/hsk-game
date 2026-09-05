@@ -1,17 +1,21 @@
 {
   "audio": "fb9d27bbd013ab92674bb74e3f433919e65d816850d600c01dc3fdd7b6667c5d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7209,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "出自",
   "id": "a0fe6e1193ca7fbeddb68235",

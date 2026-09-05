@@ -1,17 +1,21 @@
 {
   "audio": "51622a5da1c2447374fc6d239f02608c44cfbedff0272509544f5b0bbd21f32b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "内",
       "科"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 55520,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "内科",
   "id": "84103b8dfcc1a649eb9f4194",

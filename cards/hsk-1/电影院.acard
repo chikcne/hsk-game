@@ -1,17 +1,21 @@
 {
   "audio": "6a970501014b6ffcfe9eee1375279fc618702ee88f50eecc90b68943ee64815f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "电",
       "电影"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9504,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "电影院",
   "id": "d46d005854ff60f3a063bf99",

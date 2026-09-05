@@ -1,17 +1,21 @@
 {
   "audio": "99189ee2faa1385dcf76b08a741a778f935704ca2610f8dfe32a7efd983ddac3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "搭",
       "配"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11668,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "搭配",
   "id": "fa6a9934ad71c5e7f89e5064",

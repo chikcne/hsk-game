@@ -1,17 +1,21 @@
 {
   "audio": "b73931d28c30f0fb54142c9b42e451bc9a3b7e1b04f1bc1fd75493d1f0cfc457.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本",
       "身"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3451,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "本身",
   "id": "3f206cdaffd28d1cd26629f3",

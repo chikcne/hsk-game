@@ -1,17 +1,21 @@
 {
   "audio": "32e3a46d996332d1383c03467d816e4bca76e383fe31d8063bc671c0cd3adc0e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "品",
       "牌"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8716,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "品牌",
   "id": "2fbee1253fef38cfab81f52e",

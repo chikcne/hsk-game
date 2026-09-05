@@ -1,16 +1,20 @@
 {
   "audio": "ff28c1768f40d54f5bdd63ad7bf824fc4ff14a5445d05183397450e0d5943612.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16304,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "家务",
   "id": "9bf742bd719c3824c559ba6a",

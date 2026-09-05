@@ -1,17 +1,21 @@
 {
   "audio": "9762a496f87cb26957c50a69a2451a8f8ae55956614fdefa5c3a08e9e279d1f4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "养",
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30630,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "养成",
   "id": "89d7591b8deeaa230d964fcb",

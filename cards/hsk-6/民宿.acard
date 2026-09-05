@@ -1,14 +1,18 @@
 {
   "audio": "a43ab0a76710a3c6ccb149b6e893d6d151a42597d7a5c143fda971129be4cfee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 72892,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "民宿",
   "id": "44a0ebaeeb75ea5df41494e0",

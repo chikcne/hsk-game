@@ -1,17 +1,21 @@
 {
   "audio": "5c59e97fa70af76e22e5d6cd31c64572c7dfbcf2a5b5ba002e57e75b6369bcc4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "止"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2712,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "不止",
   "id": "c18247d64e68ec256d670c05",

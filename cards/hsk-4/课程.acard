@@ -1,16 +1,20 @@
 {
   "audio": "978a6f54db29dca2414bcf673332eafb5e075fdf8dc149d30abf769fb2abcb98.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "课"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5240,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "课程",
   "id": "cfbde7de0380cfa10b002cc4",

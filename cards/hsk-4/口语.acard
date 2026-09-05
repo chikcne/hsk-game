@@ -1,16 +1,20 @@
 {
   "audio": "153bcbfcd0a086546f8e8bfdea6c5905952c90f5c97774e55945c8bc6370a4b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "口"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 60518,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "口语",
   "id": "7774067985ed91532ed6d4b4",

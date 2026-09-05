@@ -1,17 +1,21 @@
 {
   "audio": "6ba5e09b0f17f740d168360b1e871dd4d15f9b6976283575da3813d56ab15439.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "弱",
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5943,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "弱点",
   "id": "b27d84179cf68a16910a0a3f",

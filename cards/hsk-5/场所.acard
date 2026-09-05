@@ -1,17 +1,21 @@
 {
   "audio": "a6c0ce8bc78e4b470c7c7bd87b5e10fd1ff185838abc7fc286c6653238def744.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场",
       "所"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9468,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "场所",
   "id": "add82056be6f71640c426396",

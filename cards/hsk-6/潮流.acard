@@ -1,16 +1,20 @@
 {
   "audio": "020e43ae099e1fff80e8b652382622753b89120d8f46710bcd3c2c9ade18d1e2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "流"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15911,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "潮流",
   "id": "700edd8d0df10c95421b727f",

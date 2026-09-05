@@ -1,16 +1,20 @@
 {
   "audio": "fbf8470e935fd278f59e6edab6abf2a3d79c9e38ed679131a48a6603adfbb5c1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15069,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "发育",
   "id": "65c8d16cd22d7b652df2346c",

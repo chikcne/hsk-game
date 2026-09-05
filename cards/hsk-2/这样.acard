@@ -1,17 +1,21 @@
 {
   "audio": "89e57cd0484e1aec882ab471b3e4b8ee825feacdf4cbee522968b82954dde664.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "样",
       "这"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 65,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "这样",
   "id": "60a103a6989d01f8861d869f",

@@ -1,17 +1,21 @@
 {
   "audio": "cf9c4c7e1cf5fe1ce63a1c92d336cf322b9b9cc0fbd8963cf83931825da9ed82.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "便",
       "顺"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2184,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "顺便",
   "id": "1f52014e003341817e27fe61",

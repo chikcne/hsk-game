@@ -1,17 +1,21 @@
 {
   "audio": "0bbf5e2218809c7ce53ba116a82f1a111460555bf4f6338c41df6f98f189ec36.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "抢",
       "救"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16857,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "抢救",
   "id": "58ad1de70a39ee27b7ec766d",

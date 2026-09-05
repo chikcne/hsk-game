@@ -1,17 +1,21 @@
 {
   "audio": "244235c4c22e7e73b5029795d1049f2ff7348619a2bf865aa70d7d08456f05cb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "完",
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 594,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "完成",
   "id": "d65882c7e29b6d4445009dba",

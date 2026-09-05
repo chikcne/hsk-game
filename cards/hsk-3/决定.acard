@@ -1,16 +1,20 @@
 {
   "audio": "47e4f973b22459dab2db1502971c029f8cad32f2a3928e8d36b0229a86d8bc4f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "定"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 413,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "决定",
   "id": "7e534d7184f4e4f3f76d1c39",

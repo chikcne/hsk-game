@@ -1,16 +1,20 @@
 {
   "audio": "37fff331b834cb956f2a8ec6dcb5a1902afd173d85cc017ab39d1a517344907e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "装"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6889,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "装饰",
   "id": "2a1b9cb7f0eaf96ab84e0a9e",

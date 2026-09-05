@@ -1,14 +1,18 @@
 {
   "audio": "164e35027c611bf30ca9ff1fa9dc6c8bf55b6bae004cca8d9bb02b5a4d07e03c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9606,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "粮食",
   "id": "1706ebcb9ab28e3f5d0a100d",

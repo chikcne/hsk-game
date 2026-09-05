@@ -1,14 +1,18 @@
 {
   "audio": "80cceabc7a4c56b652afb5c51131c7836d2fae2fe1f9da3b30082d9e3d41bcbd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 683,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "确实",
   "id": "060a997a2753766ad91c5a84",

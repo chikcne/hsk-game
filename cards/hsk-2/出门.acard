@@ -1,17 +1,21 @@
 {
   "audio": "ebf7343503b7a1739903800818a35fd222472f166a10cea2a04f2e8f4a974bf2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "门"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3048,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "出门",
   "id": "9ef74f71fec5d6db70e8737d",

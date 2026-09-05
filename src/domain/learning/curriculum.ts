@@ -3,40 +3,33 @@ import { runDomain } from "../effect";
 import { DuplicateWordIdsError } from "../errors";
 import type { LearningDeck } from "./types";
 
-const HASH_MASK = 0xffff_ffff_ffff_ffffn;
-const FNV_OFFSET = 0xcbf2_9ce4_8422_2325n;
-const FNV_PRIME = 0x100_0000_01b3n;
-const CURRICULUM_VERSION = "ziduoduo-curriculum-v2";
-
-/** Stable 64-bit FNV-1a over UTF-16 code units, encoded as fixed-width hex. */
-function curriculumHash(value: string): string {
-  let hash = FNV_OFFSET;
-  for (let index = 0; index < value.length; index += 1) {
-    const code = value.charCodeAt(index);
-    hash ^= BigInt(code & 0xff);
-    hash = (hash * FNV_PRIME) & HASH_MASK;
-    hash ^= BigInt(code >>> 8);
-    hash = (hash * FNV_PRIME) & HASH_MASK;
-  }
-  return hash.toString(16).padStart(16, "0");
-}
-
 export type CurriculumOrderFailure = DuplicateWordIdsError;
+
+/** Small deterministic curriculum constructor for runtime-only synthetic
+ * decks (demo, Review presentation decks, and focused tests). Production
+ * grade decks always use the committed authored manifest. */
+export function curriculumFromWordIds(wordIds: readonly string[], rulesVersion = "synthetic-v1") {
+  const lessons: Array<{ id: string; wordIds: string[] }> = [];
+  for (let index = 0; index < wordIds.length; index += 20) {
+    lessons.push({ id: `lesson-${lessons.length + 1}`, wordIds: wordIds.slice(index, index + 20) });
+  }
+  return { rulesVersion, lessonSize: 20 as const, lessons };
+}
 
 /** Typed variant of {@link curriculumOrder}: fails with a
  * `DuplicateWordIdsError` instead of throwing. */
-export function curriculumOrderEffect(deck: LearningDeck, curriculumSeed: string): Effect.Effect<string[], CurriculumOrderFailure, never> {
+export function curriculumOrderEffect(deck: LearningDeck): Effect.Effect<string[], CurriculumOrderFailure, never> {
   return Effect.gen(function* () {
     const ids = deck.words.map((word) => word.id);
     if (new Set(ids).size !== ids.length) return yield* Effect.fail(new DuplicateWordIdsError());
-    return ids.sort((left, right) => {
-      const leftKey = curriculumHash(`${CURRICULUM_VERSION}\0${curriculumSeed}\0${deck.fingerprint}\0${left}`);
-      const rightKey = curriculumHash(`${CURRICULUM_VERSION}\0${curriculumSeed}\0${deck.fingerprint}\0${right}`);
-      return leftKey < rightKey ? -1 : leftKey > rightKey ? 1 : left < right ? -1 : left > right ? 1 : 0;
-    });
+    const order = deck.curriculum.lessons.flatMap((lesson) => lesson.wordIds);
+    if (new Set(order).size !== order.length || order.length !== ids.length || order.some((id) => !ids.includes(id))) {
+      return yield* Effect.fail(new DuplicateWordIdsError());
+    }
+    return order;
   });
 }
 
-export function curriculumOrder(deck: LearningDeck, curriculumSeed: string): string[] {
-  return runDomain(curriculumOrderEffect(deck, curriculumSeed));
+export function curriculumOrder(deck: LearningDeck): string[] {
+  return runDomain(curriculumOrderEffect(deck));
 }

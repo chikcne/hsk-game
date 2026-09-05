@@ -1,16 +1,20 @@
 {
   "audio": "3bd8093f7786fab5fcb270aee5ec9e1dc5013e42889fa8dfb60d93ccf8543a20.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "神"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8104,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "神话",
   "id": "675f90c6440f08e5ab9ec755",

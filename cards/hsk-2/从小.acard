@@ -1,17 +1,21 @@
 {
   "audio": "5a3294a5013fa24dffded0c29d8f3808a0e97405cd17bd4be5776ffa3a41e58e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "从",
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4499,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "从小",
   "id": "adc492c4da556be427f78ef0",

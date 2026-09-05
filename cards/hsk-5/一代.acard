@@ -1,17 +1,21 @@
 {
   "audio": "7e94b4aa5b2186bc06e7afaa2eb7251e2886f948237fa4a3bb036589d1d96d59.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "代"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8171,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "一代",
   "id": "eb03c394ef883b4721be28b7",

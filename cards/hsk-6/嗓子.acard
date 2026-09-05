@@ -1,16 +1,20 @@
 {
   "audio": "8ec8c6fd598ca710fb5b6a2e97600f06b3d9ad82688966a2caaf9091091a9bb7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14772,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "嗓子",
   "id": "03cb8158ada5bd516584fcc9",

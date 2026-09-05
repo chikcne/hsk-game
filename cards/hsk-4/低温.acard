@@ -1,16 +1,20 @@
 {
   "audio": "50dcc9a7b72429e8ac259d67451a9379a28864e9f5c19cf89e4976529221e43d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "低"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28183,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "weather-climate"
+    ]
   },
   "hanzi": "低温",
   "id": "436dffa7b1a0efc5b494e450",

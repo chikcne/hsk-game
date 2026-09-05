@@ -1,16 +1,20 @@
 {
   "audio": "3b8d098280bfac0bdfd47c43622d58abbe8042419932f5161878e5c233775cc1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "区"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11185,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "郊区",
   "id": "4905316b13cbd63d1fa4463f",

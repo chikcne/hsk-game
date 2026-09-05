@@ -1,16 +1,20 @@
 {
   "audio": "d242096a5576a28ce4eff15c9dcfb7bff9da946f6f54257395b243d549ff3377.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "古"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16021,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "古典",
   "id": "4765ea76d30f1762f88c70e2",

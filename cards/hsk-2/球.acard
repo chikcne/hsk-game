@@ -1,14 +1,18 @@
 {
   "audio": "6e09b0e77a3bbcfb54ca38b10d910f9ffbe61daf324eb95f6611a738a651c0db.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1476,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "球",
   "id": "06d8a51fb46566f9fb9eb1c1",

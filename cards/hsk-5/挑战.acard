@@ -1,16 +1,20 @@
 {
   "audio": "5e81e1b30a201b4588548784d37e197d561d53809a123c5e0543d4571520a65d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "挑"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2194,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "挑战",
   "id": "da47386af1dc5e56fffa2787",

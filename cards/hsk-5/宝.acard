@@ -1,14 +1,18 @@
 {
   "audio": "4e90f5ee678516bea6ac64c6a4c2cbf6afb1365f2623a8304a7bd459608a8754.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9487,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "宝",
   "id": "33290ae550c8fb8155d0b490",

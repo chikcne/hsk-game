@@ -1,17 +1,21 @@
 {
   "audio": "83c237f6d8aeffb34cfa7ee183da94669a4b78e644526c6a67eadd3840a0c712.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "以",
       "免"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8600,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "以免",
   "id": "81801c582200b8fd234df499",

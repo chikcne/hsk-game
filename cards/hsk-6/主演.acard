@@ -1,16 +1,20 @@
 {
   "audio": "0fbac84c76649c646eed0b91f914edd392622d3f93258f103783d23c1e06c607.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "演"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2611,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "主演",
   "id": "46f2167d993288709512764d",

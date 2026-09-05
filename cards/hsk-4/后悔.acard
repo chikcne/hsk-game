@@ -1,16 +1,20 @@
 {
   "audio": "7b98c9e0ab3f489bd2568ae1f7866c05325304219b5b83f4ae4b185993769ea8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2091,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "后悔",
   "id": "af8dca59f93ba77931b04f2b",

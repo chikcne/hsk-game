@@ -1,17 +1,21 @@
 {
   "audio": "8576b440853654ebc6a6994b45e44424c35878e4ef09697f7995200306067278.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "北",
       "西"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15043,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "西北",
   "id": "57ba2fba2f7cb7875e2a87e8",

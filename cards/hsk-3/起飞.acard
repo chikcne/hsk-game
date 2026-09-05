@@ -1,17 +1,21 @@
 {
   "audio": "ef64f629059059e1567e34c94a2a97b363339246842554c9641fc82a96fe51c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "起",
       "飞"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3331,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "起飞",
   "id": "027abb1d8a3616b5998f36bf",

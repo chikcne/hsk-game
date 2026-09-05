@@ -1,17 +1,21 @@
 {
   "audio": "391d1ac50cf760e85a52c0c4ac10435772915ddc0f2dda35acf07377707c0d72.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25053,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "为期",
   "id": "38fbe338a37aad1595f95905",

@@ -1,16 +1,20 @@
 {
   "audio": "6730c6da972a30053c5fef1a416101d178143e20aba20be67e404ee5df18045f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "挤"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13718,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "拥挤",
   "id": "d398ae67a864945cdbcbd61c",

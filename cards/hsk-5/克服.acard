@@ -1,17 +1,21 @@
 {
   "audio": "232353bea4770980b493eafd2c6046aca87cefbe394935b9f1c6d7ddad74c513.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "克",
       "服"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6035,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "克服",
   "id": "437129ce6dcafd91e5c92cf4",

@@ -1,17 +1,21 @@
 {
   "audio": "a8466a754dd0379bb009b96a2af734233093e047909934051e5c0513cc853c06.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "性",
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8705,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "理性",
   "id": "acf63303641a51be8820b16e",

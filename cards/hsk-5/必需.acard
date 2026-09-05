@@ -1,17 +1,21 @@
 {
   "audio": "eb9395601f458bef55b7bf37501a6760ed90fba2ca52d6c92e94dc08eb06a619.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "必",
       "需"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12067,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "必需",
   "id": "863324552835b07adf3407a8",

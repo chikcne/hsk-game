@@ -1,14 +1,18 @@
 {
   "audio": "2a10296b2cfd5a0eac9d3ba332ca932ac9c51bc23561ce624ec3735907002c33.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6191,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "乘",
   "id": "1adea6d543f529b54b1c85df",

@@ -1,17 +1,21 @@
 {
   "audio": "b7d5b8e6409dad91713dcd4f2be56bb43d20ec65e54a3d64d58b87b675a7e74f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 269,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "不用",
   "id": "039c80d529554b7eaab9192d",

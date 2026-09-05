@@ -1,16 +1,20 @@
 {
   "audio": "393b33ae94ab73424b2eb7b3b4a977c3e6091200556cfc227fb12b9aef96732c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "常"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2814,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "常常",
   "id": "ba0017d210a4710964d65ce0",

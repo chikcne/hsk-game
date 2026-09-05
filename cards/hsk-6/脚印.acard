@@ -1,17 +1,21 @@
 {
   "audio": "4b4942b79ed4cf48b916a4db31727faa619e8e88e500448bc4c1bbdbb7c115ff.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "印",
       "脚"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10547,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "脚印",
   "id": "3dff4a369f31541e4772610b",

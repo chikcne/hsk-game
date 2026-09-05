@@ -1,16 +1,20 @@
 {
   "audio": "3bd0690d03a381599e4d1da79171a5fec128cbab499e50bcc66263521fb5dc86.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "花"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24432,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "梅花",
   "id": "b72ca3a340c8f6a7213085eb",

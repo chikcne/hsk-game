@@ -1,16 +1,20 @@
 {
   "audio": "619e44d657b18695bf477434014a6b8f0623750b57f8aa4cc4aa37bec2c23ac5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "料"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3273,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "饮料",
   "id": "149e77905a312084fbecaecf",

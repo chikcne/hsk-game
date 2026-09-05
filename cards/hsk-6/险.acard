@@ -1,14 +1,18 @@
 {
   "audio": "652571d5515397fce16270283f6376181aca1bed7a767cffaa82696afe243309.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 8676,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "险",
   "id": "d1e6f2e27f26ab18b0ff23c0",

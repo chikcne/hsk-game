@@ -1,17 +1,21 @@
 {
   "audio": "8e8c1c7ac4f8dd5c869361be5d3655205fd849606eed39b6d13ac74936b37182.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "放"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17773,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "发放",
   "id": "c231100a4acf24c0007bd5c4",

@@ -1,17 +1,21 @@
 {
   "audio": "652b1c953fe4d02eb3a67dff7d487e8d07e7c11a2fc3f6042a45a43d69fc6409.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "束",
       "约"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13422,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "约束",
   "id": "2df7eba1a4e059fdae2e8812",

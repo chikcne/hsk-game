@@ -1,14 +1,18 @@
 {
   "audio": "8fef23f2d5ececb7545086abad487bff2983427c6af15ba1cae1608cd954688a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 718,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "派",
   "id": "94dec87374b18b441ca5a663",

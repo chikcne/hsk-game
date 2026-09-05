@@ -1,14 +1,18 @@
 {
   "audio": "6b99a5f035712a27d94efb92a49afcda60ba15593d21ae74368236cb61ceedfe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4768,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "导师",
   "id": "297cdfd60419af1546ef0177",

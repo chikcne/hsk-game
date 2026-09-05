@@ -1,16 +1,20 @@
 {
   "audio": "610a66ed94670495434f146aa0e406e84bff1946669af9550484067f358cc7d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "划"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5974,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "策划",
   "id": "602d693111ec5c425f656077",

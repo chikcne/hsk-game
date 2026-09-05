@@ -17,11 +17,11 @@ const NOW = new Date("2026-01-01T00:00:00Z");
 
 function baseSave(deckOfSave: LearningDeck): SaveFile {
   return {
-    schemaVersion: 4, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
+    schemaVersion: 5, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
     settings: { ...DEFAULT_SETTINGS },
     spawnOrdinal: 0,
     schedulerRng: randomStateFromSeed("runtime"),
-    levels: { [deckOfSave.id]: createLevelProgress(deckOfSave, { curriculumSeed: "curriculum" }) },
+    levels: { [deckOfSave.id]: createLevelProgress(deckOfSave) },
     acquiredWords: [],
     learnSessions: {},
     relearnSession: null,

@@ -1,17 +1,21 @@
 {
   "audio": "236e2640c4261080ada54958157dca4ac1869b5089e849acc7b156fe67cce2cf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "火",
       "着"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5350,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "着火",
   "id": "185ed270845d2d49178e3a2a",

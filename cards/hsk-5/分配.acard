@@ -1,17 +1,21 @@
 {
   "audio": "d214e49fc59bc44741f996c00ac05d90898c1421c4ae2ddfbd0d6961fd1959a5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "配"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7701,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "分配",
   "id": "89b22e4cbcab6bf12fe53668",

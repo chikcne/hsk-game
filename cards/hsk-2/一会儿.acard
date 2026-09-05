@@ -1,17 +1,21 @@
 {
   "audio": "1a945ff5fbbcc1703ed155dc981a6295467eb68d1e6afe69788273978353e413.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "会"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1184,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "一会儿",
   "id": "55f71b0b074f2ffc308489ef",

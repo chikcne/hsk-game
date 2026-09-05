@@ -1,16 +1,20 @@
 {
   "audio": "339631033a59380e7dcbf8e9c54e19df8b6bbb9642de1d969696b1fbd746acad.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "琴"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5026,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "钢琴",
   "id": "dbf59147774f16dc412a151a",

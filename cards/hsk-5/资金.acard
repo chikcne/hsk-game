@@ -1,14 +1,18 @@
 {
   "audio": "45506084110ba6a638027f72f2cb14217b2d054a0611fdd9547c1de5a12145df.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4267,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "资金",
   "id": "ee5e930a7f8be05dd176cf60",

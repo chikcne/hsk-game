@@ -1,17 +1,21 @@
 {
   "audio": "16080db2f7f98021dd382547089bc54ae6659112fe7f81ce8adbcd6497b926ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "可",
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 95,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "可能",
   "id": "1a744e740fdfabe00dec50c9",

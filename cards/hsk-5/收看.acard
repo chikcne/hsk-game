@@ -1,17 +1,21 @@
 {
   "audio": "af57615a57562356b5b2df421bb918543eb9356bd492793eb1548d1d6b869231.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "收",
       "看"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7677,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "收看",
   "id": "67dd23fc0947e8464b393062",

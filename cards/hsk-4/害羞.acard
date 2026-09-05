@@ -1,16 +1,20 @@
 {
   "audio": "e271d52141f07c79a1351970eacc338606b8ce8c3e89797292f29b6e3d0f73b5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "害"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3983,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "害羞",
   "id": "2249f99540f092e8e1674708",

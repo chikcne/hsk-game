@@ -1,14 +1,18 @@
 {
   "audio": "6a86a278fc6ab706c9537d6dc82b533c64510ea157b342354acf839bac7f1e6d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11923,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "木材",
   "id": "fa341353eb828430481514d9",

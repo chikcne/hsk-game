@@ -1,17 +1,21 @@
 {
   "audio": "f0549a045ef41ca1b00fb729f2c4d94f877deb5051642a7ff8ab6a3fddcd85f8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7062,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "小学",
   "id": "ff62b97528166af290fc3216",

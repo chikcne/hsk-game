@@ -1,17 +1,21 @@
 {
   "audio": "dbea5dd1a0b3b582eeb2564e9bdf7632fdf1986b439afa12a464b56c4c9210fe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6497,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "外出",
   "id": "92fc75a55a5fc7faa1476f74",

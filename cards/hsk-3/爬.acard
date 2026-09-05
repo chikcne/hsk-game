@@ -1,14 +1,18 @@
 {
   "audio": "4f6e9571a249d12e1068ced9673bfd8bc8691d741e7b25b9657da5837a78eaf2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1996,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "爬",
   "id": "809cbb34ccf6d87b23ea5d42",

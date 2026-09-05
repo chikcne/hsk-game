@@ -1,17 +1,21 @@
 {
   "audio": "13fee8f5abcdc307cfbbe805fce0000101d1fae9bb5cf744b5fc27e655438ec6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "服",
       "说"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2224,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "说服",
   "id": "fe8d1aadbd41b534eb897af3",

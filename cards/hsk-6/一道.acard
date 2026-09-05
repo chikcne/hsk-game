@@ -1,17 +1,21 @@
 {
   "audio": "16ba23e4a66db0925fb016b5a5e17343c8262ccc12cf859ee8d6c368f35ad7da.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4170,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一道",
   "id": "d6da45288083f8d6939db8c0",

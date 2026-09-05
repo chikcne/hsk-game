@@ -1,14 +1,18 @@
 {
   "audio": "4d90a4f089a7ad24763577ff7b7aebfd7332259449cbfff71e68a791fb64becf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 38927,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "盆",
   "id": "cbbb1bced824af079b575400",

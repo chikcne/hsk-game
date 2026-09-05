@@ -1,14 +1,18 @@
 {
   "audio": "4dc9a21d9d16c2e2d80eaf3b3e277feffd48f0be020be8c13fed4671a8f3925b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2307,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "互相",
   "id": "ceee4cc2973675eb10249fbf",

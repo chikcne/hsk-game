@@ -1,16 +1,20 @@
 {
   "audio": "1e3b8ddd7488c229e111dd673887f6a176f416869200408909fda3171f7a4858.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1991,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "激动",
   "id": "abb7862edc480866fbef57e4",

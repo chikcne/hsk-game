@@ -1,16 +1,20 @@
 {
   "audio": "574c97b7224444b8f986a69b1640f961d3ec3e2cc1acaad9b72147f0f4186451.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "反"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11378,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "反复",
   "id": "6c551bb1541b76a34036fce8",

@@ -1,16 +1,20 @@
 {
   "audio": "d8f451841a43ba53804ab2e12aadd76a5b3a0281149f584e153a495b7eeda915.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "纸"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13519,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "纸巾",
   "id": "6212d2c4c430fe3a91124986",

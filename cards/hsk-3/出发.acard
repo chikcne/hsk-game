@@ -1,17 +1,21 @@
 {
   "audio": "631a8784e82a16b6fe8be54d3c8bd348b205d48a56e60eaaeb9113a5e89908ae.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1169,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "出发",
   "id": "19daacdd054c964cfae11d20",

@@ -1,17 +1,21 @@
 {
   "audio": "124c1bcb04cd426f3dd0ff31d39fba0aedde3250dc3365c9305f35fe10f21774.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "占",
       "据"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8726,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "占据",
   "id": "0675b56548df572529bbd074",

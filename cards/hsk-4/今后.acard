@@ -1,16 +1,20 @@
 {
   "audio": "05ff30ca5de6e033438476f25d3de0a7b268d02a7daafa245b6adae555027fa4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5717,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "今后",
   "id": "f3e9bb1002af31e5ec189acf",

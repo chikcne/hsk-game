@@ -1,16 +1,20 @@
 {
   "audio": "d2fa2df9895f1f07eba26d7f76399f0a8c9283f5221c20d0e7bb324697705b84.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "降"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 53962,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "降价",
   "id": "d45cc9946ca3d74589af8f81",

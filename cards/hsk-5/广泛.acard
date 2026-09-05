@@ -1,16 +1,20 @@
 {
   "audio": "a10d634e75af9e67a7e3d0a8b4d3fe86cfb425f59e04d58cd5a1fddde8622e3a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "广"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14566,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "广泛",
   "id": "fe0b9c00597283d17f0578cb",

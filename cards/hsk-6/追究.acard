@@ -1,16 +1,20 @@
 {
   "audio": "6c8453c59de33f443c4ad15b404134cac2460bb1e9273c8eb69660802c45c9cd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "追"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14697,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "追究",
   "id": "9deb251cdfaea25a64f16507",

@@ -1,16 +1,20 @@
 {
   "audio": "9f698d71a3d4ea524481256517781b64e07d79ab984964a29797bfb5eddef566.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "式"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3180,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "仪式",
   "id": "f3c7032b91892287764b1f08",

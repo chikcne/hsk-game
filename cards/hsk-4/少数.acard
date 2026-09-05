@@ -1,17 +1,21 @@
 {
   "audio": "9fda21719fecda7715e5b1292017af2a395ae64e9eadef41aaf8226d5a452a5d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "少",
       "数"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9170,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "少数",
   "id": "e19fb9fec2c39d2fd429fbad",

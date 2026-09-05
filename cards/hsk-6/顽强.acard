@@ -1,16 +1,20 @@
 {
   "audio": "f9873f2aab418721a830ad4884bdb09e3447f0cf0b2569fe1d57cb7e8064f233.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "强"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17303,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "顽强",
   "id": "7651940df099c347311f2080",

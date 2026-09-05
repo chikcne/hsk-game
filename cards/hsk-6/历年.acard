@@ -1,16 +1,20 @@
 {
   "audio": "fed612b4eeade9178b75a308b1ac52e09cc4e765c55f12e7abc2aa14531289de.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "年"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 137735,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "历年",
   "id": "2b935b11d8a81b6857dafd38",

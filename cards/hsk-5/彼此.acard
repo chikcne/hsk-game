@@ -1,16 +1,20 @@
 {
   "audio": "b7b459faefd300cb0c61a807dea55978b66709587a5c88f2e081ac033ab20e3a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "此"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1650,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "彼此",
   "id": "8d8fed500e4a11a9aa20a62e",

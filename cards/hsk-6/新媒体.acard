@@ -1,17 +1,21 @@
 {
   "audio": "a2fae20d5e091bc2b2370c9d5fa693bf73d7d6d52c5801c651a1049b2abb8f7a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "媒体",
       "新"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": null,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "新媒体",
   "id": "a77443561575f4a5848bd4e8",

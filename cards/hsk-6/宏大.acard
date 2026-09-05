@@ -1,16 +1,20 @@
 {
   "audio": "19da93d18454065b911ce0e0360e966bb0c061421c73dac906db740a7bcb9b2a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 37652,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "宏大",
   "id": "b806b52caaf6363efddd948e",

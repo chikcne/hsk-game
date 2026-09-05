@@ -1,14 +1,18 @@
 {
   "audio": "7ae68b185742248d9ab0249cd92c61aa3da3bfb5023f9f44ec4e6293c525fca4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 799,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "本",
   "id": "e0af7fc75a7534df35558b40",

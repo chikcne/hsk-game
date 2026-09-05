@@ -1,16 +1,20 @@
 {
   "audio": "a0b3ad39a5e343f251a69aae350dbc2d4e89e11fee7ff065f29494dfeb7ec0d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "胜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1945,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "胜利",
   "id": "2223e830cdd1d7918d868517",

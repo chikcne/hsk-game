@@ -1,14 +1,18 @@
 {
   "audio": "580220a80dbcff72ec446dbb1392f059a967d50705b8f5d396f435b363f4331a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8621,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "供应",
   "id": "f17696b47b68d9885f3622f4",

@@ -1,17 +1,21 @@
 {
   "audio": "83f8eaaf47ee4bcb9e26aaaa4ff7115f390d0627cb0fbc621f8262be5d189162.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 936,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "人生",
   "id": "5c26d9a7e7dec9d9e448d3c1",

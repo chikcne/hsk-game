@@ -1,16 +1,20 @@
 {
   "audio": "f04b6019d731984d7e169e466596270c74a2935dd6e9371610a9dff073c007d9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "节"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9146,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "情节",
   "id": "b657594869eb6df795d0695f",

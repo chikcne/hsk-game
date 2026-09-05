@@ -1,17 +1,21 @@
 {
   "audio": "6eec571629a13e84fc781be7103d37bcacba512aadee8461a007c5e98f2eb3bf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "粗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23718,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "粗心",
   "id": "c4b4cc14141a32e61fecd193",

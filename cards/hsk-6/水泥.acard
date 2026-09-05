@@ -1,17 +1,21 @@
 {
   "audio": "d0eea7f5f943dd343b14a486912723d6d6b4963773f5550d4b0361587d1b488c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水",
       "泥"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12687,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "水泥",
   "id": "fce0115a5606a55e227630ea",

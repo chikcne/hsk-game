@@ -1,16 +1,20 @@
 {
   "audio": "92548dbdf8ea120c602f1a13f277120707efb339105d9b0e5b9a8be65ea29a3e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "划"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 445,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "计划",
   "id": "9095fdf75452abcd5b4560f8",

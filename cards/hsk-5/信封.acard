@@ -1,17 +1,21 @@
 {
   "audio": "4f6d0888f227e177e593f5519ebddd80f9e353ca892c45d4d8f71566c2ad3938.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "信",
       "封"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7072,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "信封",
   "id": "691ffe44549f62518460a98c",

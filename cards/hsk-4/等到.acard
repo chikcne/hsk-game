@@ -1,17 +1,21 @@
 {
   "audio": "35ec7a60ba57b62893f695f0f99a1b3f8a80bc0cbc36b1135ab667333230d45a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "到",
       "等"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1883,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "等到",
   "id": "471b44b1e6d9c68f834f6fb0",

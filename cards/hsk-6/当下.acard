@@ -1,17 +1,21 @@
 {
   "audio": "7c82b146d6a6b39775cfe66556c27855a5c7abcfc27aa4becf081981bc342b0c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11545,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "当下",
   "id": "564cd8f5a65e3797c7fd3aa3",

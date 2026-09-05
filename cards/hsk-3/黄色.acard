@@ -1,16 +1,20 @@
 {
   "audio": "25eb0ffa97e565ddb15408cd504ad575d2562584eea98a8045c3dd13e4b2f309.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "黄"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5285,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "黄色",
   "id": "5af1670d85c41ad7d14ba204",

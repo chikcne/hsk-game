@@ -1,14 +1,18 @@
 {
   "audio": "248eee75d5c6029af9ae84acb6d08d2c1485686a472c44f0e4f972f794cbd03e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 67747,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "参展",
   "id": "817de0f0a6a7c9f9dfde3704",

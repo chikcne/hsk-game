@@ -1,17 +1,21 @@
 {
   "audio": "5b43cde7e92782edb089d21e62de6fdc48008abdd5b731a1e541bb198c4c15ec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "低",
       "降"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6342,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "降低",
   "id": "7a2f170f68df9404e1aa25f8",

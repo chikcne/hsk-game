@@ -1,17 +1,21 @@
 {
   "audio": "eccf3f7fc304b28a3615426c6621bb881bb0515783a410532c7ea2016e08a8df.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "再",
       "说"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 826,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "再说",
   "id": "5088d2bde98e2c64374fddaa",

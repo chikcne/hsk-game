@@ -1,0 +1,9 @@
+{
+  "cardsSha256": "8b0208192029d32c3a05107b0848ed79ae1f16bd4b43bc0d782805e0f5bd9236",
+  "corpusSha256": "0a34556e278008539273e07bda10baca9e2b9637cff2ff3ca9cd93782571abbd",
+  "manifestSha256": "04b8799db699da140d04ae28a37dff4f18c64c001700072cf6680011ee107e51",
+  "overridesSha256": "3aebfe2278e137fcd0d8bac8f38807fd0fb948e6c1f3f16f64dc0b3ca0904a9d",
+  "rulesVersion": "frequency-prerequisites-v1",
+  "schemaVersion": 1,
+  "topicsSha256": "3b40c004ace66bdea51615e7850f5d6fa3c00031f8c367285bab992264354955"
+}

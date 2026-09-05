@@ -1,17 +1,21 @@
 {
   "audio": "b490459975d6c7596f4121b1e168aaee7d0f3f0c556bd244032e8297fec3627a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "意思",
       "有"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1507,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "有意思",
   "id": "dba727b0874acf4aeeae680a",

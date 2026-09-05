@@ -1,16 +1,20 @@
 {
   "audio": "5a9bb7df341d36cc322388d33d6ca08be92748772b4b65db30bf004737f05a3f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4549,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "车祸",
   "id": "209480b241b790669e6fa4e0",

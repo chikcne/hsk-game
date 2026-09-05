@@ -1,17 +1,21 @@
 {
   "audio": "79b4d15227fbc0629606f73ad927061c3feef444fe67ce4481da88b27b8c1cb9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "听",
       "打"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7472,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "打听",
   "id": "a3cf1159f1f32499fbfd59d5",

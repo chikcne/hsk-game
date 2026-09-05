@@ -1,16 +1,20 @@
 {
   "audio": "a91b15a84e0e5060f5be5773d5fb7278ef7ca5f5d026c2ab5e092626ba812708.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "万"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8901,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "万物",
   "id": "4a0cc8dd05989b141cb9506e",

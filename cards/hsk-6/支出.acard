@@ -1,17 +1,21 @@
 {
   "audio": "136bb304114b073e00ab18c2609be2a7a4cb582832215261855f15b998be43cb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "支"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20296,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "支出",
   "id": "69b256212a8ab1067e511afd",

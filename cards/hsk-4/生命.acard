@@ -1,17 +1,21 @@
 {
   "audio": "7c20deb2ed24a827e0cd4c7b88380fb5d641d84c9126c40834d563b97324c3b9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "命",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 520,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "生命",
   "id": "2086cba6e07b8df789ae0b92",

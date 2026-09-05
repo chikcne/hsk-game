@@ -1,16 +1,20 @@
 {
   "audio": "dfe577970fb9d74aa064d8ed90565a1bee6a9ac9d825750d72755b0ca3314f39.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "忙"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9824,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "匆忙",
   "id": "924ef4c262fb51650a2462c2",

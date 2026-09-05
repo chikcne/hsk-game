@@ -1,16 +1,20 @@
 {
   "audio": "6150f0f75b9116a6d5546eb88a785aeabc8aac10de60d728846f284706a20774.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "将"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1056,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "将军",
   "id": "20c07a5689c7c2bb3015b5f2",

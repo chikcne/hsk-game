@@ -1,14 +1,18 @@
 {
   "audio": "52e09cf93b5052fadf3cb3566931aa1534cb3d58224664ca368606e1cb481b90.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4220,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "实际",
   "id": "a078fd91bd693688c9427c73",

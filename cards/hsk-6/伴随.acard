@@ -1,16 +1,20 @@
 {
   "audio": "690dbd4baebd2bf29610cbfdd92d6fd4d0ca0531fd3a6538e8dd0cf494d1af82.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "随"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9215,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "伴随",
   "id": "4b5360d88442463e895585e1",

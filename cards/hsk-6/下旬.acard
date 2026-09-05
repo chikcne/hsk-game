@@ -1,16 +1,20 @@
 {
   "audio": "22491f34eb0c8c2b7a0b61e947423c6040f9bfb58dc16e105ea3e74b96d10294.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 68948,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "下旬",
   "id": "87d3ea7d1911d48cc377f49f",

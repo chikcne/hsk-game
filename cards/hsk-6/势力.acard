@@ -1,16 +1,20 @@
 {
   "audio": "87c532fe93f06ddb628b1c1276366d29fc9aaa50a36f2d6b7aec332bc9154a54.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7714,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "势力",
   "id": "d54f036a103d4c30cf71afe8",

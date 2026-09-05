@@ -1,14 +1,18 @@
 {
   "audio": "46073f705ed7b8994bfac9903be7c3ba767a129b3e0642653bd9c92ac320b36b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 2746,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "超",
   "id": "e3bf330b821742c85bb3ff92",

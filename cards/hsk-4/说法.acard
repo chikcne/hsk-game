@@ -1,17 +1,21 @@
 {
   "audio": "b6e7138615b132d24c967237ebfbb2a588f5a845faa483855180212b1a7356b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "法",
       "说"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2845,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "说法",
   "id": "1353038dcce1ff1922396616",

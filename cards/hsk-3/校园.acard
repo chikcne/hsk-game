@@ -1,16 +1,20 @@
 {
   "audio": "774209cae9733861c4454cad5dd80b45752b9a91687c56baa4c6d06b43b84a11.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "园"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8272,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "校园",
   "id": "ba544520d965c997fed06182",

@@ -1,16 +1,20 @@
 {
   "audio": "bd5da77a8ab738dd33fad9ab2e56f52f5f86765dc4e6416ef20edef13805efe8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6321,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "决心",
   "id": "7f471da3421e76410c4deb8c",

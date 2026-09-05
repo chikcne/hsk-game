@@ -1,14 +1,18 @@
 {
   "audio": "67ad49fc4ddcd50b8479eafe346ffc98b06f95e47252e818b7e8101000102a1f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8174,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "脂肪",
   "id": "4b37bcdad94502045da284c6",

@@ -1,18 +1,22 @@
 {
   "audio": "375703a68106df786664b8e1d238762a52572dd8dad568ccd93fe7cc3290fe22.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "动车",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 70291,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "机动车",
   "id": "bf4e064172b8d2cb615c1be8",

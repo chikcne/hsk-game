@@ -1,17 +1,21 @@
 {
   "audio": "db2577b9c3cf21fda35f79fc61bacb19dc7d78a07d60c18438cbef3df3109c31.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "唱",
       "歌"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5661,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "歌唱",
   "id": "016f2415be74be25957b4aec",

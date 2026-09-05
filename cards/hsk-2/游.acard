@@ -1,14 +1,18 @@
 {
   "audio": "abee0650656ef51f6f87765e54cad7ef0613ed4ed027c2962d2bceb1a0f00876.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6432,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "游",
   "id": "48ab611d0002fcfe39747606",

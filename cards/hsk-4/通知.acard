@@ -1,16 +1,20 @@
 {
   "audio": "3102259c83b4870b1ae4dbdd376a518a53b77d2eb0dc65ee7261de9100b99899.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "通"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1090,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "通知",
   "id": "304312d2817d844b13a5b73d",

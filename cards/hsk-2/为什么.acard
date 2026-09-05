@@ -1,17 +1,21 @@
 {
   "audio": "510c3030109a94a0659300a341b219c1f91c4fb1b7fc22416f7e8d33ce563b7f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "什么"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 78,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "为什么",
   "id": "52b5c6fe502aff1f1d3c83de",

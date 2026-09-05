@@ -1,16 +1,20 @@
 {
   "audio": "f7b1bb9030e405d8e3342923413d017fe724ab93fcb89610b6c78d920a6c6ec3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "降"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31944,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "weather-climate"
+    ]
   },
   "hanzi": "降温",
   "id": "d50468d9e9fa27189efb76c4",

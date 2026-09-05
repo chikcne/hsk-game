@@ -1,16 +1,20 @@
 {
   "audio": "c8b67186ca7bb9f76134ea9ca5fefaad7beabcd577d83fcccde08312eb589ee3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "课"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13973,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "课堂",
   "id": "f61497813bc154b1ab6e377d",

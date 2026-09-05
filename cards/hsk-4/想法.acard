@@ -1,17 +1,21 @@
 {
   "audio": "4543bbed5938cca9de8c198e9b8d32b011c3bc509ff364d4670974d8caeb1b98.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "想",
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 730,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "想法",
   "id": "54d3651a78000f595a465ba5",

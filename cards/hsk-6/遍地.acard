@@ -1,17 +1,21 @@
 {
   "audio": "84a1c8f79454c59109381b116326b4ab31aafe18b1f3f42237c096e67ca7cfae.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "遍"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18405,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "遍地",
   "id": "9cf7bc57ce03b24e3a84adc7",

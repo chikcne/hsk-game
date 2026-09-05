@@ -1,16 +1,20 @@
 {
   "audio": "aafb280c6d883768dc9312c260345ed22a9e7676d56c6699d09f463a2ecace56.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3211,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "兔子",
   "id": "0f644be6b22fd795b91b05af",

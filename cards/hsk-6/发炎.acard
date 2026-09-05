@@ -1,16 +1,20 @@
 {
   "audio": "9d845781c18a3652b8754781a87eea2c42f3482bd0c87ded6ef95fb1c53ffc04.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26777,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "发炎",
   "id": "4086f3d4b270b10e45bb314d",

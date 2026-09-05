@@ -1,17 +1,21 @@
 {
   "audio": "22b630ef9c4a9b96dc8baec9b0b90136195864c5d0c452e226ea83736fb95521.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "有",
       "的"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": null,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "有的",
   "id": "ee1fc61feb78da2a746a5d30",

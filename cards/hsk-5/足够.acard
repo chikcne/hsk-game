@@ -1,17 +1,21 @@
 {
   "audio": "701bb14c69c36788c058495db6b9c51f2e5cf37f22c0c8a497006becd237bc1c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "够",
       "足"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1137,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "足够",
   "id": "eedaf01f3017161f91c43aa1",

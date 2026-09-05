@@ -1,17 +1,21 @@
 {
   "audio": "d588bd0fe64faef8e9d01c57abadbd753131728287d0037fc9ab5ec7577e6703.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3751,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "发动",
   "id": "6b6200dd6a88ea71f7700179",

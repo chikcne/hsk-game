@@ -1,16 +1,20 @@
 {
   "audio": "0a443e24582c58768a7b177011f9b9bc816520cbbb4ef4e3af8b47fb56d07527.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5064,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "大夫",
   "id": "8ae1274757d8ae913494ae37",

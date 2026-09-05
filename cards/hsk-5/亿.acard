@@ -1,14 +1,18 @@
 {
   "audio": "1e500aaab0f40f1189b9829e2d30ff828f7c8f39de752c2f272edf6bcf99d39a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5100,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "亿",
   "id": "8fbd97fc7b7f09818394df87",

@@ -1,17 +1,21 @@
 {
   "audio": "f6c7cf68a4dffb2c7a337b41bde059d9a3e22f407decb395e32246c225e06819.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "密",
       "集"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23459,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "密集",
   "id": "dfeb30e1751ddab7854ddac2",

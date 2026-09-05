@@ -1,17 +1,21 @@
 {
   "audio": "260f6b8b7e513ec6d74fc5f2349888be66c395a89c6e04aab44873021b130faa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水",
       "泪"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11741,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "泪水",
   "id": "ee5502a9f916ac887b19fa8a",

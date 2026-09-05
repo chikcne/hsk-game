@@ -1,17 +1,21 @@
 {
   "audio": "f14ec87f5c866a59c3e959cfb17a3734d4c6b93fc7428fdc158a9f6462d2c8bb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "爆"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4175,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "爆发",
   "id": "19b842f4f81e2b197b55f535",

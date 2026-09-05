@@ -1,16 +1,20 @@
 {
   "audio": "c72a5bd66f7593897fc0bffadfda80f3dbb210915625faac9d727656f0fcb703.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "好"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 396,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "好好",
   "id": "9bb906e271a2a92b992cb1e7",

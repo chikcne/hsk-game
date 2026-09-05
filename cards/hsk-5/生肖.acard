@@ -1,16 +1,20 @@
 {
   "audio": "89c8d921e5fdec3723960f220b1556fc133cc5fccc07a1054c6a207a3e3e0304.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 78699,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "生肖",
   "id": "0fdde8c9e97fccbfc879166e",

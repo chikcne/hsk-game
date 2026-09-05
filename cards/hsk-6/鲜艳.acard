@@ -1,16 +1,20 @@
 {
   "audio": "20a7b51d6fdecdf5dc088d19625540bc41b60175e29c1ca8e58b94cf41379abc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "鲜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30999,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "鲜艳",
   "id": "10a5e74dbb6025423bde2b0e",

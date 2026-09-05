@@ -1,16 +1,20 @@
 {
   "audio": "7ba84ab99578678b1faaf1fb2443c7caeffbccda6041d42bfa2c31b2b8c920db.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7770,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "大爷",
   "id": "0e491d7cefa016c450ebf762",

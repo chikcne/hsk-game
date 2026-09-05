@@ -1,17 +1,21 @@
 {
   "audio": "aa093dfdb1fc70c3ab5be63f52ad196e6c21c617a72eef0aa7a77b2ffbd53786.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "干",
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7453,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "能干",
   "id": "90a1499024bfdaef75d02815",

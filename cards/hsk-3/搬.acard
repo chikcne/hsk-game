@@ -1,14 +1,18 @@
 {
   "audio": "7a6b8019579054d0b597856a7c79956a36bf598d1648e86fedff5bac691bd130.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1330,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "搬",
   "id": "166fde242b008765d9a092fd",

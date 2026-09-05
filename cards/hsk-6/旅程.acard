@@ -1,14 +1,18 @@
 {
   "audio": "d30affb817c78d4acad7c96396be22c01e2f1d69dbd9514b85bafd3c53dc2bc0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3855,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "旅程",
   "id": "16114972c6d572dab2a17f1b",

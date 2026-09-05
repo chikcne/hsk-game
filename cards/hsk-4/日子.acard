@@ -1,17 +1,21 @@
 {
   "audio": "8580c35ab3f37763b3e2ec05d74da2a1a51086abebc4b4d08138963c4d4216c6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "日"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 974,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "日子",
   "id": "d95eb2366a120247709fee06",

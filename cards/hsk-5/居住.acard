@@ -1,16 +1,20 @@
 {
   "audio": "fd99153798f1178c423af008df3491c30442d9899837bf01457d846e406eb85c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "住"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5386,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "居住",
   "id": "3f9480633e1ee79d69e3efe4",

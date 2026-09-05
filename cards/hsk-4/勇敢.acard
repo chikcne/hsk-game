@@ -1,16 +1,20 @@
 {
   "audio": "d22d189fd6e4542cb8af1d7e282f3b925748d669d8ed1db63ab8b1a1d23ad3a1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "敢"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1879,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "勇敢",
   "id": "2de4a6cf68b2cb1fdb0aaa4c",

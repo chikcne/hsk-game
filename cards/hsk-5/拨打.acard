@@ -1,16 +1,20 @@
 {
   "audio": "7934c14dc5f8f1860fc1031fe93c982be1918914ccbe7e6f5e3931004ac42307.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10308,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "拨打",
   "id": "e70de746c5c3f98e6639e919",

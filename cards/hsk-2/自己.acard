@@ -1,16 +1,20 @@
 {
   "audio": "01f92cf78f9edf28506538216b925d1d320a6260ee91cbe9aeb363a274b8204d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 70,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "自己",
   "id": "1453f2bb53aa7036e4f8b09f",

@@ -1,16 +1,20 @@
 {
   "audio": "4412a4b31bf51b18eb7bbc532805dc0201e049bf8a35c740602c575cbdca814f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "念"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5647,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "概念",
   "id": "aba5fdb4b59773a8e3eefebb",

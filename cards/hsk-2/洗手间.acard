@@ -1,18 +1,22 @@
 {
   "audio": "10c7fc20b75f4c79afcf468258904f48ce18f1fc8d549e8732c9d921f0e0c02b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "洗",
       "间"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3690,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "洗手间",
   "id": "fa9783875c3c8f93dab99c13",

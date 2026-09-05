@@ -1,14 +1,18 @@
 {
   "audio": "dafcb939e536f91480d70b8e14fd1c9e22f08e402a8eb61cdf48799f49f79972.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 694,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "突然",
   "id": "5bd7089db9a4561eb8fbd7e4",

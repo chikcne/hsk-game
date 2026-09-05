@@ -1,17 +1,21 @@
 {
   "audio": "d308cd3a07c9139d31375fa55da52b1016e5807832af3c86113e9639504e8021.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光",
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2508,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "时光",
   "id": "d9fa1f1f9d996165e6d00d4f",

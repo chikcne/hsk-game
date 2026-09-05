@@ -1,14 +1,18 @@
 {
   "audio": "179eec4b48abee421c5a57cb9bcb99d235eba0ff429b352e0c8addeee5fbbe2a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2201,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "实现",
   "id": "4a6f83ff96f74229c0e05e7e",

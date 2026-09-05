@@ -1,14 +1,18 @@
 {
   "audio": "1dd7e09d98c6376583507b1ac4a9a7aab3551556088d2498080499d13a0b89ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1818,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "报警",
   "id": "5f0f1b8cfcfa5ac16d4d86fe",

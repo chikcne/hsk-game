@@ -1,16 +1,20 @@
 {
   "audio": "041fe792752c4484480ee0523011760006b663de92b99b552eae5fea32cff6bd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "得"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10766,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "得意",
   "id": "472739cf49dffd1c27648c82",

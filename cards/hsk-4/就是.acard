@@ -1,17 +1,21 @@
 {
   "audio": "f2430f107acf81f2a4c1b29b9c8f721b6789078a4cd8169d7ff22d7e8ef84843.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "就",
       "是"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 55,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "就是",
   "id": "160b955a354b79c6c3fd4b2b",

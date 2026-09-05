@@ -1,17 +1,21 @@
 {
   "audio": "84a0f0c48f115bac4111df8d35d4497fe01ba5bcc831ad724e1a12410c04bbbe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "改",
       "造"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6424,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "改造",
   "id": "e54f99ceb8487c7f321bee82",

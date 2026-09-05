@@ -1,16 +1,20 @@
 {
   "audio": "b3e4d019bdab95460ef04068f2769402bc1a4b32ed5554cb0ae6189ef8cbdde6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "飞"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 43303,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "飞速",
   "id": "50e89d07b647f7a88b932c3f",

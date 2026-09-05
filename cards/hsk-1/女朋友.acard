@@ -1,17 +1,21 @@
 {
   "audio": "342b0df2b758a2d822fde222ce1c2abccbfc6f10fd716bf601e3844e6b0ad331.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "女",
       "朋友"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1166,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "女朋友",
   "id": "2b56697048a2c4cdf58186c9",

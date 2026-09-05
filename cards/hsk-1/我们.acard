@@ -1,17 +1,21 @@
 {
   "audio": "928fde508d8ad47a9baf2402a20972f08910b25b76c20e4680553efe62277c15.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "们",
       "我"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "我们",
   "id": "32282301042d0cf0da4346c5",

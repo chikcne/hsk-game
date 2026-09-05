@@ -1,16 +1,20 @@
 {
   "audio": "4bf2bfe441ff6ce378b108fa2ce60224a42871100420cae511a5ea3b04805707.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "红"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2282,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "红色",
   "id": "b813f6e6a0c285bcc733d51c",

@@ -1,17 +1,21 @@
 {
   "audio": "f7fea9128172e5575a16c5bd7374cc6c2a6dcebb5e0767095cec220a18eb9717.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "这",
       "里"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 64,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "这里",
   "id": "f99d26a6ee7cdc10839a8af0",

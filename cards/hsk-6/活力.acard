@@ -1,17 +1,21 @@
 {
   "audio": "5f56857cf7605be2e1f656a08004457962dac3e807f7026955520c89b1c05374.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "活"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7112,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "活力",
   "id": "0e88fcf03e8cca9a27860037",

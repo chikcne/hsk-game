@@ -1,17 +1,21 @@
 {
   "audio": "8b1282024b30385bc620c2100415d7042cb75a6a00856f4e88a30a8d5ff6842d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "小",
       "朋友"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4259,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "小朋友",
   "id": "dfe107c1f25d4326ac7a42fd",

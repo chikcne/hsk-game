@@ -1,18 +1,22 @@
 {
   "audio": "72db82e863d43afadbe3cd7b7a5f93f2f66f6b97d3a2e2842eab2354f0e252ca.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "及",
       "来"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4815,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "来不及",
   "id": "68abd5698ae83565bc65bc3c",

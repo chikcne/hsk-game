@@ -1,16 +1,20 @@
 {
   "audio": "2f19f9fecf443710ee2dfc81c0b29ddae03f3856229730e2cbd49408c174a081.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "课"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7183,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "功课",
   "id": "0ab49971da4023bf8fc08124",

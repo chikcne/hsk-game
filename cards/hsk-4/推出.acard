@@ -1,17 +1,21 @@
 {
   "audio": "ec133d500b360f874ed365c91dd3fc571242e7280946560278b3d7ce8d5b4d25.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "推"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8661,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "推出",
   "id": "41a0014d54f645c224273b81",

@@ -1,17 +1,21 @@
 {
   "audio": "b034c0210632a5765dd17b35ad18e97b099b68d5f3ba70a4c467c14b792a6fda.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "望",
       "看"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11422,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "看望",
   "id": "7344ae6d5fa665b9bb47b0a9",

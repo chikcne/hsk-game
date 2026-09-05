@@ -1,17 +1,21 @@
 {
   "audio": "063b94a7e3e6066be17c44ac058d9a8389bfa91b348cc419e453c0a92790f27a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "晕",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 40280,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "晕车",
   "id": "43c5393bd04899afa043137c",

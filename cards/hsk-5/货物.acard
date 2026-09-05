@@ -1,16 +1,20 @@
 {
   "audio": "af726427042a3b7804a74d36d67ddbd61334558555f67724333bbbcdabb48bd7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "货"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7685,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "货物",
   "id": "a23ce1a58cb060bab06c87b2",

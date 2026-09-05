@@ -1,17 +1,21 @@
 {
   "audio": "207567410b50b2e263e9e51e7e7cc6fe6005f3a62ad485ea24a95ac5fd6f3533.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交",
       "转"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31495,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "转交",
   "id": "9bcda692b7ea7a9d72ea4500",

@@ -1,17 +1,21 @@
 {
   "audio": "d5357bf470f6825c88841d750bc10a2b8780332b01405868d506828fc6f4b5ec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "空",
       "闲"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17648,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "空闲",
   "id": "43fd09e4ace9d2a2fb7c7824",

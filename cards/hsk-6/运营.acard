@@ -1,16 +1,20 @@
 {
   "audio": "9673a6b88666852923250da24fa834450f588e08b6a64d20df7c49841fac485a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "运"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17447,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "运营",
   "id": "ae3e8445626fbbc7c537d008",

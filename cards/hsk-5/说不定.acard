@@ -1,18 +1,22 @@
 {
   "audio": "8fe0b86d0b4cb663df7488ad2eeb66004532db15007cc0bc27394003030fdbc2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "定",
       "说"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2342,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "说不定",
   "id": "7556a05f6b93a5c48de96a1e",

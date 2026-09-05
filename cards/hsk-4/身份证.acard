@@ -1,19 +1,23 @@
 {
   "audio": "7a8e7655e152c997994b53dbbb888275317f69210c8623e529ed4f232ac90096.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "份",
       "证",
       "身",
       "身份"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5725,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "身份证",
   "id": "49f7946e74e8271e68ea5655",

@@ -1,17 +1,21 @@
 {
   "audio": "53ecadf937b5bc63cbf80d99050c0d2ec4196cd607065cf6646ad749998351f5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "离",
       "距"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2013,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "距离",
   "id": "b47a04e1fbdb420f4cf82af6",

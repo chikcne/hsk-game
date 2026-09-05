@@ -1,17 +1,21 @@
 {
   "audio": "4f758f698be4bce023d2c74dd52805651a65f60de5cabe67c9f7c00f0a87829a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "晚",
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4547,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "晚点",
   "id": "4e40438eccf630e500311cf1",

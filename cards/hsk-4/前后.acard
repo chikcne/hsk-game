@@ -1,17 +1,21 @@
 {
   "audio": "e011739e3a21079bf01b9120bd1390b09127904dfaa56095c2a78600500c9f66.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前",
       "后"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13709,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "前后",
   "id": "f9fe0316823583a61e303aa8",

@@ -1,17 +1,21 @@
 {
   "audio": "d340e0f37407e2e839f934e27d301dc7f3e53841cbf7573495452c6fa1039edb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3472,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "重大",
   "id": "f4ac2b16113e1ce7158ad311",

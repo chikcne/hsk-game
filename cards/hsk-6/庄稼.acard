@@ -1,14 +1,18 @@
 {
   "audio": "ded9bbd576bb7b15c21c269d7b4d25ea04bbfe85e618d50f1aa9d60fc7432619.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 23479,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "庄稼",
   "id": "b88ea35333740c2259084de8",

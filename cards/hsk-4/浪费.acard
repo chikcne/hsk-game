@@ -1,16 +1,20 @@
 {
   "audio": "9bf40becffd4d9646dfc6315bfba7709eaf9ad1956f215ecac6be1e7f944cc4a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "费"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1723,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "浪费",
   "id": "cd32e0f761642a5b76d595f3",

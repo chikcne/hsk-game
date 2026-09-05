@@ -1,17 +1,21 @@
 {
   "audio": "1b3a94c791bbe373e6d58f58d47983bcb1b2a135993caa81f4c45c1d8020ee20.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "书",
       "图"
     ],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 23956,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "图书",
   "id": "191f46d7d9bf744bb9395936",

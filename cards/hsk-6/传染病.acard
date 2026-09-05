@@ -1,19 +1,23 @@
 {
   "audio": "51f62d49aadcf1b359ce58c6aa8a0f1267b3d168db5e9d064340ced11735f488.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传",
       "传染",
       "染",
       "病"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14876,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "传染病",
   "id": "90d1ba2601ff5c6e7849590f",

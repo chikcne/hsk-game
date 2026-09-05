@@ -1,17 +1,21 @@
 {
   "audio": "97366883c4cc55f9cfb7a51018e3a3ef68ae376b95e75d848efe10052f1c8264.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "图",
       "画"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20944,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "图画",
   "id": "62c9a8eaa4a49173a6b0ce2c",

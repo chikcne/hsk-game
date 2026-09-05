@@ -1,16 +1,20 @@
 {
   "audio": "a8f86dfef066bbfdf183b7abdd3cf73015d8e980fbecd2f2c3d9036b23bdb86a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "料"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9646,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "塑料",
   "id": "7044143621a195655d6032f4",

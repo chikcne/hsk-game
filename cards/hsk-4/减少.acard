@@ -1,17 +1,21 @@
 {
   "audio": "691913dd02aad716051fd19632ae49fefc976a1f9a4bc13cc71cf187d1d1eba2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "减",
       "少"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5217,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "减少",
   "id": "d10d1845ed0507d33e54a118",

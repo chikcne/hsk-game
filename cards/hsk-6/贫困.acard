@@ -1,16 +1,20 @@
 {
   "audio": "2dada051990a19e2f20b34fbebe36c88a7e4534265a89844bbaaeca0fd91af8b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "困"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15412,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "贫困",
   "id": "efa59a2a5c959266ad72b2e3",

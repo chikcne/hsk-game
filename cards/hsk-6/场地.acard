@@ -1,17 +1,21 @@
 {
   "audio": "e6bc3ea7fc39b0bfd9f7da03a0ece4eaabd6a825a09edeb851c419c5910b0cd1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "场"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11074,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "场地",
   "id": "983b0e176d31b0d428ab7489",

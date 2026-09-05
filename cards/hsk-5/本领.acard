@@ -1,17 +1,21 @@
 {
   "audio": "274e64c787583b5f73557e2fc6c73843f90663847f328bde4f5523ef779572ba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本",
       "领"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15763,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "本领",
   "id": "a1eae1730f1c9e75a9185f1f",

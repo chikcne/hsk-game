@@ -1,17 +1,21 @@
 {
   "audio": "30ee36d366bf11c21500cde272f645ee4466eb401caee5c68060c52148ab3454.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5664,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "一点儿",
   "id": "6ca559ec717dc7943170a709",

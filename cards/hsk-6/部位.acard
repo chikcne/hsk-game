@@ -1,17 +1,21 @@
 {
   "audio": "0f8a96876d07ad24fd1ff18666fc9149f9746d1295b50615e44b33259b9c37c7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "位",
       "部"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8427,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "部位",
   "id": "3f02cdc1a75f8a4a49f1d1c9",

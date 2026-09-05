@@ -1,17 +1,21 @@
 {
   "audio": "16987f0054da2fdf2d7278fe69c3cf1280ebe74bc80672966ee0237635dfd23d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "常",
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10316,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "时常",
   "id": "aa1ffa4e7bac3a3da8735092",

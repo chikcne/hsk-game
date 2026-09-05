@@ -1,17 +1,21 @@
 {
   "audio": "bb544f6e54e964fe2a0ce505c5e6df68ed1eba9f08c0748615afb55394681565.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "夜",
       "间"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8788,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "夜间",
   "id": "5100171902df11248372c4a8",

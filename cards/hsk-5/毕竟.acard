@@ -1,14 +1,18 @@
 {
   "audio": "2ad578df50aff2e73a32cc826466341720bfd1fe41487a281f52230bac2044b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2420,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "毕竟",
   "id": "822600058f4c5f1752c6e772",

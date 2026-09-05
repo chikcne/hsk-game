@@ -1,17 +1,21 @@
 {
   "audio": "3d4f16b03475ce40269891023199321dafbd6cc69f4ce288badc9de078148a63.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "边"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1519,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一边",
   "id": "c29fbdc94c1a65cbbf81d1b2",

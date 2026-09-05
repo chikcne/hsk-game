@@ -1,6 +1,7 @@
 import type { DeckId } from "../../shared/constants";
 import type { RuntimeDeck, RuntimeWord } from "../../shared/schemas";
 import { reviewWordIdOf } from "../../domain/review";
+import { curriculumFromWordIds } from "../../domain/learning";
 
 /** Builds one runtime-only merged deck from an explicit cross-grade key
  * list (`"deckId:wordId"`, the `acquired_words` identity).
@@ -84,6 +85,7 @@ export function createReviewDeck(
       title: options.title ?? "Mastery Review",
       fingerprint,
       source: { sharedId: 0, url: "local://review", packageSha256: fingerprint, sourceNoteCount: words.length, logicalWordCount: words.length },
+      curriculum: curriculumFromWordIds(words.map((word) => word.id), "review-v1"),
       words,
       meaningIndex,
       meaningKeysByPartOfSpeech,

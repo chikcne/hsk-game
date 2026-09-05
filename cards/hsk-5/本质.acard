@@ -1,16 +1,20 @@
 {
   "audio": "707ffb856ca82a315ebd7c01e65f76c83ac9518c9de2137bef82d327748b07c2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7842,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "本质",
   "id": "f1a88bb01b25839546deeff8",

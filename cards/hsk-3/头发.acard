@@ -1,17 +1,21 @@
 {
   "audio": "cdc491f3c35403b69511de28cfa7b542569497eab8bb96e6a04f2f69b5f04df2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1189,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "头发",
   "id": "e4db4b31b48d2129ebeda97d",

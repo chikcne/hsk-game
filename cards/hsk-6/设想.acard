@@ -1,16 +1,20 @@
 {
   "audio": "6b19e21df8b4bfd6980f3dd2017f97133629615a9c58a30690391f8e74ad4a4b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "想"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10538,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "设想",
   "id": "92e2dcbd3ea4dcc060c94da4",

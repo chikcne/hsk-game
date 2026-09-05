@@ -1,17 +1,21 @@
 {
   "audio": "d1f22e4a6c27ca74e4ed62f116dade5614fb26b70aa4d78ff58daf04b5b6de00.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "赶"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4365,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "赶上",
   "id": "4bac5eb2b98ea3d1b2606268",

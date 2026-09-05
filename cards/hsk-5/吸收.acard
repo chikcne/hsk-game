@@ -1,17 +1,21 @@
 {
   "audio": "09b1309df76913de5c6be5ed4ff3c6185d6db0398dae09c1fc7172d677adf8fe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "吸",
       "收"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7202,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "吸收",
   "id": "c7db993a7973f58eb7bb98ee",

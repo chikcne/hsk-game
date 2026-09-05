@@ -1,18 +1,22 @@
 {
   "audio": "11d0e97ecd51535084fd0b4f076b704f0e964299759741d4af89d0c0a542bc23.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "录",
       "片",
       "纪录"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12066,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "纪录片",
   "id": "6e51f15052ad1a5760e4735c",

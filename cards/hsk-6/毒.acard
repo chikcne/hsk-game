@@ -1,14 +1,18 @@
 {
   "audio": "67a07a7a9616d6df00346c885519820349d138980155c8cb130200bc0d9cc274.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6319,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "毒",
   "id": "19579783a1c39d50b55cbbb3",

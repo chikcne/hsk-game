@@ -1,17 +1,21 @@
 {
   "audio": "8db1a70139bf9ad2363ff1cd9c95acf200665448e5a39e7af729bb9f4883252e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4390,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "天上",
   "id": "40e6026e67d55fb745204e46",

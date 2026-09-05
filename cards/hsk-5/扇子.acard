@@ -1,17 +1,21 @@
 {
   "audio": "bb8f2adcbd8ad9623829b4e84234276a90f056e206a1c781ceaf51122edb2e0f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "扇"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30099,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "扇子",
   "id": "90e4af5dcbda3b8f2182b1d9",

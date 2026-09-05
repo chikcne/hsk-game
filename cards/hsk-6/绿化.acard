@@ -1,16 +1,20 @@
 {
   "audio": "a355e36e8b4d03902bc18e19e49b6f74f4cfb0c4c4fcc2910af508819c85603e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "化"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 75017,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "绿化",
   "id": "1df94acb9f9d3257c842b1ab",

@@ -1,19 +1,23 @@
 {
   "audio": "e89f13a66e79575c79243a5748862931f106ddb9074a2623b7f3b6ef7d02d840.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "内",
       "内外",
       "外",
       "海"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 213868,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "海内外",
   "id": "43b3a5486cbedda02bda3f6f",

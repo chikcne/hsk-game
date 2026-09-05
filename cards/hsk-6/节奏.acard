@@ -1,16 +1,20 @@
 {
   "audio": "03d895686e49186dcc939d8df98f267e3ece79d7bbb208b38e4b514b30a749d0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "节"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6301,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "节奏",
   "id": "58e87820f2d9d06d292f90d5",

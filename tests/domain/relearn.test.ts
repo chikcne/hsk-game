@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { SaveFile } from "../../src/shared/schemas";
 import { DEFAULT_SETTINGS } from "../../src/shared/constants";
-import { createLevelProgress, type LearningDeck } from "../../src/domain/learning";
+import { createLevelProgress, curriculumFromWordIds, type LearningDeck } from "../../src/domain/learning";
 import { randomStateFromSeed } from "../../src/domain/random";
 import { reviewWordKey } from "../../src/domain/review";
 import { applyRelearnRating, createRelearnSession, nextRelearnKey } from "../../src/domain/relearn";
@@ -11,14 +11,15 @@ const NOW_DATE = new Date(NOW);
 const LATER = new Date(NOW + 60_000);
 
 function deck(count = 10): LearningDeck {
-  return { id: "hsk-1", fingerprint: "fp-a", words: Array.from({ length: count }, (_, index) => ({ id: `w-${index}` })) };
+  const words = Array.from({ length: count }, (_, index) => ({ id: `w-${index}` }));
+  return { id: "hsk-1", fingerprint: "fp-a", words, curriculum: curriculumFromWordIds(words.map((word) => word.id)) };
 }
 
 /** A save with the grade fully acquired (all cards review-state) plus the
  * given keys selected into THE active relearn session. */
 function baseSave(keys: string[], cardsDueMs: Record<string, number> = {}): SaveFile {
   const deckOfSave = deck();
-  const level = createLevelProgress(deckOfSave, { curriculumSeed: "seed" });
+  const level = createLevelProgress(deckOfSave);
   const words = { ...level.words };
   for (let index = 0; index < deckOfSave.words.length; index += 1) {
     const id = deckOfSave.words[index]!.id;
@@ -46,7 +47,7 @@ function baseSave(keys: string[], cardsDueMs: Record<string, number> = {}): Save
     state.reviews = 1;
   }
   return {
-    schemaVersion: 4, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
+    schemaVersion: 5, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
     settings: { ...DEFAULT_SETTINGS },
     spawnOrdinal: 0,
     schedulerRng: randomStateFromSeed("relearn"),

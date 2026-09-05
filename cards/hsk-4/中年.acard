@@ -1,17 +1,21 @@
 {
   "audio": "4c5f9bc668b0ce6109304435afa07aeb449e7f7bca473b53d61b2557bc5687ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "年"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17117,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "中年",
   "id": "90050aa9bf7bcd019c329d04",

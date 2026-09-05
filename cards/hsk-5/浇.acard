@@ -1,14 +1,18 @@
 {
   "audio": "7282d87cfe26660274b8081faf67af355d17ef6caed7a45eef41ffea8e2d2385.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 20121,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "浇",
   "id": "e70faa7c053fb953c52629d1",

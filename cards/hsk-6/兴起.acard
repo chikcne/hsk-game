@@ -1,16 +1,20 @@
 {
   "audio": "500d554131cc44e0377aebe286401b1f18d2efd56cfa55e24911b559b22d9478.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "起"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21141,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "兴起",
   "id": "897b3fbaafdf618cadc09fb7",

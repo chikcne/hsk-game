@@ -1,16 +1,20 @@
 {
   "audio": "f51b27177b2777b976d3aa506f37a041e5a6a4a914f012949aa1576c15a30c5b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2585,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "毕业",
   "id": "1bc95fc75d4263cd1436398d",

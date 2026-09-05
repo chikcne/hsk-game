@@ -1,14 +1,18 @@
 {
   "audio": "100eafd938df56d535713568dbe9f58156e23715b407b095f526bb8748ba783c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1260,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "躺",
   "id": "e3613d670d061e7376d0058c",

@@ -1,18 +1,22 @@
 {
   "audio": "17c8f38d69bc3dab8117dbcf037254671c876563ad6187880e50db68e77ed158.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打",
       "电",
       "电话"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 433,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "打电话",
   "id": "a9c3e34a6990afcefc2a798e",

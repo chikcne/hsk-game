@@ -1,17 +1,21 @@
 {
   "audio": "4037fbe7a42b62599959fa480e2c03bd059b080b809df59ccfaedf6a7c9f67ff.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5666,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "力气",
   "id": "21ac08cb77707f97016b5d27",

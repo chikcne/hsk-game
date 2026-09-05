@@ -1,17 +1,21 @@
 {
   "audio": "54d33ea6b284a2ddd12d13c7f49d6b77836dccbaa9fc4964a125ec14f8aef389.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "泼",
       "活"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17947,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "活泼",
   "id": "c9ae074dcb648b573e64c732",

@@ -1,17 +1,21 @@
 {
   "audio": "d65dd9c267de1aa009c91357618f8aeff36050cfe30c59267608afc266121189.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "收",
       "费"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9978,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "收费",
   "id": "edbba748d2d8d6cd29df713d",

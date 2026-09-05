@@ -1,16 +1,20 @@
 {
   "audio": "9293deb653fdaa98752bd2d344e7db3e89ac064278535f5a9bd6e7190b4569e0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "认"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14849,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "认知",
   "id": "70c7bca4b9401520eac733a9",

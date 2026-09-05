@@ -1,17 +1,21 @@
 {
   "audio": "133a4413e4c69ea3560e375d73f71b76553480e4a819441be9026e45cb751db4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27664,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "大于",
   "id": "90241bf1c57460e4043c1a06",

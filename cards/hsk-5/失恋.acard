@@ -1,14 +1,18 @@
 {
   "audio": "5dbf980cfaa5eac47961f9365fb8e52daca08d5f740774f6eb94d3319116a95c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 16927,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "失恋",
   "id": "7a702a0fdbc24c6c002a0e88",

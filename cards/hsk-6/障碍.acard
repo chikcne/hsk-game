@@ -1,14 +1,18 @@
 {
   "audio": "49a5e9d697d71b6d4168daa3ac2f12eae6941947ebc31c7e5e3ad93f7f2cbdfc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5316,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "障碍",
   "id": "97cd239581b87071b655141b",

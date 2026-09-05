@@ -1,16 +1,20 @@
 {
   "audio": "cd378249b0ad584877da0e93f983139379d9ef98e99d7411f7f11daffa768a8a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2542,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "椅子",
   "id": "ac3060ceda23ad1fbe87955e",

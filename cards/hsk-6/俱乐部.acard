@@ -1,16 +1,20 @@
 {
   "audio": "987f7066970d3b33a11c724bda4128b52249c4aaa8bca73e2d5b9937124f6316.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "部"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1838,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "俱乐部",
   "id": "9c23a4f578b1d285c0a395d7",

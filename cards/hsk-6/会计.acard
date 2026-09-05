@@ -1,16 +1,20 @@
 {
   "audio": "dac179137194c6e45a42d7522e8ea72bce54041400d3e715e1767d9606333ff3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10067,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "会计",
   "id": "c25961fdcf0fe5460f895fe2",

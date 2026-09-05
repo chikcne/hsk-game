@@ -1,18 +1,22 @@
 {
   "audio": "701201fbfb2e0578580764c86f482d5701d542125bbb17cf50298f42979c3064.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "像",
       "头",
       "摄像"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4528,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "摄像头",
   "id": "816225858cc89c6d485efa10",

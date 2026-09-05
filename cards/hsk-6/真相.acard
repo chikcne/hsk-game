@@ -1,16 +1,20 @@
 {
   "audio": "6ff7f9b5e32e0b7f9f34a9b86379064cdc4b66b58ed8797c2730891b495a52ab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "真"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1111,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "真相",
   "id": "67a5b33ce30943f4ff0af0e0",

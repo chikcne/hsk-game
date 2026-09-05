@@ -1,14 +1,18 @@
 {
   "audio": "cb9e7b5852e08d6649f156e762f48bb91d49cc51b3902ba6ed0010eb117802ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8557,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "担忧",
   "id": "8788b54a9417714e4c895287",

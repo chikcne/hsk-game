@@ -1,17 +1,21 @@
 {
   "audio": "28a2cbc59882c94629dc05cdaad07b26038627dfe4cd89c69d44267865500296.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "受",
       "忍"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2599,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "忍受",
   "id": "747d192c832a25e1fcdc510c",

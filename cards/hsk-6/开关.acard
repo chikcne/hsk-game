@@ -1,17 +1,21 @@
 {
   "audio": "04327db930235f2b3d8b03e55a476f8d7d6583440bb2dfb79ea3221132b55385.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "关",
       "开"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6775,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "开关",
   "id": "d64ed4b0568c6e0d4c3c9554",

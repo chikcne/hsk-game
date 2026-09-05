@@ -1,17 +1,21 @@
 {
   "audio": "8121858ccfe45d1e923e4328c1a193253549f9aa61f4a5c0826af3a603544c32.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外",
       "户"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15032,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "户外",
   "id": "6719c8fb5bc091c2526d9f26",

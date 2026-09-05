@@ -1,17 +1,21 @@
 {
   "audio": "9d0cc30249f25b4c43a926a27690caffa04f6bbcef3f3fdd2d5f4bb04188b718.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "名"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6363,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "名人",
   "id": "86e3dd4a3e548fc2aabec62c",

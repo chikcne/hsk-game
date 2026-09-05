@@ -1,14 +1,18 @@
 {
   "audio": "d2be9b46e2c30827b566f747249235b3485983b39106f628f3cd8defd25fb3ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11286,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "雾",
   "id": "62b6599b3bcbaa75185a15a0",

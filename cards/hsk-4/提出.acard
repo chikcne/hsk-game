@@ -1,17 +1,21 @@
 {
   "audio": "05a2f2e9db465189233b2d329881ab85d7b782fd6b0f6924bddb102fe72d9221.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "提"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1839,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "提出",
   "id": "d60437d0e8005bf8f715ab18",

@@ -1,17 +1,21 @@
 {
   "audio": "ff0bdeef4fa91d00ff4d4672b7544ed1017ab8abe0c2fb4f5e91e92aa2b2e47a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天",
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2241,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "天气",
   "id": "ae19070e1600332b790839c6",

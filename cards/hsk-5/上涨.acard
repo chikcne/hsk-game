@@ -1,17 +1,21 @@
 {
   "audio": "698b3978dc078d8b1b79aa32723e8d87bd35ad4d2b2caf1885a8771a5b9569ea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "涨"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19853,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "上涨",
   "id": "95eab9bf45ff522a18101ee8",

@@ -1,17 +1,21 @@
 {
   "audio": "3e5a98e938a6c494924fab3287a7353430600bf5b73b6d22fa829c8c6bb5707d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1870,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "高中",
   "id": "3cacd5b6200e2367ce4e82b4",

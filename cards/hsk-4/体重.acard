@@ -1,16 +1,20 @@
 {
   "audio": "db6e98a401f837c9db0bbb3501e729bb24986b82451d55e90fa3d1b30db77d42.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6984,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "体重",
   "id": "04ae8640d44cc5eef7dabef0",

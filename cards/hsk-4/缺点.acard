@@ -1,17 +1,21 @@
 {
   "audio": "13ce7d5a085db873cece378208d2b922ba5f3f0c1b62dd62fef327c1216bb492.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "点",
       "缺"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8611,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "缺点",
   "id": "1d998ad5674e4cfbe8a8f9d6",

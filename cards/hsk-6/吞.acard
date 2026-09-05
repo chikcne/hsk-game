@@ -1,14 +1,18 @@
 {
   "audio": "a3195677d83a4b33e401cfae7fcdc920e3264787477a25dc06d72203f4babd46.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8247,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "吞",
   "id": "562e690b6abafb4cdc8b4a90",

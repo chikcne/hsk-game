@@ -1,17 +1,21 @@
 {
   "audio": "376d95f6da19490186a1be734fd87f77858822d4de423c6148284909bf7551cc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "称"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3190,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "称为",
   "id": "7ee5a91ddc4347c1e9874c14",

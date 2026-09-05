@@ -1,17 +1,21 @@
 {
   "audio": "05d3810902099bf81fe9d8a6bf8ad661f111019a08b84de34a315bdde256ef8e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交",
       "换"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3225,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "交换",
   "id": "147d5eecf684f65160879ac5",

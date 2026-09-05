@@ -1,14 +1,18 @@
 {
   "audio": "1a69845c95f5f9a910212064d604956b21fe5296751e7f3dcac36748e0b06838.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1312,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "警告",
   "id": "09fcac66b2183909e88e4da7",

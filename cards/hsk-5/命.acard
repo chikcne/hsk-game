@@ -1,14 +1,18 @@
 {
   "audio": "b9088a82c71bdae2c0a625b8a0889272614d161fc8009afcdb2e2652924c39ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 1561,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "命",
   "id": "73705b3ac119ba3cf501702e",

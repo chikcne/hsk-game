@@ -1,14 +1,18 @@
 {
   "audio": "0101599512d7f8b881ac4e442b939231371f4b1793b28222e5963ddd8426e552.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8989,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "金融",
   "id": "2018d11ccbc508ad3eec728a",

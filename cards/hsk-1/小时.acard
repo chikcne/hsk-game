@@ -1,17 +1,21 @@
 {
   "audio": "a1349e9e7a4dec769bef1424a30c2e3bbec55ce456978ec7e025b71d52c39750.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "小",
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 421,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "小时",
   "id": "e50be5c96645153ac3a184fe",

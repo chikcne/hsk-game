@@ -1,14 +1,18 @@
 {
   "audio": "1e929f25cf07d1a50d530596cfb30f3db106abf07d80c14fa51e36935db2eb4b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3418,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "吸",
   "id": "43c4820f65c9d1db659bfeca",

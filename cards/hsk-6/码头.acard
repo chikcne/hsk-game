@@ -1,16 +1,20 @@
 {
   "audio": "8716d354286631b175a42dcdec6a7f34cd2c6e432ea0810a15b2b8cf95e0f5e5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4238,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "码头",
   "id": "739afaee5eac50ab0aa5a56c",

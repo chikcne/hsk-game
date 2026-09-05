@@ -1,18 +1,22 @@
 {
   "audio": "9cc85dcdee7d70c76697b8cb30722e8a25efeac8e4baa521baba72892d1d50a2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "口",
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6557,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一口气",
   "id": "d89f5d04dfc1e6fa70fa727f",

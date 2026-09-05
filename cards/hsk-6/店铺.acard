@@ -1,17 +1,21 @@
 {
   "audio": "a26093318f060d41ea893a3f38fc3c013108bc40dbe2c95ce6e869f19198e3ae.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "店",
       "铺"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16421,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "店铺",
   "id": "a7720060ded19a852063d4c9",

@@ -1,17 +1,21 @@
 {
   "audio": "c1f2404895a67181046a7fed9389af67df9dc46b6683aa6e4e17553083e6c62e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "课"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3504,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "上课",
   "id": "7c116bea9edb989ccd334fe5",

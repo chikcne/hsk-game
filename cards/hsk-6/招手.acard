@@ -1,17 +1,21 @@
 {
   "audio": "9cbbeed5efe65de763b7dd5971809f503bff75d33859c454f32bc808a883cda1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "招"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22521,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "招手",
   "id": "c3e0edd14b542063ab57acda",

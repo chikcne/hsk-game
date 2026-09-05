@@ -1,16 +1,20 @@
 {
   "audio": "e9a4f72d57f99969613045f59793699430edf1d4412452e96eed3f7b53355ef9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "使"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8253,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "使劲",
   "id": "b67ecd1721538a7d0c61867e",

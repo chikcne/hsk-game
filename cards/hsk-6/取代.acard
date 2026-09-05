@@ -1,17 +1,21 @@
 {
   "audio": "30c8855e2feadce5737f4d2459f75c8a70d445b5049541e01a3fcdbbb654a997.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "代",
       "取"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6015,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "取代",
   "id": "a3f7f83f4d9f7eb89d167516",

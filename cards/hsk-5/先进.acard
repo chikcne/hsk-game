@@ -1,17 +1,21 @@
 {
   "audio": "a7ad7c14ec41b93f37a6375b2c5f08cbdfa8d6ba50034d67085d87c7b923053c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "先",
       "进"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5298,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "先进",
   "id": "f052d2be9db0956b3b0e0e06",

@@ -1,18 +1,22 @@
 {
   "audio": "105476ac07675905f6a7f94f919e8ac91026c56c1079babba91f430f1fe832e0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "消费",
       "者",
       "费"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18733,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "消费者",
   "id": "5216d9eb6e072d4455dc8fc7",

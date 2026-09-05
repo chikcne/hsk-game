@@ -1,17 +1,21 @@
 {
   "audio": "12fbc61c7d174f3d17d5a3352143870439fbbaff309aff47352210afea2ec941.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "如"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1172,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "不如",
   "id": "1149aadbb2ee83efe515add2",

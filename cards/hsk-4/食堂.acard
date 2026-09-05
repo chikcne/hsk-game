@@ -1,14 +1,18 @@
 {
   "audio": "6f110f496aff3c7b6754ef67f210aed8f2f99c303d8f6f93bb7afd887451cc5d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 14621,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "食堂",
   "id": "fa0b7ed99841a68cf581ddc3",

@@ -1,17 +1,21 @@
 {
   "audio": "f967da6fa80832aa8e02ab2fdf8aefe09558e682c2c405e7406519d439d2bdbe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "只",
       "顾"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13412,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "只顾",
   "id": "f340f3f39915649386923e56",

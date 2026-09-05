@@ -1,17 +1,21 @@
 {
   "audio": "4b660bbca563a24bd8f493f3e59a0431e48f58439ccb9ec48362cde4e2bab57c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "病"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1378,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "病人",
   "id": "f3c9b4ee85895c0a1a1c4868",

@@ -1,14 +1,18 @@
 {
   "audio": "e974c7c15c3cd778271aac81eb893125637591afdf12ce764dcb3f0893a560fa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5634,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "辆",
   "id": "690e7232dbf47ef52b06d553",

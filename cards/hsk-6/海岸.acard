@@ -1,17 +1,21 @@
 {
   "audio": "fd852380a14779eba054de471b1e8f6b486a8e0681d08ae3aeda06847c3fcaa6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "岸",
       "海"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4280,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "海岸",
   "id": "8bc6b0eeff606433f35d0154",

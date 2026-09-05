@@ -1,17 +1,21 @@
 {
   "audio": "2bccf1f5a0b4d71d1f9c8eacee6152f18e233130c2a0bf7403b69fbbb4cfaa83.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "产",
       "品"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3607,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "产品",
   "id": "fd84cbbe8e7a84091dfded41",

@@ -1,17 +1,21 @@
 {
   "audio": "1d33b498f8baad0d2cc9f44c44eeb8ea26f4d2025bbdc4cc640ba687a05f6a1b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "团",
       "圆"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28523,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "团圆",
   "id": "a0d7a01f66e87f1bdd213699",

@@ -1,17 +1,21 @@
 {
   "audio": "93af5c9b193800c63ecc3679a96ad1b89fe4252b7e17b74bf5f80f2e30b9e2e5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "身",
       "边"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 898,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "身边",
   "id": "d83bba0eb9971fe25bdc6f5c",

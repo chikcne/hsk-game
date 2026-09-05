@@ -1,16 +1,20 @@
 {
   "audio": "dc92f0bfc32915436879b1d0f9e76f761d7b52dbc4c1efd768a5de75c3eb38f3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "牙"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3463,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "牙齿",
   "id": "39f9a5cc4f5aa42c8bbcbe30",

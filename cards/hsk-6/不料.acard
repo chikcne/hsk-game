@@ -1,17 +1,21 @@
 {
   "audio": "aaa21a434d5b352d6e2d0fcf16097fe001191493fae2ed418f66978ae73c6224.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "料"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 55571,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "不料",
   "id": "7da3d4eeac54bf670df991b9",

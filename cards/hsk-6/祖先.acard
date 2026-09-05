@@ -1,16 +1,20 @@
 {
   "audio": "a6f0140163a52a76243d10dd9f2a82c8834a1b211450962f714be8523c3a2901.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "先"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5656,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "祖先",
   "id": "555049505ae9dee08864442e",

@@ -1,17 +1,21 @@
 {
   "audio": "f858a5295226dd9bd4df987a2ad492cddc2ecf1f05c6507f1b8c21c8e92f8143.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "保",
       "险"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3126,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "保险",
   "id": "5024dfd935cdb6e020f520f5",

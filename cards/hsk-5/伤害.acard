@@ -1,17 +1,21 @@
 {
   "audio": "10855d6e4bbddd13afa1d61f8744107f4fe2896958ff6b918b4a5c4e88834bb7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "伤",
       "害"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 708,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "伤害",
   "id": "367547f6f9389dd7e5f42712",

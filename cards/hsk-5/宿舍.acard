@@ -1,14 +1,18 @@
 {
   "audio": "519ac727239c1239ec385cb18b5526a44dce690cb7f5c04e33f5dc62df901d3a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6478,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "宿舍",
   "id": "c30cbab4693c51384cdb88e3",

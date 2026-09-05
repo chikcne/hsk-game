@@ -1,17 +1,21 @@
 {
   "audio": "78ba3f511111254b8f43310a477958f56d24225ecfb8db23fd7293a6fed452d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "强",
       "调"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8470,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "强调",
   "id": "d1713328d43fcd8b0d54abd1",

@@ -1,19 +1,23 @@
 {
   "audio": "8cca035afb6a2fc4d9a852c41166a2f243a1dced4ef643954b169e93e084986f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "全",
       "安",
       "安全",
       "带"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5461,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "安全带",
   "id": "e0a269bc0891ba1e1befcb50",

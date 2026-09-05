@@ -1,16 +1,20 @@
 {
   "audio": "023a7d2d7441813d808ce1a42418d813c2174f410d4c7b643d285000208d8714.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "跑"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10358,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "奔跑",
   "id": "ab719b22073f83fcf3700480",

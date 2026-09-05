@@ -1,16 +1,20 @@
 {
   "audio": "11ac8002e80a33dc3b6ad80252a4c7d5621fd1b08c631642418cbce46519804b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "治"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1558,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "治疗",
   "id": "c5a99339adbcec5954a54f03",

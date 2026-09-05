@@ -1,14 +1,18 @@
 {
   "audio": "e88c264202b45e6f97e372715e1c09b912db7b9fbcf8fdf573b9ba6939319f9c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 13179,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "失眠",
   "id": "c67fa18134f045bb9753521d",

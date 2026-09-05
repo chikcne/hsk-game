@@ -1,7 +1,6 @@
 {
   "audio": "b9b2dd4e08bd44f15c41cb6d3ca25ce9dba4e9f6beb45500d54e5dfe2266e74f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "不得",
@@ -9,12 +8,17 @@
       "得",
       "得了"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5108,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "不得了",
   "id": "75a2a2f7767174b1359318d8",

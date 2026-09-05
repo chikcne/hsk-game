@@ -1,16 +1,20 @@
 {
   "audio": "77af3675d626ce4a47a9bc7fce274efe5746f0da2016e2b4cb3fb1d5e0ce2dda.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 353,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "儿子",
   "id": "6ee53960bded8116eef3d7f3",

@@ -1,17 +1,21 @@
 {
   "audio": "f9dd15e5c535e1956f085a5a99c711a2d852cb4e3d3600e2cb0d17ea8a4f4109.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "极",
       "端"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6833,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "极端",
   "id": "1c396feeda8d10289719c3ba",

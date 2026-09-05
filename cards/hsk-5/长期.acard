@@ -1,17 +1,21 @@
 {
   "audio": "4caec10baf3bcd20c42075282648f274f1453b46279dfa8261717ad14d2355a5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "期",
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5755,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "长期",
   "id": "42c830b9572be41d11dd8135",

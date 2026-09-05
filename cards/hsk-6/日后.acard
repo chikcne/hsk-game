@@ -1,17 +1,21 @@
 {
   "audio": "dcf680893e0c7b2e86b6ea2eb9804b9e76cf4f37795b4ccd1269d1cb7b1075f8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "日"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13910,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "日后",
   "id": "e20754da1b21edb93e521017",

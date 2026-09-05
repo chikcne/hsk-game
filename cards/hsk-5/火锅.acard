@@ -1,17 +1,21 @@
 {
   "audio": "1713bc53ace730a61d96ad2615f6d8271cb559d9237589a0c1a00090f52589ba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "火",
       "锅"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25434,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "火锅",
   "id": "e529c35cbea654f1a782c4b9",

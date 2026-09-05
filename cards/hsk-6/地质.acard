@@ -1,16 +1,20 @@
 {
   "audio": "d12ee433d691d0eea55a39f42c102c7e0bac43d68576c68b9e5d03eb38660c24.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28747,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "地质",
   "id": "d086184c63c9d9e144fa924b",

@@ -1,16 +1,20 @@
 {
   "audio": "596437a6e8d365c6ebca75230c6c56964a39cb8425a2947b0c13819d5d07499a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2739,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "盒子",
   "id": "f52bb3e3a1c369bc2489d31a",

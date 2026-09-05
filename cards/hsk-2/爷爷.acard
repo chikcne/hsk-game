@@ -1,14 +1,18 @@
 {
   "audio": "5b82323d077db0aab4d0da2f8a16a418e508a7ee1af539e1ec2ccee7c0402bee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1644,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "爷爷",
   "id": "dca923d522fd4fbd8237da21",

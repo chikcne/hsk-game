@@ -1,16 +1,20 @@
 {
   "audio": "65240b85e2396e5042c2ee46d9bc6f2d7492259952af34c398333297bfbdc6a9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "料"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4799,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "燃料",
   "id": "025e887058f8d9cecc6d5061",

@@ -1,16 +1,20 @@
 {
   "audio": "91e7df5e83b2d7f1af08cf539dd543b5e991bdcd7d0edd9f3c2c5f73a82f313b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "米"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5842,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "毫米",
   "id": "907d987da7cf316f6c5e5cb3",

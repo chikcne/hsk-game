@@ -1,17 +1,21 @@
 {
   "audio": "67457871d8462de52c3e45bb105c4953e2d1647eba20f65da3c61a4d8153b13a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "入",
       "口"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4643,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "入口",
   "id": "fec2d7804d0895100767c751",

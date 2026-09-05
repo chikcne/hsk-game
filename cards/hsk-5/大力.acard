@@ -1,17 +1,21 @@
 {
   "audio": "71edafffad64e84701fe39795cf3e74b4e793fd1b7b6386f75729b67c62e6b65.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11517,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "大力",
   "id": "3442e11dee071e2cfeafa61f",

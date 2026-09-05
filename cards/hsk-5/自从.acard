@@ -1,17 +1,21 @@
 {
   "audio": "9b87eb247c02483f19509987b33df9d507e90e33e321de379ed0385648eceb9d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "从",
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1671,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "自从",
   "id": "d0c95220a633db50d17a2228",

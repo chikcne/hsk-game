@@ -1,16 +1,20 @@
 {
   "audio": "f4d5cb85783005a611410ebe376c938b9e260f37d9ee6d35b9cc2f5e855c27ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "属"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5313,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "金属",
   "id": "3fd734f5ec126fb9b1c55fd1",

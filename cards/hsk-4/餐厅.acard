@@ -1,14 +1,18 @@
 {
   "audio": "aea34753dd6961787985d232f8a98b5137698e572d8f7e8a06c7f6eae8d75913.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1912,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "餐厅",
   "id": "1c3655417b609457f2250733",

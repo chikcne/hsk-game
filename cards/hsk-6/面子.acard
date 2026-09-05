@@ -1,17 +1,21 @@
 {
   "audio": "2d09081df32b46a057a91e7bc2bcf517da4a0a58e459922d21f991d57380b90a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5961,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "面子",
   "id": "1d0d5652be3626b0dbb5d00b",

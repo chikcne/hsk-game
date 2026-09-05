@@ -1,17 +1,21 @@
 {
   "audio": "973535a4bb195fb62bc377338abb8849ee8191ef8ca9bffc1bd6af89c6870f50.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "区",
       "市"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8810,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "市区",
   "id": "be5f1f350da760eb6fb4830a",

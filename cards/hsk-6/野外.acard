@@ -1,17 +1,21 @@
 {
   "audio": "38caec8aa0757754829155afc640898481819277be761c5ece001035e7dab86a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外",
       "野"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11134,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "野外",
   "id": "5678aa6eb0468fffdc547142",

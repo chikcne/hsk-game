@@ -1,14 +1,18 @@
 {
   "audio": "dd29a7c6ebc191d0384ac6e2c055e4c07bef620976934344e76c8b9f3ef71abb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4437,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "季",
   "id": "6aeb06315e07f25cedff8437",

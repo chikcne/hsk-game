@@ -1,16 +1,20 @@
 {
   "audio": "0cda471512c2e8d0a3a9f24fefc8279b3eb9d7c870af8feb7fdd554d53eb1021.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "带"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7593,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "携带",
   "id": "db4393dd3f1937cb7fe884c6",

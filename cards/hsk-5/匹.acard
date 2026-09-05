@@ -1,14 +1,18 @@
 {
   "audio": "3d2966a6644e2242cc3debfbe16223f1540e1ff2737113e607b7da3915e0c8bb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 19527,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "匹",
   "id": "2b28a0ef016ac731d80ac9a9",

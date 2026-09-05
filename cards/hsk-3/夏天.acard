@@ -1,16 +1,20 @@
 {
   "audio": "76450dd8cacf7a2cfb2dfa263ef4782d115cc77d1128cb893da2fa79248e9813.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2269,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "夏天",
   "id": "bea70a9a901e0d94f90c7dca",

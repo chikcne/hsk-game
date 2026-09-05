@@ -1,17 +1,21 @@
 {
   "audio": "48295331962f233377d3ed1183f62e5730399f7d758668a3b8aea8845eb48945.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "病",
       "看"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14344,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "看病",
   "id": "4281a29868a392add1890926",

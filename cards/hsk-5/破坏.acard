@@ -1,17 +1,21 @@
 {
   "audio": "869f937cde00a1c8c7ef9ba7cb96d3dfae0ef9801d16ffd769dfc0363eac02dc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "坏",
       "破"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1413,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "破坏",
   "id": "f31885f1dd045a364df6bcda",

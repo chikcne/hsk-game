@@ -1,14 +1,18 @@
 {
   "audio": "00696f111b5bf953c6f5a1537616f032ed16a592533b3aede65e3990ab3c8779.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 28800,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "吉祥",
   "id": "979f709684f6282d12b5ec0b",

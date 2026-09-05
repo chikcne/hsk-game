@@ -1,16 +1,20 @@
 {
   "audio": "10fbcdb4f2641696ab13bf6aecdf62ccc48bb003281adb566c349539b8fbb2e1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "对"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3877,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "对话",
   "id": "11af4769a8df42cad77ff11d",

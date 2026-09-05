@@ -1,16 +1,20 @@
 {
   "audio": "eaca391279c5bd5621b54e557ff1d4e68279cd1de5e5688663d14f1bcb0e2874.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10698,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "召开",
   "id": "c8cd9acc482d60c8ec8150b8",

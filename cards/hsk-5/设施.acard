@@ -1,14 +1,18 @@
 {
   "audio": "d0c817b8c7082fd8062979dadd50ed73172612ec617896ab592679d0d41f4b08.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7052,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "设施",
   "id": "9bebdcc84efe04af651d6d3e",

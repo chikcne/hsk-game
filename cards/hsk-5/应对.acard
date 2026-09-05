@@ -1,16 +1,20 @@
 {
   "audio": "5cc4254d1ceacb93d306bb35319bbe14bbd38d7d876579c974e184088b4d2d3e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "对"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7456,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "应对",
   "id": "ecc48a0d56cbd54ad9f9a5f3",

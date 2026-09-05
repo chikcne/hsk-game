@@ -1,16 +1,20 @@
 {
   "audio": "40d9d64c7c98c0820a5c74995f0fac0f299840248c157a582b5f7609208ca21c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "守"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3715,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "遵守",
   "id": "9b8cd51146b63ae0e88fff64",

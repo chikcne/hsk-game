@@ -1,17 +1,21 @@
 {
   "audio": "263ebbdc213f1339f7c3ba7257833541d402d23c3f19388fe952c11d58e5c19c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "走",
       "路"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2666,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "走路",
   "id": "3af04452fba9b84edae53f3c",

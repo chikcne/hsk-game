@@ -1,14 +1,18 @@
 {
   "audio": "5606777e0d2bb330eedf9a2640ec6c03a09ef9511d13124e6595b3cd275ae245.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7928,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "腰",
   "id": "90be00eb51668b719aba6ddd",

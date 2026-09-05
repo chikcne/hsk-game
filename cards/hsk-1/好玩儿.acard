@@ -1,17 +1,21 @@
 {
   "audio": "4fb985e50ba8722d2b2366627c04bc937f049b776e50864261542f16f341439b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "好",
       "玩"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 39956,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "好玩儿",
   "id": "76eec873434b812588fa7274",

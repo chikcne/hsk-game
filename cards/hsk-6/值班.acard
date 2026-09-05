@@ -1,17 +1,21 @@
 {
   "audio": "4327d367f852340b04ad1a6a914bef5b3219c00f6eee27196ecea905e5d104ad.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "值",
       "班"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9617,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "值班",
   "id": "434c892601ac1e42725a43d8",

@@ -1,17 +1,21 @@
 {
   "audio": "696407971a5dd44058c35d4591ab11991cd14d7b0f8958d85eef63f48fa09028.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "灯",
       "红"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 45878,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "红绿灯",
   "id": "0dbb94850b77c52e6d804bde",

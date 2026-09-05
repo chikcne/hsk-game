@@ -1,14 +1,18 @@
 {
   "audio": "e423a92844a27e2058a8d6fc1981b89a106dc03c64e6d9c027922463b3dac60f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4156,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "艘",
   "id": "c922d13dd32e6b2a99b8d4d8",

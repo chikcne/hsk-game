@@ -1,17 +1,21 @@
 {
   "audio": "fa43691f16154ba7cc86e3ced20395bb9bff322daa4938cb0fd3a98da2f7bb57.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "往"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7738,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "往后",
   "id": "b8c93da4911e64197bacc65c",

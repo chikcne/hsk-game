@@ -1,16 +1,20 @@
 {
   "audio": "8ea20d6da9d7f1fb1b9212bd57fdd0b3ff9788960b87a7613e02625b3e5ebf70.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5388,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "摩托车",
   "id": "ac73c4501ba06dbc0eac180f",

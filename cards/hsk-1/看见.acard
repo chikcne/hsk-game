@@ -1,17 +1,21 @@
 {
   "audio": "4a5d9f1f216de6d47222269c0d57a9b3046a19cdb842182a81d366fe4ed2dd6e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "看",
       "见"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 374,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "看见",
   "id": "e6ac9f4e3f897c47200a84e0",

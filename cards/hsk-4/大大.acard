@@ -1,16 +1,20 @@
 {
   "audio": "c6614ad3e7a40572f816b74e7a08cb7406d4e5ebc294081090afe49b3dc0f84e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11765,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "大大",
   "id": "66f1f278dbac8834839b9a1c",

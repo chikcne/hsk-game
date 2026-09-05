@@ -1,10 +1,10 @@
 # Learning scheduler, memory, and local saves
 
-> Status: implemented (save schema v4, Learn Mode + Review Mode + Relearn
+> Status: implemented (save schema v5, Learn Mode + Review Mode + Relearn
 > shipped). This document describes the shipping single-card FSRS design
 > with Learn Mode as the only path that mutates the main cards, the
-> acquired-word Review arcade, and the independent Relearn session. Save v4
-> is a fresh start: v3 saves are quarantined, never migrated.
+> acquired-word Review arcade, and the independent Relearn session. Save v5
+> is a fresh start: older saves are rejected, never migrated.
 
 ## 1. Model overview
 
@@ -29,7 +29,7 @@
 Acquisition milestone: the first time a Learn rating leaves a card in FSRS
 state `review`, the word enters the ordered `acquired_words` table (see §4).
 
-## 2. Progress records (schema v4)
+## 2. Progress records (schema v5)
 
 ```ts
 // The one card for a word/phrase. Mirrors the ts-fsrs Card exactly; dates
@@ -57,7 +57,6 @@ type WordProgress = {
 type LevelProgress = {
   deckId: DeckId;
   deckFingerprint: string;
-  curriculumSeed: string;      // per-profile random hex
   curriculumCursor: number;    // introduced word count
   firstCompletedAt: string | null;      // permanent milestone
   words: Record<WordId, WordProgress>;
@@ -83,7 +82,7 @@ type RelearnSession = {          // logical table: relearn_sessions (one cross-g
 };
 
 type SaveFile = {
-  schemaVersion: 4;
+  schemaVersion: 5;
   profileId: "default";
   revision: number; savedAt: string;
   settings: { spawnIntervalMs; enemySpeedMultiplier; levelSize; reviewSessionLength; masterVolume; reducedMotion };
@@ -113,7 +112,8 @@ active session. A fresh session contains:
    its FSRS due date has passed; never-reviewed cards are immediately due),
    in stable curriculum order;
 2. **plus up to `settings.levelSize` brand-new curriculum words** (the
-   setting is "new cards per session"), pulled in curriculum order and
+   setting is "new cards per session", constrained to 5–20), pulled only
+   from the unintroduced remainder of the current fixed 20-card lesson and
    introduced immediately (`introducedAtOrdinal` recorded, cursor advanced).
 
 Membership is frozen and persisted. If both sets are empty (every word
@@ -192,11 +192,13 @@ source for Relearn.
 
 ## 5. Curriculum
 
-Unchanged hash order over `(curriculumVersion, curriculumSeed,
-deckFingerprint, wordId)` with a per-profile random hex seed. `createLevelProgress`
-now starts a grade fully unintroduced; introduction happens exclusively
-inside `createLearnSession` (or deck reconciliation, which introduces added
-words immediately so the next session's due set cannot miss them).
+Each runtime deck embeds the committed `cards/curriculum.json` order as fixed
+20-card lessons. `curriculumOrder` validates and flattens that manifest; it
+does not hash, shuffle, or accept a per-profile seed. `createLevelProgress`
+starts a grade fully unintroduced, and new cards advance within one authored
+lesson at a time. Due introduced cards remain additive. See
+`designs/resorting/sorting_rules.md` for frequency, topic, prerequisite, and
+effective-grade rules.
 
 ## 6. Review Mode (cross-grade arcade)
 

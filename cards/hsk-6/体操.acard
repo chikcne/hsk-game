@@ -1,14 +1,18 @@
 {
   "audio": "64d39004a01869fac44ca7a94eb9ef951575b967ce06edbc0b6d8b078857e467.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 19549,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "体操",
   "id": "33320ec010006564900677b0",

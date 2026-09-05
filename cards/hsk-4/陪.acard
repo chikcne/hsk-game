@@ -1,14 +1,18 @@
 {
   "audio": "52cfaf1ac7cd59159477a9130c038bd7aa55d6c1fa771160329c7bf3fe57e13a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 912,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "陪",
   "id": "063e41962fe61191f1ac0f4c",

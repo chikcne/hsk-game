@@ -1,17 +1,21 @@
 {
   "audio": "02f7614ae9c21c5979f3d3d6cd7c6ab3b68e93a1c3efd5eadfcad8cfff01c265.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "要",
       "首"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11712,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "首要",
   "id": "920a50a32eb8e6f60506ae65",

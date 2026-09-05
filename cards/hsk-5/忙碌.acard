@@ -1,16 +1,20 @@
 {
   "audio": "e1f04f08614fe6a4c23b41353e4bcdde4cb5393999d984a52a10ac961db1d264.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "忙"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10400,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "忙碌",
   "id": "1e0a468df8c36336ddae5ac2",

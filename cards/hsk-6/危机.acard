@@ -1,14 +1,18 @@
 {
   "audio": "c3a73b3f985980994b62aa8b2018b639a4f4c0dda1b7a8435caeee5faa40399e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3814,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "危机",
   "id": "178b106afeca46bf94cbc889",

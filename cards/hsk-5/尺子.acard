@@ -1,17 +1,21 @@
 {
   "audio": "df77f7d28fa0cfa22a56245be29046f0576131ea954ddf1c66d5a1c32b6dd289.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "尺"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 83521,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "尺子",
   "id": "1f57577d9e9d10a32d62a34b",

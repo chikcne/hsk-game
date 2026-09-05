@@ -1,16 +1,20 @@
 {
   "audio": "517bb249c031ba6ff3c2a5f4c77217a0b8be8ae3be95916b93a26bf4d7470d50.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4013,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "法院",
   "id": "587df2a179e926b2237a0fe5",

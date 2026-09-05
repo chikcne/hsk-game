@@ -1,14 +1,18 @@
 {
   "audio": "7ace998450299940f1f54dbf5e36a6079acc898aaa2772ae0f0327be82956248.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 28295,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "沟",
   "id": "d9867135df15821d1bfd28f6",

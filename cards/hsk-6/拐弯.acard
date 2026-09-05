@@ -1,17 +1,21 @@
 {
   "audio": "5cba899f78e6285e9fc9b76448a8eb483ec3e1109dca07e2062e576c63edcdaf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "弯",
       "拐"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33876,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "拐弯",
   "id": "1f9fdda29f1f51ad12cb5630",

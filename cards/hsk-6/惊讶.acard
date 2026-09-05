@@ -1,14 +1,18 @@
 {
   "audio": "d3c00b9d6f9565c8b4e49572bce6deda818391cd5928c80682db93d863f37510.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2175,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "惊讶",
   "id": "9ba88709f0365f1048b7b860",

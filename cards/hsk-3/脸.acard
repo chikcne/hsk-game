@@ -1,14 +1,18 @@
 {
   "audio": "151f197e7ad3835fd6f51d29ea49806b0b5418f466964e6420c4a0c65dd7b993.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 889,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "脸",
   "id": "41c54c2320e9bb666317fea0",

@@ -1,14 +1,18 @@
 {
   "audio": "65cc0aacd11132f4ccfafb998819c4c1c88a73c61bff802a501ed31593c65670.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 562,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "丈夫",
   "id": "a4abd7ad4c3a268f316fe632",

@@ -1,14 +1,18 @@
 {
   "audio": "e6b5b7da1c0d2271f5685b117fe3a812b95b8fb0fc9818e8a7d7f603947afeef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5005,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "激烈",
   "id": "62697b7f70b8e2d2be86f671",

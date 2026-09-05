@@ -1,17 +1,21 @@
 {
   "audio": "11ca349b3938527bb962d3a3bcb2305512ac346c4cb6f21b420554b3b5c89e16.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "或",
       "是"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1153,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "或是",
   "id": "a6cbfbb964baee4bc50c6cab",

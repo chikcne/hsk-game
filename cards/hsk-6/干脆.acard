@@ -1,17 +1,21 @@
 {
   "audio": "92edb852e67782ede6172c0cb54a4e22c4d9c1c7cee00aa7e790002ecc765703.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "干",
       "脆"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4256,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "干脆",
   "id": "518ee7fc138d41d5d77641ce",

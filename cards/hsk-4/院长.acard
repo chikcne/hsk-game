@@ -1,16 +1,20 @@
 {
   "audio": "b3e48e27551d18eea173dded4c7ff709721ccd8d0547fbf59dc0d39e358af078.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6463,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "院长",
   "id": "2a2be86e4e31057bed92b26b",

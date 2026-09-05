@@ -1,16 +1,20 @@
 {
   "audio": "8e1c6b58f5f692c07d2d89306194a2ad1b59a2bf45d8859b9c2dc77f1541ab27.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "种"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12570,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "种植",
   "id": "5e217cb372519ec419af6908",

@@ -1,17 +1,21 @@
 {
   "audio": "ce1df148c36999b68f0f298727171e05e283a70be21a0376ec269ccc586c701c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场",
       "市"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2731,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "市场",
   "id": "8abef17c9c26ed60d2be4e55",

@@ -1,14 +1,18 @@
 {
   "audio": "ada66d1c1bceac5e3d24e7efa0bd160d457529ec947c108ceb50e348283c52e2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 16157,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "专利",
   "id": "47e217e6f4b947651b7d0d6d",

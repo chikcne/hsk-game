@@ -1,17 +1,21 @@
 {
   "audio": "038c66ef528b0afc67b9730be34ecaa0f3d557dae458b110b28b65ff4d7e31ec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "按",
       "照"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2449,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "按照",
   "id": "3486f440a9521cd7c3bc2c99",

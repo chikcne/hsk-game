@@ -1,16 +1,20 @@
 {
   "audio": "a472c58c624c070a9077f93f2bf50ed0132e7d226bdbd74c172bbf3c8054a327.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "乡"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10019,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "故乡",
   "id": "71ecd2cd5ccbf7f64d91a192",

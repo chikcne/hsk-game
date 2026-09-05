@@ -1,14 +1,18 @@
 {
   "audio": "1f0859432869195936d831a0cddfe1f6e84de698e886149b84372c84fe686d5f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 5532,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "饼",
   "id": "5864077b1b87eb89bf2c5bbe",

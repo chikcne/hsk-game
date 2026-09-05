@@ -1,17 +1,21 @@
 {
   "audio": "4ba2d1d8d702ae3fb47745230b0f64cc9c55a60095712dc9ce400231852f90d0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "倒",
       "闭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13160,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "倒闭",
   "id": "b9185b79c7c76d224d91cc95",

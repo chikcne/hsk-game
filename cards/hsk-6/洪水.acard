@@ -1,16 +1,20 @@
 {
   "audio": "06b972ee452d0115440e73997fba968d628c39d200b4047abd299561a84f6270.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11130,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "洪水",
   "id": "03155b4397875309bf354a94",

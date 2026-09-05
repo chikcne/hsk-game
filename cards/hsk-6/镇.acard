@@ -1,14 +1,18 @@
 {
   "audio": "81d7e9e104a990a162a3da23b28a5822ca976ff70b29cd4f4c207a18d501806a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2824,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "镇",
   "id": "37d86df2063a8e91a6a74cb4",

@@ -1,17 +1,21 @@
 {
   "audio": "d2ae124920e0bd02d1f1ef34e2bf2ff5c43fc41592d7e0a63bd90401021d5259.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "被"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13070,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "被子",
   "id": "7729829296fdb49eb6231163",

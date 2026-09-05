@@ -1,17 +1,21 @@
 {
   "audio": "2f4ee1a7feec7841bd0e171c863da0604e48b37f217e1c91f81858081ad94a72.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "由"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1746,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "由于",
   "id": "bcf57a74c64ef05b8e545766",

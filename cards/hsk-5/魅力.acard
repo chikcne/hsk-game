@@ -1,16 +1,20 @@
 {
   "audio": "daf544409e6007528d10aabc8d094694da0573a9697fd55fe26d97bf46976075.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3181,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "魅力",
   "id": "9a52edd5fba6b1a91d558b65",

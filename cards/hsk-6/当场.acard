@@ -1,17 +1,21 @@
 {
   "audio": "f7c1ac91ffb6a5dabe2442a746a68304f65cdd687dd13fb8249d8221fd056adf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场",
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10190,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "当场",
   "id": "e0f5f26cc37dd6da5e8cef38",

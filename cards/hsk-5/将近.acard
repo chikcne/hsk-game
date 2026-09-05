@@ -1,17 +1,21 @@
 {
   "audio": "b7a9064742755e733ee838738a8225a1a3ad3109a4a64c4258db9a56a9de02ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "将",
       "近"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9553,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "将近",
   "id": "53389effd02a1f5904e9f638",

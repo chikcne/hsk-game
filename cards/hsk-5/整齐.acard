@@ -1,17 +1,21 @@
 {
   "audio": "8e8ceb21aef5b4d4a2c33c88c7d7779b49abba949c18a889e599b0ee858891f6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "整",
       "齐"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12798,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "整齐",
   "id": "5d7cd86825ef5c0ffdf3689c",

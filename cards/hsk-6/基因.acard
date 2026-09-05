@@ -1,16 +1,20 @@
 {
   "audio": "4e118dfcf023c2ab0e279da890c0b874ebf8da04ebcf6c022631b02ac7bf3f96.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "因"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4441,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "基因",
   "id": "f9653ef569cbe67e7691e9d0",

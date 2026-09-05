@@ -1,17 +1,21 @@
 {
   "audio": "c6dffec7400cee844549bdcddb89f3eae9b6dd2c5d54fcd9112d4e2f094d10f9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "那",
       "里"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 209,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "那里",
   "id": "42fc6df1c893521bd8114d66",

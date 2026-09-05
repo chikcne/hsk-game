@@ -1,17 +1,21 @@
 {
   "audio": "b866325149f3e61decdedd41db872e8da1373c55f5a527b28ad8cb4b70f9e375.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "员",
       "队"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3911,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "队员",
   "id": "aa5cf97ee634eb5b04d71c2f",

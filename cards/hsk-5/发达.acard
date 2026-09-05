@@ -1,16 +1,20 @@
 {
   "audio": "48ae1124fbfecb9cc6d4877f40353a43a527d4f4461c745f785a716f9bc43a2f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14144,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "发达",
   "id": "ed94aa29fa98c4e8ef6ec5a6",

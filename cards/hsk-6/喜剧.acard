@@ -1,14 +1,18 @@
 {
   "audio": "3b0a4ae25cfee4ec5bbd55f5c3b7f75862c9bc9b5b8b7762048887d8fe504270.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8581,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "喜剧",
   "id": "522a600f0138230be1bac24a",

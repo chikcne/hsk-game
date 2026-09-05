@@ -1,14 +1,18 @@
 {
   "audio": "cadc4437815eacfe09c18ed753a86b7a445350bbea397972c0aa100c6cd7c468.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2822,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "砍",
   "id": "ea2d7d2eeeedf7e5cb99626f",

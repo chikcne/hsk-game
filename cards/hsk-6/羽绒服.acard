@@ -1,16 +1,20 @@
 {
   "audio": "198f6e8d6dfbb68f4300042b0b1043fed93d613eb707774719e85ffe932a10fd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "服"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 145472,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "羽绒服",
   "id": "135938ed962b96063c74621f",

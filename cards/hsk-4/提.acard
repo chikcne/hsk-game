@@ -1,14 +1,18 @@
 {
   "audio": "34696a3e90cde495eeaff9a2fa6e26198efc92df571ff8e8ad5441513b2971c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 4,
+    "frequency": {
+      "rank": 1493,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
+    "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "提",
   "id": "d9f33d7e6807c5c02648fadb",

@@ -1,16 +1,20 @@
 {
   "audio": "fabaa0221bbbddc81f4d6d434c4d7142d6e615a3906923759e70e67d943cd469.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "那"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 494,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "那儿",
   "id": "eb3a3fcb529d9c4f0db21a5d",

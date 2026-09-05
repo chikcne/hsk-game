@@ -1,17 +1,21 @@
 {
   "audio": "742a923c795e056fa184bdea7253ba34658c5ea482391f52df567a3d2942a455.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "全",
       "安"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 411,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "安全",
   "id": "b0c42074d912a7b4982959ef",

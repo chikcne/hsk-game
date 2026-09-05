@@ -1,16 +1,20 @@
 {
   "audio": "d848f86bf04a04fd61b3ed7709ce4e5888c4b0682d8a9bc249d1c8c4b57d6fcd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "隔"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3744,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "隔壁",
   "id": "8a128f20fc0ab4ee9f84a7a3",

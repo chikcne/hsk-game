@@ -1,16 +1,20 @@
 {
   "audio": "58d38be35b90c1481793150d53f6578ab367a8f7b1a540d5ddfe6f7cb4f56315.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "暗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4400,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "暗示",
   "id": "3e2d94016b3abbfbb99a2514",

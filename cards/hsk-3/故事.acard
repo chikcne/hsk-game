@@ -1,16 +1,20 @@
 {
   "audio": "e992a4e88bcb0cc7cd6a6cb6ac435b8bd82977181d62aee54d81a6158e5a2940.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 486,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "故事",
   "id": "a4fb2f7983affd65704795f6",

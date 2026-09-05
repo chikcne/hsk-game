@@ -1,14 +1,18 @@
 {
   "audio": "b927fdf3d6bc7240163834781128f6e16585e425bd96b14687733d488a75b0df.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1726,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "婚姻",
   "id": "d5380c7740089538c7505085",

@@ -1,14 +1,18 @@
 {
   "audio": "1bfe8d4b195afa2898df39d5bcd6a4c63f3c54321bd93a2892dfe61fa0f87d0b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1273,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "棒",
   "id": "0604a01dcc9b9b0da0f6d4db",

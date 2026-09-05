@@ -1,17 +1,21 @@
 {
   "audio": "cc5b5c4591c989f5abebe2c2252fa9f4f12d540a915e3c3b228f0e5c2a030a45.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "短",
       "缺"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20900,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "短缺",
   "id": "8c29fdabffb518f67311e2d9",

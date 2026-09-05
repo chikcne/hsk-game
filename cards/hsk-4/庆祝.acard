@@ -1,16 +1,20 @@
 {
   "audio": "da3ba11102d9588b1868984f2664e517e35dc338b11e367610b2e56ce1dc59ad.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "祝"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1748,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "庆祝",
   "id": "e3c2112b3ce973d38dbb26cf",

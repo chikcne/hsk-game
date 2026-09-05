@@ -1,16 +1,20 @@
 {
   "audio": "c7ee6fd88ae012ec1244ad7c427cdf3659753310bb692164a41a3d5cb4c8db25.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "硬"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17669,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "坚硬",
   "id": "1603b3747d8de876f0cf277c",

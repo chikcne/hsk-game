@@ -1,16 +1,20 @@
 {
   "audio": "b010df931712255ab763014a9403580d598321e80ec5ca41362f3e13fbe576f1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "美"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13586,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "美景",
   "id": "bcdc088f7cf5db3de70813f2",

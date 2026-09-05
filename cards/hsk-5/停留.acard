@@ -1,17 +1,21 @@
 {
   "audio": "6b4cbcbeaf2f53a4130c6d7dbf10775a37ec5296c1c8330147463315aa145490.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "停",
       "留"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5545,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "停留",
   "id": "8fc72697efe98ee021d01355",

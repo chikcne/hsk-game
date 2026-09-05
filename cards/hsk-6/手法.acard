@@ -1,17 +1,21 @@
 {
   "audio": "6966ed07ce289dc5aba3e4832f8e20aee4a83c70f7d403ea253bef974e307a03.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6751,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "手法",
   "id": "5eb32105e3e87187cba072ce",

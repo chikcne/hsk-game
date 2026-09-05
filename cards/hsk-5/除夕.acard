@@ -1,16 +1,20 @@
 {
   "audio": "cea542b52c8e671c354f851d6647d3e16e18d36db83d6fa4f47893e90023c7ef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "除"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26092,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "除夕",
   "id": "16deef5c39a4c03da73245b3",

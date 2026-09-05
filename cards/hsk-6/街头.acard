@@ -1,17 +1,21 @@
 {
   "audio": "58a3caff8fe0dbebb966f6443f57c319b6f80a181c91897da7488a93ebcfb092.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头",
       "街"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4761,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "街头",
   "id": "067dad2c2112e0f2f30a045c",

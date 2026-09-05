@@ -1,14 +1,18 @@
 {
   "audio": "9ec8c0fe179e504e442febc2cca433189c5f1312a34fc206fbc7db65f53f6104.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 16586,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "习俗",
   "id": "76935cf8bf2a3e52b71370b6",

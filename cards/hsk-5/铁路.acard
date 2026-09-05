@@ -1,16 +1,20 @@
 {
   "audio": "4a285a321c378590b4917a9e8b6fe82266737c29a81e99dc9b9dc45ab26a9d5e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "路"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3994,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "铁路",
   "id": "5d07c3e979882cb0673f9e65",

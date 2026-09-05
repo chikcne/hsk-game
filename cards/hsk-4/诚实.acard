@@ -1,14 +1,18 @@
 {
   "audio": "52bad66881b8e000e75d0600110d91f6a5db687bc3a78a6150143a0cbf7d9c98.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3537,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "诚实",
   "id": "ed82955790c39695beaa4a95",

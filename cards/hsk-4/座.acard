@@ -1,14 +1,18 @@
 {
   "audio": "341cb0e23ed84bacd94e1fe4dbd41f38e2e9a01c36625cf52f7dac258beae385.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5178,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "座",
   "id": "cfbc18ee734709d875e9cecd",

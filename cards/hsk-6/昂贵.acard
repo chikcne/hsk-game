@@ -1,16 +1,20 @@
 {
   "audio": "dfa1343f6e9f0e9909db2d593b8013eaca8b9618e86acd451d877ed81009a154.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "贵"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8306,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "昂贵",
   "id": "b64ef96538019bc9648bf4f3",

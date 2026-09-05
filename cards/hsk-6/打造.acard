@@ -1,17 +1,21 @@
 {
   "audio": "bdba5a532571f965ca729746b4c4f3a26d1c83c74358faaa005549b5df9f066f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打",
       "造"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8058,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "打造",
   "id": "43f9bfacbd04c83e38ee59f4",

@@ -1,16 +1,20 @@
 {
   "audio": "4384e579868a1ba5be425e69adfa12ece9a9472b86eaa478ddf2114e2b88a323.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1617,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "尊重",
   "id": "cf615c7364b70e10a53f78c0",

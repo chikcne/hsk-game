@@ -1,17 +1,21 @@
 {
   "audio": "073c5bc8c2f0270bfbf977b69a006b3d49571fed934fef32ebe4242c8aec7c87.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传",
       "播"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6099,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "传播",
   "id": "45aef8e9a613fbb4b021f90a",

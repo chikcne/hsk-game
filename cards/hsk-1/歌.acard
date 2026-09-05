@@ -1,14 +1,18 @@
 {
   "audio": "105819c5bee951aec210a16d63b9fd9cea72de7cdc15919512519273b07434a7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1785,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "歌",
   "id": "281eed4b50eeae5fc11e517c",

@@ -1,19 +1,23 @@
 {
   "audio": "90945ea898e56ffc9e3d4d30d591ea11e75ec6d3269f7d9995564cd2a84b735b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "加",
       "加油",
       "油",
       "站"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7807,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "加油站",
   "id": "c5e8a38c0799ea4647e2b741",

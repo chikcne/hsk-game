@@ -1,16 +1,20 @@
 {
   "audio": "fe13198da23b443388e709d1b61848fad0c01dca0750855a59e6ce799e19033c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "照"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9758,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "照相",
   "id": "f4ff0aacfcaf5e8e709d836b",

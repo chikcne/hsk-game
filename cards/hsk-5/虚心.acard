@@ -1,16 +1,20 @@
 {
   "audio": "d268fbcd46afb0e0823dc1f6a214916aafd440382e619abd01724bbc9f68a11f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 75974,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "虚心",
   "id": "7199d8c0afafed8b2c44e237",

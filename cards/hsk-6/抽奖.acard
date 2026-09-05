@@ -1,17 +1,21 @@
 {
   "audio": "52706b1166c6e6b11a7b86813862045d74b16ce04645372d83529a2aa32dc428.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "奖",
       "抽"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 37258,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "抽奖",
   "id": "a433a18f0c3bed96f8cefa77",

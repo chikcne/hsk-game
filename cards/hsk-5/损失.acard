@@ -1,14 +1,18 @@
 {
   "audio": "9004668dbe715d5e7a2feefcf90d20737e4f005c3ad972d2afd9f0ccc69072d3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2701,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "损失",
   "id": "885902a3d40fd2da004cdc4e",

@@ -1,16 +1,20 @@
 {
   "audio": "9ab411ac5408a83fd3a259a8ae8c26d31df95e7807b70237c5926bdd13c22637.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4028,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "舌头",
   "id": "7dc35f339dff95015ba421d2",

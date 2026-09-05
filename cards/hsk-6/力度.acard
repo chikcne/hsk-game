@@ -1,17 +1,21 @@
 {
   "audio": "9a6313e96188af8282d6fe3d14e8a7743f6205193e2d38ad301ee074f4436e19.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "度"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27492,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "力度",
   "id": "462e7817ac8c16d6c07c19e0",

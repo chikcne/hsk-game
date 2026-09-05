@@ -1,17 +1,21 @@
 {
   "audio": "b61be95e17a48bdbc61f3a9d988237617066e18410bc0ed1041d1b7bc81486b1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "再",
       "次"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 954,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "再次",
   "id": "84665143cf697757609aac12",

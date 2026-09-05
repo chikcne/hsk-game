@@ -1,16 +1,20 @@
 {
   "audio": "4209b66e6b83384d5224353605f397e204bc0b44abe1daa1abd983a8cac98443.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "特"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8521,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "特意",
   "id": "fd3c49e914b2384e154d5d13",

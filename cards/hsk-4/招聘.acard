@@ -1,16 +1,20 @@
 {
   "audio": "b7f3a8ff808849e540b99c1f61f7086e7b3f431fabcbef35b62b565a7086b783.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "招"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20439,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "招聘",
   "id": "89c6e0c5c5c0bd7d1d4e0fae",

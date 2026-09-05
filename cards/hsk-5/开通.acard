@@ -1,17 +1,21 @@
 {
   "audio": "a8a72f416d70c16f8922da59f658bcc8b90a04bcf722507d5c4159d5f4d3ae42.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开",
       "通"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28983,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "开通",
   "id": "5327bfb942787d45b8ef6fd3",

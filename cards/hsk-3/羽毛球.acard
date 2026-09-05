@@ -1,17 +1,21 @@
 {
   "audio": "a4256324e7fb23312b0ac9589dbd47f25fb6fffb0864fcc99f57b0b0efd76c01.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "毛",
       "球"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 42870,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-evaluation"
+    ]
   },
   "hanzi": "羽毛球",
   "id": "30a1ae44e52fbfdd307d9dc5",

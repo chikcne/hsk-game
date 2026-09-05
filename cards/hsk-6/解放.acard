@@ -1,17 +1,21 @@
 {
   "audio": "ce0c3ed1d440d8ed94498ef543dd6a99dd267563711325c4cae01bf4eb6f694f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "放",
       "解"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4809,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "解放",
   "id": "677ef66c84fa01aecb232a6d",

@@ -1,14 +1,18 @@
 {
   "audio": "b237f1becc2830c5d52c8e861732366b79a3a894775928aab39ecbd34e54037f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9519,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "铺",
   "id": "923cd2cd18caba7b35304257",

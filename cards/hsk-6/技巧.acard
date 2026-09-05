@@ -1,16 +1,20 @@
 {
   "audio": "d80a651ca3dab26a5da6fc8078da986f5b012c19d0df9b93990fa5a54d870285.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "巧"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4159,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "技巧",
   "id": "a23bf348c85008d505780def",

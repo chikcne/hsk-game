@@ -1,17 +1,21 @@
 {
   "audio": "9a3cbd291d8d07b8232a8d9ccf8f21e4c2c46bfd32f831f66151b9f8242d3114.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 802,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "大人",
   "id": "38a4c6f4aa260a765d96d4b5",

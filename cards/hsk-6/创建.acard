@@ -1,16 +1,20 @@
 {
   "audio": "4d89f4d69a6565d719bdcb4fe36807ab3e6e0d96cce51ce29dba345d2c98017a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "建"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8162,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "创建",
   "id": "00e30607751e71275e279b6a",

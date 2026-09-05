@@ -1,17 +1,21 @@
 {
   "audio": "1e1608cf5f8bf36d4c61909eb16d4cb175f28e9930a92a841df58c6cf267a588.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "气",
       "空"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2310,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "空气",
   "id": "e9b085f4d0da68ee661962a9",

@@ -1,14 +1,18 @@
 {
   "audio": "a7480d0c5905beba20937b9eccaa0097c64b3c13e09c20ace0593cfe181761a8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4225,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "胖",
   "id": "09f3b92f8a8a8436fa69cf17",

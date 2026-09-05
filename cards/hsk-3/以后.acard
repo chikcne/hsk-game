@@ -1,17 +1,21 @@
 {
   "audio": "62b1ff0828e00fbf0085f027e30ad59afc035451d86ff0860460e0b80ede8fa8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "以",
       "后"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 515,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "以后",
   "id": "af92ab1e6133bbb0b5c3c161",

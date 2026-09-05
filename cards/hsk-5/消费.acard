@@ -1,16 +1,20 @@
 {
   "audio": "fad5ced71c6114a73f4fa562620e90e18f68a0f5e8f47d0ffdef39af12fb6982.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "费"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12362,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "消费",
   "id": "9039b264ca7eea1ae29b1352",

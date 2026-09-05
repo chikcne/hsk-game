@@ -1,14 +1,18 @@
 {
   "audio": "6c250ba37430b4ac52ba62af8a5d0067f8904241eb946c83e8d96ea43e84366e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3521,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "炒",
   "id": "cd199d5434e91c4596bd30f1",

@@ -1,17 +1,21 @@
 {
   "audio": "183ee43c42f793750fe52168af89aa49850a252c5536e9da11bfba6af1466029.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传",
       "说"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2936,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "传说",
   "id": "c558cf2646aec99232787398",

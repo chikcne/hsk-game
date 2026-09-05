@@ -1,17 +1,21 @@
 {
   "audio": "d2806b13887483af2069c459c986cd122e8c898a3c736ed7bdfe573a6b81095a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "才",
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 586,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "才能",
   "id": "a2669e51e4881491c02affc9",

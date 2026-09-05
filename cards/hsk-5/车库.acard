@@ -1,17 +1,21 @@
 {
   "audio": "c9e006752efd0a72a70598e43c674423220aeb1d34260a5d2ac83d8784916637.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "库",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6592,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "车库",
   "id": "9aa327fb74c4f196b063ba08",

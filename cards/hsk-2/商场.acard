@@ -1,16 +1,20 @@
 {
   "audio": "c391a90502df378d54db36661bfcab10eb7acf9c35c8c1e2e10a76ad0d24eadb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8351,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "商场",
   "id": "9f51026a2a071bc197fcacef",

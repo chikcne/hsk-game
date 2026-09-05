@@ -1,16 +1,20 @@
 {
   "audio": "12e7dbe947a85b6b2172e636e7209745628598f6b3a7da295eba84c46e74f8d7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "收"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27825,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "丰收",
   "id": "ef1bf591162a3c031489f19b",

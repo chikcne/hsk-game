@@ -1,17 +1,21 @@
 {
   "audio": "17526ba02e2b0e57d1294858f10e39b41a7cbc785dc3c864cc4be8e7314fdb6d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "级",
       "超"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1698,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "超级",
   "id": "e6f69d48a22a62a47e593f41",

@@ -1,17 +1,21 @@
 {
   "audio": "2288b2f94193a8f6bc9bd3ebd212fa24bd276d05cfd48c9a2c806c1f12d8be6c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "亮",
       "漂"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 457,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "漂亮",
   "id": "852cd1eee97ad712ef800c2e",

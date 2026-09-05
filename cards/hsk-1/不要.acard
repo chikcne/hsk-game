@@ -1,17 +1,21 @@
 {
   "audio": "9b1db4bcd1274b049771e8e81efe697c7cf7ab8e2c8a09b57a348e316bd3288c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "要"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 84,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "不要",
   "id": "b5b360be465c8c6b3334fc96",

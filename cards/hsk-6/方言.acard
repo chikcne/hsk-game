@@ -1,16 +1,20 @@
 {
   "audio": "e3165658285645b8aabec0606167ec0c1a3e33ecd8dcfb0a6bd278c4e2b0ee98.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20733,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "方言",
   "id": "6d44ae14f8fa3d949ea6b632",

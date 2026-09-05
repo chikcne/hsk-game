@@ -1,16 +1,20 @@
 {
   "audio": "600483fc977d84d36068e2f0e6044204060bd6191f45a373d1fbbf6d5605d0db.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2650,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "独自",
   "id": "672e8d80d92e5898b52bb454",

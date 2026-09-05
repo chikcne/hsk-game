@@ -1,14 +1,18 @@
 {
   "audio": "28ca3f024c7bd4388ce3b32d1256aec625cd4c2dc0e90a2cbe71f65344920f9f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1187,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "约",
   "id": "1e35a7468f10c40158e7a941",

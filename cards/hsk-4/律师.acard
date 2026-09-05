@@ -1,14 +1,18 @@
 {
   "audio": "e42ebd5f6e535c6a9476d989545cb656659c934166741a6accac849612eadfa5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 761,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "律师",
   "id": "2e59649bea0b48b5511b6c60",

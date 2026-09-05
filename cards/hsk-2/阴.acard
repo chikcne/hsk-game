@@ -1,14 +1,18 @@
 {
   "audio": "c0cc34959e6cb9fa85f7ab4c30afa9132d212c8128be4a0a9c59db65f84f921b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 25572,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "weather-climate"
+    ]
   },
   "hanzi": "阴",
   "id": "dacb92a7a2570b195abe3980",

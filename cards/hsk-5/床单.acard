@@ -1,17 +1,21 @@
 {
   "audio": "20763b7fb3a75f4bba911e6a9ef29341f72edd56518bba3625ad83fc4c323455.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "单",
       "床"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7067,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "床单",
   "id": "1066ddfb73231cf05e76288e",

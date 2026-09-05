@@ -1,17 +1,21 @@
 {
   "audio": "b423a858be386450167f10c56f3af85c207f113f703933552532fa051014c476.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "流"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10954,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "流动",
   "id": "089fad991ee68f162add0610",

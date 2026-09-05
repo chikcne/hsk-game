@@ -1,17 +1,21 @@
 {
   "audio": "1a46a6addfc8f84ca7e3f0c954ec2fcdf8c9c8a999c0690e542dff066f57ae92.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "来"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 221,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "出来",
   "id": "3505bec09a878a75d71c70d7",

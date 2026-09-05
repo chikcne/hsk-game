@@ -1,17 +1,21 @@
 {
   "audio": "ace65ba8a07bb29446ac6f7f83b40104092da2370e3bb6b9fb84b10eacd12ce5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "灰"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24348,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "灰心",
   "id": "291ce8bbb0ef579535d374fb",

@@ -1,17 +1,21 @@
 {
   "audio": "d7f071c38f32e468a4320a816ec8cf0861b0ee3e868a4c67c6947284c13b137c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "方",
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 793,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "方法",
   "id": "f95c4abd62d5954fac289c92",

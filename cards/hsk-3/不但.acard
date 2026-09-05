@@ -1,17 +1,21 @@
 {
   "audio": "a24dc29fc6c362fc5b4862fac4305e3058c1e8427ac6026f7de08f0c37eb21bc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "但"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7480,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "不但",
   "id": "725c2919f64a990e17e2136b",

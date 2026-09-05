@@ -1,16 +1,20 @@
 {
   "audio": "6e9451f0ec86fa0b7ea61bc7efe0e79708681dc7fdf3d1eb8c9e75605760b043.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16049,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "筷子",
   "id": "acbc6a40279c6afc44e14126",

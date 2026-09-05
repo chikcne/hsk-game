@@ -1,14 +1,18 @@
 {
   "audio": "9ae502478bc4776015a3592c7c8340d209428c02f6dcb8c1d4aaeb920b19983d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2048,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "收",
   "id": "64618a12dbf1b3443e500941",

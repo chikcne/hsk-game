@@ -1,16 +1,20 @@
 {
   "audio": "3e06d3ac088367a9f4a16eca5c1dbe5336e3521e57fb61088574946eacc8eb56.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "如"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2272,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "如今",
   "id": "ed1b60441756b6f37eaca06e",

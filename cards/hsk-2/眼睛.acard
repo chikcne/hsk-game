@@ -1,16 +1,20 @@
 {
   "audio": "02304191ea16e68c7cdb685760af69a41558db3b8f0fd0b5f7b56fd1d821cf86.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "眼"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 613,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "眼睛",
   "id": "64b6f48e8914fb3c59f2d264",

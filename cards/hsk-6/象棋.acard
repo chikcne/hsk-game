@@ -1,14 +1,18 @@
 {
   "audio": "1ec7fd30b252a6c2d2ac5f0cf3035a5e458a3a9fb0524828232da68d005d1941.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 17440,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "象棋",
   "id": "da7bb737c81c4f5cfc8e4295",

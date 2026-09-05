@@ -1,17 +1,21 @@
 {
   "audio": "bf35b9322401dcc290ed583f1f86c4a1947ed8ac055160052274001fd8b6f36c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "提",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3603,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "提高",
   "id": "18b1524fb5c4a0800a91be6d",

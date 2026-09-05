@@ -1,16 +1,20 @@
 {
   "audio": "2bb9c11bbb6f8c5a3f68feac240b34e2d30b06209a738998be5e9a58d5d7d88a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1046,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "动物",
   "id": "8262a3b54d8edad77aee3295",

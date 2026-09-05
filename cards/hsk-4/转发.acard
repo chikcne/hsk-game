@@ -1,17 +1,21 @@
 {
   "audio": "7c217537e0fd7a8f2a1e72d8f165a8f410c3c68036423a0d82f52c62a3fbd5ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "转"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31522,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "转发",
   "id": "acc2c5a13ea942071ede7e66",

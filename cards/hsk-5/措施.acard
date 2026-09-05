@@ -1,14 +1,18 @@
 {
   "audio": "cd195b0e6d29d5963ac0425070fa82235bc1b9b933af2885c8aed07bc9cef317.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6527,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "措施",
   "id": "ae370cd35705b35159b17386",

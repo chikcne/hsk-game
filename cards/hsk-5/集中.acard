@@ -1,17 +1,21 @@
 {
   "audio": "cd1fe54e0b6a77bf9e748dc664b084d542b7b5d49313f1466632a7a1ec663378.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "集"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2519,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "集中",
   "id": "b3fb330408e29723c143d826",

@@ -1,17 +1,21 @@
 {
   "audio": "3e27c1f9f8c93ec2416d06e1e83fead0b505aa6761b7971fe63e44db7aac330e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "路",
       "马"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9033,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "马路",
   "id": "0d1ad75bc5a91653654c2fd7",

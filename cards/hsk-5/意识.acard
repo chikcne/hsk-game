@@ -1,16 +1,20 @@
 {
   "audio": "69453e1876317319474ddd1640b6a40e9fa2f67045f300cc857c9b45a73d9a57.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "识"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1290,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "意识",
   "id": "84e1c6be04d76d6d69e8f8a4",

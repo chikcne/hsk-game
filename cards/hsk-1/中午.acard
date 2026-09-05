@@ -1,16 +1,20 @@
 {
   "audio": "5574430a2c42a0d86816061fb681e12045130a06daf6cb4331720a8f1e216b6d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4075,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "中午",
   "id": "0f25d55eee08372f14cbf01b",

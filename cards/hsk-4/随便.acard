@@ -1,17 +1,21 @@
 {
   "audio": "b2538f81a833abfd8607afc7ac285968331b1f2146be8b95f53b3d40530894a9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "便",
       "随"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 921,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "随便",
   "id": "14742583719dcaf64fd2aef4",

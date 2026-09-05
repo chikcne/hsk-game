@@ -1,17 +1,21 @@
 {
   "audio": "36d2c2026040892f5dd43c01e778941785485009755bd99195031148c321cc0f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "表"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4938,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "手表",
   "id": "29adf16f1f9d1973918a0c5c",

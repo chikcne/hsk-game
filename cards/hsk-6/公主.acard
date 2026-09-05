@@ -1,16 +1,20 @@
 {
   "audio": "d79071c20ef3377afd2268099cc9a45809360807d2a0623e923c51d5a84b6db5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "公"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1380,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "公主",
   "id": "6abaafc6d8500e0ec6ff9e38",

@@ -1,16 +1,20 @@
 {
   "audio": "925788c8ce7a783c1c4e53b0f846bb9aef377998695c7969be0ebbacd70f1c15.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15135,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "气质",
   "id": "e35d82df1c733615cde98fe6",

@@ -1,16 +1,20 @@
 {
   "audio": "e6943c68e9981860ab019eed6ded6378e8085905c9c9cceb276e7247905bf704.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "冰"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3912,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "冰箱",
   "id": "524c41df1c6fb02b84afbb3a",

@@ -1,16 +1,20 @@
 {
   "audio": "8d335de385e67b56365d8e2024e5316ef71eb82ae19cf744867e7034b1d20c69.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "产"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7809,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "资产",
   "id": "0d41dbcf868ae09f34ccc986",

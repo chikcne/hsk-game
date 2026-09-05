@@ -1,14 +1,18 @@
 {
   "audio": "9110f6f3134722d0619071ad1afdededfb3038637f8d0556b76ca2080083f3a3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1685,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "设计",
   "id": "48e409435e9173e6cb10dbb1",

@@ -1,16 +1,20 @@
 {
   "audio": "909d4578e197510b2f489dc1d776c5aa29765a75b01c8bc0c2c3cd739389e875.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "立"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3204,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "独立",
   "id": "12621cb14fbbbbc708a00475",

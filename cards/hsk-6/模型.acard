@@ -1,14 +1,18 @@
 {
   "audio": "cb78a8e97d22f16bb6f09daa76e7db5a995a04386dd1db030bfbb7cb667b3f96.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5857,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "模型",
   "id": "70d6613357c60f47fc753184",

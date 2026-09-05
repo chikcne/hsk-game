@@ -1,16 +1,20 @@
 {
   "audio": "302bafbff7de69737939493cbaebca21073ea962456d4eccfa1277ffb9d84be1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "引"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6985,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "引导",
   "id": "7c786f6eb25edd52d4893579",

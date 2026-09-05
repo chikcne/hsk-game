@@ -1,16 +1,20 @@
 {
   "audio": "16e29ed373fec37c1fe322c3f1666bf169cb302bdd1085ad05fb77a676581946.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9348,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "钟头",
   "id": "d3cb358b1d331d830bdbabc7",

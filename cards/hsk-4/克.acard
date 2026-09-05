@@ -1,14 +1,18 @@
 {
   "audio": "00dab5994facbf1301a809457e2b360278bfd7534a03b86bc474cd82b572358b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1495,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "克",
   "id": "c7b5eb96da8104bcc9694fc2",

@@ -1,17 +1,21 @@
 {
   "audio": "6224e246ef29f2e4e80d1a15ca03f07e7b2d03bb3edafba39bc7f4a6d1e98d9b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "照",
       "片"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 590,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "照片",
   "id": "a31c42e5a9aefa00ef46ba5c",

@@ -1,16 +1,20 @@
 {
   "audio": "8b8a7ae6e381eea96e337164d19f607d59438bacb477671977668dbf1f4ae540.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "是"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16566,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "凡是",
   "id": "0046547f4d50f458b002296f",

@@ -1,14 +1,18 @@
 {
   "audio": "8468634e1f1d12e5818994a043bc2e665452ec996645bb84a66da6c4f817522c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2444,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "擦",
   "id": "8f288f32d4c2e25a6fadf17a",

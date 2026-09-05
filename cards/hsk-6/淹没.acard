@@ -1,16 +1,20 @@
 {
   "audio": "32f0456746c8e23312f1e4c2ce1948c444ceee9d0e1166c7f2a9ecbb643580c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "淹"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10480,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "淹没",
   "id": "51b3a70f5fbac5b5b6fe455c",

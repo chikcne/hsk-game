@@ -1,18 +1,22 @@
 {
   "audio": "265d0b9f2ce5b38e61e71ef296cebfac24c8bc4c7fae2c38841ff2306734ed69.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "看",
       "起"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10810,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "看不起",
   "id": "f1a7a721a92c0e96d707bfda",

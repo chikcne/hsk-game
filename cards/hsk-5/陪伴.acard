@@ -1,16 +1,20 @@
 {
   "audio": "a59e731f008c68e28b6183bcec26accbd73a09df09ad87c0d40d0af41cf6185c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "陪"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6771,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "陪伴",
   "id": "c926578200c7ea033424bf45",

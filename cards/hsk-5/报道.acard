@@ -1,16 +1,20 @@
 {
   "audio": "92f6d9faebbca2b057560a577cb18e513f9855ec6d131e79a3c3ca395666c4af.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2526,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "报道",
   "id": "0db42220db286d60f34f5d29",

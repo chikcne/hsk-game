@@ -1,14 +1,18 @@
 {
   "audio": "c082abef82eda12ea323314cd8abf9ee12b7a80e865108e638cde49496af90dd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11615,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "痒",
   "id": "44f5ce1f68bedd872f745a50",

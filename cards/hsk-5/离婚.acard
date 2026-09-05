@@ -1,16 +1,20 @@
 {
   "audio": "dc12a74572f757121634ee2049f4cb5c4fcf8d73a482477c3a38d8073ca3dda3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "离"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1771,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "离婚",
   "id": "42e6b6606ded0bbb47cfe6a5",

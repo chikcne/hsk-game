@@ -1,16 +1,20 @@
 {
   "audio": "782f709f3f6c2dad4aabb3f7310daa023a553933e120f2bcd419f0e99e543bf0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1832,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "生物",
   "id": "f9a7d8d3da898e0fddf5f724",

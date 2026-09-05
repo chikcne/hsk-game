@@ -1,14 +1,18 @@
 {
   "audio": "33c17d5ab670725d835d5f8a8f2d2d8e4981c26ca32458534c247338e095c47a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 1993,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "白",
   "id": "1a2eba39eea0b36dbd1c4bda",

@@ -1,17 +1,21 @@
 {
   "audio": "52487905cd85e029c0d6866ea09e2eab9f7c47031a19b0fb9a7b3cc1e0327a91.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事",
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17206,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "人事",
   "id": "a92300d8cb9b5de08d03c6c5",

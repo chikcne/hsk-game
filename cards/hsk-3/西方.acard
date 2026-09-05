@@ -1,17 +1,21 @@
 {
   "audio": "61cc4e814cffa0c7d690d547d28c45332d61b095dd049fed92a299e10b4d56fc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "方",
       "西"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4714,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "西方",
   "id": "d94690036f537dea4ef4eeae",

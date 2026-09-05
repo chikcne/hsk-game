@@ -1,17 +1,21 @@
 {
   "audio": "4c25b81745fc87bcda35c5d95cb8fddbaf6ada1691c5d5e387dab26349046ae9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "愿",
       "者"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10048,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "志愿者",
   "id": "c7684508827b6eac1e6cca14",

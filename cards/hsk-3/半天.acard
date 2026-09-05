@@ -1,17 +1,21 @@
 {
   "audio": "608a5439681357778fb307680094b68f56568db17325b2fe0d6bdc4cb75057d6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "半",
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9076,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "半天",
   "id": "814486676faa99f0b5eb0225",

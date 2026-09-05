@@ -1,17 +1,21 @@
 {
   "audio": "1adfb6922f5d83bfe6e687184fb1dc751a1b1c260efc8e661e780b286e1e3008.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "都"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20310,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "大都",
   "id": "ac765675e9093b2304f2d90a",

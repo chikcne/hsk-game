@@ -1,16 +1,20 @@
 {
   "audio": "f9f7c302e0d414a42268b8af4979bc3cc42b1520f4f2fb76173974fc341458f2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8910,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "柜子",
   "id": "334cd647b76a5649be66a6fc",

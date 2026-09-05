@@ -1,17 +1,21 @@
 {
   "audio": "992d5c8d99ed91da383f678b002bae735ad758b93eb0371a5cb9342e92f8108f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "新"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4497,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "新人",
   "id": "45cd09db68786119148a4e50",

@@ -1,14 +1,18 @@
 {
   "audio": "0bfd3f274b0ff3d95d58af72ea562298c97645e6e9a4bf05dcb7338a6c37cb5a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2283,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "婴儿",
   "id": "4aa57a60cebc60c8a88a3b7c",

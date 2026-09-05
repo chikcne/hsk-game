@@ -1,14 +1,18 @@
 {
   "audio": "ad7157376f81f823feb2d39a828c1e0617fee5b5c62ead38fe2fca21f746cd46.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 755,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "花",
   "id": "5eae624f0e416a7286aaa6f2",

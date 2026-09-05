@@ -1,14 +1,18 @@
 {
   "audio": "b4385d4e5ce1931a0988d119e9105bea3503adf7e4f8a746865d586047025d0d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 102,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "快",
   "id": "1ae1dc47b68ca49117f9ebc8",

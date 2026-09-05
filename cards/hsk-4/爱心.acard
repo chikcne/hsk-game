@@ -1,17 +1,21 @@
 {
   "audio": "a408c192e5b3a1849407761a91918cb8598c5a3c110aed2d349d7be56bba63a4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "爱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13409,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "爱心",
   "id": "f78069d9ee7ec58d2dd4fc38",

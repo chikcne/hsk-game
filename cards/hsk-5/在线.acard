@@ -1,17 +1,21 @@
 {
   "audio": "659d628ee3f98e24e282e81d8623f77637ef4ceff5b04a998e9d81823a95f40e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "在",
       "线"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9339,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "在线",
   "id": "0f7d0e946d8f522745db1fa1",

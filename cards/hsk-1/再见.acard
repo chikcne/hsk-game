@@ -1,17 +1,21 @@
 {
   "audio": "06288eb19271daa6395820acab2e6a2cb8ecccaec0233561c07d1a024a002ab2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "再",
       "见"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 324,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "再见",
   "id": "dec60bd7df536c386a316dd4",

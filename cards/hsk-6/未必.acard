@@ -1,17 +1,21 @@
 {
   "audio": "09aa49a46205d3a368b98a137dbc621afb9759acc8b7dd4b9e148f8120e75e4c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "必",
       "未"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8906,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "未必",
   "id": "f042a4b7f70c684acd2dca19",

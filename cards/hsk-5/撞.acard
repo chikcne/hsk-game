@@ -1,14 +1,18 @@
 {
   "audio": "bcd0efa6df55d9c155331e84e865906859a26d8ba33badecc2662f48d5f94572.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1525,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "撞",
   "id": "9753e28b5326636203aba351",

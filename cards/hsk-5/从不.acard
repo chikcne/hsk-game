@@ -1,17 +1,21 @@
 {
   "audio": "015203448ede577d399a314142e498d0f19d47518eca6cbfd2af03b2c5a76db8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "从"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1843,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "从不",
   "id": "7e2036cc968c50d0bdc855a3",

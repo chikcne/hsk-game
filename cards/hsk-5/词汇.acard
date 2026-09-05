@@ -1,17 +1,21 @@
 {
   "audio": "9c9bf65eae1c7c3cfd197ad739bf4e002f8708dcf2ba19575f2b126eea5b0453.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "汇",
       "词"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18790,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "词汇",
   "id": "329e177a58e995702c7a1e5e",

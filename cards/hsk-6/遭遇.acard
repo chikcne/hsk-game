@@ -1,14 +1,18 @@
 {
   "audio": "8daa180a752cee47e3f584db68e6f144e16cc87633189852fc8b905d30f63336.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3794,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "遭遇",
   "id": "cf080dd4f2d73f011d25b9ce",

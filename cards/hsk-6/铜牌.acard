@@ -1,17 +1,21 @@
 {
   "audio": "a8fd3949a9070f65068818413888a4f6eee528f69cc287f53878363d024111f7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "牌",
       "铜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 69462,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "铜牌",
   "id": "e7f73bf496dfa8b1cfc82e05",

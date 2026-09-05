@@ -1,17 +1,21 @@
 {
   "audio": "d5765686d89eccd94d838e45119ebb7435d0d408242a0177d400b7a1e1bb7831.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "以",
       "便"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6765,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "以便",
   "id": "910ce8932982479d7f9c7ef9",

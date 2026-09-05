@@ -1,16 +1,20 @@
 {
   "audio": "d3fe60bad63918ee6ec0c5053c3311f1eda0a4361e5f1e49a0faa1ae40106813.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3720,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "军人",
   "id": "f62d01f473873df8651d2901",

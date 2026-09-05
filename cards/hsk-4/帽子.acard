@@ -1,16 +1,20 @@
 {
   "audio": "e3381ad7ab43c8d4caa8eb30ed5692b2bbcdb4cd3099ff1846b60f34b21c640a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1905,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "帽子",
   "id": "b31354f3db42f04288eac9b7",

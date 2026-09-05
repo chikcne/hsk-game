@@ -1,16 +1,20 @@
 {
   "audio": "269f9eb373234fedbe1be106f437f509bc9694993f04642ca12b42f34da34773.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8429,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "小型",
   "id": "d68e4bd7be5e7043c197fd2b",

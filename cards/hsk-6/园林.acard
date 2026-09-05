@@ -1,16 +1,20 @@
 {
   "audio": "a277f6fdf16ac88b0e188d6198bb8df78dc5ea3030c8752ee0862006f9b3903d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "园"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 60749,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "园林",
   "id": "7c8709ff14c8e6ffa3a6cdf8",

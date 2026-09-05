@@ -1,16 +1,20 @@
 {
   "audio": "5d7443344b43729172780acf1fa4082ff03745b84f7f94750b2100c9763d2817.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "口"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6652,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "港口",
   "id": "6c0bf83bfee8f14b6b213f67",

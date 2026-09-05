@@ -7,7 +7,7 @@ import { createSecureRandomState } from "../../domain/random";
 const EMERGENCY_CACHE_KEY = "ziduoduo-emergency-save";
 
 export const blankSave = (): SaveFile => ({
-  schemaVersion: 4, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
+  schemaVersion: 5, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
   settings: { ...DEFAULT_SETTINGS },
   spawnOrdinal: 0,
   schedulerRng: createSecureRandomState(),
@@ -18,7 +18,7 @@ export const blankSave = (): SaveFile => ({
   lifetime: { score: 0, resolvedEnemies: 0, completeCorrect: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0, bestStreak: 0, totalThinkingMs: 0 },
 });
 
-/** Pure: validates an untrusted payload as a complete v4 save. Anything
+/** Pure: validates an untrusted payload as a complete v5 save. Anything
  * missing, extraneous, or malformed is rejected — a partial or foreign
  * object must never be adopted as live progress. */
 export function parseSavePayload(payload: unknown): SaveFile | null {

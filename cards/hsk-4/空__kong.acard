@@ -1,14 +1,18 @@
 {
   "audio": "9861de86e29c8002ba859a543f849de382a8f06fb1c66696d31782bfffdc6cbd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 4,
+    "frequency": {
+      "rank": 2458,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "空",
   "id": "36bffbd97ace8f88f455d7c7",

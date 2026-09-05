@@ -1,17 +1,21 @@
 {
   "audio": "f1ae049a9f7c3708d4d50ff29e86c7d654ae0f245270ef4b1972e59b87d0b095.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "早",
       "饭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7953,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "早饭",
   "id": "16638de4d1ca92007389d3d2",

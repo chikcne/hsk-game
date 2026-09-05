@@ -1,17 +1,21 @@
 {
   "audio": "11896be2af0dafe3c0cec2d6cd2800ad3b2539b1fd81c4da9d9d17328b5133a7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "半",
       "夜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5566,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "半夜",
   "id": "018ce64fd96ce31f5577dc09",

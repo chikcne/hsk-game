@@ -1,17 +1,21 @@
 {
   "audio": "bd6321cae5c1a1394f950872e35d039262f57ed5d7fee92473a7ea508c7e2f02.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "流",
       "通"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20431,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "流通",
   "id": "375d6e682589df12897f8a9d",

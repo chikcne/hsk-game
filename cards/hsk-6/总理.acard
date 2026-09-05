@@ -1,17 +1,21 @@
 {
   "audio": "d0655ab9cc0858d4f21e2f7a7366a351b06336c295f982df180a70d7a9036d04.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "总",
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7216,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "总理",
   "id": "8e73442023547523ffffb4c5",

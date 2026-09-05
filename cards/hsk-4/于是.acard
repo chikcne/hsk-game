@@ -1,17 +1,21 @@
 {
   "audio": "29d6969ceb44fa7ce87cba1626a5a74985a2535e9c117cddf9c13b2eb3aca7e2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "是"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1576,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "于是",
   "id": "0e173808ac85e6262d0ea192",

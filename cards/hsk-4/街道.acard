@@ -1,17 +1,21 @@
 {
   "audio": "2ff4ca175fa7d13b16dc9571801ada326218889ab8fddad513422789254a10ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "街",
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3898,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "街道",
   "id": "a9906ad747461285bee654e0",

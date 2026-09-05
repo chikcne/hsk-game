@@ -1,17 +1,21 @@
 {
   "audio": "1fbb1f0cddc2d39223e8ff51e62581f3587f63e55d8d642de4b74822960fd4bf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7983,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "后天",
   "id": "0f1447a9fc54e37d3e6b1bf0",

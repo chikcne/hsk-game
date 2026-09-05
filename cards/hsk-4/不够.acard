@@ -1,17 +1,21 @@
 {
   "audio": "47b13eb6ebb9c643abccde7a0ca364c9c49aef227de6c633222ed2fe3b67a022.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "够"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 959,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "不够",
   "id": "b1235935cf4820771303633b",

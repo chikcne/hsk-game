@@ -1,17 +1,21 @@
 {
   "audio": "ea50cd9581c52283908b4ea85f49f46c661ba988784b785edc23bff56134f894.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "合",
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3974,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "合理",
   "id": "2879f864c8a7dab11bbd3aaf",

@@ -1,17 +1,21 @@
 {
   "audio": "08791b11a6dcf2f53e10c6f890bff3cbd846f55618ff56b7e150f3f1d136ca60.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "区",
       "山"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15513,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "山区",
   "id": "31bae4bd7dc7107e60cce01d",

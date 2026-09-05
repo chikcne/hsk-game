@@ -1,16 +1,20 @@
 {
   "audio": "1009d152e84cf7f7311cedb872833f0070536cec75b5ff8413088d75602c901d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "广"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14055,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "广阔",
   "id": "9dce9868abb9354c96501b2a",

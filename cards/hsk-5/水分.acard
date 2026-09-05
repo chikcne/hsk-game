@@ -1,17 +1,21 @@
 {
   "audio": "216e0c002750bb752dbdf6ca087b002142d7100d857490166c3d81541a8c8817.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18786,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "水分",
   "id": "7553fdd79a68271347b73d59",

@@ -120,7 +120,8 @@ accepts a session-completing snapshot; a real v3 save triggered quarantine →
    fresh-start/no-migration) rather than resurrecting card mutation.
 4. `relearnSessions` is validated-but-null everywhere; fill in the workflow
    and evolve the placeholder shape as needed.
-5. `settings.levelSize` is now "new cards per session" (5–100, step 5).
+5. `settings.levelSize` is "new cards per session" (5–20, step 5). It may
+   split a fixed 20-card authored lesson but never pull from the next lesson.
 
 ## Known limitations / follow-ups
 

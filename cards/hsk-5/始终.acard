@@ -1,14 +1,18 @@
 {
   "audio": "d4387264245ccb516481af34a2aea19b87b53f75bfc79d135ecbb50dd88dcc9b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4467,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "始终",
   "id": "c38144e82d404aab61bfa46b",

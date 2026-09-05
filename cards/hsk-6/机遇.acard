@@ -1,14 +1,18 @@
 {
   "audio": "e4b442d2451f02f190b6f3a2ab33f186525cbc7c439b7047f856489e84991197.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 17639,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "机遇",
   "id": "57bd8cdc9bccfc08ec58af3f",

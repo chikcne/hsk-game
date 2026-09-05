@@ -1,14 +1,18 @@
 {
   "audio": "dccde048a6cf51e139cad6543f4297643957a1554b33babfa917b031a0277fe0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1930,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "骄傲",
   "id": "ef95a4fc856c1856c904b095",

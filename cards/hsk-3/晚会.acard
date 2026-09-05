@@ -1,17 +1,21 @@
 {
   "audio": "9ce565fd74ed26f645e55e0ae5b4071b6b1fb9445bdce413680e815f275dff94.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会",
       "晚"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6121,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "晚会",
   "id": "ea6fb0f867469ecbd879fbea",

@@ -1,14 +1,18 @@
 {
   "audio": "25a2400694a2389a2265c862ecfeaa432a20d870e68a3d7327c695b7c1a57daf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 100,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "又",
   "id": "5a99401a5b68720d4e7bec79",

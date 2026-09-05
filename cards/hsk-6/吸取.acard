@@ -1,17 +1,21 @@
 {
   "audio": "86cc39e8b471a955c3fb24be60e4a17785b9015f4355ff208c77452bd20d0475.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "取",
       "吸"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17837,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "吸取",
   "id": "b57c47800c92af874f0068ae",

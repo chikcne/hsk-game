@@ -1,17 +1,21 @@
 {
   "audio": "d9b8846263ce7fb67a7a266a7be6cd1742b48aaa1edd795663392585b200b8dd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "得",
       "懂"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2789,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "懂得",
   "id": "330dc10cff03af0efd2ce6f0",

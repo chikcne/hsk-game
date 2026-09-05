@@ -1,14 +1,18 @@
 {
   "audio": "4c8b7e1a22c81a277683edeb7f0a6b4ed7b134c46869835f3732cafebc3f9f5c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5175,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "拆",
   "id": "a634dab7d894f820bbba8663",

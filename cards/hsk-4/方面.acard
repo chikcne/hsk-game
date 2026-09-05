@@ -1,17 +1,21 @@
 {
   "audio": "8e6c66c761739d1c2e749e8cea5633897de1cc6941b8d67b5ee69fa84caca2ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "方",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1439,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "方面",
   "id": "d4beff505277539faca0b8b8",

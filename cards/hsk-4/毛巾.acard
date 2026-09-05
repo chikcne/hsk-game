@@ -1,16 +1,20 @@
 {
   "audio": "449651de4f75a443d5918e3018b90627b80916ad1d4c31ac05d6fd353c31abc3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "毛"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4987,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "毛巾",
   "id": "90b12f7994933758130f61dc",

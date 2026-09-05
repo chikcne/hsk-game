@@ -1,16 +1,20 @@
 {
   "audio": "fdb108430add0d85d068c1faa21ced318a9cd6078fbe302d56ab0409ef9888ed.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "短"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11047,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "短裤",
   "id": "c3f8f1a40dfbf14a0445188c",

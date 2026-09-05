@@ -1,16 +1,20 @@
 {
   "audio": "36e8b8ca66046ffb31d81b99c0fe83761be1b84f6af5e612741188bf2bd32018.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5843,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "协会",
   "id": "83f6fcf1e18d01be344e3d33",

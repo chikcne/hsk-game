@@ -1,16 +1,20 @@
 {
   "audio": "fa3f7d2a6685bd3d591e5700c79c4701461ea47757fb0b50c1513d645a7fb104.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "服"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 495,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "衣服",
   "id": "71783abf4e864203f906e3c7",

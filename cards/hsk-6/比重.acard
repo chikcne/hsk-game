@@ -1,17 +1,21 @@
 {
   "audio": "aae74cfe4d94c04eb8f131800c4f158596790069ddef617ffe0af926055913e4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "比",
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 78621,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "比重",
   "id": "491a9fd7af205de35ad76117",

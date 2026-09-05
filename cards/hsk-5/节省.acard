@@ -1,17 +1,21 @@
 {
   "audio": "e46d609d8578464132fb26d12cacca38f6c74805112ba1b42fe5423094a0c6a2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "省",
       "节"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11959,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "节省",
   "id": "21fb13c765f207648b3fee10",

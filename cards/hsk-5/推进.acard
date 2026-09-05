@@ -1,17 +1,21 @@
 {
   "audio": "f133ffc2423d205acf7322e850b5b4e7cc3be0beba92dcc4813b4df5c6261970.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "推",
       "进"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7384,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "推进",
   "id": "375de62659a6f9403f53d07b",

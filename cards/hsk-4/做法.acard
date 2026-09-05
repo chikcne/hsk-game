@@ -1,17 +1,21 @@
 {
   "audio": "806e8d11450b3808c264c4252a243d7a40958728fae303d06dba3a04d1423e59.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "做",
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4647,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "做法",
   "id": "c73f5d7a51a648555ff0f8f8",

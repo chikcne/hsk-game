@@ -1,17 +1,21 @@
 {
   "audio": "f69c56d383d0b0862a8291500a9bbfb9e1abd9a3af9de3d0d1848389e18459a6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "理",
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2443,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "道理",
   "id": "7c497882c79d96619f129499",

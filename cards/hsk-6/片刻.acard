@@ -1,17 +1,21 @@
 {
   "audio": "1b617a3d2ccd702127a821bf41abc252a42e368224fbc93ba0c62f2991ab29c2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "刻",
       "片"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10254,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "片刻",
   "id": "4ea9807ee20d1ad1ba3205d2",

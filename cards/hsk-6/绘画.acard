@@ -1,16 +1,20 @@
 {
   "audio": "3396845504c451ccd4fdaad9f6629a5950c07a2282dfde75fe2f705fc6db5bdb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "画"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11679,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "绘画",
   "id": "da8cbe589a2b88be0ca855dc",

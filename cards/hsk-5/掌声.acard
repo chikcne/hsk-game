@@ -1,16 +1,20 @@
 {
   "audio": "09df7920e1545df84e357f22cb29c83b78f2b02795372a2eac55ad10e864d599.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "声"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5711,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "掌声",
   "id": "b7f1278c35180d77ea63f2d6",

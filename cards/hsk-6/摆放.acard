@@ -1,17 +1,21 @@
 {
   "audio": "2af86229b2a51eee78dab1836c2d23bf0f6df337eefb49e6963d5fb64d4a9763.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "摆",
       "放"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27097,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "摆放",
   "id": "f5621a5fda56dd6fcde9ed68",

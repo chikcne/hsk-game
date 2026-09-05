@@ -1,17 +1,21 @@
 {
   "audio": "0421ed84523045d576bb25540fe3a428bcd0afd5793c120f9d6774299a5fd951.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "等"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20469,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "中等",
   "id": "f01c0a8d8b74853998c6897f",

@@ -1,17 +1,21 @@
 {
   "audio": "7233c8d30454f0a110e2ef810e20ba5c962b7dea138d3f0dc1811dde15ac05bd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "退"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4052,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "后退",
   "id": "67998cf62826bfe4e5bd743a",

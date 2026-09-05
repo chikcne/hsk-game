@@ -1,14 +1,18 @@
 {
   "audio": "fc3fb2c92a79d198c45b11cda4e64820bfabbbc4a8241ddd7296dc9745decc42.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4195,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "参观",
   "id": "2941a68209946bf78d3dc1ca",

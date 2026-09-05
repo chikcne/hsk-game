@@ -1,14 +1,18 @@
 {
   "audio": "6e9b2bee052500f7db337c4e3174618554c835874677e51aae6ea4db5cd4afdd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5212,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "质疑",
   "id": "80d947356a68ed1f513be176",

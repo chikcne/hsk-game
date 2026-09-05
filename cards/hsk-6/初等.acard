@@ -1,17 +1,21 @@
 {
   "audio": "092a8fce7cb28b7dcd2b9f625734546219a96a86841df2b78710022e18db041c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "初",
       "等"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": null,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "初等",
   "id": "9f0a84bcdd4827c19215f6ad",

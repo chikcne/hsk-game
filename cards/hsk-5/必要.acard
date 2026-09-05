@@ -1,17 +1,21 @@
 {
   "audio": "d335503a4a3907dcbf1d2d64483eb9b13ca3ba9ee438f9c550c716c212f1fb57.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "必",
       "要"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 935,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "必要",
   "id": "56f78f6adca54d901279d07f",

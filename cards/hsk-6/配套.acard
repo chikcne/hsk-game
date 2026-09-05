@@ -1,17 +1,21 @@
 {
   "audio": "7920f3c5a710a497dada04a8fff00116c0ab8c8b4fed5efb1a2b543c99f27b99.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "套",
       "配"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 38136,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "配套",
   "id": "5529584297c4e6e4d1becf28",

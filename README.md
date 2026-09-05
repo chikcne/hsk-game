@@ -25,7 +25,7 @@ Progress is written atomically to the gitignored `saves/default.json` after ever
 
 Each Learn session is created (or resumed exactly) when you click a grade:
 
-1. it contains **every currently due introduced word** of that grade plus **up to "new cards per session" brand-new curriculum words** (a settings slider);
+1. it contains **every currently due introduced word** of that grade plus **up to "new cards per session" brand-new curriculum words** (a 5–20 settings slider), drawn only from the current authored 20-card lesson;
 2. every card shows pinyin and meaning, auto-plays its audio (replayable), and is completed by guided, forgiving stroke-order writing; on a word's very first presentation, each character loops its stroke-order demo until you start writing it, while later appearances offer **Show Demo** instead;
 3. after writing, the card shows the writing elapsed time and the four ratings with live next-interval previews; FSRS applies the chosen rating to the word's single card;
 4. a word leaves the session when its card reaches the FSRS review state — a lapsed repair recurs via **learn-ahead** (the earliest due remaining card is always served, even if not yet due) — and the session ends only when every word has passed. Words enter the ordered `acquired_words` table exactly once, the moment their card first reaches review.
@@ -64,7 +64,7 @@ Nine columns: **Next Learn**, the six HSK grades (keyboard **1–6**), **Re-Lear
 
 ## Settings
 
-Learn Mode's **new cards per session**, Review Mode's **session length (base spawns, 200–500)**, base spawn rate and global word speed, volume, and reduced motion are adjustable. All memory parameters (FSRS weights, retention target, learning steps) are fixed constants in `src/domain/memory` so scheduling cannot drift from the science. During Review, a smoothed 0.70–1.50× performance multiplier increases pressure after fast correct answers and eases it after misses; answers are auto-graded for arcade score only.
+Learn Mode's **new cards per session (5–20)**, Review Mode's **session length (base spawns, 200–500)**, base spawn rate and global word speed, volume, and reduced motion are adjustable. Learn follows the committed frequency-led curriculum in `cards/curriculum.json`; there is no per-profile shuffle, and lowering the setting simply splits one fixed lesson across multiple sessions. All memory parameters (FSRS weights, retention target, learning steps) are fixed constants in `src/domain/memory` so scheduling cannot drift from the science. During Review, a smoothed 0.70–1.50× performance multiplier increases pressure after fast correct answers and eases it after misses; answers are auto-graded for arcade score only.
 
 ## Stroke-order data
 
@@ -89,4 +89,4 @@ npm run build
 
 Generated deck/audio assets in `public/game-data/` and player progress in `saves/` are intentionally not committed. The trimmed, licensed stroke bundles in `public/stroke-data/` are committed so production and the demo fallback work without a generation step.
 
-Save schema v4 is a fresh start: older or corrupt saves fail validation and simply start over on the next save.
+Save schema v5 is a fresh start: older or corrupt saves fail validation and simply start over on the next save.

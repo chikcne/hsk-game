@@ -1,17 +1,21 @@
 {
   "audio": "b5975cbe08d784d6cdc252168b0d0da4649f753b1b5ba8bdbcd9c9bedbc38e4d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "代",
       "古"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7880,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "古代",
   "id": "7ab9c854fc4e6e6eb2b15066",

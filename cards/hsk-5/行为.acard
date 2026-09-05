@@ -1,17 +1,21 @@
 {
   "audio": "40a9edb835d6a1cc3dafcfa325caba5847abd4fa953f9c4d8d90f98d6a7c0a63.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1188,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "行为",
   "id": "f3d5438da5887afb216d0ba4",

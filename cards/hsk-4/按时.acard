@@ -1,17 +1,21 @@
 {
   "audio": "fce248be3a1e335e54d9ae3d61caa396452d5a9cff58a838772972a08e89dd4c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "按",
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11713,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "按时",
   "id": "adeee223173adfff980379e6",

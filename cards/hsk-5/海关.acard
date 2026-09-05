@@ -1,17 +1,21 @@
 {
   "audio": "3a356bfb23ce5b8cd979d0a3e0766e0f5ee55186c9f8126af13b1f7249977f18.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "关",
       "海"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13025,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "海关",
   "id": "4b5241762c017b24f6b9eb38",

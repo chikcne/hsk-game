@@ -1,16 +1,20 @@
 {
   "audio": "386fa1052ac78b4e1f9319b09b88c1e17c9ff83e138042618aa42f956893e3e7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1792,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "汽车",
   "id": "75e360a8066f8d4a4d367006",

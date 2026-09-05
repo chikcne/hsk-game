@@ -1,16 +1,20 @@
 {
   "audio": "3a54e7a624116292bacbd08dcdddeb16d76a0e13e767d9ebe146c07f4a5acf9f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "久"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14231,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "持久",
   "id": "93fe43105be2041c950d166c",

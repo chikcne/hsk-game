@@ -1,16 +1,20 @@
 {
   "audio": "722602f7af3ae673a6c62cc0b2dfb008009ec7dbc5f0792f3e7cc8774e12edf4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "步"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23086,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "逐步",
   "id": "34df29535a5c1b7a751b3735",

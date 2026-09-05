@@ -1,14 +1,18 @@
 {
   "audio": "d2bfc5be40914631c494fd8b8861416f8786837b1fd1c636e0cd533999176e4c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 17143,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "主导",
   "id": "177ce306969b1f1f41ef88b7",

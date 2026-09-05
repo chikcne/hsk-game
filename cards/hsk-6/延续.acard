@@ -1,14 +1,18 @@
 {
   "audio": "b5303cb370b548a3786bef54cc64b32ec7e6a9a4687efdb7eacd43309be038bf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11641,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "延续",
   "id": "1d9c9bb8632ebd48640054b8",

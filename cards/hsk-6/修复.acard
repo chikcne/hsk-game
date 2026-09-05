@@ -1,16 +1,20 @@
 {
   "audio": "ae1af6703775d48a896c2b575f6ff4ff80278374c552dd6c785887d14732f44c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "修"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5608,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "修复",
   "id": "ab4d668ae1c811db1397fcd9",

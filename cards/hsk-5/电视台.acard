@@ -1,18 +1,22 @@
 {
   "audio": "66a67566591abcfdc1583f79edfd98a6a8e32c64a8f2a3a2f53fd2d0dfccf0e8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "台",
       "电",
       "电视"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6134,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "电视台",
   "id": "a53d92bfdd60f70420aaea84",

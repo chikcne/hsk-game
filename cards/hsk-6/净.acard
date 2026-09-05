@@ -1,14 +1,18 @@
 {
   "audio": "72ff1208e0b07b353da76cc2c8c4dbce1d93d7d1d5f6f61c7d897a9dfc6c14fc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 18911,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "净",
   "id": "58d2c049adfaaa0de1c242fc",

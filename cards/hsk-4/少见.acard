@@ -1,17 +1,21 @@
 {
   "audio": "d0d89efd26844c5c960ecd3a7879c4686be2ff7da1ae1ca76abacc722592b28c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "少",
       "见"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20241,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "少见",
   "id": "3cb1fcd2ec1bb8f3981db26f",

@@ -1,16 +1,20 @@
 {
   "audio": "2a6f8c35e37148612b01855c0b8c71b8a46ab3f10179e6e102a00fee3c815420.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "团"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6826,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "团体",
   "id": "45aa22f3eecb29ddd97ce8a7",

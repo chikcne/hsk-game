@@ -1,17 +1,21 @@
 {
   "audio": "5406538b6b1a20d01e847283c973cb5b59d83b5a56fedd069d76274112629559.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "升",
       "级"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8890,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "升级",
   "id": "781e5a7216babfc718dfb66d",

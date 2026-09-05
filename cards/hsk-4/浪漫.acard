@@ -1,14 +1,18 @@
 {
   "audio": "a79aa81904acc7f69ab77ae5f5d36c5b981d805013a78e90376f2983e6cb6fc6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2435,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "浪漫",
   "id": "7166cace27c841e5fdf9e4d9",

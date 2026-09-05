@@ -1,17 +1,21 @@
 {
   "audio": "ea85f9cab27189091487b5a9984cfe2e1d481a34cebed539833698c0d1eb2710.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "以"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4524,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "以下",
   "id": "555f8ba7e0ecbd769a73a2c8",

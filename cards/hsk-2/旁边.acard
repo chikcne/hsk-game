@@ -1,16 +1,20 @@
 {
   "audio": "9184046441a4336a671ad61d7e12c5629316645934571c9a89c5baebb54a2ece.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "边"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1648,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "旁边",
   "id": "81a582bcaf607a2311b3c153",

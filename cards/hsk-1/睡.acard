@@ -1,14 +1,18 @@
 {
   "audio": "7139efc4cf30be1852696e4d940b162ed3d5fc71e298e74522bf355cc32de7dc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 481,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "睡",
   "id": "44c0ca3235341dbd4617d5a9",

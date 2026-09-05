@@ -1,17 +1,21 @@
 {
   "audio": "f8ae7f3b45bf257cb8fac06855e1b7cd3e3cbdf5a07df1c6a02f923c1455bff1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "借",
       "凭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21120,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "凭借",
   "id": "efc5792804d5e372e8d50901",

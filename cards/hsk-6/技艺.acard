@@ -1,14 +1,18 @@
 {
   "audio": "cc9ff9f6d512392d8874984071b49f7be80970ad1a374c322b114de823b1d7f3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 24997,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "技艺",
   "id": "eb3e9a4a441b408ca8b1508a",

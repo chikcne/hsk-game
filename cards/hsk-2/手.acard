@@ -1,14 +1,18 @@
 {
   "audio": "394c4d1b35b9d227cc65ff8b59e638b3568509b5dd98d62b317de025dbdc5b9e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 2,
+    "frequency": {
+      "rank": 490,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
+    "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "手",
   "id": "489165b95c3bfa7a141e6062",

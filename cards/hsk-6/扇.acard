@@ -1,14 +1,18 @@
 {
   "audio": "2987db4236fd9fd3d923912f49393d9c61c34339981fcfab82750c3ab7b1eaf3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 9332,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "扇",
   "id": "eb0dcdd6615cbcee58d2e9ae",

@@ -1,17 +1,21 @@
 {
   "audio": "6cfed7744117b0ab3e76055e8ec80094b9c6b4b65953b0358ed73bf7f8728305.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "以",
       "来"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2167,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "以来",
   "id": "ce46307470d52b719da55bde",

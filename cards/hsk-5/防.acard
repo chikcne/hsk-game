@@ -1,14 +1,18 @@
 {
   "audio": "0fe797c77db8d19b2d1bf4a6237b1cd98bd71cd4ee7b7ab4e8cc9f310b57977d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 15971,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "防",
   "id": "459c25b3f6fa8511e4f034e6",

@@ -2,19 +2,21 @@ import { describe, expect, it } from "vitest";
 import type { WordProgress } from "../../src/shared/schemas";
 import {
   countGraduated, createLevelProgress, curriculumLessonNumber, curriculumOrder,
-  reconcileLevelProgress, validateLevelInvariants, assertLevelInvariants,
+  curriculumFromWordIds, reconcileLevelProgress, validateLevelInvariants, assertLevelInvariants,
   type LearningDeck,
 } from "../../src/domain/learning";
 import { createCardMemory, isCardAcquired } from "../../src/domain/memory";
 import { createLearnSession } from "../../src/domain/learn";
+import { createDemoDeck } from "../../src/client/data/demoDeck";
 
 const NOW = Date.parse("2026-01-01T00:00:00.000Z");
 
 function deck(count = 200, fingerprint = "fingerprint-a", prefix = "word"): LearningDeck {
-  return { id: "hsk-1", fingerprint, words: Array.from({ length: count }, (_, index) => ({ id: `${prefix}-${String(index).padStart(3, "0")}` })) };
+  const words = Array.from({ length: count }, (_, index) => ({ id: `${prefix}-${String(index).padStart(3, "0")}` }));
+  return { id: "hsk-1", fingerprint, words, curriculum: curriculumFromWordIds(words.map((word) => word.id)) };
 }
 function freshLevel(sourceDeck = deck()): ReturnType<typeof createLevelProgress> {
-  return createLevelProgress(sourceDeck, { curriculumSeed: "curriculum" });
+  return createLevelProgress(sourceDeck);
 }
 function updateWord(level: ReturnType<typeof createLevelProgress>, id: string, patch: Partial<WordProgress>) {
   const progress = level.words[id]; if (!progress) throw new Error(`missing ${id}`);
@@ -34,13 +36,12 @@ describe("curriculum order and level creation", () => {
     expect(level.curriculumCursor).toBe(0);
     expect(Object.values(level.words).every((word) => word.introducedAtOrdinal === null)).toBe(true);
     expect(Object.values(level.words).every((word) => word.card.reps === 0)).toBe(true);
-    expect(curriculumLessonNumber(level, 20)).toBe(1);
+    expect(curriculumLessonNumber(level)).toBe(1);
 
-    const order = curriculumOrder(source, "curriculum");
+    const order = curriculumOrder(source);
     expect(new Set(order).size).toBe(600);
-    expect(order).toEqual(curriculumOrder(source, "curriculum"));
-    expect(order).not.toEqual(source.words.map((word) => word.id)); // actually shuffled
-    expect(curriculumOrder(source, "other-seed")).not.toEqual(order);
+    expect(order).toEqual(source.words.map((word) => word.id));
+    expect(order).toEqual(curriculumOrder(source));
   });
 
   it("introduces words only through Learn sessions and advances the cursor", () => {
@@ -52,6 +53,16 @@ describe("curriculum order and level creation", () => {
     expect(afterSession.curriculumCursor).toBe(20);
     expect(introduced.every((word) => word.introducedAtOrdinal === 5)).toBe(true);
   });
+
+  it("gives the demo deck the same earlier-lesson prerequisite shape", () => {
+    const source = createDemoDeck("hsk-1");
+    const lessonByHanzi = new Map(source.curriculum.lessons.flatMap((lesson, index) =>
+      lesson.wordIds.map((id) => [source.words.find((word) => word.id === id)!.displayHanzi, index] as const)));
+    expect(lessonByHanzi.get("你")).toBeLessThan(lessonByHanzi.get("你好")!);
+    expect(lessonByHanzi.get("好")).toBeLessThan(lessonByHanzi.get("你好")!);
+    expect(lessonByHanzi.get("电")).toBeLessThan(lessonByHanzi.get("电影")!);
+    expect(lessonByHanzi.get("电影")).toBeLessThan(lessonByHanzi.get("电影院")!);
+  });
 });
 
 describe("graduation counting", () => {
@@ -59,7 +70,7 @@ describe("graduation counting", () => {
     const source = deck(20);
     let level = freshLevel(source);
     expect(countGraduated(level)).toBe(0);
-    const first = curriculumOrder(source, "curriculum")[0]!;
+    const first = curriculumOrder(source)[0]!;
     level = graduate(level, first);
     expect(countGraduated(level)).toBe(1);
     expect(isCardAcquired(level.words[first]!.card)).toBe(true);
@@ -77,10 +88,11 @@ describe("reconciliation and invariants", () => {
   it("retains IDs and memory, adds new words, and orphans removals", () => {
     const oldDeck = deck(30, "old", "stable");
     let level = freshLevel(oldDeck);
-    const first = curriculumOrder(oldDeck, "curriculum")[0]!;
+    const first = curriculumOrder(oldDeck)[0]!;
     const { level: introduced } = createLearnSession(oldDeck, level, new Date(NOW), { newCardLimit: 5, spawnOrdinal: 0 });
     level = updateWord(introduced, first, { learnReviews: 3, lastSeenAt: new Date(NOW).toISOString() });
-    const newDeck: LearningDeck = { id: "hsk-1", fingerprint: "new", words: [...oldDeck.words.slice(1), { id: "added" }] };
+    const newWords = [...oldDeck.words.slice(0, -1), { id: "added" }];
+    const newDeck: LearningDeck = { id: "hsk-1", fingerprint: "new", words: newWords, curriculum: curriculumFromWordIds(newWords.map((word) => word.id)) };
     const result = reconcileLevelProgress(level, newDeck, 7);
     expect(result.report).toEqual({ retained: 29, added: 1, removed: 1 });
     expect(result.level.words.added).toBeDefined();
@@ -89,10 +101,10 @@ describe("reconciliation and invariants", () => {
     // the whole diff into one session.
     expect(result.level.words.added?.introducedAtOrdinal).toBeNull();
     expect(result.level.words.added?.card.state).toBe("new");
-    // The updated word rides along with its memory; the deck-ordered first
+    // The updated first word rides along with its memory; the final source
     // word is the removal that becomes an orphan.
     expect(result.level.words[first]!.learnReviews).toBe(3);
-    expect(result.level.orphanedProgress["stable-000"]).toBeDefined();
+    expect(result.level.orphanedProgress["stable-029"]).toBeDefined();
     expect(result.level.deckFingerprint).toBe("new");
     expect(validateLevelInvariants(result.level, newDeck, 7)).toEqual([]);
   });
@@ -114,7 +126,8 @@ describe("reconciliation and invariants", () => {
   it("rejects a level whose word set no longer matches the deck", () => {
     const source = deck(5);
     const level = freshLevel(source);
-    const shrunk: LearningDeck = { id: "hsk-1", fingerprint: "fingerprint-a", words: source.words.slice(1) };
+    const shrunkWords = source.words.slice(1);
+    const shrunk: LearningDeck = { id: "hsk-1", fingerprint: "fingerprint-a", words: shrunkWords, curriculum: curriculumFromWordIds(shrunkWords.map((word) => word.id)) };
     const errors = validateLevelInvariants(level, shrunk, 0);
     expect(errors.some((error) => error.includes("unknown current word ID"))).toBe(true);
   });

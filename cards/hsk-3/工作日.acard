@@ -1,17 +1,21 @@
 {
   "audio": "599f34caf4dd978ae4991de5a753d2767c592cdd01b7a2b82396b64a8af1eb4c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "工作",
       "日"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 35891,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "工作日",
   "id": "1d087a571761e0108e62f830",

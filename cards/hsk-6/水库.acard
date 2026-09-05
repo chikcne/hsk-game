@@ -1,17 +1,21 @@
 {
   "audio": "d81e49f9939352be44d73b80727c38cba4f373547765ca06703c07039d5ac977.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "库",
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23561,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "水库",
   "id": "d95e2409f7391ebfc15b7c40",

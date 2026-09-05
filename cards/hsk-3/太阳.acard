@@ -1,16 +1,20 @@
 {
   "audio": "ccd18e87504e2ce60a4521d6d2a2e8d398d47dc168a4e7ed0ae499fa0d2e9ff5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "太"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1563,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "太阳",
   "id": "d882c243353949a22e6cc714",

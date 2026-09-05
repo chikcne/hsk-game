@@ -1,14 +1,18 @@
 {
   "audio": "e942c07b4f71290d2ffdb01fd2c9f016a949a8175327eff71b186ffe549c24fe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 30699,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "押金",
   "id": "f899b4e91b60ab03c525fb20",

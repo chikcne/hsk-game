@@ -1,14 +1,18 @@
 {
   "audio": "8f3b0574160ed714f456c659c72f0937657a67b9e9859fe805a361cb0585daed.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3264,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "灯",
   "id": "7b8f892b361377bff2aca793",

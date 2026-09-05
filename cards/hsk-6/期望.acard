@@ -1,17 +1,21 @@
 {
   "audio": "754662105bd453e893e88da132eb88db8706bc57bf30f7704bdcaba25ff8cffa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "望",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3216,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "期望",
   "id": "4adc507d635c48f165879130",

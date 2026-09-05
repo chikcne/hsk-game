@@ -1,16 +1,20 @@
 {
   "audio": "08a4bfaa306e62b6e7139ae43227b473b67fa88f5aaaf4f1bc2edfa3bfadf33c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "产"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6529,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "遗产",
   "id": "0ee69e03253f056a86f8fbfb",

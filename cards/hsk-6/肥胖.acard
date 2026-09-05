@@ -1,17 +1,21 @@
 {
   "audio": "4289b8f64ed37cff5264a73d23ebe7b83418b674828ccd5e16a7ba598d601189.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "肥",
       "胖"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17667,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "肥胖",
   "id": "4af517631b16e060f3921d58",

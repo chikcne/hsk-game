@@ -1,16 +1,20 @@
 {
   "audio": "12dce8117ef71e081733f00afa9a5f8564d08d153426d6f2a87b1125c612a05a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "那"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 128,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "那么",
   "id": "7d902581df7cd6f824221519",

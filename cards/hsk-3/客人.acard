@@ -1,16 +1,20 @@
 {
   "audio": "bf7748fe21f75e79ab68e144a0586800c0a69f143360f97c471b07d40a975144.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1174,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "客人",
   "id": "88580faec5d20ce895a96e7d",

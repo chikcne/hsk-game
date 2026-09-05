@@ -1,17 +1,21 @@
 {
   "audio": "c72d88df79b8abd5ed4af8dcea59e57dc31533ae12f4da8493eeba4e26de2b41.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6081,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "场面",
   "id": "fd94eb415dfadc43076b03e9",

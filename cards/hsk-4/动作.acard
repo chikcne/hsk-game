@@ -1,16 +1,20 @@
 {
   "audio": "f5c7dd722c1ae9280ff4c4a612ae69de08a370afd83859cf53e7e0b686a5edfc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1781,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "动作",
   "id": "6217c3f8165324baa2f77fc5",

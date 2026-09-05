@@ -1,17 +1,21 @@
 {
   "audio": "62f5ef2fe0a94fd040c70a87669c632fecec5738732bf476bd9e684fee507b4a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "总",
       "算"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4591,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "总算",
   "id": "b499b75cab38cd3fa2f8c993",

@@ -1,16 +1,20 @@
 {
   "audio": "913915ee56bcecd26abd4ef0d01c2b85be93171f71c7a74bbc678ff63e92e385.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "鱼"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4957,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "钓鱼",
   "id": "5f8a34c561baf1bd61b0c89e",

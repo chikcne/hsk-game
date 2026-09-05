@@ -1,17 +1,21 @@
 {
   "audio": "1d5f273725eb2cca179591feb98aafe96d71fb6a82b399e3580c0fd659435ed3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "扑",
       "灭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21915,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "扑灭",
   "id": "97bc12a2d13641e5176f5b5d",

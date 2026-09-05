@@ -1,14 +1,18 @@
 {
   "audio": "80f50c46733b850c47bca3726f14d85c832cc46fd00dcf3dea1dcbdacb797ed5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3173,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "楼",
   "id": "6584b68df0918a284c1e9af7",

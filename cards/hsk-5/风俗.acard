@@ -1,16 +1,20 @@
 {
   "audio": "e8ea54cd789163bd527447099e1b86615b46cb23be34a894b87c092cf8b3cb75.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "风"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24189,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "风俗",
   "id": "364e2a957cfab8317bea017b",

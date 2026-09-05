@@ -1,17 +1,21 @@
 {
   "audio": "00f31aacc41073f1a0fb2788fa2f43b028d35caf7999fc0d3589c6a9ee4e74a2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "产",
       "破"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5041,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "破产",
   "id": "230ecc85ef4fc9752996eb03",

@@ -1,7 +1,6 @@
 {
   "audio": "abed33b3d494ab3e180d29ae645509e54a4213a9b83aed1b77cfc678261e1471.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "大学",
@@ -9,12 +8,17 @@
       "学生",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9099,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "大学生",
   "id": "9c4436994425a4611d1ab662",

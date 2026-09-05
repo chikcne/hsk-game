@@ -1,7 +1,7 @@
 import type { LevelProgress, RuntimeDeck } from "../../shared/schemas";
 import type { RandomState } from "../random";
 
-export type LearningDeck = Pick<RuntimeDeck, "id" | "fingerprint"> & {
+export type LearningDeck = Pick<RuntimeDeck, "id" | "fingerprint" | "curriculum"> & {
   words: ReadonlyArray<Pick<RuntimeDeck["words"][number], "id">>;
 };
 

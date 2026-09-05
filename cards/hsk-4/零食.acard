@@ -1,16 +1,20 @@
 {
   "audio": "f99085b426f511a6913eac2c17e751b7df145b38c41c41751c5a9578cb136d09.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "零"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14648,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "零食",
   "id": "3414fdad99d3e191b08e91d1",

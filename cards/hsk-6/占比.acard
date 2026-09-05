@@ -1,17 +1,21 @@
 {
   "audio": "2782c090c7fb650787e34bb3af67cfccb37796fa242c99378c2cde1f14028de5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "占",
       "比"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": null,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "占比",
   "id": "83fb7a6d953259b3b6a8e9d5",

@@ -1,16 +1,20 @@
 {
   "audio": "d65d3f26be5f600fa118063ebc75c013c71f8fb19fdcd202626538ab9a16f4f6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "切"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 43367,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "切实",
   "id": "e1e5cbaca49897eed936aebf",

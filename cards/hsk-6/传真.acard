@@ -1,17 +1,21 @@
 {
   "audio": "57cc0dba328b2c06cefab16e5c7516053322e235bfeed5e894541712bb0a9591.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传",
       "真"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13399,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "传真",
   "id": "63fd90f0c1de662c08d6a0b5",

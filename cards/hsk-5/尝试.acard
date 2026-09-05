@@ -1,17 +1,21 @@
 {
   "audio": "43f97c4be50583f2b2de2012c1a97ccd230069cd7a2da2b1eb6b99089c777575.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "尝",
       "试"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1293,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "尝试",
   "id": "42eea5cbb504e0d16644088b",

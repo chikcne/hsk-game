@@ -1,16 +1,20 @@
 {
   "audio": "0c90ba57f51c081856c2ff3ee13090523b68e4db59b0964716780f7c7daeec18.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "慢"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9109,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "缓慢",
   "id": "a0c998053d7f4b7ee289535c",

@@ -1,14 +1,18 @@
 {
   "audio": "ead53dc8d28e97ce4a6c9b859d8b67f9580efc975171f64d8252d0418fa53584.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1039,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "丢",
   "id": "a3696d002c307ce561deb521",

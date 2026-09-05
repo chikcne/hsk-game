@@ -1,16 +1,20 @@
 {
   "audio": "b758af61f39d40215e76718e32a6a7acd97697b391912497f62f80b89ac3f5f2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "强"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5824,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "勉强",
   "id": "5752545e28954f7ef67d98c7",

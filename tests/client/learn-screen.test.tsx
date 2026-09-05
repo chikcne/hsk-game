@@ -11,17 +11,17 @@ import type { StrokeCharacterData, StrokeDataMap } from "../../src/client/data/s
 
 const NOW = Date.parse("2026-01-01T00:00:00.000Z");
 const vector: StrokeCharacterData = { strokes: ["M 0 0 L 10 10 Z"], medians: [[[0, 0], [10, 10]]] };
-const strokeData: StrokeDataMap = new Map([["你", vector], ["好", vector], ["什", vector], ["么", vector]]);
+const strokeData: StrokeDataMap = new Map([["你", vector], ["好", vector], ["什", vector], ["么", vector], ["学", vector], ["习", vector]]);
 const deck = createDemoDeck("hsk-1") as unknown as LearningDeck & { words: Array<{ id: string; displayHanzi: string; displayPinyin: string; meaning: string }> };
 const runtimeDeck = createDemoDeck("hsk-1");
 
 function baseSave(): SaveFile {
   return {
-    schemaVersion: 4, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
+    schemaVersion: 5, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
     settings: { ...DEFAULT_SETTINGS },
     spawnOrdinal: 0,
     schedulerRng: randomStateFromSeed("learn-screen"),
-    levels: { "hsk-1": createLevelProgress(deck, { curriculumSeed: "curriculum" }) },
+    levels: { "hsk-1": createLevelProgress(deck) },
     acquiredWords: [],
     learnSessions: {},
     relearnSession: null,
@@ -102,18 +102,17 @@ describe("LearnScreen markup", () => {
 
   test("the screen describes the active word for assistive technology", () => {
     const html = renderLearn(withSession(baseSave()));
-    expect(html).toContain('aria-label="Write \u4ec0\u4e48 (sh\u00e9nme)"');
+    expect(html).toContain('aria-label="Write 学习 (xuéxí)"');
     expect(html).toContain("PROGRESS SAVED");
   });
 });
 
 describe("Learn HUD lesson math", () => {
-  test("uses the shared curriculumLessonNumber (floor), not a ceiling", () => {
-    // 3 introduced words at levelSize 2: floor(3/2) = lesson 1 (a ceiling
-    // would misleadingly report lesson 2 before the second lesson exists).
-    const save = withSession(baseSave(), 3);
-    const level = { ...save.levels["hsk-1"]!, curriculumCursor: 3 };
-    const html = renderLearn({ ...save, settings: { ...DEFAULT_SETTINGS, levelSize: 2 }, levels: { ...save.levels, "hsk-1": level } });
+  test("uses the fixed 20-card curriculum rather than the session cap", () => {
+    // Six introduced words remain lesson 1 even when the per-session cap is 5.
+    const save = withSession(baseSave(), 6);
+    const level = { ...save.levels["hsk-1"]!, curriculumCursor: 6 };
+    const html = renderLearn({ ...save, settings: { ...DEFAULT_SETTINGS, levelSize: 5 }, levels: { ...save.levels, "hsk-1": level } });
     expect(html).toMatch(/LESSON 1</);
     expect(html).not.toMatch(/LESSON 2</);
   });

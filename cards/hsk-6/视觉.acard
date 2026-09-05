@@ -1,14 +1,18 @@
 {
   "audio": "ce0c59faf64f9950246a9a8864bcd47683f05bd871c62722b1d374c288ddb729.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11101,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "视觉",
   "id": "ecbc02739a409c24f09db84c",

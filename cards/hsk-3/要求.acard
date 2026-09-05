@@ -1,17 +1,21 @@
 {
   "audio": "61d96bdd2d7b4caea2ad956153787cfd20e1fe02fb2bacd69e2222e648e5fbe9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "求",
       "要"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 667,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "要求",
   "id": "d759fb1e641392243aa040ac",

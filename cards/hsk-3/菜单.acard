@@ -1,17 +1,21 @@
 {
   "audio": "e23d74777abebb75f3950d8c6245e5063eb3d3c4890e49665059404e8d218bb5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "单",
       "菜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7615,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "菜单",
   "id": "2c3b84b92b66eebe06ae9645",

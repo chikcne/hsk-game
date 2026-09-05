@@ -1,16 +1,20 @@
 {
   "audio": "af4fbca3eed2090eea80698ba708436d85b688376a21420f07563f34b4d6e5b6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19298,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "天文",
   "id": "cacfabe4e7f0600efdd0e189",

@@ -1,16 +1,20 @@
 {
   "audio": "7ef8d1c9f233c3a477b165624a9c99d438223a3d71a517006babc703ae20c540.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "常"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 208,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "非常",
   "id": "11e42b33a05987f69e983c74",

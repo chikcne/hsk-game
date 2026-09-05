@@ -1,14 +1,18 @@
 {
   "audio": "2f1614a807a71fd0bbd76631962fb6feefd363e75a22addc82b0b30cb6e58d86.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6150,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "渡",
   "id": "c9392ac03f67a8c75718ea7e",

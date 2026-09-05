@@ -1,16 +1,20 @@
 {
   "audio": "5f7bfe825607149013d8a76077d9532801eb4bc0d567f652d82e07833e596316.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "借"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16825,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "借助",
   "id": "e94da4ce68a8af0656a3eb51",

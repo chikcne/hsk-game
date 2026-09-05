@@ -1,17 +1,21 @@
 {
   "audio": "27d6f1416c2f3fc314087f395b5b8394478ac78d23495182131050540b64a943.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3307,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "当地",
   "id": "fb29ce239eebe75262cba470",

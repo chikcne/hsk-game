@@ -1,16 +1,20 @@
 {
   "audio": "c4ba1d4adb30fffbaeae50d5b222635f939e5d44623adcc3b7af4e7c0eb0fd15.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "请"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2476,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "申请",
   "id": "4b9336bb482f2f97b3a1952e",

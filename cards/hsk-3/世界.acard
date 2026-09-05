@@ -1,14 +1,18 @@
 {
   "audio": "7ff1a0de4e6ffef7346295b0a813c735d30d0660fd35d14cb0da3b4849271875.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 280,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "世界",
   "id": "16610b28a3c5d27156f12a87",

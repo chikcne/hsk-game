@@ -1,17 +1,21 @@
 {
   "audio": "f268c1e104c7d7694e011c5acf3e514a65c14b6b3f45ddcac23807e17def7425.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交",
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5032,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "成交",
   "id": "451138d6af99e944bb25af8b",

@@ -1,17 +1,21 @@
 {
   "audio": "d56d2d356cb1d3bb5f01caaa93c0dfdb552ccbf1e941c51f1d84c942baecad0b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "包",
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12941,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "包子",
   "id": "9385b6de7178a5d60b0e61d8",

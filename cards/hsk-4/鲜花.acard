@@ -1,17 +1,21 @@
 {
   "audio": "064576005b6d5d6d6f57fa87009e689bb496d2fd2e31be756fd446d08a32a987.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "花",
       "鲜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9117,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "鲜花",
   "id": "ba1552ad9be8057165ddba2b",

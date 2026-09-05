@@ -1,17 +1,21 @@
 {
   "audio": "e519e8e0fdcbaa94617565936f7a0c96e2a9ff52d328f8236f705815b6e0018f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "忘",
       "记"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 879,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "忘记",
   "id": "a3844e02824060b73525651a",

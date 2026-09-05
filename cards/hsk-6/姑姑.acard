@@ -1,14 +1,18 @@
 {
   "audio": "c9b638e2a5071c50e3f73b5363774303b7f75bc67f36efafc3ca817710a3c4c0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8289,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "姑姑",
   "id": "238c5a923a2b22fe227d870a",

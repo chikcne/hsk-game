@@ -1,17 +1,21 @@
 {
   "audio": "96eeb9aab59020bf8b29cd1b94f11995e6a1c777fc9e992301d373af662f112c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "平",
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4054,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "水平",
   "id": "f381f7fb0ffd11e3f4cdffa5",

@@ -1,17 +1,21 @@
 {
   "audio": "325b4ec1de0f2cd11f2a613dec7d444beccc5b7ebbb64082d87e504dd390a83e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "富",
       "有"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4310,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "富有",
   "id": "6b81d3ba4d91b03e46909c75",

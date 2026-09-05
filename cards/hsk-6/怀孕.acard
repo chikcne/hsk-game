@@ -1,16 +1,20 @@
 {
   "audio": "a89ea2e885075f6d940839d20276e29606b902ed684d70276fa102e5a2dfdc1a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "怀"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1725,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "怀孕",
   "id": "2be67ccaf976f8dd13c0877c",

@@ -15,17 +15,12 @@ export function createWordProgress(): WordProgress {
   };
 }
 
-export type CreateLevelOptions = {
-  curriculumSeed: string;
-};
-
 export type CreateLevelProgressFailure = DuplicateWordIdsError | EmptyWordSetError;
 
 /** Typed variant of {@link createLevelProgress}: fails with a
  * `DuplicateWordIdsError` or an `EmptyWordSetError` instead of throwing. */
 export function createLevelProgressEffect(
   deck: LearningDeck,
-  options: CreateLevelOptions,
 ): Effect.Effect<LevelProgress, CreateLevelProgressFailure, never> {
   return Effect.gen(function* () {
     const ids = deck.words.map((word) => word.id);
@@ -37,7 +32,6 @@ export function createLevelProgressEffect(
       return {
         deckId: deck.id,
         deckFingerprint: deck.fingerprint,
-        curriculumSeed: options.curriculumSeed,
         curriculumCursor: 0,
         firstCompletedAt: null,
         words,
@@ -55,9 +49,8 @@ export function createLevelProgressEffect(
  * for duplicate or empty decks. */
 export function createLevelProgress(
   deck: LearningDeck,
-  options: CreateLevelOptions,
 ): LevelProgress {
-  return runDomain(createLevelProgressEffect(deck, options));
+  return runDomain(createLevelProgressEffect(deck));
 }
 
 /** Words whose card sits in the review stage (the product's "mastered" count
@@ -68,10 +61,9 @@ export function countGraduated(level: LevelProgress): number {
 }
 
 /** 1-based lesson label derived from how far the curriculum has advanced. */
-export function curriculumLessonNumber(level: LevelProgress, levelSize: number): number {
-  return Math.max(1, Math.floor(level.curriculumCursor / Math.max(1, levelSize)));
+export function curriculumLessonNumber(level: LevelProgress): number {
+  return Math.max(1, Math.floor(level.curriculumCursor / 20) + 1);
 }
 
-/** Stable FNV-based curriculum ordering (see curriculum.ts) exposed for
- * callers that need the full order, e.g. audio preloading. */
+/** Authored curriculum ordering exposed for session membership selection. */
 export { curriculumOrder };

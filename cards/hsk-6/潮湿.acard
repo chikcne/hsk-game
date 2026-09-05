@@ -1,16 +1,20 @@
 {
   "audio": "2d6a2d4c13786851e856b20ffd8f0d9d8ee0a9b2e358c3465117cf2400ea17c9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "湿"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13105,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "潮湿",
   "id": "39da12e62f69106542cd8219",

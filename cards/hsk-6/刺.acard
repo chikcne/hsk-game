@@ -1,14 +1,18 @@
 {
   "audio": "1b3c6cf7bdf0c16d60cc8067276f7b250584541789dddf10ba28d8f5a7cf62ef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 4025,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "刺",
   "id": "89f574d983fa0439f2c8224c",

@@ -1,17 +1,21 @@
 {
   "audio": "d8fe267b021e6b75e5f75185848e26a0d37f11b44558d1fd50cda125a8a09270.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "品",
       "甜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17241,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "甜品",
   "id": "661c93c808b63b1790624bdc",

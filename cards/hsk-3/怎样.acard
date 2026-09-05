@@ -1,16 +1,20 @@
 {
   "audio": "8d974f19c6ebb795a86d1ed3ae0ed1c836cb16fc3923b075da07e9b80260a2e4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "样"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 365,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "怎样",
   "id": "5db3ab200b54b028c9f6aed6",

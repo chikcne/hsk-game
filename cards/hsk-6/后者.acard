@@ -1,17 +1,21 @@
 {
   "audio": "d446852b1c9105ff769716621e689aaa88c8e2a99c1dad9bc2a429d64f87590e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "者"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20819,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "后者",
   "id": "1909ec39494b83ef1f41bf56",

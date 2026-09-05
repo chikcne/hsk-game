@@ -1,17 +1,21 @@
 {
   "audio": "1fcfc9ff81849f41a3aa00637a7260347d36d82b2a5b3e10d4d4dcb90363571d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "三",
       "再"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 29910,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "再三",
   "id": "44d83e75f61fd50937a7dc3c",

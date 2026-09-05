@@ -1,16 +1,20 @@
 {
   "audio": "ceed6805415dd1c6fb8b81b977731142ec8ee2a064bddcf72bac527971182840.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3619,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "企业",
   "id": "131053962559e7461926dbbb",

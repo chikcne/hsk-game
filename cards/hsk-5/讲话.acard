@@ -1,16 +1,20 @@
 {
   "audio": "11c00a59c5ac7b281c630edea6fb615603376d0915b0d8a8b636903c5f85d116.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "讲"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2195,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "讲话",
   "id": "229f61f09e441468c92203c4",

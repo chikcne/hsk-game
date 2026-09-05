@@ -1,16 +1,20 @@
 {
   "audio": "ac646940f301323d37abe7de04f7541b941f6224996eda32b740e4c5c188dae0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 34456,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "开设",
   "id": "439917a46ad69ec7de81aa08",

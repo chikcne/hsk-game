@@ -1,14 +1,18 @@
 {
   "audio": "8507746a94dc221ab572fea6854446f5221ea059b75da6814bb9469437ec0a45.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 22446,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "泪",
   "id": "316a6978aeb5b5b27078ab33",

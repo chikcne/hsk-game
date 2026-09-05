@@ -1,14 +1,18 @@
 {
   "audio": "aab9575f8c5d9b8d67a343269deb999c5e6c0353495c6f4bbab79f9da3881e25.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 489,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "救",
   "id": "8f9b2e346faa4f24268ebd95",

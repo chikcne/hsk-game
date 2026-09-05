@@ -1,17 +1,21 @@
 {
   "audio": "24f3c0fdb4bcffac7809c5f9cb6a0cdb23518a167853b33558b88ffeeef22fac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "假",
       "如"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2336,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "假如",
   "id": "ff9a48776f44b4f73cd281e6",

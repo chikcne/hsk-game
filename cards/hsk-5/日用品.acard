@@ -1,19 +1,23 @@
 {
   "audio": "9f01b831834d6a0b72cfba2441e1907abf3c2122784200107fe92f73e40e2254.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "品",
       "日",
       "用",
       "用品"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 53651,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "日用品",
   "id": "aef2f9c3987f91b3f6278184",

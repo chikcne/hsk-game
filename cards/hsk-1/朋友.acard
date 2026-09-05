@@ -1,14 +1,18 @@
 {
   "audio": "aac7b73507aabb104046e4defd3b2d3fa67367fe58f8a4e327e815ffde5e663c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 155,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "朋友",
   "id": "a31f64685d659ce66ce8ba4c",

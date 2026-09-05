@@ -1,16 +1,20 @@
 {
   "audio": "9bec35284ea355ae86d2509c4a20ad46e61527842ec33f2e51d81bb9c4af9ec1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "因"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6518,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "因素",
   "id": "a49c2dbd326db0359ce7d2fa",

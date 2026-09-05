@@ -1,16 +1,20 @@
 {
   "audio": "dabd00fb5158ecc0efdc482fe7982a6d0b5eb9e5ebe54bc2ac4323d30c921e11.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "间"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18937,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "民间",
   "id": "812590eff18f7a9ab9ac66cd",

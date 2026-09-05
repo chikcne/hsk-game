@@ -1,16 +1,20 @@
 {
   "audio": "a7095ce1b016ab0d3ac43305e4d19661fc92a690668dd34dee9e19565e79b36b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6462,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "木头",
   "id": "6b1a151c78f7504dc0a4cd5d",

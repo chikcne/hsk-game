@@ -1,17 +1,21 @@
 {
   "audio": "d9b0f49a4790a41cbcf7bf1d42fcf367dca2077ede27f8a25e0a684053952002.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "乡",
       "村"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5380,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "乡村",
   "id": "5058b0fa4ec1cd0c9127bfc5",

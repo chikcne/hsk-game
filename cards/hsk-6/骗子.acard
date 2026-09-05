@@ -1,17 +1,21 @@
 {
   "audio": "4ccf284688f4996fc0fbb4dc3ee1a4aac5dda043bdf5ec8da090f32a25433f69.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "骗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2150,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "weather-climate"
+    ]
   },
   "hanzi": "骗子",
   "id": "9033b9964955ab2ef3e50f0b",

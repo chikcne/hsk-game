@@ -1,17 +1,21 @@
 {
   "audio": "c9bb28f3a9f385850c5e34572a436982054d97414b591ce12e9300da498376c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "好"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": null,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "好不",
   "id": "bd686979375f31bd32c04827",

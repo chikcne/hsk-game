@@ -1,16 +1,20 @@
 {
   "audio": "98d46c2663ed3c0a633f04b8b3757ce7a54cde16ccf2b7a72da964886eab277f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3466,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "自豪",
   "id": "74e9b1b6ee5f1b12258d1ddd",

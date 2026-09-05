@@ -1,17 +1,21 @@
 {
   "audio": "af27816245f891259e623a29d8174d07d7fa38c93b63632e5a2434cfa9e88fdc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "关",
       "怀"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19156,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "关怀",
   "id": "aac5e73bad42311ff64d2d16",

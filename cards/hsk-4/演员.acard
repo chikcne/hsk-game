@@ -1,17 +1,21 @@
 {
   "audio": "d9afa7d5cc44942a1c6a711f7f7e57f8e5d0e3303f204e13824f9afc2a4fcc9e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "员",
       "演"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2004,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "演员",
   "id": "708ec21cb93ae506ea90d55f",

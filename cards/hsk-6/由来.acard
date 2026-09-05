@@ -1,17 +1,21 @@
 {
   "audio": "c747293c10416bdde9740196ee3750c780b61304240ccf22269efd520344ef63.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "来",
       "由"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 251626,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "由来",
   "id": "2546323418ad60fc6935070a",

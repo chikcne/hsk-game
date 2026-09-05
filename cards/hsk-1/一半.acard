@@ -1,17 +1,21 @@
 {
   "audio": "1caf9445f51b46fbdc85c3d4de7e153bf4f475b1fbf40733d6455a49d475f274.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "半"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1370,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "一半",
   "id": "41a0ad845e46bf96e50ce010",

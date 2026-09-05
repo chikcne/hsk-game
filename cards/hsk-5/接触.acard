@@ -1,16 +1,20 @@
 {
   "audio": "40bd31d8126fe9b747fa0423484b30289aa6c56129294285660f7ad07892cb0e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "接"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2148,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "接触",
   "id": "1509855921428e9b1bec1fd4",

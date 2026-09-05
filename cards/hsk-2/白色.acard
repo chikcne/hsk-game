@@ -1,16 +1,20 @@
 {
   "audio": "2ee797d1cc6c71f3b28afadafcdb390ef39103251dce71a21cea7ac4ccfe2360.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "白"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2588,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "白色",
   "id": "bee10774f8197da936588e22",

@@ -1,16 +1,20 @@
 {
   "audio": "05b194ce28ac2e84748b790559f20c5d85422bc62ddcc09b32c6f24c3e790d67.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8232,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "终点",
   "id": "e48733712580f59432d0a980",

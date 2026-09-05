@@ -1,17 +1,21 @@
 {
   "audio": "9e49ac7864ddf51ff19b3198da2cd48e8beb723d25678135803bd40bf2b77a9d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "岁",
       "数"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17105,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "岁数",
   "id": "f75d4c9959ffa4ff89fabcb1",

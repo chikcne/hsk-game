@@ -1,17 +1,21 @@
 {
   "audio": "1fe13948f9a50241fda8572001811809047e1b6ee1ea7d03a21cec15457901ea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开",
       "离"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 186,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "离开",
   "id": "e7f3f3c4ab48bf4b3dd4453a",

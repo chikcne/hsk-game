@@ -1,16 +1,20 @@
 {
   "audio": "a21bf5ccf41ff5674c930bb2e30c8c18ad8401442090055b97874f5c4af18c5f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3656,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "校长",
   "id": "732997ecfcb043a6b0a9e692",

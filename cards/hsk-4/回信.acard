@@ -1,17 +1,21 @@
 {
   "audio": "a036faf72290be478be5ba2e588434957bd8936428d98ecbc6b832d0b5909796.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "信",
       "回"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11038,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "回信",
   "id": "42fc4613c25f36c38ac790d6",

@@ -1,16 +1,20 @@
 {
   "audio": "758932a81858305a8f11c16cdd536eda64447f62a5d91ff3aa5f844f3a4600ca.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "骗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2873,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "欺骗",
   "id": "070b8c5c0b949afecdd3f7a6",

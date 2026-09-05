@@ -1,16 +1,20 @@
 {
   "audio": "2122f36324b0417aeb88afe1930ce898a3aefd5ad21af0ec6f0c36de1b498932.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "修"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10039,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "维修",
   "id": "0bed9a82ed54d0f1a758e03b",

@@ -1,14 +1,18 @@
 {
   "audio": "64f0732f20b40a47d456c07dd965fc68638d303ad89c06bb5801b94e34edf2a8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 14178,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "现状",
   "id": "ccb2d66debb2975218726887",

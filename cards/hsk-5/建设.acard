@@ -1,16 +1,20 @@
 {
   "audio": "06b386a611946b1904bef18232f1de0fc37d97059f4d9d3852ce30ec958de9d9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "建"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7390,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "建设",
   "id": "a5a5cc1b8ee676fccceb65a0",

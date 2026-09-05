@@ -1,16 +1,20 @@
 {
   "audio": "2d24cc8b4af4829e7c8fa007825293abdbfd8344e7d84ab7138cc73a9ead35aa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8349,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "业余",
   "id": "79f21be126ed755f99b9a690",

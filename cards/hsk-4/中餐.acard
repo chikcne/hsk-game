@@ -1,16 +1,20 @@
 {
   "audio": "8635f29c9ae2412ad9fff7e5035ba34a7ce1ce04351276febb87f9e016cdc99b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30491,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "中餐",
   "id": "291920888b0c3a4bf68ebc65",

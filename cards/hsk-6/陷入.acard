@@ -1,16 +1,20 @@
 {
   "audio": "bbb4e9a865e836d2a91cbef9af03ba52bf9d26d29462730f51085e499c0735a9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "入"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3103,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "陷入",
   "id": "4805305291ed8a442e6d69f3",

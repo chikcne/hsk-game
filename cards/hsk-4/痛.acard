@@ -1,14 +1,18 @@
 {
   "audio": "6e46894ff8c456f10709411cc515f29f60b9a1a30da221782b9b03b678d26ffe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2032,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "痛",
   "id": "97d964d1d2402868e91f5048",

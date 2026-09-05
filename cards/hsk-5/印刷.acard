@@ -1,17 +1,21 @@
 {
   "audio": "7e9e75427948f0121bab12e170a22be9342a3df21fc51ad7635dac8c15e70701.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "刷",
       "印"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15651,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "印刷",
   "id": "3006bc05cddd0412a5507540",

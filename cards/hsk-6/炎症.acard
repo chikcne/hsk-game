@@ -1,14 +1,18 @@
 {
   "audio": "f7ec15d84c15c3ea7323e57b79602d58bb8bdd902ac628a04c6939214e4a135d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 51469,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "炎症",
   "id": "43f97623889d9578c4836759",

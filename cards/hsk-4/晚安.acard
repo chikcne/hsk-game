@@ -1,17 +1,21 @@
 {
   "audio": "644320512bb2c33aa810a9650105f80c001dededcc5cc64a668d3dfb5b41959f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "安",
       "晚"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 682,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "晚安",
   "id": "24803d0f0615a4d69ab14747",

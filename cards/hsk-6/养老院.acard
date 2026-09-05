@@ -1,18 +1,22 @@
 {
   "audio": "c180a560c073801dcfa0e2935ad754a7a7409cd494853a816a3371f772c54a72.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "养",
       "养老",
       "老"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19023,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "养老院",
   "id": "a59524c5174e96471b6e5ab1",

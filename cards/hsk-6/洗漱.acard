@@ -1,16 +1,20 @@
 {
   "audio": "df1347eb82856e1dd833a40408325b03650b517301971a5d169854d1680bd33e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "洗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 39780,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "洗漱",
   "id": "0863d9bf39e1d12cc68f0eb9",

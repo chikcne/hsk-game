@@ -1,16 +1,20 @@
 {
   "audio": "3ad3d00942c8e0b098bbf0d373b5b017aa397e9d4db7262e131886d485ea337a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "保"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8047,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "保障",
   "id": "e3ab034b8093b6bec7e08d13",

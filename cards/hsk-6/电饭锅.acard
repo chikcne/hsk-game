@@ -1,18 +1,22 @@
 {
   "audio": "524113c93525a53af57502a610ce1366432753337d7b7fda4833bcce6012580e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "电",
       "锅",
       "饭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 173122,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "电饭锅",
   "id": "fd5ff1788cd453ec1a9fea55",

@@ -1,16 +1,20 @@
 {
   "audio": "c552c9cc33a943a663b8332680ca03709d9f2b1e073a3993505136256580207c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "名"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9085,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "知名",
   "id": "fcc9c86050b5309db24ca6c2",

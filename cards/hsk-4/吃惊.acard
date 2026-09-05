@@ -1,16 +1,20 @@
 {
   "audio": "3967537b037d0d43885e30742870a342bccc9efb126d3bcd80244663ddd0fd3b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "吃"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4323,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "吃惊",
   "id": "a9e321d2a7b34fa069fd72da",

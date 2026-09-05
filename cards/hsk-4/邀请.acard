@@ -1,16 +1,20 @@
 {
   "audio": "df712ce9a7b374b79449739af76c22ea79662f36704e317912793a63e3daab3c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "请"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1362,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "邀请",
   "id": "e15eb30f88f792e12638dac2",

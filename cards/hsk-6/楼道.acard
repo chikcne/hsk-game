@@ -1,17 +1,21 @@
 {
   "audio": "7ec69fe60896a8d12cf761517fc601af32404aea1735e5a9abd8f51811fd073d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "楼",
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 62642,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "楼道",
   "id": "8c761521a511a3a81605b573",

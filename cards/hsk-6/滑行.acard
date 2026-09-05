@@ -1,17 +1,21 @@
 {
   "audio": "db853bdc88dc4888bf837f43939b07e29a56301fd86bf4a41fc7a93586979f5b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "滑",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26202,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "滑行",
   "id": "749aaed066234bc00f80bdd9",

@@ -1,17 +1,21 @@
 {
   "audio": "a93b3242c4779278b4657dcada47bb59f9f4954b6a70e32645504f452c016930.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "代",
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23703,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "当代",
   "id": "b647499841832909c80e382b",

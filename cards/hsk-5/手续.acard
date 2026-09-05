@@ -1,16 +1,20 @@
 {
   "audio": "7791bbe8ddc5662abc952585354e42614bc035e8f21c99d8a84708bd1a3c41af.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10404,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "手续",
   "id": "51176f2e9ceb3d2e29cc2fc9",

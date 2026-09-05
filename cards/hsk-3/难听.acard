@@ -1,17 +1,21 @@
 {
   "audio": "db6e0b07e20e04c9209fcbe73e3f0c9155df8e76a268c623eb6b6616899521e5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "听",
       "难"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11865,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "难听",
   "id": "e7af05528558e706f86c07c1",

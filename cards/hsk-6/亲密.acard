@@ -1,17 +1,21 @@
 {
   "audio": "f0ed7157eb98e9eaae6b7eaaf2cd2b53cee25eb837e297fede516d1d2862500b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "亲",
       "密"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4746,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "亲密",
   "id": "23536f0d33709e9ecb08b964",

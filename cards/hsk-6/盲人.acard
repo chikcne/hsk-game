@@ -1,16 +1,20 @@
 {
   "audio": "b61b94211942c53a0947b09ac63739ca880e1a57bf69fd5dba649bf8a813ef51.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12355,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "盲人",
   "id": "e0a3bfd9da742582a868311d",

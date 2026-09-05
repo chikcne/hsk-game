@@ -1,14 +1,18 @@
 {
   "audio": "9da0df547058f2c03c829507cc982918ec17ef3e6c00d10bbc8ecd0d8b21a223.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4873,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "物质",
   "id": "08d2d3c82b49f3b7bd9a84df",

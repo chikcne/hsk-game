@@ -1,14 +1,18 @@
 {
   "audio": "8b35c84260992b789bc187c77814d45ee1f07d027adbe4aebc322f3e83b99e92.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1186,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "变",
   "id": "13f42165dff5e162631c8e20",

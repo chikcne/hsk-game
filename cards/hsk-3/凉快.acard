@@ -1,17 +1,21 @@
 {
   "audio": "91e7f42ac5b17f68f06e483bb78a5d3d135073252c9d229fedc9422e71f24b5e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "凉",
       "快"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15734,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "凉快",
   "id": "1f77dd43cde16eea08fe425d",

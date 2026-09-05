@@ -1,17 +1,21 @@
 {
   "audio": "95a76d520138c1ef9c0bce78862f450a048fedf86eeb3c7bf4377163808e9b04.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "超",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22945,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "高超",
   "id": "c3b4bb8756f89ea2a8ff5e0a",

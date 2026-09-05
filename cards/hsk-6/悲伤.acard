@@ -1,16 +1,20 @@
 {
   "audio": "afcb018702b37b2e47ca248344dbebd49d89db34c7569d98d0210023461af20c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "伤"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2744,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "悲伤",
   "id": "82cd4bed88363a2d0fa6474b",

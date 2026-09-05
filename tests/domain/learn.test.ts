@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { ComponentMemory, SaveFile } from "../../src/shared/schemas";
 import { DEFAULT_SETTINGS } from "../../src/shared/constants";
 import { createCardMemory, isCardDue, reviewCardMemory } from "../../src/domain/memory";
-import { createLevelProgress, type LearningDeck } from "../../src/domain/learning";
+import { createLevelProgress, curriculumFromWordIds, type LearningDeck } from "../../src/domain/learning";
 import { randomStateFromSeed } from "../../src/domain/random";
 import { reviewWordKey } from "../../src/domain/review";
 import {
@@ -15,16 +15,17 @@ const NOW_DATE = new Date(NOW);
 const LATER = new Date(NOW + 60_000);
 
 function deck(count = 40, fingerprint = "fp-a", prefix = "w"): LearningDeck {
-  return { id: "hsk-1", fingerprint, words: Array.from({ length: count }, (_, index) => ({ id: `${prefix}-${String(index).padStart(2, "0")}` })) };
+  const words = Array.from({ length: count }, (_, index) => ({ id: `${prefix}-${String(index).padStart(2, "0")}` }));
+  return { id: "hsk-1", fingerprint, words, curriculum: curriculumFromWordIds(words.map((word) => word.id)) };
 }
 
-function baseSave(deckOfSave: LearningDeck, seed = "curriculum"): SaveFile {
+function baseSave(deckOfSave: LearningDeck): SaveFile {
   return {
-    schemaVersion: 4, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
+    schemaVersion: 5, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
     settings: { ...DEFAULT_SETTINGS },
     spawnOrdinal: 0,
     schedulerRng: randomStateFromSeed("learn"),
-    levels: { [deckOfSave.id]: createLevelProgress(deckOfSave, { curriculumSeed: seed }) },
+    levels: { [deckOfSave.id]: createLevelProgress(deckOfSave) },
     acquiredWords: [],
     learnSessions: {},
     relearnSession: null,
@@ -105,6 +106,45 @@ describe("learn session creation", () => {
     const save = baseSave(source);
     const { session } = createLearnSession(source, save.levels["hsk-1"]!, NOW_DATE, { newCardLimit: 20, spawnOrdinal: 0 });
     expect(session.wordIds).toHaveLength(4);
+  });
+
+  it("finishes one authored lesson across four 5-card sessions before advancing", () => {
+    const source = deck(40);
+    let level = createLevelProgress(source);
+    const introducedBatches: string[][] = [];
+
+    for (let sessionIndex = 0; sessionIndex < 4; sessionIndex += 1) {
+      const created = createLearnSession(source, level, NOW_DATE, { newCardLimit: 5, spawnOrdinal: sessionIndex });
+      const introduced = created.session.wordIds.filter((id) => level.words[id]!.introducedAtOrdinal === null);
+      introducedBatches.push(introduced);
+      level = created.level;
+      for (const id of introduced) {
+        level = {
+          ...level,
+          words: {
+            ...level.words,
+            [id]: { ...level.words[id]!, card: reviewCard(NOW + 86_400_000) },
+          },
+        };
+      }
+    }
+
+    expect(introducedBatches).toEqual([
+      source.curriculum.lessons[0]!.wordIds.slice(0, 5),
+      source.curriculum.lessons[0]!.wordIds.slice(5, 10),
+      source.curriculum.lessons[0]!.wordIds.slice(10, 15),
+      source.curriculum.lessons[0]!.wordIds.slice(15, 20),
+    ]);
+    const next = createLearnSession(source, level, NOW_DATE, { newCardLimit: 5, spawnOrdinal: 4 });
+    expect(next.session.wordIds).toEqual(source.curriculum.lessons[1]!.wordIds.slice(0, 5));
+  });
+
+  it("never introduces beyond one authored lesson even with excess capacity", () => {
+    const source = deck(40);
+    const level = createLevelProgress(source);
+    const created = createLearnSession(source, level, NOW_DATE, { newCardLimit: 100, spawnOrdinal: 0 });
+    expect(created.session.wordIds).toEqual(source.curriculum.lessons[0]!.wordIds);
+    expect(created.level.curriculumCursor).toBe(20);
   });
 });
 
@@ -236,7 +276,7 @@ describe("resume exactness", () => {
       learnSessions: { ...save.learnSessions, "hsk-1": { ...session, currentWordId: persisted } },
     };
 
-    const launch = prepareLearnLaunch(withPointer, source, LATER, { levelSize: 5, newLevelSeed: "unused" });
+    const launch = prepareLearnLaunch(withPointer, source, LATER, { levelSize: 5 });
     expect(launch.session.currentWordId).toBe(persisted);
     expect(launch.changed).toBe(false);
   });
@@ -375,7 +415,7 @@ describe("launch planning (prepareLearnLaunch)", () => {
     const save = baseSave(source);
 
     // First launch: creates a session AND its level record together.
-    const first = prepareLearnLaunch(save, source, NOW_DATE, { levelSize: 5, newLevelSeed: "seed" });
+    const first = prepareLearnLaunch(save, source, NOW_DATE, { levelSize: 5 });
     expect(first.changed).toBe(true);
     let running: SaveFile = {
       ...save,
@@ -395,7 +435,7 @@ describe("launch planning (prepareLearnLaunch)", () => {
     expect(running.learnSessions["hsk-1"]).toBeNull();
 
     // Second launch: the persisted cursor/introductions force NEW words.
-    const second = prepareLearnLaunch(running, source, LATER, { levelSize: 5, newLevelSeed: "seed" });
+    const second = prepareLearnLaunch(running, source, LATER, { levelSize: 5 });
     const secondBatch = second.session.wordIds;
     expect(secondBatch).toHaveLength(5);
     for (const id of firstBatch) expect(secondBatch).not.toContain(id);
@@ -405,7 +445,7 @@ describe("launch planning (prepareLearnLaunch)", () => {
   it("resumes an existing session without rewriting the level (changed only via session identity)", () => {
     const source = deck(8);
     const save = startSession(baseSave(source), source);
-    const launch = prepareLearnLaunch(save, source, NOW_DATE, { levelSize: 5, newLevelSeed: "seed" });
+    const launch = prepareLearnLaunch(save, source, NOW_DATE, { levelSize: 5 });
     expect(launch.session).toBe(save.learnSessions["hsk-1"]);
     expect(launch.levels).toBe(save.levels);
     expect(launch.changed).toBe(false);
@@ -414,16 +454,16 @@ describe("launch planning (prepareLearnLaunch)", () => {
   it("invalidates a stale session when the deck fingerprint changed, in the same plan", () => {
     const source = deck(8);
     const save = startSession(baseSave(source), source);
-    const updated: LearningDeck = { id: "hsk-1", fingerprint: "fp-b", words: [...source.words, ...Array.from({ length: 8 }, (_, index) => ({ id: `added-${index}` }))] };
-    const launch = prepareLearnLaunch(save, updated, NOW_DATE, { levelSize: 3, newLevelSeed: "seed" });
+    const updatedWords = [...source.words, ...Array.from({ length: 8 }, (_, index) => ({ id: `added-${index}` }))];
+    const updated: LearningDeck = { id: "hsk-1", fingerprint: "fp-b", words: updatedWords, curriculum: curriculumFromWordIds(updatedWords.map((word) => word.id)) };
+    const launch = prepareLearnLaunch(save, updated, NOW_DATE, { levelSize: 3 });
     expect(launch.session).not.toBeNull();
     expect(launch.session.deckFingerprint).toBe("fp-b");
     expect(launch.levels["hsk-1"]!.deckFingerprint).toBe("fp-b");
     expect(launch.changed).toBe(true);
-    // Reconciled additions are unintroduced, so the levelSize cap holds:
-    // at most `levelSize` of the 8 added words join this first session.
+    // Finish the current authored lesson before advancing to additions.
     const addedMembers = launch.session.wordIds.filter((id) => id.startsWith("added-"));
-    expect(addedMembers.length).toBe(3);
+    expect(addedMembers.length).toBe(0);
     // Cursor = 5 prior introductions + the 3 this session just introduced.
     expect(launch.levels["hsk-1"]!.curriculumCursor).toBe(8);
   });
@@ -431,10 +471,10 @@ describe("launch planning (prepareLearnLaunch)", () => {
   it("throws the caught-up RangeError only after earlier launches were persisted correctly", () => {
     const source = deck(5);
     const save = baseSave(source);
-    const first = prepareLearnLaunch(save, source, NOW_DATE, { levelSize: 5, newLevelSeed: "seed" });
+    const first = prepareLearnLaunch(save, source, NOW_DATE, { levelSize: 5 });
     let running: SaveFile = { ...save, levels: first.levels, learnSessions: { ...save.learnSessions, "hsk-1": first.session } };
     for (const id of first.session.wordIds) running = applyLearnRating(running, "hsk-1", id, "easy", NOW_DATE).save;
-    expect(() => prepareLearnLaunch(running, source, NOW_DATE, { levelSize: 5, newLevelSeed: "seed" })).toThrow(RangeError);
+    expect(() => prepareLearnLaunch(running, source, NOW_DATE, { levelSize: 5 })).toThrow(RangeError);
   });
 });
 

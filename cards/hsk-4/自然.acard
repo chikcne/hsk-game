@@ -1,16 +1,20 @@
 {
   "audio": "f750986fe553e745b70fa5700c6664a0a22930698526658bece4314bca82c983.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1452,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "自然",
   "id": "08ba36cfcf4cee7301f4db66",

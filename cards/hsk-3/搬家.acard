@@ -1,17 +1,21 @@
 {
   "audio": "8dc701156cca604bf7e9860131e9f273b0cc3ffacf2373daad757d5a0345aecb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家",
       "搬"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5056,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "搬家",
   "id": "27a1a8145cf0642bf2a14cce",

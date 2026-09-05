@@ -1,16 +1,20 @@
 {
   "audio": "4c079bd3f045192c7a1958ba78a155a5bf48d58dd0f29708c08eb230e5c29cfe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13225,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "智能",
   "id": "f18f834b3c835788ea70e46e",

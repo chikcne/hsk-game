@@ -1,17 +1,21 @@
 {
   "audio": "7ff05af7a03f7a9bad5de226a0df1f44202074af0ba3374a9d905320ab074093.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "周",
       "所"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14438,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "众所周知",
   "id": "f12480a1bd9343614e4215f9",

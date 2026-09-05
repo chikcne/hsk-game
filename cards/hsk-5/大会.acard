@@ -1,17 +1,21 @@
 {
   "audio": "6225aa041c3ad6d99c876b892e04685c88795c09e63fc5b1b0e21eb130725c60.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会",
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6331,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "大会",
   "id": "e7450969548c56fc7bfe1980",

@@ -1,17 +1,21 @@
 {
   "audio": "f0c18a2e9a7cb79f38fd1c6da7edaaf8952caac2b81cd7261c4a345eb4272022.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "接",
       "近"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1200,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "接近",
   "id": "6a281add95507186fbeb6ca5",

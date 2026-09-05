@@ -1,16 +1,20 @@
 {
   "audio": "91ab656572732c7105652ada3ae229c5749f0919956aee95a56843d8d40ec32f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "考"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5173,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "考验",
   "id": "5ed05c425e177b2df049a92b",

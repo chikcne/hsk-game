@@ -1,17 +1,21 @@
 {
   "audio": "d52b7499282177f6d4d9e7d1e83d59e592a682d9509a11e98eec99cb55554e0a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "反",
       "对"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1391,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "反对",
   "id": "83dba2dd335079698ac0df7f",

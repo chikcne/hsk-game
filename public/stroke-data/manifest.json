@@ -7,7 +7,7 @@
     "commitDate": "2018-10-16T04:58:13Z"
   },
   "extractionDate": "2026-09-01",
-  "uniqueCharacterCount": 1943,
+  "uniqueCharacterCount": 1941,
   "appliedOverrides": [
     {
       "character": "滚",
@@ -42,29 +42,29 @@
       "sha256": "4557a19a4febbc8b3582730e117bd9125c9435ea297d610952765568e261783b"
     },
     "hsk-2": {
-      "characterCount": 244,
-      "bytes": 529323,
-      "sha256": "a4fb195eea890270f1afc334bc623606cab8c75e70159bb594c3dd861df4e814"
+      "characterCount": 239,
+      "bytes": 520684,
+      "sha256": "83a7a98a2a01ddedb2c9d9d2f17657a11e27800e919c318df4fee9f6ded95758"
     },
     "hsk-3": {
-      "characterCount": 504,
-      "bytes": 1150528,
-      "sha256": "f8c5b8b7823b010c0decf9611b8fbf56ba4d989dda0d4c95528af470e1e8d094"
+      "characterCount": 497,
+      "bytes": 1135804,
+      "sha256": "035e8cd823bd797b2784c8a24d65d0cad158ceffa581ef8a417dc8f41b9a7280"
     },
     "hsk-4": {
-      "characterCount": 825,
-      "bytes": 1931207,
-      "sha256": "55d5311f94d47ee96b36c324d747c2cd0b878bc5ad7cd93939d4be755201c6d0"
+      "characterCount": 815,
+      "bytes": 1907192,
+      "sha256": "3bf4bda4885e05313e83f71e3776086d3d094c920d7d3dc80699d9b263ede481"
     },
     "hsk-5": {
-      "characterCount": 1145,
-      "bytes": 2765344,
-      "sha256": "32b678152e5ffe94a6c629953ffacbe92ae6abeddb5d174b488ed7de86c11529"
+      "characterCount": 1131,
+      "bytes": 2729749,
+      "sha256": "868001ab63c88dbe2174aedc7790cc36dd129fa1c6c95c0f950894c2e2bf318b"
     },
     "hsk-6": {
-      "characterCount": 1354,
-      "bytes": 3346901,
-      "sha256": "db426c0578efba04be352bb937bab6e40dd04682fcaa624c6f79bd4f054052d6"
+      "characterCount": 1332,
+      "bytes": 3296565,
+      "sha256": "e0ce34090c0ec15d8d29d1d6575ba6cf405455254e2b17f06da11745577f8efe"
     }
   }
 }

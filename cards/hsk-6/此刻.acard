@@ -1,17 +1,21 @@
 {
   "audio": "2efcc9278f4f371a2c5729a87e2155eced1bdbc4d74689bfab4573524fcd9f92.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "刻",
       "此"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4741,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "此刻",
   "id": "a236781a89e78faedade147e",

@@ -1,17 +1,21 @@
 {
   "audio": "f4bfcafb6d7f11f538f2d188e41e0348a95bbd545a7b228e47248951f7782163.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "减",
       "轻"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10199,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "减轻",
   "id": "48d5091ec30ff9c67897b208",

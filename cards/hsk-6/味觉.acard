@@ -1,16 +1,20 @@
 {
   "audio": "88034bd603dcc63cfb357743d2ed576f689240d33dd1d288b91e0ab9b6bb51c8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "味"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31319,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "味觉",
   "id": "2f3376c83493d025b02ab85a",

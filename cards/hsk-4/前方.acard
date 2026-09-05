@@ -1,17 +1,21 @@
 {
   "audio": "ea7640329194737e843a3ca803f7f7e88ad150b010387e2e267d4d85f1e57e65.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前",
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6325,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "前方",
   "id": "8e801676397557a27fdd56bd",

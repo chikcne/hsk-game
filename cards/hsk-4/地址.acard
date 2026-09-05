@@ -1,16 +1,20 @@
 {
   "audio": "e6ecbe3d5407e2221dc22a78f73c017f60182e906f5834ea1995fbebbeec9ac6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1764,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "地址",
   "id": "17a6cf35ba2b5542f6b2459d",

@@ -1,18 +1,22 @@
 {
   "audio": "7c257cdead2af5104476796bc042d5a103ef1cd45575a4e2a0ce20885a110c1d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "多",
       "差"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1019,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "差不多",
   "id": "765cdaceabf98efe0acf4b24",

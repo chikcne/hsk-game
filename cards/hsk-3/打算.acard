@@ -1,17 +1,21 @@
 {
   "audio": "8bf4e179916cb2e2ebca3f73b035fbda0bd1fb85c77c75a1ad7128773978217f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打",
       "算"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 484,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "打算",
   "id": "a9531bbaeb6cd241247022c1",

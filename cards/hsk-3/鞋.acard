@@ -1,14 +1,18 @@
 {
   "audio": "cdc01acaaff43117dfe1686621ed1e4f0a8efe76dcadc687b84ca2d4a8aeeef5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2804,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "鞋",
   "id": "65e78a0abd20ea03f1d41796",

@@ -1,17 +1,21 @@
 {
   "audio": "9c82ef89cd4a864dc3ec8af3b75f4df0b379145513603b5bbbb82ff91c2df21d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "在",
       "场"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2639,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "在场",
   "id": "9bebf3e9184c673bb9640d9b",

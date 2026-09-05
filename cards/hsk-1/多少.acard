@@ -1,17 +1,21 @@
 {
   "audio": "9f5775c4f11261280e1bbb4ee3a52eb5f5266901886242e2d94dfc749fc7e970.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "多",
       "少"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 335,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "多少",
   "id": "da919f4315141b287f63ef7e",

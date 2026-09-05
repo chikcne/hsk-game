@@ -1,14 +1,18 @@
 {
   "audio": "07cbe0eaefefacd24b0540ead73aa8d475b197cc8856c14bb20ade522fddb4bf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3762,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "利益",
   "id": "2a3ce0b04367c7f14fa0c0cc",

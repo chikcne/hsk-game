@@ -1,16 +1,20 @@
 {
   "audio": "15c9a59079af7d146f15f37da41830f06e1de573c226a268a31dd6e0b21bb706.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "假"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5893,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "休假",
   "id": "96eb2b6b57452ead97e2417b",

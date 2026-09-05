@@ -1,16 +1,20 @@
 {
   "audio": "5da74da1ce8dffc48a3e4bcfd235845592e467fe845d0f45cba15cd264ea0894.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "化"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6766,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "化妆",
   "id": "009a39e873402df6de49aa41",

@@ -1,14 +1,18 @@
 {
   "audio": "d3fdc0a87ba14a1388487506bb16adb1062f9f1ffa85d72abacae1e6bb662519.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5448,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "农民",
   "id": "7f9e8ef3c6843fa489be7148",

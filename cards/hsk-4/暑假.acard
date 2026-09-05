@@ -1,16 +1,20 @@
 {
   "audio": "e1b3268c54760a1f00723bfd36cfda5d33925f608e371cae711f520a39515a85.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "假"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6801,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "暑假",
   "id": "8be4485c760de20446621e5d",

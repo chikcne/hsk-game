@@ -8,6 +8,7 @@ import { parseMediaMap } from "../../tools/import-decks/archive/media";
 import { compileDecks } from "../../tools/import-decks/compile/compiler";
 import { stableJson } from "../../tools/import-decks/compile/stable-json";
 import { buildMeaningIndexes, normalizeAndDedupe } from "../../tools/import-decks/normalize/words";
+import { curriculumFromWordIds } from "../../src/domain/learning";
 import type { RawNote } from "../../tools/import-decks/raw-types";
 
 const entries = [
@@ -64,12 +65,19 @@ describe("runtime deck compilation primitives", () => {
     expect(indexes.meaningIndex.one).toMatchObject({ label: "one", wordIds: [expectedId], hanziKeys: ["一"] });
     expect(indexes.meaningKeysByPartOfSpeech.number).toHaveLength(9);
 
-    expect(() => RuntimeDeckSchema.parse({
+    const runtimeDeck = {
       schemaVersion: 1, importerVersion: "test", id: "hsk-1", hskLevel: 1, title: "fixture", fingerprint: "f",
-      source: { sharedId: 1, url: "https://example.test", packageSha256: "a".repeat(64), sourceNoteCount: 10, logicalWordCount: 9 },
+      source: { sharedId: 1, url: "https://example.test", packageSha256: "a".repeat(64), sourceNoteCount: runtimeWords.length, logicalWordCount: runtimeWords.length },
+      curriculum: curriculumFromWordIds(runtimeWords.map((word) => word.id)),
       words: runtimeWords, meaningIndex: indexes.meaningIndex,
       meaningKeysByPartOfSpeech: indexes.meaningKeysByPartOfSpeech, allMeaningKeys: indexes.allMeaningKeys,
-    })).not.toThrow();
+    };
+    expect(() => RuntimeDeckSchema.parse(runtimeDeck)).not.toThrow();
+    expect(() => RuntimeDeckSchema.parse({ ...runtimeDeck, words: [...runtimeWords, runtimeWords[0]] })).toThrow(/unique/u);
+    expect(() => RuntimeDeckSchema.parse({
+      ...runtimeDeck,
+      curriculum: { ...runtimeDeck.curriculum, lessons: [{ id: "lesson-1", wordIds: runtimeWords.map(() => runtimeWords[0]!.id) }] },
+    })).toThrow(/unique/u);
   });
 
   it("blocks a deck without seven safe distractors", () => {

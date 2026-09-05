@@ -1,16 +1,20 @@
 {
   "audio": "04e317a020a3384e9ecff39137d1807f86d750f7004ac91d0a282592193a3ab7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "处"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2988,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "相处",
   "id": "8e4050c5942f24a9ae3eee46",

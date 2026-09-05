@@ -1,16 +1,20 @@
 {
   "audio": "5f54c9ea7c68f97655e7334109dc07f28fe1c00e9d45c9072f838576839b9298.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "保"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 529,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "保护",
   "id": "0cf253d13c244224d4a7d486",

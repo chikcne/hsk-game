@@ -1,16 +1,20 @@
 {
   "audio": "72eab9e5a7f04eb3e4cf7ccaa611614071e3e108a4500eb479f399aa63122c93.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "细"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7997,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "细菌",
   "id": "afe21a160e74d92690439365",

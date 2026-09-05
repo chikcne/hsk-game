@@ -1,14 +1,18 @@
 {
   "audio": "b8a9a350154b675fb75860b3312fa5d578af72179c5b6e3efb22d76e21f4a0e1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6796,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "创意",
   "id": "7ffa0014cb319c6755813726",

@@ -1,17 +1,21 @@
 {
   "audio": "9cb90d8ec295dfb18ba3af2926a737853e8b64e70132881c83d5f0290681772b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场",
       "广"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3982,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "广场",
   "id": "5a81ccafa989112ef87ae826",

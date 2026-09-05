@@ -1,16 +1,20 @@
 {
   "audio": "c2e97c199174d7b715c625e8cc282e7c3c97058f42bdc68ea683844e704e5951.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "布"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2229,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "宣布",
   "id": "5da9b15a0d6d70fda9eecabe",

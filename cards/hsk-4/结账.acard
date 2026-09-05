@@ -1,16 +1,20 @@
 {
   "audio": "fc4826d6adf4e9045ad6f506354906eb739092c62ca68dbf4ac9dbebf0f92e4b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "结"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19075,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "结账",
   "id": "e5d6e621d527ce4f0d688104",

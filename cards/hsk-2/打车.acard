@@ -1,17 +1,21 @@
 {
   "audio": "1c9ade14cfc19d6994fffd5517f0036a1883899ffde8f24b64d3f565fbd166c6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24008,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "打车",
   "id": "7a343650e6da8ce6eeeedef0",

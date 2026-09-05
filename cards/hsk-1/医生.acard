@@ -1,16 +1,20 @@
 {
   "audio": "4ce1384801f0585852d5455f01637546ff72c001da3c1337d686dd6175f24406.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 342,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "医生",
   "id": "8769d56b1314fc510f034a6e",

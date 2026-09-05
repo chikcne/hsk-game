@@ -1,17 +1,21 @@
 {
   "audio": "056615feba9fcb2e507cd339170b4f60d1aa533dc636b1b1e8f5fe29772fa80a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "演"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1786,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "演出",
   "id": "a8e72cc22910e98d23e8b13f",

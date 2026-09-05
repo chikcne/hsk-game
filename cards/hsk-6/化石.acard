@@ -1,16 +1,20 @@
 {
   "audio": "f866aee00fb5524cb5187649fd3fe45ec3608f0aecbcbfb3507a2721b6bde69b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "化"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12216,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "化石",
   "id": "cebfffafd9188cc1bad369de",

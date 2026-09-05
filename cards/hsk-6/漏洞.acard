@@ -1,17 +1,21 @@
 {
   "audio": "91e54e769efe477a244101cb361cb9166140758c838bbe698e53ce4ed907b416.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "洞",
       "漏"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10526,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "漏洞",
   "id": "39ebaa68b25aeddfad1beaaa",

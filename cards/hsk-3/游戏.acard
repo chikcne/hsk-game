@@ -1,17 +1,21 @@
 {
   "audio": "d1edeabb0eb3091eb5fd114890ecebd0591a92c14de7366390f486f6a6d44864.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "戏",
       "游"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 794,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "游戏",
   "id": "1a4359ed6e433c7572a3af91",

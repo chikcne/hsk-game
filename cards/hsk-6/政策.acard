@@ -1,14 +1,18 @@
 {
   "audio": "b871487dd44cb25e6882ee3947d25832f0936a03816b7dbaa52f9ab35d873792.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4664,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "政策",
   "id": "eca6d4f2a67f71f8f5f798e8",

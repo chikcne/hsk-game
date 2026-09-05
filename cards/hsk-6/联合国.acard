@@ -1,18 +1,22 @@
 {
   "audio": "d38bd9c27f25c6cd2a4bcba173d61a0e3bb6cf74cb2c9b923a80710a782fd0c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "合",
       "国",
       "联合"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7311,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "联合国",
   "id": "db0fb9581ed488db8d5427e0",

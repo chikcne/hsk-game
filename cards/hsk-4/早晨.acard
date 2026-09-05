@@ -1,16 +1,20 @@
 {
   "audio": "1b076ca44b9ef9764846c525e96b954b9313be6815b25e6c19136b21485e6c2d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "早"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2356,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "早晨",
   "id": "353e74f570a092152758b53d",

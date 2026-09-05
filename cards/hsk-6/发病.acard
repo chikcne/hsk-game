@@ -1,17 +1,21 @@
 {
   "audio": "4b9a8587b0f9bb53877a68a2ec11c6c3b87ab362bb7f9644ba599305f8d147a5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "病"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25043,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "发病",
   "id": "25cf3a96266ee56c3cc0560c",

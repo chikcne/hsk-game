@@ -1,14 +1,18 @@
 {
   "audio": "8528efdd4be8ed70d89105b21221426c1dcd547eaa919dcf19f2d28ee8a991de.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 18179,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "武术",
   "id": "5721f585df1b0b3df71a0ea5",

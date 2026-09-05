@@ -1,19 +1,23 @@
 {
   "audio": "d8c8ca0f27cc83d7e17b81468f4718ad0fc0503bc0b3f4b3bfefff7d5f3dd9e2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "人工",
       "智能",
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17704,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "人工智能",
   "id": "8261a5e3acfd8972b1bfe83b",

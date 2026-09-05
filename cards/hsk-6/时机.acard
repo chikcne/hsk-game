@@ -1,16 +1,20 @@
 {
   "audio": "90a49214503d1ca81520e0544d100c521cc4835ffd6826e6f570acfd536a192e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3799,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "时机",
   "id": "885ca868a3ac6755217f87f4",

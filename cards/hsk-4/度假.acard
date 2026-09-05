@@ -1,17 +1,21 @@
 {
   "audio": "a4969815fcc2c368d5bc67cab9c9af38026b6c9292bc3df8ea044dc9601a0119.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "假",
       "度"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3871,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "度假",
   "id": "16b2aa2687d9c514032bcf86",

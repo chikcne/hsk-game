@@ -1,16 +1,20 @@
 {
   "audio": "93a5d267bdf59e2d6d8b57bdcf0d167c509bfec20029719c9d980e8ee5def541.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2850,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "耐心",
   "id": "20b54917609e7e29cf4acb5d",

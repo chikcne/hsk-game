@@ -1,17 +1,21 @@
 {
   "audio": "82c928fb864e7aeda50396c2ec04759eefff3326c02062f1dae23ec7e754bc42.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "当",
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 539,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "当时",
   "id": "50e5a3d24068e5a196739555",

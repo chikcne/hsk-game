@@ -1,16 +1,20 @@
 {
   "audio": "e21a1ae3a19ce502438929d5acf48b6e8b42ab6ad1197de4025cedeadd75a662.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 48134,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "人均",
   "id": "c5a8b779c7b549a92f6483b2",

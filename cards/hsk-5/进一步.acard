@@ -1,18 +1,22 @@
 {
   "audio": "fd380061ee23949a7f9da4b38539342e42675418d5140f448b8bb8659cac6b0a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "步",
       "进"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5363,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "进一步",
   "id": "dafbe1171eb66bd35d6374c6",

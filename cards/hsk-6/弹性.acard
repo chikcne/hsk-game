@@ -1,17 +1,21 @@
 {
   "audio": "774f0c7228104bceb6507c584778a46254708565d6a454074ff711844406804a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "弹",
       "性"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19079,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "弹性",
   "id": "a9605ebd62b7d38e626d0565",

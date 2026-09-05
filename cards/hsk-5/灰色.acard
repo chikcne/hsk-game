@@ -1,16 +1,20 @@
 {
   "audio": "0579b89c7562dede4f4305cbbd62ac17f2c10ca54b3ace8819cfa84d5a30b4ef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "灰"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7265,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "灰色",
   "id": "66ed53874804220c7562821d",

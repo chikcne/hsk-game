@@ -1,17 +1,21 @@
 {
   "audio": "868e0f834350877c7a067755a571d2c319838e7ad5968faa4376da9b43a65f46.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "再"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17900,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一再",
   "id": "a7e40bde2a48a8455ff9b9c5",

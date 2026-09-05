@@ -1,16 +1,20 @@
 {
   "audio": "2a60649b2645d2beb1292964e2da9bc65bdc75c60a047ebb82feb5be6a8b8dec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5095,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "方案",
   "id": "cf0278249fbc1051fdc96e69",

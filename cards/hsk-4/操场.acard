@@ -1,16 +1,20 @@
 {
   "audio": "9cfb28a27c74b39248d3204847a8f232a6a978b5a776458791ef65c81c07505d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23942,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "操场",
   "id": "c88b5c1f3245920ba10a8b8b",

@@ -1,17 +1,21 @@
 {
   "audio": "bb17801786f4c00c01e6d2b7bfa159a51e010b170a6acfe6ed5e22cec2b4f7ab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2375,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "发出",
   "id": "13b1e52254bd6db73541f8d8",

@@ -1,17 +1,21 @@
 {
   "audio": "ade5453d856ead0e0f04a1b1afccc6de8bf1d8ddf326bafaf75742268a7bf0a4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "平",
       "等"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6987,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "平等",
   "id": "9bd6035516583a796e790276",

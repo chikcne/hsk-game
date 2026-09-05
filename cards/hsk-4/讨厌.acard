@@ -1,14 +1,18 @@
 {
   "audio": "98bbfb1f26992047265ed75f35a5173f449b589f6c145b399afbca2f34cc15cd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 689,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "讨厌",
   "id": "4dc4aef7f0601df5f4cc64b2",

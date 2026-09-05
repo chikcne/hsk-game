@@ -1,14 +1,18 @@
 {
   "audio": "15ab43bac1ee87b1f90ee1045a685b6386ea8a37773697c9361ab625f3764acb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5720,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "抬",
   "id": "65644bf68b833e0f5eea2241",

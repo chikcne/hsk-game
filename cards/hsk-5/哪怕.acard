@@ -1,17 +1,21 @@
 {
   "audio": "74ba750cbe817d0b6cfc405eb500b4896a9a35543ce964265ef47deec1f335d8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "哪",
       "怕"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3843,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "哪怕",
   "id": "2b24f8d16e555c80ab8a19f8",

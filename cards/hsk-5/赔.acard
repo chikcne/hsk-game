@@ -1,14 +1,18 @@
 {
   "audio": "52cfaf1ac7cd59159477a9130c038bd7aa55d6c1fa771160329c7bf3fe57e13a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7624,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "赔",
   "id": "fdd02036452cc9c63227d9f2",

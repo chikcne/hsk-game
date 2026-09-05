@@ -1,16 +1,20 @@
 {
   "audio": "776f2880ecb56afde736ad824ff5f56e24a0d9b4eed76ea15933aff38ca0842c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "老"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17556,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "衰老",
   "id": "08107f48cc418158e58c0f56",

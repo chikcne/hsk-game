@@ -1,17 +1,21 @@
 {
   "audio": "b116b89e89a9f9dfab011f985c7ea5cad0ceba0fa1372338dd506c41e2583996.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "分"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20605,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "分为",
   "id": "17cb4db5203ac7a3fcc098b1",

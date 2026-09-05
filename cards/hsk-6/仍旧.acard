@@ -1,17 +1,21 @@
 {
   "audio": "6c9fb9d7581196396442595cc56edaecf995ae478dc83505d460805dece4f01f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "仍",
       "旧"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10923,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "仍旧",
   "id": "0184c718c48dd335a9b17743",

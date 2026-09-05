@@ -1,17 +1,21 @@
 {
   "audio": "cec25a041e9703a98f51a5ca95901583df19114f5d0f4aeab4b6b8f826dcec8e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "们",
       "它"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 334,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "它们",
   "id": "014914a292419d3bae301863",

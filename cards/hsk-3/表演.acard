@@ -1,17 +1,21 @@
 {
   "audio": "be27512b0abeadb1dea7906bbdb66e73e4ec018f5fa2fe0dd5db9954ef8d2cef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "演",
       "表"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 925,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "表演",
   "id": "f5c0f59722b4454e5e2fcfd6",

@@ -1,19 +1,23 @@
 {
   "audio": "5f583c27fe8bdae252dd8d173c57d7be1800105f4da1caf7ad6e691e38c861f8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "公",
       "办",
       "办公",
       "室"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 787,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "办公室",
   "id": "5f727324e731aabe91fdb5b8",

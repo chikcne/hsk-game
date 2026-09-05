@@ -1,14 +1,18 @@
 {
   "audio": "37eec4215b85e95dcaa222e1e84915dfd177e06fa40bcd5706c6c5188a356f4b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7654,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-evaluation"
+    ]
   },
   "hanzi": "恶劣",
   "id": "8a18c1b789bd294f938b0010",

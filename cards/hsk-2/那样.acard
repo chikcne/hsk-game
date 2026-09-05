@@ -1,17 +1,21 @@
 {
   "audio": "fc27ba1d4be8615bd0a9c54ca41fc0a0fcc8ca6a487f0e4d272d6b3730028e26.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "样",
       "那"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 314,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "那样",
   "id": "783283c59fd7d67e8b8aeb93",

@@ -1,16 +1,20 @@
 {
   "audio": "e87327d414a891ea3c39f5cdfbf2b8ef1b28199e2f4650d75b3e9f56e6d41a42.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "马"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30192,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "马虎",
   "id": "fbc4b4d4c293c2ca9f6a6ba0",

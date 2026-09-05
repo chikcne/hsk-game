@@ -1,17 +1,21 @@
 {
   "audio": "70ffa6ac66a8e5659baab293a5e9b38c6dc45ba443b96de31b66a9eb9e88b65a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "年",
       "轻"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 801,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "年轻",
   "id": "db4abb574cda7cbb7b8633e1",

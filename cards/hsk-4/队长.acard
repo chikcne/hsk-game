@@ -1,17 +1,21 @@
 {
   "audio": "6ef9b0be477a51b76ab2d7e66fd2db158ef987c2c7372f144f50f592f935e47d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "长",
       "队"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1497,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "队长",
   "id": "58496eed59fd25f07ce6323b",

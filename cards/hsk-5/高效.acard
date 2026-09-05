@@ -1,16 +1,20 @@
 {
   "audio": "ebe899a4f23148bb377cf17d7628578259b64e31954391e8f8433d9a32b49558.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24588,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "高效",
   "id": "4050c78f9aca4df8820f5ea8",

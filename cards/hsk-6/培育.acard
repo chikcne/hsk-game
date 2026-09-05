@@ -1,14 +1,18 @@
 {
   "audio": "68956ed919550ad4fe0d3e60b580a6d133d17e4f1b4411d9ceafd5c9d3a72dc6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 21522,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "培育",
   "id": "6ede64239adaa3bed023a171",

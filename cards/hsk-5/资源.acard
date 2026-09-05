@@ -1,14 +1,18 @@
 {
   "audio": "62031ecd530e1419e770c3449d289297ba622b6a578a0cf44ed944d49d71d07f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5496,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "资源",
   "id": "2237dd0af7aafba03f477948",

@@ -1,14 +1,18 @@
 {
   "audio": "8a1b04830fda29078f3e74b62dd711ef643be2ac2afa4168f69d3ca354c0ed0e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6753,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "盐",
   "id": "eb9367b50a32c4e8be7371c3",

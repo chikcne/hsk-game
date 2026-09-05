@@ -1,17 +1,21 @@
 {
   "audio": "57bdab08d58ee14a5020402dc45ba1f3fa9538c060a13a6ceccd6b2df0d35b0f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "到",
       "感"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 617,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "感到",
   "id": "9afdeb4ebc495c82fccd9c92",

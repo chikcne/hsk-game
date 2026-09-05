@@ -1,16 +1,20 @@
 {
   "audio": "80881f7532e111b49452e28e98eb347aad2db5449a597d236c44b8b9eea85c6a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14255,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "袖子",
   "id": "8af7a4b2d80dc63899b14305",

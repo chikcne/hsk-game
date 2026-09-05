@@ -1,16 +1,20 @@
 {
   "audio": "9a9106027e89203e6f7b8a967e4c822676f23fe7a6bf3f85df86e099980b9e17.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "票"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11989,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "彩票",
   "id": "c041b3fc15a5cf74dae994f7",

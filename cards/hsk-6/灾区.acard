@@ -1,17 +1,21 @@
 {
   "audio": "d69d54f07eb8f12a7dc29f7c710852185cbe36472ad55f87d112c0d69e2f8d23.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "区",
       "灾"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 62026,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "灾区",
   "id": "1daad5a56e6570dac36660ed",

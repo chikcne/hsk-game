@@ -1,17 +1,21 @@
 {
   "audio": "c0a3a89f1ba080a9066bfbda7634ac753b2ca692be74169ec7e910946897d340.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "安",
       "装"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6722,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "安装",
   "id": "70c066bcd88e792f475be91d",

@@ -1,16 +1,20 @@
 {
   "audio": "3191d2ad79847aedf7db966c80a26d3a0cce770dc805a1efb50564670c02a59a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20599,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "矿泉水",
   "id": "464796a98b4bdf0b250e5934",

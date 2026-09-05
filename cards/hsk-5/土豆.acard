@@ -1,16 +1,20 @@
 {
   "audio": "dd893f73609f6de718e5d740b5d3482112a1f98f23e1382452ea9c365ddb814f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "土"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5654,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "土豆",
   "id": "55299f7602403598888cb05c",

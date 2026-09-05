@@ -1,17 +1,21 @@
 {
   "audio": "af24a33df0416ac3f39bb70b2826b719fcf7f1d60a3926aa01de29406a0d96d7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "处"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3183,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "处于",
   "id": "43b8879faa083393faeb6e20",

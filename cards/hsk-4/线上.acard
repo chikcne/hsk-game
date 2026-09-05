@@ -1,17 +1,21 @@
 {
   "audio": "b47ca5b9c39adc0a5ab2ade8f9c7da2b95676c5187b7ac5659209897a2de8b81.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "线"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30017,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "线上",
   "id": "81cef79bb9aa9a55763b1d52",

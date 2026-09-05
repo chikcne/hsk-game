@@ -1,18 +1,22 @@
 {
   "audio": "1ad810e76ab1380ca56ea31f48be3ba9b491996b78936c8edfb59b28d4298257.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交",
       "打",
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6774,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "打交道",
   "id": "07d593a4cff60f2fc6630660",

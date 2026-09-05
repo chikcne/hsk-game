@@ -1,16 +1,20 @@
 {
   "audio": "5f036b287332c717afe5c4267280dceffafe74a8f924c92a816678afa8c6f525.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "急"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28352,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "急诊",
   "id": "97dae490d3c9141bf4a2bbf9",

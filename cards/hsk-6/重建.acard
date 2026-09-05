@@ -1,17 +1,21 @@
 {
   "audio": "60bd91a5ce363b8dc82e4d18b9f2db7025af066e37127adbef71136c8852407c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "建",
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5885,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "重建",
   "id": "1ce693174daa71c5d685fec2",

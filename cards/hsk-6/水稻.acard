@@ -1,16 +1,20 @@
 {
   "audio": "13c1ace7d1b5f450f0061974134e9daf2fd51beab814bcf4ef4f3e6ab14ead7c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 68843,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "水稻",
   "id": "630a9def0b412838ce599d62",

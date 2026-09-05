@@ -1,14 +1,18 @@
 {
   "audio": "e96490e9149d8e4d341d3ba4cced229ae1e21556737a58211fdacbf023f373b3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 896,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "政府",
   "id": "52686ff2497f156c14dd6fe2",

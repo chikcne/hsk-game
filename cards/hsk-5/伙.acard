@@ -1,14 +1,18 @@
 {
   "audio": "37a14a049c0cad08cefd4231ff3779a94de55f7e3b4a6056f6a2d7faf436db86.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 2387,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "伙",
   "id": "9743c96ad138fe627747297a",

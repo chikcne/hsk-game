@@ -1,16 +1,20 @@
 {
   "audio": "2a04bc38f1bab8f7876f2a44e43e7e95c0307c17f0f5d715f671b9a033a64a34.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7007,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "鸭子",
   "id": "fd264be65b36a85c690609b6",

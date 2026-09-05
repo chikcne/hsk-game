@@ -1,14 +1,18 @@
 {
   "audio": "82697209a1521b064e1b03ff151b0363a1835839a3e41a01f65f1919aae4d282.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 261,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "问",
   "id": "65a505b525a9b8e7af86d518",

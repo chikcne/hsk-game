@@ -1,16 +1,20 @@
 {
   "audio": "ffa04a50602e929976f5583e0c7a6fe7539f7b69539b08dd4aca178de3d7c515.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "除"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5645,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "消除",
   "id": "ebc22853304fa13036bb07f3",

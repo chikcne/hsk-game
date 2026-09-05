@@ -1,17 +1,21 @@
 {
   "audio": "b88fd1de1ebd78301d141e235db6860aacbfd4a2ce5126229d28edeb89bdbb25.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "到",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18637,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "到期",
   "id": "cc1299243f88efe7a07dc2e8",

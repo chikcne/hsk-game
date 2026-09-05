@@ -1,17 +1,21 @@
 {
   "audio": "d6efa60a39c69cbb6a1d8a4e317b9eec5f7c0d786d47ca438533ffff95906228.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "毛",
       "病"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3343,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "毛病",
   "id": "79e98539a1198e71f9de878b",

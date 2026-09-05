@@ -1,17 +1,21 @@
 {
   "audio": "47257144c570700d64598743b1ad5c50c70dd34ab57d3b63774030745d8b20bb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "税",
       "退"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 82693,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "退税",
   "id": "039694db803781b78cc4615c",

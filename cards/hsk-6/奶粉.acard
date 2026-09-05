@@ -1,16 +1,20 @@
 {
   "audio": "6a493f8868c364e4a23b8cf82124f0278d24821f9101b63aea43c87bfd227ad4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "粉"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33241,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "奶粉",
   "id": "99ea0d58327529ea4d1b9420",

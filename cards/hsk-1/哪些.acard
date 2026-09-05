@@ -1,17 +1,21 @@
 {
   "audio": "4e0386a37465ec40352b2770bc07be267f50340c8271050d7cba601e7d0c0548.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "些",
       "哪"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4794,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "哪些",
   "id": "82640471268c4b51f8370323",

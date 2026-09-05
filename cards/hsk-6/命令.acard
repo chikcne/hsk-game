@@ -1,17 +1,21 @@
 {
   "audio": "68b1d16a001a8d9197f0cc8cb2abc0609060f4099f359f0cd77f942e349f4b70.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "令",
       "命"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 832,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "命令",
   "id": "fb22f12c2516898707663a51",

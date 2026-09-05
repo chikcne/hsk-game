@@ -1,16 +1,20 @@
 {
   "audio": "c6db07e1ca83ac2c5a737175bf31ce3f3c74f94b896b425d91d142afb456b390.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "宝"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 451,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "宝贝",
   "id": "55181c1bfaf8a31eab26fe9b",

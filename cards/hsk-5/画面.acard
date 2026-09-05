@@ -1,17 +1,21 @@
 {
   "audio": "0965425349246d5986fb50c9de387df010a2e0ddb49b7d604c624784f5bd07b1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "画",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3772,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "画面",
   "id": "e5ccf47bddd3e153dcc056bb",

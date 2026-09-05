@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { SaveFile } from "../../src/shared/schemas";
 import { DEFAULT_SETTINGS } from "../../src/shared/constants";
-import { createLevelProgress, type LearningDeck } from "../../src/domain/learning";
+import { createLevelProgress, curriculumFromWordIds, type LearningDeck } from "../../src/domain/learning";
 import { applyLearnRating, createLearnSession, nextLearnCardId } from "../../src/domain/learn";
 import { reviewWordKey } from "../../src/domain/review";
 import { Xoshiro128StarStar, randomStateFromSeed } from "../../src/domain/random";
@@ -25,16 +25,17 @@ const NEW_PER_SESSION = 20;
 const SIMULATED_DAYS = 90;
 
 function makeDeck(count = DECK_SIZE): LearningDeck {
-  return { id: "hsk-1", fingerprint: "sim", words: Array.from({ length: count }, (_, index) => ({ id: `w${String(index).padStart(3, "0")}` })) };
+  const words = Array.from({ length: count }, (_, index) => ({ id: `w${String(index).padStart(3, "0")}` }));
+  return { id: "hsk-1", fingerprint: "sim", words, curriculum: curriculumFromWordIds(words.map((word) => word.id)) };
 }
 
 function freshSave(deckOfSave: LearningDeck): SaveFile {
   return {
-    schemaVersion: 4, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
+    schemaVersion: 5, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
     settings: { ...DEFAULT_SETTINGS, levelSize: NEW_PER_SESSION },
     spawnOrdinal: 0,
     schedulerRng: randomStateFromSeed("workload"),
-    levels: { "hsk-1": createLevelProgress(deckOfSave, { curriculumSeed: "sim-seed" }) },
+    levels: { "hsk-1": createLevelProgress(deckOfSave) },
     acquiredWords: [],
     learnSessions: {},
     relearnSession: null,

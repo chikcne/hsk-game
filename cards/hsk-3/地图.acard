@@ -1,17 +1,21 @@
 {
   "audio": "50ffaf614152e39526d68f7671488899f63cd207a4f5e6160908ebc5b878ac83.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "图",
       "地"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2345,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "地图",
   "id": "08d3aeabffeb0dae851e51b1",

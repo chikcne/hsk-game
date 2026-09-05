@@ -1,17 +1,21 @@
 {
   "audio": "ea5198cf2838f02e0e185e333e3f8c84c7a2939b8afae49e214251a862db4535.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "们",
       "她"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 521,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "她们",
   "id": "5358e735dec0df8bed833ac2",

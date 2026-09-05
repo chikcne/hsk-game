@@ -1,16 +1,20 @@
 {
   "audio": "f8ea4c4efe44269204b4f6448d03bcad15a6b6b2322ec66ccd6f56c0c8afc391.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9029,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "潜力",
   "id": "0c67a8963b5668ebca80ef9a",

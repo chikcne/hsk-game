@@ -1,16 +1,20 @@
 {
   "audio": "69649335d99492f0792a494289090cbe5dcf125c31263d55681f5d06b2f58876.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "几"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 973,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "几乎",
   "id": "3bd25318ff2bab6402b79df0",

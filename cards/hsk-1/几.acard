@@ -1,14 +1,18 @@
 {
   "audio": "19f3423c623c6a47182b9b4df7e4cb6ca5088ad15ce294d0287ce7f20178e4ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7576,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "几",
   "id": "607e614825a8fd95f489ef02",

@@ -1,14 +1,18 @@
 {
   "audio": "88d68a14f556790e3959a7b855c80317052483ec337f5bfab63f86ec0c387c5a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4787,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "博物馆",
   "id": "7d0aff9bf40be3ecb2c27957",

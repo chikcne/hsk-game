@@ -1,16 +1,20 @@
 {
   "audio": "9d5f807bf3542fa6b5b470acc99d2594fc02f6848f8a64197151db870eeacd8b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14510,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "资本",
   "id": "20a0ff56c452fea3b925bbbc",

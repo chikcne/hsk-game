@@ -1,14 +1,18 @@
 {
   "audio": "50e60869b78f48c4f60368c44801ab6ba81a445fdc97136c077f99f4334fded8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2213,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "奇迹",
   "id": "8609383d43f45ebf4107b4a6",

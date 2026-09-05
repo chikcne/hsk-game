@@ -1,17 +1,21 @@
 {
   "audio": "bb28751fd005a15d08de9bb2ab87b721c271ee6fde5ed37029e9c129e138bec8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "扣",
       "折"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17235,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "折扣",
   "id": "1590c43a13231ed209e53f56",

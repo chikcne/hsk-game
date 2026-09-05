@@ -1,14 +1,18 @@
 {
   "audio": "77e729a21bab41162ec16303106417f6e42df407dd5c90324ff2bbc81d63a32e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 4,
+    "frequency": {
+      "rank": 1253,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
+    "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "道",
   "id": "4907a7212a4435a5bf89afe3",

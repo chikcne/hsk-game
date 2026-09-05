@@ -1,16 +1,20 @@
 {
   "audio": "4bd4eb431e64919fabdbb859de5e45b1a8182cab3b957c358bc9cfcf6a986ab3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8494,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "沙子",
   "id": "9b6acf55374201f84c081076",

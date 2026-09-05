@@ -1,17 +1,21 @@
 {
   "audio": "150e8d76f23ccd9d0cd57ba06627bcf797c346df56d07cde78b0dbe49f008d6c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会",
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2012,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "学会",
   "id": "18dde8fee5a78a4959988816",

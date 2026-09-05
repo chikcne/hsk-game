@@ -1,17 +1,21 @@
 {
   "audio": "0287ff552829daf3e866c7f3c916b9bd708a7f2c72c93a6a2718efc84cd431ae.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "切",
       "急"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22864,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "急切",
   "id": "d7edbc550e77e9eaef7d50e8",

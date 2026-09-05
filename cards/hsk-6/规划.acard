@@ -1,16 +1,20 @@
 {
   "audio": "1d4038064a8576186b4a303d0f6104513d49c09c1dbc8296238857353cdb401e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "划"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10595,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "规划",
   "id": "ae723445102d027a6c451eef",

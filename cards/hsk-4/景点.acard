@@ -1,16 +1,20 @@
 {
   "audio": "8d5ac3feaa39425ba949e3734197322b708ccff0a510961f1582aadb6e05e413.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31506,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "景点",
   "id": "2b2b357c2044009659390915",

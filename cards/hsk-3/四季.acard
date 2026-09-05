@@ -1,17 +1,21 @@
 {
   "audio": "73d109d703e99e54c603c0a2054f993f8afc0d21bb4660e62e710d0a7e9023a4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "四",
       "季"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20922,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "四季",
   "id": "00708a9111f73b0282c03954",

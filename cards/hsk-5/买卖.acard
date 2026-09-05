@@ -1,17 +1,21 @@
 {
   "audio": "acb81ce638dcce4343a8c72e9672b804547cc4630504508a6e3176e25741dc03.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "买",
       "卖"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5132,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "买卖",
   "id": "744ed773edd35fb3a9fe7498",

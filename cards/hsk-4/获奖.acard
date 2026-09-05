@@ -1,16 +1,20 @@
 {
   "audio": "b95e20525aa532c5c14149bfd531c577e5ed3eeed80f7d0e2ef99eb32880278d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "奖"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20552,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "获奖",
   "id": "986e7716ba944623286ae5ca",

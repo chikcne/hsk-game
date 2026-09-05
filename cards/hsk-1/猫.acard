@@ -1,14 +1,18 @@
 {
   "audio": "5d7c8ee584ce2436ecefc30f42f2391bcc99a50d12765671f55a966d98db30d8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1471,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "猫",
   "id": "c5787ebf4d04fc94a2b7b576",

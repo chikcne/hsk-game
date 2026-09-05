@@ -1,17 +1,21 @@
 {
   "audio": "4a022050558b5cf9bc89c03d407c949d34e93389caca2601e84811ee1edb0c73.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "数"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5693,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "人数",
   "id": "e5b6373caf1fb50c27df7ef6",

@@ -1,17 +1,21 @@
 {
   "audio": "69e0070ee02fb23fe965317e58ca9a6a6b45a53bebb1b3a31da4fb801bba37dc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "向",
       "往"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15989,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "向往",
   "id": "cdf5386c5482142e27a84a3b",

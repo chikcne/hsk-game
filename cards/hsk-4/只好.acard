@@ -1,17 +1,21 @@
 {
   "audio": "c26cf4ce554df0570dcc0151efc1ba0f2b1c97145a06a846eea5ec8b21122a5d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "只",
       "好"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3252,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "只好",
   "id": "f36a40a130f2c613b5eb7de2",

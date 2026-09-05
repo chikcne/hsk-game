@@ -1,17 +1,21 @@
 {
   "audio": "9caf3884f7a8b6f14f20514438653e3f0528d790a51b6deea54c8eb222b36eb1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "以",
       "所"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 98,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "所以",
   "id": "4ee8bc2e338a7c3a49c0fdbb",

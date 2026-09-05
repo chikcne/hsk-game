@@ -1,16 +1,20 @@
 {
   "audio": "ad02ac4bcccf2c109126757192d542cbbfe5bd767034697a3d75f9ea66827456.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "严"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5483,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "严禁",
   "id": "4c62a7d07e53488fbc206d3b",

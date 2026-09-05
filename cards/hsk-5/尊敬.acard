@@ -1,14 +1,18 @@
 {
   "audio": "9d136701ab3b4435aa3f41f9f8ce9ef4a1832a3dbdefec3576b8a1141f62525d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2894,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "尊敬",
   "id": "ac23753408bc23a2d3f56842",

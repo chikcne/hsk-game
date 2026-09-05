@@ -1,16 +1,20 @@
 {
   "audio": "a8badbcb95e5fc7f5d7f869345caacb57bc2ea74609cfaeae75176a77f8243c5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18427,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "一贯",
   "id": "50af275a9f2938f343f72330",

@@ -1,16 +1,20 @@
 {
   "audio": "1932f48c44ec77b3212cdd91629656e21f0d3ff723410eae22514d9471652b2a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "直"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 946,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "简直",
   "id": "87c03844ed966cd7ceb462d7",

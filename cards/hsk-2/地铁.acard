@@ -1,16 +1,20 @@
 {
   "audio": "41fc1e743ba9aaa16e0be929f5bb77ac0976aaadb44ca3f69e841d1ba4253283.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6442,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "地铁",
   "id": "fda702bcefacf9fb81dd3aad",

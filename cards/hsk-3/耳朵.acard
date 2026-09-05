@@ -1,16 +1,20 @@
 {
   "audio": "203a7ad16607cfb73f1dc35e3b20c8ddffc994cfb359d74490c51f42dc8ac322.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "朵"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2210,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "耳朵",
   "id": "0128fcd49ecf218e0c7db3cd",

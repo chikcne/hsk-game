@@ -1,16 +1,20 @@
 {
   "audio": "b53bfa44b0c2a3da6b99a25989f3c09865d485c5e0f334d90e8800043d26b941.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "权"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1284,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "权利",
   "id": "026268e41fed822cdcd65c2c",

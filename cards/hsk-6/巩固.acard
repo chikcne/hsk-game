@@ -1,14 +1,18 @@
 {
   "audio": "eeb4777a281fd90312401645e32433bb871ea9c8127417ab5e015f73fa3d0562.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 25078,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "巩固",
   "id": "d28a02042ff7640958b11005",

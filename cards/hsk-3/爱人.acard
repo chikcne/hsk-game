@@ -1,17 +1,21 @@
 {
   "audio": "3904978fe5176abceed16617eb01ec502e4c496b9e6a97a72034a64ecca10c64.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "爱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3187,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "爱人",
   "id": "e813c71752879e8e65fd463e",

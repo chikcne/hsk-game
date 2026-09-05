@@ -1,16 +1,20 @@
 {
   "audio": "f461844ecfdff6e987b6f2ad3901ae57624caf6ffc396b67d4b30a5601cacf0b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22026,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "开创",
   "id": "1c33a16044ef23653713c342",

@@ -1,17 +1,21 @@
 {
   "audio": "7cd7a746c07d22b2ee26d2b8345cf238d7b5dac69018208e6fc0b4fd4107bae9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "对",
       "待"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2456,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "对待",
   "id": "58432f4d5b94d93dc5a0c92f",

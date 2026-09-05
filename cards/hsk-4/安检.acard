@@ -1,16 +1,20 @@
 {
   "audio": "b5c3c10adcfd8efa011ab1a04bf28759bf2571644c490bdca88024cc7b2ba830.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "安"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23065,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "安检",
   "id": "3b3c4587a23ed87dac25969f",

@@ -1,16 +1,20 @@
 {
   "audio": "ec42b30a1497ed55ad94ec073363d241953dbaf0ffec6381957f86948fc567c0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "台"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8415,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "阳台",
   "id": "268d245fd832bdf08bb30116",

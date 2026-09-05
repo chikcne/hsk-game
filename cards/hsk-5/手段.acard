@@ -1,17 +1,21 @@
 {
   "audio": "83f0815d2afdca78f3f3755f8be979b7c9215e5c357dc89d9d96c5f2b02132d2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "段"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3137,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "手段",
   "id": "c054269b2108256ca066b234",

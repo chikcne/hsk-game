@@ -1,17 +1,21 @@
 {
   "audio": "6cd5ab07f6105296ccc21bfc90737b1df5ee20e2963832d5cd9f97bf1901c702.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "最",
       "近"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 618,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "最近",
   "id": "46570c2e7ae4fa382f36864f",

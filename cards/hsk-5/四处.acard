@@ -1,17 +1,21 @@
 {
   "audio": "2225dbd65f4a04b3748a995046e6ea5edf839a5f8f6f7ed03f3cefd8ae4df5a3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "四",
       "处"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3439,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "四处",
   "id": "7b07c15b142f381482050dd7",

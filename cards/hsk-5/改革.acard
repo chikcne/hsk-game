@@ -1,16 +1,20 @@
 {
   "audio": "002b397927643b4aad2ed2219879bf8ba6a18bf5338bff0201a37b5f56220a53.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "改"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8449,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "改革",
   "id": "f768c373d93912b10d93a0d0",

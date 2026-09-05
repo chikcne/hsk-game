@@ -1,14 +1,18 @@
 {
   "audio": "fca1d7a79aad444926677ff56769672eea2a8c975b63b0a372e7d8511413a608.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1180,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "扔",
   "id": "23361372ab0bc19714338084",

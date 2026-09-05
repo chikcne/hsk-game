@@ -1,17 +1,21 @@
 {
   "audio": "6c5fa1eb00554b72192ac834719e0fff253c9a9bee8a34b41231264d19fb87c7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会",
       "聚"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2206,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "聚会",
   "id": "31dd0876a0f71dd7c0c7c531",

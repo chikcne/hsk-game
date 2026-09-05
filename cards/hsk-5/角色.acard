@@ -1,16 +1,20 @@
 {
   "audio": "924d78eabcee8474983ae6372959dd50d638e658445796cda813c66b2b151b2f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "角"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1733,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "角色",
   "id": "3c5d64c53d73376a9099f8e7",

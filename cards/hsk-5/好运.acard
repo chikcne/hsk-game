@@ -1,17 +1,21 @@
 {
   "audio": "94e269d8310d6b329b26d95a55e11a5be26649502125e9b9efa006fa82b66064.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "好",
       "运"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2161,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "好运",
   "id": "6c35645c397c84a160013245",

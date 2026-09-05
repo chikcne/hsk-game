@@ -1,14 +1,18 @@
 {
   "audio": "ad5a5dd7f071b5ea4e7fd48044c8078c6c03a505bae0ad81a81c4f4f7354a196.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4085,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "爆",
   "id": "167b2e5c26c207667ee8c311",

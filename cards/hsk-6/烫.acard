@@ -1,14 +1,18 @@
 {
   "audio": "b3b22f92d8b6591554e5038dec2c17ea87eb7ace94158da45fad75e6e583f1ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5465,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "烫",
   "id": "18addaca250b744da6102fac",

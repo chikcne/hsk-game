@@ -1,16 +1,20 @@
 {
   "audio": "19ca2a98bb350d7328a7651ceb8bfff1e9b237345009a6098a4f3e794d168d3f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "美"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 71348,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "审美",
   "id": "4e895496bc5c8cfbb9be2286",

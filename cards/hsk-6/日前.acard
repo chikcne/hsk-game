@@ -1,17 +1,21 @@
 {
   "audio": "b7347a57739e50f259d0151f1d349972072b0d324bf92a941f66d281d992be8c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前",
       "日"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33248,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "日前",
   "id": "601b74c916391a2c0ba218b9",

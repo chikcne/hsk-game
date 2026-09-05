@@ -1,14 +1,18 @@
 {
   "audio": "fee29a419c1260ff61945e7d3adec26ea1272ab307e8991bf64a3bff0546cafb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 191,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "妈妈",
   "id": "b72696a6967da2fdb693701b",

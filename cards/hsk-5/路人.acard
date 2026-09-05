@@ -1,17 +1,21 @@
 {
   "audio": "e37cd9e508f26007be1dcf9955fc12a1b221d539e95c58f538cfedd34f92a3d7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "路"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 61305,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "路人",
   "id": "b8a08028fc26c64990dcc8a7",

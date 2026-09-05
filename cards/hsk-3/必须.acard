@@ -1,16 +1,20 @@
 {
   "audio": "64a8edfcb9a4b2a87f0bc1400ae5105f0084d982c756380c5e3d651f5bc2b1bf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "必"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 205,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "必须",
   "id": "aabe6fe0cc58843415d14af4",

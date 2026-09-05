@@ -1,17 +1,21 @@
 {
   "audio": "ff288053fc82d70e3bd377dbdec4189ffa2f724c5765450c891c85b6f46b2acb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "万"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2493,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "万一",
   "id": "7550511ac7d5406ba142ad8f",

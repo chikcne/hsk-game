@@ -1,16 +1,20 @@
 {
   "audio": "858a0d9d5e12a89431ba94dda44dbad1c445cd987186e8effc7291f5933b3319.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "服"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1613,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "服务",
   "id": "73fa627fa02a2629a1cbf20e",

@@ -1,17 +1,21 @@
 {
   "audio": "e0bd00dc91ac57989689d1ea582094230dbd44b47d66f070cdb10a5d4750c1c6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "修",
       "建"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14689,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "修建",
   "id": "8cac46dcfe811d38fec096fd",

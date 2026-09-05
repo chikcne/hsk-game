@@ -1,17 +1,21 @@
 {
   "audio": "99ee4d6cf9921b183f29483e8cc9463b1d143c8090bed563a12ea1e939211c40.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "性",
       "特"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16514,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "特性",
   "id": "8bc25414beaaa4dc03af5676",

@@ -1,17 +1,21 @@
 {
   "audio": "3252eb980828cec1890c44d0de38ea06d73acaa74304e97f3434f42c214d1620.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "动"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13575,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "动人",
   "id": "891e1b47c49b3cadc6abef3a",

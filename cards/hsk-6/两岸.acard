@@ -1,17 +1,21 @@
 {
   "audio": "eda6423eb8569c0596c58eeace3fb1ff42e7ab419524980869a9570665151c32.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "两",
       "岸"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 54563,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "两岸",
   "id": "364d3ba8a5367cbec76453bc",

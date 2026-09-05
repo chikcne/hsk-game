@@ -1,16 +1,20 @@
 {
   "audio": "d6e99c8635a3bc5ebb8f0fb1fb30d3353136294c1bbc381afaee6386eaad95ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "在"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2512,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "在意",
   "id": "6554564812a262bfa1a872c1",

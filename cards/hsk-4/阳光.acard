@@ -1,16 +1,20 @@
 {
   "audio": "465b6d1550bd13bd767a46b689ebb2cdd7749f4aeb5f59c4209e9633c5617964.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2587,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "阳光",
   "id": "cb42517bd0e2d34f5c00c52e",

@@ -1,17 +1,21 @@
 {
   "audio": "d6aec65d7952ff51d574de35c6ecf870c5180204faefa93bccf619f9ceab7b2d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "治",
       "防"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 59989,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "防治",
   "id": "6199c6b5630b8ed84688b16d",

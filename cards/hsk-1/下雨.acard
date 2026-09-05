@@ -1,17 +1,21 @@
 {
   "audio": "715af3b15eae92d41225b8ca7263d98670733697b8a6526b8dca021104c0306f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "雨"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3301,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "weather-climate"
+    ]
   },
   "hanzi": "下雨",
   "id": "82224f31e6f559e79d370536",

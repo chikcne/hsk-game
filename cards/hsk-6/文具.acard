@@ -1,14 +1,18 @@
 {
   "audio": "7e61c98114e4fff27d6f2cc14abb7c1fad5cd717c83fc0362e362415ae605c68.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 43989,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "文具",
   "id": "939ea0483184b1a7148cfcf4",

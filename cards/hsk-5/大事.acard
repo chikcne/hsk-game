@@ -1,17 +1,21 @@
 {
   "audio": "9dae0bec6081d348622df1c0eaee9cf94675494a5b371229b19a24dd9b5d8efc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事",
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3063,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-evaluation"
+    ]
   },
   "hanzi": "大事",
   "id": "ca5117265b234fdf7a979e1a",

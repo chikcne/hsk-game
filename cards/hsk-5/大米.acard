@@ -1,17 +1,21 @@
 {
   "audio": "17784fa8a6136338ef3878a0c5520ed872d8d3a1679eb314fd1d261e166019e0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "米"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19939,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "大米",
   "id": "04b069af84b68f4fbb7adb52",

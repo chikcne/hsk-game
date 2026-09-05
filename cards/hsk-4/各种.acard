@@ -1,17 +1,21 @@
 {
   "audio": "e730b1682754b9f3b85309b18c1b14895f6d8220d00d2a0ecc999b9a7b4dacd1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "各",
       "种"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2214,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "各种",
   "id": "faf06cf9729f1e628c228e16",

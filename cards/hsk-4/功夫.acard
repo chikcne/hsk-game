@@ -1,14 +1,18 @@
 {
   "audio": "d0388fd32ed1b81596bdf3c844a918791b61a09dec0ac1dd11d1094ba69a24f4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3380,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "功夫",
   "id": "7552136c661f3204ff2f8a94",

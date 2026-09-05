@@ -1,17 +1,21 @@
 {
   "audio": "5c43fd1028a9b31ffbdc2a88c8317aec1df2144c69002c323c3cb842463ad91f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光",
       "眼"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6122,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "眼光",
   "id": "ee7671395c6b830b24eeaceb",

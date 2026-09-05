@@ -1,17 +1,21 @@
 {
   "audio": "945d94cd4c262ba9df25e2abef8891f28b125e5d7ae8ae8c194449329a01ea03.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "式",
       "款"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16599,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "款式",
   "id": "ac46900df83787e8cfcb6fa9",

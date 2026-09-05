@@ -1,16 +1,20 @@
 {
   "audio": "b55e77e2b48e867a88078ac8456ec413149d66e2fe4dac8b2e76d50e47c73fe9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6876,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "过敏",
   "id": "a5b3cdecf0724b9f0bd881ac",

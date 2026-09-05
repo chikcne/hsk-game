@@ -1,17 +1,21 @@
 {
   "audio": "3a912961de2578dc88dcb5f06587ce36274e6cba8481098f351f773c847fe4dc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "后"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24671,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "后人",
   "id": "1c919420254bb6724b8ded32",

@@ -1,16 +1,20 @@
 {
   "audio": "8013d62998aea616f814e132c769726ac10d146c82643d108db5a50d3964f789.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "步"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9418,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "步骤",
   "id": "bda727ba808c07aa3f852019",

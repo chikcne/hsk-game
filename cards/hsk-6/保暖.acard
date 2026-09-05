@@ -1,17 +1,21 @@
 {
   "audio": "6837beb9e66d52e7d83e9875c51e8aa740e594f2e5e9a9d3970cea6338000352.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "保",
       "暖"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20536,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "保暖",
   "id": "67aeefc6c9463a4352f070e7",

@@ -1,17 +1,21 @@
 {
   "audio": "e3621fb5a25d6b5e8c757816095bc05ec0a6e582bf9160b62c91c9e31646a7e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "时",
       "有"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1105,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "有时",
   "id": "04003ec2dd5ff4fbd1465d43",

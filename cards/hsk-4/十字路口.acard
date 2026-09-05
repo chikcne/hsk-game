@@ -1,7 +1,6 @@
 {
   "audio": "12ff567922507ee9c8137d1638ce4394d7366a8abc79717ddbaceb8c5bdee604.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "十",
       "口",
@@ -9,12 +8,17 @@
       "路",
       "路口"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15482,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "十字路口",
   "id": "a872226875b5e05b0cdcd4a2",

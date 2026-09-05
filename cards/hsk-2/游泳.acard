@@ -1,16 +1,20 @@
 {
   "audio": "67eda3144440b04687add8d9b2fe82c23a6d943fc8a4397c7323d3d3cfa2f278.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "游"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2243,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "游泳",
   "id": "c579e7ac905560998aaae149",

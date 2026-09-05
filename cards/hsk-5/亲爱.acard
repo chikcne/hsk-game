@@ -1,17 +1,21 @@
 {
   "audio": "9a61500967bc50b45b60698fd9da4ce47a0abf0d9532a7980a0642589adacf40.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "亲",
       "爱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 297,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "亲爱",
   "id": "4f1e865f50703611ba1e99fd",

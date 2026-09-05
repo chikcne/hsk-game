@@ -1,17 +1,21 @@
 {
   "audio": "4e5d1c0b21693ee3b7addeeefdcda0d15d4df03b2877016b137b52a2e4fe654c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "做",
       "饭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4925,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "做饭",
   "id": "e8d5ff2bfeca7ecc2dc9e48f",

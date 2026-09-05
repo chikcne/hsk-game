@@ -1,16 +1,20 @@
 {
   "audio": "c08efdd4726ae2a81e00758ee806954919f68dae923b01b1747bb68ea8608515.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "对"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3268,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "对抗",
   "id": "b1b1b5148d562296313150db",

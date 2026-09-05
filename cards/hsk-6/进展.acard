@@ -1,16 +1,20 @@
 {
   "audio": "96c1d7a5559d79b6a005003bdb4561d409badce38a8b27ea9baf227b36edca76.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "进"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2459,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "进展",
   "id": "b9a3f23e79df7f42a4bd4fd0",

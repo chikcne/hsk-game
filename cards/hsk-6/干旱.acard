@@ -1,16 +1,20 @@
 {
   "audio": "454b2b4ef0cdde95ff5ff417bd4e4983436fee589e8719fc5862d6aa550cbebf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "干"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19509,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "干旱",
   "id": "c64ec5b3e902ca44def260ba",

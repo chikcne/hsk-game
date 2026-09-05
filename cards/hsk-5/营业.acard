@@ -1,16 +1,20 @@
 {
   "audio": "638598a7a4479492c2b37763aee8d8f28955f4d306707b40bb81a80fbcb03ac0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10904,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "营业",
   "id": "85a71b263c2ad42664c92695",

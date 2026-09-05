@@ -1,16 +1,20 @@
 {
   "audio": "950b1c997c34f4765ceb4d8593196f35dd46b2158dc89a0df315af7457bae272.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "定"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7852,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "坚定",
   "id": "dfb5dc2bcd1fadcb959bd493",

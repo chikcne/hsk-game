@@ -1,17 +1,21 @@
 {
   "audio": "d214299f897b1fce423ebb70204fb19e8542b66bdd7029e964f58c4eb9b4b0a1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "元",
       "多"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 42284,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "多元",
   "id": "d6e1c1c61c001545d928173a",

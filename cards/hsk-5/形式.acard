@@ -1,16 +1,20 @@
 {
   "audio": "1119ceceb5c9834f29c9e297f0aef12753edd8327e1b1a8e57b180ee0c4a142b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "式"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4050,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "形式",
   "id": "1d3290a18aa20714b2ef2ef7",

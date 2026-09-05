@@ -1,17 +1,21 @@
 {
   "audio": "b07cef2da665560cecd81d67193fcb4b8e99aa7a6b792f4f8108e530148593dd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "区",
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20421,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "小区",
   "id": "c6c967425bd7f74f64934b4a",

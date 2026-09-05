@@ -1,17 +1,21 @@
 {
   "audio": "bf742954fecc34c4de9a0aec92aeb400289ffa1653f9a9577bfc56336f88ffd2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "小",
       "说"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3176,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "小说",
   "id": "7d5aaf55a77c378b57063ff0",

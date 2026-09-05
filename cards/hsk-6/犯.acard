@@ -1,14 +1,18 @@
 {
   "audio": "3900ce9811e617e6603560221a04f606b836b6fdbf9a3f6528ba3d08bbe6b6c8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1918,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "犯",
   "id": "6f7faede4fec751c7f3c1b6a",

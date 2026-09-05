@@ -1,17 +1,21 @@
 {
   "audio": "3a00d3bff6fe427e6ff06eae9b8a68ca98d29cfb1b9c7bb65b30f10a69343f08.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "成",
       "立"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4179,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "成立",
   "id": "ecd75a7b83ca7287a25fa4a2",

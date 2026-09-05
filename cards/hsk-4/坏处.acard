@@ -1,17 +1,21 @@
 {
   "audio": "1f1b798163369708745c19c3ee80b91c9aa38ea37204e225385de6ad43c9b771.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "坏",
       "处"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16331,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "坏处",
   "id": "7ed2e4a2e92ceec1c92706cc",

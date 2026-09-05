@@ -1,17 +1,21 @@
 {
   "audio": "823ba47b2fdfdf0e358d9b8da8f1d55e10800e034d75bfdb58116cf2d8085fea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "幅"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20246,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "大幅",
   "id": "cd818e7e4d3cbdbaa55bdf3f",

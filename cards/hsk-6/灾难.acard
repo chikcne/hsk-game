@@ -1,17 +1,21 @@
 {
   "audio": "1e6f514886c994560bc3c3056d1939cfc42e856f1f7f6da48a12c3e45e7d6015.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "灾",
       "难"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3942,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "灾难",
   "id": "672c035841b7a328de96943f",

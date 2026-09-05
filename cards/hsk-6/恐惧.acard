@@ -1,14 +1,18 @@
 {
   "audio": "4548148f42b1ae548862982a8980777b740c1fac19daf59b7c28b5c3d22582da.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1735,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "恐惧",
   "id": "4aed95284bd1b8a39d46377d",

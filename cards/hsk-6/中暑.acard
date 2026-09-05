@@ -1,16 +1,20 @@
 {
   "audio": "2e511f89bd23f8830c96db0ebf6e1934b8b8dadc4ddec765cac1bbd968c66925.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33100,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "中暑",
   "id": "23eeeaa41bd410110b2e3084",

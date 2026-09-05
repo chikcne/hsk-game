@@ -1,16 +1,20 @@
 {
   "audio": "9723229a0e96780c6cf6c36298e262af5cac3ddc02d7aa9135146f3611af4d95.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19397,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "格外",
   "id": "8df33259cadfeaa4c77e2222",

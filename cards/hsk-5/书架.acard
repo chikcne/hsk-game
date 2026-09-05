@@ -1,17 +1,21 @@
 {
   "audio": "fd270ba906ab1b5efbbad34e5e5e27316ad03a57d461c8a9ea78e79ecaaac6aa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "书",
       "架"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31549,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "书架",
   "id": "765e19885e854a070945e4c7",

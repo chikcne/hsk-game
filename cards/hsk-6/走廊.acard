@@ -1,16 +1,20 @@
 {
   "audio": "6717db29f047ce220c982ea684493e5a5b2b44dfe288d81c3eb7a876411b4958.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "走"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3592,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "走廊",
   "id": "1c911fc97d8d71e4644d2197",

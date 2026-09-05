@@ -1,16 +1,20 @@
 {
   "audio": "bcba2fc055ebdef6fe140ea2f816cf7c39651929d278aaac42ee0fa860d056f6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "洗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16329,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "洗衣机",
   "id": "bd17e11eb78c03f3c54ba12e",

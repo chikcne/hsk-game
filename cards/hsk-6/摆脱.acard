@@ -1,17 +1,21 @@
 {
   "audio": "8921724e3bdce3c32e2cd95001aa8b56edcea221a8107b7c10880092ba8b7274.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "摆",
       "脱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2636,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "摆脱",
   "id": "fa075d318486e23735bd989f",

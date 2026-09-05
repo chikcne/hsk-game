@@ -1,16 +1,20 @@
 {
   "audio": "7fe27d89cc384839dd879f2cdd1618671df3a88964648ff315f4084c9803deb3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "夜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15876,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "熬夜",
   "id": "19bb049967247e7eab0e4cec",

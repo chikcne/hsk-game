@@ -1,17 +1,21 @@
 {
   "audio": "faffd95bf51024393545a459606ed0a668a4379a569ac4119ce9b58cb5fd129c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "了"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 227,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "为了",
   "id": "705b64f977dd3fc3bbdcda0b",

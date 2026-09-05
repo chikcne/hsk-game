@@ -1,16 +1,20 @@
 {
   "audio": "332ae5a68620cfcf1bf9455fde6120a755aa749873e824385318cdc35505347a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "田"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 29425,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "农田",
   "id": "cfac4784ecf7bebc43e755de",

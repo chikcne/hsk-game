@@ -1,14 +1,18 @@
 {
   "audio": "bd4fbb55c5f84fe410f4b7090f3478a21cd6f1c54a0048f85c30f0d6d93afd11.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 825,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "音乐",
   "id": "a99dc5342e07334af11d1a9a",

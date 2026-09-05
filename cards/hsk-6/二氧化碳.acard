@@ -1,17 +1,21 @@
 {
   "audio": "97f44613aa3daa0d7b1bcc0537979fb4e942fbf7d10506b8cf160685daa42d1a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "二",
       "化"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13730,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "二氧化碳",
   "id": "4698c79b5255d1aa7773e959",

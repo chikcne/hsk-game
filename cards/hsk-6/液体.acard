@@ -1,14 +1,18 @@
 {
   "audio": "18652cf6f816a65370353d0205d355e73de50e905e011acbe56666837b5391af.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10692,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "液体",
   "id": "8c3da5345515b217b2682dfb",

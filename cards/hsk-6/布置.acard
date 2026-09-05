@@ -1,16 +1,20 @@
 {
   "audio": "cc59fa9c19199b3ca2e4ac2cf499d6769cf240ac0f4ba03499b7c41e16ff22c6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "布"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7779,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "布置",
   "id": "3da78d4611397e6abe563adf",

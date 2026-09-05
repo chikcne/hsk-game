@@ -1,16 +1,20 @@
 {
   "audio": "0598f68a6957a0353ad861c59138165116e8d54772986e8a2f2a6537cf8be303.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "牌"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12946,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "金牌",
   "id": "0905132256bafa2409d5294d",

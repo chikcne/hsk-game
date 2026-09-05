@@ -1,16 +1,20 @@
 {
   "audio": "4b13f952fed6985b2549b8a74ad3b8729111659a240fb26409ffb0f0d8585836.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "化"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31753,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "简化",
   "id": "c44f8e0cd7adc05fbe160c8c",

@@ -1,16 +1,20 @@
 {
   "audio": "28afc582497352a95d40c70796f9ef03d45df425888c8f3b1683deee60c65007.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "求"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10926,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "求助",
   "id": "04d3b3348403e173a841047e",

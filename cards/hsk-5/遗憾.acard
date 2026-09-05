@@ -1,14 +1,18 @@
 {
   "audio": "d39a75979d49a7884d2ed55a3de45dd595723ef280d1f01df780fdafe22aea63.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1556,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "遗憾",
   "id": "00e987e88494abc08e620c92",

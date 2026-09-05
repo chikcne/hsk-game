@@ -1,16 +1,20 @@
 {
   "audio": "a51faee3cd0ccb711936084944171bf2e91b6a6b7d421a56d510cad2f05f609e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "游"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5892,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "旅游",
   "id": "d27620579c3c422b892dc13b",

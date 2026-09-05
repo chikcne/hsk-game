@@ -1,17 +1,21 @@
 {
   "audio": "36f500ecd7acb29b88695c043fc4b52d728422cc2d3ca25da7299cf98e63c84f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1308,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "一生",
   "id": "7315772f6c9b69699265a81e",

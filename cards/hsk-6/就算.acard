@@ -1,17 +1,21 @@
 {
   "audio": "f5ff04daca3e2fbe84129eeb71eaa0a88611f843c28a161edcfb42490024144b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "就",
       "算"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 651,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "就算",
   "id": "672282214533008828303929",

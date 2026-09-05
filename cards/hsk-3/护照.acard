@@ -1,16 +1,20 @@
 {
   "audio": "114c73635f76895ad7394efdcb3da24b2551f1892b8c4eb27070031b60b25044.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "照"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3743,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "护照",
   "id": "de864ff619e8cd4ccaa72ea7",

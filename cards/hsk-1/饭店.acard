@@ -1,17 +1,21 @@
 {
   "audio": "65fab69753cb3b4f800d1d85275157980189cbdefa76032f23a489b6d64fb0a7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "店",
       "饭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3975,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "饭店",
   "id": "7f59332ae4b530d04a9cb657",

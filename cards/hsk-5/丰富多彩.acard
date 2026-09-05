@@ -1,18 +1,22 @@
 {
   "audio": "95df71788b5a4f27fe9b3bb767cb2243ab91831dcb50a7038eba72eea9b9a011.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "丰富",
       "多",
       "富"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 42917,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "丰富多彩",
   "id": "c0358e6db6404765ef6fd69b",

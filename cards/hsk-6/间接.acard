@@ -1,17 +1,21 @@
 {
   "audio": "3b075a8fae3143552720ebff3f15b6dee4b0cfbc44077d6323826d03680f53e7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "接",
       "间"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17607,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "间接",
   "id": "eecd55053306df0e865d8f11",

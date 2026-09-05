@@ -1,14 +1,18 @@
 {
   "audio": "f85869ee8eacd1537029cb2c7eb6da83aa082f5f112f075fdfed3db722a5bf41.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4698,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "崇拜",
   "id": "b3169550f255c6b04c3d80de",

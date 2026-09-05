@@ -1,17 +1,21 @@
 {
   "audio": "e58b1e512f2eb4b12e45e2a53186baf2306c4d4171ad66c8a0feed4bda9bd23f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "期",
       "短"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15287,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "短期",
   "id": "8c3dbd9367f49bcb635bce0c",

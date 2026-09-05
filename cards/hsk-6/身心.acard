@@ -1,17 +1,21 @@
 {
   "audio": "03b5c19c872bbb47cda251a250cafde7151fae1460e336bcb54b6722d0f0eacf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "身"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13602,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "身心",
   "id": "57460ceee1a968eda6faaf61",

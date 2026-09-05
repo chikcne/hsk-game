@@ -1,14 +1,18 @@
 {
   "audio": "0d7dc5079a28e9ce5479d0516fc613c7e7b36620c823da068c2ffe12688c394c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1305,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "竟然",
   "id": "d28f5a0e38890d1c53b22c18",

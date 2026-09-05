@@ -1,17 +1,21 @@
 {
   "audio": "e4fa8c9553b383d29fbffe8e1c0067f99be9260f13ac6210c93771536ba1a115.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "化",
       "变"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2121,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "变化",
   "id": "7298d0ff140faac36bb078fc",

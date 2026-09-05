@@ -1,14 +1,18 @@
 {
   "audio": "fa7f9500ecc05bb615fbc14e753c17898687afdcc1b9c89e177cdc9771677e8e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8746,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "跌",
   "id": "19906fba8beb7d5017fbedd4",

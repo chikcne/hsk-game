@@ -1,14 +1,18 @@
 {
   "audio": "c1c6677fdd3677380c9251edecf23b60201143f42c1d4de23e09cf2993c0764f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5977,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "渐渐",
   "id": "60d67ad4c43ccc2541b987db",

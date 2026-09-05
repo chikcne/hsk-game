@@ -1,17 +1,21 @@
 {
   "audio": "711d79229120863f5a41d22c199761544e14e360720114be38b288b0fba56c1d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "太",
       "空"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2475,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "太空",
   "id": "9949dbcec0e2f821e8ec2699",

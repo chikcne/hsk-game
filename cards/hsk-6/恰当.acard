@@ -1,16 +1,20 @@
 {
   "audio": "05febf100d9907a567441ee0c8c433b3bd35e2b4ff62481dddf703b3e44e6eb1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9959,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "恰当",
   "id": "30251503209bd57550b840de",

@@ -1,17 +1,21 @@
 {
   "audio": "6b3feeb8ad5d76430365e699cc194fc58652942e576fc8b1e4f1482097b69e1f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本",
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5945,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "本能",
   "id": "8391a9103db1a566c5349452",

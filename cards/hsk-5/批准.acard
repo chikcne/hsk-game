@@ -1,17 +1,21 @@
 {
   "audio": "a858be9afb57207db66b68a817043bc45d27969573c2ed672c56b1dcb7afff64.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "准",
       "批"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3652,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "批准",
   "id": "da221174df8e2a8692877295",

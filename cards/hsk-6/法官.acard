@@ -1,17 +1,21 @@
 {
   "audio": "2f2b49984e5e2b96d0d29a453fc184841e1c519bfcd38117bd2b8b8a182263e8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "官",
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1366,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "法官",
   "id": "0a36a84426a80b7198d4f77b",

@@ -1,14 +1,18 @@
 {
   "audio": "01559bd263e4d3eb70676d9a283e492ac89c326cf3e9cbd7d9f59380b7e840b1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 20902,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "采购",
   "id": "d0ac851d1bfb871402e9db21",

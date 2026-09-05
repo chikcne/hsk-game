@@ -1,17 +1,21 @@
 {
   "audio": "782826e4a722908764514d3d61a1d7abcd97332e8160be3a003ffa339e7ab3bd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "害",
       "怕"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 488,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "害怕",
   "id": "1dcb47a88793afc0372d463f",

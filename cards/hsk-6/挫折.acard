@@ -1,16 +1,20 @@
 {
   "audio": "01c7274e6e1938c716c568337e683305dd1a45efc74857bfcfb50622a7aaa18e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "折"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14384,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "挫折",
   "id": "005907b20611b26fe2fab13d",

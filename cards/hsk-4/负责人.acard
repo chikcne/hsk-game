@@ -1,17 +1,21 @@
 {
   "audio": "e8bd71addc4a326b148eb292330202ba676ab8aeb0de70c3bd6b49c54eaee0e3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "负责"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6453,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "负责人",
   "id": "a0de625e9513a06c2dbad9eb",

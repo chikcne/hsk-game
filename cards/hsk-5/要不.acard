@@ -1,17 +1,21 @@
 {
   "audio": "31243844cbc0a31954743905c22b60fd60ee04c9577c50160d47cdac6a959e52.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "要"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": null,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "要不",
   "id": "3223b0fa04879adbdfdeb5e1",

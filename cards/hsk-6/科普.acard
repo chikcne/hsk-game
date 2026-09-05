@@ -1,16 +1,20 @@
 {
   "audio": "47d59b2cece4ea572e3aaf6199a4faaa5b38dab4a1ed4b914c27b81f4afbec1d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "科"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33573,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "science-research"
+    ]
   },
   "hanzi": "科普",
   "id": "3ff5d93217b67b83519ea261",

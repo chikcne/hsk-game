@@ -1,17 +1,21 @@
 {
   "audio": "fbf5b9efe6130e92a63d1111016b1f82aebd32fefbcf46f3c2f8963c06e1dc42.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "想",
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3457,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "理想",
   "id": "35204ee27dcc1cae3114e303",

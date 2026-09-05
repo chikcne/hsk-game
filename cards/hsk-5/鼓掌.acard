@@ -1,16 +1,20 @@
 {
   "audio": "949d5f1b1c00a58079d62ced55f26b6f43e3e1987cf6bb48ef0a06d4e0ea3d62.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "鼓"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7399,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "鼓掌",
   "id": "598e8c4f8e4034fc0e45b5e4",

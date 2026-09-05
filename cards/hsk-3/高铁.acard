@@ -1,16 +1,20 @@
 {
   "audio": "15d7182d2ae498d89cd40f4ca64df2abb4ce7472e59d9f6a4f5b42c518b179ed.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 130444,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "高铁",
   "id": "adebceb5df8fb20cfcd8f12f",

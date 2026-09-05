@@ -1,16 +1,20 @@
 {
   "audio": "105e21ae90a98fcf3b15a3a979cc60b1c7544cc694113f3e3cac7e5e5b04998b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "早"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2000,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "早餐",
   "id": "2d67850c66f627cb44930f47",

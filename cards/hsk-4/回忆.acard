@@ -1,16 +1,20 @@
 {
   "audio": "9f257dfec3c6fce37a3159470d2924e992613ab97a478b7c9331ed44ec96fbd5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "回"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2536,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "回忆",
   "id": "6f84353d95222e8dfd1d7cbf",

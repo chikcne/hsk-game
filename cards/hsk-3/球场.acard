@@ -1,17 +1,21 @@
 {
   "audio": "b763fab954df7ec865aac2e27dd319f253a384b4c58e925000da31d80f17b021.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场",
       "球"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9024,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "球场",
   "id": "29ca7fb8e58f99baa9488e2e",

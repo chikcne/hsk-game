@@ -1,17 +1,21 @@
 {
   "audio": "291293310380f59381f4258551b313515248362aee2d522f84b4699af8503328.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "产",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3933,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "生产",
   "id": "ecc6b53800fe97b18cbc9819",

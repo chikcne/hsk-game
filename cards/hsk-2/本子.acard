@@ -1,17 +1,21 @@
 {
   "audio": "bdd6571120ec6316b230dab74116caabf195c4fec36f5b6924420282e86bfb6a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "本"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18182,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "本子",
   "id": "a812f89ced2becc29cf291e3",

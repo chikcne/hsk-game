@@ -1,16 +1,20 @@
 {
   "audio": "6acaf339bc1614cc446dd353a9dcdfa19f31febb120fa818e0ae50af1891ce34.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "离"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18090,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "离职",
   "id": "cbd7f6c1d6eeca28b7b56de1",

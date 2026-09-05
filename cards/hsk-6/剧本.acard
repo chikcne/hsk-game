@@ -1,16 +1,20 @@
 {
   "audio": "08ac1b7857c91c483e356997bcd32e5608b08fdaaff96f7c0e8d32abe831ba47.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3946,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "剧本",
   "id": "0cf45328aefa1dbeca639245",

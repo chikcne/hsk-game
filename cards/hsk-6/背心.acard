@@ -1,17 +1,21 @@
 {
   "audio": "40c8414cff02fe0f5632df388a5f5f8de1de7dd4522403e944235cd7e08407a4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "背"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13310,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "背心",
   "id": "c9a868436a292e11c70a6776",

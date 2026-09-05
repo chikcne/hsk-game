@@ -1,17 +1,21 @@
 {
   "audio": "587c43b4cf7947b81cb3459dd5ea6663f4ec9f59883ff96da30dfc6400e7aaf1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "法",
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 32390,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "用法",
   "id": "4373a1202e7aa80d6d6b968c",

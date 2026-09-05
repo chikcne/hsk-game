@@ -1,16 +1,20 @@
 {
   "audio": "737f4345cb7c0cc1f15408298ba85e05318cade6f44190e236c87b653ab2f97a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2302,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "暴力",
   "id": "ae20b1d2127625788d115858",

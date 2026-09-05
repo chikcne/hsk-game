@@ -1,17 +1,21 @@
 {
   "audio": "0de062fe574da0e28dc82d723185415356a8bdce43a8dc1214a8077e99d8e13d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "关",
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1075,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "关心",
   "id": "8411fd3afe48100ef82b0d20",

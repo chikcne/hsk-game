@@ -1,14 +1,18 @@
 {
   "audio": "e3ac4688bc9e82336010111631bb036f9987a5fdf8aa6a674dd41dbe87f6ac4a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 22044,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "壶",
   "id": "4f8b48c39baa7226b079b6de",

@@ -1,17 +1,21 @@
 {
   "audio": "b55749087cbb8d0772322d08d58678411aa62d1a23271a137eed6b4b6a0976a7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光",
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10365,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "发光",
   "id": "e36bc507f653983c5c76e112",

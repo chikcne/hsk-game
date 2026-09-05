@@ -1,17 +1,21 @@
 {
   "audio": "c810963fceac18992ea900bf8fa83cbae0c3328e4ba1c845aec0a36312bd0d83.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "个",
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 816,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "个人",
   "id": "9986f23c6d0ef8826f501a61",

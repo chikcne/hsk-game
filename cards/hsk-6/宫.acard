@@ -1,14 +1,18 @@
 {
   "audio": "aa13ef38f95e0402777c8140ea40d35a16e3f3fb552b7ec837f2d0b8757451c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8493,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "宫",
   "id": "b6405648bf22937e90455321",

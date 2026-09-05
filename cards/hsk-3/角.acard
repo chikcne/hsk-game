@@ -1,14 +1,18 @@
 {
   "audio": "968589eaefbc359dff449b80d1a89e5d0ec70a3d7748d63691dee9738eab9b54.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8407,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "角",
   "id": "d9b06d8fe41cd005a830540d",

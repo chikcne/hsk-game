@@ -1,16 +1,20 @@
 {
   "audio": "7967408d593a7703531fde1ea924a51ea4ca838b894d5b528cb625c3e9e4ab9e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "取"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2187,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "采取",
   "id": "e90c206a3da709e0be71c10b",

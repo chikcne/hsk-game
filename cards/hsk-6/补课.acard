@@ -1,17 +1,21 @@
 {
   "audio": "1bfcb6f49a672ca834e47ec65f1edb5363b4c0521df10a5e510a11d3ac53689c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "补",
       "课"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 47213,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "补课",
   "id": "b75c2656ce707e06c2a058dd",

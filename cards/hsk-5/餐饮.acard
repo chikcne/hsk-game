@@ -1,14 +1,18 @@
 {
   "audio": "d17c54c542b0acee00166b8b1a8bf5255c4873526a3304d7e45f22d993fd7997.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 37071,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "餐饮",
   "id": "2f583fc9016a289fbfad763d",

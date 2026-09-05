@@ -1,16 +1,20 @@
 {
   "audio": "7aeae6231273b67939d2bed78c4922231ca2684255ff4f09db2d3c7deaa0c109.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "品"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5089,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "物品",
   "id": "74684c678eac63b53c0d8dbf",

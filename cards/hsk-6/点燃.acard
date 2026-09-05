@@ -1,16 +1,20 @@
 {
   "audio": "030b9d4cb92194f317d5b4d3ddb01c6a38f3683e20247944948e978741b67542.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6942,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "点燃",
   "id": "7e31ffdbc7d04acfca8783a9",

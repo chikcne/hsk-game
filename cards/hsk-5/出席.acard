@@ -1,16 +1,20 @@
 {
   "audio": "13677f8fbec3b37072fc177c6481f07dc2238d30698184c53de5d55c21614b33.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4530,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "出席",
   "id": "c78f09ea8c7eed1caa308154",

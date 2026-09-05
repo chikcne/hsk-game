@@ -1,17 +1,21 @@
 {
   "audio": "cbe444be317859b4727bc2d93dbc34e831cdcfaad9e59ffe0896f8c1bc1cb29c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10970,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "成分",
   "id": "bca3e1a77831ca55137ce611",

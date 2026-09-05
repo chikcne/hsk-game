@@ -1,14 +1,18 @@
 {
   "audio": "e07a3b2f7cebfcab3254487fa5918a3621ce9874dc9e7b7e4ab0d9d895109213.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2331,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "逃",
   "id": "8ea561e94fe9fc42b1014590",

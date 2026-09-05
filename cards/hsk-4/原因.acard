@@ -1,17 +1,21 @@
 {
   "audio": "f9a63f66a56d117614b83c9e69f55c65e05d680af694d3202efa0db07924fd79.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "原",
       "因"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 527,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "原因",
   "id": "0252bda12bd6dbf7598a52af",

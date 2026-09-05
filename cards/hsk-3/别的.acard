@@ -1,17 +1,21 @@
 {
   "audio": "5126728123606a4765d388b8cfa60a78e8866f388d17e865d73018532a8839e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "别",
       "的"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 584,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "别的",
   "id": "777840090a71fd530fdb413f",

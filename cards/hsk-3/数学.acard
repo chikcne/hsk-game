@@ -1,17 +1,21 @@
 {
   "audio": "ef8319717463bbebbf3e36eb56c1f85f7e1909764cc0c64fdb37c23359684b67.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "数"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4831,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "science-research"
+    ]
   },
   "hanzi": "数学",
   "id": "179e55ef090b8fcedb1796ed",

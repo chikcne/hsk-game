@@ -1,14 +1,18 @@
 {
   "audio": "66d6cb8d6e2d0438990a7d6f0415eca030f5f279134589fc61f64413409b7c27.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6579,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "碎",
   "id": "f6ad33631ba201ce51814997",

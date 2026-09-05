@@ -1,14 +1,18 @@
 {
   "audio": "15b09488d5db6dc8f53a42787607b12004c0d01297fbd56027527d79b4a22443.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7486,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "矮",
   "id": "7170d0964bd08adc9ea07267",

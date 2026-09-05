@@ -1,14 +1,18 @@
 {
   "audio": "990105d456dab9c322c8559a3b654e8df6adf66dc44f1622b973d6dcaa145ab7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 3015,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "肯",
   "id": "5da4dd133f2bdee49b0d8b27",

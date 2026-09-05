@@ -1,14 +1,18 @@
 {
   "audio": "ddea7332b63c1f715efc532a40b06f823b382fa46e0318470f27a2572fd4f524.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2029,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "抽",
   "id": "bab2d448914a69b3e415bef7",

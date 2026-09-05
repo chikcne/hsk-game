@@ -1,17 +1,21 @@
 {
   "audio": "c58132258211e475ab6a927b7ff8200fa3e7d0c94f6baca5a6af7b9e7936ab3e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会",
       "误"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2768,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "误会",
   "id": "736e2b0adc64d5882b303e8c",

@@ -1,16 +1,20 @@
 {
   "audio": "dfedd0acf76b5292d73562e2ab822b2c8697e8f69328e5afecbf87b2c639cb39.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 48050,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "易于",
   "id": "18af0168d851bbda414de068",

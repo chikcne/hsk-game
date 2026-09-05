@@ -1,17 +1,21 @@
 {
   "audio": "cc2e69e8b2fc53572220b9fd72e72fb4c76283fd86ef8ed1299083585cc6be34.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "只",
       "船"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8555,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "船只",
   "id": "38b4ce49602e07d390d3473b",

@@ -1,17 +1,21 @@
 {
   "audio": "d1b45c6d2b3d49d065592605ce479fda724a5ee9ed5701c9265d76da17e5fb1a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "单",
       "订"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9057,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "订单",
   "id": "a6f269d66767788419255455",

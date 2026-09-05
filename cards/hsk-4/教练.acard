@@ -1,17 +1,21 @@
 {
   "audio": "6e581d2f672aff82a5d3b30f34166b43b1863ae21a9d6184ebffd9b93e0c1f53.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "教",
       "练"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2248,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "教练",
   "id": "c5010bb8c2f750433f0df4f3",

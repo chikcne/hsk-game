@@ -1,16 +1,20 @@
 {
   "audio": "741a47b361de8fbdae269fa2f551fcedd6becdd966aa3086061d7e92126e4d44.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "握"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2510,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "掌握",
   "id": "e5e526b146df72914011ab37",

@@ -1,17 +1,21 @@
 {
   "audio": "a2b99ad906384209703235ae32cf205c682930bd6911bde7d6ea5339516c78a2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "少",
       "至"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 543,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "至少",
   "id": "37bc20a7f2c38d04adefbb2c",

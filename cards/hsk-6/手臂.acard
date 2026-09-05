@@ -1,16 +1,20 @@
 {
   "audio": "8b3c5d9c3ce7b4dd28fa07d06f2497cccb86fb489e3364eac17a0e6b2acd63c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2961,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "手臂",
   "id": "a049bbeb603c7bdb5c2276f9",

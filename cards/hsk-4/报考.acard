@@ -1,16 +1,20 @@
 {
   "audio": "ea43bdbdf4f798984d1097983f31ca0d608d0e76c3344c14502ac266855fa95c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "考"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 94974,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "报考",
   "id": "9ec783ed6388ef3e33a2d673",

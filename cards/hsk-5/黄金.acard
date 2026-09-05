@@ -1,16 +1,20 @@
 {
   "audio": "a57b5bff77f40cb845d58dd5cb7093d8d730e3983ab2ce0e844d515ed09ccdcd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "黄"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2843,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "黄金",
   "id": "9c9677676cc518d7a3ebd350",

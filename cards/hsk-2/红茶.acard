@@ -1,17 +1,21 @@
 {
   "audio": "a07b1cd6902784ca084eda2045bb628d3ed889970ad830c0c0d6ce931d6f9e5d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "红",
       "茶"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 37175,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "红茶",
   "id": "afc9295514a594c86c59fbe6",

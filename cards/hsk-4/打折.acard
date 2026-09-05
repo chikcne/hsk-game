@@ -1,17 +1,21 @@
 {
   "audio": "32cd59dcb3fc57db7cda027014f08869205ba6404f6bf24b43f0e9877ca8e633.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打",
       "折"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17488,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "打折",
   "id": "0f7ae6b97622bee8a1b2324c",

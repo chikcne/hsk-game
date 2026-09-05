@@ -1,17 +1,21 @@
 {
   "audio": "f6ffba49939a3e082d1c74f4747ae55020e2290f04be22de95d49312c3bde0de.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "合",
       "同"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3727,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "合同",
   "id": "00eb90c9199fd7550f092c89",

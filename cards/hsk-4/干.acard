@@ -1,14 +1,18 @@
 {
   "audio": "13e8d0ff113aa25e6afaa6f442def44cee1ca5a3db97dc9beabf37e513b26f5f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 4,
+    "frequency": {
+      "rank": 340,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
+    "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "干",
   "id": "bbf3b79cba9b1348a72a1f6d",

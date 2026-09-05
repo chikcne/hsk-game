@@ -1,17 +1,21 @@
 {
   "audio": "00adc0ccb30756b55716e8efdac45406203a9a8fc34e258d60cfd3753b1b2371.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "受",
       "接"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 509,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "接受",
   "id": "b43bed1244be9a5c92796419",

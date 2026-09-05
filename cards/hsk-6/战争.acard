@@ -1,16 +1,20 @@
 {
   "audio": "fb2715372c76cc4c709f333380bec9fc5faab6c91f848474e2fc02e219accd16.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "争"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 742,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "战争",
   "id": "45e31fce4e9e69b919196a65",

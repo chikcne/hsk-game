@@ -1,14 +1,18 @@
 {
   "audio": "a6253c43160b03d9528a3035ab18b4eec60579f9b078c2844f20c405556e085c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11410,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "伞",
   "id": "21404ef73fe0e452eb96ed9f",

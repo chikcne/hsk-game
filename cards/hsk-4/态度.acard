@@ -1,16 +1,20 @@
 {
   "audio": "7e3a6b04690e23aa5a33155eb42c7e6d26a0305aaf4695927d80eae2ff2ff2af.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "度"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2675,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "态度",
   "id": "0eaed6d228a7f35cd65d2513",

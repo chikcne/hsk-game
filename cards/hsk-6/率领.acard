@@ -1,17 +1,21 @@
 {
   "audio": "b92a281e8abd6fbe48c28ebe55bcd0e98577486dbb74f85abb13a29f5d290639.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "率",
       "领"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20095,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "率领",
   "id": "54c02848f6c3e25e08b8c040",

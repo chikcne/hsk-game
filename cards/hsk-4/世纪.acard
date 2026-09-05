@@ -1,14 +1,18 @@
 {
   "audio": "1c5b40f03a519230c37f3f1e9b36e41ed9404cc092aac07ed9d969aa32fb07b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2212,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "世纪",
   "id": "32fa2c506f53e34193743f44",

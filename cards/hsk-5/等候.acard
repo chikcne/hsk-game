@@ -1,16 +1,20 @@
 {
   "audio": "f1c82f66c88a2544bf6b7084037248835ab4fc428034b388046e3a864475b727.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "等"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4764,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "等候",
   "id": "bd5bce2a70afabcadedd3835",

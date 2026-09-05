@@ -1,17 +1,21 @@
 {
   "audio": "01657dfcd1a7b49aac982d6bcab34cd476d7267c4701c0e6ba45c38e8d5b76cd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "倒",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21639,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "倒车",
   "id": "5d2870b9d4409d5ed72a1168",

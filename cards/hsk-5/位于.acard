@@ -1,17 +1,21 @@
 {
   "audio": "c6517e21435010e479566159185d827695144e348f7250d6ebbd7f2fc34d3c6a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "位"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4783,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "位于",
   "id": "d32a15aaae3ee3986c3a3618",

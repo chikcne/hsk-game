@@ -1,17 +1,21 @@
 {
   "audio": "fab9e7f2650166d19e24ba38efeacdd8e641b5d7c09f9220dbf5f665eb153ca3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头",
       "痛"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6433,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "头痛",
   "id": "ad2b2a17061da033ca50ab6e",

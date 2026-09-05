@@ -1,16 +1,20 @@
 {
   "audio": "9b91d98b50dbb3d78674371db7de3d69a1a3a8aa1d0e39857df26f404c358fa7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "教"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1155,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "教授",
   "id": "b718ea6f98d66603ca5f7c1d",

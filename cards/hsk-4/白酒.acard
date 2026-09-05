@@ -1,17 +1,21 @@
 {
   "audio": "bfca6785275844dd00df42acddfbbbc3b79a2a61340303272e87603b18f13782.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "白",
       "酒"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21285,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "白酒",
   "id": "e290912531f0f0f5114ded07",

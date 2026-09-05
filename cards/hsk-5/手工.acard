@@ -1,16 +1,20 @@
 {
   "audio": "783de18d59770405dcd0358218532a35ff0f45192ebd0e01c91b0df453e7bb78.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11942,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "手工",
   "id": "842cd3fd3fae9e85316ee0e0",

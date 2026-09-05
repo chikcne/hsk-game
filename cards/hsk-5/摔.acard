@@ -1,14 +1,18 @@
 {
   "audio": "405298ae7d829011f0a64a797705642a7ebae1cb7e41842b13ce52e594cde854.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4751,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "摔",
   "id": "d52b89a32e4f47b9ccf6b216",

@@ -1,16 +1,20 @@
 {
   "audio": "6216a873d87568363f3eff3c9bc3ab1661cb7f8ce47d8e31d70de8bef1806480.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7257,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "枕头",
   "id": "34a0a27aa92a182cc503e04a",

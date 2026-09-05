@@ -1,16 +1,20 @@
 {
   "audio": "47abd440603938714cbc13f5a1a25eaffdc88095551caadf5eee5cc1c1341dd2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19050,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "赛场",
   "id": "5665696611a749db15561867",

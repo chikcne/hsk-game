@@ -1,16 +1,20 @@
 {
   "audio": "d78e1f149d9fed8cd3746d3ed5668e553c9fdac267f5a5912d87e2e8329dd6d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "顺"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1974,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "顺利",
   "id": "07bf6a6f465384f2c06c5d7b",

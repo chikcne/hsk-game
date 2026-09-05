@@ -1,16 +1,20 @@
 {
   "audio": "25395771d4493b9b2c483d399f5d9528a18e6928b144fb1797cd9280c7847d20.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "度"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2892,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "程度",
   "id": "de7bd84a22a5f3b7b1ea8844",

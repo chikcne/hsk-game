@@ -1,17 +1,21 @@
 {
   "audio": "eb559fb5bc76aa1c6dbbb237131188731b20149bf4660fd733aad5755a07edd2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "内",
       "部"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3109,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "内部",
   "id": "681343fcb18b1b4c40108f09",

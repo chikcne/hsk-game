@@ -1,17 +1,21 @@
 {
   "audio": "fb9bcee265eb66712a8fa1facc9f777ef56b93fcac4aba3f91013ce7b8095567.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "家"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 213,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "大家",
   "id": "51b33dd0eaef26c7960b2cd8",

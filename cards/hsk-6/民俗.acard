@@ -1,14 +1,18 @@
 {
   "audio": "ea82b659700d86bbc44ee105e9f3a9c34c297b28fb1c25f6c004f3e173e09a48.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 54980,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "民俗",
   "id": "f5b68da1e9607bde151373be",

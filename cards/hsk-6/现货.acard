@@ -1,16 +1,20 @@
 {
   "audio": "c52118042b4b04ec33c73de84850c47a0ec03fb275181ea9ddd1b5529b3a0bb1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "货"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 84237,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "现货",
   "id": "f08f3113eb3b0371ce681fd6",

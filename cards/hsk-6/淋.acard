@@ -1,14 +1,18 @@
 {
   "audio": "62abc502722985f4b9d7c295477f35ee42027e221c4b5e840bbaf0ee19f76d28.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 27395,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "淋",
   "id": "c3863261a59899ea473ddf71",

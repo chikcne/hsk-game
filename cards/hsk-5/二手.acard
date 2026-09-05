@@ -1,17 +1,21 @@
 {
   "audio": "f20673151542449785ac0ed7c399b76f074b2762745dea87bf662c3ae97fee53.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "二",
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22226,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "二手",
   "id": "bbbacb6263a643491d38a855",

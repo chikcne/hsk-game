@@ -1,14 +1,18 @@
 {
   "audio": "0b19c1ff79fa8f35efa2a86a0eff40f3cb412cb562e7328b691908e4283550ba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9694,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "患",
   "id": "f209271ee7c9eeda466b4e9b",

@@ -22,22 +22,25 @@ export type NextLearnCardFailure = InvalidTimestampError;
  * every currently due introduced word (in curriculum order) plus up to
  * `options.newCardLimit` brand-new curriculum words. */
 function selectLearnCandidates(
-  order: readonly string[],
+  deck: LearningDeck,
   level: LevelProgress,
   nowMs: number,
   options: CreateLearnSessionOptions,
 ): { dueIds: string[]; newIds: string[] } {
+  const order = deck.curriculum.lessons.flatMap((lesson) => lesson.wordIds);
   const dueIds: string[] = [];
-  const newIds: string[] = [];
+  const currentLesson = deck.curriculum.lessons.find((lesson) =>
+    lesson.wordIds.some((id) => level.words[id]?.introducedAtOrdinal === null));
   for (const id of order) {
     const progress = level.words[id];
     if (!progress) continue; // reconciled decks can lag their level record
     if (progress.introducedAtOrdinal !== null) {
       if (isCardDue(progress.card, nowMs)) dueIds.push(id);
-    } else if (newIds.length < options.newCardLimit) {
-      newIds.push(id);
     }
   }
+  const newIds = (currentLesson?.wordIds ?? [])
+    .filter((id) => level.words[id]?.introducedAtOrdinal === null)
+    .slice(0, Math.min(options.newCardLimit, deck.curriculum.lessonSize));
   return { dueIds, newIds };
 }
 
@@ -48,8 +51,9 @@ function selectLearnCandidates(
  * 1. every currently **due introduced** word of the grade (a card is due when
  *    its FSRS due date has passed — never-reviewed cards are always due), in
  *    stable curriculum order;
- * 2. plus up to `settings.levelSize` **brand-new curriculum words**, pulled
- *    in curriculum order and introduced immediately.
+ * 2. plus up to the configured new-card limit **brand-new curriculum
+ *    words**, pulled only from the current fixed 20-card lesson and
+ *    introduced immediately.
  *
  * Fails with `NoLearnCandidatesError` when both sets are empty: a grade whose
  * every word is introduced, healthy (review), and not due has nothing to
@@ -65,8 +69,8 @@ export function createLearnSessionEffect(
     const nowMs = yield* validTimestamp(now);
     if (options.newCardLimit < 0) return yield* Effect.fail(new NegativeLimitError({ param: "newCardLimit" }));
 
-    const order = yield* curriculumOrderEffect(deck, level.curriculumSeed);
-    const { dueIds, newIds } = selectLearnCandidates(order, level, nowMs, options);
+    yield* curriculumOrderEffect(deck);
+    const { dueIds, newIds } = selectLearnCandidates(deck, level, nowMs, options);
     if (dueIds.length === 0 && newIds.length === 0) {
       return yield* Effect.fail(new NoLearnCandidatesError());
     }

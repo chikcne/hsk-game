@@ -1,17 +1,21 @@
 {
   "audio": "7d35fb5c1eba8c3260fdebb71f149ebaa1f903002b3af2bff45f4ac8a11eec9d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "节",
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12510,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "过节",
   "id": "e9dd27a4912cdc57a2ffa445",

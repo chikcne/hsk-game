@@ -1,16 +1,20 @@
 {
   "audio": "760b0e940d06c7f7d74c2efce3b5221fbeec6a5ddfc4947fa0d1fc196d28c40b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28258,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "勇于",
   "id": "7f616415697173efaef1bf02",

@@ -1,16 +1,20 @@
 {
   "audio": "b6723fb6967a90ddb950d78e2c9d5f8d0ac6e561349b9ed42d1f511435505902.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11451,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "视力",
   "id": "2045d5fdf32e4511e952f9dd",

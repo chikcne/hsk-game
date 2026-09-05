@@ -1,16 +1,20 @@
 {
   "audio": "c1e85a0ad0c5fb84cd74a49a4733dcdd091c951348ac7af11e6c830365bcc1b7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "科"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4671,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "science-research"
+    ]
   },
   "hanzi": "科技",
   "id": "f4da17f749692ecea13f6113",

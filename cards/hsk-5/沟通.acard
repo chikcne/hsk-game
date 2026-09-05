@@ -1,17 +1,21 @@
 {
   "audio": "3337a9a641d7f8ac16dcab13405789689b3917353b21045d81f1742d480084ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "沟",
       "通"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5223,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "沟通",
   "id": "8c8873d29cea71f7c173e7f8",

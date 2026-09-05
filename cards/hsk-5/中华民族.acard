@@ -1,19 +1,23 @@
 {
   "audio": "7843fb8ed0913eb82ddb639dd0f02b403b2324386fb38811515ca48ea746beab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "中华",
       "族",
       "民族"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 100593,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "中华民族",
   "id": "fb199a9bfc92cdae3ab2f7d5",

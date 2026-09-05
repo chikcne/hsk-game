@@ -1,16 +1,20 @@
 {
   "audio": "89cdabe0d111d7e80ea1b4dc9ba3fcef2a0a37b8f373e26d8fa117f42f31d812.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "订"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5071,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "订婚",
   "id": "0820aa7ac89a0f57e7cfb6fb",

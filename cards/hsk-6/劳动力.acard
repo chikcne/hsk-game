@@ -1,19 +1,23 @@
 {
   "audio": "8bdbc9d2ee719a1b8343e243cf108a5758bb9dc2e29a634c7edbf5c0a1e4d777.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "动",
       "动力",
       "劳动"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 29111,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "劳动力",
   "id": "760fe978bfa864511436d167",

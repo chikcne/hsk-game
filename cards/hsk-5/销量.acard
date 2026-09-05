@@ -1,16 +1,20 @@
 {
   "audio": "be6ac21cda47c4a32f1bdf1a9859555dd59c6c623463439a694732b11fa09087.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "量"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20739,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "销量",
   "id": "3dabca67fd6a8e5a550a3e5b",

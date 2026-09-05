@@ -1,16 +1,20 @@
 {
   "audio": "25153a61fa57b48e45d79e57c606ee7e0c1846fa98e0735dc2804ac51eb01be3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13737,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "开幕",
   "id": "8b794880af962ed550af1077",

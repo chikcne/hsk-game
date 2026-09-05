@@ -1,16 +1,20 @@
 {
   "audio": "5be584e525d6134b7c50e4588e69bee7ba3aad717625b65694aeafe024b31cf3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "库"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4446,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "仓库",
   "id": "c81eed18b709a905ba0f6a5c",

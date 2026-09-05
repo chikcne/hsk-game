@@ -1,14 +1,18 @@
 {
   "audio": "c4da0ea37a2c1677398e949e1bcaf79cc25ff62b1de1331e99879ed307f7f111.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1898,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "累",
   "id": "c31a788ca58465dd02c28abf",

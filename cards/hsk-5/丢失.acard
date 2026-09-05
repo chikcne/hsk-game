@@ -1,16 +1,20 @@
 {
   "audio": "72ee86f9f4c63db0c2b666ff159de9bf2cc6fb68581dfdd6ec2c6d306321e8e2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "丢"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7145,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "丢失",
   "id": "e3b8155d13bbc39d9325e5ac",

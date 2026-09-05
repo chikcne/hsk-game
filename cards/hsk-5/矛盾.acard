@@ -1,14 +1,18 @@
 {
   "audio": "f19169db032bd294fc4aaa03ce31b145acb90ea243d1ac099831501676c224c8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5901,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "矛盾",
   "id": "5c403c7b731fb9a4d836a05f",

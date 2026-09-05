@@ -1,16 +1,20 @@
 {
   "audio": "584e1a97a17184114244b66962e6748f51f734980466076fd9421fdb4e2cf4a5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "飞"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 758,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "飞机",
   "id": "3dda47154f3bd2dcbdc2438e",

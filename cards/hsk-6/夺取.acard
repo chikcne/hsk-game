@@ -1,17 +1,21 @@
 {
   "audio": "3afcaa1ed53bb09aeaf8f272533b86c608cc58924c033dc5c6b2c667596f83f4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "取",
       "夺"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11140,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "夺取",
   "id": "b13ebe1e27d0ab4d88c4b5cd",

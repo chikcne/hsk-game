@@ -1,16 +1,20 @@
 {
   "audio": "c911399ec4c217a48c3e8fadaa1c44ec254b51c5d560d1e8fd4d8c2eef4d5256.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "平"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4911,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "平衡",
   "id": "8ba204c4a0b246ef2030d245",

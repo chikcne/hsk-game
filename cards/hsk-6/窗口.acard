@@ -1,17 +1,21 @@
 {
   "audio": "0ca395afca8202a639bae3b34234e4e1c9d9530ad0e026f528af3cafb6b71407.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "口",
       "窗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6480,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "窗口",
   "id": "5c0426cd9f849f2aa398a3a7",

@@ -1,17 +1,21 @@
 {
   "audio": "29dce09651be2b459b41c4a8efa9d2b99bf0fbd12eaedf46350c4ce8aa812cbf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "初",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17582,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "初期",
   "id": "cbd514e2be7ca516976d4db9",

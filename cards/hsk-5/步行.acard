@@ -1,17 +1,21 @@
 {
   "audio": "c59dc489be957193c4f43044857e1f55740d7a10217fa1e31cc9329fb5790349.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "步",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8392,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "步行",
   "id": "3f61a0b9d87a7e8aef80ce36",

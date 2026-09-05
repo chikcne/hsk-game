@@ -1,17 +1,21 @@
 {
   "audio": "9df97fb7892d2e1e11e37b81db01a1c0a06906a15467bdfde696827cbf80695c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "古",
       "考"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26246,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "考古",
   "id": "260b5e5f01ff0f96546db16a",

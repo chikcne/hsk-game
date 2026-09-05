@@ -1,17 +1,21 @@
 {
   "audio": "af3de083522b1e845a60486699e1cb238a06150dc1aa5819749b9fd3a82a4d71.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会",
       "省"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 108608,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "省会",
   "id": "fac6e4fdb7bd134baaae286b",

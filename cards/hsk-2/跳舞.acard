@@ -1,16 +1,20 @@
 {
   "audio": "3c239b4dd383a9d5c16522ca1cf150ce40190028006a4a6cf9e953afe807b2c9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "跳"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1012,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "跳舞",
   "id": "27849f12cdd4a57751c7488e",

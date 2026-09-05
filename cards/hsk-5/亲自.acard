@@ -1,17 +1,21 @@
 {
   "audio": "72e273a85fdb1a73dd13293659dbc528b32064dd3d86da1463a3fdabe576c4ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "亲",
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2006,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "亲自",
   "id": "1f72045b203e3e55ca61efc9",

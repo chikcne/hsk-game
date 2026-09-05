@@ -1,17 +1,21 @@
 {
   "audio": "e51acb03ff1a4ed1f9763e5f629df6b156906e0c5e860590fc47f6b48911cc51.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "棒",
       "球"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3955,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "棒球",
   "id": "38b3c5ddbe6671f8c8f1b5cd",

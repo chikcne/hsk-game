@@ -1,14 +1,18 @@
 {
   "audio": "8fbe565b9b3afbbca3109e9372cb743b9cddc43573606d4af3b7c62f2f8ead32.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1179,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "血",
   "id": "7613d850ca491ee44a472268",

@@ -1,17 +1,21 @@
 {
   "audio": "2f21f1059df9f9b8954c32033fae194efae24a437f7d2c1d09d781d6d32e0fcf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "升",
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 67778,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "升学",
   "id": "ade6d9d3dac9cce9441dd4a4",

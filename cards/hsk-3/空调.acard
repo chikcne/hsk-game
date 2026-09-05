@@ -1,17 +1,21 @@
 {
   "audio": "bc7653bd6aeedbeb38e7aa418f6f68753de5e8bb5c354c8425071b52518dc97b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "空",
       "调"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10618,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "空调",
   "id": "e7c024093b9d9639ad5678a9",

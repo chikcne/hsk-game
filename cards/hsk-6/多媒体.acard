@@ -1,17 +1,21 @@
 {
   "audio": "0b1f49328335d0937b710d4528e2cf5443215e01acc3203a4808ea7115c77c70.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "多",
       "媒体"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 101756,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "多媒体",
   "id": "ca799e35436270c37885dfac",

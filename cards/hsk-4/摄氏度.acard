@@ -1,16 +1,20 @@
 {
   "audio": "3fe40ba8f4d1cb2b9f68a6101fe2a6dffbe56d9f7e030b885bf3c5778dbb4627.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "度"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30803,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "摄氏度",
   "id": "dba5d69b3da6de22031f61c4",

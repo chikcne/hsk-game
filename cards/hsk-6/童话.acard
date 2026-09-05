@@ -1,14 +1,18 @@
 {
   "audio": "df546133448d991af3143c24aed4d29df6fce18139ee975eb1297a790a45a7ab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10502,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "童话",
   "id": "155958e5a9e03f20c260ba0d",

@@ -1,17 +1,21 @@
 {
   "audio": "dfe058df4972b446a4df43297bc4edc6147b298275c1a50393ebe48098931964.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "尽",
       "管"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1350,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "尽管",
   "id": "6fae8544b732a37c37051999",

@@ -1,17 +1,21 @@
 {
   "audio": "2bf7946fab3c89f2977c0eeb9ae81c1802d90a7725055b62580ac02afbc0df21.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "夜",
       "日"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14272,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "日夜",
   "id": "fce9ee781300da2c38a9b2d5",

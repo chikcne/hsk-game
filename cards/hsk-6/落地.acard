@@ -1,17 +1,21 @@
 {
   "audio": "ead38549f569e7ffbc155dcd042b54b88e257c13ac73c0f675bd7b1e087f5156.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "落"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12824,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "落地",
   "id": "d3d097e6ccf5f477fa1a388a",

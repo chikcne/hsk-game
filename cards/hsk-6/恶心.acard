@@ -1,16 +1,20 @@
 {
   "audio": "3833a47f3b2861c9710a8e068d472e8a89ea617239f42f9a8a2f4ddd8a68ee11.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1473,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "恶心",
   "id": "0d68ec892167a0ceb0baf101",

@@ -1,17 +1,21 @@
 {
   "audio": "c97ec64b8d99d180eafe9595172e475812c1e1e1a7ebc58804195862112e9591.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "品",
       "种"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14479,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "品种",
   "id": "7b0f7e78e5de1f548e809a2d",

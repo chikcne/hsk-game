@@ -1,16 +1,20 @@
 {
   "audio": "65be49ec387bf472de630cbb6d4268c304749a256cd13f95d5f59c5b424d6982.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9663,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "众人",
   "id": "313b44a1e6fe6e824ad80d5e",

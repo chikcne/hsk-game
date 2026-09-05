@@ -1,16 +1,20 @@
 {
   "audio": "835b897ebfbfb09b036214bf3a9dea579b769f5ce49044653da2cc76c653158d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "同"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3721,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "同伴",
   "id": "8034a95d54da7d88037c9c5c",

@@ -1,17 +1,21 @@
 {
   "audio": "e9f50d1ce78e06a0303f7a9442c6856e1f83b93b741cffcee9a6ad15d6405d78.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "周",
       "围"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1668,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "周围",
   "id": "e436f253955b3d8aec3a436f",

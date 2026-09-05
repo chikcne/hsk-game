@@ -1,17 +1,21 @@
 {
   "audio": "03ed388d6a908b6c7d8ca07485f91c880ee6eaaf535277e2b71e35ae235373dd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "包",
       "装"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8634,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "包装",
   "id": "21a791e42bff26c27335a1be",

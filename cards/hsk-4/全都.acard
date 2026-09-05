@@ -1,17 +1,21 @@
 {
   "audio": "af4c932612c2b608ba54645678260cbc456ed385a8cd738e0f53f1773c8abb40.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "全",
       "都"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1063,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "全都",
   "id": "ff6e57c544bb254ce74962c5",

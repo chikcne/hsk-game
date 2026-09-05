@@ -1,17 +1,21 @@
 {
   "audio": "30ee915389a22b0b2779dbbfaeb2a32eb5412f12cfb59f660f6dc8e8f1d16f2a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "口",
       "感"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21940,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "口感",
   "id": "856eaa797c73386ea00c6ec7",

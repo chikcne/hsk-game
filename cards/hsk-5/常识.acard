@@ -1,17 +1,21 @@
 {
   "audio": "655fcdd1d3253a6f79e1001fc36dc8e89c065905944c04a4697e72adbc3ebbb8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "常",
       "识"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14549,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "常识",
   "id": "21129ea4298fbf1aed66b031",

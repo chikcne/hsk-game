@@ -1,16 +1,20 @@
 {
   "audio": "e0732d725aa8a54ffa17b8f51090ac7977c8527fcfb79662b1c149317ba2268c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "练"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2196,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "练习",
   "id": "78c9017a6a1ab8a5ab2aa7e9",

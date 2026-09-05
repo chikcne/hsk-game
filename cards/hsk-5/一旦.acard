@@ -1,16 +1,20 @@
 {
   "audio": "7ff14e5f782b64bc283b2e94d94ce5fbe2761c4bffc7f8554a4660d2d36311c9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1205,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一旦",
   "id": "0c43353d275a469ad750ce2b",

@@ -1,14 +1,18 @@
 {
   "audio": "ab24eb88a4501b1a09f1c044152fdf7a5b2359a2b9a9c9512c427072e175f667.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4790,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "策略",
   "id": "55093b4fcaa8d850f8c5f803",

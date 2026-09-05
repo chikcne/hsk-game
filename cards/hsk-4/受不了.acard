@@ -1,18 +1,22 @@
 {
   "audio": "ba79f07e3c342ecf2a34549e8d72d92264d57a74572763a7bf6b4eb3fc4651e7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "了",
       "受"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2021,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "受不了",
   "id": "dfca7e2d25b913d1de9aefc0",

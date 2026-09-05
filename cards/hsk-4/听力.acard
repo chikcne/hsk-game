@@ -1,17 +1,21 @@
 {
   "audio": "ecb0724a23fb17a928eb37c158ed4be06a6852e09be62205a236616eae8be9a9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "听"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18548,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "听力",
   "id": "5dbc13abed79259b52fca5ef",

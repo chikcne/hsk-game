@@ -1,19 +1,23 @@
 {
   "audio": "0d4fe9d1008027299aa3f93f4381eb28593044a74125f5842cbff7e9a0eb7439.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "便",
       "方",
       "方便",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 50013,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "方便面",
   "id": "0250adbb2207d9b167533e06",

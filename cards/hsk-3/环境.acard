@@ -1,16 +1,20 @@
 {
   "audio": "ed187e4b5d019120feba86fdafbe4448c5ed659d9f8f86f98b4ccb40ec0461f6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "环"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2285,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "环境",
   "id": "ad39d76c6e75e33daca41a09",

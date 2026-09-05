@@ -1,17 +1,21 @@
 {
   "audio": "2639c51789e3465ca90987f905ba9c0d26fb9cd57cb817a267f7ae628aa3befb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "新",
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 878,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "重新",
   "id": "e25ef92bbb1d1b9f41f31539",

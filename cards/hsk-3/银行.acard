@@ -1,17 +1,21 @@
 {
   "audio": "3a81c71f6077ba1657d328f8e565949ff87b63e06729fdb3bee18f880bed4983.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "行",
       "银"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1202,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "银行",
   "id": "90afdf805a3616dbf6ba30cc",

@@ -1,17 +1,21 @@
 {
   "audio": "bcc410e16db2b03d96457717653ea8eacef7e49ce0552ab294b574d45035e9cb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "贵",
       "重"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16929,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "贵重",
   "id": "ba0ecdeb83fed4c467b96d3c",

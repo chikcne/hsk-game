@@ -1,14 +1,18 @@
 {
   "audio": "191d0455f0702c4252017ef99ec1bc030f33821bf888d1df289cf83afb022e08.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9116,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "忽视",
   "id": "6113a28ceb2a3c44e25e5249",

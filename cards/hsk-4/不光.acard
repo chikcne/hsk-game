@@ -1,17 +1,21 @@
 {
   "audio": "2874971f56280dd83c23cd74043c5b90f3527db96aec8fac10bd063cfb16832b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "光"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8814,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "不光",
   "id": "24ca59e72e544d9ca8abcf0c",

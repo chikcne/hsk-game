@@ -1,17 +1,21 @@
 {
   "audio": "759d748ddb538e5f06b387ce4d931ba4293d1d9012edc3e1949df4a98654aa71.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "倒",
       "是"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": null,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "倒是",
   "id": "9cb5e130298d14e47f92c29f",

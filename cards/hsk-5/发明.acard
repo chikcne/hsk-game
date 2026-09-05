@@ -1,16 +1,20 @@
 {
   "audio": "f3bb98e15c7c53f358e12f0f2e4fd8d4b20cb4b206ffd9c383100135e714ce3b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3196,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "发明",
   "id": "29c92e7b42d952988688ad13",

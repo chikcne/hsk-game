@@ -1,16 +1,20 @@
 {
   "audio": "5de0e5f9fab531bacf9ead63c45d9511985618cccc839ebb9aa4d9910ca23e9b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4349,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "轨道",
   "id": "3d77e1f50f6d526607b73361",

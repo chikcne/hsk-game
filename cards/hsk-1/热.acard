@@ -1,14 +1,18 @@
 {
   "audio": "4268749655c494980ae807db2a43ae5c7448ff5db582a882505f2e6960c3048d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1580,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "热",
   "id": "df47ce04031b878390370500",

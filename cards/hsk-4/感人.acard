@@ -1,17 +1,21 @@
 {
   "audio": "cf98b1fe11bc2384512b7aa9008ab57d2f7fda4fd0bca4b51e3c3c88b0c84f9d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "感"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9542,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "感人",
   "id": "157f10d154d354f6715bbfb5",

@@ -1,17 +1,21 @@
 {
   "audio": "d5485cd94fcfa762589c7c610f58e61de93bbe0bbef3b3dfadc2f084291e9629.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "其",
       "间"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 40359,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "其间",
   "id": "d17ed0e76566b2919901f413",

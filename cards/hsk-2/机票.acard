@@ -1,16 +1,20 @@
 {
   "audio": "bedc60d69c42c6f5c3dacc6822a7a0aa6507390115760ee40655d752071a18ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "票"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7287,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "机票",
   "id": "f7996e9279e977e931bbb859",

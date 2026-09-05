@@ -1,17 +1,21 @@
 {
   "audio": "c1c9a7a5d25eedfcdc2b5920831350e0e84a181057d2fb3e39e1d020eb922186.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "位",
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12456,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "学位",
   "id": "0845360c26dce3c1ae81328f",

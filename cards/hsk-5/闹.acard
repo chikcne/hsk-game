@@ -1,14 +1,18 @@
 {
   "audio": "803c448d75a8df12432ed87042551226846504063298b0bef1def203b73544cd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 4706,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "闹",
   "id": "41a54d2dc5f245ecff4cf559",

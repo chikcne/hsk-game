@@ -1,16 +1,20 @@
 {
   "audio": "82070453f23e1d0466536d9228977f381cf3417edcba5f010f0ba17162aebfc5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 51609,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "商家",
   "id": "d415d5ca9258c7043ed5a9e1",

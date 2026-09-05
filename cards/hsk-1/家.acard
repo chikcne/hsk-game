@@ -1,14 +1,18 @@
 {
   "audio": "f30837925be3ae43b72f79c05b6cbd791e2efbe30530fc080e92549c7620c5e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 400,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "家",
   "id": "0a848e0a9139b748bcf72753",

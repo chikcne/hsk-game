@@ -1,14 +1,18 @@
 {
   "audio": "d9e91fde4df6536b60524d6f89bfaa2bf4c3e7d861dceafe0680dcaa61094eaa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7410,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "贸易",
   "id": "90de52a0d364fe2c4f68487b",

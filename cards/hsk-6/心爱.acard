@@ -1,17 +1,21 @@
 {
   "audio": "2dde15689d5d46a1fbe0cbfa70642ab49a79f0d746e8d641c8fd27566d8af028.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "爱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7417,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "心爱",
   "id": "0bd5fb74f9628fb38b6f34ea",

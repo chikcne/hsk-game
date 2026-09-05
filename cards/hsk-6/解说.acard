@@ -1,17 +1,21 @@
 {
   "audio": "74b94f574131e4870c81f5dad5cde4e3f8aad40dd22f8e6ff3f25442c51ef895.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "解",
       "说"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26943,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "解说",
   "id": "d2d90c7b0c4052515d5da8db",

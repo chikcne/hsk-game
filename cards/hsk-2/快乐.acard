@@ -1,16 +1,20 @@
 {
   "audio": "f243d3990373662c74f509b754b964781670bc7f97cc235c09cf8ae5824fa0d0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "快"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 897,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "快乐",
   "id": "62e183421af555a6697128f0",

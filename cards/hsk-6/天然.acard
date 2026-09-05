@@ -1,16 +1,20 @@
 {
   "audio": "8d8acd7d890912c38f4eba6386c26897aa43acbcf3d78026ab9d0d06298951ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12043,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "天然",
   "id": "60f5a5cd0cce5be5ffe979d1",

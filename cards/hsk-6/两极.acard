@@ -1,17 +1,21 @@
 {
   "audio": "b24d23c43ba6b8ff32c85416a18b5c0ac32abd4941b4344c1ef6c2255b2ccacb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "两",
       "极"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 43007,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "两极",
   "id": "1ad28b66b71beb919c7a1834",

@@ -1,17 +1,21 @@
 {
   "audio": "db65dd80a0ce6aaafd8e8d10293c17f8e6f2101b7ec442fb4a418f05e27892c8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "接",
       "连"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 34051,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "接连",
   "id": "a2712a5a0dfeff78d651e916",

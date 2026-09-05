@@ -1,16 +1,20 @@
 {
   "audio": "e6257401e8529baa07e0c9206a226f33351f4916d70aa31e7d60305d36aa7741.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "身"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8123,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "终身",
   "id": "2474f61df122ac97610e9b4e",

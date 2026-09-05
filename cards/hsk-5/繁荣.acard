@@ -1,14 +1,18 @@
 {
   "audio": "462c2a76134c78fe42553d25c7a55a59a95ccb03bbe911a0652bd05cf582f2dd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11501,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "繁荣",
   "id": "2f761578e7d73aa55485305f",

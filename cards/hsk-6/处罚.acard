@@ -1,17 +1,21 @@
 {
   "audio": "a9c492e9ad88b6242325621d160223cc5662808dbe1fe611f03563ee9f669f46.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "处",
       "罚"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10271,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "处罚",
   "id": "de7e0847a1b38dc13ce408ab",

@@ -1,16 +1,20 @@
 {
   "audio": "73428daac3dea343a7e65c64226647099c7441493f504f0f3e8974dd591ddaf3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "和"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11355,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "温和",
   "id": "3a18323c40d133bd2eeeda74",

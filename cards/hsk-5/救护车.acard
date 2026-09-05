@@ -1,17 +1,21 @@
 {
   "audio": "a438a1de899d514d9aa8acd706556cff8ce0ed89b70344c71fc46a8ce6bdb26a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "救",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3234,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "救护车",
   "id": "dc7ad475df9a0ccef6f29b91",

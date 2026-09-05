@@ -1,14 +1,18 @@
 {
   "audio": "6fb9083363d720d97771f22c271aaa2ddadaf9a23828c36d1ff9d68e06765858.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 28746,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-evaluation"
+    ]
   },
   "hanzi": "素质",
   "id": "b73dbc5a7bda64cb417e7cbf",

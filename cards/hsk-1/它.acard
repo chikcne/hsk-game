@@ -1,14 +1,18 @@
 {
   "audio": "f9f45ce1a3c551c28e9d54717302cc80e66334df0c4ba4daef5cb42b7e9222da.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 59,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "它",
   "id": "af61195caba2a34b19ae76ef",

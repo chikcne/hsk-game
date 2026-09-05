@@ -1,17 +1,21 @@
 {
   "audio": "994703327a3c9c02db11732c96cd8f17031ab2da83043da9a5ad03357e7560d7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "别",
       "性"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8753,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "性别",
   "id": "403f204e09eebe0a9b20e9e9",

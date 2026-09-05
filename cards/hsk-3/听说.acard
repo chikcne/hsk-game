@@ -1,17 +1,21 @@
 {
   "audio": "68d33bc713c7a20bd0a840cf15b43746547a9725b4fff89c38289899347ae0e4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "听",
       "说"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 501,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "听说",
   "id": "ea501ba5dd03dfe5d192c35f",

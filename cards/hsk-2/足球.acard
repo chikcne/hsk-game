@@ -1,17 +1,21 @@
 {
   "audio": "72f6ab2aa80a4e86dee505a48dccad673c1ef2573036151d385b86d70cb95156.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "球",
       "足"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4462,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "足球",
   "id": "0f3f3a3e16ed340bced1ad8c",

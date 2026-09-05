@@ -1,17 +1,21 @@
 {
   "audio": "c2961e09a6dc2a1af0cba03aa02afbf44fa7f17d5e3598014011db02d6bb32a3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "口",
       "可"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15277,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "可口",
   "id": "1767f55494058d2f2bc77f03",

@@ -1,14 +1,18 @@
 {
   "audio": "cddaa40f182a9742688c40433121bff74d6a5f9463aeb53018ba8604ae52b4b6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3790,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "拜访",
   "id": "a174152e1a0f781f6712b3f4",

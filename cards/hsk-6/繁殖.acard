@@ -1,14 +1,18 @@
 {
   "audio": "0aa079fd6169b7528d8c6ea0209e66e66ce1546813b88f76409c6a4d9627a466.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10769,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "繁殖",
   "id": "7e49c64de81db029b987bb8c",

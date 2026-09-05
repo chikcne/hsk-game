@@ -1,16 +1,20 @@
 {
   "audio": "292e729cd50d806e001003f9e41f04c22d098a0eb14922c26028ab45ca492a8d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "名"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10962,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "报名",
   "id": "8e74ecbe35967231ca24f648",

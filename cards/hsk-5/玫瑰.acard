@@ -1,14 +1,18 @@
 {
   "audio": "757ffbb7c429160b37869d569daba088649879b17f4b776c36781dab223dfb31.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3628,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "玫瑰",
   "id": "e2167642f0d0f1453f327132",

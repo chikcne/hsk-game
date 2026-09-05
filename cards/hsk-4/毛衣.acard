@@ -1,16 +1,20 @@
 {
   "audio": "e272948f214b03f4bb8988e782c01570a97c11199980e506e231dde1ce3a70f8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "毛"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8781,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "毛衣",
   "id": "834bcd55f244de4307ee3ed3",

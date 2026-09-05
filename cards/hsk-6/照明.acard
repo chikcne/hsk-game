@@ -1,16 +1,20 @@
 {
   "audio": "ed58d295f5a7029c48e1c0dfed82721465723c47f13b3f89c4e4c6b3e522000d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "照"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19393,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "照明",
   "id": "8f309ed2c7349c130e5d0f52",

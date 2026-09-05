@@ -1,16 +1,20 @@
 {
   "audio": "a4d2864cfc7a9ad5174df713fbbbf796a6feb53fa8577d7dc086323bb2a79afe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "病"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8414,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "病情",
   "id": "7c88311b20b90c5585ea7ac7",

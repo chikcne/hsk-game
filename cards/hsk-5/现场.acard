@@ -1,16 +1,20 @@
 {
   "audio": "f54bdc07f59daff04fa0036123ee8363133c6ac432ad38763237af8c7b59c94d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1530,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "现场",
   "id": "5cbdb99ed30cf74238b04b31",

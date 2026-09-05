@@ -1,17 +1,21 @@
 {
   "audio": "b5610b3a9f4d2125907c712b29e3f1156a545fcfcc584db03b8fd8dd2b9eadd4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "贴",
       "近"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24788,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "贴近",
   "id": "be8c3f972db49f9761b9b2fd",

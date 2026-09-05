@@ -1,17 +1,21 @@
 {
   "audio": "fc336f39f6c1c6656304b75f84860d6eb4bfdb0536e38eb3941b35230963768a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "止"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3193,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "为止",
   "id": "613345b0b9b3b095d6cef54a",

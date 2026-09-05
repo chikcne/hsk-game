@@ -1,14 +1,18 @@
 {
   "audio": "224e659c816de8fbd2afa81db3888055c4eddb007f9a0ae0e87c91f9bc9e864b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3532,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "智慧",
   "id": "2c5b77553983efaa2fb71035",

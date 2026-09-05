@@ -1,16 +1,20 @@
 {
   "audio": "5e5eebf37295fd19114f77503671ae440f553fad6d36e471bf74e5c47c69c435.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "使"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20865,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "使馆",
   "id": "c7925fa541c3b0cb711f6d10",

@@ -1,17 +1,21 @@
 {
   "audio": "c85ae656ac9cc8f92e954ec2f92f146c4e85ecdf2140923b8e7fc2e56e7f4baa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开",
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 583,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "开心",
   "id": "8c60b086a108300bab5c3a2e",

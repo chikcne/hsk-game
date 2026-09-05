@@ -1,17 +1,21 @@
 {
   "audio": "c92bc702d7aa8e303d74bc9f2c94b8a0eeaf9c701bc203d5c69abfd068a48452.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "内",
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 38398,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "内外",
   "id": "fefec19a581df80cc4dc4010",

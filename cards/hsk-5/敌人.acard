@@ -1,16 +1,20 @@
 {
   "audio": "4950ee29daab2089afbc265259446e878741b28722da96a89a4d32b3896d6722.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1066,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "敌人",
   "id": "e58b802af855e98b54d8905e",

@@ -1,17 +1,21 @@
 {
   "audio": "feb969d13524f42541d87f32d900d45329fc17d2710e46be10ca1a1a4bd88296.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水",
       "流"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12433,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "水流",
   "id": "5570833726f4f7f715042973",

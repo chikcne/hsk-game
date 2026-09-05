@@ -1,17 +1,21 @@
 {
   "audio": "7c9532ad80b5e639c7d36756072c975e4697c145e001fc3149f953876379ebc6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "代",
       "朝"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 93351,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "朝代",
   "id": "8e8c1cffab3f2017c91b1859",

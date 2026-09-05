@@ -1,14 +1,18 @@
 {
   "audio": "da40ca701a9de1382bf47f41283f4543f842ca37b8d63009bb04332052b79ac6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 182,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "爸爸",
   "id": "eb85b29077a607e0eb5c204b",

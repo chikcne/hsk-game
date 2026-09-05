@@ -1,17 +1,21 @@
 {
   "audio": "6f8ec34b1726d4ee7e449e935717a6d8bf0dee507e0b0ca29836f8f8b1cd852d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "开"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19273,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "开学",
   "id": "81e01b62e523cee1a123415c",

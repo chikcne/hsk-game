@@ -1,16 +1,20 @@
 {
   "audio": "f656c491b302e10171ce80c244f5dd13da2d63d9b86634f4f0e7f7e3fd431ff6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "愿"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 478,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "愿意",
   "id": "c2f8538b23cbcf6c59189576",

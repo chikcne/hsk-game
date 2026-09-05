@@ -1,14 +1,18 @@
 {
   "audio": "43f91246f0c17d4e8f1d875c0a4b9aed209b40d46720a525d4dac64d20bc63c0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2618,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "乱",
   "id": "379e38333ae7ffff55adbc34",

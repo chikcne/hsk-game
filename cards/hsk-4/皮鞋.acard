@@ -1,17 +1,21 @@
 {
   "audio": "b34392deaded8b637c73b8e2ade316c90c1c3dbdbffce8d0e8981d1ac950ce27.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "皮",
       "鞋"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18927,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "皮鞋",
   "id": "43d6c61f4d7354b9290438a2",

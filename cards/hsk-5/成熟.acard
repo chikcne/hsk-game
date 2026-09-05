@@ -1,17 +1,21 @@
 {
   "audio": "504e99f416ccab3042830914332d4d04f664b408748eb5c4094909f647163cdb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "成",
       "熟"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3275,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "成熟",
   "id": "f00b3d10fcc1e1959eb2045c",

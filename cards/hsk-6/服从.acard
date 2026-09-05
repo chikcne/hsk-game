@@ -1,17 +1,21 @@
 {
   "audio": "e359a71af4256d3ffd75c3149d145eb12f87f421de0726608ad2904a77a6ce50.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "从",
       "服"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5361,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "服从",
   "id": "a8bf672e7e99423d2b3b1173",

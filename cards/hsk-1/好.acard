@@ -1,14 +1,18 @@
 {
   "audio": "683c3a9afa7951922206020c744912ea88b4626b3f56d23a67ff5e5205bda1e8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "好",
   "id": "cef395fac3e2b1220f0b0b0a",

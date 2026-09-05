@@ -1,17 +1,21 @@
 {
   "audio": "13e684087a1ca5dbc3c1ee81bf4d894ab87809ed134662f33e418c7da64f1685.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "边",
       "这"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 623,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "这边",
   "id": "f53036c4cc98645699ff05bf",

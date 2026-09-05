@@ -1,16 +1,20 @@
 {
   "audio": "d59cb44f8f0ebbcad3e059a4c793a7efceb80afb8f0cf95a9550afbeffbceb74.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2605,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "作家",
   "id": "0e7e1a8ad07467ba078bc602",

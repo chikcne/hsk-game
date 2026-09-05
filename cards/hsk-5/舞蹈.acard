@@ -1,14 +1,18 @@
 {
   "audio": "4f7efff0c3536176c56d64383852c47123a11063003f270792a58b72e46b7941.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3634,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "舞蹈",
   "id": "cccb80707db455cd5791d4f5",

@@ -1,14 +1,18 @@
 {
   "audio": "607fc33f3332f589d5bb83d85639d2a6292d37cf6b51ac53452742cf0b2a0bf7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 745,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "医院",
   "id": "fac57f47e10dd0581e7e6159",

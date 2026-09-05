@@ -1,17 +1,21 @@
 {
   "audio": "22cd2ddee1459e8085ea944f7572eaa000e31570c866d3272facd7607c824f5f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "少",
       "缺"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7163,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "缺少",
   "id": "eddda75da82500035addc36d",

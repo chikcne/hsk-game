@@ -1,16 +1,20 @@
 {
   "audio": "bedd8bfced99520e0c5f4bdb638e2028eebf9c35fc3085e55741f0398b473df6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "立"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 35781,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "确立",
   "id": "c1eb2a14f7f747d71c28d391",

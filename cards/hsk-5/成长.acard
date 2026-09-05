@@ -1,17 +1,21 @@
 {
   "audio": "22ac94709d3e032fa1cd9cfa83c26548acc4505725b6fd098ad8c7dd43ba8ec0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "成",
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3448,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "成长",
   "id": "6e18294991f097fec810c71f",

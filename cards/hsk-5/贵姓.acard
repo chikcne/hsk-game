@@ -1,17 +1,21 @@
 {
   "audio": "e976fc4d1383c8694853a476738f08665b64078dc75d8391f68ced047ade341b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "姓",
       "贵"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19161,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "贵姓",
   "id": "f191deab8817184c83bcbbe0",

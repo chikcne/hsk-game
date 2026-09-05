@@ -1,17 +1,21 @@
 {
   "audio": "ee7e981f6aee3a1ada16168b3206a041da30d2e44638e8e09086116f26ad2d26.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "伤",
       "受"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1094,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "受伤",
   "id": "623c35525e20e9b51003cf8d",

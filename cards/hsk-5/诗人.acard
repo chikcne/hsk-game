@@ -1,17 +1,21 @@
 {
   "audio": "19b30005cc569d5622134ae29adc8c41930fc4fbe824827a060ac2a57252c9c2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "诗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5764,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "诗人",
   "id": "01385fef7f00181cee8d48d1",

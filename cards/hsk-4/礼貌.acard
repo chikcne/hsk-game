@@ -1,14 +1,18 @@
 {
   "audio": "b18a2a82a8ee536569cefc03a1b0b3a9d5c3eb107dd257c9fa90052eadf94328.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3118,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "礼貌",
   "id": "a5c256d2bd5186650a35d1a4",

@@ -1,17 +1,21 @@
 {
   "audio": "bcb12ee3c47cf2c239f34ca3164296eca1a22425ac29bbd72c72daccc392a240.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "低",
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9222,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "低头",
   "id": "d3dd734c0f155dc1b6224f27",

@@ -1,14 +1,18 @@
 {
   "audio": "c2d860ed21ca0e137e869a5f87c07046009b9e611b9098e0502542c1b1de8fe5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2262,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "塔",
   "id": "353b89c4ed94e2a101979d3f",

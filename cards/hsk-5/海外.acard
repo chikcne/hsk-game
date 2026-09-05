@@ -1,17 +1,21 @@
 {
   "audio": "3fcd4509bd26202ffd0db465f26062ed26c71de5cde84188f9ea0d6fc4e4e0d2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外",
       "海"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7542,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "海外",
   "id": "49f03f44a8dd351e6d48534e",

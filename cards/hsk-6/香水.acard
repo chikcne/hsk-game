@@ -1,17 +1,21 @@
 {
   "audio": "fa7175ef7d97a546d0a6a63e1c0f50d35d69fa217d1185c0b985c891f914c77e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水",
       "香"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5944,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "香水",
   "id": "47c85bd124cad918335e25e9",

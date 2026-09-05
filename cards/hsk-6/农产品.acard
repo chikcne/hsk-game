@@ -1,18 +1,22 @@
 {
   "audio": "64186135cf1ed71b9b9d3c2b35509a735f04e5e6f4147b289ccccc6f3085d5e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "产",
       "产品",
       "品"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 61085,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "农产品",
   "id": "fe074aafef3c6ee474ba56e9",

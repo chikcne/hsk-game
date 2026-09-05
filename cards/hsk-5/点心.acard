@@ -1,17 +1,21 @@
 {
   "audio": "db634ba39e3092cbf6d6d062884e2b72389fcc6c0d752f54405e3f8671467e1c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6886,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "点心",
   "id": "b2c9737e70613a5c3d107429",

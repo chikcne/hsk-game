@@ -1,16 +1,20 @@
 {
   "audio": "2b04dffce634e57088da3f3a9c127fa631575a81e12c508530895b0131d254d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "哪"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 354,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "哪儿",
   "id": "4e1a85f1138542f8b56bcefc",

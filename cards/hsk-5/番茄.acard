@@ -1,16 +1,20 @@
 {
   "audio": "0a66f1ff9fda78b2f4b9496e2cc6dc2155d2aa48efb4f038a408157ec77da735.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "番"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12908,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "番茄",
   "id": "5d5e2061dddf1f45dafafe84",

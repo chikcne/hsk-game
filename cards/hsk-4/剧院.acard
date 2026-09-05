@@ -1,14 +1,18 @@
 {
   "audio": "72e0c966e7c423e532b560d80f7bf36069626c4200e7b86c5278a5b96f8e6590.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5346,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "剧院",
   "id": "9080c1c14204a8364acd2e5b",

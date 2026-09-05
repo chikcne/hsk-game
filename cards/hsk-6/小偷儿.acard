@@ -1,17 +1,21 @@
 {
   "audio": "3ca08cd8ada0e971518f837bc9a38d77e4f4151758cbb45c2ed6fffce66673b9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "偷",
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 551954,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "小偷儿",
   "id": "921fecf4c93d1f2f94cfbaa6",

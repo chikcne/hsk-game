@@ -1,16 +1,20 @@
 {
   "audio": "d9f368a79851ec85eef55c994cee38d570e9e83086b680b8f649580733f19c40.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "代"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2872,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "代价",
   "id": "98d33806ed22ca4dda3b4d94",

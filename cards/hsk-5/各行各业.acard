@@ -1,18 +1,22 @@
 {
   "audio": "a02f6895812a87956e179afa340d858bcd2a3e0f7630d795a0b9deb848e23f33.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业",
       "各",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 69715,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "各行各业",
   "id": "1920cad934e010561a05da00",

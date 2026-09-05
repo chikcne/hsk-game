@@ -1,14 +1,18 @@
 {
   "audio": "43852c12b76f2124366d8fc702e4520470fc99bfba5b07d565aa2b0208693991.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8208,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "利润",
   "id": "519cfeb3d790a57b0b03f719",

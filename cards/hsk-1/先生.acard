@@ -1,17 +1,21 @@
 {
   "audio": "c81866829229a9bf18083ee67643cd28e05a8d9a6ff4259ff0db72f0a2b151e2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "先",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 82,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "先生",
   "id": "041994635f960239b1a2e157",

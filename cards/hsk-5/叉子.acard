@@ -1,17 +1,21 @@
 {
   "audio": "58f1373ac810df691e9bb378dfe41ba4f5a5be93ede0c46097036cfb43ad663d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "叉",
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14212,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "叉子",
   "id": "708e206086f4406bddb6de68",

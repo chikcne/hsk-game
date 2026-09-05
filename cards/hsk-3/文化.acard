@@ -1,16 +1,20 @@
 {
   "audio": "e3bf3f9a5319cefd3ed5cdaa382a0ba1e86eebb919b27ac0f590c1c761b0d043.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "化"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2837,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "文化",
   "id": "9f0d7cd21da01c631cf86085",

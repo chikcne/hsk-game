@@ -1,16 +1,20 @@
 {
   "audio": "fd4c6080e9c20975eba71b9d45f2854fbc824e6c26d781fa13bc85a2da9f8262.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "染"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6142,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "污染",
   "id": "a80dc4a03c8a9ab6c351ea84",

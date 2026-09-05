@@ -1,14 +1,18 @@
 {
   "audio": "a8b54c808e281e20c95826d9ea4f0fefa160e468d462419b0727c35740c16e79.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 15730,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "决策",
   "id": "8ba3e5fbdfd96abc11ad533c",

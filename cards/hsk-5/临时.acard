@@ -1,16 +1,20 @@
 {
   "audio": "d1d1ab133aabf590fb352a3535db6f88507f8ba54cbc37d257a8e14d197b8b18.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5087,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "临时",
   "id": "e5f6e81e13fc18b2f2161560",

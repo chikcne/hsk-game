@@ -1,16 +1,20 @@
 {
   "audio": "8fce2e8a0d485581d8aa263fdf993aefaf7b3110d1c024967505db52b142523d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "回"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3384,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "回报",
   "id": "fa961a00a4e4174b17db5a09",

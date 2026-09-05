@@ -1,16 +1,20 @@
 {
   "audio": "ad3860bb842196ac6afade1750e125756d7e7c71c9721a1764703d85a2f42a67.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19495,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "学术",
   "id": "c430d4530babb7053ae3e2bb",

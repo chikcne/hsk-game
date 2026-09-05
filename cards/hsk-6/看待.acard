@@ -1,17 +1,21 @@
 {
   "audio": "00e391c2bceb548240cd130f3ff1581e6044bff84fca995ebe99b26497edc601.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "待",
       "看"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5905,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "看待",
   "id": "5a2aa2f9aec9e3b707e8184b",

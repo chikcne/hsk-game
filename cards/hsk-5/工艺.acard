@@ -1,14 +1,18 @@
 {
   "audio": "f02060d06ed9a1a08258f5b8d1886c5376f9dbe0cea86f5bc80b57a824986117.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 31940,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "工艺",
   "id": "274126de8d0efb54ecd982a4",

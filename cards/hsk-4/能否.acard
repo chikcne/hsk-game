@@ -1,16 +1,20 @@
 {
   "audio": "d4f794333dbfe535f723ad1ccd8b31434597c60896aaf0af9c25059334520045.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2714,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "能否",
   "id": "f90f97598401db5684fffac8",

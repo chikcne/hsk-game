@@ -1,16 +1,20 @@
 {
   "audio": "fb71452e653f380f92604346f6d09165250d83ddbd447f5711b74b0676626cba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "烦"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3980,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "烦恼",
   "id": "de33b9b2ee3a43f7b9b69e0f",

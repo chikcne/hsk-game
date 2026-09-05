@@ -1,18 +1,22 @@
 {
   "audio": "e1da725d3b84f59504639205fc276efd084d202803f094eea11b5417d0388ddf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开",
       "玩",
       "笑"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 701,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "开玩笑",
   "id": "0175f5473e82e21ec63cdbcc",

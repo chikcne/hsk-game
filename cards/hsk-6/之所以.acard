@@ -1,19 +1,23 @@
 {
   "audio": "0ef666179dc613b82ceac1fabacdc99c7450f9b040007714f14171087272d78d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "之",
       "以",
       "所",
       "所以"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4638,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "之所以",
   "id": "0f03cd85264168da85cb4608",

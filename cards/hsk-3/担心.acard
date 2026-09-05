@@ -1,16 +1,20 @@
 {
   "audio": "6273aa784b77a5617f4b487164dca70335e2238014a6a6249210991f21a7e477.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 303,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "担心",
   "id": "220bc7156ecc07a63a527a7c",

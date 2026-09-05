@@ -1,17 +1,21 @@
 {
   "audio": "ebaef20b63dd393bc689576c676cf39e11d5342702fde0984fba9a139bf75620.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "多",
       "才"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 38173,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "多才多艺",
   "id": "011318a17429b985087413a4",

@@ -1,17 +1,21 @@
 {
   "audio": "8ae3a6ccad1f2e9f56cff2eeb6cec057a0f58b9cb5a0c24090290affa4688d3f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "放"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7021,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "放学",
   "id": "35f62b73a7ca4aaf76da9cb5",

@@ -1,16 +1,20 @@
 {
   "audio": "987f210d2c71953b94318df839f7c3d9107f8da91650d879baf6883828a610f9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "元"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 179931,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "元宵",
   "id": "5165583284d7e99cedd3d108",

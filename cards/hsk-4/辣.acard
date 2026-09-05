@@ -1,14 +1,18 @@
 {
   "audio": "a6f18522f61f572b9b5f36c043d820a494bbae32c62c7307786260b918a390b9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7789,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "辣",
   "id": "d0a74d92412491fba77f7b86",

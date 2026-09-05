@@ -1,17 +1,21 @@
 {
   "audio": "69bd66ee8ece11268dca337efd47d833a507da9599674ff8a61aedcad27bf402.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "流",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4057,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "流行",
   "id": "83203f19df6a20a0b9c0696e",

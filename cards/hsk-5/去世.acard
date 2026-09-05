@@ -1,16 +1,20 @@
 {
   "audio": "0b71c80667d6871e38a1be4386af957f0108e48423d83dd2586db10456b21968.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "去"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1739,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "去世",
   "id": "9f747803eec0906c02611ddf",

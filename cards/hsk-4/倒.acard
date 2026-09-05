@@ -1,14 +1,18 @@
 {
   "audio": "cf5ff61111fde38e41bfabd227470f2ac209b6000e5313b1c579ca3e097ad880.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 578,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "倒",
   "id": "1f2383baee003a0c75cbd959",

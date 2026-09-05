@@ -1,16 +1,20 @@
 {
   "audio": "330948754b3649baec04429f997a1d8a4cf7cef3a98fe9da17d63e6fd7c9f684.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21540,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "自助",
   "id": "4b4a0537a32dd1151bdb9454",

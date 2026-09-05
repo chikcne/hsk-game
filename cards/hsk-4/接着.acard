@@ -1,17 +1,21 @@
 {
   "audio": "5e6dc0ea361167fd0a4bdfa287917b7cc7f03784f2727b8dbf287985dd558858.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "接",
       "着"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1546,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "接着",
   "id": "ed93089de27649b86d86f827",

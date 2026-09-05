@@ -1,17 +1,21 @@
 {
   "audio": "271164c0432c4021f5597fd40365099543518895605e628ebbbcbefc658bb1ec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "流",
       "轮"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15685,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "轮流",
   "id": "06eb5c69f48f88839c7cdf6a",

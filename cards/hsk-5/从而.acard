@@ -1,17 +1,21 @@
 {
   "audio": "5d8cf89b014ae86702f3a1f76502f13ed2cf4dbaac221f4cc8425d67cf4190d8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "从",
       "而"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9845,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "从而",
   "id": "6693495912d37cb4e4d2dda5",

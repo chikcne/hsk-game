@@ -1,16 +1,20 @@
 {
   "audio": "0e0576d5c61973282f623f7bd32db44df6c5ad3cc050dbf5951c77dbb613c156.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2559,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "作用",
   "id": "756b3c09a7b2cb493774a18d",

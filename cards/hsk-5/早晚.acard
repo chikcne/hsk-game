@@ -1,17 +1,21 @@
 {
   "audio": "6bfc8f334b5a954e780159925497a9593ccc47a445d0ee1aa39f611ed5ba684f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "早",
       "晚"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6684,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "早晚",
   "id": "8abb5e1aaacdfbf2de2c24d5",

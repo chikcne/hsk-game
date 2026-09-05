@@ -1,17 +1,21 @@
 {
   "audio": "541c53cd70ccc4af9fbb7e2c71f88102e6765daceef8ebb8d2e3cf0a671cfc2d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "南",
       "方"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4146,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "南方",
   "id": "fb6572de5df202cf23684025",

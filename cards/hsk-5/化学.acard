@@ -1,17 +1,21 @@
 {
   "audio": "baef0f1ffb1dd151b5add1cd56c928f147b165337c91467a843fb8ec960da6c4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "化",
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6483,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "化学",
   "id": "e9795689521d48f6fc6c32ec",

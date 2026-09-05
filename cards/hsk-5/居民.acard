@@ -1,14 +1,18 @@
 {
   "audio": "321511817bac6f904c97d3891091c2d34152f9b204d2d45b6b955d3bc09f1dff.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4071,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "居民",
   "id": "e375983440744724b04f3152",

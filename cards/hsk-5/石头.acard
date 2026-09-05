@@ -1,16 +1,20 @@
 {
   "audio": "8828f2303e71605fed3f5e34a88decd1d9ad449da63cba755944155bb041a863.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1882,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "石头",
   "id": "f5afade189a536a46e102073",

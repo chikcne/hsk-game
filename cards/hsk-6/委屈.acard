@@ -1,14 +1,18 @@
 {
   "audio": "a0966041d7fedfe84d8a314d112b7547ba1245d113ad4a482dd0bc85f52300a9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 15291,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "委屈",
   "id": "97fd0f43347a51fff64e4993",

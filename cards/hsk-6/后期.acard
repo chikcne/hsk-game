@@ -1,17 +1,21 @@
 {
   "audio": "eb5d943867d894904d3a4038a9686255c048149577c613b282906c3df0602d8a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3007,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "后期",
   "id": "5ff86efcf49a3038914c8659",

@@ -1,17 +1,21 @@
 {
   "audio": "b924d286aa0102351ea61d376d2182a5664e09b93ad94778b6fa45cde4e46422.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "来"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1095,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "后来",
   "id": "63f03b7d2721be6bbace0ac8",

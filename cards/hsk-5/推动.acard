@@ -1,17 +1,21 @@
 {
   "audio": "efcde0d7d84438ad037b417b83379a6fd415a4786815728f60d131d3a3d69f23.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "推"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9011,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "推动",
   "id": "fd8defda49db578338b59fa6",

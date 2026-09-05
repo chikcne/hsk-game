@@ -1,16 +1,20 @@
 {
   "audio": "99501063bb64d7b59b864020aa44c6549b07fb75a2bd9c5e5d047b1cd308e9fa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5927,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "违法",
   "id": "ccf862e9844c6c09fa3521dc",

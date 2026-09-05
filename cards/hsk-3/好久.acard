@@ -1,17 +1,21 @@
 {
   "audio": "e908ce56f29f79a956a9f143329fdba2764b601a67f9a22ebe97d6951c7b0d6b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "久",
       "好"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3953,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "好久",
   "id": "780c975c7357b2ca617bc20d",

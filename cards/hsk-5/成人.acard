@@ -1,17 +1,21 @@
 {
   "audio": "722826aeaddbbd67303169b162e71b6d1b5df29a71d909b4f4f178f05c0f06c1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6351,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "成人",
   "id": "8a0ee2b777b2b13198818c3e",

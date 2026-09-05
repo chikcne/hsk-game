@@ -1,17 +1,21 @@
 {
   "audio": "81fad32673e0587fe8939c95d8c9eba7f0aecdd1565575d89b950aba7d3ecf62.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "住",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 96772,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "衣食住行",
   "id": "6455edb7d396e51aefae861c",

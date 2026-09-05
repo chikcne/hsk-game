@@ -1,17 +1,21 @@
 {
   "audio": "e523473af7537ce6dc260cf5780312fd0f87209112bb916830ec3e29ea9f358c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "台",
       "平"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10026,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "平台",
   "id": "dd7c75d6f3316b96074f2240",

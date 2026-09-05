@@ -1,16 +1,20 @@
 {
   "audio": "d21e5d8a22d476c1af33d663ba0e3b71ae226891c871303a19f0104cecd907d3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "断"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7796,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "诊断",
   "id": "21979383a4a2520f5e94fc03",

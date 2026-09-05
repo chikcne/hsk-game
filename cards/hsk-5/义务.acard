@@ -1,14 +1,18 @@
 {
   "audio": "07564a51544a7ee48d25d9fb878d0e8014531cbeaca8313cce9c52d3e19a0144.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5861,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "义务",
   "id": "6b6f7354ad7cf0ce988fb14b",

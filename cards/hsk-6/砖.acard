@@ -1,14 +1,18 @@
 {
   "audio": "3384fd289e3389a575d4f8d64f2cb901e5e09eff566c23262ee9c74b760445ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 21874,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "砖",
   "id": "92c5edcb3346ef4e5d9afe4c",

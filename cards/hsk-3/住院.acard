@@ -1,16 +1,20 @@
 {
   "audio": "88fd0138b59fc3a780d6ef0355b9e85d4af994bbbbe45c5acc47f06a14b143d6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "住"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6969,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "住院",
   "id": "a5dc6eee641b603655406c00",

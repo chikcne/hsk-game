@@ -1,16 +1,20 @@
 {
   "audio": "4a3c2e76d55a40379b5c44800380b95d689f424f7ab2912085758484ee9a03bb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11485,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "实行",
   "id": "6b24dbb0c7081a5bdba8df2c",

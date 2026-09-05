@@ -1,17 +1,21 @@
 {
   "audio": "353ee6495ffc11a9108d182b8914e28a7576430bffbae973f10644ff7e98948a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "原",
       "草"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8954,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "草原",
   "id": "7b7334b80d4d4b2e2d5a5b9b",

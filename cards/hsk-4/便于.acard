@@ -1,17 +1,21 @@
 {
   "audio": "afaf5b9b399707a886d7b4aa0bb9b67a23df87e5e422e0d9741c933eae38b469.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "便"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 47968,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "便于",
   "id": "4dabb781c83852ab0cf3b04b",

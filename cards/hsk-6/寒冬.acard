@@ -1,14 +1,18 @@
 {
   "audio": "1b324f1a52eee73a9597a18bdee40fbddc8bd719c3cabdf66dc96947d3e95ab4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 30995,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "寒冬",
   "id": "7a8c54c3da96fc903f61bc88",

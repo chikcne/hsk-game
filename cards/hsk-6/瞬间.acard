@@ -1,16 +1,20 @@
 {
   "audio": "6156d71b6e8d2d88a0d44ae703c8edc51a0504da4aac78d5cd177afc03fec81e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "间"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5160,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "瞬间",
   "id": "543e25d5366776e504a7204e",

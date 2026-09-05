@@ -1,17 +1,21 @@
 {
   "audio": "747623e96f393188c625d7043de9350b54806d23abaf0d7dce73c9d48fe51ed9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头",
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13218,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "点头",
   "id": "9856b4927188448e31ebd900",

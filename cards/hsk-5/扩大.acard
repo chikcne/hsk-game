@@ -1,16 +1,20 @@
 {
   "audio": "4b794afb4e17cc0c8ad198537d5010d23ec9c2d541c8813111f52cc839487d74.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8188,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "扩大",
   "id": "cd500e715133b6e63998a61f",

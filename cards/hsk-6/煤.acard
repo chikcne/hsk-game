@@ -1,14 +1,18 @@
 {
   "audio": "341b670140b24f1b93c9a47c378df635ee61244677f2a26a7b73cda47b01e8c5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 18304,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "煤",
   "id": "06a3a19a59aea07d454f6356",

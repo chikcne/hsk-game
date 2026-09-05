@@ -1,17 +1,21 @@
 {
   "audio": "11a252767c9275f4c1f6b978abf1075770730cdfd0b96993356ca3e43c6a1cad.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "全",
       "完"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 361,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "完全",
   "id": "55cd56b89ddb8d864c299aa7",

@@ -1,17 +1,21 @@
 {
   "audio": "9c4c3dceb01ce5c1efe2f57de82056054c2bed6b64a873c9c603248f0c59d3c1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1902,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "地点",
   "id": "bf71ccf65d748f367f475c41",

@@ -1,17 +1,21 @@
 {
   "audio": "763addf16c109d44589fcf90a217fb38e18419b85ad93bc041f13a37e381b264.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "先",
       "领"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5575,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "领先",
   "id": "1abbe14a5f9174b46a95be7d",

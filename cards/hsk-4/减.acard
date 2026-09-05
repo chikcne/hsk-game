@@ -1,14 +1,18 @@
 {
   "audio": "dfc2ac6624b9054c809dba22eaa31b1ad8ba6eada3a3e79d3efee261161a9397.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 15148,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "减",
   "id": "1c0933e55638a2345e31d2df",

@@ -1,16 +1,20 @@
 {
   "audio": "d811d5bbb497b8d9f45c67763feef8a340c6acdd1518cc4620641f5b17ad34bd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "亏"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 41630,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "亏损",
   "id": "391625d6e6515c2f9a1da410",

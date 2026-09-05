@@ -1,16 +1,20 @@
 {
   "audio": "611adee197dc799055e80dd129bbe0cf7c9cc169bd0d7bc3b939626d3e7640ed.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "流"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26286,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "流利",
   "id": "ab60dfdeaacffcb1a56150d1",

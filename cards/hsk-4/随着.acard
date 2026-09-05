@@ -1,17 +1,21 @@
 {
   "audio": "dfbf98f3dd625b070db2d9352cdf28afd2b663733dc50106daf15af23ab46f21.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "着",
       "随"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2662,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "随着",
   "id": "abef83ab179763d134347325",

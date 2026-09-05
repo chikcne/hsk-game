@@ -1,17 +1,21 @@
 {
   "audio": "087262551a502c7e6a884cd06a544b4f19f95b9d9adb4163f659194647d7c1c5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "让",
       "转"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27673,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "转让",
   "id": "8bc80bed20c85bd37a4154aa",

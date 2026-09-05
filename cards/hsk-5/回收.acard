@@ -1,17 +1,21 @@
 {
   "audio": "d89d98d28c2f6bd5b4710a9a3ce773260905591a8e6145c1ff99f736b0cc0f90.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "回",
       "收"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9032,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "回收",
   "id": "0e6ed4476ac10bce3f86b215",

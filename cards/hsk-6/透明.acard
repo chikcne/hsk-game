@@ -1,16 +1,20 @@
 {
   "audio": "5935fdf90965dccb201c42d5234773117ca0497391ac7a16cb8443f1bd7ecaab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "透"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11144,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "透明",
   "id": "6e5d0a4ad111afbc09624240",

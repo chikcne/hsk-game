@@ -1,17 +1,21 @@
 {
   "audio": "5e676f9385870428b624b62dc24ace2264b9fbf2e7847193daa896a1eca744a5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "管",
       "血"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8518,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "血管",
   "id": "5d745eda701bf8c0f6fd85c9",

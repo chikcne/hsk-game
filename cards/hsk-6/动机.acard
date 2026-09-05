@@ -1,16 +1,20 @@
 {
   "audio": "37bb5eab5f65cf8a81d998fa34dd287b26324f62e16f35b5e7d541c216bab760.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4352,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "动机",
   "id": "696383fd9901b55683a02977",

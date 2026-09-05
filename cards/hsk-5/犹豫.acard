@@ -1,14 +1,18 @@
 {
   "audio": "29656713923aca52bb6d24e8838bbdb131fa79aaec0a78a05ad1c66fd3cbc275.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6080,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "犹豫",
   "id": "07e1bbdf66bf4014f4b26b2f",

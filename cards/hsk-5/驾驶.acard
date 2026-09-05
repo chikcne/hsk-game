@@ -1,14 +1,18 @@
 {
   "audio": "c873894aafd5e2942716641e4f4c621e686611d1b250489fe6323ad087b94bc6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2979,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "驾驶",
   "id": "36a879f104b08903f0d5f4e3",

@@ -1,16 +1,20 @@
 {
   "audio": "a71bcec8284acab6bf7199f793b4777ac5e88eff1a1e5b3942d219c719c440a5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "母"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 706,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "父母",
   "id": "86df77ea4551c83161efbd41",

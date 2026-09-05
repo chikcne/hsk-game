@@ -1,16 +1,20 @@
 {
   "audio": "a8b44edc4f497b1264852b0d62953beba3b46d51fb385bd997b0879ce8c8f7c4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "肉"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4016,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "肌肉",
   "id": "64b992ef4e04b416a1b93f5c",

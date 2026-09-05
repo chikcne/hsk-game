@@ -1,14 +1,18 @@
 {
   "audio": "6c2e799bebe1959ed5938821fc580f561d88fac461cfd48d5c6f9120ed5dedda.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 21834,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "储蓄",
   "id": "1046871d4443b4fe6fef8f9a",

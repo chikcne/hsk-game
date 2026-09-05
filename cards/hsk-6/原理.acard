@@ -1,17 +1,21 @@
 {
   "audio": "a219db8099ef3c6206108d63c0a4d06483daf2ef225e53e8b24ccfcfdc89ce8e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "原",
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9495,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "原理",
   "id": "81f28be34c646c9cfc64dff2",

@@ -1,18 +1,22 @@
 {
   "audio": "111976f6d04d44c82c86c3efa2d237e9b8d183c9f322778f16b98979c9baeebf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "克",
       "力",
       "巧"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2086,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "巧克力",
   "id": "29bb63f6a4bf1b2ff9be4182",

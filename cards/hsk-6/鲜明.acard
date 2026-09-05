@@ -1,16 +1,20 @@
 {
   "audio": "6764ee1d743d44aa567be7734e1ab8ae64c3cc4ecd18555f1e8a6dd46a3604fe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "鲜"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31782,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "鲜明",
   "id": "1df71bf2531943be850c5f6b",

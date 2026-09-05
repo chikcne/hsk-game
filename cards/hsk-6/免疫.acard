@@ -1,16 +1,20 @@
 {
   "audio": "6463d1f5e98c41d75d57d33dd8b485abf5d309514de074fb9b857ebea6af02af.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "免"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14750,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "免疫",
   "id": "6072fc3c9c6e743f8c04ac7d",

@@ -1,17 +1,21 @@
 {
   "audio": "e3dd7e0a76be330739c58647bd0211454ab57ba0adba7627f946d90060d41385.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "过",
       "透"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6025,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "透过",
   "id": "ed9e0e01f4b949b90351703d",

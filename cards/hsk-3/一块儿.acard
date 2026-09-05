@@ -1,17 +1,21 @@
 {
   "audio": "b2bdb6bcb163ec9222509df1ac1437e76aff75b547aace725e8da2e2dcc92f03.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "块"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8602,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一块儿",
   "id": "1c483e6c248865934920c7fa",

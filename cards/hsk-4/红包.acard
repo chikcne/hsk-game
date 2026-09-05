@@ -1,17 +1,21 @@
 {
   "audio": "b817d93631a44c2341174db587fcdb1671c565fd862db51a06dce27d0aa2eda8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "包",
       "红"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31485,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "红包",
   "id": "958cc06f9299ef369887c153",

@@ -1,16 +1,20 @@
 {
   "audio": "3109ff679f03157bb71769b59b3711672651d474fe04263234d41b1e0c9ce99d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "至"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4290,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "至今",
   "id": "fcdb9c61b1f584701cfd1a17",

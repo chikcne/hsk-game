@@ -1,14 +1,18 @@
 {
   "audio": "bd1b28afe7bfb5b596b69ff8f5f5eb4689e02d9868c60f656a016342b54563a5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10879,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "案例",
   "id": "da9ed25e583a1afc340024f1",

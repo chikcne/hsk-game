@@ -1,17 +1,21 @@
 {
   "audio": "75be2e8597e72eb94802e3902200815c0e42571fb6ae1dcd0407896e45a8c272.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "常",
       "平"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3224,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "平常",
   "id": "74084800921942eeb25256bf",

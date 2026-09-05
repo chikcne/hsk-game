@@ -1,14 +1,18 @@
 {
   "audio": "77a7aa696aff224a0d860f2f22d9f83e2f148c625b82973ce6dbfd180f2f55d3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2613,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "愤怒",
   "id": "a2ac8c90898924b50444b228",

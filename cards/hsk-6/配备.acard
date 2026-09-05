@@ -1,16 +1,20 @@
 {
   "audio": "47c1fdc056e87f205e09bd7173c2a2ae37e9b6dad77dd3ddbd07d01f89ac8e7f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "配"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15344,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "配备",
   "id": "3a12256924c55b211910851c",

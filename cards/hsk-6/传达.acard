@@ -1,16 +1,20 @@
 {
   "audio": "636e643847edb23d5b08a80625be304fd8cdde8a7e7f66c4c81dcd5f7494ce9b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6845,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "传达",
   "id": "9c8a6a675f2a7124a78b2123",

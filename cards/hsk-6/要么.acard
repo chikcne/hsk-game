@@ -1,16 +1,20 @@
 {
   "audio": "8c2aaaa63d069047343b4a09442ccbd491e9e6079fb23971d958e0894f0b0df8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "要"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1702,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "要么",
   "id": "80b38bf396b40d5f3f33d6f6",

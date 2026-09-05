@@ -1,17 +1,21 @@
 {
   "audio": "aaabfc2e9dd24276e9a3f72ede2e6f049ab7eb1344453501c9f84df3d409748f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "日",
       "节"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7874,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "节日",
   "id": "4100fc22c69a825d1cb1ba82",

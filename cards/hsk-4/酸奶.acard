@@ -1,16 +1,20 @@
 {
   "audio": "2288ff5597016479806d89be3a3923eba934deeeb95af399a476d5b4f1bbb46b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "酸"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11072,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "酸奶",
   "id": "0fec2ee9cab9a118bd464989",

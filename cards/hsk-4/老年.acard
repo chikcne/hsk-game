@@ -1,17 +1,21 @@
 {
   "audio": "2729a98d089433f4222cb6cd3280aaf76cb76bc81b8ec2fce33e434773ab5563.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "年",
       "老"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17259,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "老年",
   "id": "f06deca88c3a8e7eac6573c7",

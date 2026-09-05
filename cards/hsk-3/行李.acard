@@ -1,16 +1,20 @@
 {
   "audio": "dee52d2c700900235676674a3c6ddbc1c7b7d723fef198ed9bfa5ac241eb8e21.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2429,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "行李",
   "id": "1b0dbc576da1bbe24c1abc13",

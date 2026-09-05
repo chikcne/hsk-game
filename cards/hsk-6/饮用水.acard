@@ -1,17 +1,21 @@
 {
   "audio": "bd6ad2b61f5b53bb940b372a19c6f87befc7c0ab233c8ea09b9a7c78fe039862.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水",
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33644,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "饮用水",
   "id": "9f364ed64877a07b04603331",

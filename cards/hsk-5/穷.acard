@@ -1,14 +1,18 @@
 {
   "audio": "8e6883a7a3630d852349bc3070520e23affb34b4d96ef426020785961cfad0f2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9199,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "穷",
   "id": "88b312180f03d12b9626f146",

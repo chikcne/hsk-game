@@ -1,16 +1,20 @@
 {
   "audio": "0f2a4b66fe5cfe64d67d8028cb44e802f542f4e7827e4c7970275406b2570d1f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5809,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "院子",
   "id": "e5d6edfc864ff9f0d0db09a0",

@@ -1,17 +1,21 @@
 {
   "audio": "b8014632f6d36f10ddb032752b8c2e246881a14f38374626b845d8b837f7e480.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "安",
       "静"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 947,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "安静",
   "id": "436955bfedfea1e27cb86719",

@@ -1,17 +1,21 @@
 {
   "audio": "37dd97fcb563796fb69e7b59193cc24abb53981990da55ab9bb293bbb13d3b79.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "存",
       "款"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12188,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "存款",
   "id": "e15254d01daa6b787a921e48",

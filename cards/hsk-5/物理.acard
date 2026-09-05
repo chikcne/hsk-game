@@ -1,16 +1,20 @@
 {
   "audio": "567f46d02916abe72ad93e55edb8db8876f632e21407fe550db2bab15abfa51a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7664,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "science-research"
+    ]
   },
   "hanzi": "物理",
   "id": "5136ae6f585481d6d0c1d091",

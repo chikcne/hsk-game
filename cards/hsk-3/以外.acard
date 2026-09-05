@@ -1,17 +1,21 @@
 {
   "audio": "fd61d20461b8b9f3a84c9ac06cea0430641c00205e102c34426a07e114a45722.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "以",
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3992,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "以外",
   "id": "edab9b65f65c71a165abcca7",

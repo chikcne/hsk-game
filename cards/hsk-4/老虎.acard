@@ -1,16 +1,20 @@
 {
   "audio": "5659f482c8eb0068813301586fbc7cb88aa306701796d2c1eebefd86f150c8a9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "老"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4654,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "老虎",
   "id": "536f2cbc86846c824dae29b3",

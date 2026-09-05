@@ -79,7 +79,7 @@ export function componentsOf(hanzi: string, corpus: ReadonlySet<string>): string
 /** A freshly extracted card carries an inert `curriculum` block: the sorter
  * owns every field in it except `components`, which extraction computes. */
 function blankCurriculum(grade: 1 | 2 | 3 | 4 | 5 | 6, components: string[]): AcardCurriculum {
-  return { boundMorpheme: false, components, frequency: null, grade, notes: null, pin: null, seed: false, topics: [] };
+  return { components, frequency: null, grade, notes: null, pin: null, topics: [] };
 }
 
 type DeckWords = {

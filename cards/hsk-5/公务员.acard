@@ -1,17 +1,21 @@
 {
   "audio": "48f259d18d5bc0b96262f7322b02ddf3330820973fab54b5c8ae831af3421dea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "公",
       "员"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11686,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "公务员",
   "id": "efae21dca6b026a7b36711d0",

@@ -1,17 +1,21 @@
 {
   "audio": "03f5ef6d530bf9109ba5b046481f9ef0a076154e1e44f87b2d83e815e7235c0a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "拆",
       "除"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12613,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "拆除",
   "id": "693bf21bd6d273f90f3eeda2",

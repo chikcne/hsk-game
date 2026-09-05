@@ -1,16 +1,20 @@
 {
   "audio": "afc24507682c007a32945ea532602786c0afe5312e5daf85c33bf012494a0a14.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "病"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6437,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "病房",
   "id": "4f9e240d94624903ee76969b",

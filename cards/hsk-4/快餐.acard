@@ -1,16 +1,20 @@
 {
   "audio": "46b6778068c2b05ad8ed3e783f6f2229829ddcf1fe86e3ce40c6531d0ce2efd2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "快"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20091,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "快餐",
   "id": "2479edba27308eff96bb1ebf",

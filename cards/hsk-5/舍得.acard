@@ -1,16 +1,20 @@
 {
   "audio": "9621948bbc524d5b084f44865ada41cddcc5bc6e8854b47199f628a6a1dd2713.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "得"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18640,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "舍得",
   "id": "12f235547f470eaf44869f86",

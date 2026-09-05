@@ -1,14 +1,18 @@
 {
   "audio": "276a93e42d62ffd9b199d95a57a0fd389cd6668ec9e79a170bb19775831fcfa0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 2301,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "布",
   "id": "0369f29fd6e78bd1c80e8090",

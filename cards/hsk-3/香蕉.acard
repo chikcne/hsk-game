@@ -1,16 +1,20 @@
 {
   "audio": "26bd81a866b46c52bd00fa2f143b894b3511ae34419e5c6c6a23188f8caa0e46.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "香"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5899,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "香蕉",
   "id": "c072b938cc7acb4f716c9fb2",

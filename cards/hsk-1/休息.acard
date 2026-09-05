@@ -1,14 +1,18 @@
 {
   "audio": "a182fdeeac0e33ea55f6f31787920e297f2d675a685fc04a7fd033a1b5f174ba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 741,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "休息",
   "id": "92bc28aaa84dcadc95208826",

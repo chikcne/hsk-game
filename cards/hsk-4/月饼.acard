@@ -1,17 +1,21 @@
 {
   "audio": "ec93c8cd8f5ab858ecfe297248c9ee578431bcbdafc3dd6f79700072b874208d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "月",
       "饼"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 44039,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "月饼",
   "id": "e64db3d4e6559ee8b9cfa2d7",

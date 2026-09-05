@@ -1,17 +1,21 @@
 {
   "audio": "fbb2fef456def4e1c522159d15c4d7d6a9a326adc6c52220c0ae3741564fa405.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打",
       "破"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2322,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "打破",
   "id": "dfe8da56b2ad60032ba056e2",

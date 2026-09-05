@@ -1,17 +1,21 @@
 {
   "audio": "edef90b61d6652dbf7c6a6c9f3371d4443416b159c24af3d98109fd855b278ec.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "排",
       "练"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6368,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "排练",
   "id": "405abf21120d6c6bdc109544",

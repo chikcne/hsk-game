@@ -1,16 +1,20 @@
 {
   "audio": "0a1ff2bd3b83b542a3fcfc19266eb73efb2035ea2d3c55905397f32e657febc1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 547,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-evaluation"
+    ]
   },
   "hanzi": "成功",
   "id": "1003d89b8459871b8eb1c292",

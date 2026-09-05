@@ -1,17 +1,21 @@
 {
   "audio": "68efdbe94c6a428c2e47a2ee56298484322f131f2e6304fdb819f113217d3293.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "身"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6065,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "一身",
   "id": "17c89b14b2fb26b6df4faf45",

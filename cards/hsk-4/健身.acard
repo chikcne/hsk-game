@@ -1,16 +1,20 @@
 {
   "audio": "b3315962c4fe5c83b6f693b744e60ec052263a7881f072d6ecce6a0be2908ffb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "身"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9064,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "健身",
   "id": "f98904263f879a4fd33c23ab",

@@ -1,14 +1,18 @@
 {
   "audio": "31359af3460317c003b000b2ac86f4384c0b5a28a19a91a5e6e75d14c071549e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 13214,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "媳妇",
   "id": "a969b0480c2165106f1d3050",

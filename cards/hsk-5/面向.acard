@@ -1,17 +1,21 @@
 {
   "audio": "7f30dfb749f72f1bae0dca6ccd788dae33857d7faedad9fefe8d35d25920e1ed.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "向",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15804,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "面向",
   "id": "0192cab8ab0bf78c2cf257d3",

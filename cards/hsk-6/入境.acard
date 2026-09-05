@@ -1,16 +1,20 @@
 {
   "audio": "f267477bc6bd7b13110aed1471d1c5907f715e8c083a9527689a0952275820a6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "入"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14112,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "入境",
   "id": "10a5a5df22373169b784c7e0",

@@ -1,16 +1,20 @@
 {
   "audio": "49201dd87e9509cafc18e3838942e0e9e9c406bedec13f62c9dc13f76244527f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "并"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 873,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "并且",
   "id": "50d5b720427c2f3e8e9696ee",

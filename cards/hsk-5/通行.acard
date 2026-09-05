@@ -1,17 +1,21 @@
 {
   "audio": "3fc4d10eae5f3f819aeaa256d833b4882f084344e09a049522d8c6e5a932a51c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "行",
       "通"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13920,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "通行",
   "id": "c0240a3464f0f6f9fb4bc631",

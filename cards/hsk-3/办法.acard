@@ -1,17 +1,21 @@
 {
   "audio": "3759b77dc3a680154e99f16eb80bab600f773f253f3e9d1f5f77d69f8e545e3c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "办",
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 437,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "办法",
   "id": "b71c1d8e2c26fb3b33a1f5b5",

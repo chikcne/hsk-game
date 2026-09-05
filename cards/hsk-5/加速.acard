@@ -1,16 +1,20 @@
 {
   "audio": "42fcd13f2394ac33f7ee8d9b65da9c1492147e052639a8d51dc7aaf89e621282.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "加"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4726,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "加速",
   "id": "aad83744ff71383e820d99f0",

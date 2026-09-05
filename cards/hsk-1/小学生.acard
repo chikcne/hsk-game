@@ -1,7 +1,6 @@
 {
   "audio": "44282008519a65a070770ad99f8361a8b3efbf242723ce158489d5b72d586a7e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "学生",
@@ -9,12 +8,17 @@
       "小学",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23873,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "小学生",
   "id": "2ccefb91f1fd1c1a689a238f",

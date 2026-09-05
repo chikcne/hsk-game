@@ -1,14 +1,18 @@
 {
   "audio": "747fdf8cde2a88906bdfe0dd190c1c8c82fc6273b5fba4afec127c9bfef5f49c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11513,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "纪律",
   "id": "58d66e5be2389117e5c4c357",

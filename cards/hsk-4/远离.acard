@@ -1,17 +1,21 @@
 {
   "audio": "433c199650abcf377d4f2a7357e8cf7cad023e23303c9835492e6c185bf77452.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "离",
       "远"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2418,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "远离",
   "id": "5941a00a0d4c678d1a841c69",

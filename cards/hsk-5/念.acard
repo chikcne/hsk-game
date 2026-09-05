@@ -1,14 +1,18 @@
 {
   "audio": "a507e3044899ef6c7fbd23d35604175352f830f1ca7341fb60278fbee7415b77.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3471,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "念",
   "id": "0959819757c6983d5000f26e",

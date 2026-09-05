@@ -1,16 +1,20 @@
 {
   "audio": "10399d9314e857dd196f23153f291739c8043eb0a48d295710916d022320d3b6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "争"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10151,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "争议",
   "id": "47d4dfb2c85fdf3ef4b7c105",

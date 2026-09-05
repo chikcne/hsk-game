@@ -1,17 +1,21 @@
 {
   "audio": "7ae2257f5b4921fca2df7b3dbc885c7317c80ec6c902d09484fc30692c708b58.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "建",
       "立"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1868,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "建立",
   "id": "bc354369531e2ca082e61297",

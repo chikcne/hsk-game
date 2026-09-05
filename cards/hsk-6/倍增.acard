@@ -1,17 +1,21 @@
 {
   "audio": "5c1ffc7f3a95896021b36e0c579d7d61f915f8bb0e728a654fbd950507f032db.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "倍",
       "增"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 61458,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "倍增",
   "id": "6cf8658e37cffbd13015732b",

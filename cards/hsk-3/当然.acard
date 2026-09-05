@@ -1,16 +1,20 @@
 {
   "audio": "4e8084cde3b8461447041dd9b0fa8d38ff79a5fef6cb1cf69e16846574fcd533.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 168,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "当然",
   "id": "71157ab47e22d50e1a10ff2d",

@@ -1,17 +1,21 @@
 {
   "audio": "7cbaf33f89988b4d1eaa427128733e1425ce878e508e3082cb74b8a44e13370e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "祝",
       "福"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3342,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "祝福",
   "id": "431b14d1d7f0115abfc235cd",

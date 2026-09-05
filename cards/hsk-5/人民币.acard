@@ -1,17 +1,21 @@
 {
   "audio": "b283b880347a557f67bbdf15f24161d5bb10997a70099e887554c3a08602e5e7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "人民"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 40207,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "人民币",
   "id": "d116f812057c7eefa87266ae",

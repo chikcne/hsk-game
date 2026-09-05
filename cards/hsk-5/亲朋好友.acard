@@ -1,17 +1,21 @@
 {
   "audio": "5fd735f4dc73685bb7d70abf4ea2cb1158bdf9e8fef7864faecf78e5cf604005.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "亲",
       "好"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 45073,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "亲朋好友",
   "id": "c4b8a39c61467fe07d357091",

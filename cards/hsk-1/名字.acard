@@ -1,17 +1,21 @@
 {
   "audio": "3dcbc37b68777c095fbca9171ccac01d78dc098f10b9c28421d73b97a97240bd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "名",
       "字"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 273,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "名字",
   "id": "bd3d02366b3502ed1b7a4582",

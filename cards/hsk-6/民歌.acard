@@ -1,16 +1,20 @@
 {
   "audio": "d9419f6071c91b9f5ce294cefcc8ebceb96ea95929f5c164606319f1d7ef6b40.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "歌"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 51080,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "民歌",
   "id": "5a37306ab684f6313c97dcb0",

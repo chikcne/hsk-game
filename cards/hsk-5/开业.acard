@@ -1,17 +1,21 @@
 {
   "audio": "3bf5a3e13a2cec9c8f81b641f59bf23323f2420b2afed230035c6f36ffa11f8f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业",
       "开"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17471,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "开业",
   "id": "e6ae6d1035bbc6ec491cad2d",

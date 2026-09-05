@@ -1,17 +1,21 @@
 {
   "audio": "12315d5366014c50c7b2297f1f2273cc3406b2cfbd914cc3ad699d29200d8520.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头",
       "抬"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10327,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "抬头",
   "id": "1da19ba2501889f0b2a52de3",

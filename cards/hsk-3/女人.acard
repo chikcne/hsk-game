@@ -1,17 +1,21 @@
 {
   "audio": "0c4e150a2fbe6d16e3284036a99b5a4b135ac5ae87955f50f55da66e85fd3a94.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "女"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 229,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "女人",
   "id": "a998b00878bc8fcc9d5f1d9f",

@@ -1,17 +1,21 @@
 {
   "audio": "472c25bb30338274644a8a73e78f5d1b51e01f31dd6ba6f91afcd2d06251c52a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "留"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 657,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "留下",
   "id": "e8eb57d6fe26c8b7d504584d",

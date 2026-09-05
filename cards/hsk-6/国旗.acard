@@ -1,16 +1,20 @@
 {
   "audio": "82a5ff73b2c1554308a5f7cfde9c98b499656ed6a7190b22fa09f1dde462e09d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "国"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12357,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "国旗",
   "id": "323f9d956f590765886e5f17",

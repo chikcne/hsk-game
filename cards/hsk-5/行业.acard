@@ -1,17 +1,21 @@
 {
   "audio": "fb402d82973859a8a9ed6a00761cfe6f0bf1c6591e6f9b456cc904c882603419.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6578,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "business-economy"
+    ]
   },
   "hanzi": "行业",
   "id": "faada1f7ae45291ffcc1dd9a",

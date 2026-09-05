@@ -1,14 +1,18 @@
 {
   "audio": "6bcedf6146d39de2a9122cc314a0b6d8fe4c301cad5ee19661291f6f1c53223c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 2,
+    "frequency": {
+      "rank": 2406,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "床",
   "id": "6063754c5093856472e1e748",

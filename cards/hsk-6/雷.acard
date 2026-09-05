@@ -1,14 +1,18 @@
 {
   "audio": "7a2d14c59f5c0c1e7036461736b9ca7cce263ff3f95ad0c53dcd0d7c1c8219de.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1485,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "雷",
   "id": "9da976a9fbf4f432fcb5aea9",

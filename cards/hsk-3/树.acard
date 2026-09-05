@@ -1,14 +1,18 @@
 {
   "audio": "aa547c4aa80d900fbabf003bce19fd8538c73ddc854e2082f411bcf2b66ffb22.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2862,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "树",
   "id": "7e348e9bbdd0e128754b2cc0",

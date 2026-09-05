@@ -1,17 +1,21 @@
 {
   "audio": "b98bce1cd876688494dba33108d1f234bfee704bac703647c5518d82b57f78df.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "才"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3787,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "人才",
   "id": "23f7e4461d4728ef08536a38",

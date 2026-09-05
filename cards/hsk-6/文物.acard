@@ -1,14 +1,18 @@
 {
   "audio": "8013f9510e8d2f900f1f981ebadcb35eeb429acd16a17b969fae54af9958f7b5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 21986,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "文物",
   "id": "3607a72a2a70189a320b575e",

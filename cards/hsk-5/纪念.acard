@@ -1,16 +1,20 @@
 {
   "audio": "fafaf159bfeea80491dd67fe260021741546ec19c46df976b9a2e55d97c57e62.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "念"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4906,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "纪念",
   "id": "e7e95b5666da6297d1dd8332",

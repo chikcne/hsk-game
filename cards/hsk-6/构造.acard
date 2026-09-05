@@ -1,16 +1,20 @@
 {
   "audio": "429518c423cececac8a2ca47434062329dc2bb1a0b5343ce42b9d668dfd016b6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "造"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16181,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "构造",
   "id": "321eff5beeaa69a55f2a8748",

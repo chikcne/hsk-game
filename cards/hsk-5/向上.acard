@@ -1,17 +1,21 @@
 {
   "audio": "656242f00ca45bf7ed95ddfa905cd1cf3d76f4b0f99d22d61f5ec144b14249c7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "向"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7260,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "向上",
   "id": "edb9fc55d1cf8ddab23aafec",

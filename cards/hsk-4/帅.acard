@@ -1,14 +1,18 @@
 {
   "audio": "30928ec139b59df96ca51403761313f9e8787e754def633bc0dfba64a41381b8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6237,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "帅",
   "id": "faedd42b7b7880e26b73b79d",

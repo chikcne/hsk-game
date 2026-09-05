@@ -1,17 +1,21 @@
 {
   "audio": "85999a4f3ffc060e9516d0d37f6550dddf0b15b7096f0548f94d286046aeb4cb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "位",
       "座"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3389,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "座位",
   "id": "f63ff756e300a367dc531747",

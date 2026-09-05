@@ -1,17 +1,21 @@
 {
   "audio": "4b3e766b2a4be8f5467d5785a4ca6a9784d6fafd71542dbe74402895ed932f29.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "路"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2944,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "一路",
   "id": "4ed423156cf6d5ed0bfc453a",

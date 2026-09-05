@@ -1,14 +1,18 @@
 {
   "audio": "023c54ad036b1cca92e7f6d9df442bfd9de96bbf3b0e29aa176c773e63c24423.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4073,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "主任",
   "id": "3b648d99db336f2234a9a66a",

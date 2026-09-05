@@ -1,16 +1,20 @@
 {
   "audio": "0839c927f9ca1a25e0a748fe3cc76f356bc2685d7c1c504dc3c89345edc47e79.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "美"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20249,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "美术",
   "id": "7adbc3f9a51e7c39791c9db5",

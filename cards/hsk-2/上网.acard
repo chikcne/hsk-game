@@ -1,17 +1,21 @@
 {
   "audio": "a469dd13f89dae226959ac92442bfa74452cfc82ef74535f84cc6eff2d61fe28.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "网"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9347,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "上网",
   "id": "42b75f3c449096c20544e175",

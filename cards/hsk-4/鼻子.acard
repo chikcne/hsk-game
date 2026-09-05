@@ -1,16 +1,20 @@
 {
   "audio": "c4583b1ec84faf8e23c2d439cf621659d4cdddbff344edba59e2baab3d39f492.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2258,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "鼻子",
   "id": "c6d5f5855a7193a8cffb2a28",

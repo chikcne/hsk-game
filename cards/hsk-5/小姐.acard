@@ -1,16 +1,20 @@
 {
   "audio": "440682e16e60473d60a0b33649ecb3b5ad9e9746e7646be0f646b940f5f50ab7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 308,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "小姐",
   "id": "65a47761fa0e38f829c6c222",

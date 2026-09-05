@@ -1,17 +1,21 @@
 {
   "audio": "a360c2104e50919f9e8e9cc223c629159bfbe862482675d7dcd39910a6575498.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "线",
       "路"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6486,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "线路",
   "id": "6de47b745015936db79110b2",

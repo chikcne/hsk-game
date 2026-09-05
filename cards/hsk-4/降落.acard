@@ -1,17 +1,21 @@
 {
   "audio": "cdba2f361b40019ecebff48db305282d2d4e5845c99bbd0b5f3b5a400f651c3a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "落",
       "降"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2732,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "降落",
   "id": "3237bc0cb074105bc30eb378",

@@ -1,17 +1,21 @@
 {
   "audio": "67a94add23180e40ab0cb5a0ba51d72b9772aba8d6f8aeda878dae3605a39361.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "推",
       "迟"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8924,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "推迟",
   "id": "2be5e443f4b3f2ae81b88ecc",

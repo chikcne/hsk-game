@@ -1,16 +1,20 @@
 {
   "audio": "e3f221b9cd0c5cce3deb932c86e40673a1aca71d7447886d2894a4757afa5900.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "饭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3557,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "午饭",
   "id": "a932efea62af953f828e52ce",

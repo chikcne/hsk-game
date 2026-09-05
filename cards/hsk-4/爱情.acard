@@ -1,16 +1,20 @@
 {
   "audio": "fde5e7ea15ec1dd9d25521b9f62e6723490c409ef7b296125fe55ee7ffab008a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "爱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1515,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "爱情",
   "id": "2b480f5ba4147b3e4d58e7d6",

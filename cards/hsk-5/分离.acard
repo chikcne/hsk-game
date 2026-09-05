@@ -1,17 +1,21 @@
 {
   "audio": "56190215cdec7acfa953c9c4c1a40b7eaba49edb556c52ba195acd771e9f93f8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "离"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5807,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "分离",
   "id": "c5531ad01c98728760553927",

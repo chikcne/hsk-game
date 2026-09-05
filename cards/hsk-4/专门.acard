@@ -1,16 +1,20 @@
 {
   "audio": "08b0827d96fee94edb3aa5a4204926e0a5c9fd370fc8c014318e5596ef2fe9e0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "门"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4152,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "专门",
   "id": "d1bc9715d7bb1ccc01a9d6ed",

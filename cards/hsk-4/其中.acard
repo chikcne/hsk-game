@@ -1,17 +1,21 @@
 {
   "audio": "e5ae71646ed3834cfa81dc229aad768a916427b565289e206226101c5c99e070.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "其"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 743,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "其中",
   "id": "fcd0f4ecfff81e70c0f8a70e",

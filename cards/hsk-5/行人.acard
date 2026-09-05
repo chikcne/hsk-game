@@ -1,17 +1,21 @@
 {
   "audio": "8a0cd2f5830a01df5fc9e94bc3bf9f20c5534c9d021a278a26d172f9f3d0a814.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23975,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "行人",
   "id": "69a9cc8bd563ff72b3ca82f0",

@@ -1,14 +1,18 @@
 {
   "audio": "f4a059f4dac14ff0055957b63b915f050cadbb4a64020fa4a1d4f622452092f3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 950,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "妹妹",
   "id": "d5d3b2c54935a20460ba8f28",

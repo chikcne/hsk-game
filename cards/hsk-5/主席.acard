@@ -1,14 +1,18 @@
 {
   "audio": "8bc88d40fef3a3dbc58f1b1a03bd3cf05398bed14b5e0774af626fad3888d53b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3150,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "主席",
   "id": "41f7c32b163005226efb8e32",

@@ -1,17 +1,21 @@
 {
   "audio": "7c4de03fa3196cc1c49479aedde44476856af2c01e78271407036ae3ac51fdcb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "厂",
       "家"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 89178,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "厂家",
   "id": "b4c7d328395e4b01d8797cd5",

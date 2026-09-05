@@ -1,17 +1,21 @@
 {
   "audio": "b3a94404083737654b6ceb58774f940f67f7c91e68ff1c3ba4be773aa38d6573.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "对",
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2631,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "对手",
   "id": "d49d28768424b3a43a227197",

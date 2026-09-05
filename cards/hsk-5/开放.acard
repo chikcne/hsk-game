@@ -1,17 +1,21 @@
 {
   "audio": "3cfef4b5340c541f8641db5d4e900399b1b7ce65771954a9e11ac2d33a4d03f4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开",
       "放"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4685,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "开放",
   "id": "d6f7365fba611c9fabe8c1db",

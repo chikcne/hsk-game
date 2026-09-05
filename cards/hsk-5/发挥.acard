@@ -1,17 +1,21 @@
 {
   "audio": "456d53ef99c98be4f9ab9c26eb1ce367f15563d0ae6fadfa93b474c7548063a6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "挥"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4789,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "发挥",
   "id": "dfb5d4b459dad44066e36000",

@@ -1,17 +1,21 @@
 {
   "audio": "c46b60d6b77e3149db24dc4c5cf4cceaa89f7abc3c120c12e03255a60292c851.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "好",
       "最"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 288,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "最好",
   "id": "8bb3916f3202f5b97ef42ee3",

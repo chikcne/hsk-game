@@ -1,17 +1,21 @@
 {
   "audio": "9377ed0e03b9dff6e73b897ffd21bad1d06553302b38a63fc84c11d405794daf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交",
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9567,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "外交",
   "id": "d68e11e45aa8a59ce772124b",

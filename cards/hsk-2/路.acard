@@ -1,14 +1,18 @@
 {
   "audio": "3fd8435534a0a94cd4c16181dd8e463be35f40661ff1f2b89f32b2765c8c412a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 725,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "路",
   "id": "c8ccd6821c9d318f13b8e713",

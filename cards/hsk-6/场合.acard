@@ -1,17 +1,21 @@
 {
   "audio": "3a2b07a1af5a98a688e9800b3b6f28ed421b49cc443a462232bcae9f67b95882.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "合",
       "场"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7834,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "场合",
   "id": "30633b9edcac11f59f85cf19",

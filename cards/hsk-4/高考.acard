@@ -1,17 +1,21 @@
 {
   "audio": "fe99df0fa18b4f8d72ee0b4299185b8ffea4731e2ef0ff79785377271e3ae578.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "考",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30665,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "高考",
   "id": "b70dae62a34abebf523a20f3",

@@ -1,17 +1,21 @@
 {
   "audio": "88b29543e3921f3f2486f73193c8503abe44df91a997cc920ff76fb1b267fc72.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "压",
       "血"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9213,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "血压",
   "id": "19e13b7c47875307eae24c89",

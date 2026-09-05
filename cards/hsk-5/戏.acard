@@ -1,14 +1,18 @@
 {
   "audio": "b67d8a77d22a167ada08e56e183de13de9dac1ae98ff9d9e8d320bc088469958.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 3836,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "戏",
   "id": "54affb156e599bfe4aaa7466",

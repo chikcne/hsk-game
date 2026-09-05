@@ -1,17 +1,21 @@
 {
   "audio": "a05ac4d9ac7cfafe5370d0d50a1e142c01ef290a041925d68454acd709983b85.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "热",
       "门"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14731,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "热门",
   "id": "2bc648d44239039f586784d0",

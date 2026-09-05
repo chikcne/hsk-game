@@ -1,16 +1,20 @@
 {
   "audio": "a01a9197913f447875459cdc536ef566ee3f6e85c9d1d4b7ea2954b022b4a8c7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "是"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 517,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "是否",
   "id": "b51ad5cf1107c5885afd9774",

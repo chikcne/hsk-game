@@ -1,16 +1,20 @@
 {
   "audio": "e1581cf79453529c482061d1d767e2b6a8b08454b2724764204adef1b25b3846.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3869,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "助理",
   "id": "68248d01ab223a9fc73b2e27",

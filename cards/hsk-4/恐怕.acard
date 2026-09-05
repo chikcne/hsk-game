@@ -1,16 +1,20 @@
 {
   "audio": "3e72a4582920134a8b6777221c57ebf68a1ec86dad701ea128798108772a7426.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "怕"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1335,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "恐怕",
   "id": "df42cf3633b60efec86bd903",

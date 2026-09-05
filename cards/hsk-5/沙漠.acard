@@ -1,14 +1,18 @@
 {
   "audio": "25d2f43d25d8b281cf5fe5e4a857a3c15a51af79b75ea44510cf5944be6db905.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2827,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "沙漠",
   "id": "e1667652bc1542094bae15f7",

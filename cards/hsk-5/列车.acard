@@ -1,17 +1,21 @@
 {
   "audio": "971cdd59c4221267824e72ce9821be99c23be62da95f3d942c56f9f816457ba8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "列",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5248,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "列车",
   "id": "0a682fd4a9d038c0acf85797",

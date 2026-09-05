@@ -1,17 +1,21 @@
 {
   "audio": "bcbb83d2a44c29268d2a5b63e600241b98d80a96213508df3c13d2fe3a0a5d3a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "到",
       "直"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 637,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "直到",
   "id": "1d36eee591d82eab173aa187",

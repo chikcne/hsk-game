@@ -1,14 +1,18 @@
 {
   "audio": "741435be159dff4ae37510a3391c1e0df68b419d7285649af9a618803f52f874.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1574,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "蛋糕",
   "id": "a4fa47d225f54279270c5a79",

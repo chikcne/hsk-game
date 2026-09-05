@@ -1,16 +1,20 @@
 {
   "audio": "57096f1d3d4927ab4819bfb7046097ff5dd297ac856d452b482a902620eb2a97.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "加"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17305,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "加工",
   "id": "74cae4acd58cd39c597a92e2",

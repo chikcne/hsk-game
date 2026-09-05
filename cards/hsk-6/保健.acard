@@ -1,16 +1,20 @@
 {
   "audio": "0985b2db25bdcbfa93c5618600776e4578d9b8afabdefadd616f7b799b465d30.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "保"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 34960,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "保健",
   "id": "76767b14ec297175259c6130",

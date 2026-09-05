@@ -1,16 +1,20 @@
 {
   "audio": "142fe981e431e65355fccc824f55a0976de458906d3ece4d1c01ff5c1285e677.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21360,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "馒头",
   "id": "84fb683fafc783c98341ea9a",

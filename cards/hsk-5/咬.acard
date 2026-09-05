@@ -1,14 +1,18 @@
 {
   "audio": "664a9efa6ad31cbe0a35f229587ffdd7d61f7f05bc62b56f4e74a8afb22f661c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1718,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "咬",
   "id": "e7ad0b9fe9039866339ef4d2",

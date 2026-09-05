@@ -1,17 +1,21 @@
 {
   "audio": "1575ef19d41454701db45e9268fe2561d92eab937d81df592bd151be8a7cceb8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "课"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16018,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "下课",
   "id": "75af594850db49a566de7740",

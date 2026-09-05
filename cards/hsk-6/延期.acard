@@ -1,16 +1,20 @@
 {
   "audio": "ac52bca3fa7a489eaeb36327479989de3e2c1dbd536da22972d14118d2bda266.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12674,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "延期",
   "id": "d5200c330f67893fa19ddf8b",

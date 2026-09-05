@@ -1,17 +1,21 @@
 {
   "audio": "965d7b8425429ca5f955e3dba155cc25673a5fa05093bb54b0876edef729d27c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "快",
       "痛"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7839,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "痛快",
   "id": "16c18430b120007015cd01ba",

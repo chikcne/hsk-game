@@ -1,17 +1,21 @@
 {
   "audio": "826ea8fbc656fb1430d8e4f41c3a36c6e7ef7ddf710be2a540572dfcabc8d7ae.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "想",
       "梦"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1176,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "梦想",
   "id": "c97513b3cb28f8d750964065",

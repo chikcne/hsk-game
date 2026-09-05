@@ -1,14 +1,18 @@
 {
   "audio": "9afeb9b15fef8113af08b9ff7fde4bf127e4eac811fbe36f9d4bf232b5e9ad1f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 12117,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "扑",
   "id": "00bcc460dd8f1363aa3602f9",

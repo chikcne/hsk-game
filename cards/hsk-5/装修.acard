@@ -1,17 +1,21 @@
 {
   "audio": "49f0274f71e61d14a7bcf7e47fdd8b3422a8ebde4cd91282b46e3cd06571bdef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "修",
       "装"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8350,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "装修",
   "id": "184187064f36b68f77eabc4f",

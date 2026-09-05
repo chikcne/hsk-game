@@ -1,14 +1,18 @@
 {
   "audio": "949afc904eb87c56b7dc3ee39dd1803a1ce922108b6fec250a5439c04d8b099f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 236,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "比",
   "id": "e0cc7f945cde2303a5367a65",

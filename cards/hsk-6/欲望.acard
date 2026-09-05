@@ -1,16 +1,20 @@
 {
   "audio": "58d5f6a4bcdb95f2317855ec66e16cbc350d6e5240d367801a084f98ed2e1843.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "望"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4215,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "欲望",
   "id": "e2f1728387aea79fd68ae420",

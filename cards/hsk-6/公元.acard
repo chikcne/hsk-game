@@ -1,17 +1,21 @@
 {
   "audio": "017d6b2e9261a0962de7702bcdef1b7b121b205f6aad17ea130f22a7c0a6239d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "元",
       "公"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17362,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "公元",
   "id": "e6e8dda7d922bdd83b783967",

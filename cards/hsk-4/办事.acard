@@ -1,17 +1,21 @@
 {
   "audio": "84a508dd9cfbfd56e70ff16666f1a1f2bdddf54d3d79cc7a228b013e36fb38b8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事",
       "办"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5583,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "办事",
   "id": "d52ff5da7e6b6c1813e14039",

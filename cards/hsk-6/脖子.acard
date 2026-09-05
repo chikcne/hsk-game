@@ -1,16 +1,20 @@
 {
   "audio": "eb8acf575bef0c600b9656966e40c52b010c3ee9476e68e0b06b74cd60a44274.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2202,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "脖子",
   "id": "5f1e79d34b2e323948b32711",

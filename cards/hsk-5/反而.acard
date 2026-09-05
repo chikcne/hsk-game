@@ -1,17 +1,21 @@
 {
   "audio": "37e69f042dfe7fd3cb9d60e67d8b87a6ab5e39d224f422fcd8b249325c3690c9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "反",
       "而"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4275,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "反而",
   "id": "b81a22f1614803de30061286",

@@ -1,16 +1,20 @@
 {
   "audio": "608cfd3b4f92abb771fe6dc6574936e8e31ac41ee78032dc8461f283d0d6c9dc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "年"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5657,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "童年",
   "id": "180093a671daae4667223035",

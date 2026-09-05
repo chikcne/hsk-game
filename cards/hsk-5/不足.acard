@@ -1,17 +1,21 @@
 {
   "audio": "8c32afbd3ffc8f71495d4a487343d9604a6c0d93f57768dd80bb478854321074.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "足"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5868,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "不足",
   "id": "b35e6b03c1bb5924258a8f02",

@@ -1,14 +1,18 @@
 {
   "audio": "60b02074f3bc01b3fa193a89434d727b80e7a79643fa1121bb990e7ff080f8fb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 320,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "警察",
   "id": "f2cf4c6bc89a72d6617a614e",

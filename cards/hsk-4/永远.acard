@@ -1,16 +1,20 @@
 {
   "audio": "ed37ec2dbf8d74f9e4c280614570625fb53508d12353e7ac0b13f323ca7062b7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "远"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 370,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "永远",
   "id": "8800921151db45ff5a7122b2",

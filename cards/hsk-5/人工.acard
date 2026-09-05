@@ -1,16 +1,20 @@
 {
   "audio": "d881745f1723de3c960c7b68c04571265a0820a117ae9128d73c34acf5d0ff37.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10512,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "人工",
   "id": "e83a19d81dbc648b369de9f9",

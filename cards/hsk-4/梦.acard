@@ -1,14 +1,18 @@
 {
   "audio": "47f25f028a9ac134dd0a29e0f2f51bf8f09b53455f82b6269193bfbf2cb53b1b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1219,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "梦",
   "id": "c829ef5e7a67aa90f7736e63",

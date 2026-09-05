@@ -1,16 +1,20 @@
 {
   "audio": "57ea10d2b3383dcff2e0585b90cd074edaa3cb58d0310c350719efd7e0943753.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "严"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4532,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "严肃",
   "id": "660d0fa297a26d5a313438c2",

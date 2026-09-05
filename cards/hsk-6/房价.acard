@@ -1,14 +1,18 @@
 {
   "audio": "92208d7073595fd8d8c5a1496e7e406d32a026214511853897b52a9914124498.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 41410,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "房价",
   "id": "cee8172b4dad82a21f8f5e5e",

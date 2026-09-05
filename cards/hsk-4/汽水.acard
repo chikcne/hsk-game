@@ -1,16 +1,20 @@
 {
   "audio": "7857ead836f2160210deb0c877fd9e1deba3c38e80a353137906a5dac882b984.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7610,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "汽水",
   "id": "ce4faa89fd1a701346649708",

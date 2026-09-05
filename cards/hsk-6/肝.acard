@@ -1,14 +1,18 @@
 {
   "audio": "2aa31b68fcb2c7b47e770f1922bb91f36ca02518b028215ff54372e27bd9f81a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 13971,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "肝",
   "id": "8376172ac003ff8ba38903c4",

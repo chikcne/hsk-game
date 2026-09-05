@@ -1,17 +1,21 @@
 {
   "audio": "c362c5604cc40b547ab99920730944ee02952831b678d5dcc10cce497d93e8c9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "带"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 29973,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "带动",
   "id": "435d7d736b6b8fad2ce5647c",

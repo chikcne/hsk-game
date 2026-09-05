@@ -1,17 +1,21 @@
 {
   "audio": "e2af118a45588d24d0325278194311f64ee65e85cafb7e9d73280a5c0897a1c2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "男"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2767,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "男子",
   "id": "608e3090d9cfead319654f47",

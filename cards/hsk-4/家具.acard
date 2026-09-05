@@ -1,16 +1,20 @@
 {
   "audio": "bb41b54bf350016e577f8cdc8c4cec74c4bf1422d7cbed56dfe3c829dde30444.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6659,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "家具",
   "id": "82affe16ed273e3adb7712d9",

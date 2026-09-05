@@ -1,17 +1,21 @@
 {
   "audio": "f2540341299da9d83ea7b02b96f91c3abf09f624899223d10ad735306acaa91e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "机器"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2554,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "机器人",
   "id": "2082523a7ba95d1c383af625",

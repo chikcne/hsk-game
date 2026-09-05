@@ -1,16 +1,20 @@
 {
   "audio": "1f9ecace23b76b83fa9b93763170f9fcdb54e2cfe0379aab85dd6f357cba329a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "办"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 39876,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "主办",
   "id": "857345ecb8e5c84904fcb3ad",

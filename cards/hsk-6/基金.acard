@@ -1,14 +1,18 @@
 {
   "audio": "0fa80f3321f7b04a7ac83c8df12a608bc3900ff41e57d5cc4ba9306683213033.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4602,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "基金",
   "id": "e7bd5fd56a3c30f0b419b863",

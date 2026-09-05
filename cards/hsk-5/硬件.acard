@@ -1,17 +1,21 @@
 {
   "audio": "323103f212ba663f858039af39244deef6a096bc5b636763c0bcf0923a868570.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "件",
       "硬"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26015,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "硬件",
   "id": "50d945b3e1b54e1f66212c37",

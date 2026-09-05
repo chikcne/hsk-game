@@ -1,17 +1,21 @@
 {
   "audio": "89b3365f4eac59a760f8a32648322eccbec188bf7810e7cdef2f2f0fce3444e6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "些",
       "那"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 178,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "那些",
   "id": "31686fffad30eb9e6f3db731",

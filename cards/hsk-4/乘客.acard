@@ -1,16 +1,20 @@
 {
   "audio": "dcbfb5351a16a97cdfba0a6704eb03b943b49812943b3cf2cd6dc0ddcf055d9f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "乘"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3518,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "乘客",
   "id": "0d2283d5e530d12f145266fe",

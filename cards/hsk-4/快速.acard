@@ -1,16 +1,20 @@
 {
   "audio": "471f39b295ea7091ed8a51f8f5a508591382022ab0878eb0e1cff251336f832c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "快"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3245,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "快速",
   "id": "2e800157a5990678e95ccdcd",

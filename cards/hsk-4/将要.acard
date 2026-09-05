@@ -1,17 +1,21 @@
 {
   "audio": "74a09922c52fc56ba268272e0f9ee15546e8e50036df09af3c4db14cc8f0512d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "将",
       "要"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3375,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "将要",
   "id": "d6ca85d24d29248c6b7e451b",

@@ -1,18 +1,22 @@
 {
   "audio": "c510b6107af7a3e601b0beadeedf71aecc68281eb1536c92583b14dff2e223b6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "了",
       "起"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1927,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "了不起",
   "id": "fce58d5875eece164b8bc5a2",

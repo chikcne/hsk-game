@@ -1,14 +1,18 @@
 {
   "audio": "9cf54310d214a9358dbb6eea34774d98c0ea093357a61265f1a80390971a0f0b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1998,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "光",
   "id": "e51c3895a37488b36c8571c2",

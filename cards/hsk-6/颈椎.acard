@@ -1,14 +1,18 @@
 {
   "audio": "ccc06b7dcf4f5f82ca37b796e1f0aabcf721b120bc577d4488e892f765a69871.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 79706,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "颈椎",
   "id": "f69910c230c2c6eb618da874",

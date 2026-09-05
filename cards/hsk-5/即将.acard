@@ -1,16 +1,20 @@
 {
   "audio": "3f850e259dcc73feaa6aec8313e38cb095c6e8bf84b9265de295e25191573cce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "将"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2027,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "即将",
   "id": "044f12feb6b40e3f610d5b5c",

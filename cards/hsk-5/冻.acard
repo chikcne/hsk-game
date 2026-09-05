@@ -1,14 +1,18 @@
 {
   "audio": "d6c14512cbc856017c2de879b0b0d341a1e62ba81d3d500b96efec01545c1da4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 14079,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "冻",
   "id": "3c14b9e975e1b6dd77de7313",

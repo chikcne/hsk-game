@@ -1,17 +1,21 @@
 {
   "audio": "9afcfcf4a47c0d0661117286456d44464796f4b298c8bbb493d78ddca85e8c2a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "快",
       "要"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2548,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "快要",
   "id": "fbbe5de9c59a8f81731d10c6",

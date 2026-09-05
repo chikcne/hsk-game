@@ -1,16 +1,20 @@
 {
   "audio": "71e928a5e65eab40ad0afde5b7041773c3bcaaa70a7b657d043863d09c440511.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "准"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 219,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "准备",
   "id": "737b5f5a4d68068235c92193",

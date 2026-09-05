@@ -1,17 +1,21 @@
 {
   "audio": "7bdb84a725bf1a81807b1c144b13ed53b2e4fce087da62f066a696f70c4c12bf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "步",
       "脚"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7935,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "脚步",
   "id": "68fc798a4e05b8222327949a",

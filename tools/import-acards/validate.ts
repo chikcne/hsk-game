@@ -124,8 +124,8 @@ export const validateCards = (
         // been hand-formatted and would churn the next extraction's diff.
         if (stableJson(card) !== text) problems.push(`${relative}: not in canonical form — run the extractor to reformat`);
 
-        if (card.curriculum.grade !== source.hskLevel) {
-          problems.push(`${relative}: curriculum.grade ${card.curriculum.grade} does not match its directory (${source.hskLevel})`);
+        if (card.level !== source.hskLevel) {
+          problems.push(`${relative}: official level ${card.level} does not match its source directory (${source.hskLevel})`);
         }
 
         const expectedId = sha256(`word-v1\0${card.hanzi}\0${card.pinyin}\0${normalizedKey(card.meaning)}`).slice(0, 24);

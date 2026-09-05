@@ -1,14 +1,18 @@
 {
   "audio": "9cc809bf23478d519ca21e03dcf5947aa1f503f508fcd293654d491b0da949ca.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4450,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "升",
   "id": "ed63502c864f77db26bb2a20",

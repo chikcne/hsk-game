@@ -1,14 +1,18 @@
 {
   "audio": "4e90f5ee678516bea6ac64c6a4c2cbf6afb1365f2623a8304a7bd459608a8754.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 12012,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "饱",
   "id": "35c7d37f5ac636f1f5576843",

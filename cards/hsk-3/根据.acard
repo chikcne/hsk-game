@@ -1,17 +1,21 @@
 {
   "audio": "8a1593ff20240f6f3d7419cc1d0d10c5ea58bcd330522177580ac544e6984ded.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "据",
       "根"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1316,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "根据",
   "id": "ba721f2e95b1dbae1223ab49",

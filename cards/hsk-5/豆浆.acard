@@ -1,14 +1,18 @@
 {
   "audio": "9b6b40443fc31ec7ead1581ba5c48cc025b58d34ed17bbc1b16d5fe1e48d59f8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 60588,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "豆浆",
   "id": "e8fe2fc5dee524097e278fd0",

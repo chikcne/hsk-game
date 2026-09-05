@@ -1,17 +1,21 @@
 {
   "audio": "98f6587663b2ebaa293c57c9fc034d0287bde4785cb397b5e75c891ac054ff39.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事",
       "项"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19703,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "事项",
   "id": "cd7b0641580894d3e22984f6",

@@ -1,16 +1,20 @@
 {
   "audio": "bd192e737e8c8012d637fdffd8d16acd729329ed905caff21ac0ea7696a1ffae.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "结"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 541,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "结婚",
   "id": "d041622895298e07188cb32f",

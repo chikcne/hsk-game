@@ -1,16 +1,20 @@
 {
   "audio": "77a3adeb9bc5a2f027a458811fa0fe20452c35103934880a3f0d0e2cae829b60.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "解"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 779,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "解决",
   "id": "75c0ea3347d7bb57aa7e1372",

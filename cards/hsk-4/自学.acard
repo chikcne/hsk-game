@@ -1,17 +1,21 @@
 {
   "audio": "f2823f337044a5d341b441a3e21bb0d4784fdd980a4b39a4184f1bdccec7b7ef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "学",
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 39051,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "自学",
   "id": "f18385471c6c297a3c2a0925",

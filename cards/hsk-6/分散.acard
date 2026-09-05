@@ -1,17 +1,21 @@
 {
   "audio": "59e5f6decc31814438b9066411d2b6c851928c6172e1b368e14608affe69a785.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "散"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6206,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "分散",
   "id": "7848ae7ea507ff59e636da6e",

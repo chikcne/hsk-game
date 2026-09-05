@@ -1,17 +1,21 @@
 {
   "audio": "2f9b7efead162faca919c4be89ca1fba1a5f13d482fe184a400a5cdb00ba4d85.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "全",
       "身"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3550,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "全身",
   "id": "e12e408a79b2e9543da1df6b",

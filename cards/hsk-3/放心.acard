@@ -1,17 +1,21 @@
 {
   "audio": "af2f90f1e73edd38ae2670aaa3fa07cc2fe63a14d4c76b7365ff198dfcf97afe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "放"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1344,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "放心",
   "id": "15b1d650c436271428c6524b",

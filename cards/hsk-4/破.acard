@@ -1,14 +1,18 @@
 {
   "audio": "e21dd36511b2f3b79b9233f370ce68e39a06cfcae6c4da15f22eccd28d66e62c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2217,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "破",
   "id": "f7a85ef34dfbbffea2c249d3",

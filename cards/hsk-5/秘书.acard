@@ -1,16 +1,20 @@
 {
   "audio": "2c406e8c817e9d45a47eb77949d4b00e7c349d6aa72cdce09b728c187996e35b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "书"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4032,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "秘书",
   "id": "f256b2e448a1c87af369f11e",

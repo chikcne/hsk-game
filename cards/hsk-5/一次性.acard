@@ -1,18 +1,22 @@
 {
   "audio": "624f41983dae72542b5c9f0dffa03942e37ff2d84425b027dd3ce2b78b289a08.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "性",
       "次"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13184,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "一次性",
   "id": "1d2aa55e409ed98c3f29eb08",

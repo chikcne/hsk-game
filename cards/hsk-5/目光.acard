@@ -1,16 +1,20 @@
 {
   "audio": "e0979061ccb0633a19316c1956f2405a83d254c539286009bc55679d281ba59c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7544,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "目光",
   "id": "ed2d342c05080090ef7489b1",

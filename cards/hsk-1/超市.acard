@@ -1,17 +1,21 @@
 {
   "audio": "11298cb7b9f04f0c1c7f592f7ddb2f16150f04a77392b9a9582e107c13fb5d33.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "市",
       "超"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5846,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "超市",
   "id": "03c8464291efde02429db5e9",

@@ -1,14 +1,18 @@
 {
   "audio": "ad6688c28b58b503613408a1fccb1af7bb6f624197e39c4ca87b4a5b6bb2eb96.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1269,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "奶奶",
   "id": "21c028cdcc9d3b42005c907c",

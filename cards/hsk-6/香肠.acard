@@ -1,17 +1,21 @@
 {
   "audio": "44ba1d79a4065c17f16f91c3d4b0a2cb482c50472bef65759def3776c6343033.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "肠",
       "香"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5760,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "香肠",
   "id": "c5d05657ba24c428e279212a",

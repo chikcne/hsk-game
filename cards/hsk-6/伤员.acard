@@ -1,17 +1,21 @@
 {
   "audio": "783e9fa479ddab172c18a0cf5831fc2347834a70ed0a4d0d807202849dfe9779.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "伤",
       "员"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13549,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "伤员",
   "id": "005d2d0882f9bd1cfefbe1ab",

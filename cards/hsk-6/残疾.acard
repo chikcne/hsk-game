@@ -1,14 +1,18 @@
 {
   "audio": "9d6fb5d0631928ff1c002129357a3d73af8c698d0f1882ceffb54be3aca5885d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 18360,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "残疾",
   "id": "96f4ac8b63130c4f21d1212f",

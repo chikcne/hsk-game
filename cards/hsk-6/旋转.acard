@@ -1,16 +1,20 @@
 {
   "audio": "e7380ddcc68bec7d580bd20443801b7c0bdb0a8ee200c0420fac0e383828d38f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "转"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5936,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "旋转",
   "id": "6f6687a53382042786e55155",

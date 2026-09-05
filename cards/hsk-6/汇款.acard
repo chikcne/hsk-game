@@ -1,17 +1,21 @@
 {
   "audio": "10b30db5369398f90e42478bd5cbe0a8234e0017ecdc9de1b9f1a796fb8f3b27.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "款",
       "汇"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 35169,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "汇款",
   "id": "a4a3d0f51848f459c4876601",

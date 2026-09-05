@@ -1,17 +1,21 @@
 {
   "audio": "87e7a08e8a433551a8c6e67964ad9958dd0251520fb4864957607fa2a68634e5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 60564,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "分期",
   "id": "338281f63a7fd6eefdfdea00",

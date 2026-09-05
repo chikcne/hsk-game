@@ -1,17 +1,21 @@
 {
   "audio": "a50ae6c4ebfb2eb817aeca52d7a747b772c57165d944844cd4861a2f2266b9a0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "定",
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20696,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "法定",
   "id": "1248d1c77c95d31edd8d9353",

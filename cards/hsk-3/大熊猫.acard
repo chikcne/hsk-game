@@ -1,18 +1,22 @@
 {
   "audio": "4466082cc56ac0ef80330bd08ca89d1e33cc4d1210d33e3a8f701bfb3203d0af.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大",
       "熊",
       "猫"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 66933,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "大熊猫",
   "id": "d4497d73c011ec3907db95dc",

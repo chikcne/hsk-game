@@ -1,17 +1,21 @@
 {
   "audio": "1074f7ef25737ff7b2cbd251480788fef889254ddb0f9b8500b1cb1dbbc2be77.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "起"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8532,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "发起",
   "id": "ad722efa3d4aa2422b825c5e",

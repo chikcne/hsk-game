@@ -1,18 +1,22 @@
 {
   "audio": "2d6918a7eb2a712c90ec843026a44472448754ec945aca32573974faa4ac449b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "山",
       "海"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 49845,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "人山人海",
   "id": "e60bd36fe86d97674f7caf86",

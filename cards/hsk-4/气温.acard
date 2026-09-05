@@ -1,16 +1,20 @@
 {
   "audio": "77ce23d1d1d6c0fb4d37d59712b1ad3cb59abc93d7bc54d58368ca3451015a05.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12444,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "weather-climate"
+    ]
   },
   "hanzi": "气温",
   "id": "49a6493d5b82a9080de0394a",

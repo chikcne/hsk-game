@@ -1,16 +1,20 @@
 {
   "audio": "7b3b9749a4c65693c3c0a8fb690c028b2f7e3b8a47d9af9126ae654f08680378.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "转"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18567,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "转机",
   "id": "3a05de401d1aaddae4c89df5",

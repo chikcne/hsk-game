@@ -1,17 +1,21 @@
 {
   "audio": "1506664cbe1e0d23d4310957a3cabdbc1808de2f7aae50593ddb60fa86bc23ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6389,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "过于",
   "id": "79a475a594d12262381409c9",

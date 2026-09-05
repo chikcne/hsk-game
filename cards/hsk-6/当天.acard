@@ -1,17 +1,21 @@
 {
   "audio": "98b255f5e47602b2c03c52c46db53dae2f922e4f4939b289269b0913d4a17946.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天",
       "当"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6882,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "当天",
   "id": "af12fced69426117734a85da",

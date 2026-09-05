@@ -1,14 +1,18 @@
 {
   "audio": "0a5c9d7ec8c111dbc8d12f8ba824f7f610d06961e0f375d8e8dca88f7b6babde.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 25030,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "捕",
   "id": "c651f0c80bb4a25248db33c9",

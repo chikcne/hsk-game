@@ -1,17 +1,21 @@
 {
   "audio": "6b394b605d7e575756462759d032237e4bf2fdbf5784ad695c3165cab417ac69.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "暗",
       "黑"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1309,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "黑暗",
   "id": "e42fbb2e88878ffcf8dbccdf",

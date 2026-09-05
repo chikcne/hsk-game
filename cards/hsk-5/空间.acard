@@ -1,17 +1,21 @@
 {
   "audio": "5b3094a441ccfbfab2cab77961c80666004af7eaf8f0ec47c659e7bbbe98e6e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "空",
       "间"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2124,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "空间",
   "id": "4bb0833f2a84b6c0d974b338",

@@ -1,14 +1,18 @@
 {
   "audio": "6fdbcc68724fbbec13bb92881aee8607574250007047b829d42b67169bbb0106.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1871,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "娶",
   "id": "ed44002893a356ba8a9acdee",

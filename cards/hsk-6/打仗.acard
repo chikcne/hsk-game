@@ -1,16 +1,20 @@
 {
   "audio": "c6eca5b35dfe11f9568712b76b00839047a28a33e70188e2adb98262f27d12cd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "打"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3668,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "打仗",
   "id": "0ba32a79bdae2a1916fa8b58",

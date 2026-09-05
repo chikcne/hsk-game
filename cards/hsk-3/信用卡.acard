@@ -1,19 +1,23 @@
 {
   "audio": "8e9c6e40bbebd2413c6edc8356012a1331a3f5246746303bbda1cd7cf8bcaeb5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "信",
       "信用",
       "卡",
       "用"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4246,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "信用卡",
   "id": "458a2a11dca6ca000de702a7",

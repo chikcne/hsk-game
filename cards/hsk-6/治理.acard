@@ -1,17 +1,21 @@
 {
   "audio": "cb8b99ff80e93b6954dbaeb5c7009656f5b80d5936b8800563ac15552c6dd30e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "治",
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24512,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "治理",
   "id": "b03f75b7cb29136d511ed54c",

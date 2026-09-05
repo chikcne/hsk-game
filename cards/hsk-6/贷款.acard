@@ -1,16 +1,20 @@
 {
   "audio": "b556ea8f28d0ee5a262bf8a82955c3782cd3fa4a362f004ca7c3a531dcaee626.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "款"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5009,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "贷款",
   "id": "27070db7d4bf30d9321033de",

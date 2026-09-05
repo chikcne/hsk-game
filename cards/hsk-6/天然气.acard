@@ -1,18 +1,22 @@
 {
   "audio": "3158a94727959ed72e648bf83e04a2641ef4a8e59f8f6fe92eaba1fca5b6a6e6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天",
       "天然",
       "气"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15958,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "天然气",
   "id": "3169f97f8849e285fd73245b",

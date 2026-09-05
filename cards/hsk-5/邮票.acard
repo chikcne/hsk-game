@@ -1,16 +1,20 @@
 {
   "audio": "32c4ba4ef649fb52df301737e5a1dbba3ac33fb224c52bcad29938c8eb3d1a91.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "票"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14168,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "邮票",
   "id": "4f73f67533d514f1b68aae9d",

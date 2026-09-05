@@ -1,17 +1,21 @@
 {
   "audio": "884e6127ecdfe654308591482af0a34f984303afe336ea88b4e6b336eb0710c9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "已",
       "早"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5211,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "早已",
   "id": "e20e1d9b03ec87c54f1d69fc",

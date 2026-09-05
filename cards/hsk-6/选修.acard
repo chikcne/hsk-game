@@ -1,17 +1,21 @@
 {
   "audio": "d2a63b42be2f28e61fb2f1d1b8e4751b9011f185f94f52ddaa1826107015a2a0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "修",
       "选"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 67115,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "选修",
   "id": "2a437002704e6c5f4eb8d7bd",

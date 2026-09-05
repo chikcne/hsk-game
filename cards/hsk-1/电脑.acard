@@ -1,16 +1,20 @@
 {
   "audio": "cded83ba7c76df08dbafb65623b9430d37981102753b0329b2d607e4095cca60.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "电"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1505,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "电脑",
   "id": "11f99bef44b43f5cf4040f19",

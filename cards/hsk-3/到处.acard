@@ -1,17 +1,21 @@
 {
   "audio": "1304054063c2bc13ef7b789acb17772dc22804512d3f1ecfac8ac9097b953513.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "到",
       "处"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1002,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "到处",
   "id": "c7f888e686c8a17dc08a80d8",

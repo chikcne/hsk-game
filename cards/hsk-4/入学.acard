@@ -1,17 +1,21 @@
 {
   "audio": "a97b6ab1433078ea479ce258c528d9c7bce190c9aced9e016fff5b909ce70cc5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "入",
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18852,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "入学",
   "id": "15373571ab6cafdb600e0054",

@@ -1,17 +1,21 @@
 {
   "audio": "48dcea350b4fefb4268fdddadefa23755dac8c4c035d99ce8bfb3b9c92b2530a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "制",
       "度"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6277,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "制度",
   "id": "9ace8c8de1757f43fe87bc62",

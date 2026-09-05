@@ -1,16 +1,20 @@
 {
   "audio": "fd91faf66164dfffae8608709d1e1fea1e751d49c3cfe8226145e91bf6808cf9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "社"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9497,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "报社",
   "id": "b3c9616c38a737d868bdd709",

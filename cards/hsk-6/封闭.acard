@@ -1,17 +1,21 @@
 {
   "audio": "302ee903b95ce028d4a9a54ccc17254b75f497f5e479df8456f2e813b3a6d709.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "封",
       "闭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8273,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "封闭",
   "id": "26dcc1dfd96d8714492a476d",

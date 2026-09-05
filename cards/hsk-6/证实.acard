@@ -1,16 +1,20 @@
 {
   "audio": "3c1fb46b4edd04ece008c24bfa6b3ccfa984151637c4f464b35ce64dbb12bcf3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "证"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3419,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "证实",
   "id": "2be12b088083e51868407048",

@@ -1,14 +1,18 @@
 {
   "audio": "790a3cf0a66f9c69d436965f68e3a729088d00136cddefc9450e7cc7fa14239a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 25846,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "脆",
   "id": "6685c21b480b70b07ad15cbe",

@@ -1,16 +1,20 @@
 {
   "audio": "d1c3eefff6e4c3b2e1b8439c40498a659f3c2018c5a511fa845730425821e8a3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "电"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7851,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "电源",
   "id": "0c53407cd4419e08ddf7387d",

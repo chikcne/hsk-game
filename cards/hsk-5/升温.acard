@@ -1,16 +1,20 @@
 {
   "audio": "e3984eb3d3e6093d31c5a0f6b53b7ed1cd764f734a518ceb83646b7ca74748e1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "升"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33478,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "升温",
   "id": "e30a72a937d11fb50df57bea",

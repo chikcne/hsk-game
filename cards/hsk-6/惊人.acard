@@ -1,16 +1,20 @@
 {
   "audio": "95f2277f81a0b557328a4036d88b4068ad05d1e763b2af23fa31982587783012.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3096,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "惊人",
   "id": "11d6ae7570f36b04a6ade33a",

@@ -1,19 +1,23 @@
 {
   "audio": "4cf45c9a2dc6f946ad02a08305b794c65a5120be62441553b8e7221cd7f0d41b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "本",
       "笔",
       "笔记",
       "记"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7589,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "笔记本",
   "id": "93ee0fa6554d84f6850d286a",

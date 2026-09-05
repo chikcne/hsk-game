@@ -1,14 +1,18 @@
 {
   "audio": "43122f1d34161c2c9df70cbd65c93a8bf74f865002596894e733a902e3670f94.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10324,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "规律",
   "id": "792e2092efdb7184da2679a9",

@@ -1,17 +1,21 @@
 {
   "audio": "1d37d423c63a4435dc84371f76a43bbea7a3a6a5eb772560d638d9334868281e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "因",
       "而"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17828,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "因而",
   "id": "981ccf3bb213dfbc6ac2e46d",

@@ -1,17 +1,21 @@
 {
   "audio": "58022b0d585a0f6d50cf58349f443bef91400485ed22cddeafd9f981cfa421fc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "冷",
       "静"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 839,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "冷静",
   "id": "8b08de1918c7ac82725aec29",

@@ -1,17 +1,21 @@
 {
   "audio": "6e20097cc47e9ad4efd943a41c2f4c09a165494666c43d3883d7b9912a0df329.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "公",
       "办"
     ],
-    "frequency": null,
-    "grade": 4,
+    "frequency": {
+      "rank": 16043,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "办公",
   "id": "3a7e09f3b50d51e62e120098",

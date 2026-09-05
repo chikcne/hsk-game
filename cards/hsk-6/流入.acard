@@ -1,17 +1,21 @@
 {
   "audio": "8fed1fea6dce6d792122e763a262a01d9f500bcade1c7b2a2b741ca7ae1d5c32.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "入",
       "流"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22812,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "流入",
   "id": "570c168cfc73d8e7bcdc5846",

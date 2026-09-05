@@ -1,16 +1,20 @@
 {
   "audio": "a0c1cd9b52252ff9e86b0a66cf51d6cde6cbf380bb51049a51da9ce2e25f92ce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "的"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1774,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-particles-modals"
+    ]
   },
   "hanzi": "似的",
   "id": "7d359b3f0447617ec3b269da",

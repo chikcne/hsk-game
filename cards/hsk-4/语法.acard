@@ -1,16 +1,20 @@
 {
   "audio": "c65b459a12c10361517988af47796618e4862d35a3ae3798775f6ae0f712eede.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31317,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "language-writing"
+    ]
   },
   "hanzi": "语法",
   "id": "fcf434093b8d0d0d65c7c347",

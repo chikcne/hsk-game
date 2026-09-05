@@ -1,17 +1,21 @@
 {
   "audio": "d82c130c3b911499a0ad5eaa194658121e5ffeeb66165bd3bea7e97c63cc91b5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "有",
       "点"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6079,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "有点儿",
   "id": "41bce65e53f1ff0ba2d638b5",

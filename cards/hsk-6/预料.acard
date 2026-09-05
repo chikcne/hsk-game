@@ -1,16 +1,20 @@
 {
   "audio": "ab023cf4c9384cc80904a0720ef4be183769dbde9ac98b1682a81ec9b9866d8a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "料"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12232,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "预料",
   "id": "98845153e0cf705371f30630",

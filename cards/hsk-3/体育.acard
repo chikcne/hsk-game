@@ -1,14 +1,18 @@
 {
   "audio": "13466977073da4b402b8d6cda52767a79f6ba604d035e14a3b7799fb197822fe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7831,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "体育",
   "id": "915c808df1c1006e6ba34b1b",

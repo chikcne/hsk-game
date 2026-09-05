@@ -1,16 +1,20 @@
 {
   "audio": "ce5a820e0fc6ed44fade8685df6cb35897fa9d186d929a2081a55e772782d053.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4966,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "地震",
   "id": "731269ead91088df1eaeb666",

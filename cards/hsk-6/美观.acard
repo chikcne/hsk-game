@@ -1,16 +1,20 @@
 {
   "audio": "0bd4e1e6ab3b5dd8f2cc5990dfa1c680c582aae8f19eee36904dd31383360482.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "美"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 52346,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "美观",
   "id": "1765b7c45f22beafb59c042f",

@@ -1,17 +1,21 @@
 {
   "audio": "938a8470c85d4ef40762d445d0c58c89609f0a3e4498a2b5f37fee1325422e6a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "以",
       "往"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6538,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "以往",
   "id": "b7f1bd5f3b281035dba15cdc",

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { DeckId } from "../../src/shared/constants";
 import type { RuntimeDeck, RuntimeWord } from "../../src/shared/schemas";
 import { createReviewDeck } from "../../src/client/data/reviewDeck";
+import { curriculumFromWordIds } from "../../src/domain/learning";
 import { generateChoices, generateChoicesLenient, safeMeaningChoices } from "../../src/domain/session/choices";
 
 /** A small source deck: `wordCount` words whose meanings each start with a
@@ -36,6 +37,7 @@ function sourceDeck(id: DeckId, wordCount = 4, fingerprint = `${id}-fp`): Runtim
   return {
     schemaVersion: 1, importerVersion: "test", id, hskLevel: Number(id.at(-1)), title: id, fingerprint,
     source: { sharedId: 0, url: "test", packageSha256: fingerprint, sourceNoteCount: words.length, logicalWordCount: words.length },
+    curriculum: curriculumFromWordIds(words.map((word) => word.id)),
     words, meaningIndex, meaningKeysByPartOfSpeech,
     allMeaningKeys: words.map((word) => word.meaningKey),
   };

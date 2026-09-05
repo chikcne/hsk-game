@@ -1,17 +1,21 @@
 {
   "audio": "247f4b20c6679a2d6a50d7e369e5fb133e71d794404e5e82f42b4feb77f84b29.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "难"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7147,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "为难",
   "id": "10c70ffb51f78faa6746c282",

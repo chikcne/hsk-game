@@ -1,16 +1,20 @@
 {
   "audio": "947c91f4f3ac96f4b8be552eeb4a9dc778ff0ff9d0220c7094aa582af919c22b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "兵"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1388,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "士兵",
   "id": "4a90a229ca462efe37d1135f",

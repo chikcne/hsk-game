@@ -1,16 +1,20 @@
 {
   "audio": "fb4af968a27968f10b480ab891f05852bee0e2f3e40cc14e25db4db3f49ffe9a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7573,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "人体",
   "id": "6f4b59aec11173828c69831d",

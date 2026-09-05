@@ -1,16 +1,20 @@
 {
   "audio": "6ca7365692e0d5baa440da73ca8ddf54637154266db38bca8ebdedca9f1f6027.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 40578,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "车速",
   "id": "5e0bd8cdab01175ab8c1c4be",

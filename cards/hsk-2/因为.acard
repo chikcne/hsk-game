@@ -1,17 +1,21 @@
 {
   "audio": "7e3a584c58893f973f7013e8738d708a3dd9bef2d3e9086024315191a41b4280.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "为",
       "因"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 91,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "因为",
   "id": "73c52d5dcef1e14773f105e8",

@@ -1,18 +1,22 @@
 {
   "audio": "e57a506bb7d3aefaa47721216f5168b6f6f1ed1e9278282e30d333db5642f5ff.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "版",
       "电"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 209000,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "电子版",
   "id": "61d57dea8b11b63f5e396fe5",

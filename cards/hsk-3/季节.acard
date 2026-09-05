@@ -1,17 +1,21 @@
 {
   "audio": "4987f15d17dacbf08b3f8abf568906a62b17e34f2cedb6cd8f67daf724e8ba0b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "季",
       "节"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6591,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "季节",
   "id": "00fda7d3e08dafea50669b5e",

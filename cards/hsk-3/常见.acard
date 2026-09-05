@@ -1,17 +1,21 @@
 {
   "audio": "97d136682d4e51f59733ab67b66094f23b74e684a68c407dd2adece9d0fc9036.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "常",
       "见"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7477,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "常见",
   "id": "cadf30cbd8dd0993e71c2ef1",

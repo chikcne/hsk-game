@@ -1,16 +1,20 @@
 {
   "audio": "8498d27305ddad5d0742958641c1ced7f16ad78336c067792f2e5b6a9a46302d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "票"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4973,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "股票",
   "id": "7aa89153876ac53a938ed205",

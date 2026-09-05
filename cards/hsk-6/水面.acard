@@ -1,17 +1,21 @@
 {
   "audio": "25509893b94f19a826c6b8b7901ad18306871bb7dcf3096f3dc394e632a9d3cb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7516,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "水面",
   "id": "7184cc08ef6d2e9a0ea70b5f",

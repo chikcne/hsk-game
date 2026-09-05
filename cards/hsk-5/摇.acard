@@ -1,14 +1,18 @@
 {
   "audio": "3afb14750b88aa9a8d3bd3a84b0720048c1a1e35316c4a5b70ae79e7aa23a9f4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8314,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "摇",
   "id": "68529f3c254a033110bf9926",

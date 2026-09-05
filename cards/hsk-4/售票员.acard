@@ -1,17 +1,21 @@
 {
   "audio": "fff15db929a379cf7de96aaab1bfddc32340e5cda7215dbee411abd2574a63c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "员",
       "票"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 73623,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "售票员",
   "id": "55a35c85e347d470568388ba",

@@ -1,14 +1,18 @@
 {
   "audio": "39862f9c18f5b23950c1976c7312e1f859cce8477c0751f6fc3f8ffd2afb7ff8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 6,
+    "frequency": {
+      "rank": 3539,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "皮",
   "id": "7ac2ba6fff8a4c9f648e14a6",

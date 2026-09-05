@@ -1,17 +1,21 @@
 {
   "audio": "25c106686dfd322533045fd0eddbbecb7c60ee537edb1b27126d5262b3522d93.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "救",
       "灾"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 64358,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "救灾",
   "id": "9640a81f7e06dd41512f4da3",

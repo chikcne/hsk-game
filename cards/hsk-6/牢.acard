@@ -1,14 +1,18 @@
 {
   "audio": "41442b2a7fc8a6c9ec7a9b3c58dfcba6f590710456dbcf0637d04b9487338afa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8644,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "牢",
   "id": "739866b7b485c9a1ce71b0af",

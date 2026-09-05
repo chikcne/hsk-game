@@ -1,16 +1,20 @@
 {
   "audio": "0b96ae7930cf62c1459716d5f0b30c2464540c4a455fc520b0d59856602353ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "既"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1103,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "既然",
   "id": "f4e43cc58a8dc19230028728",

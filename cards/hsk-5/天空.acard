@@ -1,17 +1,21 @@
 {
   "audio": "9ca64f2403156f367067e8d9cf7c34bcdaf95fac413b20481f8cbf89f008f81f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天",
       "空"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2240,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "天空",
   "id": "54187771d8df42a54e4778e8",

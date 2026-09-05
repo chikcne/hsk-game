@@ -1,17 +1,21 @@
 {
   "audio": "3242c274924a44870231cc467bc7b7983cdbc994a86bf7c37b46d082649767e8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "加"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2236,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "加上",
   "id": "147ad957f19bd045d009abec",

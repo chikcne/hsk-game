@@ -1,14 +1,18 @@
 {
   "audio": "894f42e73466dd31e205098345c868428f3b9d75cd7720b9c81661631cc9b3f5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 4,
+    "frequency": {
+      "rank": 3095,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
+    "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "身",
   "id": "8a19dcb2f593255391707886",

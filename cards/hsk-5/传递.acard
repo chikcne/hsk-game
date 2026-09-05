@@ -1,17 +1,21 @@
 {
   "audio": "78e86600647483800dbe2618ed2e6fa6e43f6caa80cc8efa5a66fc3deda136fa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传",
       "递"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7988,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "传递",
   "id": "9deb7d265ff8b68c2e74eb0d",

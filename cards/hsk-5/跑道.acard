@@ -1,17 +1,21 @@
 {
   "audio": "3202cc86f9dcc329925cfee1e8ab96612216e7f7a3a8314bc0fb847a1ccc7de7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "跑",
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7688,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "跑道",
   "id": "965e6bbccdc03c7ec6511126",

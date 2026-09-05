@@ -1,17 +1,21 @@
 {
   "audio": "c579eba2d3b64c9816f34252a393216874edbe24d4ccea209dd37e93939f4332.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "套",
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4104,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "手套",
   "id": "16545fd46a804679d17b27f3",

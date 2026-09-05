@@ -1,14 +1,18 @@
 {
   "audio": "a0c643839da50644e90e3daedd7f74802c03e34dfaf9f403d6cd347af27103f7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1150,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "管",
   "id": "0fe5c0a49a5c1422e7dbe6b2",

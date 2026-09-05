@@ -1,16 +1,20 @@
 {
   "audio": "c0e21fe6d4be60ca4b25efad7780f5a0d9ae6d0b2b1cdd777c33d6110ee2828d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "在"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1768,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "在乎",
   "id": "68afdde499b8e3c2c7620e63",

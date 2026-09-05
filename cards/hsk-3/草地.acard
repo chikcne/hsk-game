@@ -1,17 +1,21 @@
 {
   "audio": "c87790e2951b3c102ea48ccac0a63735c6ddd8526f6aa9900a6e51dff73f525f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "草"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10488,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "草地",
   "id": "05d3ecbbb46be2a2f11d9cc7",

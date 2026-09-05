@@ -1,16 +1,20 @@
 {
   "audio": "c0b73373c93a5f43dc8bf6a7f419476cebd135d1064148bd296e2e6ca3cad73a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "近"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 883,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "附近",
   "id": "367e268d53aa84f835f4d2a9",

@@ -1,14 +1,18 @@
 {
   "audio": "d5425b494622c1fb5716d1efbbde85d6fd4f28f1bc9ffd45cbf54ed58ddb06c4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2397,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "午餐",
   "id": "86ed237e7b587e5ab6669be7",

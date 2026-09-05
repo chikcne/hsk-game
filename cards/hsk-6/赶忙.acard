@@ -1,17 +1,21 @@
 {
   "audio": "2d528dfe740e593be80fe548725d4adb9c507d954b840ae0de5b7ff1e955e5f3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "忙",
       "赶"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 123940,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "赶忙",
   "id": "ed3642b41b14493f888981bc",

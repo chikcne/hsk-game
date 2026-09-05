@@ -1,17 +1,21 @@
 {
   "audio": "9781e603e1dc9c10dad49e45a0e1d64a22154b075802a2f5ab6142e01bd9a81b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19381,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "出行",
   "id": "7cbfe41f3eb6242016285c62",

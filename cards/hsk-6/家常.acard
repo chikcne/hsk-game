@@ -1,17 +1,21 @@
 {
   "audio": "e54d93d912fcecf6d46719ca423f621502f2c5c8915615c3f21084209f03038e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家",
       "常"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 35973,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "家常",
   "id": "5fa316b5ea58b37e1213bfe5",

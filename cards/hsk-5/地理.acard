@@ -1,17 +1,21 @@
 {
   "audio": "1efaad14bbb4edd46c3bd4eac6768a35863625570e43e60918ab635682b8ba3b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16008,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "地理",
   "id": "c73a604816c6fb7fe9e10f78",

@@ -1,16 +1,20 @@
 {
   "audio": "621e8f03c81774eb43256459913c0fb76f362bb4c67a5f91badf2253550c0fdd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14238,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "perception-senses"
+    ]
   },
   "hanzi": "观光",
   "id": "1578c9d8a68abd3e1556455f",

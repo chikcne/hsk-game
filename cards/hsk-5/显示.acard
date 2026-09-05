@@ -1,16 +1,20 @@
 {
   "audio": "16616483f70077028588794e2f28954c6ca974f38d0534080ee677f3acd049a3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "显"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1855,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "显示",
   "id": "c43f201a4b354a5fa2f9d050",

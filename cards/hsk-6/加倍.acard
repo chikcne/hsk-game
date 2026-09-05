@@ -1,17 +1,21 @@
 {
   "audio": "2512a5d8bfc1e86134f1178fac0d2140d53ca3841b39d907238396aa03f6e7fa.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "倍",
       "加"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11518,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "加倍",
   "id": "0ae9933b72d405ebe2dba99b",

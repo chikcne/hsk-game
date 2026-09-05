@@ -1,17 +1,21 @@
 {
   "audio": "0f791ecf57eae9bde4fa649e9c615d242fd6f91611354bc0e57f828f4cc9d356.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "气",
       "运"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2353,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "运气",
   "id": "69920deb54b4f1249e9e2863",

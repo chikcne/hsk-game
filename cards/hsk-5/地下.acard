@@ -1,17 +1,21 @@
 {
   "audio": "55809cd33cc5abbe480be174b3cd1dad708ece0b0be78015bd1e3fa710bcfaeb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "地"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2867,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "地下",
   "id": "f428fcca95c918f380148863",

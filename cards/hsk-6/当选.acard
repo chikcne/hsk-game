@@ -1,17 +1,21 @@
 {
   "audio": "990f457d219e7ccf73ff6387c3f0743707b5053c12a9268573497cb49378915c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "当",
       "选"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10896,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "当选",
   "id": "602d6616096295d66d047592",

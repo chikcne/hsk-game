@@ -1,17 +1,21 @@
 {
   "audio": "34bc0f86d8b061ffab827e0ac2d01e5f4559bf2822c05681eae295a0e876dc7a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "业",
       "事"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2552,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "事业",
   "id": "df4c081b628cfcde1924b3d7",

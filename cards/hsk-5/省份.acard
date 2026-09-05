@@ -1,17 +1,21 @@
 {
   "audio": "6eee92ae394e1ee748efa9b0e44639d1b24b1bd6ba8ac7ea1e1f69fd3e8d192c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "份",
       "省"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 57980,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "省份",
   "id": "c21a01ff77ef89b82d0263bb",

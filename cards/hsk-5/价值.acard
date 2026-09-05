@@ -1,16 +1,20 @@
 {
   "audio": "1e1538137b6ce2fede2c3bdb9f46738ed3031016af465802ff122bd476f0afd2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "值"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1856,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-evaluation"
+    ]
   },
   "hanzi": "价值",
   "id": "809d4ebe78d86aef94bf7c90",

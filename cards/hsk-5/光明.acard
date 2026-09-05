@@ -1,16 +1,20 @@
 {
   "audio": "6c2265e478036be894955b8aa1a6e5a939e7d70217fac8a2654e237da1fabc88.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4940,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "光明",
   "id": "b7979fb132ae5b95b8016834",

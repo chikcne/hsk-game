@@ -1,16 +1,20 @@
 {
   "audio": "9e4b269d666b45c8422f7da56bab9c91d42605371486cc164f108ccbb3707214.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "市"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16232,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "股市",
   "id": "b2a8655e4b5c4aaa45b6653d",

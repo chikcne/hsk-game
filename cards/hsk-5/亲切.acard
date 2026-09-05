@@ -1,17 +1,21 @@
 {
   "audio": "e12c0356fd934fe4a33ec37bf76e12da08c38e3b9e81151267fe239cbfa4c0a7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "亲",
       "切"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9913,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "亲切",
   "id": "f0bed34f53fec22772170889",

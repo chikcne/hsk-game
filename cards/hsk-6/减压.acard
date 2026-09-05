@@ -1,17 +1,21 @@
 {
   "audio": "f659c5cfcfaaa7b6013b81692c14915480faed7d3466ec37c21813acc416afe3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "减",
       "压"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30748,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "减压",
   "id": "dbe43cbc7a54d1d7848a71c2",

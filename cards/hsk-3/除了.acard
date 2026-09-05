@@ -1,17 +1,21 @@
 {
   "audio": "bac21a504077bd6509adbc5b99800da71cfc42234b9b4a641b32996e24a27d4f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "了",
       "除"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 716,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "除了",
   "id": "355ee96f515f0a89e5aecc68",

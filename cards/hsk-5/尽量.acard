@@ -1,17 +1,21 @@
 {
   "audio": "cd0637cc8253139e303ad256071523e4ffed3999f731a2da399f5a4fb699e915.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "尽",
       "量"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2304,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "尽量",
   "id": "290f48eca33e2780cacca239",

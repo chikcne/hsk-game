@@ -1,18 +1,22 @@
 {
   "audio": "13b5be677fc197ba47862d651f10b67eca038987fbcf6392cef84df93c9c1d4a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "压",
       "岁",
       "钱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 138557,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "压岁钱",
   "id": "62b32249dba86dc0473d1437",

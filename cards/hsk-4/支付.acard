@@ -1,17 +1,21 @@
 {
   "audio": "73c8e4b5bc577c8ef5858958a959a1d3bacde9f30c36982707f41a8b02c1e885.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "付",
       "支"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2791,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "支付",
   "id": "1eb8a0fa37c95a61e3d3f03b",

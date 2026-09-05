@@ -1,17 +1,21 @@
 {
   "audio": "712e5641427f9d94fcb2e88f4875505a72643ac4b79bf8c7d5f87c448d13c480.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "到",
       "底"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 305,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "到底",
   "id": "0b4e9fa4a4c52fdc1bbb63e5",

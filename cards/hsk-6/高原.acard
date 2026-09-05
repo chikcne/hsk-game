@@ -1,17 +1,21 @@
 {
   "audio": "d42bb74b25a75426b851d6d4cc46bc00087d17893642b17e040b34c01b6d9c99.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "原",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23191,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "高原",
   "id": "9c2ec11561efcd131962d341",

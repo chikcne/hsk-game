@@ -1,14 +1,18 @@
 {
   "audio": "ebc591132bee0c9cab9552151d8fb2b44812d9459443b2c774a4b35251d7c5fd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 22123,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "枯燥",
   "id": "e9fb8fbc45cec6519f7968af",

@@ -1,17 +1,21 @@
 {
   "audio": "bf053ac2eaf93ac53789fcd11df82625cf8178ca23e0a9b4d5f6da80114f5250.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "球"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 830,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "地球",
   "id": "7e7e08a5ef231808b92fec61",

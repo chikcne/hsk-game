@@ -1,16 +1,20 @@
 {
   "audio": "aaf59471dd8fe4ae6d2b30662209110abe008a2696c108c17da31d7f5cbd4c14.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "严"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5309,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "严格",
   "id": "5359ccda5158a8e4b7e37ebc",

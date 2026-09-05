@@ -1,17 +1,21 @@
 {
   "audio": "05cabdfe4a055c18d988d4e0a4b60315e0a175f7f1bff93a9dca9662438baa4d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力",
       "风"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31016,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "weather-climate"
+    ]
   },
   "hanzi": "风力",
   "id": "0486749e432a8562090e4f07",

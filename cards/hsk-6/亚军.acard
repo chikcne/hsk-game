@@ -1,14 +1,18 @@
 {
   "audio": "060d490470877179ef9da2244cc75cecd9fa2fbb75fbcb2efe689c93a53fc8c8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 33491,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "亚军",
   "id": "60dbbbde322220652a1a34f8",

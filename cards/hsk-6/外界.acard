@@ -1,16 +1,20 @@
 {
   "audio": "496f29922862555dce06a6884b136714f9d03945cca8d5156f275be378270e2c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9638,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "外界",
   "id": "b1e4393d656491ca908077b3",

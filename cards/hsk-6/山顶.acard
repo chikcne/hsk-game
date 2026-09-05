@@ -1,17 +1,21 @@
 {
   "audio": "ab30404568ed0f1f893817daea9c5751bb86cde4a103c4d4a8aeef82c8345be8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "山",
       "顶"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8976,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "山顶",
   "id": "d45e24036b7c8b1611bc3452",

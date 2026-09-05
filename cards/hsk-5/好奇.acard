@@ -1,16 +1,20 @@
 {
   "audio": "31566aa2ef9f63d3cd098e66e940f27c36cd1407e0da14ec9992f0bd3e105092.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "好"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2320,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "好奇",
   "id": "58d8b36c36f440f8b9aa9c78",

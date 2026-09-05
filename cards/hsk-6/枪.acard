@@ -1,14 +1,18 @@
 {
   "audio": "405427a0411bcb5ddd9ae3d86931ffa84b2141a17fe56b33d444d4e11e62c0c8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 496,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "枪",
   "id": "4a57d3bad14e25eb2f2b3a13",

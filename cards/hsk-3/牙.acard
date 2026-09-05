@@ -1,14 +1,18 @@
 {
   "audio": "e6f8ba8909e2f4c4bb55306da9896f0dfee6d051ec22bbb66f37ee3a3eb18893.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6028,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "牙",
   "id": "9767c31cd8888fbd43979884",

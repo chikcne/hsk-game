@@ -1,14 +1,18 @@
 {
   "audio": "9ca68190b3fd01f3461085e5ac3a452f3d7d8b9bee859284eed25bc678553253.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 10117,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "展览",
   "id": "df1da5f6bc5514e550ed3923",

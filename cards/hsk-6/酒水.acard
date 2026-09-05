@@ -1,17 +1,21 @@
 {
   "audio": "606797cc9227f8c067ac14c10eaf7402c3ec20c8ca7f49a49a363c43bdde0f07.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水",
       "酒"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27968,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "酒水",
   "id": "f288926bd92cacc79a957430",

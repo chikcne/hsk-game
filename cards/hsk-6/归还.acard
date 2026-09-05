@@ -1,17 +1,21 @@
 {
   "audio": "789463c40cf98986147707e9ee431faa0f69276f0d80135448fdb7195a66c20b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "归",
       "还"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12574,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-giving-getting"
+    ]
   },
   "hanzi": "归还",
   "id": "5d144d42d8e6af187809e8b2",

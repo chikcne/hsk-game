@@ -1,14 +1,18 @@
 {
   "audio": "f6e4047857ca4f907da2c717d4082acae5fa778e383f3b5a30fe9dc97902d2e4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 32993,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "应聘",
   "id": "5fb939b7392b0a9482e643c1",

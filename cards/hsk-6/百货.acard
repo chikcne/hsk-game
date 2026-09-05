@@ -1,17 +1,21 @@
 {
   "audio": "8e819b5d70b0b2a3e34e8e377165ce530e724ee08c005fe49347dbd1b5873d24.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "百",
       "货"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 28631,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "百货",
   "id": "209542802ea03d3a36caefdb",

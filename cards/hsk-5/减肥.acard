@@ -1,17 +1,21 @@
 {
   "audio": "f4a864ebbb52eb7bc951658193183933bd0a25b90726ffb1d8ec98d1e9cf37b9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "减",
       "肥"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9169,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "减肥",
   "id": "665ede5bba5efe5fb5665bdf",

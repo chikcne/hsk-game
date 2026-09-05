@@ -1,16 +1,20 @@
 {
   "audio": "eb4148a965710492b5405adf982936977cf0c77ed32393cd8f10bc2686009204.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "谈"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1696,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "谈论",
   "id": "b8e81bfa167d47d52d209908",

@@ -1,14 +1,18 @@
 {
   "audio": "4470fdf9c2c6fc790075f9cf1f65733e5ec6a2364bc5a204de0c60bd14794571.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 3,
+    "frequency": {
+      "rank": 931,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
+    "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "酒",
   "id": "d5c45ba69a01f901d572f1ef",

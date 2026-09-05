@@ -1,17 +1,21 @@
 {
   "audio": "2aabbfef4c2c734648a6b27104be1dcb2971c56ef151d824dea408ebcae42986.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天",
       "白"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3300,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "白天",
   "id": "104099cc5f3a9bebb39be860",

@@ -1,17 +1,21 @@
 {
   "audio": "6a53bbe0a2cc8c58f8651f79eb1094ceb859c8fcea16fdd34fcc27229f1bafdf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "围",
       "绕"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7403,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "围绕",
   "id": "923a7fb86a3bdd6c9c047f67",

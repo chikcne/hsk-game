@@ -1,17 +1,21 @@
 {
   "audio": "ed56dbb7c11d883bd60268ce1d469fadbd74c815dde11799a3e7b30f976f73c9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "手",
       "歌"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3018,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "歌手",
   "id": "14978c59fee52118ca8f8106",

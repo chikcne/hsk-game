@@ -1,18 +1,22 @@
 {
   "audio": "a0160c1fa8f33a585279e3bfb03501b5055990b3eb88ff52996f38f26c6b7980.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "行",
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12672,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "人行道",
   "id": "926f130979f1157b644405ee",

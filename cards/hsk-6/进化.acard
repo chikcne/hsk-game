@@ -1,17 +1,21 @@
 {
   "audio": "92d8bd9703a13f4023fda92be11a4b71433d3454ac762d63e20a93644e2fb350.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "化",
       "进"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6563,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "进化",
   "id": "822663b35870a0a82a054edc",

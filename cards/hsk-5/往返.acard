@@ -1,16 +1,20 @@
 {
   "audio": "17ca03e27f5a6f5e356dd7238e3f53a0a80c6aec41758b7ab62374352df88383.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "往"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25035,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "往返",
   "id": "857f07b110cf6adc546debcd",

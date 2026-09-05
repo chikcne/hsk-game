@@ -1,17 +1,21 @@
 {
   "audio": "d4ab9892147413c12a7d7ec5efe62c197a0bdedfdd584481892d6b7c6d3d9b40.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "门"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16053,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "上门",
   "id": "c5fd6e856ff88c72a98ea668",

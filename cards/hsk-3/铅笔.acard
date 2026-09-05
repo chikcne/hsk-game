@@ -1,16 +1,20 @@
 {
   "audio": "e4b94461b74ddd963dda2390153b348ecf0356484906da7e4b89a600c898c272.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "笔"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11039,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "铅笔",
   "id": "e9b48178258bcc9f9935198a",

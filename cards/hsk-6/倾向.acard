@@ -1,16 +1,20 @@
 {
   "audio": "969c12dde391ad6079663373457c58550f37739a74ca970f0803e5df72979c47.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "向"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6329,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "倾向",
   "id": "c6dcfee16c174a8d5ce28443",

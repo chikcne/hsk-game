@@ -1,14 +1,18 @@
 {
   "audio": "19f3423c623c6a47182b9b4df7e4cb6ca5088ad15ce294d0287ce7f20178e4ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6253,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "挤",
   "id": "5fe7d68c96b217ab83d5fa3c",

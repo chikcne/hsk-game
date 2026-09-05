@@ -1,14 +1,18 @@
 {
   "audio": "82afc94f6cce0e2b3e41e8dda66833bd7ac212a8848a08d477df204bcce79946.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6180,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "蝴蝶",
   "id": "db727d5e730a67fec4d87cb0",

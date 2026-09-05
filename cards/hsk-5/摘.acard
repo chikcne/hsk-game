@@ -1,14 +1,18 @@
 {
   "audio": "96002121f73893ad5ce41431b2e789d014e62fb49628bcf2d00cc59908d39a45.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8914,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "摘",
   "id": "05a39ef7024aa2ddf7f7ba57",

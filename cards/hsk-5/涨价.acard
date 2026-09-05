@@ -1,16 +1,20 @@
 {
   "audio": "223ee02f37bee6c47230e9b071d2a6a8731eeba6d6fa2a56535a23a8af34c7ba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "涨"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 38366,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "涨价",
   "id": "2746cda0767470e1e79ca876",

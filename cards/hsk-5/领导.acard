@@ -1,16 +1,20 @@
 {
   "audio": "ff02a58406476ec6a11ff638df33bee3476995a2c9a9d22a65f4cf4f4e258767.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "领"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3182,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "领导",
   "id": "cfb368526170fae6f63201f7",

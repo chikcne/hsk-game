@@ -1,16 +1,20 @@
 {
   "audio": "50231cfded3ce93ef259d02370e82363fc500d5577623bd2046f95e3a9b69665.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5292,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "专心",
   "id": "9cb83cded4d0c54a081b9b5a",

@@ -1,16 +1,20 @@
 {
   "audio": "5cc167a5e1ee5fa6fb38071de42033668df9f7be2b7244c813b926676d35d8d4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "处"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15830,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "处处",
   "id": "cf3f3c49a345e988d9c762ae",

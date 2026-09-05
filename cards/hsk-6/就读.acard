@@ -1,17 +1,21 @@
 {
   "audio": "06d24979bc112518749eda62efa5c9dcf376aff391e47501787ddd67ec9a9137.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "就",
       "读"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23122,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "就读",
   "id": "0301ad65a2a1a013cd43107b",

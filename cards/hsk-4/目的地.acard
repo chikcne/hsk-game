@@ -1,18 +1,22 @@
 {
   "audio": "8c96803c67db2b4d2cd4c2db59451c4028371a8fc99d83e8492a3870c5371f1e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "的",
       "目的"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5495,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "目的地",
   "id": "d11dc2d1342b1e5d48c5075d",

@@ -1,17 +1,21 @@
 {
   "audio": "0a95366a7133b23a9f2d3786d714bbe8dacce3fed97a2ffd1634697bde70c8ea.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "从"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8378,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "从中",
   "id": "1f9eb2ebd3d594b658176312",

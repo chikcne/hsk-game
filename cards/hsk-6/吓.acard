@@ -1,14 +1,18 @@
 {
   "audio": "f138792697182bbcc914e8fec3e8cd8e10a6b2ba5a8f251909e50553a0311528.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1213,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "吓",
   "id": "d2d67f4dcc6214fea4514552",

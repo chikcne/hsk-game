@@ -1,16 +1,20 @@
 {
   "audio": "bc4522e6fcf8574d78741ca4ad538356acb272a1d10d7ef4e22879ec6c44a70f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "季"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 74488,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "季军",
   "id": "5037074671a000f4426673fd",

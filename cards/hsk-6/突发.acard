@@ -1,16 +1,20 @@
 {
   "audio": "aee6538adc5b32dd8f6de0d4adc80f1732f96ddfa42345f5de51f28161010893.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 15317,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "突发",
   "id": "e30e6629b2a8816489d30a55",

@@ -1,17 +1,21 @@
 {
   "audio": "f2f72611d9f0b62109337ebea6921b1f40ab6efa00af8cadb5e7ab8eb7313f16.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "皮",
       "调"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17339,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "调皮",
   "id": "76de8aab579af2d3e5c10b82",

@@ -7,7 +7,7 @@ export const SettingsSchema = z.object({
   spawnIntervalMs: z.number().int().min(1500).max(10_000),
   enemySpeedMultiplier: z.number().min(0.65).max(1.5),
   /** Learn Mode: maximum brand-new curriculum words introduced per session. */
-  levelSize: z.number().int().min(5).max(100),
+  levelSize: z.number().int().min(5).max(20),
   /** Review Mode: exact length of the nonpersisted base spawn plan. Repair
    * retries for missed words are additive on top of this target. */
   reviewSessionLength: z.number().int().min(200).max(500),
@@ -24,6 +24,15 @@ export const RuntimeWordSchema = z.object({
   audioUrl: z.string(),
 });
 export type RuntimeWord = z.infer<typeof RuntimeWordSchema>;
+export const RuntimeCurriculumLessonSchema = z.object({
+  id: z.string().min(1),
+  wordIds: z.array(z.string().min(1)).min(1).max(20),
+});
+export const RuntimeCurriculumSchema = z.object({
+  rulesVersion: z.string().min(1),
+  lessonSize: z.literal(20),
+  lessons: z.array(RuntimeCurriculumLessonSchema).min(1),
+});
 export const MeaningIndexEntrySchema = z.object({
   label: z.string(), wordIds: z.array(z.string()), hanziKeys: z.array(z.string()), partOfSpeechKeys: z.array(z.string()),
 });
@@ -33,6 +42,24 @@ export const RuntimeDeckSchema = z.object({
   source: z.object({ sharedId: z.number(), url: z.string(), packageSha256: z.string(), sourceNoteCount: z.number().int(), logicalWordCount: z.number().int() }),
   words: z.array(RuntimeWordSchema), meaningIndex: z.record(MeaningIndexEntrySchema),
   meaningKeysByPartOfSpeech: z.record(z.array(z.string())), allMeaningKeys: z.array(z.string()),
+  curriculum: RuntimeCurriculumSchema,
+}).superRefine((deck, ctx) => {
+  const wordIds = deck.words.map((word) => word.id);
+  const curriculumIds = deck.curriculum.lessons.flatMap((lesson) => lesson.wordIds);
+  const addIssue = (path: Array<string | number>, message: string) => ctx.addIssue({ code: z.ZodIssueCode.custom, path, message });
+  if (new Set(wordIds).size !== wordIds.length) addIssue(["words"], "runtime word IDs must be unique");
+  if (new Set(deck.curriculum.lessons.map((lesson) => lesson.id)).size !== deck.curriculum.lessons.length) {
+    addIssue(["curriculum", "lessons"], "curriculum lesson IDs must be unique");
+  }
+  if (new Set(curriculumIds).size !== curriculumIds.length) {
+    addIssue(["curriculum", "lessons"], "curriculum word IDs must be unique");
+  }
+  if (curriculumIds.length !== wordIds.length || curriculumIds.some((id) => !wordIds.includes(id))) {
+    addIssue(["curriculum", "lessons"], "curriculum must contain every runtime word exactly once");
+  }
+  if (deck.source.logicalWordCount !== wordIds.length || deck.source.sourceNoteCount !== wordIds.length) {
+    addIssue(["source"], "runtime source counts must match the effective word count");
+  }
 });
 export type RuntimeDeck = z.infer<typeof RuntimeDeckSchema>;
 
@@ -57,7 +84,7 @@ export type ComponentMemory = z.infer<typeof ComponentMemorySchema>;
 /** Per-word progress for one grade. The single `card` is the only memory
  * authority: it is mutated exclusively by Learn Mode's explicit ratings.
  * Review battle never writes it. The old separate pinyin/meaning memories are
- * gone (save schema v4 is a fresh start — older saves fail validation and
+ * gone (save schema v5 is a fresh start — older saves fail validation and
  * are not migrated). */
 export const WordProgressSchema = z.object({
   card: ComponentMemorySchema,
@@ -74,7 +101,7 @@ export type WordProgress = z.infer<typeof WordProgressSchema>;
 
 export const LevelProgressSchema = z.object({
   deckId: DeckIdSchema, deckFingerprint: z.string(),
-  curriculumSeed: z.string(), curriculumCursor: z.number().int().nonnegative(),
+  curriculumCursor: z.number().int().nonnegative(),
   firstCompletedAt: z.string().nullable(),
   words: z.record(WordProgressSchema), orphanedProgress: z.record(WordProgressSchema),
 });
@@ -146,7 +173,7 @@ export const LifetimeSchema = z.object({
   bestStreak: z.number().int().nonnegative(), totalThinkingMs: z.number().nonnegative(),
 });
 export const SaveFileSchema = z.object({
-  schemaVersion: z.literal(4), profileId: z.literal("default"), revision: z.number().int().nonnegative(), savedAt: z.string(),
+  schemaVersion: z.literal(5), profileId: z.literal("default"), revision: z.number().int().nonnegative(), savedAt: z.string(),
   settings: SettingsSchema,
   /** Global spawn counter shared by every mode; review battles still advance
    * it, and a word's introduction ordinal is recorded against it. */

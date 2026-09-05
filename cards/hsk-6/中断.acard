@@ -1,17 +1,21 @@
 {
   "audio": "2f55ab72111d0e1160530b7272b4e2a5d00fce0c86fac6f158d41149d294c20c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "中",
       "断"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7618,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "中断",
   "id": "aa55dfec55ae8b28e4b15c55",

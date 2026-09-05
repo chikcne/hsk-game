@@ -1,17 +1,21 @@
 {
   "audio": "69242bf757369713037c61f4052afc48a1ba2b0bacd70e4a57d966b63a4060f9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3042,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "地面",
   "id": "46a5dc37e6fd193fec64031d",

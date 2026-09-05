@@ -1,17 +1,21 @@
 {
   "audio": "3e0931d87e07ce157883ed7a53d3338ce05753d5e9ef4a14e35c44bb5af4e5e7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "必"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1035,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "不必",
   "id": "ff6492ac79b4936f34c4d921",

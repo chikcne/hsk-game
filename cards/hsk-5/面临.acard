@@ -1,16 +1,20 @@
 {
   "audio": "d2bb8631748823947291637a6332353a8e9923a4381c63534cf49fe109b0c2d1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4236,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "面临",
   "id": "4aa314e99dfd6b3e54fe1556",

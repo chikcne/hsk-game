@@ -1,16 +1,20 @@
 {
   "audio": "cf3e6fd18848444509a301d3bdf4bb038d945b860897f5fbcfb2728f6c62600b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 23742,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "传授",
   "id": "9a3e2ba6775fa180156aeac2",

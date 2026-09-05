@@ -1,16 +1,20 @@
 {
   "audio": "b2485bb730a10e4922f0944c3b30e6e3af9c27778c0671d6d9407fe47df9c6a0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "神"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2287,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "神奇",
   "id": "abc63cd39b1945fcfcf8341b",

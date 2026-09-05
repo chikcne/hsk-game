@@ -1,18 +1,22 @@
 {
   "audio": "219a8b2cb32961d2bbdaf9cf8fcd8723619e3b0eadb9d9b489d1b8cb218e450c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "好",
       "意思"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 627,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "不好意思",
   "id": "4218af64eff0f4076b1d386e",

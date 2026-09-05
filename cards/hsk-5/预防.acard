@@ -1,16 +1,20 @@
 {
   "audio": "68c1a67986716c0add426ec21355f5099d15a3767b5a176e83904d99e2d02154.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "防"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16196,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "预防",
   "id": "8db50651b2d71197d22e6d33",

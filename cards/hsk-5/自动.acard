@@ -1,17 +1,21 @@
 {
   "audio": "9dcfead4ae44104fc77369806255e5b6b70629c9bb436d442eaa3b33ee09804f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3764,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "自动",
   "id": "56d1c02be201a4dd30e1d8dc",

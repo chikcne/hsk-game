@@ -1,17 +1,21 @@
 {
   "audio": "85da7efe1d077416e0142b8611605b57b0896145c776beb634fb5c949d45e6c7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "公",
       "安"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17562,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "公安",
   "id": "da5aca678f72bc3c4a21ff47",

@@ -1,14 +1,18 @@
 {
   "audio": "58f49a7544e108555bf0ff6877a58aca8ef4d27d6a692cda6df06b2db14b5f04.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9936,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "吨",
   "id": "21aba74fcb0d8de35e35ce43",

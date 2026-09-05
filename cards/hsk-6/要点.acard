@@ -1,17 +1,21 @@
 {
   "audio": "99b44cac4008d8e13732400e64f19d49fbe4037f9174bd9a9b30859a36523125.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "点",
       "要"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6667,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "要点",
   "id": "935fd1186f635c3f2c7daf2c",

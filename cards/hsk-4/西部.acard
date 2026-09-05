@@ -1,17 +1,21 @@
 {
   "audio": "170d864816393f7ec9205f6ad5f57deaed835827c4fb2af8318baa716eb1bcc1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "西",
       "部"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5117,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "西部",
   "id": "779a2d3ccf065471740a29d9",

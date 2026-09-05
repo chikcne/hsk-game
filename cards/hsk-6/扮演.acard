@@ -1,16 +1,20 @@
 {
   "audio": "6d722c1512da6ebb765058105b95b37534b5f8952d70e7bbcacdb8aa2f9bc195.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "演"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3777,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "扮演",
   "id": "39674431be26dad63dc5d3a4",

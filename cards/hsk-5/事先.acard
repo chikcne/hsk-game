@@ -1,17 +1,21 @@
 {
   "audio": "bf753ecb7fa349c2db558cbbd0269212df1794bdded22019ed48740bba41bf88.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事",
       "先"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5515,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "事先",
   "id": "f6b0794609bc9bed6e43ce62",

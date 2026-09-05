@@ -1,16 +1,20 @@
 {
   "audio": "0d3d17dffc2f9e2997064e5f3b68725e83d09c28207cf11083bbcb5d6f74cd84.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "通"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33531,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "畅通",
   "id": "3a2b6943da874e64ed76a077",

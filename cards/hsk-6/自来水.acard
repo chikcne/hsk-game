@@ -1,18 +1,22 @@
 {
   "audio": "bac7665b6a0afc618f8ed9f548a4495ecc5845fe0e9e0d96fe9854bc26da6d73.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "来",
       "水",
       "自"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27535,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "自来水",
   "id": "c46664617ee2cff24fbb1cfd",

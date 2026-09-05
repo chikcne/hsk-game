@@ -1,17 +1,21 @@
 {
   "audio": "86cf57b65b25f29044749ef0f20c8eff615a178250ecbd2de2e97f5ff4d226e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "占",
       "线"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 50821,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "占线",
   "id": "001a4e3a90254aebe6c32deb",

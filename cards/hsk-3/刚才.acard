@@ -1,17 +1,21 @@
 {
   "audio": "11dca38fdc6e8f7984acdad83df07d292e95db9f775c2be268c20af2ad3f89c2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "刚",
       "才"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 528,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "刚才",
   "id": "54b3803dcb1ff28f4b9cc0d0",

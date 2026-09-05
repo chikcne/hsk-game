@@ -1,14 +1,18 @@
 {
   "audio": "ef50268ab38dbf19300522ffe8d56bb1e46f23e251a2237dfe3ce0238c95267e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 13169,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "咳",
   "id": "4d47a55043cc175d661ba6aa",

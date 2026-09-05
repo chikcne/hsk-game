@@ -1,17 +1,21 @@
 {
   "audio": "42d48e23e2b0f68ed9a8df270e9442e173ec900c93497e762a379470fda0547d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17534,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "不时",
   "id": "170e59ea5751ae94a51ac12e",

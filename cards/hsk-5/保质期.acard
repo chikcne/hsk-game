@@ -1,17 +1,21 @@
 {
   "audio": "6053abac61ce1017b8829f66acc4682eb483b9bff510c5f358121cd04cfe0421.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "保",
       "期"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 68023,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-calendar"
+    ]
   },
   "hanzi": "保质期",
   "id": "82953178aa54bc25b89b85c8",

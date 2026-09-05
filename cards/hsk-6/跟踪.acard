@@ -1,16 +1,20 @@
 {
   "audio": "bddad5639e97494140f775aef1150ddd58c0e23fd2022f79aed53e5a655a07d5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "跟"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1653,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "跟踪",
   "id": "196fe06cba3f56ab46526f5d",

@@ -1,17 +1,21 @@
 {
   "audio": "91cdfbb1719bf52a7ece446195daaed1489abcc83dac844d89a961dd98d4d65d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "使",
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5255,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "大使",
   "id": "b673d0747d8c90537a170767",

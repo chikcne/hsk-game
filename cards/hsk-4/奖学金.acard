@@ -1,17 +1,21 @@
 {
   "audio": "95c94b6ca883afb66094f342912f21b4068e4060c11bb31f8b4f229b87d25b8b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "奖",
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8254,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "奖学金",
   "id": "9de01fa29f128ab8d4a23a27",

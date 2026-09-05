@@ -1,17 +1,21 @@
 {
   "audio": "c36785dd04eaf18a413c2785af2720616448c83c02c1f714e4ce137e339083d4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "帮",
       "忙"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 656,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "帮忙",
   "id": "f0c217c53bdda992fea8efa7",

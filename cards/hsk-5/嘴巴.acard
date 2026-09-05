@@ -1,16 +1,20 @@
 {
   "audio": "ced0147af410e9caf33544f59d34383874517872b8ff414c00316e099c6f4f14.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "嘴"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4346,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "嘴巴",
   "id": "624d69e7cfd1979d0e3c8f0b",

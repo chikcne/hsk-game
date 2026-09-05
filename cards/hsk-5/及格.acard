@@ -1,16 +1,20 @@
 {
   "audio": "0dd76f925bdd1afae1d7215efe1cdaccdefc6246f6624ff472dc1fb7d66ffbc9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "及"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 32442,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "及格",
   "id": "f83d2e532d95845e95033ba3",

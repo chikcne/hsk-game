@@ -1,14 +1,18 @@
 {
   "audio": "a815b3110405f0485040ca236b99d6ab4db80edfe9be22d93f4d77520a384168.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3381,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "温柔",
   "id": "fa552606b644164fe81c20e7",

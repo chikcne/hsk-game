@@ -1,16 +1,20 @@
 {
   "audio": "aee9cd4e491d500f5e1e9026e4ab80ae2675e3745a4f2f982287a8e213bf31ac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "怪"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 549,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "奇怪",
   "id": "6dea165fb4bb0a262e448b1b",

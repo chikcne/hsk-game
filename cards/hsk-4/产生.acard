@@ -1,17 +1,21 @@
 {
   "audio": "f7c78ab457349cd8e2007b8874c7a21f8fea3a886bf47e67f4bf665afc01651d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "产",
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1849,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "产生",
   "id": "b4e93b5975601e99453f81b2",

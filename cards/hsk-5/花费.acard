@@ -1,17 +1,21 @@
 {
   "audio": "f1eb7ed8cd1c480fee66b868a3731020b8bc5228ae711ec7e0e971d2515ea54a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "花",
       "费"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6315,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "花费",
   "id": "3135ee76a9f3fbd1664936e3",

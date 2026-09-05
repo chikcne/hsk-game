@@ -1,17 +1,21 @@
 {
   "audio": "b6fcbb8af84e3288924f58ad0a9511c739df4a5a73653857da8bc4870061cb35.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "光",
       "线"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6929,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "光线",
   "id": "cb6e1878e07182f68c76ea60",

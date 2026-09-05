@@ -1,16 +1,20 @@
 {
   "audio": "059efea6b5a94ed6d37e20b9161b7748471396542c9e6f90cab815cb93b5dabb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4425,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "薪水",
   "id": "b2be53be0f714a9fd8010218",

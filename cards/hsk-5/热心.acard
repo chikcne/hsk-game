@@ -1,17 +1,21 @@
 {
   "audio": "bc3eb8e75cf594e7d189287a9b5f0a5082fa9a08934a07c4c93ed016d079cff9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "热"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14339,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "热心",
   "id": "50fb20e4bdae25ebfc319c27",

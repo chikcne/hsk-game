@@ -1,14 +1,18 @@
 {
   "audio": "72ab47bcdefad255aa098c0ea5b9c3bafa97dfe34aa50d8f8adb75af6eed5874.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6280,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "摄影",
   "id": "642ba46a1083ecd8c4ef1ce9",

@@ -1,17 +1,21 @@
 {
   "audio": "e72c3b8b1f2b462a203457e2c2f1a0c2c083470567e647a96b6c6eb907712558.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "北",
       "极"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8473,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "北极",
   "id": "5b13cc8c7e9a983fdaa74868",

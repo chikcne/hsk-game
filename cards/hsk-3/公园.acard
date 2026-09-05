@@ -1,17 +1,21 @@
 {
   "audio": "4e921252edf4638118aac26be6ece4bd4c511f3aef80c7c8d6a8b3c189ea676a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "公",
       "园"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2073,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "公园",
   "id": "9bddac82c4290ea013146bea",

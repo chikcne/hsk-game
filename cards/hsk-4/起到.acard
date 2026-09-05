@@ -1,17 +1,21 @@
 {
   "audio": "6d0bac7d73c72ba4cb45ade63be207be9006a8af98639342242752b60a1ccb0a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "到",
       "起"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21318,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "起到",
   "id": "fca15969b519ebd2bac5478a",

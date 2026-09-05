@@ -1,17 +1,21 @@
 {
   "audio": "b750de4f65d5f0a00bed988c26e795d26b70d54d2d66e498631a74a60136f713.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "白",
       "领"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22223,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "白领",
   "id": "fa8c903c6cd32ba76d069684",

@@ -1,17 +1,21 @@
 {
   "audio": "ec761a7e396985d8d4d78080643c595fb2b1263f69cae8172109f18cbb098b35.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "吃",
       "小"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21050,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "小吃",
   "id": "64bad7f9fd44b0b516b5b9c4",

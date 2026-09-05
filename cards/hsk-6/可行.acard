@@ -1,17 +1,21 @@
 {
   "audio": "64ae95771de978c9a98ef6e1e38a560e04a9616e06437e26ead9ba3b83cb79bb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "可",
       "行"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7857,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "可行",
   "id": "23795e0534a03710f7cf2a01",

@@ -1,14 +1,18 @@
 {
   "audio": "b8e17101ef77d9dd0956ade730a0d3869106c1aca86b8ccf831d903036b53799.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1955,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "颜色",
   "id": "6f1c6487ccdd194fc2710269",

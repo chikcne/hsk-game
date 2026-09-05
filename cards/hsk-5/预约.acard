@@ -1,16 +1,20 @@
 {
   "audio": "b7dad75a995c33ea7430a0871ae3b3f286c401b906c8fb26c83ad18a997f3595.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "约"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5078,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "预约",
   "id": "7b0fd82a1e42cc32941b3fe4",

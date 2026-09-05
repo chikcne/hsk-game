@@ -1,17 +1,21 @@
 {
   "audio": "147317395434b68eeb7e7d89d37cc52992424d5864c629be96f3bb0c5a998ac5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "台",
       "风"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16267,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "台风",
   "id": "5f655725acd43d8060e5c2d2",

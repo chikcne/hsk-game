@@ -1,16 +1,20 @@
 {
   "audio": "e496a129c222c8e5c3c456fbde32209f15f6deac3a29d0aad6a1a03e4cb33b75.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "事"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 32603,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "emotions-feelings"
+    ]
   },
   "hanzi": "喜事",
   "id": "11ac352d35933c546adf11b6",

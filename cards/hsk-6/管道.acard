@@ -1,17 +1,21 @@
 {
   "audio": "c0a3f728cb5f90b2e0422c9410d6ce5d0d5892a4040fdd280516b5d944cd7e5d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "管",
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7673,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "管道",
   "id": "ba32e5719a4878acd93983c3",

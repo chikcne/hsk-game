@@ -1,14 +1,18 @@
 {
   "audio": "452aa6affc76d582320de017d2c84e809dbc15d8c13d4ef776100a13b30afda4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2410,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "故意",
   "id": "bbe094fbc77cd04e3356d278",

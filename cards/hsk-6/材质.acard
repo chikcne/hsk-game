@@ -1,14 +1,18 @@
 {
   "audio": "57c436b9a7fa1afba97f067a9d2a3a1b343e983c1d8926b42530a079b14d848d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 39776,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "materials-industry"
+    ]
   },
   "hanzi": "材质",
   "id": "94fc77c3dd6c33bf01e85898",

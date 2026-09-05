@@ -1,18 +1,22 @@
 {
   "audio": "79743daab6a0a703a3926342ee49b5b8ba8e9454ee22fd4a87d3ad295bcc2e2d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "动物",
       "园"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6717,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "动物园",
   "id": "88bf26c26337ce923ca8d473",

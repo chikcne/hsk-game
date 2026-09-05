@@ -1,17 +1,21 @@
 {
   "audio": "d41f317033e5080ee050de10ebb3a5866159dd297b3bb3c898057249bc1ddf7f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "米",
       "饭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 19648,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "米饭",
   "id": "32a502259c9bd8f32798f03b",

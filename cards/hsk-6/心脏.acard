@@ -1,17 +1,21 @@
 {
   "audio": "2e918ff29fd31666bbb161e8a29c0482f252d9fe9124f63050d9dfbe01441bd7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "心",
       "脏"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1734,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "心脏",
   "id": "c37201ac976aabc74bfe6727",

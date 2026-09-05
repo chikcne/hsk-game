@@ -1,17 +1,21 @@
 {
   "audio": "fa6415d85462c2c8d5c808374d407b9a3bac6e7bb4974854cd4ed02df396f13b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "下",
       "功夫"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 61726,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "下功夫",
   "id": "9bed449aa6ab7fe88c29b4a8",

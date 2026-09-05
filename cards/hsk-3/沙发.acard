@@ -1,16 +1,20 @@
 {
   "audio": "521451c566f830003e31bb7331a61e20da4f5a8fb1e7dac224527b43556c43b7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3594,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "沙发",
   "id": "050f82b6aee8cb92b6eba7a5",

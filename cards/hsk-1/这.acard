@@ -1,14 +1,18 @@
 {
   "audio": "a9b7937848699d24c75073311da3c970b337cbe0824f1508b15d6f99b92e2bd3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 17,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "这",
   "id": "a505094bacb7a5a107cfcd00",

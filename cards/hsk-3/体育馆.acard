@@ -1,16 +1,20 @@
 {
   "audio": "c11ee3f376e1b90ff8ef8403ebcaa112ccc77d45776180cc17364171402f7298.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "体育"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13256,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "体育馆",
   "id": "85cf21f3c378b98e816942ce",

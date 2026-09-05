@@ -1,17 +1,21 @@
 {
   "audio": "a38a841443d2f2d09d66c83acaefcaf724d2a48706d671faa56b455965d0dcf9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "平",
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3858,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "measure-quantity"
+    ]
   },
   "hanzi": "平时",
   "id": "529a9dd10b80895da2ef1474",

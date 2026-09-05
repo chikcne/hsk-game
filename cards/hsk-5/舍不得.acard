@@ -1,18 +1,22 @@
 {
   "audio": "7505a9dffeaca1a240ed8a2a60cf48a8ff84033eae99ffcda72e7773111f7530.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "不得",
       "得"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13172,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "舍不得",
   "id": "97576b83d143cbe8df6dca35",

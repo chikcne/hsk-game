@@ -1,17 +1,21 @@
 {
   "audio": "f4ba4efce7df66a622b01a441208f39bce4b5cb82506c711ce3fc06cb0f0d13b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1844,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "一辈子",
   "id": "7792b13ba2e8776adad6ce41",

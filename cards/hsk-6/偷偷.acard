@@ -1,16 +1,20 @@
 {
   "audio": "336e2ed90b44833334207352164270e4da634d6841c021a607fc4e7918f009b9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "偷"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4317,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "偷偷",
   "id": "3c4144a0d47142dc0c61cccb",

@@ -1,14 +1,18 @@
 {
   "audio": "c49b0eb6184e91a2b456845e83c24f5494bb7b0e7025f4d4f701713f56e1191b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7771,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "奋斗",
   "id": "e4447db2654d14efb5bf84dc",

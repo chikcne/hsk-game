@@ -1,17 +1,21 @@
 {
   "audio": "96be67c616c86fd8e0e94ccac2d451ed2f5ba4d854ce76ff308dc30373bd4e13.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "用",
       "试"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22985,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "试用",
   "id": "dafbcc309acfb1a04a9b5dd9",

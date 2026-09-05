@@ -1,16 +1,20 @@
 {
   "audio": "6c524e9024420cd044031f974d1cad0411670eb532f8430717da70d85fa6f2f5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "品"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7974,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "商品",
   "id": "0f0516ffc5f12269ab8a7098",

@@ -1,16 +1,20 @@
 {
   "audio": "8f0f240507c98c6610c7cd68763f53947edbfcab12961e80e50f78ae5197aff2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11041,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "善于",
   "id": "26875fdd08eb4c0dbc745137",

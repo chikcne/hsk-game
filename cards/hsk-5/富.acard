@@ -1,14 +1,18 @@
 {
   "audio": "57ca23ccec50c218e68829e36dc6fa00008231832766aa18481828bf7cef007c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 13136,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "富",
   "id": "05c6d825d7f3e3a3ad9c8283",

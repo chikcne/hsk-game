@@ -1,17 +1,21 @@
 {
   "audio": "607b66ad017422f21f80dca401a1916ea0f47ba50b3e342ef85991f77b25adfe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "十"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1537,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "十分",
   "id": "a59ae1c9cd0c9715fea05145",

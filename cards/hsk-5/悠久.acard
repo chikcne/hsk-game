@@ -1,16 +1,20 @@
 {
   "audio": "44b804942eb6cfb5b3f1a45fdf8ee96fabe755ff21150bef4547f95975bb877f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "久"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30584,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "悠久",
   "id": "41201803e5bb6c29a994154d",

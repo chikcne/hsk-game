@@ -1,17 +1,21 @@
 {
   "audio": "730fa56b80ed1ce504a09e866ffdbadde9bd684a237a6e6a71a77de5ea8657d3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "式",
       "闭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 119902,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "闭幕式",
   "id": "2b60e220d8a50b29a60304bb",

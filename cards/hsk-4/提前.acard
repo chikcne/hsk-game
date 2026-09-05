@@ -1,17 +1,21 @@
 {
   "audio": "8e06391f9da6933ff346f852b315e4dcc166d820d2b926d470ce3c6ee3a0f77e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前",
       "提"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3399,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "提前",
   "id": "5f781070b30bb33b27a70c5d",

@@ -1,17 +1,21 @@
 {
   "audio": "4af71ad5e78be1aea89890d372b679a73d6967207a833ffd3cbdb8e2bd7d04eb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "实验",
       "室"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2509,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "实验室",
   "id": "90fca24df17cd77c364ae486",

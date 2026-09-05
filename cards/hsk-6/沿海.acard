@@ -1,17 +1,21 @@
 {
   "audio": "a303816850ced7694e443414eb5c2e1678638cd0fa2a8ed465d731b1be8f8b94.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "沿",
       "海"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27862,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "沿海",
   "id": "184acb2a41de24ad2e29e286",

@@ -1,17 +1,21 @@
 {
   "audio": "8ea9a612353a6a3ac951c1013e45643346b2f40c18c31fb3e64faecd5150ab38.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "感",
       "流"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 14982,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "流感",
   "id": "daefff3e449a7ca61277ea09",

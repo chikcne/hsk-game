@@ -1,17 +1,21 @@
 {
   "audio": "f128fc5213b87a76bb5afce2810fe7da0aff691dd9595a0060ffcb66c8db7e6e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "滑",
       "雪"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7341,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "滑雪",
   "id": "5c43e8575469e6a4f923f036",

@@ -1,14 +1,18 @@
 {
   "audio": "a9cf022244635aae6b9c6891c175efee7ca7dba12192a6f38835c6aa86c81b36.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 18589,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "工夫",
   "id": "9e7a02bc0a3b10d9f16ca0ce",

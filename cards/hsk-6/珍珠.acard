@@ -1,14 +1,18 @@
 {
   "audio": "90ff38b89b07534630108a9bdebe53d9c7230d83621de917c9f9cd44b5a49529.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7805,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "珍珠",
   "id": "e7050c125c7a89eb2356f102",

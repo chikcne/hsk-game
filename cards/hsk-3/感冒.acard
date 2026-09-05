@@ -1,17 +1,21 @@
 {
   "audio": "8fc103096c9c4fcc1b056eb361006c012d081fcfe59e39439e73bcf3b9bdfc78.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "冒",
       "感"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4637,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "感冒",
   "id": "15ea1d9def5a1e595eccf120",

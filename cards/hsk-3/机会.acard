@@ -1,16 +1,20 @@
 {
   "audio": "0e252265acd0f302a9cf3e91fc58fcc2c793c5aaef69cab552d036acdea31196.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 409,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "机会",
   "id": "35778a88f54cdc6049e2f6a5",

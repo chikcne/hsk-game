@@ -1,16 +1,20 @@
 {
   "audio": "131bc8a48f6259380c11c03448ee42b006c4c8bc81926dc04b800146ca5e63a5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "位"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 920,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "位置",
   "id": "24f13ee1a7b8ab2042144fc9",

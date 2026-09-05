@@ -1,16 +1,20 @@
 {
   "audio": "0f6626c139f39ca8931276ed04d9ba606a0956b00159be016e986f3cfb0710e7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "洗"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2422,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "洗澡",
   "id": "9bc77b25249b9682377bacef",

@@ -1,17 +1,21 @@
 {
   "audio": "d6e054fd673728892b505af4f90d95812f3cac56d5c9ae1b6529b669904baaa8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子",
       "轮"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12750,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "轮子",
   "id": "e207dc8c69b75ade7db28d07",

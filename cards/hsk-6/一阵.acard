@@ -1,17 +1,21 @@
 {
   "audio": "859604ada891684605783013aad58c958360aebb29f78c9c640ffa7b4b0fb457.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "阵"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6140,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "time-duration"
+    ]
   },
   "hanzi": "一阵",
   "id": "1b757a20740c291276b33f3d",

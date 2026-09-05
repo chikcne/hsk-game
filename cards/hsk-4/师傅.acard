@@ -1,14 +1,18 @@
 {
   "audio": "148675bead668dcefdc0183447e2bdb1f91495520dcdf0a4ad4ea04b913df636.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3097,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "师傅",
   "id": "6ff25401ac439611e0644136",

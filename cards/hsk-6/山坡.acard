@@ -1,17 +1,21 @@
 {
   "audio": "1eeb3f2c03eebaadeb355e03a3ed256e9a54f17f7d699a22c025a53281ee2d23.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "坡",
       "山"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17962,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "nature-land-life"
+    ]
   },
   "hanzi": "山坡",
   "id": "938e89f89646b40afb50715c",

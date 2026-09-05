@@ -1,14 +1,18 @@
 {
   "audio": "d6b169147aa068d6eca4250b6161c2eac09c5d2f15b6c771f19470c5845edeee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3705,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "胳膊",
   "id": "5992563262f3be594229f551",

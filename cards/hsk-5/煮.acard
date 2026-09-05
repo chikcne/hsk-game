@@ -1,14 +1,18 @@
 {
   "audio": "7aa99cb42dec3d5d7a2eaea28801600ff282c319a16ad8d6d94b1db33d00c79c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2929,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "煮",
   "id": "6ce03cda65ecf3fd42c23a07",

@@ -1,17 +1,21 @@
 {
   "audio": "8f5ac3008293195528ac99062f93336fdf7809f2405c5bdc9e66c6cc028783f0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "老"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3172,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "老人",
   "id": "5c5229c251e72f386081aeee",

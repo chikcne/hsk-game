@@ -1,16 +1,20 @@
 {
   "audio": "de7b313a157de71c14b05f386532090ced50275ebaa029607d4059d3e544aa46.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "据"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11878,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "依据",
   "id": "ce63066c7c2d950817d9e449",

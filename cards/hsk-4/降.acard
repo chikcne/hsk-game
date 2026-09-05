@@ -1,14 +1,18 @@
 {
   "audio": "a9ceeebeaeacfa11a7e9fa659380e177c4cb2b6e5d89ea5d02c08d50640a2fa2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 11080,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "降",
   "id": "5f9f96b9ea1fd9a4c8e48bcb",

@@ -1,16 +1,20 @@
 {
   "audio": "0bcf7aa9790c7e3436e8c3517e5c7b77fd6bc3166e5078f45a10274d7058faac.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "请"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13762,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "聘请",
   "id": "887f4881e5367aa71fb26739",

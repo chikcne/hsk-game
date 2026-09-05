@@ -1,14 +1,18 @@
 {
   "audio": "0c6fafd4b4afa359bd05fd44a6ed7aea237c039ba60857b104309d96d94627a6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 16537,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "醋",
   "id": "20c765055d41c2e27e5eeee4",

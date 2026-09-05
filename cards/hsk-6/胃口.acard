@@ -1,17 +1,21 @@
 {
   "audio": "7efb155b7b0812201bf271779dc3b89db563cfe3aefa867fadeacd896c016800.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "口",
       "胃"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6849,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "胃口",
   "id": "75ee21bdfcc09c44ca495c95",

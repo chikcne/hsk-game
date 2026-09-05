@@ -1,17 +1,21 @@
 {
   "audio": "a9b970ba607cd0e8a35c22acac1a67f1bfbf8528fe588781888d8af6f4d2c720.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "升"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4166,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "上升",
   "id": "5f0f1c14a3c088f92f8db1db",

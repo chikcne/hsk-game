@@ -1,16 +1,20 @@
 {
   "audio": "dac5268b29c32ff4308fac9fd142886dc7085093bf9036beb29eaa743a4d2539.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "土"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13940,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "土壤",
   "id": "718c4fd4f20ba882b4159295",

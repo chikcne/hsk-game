@@ -1,18 +1,22 @@
 {
   "audio": "db09ad32d717d516ed193e386014f644f8d0a283a217e635ad80256e241d5340.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "书",
       "图",
       "图书"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4409,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "图书馆",
   "id": "0ec891f356bdf95d50522885",

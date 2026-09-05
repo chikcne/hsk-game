@@ -1,17 +1,21 @@
 {
   "audio": "2999ea6386e5bd545c79133ec74370c262f51d95c7e970a4bf0ad87e65ac07c2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "季",
       "度"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 25238,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "季度",
   "id": "c6e77eab72203b5681fd3043",

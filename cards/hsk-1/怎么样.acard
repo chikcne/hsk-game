@@ -1,17 +1,21 @@
 {
   "audio": "1ef80cb1cfd6c7c1a612b253394e8afcadb4bda46a9a1dcefd71cd5018123581.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "怎么",
       "样"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 246,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "怎么样",
   "id": "1f926ee535cefef1dd387e2e",

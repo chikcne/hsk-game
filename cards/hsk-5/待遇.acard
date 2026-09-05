@@ -1,16 +1,20 @@
 {
   "audio": "70a68879a0c3bbee7570ace708531bada0b97bc79673f2b3c78d9aab4069cc8a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "待"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8881,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "待遇",
   "id": "70559a060fecd9df4f9528b1",

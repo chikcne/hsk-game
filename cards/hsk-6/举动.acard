@@ -1,17 +1,21 @@
 {
   "audio": "4fccf3aa61b8423f4aa7aa53665e428454d2a93633fbf2a9371937e0ea058b1b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "举",
       "动"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6924,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "举动",
   "id": "69b030965ee04770666a0f41",

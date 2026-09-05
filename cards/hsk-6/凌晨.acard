@@ -1,14 +1,18 @@
 {
   "audio": "378ac60ae3b5491da8f8f244c7f96b782aaf7e4563fbcd34645a0834779be3c4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3934,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "凌晨",
   "id": "3c04b96a75049abc4d50eea6",

@@ -1,14 +1,18 @@
 {
   "audio": "3fcde208aa9038370687ccd9b95fd3409c76970c23e08f8fadf3b7f1166c91be.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 5475,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "登",
   "id": "b08909f039f9e93c787b12cf",

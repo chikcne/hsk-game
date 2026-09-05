@@ -1,17 +1,21 @@
 {
   "audio": "5e274993e05f52c373a6265b63399003b382444236e3d01a33064a14605b7607.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "五",
       "六"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 67557,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "五颜六色",
   "id": "f1ada2ca419a788fba7de804",

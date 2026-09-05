@@ -1,17 +1,21 @@
 {
   "audio": "0f06385f3ae2093780ba14c809360eada12b64ab5f5d328d637455435b0f0d0c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "东",
       "部"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7191,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "东部",
   "id": "7e1e47766572c901b22480db",

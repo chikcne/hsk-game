@@ -1,16 +1,20 @@
 {
   "audio": "cc5dab15e34231c305a89eb2e4301b362c70d164036f84649e9ce2a8d2733cf2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "水"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5192,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "水果",
   "id": "b0447f6d2e876c5bf77e9b06",

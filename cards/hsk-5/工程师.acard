@@ -1,16 +1,20 @@
 {
   "audio": "836549b0e092e06f8f9f70713c60f33d8aa34ffa97c44a5e7bdad408729d88fc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "工程"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5281,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "工程师",
   "id": "b53f5413269c55e123a56592",

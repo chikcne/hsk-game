@@ -1,16 +1,20 @@
 {
   "audio": "bd7c13795ecb98dd01ffd03fc8d73d7f5b3253bdcc9325d08d85b717c1077d6d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "制"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22505,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "研制",
   "id": "05b76f359026d73571332e92",

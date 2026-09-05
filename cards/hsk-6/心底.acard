@@ -1,17 +1,21 @@
 {
   "audio": "16172ce3aca254e08b9f8341317305afa8204f6f63a3cca4f57d88a48aba78ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "底",
       "心"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9508,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "心底",
   "id": "ed991c04a7933a0f2eda13bb",

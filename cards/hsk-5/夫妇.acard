@@ -1,14 +1,18 @@
 {
   "audio": "c864e20947504a4b7bb460ec32f91037a5427e7cdc05519f1d2498e812368eb9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3417,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "夫妇",
   "id": "3c3a9e8085f97760d4bd21a5",

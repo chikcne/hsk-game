@@ -1,16 +1,20 @@
 {
   "audio": "715491be13bbbfb79afa6d192d344f216eb1559be8e934cd0f8bbfe8cbebf4bb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "说"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 355,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "说话",
   "id": "a1829b8c6586846c64690333",

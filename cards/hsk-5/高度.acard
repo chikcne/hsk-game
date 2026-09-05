@@ -1,17 +1,21 @@
 {
   "audio": "1cae0e30678d591e1305c561d03cba964fd5bce4cadfb0e7e26de32b151210eb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "度",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3897,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "高度",
   "id": "82dbb8c2df098f8115a6eaae",

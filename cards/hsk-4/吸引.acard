@@ -1,17 +1,21 @@
 {
   "audio": "c8c22ea61c41cbee6beadbca869ae6f086e1886d421e6be44df77a3777d90635.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "吸",
       "引"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1983,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "吸引",
   "id": "6fd36d4d7e4bb748e8117ed5",

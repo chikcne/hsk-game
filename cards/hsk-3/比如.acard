@@ -1,17 +1,21 @@
 {
   "audio": "7483d9ea90dd1fcc5daca43b8c1e9598ed25f3ae4117dc59b98658fe2ced573c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "如",
       "比"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1487,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "比如",
   "id": "54710b892bfd9f64e168df22",

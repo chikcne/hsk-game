@@ -1,17 +1,21 @@
 {
   "audio": "cd0981e16a79c6724304de05f1f8cbe96639ef7ceda9b99a456267b9107fd6a6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "费",
       "运"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 61300,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "运费",
   "id": "1abf83a7cca40ba93ee48f48",

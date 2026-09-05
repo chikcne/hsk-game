@@ -1,14 +1,18 @@
 {
   "audio": "058a47bc8446fba9242b5f97d7c094e642538b835053444089372888acb7c077.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2334,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "协议",
   "id": "618c3cf90792e71503cb30da",

@@ -1,14 +1,18 @@
 {
   "audio": "f405513de3022f8ecc362a5e948e22703c9da1e15e54c1c960d51c95c2c6401c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 14186,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "果实",
   "id": "53778bdf6c1367cc6c877736",

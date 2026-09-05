@@ -1,17 +1,21 @@
 {
   "audio": "eaac18e1d9ef03042d07c6db417f66189041154dec0550cd5a06a36fc4a5ebd5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "行",
       "飞"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2138,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "飞行",
   "id": "a2d826825616147f8c81313b",

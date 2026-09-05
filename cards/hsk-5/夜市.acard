@@ -1,17 +1,21 @@
 {
   "audio": "30a3fab299e4bc12d16d42d2e1de653c3ea0d64011b778166efab30e4e0418ab.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "夜",
       "市"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 48054,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "夜市",
   "id": "73cfe2547f4e244c0bebf19e",

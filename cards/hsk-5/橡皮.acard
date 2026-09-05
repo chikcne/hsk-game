@@ -1,16 +1,20 @@
 {
   "audio": "7ef94c5eeeb2576c4e0817dc01c214c23ce94e5eb78040a882e76b002c451ac9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "皮"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20892,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "橡皮",
   "id": "b3413e9366035aeb723faf8d",

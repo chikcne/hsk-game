@@ -1,17 +1,21 @@
 {
   "audio": "366ac491aea7648c7d08126f08fa1749bed077026437fb3696883b83b92c9377.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "出",
       "指"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5854,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "指出",
   "id": "7e50af2a22de642ae7f0d651",

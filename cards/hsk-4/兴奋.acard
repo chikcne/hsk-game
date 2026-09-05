@@ -1,14 +1,18 @@
 {
   "audio": "cc006683e00b631f9aec896970760e67e738ed8d9e9985c57c62501f8b41c43a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1797,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "兴奋",
   "id": "daca2597d43cd955e926b03c",

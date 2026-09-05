@@ -1,14 +1,18 @@
 {
   "audio": "59470ae3a33d68b05c0a24b633c0497baa90973d742977f0720dcbe622112bf1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4356,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "sports-leisure"
+    ]
   },
   "hanzi": "弹",
   "id": "f1728da5fbaf21c023460c38",

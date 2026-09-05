@@ -1,17 +1,21 @@
 {
   "audio": "75e0c98bf0aa53c71f09ca6c82da04deeff130fa531f6fc07caf4ad31c23f604.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "包",
       "背"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7258,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "背包",
   "id": "00d3b513fa509abbfd73ad6d",

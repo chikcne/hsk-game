@@ -1,14 +1,18 @@
 {
   "audio": "c4b71a07cf47759bbc8572b6bd553215d8e9bac7731418b931da59a89f50264d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 9631,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "弯",
   "id": "503af2ad503c4990c6c32b9c",

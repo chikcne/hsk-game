@@ -1,16 +1,20 @@
 {
   "audio": "69c6c59978253bc83765338d49ab67913778ae244dbb44bf86a240fd1e21e8a7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "元"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 53469,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "元旦",
   "id": "b6b1e09f6011c45a16c229e4",

@@ -1,14 +1,18 @@
 {
   "audio": "93e5439441ff8a79b1fc71a903b91c987e8c21f065749e5360cfc98baeba9ac0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 982,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-influence-control"
+    ]
   },
   "hanzi": "逼",
   "id": "90d861f189c68d9eed033b89",

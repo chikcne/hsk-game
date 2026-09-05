@@ -1,16 +1,20 @@
 {
   "audio": "e72bf344ab9d5a8896968081d866b568d5a6149cfe1f6ca6dc514ce3001104c7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "剩"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12682,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "剩余",
   "id": "ef654ab50dbd38a08c03d4af",

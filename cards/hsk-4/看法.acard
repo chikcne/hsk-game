@@ -1,17 +1,21 @@
 {
   "audio": "b6ad4c7a75a990c8caca5407b15a712e5ca3ff519ee992fcdd3dd922a1881a17.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "法",
       "看"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2399,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "看法",
   "id": "ab0f18b4a722b22a2a3b3d24",

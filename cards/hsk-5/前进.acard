@@ -1,17 +1,21 @@
 {
   "audio": "bd8af05f9d594ab9dff5798f02c58e677dcd6b3e095b6566178abb75f266f517.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前",
       "进"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2155,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "前进",
   "id": "86ab0ce8f637c13c54bbf280",

@@ -1,17 +1,21 @@
 {
   "audio": "20dd802939ddc51bc6915e4cfcdbdfacefcc6cb0946acdac502a5b46f60b79f4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5161,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "过分",
   "id": "aa6f5e4f9568f730e3159683",

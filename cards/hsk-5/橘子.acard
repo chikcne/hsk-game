@@ -1,16 +1,20 @@
 {
   "audio": "c92ddae96c72202f442ae70ca00a3302203dc5b8f44cfbe57eb92fa2504c788f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13018,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "橘子",
   "id": "e7eedcb796f66f4ceb7f7638",

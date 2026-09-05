@@ -1,16 +1,20 @@
 {
   "audio": "9857beb506bba1b5759987ccc249113111cc2320b37e27aeed6613bfd1635fce.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5401,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "瓶子",
   "id": "691cf808a3656d12a0f3b3c2",

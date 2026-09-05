@@ -1,14 +1,18 @@
 {
   "audio": "b28f287d0e6ef2e08b81144859360ae9ce488e7208613f9698a39ed47ad43368.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 818,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "哭",
   "id": "765ba73b10678e866f6315c5",

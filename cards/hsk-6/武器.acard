@@ -1,14 +1,18 @@
 {
   "audio": "2200408d784b8d19c3eb12d84b8e8cbd9bc096750989510afbdfc3ad337b9930.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 771,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "武器",
   "id": "aff5607ce83c2825b153aadc",

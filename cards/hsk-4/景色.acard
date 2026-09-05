@@ -1,14 +1,18 @@
 {
   "audio": "419225687b9e71558c57f6b9ae501a8929883704cbe7bf87fe94ca1c5c570c91.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 8193,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "景色",
   "id": "add63c9f24aa1a863e625f30",

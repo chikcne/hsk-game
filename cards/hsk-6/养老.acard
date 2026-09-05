@@ -1,17 +1,21 @@
 {
   "audio": "76be0d663772619fb6397325b4d27492c66140611d240adee6e9143e90d6936e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "养",
       "老"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 35831,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "养老",
   "id": "1eb26aedfdf63f20a6f01895",

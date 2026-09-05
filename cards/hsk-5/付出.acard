@@ -1,17 +1,21 @@
 {
   "audio": "7ad13f65e846e71ec5ea6942219761b4f4bfcb1df8c8cbd043aee8ba23e56ac1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "付",
       "出"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2303,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "money-shopping"
+    ]
   },
   "hanzi": "付出",
   "id": "cea6322be6d1f0292f68737b",

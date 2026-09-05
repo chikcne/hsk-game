@@ -1,14 +1,18 @@
 {
   "audio": "5435f6a40286f1b09fbf425ea704119d6fc76fd07023c8de7ddc7b3530caecd4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 6544,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "胸",
   "id": "889945908dbaf6ecb304fc05",

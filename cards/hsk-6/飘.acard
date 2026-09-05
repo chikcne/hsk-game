@@ -1,14 +1,18 @@
 {
   "audio": "12d3d921ec746a5c94fab0b00409bfd4b34304d0c1fe3a79e816aa140fd58384.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 14482,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "飘",
   "id": "8e824ab91b4744f73788e861",

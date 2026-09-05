@@ -1,17 +1,21 @@
 {
   "audio": "54724eec9aa6ca2a074fccbc3d8e88883ea119d934e9112e6934c8e0ca8f65bd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "接",
       "直"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 786,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "直接",
   "id": "14c3f2c86d0c27228abdf7de",

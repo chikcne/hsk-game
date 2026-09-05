@@ -1,17 +1,21 @@
 {
   "audio": "c2122206087854bb806e64c2b598d22b60f5bd228849a959c61327305cd4d841.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "下"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 127,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "一下",
   "id": "ac82370ae203c2abffe7c729",

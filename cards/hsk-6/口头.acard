@@ -1,17 +1,21 @@
 {
   "audio": "ed817a2ae6ae97c1deb91fff3b11e445985b72e060553afb89157db065021ced.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "口",
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 24057,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "口头",
   "id": "8612cc011ba08972d7433bb2",

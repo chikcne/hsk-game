@@ -1,17 +1,21 @@
 {
   "audio": "6376bcdb9f5ea4132b115e4bbffc97680dd69d94d08b4c7d04559312add8cd9a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前",
       "跟"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18801,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "跟前",
   "id": "c5276afa693628e41d0d6547",

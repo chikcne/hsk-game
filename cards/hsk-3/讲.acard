@@ -1,14 +1,18 @@
 {
   "audio": "1a1f0942403d5ba7d5fa123c71450c83f4f5b38799643c83b895c1a8d679132a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 555,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "讲",
   "id": "025653ab2be7afab937e05de",

@@ -1,16 +1,20 @@
 {
   "audio": "2a8a877deaaa2676e068297b3807354162de2b677808abbb312eeaaa1a4972b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 63337,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "成语",
   "id": "f5d80599eae010a59b43b10c",

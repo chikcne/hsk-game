@@ -1,14 +1,18 @@
 {
   "audio": "07c1270860f57de3044cf5411f2a28cceaaf95a4c7dd620af719c91757b0af1e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 4324,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "眼",
   "id": "32413cfd307d7600d1c2952d",

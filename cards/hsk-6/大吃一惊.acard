@@ -1,18 +1,22 @@
 {
   "audio": "80fd0be705ec3d50682c32d23dc088490ebc57e05d411a64162c0d72b6ddc325.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "一",
       "吃",
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13130,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "大吃一惊",
   "id": "0cb52afb359044b106bcf377",

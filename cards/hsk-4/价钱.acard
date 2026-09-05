@@ -1,16 +1,20 @@
 {
   "audio": "41848356fff0f753dac211dfae7c5159d8b4cc7879502330b794f62d09e78592.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "钱"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4800,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "价钱",
   "id": "46683d9f5d5b25a40b9810e0",

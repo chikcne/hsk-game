@@ -1,19 +1,23 @@
 {
   "audio": "eefa83cebfa0204ed7b1e6a51ce84bce2c646404898dd33b2ab1d6a6876504f0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "停",
       "停车",
       "场",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4955,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "停车场",
   "id": "ee59ff8eb46ef776ef6a5d56",

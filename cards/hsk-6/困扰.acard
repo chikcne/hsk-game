@@ -1,16 +1,20 @@
 {
   "audio": "9c360e0a10acba0cae1ee0bdbbe2762423f51f615ec495580f02c980ff859eaf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "困"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4131,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "困扰",
   "id": "3a588fa34238194e8c0c21d5",

@@ -1,16 +1,20 @@
 {
   "audio": "d850e6b0c8521b48da1d6939d8743835e5895cfdec31f9a0dd808b3735b51e28.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "平"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8540,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "平均",
   "id": "4b54061a3ac8caaa8f8cad68",

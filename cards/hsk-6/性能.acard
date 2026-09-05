@@ -1,17 +1,21 @@
 {
   "audio": "b8d2003e6a650a9fbebc743a801607dd18186c32e897c7893a5195032b2da3ef.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "性",
       "能"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16559,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "性能",
   "id": "8a98f83dc9bfa0388a726118",

@@ -1,16 +1,20 @@
 {
   "audio": "1e03ebcdb09571033da0b7028e038a678f758b35826ac8274d90cd654ab0d44c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "谈"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 16744,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "访谈",
   "id": "ef3b7eb962342c1888adc98a",

@@ -1,17 +1,21 @@
 {
   "audio": "4b06bb26735674bde55be66874a9898742effe5d1b886c6d67885f3dc721ad28.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "电"
     ],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 16367,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "电动",
   "id": "e0a61db3dfda21bdb11a364a",

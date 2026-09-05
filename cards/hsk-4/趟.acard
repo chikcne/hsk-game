@@ -1,14 +1,18 @@
 {
   "audio": "3fd3bed3078878d2319a6644b4c2bb88f52804889a30aa4d3f20be8bb76d2feb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7649,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "趟",
   "id": "0ecfc9afaf464d6ea7bbb35f",

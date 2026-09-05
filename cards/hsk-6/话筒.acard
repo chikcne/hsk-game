@@ -1,14 +1,18 @@
 {
   "audio": "9b3052962d6d2b7653fc46c848499f2bc28d1db9dc5b66ad07546173fe069ea1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 22031,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "话筒",
   "id": "3c69e9889dd2f65d77c45b9f",

@@ -1,16 +1,20 @@
 {
   "audio": "d197cb46ce0310ba5b3643551356575b93d4f910ae46d5ac8a670c864271ddba.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "刚"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 592,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "刚刚",
   "id": "1fadd7e2b06c914aaadadc98",

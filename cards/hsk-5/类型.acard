@@ -1,16 +1,20 @@
 {
   "audio": "79e2b2169d82acf9080ef7861596a6f8d8c16a6a4239d8108dde63038f484b32.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "类"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3289,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "类型",
   "id": "a3ca827af94d5c2b6732cf5f",

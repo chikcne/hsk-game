@@ -1,17 +1,21 @@
 {
   "audio": "ea0d57d7e1acf2b9e2805b3d95e93acccb1607a8bd2f8c3a6993c77d62a261fd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "最"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 307,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "最后",
   "id": "7c9bc45da362121390ebc6f2",

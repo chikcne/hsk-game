@@ -1,14 +1,18 @@
 {
   "audio": "353ed5b6ab1990e11754a23d7c6c28743e0dd75a98187cc7eee72ce5a51c828b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2594,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "science-research"
+    ]
   },
   "hanzi": "实验",
   "id": "3865e6c8cd4682bcf427f4a2",

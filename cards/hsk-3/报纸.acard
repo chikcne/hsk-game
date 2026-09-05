@@ -1,16 +1,20 @@
 {
   "audio": "979d13985bf8e4e62b66e71c35c7a685e83943101bedbf559a38ba409d92d45e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "纸"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1837,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "报纸",
   "id": "644e5beed4836a0aa47af2d4",

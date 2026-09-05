@@ -1,14 +1,18 @@
 {
   "audio": "7c6ae8851732f16baf4b675fffafd68897771ed57e8eb91efb23c168b62076b7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4459,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "夜",
   "id": "65fa0343062662f5c8a7ac2c",

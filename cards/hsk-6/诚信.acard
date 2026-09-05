@@ -1,16 +1,20 @@
 {
   "audio": "a8458ea2c0bb151ab31b8b2cabb724cafe203e65e5c4c77896e350d79eaea8a0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "信"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22692,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "personality-character"
+    ]
   },
   "hanzi": "诚信",
   "id": "9690a16210f427c44300e524",

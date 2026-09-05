@@ -1,16 +1,20 @@
 {
   "audio": "ac89de119efca1359a639b9a0dd5116954ccb25929649047fc47bc2939ca6678.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "感"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 831,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "social-interaction"
+    ]
   },
   "hanzi": "感谢",
   "id": "2262039d24a2334a8c8f9a28",

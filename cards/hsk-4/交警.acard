@@ -1,16 +1,20 @@
 {
   "audio": "7ae8cf504c0fceb422fa3e0a1039f5167fa50142f7813c4d9b95f8fd440d4152.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 43090,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "law-safety-crime"
+    ]
   },
   "hanzi": "交警",
   "id": "795e8d9b27ed23cebf46a2db",

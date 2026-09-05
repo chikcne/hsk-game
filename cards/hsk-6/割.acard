@@ -1,14 +1,18 @@
 {
   "audio": "105819c5bee951aec210a16d63b9fd9cea72de7cdc15919512519273b07434a7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 7271,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "割",
   "id": "9f7e62444672e2427c6642b0",

@@ -1,14 +1,18 @@
 {
   "audio": "d7567ffadea1d69d2968b8ccbeb86c7912b57ac505b0af5091c01c50d69c18e2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2590,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "吐",
   "id": "428963c41fdc39e12709bf39",

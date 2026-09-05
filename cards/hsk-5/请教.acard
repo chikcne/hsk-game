@@ -1,17 +1,21 @@
 {
   "audio": "0c93da82e6f6ecc2697e60833657366407b364a49ca0dd8bf584ef98857ea993.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "教",
       "请"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10426,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "请教",
   "id": "04166bead0bf62f2e23bcae5",

@@ -1,14 +1,18 @@
 {
   "audio": "bbb64e15722d208abba16ccc66c89ecd90ac422014505ef9263f223cb88aa182.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 14023,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "简历",
   "id": "3d0c4b6d0169ed132b93121e",

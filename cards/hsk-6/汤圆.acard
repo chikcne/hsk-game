@@ -1,17 +1,21 @@
 {
   "audio": "85176a1e92da0af5e8505c6ed369b71b8cc909c77e3dd3ea04a7351206b2f7ee.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "圆",
       "汤"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 96881,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "汤圆",
   "id": "584d2ec127a6b97352aeb48e",

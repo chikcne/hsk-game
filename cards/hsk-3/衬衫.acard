@@ -1,14 +1,18 @@
 {
   "audio": "e9ff44d42bcea2b7544499a85cd7b8ebbb7fbfbd9b66ff267bd1efabcb9486cc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3701,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "clothing-appearance"
+    ]
   },
   "hanzi": "衬衫",
   "id": "0f97003afd7f7c556c95f6af",

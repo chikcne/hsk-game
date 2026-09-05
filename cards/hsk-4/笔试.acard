@@ -1,17 +1,21 @@
 {
   "audio": "d5e997bb5d2748255742f191988f67279ed2e8fb66bd86ad7bcc8f61d5146e4c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "笔",
       "试"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 77374,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "笔试",
   "id": "4b021430b6f39d321af2cf90",

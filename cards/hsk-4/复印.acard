@@ -1,16 +1,20 @@
 {
   "audio": "bb08f254d016eddeb102ec7de23575fc50af4d98943ef39c4a2ee8b2822d2f1b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "印"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18652,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "复印",
   "id": "9449366818babd600f5fb41a",

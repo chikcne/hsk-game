@@ -1,16 +1,20 @@
 {
   "audio": "c895dd0c679d905df18d307e5f4e8717c255a46619b380892207346161db0c9c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "国"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 50556,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "国庆",
   "id": "be698c1e5969974a3f653709",

@@ -1,17 +1,21 @@
 {
   "audio": "344369b8522156b87d4f1d8d2c5e1a31df6713a83513d14d66ab07010fd6c7c3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "服",
       "装"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4877,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "服装",
   "id": "876bf38ca68d3589d2ebffb2",

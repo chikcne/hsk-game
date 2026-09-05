@@ -1,17 +1,21 @@
 {
   "audio": "2d8554289680b162f52a70318a363024d7786c65a440c295d886e4e30ce88789.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "成"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4421,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "不成",
   "id": "e3a1a02e34ce3e4de19f6e56",

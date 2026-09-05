@@ -1,14 +1,18 @@
 {
   "audio": "911eb5ebfccb99fa3b56757ef00a7526a9051d34df6dfc7d8afeb57cd3344d24.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1657,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "疼",
   "id": "ba5f352be64772c9b092f550",

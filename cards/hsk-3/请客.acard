@@ -1,16 +1,20 @@
 {
   "audio": "8e8db62fada873f2d38e0e3c06fd7f4a2f7120a033576d9772eaaeb3ca2e2748.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "请"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7651,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "请客",
   "id": "7f6c69c9b170ac64e97dc942",

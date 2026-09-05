@@ -1,14 +1,18 @@
 {
   "audio": "ee67261a036b896d7af90ede81d6831c38f1778d689843ad094eb2200325d28c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3903,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "抵达",
   "id": "ed38a67f297212305e9fcbbc",

@@ -1,17 +1,21 @@
 {
   "audio": "9dde14f39540d77695297ea5c427a7e4db82a8499d35270ca7c9ea85f322f5b5.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "新",
       "闻"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1274,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "新闻",
   "id": "40e042cc60f1ebaa5810615c",

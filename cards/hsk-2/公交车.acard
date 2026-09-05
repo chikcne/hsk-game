@@ -1,18 +1,22 @@
 {
   "audio": "bce2752c4f9c01256fa488eb202c0fe649a866a73bd0d417525cabe6fda2b5cb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "交",
       "公",
       "车"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 13466,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "公交车",
   "id": "3339dbb1c1deb51a45aa7922",

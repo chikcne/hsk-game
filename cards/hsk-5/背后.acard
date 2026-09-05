@@ -1,17 +1,21 @@
 {
   "audio": "1530d962535eab4ab8998e95416b4e04f84e1bc9fbd6e1940290c72c25197041.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "后",
       "背"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2416,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "背后",
   "id": "e4421f10a241913c19e64219",

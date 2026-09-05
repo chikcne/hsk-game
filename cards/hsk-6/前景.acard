@@ -1,16 +1,20 @@
 {
   "audio": "b1363dbc078e2e0ade32610e32d8d23ddc4448d16ea4d0a5a29963a2abe89a8c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "前"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18371,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "前景",
   "id": "1a6c26c9c30ab2b72afa67d4",

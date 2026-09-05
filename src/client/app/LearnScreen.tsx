@@ -144,7 +144,7 @@ export function LearnScreen({ save, deck, strokeData, settings, saveStatus, onRa
 
   return <main className={`paper learn-screen ${settings.reducedMotion ? "reduce-motion" : ""}`}>
     <header className="learn-hud">
-      <div className="hud-level"><span className="seal">学</span><p><b>HSK {deck.id.at(-1)} · LEARN</b><small>{remaining} TO GO · LESSON {curriculumLessonNumber(level, settings.levelSize)}</small></p></div>
+      <div className="hud-level"><span className="seal">学</span><p><b>HSK {deck.id.at(-1)} · LEARN</b><small>{remaining} TO GO · LESSON {curriculumLessonNumber(level)}</small></p></div>
       <span className={`save-state ${saveStatus}`}><i /> {statusLabel(saveStatus)}</span>
       <button className="settings-button" onClick={onSettings} aria-label="System settings">
         <img className="mooncake-icon" src="/images/mooncake-settings.png" alt="" />

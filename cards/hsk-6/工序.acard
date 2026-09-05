@@ -1,14 +1,18 @@
 {
   "audio": "bfab675580a44e699c0346fe4fea9c15d0b758940a12feb0bed318ae0848d152.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 66282,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "admin-documents"
+    ]
   },
   "hanzi": "工序",
   "id": "75ed40657390588ed3497237",

@@ -1,17 +1,21 @@
 {
   "audio": "0a03b55a002494c54d9414e2c6ee7dfd263373961e5fab22d246d8ca81e56f54.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "乡",
       "家"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4823,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "家乡",
   "id": "db0849e08f3ff186cd0aa433",

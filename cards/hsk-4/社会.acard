@@ -1,17 +1,21 @@
 {
   "audio": "40d8bab045ae7072cbb3cc6c6d4861f8e90e18c4bb462841f8eb7426c8235ba4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会",
       "社"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1651,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "society-politics"
+    ]
   },
   "hanzi": "社会",
   "id": "a0ca2369f967c9e8a66397e0",

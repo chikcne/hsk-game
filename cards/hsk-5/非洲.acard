@@ -1,14 +1,18 @@
 {
   "audio": "d72c88121b7f787e8be95ef305a98a3fd0006e1a2b1891654fb9078f3744b677.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2927,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "非洲",
   "id": "6f3f64eb0156f9bc54cfc679",

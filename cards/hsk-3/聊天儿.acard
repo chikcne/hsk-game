@@ -1,17 +1,21 @@
 {
   "audio": "e6e62931a913743806340b29a399d32d2e2a2c433c06e0814301a9e3689650e0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天",
       "聊"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 725199,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "聊天儿",
   "id": "208ac1ecb139be02fb2804bd",

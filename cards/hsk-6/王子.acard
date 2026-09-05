@@ -1,16 +1,20 @@
 {
   "audio": "13f85ce3dfc7a65a911fc7e46934841791f7df541fc9f9b14d601af0084a139b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1971,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "王子",
   "id": "0fc9333a93de9b9e3fce4ad4",

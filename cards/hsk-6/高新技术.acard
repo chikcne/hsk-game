@@ -1,18 +1,22 @@
 {
   "audio": "5196bc7ce2ff39cb7e6325522da79806dc86f480e08749dd12c224fde03d28b0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "技术",
       "新",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 721047,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "高新技术",
   "id": "012b2b1eabb58c3b68851436",

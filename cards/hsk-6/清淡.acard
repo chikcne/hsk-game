@@ -1,17 +1,21 @@
 {
   "audio": "ae5069df9fe2b4d80580639e151dafc4018639e8813ccff70b07aa097b75ba0e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "淡",
       "清"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 48247,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "清淡",
   "id": "3e24fd626820e61f832119ce",

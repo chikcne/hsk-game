@@ -1,17 +1,21 @@
 {
   "audio": "7608f9e25aee8db9da917f1f04dd3d3deb19ffb91d05808ac6b11f3dbe732ca3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "奖",
       "牌"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20650,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "奖牌",
   "id": "6466665d119edff0ad7bb9d9",

@@ -1,16 +1,20 @@
 {
   "audio": "0beb36ec855dfa8a1c201f3469d3c97b22781e275f9a2c3f178e6702d34af65d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "新"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 34889,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "新颖",
   "id": "3a35c86fc8a8d6000506d58e",

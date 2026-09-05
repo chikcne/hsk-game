@@ -1,16 +1,20 @@
 {
   "audio": "857504ba1802b7a818a1ce0781d76aa11b500580b73ea74d3ede6b6a573d448f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "如"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 304,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-pronouns"
+    ]
   },
   "hanzi": "如何",
   "id": "09aa3b53d3151b8961e1c105",

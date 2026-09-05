@@ -1,17 +1,21 @@
 {
   "audio": "dd6541c096a28d7bda4cd3c510c2ba09435ad17913d8ab60d3432df237336c7e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "开"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5202,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-change-process"
+    ]
   },
   "hanzi": "开发",
   "id": "79278bd24377640acb907efd",

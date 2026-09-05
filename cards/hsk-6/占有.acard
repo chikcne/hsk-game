@@ -1,17 +1,21 @@
 {
   "audio": "3bb06973b9d53009d06bd4c6500bb6cbf1ebb35f383dc35f1719d49000997ae3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "占",
       "有"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11350,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "占有",
   "id": "bcab54f238e12321d31a4765",

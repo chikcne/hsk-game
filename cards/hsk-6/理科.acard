@@ -1,17 +1,21 @@
 {
   "audio": "afe45376158eabfef2354d53316ae7e9e26ecbdca28101221671e6b7581bd95d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "理",
       "科"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 45581,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "science-research"
+    ]
   },
   "hanzi": "理科",
   "id": "7221ac2b53ad29b3fcd4bb8b",

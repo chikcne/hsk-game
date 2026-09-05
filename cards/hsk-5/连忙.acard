@@ -1,17 +1,21 @@
 {
   "audio": "07410bca60078f036d78729eac6549d60c1b255fae2a7ad7b08e45c6c97ba394.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "忙",
       "连"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 147500,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "连忙",
   "id": "372fa1674d9cdd830ba3cfad",

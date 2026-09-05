@@ -1,14 +1,18 @@
 {
   "audio": "8bd56230b6e212bdcb12ccdc86744126f27ad092553a1cbf3a9b5272cd7dbb92.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 12549,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "鼓",
   "id": "f63206d25605cc05d58c4e31",

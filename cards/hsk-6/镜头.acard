@@ -1,16 +1,20 @@
 {
   "audio": "d6aef12fb1ffd42d63609b646a0b45646ad1cb08867631070eb8f32fd33c2d08.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "头"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3223,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "镜头",
   "id": "79bceafa0d7cf3ac4855476e",

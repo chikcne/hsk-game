@@ -1,14 +1,18 @@
 {
   "audio": "1f35f6bd4de6e11ce331480eef6ff0d240a9958ddef109671ad97574101c58ed.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 2332,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "朝",
   "id": "5374263181722cf56d8b20e3",

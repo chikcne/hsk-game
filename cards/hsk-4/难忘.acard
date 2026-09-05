@@ -1,17 +1,21 @@
 {
   "audio": "d7908c8cef463845152e55ef2dc5abfb4193660471e2e4cb9fae976732fe21a2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "忘",
       "难"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9759,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "thinking-cognition"
+    ]
   },
   "hanzi": "难忘",
   "id": "52190ccc8d43b1c1569f6585",

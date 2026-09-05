@@ -1,17 +1,21 @@
 {
   "audio": "ebee03be7ff17ef7e0a945f702829c0569767efdb97136fe4358c3a02af7b955.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "刻",
       "时"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1575,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "时刻",
   "id": "4a2352ff03b15eafa4657802",

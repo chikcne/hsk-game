@@ -1,16 +1,20 @@
 {
   "audio": "161a4371f349c1097bfd8c3bf32860f0a1f021ab7e3fc190053023906e751f52.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "整"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4756,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "整整",
   "id": "986d0ffd919987c00800d838",

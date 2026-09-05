@@ -1,16 +1,20 @@
 {
   "audio": "8fa7cc550d9c2f0d26feafbb22dda8fb6970a1f9587bc8228c7e95d0c3d3ff12.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "电"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9603,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "充电",
   "id": "7561503ff183991d116d8da8",

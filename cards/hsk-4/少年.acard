@@ -1,17 +1,21 @@
 {
   "audio": "cc695028d314f8200f8dad54287bfc04e3cbf5cc63ec6cec0073d2ae574a30da.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "少",
       "年"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4786,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "少年",
   "id": "f53ead1ca8c8112872b5b35d",

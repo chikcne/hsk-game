@@ -1,17 +1,21 @@
 {
   "audio": "9b6f7bc39f30a32dd6446ef0d25cde9cbdd420cef6a6ebd9a3457a052a30f14d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "开",
       "花"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 10894,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "开花",
   "id": "c6b2f3982669bb6bc9ae027a",

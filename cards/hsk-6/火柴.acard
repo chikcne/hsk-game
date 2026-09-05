@@ -1,16 +1,20 @@
 {
   "audio": "0baeb972988b861f3a07bedcbb37c1cb5b7a4ee9c9ded028800a6b1f39fdf064.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "火"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9517,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "火柴",
   "id": "3c4506a3e2f0e49a002f5a8f",

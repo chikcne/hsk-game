@@ -1,17 +1,21 @@
 {
   "audio": "820b3051ae10f13620ccaea157e39d74f0646eb46b820183e1c66f2937464abe.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "急",
       "着"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6295,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "着急",
   "id": "ce8bf27c7e8cc59245229013",

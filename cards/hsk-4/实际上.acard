@@ -1,17 +1,21 @@
 {
   "audio": "5b4143fbd1e42267308fe155c424a9f06acc63c8fe74fae122dbbbd9cfe5d18a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "上",
       "实际"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1207,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "实际上",
   "id": "46ace9981534cd524ce55a04",

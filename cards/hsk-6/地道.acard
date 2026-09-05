@@ -1,17 +1,21 @@
 {
   "audio": "2bd55c98520cd0629e08100ac889ca5f933f74d5a14f8db425635bb7ee74d322.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "地",
       "道"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11962,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "地道",
   "id": "5abf8f1c8aa53fc2f785018f",

@@ -1,16 +1,20 @@
 {
   "audio": "effbc3c58390deab9a8d8b08908825f56a9f3a36c358c6890acba6493a90105c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "会"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5601,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "宴会",
   "id": "33e70d762dba39b919f6745e",

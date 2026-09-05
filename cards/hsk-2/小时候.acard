@@ -1,19 +1,23 @@
 {
   "audio": "a73c9a3aedc569de318573f6b003ae84a6f1fe1d8c7768a122a3866810a94c71.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "小",
       "小时",
       "时",
       "时候"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2242,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "小时候",
   "id": "5a3f8068c5f9cef299c600b8",

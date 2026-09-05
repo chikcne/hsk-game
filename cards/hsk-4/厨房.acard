@@ -1,14 +1,18 @@
 {
   "audio": "f513abdf040459d194d6a414e71a9790d924503a7bd7b46f98659550b1dbadd7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1875,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "厨房",
   "id": "548bb2e6d9ec3a477b77de99",

@@ -1,16 +1,20 @@
 {
   "audio": "50130243a33833688168135f11730e5c733350f4e735690e74238ac97fc333e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "望"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3730,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "绝望",
   "id": "7379a3ef6fbec8569918aa42",

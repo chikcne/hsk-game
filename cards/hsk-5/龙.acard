@@ -1,14 +1,18 @@
 {
   "audio": "b3f2cfb1515b1a65febe22f7d7bdfd8ecc8f1b45264fe4e77179d15252ecb418.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3595,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-motion"
+    ]
   },
   "hanzi": "龙",
   "id": "d8e217f03976ebe3e61bb315",

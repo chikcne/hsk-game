@@ -1,17 +1,21 @@
 {
   "audio": "527ee6a33d65e5d7aaa2b52adace099f8c92fe70ed04c6d99e686d12e128eb94.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "书",
       "包"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 17878,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "education-school"
+    ]
   },
   "hanzi": "书包",
   "id": "b3c41ea4c146067e333b8729",

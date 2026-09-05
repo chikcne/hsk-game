@@ -1,16 +1,20 @@
 {
   "audio": "36202132078c3802dbf804b2481966502c5969544309f1b87c9425ca5284b8e9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "区"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 102265,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "景区",
   "id": "aeeeefdbffc7895ae0374c1e",

@@ -1,16 +1,20 @@
 {
   "audio": "1335d7c7fb4c07640869610d970ec0d2250b686412c74e95dccbea075bb21d2b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "电"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 579,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 1,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "technology-media"
+    ]
   },
   "hanzi": "电影",
   "id": "16d7d40e6d6c2baba975e852",

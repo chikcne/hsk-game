@@ -1,16 +1,20 @@
 {
   "audio": "38e4e8f82695085b70e1700a757749618788e43ecb33acbe5f7cc1923d115ca2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "轮"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9715,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "轮椅",
   "id": "3a472ae6d8f3c5e9125460e2",

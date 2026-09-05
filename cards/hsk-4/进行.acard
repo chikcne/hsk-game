@@ -1,17 +1,21 @@
 {
   "audio": "9bdd397ae8b1d4f0993278684315a5753aecb796b1476db8b4d8fdb247686e4c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "行",
       "进"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 589,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "进行",
   "id": "23e9969f4eeebb4a3876238c",

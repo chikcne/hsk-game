@@ -1,17 +1,21 @@
 {
   "audio": "f3e4e064af897d4c1d7b7be54c6aaa40bdfabc6c77324b8d1787c84297f2bda8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "团",
       "结"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6118,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "团结",
   "id": "a988d3ae56ff9e496e245b8f",

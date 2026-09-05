@@ -1,17 +1,21 @@
 {
   "audio": "4e188bdda270c7b2bcb6877b15b3724df792af441bbc59beb7ecd38716a0865e.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "如",
       "正"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2495,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "正如",
   "id": "f64376f0bbac8ac91a911c5f",

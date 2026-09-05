@@ -1,17 +1,21 @@
 {
   "audio": "7a99c4c98ab23379f494885a70adb4f2d774e7491dd52c640854f68ee3eb3df2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "学"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 30785,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "学分",
   "id": "0688e1423b583310b4681764",

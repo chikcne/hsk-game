@@ -1,17 +1,21 @@
 {
   "audio": "223cfcf30966bc8bbe4b4187184d5d86e90ebe2fff078893005f40e302c18fd4.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "人",
       "员"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1924,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "人员",
   "id": "c81f2bc4babd1750697d1de2",

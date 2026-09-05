@@ -1,16 +1,20 @@
 {
   "audio": "d209590b1fa94272801fe9432ab9eae09ace8efe07f7ff73d88c686c9b2b00dc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "法"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 59542,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "没法儿",
   "id": "20c75e55d85e9f937b9be330",

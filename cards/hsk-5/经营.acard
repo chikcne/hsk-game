@@ -1,14 +1,18 @@
 {
   "audio": "12455baf579cb12db01f43ec86c86a872420c2521e37256e2076eb0e45fb6709.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 4297,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "经营",
   "id": "0ebc351167bc890aedc6d7b1",

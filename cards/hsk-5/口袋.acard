@@ -1,16 +1,20 @@
 {
   "audio": "051aaed4370ee390d10432f821325446233d21f94e45beb3ff80161a8831373a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "口"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2832,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "口袋",
   "id": "e5679a93496a10f853c2aced",

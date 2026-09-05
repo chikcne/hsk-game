@@ -1,14 +1,18 @@
 {
   "audio": "b06f0b46243969bd7bc68a8206c16d2c597c3d74b46f2ff10718723d1d9bd454.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 1347,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "令",
   "id": "28b463dd672e8ae797b8ec40",

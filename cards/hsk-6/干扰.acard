@@ -1,16 +1,20 @@
 {
   "audio": "10d5315655d62a4b53b69ffacec5c0d47235ed69423c1d171567c85be1bfb254.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "干"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5136,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "干扰",
   "id": "a262ebfe7f3c26ad7cf2cb8a",

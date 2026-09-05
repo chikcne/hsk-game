@@ -1,16 +1,20 @@
 {
   "audio": "c25dee1ab89173a9f6d9b43c45100301529282801cf56645379dcf5e988cff8a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1925,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "专家",
   "id": "263c39c3b46fd7c2e5cd4050",

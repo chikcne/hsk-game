@@ -1,17 +1,21 @@
 {
   "audio": "b565804a8dcc66663b0060791b648d2ce1751698396852901056d79a9f2bca2c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "发",
       "烧"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 7735,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "发烧",
   "id": "9d96833ebee6e6c49499e102",

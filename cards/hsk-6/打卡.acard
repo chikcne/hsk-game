@@ -1,17 +1,21 @@
 {
   "audio": "4ad9cb6f73d4613db6dec35d983a3b78ddd023257e552f1efd1c0f24fd05ffb6.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "卡",
       "打"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 38623,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "打卡",
   "id": "ce6873d8a41a800757589a08",

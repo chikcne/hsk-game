@@ -1,14 +1,18 @@
 {
   "audio": "7139efc4cf30be1852696e4d940b162ed3d5fc71e298e74522bf355cc32de7dc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 12526,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "税",
   "id": "ae07fb88e3d24cfdb1b60f7e",

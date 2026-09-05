@@ -1,16 +1,20 @@
 {
   "audio": "dd8b6cda436d83945f525860c0a705aa2bc4f099ce7f48dba4cbde4467eb0b5d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "场"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1900,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "机场",
   "id": "8269cce24f628e032e33351a",

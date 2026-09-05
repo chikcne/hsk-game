@@ -1,14 +1,18 @@
 {
   "audio": "ab2c59e32f25df6771c7cbc4e521061b389ac79fc7bfd03d16c7a84b49f2e67c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 3718,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "文明",
   "id": "c8b0739926622869c77f3591",

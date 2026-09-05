@@ -1,14 +1,18 @@
 {
   "audio": "a2410bd849e8d4214d5e93686c2441510ee129821854cd671d79d8ef603f2a54.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 3,
+    "frequency": {
+      "rank": 738,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
+    "grade": 2,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "跳",
   "id": "e80e18aea7986211c72936c0",

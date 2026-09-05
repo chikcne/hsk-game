@@ -1,17 +1,21 @@
 {
   "audio": "9f4bca569815046e6a46de8427aaac65c0077b42f092408a95b604945be6ddb7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "度",
       "深"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8081,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "深度",
   "id": "2e4f7df0b97471a40bf2f0fc",

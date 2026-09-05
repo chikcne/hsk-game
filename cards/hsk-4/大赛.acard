@@ -1,16 +1,20 @@
 {
   "audio": "89cfe5596c6273d4a07870766b35a7b964e370746a67ef63625cd8097188dcf9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6960,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "大赛",
   "id": "7d592222e7f6a40593c0d57a",

@@ -1,16 +1,20 @@
 {
   "audio": "e43aac6f3afe14ffde4dc0c4a4f1c1ea7eebf2374b2d0c01e31e6f1bfab79923.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "干"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1679,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "干杯",
   "id": "344b1c121c78b52d75bc8567",

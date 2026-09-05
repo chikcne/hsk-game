@@ -1,16 +1,20 @@
 {
   "audio": "9e7030178e1a110dd79bb433d91d359e6423c178b99fd0aaa93541feff71c44d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "力"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12607,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "智力",
   "id": "137e0ff59caf7e730e7f9df1",

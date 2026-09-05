@@ -1,16 +1,20 @@
 {
   "audio": "26e8f1fb987e0fd67f3cb1883179e12aa00e429194b4594819c35a5f4d077e69.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "登"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9194,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "登机",
   "id": "460ad5bebd0f138ba197b0bc",

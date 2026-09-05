@@ -1,17 +1,21 @@
 {
   "audio": "90342607f04ab3e5d64c5c135398cbd5167fa4dee31e8a1ce578e972a8ae812a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "家",
       "画"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6537,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "画家",
   "id": "89b8a08fa899dabab61253d1",

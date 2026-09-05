@@ -1,17 +1,21 @@
 {
   "audio": "347cfbe98815981d2d997250e4610a46da853c2838323dd04d9dae232a7c97cc.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "月",
       "球"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4578,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "月球",
   "id": "f0dd4e4fafd47eeaff3be4a7",

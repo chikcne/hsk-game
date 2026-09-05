@@ -1,17 +1,21 @@
 {
   "audio": "778d0711348dac7d51af298265c91deab188aba8f80573ea6d5f4aec7a2b166d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "路",
       "边"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8050,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "路边",
   "id": "4b27162378f9bbd3be1ad1e4",

@@ -1,16 +1,20 @@
 {
   "audio": "bacebe5da3773d4b7fae37ad9e488e278485eaf33aeab4e3955e3b0a187413c8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "少"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 77357,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "少儿",
   "id": "fa0857df03cac65da4634dc0",

@@ -1,17 +1,21 @@
 {
   "audio": "84b50dca13c544cfaf114edceedda9e786c1c4f7a0de83f0b1aa1fcd001b6ea0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "对",
       "面"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1358,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "面对",
   "id": "7c9ce32625a306dedbb83de9",

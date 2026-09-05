@@ -1,17 +1,21 @@
 {
   "audio": "f135c0bfa3b2dea0c455c250bdbda802386cb5664766c701d3db1846f327c12b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "部"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1300,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "部分",
   "id": "2452c5e0b9408de2a97e8c06",

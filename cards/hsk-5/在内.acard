@@ -1,17 +1,21 @@
 {
   "audio": "cce67c169e2a9dd0bbcedf61c4ed721b8948ff9bbbfbffc2349c33801cc61bb7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "内",
       "在"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8871,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "在内",
   "id": "22f7e8447b9b573968288757",

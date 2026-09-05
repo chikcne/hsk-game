@@ -1,17 +1,21 @@
 {
   "audio": "f9dd9029a9932f2dd4aee7137447c3f184b43d4539293f76d4a9535de91e8481.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "传",
       "染"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 9054,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "传染",
   "id": "68ca3967424346ba359813d9",

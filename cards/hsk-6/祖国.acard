@@ -1,16 +1,20 @@
 {
   "audio": "c6beeeffd14be04a62aa868893c2672b16dd264de6dafc2d8797c433e8418349.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "国"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 6666,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-family"
+    ]
   },
   "hanzi": "祖国",
   "id": "e411246cbfbc92ca0cb8921c",

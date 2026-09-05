@@ -1,16 +1,20 @@
 {
   "audio": "164b73bae3cafb551686d2565e976f374f4333773edf6ad0f8279fcb2be8c4eb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "破"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4522,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "突破",
   "id": "68db52ba4acfb38bfa765469",

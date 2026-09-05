@@ -1,17 +1,21 @@
 {
   "audio": "0a7fa076284ec66f4db8bd2ed15e762c6a3025447355adfe30d26d495ce87860.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "先",
       "后"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31125,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "先后",
   "id": "6448fc9121944890accc35ba",

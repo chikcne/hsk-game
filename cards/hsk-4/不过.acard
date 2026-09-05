@@ -1,17 +1,21 @@
 {
   "audio": "09b0007630dfa6384a8acd24a1e071bc1c7d681ef9b0c7b09b519e7cb3d261e7.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "不",
       "过"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 225,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "不过",
   "id": "74a53a1953cedd75ff786c44",

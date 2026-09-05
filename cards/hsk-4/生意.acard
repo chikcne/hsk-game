@@ -1,16 +1,20 @@
 {
   "audio": "dfacb8e29f564ec980cd45afe5d6a379ae2c9f48fcb9988af4dd8482090667b1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "生"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1079,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "生意",
   "id": "d0138e28ec6db3ebb3cdf895",

@@ -1,18 +1,22 @@
 {
   "audio": "fa81f90911b57e0a2f0a86dc988bb3050ff4f4935bbe7b73773bd315894aa7d8.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "夜",
       "年",
       "饭"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 96914,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "年夜饭",
   "id": "84da944ad51596e3abd8f8bf",

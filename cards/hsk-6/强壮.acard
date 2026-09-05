@@ -1,16 +1,20 @@
 {
   "audio": "7c853ab6a9d131ddaa2839acc139f559d8d11b1693ce308a727c1aee12296d8f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "强"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 4064,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "强壮",
   "id": "b73d6e4348382c645ebed8e6",

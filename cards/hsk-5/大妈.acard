@@ -1,16 +1,20 @@
 {
   "audio": "f830e78afabc712f817bbf1068af5957983fe4df2de4bb421f10a61c7e31660b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "大"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 11754,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "people-identity"
+    ]
   },
   "hanzi": "大妈",
   "id": "6e8c568825fb7a266ef72fe6",

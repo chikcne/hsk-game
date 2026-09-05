@@ -1,17 +1,21 @@
 {
   "audio": "ea0bc623b964399619464db1088f39a9dceb167c0669475d357a6d8dc2177815.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "课",
       "题"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 26340,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "课题",
   "id": "c402b29803e69fe647dffe9a",

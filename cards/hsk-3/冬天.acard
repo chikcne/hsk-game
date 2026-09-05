@@ -1,16 +1,20 @@
 {
   "audio": "7170cf36461e8a770d55c01789f2f5c1cd2a1ac1b2dca8ea4074cf784fec09c9.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "天"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3563,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "冬天",
   "id": "a2c035832c0616879e90d87a",

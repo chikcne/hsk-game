@@ -1,17 +1,21 @@
 {
   "audio": "b12e2c28280730cd762f3953878d008a38627c5f285e07253642863862806c34.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "味",
       "美"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3022,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "food-drink"
+    ]
   },
   "hanzi": "美味",
   "id": "9ec3c676f3a8bf4806b8be89",

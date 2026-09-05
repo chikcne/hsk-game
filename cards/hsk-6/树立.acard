@@ -1,17 +1,21 @@
 {
   "audio": "511d563511056669816ec6d5f6d21fcffa6ff118368ab30595a83f69ee975b5f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "树",
       "立"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 22647,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "树立",
   "id": "cf2cf5d8d0d98cc840434788",

@@ -1,16 +1,20 @@
 {
   "audio": "5610165e04b429a32a4152fa29898190cb8b78c1f5ad7d2f77602d6775ef7f3a.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "别"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 5754,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "speech-conversation"
+    ]
   },
   "hanzi": "告别",
   "id": "fbc8964afa275ddc1ddbb486",

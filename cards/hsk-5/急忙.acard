@@ -1,17 +1,21 @@
 {
   "audio": "a2a1c5e262a2c531aa42778456459c9ccbde9fad064cbfba52592c6d77065599.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "忙",
       "急"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 41008,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-adverbs"
+    ]
   },
   "hanzi": "急忙",
   "id": "d1beecba052aaaa9fc9f9632",

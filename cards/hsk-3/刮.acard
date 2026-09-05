@@ -1,14 +1,18 @@
 {
   "audio": "153a45f64cb7a737d0fef7b8b087b04e6fec438c9be9b8225c96372e47a4e413.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 5919,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "刮",
   "id": "9456fe65605f20b8e04b21d7",

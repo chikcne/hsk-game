@@ -1,16 +1,20 @@
 {
   "audio": "d1ce2b07fa22e267e2f2535b4e6afee33c5f1c927ec051484f0aebcd16315028.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "长"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 21221,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-size-shape-colour"
+    ]
   },
   "hanzi": "长寿",
   "id": "a2dc9c8f2a3f1d9ac41ef4a7",

@@ -1,17 +1,21 @@
 {
   "audio": "5a4b3ef83a6d93c9db7d4e9d4fa21d06a1b853bd3a5387c47b13c13971c27514.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "高"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 20805,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "space-position"
+    ]
   },
   "hanzi": "高于",
   "id": "c3f425f081c3692ba3085f5b",

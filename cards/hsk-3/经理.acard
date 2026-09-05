@@ -1,16 +1,20 @@
 {
   "audio": "85975bb03bd915309b45ac6d875de2264f38c0e528353fd82911c2336b65f060.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "理"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3089,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "经理",
   "id": "65653c7c7d1e1b53a7ad6a60",

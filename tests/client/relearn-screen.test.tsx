@@ -17,10 +17,10 @@ const strokeData: StrokeDataMap = new Map([["你", vector], ["好", vector], ["�
 const deck = createDemoDeck("hsk-1") as unknown as LearningDeck;
 
 function baseSaveWithSession(wordIndices: number[]): { save: SaveFile; mergedDeck: RuntimeDeck } {
-  const level = createLevelProgress(deck, { curriculumSeed: "curriculum" });
+  const level = createLevelProgress(deck);
   const keys = wordIndices.map((index) => reviewWordKey("hsk-1", deck.words[index]!.id));
   const save: SaveFile = {
-    schemaVersion: 4, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
+    schemaVersion: 5, profileId: "default", revision: 0, savedAt: new Date(0).toISOString(),
     settings: { ...DEFAULT_SETTINGS },
     spawnOrdinal: 0,
     schedulerRng: randomStateFromSeed("relearn-screen"),

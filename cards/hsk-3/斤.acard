@@ -1,14 +1,18 @@
 {
   "audio": "d2804160995ffc54775568646fee7038d439d77f2b1e331a1ea4914c5c812413.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 31498,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "斤",
   "id": "3c588694c5f1fb9e96f5876a",

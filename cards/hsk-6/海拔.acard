@@ -1,16 +1,20 @@
 {
   "audio": "f227edaf90fb660a87aabc6c8fec65e5c0191fe6212ea644b502c7f3498f6169.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "海"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18177,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "海拔",
   "id": "f6638e1cd17e52c70839e634",

@@ -1,14 +1,18 @@
 {
   "audio": "d2626bb5ba5a2912a3aaa1322901236042c3a89f7afd6fbe839703061b66adcb.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 220,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "core"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-connectives"
+    ]
   },
   "hanzi": "并",
   "id": "a0fc01f8e6b32a9fe1045418",

@@ -1,17 +1,21 @@
 {
   "audio": "5b5dde1e66cb5097b4b20f13cb73b72dac397f834ea35b2e32a20c094510cca2.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "十",
       "足"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8580,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-manner-state"
+    ]
   },
   "hanzi": "十足",
   "id": "7f3f8d0e46c3ace6a7b44e5b",

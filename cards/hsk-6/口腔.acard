@@ -1,16 +1,20 @@
 {
   "audio": "8fde4becd66cf1a03d52521287089100996c83d1eab6b1d086ec543eb35ccbbf.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "口"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 31832,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "口腔",
   "id": "0a22944aeee943c40fc9c97c",

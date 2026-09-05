@@ -1,14 +1,18 @@
 {
   "audio": "ce36ac39055a8dd379c250a04f044f7b7ba07ea911b2dbfc04e58819ce847653.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 46412,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "预报",
   "id": "c7a13a215f282353096e04ce",

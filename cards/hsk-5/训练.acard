@@ -1,16 +1,20 @@
 {
   "audio": "7899bf4319a1a4c5a8048d9b8789a163322c73f6fe5279568b7c9ad299520a5d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "练"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1322,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "common"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "travel-transport"
+    ]
   },
   "hanzi": "训练",
   "id": "88b07a6b85b5c3e2e86b0658",

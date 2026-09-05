@@ -1,14 +1,18 @@
 {
   "audio": "a20e5df1acbdc25365b015c19415e494e63e93ad903f69f356d0e2da504cb40d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 19498,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "食欲",
   "id": "9ef1106d744cce2295e1b6cc",

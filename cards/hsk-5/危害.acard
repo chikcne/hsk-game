@@ -1,16 +1,20 @@
 {
   "audio": "e6f9556a85668dcacc0867fc6c7f1e0ca77ea39f5800f3ae9758a53ec5ebcc2b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "害"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 8998,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "危害",
   "id": "f29d50f5e60142c0b9c82d96",

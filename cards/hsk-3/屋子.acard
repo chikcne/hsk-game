@@ -1,16 +1,20 @@
 {
   "audio": "90fe1b67a730e489c09863c69544dd358a9cfbbc8dbaff9210412513495fe75f.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "子"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2952,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "home-household"
+    ]
   },
   "hanzi": "屋子",
   "id": "faffbbbbd82085433918c6c0",

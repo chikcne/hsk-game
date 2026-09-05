@@ -1,17 +1,21 @@
 {
   "audio": "e6f9b278580cd402264a0685ac4adfca140fa69094dba16d7dc4ce1e171da0a3.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "分",
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1804,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "arts-culture"
+    ]
   },
   "hanzi": "分手",
   "id": "ec8c4912960c769d5baccffa",

@@ -1,17 +1,21 @@
 {
   "audio": "e2fca65b0a52b5a4cbadad0c75326b696b63f96d588b60c88ab0ac9e869bcd61.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "动",
       "手"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 1986,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "work-career"
+    ]
   },
   "hanzi": "动手",
   "id": "a3e99c566f36679686fa2bc1",

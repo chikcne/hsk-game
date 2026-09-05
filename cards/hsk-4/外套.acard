@@ -1,17 +1,21 @@
 {
   "audio": "3b854176419480c414273e3019ca33cd6330a15317881d37cd254475b0047d2b.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "外",
       "套"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 2772,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "abstract-relations"
+    ]
   },
   "hanzi": "外套",
   "id": "1cc862466ea5b47bb57843c6",

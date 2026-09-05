@@ -1,17 +1,21 @@
 {
   "audio": "559ba748447df721890a6fb9a3cf5ad3a3fe99b1d63c48f4e7562d9abfd7bf8c.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "加",
       "深"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 27579,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "加深",
   "id": "3313912999a6e0180f96ea2d",

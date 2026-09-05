@@ -31,9 +31,6 @@ export type LearnLaunch = {
 export type PrepareLearnLaunchOptions = {
   /** settings.levelSize: the per-session cap on brand-new curriculum words. */
   levelSize: number;
-  /** Per-profile curriculum seed used ONLY when the grade has no level
-   * record yet (callers pass a secure random seed; tests pass a fixed one). */
-  newLevelSeed: string;
 };
 
 export type PrepareLearnLaunchFailure =
@@ -72,7 +69,7 @@ export function prepareLearnLaunchEffect(
       session = null; // a stale session cannot survive a deck update
     }
     if (!level) {
-      level = yield* createLevelProgressEffect(deck, { curriculumSeed: options.newLevelSeed });
+      level = yield* createLevelProgressEffect(deck);
       levels = { ...levels, [deck.id]: level };
       session = null;
     }

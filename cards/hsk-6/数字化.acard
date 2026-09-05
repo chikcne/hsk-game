@@ -1,19 +1,23 @@
 {
   "audio": "19e381b69e67d810a402399f0025a21c16a418411e40525d25180c34e92d9a97.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "化",
       "字",
       "数",
       "数字"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 52546,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "数字化",
   "id": "9a5f2b554acbd91a29f1c857",

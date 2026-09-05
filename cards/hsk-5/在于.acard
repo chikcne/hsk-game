@@ -1,17 +1,21 @@
 {
   "audio": "3547de316a61f277dab619dbaf294e10dde1384f8c286fd8731fc8f5b3b4ed98.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "于",
       "在"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 3291,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "mid"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "在于",
   "id": "e13d2b788f4d982e4ef6c82f",

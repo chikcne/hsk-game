@@ -1,14 +1,18 @@
 {
   "audio": "e4f4fbacfa54bb69059d8553373af665376565a64b1c304213076e7f0fcf1db0.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
+    "frequency": {
+      "rank": 13927,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 6,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "desc-evaluation"
+    ]
   },
   "hanzi": "赖",
   "id": "515c6611d31babfee53b6dc4",

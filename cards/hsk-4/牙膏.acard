@@ -1,16 +1,20 @@
 {
   "audio": "e3afd1aeee5ecc15bd71d3394c11199d710e41220b6d0109b957a61f9af88d2d.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "牙"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 18672,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 4,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "body-health"
+    ]
   },
   "hanzi": "牙膏",
   "id": "c33f3c793cb64c3663d59cb8",

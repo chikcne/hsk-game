@@ -1,16 +1,20 @@
 {
   "audio": "48a8bfb39e3cccc6403e68914d9ef986862d1624a36ea062ea0b233d424fa7bd.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "提"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 33306,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "提倡",
   "id": "f449741c81da97899dc6e95f",

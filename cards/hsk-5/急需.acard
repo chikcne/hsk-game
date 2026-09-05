@@ -1,17 +1,21 @@
 {
   "audio": "75e78bf8944f22a1d01f04ec937afcd0944d80994471d13beca05fa8ebc240e1.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [
       "急",
       "需"
     ],
-    "frequency": null,
+    "frequency": {
+      "rank": 12123,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
     "grade": 5,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "actions-physical"
+    ]
   },
   "hanzi": "急需",
   "id": "003c46d31c8851e9b1a811dc",

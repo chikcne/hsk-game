@@ -1,14 +1,18 @@
 {
   "audio": "aa547c4aa80d900fbabf003bce19fd8538c73ddc854e2082f411bcf2b66ffb22.mp3",
   "curriculum": {
-    "boundMorpheme": false,
     "components": [],
-    "frequency": null,
-    "grade": 5,
+    "frequency": {
+      "rank": 32220,
+      "source": "opensubtitles-2018-zh-cn",
+      "tier": "tail"
+    },
+    "grade": 3,
     "notes": null,
     "pin": null,
-    "seed": false,
-    "topics": []
+    "topics": [
+      "g-numbers-measure-words"
+    ]
   },
   "hanzi": "束",
   "id": "2b5327bb3aca3c8f9b2325ed",
