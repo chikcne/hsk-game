@@ -1,0 +1,29 @@
+{
+  "audio": "937f2581e0f1c7b551fb748247fa07aacf97734cae4abcbceded30d28442c801.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实惠",
+  "id": "fad81a5074efa3a577c3befc",
+  "level": 6,
+  "meaning": "tangible benefit, substantial; practical",
+  "pinyin": "shíhuì",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1186-1779527163589"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

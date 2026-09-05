@@ -1,0 +1,29 @@
+{
+  "audio": "d4f403dbd0f30d4e23cc49967e01ecc755b84c4755854ac3f08978b2285a5209.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "告诉",
+  "id": "a3cf4ddf0a2ba14da6892cab",
+  "level": 2,
+  "meaning": "to tell",
+  "pinyin": "gàosu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-JQb0v0tBl~-1779527159146"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

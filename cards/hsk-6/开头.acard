@@ -1,0 +1,32 @@
+{
+  "audio": "607d888887aba035cc4bed81ad43a1164002ef1a6159ed7ae4f5f06d3527f55b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头",
+      "开"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开头",
+  "id": "57345677337511959f5223eb",
+  "level": 6,
+  "meaning": "to start, to begin; beginning",
+  "pinyin": "kāitóu",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-765-1779527163168"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

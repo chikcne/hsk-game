@@ -1,0 +1,32 @@
+{
+  "audio": "632904b2ea4af2ab72d208679d3b833a6b8a5b38a4499f749ab6f9add2f3224f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "撑",
+      "支"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "支撑",
+  "id": "059758f230683135726746ff",
+  "level": 6,
+  "meaning": "to support",
+  "pinyin": "zhīchēng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1696-1779527164099"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "ef5e35d990547f50897eca74b8595f331d35f01f3ead7d5210b7961a6e585fc9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学生",
+  "id": "e736f4fd8ab014c16e5ac4ef",
+  "level": 1,
+  "meaning": "student",
+  "pinyin": "xuéshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-D(/8ZafoxW-1779527159051"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

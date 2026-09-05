@@ -1,0 +1,31 @@
+{
+  "audio": "5ed0f46cdd760540bcc5be5c38965c55520162f4dc3b00b8a9035932ea721afb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "传统",
+  "id": "b91a8ec4412aec49005f6aab",
+  "level": 5,
+  "meaning": "tradition; traditional",
+  "pinyin": "chuántǒng",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-FLr:Ww^(Y>-1779527160990"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

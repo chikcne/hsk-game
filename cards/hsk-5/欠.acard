@@ -1,0 +1,29 @@
+{
+  "audio": "860ef8458d60e34bfa50dd956f2ec42a9cacc9c9f3bfa15a57003d3a5e82762a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "欠",
+  "id": "dae890cb1c98dc7be22aecea",
+  "level": 5,
+  "meaning": "to owe, to be short of",
+  "pinyin": "qiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-DxyY+;-{G,-1779527161671"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

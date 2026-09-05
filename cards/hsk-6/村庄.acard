@@ -1,0 +1,31 @@
+{
+  "audio": "3bbb5508d729184ea232c891be8a244576292ac5958da63ec7f248e0bcc60615.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "村"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "村庄",
+  "id": "096fe4d6eaac57216c6d072a",
+  "level": 6,
+  "meaning": "village",
+  "pinyin": "cūnzhuāng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-229-1779527162632"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

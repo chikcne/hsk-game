@@ -1,0 +1,32 @@
+{
+  "audio": "97e6fff32664e814c449a01db68d5b48902fc92ac3202cd4e588561b3f2e82ff.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "引"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "引发",
+  "id": "e28e947ccd916d3346288150",
+  "level": 6,
+  "meaning": "to trigger, to cause",
+  "pinyin": "yǐnfā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1581-1779527163984"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

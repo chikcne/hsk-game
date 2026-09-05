@@ -1,0 +1,31 @@
+{
+  "audio": "fb71452e653f380f92604346f6d09165250d83ddbd447f5711b74b0676626cba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "烦"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "烦恼",
+  "id": "de33b9b2ee3a43f7b9b69e0f",
+  "level": 4,
+  "meaning": "worried, distressed",
+  "pinyin": "fánnǎo",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-za*?#kk*bD-1779527159994"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "a276f0e5abf58c8b93699aceeb13403a367da1524f2c07297af35306adf89ea3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "铜",
+  "id": "8eb5ce9c17ea951ffd574b3b",
+  "level": 6,
+  "meaning": "copper",
+  "pinyin": "tóng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1309-1779527163712"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "94d54f3de622af14cf1d3841db040c1a328d1d8f84001e0fa51817b7951251c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "冲",
+      "动"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "冲动",
+  "id": "964448b08afeaa6f3a3bddc9",
+  "level": 6,
+  "meaning": "impulse; impulsive",
+  "pinyin": "chōngdòng",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-173-1779527162576"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

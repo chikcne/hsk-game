@@ -1,0 +1,29 @@
+{
+  "audio": "6176896ea8a4900de0b1f43a18875790ebf1c6b3d95a1e38496b74e481d7f1c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "领",
+  "id": "3c6b449acf4726bdfbed46fe",
+  "level": 5,
+  "meaning": "to lead; collar",
+  "pinyin": "lǐng",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-o!sy7%6lwq-1779527161528"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

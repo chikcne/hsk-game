@@ -1,0 +1,29 @@
+{
+  "audio": "f19169db032bd294fc4aaa03ce31b145acb90ea243d1ac099831501676c224c8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "矛盾",
+  "id": "5c403c7b731fb9a4d836a05f",
+  "level": 5,
+  "meaning": "contradiction; to conflict; contradictory",
+  "pinyin": "máodùn",
+  "pos": "noun、verb、 adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ev*!Ro+xK.-1779527161557"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

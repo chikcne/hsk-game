@@ -1,0 +1,29 @@
+{
+  "audio": "b18e7c2d1a25756716473a470744434f44c20a142ea1bf90ff6a062eaae82b02.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "办",
+  "id": "b41dd8f3e2226f447fc18593",
+  "level": 3,
+  "meaning": "to do, to handle",
+  "pinyin": "bàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-IuPa~1}>(7-1779527159313"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

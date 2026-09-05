@@ -1,0 +1,32 @@
+{
+  "audio": "80805083c0505a72c579e611307421fcef3553d4723c26ca3b10fffc3a771d54.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "车",
+      "辆"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "车辆",
+  "id": "7183b325fe025f49d7c49da2",
+  "level": 5,
+  "meaning": "vehicle",
+  "pinyin": "chēliàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-r>QLU]C?n<-1779527160929"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

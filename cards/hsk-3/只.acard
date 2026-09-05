@@ -1,0 +1,29 @@
+{
+  "audio": "c8a2ccf2c5a6e80853623c85543fe13c16aa7467abacf7a653e90d7842a4baad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "只",
+  "id": "28b90e7938e342ee52e7d60c",
+  "level": 3,
+  "meaning": "only, merely",
+  "pinyin": "zhǐ",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-fiq0ZpV8Lq-1779527159778"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

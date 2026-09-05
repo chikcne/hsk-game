@@ -1,0 +1,32 @@
+{
+  "audio": "52a9a391e045eaf053965bd6b25ce1c5e9bf0693379299d81f85955aaf26b477.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点",
+      "特"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "特点",
+  "id": "803f2c4c97fb57df8031c203",
+  "level": 4,
+  "meaning": "characteristic, feature",
+  "pinyin": "tèdiǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-M)nCS:hYyO-1779527160528"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "169c43242c85315d7d095ef0e4927e70168f9199301abbf26b1ea33cf663602e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "远"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遥远",
+  "id": "cc04eb6602ba8c340ef97e4c",
+  "level": 6,
+  "meaning": "distant",
+  "pinyin": "yáoyuǎn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1526-1779527163929"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

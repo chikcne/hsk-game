@@ -1,0 +1,29 @@
+{
+  "audio": "5d636b66e96f580991cc03f95145d012a2bab2dd6c9ffb9987ce8db07e64773a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "逛",
+  "id": "aa2ff41d7050677dd37b9c54",
+  "level": 4,
+  "meaning": "stroll, roam, browse, shop around",
+  "pinyin": "guàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-mXN!KbyV#_-1779527160080"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

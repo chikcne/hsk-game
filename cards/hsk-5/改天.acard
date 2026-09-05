@@ -1,0 +1,32 @@
+{
+  "audio": "5ed5fc2c660e2892be08c52e9c302086ad58aa6879b4f804f8ec179c394ab4c2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天",
+      "改"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "改天",
+  "id": "c4146215bff8d7ad6e983779",
+  "level": 5,
+  "meaning": "some other day",
+  "pinyin": "gǎitiān",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B5R6lEF8<H-1779527161182"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

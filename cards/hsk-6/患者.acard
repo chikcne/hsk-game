@@ -1,0 +1,32 @@
+{
+  "audio": "6a9469bb1baa82e0c8e72a1a61944a7e47848b021e4ec9809e46f85e39f103d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "患",
+      "者"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "患者",
+  "id": "c25d31e29c119be7be46bfbb",
+  "level": 6,
+  "meaning": "patient",
+  "pinyin": "huànzhě",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-580-1779527162983"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

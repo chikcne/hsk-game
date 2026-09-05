@@ -1,0 +1,29 @@
+{
+  "audio": "cd9b5b29cbfc94480102e2bca447cda3a3ada06fb48183317fcf38e0e8d76da2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "典礼",
+  "id": "88d8d50bd4645e8eeee3e114",
+  "level": 6,
+  "meaning": "ceremony",
+  "pinyin": "diǎnlǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-297-1779527162700"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

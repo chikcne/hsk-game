@@ -1,0 +1,32 @@
+{
+  "audio": "599f34caf4dd978ae4991de5a753d2767c592cdd01b7a2b82396b64a8af1eb4c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "工作",
+      "日"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "工作日",
+  "id": "1d087a571761e0108e62f830",
+  "level": 3,
+  "meaning": "workday",
+  "pinyin": "gōngzuòrì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-e#e$Qo1Lq$-1779527159452"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

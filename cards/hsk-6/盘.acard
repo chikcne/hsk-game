@@ -1,0 +1,29 @@
+{
+  "audio": "7125ec92ef1b11ee5310672ecaca4bb867946e1ec84257f25510d836b37bfb13.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "盘",
+  "id": "8589baa6d868808737dd074e",
+  "level": 6,
+  "meaning": "measure word for plates, coils; (to coil)",
+  "pinyin": "pán",
+  "pos": "量、（动）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-970-1779527163373"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

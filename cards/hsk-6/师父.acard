@@ -1,0 +1,29 @@
+{
+  "audio": "148675bead668dcefdc0183447e2bdb1f91495520dcdf0a4ad4ea04b913df636.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "师父",
+  "id": "57cd6825c3bb13cbcd22eb18",
+  "level": 6,
+  "meaning": "master, teacher",
+  "pinyin": "shīfu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1178-1779527163581"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

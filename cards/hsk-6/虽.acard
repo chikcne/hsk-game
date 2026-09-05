@@ -1,0 +1,29 @@
+{
+  "audio": "efd1b7c1782e97eb60fca76eb8d942e4d64b1095875d8444410aff0f950b1c92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "虽",
+  "id": "d26df8587bf1ea3ec82900ab",
+  "level": 6,
+  "meaning": "although",
+  "pinyin": "suī",
+  "pos": "连",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1249-1779527163652"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

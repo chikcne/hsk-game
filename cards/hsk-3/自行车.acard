@@ -1,0 +1,33 @@
+{
+  "audio": "122f799c139365a1c6ca049f3ca249a42fa368dbb2c2e76bb0b4bc3ed898d9ea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "自",
+      "行",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自行车",
+  "id": "9e01b7f53c318edef9e2d882",
+  "level": 3,
+  "meaning": "bicycle",
+  "pinyin": "zìxíngchē",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-c4L}~DuA!r-1779527159794"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

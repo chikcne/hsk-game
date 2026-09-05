@@ -1,0 +1,32 @@
+{
+  "audio": "0dd811a8c81f6d7fd369e765e8fafcaf66905a38fad7fea3a351fd75da4d3d36.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下来",
+  "id": "35cdb58d9c7de20e1dcd7122",
+  "level": 2,
+  "meaning": "to come down",
+  "pinyin": "xiàlái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-BfP+%Ktl_=-1779527159261"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

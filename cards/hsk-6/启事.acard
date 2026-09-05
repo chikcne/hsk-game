@@ -1,0 +1,31 @@
+{
+  "audio": "764e8801fa0ae54382bd8d3c441b32f0a22073dbea00680487a785ffe45afd4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "启事",
+  "id": "0b0fcdb4fb442f6e9673de1f",
+  "level": 6,
+  "meaning": "notice, announcement",
+  "pinyin": "qǐshì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1023-1779527163426"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

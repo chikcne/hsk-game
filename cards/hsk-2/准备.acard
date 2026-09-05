@@ -1,0 +1,31 @@
+{
+  "audio": "71e928a5e65eab40ad0afde5b7041773c3bcaaa70a7b657d043863d09c440511.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "准"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "准备",
+  "id": "737b5f5a4d68068235c92193",
+  "level": 2,
+  "meaning": "to prepare",
+  "pinyin": "zhǔnbèi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-uq1x!(v{Ps-1779527159296"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

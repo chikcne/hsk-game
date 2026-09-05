@@ -1,0 +1,29 @@
+{
+  "audio": "efad490e18aed1b1807a8d784ad4bf697fd4633c31f2b7f31303559f28da04c2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "握",
+  "id": "8cb72ca0deeaa4fd1e16b7af",
+  "level": 5,
+  "meaning": "to hold, to grasp",
+  "pinyin": "wò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nJ,U6=+t&g-1779527162006"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

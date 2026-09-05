@@ -1,0 +1,29 @@
+{
+  "audio": "0b19c1ff79fa8f35efa2a86a0eff40f3cb412cb562e7328b691908e4283550ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "患",
+  "id": "f209271ee7c9eeda466b4e9b",
+  "level": 6,
+  "meaning": "to contract, to suffer from",
+  "pinyin": "huàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-578-1779527162981"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

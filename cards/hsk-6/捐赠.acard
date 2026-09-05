@@ -1,0 +1,32 @@
+{
+  "audio": "fa72fbffa1e60a8103ff4437a3dcc1fac90031a151c66f11e0618f4e9b60c7c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "捐",
+      "赠"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "捐赠",
+  "id": "7cd508d264f4253a42e46aea",
+  "level": 6,
+  "meaning": "to donate",
+  "pinyin": "juānzèng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-752-1779527163155"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

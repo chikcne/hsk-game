@@ -1,0 +1,29 @@
+{
+  "audio": "450a0191fa904d69e337db573890cca03b8b853162ae1f8015f2b13f284f63e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "艺术",
+  "id": "75dd20de5f5be664f8c2da3f",
+  "level": 4,
+  "meaning": "art",
+  "pinyin": "yìshù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hRppL8_M.s-1779527160673"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "96be67c616c86fd8e0e94ccac2d451ed2f5ba4d854ce76ff308dc30373bd4e13.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "用",
+      "试"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "试用",
+  "id": "dafbcc309acfb1a04a9b5dd9",
+  "level": 5,
+  "meaning": "to try out, to be on probation",
+  "pinyin": "shìyòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x<hV){uCxw-1779527161844"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

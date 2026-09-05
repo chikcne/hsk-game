@@ -1,0 +1,29 @@
+{
+  "audio": "12d3d921ec746a5c94fab0b00409bfd4b34304d0c1fe3a79e816aa140fd58384.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "漂",
+  "id": "9880c57a9c699ea0c013b2ae",
+  "level": 6,
+  "meaning": "to drift",
+  "pinyin": "piāo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-991-1779527163394"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "17ad77ae67d3a180f7bf4ae1ab20691900b71345e3d04e2d8b3abda6e2b68c6f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "店",
+      "药"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "药店",
+  "id": "cf1e4e77d80676b214c7d49b",
+  "level": 2,
+  "meaning": "pharmacy",
+  "pinyin": "yàodiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-pAdn+tdRcg-1779527159272"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

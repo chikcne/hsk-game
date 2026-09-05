@@ -1,0 +1,32 @@
+{
+  "audio": "a7c696f9554a965f01b52a040cc97fa40ac1700fe62554a9dc92a35576486b2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生",
+      "野"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "野生",
+  "id": "d90038a607f52f0fd3488bc9",
+  "level": 6,
+  "meaning": "wild",
+  "pinyin": "yěshēng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1532-1779527163935"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

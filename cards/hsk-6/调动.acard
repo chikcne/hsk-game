@@ -1,0 +1,32 @@
+{
+  "audio": "6d6012cd05715100cb24a65be2ff957cfdcbaaaac4821611de1c701d5a127b9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "调"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "调动",
+  "id": "5e64f4f9bc9d0f86f2dd3a40",
+  "level": 6,
+  "meaning": "to transfer, to mobilize",
+  "pinyin": "diàodòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-305-1779527162708"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "d66297accfa1ca4da302923cf498798f754203dc145e3b61bd86555ea563d3e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "挡"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "阻挡",
+  "id": "18f5412251e6b37064fa12ed",
+  "level": 6,
+  "meaning": "to block, to stop",
+  "pinyin": "zǔdǎng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1796-1779527164199"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

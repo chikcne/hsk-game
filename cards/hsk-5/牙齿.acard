@@ -1,0 +1,31 @@
+{
+  "audio": "dc92f0bfc32915436879b1d0f9e76f761d7b52dbc4c1efd768a5de75c3eb38f3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "牙"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "牙齿",
+  "id": "39f9a5cc4f5aa42c8bbcbe30",
+  "level": 5,
+  "meaning": "tooth",
+  "pinyin": "yáchǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-h_1wt5Ua%B-1779527162127"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

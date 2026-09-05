@@ -1,0 +1,29 @@
+{
+  "audio": "3b672b1846a46ac42f4a1f043a9ef549620e1cb3ce7013135f3dcf6c10ceccdd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "混",
+  "id": "109b328c5e8f1c7db8582517",
+  "level": 6,
+  "meaning": "to mix, to blend; carelessly",
+  "pinyin": "hùn",
+  "pos": "动、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-594-1779527162997"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

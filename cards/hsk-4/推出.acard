@@ -1,0 +1,32 @@
+{
+  "audio": "ec133d500b360f874ed365c91dd3fc571242e7280946560278b3d7ce8d5b4d25.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "推"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "推出",
+  "id": "41a0014d54f645c224273b81",
+  "level": 4,
+  "meaning": "to launch, to push out, to introduce",
+  "pinyin": "tuīchū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-b};Dtr12?7-1779527160560"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

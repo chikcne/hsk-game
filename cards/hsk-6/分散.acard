@@ -1,0 +1,32 @@
+{
+  "audio": "59e5f6decc31814438b9066411d2b6c851928c6172e1b368e14608affe69a785.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "散"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分散",
+  "id": "7848ae7ea507ff59e636da6e",
+  "level": 6,
+  "meaning": "dispersed; to scatter",
+  "pinyin": "fēnsàn",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-387-1779527162790"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

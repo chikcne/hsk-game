@@ -1,0 +1,33 @@
+{
+  "audio": "f16e0115ea646ba70c5bb383ea5f25828578b398560edf1ad94186b7fb488970.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "得",
+      "看",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看得起",
+  "id": "ce59a0b9a148f5dd96650c31",
+  "level": 6,
+  "meaning": "to think highly of",
+  "pinyin": "kàndeqǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-769-1779527163172"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

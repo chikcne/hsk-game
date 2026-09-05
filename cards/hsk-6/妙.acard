@@ -1,0 +1,29 @@
+{
+  "audio": "64c5eefb67d7ab3882d0c5756321138b541ca79ccafbd3c3054b8ef60be9d7fb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "妙",
+  "id": "a8c56d62527210f95ebfdff6",
+  "level": 6,
+  "meaning": "wonderful, excellent",
+  "pinyin": "miào",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-916-1779527163319"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

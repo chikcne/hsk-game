@@ -1,0 +1,29 @@
+{
+  "audio": "c1c750061f50ac8d9258ac65ac5ebd1f30e594df44bb06524a76857c6513c7d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "副",
+  "id": "488ea36df549a6988cf5ca1b",
+  "level": 5,
+  "meaning": "measure word for pairs, sets",
+  "pinyin": "fù",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-oVvBQ6+=p]-1779527161172"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

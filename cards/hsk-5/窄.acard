@@ -1,0 +1,29 @@
+{
+  "audio": "85d1ae1ed03729ad34182c5a2827bb4a207759920aaa39f047d396836e06406f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "窄",
+  "id": "22feeb04cea00ee83f23c8e1",
+  "level": 5,
+  "meaning": "narrow",
+  "pinyin": "zhǎi",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ynotMaW/44-1779527162265"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

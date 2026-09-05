@@ -1,0 +1,31 @@
+{
+  "audio": "612041afdf8a10f29a263196878978a85f71aa8b6fc6755093c256833de5149e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "咳"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "咳嗽",
+  "id": "efebb6038dc30b5a0cbd2eba",
+  "level": 4,
+  "meaning": "to cough",
+  "pinyin": "késou",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-l?kJYA<P~(-1779527160231"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

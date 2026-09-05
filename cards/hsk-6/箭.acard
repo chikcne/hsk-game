@@ -1,0 +1,29 @@
+{
+  "audio": "f06e702bf97f99ca823e2ae0afe10b898abd170e6a82c47e27f464b4f676619e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "箭",
+  "id": "39e71daeb27fa96bc795215d",
+  "level": 6,
+  "meaning": "arrow",
+  "pinyin": "jiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-658-1779527163061"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

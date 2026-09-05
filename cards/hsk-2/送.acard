@@ -1,0 +1,29 @@
+{
+  "audio": "345f1b0c24c1158cb16f65451e394c4a72f69ee34e92636854044eae4698a94e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "送",
+  "id": "4d387e1ae1a48beecf3a2446",
+  "level": 2,
+  "meaning": "to give, to send, to see off",
+  "pinyin": "sòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-N&J>SN:IXz-1779527159240"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

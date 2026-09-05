@@ -1,0 +1,31 @@
+{
+  "audio": "ce00b2539a0b882b0c10f03486cb3f7e52cbc657f929cdf5f58d17c9ad86326a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "个"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "个体",
+  "id": "c1d67822156552b676d8ab2b",
+  "level": 6,
+  "meaning": "individual",
+  "pinyin": "gètǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-445-1779527162848"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

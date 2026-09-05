@@ -1,0 +1,32 @@
+{
+  "audio": "db2577b9c3cf21fda35f79fc61bacb19dc7d78a07d60c18438cbef3df3109c31.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "唱",
+      "歌"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "歌唱",
+  "id": "016f2415be74be25957b4aec",
+  "level": 6,
+  "meaning": "to sing",
+  "pinyin": "gēchàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-442-1779527162845"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

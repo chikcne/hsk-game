@@ -1,0 +1,32 @@
+{
+  "audio": "f6c7cf68a4dffb2c7a337b41bde059d9a3e22f407decb395e32246c225e06819.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "密",
+      "集"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "密集",
+  "id": "dfeb30e1751ddab7854ddac2",
+  "level": 6,
+  "meaning": "to concentrate; dense",
+  "pinyin": "mìjí",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-905-1779527163308"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

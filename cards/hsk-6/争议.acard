@@ -1,0 +1,31 @@
+{
+  "audio": "10399d9314e857dd196f23153f291739c8043eb0a48d295710916d022320d3b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "争"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "争议",
+  "id": "47d4dfb2c85fdf3ef4b7c105",
+  "level": 6,
+  "meaning": "dispute, controversy; to dispute",
+  "pinyin": "zhēngyì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1687-1779527164090"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

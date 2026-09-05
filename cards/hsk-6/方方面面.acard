@@ -1,0 +1,33 @@
+{
+  "audio": "ac392b059e69258c0f18f80cca80bf2f620b427240aa5ff1912a279e841b5241.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "方",
+      "方面",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "方方面面",
+  "id": "c70d648f245987c2347900a0",
+  "level": 6,
+  "meaning": "all aspects, every side",
+  "pinyin": "fāngfāngmiànmiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-369-1779527162772"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

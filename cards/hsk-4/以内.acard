@@ -1,0 +1,32 @@
+{
+  "audio": "bffff8dd194b5212b89752c047260c620627fd52a2de73f6dd18b3bf9980b2ca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "以",
+      "内"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "以内",
+  "id": "9147bdcb7abe6af467dc25d1",
+  "level": 4,
+  "meaning": "within",
+  "pinyin": "yǐnèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-C<?_{EA=d7-1779527160670"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

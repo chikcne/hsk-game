@@ -1,0 +1,31 @@
+{
+  "audio": "8f050f45375ea91da0615e8cabdbafbff5d9d5579b0db0563c441181c9b8e4b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "高"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高峰",
+  "id": "edd6331f63729ab93504b313",
+  "level": 6,
+  "meaning": "peak, summit",
+  "pinyin": "gāofēng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-434-1779527162837"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

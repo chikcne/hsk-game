@@ -1,0 +1,29 @@
+{
+  "audio": "023c54ad036b1cca92e7f6d9df442bfd9de96bbf3b0e29aa176c773e63c24423.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主任",
+  "id": "3b648d99db336f2234a9a66a",
+  "level": 5,
+  "meaning": "director, head",
+  "pinyin": "zhǔrèn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B`r)~SA7Oh-1779527162348"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "8013d62998aea616f814e132c769726ac10d146c82643d108db5a50d3964f789.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "步"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "步骤",
+  "id": "bda727ba808c07aa3f852019",
+  "level": 6,
+  "meaning": "step, procedure",
+  "pinyin": "bùzhòu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-92-1779527162495"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

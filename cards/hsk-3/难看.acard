@@ -1,0 +1,32 @@
+{
+  "audio": "27f808f47860c3ca5e03d3a595d30e5f7fdcd136b76ef4794ecce3899a38036f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "看",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难看",
+  "id": "c81e3b8b52d677b2f9ef104d",
+  "level": 3,
+  "meaning": "ugly",
+  "pinyin": "nánkàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-xH|Pk}`IMM-1779527159581"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

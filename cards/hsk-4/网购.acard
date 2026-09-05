@@ -1,0 +1,31 @@
+{
+  "audio": "65e850b713511dfac0622eab37eb72eb5e05002cdb846ffed53131ddce4914a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "网"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "网购",
+  "id": "f9176e9a88e601b340ff2023",
+  "level": 4,
+  "meaning": "to shop online",
+  "pinyin": "wǎnggòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qM|Idfu.Zg-1779527160568"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

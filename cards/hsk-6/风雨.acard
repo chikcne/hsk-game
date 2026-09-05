@@ -1,0 +1,32 @@
+{
+  "audio": "b927c612ad0f17db8b12ba519f5066148e4a68c0dd103c141d3403b3dcf561ae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "雨",
+      "风"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "风雨",
+  "id": "17d8830a2e05a41a00089831",
+  "level": 6,
+  "meaning": "wind and rain, hardships",
+  "pinyin": "fēngyǔ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-395-1779527162798"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "55163847ea0fb72314f3da3a9bafa55583fb73fa741b65e597e1d16d0ba007f9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "灰",
+  "id": "689cccaf52c75c692545c89c",
+  "level": 5,
+  "meaning": "ash, gray; gray",
+  "pinyin": "huī",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-q74I&uBV}Y-1779527161310"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

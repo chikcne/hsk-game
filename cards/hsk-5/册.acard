@@ -1,0 +1,29 @@
+{
+  "audio": "669412e469fa29b9d3a8a6c94876cba94a1540c3d3559b525792a66e62d0d553.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "册",
+  "id": "b0f18f1208975edbe5312fe4",
+  "level": 5,
+  "meaning": "measure word for books",
+  "pinyin": "cè",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-d+E1M$%D^O-1779527160897"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

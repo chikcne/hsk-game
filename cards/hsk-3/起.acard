@@ -1,0 +1,29 @@
+{
+  "audio": "4fc5c461a6262ed7931276f23dd29de9946a21cb2860f94cb1e3eb1e8a8ae522.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "起",
+  "id": "24f6b022b309e63a5bd0d33d",
+  "level": 3,
+  "meaning": "to rise, to get up; (measure word for events)",
+  "pinyin": "qǐ",
+  "pos": "verb、 （classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-g90=hAuqWd-1779527159604"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

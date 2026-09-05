@@ -1,0 +1,29 @@
+{
+  "audio": "187f1a607e00de13dc8926faa876fd6d4ac904809a9eb93ddf18d565d467610c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "针",
+  "id": "58c97014ac9f35e5de7e8c58",
+  "level": 6,
+  "meaning": "needle",
+  "pinyin": "zhēn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1676-1779527164079"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

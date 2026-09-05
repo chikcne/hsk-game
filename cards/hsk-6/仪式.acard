@@ -1,0 +1,31 @@
+{
+  "audio": "9f698d71a3d4ea524481256517781b64e07d79ab984964a29797bfb5eddef566.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "式"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "仪式",
+  "id": "f3c7032b91892287764b1f08",
+  "level": 6,
+  "meaning": "ceremony, rite",
+  "pinyin": "yíshì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1553-1779527163956"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

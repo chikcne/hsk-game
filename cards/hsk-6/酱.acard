@@ -1,0 +1,29 @@
+{
+  "audio": "a9ceeebeaeacfa11a7e9fa659380e177c4cb2b6e5d89ea5d02c08d50640a2fa2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "酱",
+  "id": "d5ef6423b7083015d2350b66",
+  "level": 6,
+  "meaning": "sauce, paste; to sauce",
+  "pinyin": "jiàng",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-668-1779527163071"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

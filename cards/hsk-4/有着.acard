@@ -1,0 +1,32 @@
+{
+  "audio": "3bc3acfe9013eb495d3b8cb937d7f0aea94c6dfced0d69ed880e0c0f8bafb728.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有",
+      "着"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有着",
+  "id": "62ce2ff65966b40637dd38eb",
+  "level": 4,
+  "meaning": "to have, to possess",
+  "pinyin": "yǒuzhe",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-eBA1I`!)_a-1779527160697"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

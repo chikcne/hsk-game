@@ -1,0 +1,31 @@
+{
+  "audio": "3c1fb46b4edd04ece008c24bfa6b3ccfa984151637c4f464b35ce64dbb12bcf3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "证"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "证实",
+  "id": "2be12b088083e51868407048",
+  "level": 6,
+  "meaning": "to confirm, to verify",
+  "pinyin": "zhèngshí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1691-1779527164094"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "165dc62f0627066d47abd3450542cf7706baf85ea0b990804979312668186660.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "热",
+      "闹"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热闹",
+  "id": "330ddd543342fabe47d5e43f",
+  "level": 4,
+  "meaning": "lively, bustling; to liven up; lively atmosphere",
+  "pinyin": "rènao",
+  "pos": "adjective、verb、 noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-gQs-tQBFmR-1779527160412"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

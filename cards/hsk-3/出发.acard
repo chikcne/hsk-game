@@ -1,0 +1,32 @@
+{
+  "audio": "631a8784e82a16b6fe8be54d3c8bd348b205d48a56e60eaaeb9113a5e89908ae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "发"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出发",
+  "id": "19daacdd054c964cfae11d20",
+  "level": 3,
+  "meaning": "to set out, to leave",
+  "pinyin": "chūfā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-fI]!voQ5)N-1779527159365"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

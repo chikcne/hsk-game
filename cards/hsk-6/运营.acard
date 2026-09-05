@@ -1,0 +1,31 @@
+{
+  "audio": "9673a6b88666852923250da24fa834450f588e08b6a64d20df7c49841fac485a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "运"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "运营",
+  "id": "ae3e8445626fbbc7c537d008",
+  "level": 6,
+  "meaning": "to operate",
+  "pinyin": "yùnyíng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1637-1779527164040"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

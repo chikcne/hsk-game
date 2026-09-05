@@ -1,0 +1,31 @@
+{
+  "audio": "f89d6d259e163edfd9690b9e7fdf73d3d4495ab53374a0c14f65c8fae46a57bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "负面",
+  "id": "d456387521c62a7014d50f73",
+  "level": 6,
+  "meaning": "negative, adverse",
+  "pinyin": "fùmiàn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-410-1779527162813"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

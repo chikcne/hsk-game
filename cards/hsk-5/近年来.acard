@@ -1,0 +1,33 @@
+{
+  "audio": "03c053c79affee9109a317881252f84081ee3d54ad9bd26fd4351bdaa276c1ae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年",
+      "来",
+      "近"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "近年来",
+  "id": "26b13f12dc1225191e60e979",
+  "level": 5,
+  "meaning": "in recent years",
+  "pinyin": "jìnnián lái",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EWmbR9T}3N-1779527161420"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

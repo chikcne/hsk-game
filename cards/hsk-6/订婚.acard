@@ -1,0 +1,31 @@
+{
+  "audio": "89cdabe0d111d7e80ea1b4dc9ba3fcef2a0a37b8f373e26d8fa117f42f31d812.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "订"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "订婚",
+  "id": "0820aa7ac89a0f57e7cfb6fb",
+  "level": 6,
+  "meaning": "to get engaged, to be betrothed",
+  "pinyin": "dìnghūn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-310-1779527162713"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

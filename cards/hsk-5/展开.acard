@@ -1,0 +1,31 @@
+{
+  "audio": "e9629a01d38a1aac8efcd8a744eb41b5c3e7940850ac8873c9886365ada68539.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "展开",
+  "id": "3e08fcf6fe0a3b3d5ec03f3e",
+  "level": 5,
+  "meaning": "to unfold, to spread out",
+  "pinyin": "zhǎnkāi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-xlY95f1|+*-1779527162267"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

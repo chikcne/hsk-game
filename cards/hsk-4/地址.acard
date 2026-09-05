@@ -1,0 +1,31 @@
+{
+  "audio": "e6ecbe3d5407e2221dc22a78f73c017f60182e906f5834ea1995fbebbeec9ac6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地址",
+  "id": "17a6cf35ba2b5542f6b2459d",
+  "level": 4,
+  "meaning": "address",
+  "pinyin": "dìzhǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ho[%8:^f*{-1779527159959"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

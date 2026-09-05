@@ -1,0 +1,31 @@
+{
+  "audio": "e992a4e88bcb0cc7cd6a6cb6ac435b8bd82977181d62aee54d81a6158e5a2940.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "故事",
+  "id": "a4fb2f7983affd65704795f6",
+  "level": 3,
+  "meaning": "story",
+  "pinyin": "gùshi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-hr`PL?t~B;-1779527159453"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

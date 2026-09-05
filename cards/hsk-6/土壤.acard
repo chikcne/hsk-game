@@ -1,0 +1,31 @@
+{
+  "audio": "dac5268b29c32ff4308fac9fd142886dc7085093bf9036beb29eaa743a4d2539.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "土"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "土壤",
+  "id": "718c4fd4f20ba882b4159295",
+  "level": 6,
+  "meaning": "soil",
+  "pinyin": "tǔrǎng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1334-1779527163737"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

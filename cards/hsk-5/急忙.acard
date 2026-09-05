@@ -1,0 +1,32 @@
+{
+  "audio": "a2a1c5e262a2c531aa42778456459c9ccbde9fad064cbfba52592c6d77065599.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "忙",
+      "急"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "急忙",
+  "id": "d1beecba052aaaa9fc9f9632",
+  "level": 5,
+  "meaning": "hurriedly, hastily",
+  "pinyin": "jímáng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-p[H/t7P;&5-1779527161335"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

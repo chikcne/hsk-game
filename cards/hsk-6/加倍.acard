@@ -1,0 +1,32 @@
+{
+  "audio": "2512a5d8bfc1e86134f1178fac0d2140d53ca3841b39d907238396aa03f6e7fa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "倍",
+      "加"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加倍",
+  "id": "0ae9933b72d405ebe2dba99b",
+  "level": 6,
+  "meaning": "to double; double",
+  "pinyin": "jiābèi",
+  "pos": "动、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-629-1779527163032"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

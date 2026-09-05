@@ -1,0 +1,29 @@
+{
+  "audio": "4d9b2c83beae0307fb8b4e74bff9fe3f4f1e0d16bde6420dfec499769468ed77.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "用",
+  "id": "99db81e97b5d8ac7fb81182e",
+  "level": 3,
+  "meaning": "to use",
+  "pinyin": "yòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-I!-7w@&r(_-1779527159744"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

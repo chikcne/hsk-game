@@ -1,0 +1,29 @@
+{
+  "audio": "f7ec15d84c15c3ea7323e57b79602d58bb8bdd902ac628a04c6939214e4a135d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "炎症",
+  "id": "43f97623889d9578c4836759",
+  "level": 6,
+  "meaning": "inflammation",
+  "pinyin": "yánzhèng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1514-1779527163917"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

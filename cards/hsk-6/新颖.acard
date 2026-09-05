@@ -1,0 +1,31 @@
+{
+  "audio": "0beb36ec855dfa8a1c201f3469d3c97b22781e275f9a2c3f178e6702d34af65d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "新"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "新颖",
+  "id": "3a35c86fc8a8d6000506d58e",
+  "level": 6,
+  "meaning": "novel, innovative",
+  "pinyin": "xīnyǐng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1470-1779527163873"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "a2fae20d5e091bc2b2370c9d5fa693bf73d7d6d52c5801c651a1049b2abb8f7a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "媒体",
+      "新"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "新媒体",
+  "id": "a77443561575f4a5848bd4e8",
+  "level": 6,
+  "meaning": "new media",
+  "pinyin": "xīnméitǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1464-1779527163867"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

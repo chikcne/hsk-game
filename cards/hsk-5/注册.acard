@@ -1,0 +1,31 @@
+{
+  "audio": "d22bec4a845290bc81709c0f20998fe8e53770da749e757826c10b92d4f41bfc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "册"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "注册",
+  "id": "33ba101e14a02a08bf83a17c",
+  "level": 5,
+  "meaning": "to register",
+  "pinyin": "zhùcè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x=}2Pn6WDs-1779527162352"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

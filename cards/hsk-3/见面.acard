@@ -1,0 +1,32 @@
+{
+  "audio": "a1e7c9de7229b7127e2653f149c26bee092e3b51e0d8594c9a4001298e5e0cc1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "见",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "见面",
+  "id": "17f35a7f85aa319195819da8",
+  "level": 3,
+  "meaning": "to meet",
+  "pinyin": "jiànmiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-mhAV?x;Arz-1779527159505"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

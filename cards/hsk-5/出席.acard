@@ -1,0 +1,31 @@
+{
+  "audio": "13677f8fbec3b37072fc177c6481f07dc2238d30698184c53de5d55c21614b33.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出席",
+  "id": "c78f09ea8c7eed1caa308154",
+  "level": 5,
+  "meaning": "to attend",
+  "pinyin": "chūxí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ro<E4#SN1h-1779527160979"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

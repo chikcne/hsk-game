@@ -1,0 +1,31 @@
+{
+  "audio": "449651de4f75a443d5918e3018b90627b80916ad1d4c31ac05d6fd353c31abc3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "毛"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "毛巾",
+  "id": "90b12f7994933758130f61dc",
+  "level": 4,
+  "meaning": "towel",
+  "pinyin": "máojīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xFZ[D(zOW8-1779527160300"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

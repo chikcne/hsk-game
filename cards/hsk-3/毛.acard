@@ -1,0 +1,29 @@
+{
+  "audio": "4067cd0662260e63cf2eec1e76a7fe5714db13c0a77a25eb37a6a8d102cbce4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "毛",
+  "id": "5b5804140e9d714c5dbf0bec",
+  "level": 3,
+  "meaning": "measure word for money; (hair)",
+  "pinyin": "máo",
+  "pos": "classifier、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-bK37P=gJD!-1779527159571"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

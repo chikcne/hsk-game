@@ -1,0 +1,32 @@
+{
+  "audio": "6e20097cc47e9ad4efd943a41c2f4c09a165494666c43d3883d7b9912a0df329.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "办"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "办公",
+  "id": "3a7e09f3b50d51e62e120098",
+  "level": 4,
+  "meaning": "to handle official business, to work",
+  "pinyin": "bàngōng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-FUuExIn#=m-1779527159813"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

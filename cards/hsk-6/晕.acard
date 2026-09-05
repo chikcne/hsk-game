@@ -1,0 +1,29 @@
+{
+  "audio": "3a154249bc9adbbd602ac648263abd394aa465ae44c20c9a983f7567e3d7e162.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "晕",
+  "id": "e06751b8126497affd20d2f3",
+  "level": 6,
+  "meaning": "dizzy; to faint",
+  "pinyin": "yūn",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1633-1779527164036"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

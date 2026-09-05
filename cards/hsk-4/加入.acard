@@ -1,0 +1,32 @@
+{
+  "audio": "879a6d7742c708811f26ea6a3d3c43fd089b9ac4e18c38283d3b3f7bd6f345b3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入",
+      "加"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加入",
+  "id": "1b3197e5549bfb93d57ea063",
+  "level": 4,
+  "meaning": "add, mix, join, become a member",
+  "pinyin": "jiārù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-k@l}@8Wp{D-1779527160141"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

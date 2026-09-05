@@ -1,0 +1,32 @@
+{
+  "audio": "752f0d4ae3f297523025ac0240c42aff0e46addd0c15a8a8c9c2a72fc3d4f73e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "票",
+      "门"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "门票",
+  "id": "801488e6b323535498a529a6",
+  "level": 2,
+  "meaning": "ticket",
+  "pinyin": "ménpiào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-u@m{ItSB@x-1779527159205"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

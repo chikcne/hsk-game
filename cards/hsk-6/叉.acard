@@ -1,0 +1,29 @@
+{
+  "audio": "fc0f58c76ca94fef0ca90f61f320355f7bbe36a050a379ac386bb07c5671d3bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "叉",
+  "id": "c68c75f5feabf92aacf72d34",
+  "level": 6,
+  "meaning": "fork; to cross, to fork",
+  "pinyin": "chā",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-117-1779527162520"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

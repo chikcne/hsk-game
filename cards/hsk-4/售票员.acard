@@ -1,0 +1,32 @@
+{
+  "audio": "fff15db929a379cf7de96aaab1bfddc32340e5cda7215dbee411abd2574a63c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "员",
+      "票"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "售票员",
+  "id": "55a35c85e347d470568388ba",
+  "level": 4,
+  "meaning": "ticket seller, conductor",
+  "pinyin": "shòupiàoyuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-wMu[@nInp6-1779527160488"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

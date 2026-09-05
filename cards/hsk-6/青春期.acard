@@ -1,0 +1,33 @@
+{
+  "audio": "be034a327a8a744fa93c9918f929a4a86e54b1aa1a7c51baf55cee592f53a7d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "期",
+      "青",
+      "青春"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "青春期",
+  "id": "d37ee2cedf712c6def8f3f4c",
+  "level": 6,
+  "meaning": "adolescence",
+  "pinyin": "qīngchūnqī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1055-1779527163458"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

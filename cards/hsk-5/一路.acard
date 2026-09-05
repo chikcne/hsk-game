@@ -1,0 +1,32 @@
+{
+  "audio": "4b3e766b2a4be8f5467d5785a4ca6a9784d6fafd71542dbe74402895ed932f29.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "路"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一路",
+  "id": "4ed423156cf6d5ed0bfc453a",
+  "level": 5,
+  "meaning": "all the way; throughout the journey",
+  "pinyin": "yílù",
+  "pos": "noun、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EF(lxHqI#(-1779527162160"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

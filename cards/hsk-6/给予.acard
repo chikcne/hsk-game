@@ -1,0 +1,31 @@
+{
+  "audio": "c883c762d8232e6803ef0c2c67df96d26e7937b48ecdf16bdad1b1fb6206636f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "给"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "给予",
+  "id": "e6538d190ebdb0a5013a6657",
+  "level": 6,
+  "meaning": "to give",
+  "pinyin": "jǐyǔ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-446-1779527162849"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

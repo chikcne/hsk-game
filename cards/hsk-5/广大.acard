@@ -1,0 +1,32 @@
+{
+  "audio": "b4c5ad6bb64bfa2843f9a6ceee6429042e5f3d9637b627420a4b1fc15039ba7a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "广"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "广大",
+  "id": "7360e2c4f5ea4e6d85065c2d",
+  "level": 5,
+  "meaning": "vast, extensive",
+  "pinyin": "guǎngdà",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uO,[3X,lkM-1779527161244"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "376d95f6da19490186a1be734fd87f77858822d4de423c6148284909bf7551cc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为",
+      "称"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "称为",
+  "id": "7ee5a91ddc4347c1e9874c14",
+  "level": 5,
+  "meaning": "to be called, to be known as",
+  "pinyin": "chēngwéi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F1T~p0~G=v-1779527160937"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

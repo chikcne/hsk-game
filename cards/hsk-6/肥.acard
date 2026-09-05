@@ -1,0 +1,29 @@
+{
+  "audio": "211c68fcee0763b90113b77f02248dbfd6a5a97e8c25c0f4dcf75039e010b0c6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肥",
+  "id": "d6dcb9c93b3fb15bfb36325d",
+  "level": 6,
+  "meaning": "fat; to become fat; fertilizer",
+  "pinyin": "féi",
+  "pos": "形、动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-379-1779527162782"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

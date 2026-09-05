@@ -1,0 +1,31 @@
+{
+  "audio": "ac11eae7bb9c37d4cf1c4393c8d815077b3e23c9a1d6fd45dc8eb0b9fd808678.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亮"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "明亮",
+  "id": "9127a0a93275637269cdcfbe",
+  "level": 6,
+  "meaning": "bright",
+  "pinyin": "míngliàng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-925-1779527163328"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

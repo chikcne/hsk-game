@@ -1,0 +1,29 @@
+{
+  "audio": "e974c7c15c3cd778271aac81eb893125637591afdf12ce764dcb3f0893a560fa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "辆",
+  "id": "690e7232dbf47ef52b06d553",
+  "level": 3,
+  "meaning": "measure word for vehicles",
+  "pinyin": "liàng",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Likw_eEG>I-1779527159557"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

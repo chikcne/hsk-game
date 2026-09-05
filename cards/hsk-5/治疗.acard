@@ -1,0 +1,31 @@
+{
+  "audio": "11ac8002e80a33dc3b6ad80252a4c7d5621fd1b08c631642418cbce46519804b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "治"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "治疗",
+  "id": "c5a99339adbcec5954a54f03",
+  "level": 5,
+  "meaning": "to treat medically",
+  "pinyin": "zhìliáo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-z$Gn}}Sr6G-1779527162318"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

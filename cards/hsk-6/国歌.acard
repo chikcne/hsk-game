@@ -1,0 +1,32 @@
+{
+  "audio": "eb5b4a9782636beadcda27d0ad9dc088b8932275ea1daa30c5b78a7c2e932c76.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "国",
+      "歌"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "国歌",
+  "id": "a13dd875c9fd528f6a0a1e48",
+  "level": 6,
+  "meaning": "national anthem",
+  "pinyin": "guógē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-510-1779527162913"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

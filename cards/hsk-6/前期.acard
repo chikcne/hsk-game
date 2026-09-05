@@ -1,0 +1,32 @@
+{
+  "audio": "82cd05bbf1b797319c10d64c8ecbd2c80fcef588b4127be0c643b9a67bcb8867.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前期",
+  "id": "1a0473f70743d6ab1265ccf3",
+  "level": 6,
+  "meaning": "early stage",
+  "pinyin": "qiánqī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1037-1779527163440"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

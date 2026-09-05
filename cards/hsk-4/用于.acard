@@ -1,0 +1,32 @@
+{
+  "audio": "81a7c9984b23c8357e2112311a4e72eeb4d60e6330b7937b4342efe6218c3494.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "用于",
+  "id": "ce6385c59e338cf10fde2401",
+  "level": 4,
+  "meaning": "to be used for, to be applied to",
+  "pinyin": "yòngyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ja#>Zn}Px1-1779527160683"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

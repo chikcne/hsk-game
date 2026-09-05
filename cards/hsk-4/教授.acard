@@ -1,0 +1,31 @@
+{
+  "audio": "9b91d98b50dbb3d78674371db7de3d69a1a3a8aa1d0e39857df26f404c358fa7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "教"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "教授",
+  "id": "b718ea6f98d66603ca5f7c1d",
+  "level": 4,
+  "meaning": "professor",
+  "pinyin": "jiàoshòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z/oe!##zBX-1779527160178"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

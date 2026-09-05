@@ -1,0 +1,31 @@
+{
+  "audio": "57ea10d2b3383dcff2e0585b90cd074edaa3cb58d0310c350719efd7e0943753.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "严"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "严肃",
+  "id": "660d0fa297a26d5a313438c2",
+  "level": 5,
+  "meaning": "serious, stern; to be serious",
+  "pinyin": "yánsù",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kSL,$9qqi{-1779527162131"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "3d20e1c8ab54dbb8d256f60203e063881e880e3d39b6a43b9893164e0af766f0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子",
+      "样"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "样子",
+  "id": "86e59c614f3fe11b5291d45f",
+  "level": 4,
+  "meaning": "appearance, look, manner",
+  "pinyin": "yàngzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p[vz#lR}U0-1779527160660"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

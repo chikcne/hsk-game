@@ -1,0 +1,31 @@
+{
+  "audio": "2ccc3b0cfabfddd0d862090c0bca2b76a379ccdfb935af3cbde9117480de759e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "单"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "单独",
+  "id": "98bfd3c480bce99737fbb5b7",
+  "level": 5,
+  "meaning": "alone, separately",
+  "pinyin": "dāndú",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J5QP:&2(g,-1779527161042"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

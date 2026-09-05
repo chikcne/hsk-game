@@ -1,0 +1,29 @@
+{
+  "audio": "015f6ed54b99f943e210cc8456dcc56b4cb7e5620eb2e354c2ca31afd2bd30d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "百",
+  "id": "70c7a93dfd9a6688a52e78f7",
+  "level": 1,
+  "meaning": "hundred",
+  "pinyin": "bǎi",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-QA<NkAq3rI-1779527158809"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "3f850e259dcc73feaa6aec8313e38cb095c6e8bf84b9265de295e25191573cce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "将"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "即将",
+  "id": "044f12feb6b40e3f610d5b5c",
+  "level": 5,
+  "meaning": "soon, about to",
+  "pinyin": "jíjiāng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-z&g5jykn~H-1779527161334"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "c90a9524b303ece86b8f60fb41fd9ce337f11571eb1601d3919b89363eb9d093.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "垃圾",
+  "id": "fa3b1e27a1ab5630ea6da323",
+  "level": 4,
+  "meaning": "garbage, trash, rubbish",
+  "pinyin": "lājī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kGEq<Pl9XV-1779527160251"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

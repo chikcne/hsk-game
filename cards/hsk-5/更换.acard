@@ -1,0 +1,32 @@
+{
+  "audio": "755150b29fb0ec02ff7ca7fde47065377a63e66f85e218136560814cbca1879f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "换",
+      "更"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "更换",
+  "id": "2b79ddfd6de9e568c87d581f",
+  "level": 5,
+  "meaning": "to replace, to change",
+  "pinyin": "gēnghuàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-fGiQC5(xoP-1779527161208"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "b55749087cbb8d0772322d08d58678411aa62d1a23271a137eed6b4b6a0976a7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "光",
+      "发"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发光",
+  "id": "e36bc507f653983c5c76e112",
+  "level": 6,
+  "meaning": "to glow, to emit light",
+  "pinyin": "fāguāng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-354-1779527162757"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

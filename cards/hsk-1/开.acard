@@ -1,0 +1,29 @@
+{
+  "audio": "ed3de6581047d55ddbe76078bb2588fb1e05d9515f4be3837596a641572a9fa4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开",
+  "id": "d17ecb76b28b5f6b9c978bd0",
+  "level": 1,
+  "meaning": "to open",
+  "pinyin": "kāi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Lt:p,U?^JY-1779527158900"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

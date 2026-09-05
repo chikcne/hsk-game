@@ -1,0 +1,29 @@
+{
+  "audio": "86802eb37690410041a793b496cfe9ae27a9f968275c53ff5f5583f999cfd230.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "羡慕",
+  "id": "4f4a1ab99637bd68beb0b2a5",
+  "level": 4,
+  "meaning": "to envy, to admire",
+  "pinyin": "xiànmù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-w9==D?3Z|7-1779527160601"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

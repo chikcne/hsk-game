@@ -1,0 +1,31 @@
+{
+  "audio": "d486a84d427a500536cbc785fddd71be549763e6157d0d3b72c2d765f7ad9f8b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上述",
+  "id": "42bbd28f40f24abb37899ede",
+  "level": 6,
+  "meaning": "above-mentioned",
+  "pinyin": "shàngshù",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1151-1779527163554"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

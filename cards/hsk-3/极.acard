@@ -1,0 +1,29 @@
+{
+  "audio": "fbb1b3eb0fa7bc0891e065586437713aef0ba22a9ac3a5bbc7d3d66a1714f740.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "极",
+  "id": "6e7f607083a28d0b21bfee30",
+  "level": 3,
+  "meaning": "extremely",
+  "pinyin": "jí",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-wBl<Czg`Dq-1779527159493"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

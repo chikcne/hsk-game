@@ -1,0 +1,32 @@
+{
+  "audio": "db6e0b07e20e04c9209fcbe73e3f0c9155df8e76a268c623eb6b6616899521e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "听",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难听",
+  "id": "e7af05528558e706f86c07c1",
+  "level": 3,
+  "meaning": "unpleasant to hear",
+  "pinyin": "nántīng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-c>j1qd<~}4-1779527159585"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

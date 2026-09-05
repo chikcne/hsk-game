@@ -1,0 +1,31 @@
+{
+  "audio": "b6be318f22c9c83e81ba15fff908b4f12a832ce61dcc258aa34fa235aabe4ef2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "通"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "通讯",
+  "id": "57d1541845c5ba05bd7069b6",
+  "level": 6,
+  "meaning": "communication",
+  "pinyin": "tōngxùn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1307-1779527163710"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

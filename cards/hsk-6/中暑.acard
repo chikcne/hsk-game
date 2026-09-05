@@ -1,0 +1,31 @@
+{
+  "audio": "2e511f89bd23f8830c96db0ebf6e1934b8b8dadc4ddec765cac1bbd968c66925.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中暑",
+  "id": "23eeeaa41bd410110b2e3084",
+  "level": 6,
+  "meaning": "heatstroke; to suffer heatstroke",
+  "pinyin": "zhòngshǔ",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1733-1779527164136"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

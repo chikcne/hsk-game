@@ -1,0 +1,31 @@
+{
+  "audio": "516c3ad35b99479e74074ea54fc42b29d0e4ba8ef9edc0b66f68f2631030f922.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "粽子",
+  "id": "fea35c57e7d78f0849580665",
+  "level": 6,
+  "meaning": "zongzi, sticky rice dumpling",
+  "pinyin": "zòngzi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1791-1779527164194"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

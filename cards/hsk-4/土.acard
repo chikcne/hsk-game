@@ -1,0 +1,29 @@
+{
+  "audio": "f34bd8158445dfeb2ebe2a5e1956dc468959ec36798f3ac285bb9a7f4316609c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "土",
+  "id": "0719b47a7f03ca52aac8aaea",
+  "level": 4,
+  "meaning": "earth, soil, land; (rustic, unrefined)",
+  "pinyin": "tǔ",
+  "pos": "noun、 （adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-CSn2$+Eci[-1779527160557"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

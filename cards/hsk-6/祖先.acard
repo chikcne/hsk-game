@@ -1,0 +1,31 @@
+{
+  "audio": "a6f0140163a52a76243d10dd9f2a82c8834a1b211450962f714be8523c3a2901.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "先"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "祖先",
+  "id": "555049505ae9dee08864442e",
+  "level": 6,
+  "meaning": "ancestors",
+  "pinyin": "zǔxiān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1798-1779527164201"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "f8ea4c4efe44269204b4f6448d03bcad15a6b6b2322ec66ccd6f56c0c8afc391.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "潜力",
+  "id": "0c67a8963b5668ebca80ef9a",
+  "level": 6,
+  "meaning": "potential",
+  "pinyin": "qiánlì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1036-1779527163439"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

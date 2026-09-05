@@ -1,0 +1,32 @@
+{
+  "audio": "d81758ab05b407eb42e4bd3d5e1de1a24abfa27846822d0371637a2abfc016b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年",
+      "度"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "年度",
+  "id": "5f835b9dd47dfefa33b7ad30",
+  "level": 6,
+  "meaning": "year",
+  "pinyin": "niándù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-956-1779527163359"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

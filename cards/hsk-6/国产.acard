@@ -1,0 +1,32 @@
+{
+  "audio": "e3f291f01a65225649fa3b9e7600c7da9d75ef4c9bbb84b1c9aaf2c5f9ba465e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "产",
+      "国"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "国产",
+  "id": "ebd4e2f432ea9f9258016a1f",
+  "level": 6,
+  "meaning": "domestically produced",
+  "pinyin": "guóchǎn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-509-1779527162912"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

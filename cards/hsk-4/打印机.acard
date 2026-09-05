@@ -1,0 +1,33 @@
+{
+  "audio": "70b5ed6a9fcd2b82b80e1a8f8f1d19f846f9771d706b174f924475e957ffa4ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "印",
+      "打",
+      "打印"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打印机",
+  "id": "cb7be095e410ac3dfb276fb0",
+  "level": 4,
+  "meaning": "printer",
+  "pinyin": "dǎyìnjī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-q3{A~t9Hcg-1779527159923"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "c964be837dc52a5a81e83baddbab5187b530020ff91824cba6cd309c1665ec1e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "等",
+  "id": "7dd0aad8c4e3fe25a9498624",
+  "level": 2,
+  "meaning": "to wait; (and so on, until)",
+  "pinyin": "děng",
+  "pos": "verb、 （preposition）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-waeI=z}w9S-1779527159137"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

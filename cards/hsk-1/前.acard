@@ -1,0 +1,29 @@
+{
+  "audio": "e19d693e62a2c2d1fd63196713caf953b98497eb499638acfceb81c382895b66.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前",
+  "id": "87a2d2a7fef8129dc3d15f2c",
+  "level": 1,
+  "meaning": "front, before",
+  "pinyin": "qián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Hso?5r&b1P-1779527158966"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

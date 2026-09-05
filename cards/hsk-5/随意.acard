@@ -1,0 +1,31 @@
+{
+  "audio": "cafde0fe3e4d2375f712e7f2fd0da303087a6bae39f05110877ce3406a4a47ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "随"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "随意",
+  "id": "f392cd91f9c10a040793fd72",
+  "level": 5,
+  "meaning": "as one pleases, casual",
+  "pinyin": "suíyì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-CCXDREvh_Q-1779527161895"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

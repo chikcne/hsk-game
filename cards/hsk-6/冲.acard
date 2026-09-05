@@ -1,0 +1,29 @@
+{
+  "audio": "8daae23b6136d0e346da7e39cf3f51efbb0a4be37282fb1904dc4d3a5b5fb156.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "冲",
+  "id": "ec14609cb2eaf51394506d08",
+  "level": 6,
+  "meaning": "towards; with the force of",
+  "pinyin": "chòng",
+  "pos": "动、介",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-179-1779527162582"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

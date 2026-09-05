@@ -1,0 +1,29 @@
+{
+  "audio": "3314b32bc0782d08d869166c3e6f1b56314bb92e59ff467397cb797228f77be2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "晴",
+  "id": "7dbe0bd6bdbea45afa555617",
+  "level": 2,
+  "meaning": "sunny, clear",
+  "pinyin": "qíng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-C`zoP7(Y`!-1779527159223"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

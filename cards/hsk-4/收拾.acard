@@ -1,0 +1,32 @@
+{
+  "audio": "59ad7d46753e510e9abef15c3192b4fb9c6fd23bec48482a7ffd8632cfc351f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "拾",
+      "收"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "收拾",
+  "id": "a260e114925bba07f72aee8c",
+  "level": 4,
+  "meaning": "to put in order, to tidy up, to pack",
+  "pinyin": "shōushi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-jZBSa$L5z~-1779527160482"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

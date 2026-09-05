@@ -1,0 +1,32 @@
+{
+  "audio": "def88bf85fe785d017491c8ca8e82e0b733cb30e6210b373d47efbddeda80d2e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "以",
+      "加"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加以",
+  "id": "37d202ae5c13cc0e53773aa9",
+  "level": 6,
+  "meaning": "to apply, to add; in addition",
+  "pinyin": "jiāyǐ",
+  "pos": "动、连",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-635-1779527163038"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

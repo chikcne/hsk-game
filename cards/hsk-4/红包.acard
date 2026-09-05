@@ -1,0 +1,32 @@
+{
+  "audio": "b817d93631a44c2341174db587fcdb1671c565fd862db51a06dce27d0aa2eda8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "包",
+      "红"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "红包",
+  "id": "958cc06f9299ef369887c153",
+  "level": 4,
+  "meaning": "red envelope, red packet",
+  "pinyin": "hóngbāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d7W&nv</*Q-1779527160098"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

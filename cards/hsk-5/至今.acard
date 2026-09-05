@@ -1,0 +1,31 @@
+{
+  "audio": "3109ff679f03157bb71769b59b3711672651d474fe04263234d41b1e0c9ce99d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "至"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "至今",
+  "id": "fcdb9c61b1f584701cfd1a17",
+  "level": 5,
+  "meaning": "up to now, so far",
+  "pinyin": "zhìjīn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-C$=hsi6)Ue-1779527162317"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

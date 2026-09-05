@@ -1,0 +1,29 @@
+{
+  "audio": "011a92f7b9ee76d4b92d41f5d4f8f23aae11305fd879125db4b8c6346b5b1a88.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遗址",
+  "id": "df3a36120dad5fe3bb28d63a",
+  "level": 6,
+  "meaning": "ruins, historical site",
+  "pinyin": "yízhǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1558-1779527163961"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "6bfdcdf97c70b265227b4ddef56d87b431293f5f4c3310c3f5feae685bd0f7b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "位",
+      "地"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地位",
+  "id": "ee6dad44aaba0d5db60d176c",
+  "level": 5,
+  "meaning": "status, position",
+  "pinyin": "dìwèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bwnu]r_(!z-1779527161076"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

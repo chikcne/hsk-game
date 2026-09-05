@@ -1,0 +1,31 @@
+{
+  "audio": "afac6dd0f743f59260f625ce7a5ffe22ad0251d99adb59e807b2a14f1256db95.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "细"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "仔细",
+  "id": "743db659f007032980ea8545",
+  "level": 4,
+  "meaning": "careful, attentive, meticulous",
+  "pinyin": "zǐxì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-u2!:[KX;|z-1779527160782"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

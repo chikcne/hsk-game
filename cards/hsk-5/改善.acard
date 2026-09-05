@@ -1,0 +1,31 @@
+{
+  "audio": "847395612863dbb06000a7490ebbd343678277cb008ffdcb0fdbe9cb3e662046.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "改"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "改善",
+  "id": "8a539bc2495f2bced09cda19",
+  "level": 5,
+  "meaning": "to improve",
+  "pinyin": "gǎishàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-k1:/1,5{Dj-1779527161181"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

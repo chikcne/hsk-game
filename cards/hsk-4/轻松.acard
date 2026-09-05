@@ -1,0 +1,32 @@
+{
+  "audio": "fb8c9afe395837f54b564fea35a3efcb9bfa9bd258cc6a45b9da50b5b83ab58a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "松",
+      "轻"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "轻松",
+  "id": "2a7c91ece664c23af5585a1e",
+  "level": 4,
+  "meaning": "relaxed, light, easy",
+  "pinyin": "qīngsōng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-O7e%Rg@%jM-1779527160391"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

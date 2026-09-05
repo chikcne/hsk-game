@@ -1,0 +1,31 @@
+{
+  "audio": "b49511e3db9324d3de8872d7358369bd341dc5e652bdb0563d407fb8277f631f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "网"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "网友",
+  "id": "b1ca3cfde71f923ef0e1f648",
+  "level": 4,
+  "meaning": "netizen, internet user",
+  "pinyin": "wǎngyǒu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-HP^O+w;:OF-1779527160571"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

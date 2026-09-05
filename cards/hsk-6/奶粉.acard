@@ -1,0 +1,31 @@
+{
+  "audio": "6a493f8868c364e4a23b8cf82124f0278d24821f9101b63aea43c87bfd227ad4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "粉"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "奶粉",
+  "id": "99ea0d58327529ea4d1b9420",
+  "level": 6,
+  "meaning": "milk powder",
+  "pinyin": "nǎifěn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-942-1779527163345"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

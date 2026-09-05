@@ -1,0 +1,31 @@
+{
+  "audio": "47e4f973b22459dab2db1502971c029f8cad32f2a3928e8d36b0229a86d8bc4f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "决定",
+  "id": "7e534d7184f4e4f3f76d1c39",
+  "level": 3,
+  "meaning": "to decide; decision",
+  "pinyin": "juédìng",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-oDk~jsBjGd-1779527159527"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

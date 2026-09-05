@@ -1,0 +1,31 @@
+{
+  "audio": "f68c8420754441a927189440d7fbba5c3c47ad9e2797997f5fdb5f56b82357ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "期"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "星期",
+  "id": "0c6afc438ce264fdcf572a6d",
+  "level": 1,
+  "meaning": "week",
+  "pinyin": "xīngqī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-nC8B3k0220-1779527159046"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

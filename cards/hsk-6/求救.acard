@@ -1,0 +1,32 @@
+{
+  "audio": "89b853c987ff5c6b88fd23f90ea05a408bed3f91122f5cfb90e334064b591071.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "救",
+      "求"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "求救",
+  "id": "5e9981174c25b0b9fa7d8e21",
+  "level": 6,
+  "meaning": "to cry for help",
+  "pinyin": "qiújiù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1070-1779527163473"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

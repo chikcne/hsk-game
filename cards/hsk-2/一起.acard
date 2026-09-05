@@ -1,0 +1,32 @@
+{
+  "audio": "46fe5a77c33b13d21efc98839fa3a78f60d0799a92584c508c1b532fa1874fe6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一起",
+  "id": "fc01a0b72973cde7b0c7f0a9",
+  "level": 2,
+  "meaning": "together",
+  "pinyin": "yìqǐ",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-fT}lqN|icu-1779527159276"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

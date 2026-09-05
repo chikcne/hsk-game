@@ -1,0 +1,31 @@
+{
+  "audio": "58d38be35b90c1481793150d53f6578ab367a8f7b1a540d5ddfe6f7cb4f56315.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "暗"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暗示",
+  "id": "3e2d94016b3abbfbb99a2514",
+  "level": 6,
+  "meaning": "to hint, to imply",
+  "pinyin": "ànshì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-4-1779527162407"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

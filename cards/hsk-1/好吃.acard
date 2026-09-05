@@ -1,0 +1,32 @@
+{
+  "audio": "2e71c3f3d6faf83399ae3f61221d60702e6c83310f5bb3f970f769bd75fd0f88.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "吃",
+      "好"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好吃",
+  "id": "573ebfddae3b59798f4cc84d",
+  "level": 1,
+  "meaning": "delicious, tasty",
+  "pinyin": "hǎochī",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-GBkvx3dn7u-1779527158875"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

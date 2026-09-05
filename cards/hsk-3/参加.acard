@@ -1,0 +1,31 @@
+{
+  "audio": "f38c69cd16ba018619646689a77342eb74345e0e5affa87c04136869da9697d7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "参加",
+  "id": "b3d1e07d39f90ddd3ac247cc",
+  "level": 3,
+  "meaning": "to join, to attend",
+  "pinyin": "cānjiā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-d0f!K*SQ7B-1779527159349"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

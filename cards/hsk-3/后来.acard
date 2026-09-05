@@ -1,0 +1,32 @@
+{
+  "audio": "b924d286aa0102351ea61d376d2182a5664e09b93ad94778b6fa45cde4e46422.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "后来",
+  "id": "63f03b7d2721be6bbace0ac8",
+  "level": 3,
+  "meaning": "later, afterwards",
+  "pinyin": "hòulái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-N6Aicf*>je-1779527159474"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

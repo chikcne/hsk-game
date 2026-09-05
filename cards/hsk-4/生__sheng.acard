@@ -1,0 +1,29 @@
+{
+  "audio": "40e11c6dcfcbb6d59567dfacfdd6c1f1fa66e5995b5070aa652f09c92b15abac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生",
+  "id": "fa897252dd1e9083096641d6",
+  "level": 4,
+  "meaning": "raw, uncooked, unripe; （very, extremely, terribly）",
+  "pinyin": "shēng",
+  "pos": "adjective、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": "adv, adj",
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-tT7MkkpyDJ-1779527160450"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

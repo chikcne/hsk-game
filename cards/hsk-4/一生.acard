@@ -1,0 +1,32 @@
+{
+  "audio": "36f500ecd7acb29b88695c043fc4b52d728422cc2d3ca25da7299cf98e63c84f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一生",
+  "id": "7315772f6c9b69699265a81e",
+  "level": 4,
+  "meaning": "lifetime, all one's life",
+  "pinyin": "yìshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-euoa%i-M0/-1779527160672"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

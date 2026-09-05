@@ -1,0 +1,29 @@
+{
+  "audio": "2967e3ae95bbf9edfec4358eeb66845b2a9a4c856de0c6de37e6b09abaaad72e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "参赛",
+  "id": "5ad4a1f54b4ce681860420df",
+  "level": 4,
+  "meaning": "to enter a competition",
+  "pinyin": "cānsài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-cyL#,Q@+HA-1779527159866"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

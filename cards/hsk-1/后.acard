@@ -1,0 +1,29 @@
+{
+  "audio": "707f01892d942609b06d5422f23315201dbcab8be13461069246ebe1ac71bd65.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "后",
+  "id": "00ab59870dec46e7bc6eb82d",
+  "level": 1,
+  "meaning": "behind, later",
+  "pinyin": "hòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-H&FjiD.SlH-1779527158883"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

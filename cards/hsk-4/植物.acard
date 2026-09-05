@@ -1,0 +1,29 @@
+{
+  "audio": "982cd284ad0bbee026eb2af945c126794e4e51e8656504b23ebe140e3888e4b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "植物",
+  "id": "efa0caffa9a30553adf0871f",
+  "level": 4,
+  "meaning": "plant, vegetation",
+  "pinyin": "zhíwù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-l$eBvC9:YN-1779527160752"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

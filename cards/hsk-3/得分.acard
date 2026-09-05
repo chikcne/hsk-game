@@ -1,0 +1,32 @@
+{
+  "audio": "2211e6b1144d33070086a1bf0001af646c3f3be6b4bdd2a1b1d03d887e24610d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "得"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "得分",
+  "id": "ae27aa84a852bea06441dfe5",
+  "level": 3,
+  "meaning": "to score; score",
+  "pinyin": "défēn",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-jfY.]=aEJ)-1779527159388"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

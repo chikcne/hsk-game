@@ -1,0 +1,29 @@
+{
+  "audio": "6a4cf105db2d4a98450e874ea4d16d86e6580a49aa471cd18d1fcf4b138fb303.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "点",
+  "id": "493c610befb02cd894ea4216",
+  "level": 1,
+  "meaning": "measure word for small round things; (point, dot)",
+  "pinyin": "diǎn",
+  "pos": "classifier、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Ckg5P2hQe--1779527158836"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

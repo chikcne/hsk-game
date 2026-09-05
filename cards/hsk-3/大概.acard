@@ -1,0 +1,31 @@
+{
+  "audio": "4ecc5609d9f24a07d0fafb462f9ddfafaaa35b0bf5347f986f5cb4c741c93e6e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大概",
+  "id": "577452806e01d691a80a68aa",
+  "level": 3,
+  "meaning": "general, rough; probably, approximately; (general idea)",
+  "pinyin": "dàgài",
+  "pos": "adjective、 adverb、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-v<sLo=5lfe-1779527159376"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "ff288053fc82d70e3bd377dbdec4189ffa2f724c5765450c891c85b6f46b2acb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "万"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "万一",
+  "id": "7550511ac7d5406ba142ad8f",
+  "level": 5,
+  "meaning": "just in case; in case",
+  "pinyin": "wànyī",
+  "pos": "noun、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nFi=(C862D-1779527161980"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

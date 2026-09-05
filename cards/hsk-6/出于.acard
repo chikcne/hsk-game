@@ -1,0 +1,32 @@
+{
+  "audio": "f329e68abad5e77b55359eeac394ada2ed9ff39c607c724bdabf30242f169c60.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "出"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出于",
+  "id": "5ffb5ccd3d2091401e38020a",
+  "level": 6,
+  "meaning": "out of, due to",
+  "pinyin": "chūyú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-193-1779527162596"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

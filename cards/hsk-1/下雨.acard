@@ -1,0 +1,32 @@
+{
+  "audio": "715af3b15eae92d41225b8ca7263d98670733697b8a6526b8dca021104c0306f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "雨"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下雨",
+  "id": "82224f31e6f559e79d370536",
+  "level": 1,
+  "meaning": "to rain",
+  "pinyin": "xià yǔ",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-B4XK3rt_GI-1779527159030"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

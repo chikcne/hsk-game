@@ -1,0 +1,31 @@
+{
+  "audio": "02826b2e59876701d4c98e9cf15268ed60192b402901a7edaf20928bda74d8bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "年终",
+  "id": "273ba35dfbcc9cd277537c76",
+  "level": 6,
+  "meaning": "end of the year",
+  "pinyin": "niánzhōng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-957-1779527163360"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "369fe1f4f6366976da34ea4d04339c47b02579c4bcaae8cebbe97251a1079f1c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "老"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "老婆",
+  "id": "ca40c24af19a4e644e5a218b",
+  "level": 5,
+  "meaning": "wife",
+  "pinyin": "lǎopo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bZ4)Y&#!f:-1779527161491"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

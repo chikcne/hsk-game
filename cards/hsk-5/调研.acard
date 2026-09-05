@@ -1,0 +1,31 @@
+{
+  "audio": "d9c5bca9a2edf94e2131b7d8092c8c56e555cdf479b3d750fc0308d3bd653ff3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "调"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "调研",
+  "id": "404029200820b7bb1144e952",
+  "level": 5,
+  "meaning": "to investigate, to conduct research",
+  "pinyin": "diàoyán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Oj_hK1efk-1779527161088"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

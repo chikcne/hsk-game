@@ -1,0 +1,32 @@
+{
+  "audio": "f1eb7ed8cd1c480fee66b868a3731020b8bc5228ae711ec7e0e971d2515ea54a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "花",
+      "费"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "花费",
+  "id": "3135ee76a9f3fbd1664936e3",
+  "level": 5,
+  "meaning": "to spend, to cost",
+  "pinyin": "huāfèi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-vl+;mw168T-1779527161297"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

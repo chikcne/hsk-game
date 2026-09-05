@@ -1,0 +1,32 @@
+{
+  "audio": "e1fca2d82cd3b4f708e95574f434a5459dc76202373a1c7a673a21a5bbe4dfea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "油",
+      "酱"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "酱油",
+  "id": "cd32aeb9311ae4b0d10b5ced",
+  "level": 6,
+  "meaning": "soy sauce",
+  "pinyin": "jiàngyóu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-669-1779527163072"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

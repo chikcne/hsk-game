@@ -1,0 +1,31 @@
+{
+  "audio": "1b408f1b1f185908db3eabb64364bcf9fe9442c53e01c5170ec80022424d8c5f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "帮"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "帮助",
+  "id": "8a9a3e83e84db774a684269a",
+  "level": 3,
+  "meaning": "help",
+  "pinyin": "bāngzhù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-x3{>9UPlSh-1779527159317"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

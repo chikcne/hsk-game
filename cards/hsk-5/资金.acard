@@ -1,0 +1,29 @@
+{
+  "audio": "45506084110ba6a638027f72f2cb14217b2d054a0611fdd9547c1de5a12145df.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "资金",
+  "id": "ee5e930a7f8be05dd176cf60",
+  "level": 5,
+  "meaning": "funds",
+  "pinyin": "zījīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O1]!@YF.dz-1779527162371"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "12afba1b1314cc68eb198f604acfb0b18c3717539e5084df14c1cca09aa52705.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "意思"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "没意思",
+  "id": "7b785d94e42bc4638d2267f6",
+  "level": 2,
+  "meaning": "boring, uninteresting",
+  "pinyin": "méi yìsi",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-_]TqD_wCV-1779527159201"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

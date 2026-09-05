@@ -1,0 +1,31 @@
+{
+  "audio": "6f51aa2117286d046e8c4c5534873588ff0061719a858675a8bd57168810f8bc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "时尚",
+  "id": "8f5df0a67046839d891b50b3",
+  "level": 6,
+  "meaning": "fashion; fashionable",
+  "pinyin": "shíshàng",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1188-1779527163591"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

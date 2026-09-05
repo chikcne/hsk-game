@@ -1,0 +1,31 @@
+{
+  "audio": "18cb37e569ad064608e5afeee619905b415fd04737247dffc54b44450806ec03.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "造"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "创造",
+  "id": "af6bc6c384cba354f066b05f",
+  "level": 5,
+  "meaning": "to create",
+  "pinyin": "chuàngzào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EAcC:$/v1/-1779527160995"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

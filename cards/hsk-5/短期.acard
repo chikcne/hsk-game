@@ -1,0 +1,32 @@
+{
+  "audio": "e58b1e512f2eb4b12e45e2a53186baf2306c4d4171ad66c8a0feed4bda9bd23f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "期",
+      "短"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "短期",
+  "id": "8c3dbd9367f49bcb635bce0c",
+  "level": 5,
+  "meaning": "short term; short-term",
+  "pinyin": "duǎnqī",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-sM>^]lwlM!-1779527161105"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

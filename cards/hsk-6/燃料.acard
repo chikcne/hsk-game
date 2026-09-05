@@ -1,0 +1,31 @@
+{
+  "audio": "65240b85e2396e5042c2ee46d9bc6f2d7492259952af34c398333297bfbdc6a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "料"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "燃料",
+  "id": "025e887058f8d9cecc6d5061",
+  "level": 6,
+  "meaning": "fuel",
+  "pinyin": "ránliào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1086-1779527163489"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

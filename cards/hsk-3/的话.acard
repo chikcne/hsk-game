@@ -1,0 +1,31 @@
+{
+  "audio": "9dc745cbd7340ca274d42e1fc400dc78edc7868a9b2063a651c7ef231a8e4fcb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "的"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "的话",
+  "id": "c28a13fb353b11995d9ebd55",
+  "level": 3,
+  "meaning": "particle used after a condition clause, if…",
+  "pinyin": "dehuà",
+  "pos": "auxiliary",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-kc,3s2(JLZ-1779527159389"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

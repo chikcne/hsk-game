@@ -1,0 +1,29 @@
+{
+  "audio": "edc2885e5d05625ba028e2bf1ce71b68a2068da549a6f208fae562bc6d4bccc5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "招",
+  "id": "e45e072d4140b4a70a193c67",
+  "level": 6,
+  "meaning": "to recruit, to attract",
+  "pinyin": "zhāo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1669-1779527164072"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "f9398fec662283c6833c535a05c3f16ac3a8734f2f818fea34463d7acd66da8f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "长"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "漫长",
+  "id": "c9ff87b6632d743a821ff68e",
+  "level": 6,
+  "meaning": "very long, lengthy",
+  "pinyin": "màncháng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-890-1779527163293"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

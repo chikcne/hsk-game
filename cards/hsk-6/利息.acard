@@ -1,0 +1,29 @@
+{
+  "audio": "4388f94b60a0200a8cff2eecfb2980bdbfb90fa7aeaf716d603ae06b344b261a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "利息",
+  "id": "271ee4d657631f9c7bad5691",
+  "level": 6,
+  "meaning": "interest",
+  "pinyin": "lìxī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-842-1779527163245"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

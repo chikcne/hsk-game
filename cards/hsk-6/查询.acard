@@ -1,0 +1,31 @@
+{
+  "audio": "06d73e43a16ca214cbf3653e63b372c8307e13ff2b920ce3fa6feb2604cd7c04.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "查"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "查询",
+  "id": "b2224242dadf76fccf2145ee",
+  "level": 6,
+  "meaning": "to query, to check",
+  "pinyin": "cháxún",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-120-1779527162523"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

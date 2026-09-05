@@ -1,0 +1,32 @@
+{
+  "audio": "79ace8c6bf6129f272353efdc2c1ff7934e5918aff7657c3e65f1c2b47024268.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "先",
+      "原"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "原先",
+  "id": "6f4cdcf3b1166085dcbbd17c",
+  "level": 6,
+  "meaning": "former, original",
+  "pinyin": "yuánxiān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1623-1779527164026"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "7ace998450299940f1f54dbf5e36a6079acc898aaa2772ae0f0327be82956248.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "沟",
+  "id": "d9867135df15821d1bfd28f6",
+  "level": 6,
+  "meaning": "ditch",
+  "pinyin": "gōu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-471-1779527162874"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

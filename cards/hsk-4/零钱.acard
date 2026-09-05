@@ -1,0 +1,32 @@
+{
+  "audio": "e42941cb36e2e60ae6040d5a233bcc871b4efb97489bba953c12951718e7ee38.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "钱",
+      "零"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "零钱",
+  "id": "d0c88462dd17095fc10ac827",
+  "level": 4,
+  "meaning": "change, small denominations of money",
+  "pinyin": "língqián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ODdA8)(!U!-1779527160281"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

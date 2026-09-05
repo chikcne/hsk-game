@@ -1,0 +1,31 @@
+{
+  "audio": "bfe8725d8504fb9056d34c7e5ddabc19a00713672bfcd9f87c90aab24f878d87.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "借"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "借鉴",
+  "id": "f4ebb167844c1f00699b454d",
+  "level": 6,
+  "meaning": "to draw lessons from",
+  "pinyin": "jièjiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-697-1779527163100"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

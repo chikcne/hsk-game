@@ -1,0 +1,32 @@
+{
+  "audio": "13e684087a1ca5dbc3c1ee81bf4d894ab87809ed134662f33e418c7da64f1685.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "边",
+      "这"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "这边",
+  "id": "f53036c4cc98645699ff05bf",
+  "level": 1,
+  "meaning": "here",
+  "pinyin": "zhèbiān",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-N%PChf=cu*-1779527159083"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

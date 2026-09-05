@@ -1,0 +1,31 @@
+{
+  "audio": "d5e0f402cafd2a2b1b76458f8805cea7824407d265361ad2a9efd1034b53b334.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中华",
+  "id": "d71a9be5e56165db1d02fe2d",
+  "level": 5,
+  "meaning": "China",
+  "pinyin": "Zhōnghuá",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mX:*kLd)tE-1779527162323"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

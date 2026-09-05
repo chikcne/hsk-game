@@ -1,0 +1,29 @@
+{
+  "audio": "a009dc3ce8a0eb0285ea6fb984702c7a407776572294591c15c1c5629e437121.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "卷",
+  "id": "a8912d8507961e049012a544",
+  "level": 6,
+  "meaning": "to roll, to curl; roll; measure word for rolls",
+  "pinyin": "juǎn",
+  "pos": "动、名、量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-753-1779527163156"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

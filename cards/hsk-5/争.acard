@@ -1,0 +1,29 @@
+{
+  "audio": "42bb072eff451553208e125ebb7a6d46ffd36e90c0e4b496c4510dbdf9cebe30.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "争",
+  "id": "720fb4bf11b796b23332468e",
+  "level": 5,
+  "meaning": "to contend, to compete",
+  "pinyin": "zhēng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HNpa?+k:Bd-1779527162291"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "f7f4c6a51030d9c6b7f9b0b430ecc2164011c06578521451b589e354d2cb861d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "箱子",
+  "id": "018aceed54b70039a4fdedd2",
+  "level": 3,
+  "meaning": "box, case",
+  "pinyin": "xiāngzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-x`sZ^>jMyA-1779527159696"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

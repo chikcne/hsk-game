@@ -1,0 +1,32 @@
+{
+  "audio": "bd6321cae5c1a1394f950872e35d039262f57ed5d7fee92473a7ea508c7e2f02.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "流",
+      "通"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "流通",
+  "id": "375d6e682589df12897f8a9d",
+  "level": 6,
+  "meaning": "to circulate",
+  "pinyin": "liútōng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-859-1779527163262"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

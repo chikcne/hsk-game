@@ -1,0 +1,29 @@
+{
+  "audio": "994b19b8851bc9e580dc93158f7d476064173290e9dfb383f258f0545ad4f637.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "挡",
+  "id": "7a4a6135d3698c7b74224920",
+  "level": 5,
+  "meaning": "to block",
+  "pinyin": "dǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GI1M[>JkI`-1779527161052"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

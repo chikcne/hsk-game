@@ -1,0 +1,31 @@
+{
+  "audio": "52a7a25a31eb6a32a86808184f06707ad0a440a5195d981e20b5556e230b18a7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "物业",
+  "id": "c992d7069084a8fd859bfa1d",
+  "level": 5,
+  "meaning": "property management",
+  "pinyin": "wùyè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Lt&gKH;Tq--1779527162022"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

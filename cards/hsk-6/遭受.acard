@@ -1,0 +1,31 @@
+{
+  "audio": "b947a9ca5b40260279127b629353c0985ecea4bb469c5358015146a073b50ad7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "受"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遭受",
+  "id": "43a062d1364d1459fdb9d1f3",
+  "level": 6,
+  "meaning": "to suffer, to endure",
+  "pinyin": "zāoshòu",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1649-1779527164052"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

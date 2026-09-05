@@ -1,0 +1,29 @@
+{
+  "audio": "ec69d9a9379eaf8675b2e2aaabec68d93150dff81bee25a3a0373bbd53d63bab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "兴趣",
+  "id": "2bc17f5149293d9658bd59cc",
+  "level": 3,
+  "meaning": "interest",
+  "pinyin": "xìngqù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-E,l@W07,Hn-1779527159713"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "cfab169df1c00d7a06cbefd0804b049f4128ab55d1ad9aef8722ed609b76341e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时",
+      "随"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "随时",
+  "id": "6478614e40c19b7045687e1c",
+  "level": 5,
+  "meaning": "at any time",
+  "pinyin": "suíshí",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E_m=;{/K+L-1779527161893"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "37bb5eab5f65cf8a81d998fa34dd287b26324f62e16f35b5e7d541c216bab760.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "动机",
+  "id": "696383fd9901b55683a02977",
+  "level": 6,
+  "meaning": "motive, motivation",
+  "pinyin": "dòngjī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-317-1779527162720"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

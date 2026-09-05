@@ -1,0 +1,32 @@
+{
+  "audio": "783e9fa479ddab172c18a0cf5831fc2347834a70ed0a4d0d807202849dfe9779.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伤",
+      "员"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "伤员",
+  "id": "005d2d0882f9bd1cfefbe1ab",
+  "level": 6,
+  "meaning": "wounded person",
+  "pinyin": "shāngyuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1146-1779527163549"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

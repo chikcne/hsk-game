@@ -1,0 +1,32 @@
+{
+  "audio": "9a1fc19587fe515566e104ad912b9e08c8e6d04921b674533585254a66003a16.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "书",
+      "读"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "读书",
+  "id": "895162a0f6326fd692def6df",
+  "level": 1,
+  "meaning": "to read a book",
+  "pinyin": "dúshū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-qrS_to7/]|-1779527158846"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "85f5bd0ca33907905a9a607f622cd80f7b9cfadf60b63ddbe456369b08494fe5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "浏览"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "浏览器",
+  "id": "dcb9701a64799b37398ca4b0",
+  "level": 6,
+  "meaning": "browser",
+  "pinyin": "liúlǎnqì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-856-1779527163259"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

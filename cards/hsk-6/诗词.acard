@@ -1,0 +1,32 @@
+{
+  "audio": "e8bfe2165be52b9121a5ce7878b2e1d8889a3283daa6d64b491c6488d26b8f2d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "词",
+      "诗"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "诗词",
+  "id": "0c0ce64acca6b1a5714b12f9",
+  "level": 6,
+  "meaning": "poetry",
+  "pinyin": "shīcí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1176-1779527163579"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

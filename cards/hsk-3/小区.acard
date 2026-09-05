@@ -1,0 +1,32 @@
+{
+  "audio": "b07cef2da665560cecd81d67193fcb4b8e99aa7a6b792f4f8108e530148593dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "区",
+      "小"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小区",
+  "id": "c6c967425bd7f74f64934b4a",
+  "level": 3,
+  "meaning": "residential community",
+  "pinyin": "xiǎoqū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-qHub}psiBI-1779527159700"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

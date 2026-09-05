@@ -1,0 +1,32 @@
+{
+  "audio": "cef89a3170f13c83dc1a53be1d68728822fde50009f975b023d622507ca1c8b1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "字",
+      "数"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "数字",
+  "id": "03a5f9b9bd4fa3d37ee965f5",
+  "level": 4,
+  "meaning": "digit, figure, number",
+  "pinyin": "shùzì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-x6:kCV8V|O-1779527160497"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

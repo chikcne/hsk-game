@@ -1,0 +1,32 @@
+{
+  "audio": "71db94fd4e6d8f49bded3cb65f1250591d08a83eb4b32997e8f979054250b7dc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水",
+      "跳"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跳水",
+  "id": "b762b9023f0019957ba1a649",
+  "level": 6,
+  "meaning": "diving",
+  "pinyin": "tiàoshuǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1298-1779527163701"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

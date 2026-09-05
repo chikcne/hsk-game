@@ -1,0 +1,32 @@
+{
+  "audio": "f19490fc08b6c0308a4fd26586bc16b797fb9b4318505be9008b06e779c86da4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "处",
+      "好"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好处",
+  "id": "91e0bc7a9068a64147e291bc",
+  "level": 4,
+  "meaning": "benefit",
+  "pinyin": "hǎochù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-mccv.zYtZS-1779527160093"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

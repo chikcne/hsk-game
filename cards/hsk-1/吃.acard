@@ -1,0 +1,29 @@
+{
+  "audio": "7077ff5e098b453dc52af1454d66e0652ec4cada1a98c333bb10da79964ac21f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吃",
+  "id": "c1a2dee020e74bbad8590e7a",
+  "level": 1,
+  "meaning": "to eat",
+  "pinyin": "chī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-gs@ZGE!k>X-1779527158824"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "5018cd7d0fc6785be21dea356b8d5db001e3678c376f5d9517532c1bbcc46d79.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "影子",
+  "id": "7147d29db15cf65af660aed9",
+  "level": 6,
+  "meaning": "shadow",
+  "pinyin": "yǐngzi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1588-1779527163991"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

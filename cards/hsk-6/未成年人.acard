@@ -1,0 +1,35 @@
+{
+  "audio": "1a480a0efd696094e628cf42a29ad53222e0f70add2aa72d01b5250a9b75e5ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "年",
+      "成",
+      "成年",
+      "未"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "未成年人",
+  "id": "837a73ee04c5c13eaa159d58",
+  "level": 6,
+  "meaning": "minor",
+  "pinyin": "wèichéngniánrén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1379-1779527163782"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

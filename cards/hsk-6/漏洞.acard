@@ -1,0 +1,32 @@
+{
+  "audio": "91e54e769efe477a244101cb361cb9166140758c838bbe698e53ce4ed907b416.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "洞",
+      "漏"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "漏洞",
+  "id": "39ebaa68b25aeddfad1beaaa",
+  "level": 6,
+  "meaning": "loophole, leak",
+  "pinyin": "lòudòng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-862-1779527163265"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

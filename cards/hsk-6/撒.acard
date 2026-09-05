@@ -1,0 +1,29 @@
+{
+  "audio": "e9ce0b24d664d195ebfeaaa992ede115b84ce3a4409397c5645611f07b560975.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "撒",
+  "id": "3d7c768f4aaa43d79a1135fc",
+  "level": 6,
+  "meaning": "to sprinkle",
+  "pinyin": "sǎ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1123-1779527163526"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

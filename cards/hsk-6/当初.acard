@@ -1,0 +1,32 @@
+{
+  "audio": "7805d4605e700a9b8cd7e073cd07c34efc55b1262d38d1496f999a0869cfd4c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "初",
+      "当"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当初",
+  "id": "912fe54bba9ba9707f1a5cfe",
+  "level": 6,
+  "meaning": "originally, at that time",
+  "pinyin": "dāngchū",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-268-1779527162671"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "d9487748561495a8dd521dfd2969d70eddbaae010b2594ed97d2e99f9d896612.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "建"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "建议",
+  "id": "d13886ce8a39eb945f2c34c4",
+  "level": 4,
+  "meaning": "to suggest, to propose, to recommend; suggestion, proposal, recommendation",
+  "pinyin": "jiànyì",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-c}G>LbAJ|{-1779527160157"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

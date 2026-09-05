@@ -1,0 +1,31 @@
+{
+  "audio": "419000752ecdfeb04371b0cad279085eddfacf413ce312056e6dae55baf05dd8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "科"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "文科",
+  "id": "7566fa95e213543afbd75e53",
+  "level": 6,
+  "meaning": "liberal arts",
+  "pinyin": "wénkē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1388-1779527163791"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

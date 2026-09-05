@@ -1,0 +1,32 @@
+{
+  "audio": "bffff3e4a13613112fe21392edeaaae0686d66ade020dced17b1a9480d46d77f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "城",
+      "镇"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "城镇",
+  "id": "93ade0a8db2b90e59cda46fd",
+  "level": 6,
+  "meaning": "town, small city",
+  "pinyin": "chéngzhèn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-168-1779527162571"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

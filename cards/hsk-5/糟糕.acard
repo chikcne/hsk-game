@@ -1,0 +1,31 @@
+{
+  "audio": "142d8d48f6820d3beb777a984f57e94c702e87e8d2e0731b89c4f85362302ab0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "糟"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "糟糕",
+  "id": "c77322e16a1639ff8dc8a92e",
+  "level": 5,
+  "meaning": "terrible, awful",
+  "pinyin": "zāogāo",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l^_FKDwafO-1779527162252"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

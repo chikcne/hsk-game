@@ -1,0 +1,32 @@
+{
+  "audio": "bcc410e16db2b03d96457717653ea8eacef7e49ce0552ab294b574d45035e9cb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "贵",
+      "重"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "贵重",
+  "id": "ba0ecdeb83fed4c467b96d3c",
+  "level": 6,
+  "meaning": "precious, valuable",
+  "pinyin": "guìzhòng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-506-1779527162909"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "c9314df2413f23d2ebb40ff84ceb792f29cb68ed01e5e91f86c9357d3067e759.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学校",
+  "id": "6e5d4c941f501a7a155be472",
+  "level": 1,
+  "meaning": "school",
+  "pinyin": "xuéxiào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-L)XZAz[/ov-1779527159053"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

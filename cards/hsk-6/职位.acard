@@ -1,0 +1,31 @@
+{
+  "audio": "c364a9710cb3052b7ffce6f5992882f76f765a8b7ea23d34cad5e86356af24ea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "位"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "职位",
+  "id": "5b59ba0461bc2147c606e5cb",
+  "level": 6,
+  "meaning": "position, post",
+  "pinyin": "zhíwèi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1701-1779527164104"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

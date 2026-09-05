@@ -1,0 +1,31 @@
+{
+  "audio": "915720e7879fc1ffec793c953944121438a03a36724fd5e588b500dd27ee5a96.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "读"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "阅读",
+  "id": "2c8ed2fb87b02c1999198f06",
+  "level": 4,
+  "meaning": "to read, to read aloud",
+  "pinyin": "yuèdú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-G5bi*]tyDW-1779527160712"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

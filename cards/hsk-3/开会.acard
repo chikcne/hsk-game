@@ -1,0 +1,32 @@
+{
+  "audio": "ac17ed4ba6bcc7c3351ba94eb5921cf931d80dcf2a544f3d2a7f4bf7bb98546d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "开"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开会",
+  "id": "9e32dbcafe3cf92c52cfbf32",
+  "level": 3,
+  "meaning": "to have a meeting",
+  "pinyin": "kāihuì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-y#Ov{2yCR4-1779527159530"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "dc48a9cd16f2abff45fe5a60b6110d4c352e228331792c27958dd15bf4f8b352.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度",
+      "热"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热度",
+  "id": "9213b82116e3e00551b56114",
+  "level": 6,
+  "meaning": "heat",
+  "pinyin": "rèdù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1089-1779527163492"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

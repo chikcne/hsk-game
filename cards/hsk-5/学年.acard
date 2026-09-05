@@ -1,0 +1,32 @@
+{
+  "audio": "2815709aed53af0bbce8a7ff9a64df5bd2127f74a00af0206083062b52f04f14.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "年"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学年",
+  "id": "bf65c7adb428419633cf723e",
+  "level": 5,
+  "meaning": "academic year",
+  "pinyin": "xuénián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-K~4}CJ+{]/-1779527162115"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

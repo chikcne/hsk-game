@@ -1,0 +1,32 @@
+{
+  "audio": "c362c5604cc40b547ab99920730944ee02952831b678d5dcc10cce497d93e8c9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "带"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "带动",
+  "id": "435d7d736b6b8fad2ce5647c",
+  "level": 5,
+  "meaning": "to drive, to bring about",
+  "pinyin": "dàidòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-sw1t($q7{M-1779527161038"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

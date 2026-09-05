@@ -1,0 +1,32 @@
+{
+  "audio": "edef90b61d6652dbf7c6a6c9f3371d4443416b159c24af3d98109fd855b278ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "排",
+      "练"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "排练",
+  "id": "405abf21120d6c6bdc109544",
+  "level": 6,
+  "meaning": "to rehearse",
+  "pinyin": "páiliàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-968-1779527163371"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "402e6ba9e47df0a4d062d9c57fcb02aa2674f38a3dc6407c5da14c4fde0552e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "断",
+  "id": "86fc0e8686c994d44c58b0f0",
+  "level": 5,
+  "meaning": "to break, to cut off",
+  "pinyin": "duàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-LAcs+Q@Kh8-1779527161106"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

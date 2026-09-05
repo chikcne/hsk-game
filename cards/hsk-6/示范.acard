@@ -1,0 +1,29 @@
+{
+  "audio": "a58d229e9a52e853a763c6cbdce7c5073304a85508d906f72718967f92f88532.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "示范",
+  "id": "3b182fcec105ffce3ecd8b2c",
+  "level": 6,
+  "meaning": "to demonstrate",
+  "pinyin": "shìfàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1198-1779527163601"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

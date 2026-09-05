@@ -1,0 +1,32 @@
+{
+  "audio": "85da7efe1d077416e0142b8611605b57b0896145c776beb634fb5c949d45e6c7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "安"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公安",
+  "id": "da5aca678f72bc3c4a21ff47",
+  "level": 6,
+  "meaning": "public security",
+  "pinyin": "gōng’ān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-452-1779527162855"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

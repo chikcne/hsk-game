@@ -1,0 +1,31 @@
+{
+  "audio": "3bd0690d03a381599e4d1da79171a5fec128cbab499e50bcc66263521fb5dc86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "花"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "梅花",
+  "id": "b72ca3a340c8f6a7213085eb",
+  "level": 6,
+  "meaning": "plum blossom",
+  "pinyin": "méihuā",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-897-1779527163300"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

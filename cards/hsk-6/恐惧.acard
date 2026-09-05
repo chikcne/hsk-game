@@ -1,0 +1,29 @@
+{
+  "audio": "4548148f42b1ae548862982a8980777b740c1fac19daf59b7c28b5c3d22582da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "恐惧",
+  "id": "4aed95284bd1b8a39d46377d",
+  "level": 6,
+  "meaning": "fearful, terrified",
+  "pinyin": "kǒngjù",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-790-1779527163193"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

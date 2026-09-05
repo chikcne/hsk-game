@@ -1,0 +1,29 @@
+{
+  "audio": "2d44f5e3da40b08c8b359213c35c1100c4817b48663e8077463af4bb512c6428.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "现象",
+  "id": "5483b44535eb011e5d112a7c",
+  "level": 5,
+  "meaning": "phenomenon",
+  "pinyin": "xiànxiàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JXf.sW&G<!-1779527162046"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

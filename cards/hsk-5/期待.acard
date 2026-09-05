@@ -1,0 +1,32 @@
+{
+  "audio": "126c191419aeb84706c8a2f14351fc2352cbd9fe47e74b24830cc74944cc2dcc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "待",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "期待",
+  "id": "c2752070f43f06e55bf4bd10",
+  "level": 5,
+  "meaning": "to expect, to look forward to",
+  "pinyin": "qīdài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bu^YL9H(+=-1779527161653"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

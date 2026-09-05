@@ -1,0 +1,31 @@
+{
+  "audio": "e3d5700cf23e3833cdefd9202aa3d5cf985b3b043fb429812c8ca49c3e345af5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亲"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "父亲",
+  "id": "d756a44ac3fedc50882355c1",
+  "level": 4,
+  "meaning": "father",
+  "pinyin": "fùqīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J@zt<w*w2A-1779527160015"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

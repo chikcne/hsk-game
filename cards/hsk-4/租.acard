@@ -1,0 +1,29 @@
+{
+  "audio": "eb734f9b63bcee00d0b174c25b6f31ed7093c12321a3fa608f5d0ca3845ba284.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "租",
+  "id": "8dbbbbcdc5ebd59cf7ac2fcf",
+  "level": 4,
+  "meaning": "to rent, to hire",
+  "pinyin": "zū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-K]tkY8QcX+-1779527160789"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

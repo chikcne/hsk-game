@@ -1,0 +1,31 @@
+{
+  "audio": "d22d189fd6e4542cb8af1d7e282f3b925748d669d8ed1db63ab8b1a1d23ad3a1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "敢"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "勇敢",
+  "id": "2de4a6cf68b2cb1fdb0aaa4c",
+  "level": 4,
+  "meaning": "brave, courageous",
+  "pinyin": "yǒnggǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I5T6fygK/q-1779527160680"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

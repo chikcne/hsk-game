@@ -1,0 +1,31 @@
+{
+  "audio": "aaacf1c6a98aadc2b622d372f1cbad380cba7eb6db13be4c6f16f2bc72f9b8b3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "眼"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "眼镜",
+  "id": "2830cc29ae7710091585b2cd",
+  "level": 4,
+  "meaning": "eyeglasses, glasses",
+  "pinyin": "yǎnjìng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-iazkfng%,H-1779527160655"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

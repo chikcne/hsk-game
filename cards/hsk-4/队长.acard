@@ -1,0 +1,32 @@
+{
+  "audio": "6ef9b0be477a51b76ab2d7e66fd2db158ef987c2c7372f144f50f592f935e47d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "长",
+      "队"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "队长",
+  "id": "58496eed59fd25f07ce6323b",
+  "level": 4,
+  "meaning": "team leader",
+  "pinyin": "duìzhǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nqDB#v$!jh-1779527159981"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "722602f7af3ae673a6c62cc0b2dfb008009ec7dbc5f0792f3e7cc8774e12edf4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "步"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "逐步",
+  "id": "34df29535a5c1b7a751b3735",
+  "level": 5,
+  "meaning": "step by step, gradually",
+  "pinyin": "zhúbù",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-j(0_.LBr+?-1779527162340"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

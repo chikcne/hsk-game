@@ -1,0 +1,32 @@
+{
+  "audio": "2213c07245d52e8fe9382aea81fee97147eab664d6136f06fd380ca76ff9b3bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "正",
+      "真"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "真正",
+  "id": "5d3c476e4850b5146d573502",
+  "level": 4,
+  "meaning": "true, genuine; truly, indeed",
+  "pinyin": "zhēnzhèng",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-L!ig>{9lIq-1779527160730"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

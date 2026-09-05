@@ -1,0 +1,31 @@
+{
+  "audio": "d6aef12fb1ffd42d63609b646a0b45646ad1cb08867631070eb8f32fd33c2d08.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "镜头",
+  "id": "79bceafa0d7cf3ac4855476e",
+  "level": 6,
+  "meaning": "lens, camera shot",
+  "pinyin": "jìngtóu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-729-1779527163132"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

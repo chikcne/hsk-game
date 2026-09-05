@@ -1,0 +1,32 @@
+{
+  "audio": "c9bb28f3a9f385850c5e34572a436982054d97414b591ce12e9300da498376c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "好"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好不",
+  "id": "bd686979375f31bd32c04827",
+  "level": 6,
+  "meaning": "very, really",
+  "pinyin": "hǎobù",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-532-1779527162935"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "2e7a27a5145420acc12f03ff51ec7ecaa02d901ea2f0493ffaf1e73362a3c9f0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "红",
+  "id": "5626e4d65f100b8acdcb1cbc",
+  "level": 5,
+  "meaning": "red",
+  "pinyin": "hóng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zX^ciH;,De-1779527161286"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

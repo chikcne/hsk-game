@@ -1,0 +1,31 @@
+{
+  "audio": "835db172b105ccf1bbf18ea8b7b7d3b4d2e1b7453fea7d504fb7165f28902300.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "藏"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "隐藏",
+  "id": "f327f440803e9a60d85a5f86",
+  "level": 6,
+  "meaning": "to hide, to conceal",
+  "pinyin": "yǐncáng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1579-1779527163982"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

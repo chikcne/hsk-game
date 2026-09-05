@@ -1,0 +1,32 @@
+{
+  "audio": "bc97458be6f593e27992c814f80e65d2b2cf1925318a99144194f49997168251.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "外"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外公",
+  "id": "76e6604f3a9f9734691a3603",
+  "level": 5,
+  "meaning": "grandfather",
+  "pinyin": "wàigōng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wr2&$@@,&R-1779527161971"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

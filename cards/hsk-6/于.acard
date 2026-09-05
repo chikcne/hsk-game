@@ -1,0 +1,29 @@
+{
+  "audio": "008ca3716aac7304665b7173c1c10e111f76ab19f9797f1afd582920fa36280d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "于",
+  "id": "d4bb7f3402595f0aee2db843",
+  "level": 6,
+  "meaning": "in, at, to",
+  "pinyin": "yú",
+  "pos": "介",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1606-1779527164009"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "cb0f9166705ce07aca06b9dab0cd54b4847c2735b094cbbb50cea9319fbcdb1d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "那",
+  "id": "4f8b911d169ffc392317b914",
+  "level": 1,
+  "meaning": "that; (then)",
+  "pinyin": "nà",
+  "pos": "pronoun、 （conjunction）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-C.V$xS-|+L-1779527158939"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

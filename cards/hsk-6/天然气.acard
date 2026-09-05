@@ -1,0 +1,33 @@
+{
+  "audio": "3158a94727959ed72e648bf83e04a2641ef4a8e59f8f6fe92eaba1fca5b6a6e6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天",
+      "天然",
+      "气"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "天然气",
+  "id": "3169f97f8849e285fd73245b",
+  "level": 6,
+  "meaning": "natural gas",
+  "pinyin": "tiānránqì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1291-1779527163694"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "3a6362e7b537376e90b217e71edee0b750980cabf3634280031193adb8438cd5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "密",
+      "度"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "密度",
+  "id": "4a5d9539150c91c80672b7ed",
+  "level": 6,
+  "meaning": "density",
+  "pinyin": "mìdù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-903-1779527163306"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

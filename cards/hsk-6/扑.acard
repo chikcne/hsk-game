@@ -1,0 +1,29 @@
+{
+  "audio": "9afeb9b15fef8113af08b9ff7fde4bf127e4eac811fbe36f9d4bf232b5e9ad1f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扑",
+  "id": "00bcc460dd8f1363aa3602f9",
+  "level": 6,
+  "meaning": "to pounce on",
+  "pinyin": "pū",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1008-1779527163411"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

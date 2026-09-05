@@ -1,0 +1,32 @@
+{
+  "audio": "1074f7ef25737ff7b2cbd251480788fef889254ddb0f9b8500b1cb1dbbc2be77.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发起",
+  "id": "ad722efa3d4aa2422b825c5e",
+  "level": 5,
+  "meaning": "to initiate, to launch",
+  "pinyin": "fāqǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-f+H+K7?w=J-1779527161124"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

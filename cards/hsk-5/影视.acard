@@ -1,0 +1,29 @@
+{
+  "audio": "756a0fd9d88aaf8139068191718008a438dab156a4ac1240828eab0cc376b4b9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "影视",
+  "id": "f155e1e32b3639f7f7e5008f",
+  "level": 5,
+  "meaning": "film and television",
+  "pinyin": "yǐngshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-K],--H}hI{-1779527162186"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

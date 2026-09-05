@@ -1,0 +1,29 @@
+{
+  "audio": "49a5e9d697d71b6d4168daa3ac2f12eae6941947ebc31c7e5e3ad93f7f2cbdfc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "障碍",
+  "id": "97cd239581b87071b655141b",
+  "level": 6,
+  "meaning": "obstacle; to hinder",
+  "pinyin": "zhàng’ài",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1667-1779527164070"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

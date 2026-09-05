@@ -1,0 +1,32 @@
+{
+  "audio": "6c2d7705f25aa60ae6b34ccf8caaa47a73eae502222375baf90cc239797b5285.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "排",
+      "除"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "排除",
+  "id": "53d332f7a493df011b7c3b9f",
+  "level": 6,
+  "meaning": "to exclude, to eliminate",
+  "pinyin": "páichú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-966-1779527163369"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

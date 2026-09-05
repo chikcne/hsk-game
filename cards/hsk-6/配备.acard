@@ -1,0 +1,31 @@
+{
+  "audio": "47c1fdc056e87f205e09bd7173c2a2ae37e9b6dad77dd3ddbd07d01f89ac8e7f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "配"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "配备",
+  "id": "3a12256924c55b211910851c",
+  "level": 6,
+  "meaning": "to equip, to allocate; equipment",
+  "pinyin": "pèibèi",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-978-1779527163381"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

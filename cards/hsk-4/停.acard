@@ -1,0 +1,29 @@
+{
+  "audio": "77356199342a5a54e870af5364f58be8d2c9fb7b2a21b35b7c254a307d78083e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "停",
+  "id": "abcb12a22dbfe3a659997cbe",
+  "level": 4,
+  "meaning": "to stop, to halt",
+  "pinyin": "tíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-G7}hXPI`%{-1779527160542"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

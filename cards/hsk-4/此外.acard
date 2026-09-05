@@ -1,0 +1,32 @@
+{
+  "audio": "5e7df9a6c8f63beae60048656ba439404ba1b4a78b957f25eb56ada41e248872.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外",
+      "此"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "此外",
+  "id": "69cf106db1b5e67873f33798",
+  "level": 4,
+  "meaning": "besides, in addition, moreover",
+  "pinyin": "cǐwài",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-sgSU(TF$Nh-1779527159904"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

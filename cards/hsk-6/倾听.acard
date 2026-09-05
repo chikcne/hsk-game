@@ -1,0 +1,31 @@
+{
+  "audio": "97f1f11cb074da0b99a2fe8c625c92f26f4f25c4a1d20d363664d6f197fb146a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "听"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "倾听",
+  "id": "7044b64a2591c3c7be36a91e",
+  "level": 6,
+  "meaning": "to listen attentively",
+  "pinyin": "qīngtīng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1060-1779527163463"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

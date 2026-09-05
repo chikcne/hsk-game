@@ -1,0 +1,29 @@
+{
+  "audio": "5730d2d215d3ae947ee98750954d5deb3b48dd327434e155a975c5d81fa189cf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "时",
+  "id": "4efabb90c0c105e3117a0627",
+  "level": 2,
+  "meaning": "time, moment; (season, period)",
+  "pinyin": "shí",
+  "pos": "noun、 （classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-uy52=*_hS=-1779527159234"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

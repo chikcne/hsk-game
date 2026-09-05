@@ -1,0 +1,31 @@
+{
+  "audio": "002b397927643b4aad2ed2219879bf8ba6a18bf5338bff0201a37b5f56220a53.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "改"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "改革",
+  "id": "f768c373d93912b10d93a0d0",
+  "level": 5,
+  "meaning": "to reform, to change",
+  "pinyin": "gǎigé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ubb;Iv85/<-1779527161179"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

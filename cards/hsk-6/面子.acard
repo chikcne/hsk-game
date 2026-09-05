@@ -1,0 +1,32 @@
+{
+  "audio": "2d09081df32b46a057a91e7bc2bcf517da4a0a58e459922d21f991d57380b90a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "面子",
+  "id": "1d0d5652be3626b0dbb5d00b",
+  "level": 6,
+  "meaning": "face, reputation",
+  "pinyin": "miànzi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-913-1779527163316"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

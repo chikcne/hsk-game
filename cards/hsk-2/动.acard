@@ -1,0 +1,29 @@
+{
+  "audio": "d6c14512cbc856017c2de879b0b0d341a1e62ba81d3d500b96efec01545c1da4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "动",
+  "id": "0a63dc9e9e208087fefc9c83",
+  "level": 2,
+  "meaning": "to move, to act",
+  "pinyin": "dòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-ldAP9x.=QT-1779527159141"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "df442fda018fa1139fc0860ddb762b3ba912074af9d8956e2ae7d202fc0113dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开车",
+  "id": "f14567bdc5cbeb89f480745d",
+  "level": 1,
+  "meaning": "to drive",
+  "pinyin": "kāichē",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-vt8h]vKl,Q-1779527158901"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

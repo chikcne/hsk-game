@@ -1,0 +1,32 @@
+{
+  "audio": "d6706f63e979e16d2a9fa0864447be2d0b85aeeb6545c2c0e41abff4df2b567e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "移"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "移动",
+  "id": "ae135324b7243e60881dc38f",
+  "level": 5,
+  "meaning": "to move",
+  "pinyin": "yídòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l6bsOcz0VS-1779527162158"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

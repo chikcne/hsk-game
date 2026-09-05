@@ -1,0 +1,29 @@
+{
+  "audio": "fa009a3b268d1704d876de152d331958576d91406b4bc95a733c2dcbca9fb511.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "呆",
+  "id": "83592451e4406dba4162aba7",
+  "level": 6,
+  "meaning": "dull, blank",
+  "pinyin": "dāi",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-255-1779527162658"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "5e676f9385870428b624b62dc24ace2264b9fbf2e7847193daa896a1eca744a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "管",
+      "血"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "血管",
+  "id": "5d745eda701bf8c0f6fd85c9",
+  "level": 6,
+  "meaning": "blood vessel",
+  "pinyin": "xuèguǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1493-1779527163896"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

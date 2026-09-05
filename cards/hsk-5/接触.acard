@@ -1,0 +1,31 @@
+{
+  "audio": "40bd31d8126fe9b747fa0423484b30289aa6c56129294285660f7ad07892cb0e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "接"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "接触",
+  "id": "1509855921428e9b1bec1fd4",
+  "level": 5,
+  "meaning": "to contact",
+  "pinyin": "jiēchù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jKjcrbhT^.-1779527161398"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

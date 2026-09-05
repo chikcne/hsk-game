@@ -1,0 +1,32 @@
+{
+  "audio": "c2961e09a6dc2a1af0cba03aa02afbf44fa7f17d5e3598014011db02d6bb32a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口",
+      "可"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "可口",
+  "id": "1767f55494058d2f2bc77f03",
+  "level": 6,
+  "meaning": "delicious, tasty",
+  "pinyin": "kěkǒu",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-783-1779527163186"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

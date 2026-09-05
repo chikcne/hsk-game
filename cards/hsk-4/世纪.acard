@@ -1,0 +1,29 @@
+{
+  "audio": "1c5b40f03a519230c37f3f1e9b36e41ed9404cc092aac07ed9d969aa32fb07b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "世纪",
+  "id": "32fa2c506f53e34193743f44",
+  "level": 4,
+  "meaning": "century",
+  "pinyin": "shìjì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-HQR#!>$&d;-1779527160475"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

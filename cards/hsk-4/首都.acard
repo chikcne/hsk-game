@@ -1,0 +1,32 @@
+{
+  "audio": "b2c0391243b84067660dfc87005cf44b1e8ef0d388c6565e06c0cd37a4629d53.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "都",
+      "首"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "首都",
+  "id": "1ca7e0d624356110fa1603c7",
+  "level": 4,
+  "meaning": "capital",
+  "pinyin": "shǒudū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-v1:`G:1jzG-1779527160485"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

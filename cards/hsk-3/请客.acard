@@ -1,0 +1,31 @@
+{
+  "audio": "8e8db62fada873f2d38e0e3c06fd7f4a2f7120a033576d9772eaaeb3ca2e2748.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "请"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "请客",
+  "id": "7f6c69c9b170ac64e97dc942",
+  "level": 3,
+  "meaning": "to invite guests, to treat someone",
+  "pinyin": "qǐngkè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-QJMNH$r=_O-1779527159612"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "3a26446068fa5ec17a5774a7dea2a13a666564b9d9e16dbdf26e04cf08118705.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "比"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相比",
+  "id": "3f992bfaf83e733249e33904",
+  "level": 4,
+  "meaning": "to compare with, to contrast",
+  "pinyin": "xiāngbǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-x-#^#CEv>h-1779527160606"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

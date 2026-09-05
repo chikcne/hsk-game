@@ -1,0 +1,29 @@
+{
+  "audio": "c3a73b3f985980994b62aa8b2018b639a4f4c0dda1b7a8435caeee5faa40399e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "危机",
+  "id": "178b106afeca46bf94cbc889",
+  "level": 6,
+  "meaning": "crisis",
+  "pinyin": "wēijī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1366-1779527163769"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

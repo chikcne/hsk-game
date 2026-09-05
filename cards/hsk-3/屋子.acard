@@ -1,0 +1,31 @@
+{
+  "audio": "90fe1b67a730e489c09863c69544dd358a9cfbbc8dbaff9210412513495fe75f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "屋子",
+  "id": "faffbbbbd82085433918c6c0",
+  "level": 3,
+  "meaning": "room, house",
+  "pinyin": "wūzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n(WQMh5N}7-1779527159682"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

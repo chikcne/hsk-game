@@ -1,0 +1,32 @@
+{
+  "audio": "9137724d1d35896b029dee893691673add3f252cfbf14d8c9808b9afc555d498.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "提",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "提起",
+  "id": "ad1300f3e9c6a5de0c57b44d",
+  "level": 5,
+  "meaning": "to mention, to bring up",
+  "pinyin": "tíqǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ta&nrRgu6e-1779527161919"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

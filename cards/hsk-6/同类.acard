@@ -1,0 +1,32 @@
+{
+  "audio": "65d826db4e29b0f3a6d64783ed45d7613df5f5ac515556868deaaaa8880bb2e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同",
+      "类"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "同类",
+  "id": "73d63bd7314de738bd68780e",
+  "level": 6,
+  "meaning": "similar; of the same kind",
+  "pinyin": "tónglèi",
+  "pos": "形、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1313-1779527163716"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

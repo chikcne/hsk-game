@@ -1,0 +1,32 @@
+{
+  "audio": "f7e05b69ef737def1439c3114c99463b7cdcfc666389e646cbe89e0a950c0bd9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "以",
+      "得"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "得以",
+  "id": "d5fa496d7f215e9d49fca078",
+  "level": 6,
+  "meaning": "to be able to, so that",
+  "pinyin": "déyǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-283-1779527162686"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

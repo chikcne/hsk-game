@@ -1,0 +1,29 @@
+{
+  "audio": "f41b047d799aae43572514ddad290837cf8f5dcbd9a724c3dc824697c5e57e97.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "付",
+  "id": "9c8d12ddf8614b992501078f",
+  "level": 4,
+  "meaning": "to pay",
+  "pinyin": "fù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-N#|}bDPH{v-1779527160012"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

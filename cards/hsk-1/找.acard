@@ -1,0 +1,29 @@
+{
+  "audio": "81df3b46c0370f4e664f53890c7217913bf5fa0d08a6718a3decfa75aa1cb16f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "找",
+  "id": "f2f9035cfd310511add9b5ee",
+  "level": 1,
+  "meaning": "to look for",
+  "pinyin": "zhǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-ji&xye>bf~-1779527159081"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

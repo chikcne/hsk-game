@@ -1,0 +1,29 @@
+{
+  "audio": "5b04ca9c2be84540160ff799fe898d24030039d75a3df87847460022d11c5893.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "搞",
+  "id": "05bf89de1b4a3119a5d634ba",
+  "level": 5,
+  "meaning": "to do, to make",
+  "pinyin": "gǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l<S}f^2;M(-1779527161195"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

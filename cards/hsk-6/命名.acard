@@ -1,0 +1,32 @@
+{
+  "audio": "1cec0c86c2e371e1c9da8e516959c17e891b04882590b8e521036e454eca626d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名",
+      "命"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "命名",
+  "id": "d2fa5ac1c3bb060993d87214",
+  "level": 6,
+  "meaning": "to name",
+  "pinyin": "mìngmíng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-930-1779527163333"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

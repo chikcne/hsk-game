@@ -1,0 +1,31 @@
+{
+  "audio": "42fcd13f2394ac33f7ee8d9b65da9c1492147e052639a8d51dc7aaf89e621282.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加速",
+  "id": "aad83744ff71383e820d99f0",
+  "level": 5,
+  "meaning": "to speed up",
+  "pinyin": "jiāsù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-v7FiJADTJ^-1779527161359"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

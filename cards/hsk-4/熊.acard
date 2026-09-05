@@ -1,0 +1,29 @@
+{
+  "audio": "af17eddc18ec81e6dcbd6cd668137828f8fe15da645ed12aea7e39663c2de6c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "熊",
+  "id": "680a0abd07cf15e095943dd8",
+  "level": 4,
+  "meaning": "bear",
+  "pinyin": "xióng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MM~FG@2SX3-1779527160636"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

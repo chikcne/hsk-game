@@ -1,0 +1,32 @@
+{
+  "audio": "f22a9351a872a120b09fa816560081d465d3f2252bd0de66c1a5da49614d3c8b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "家",
+      "老"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "老家",
+  "id": "f14f369369cec050657ac52f",
+  "level": 4,
+  "meaning": "hometown, home state",
+  "pinyin": "lǎojiā",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-FLHb+{WRnM-1779527160259"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

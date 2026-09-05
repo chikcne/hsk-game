@@ -1,0 +1,32 @@
+{
+  "audio": "03d9e26c4ba3acb08fdc93224aa74f8d1e0b789698d7789f31f8d49b29acfdae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手",
+      "随"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "随手",
+  "id": "bca8b0466219a883336535f6",
+  "level": 5,
+  "meaning": "conveniently, without extra effort",
+  "pinyin": "suíshǒu",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ujUs2.ZI.P-1779527161894"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

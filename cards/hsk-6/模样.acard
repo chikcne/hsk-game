@@ -1,0 +1,31 @@
+{
+  "audio": "00660538b8223fbf350a737ede131f4cc9324c532c92ef9bdc2e7e179be84263.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "样"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "模样",
+  "id": "5d0b5c54562f1ee7d73c54fc",
+  "level": 6,
+  "meaning": "appearance, look",
+  "pinyin": "múyàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-937-1779527163340"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

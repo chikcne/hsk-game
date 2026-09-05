@@ -1,0 +1,29 @@
+{
+  "audio": "b7622f07fcaaf95f29d5637df7bc64ca9f2740354c2bfcb662bef460be59e7fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "语文",
+  "id": "7073a5b2a9b80adcacf5f96f",
+  "level": 5,
+  "meaning": "Chinese language and literature",
+  "pinyin": "yǔwén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kp,*ZB0x./-1779527162222"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

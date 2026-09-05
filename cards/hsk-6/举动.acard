@@ -1,0 +1,32 @@
+{
+  "audio": "4fccf3aa61b8423f4aa7aa53665e428454d2a93633fbf2a9371937e0ea058b1b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "举",
+      "动"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "举动",
+  "id": "69b030965ee04770666a0f41",
+  "level": 6,
+  "meaning": "action, move",
+  "pinyin": "jǔdòng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-746-1779527163149"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

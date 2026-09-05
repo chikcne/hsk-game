@@ -1,0 +1,32 @@
+{
+  "audio": "37e69f042dfe7fd3cb9d60e67d8b87a6ab5e39d224f422fcd8b249325c3690c9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "反",
+      "而"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "反而",
+  "id": "b81a22f1614803de30061286",
+  "level": 5,
+  "meaning": "on the contrary, instead",
+  "pinyin": "fǎn’ér",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-p4*U4@+fLg-1779527161134"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

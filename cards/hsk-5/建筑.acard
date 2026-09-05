@@ -1,0 +1,31 @@
+{
+  "audio": "7e91a7947a4c27c79e736efd45cba2d95ad6b8d1451194cdf46908a823313a47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "建"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "建筑",
+  "id": "8abd069562eb990c98b55cf1",
+  "level": 5,
+  "meaning": "to build; building, architecture",
+  "pinyin": "jiànzhù",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g{9@-1~K>i-1779527161382"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "c9b638e2a5071c50e3f73b5363774303b7f75bc67f36efafc3ca817710a3c4c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "姑姑",
+  "id": "238c5a923a2b22fe227d870a",
+  "level": 6,
+  "meaning": "aunt (father’s sister)",
+  "pinyin": "gūgu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-474-1779527162877"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "b28f287d0e6ef2e08b81144859360ae9ce488e7208613f9698a39ed47ad43368.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哭",
+  "id": "765ba73b10678e866f6315c5",
+  "level": 3,
+  "meaning": "to cry",
+  "pinyin": "kū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-x}FH=~b<7t-1779527159543"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

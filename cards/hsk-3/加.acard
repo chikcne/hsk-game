@@ -1,0 +1,29 @@
+{
+  "audio": "f30837925be3ae43b72f79c05b6cbd791e2efbe30530fc080e92549c7620c5e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加",
+  "id": "b4c1dbce495cabc52317f598",
+  "level": 3,
+  "meaning": "to add",
+  "pinyin": "jiā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-m*<?)gZ)Jd-1779527159498"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

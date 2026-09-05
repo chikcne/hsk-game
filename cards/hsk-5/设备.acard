@@ -1,0 +1,29 @@
+{
+  "audio": "467e0d79d079b1abbaac6ffd371da8320c19f900e96ed42b40a03a09932db161.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "设备",
+  "id": "d32ac35c7b235834270f52dc",
+  "level": 5,
+  "meaning": "equipment, device",
+  "pinyin": "shèbèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EA+Jc]O;fo-1779527161775"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

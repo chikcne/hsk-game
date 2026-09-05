@@ -1,0 +1,31 @@
+{
+  "audio": "7ef94c5eeeb2576c4e0817dc01c214c23ce94e5eb78040a882e76b002c451ac9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "皮"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "橡皮",
+  "id": "b3413e9366035aeb723faf8d",
+  "level": 5,
+  "meaning": "eraser",
+  "pinyin": "xiàngpí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M,PM)pGN[D-1779527162062"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

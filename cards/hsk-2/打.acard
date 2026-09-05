@@ -1,0 +1,29 @@
+{
+  "audio": "174077b356f142e152bbf2ff6cfe14e9fe80cd3a16f1e2a003289462833553a8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打",
+  "id": "c402a0c687516dccd59d84c7",
+  "level": 2,
+  "meaning": "to hit, to play, to make",
+  "pinyin": "dǎ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-ps&40LOPL:-1779527159130"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

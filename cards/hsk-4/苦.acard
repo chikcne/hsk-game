@@ -1,0 +1,29 @@
+{
+  "audio": "4ef596f1eddc74acf9ecf12e0bf51386cf96288836f1530d45c3a7b494e3e4a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "苦",
+  "id": "8bccdad7287faa4f7a734300",
+  "level": 4,
+  "meaning": "bitter",
+  "pinyin": "kǔ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-wm1LHjDQ5I-1779527160244"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

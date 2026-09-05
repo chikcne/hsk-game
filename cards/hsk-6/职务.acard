@@ -1,0 +1,29 @@
+{
+  "audio": "ca815b39b1ba3aea564c500ef4369741d53565e9762beddb72309aca9cc37b37.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "职务",
+  "id": "5ad3b765427e96b39d37f07a",
+  "level": 6,
+  "meaning": "duties, job",
+  "pinyin": "zhíwù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1702-1779527164105"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "ac5b54a92bc08b8004b24378297f095c3d0b06df312c960c0c1e109b945dc5be.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "去",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "进去",
+  "id": "b7fed41f880adb2168b86c99",
+  "level": 2,
+  "meaning": "to go in",
+  "pinyin": "jìnqù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-E9jx1G,^l5-1779527159176"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

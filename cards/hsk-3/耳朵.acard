@@ -1,0 +1,31 @@
+{
+  "audio": "203a7ad16607cfb73f1dc35e3b20c8ddffc994cfb359d74490c51f42dc8ac322.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "朵"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "耳朵",
+  "id": "0128fcd49ecf218e0c7db3cd",
+  "level": 3,
+  "meaning": "ear",
+  "pinyin": "ěrduo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-F^`%_ts}QZ-1779527159415"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

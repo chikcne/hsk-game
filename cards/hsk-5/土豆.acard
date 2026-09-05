@@ -1,0 +1,31 @@
+{
+  "audio": "dd893f73609f6de718e5d740b5d3482112a1f98f23e1382452ea9c365ddb814f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "土"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "土豆",
+  "id": "55299f7602403598888cb05c",
+  "level": 5,
+  "meaning": "potato",
+  "pinyin": "tǔdòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J:xL`W;kuB-1779527161957"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

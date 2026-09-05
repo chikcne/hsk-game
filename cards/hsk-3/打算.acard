@@ -1,0 +1,32 @@
+{
+  "audio": "8bf4e179916cb2e2ebca3f73b035fbda0bd1fb85c77c75a1ad7128773978217f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "算"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打算",
+  "id": "a9531bbaeb6cd241247022c1",
+  "level": 3,
+  "meaning": "to plan, intend; plan",
+  "pinyin": "dǎsuàn",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-7@~7C{7Ix-1779527159375"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

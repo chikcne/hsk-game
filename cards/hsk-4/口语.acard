@@ -1,0 +1,31 @@
+{
+  "audio": "153bcbfcd0a086546f8e8bfdea6c5905952c90f5c97774e55945c8bc6370a4b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "口语",
+  "id": "7774067985ed91532ed6d4b4",
+  "level": 4,
+  "meaning": "spoken language",
+  "pinyin": "kǒuyǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-itCqD`BvC)-1779527160243"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

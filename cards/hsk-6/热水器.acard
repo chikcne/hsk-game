@@ -1,0 +1,32 @@
+{
+  "audio": "e5c18e4f120536b48b177963128a69a31f33727f83475be124a4907f6dfa9cfd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水",
+      "热"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热水器",
+  "id": "527d94b86ca847e88ecf084d",
+  "level": 6,
+  "meaning": "water heater",
+  "pinyin": "rèshuǐqì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1091-1779527163494"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "b48e640bb74ce7ebd9f94a2c569cdfeb3c27e2394314699a0fd762076459fcd1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "国"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "国王",
+  "id": "48a3e9c2ebc4b7cede242817",
+  "level": 6,
+  "meaning": "king",
+  "pinyin": "guówáng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-513-1779527162916"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

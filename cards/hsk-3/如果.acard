@@ -1,0 +1,31 @@
+{
+  "audio": "57e61fbf4597f6776585ce6725b12ef9d7ea3e9a296eb3bfdc7f0010935f010c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "如"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "如果",
+  "id": "ab8fa6bfc7649bd59a7b9696",
+  "level": 3,
+  "meaning": "if",
+  "pinyin": "rúguǒ",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-us|Qo2R>:&-1779527159622"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

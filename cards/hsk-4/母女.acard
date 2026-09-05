@@ -1,0 +1,32 @@
+{
+  "audio": "4a1d4d061bebb9ebe18909805a5b3fa706ad1a6ff2f74fd46b04f6166b4e823b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "女",
+      "母"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "母女",
+  "id": "dc4c923e700d58b25a5a66db",
+  "level": 4,
+  "meaning": "mother and daughter",
+  "pinyin": "mǔnǚ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bqo`1(T3!S-1779527160317"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

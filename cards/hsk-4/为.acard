@@ -1,0 +1,29 @@
+{
+  "audio": "d6cbcaa0661015e7c1dfefed171464e5f9390825aa5b2fe3618192cc218262bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "为",
+  "id": "9fa2b0df341fe1466aaac6a6",
+  "level": 4,
+  "meaning": "to do, to act, to serve as",
+  "pinyin": "wéi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-GETOgClhS0-1779527160574"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

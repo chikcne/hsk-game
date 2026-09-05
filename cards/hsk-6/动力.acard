@@ -1,0 +1,32 @@
+{
+  "audio": "88c9f576faaf48a95c9b473e181e2ced5e4424e55432b3230dc21422a04a9554.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "动"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "动力",
+  "id": "5fa2dd3bb78d67157706c74f",
+  "level": 6,
+  "meaning": "power, driving force",
+  "pinyin": "dònglì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-318-1779527162721"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

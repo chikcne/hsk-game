@@ -1,0 +1,29 @@
+{
+  "audio": "066a5769ba62dbab4a09ad2bc3936457d19583620c9bae8a4a66d1d3c783c070.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "响",
+  "id": "d0580651b80b915831b6908f",
+  "level": 4,
+  "meaning": "to make a sound, to ring; loud",
+  "pinyin": "xiǎng",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-y6i2_)l8et-1779527160611"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

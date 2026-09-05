@@ -1,0 +1,31 @@
+{
+  "audio": "91947fc4867ea07a87bf74cbb63b3139ab37fde5d388255c010cece955eeeff6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "号"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "号码",
+  "id": "2367c8e6fa3966c088ee3f47",
+  "level": 3,
+  "meaning": "number, code",
+  "pinyin": "hàomǎ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-q]b;844BrI-1779527159469"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

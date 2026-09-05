@@ -1,0 +1,32 @@
+{
+  "audio": "84a1c8f79454c59109381b116326b4ab31aafe18b1f3f42237c096e67ca7cfae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "遍"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遍地",
+  "id": "9cf7bc57ce03b24e3a84adc7",
+  "level": 6,
+  "meaning": "all over, everywhere; everywhere",
+  "pinyin": "biàndì",
+  "pos": "动、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-57-1779527162460"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

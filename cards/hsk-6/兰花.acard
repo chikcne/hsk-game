@@ -1,0 +1,31 @@
+{
+  "audio": "c40ec870cfae1f0b866534be57aab9099a2e4e36dd68a653d345b1a9995622f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "花"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "兰花",
+  "id": "3fbd8ff0aa805da3c62edc27",
+  "level": 6,
+  "meaning": "orchid",
+  "pinyin": "lánhuā",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-818-1779527163221"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

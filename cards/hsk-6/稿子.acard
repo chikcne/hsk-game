@@ -1,0 +1,31 @@
+{
+  "audio": "4e2203ddee6e3edd1fcd528f0e4e6bafc737f0dfd5e0742fba76653f6982f7d6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "稿子",
+  "id": "2b9b5055e6ef0b757764843e",
+  "level": 6,
+  "meaning": "draft, manuscript",
+  "pinyin": "gǎozi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-440-1779527162843"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

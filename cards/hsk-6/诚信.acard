@@ -1,0 +1,31 @@
+{
+  "audio": "a8458ea2c0bb151ab31b8b2cabb724cafe203e65e5c4c77896e350d79eaea8a0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "信"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "诚信",
+  "id": "9690a16210f427c44300e524",
+  "level": 6,
+  "meaning": "honest, trustworthy",
+  "pinyin": "chéngxìn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-166-1779527162569"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

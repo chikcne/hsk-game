@@ -1,0 +1,32 @@
+{
+  "audio": "b490459975d6c7596f4121b1e168aaee7d0f3f0c556bd244032e8297fec3627a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "意思",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有意思",
+  "id": "dba727b0874acf4aeeae680a",
+  "level": 2,
+  "meaning": "interesting, enjoyable",
+  "pinyin": "yǒu yìsi",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-ebU~(e@P<V-1779527159282"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "c72d742b713c416e8327cab529f24580d1d85dcf784d536815bd4548c3fe0bf0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "整",
+  "id": "33275262e1c745edb0bfbc3a",
+  "level": 4,
+  "meaning": "whole, complete, entire",
+  "pinyin": "zhěng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ox,L/5d1GY-1779527160731"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

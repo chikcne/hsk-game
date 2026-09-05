@@ -1,0 +1,33 @@
+{
+  "audio": "219a8b2cb32961d2bbdaf9cf8fcd8723619e3b0eadb9d9b489d1b8cb218e450c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "好",
+      "意思"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不好意思",
+  "id": "4218af64eff0f4076b1d386e",
+  "level": 2,
+  "meaning": "sorry, embarrassed",
+  "pinyin": "bù hǎoyìsi",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-es8I~iMG}-1779527159116"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

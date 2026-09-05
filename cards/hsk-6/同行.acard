@@ -1,0 +1,32 @@
+{
+  "audio": "a67bdd83f0f51589e58534c2a5b63b297f9abf9ba96a9e70788da13d14b72714.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "同行",
+  "id": "2566dac55a354bb6cf85ff06",
+  "level": 6,
+  "meaning": "to work in the same profession; colleague",
+  "pinyin": "tóngháng",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1311-1779527163714"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "e0b9e2e0b5f8f7d1473e232176acf39ea7c4632f7835b118a01aa788e05e60f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "苦"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "辛苦",
+  "id": "303828c1cb877f7ada9357fb",
+  "level": 4,
+  "meaning": "hard, laborious; to work hard, to toil",
+  "pinyin": "xīnkǔ",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-D%hY`,_g/<-1779527160623"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "7825493997c7f5bb3a1725745adf5aed8f9dd859e9084f3ad8c885112ffe8424.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子",
+      "牌"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "牌子",
+  "id": "e3067276efc4f1a045c33b88",
+  "level": 4,
+  "meaning": "brand, sign, label",
+  "pinyin": "páizi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-fDXAm,#;{P-1779527160350"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

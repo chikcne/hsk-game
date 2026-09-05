@@ -1,0 +1,32 @@
+{
+  "audio": "35aec6229c7ae74e46b42bd637200d552c77489b24dd0d1d4b3e149c2c96a5fb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "所",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "所有",
+  "id": "854c20a77f7f43ec0b699fe6",
+  "level": 4,
+  "meaning": "all, every; (to possess, to own; possessions, belongings)",
+  "pinyin": "suǒyǒu",
+  "pos": "adjective、 （verb、noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-f/tSEy&}j`-1779527160516"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

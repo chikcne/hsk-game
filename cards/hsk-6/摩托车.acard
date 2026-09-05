@@ -1,0 +1,31 @@
+{
+  "audio": "8ea20d6da9d7f1fb1b9212bd57fdd0b3ff9788960b87a7613e02625b3e5ebf70.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "车"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "摩托车",
+  "id": "ac73c4501ba06dbc0eac180f",
+  "level": 6,
+  "meaning": "motorcycle",
+  "pinyin": "mótuōchē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-934-1779527163337"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

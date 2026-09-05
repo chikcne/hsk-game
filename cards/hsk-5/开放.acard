@@ -1,0 +1,32 @@
+{
+  "audio": "3cfef4b5340c541f8641db5d4e900399b1b7ce65771954a9e11ac2d33a4d03f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开",
+      "放"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开放",
+  "id": "d6f7365fba611c9fabe8c1db",
+  "level": 5,
+  "meaning": "to open; open",
+  "pinyin": "kāifàng",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-cj*%s@vU;+-1779527161453"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

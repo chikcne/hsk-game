@@ -1,0 +1,29 @@
+{
+  "audio": "849ec90c11bfa9a47a151cef63fa7da08f746fe8dd3f77debc7f638879561f2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "棉",
+  "id": "bcae5519c6f8125f24fde46c",
+  "level": 6,
+  "meaning": "cotton",
+  "pinyin": "mián",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-906-1779527163309"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

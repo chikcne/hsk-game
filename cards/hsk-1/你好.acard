@@ -1,0 +1,32 @@
+{
+  "audio": "90640a9ccf49bc72e8d1ed433d2cdfad27d0c9fd382f8553a6e98c9d89dd2607.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "你",
+      "好"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "你好",
+  "id": "f8bfc4cbc87eb82776456d37",
+  "level": 1,
+  "meaning": "hello",
+  "pinyin": "nǐ hǎo",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-KRx~Wq5S_&-1779527158950"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

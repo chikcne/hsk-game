@@ -1,0 +1,31 @@
+{
+  "audio": "ac96ea1a105fb83ad72b92fb54760cf4e1977139b14548a164cb4766957fdabe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "老"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "老师",
+  "id": "f83cec99f885e33ea5fedb5a",
+  "level": 1,
+  "meaning": "teacher",
+  "pinyin": "lǎoshī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-L(Cg57xMnp-1779527158910"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

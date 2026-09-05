@@ -1,0 +1,32 @@
+{
+  "audio": "cc1a01b25840d676578150c1fa0146b9b6fb84e2d9dd9932217a14c9dc54fe9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "熟",
+      "练"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "熟练",
+  "id": "230a531bcf822a588e43f968",
+  "level": 5,
+  "meaning": "skilled, proficient",
+  "pinyin": "shúliàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B7f{}6n2,@-1779527161864"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

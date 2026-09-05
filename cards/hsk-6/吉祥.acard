@@ -1,0 +1,29 @@
+{
+  "audio": "00696f111b5bf953c6f5a1537616f032ed16a592533b3aede65e3990ab3c8779.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吉祥",
+  "id": "979f709684f6282d12b5ec0b",
+  "level": 6,
+  "meaning": "auspicious, lucky",
+  "pinyin": "jíxiáng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-621-1779527163024"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

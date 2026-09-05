@@ -1,0 +1,31 @@
+{
+  "audio": "81e89ba4c47069749a089ac16c62fa26898af96e88685b63b18b27fce877c87e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "演"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "演奏",
+  "id": "eebcec3688d4b7314c7ff023",
+  "level": 6,
+  "meaning": "to perform",
+  "pinyin": "yǎnzòu",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1517-1779527163920"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

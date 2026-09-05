@@ -1,0 +1,32 @@
+{
+  "audio": "885c135a143c5612dcb71005856d41632b08798f44b3fb57476e3e84c0ea391c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "学"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好学",
+  "id": "2b94645b0a234780ebe9946f",
+  "level": 6,
+  "meaning": "to be eager to learn",
+  "pinyin": "hàoxué",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-536-1779527162939"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "8b10077f5d49306c0b9b23fc12eb3e3d398af17562ffba60fb48e72d228aec93.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "简介",
+  "id": "da5aa3a392b111dd0091f234",
+  "level": 6,
+  "meaning": "to introduce briefly; brief introduction",
+  "pinyin": "jiǎnjiè",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-653-1779527163056"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

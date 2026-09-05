@@ -1,0 +1,32 @@
+{
+  "audio": "73d109d703e99e54c603c0a2054f993f8afc0d21bb4660e62e710d0a7e9023a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "四",
+      "季"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "四季",
+  "id": "00708a9111f73b0282c03954",
+  "level": 3,
+  "meaning": "four seasons",
+  "pinyin": "sìjì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-h>@|ln~paU-1779527159651"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

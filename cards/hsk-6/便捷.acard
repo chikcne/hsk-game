@@ -1,0 +1,31 @@
+{
+  "audio": "25e5908366922cf98fd637ed46b5aba6b421dc1186ea53dc53b61fa8cfc01a37.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "便"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "便捷",
+  "id": "c56eb65080e2cb1cbd9f7bd1",
+  "level": 6,
+  "meaning": "convenient, fast",
+  "pinyin": "biànjié",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-58-1779527162461"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

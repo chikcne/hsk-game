@@ -1,0 +1,29 @@
+{
+  "audio": "61782e5004e20db297e5c3dce9318ddd4f8aaeab4f5a8fbec95fc9563291aa34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "些",
+  "id": "1d15143c48d69ab3429cbd62",
+  "level": 1,
+  "meaning": "measure word for an indefinite amount",
+  "pinyin": "xiē",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-bi/~pB6?B*-1779527159042"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

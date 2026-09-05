@@ -1,0 +1,32 @@
+{
+  "audio": "03f5ef6d530bf9109ba5b046481f9ef0a076154e1e44f87b2d83e815e7235c0a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "拆",
+      "除"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拆除",
+  "id": "693bf21bd6d273f90f3eeda2",
+  "level": 6,
+  "meaning": "to demolish, to remove",
+  "pinyin": "chāichú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-121-1779527162524"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "83f8eaaf47ee4bcb9e26aaaa4ff7115f390d0627cb0fbc621f8262be5d189162.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人生",
+  "id": "5c26d9a7e7dec9d9e448d3c1",
+  "level": 4,
+  "meaning": "life",
+  "pinyin": "rénshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-BwoH,xNa8S-1779527160413"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

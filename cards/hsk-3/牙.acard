@@ -1,0 +1,29 @@
+{
+  "audio": "e6f8ba8909e2f4c4bb55306da9896f0dfee6d051ec22bbb66f37ee3a3eb18893.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "牙",
+  "id": "9767c31cd8888fbd43979884",
+  "level": 3,
+  "meaning": "tooth",
+  "pinyin": "yá",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-H|BG/-maZE-1779527159719"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

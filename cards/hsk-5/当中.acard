@@ -1,0 +1,32 @@
+{
+  "audio": "26d524b6c874e88572e5268420fbe0d6a60e12a1223e2265dbf476d50a48032e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "当"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当中",
+  "id": "da5b1e9d0f73c2388bb5d11b",
+  "level": 5,
+  "meaning": "among, in the middle",
+  "pinyin": "dāngzhōng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lLQ.;bb<%a-1779527161051"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

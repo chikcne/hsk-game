@@ -1,0 +1,29 @@
+{
+  "audio": "b06f0b46243969bd7bc68a8206c16d2c597c3d74b46f2ff10718723d1d9bd454.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "另",
+  "id": "83c6af76201e5a94e839c65d",
+  "level": 4,
+  "meaning": "other, another; (separately, otherwise)",
+  "pinyin": "lìng",
+  "pos": "pronoun、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-OU{8L;rbDg-1779527160283"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

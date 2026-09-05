@@ -1,0 +1,29 @@
+{
+  "audio": "b1b2745de8abe98233cb3cb4d5bf5389b70826b553acc027207827c5f4f60fb6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "碗",
+  "id": "eca20dd0b5916a4f0d5cd8f2",
+  "level": 3,
+  "meaning": "bowl",
+  "pinyin": "wǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-z=j;pb`ANv-1779527159672"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

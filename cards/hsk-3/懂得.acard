@@ -1,0 +1,32 @@
+{
+  "audio": "d9b8846263ce7fb67a7a266a7be6cd1742b48aaa1edd795663392585b200b8dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "得",
+      "懂"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "懂得",
+  "id": "330dc10cff03af0efd2ce6f0",
+  "level": 3,
+  "meaning": "to understand",
+  "pinyin": "dǒngde",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-oW7->W5hB,-1779527159405"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

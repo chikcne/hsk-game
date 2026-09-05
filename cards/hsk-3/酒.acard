@@ -1,0 +1,29 @@
+{
+  "audio": "4470fdf9c2c6fc790075f9cf1f65733e5ec6a2364bc5a204de0c60bd14794571.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "酒",
+  "id": "d5c45ba69a01f901d572f1ef",
+  "level": 3,
+  "meaning": "alcohol",
+  "pinyin": "jiǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-r%B&T+#C11-1779527159523"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

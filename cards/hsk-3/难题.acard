@@ -1,0 +1,32 @@
+{
+  "audio": "f71c5c5dc731dfe9c64baf32cac8aa31219d9e1f980feccd154918ee8d52ea92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "难",
+      "题"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难题",
+  "id": "18b5f9f250a4f2b24ad89eb3",
+  "level": 3,
+  "meaning": "difficult problem",
+  "pinyin": "nántí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n(&qvl0A---1779527159584"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "6cfed7744117b0ab3e76055e8ec80094b9c6b4b65953b0358ed73bf7f8728305.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "以",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "以来",
+  "id": "ce46307470d52b719da55bde",
+  "level": 5,
+  "meaning": "since",
+  "pinyin": "yǐlái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-b%<}}=%<KT-1779527162167"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

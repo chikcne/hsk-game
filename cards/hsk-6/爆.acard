@@ -1,0 +1,29 @@
+{
+  "audio": "ad5a5dd7f071b5ea4e7fd48044c8078c6c03a505bae0ad81a81c4f4f7354a196.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爆",
+  "id": "167b2e5c26c207667ee8c311",
+  "level": 6,
+  "meaning": "to explode, to burst",
+  "pinyin": "bào",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-27-1779527162430"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

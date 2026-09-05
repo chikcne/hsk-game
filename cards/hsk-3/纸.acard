@@ -1,0 +1,29 @@
+{
+  "audio": "c8a2ccf2c5a6e80853623c85543fe13c16aa7467abacf7a653e90d7842a4baad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "纸",
+  "id": "2a6152a27d370c788e3d3702",
+  "level": 3,
+  "meaning": "paper",
+  "pinyin": "zhǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-etb;<V9-D_-1779527159779"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "7c82b146d6a6b39775cfe66556c27855a5c7abcfc27aa4becf081981bc342b0c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "当"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当下",
+  "id": "564cd8f5a65e3797c7fd3aa3",
+  "level": 6,
+  "meaning": "at the present moment, right away; immediately, at once",
+  "pinyin": "dāngxià",
+  "pos": "名、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-272-1779527162675"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

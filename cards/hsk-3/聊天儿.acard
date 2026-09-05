@@ -1,0 +1,32 @@
+{
+  "audio": "e6e62931a913743806340b29a399d32d2e2a2c433c06e0814301a9e3689650e0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天",
+      "聊"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "聊天儿",
+  "id": "208ac1ecb139be02fb2804bd",
+  "level": 3,
+  "meaning": "to chat",
+  "pinyin": "liáotiānr",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-qD)&lxE|r7-1779527159559"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

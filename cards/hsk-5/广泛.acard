@@ -1,0 +1,31 @@
+{
+  "audio": "a10d634e75af9e67a7e3d0a8b4d3fe86cfb425f59e04d58cd5a1fddde8622e3a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "广"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "广泛",
+  "id": "fe0b9c00597283d17f0578cb",
+  "level": 5,
+  "meaning": "extensive, widespread",
+  "pinyin": "guǎngfàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-FNo|KNc@}/-1779527161245"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

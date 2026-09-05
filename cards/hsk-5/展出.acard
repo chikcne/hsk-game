@@ -1,0 +1,31 @@
+{
+  "audio": "9c21fcd6be4a9a7509914b1fa4ec8c108624786b823b04a7919163a51695b348.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "展出",
+  "id": "f611ec14444a3dc4dd3f99a7",
+  "level": 5,
+  "meaning": "to exhibit, to display",
+  "pinyin": "zhǎnchū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F{m[v!43Dl-1779527162266"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

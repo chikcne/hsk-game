@@ -1,0 +1,32 @@
+{
+  "audio": "3fa97067e92b166b0ced8ce4df040db06b8c1db2c345391dac87a85d46709edc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "处",
+      "长"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "长处",
+  "id": "d2f7ad0f2c57e61d8159585e",
+  "level": 5,
+  "meaning": "strength, strong point",
+  "pinyin": "chángchù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kx2?=`:bc`-1779527160911"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

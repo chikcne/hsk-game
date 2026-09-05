@@ -1,0 +1,31 @@
+{
+  "audio": "ac85aea4dabf724009fe69abae717e6b6ca82af7b9f43ee833e67f0dcbcd7da6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "符合",
+  "id": "455a2279b5f77c3aa14c07a9",
+  "level": 4,
+  "meaning": "to conform to, to match",
+  "pinyin": "fúhé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o9Hl/W20<D-1779527160011"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

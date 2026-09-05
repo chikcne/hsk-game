@@ -1,0 +1,31 @@
+{
+  "audio": "ec1f504c292cd334aacb808ab76a572f36db41606d778ca7f432223c2cfbb1d3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "感"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "感情",
+  "id": "0ca7c443661df7d79df0e660",
+  "level": 4,
+  "meaning": "emotion, feeling",
+  "pinyin": "gǎnqíng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r-UR?T-ydS-1779527160032"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

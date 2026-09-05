@@ -1,0 +1,32 @@
+{
+  "audio": "0eb131b4e3913f0f86a433104d57105cce9731ea700bf62facfe25af9d5df447.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "以",
+      "可"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "可以",
+  "id": "2d2edb301195593a3bf4c948",
+  "level": 1,
+  "meaning": "can, may; okay, fine",
+  "pinyin": "kěyǐ",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-L]>?qok(^n-1779527158905"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

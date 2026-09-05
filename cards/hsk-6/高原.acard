@@ -1,0 +1,32 @@
+{
+  "audio": "d42bb74b25a75426b851d6d4cc46bc00087d17893642b17e040b34c01b6d9c99.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "原",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高原",
+  "id": "9c2ec11561efcd131962d341",
+  "level": 6,
+  "meaning": "plateau",
+  "pinyin": "gāoyuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-438-1779527162841"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

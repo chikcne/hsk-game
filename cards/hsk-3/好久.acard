@@ -1,0 +1,32 @@
+{
+  "audio": "e908ce56f29f79a956a9f143329fdba2764b601a67f9a22ebe97d6951c7b0d6b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "久",
+      "好"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好久",
+  "id": "780c975c7357b2ca617bc20d",
+  "level": 3,
+  "meaning": "a long time",
+  "pinyin": "hǎojiǔ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-qgLk<UKF}f-1779527159467"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

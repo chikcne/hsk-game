@@ -1,0 +1,29 @@
+{
+  "audio": "6f842ab8d42811e7ded8a6e0489a395edf81072503093ab62b5a72b6be52f97d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "点",
+  "id": "84352854b1387db31bf5a8d9",
+  "level": 2,
+  "meaning": "to light, to ignite; (point, dot; to order)",
+  "pinyin": "diǎn",
+  "pos": "verb、（noun、 classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-N?]/@l5,Md-1779527159139"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

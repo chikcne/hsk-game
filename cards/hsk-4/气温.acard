@@ -1,0 +1,31 @@
+{
+  "audio": "77ce23d1d1d6c0fb4d37d59712b1ad3cb59abc93d7bc54d58368ca3451015a05.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "气温",
+  "id": "49a6493d5b82a9080de0394a",
+  "level": 4,
+  "meaning": "air temperature",
+  "pinyin": "qìwēn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-q.s?Z-<uS{-1779527160376"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

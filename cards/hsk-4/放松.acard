@@ -1,0 +1,32 @@
+{
+  "audio": "7d3aa92ad6d00517779a7ffce6afba76de6b42b06c2039c649594c4bef9c71eb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "放",
+      "松"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "放松",
+  "id": "a7a4b60d04ca36e8a2a44181",
+  "level": 4,
+  "meaning": "to relax",
+  "pinyin": "fàngsōng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-uaIU`EJRpK-1779527160001"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

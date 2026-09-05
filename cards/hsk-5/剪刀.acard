@@ -1,0 +1,32 @@
+{
+  "audio": "e8640f26efd183ad82f5f6acb588116a5e7e4e31e6246ab0a02b0d270d3f456f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "刀",
+      "剪"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "剪刀",
+  "id": "97fd70b155578636f876d72e",
+  "level": 5,
+  "meaning": "scissors",
+  "pinyin": "jiǎndāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-si[NVS|H7_-1779527161371"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

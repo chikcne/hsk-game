@@ -1,0 +1,29 @@
+{
+  "audio": "56f9f835b774eb9eed356c4207a19d17a50b1e77b9ad114801a442217596216b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "很",
+  "id": "90c867985270a1ebecd66980",
+  "level": 1,
+  "meaning": "very",
+  "pinyin": "hěn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-lpQ4!v|qi@-1779527158882"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

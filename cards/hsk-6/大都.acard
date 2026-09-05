@@ -1,0 +1,32 @@
+{
+  "audio": "1adfb6922f5d83bfe6e687184fb1dc751a1b1c260efc8e661e780b286e1e3008.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "都"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大都",
+  "id": "ac765675e9093b2304f2d90a",
+  "level": 6,
+  "meaning": "mostly, mainly",
+  "pinyin": "dàdū",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-247-1779527162650"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

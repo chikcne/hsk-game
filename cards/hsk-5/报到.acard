@@ -1,0 +1,31 @@
+{
+  "audio": "92f6d9faebbca2b057560a577cb18e513f9855ec6d131e79a3c3ca395666c4af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "报到",
+  "id": "bb140ea5d01c1b520ad49dab",
+  "level": 5,
+  "meaning": "to report for duty, to check in",
+  "pinyin": "bàodào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HL#aRB`j?|-1779527160833"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "00bf67d1e5dde5b4019a6006df2793cb19275975efcc7700f5276ede73d968e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电",
+  "id": "ef5d7d532cc23394e85c75ee",
+  "level": 3,
+  "meaning": "electricity; (to give an electric shock)",
+  "pinyin": "diàn",
+  "pos": "noun、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-N8qMxt=q5u-1779527159396"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

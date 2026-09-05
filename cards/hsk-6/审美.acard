@@ -1,0 +1,31 @@
+{
+  "audio": "19ca2a98bb350d7328a7651ceb8bfff1e9b237345009a6098a4f3e794d168d3f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "美"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "审美",
+  "id": "4e895496bc5c8cfbb9be2286",
+  "level": 6,
+  "meaning": "to appreciate beauty",
+  "pinyin": "shěnměi",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1168-1779527163571"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

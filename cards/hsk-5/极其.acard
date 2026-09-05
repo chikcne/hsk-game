@@ -1,0 +1,32 @@
+{
+  "audio": "af051f688d0704bc55e789944e763b95ba993525579ad0f53af63ba5164fae32.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "其",
+      "极"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "极其",
+  "id": "6b0d329f5723b7b2d6ed881e",
+  "level": 5,
+  "meaning": "extremely",
+  "pinyin": "jíqí",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-r*O)RfMkb~-1779527161336"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

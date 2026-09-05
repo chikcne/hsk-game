@@ -1,0 +1,32 @@
+{
+  "audio": "4e0386a37465ec40352b2770bc07be267f50340c8271050d7cba601e7d0c0548.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "些",
+      "哪"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哪些",
+  "id": "82640471268c4b51f8370323",
+  "level": 1,
+  "meaning": "which ones",
+  "pinyin": "nǎxiē",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-r:]Zk]Dby&-1779527158938"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "audio": "7505a9dffeaca1a240ed8a2a60cf48a8ff84033eae99ffcda72e7773111f7530.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "不得",
+      "得"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "舍不得",
+  "id": "97576b83d143cbe8df6dca35",
+  "level": 5,
+  "meaning": "to hate to part with, to be reluctant to give up",
+  "pinyin": "shěbude",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-AgcpbcSYF{-1779527161773"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

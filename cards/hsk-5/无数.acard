@@ -1,0 +1,32 @@
+{
+  "audio": "0b57d9b8764fd4d431b7a8f187f4cb712c37356d6282f56a424027a6657eeed1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "数",
+      "无"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "无数",
+  "id": "db45b9c3f105a56eeedbf03b",
+  "level": 5,
+  "meaning": "countless",
+  "pinyin": "wúshù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-C:[H:(4&{H-1779527162011"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

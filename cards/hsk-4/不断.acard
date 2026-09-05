@@ -1,0 +1,32 @@
+{
+  "audio": "aafe7f6530418f5666a7c97cbd5db4d9fa9116d057a7f55b9292ddbe52156a24.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "断"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不断",
+  "id": "17e2f630f38ea7e7c0a9e15e",
+  "level": 4,
+  "meaning": "continuous, unceasing; continuously, constantly",
+  "pinyin": "búduàn",
+  "pos": "verb、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-dp$)6=OI:+-1779527159848"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

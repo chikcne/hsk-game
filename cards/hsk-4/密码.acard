@@ -1,0 +1,31 @@
+{
+  "audio": "19cf201a37c46c298c4c5eff7d182b40593646883453c7eb9ef40ed0d1d6524e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "密"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "密码",
+  "id": "d2f17e65ab2c99e42c59e9f9",
+  "level": 4,
+  "meaning": "password, PIN code",
+  "pinyin": "mìmǎ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o@JjAf-?If-1779527160310"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

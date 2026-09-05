@@ -1,0 +1,32 @@
+{
+  "audio": "dd746cdb9019db3535114709f59c6332dcb637237727282a1aa2c5797474385c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加",
+      "更"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "更加",
+  "id": "4418312bd51180f964aa5a71",
+  "level": 4,
+  "meaning": "more, even more",
+  "pinyin": "gèngjiā",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-HT?dAQcneL-1779527160052"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "78e86600647483800dbe2618ed2e6fa6e43f6caa80cc8efa5a66fc3deda136fa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传",
+      "递"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "传递",
+  "id": "9deb7d265ff8b68c2e74eb0d",
+  "level": 5,
+  "meaning": "to pass on, to transmit",
+  "pinyin": "chuándì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rb:I`Ax)iz-1779527160988"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

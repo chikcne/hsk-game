@@ -1,0 +1,31 @@
+{
+  "audio": "f78ca78149232493850ce84fa8e478092788722f85592af41c097d0c63fa7192.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "米"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "厘米",
+  "id": "e2a2a42043a98a39cab8422f",
+  "level": 5,
+  "meaning": "centimeter",
+  "pinyin": "límǐ",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-q%63Ph$N5v-1779527161502"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

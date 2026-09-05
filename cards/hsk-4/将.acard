@@ -1,0 +1,29 @@
+{
+  "audio": "a9ceeebeaeacfa11a7e9fa659380e177c4cb2b6e5d89ea5d02c08d50640a2fa2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "将",
+  "id": "2c85f28f83120a86195cca0d",
+  "level": 4,
+  "meaning": "with, by (used to introduce the object of a verb, similar to 把); will, shall, be about to",
+  "pinyin": "jiāng",
+  "pos": "preposition、 adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qPc+0V>nhX-1779527160159"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

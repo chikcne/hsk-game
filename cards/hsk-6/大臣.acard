@@ -1,0 +1,31 @@
+{
+  "audio": "eaa440d5cb756fd7e24aaa083c1944080c4f5463da5107c3a74cb51033bb0df6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大臣",
+  "id": "57e7dfcf1e4dd426758fdbac",
+  "level": 6,
+  "meaning": "minister, high official",
+  "pinyin": "dàchén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-244-1779527162647"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

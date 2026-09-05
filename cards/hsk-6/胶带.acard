@@ -1,0 +1,31 @@
+{
+  "audio": "d767f2affc039e8efeb074da09457b9327bed59a74b0518664c3134988fccab3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "带"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "胶带",
+  "id": "2a59b31ccba658c390945973",
+  "level": 6,
+  "meaning": "tape, adhesive tape",
+  "pinyin": "jiāodài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-670-1779527163073"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

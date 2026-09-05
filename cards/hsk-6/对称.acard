@@ -1,0 +1,32 @@
+{
+  "audio": "386895577a20309b2365a90491f020e55e2f35dd8d7a4a706bc90968fb23bccb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "对",
+      "称"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "对称",
+  "id": "b16d492b3ab52cb7432d232b",
+  "level": 6,
+  "meaning": "symmetrical",
+  "pinyin": "duìchèn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-329-1779527162732"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

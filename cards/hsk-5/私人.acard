@@ -1,0 +1,31 @@
+{
+  "audio": "a07954389e1e00802c51e3f748db5b7276c3f5b461505efd0a6bf820ba272da0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "私人",
+  "id": "973b0ea987f65b524d87c3fb",
+  "level": 5,
+  "meaning": "private, personal",
+  "pinyin": "sīrén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J32<x?GZ_/-1779527161881"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "c1f49a56b6a35a31b6ce4b38b64b61d6db89eedeac922a4752dec9c34d09ce7f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "处"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "益处",
+  "id": "65286f891048d8909b1c25dc",
+  "level": 6,
+  "meaning": "benefit, advantage",
+  "pinyin": "yìchù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1563-1779527163966"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

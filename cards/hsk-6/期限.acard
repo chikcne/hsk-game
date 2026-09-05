@@ -1,0 +1,32 @@
+{
+  "audio": "c1c602b2c97941e82e834371a4b31f1ad83915bc43efbf702b5192ff5aa96fec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "期",
+      "限"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "期限",
+  "id": "55de716dfbe588e3664b7254",
+  "level": 6,
+  "meaning": "time limit",
+  "pinyin": "qīxiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1014-1779527163417"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

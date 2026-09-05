@@ -1,0 +1,29 @@
+{
+  "audio": "39862f9c18f5b23950c1976c7312e1f859cce8477c0751f6fc3f8ffd2afb7ff8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "皮",
+  "id": "7ac2ba6fff8a4c9f648e14a6",
+  "level": 6,
+  "meaning": "skin, leather; tough, pliable",
+  "pinyin": "pí",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-985-1779527163388"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

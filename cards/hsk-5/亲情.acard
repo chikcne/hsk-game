@@ -1,0 +1,31 @@
+{
+  "audio": "0b0814839ce74e829e0f198328296283fa7417fa65166c8b5f52ac34f158aeaa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亲"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亲情",
+  "id": "d2508103aa43b6f6657bb2fa",
+  "level": 5,
+  "meaning": "family affection",
+  "pinyin": "qīnqíng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PMkXw)=<$Q-1779527161685"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

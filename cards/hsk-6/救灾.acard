@@ -1,0 +1,32 @@
+{
+  "audio": "25c106686dfd322533045fd0eddbbecb7c60ee537edb1b27126d5262b3522d93.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "救",
+      "灾"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "救灾",
+  "id": "9640a81f7e06dd41512f4da3",
+  "level": 6,
+  "meaning": "to provide disaster relief",
+  "pinyin": "jiùzāi",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-739-1779527163142"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

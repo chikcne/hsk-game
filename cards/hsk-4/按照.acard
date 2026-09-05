@@ -1,0 +1,32 @@
+{
+  "audio": "038c66ef528b0afc67b9730be34ecaa0f3d557dae458b110b28b65ff4d7e31ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "按",
+      "照"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "按照",
+  "id": "3486f440a9521cd7c3bc2c99",
+  "level": 4,
+  "meaning": "according to, in accordance with",
+  "pinyin": "ànzhào",
+  "pos": "preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-e[n~Z|Q/z*-1779527159811"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

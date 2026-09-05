@@ -1,0 +1,29 @@
+{
+  "audio": "ecf2f521aa40bd0917fcf49fd631e6db6e09703e2e0065eb111944f983f13b1a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "介绍",
+  "id": "6050583aa520f1a293f789b7",
+  "level": 2,
+  "meaning": "to introduce",
+  "pinyin": "jièshào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-wp4YUe1Syf-1779527159172"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

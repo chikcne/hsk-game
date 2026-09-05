@@ -1,0 +1,31 @@
+{
+  "audio": "964f96f791f2e4426f99172851416f92cf3e7e686f91b5250432ea7c4de970ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "市"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "市民",
+  "id": "9a1ceb7d6406fd10a6a9734c",
+  "level": 5,
+  "meaning": "citizen",
+  "pinyin": "shìmín",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-oC7Ml8<0`@-1779527161837"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

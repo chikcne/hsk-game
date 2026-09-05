@@ -1,0 +1,32 @@
+{
+  "audio": "e523473af7537ce6dc260cf5780312fd0f87209112bb916830ec3e29ea9f358c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "台",
+      "平"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平台",
+  "id": "dd7c75d6f3316b96074f2240",
+  "level": 5,
+  "meaning": "platform",
+  "pinyin": "píngtái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-yd]6&KpIh%-1779527161650"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

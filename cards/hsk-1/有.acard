@@ -1,0 +1,29 @@
+{
+  "audio": "bce47e94b273e181d765ae80228475a7c011a1c0519cbbdfb23292cda6fa173f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有",
+  "id": "eaf66288f2807022abf3b88e",
+  "level": 1,
+  "meaning": "to have, to exist",
+  "pinyin": "yǒu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-G6-H-K_679-1779527159066"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

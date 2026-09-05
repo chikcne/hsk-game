@@ -1,0 +1,29 @@
+{
+  "audio": "0868af7c6c8501a3fcc468b9434224efbcaa5b2b61d6a8a27dea44c3a89410fc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "底",
+  "id": "b6458bc8b2420f5d4566fe33",
+  "level": 4,
+  "meaning": "bottom, base",
+  "pinyin": "dǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-uI0pMd@~r[-1779527159956"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

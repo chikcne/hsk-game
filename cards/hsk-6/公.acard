@@ -1,0 +1,29 @@
+{
+  "audio": "f45ef11421b688fbe3ab8ab115fe4a4926dfbc62a541dd0cbb60b1222f85d168.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公",
+  "id": "8c0b11b9798d97d7d5e68743",
+  "level": 6,
+  "meaning": "public, fair",
+  "pinyin": "gōng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-450-1779527162853"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

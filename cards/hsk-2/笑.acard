@@ -1,0 +1,29 @@
+{
+  "audio": "8124ee3bfc19478c89e4dd96dab6799083e5437431b10085f69a60184200f33a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "笑",
+  "id": "339cea1a56318b72e57363fc",
+  "level": 2,
+  "meaning": "to laugh, to smile",
+  "pinyin": "xiào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-Pe8B$R*,cO-1779527159266"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

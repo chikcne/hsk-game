@@ -1,0 +1,32 @@
+{
+  "audio": "61d96bdd2d7b4caea2ad956153787cfd20e1fe02fb2bacd69e2222e648e5fbe9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "求",
+      "要"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "要求",
+  "id": "d759fb1e641392243aa040ac",
+  "level": 3,
+  "meaning": "to demand; requirement",
+  "pinyin": "yāoqiú",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-sZ}^W((DUw-1779527159723"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

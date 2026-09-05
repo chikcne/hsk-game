@@ -1,0 +1,31 @@
+{
+  "audio": "06febe1fcd7d0c930ee77b0293e0c6bd99f22a0dd79b91fe4bba74989dec0d9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大衣",
+  "id": "a9e2e71e557f6954fb92776a",
+  "level": 3,
+  "meaning": "coat",
+  "pinyin": "dàyī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-jeQQ}#,(Q5-1779527159380"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

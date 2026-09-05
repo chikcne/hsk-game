@@ -1,0 +1,31 @@
+{
+  "audio": "dfcba7b5ee4bb5b9edb11396cd025e539fe991f0ffdc9fe40b6b622c969be0fb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "网"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "联网",
+  "id": "d6fda272a2773d8b7364d285",
+  "level": 6,
+  "meaning": "to network, to connect to the internet",
+  "pinyin": "liánwǎng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-844-1779527163247"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

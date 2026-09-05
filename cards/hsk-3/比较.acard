@@ -1,0 +1,32 @@
+{
+  "audio": "024e5704eea57888c912249d5dc1510651fe5afd12de9dce5cae0422f73d1844.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "比",
+      "较"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "比较",
+  "id": "cb7c3fe535bc6b15ea2dd0a4",
+  "level": 3,
+  "meaning": "to compare; quite, relatively; than",
+  "pinyin": "bǐjiào",
+  "pos": "verb、 preposition、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-N?v>]<LhW`-1779527159324"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "28afc582497352a95d40c70796f9ef03d45df425888c8f3b1683deee60c65007.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "求"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "求助",
+  "id": "04d3b3348403e173a841047e",
+  "level": 6,
+  "meaning": "to ask for help",
+  "pinyin": "qiúzhù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1072-1779527163475"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

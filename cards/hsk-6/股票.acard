@@ -1,0 +1,31 @@
+{
+  "audio": "8498d27305ddad5d0742958641c1ced7f16ad78336c067792f2e5b6a9a46302d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "票"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "股票",
+  "id": "7aa89153876ac53a938ed205",
+  "level": 6,
+  "meaning": "stock, share",
+  "pinyin": "gǔpiào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-477-1779527162880"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

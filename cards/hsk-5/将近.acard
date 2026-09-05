@@ -1,0 +1,32 @@
+{
+  "audio": "b7a9064742755e733ee838738a8225a1a3ad3109a4a64c4258db9a56a9de02ce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "将",
+      "近"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "将近",
+  "id": "53389effd02a1f5904e9f638",
+  "level": 5,
+  "meaning": "almost, nearly",
+  "pinyin": "jiāngjìn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F8_40s3xSp-1779527161383"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

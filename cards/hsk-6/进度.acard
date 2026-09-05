@@ -1,0 +1,32 @@
+{
+  "audio": "2dcabb668f75df3efa4deaddde497a751aa98c33dd311181a5204a2268d8213e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "进度",
+  "id": "8ca9fb2a97f9e8de25bccb85",
+  "level": 6,
+  "meaning": "progress",
+  "pinyin": "jìndù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-708-1779527163111"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

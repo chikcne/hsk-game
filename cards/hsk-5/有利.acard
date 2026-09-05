@@ -1,0 +1,31 @@
+{
+  "audio": "554b2970d7722be61d690919e1cfad98f74ba219715237453c254ae222618a1e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有利",
+  "id": "f8c7303fddffb4af385dce1b",
+  "level": 5,
+  "meaning": "advantageous, favorable",
+  "pinyin": "yǒulì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EBt%F9p3{p-1779527162214"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

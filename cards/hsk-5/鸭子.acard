@@ -1,0 +1,31 @@
+{
+  "audio": "2a04bc38f1bab8f7876f2a44e43e7e95c0307c17f0f5d715f671b9a033a64a34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鸭子",
+  "id": "fd264be65b36a85c690609b6",
+  "level": 5,
+  "meaning": "duck",
+  "pinyin": "yāzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F!<Zsk,S^6-1779527162126"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

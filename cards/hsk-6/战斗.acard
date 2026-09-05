@@ -1,0 +1,29 @@
+{
+  "audio": "343db70436a8a558e48f91be02d3a33824c602b3401cae7471e6c3e85fad5909.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "战斗",
+  "id": "13ce3bec3e623dea452ced35",
+  "level": 6,
+  "meaning": "battle, fight; to fight",
+  "pinyin": "zhàndòu",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1660-1779527164063"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

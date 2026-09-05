@@ -1,0 +1,29 @@
+{
+  "audio": "5995c4e42c502830296441cd2bc126ac23fa047259df870a74ea374ff430bd85.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "填",
+  "id": "587587a61e7f996f8990720e",
+  "level": 5,
+  "meaning": "to fill",
+  "pinyin": "tián",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-xn:)3Zf9ro-1779527161929"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

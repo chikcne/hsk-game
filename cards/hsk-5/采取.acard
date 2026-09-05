@@ -1,0 +1,31 @@
+{
+  "audio": "7967408d593a7703531fde1ea924a51ea4ca838b894d5b528cb625c3e9e4ab9e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "取"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "采取",
+  "id": "e90c206a3da709e0be71c10b",
+  "level": 5,
+  "meaning": "to adopt, to use",
+  "pinyin": "cǎiqǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Dm!;4Q`u)F-1779527160889"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

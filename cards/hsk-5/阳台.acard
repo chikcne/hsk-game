@@ -1,0 +1,31 @@
+{
+  "audio": "ec42b30a1497ed55ad94ec073363d241953dbaf0ffec6381957f86948fc567c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "台"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "阳台",
+  "id": "268d245fd832bdf08bb30116",
+  "level": 5,
+  "meaning": "balcony",
+  "pinyin": "yángtái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B?NP6P#s]z-1779527162136"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "4926795374371fbb3b3e16abc026a16fb8fbab53de89cea32e8e675413d05af7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "入",
+  "id": "03dddeea2c150b610710b921",
+  "level": 4,
+  "meaning": "to enter, to go in",
+  "pinyin": "rù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p(0l)Z3ul;-1779527160425"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "8833f7b882780eee7a2c040566c547af970a4dd39316dd4ccf907ba60be581e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不禁",
+  "id": "37ea9298c9328c7c49c71ecc",
+  "level": 6,
+  "meaning": "cannot help but, cannot refrain from",
+  "pinyin": "bùjīn",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-84-1779527162487"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

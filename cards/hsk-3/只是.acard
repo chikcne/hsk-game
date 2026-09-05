@@ -1,0 +1,32 @@
+{
+  "audio": "75aa921c9a3968cc89b9438508cc3ef7917ae4650cd7d960e2796f5c361ab909.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "只",
+      "是"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "只是",
+  "id": "a32e710457c7f9e589e8dc4e",
+  "level": 3,
+  "meaning": "only, merely; but",
+  "pinyin": "zhǐshì",
+  "pos": "adverb、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-HH}32p~FAl-1779527159781"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

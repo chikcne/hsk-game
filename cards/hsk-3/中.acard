@@ -1,0 +1,29 @@
+{
+  "audio": "1e59518643973e7b02755e4a5fcc29fe7833f89d2c50562979868180bd38f8bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中",
+  "id": "c0cb59416627c5c382c1233e",
+  "level": 3,
+  "meaning": "middle",
+  "pinyin": "zhōng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-D:Tm.4+B?]-1779527159784"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

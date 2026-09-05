@@ -1,0 +1,29 @@
+{
+  "audio": "b1fa6802796ef18814ef51bfa64a6fa3bb19b645058edb5fd8151c7ea6ad40ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "做",
+  "id": "0b610a2200b2a946c28c98a5",
+  "level": 1,
+  "meaning": "to do, to make",
+  "pinyin": "zuò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-up@mV|zaQ8-1779527159102"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

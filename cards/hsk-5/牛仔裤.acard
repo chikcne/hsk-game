@@ -1,0 +1,31 @@
+{
+  "audio": "695ed72a56891a9cb85d34445aaba081d4b7b73e9d2fbff79f443c2755122e9d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "牛"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "牛仔裤",
+  "id": "d9854d964e18a1827bc8331b",
+  "level": 5,
+  "meaning": "jeans",
+  "pinyin": "niúzǎikù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-DNg*`2>goK-1779527161605"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

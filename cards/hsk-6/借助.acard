@@ -1,0 +1,31 @@
+{
+  "audio": "5f7bfe825607149013d8a76077d9532801eb4bc0d567f652d82e07833e596316.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "借"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "借助",
+  "id": "e94da4ce68a8af0656a3eb51",
+  "level": 6,
+  "meaning": "to use as a means",
+  "pinyin": "jièzhù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-699-1779527163102"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

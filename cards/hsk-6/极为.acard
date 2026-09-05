@@ -1,0 +1,32 @@
+{
+  "audio": "d453df22167d0740e45536daeae3217dbfc7cd2e2d897a2bb51c003df1cf2ccf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为",
+      "极"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "极为",
+  "id": "51ea793ac70bd1e942ab220b",
+  "level": 6,
+  "meaning": "extremely",
+  "pinyin": "jíwéi",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-620-1779527163023"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

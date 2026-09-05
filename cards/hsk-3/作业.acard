@@ -1,0 +1,31 @@
+{
+  "audio": "8ce061876b2a17f9fe7fbee195cde521359999ee9491f9265bb0ca3e1ab35c4b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "作业",
+  "id": "a364ceb8ea935fbb438ea95d",
+  "level": 3,
+  "meaning": "homework",
+  "pinyin": "zuòyè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-AUGJ1je;r:-1779527159803"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "95953059f5033bc0eea824863a257184d23da45b289cc57e109de35929835b35.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "喊",
+  "id": "79b255afb03bc71c5dcc0340",
+  "level": 4,
+  "meaning": "shout",
+  "pinyin": "hǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-M?;({yNynx-1779527160090"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

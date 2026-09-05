@@ -1,0 +1,29 @@
+{
+  "audio": "ed427792d6ced669d29f098ba6fb7a034b8c989d5c027ce96759ad99e14844fe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "概括",
+  "id": "e4f3cf05388564d17357af21",
+  "level": 5,
+  "meaning": "to summarize; general",
+  "pinyin": "gàikuò",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-i~H~,XH`5E-1779527161185"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

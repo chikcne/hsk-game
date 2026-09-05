@@ -1,0 +1,31 @@
+{
+  "audio": "e082163b9030112def9fdada78d9bf4516e7942012e1a494ccee04b82d72bd0f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打扰",
+  "id": "f7e7061f2690c8be80697885",
+  "level": 4,
+  "meaning": "to disturb, to bother",
+  "pinyin": "dǎrǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-L@H!1#I4xe-1779527159921"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

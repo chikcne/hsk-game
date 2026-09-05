@@ -1,0 +1,29 @@
+{
+  "audio": "19f3423c623c6a47182b9b4df7e4cb6ca5088ad15ce294d0287ce7f20178e4ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "挤",
+  "id": "5fe7d68c96b217ab83d5fa3c",
+  "level": 5,
+  "meaning": "to crowd, to squeeze; crowded",
+  "pinyin": "jǐ",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GU@wTdLw^D-1779527161341"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

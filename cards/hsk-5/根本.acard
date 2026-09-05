@@ -1,0 +1,32 @@
+{
+  "audio": "3099684c7a7a0c100c7f001cad7a3cab64891160471ae78f39f0e0b83abe3bb4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本",
+      "根"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "根本",
+  "id": "b24a6e0980ec48b388a6b857",
+  "level": 5,
+  "meaning": "foundation, root; fundamental; simply",
+  "pinyin": "gēnběn",
+  "pos": "noun、adjective、 adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G0lPT#qL2=-1779527161207"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

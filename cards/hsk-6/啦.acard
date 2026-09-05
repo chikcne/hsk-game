@@ -1,0 +1,29 @@
+{
+  "audio": "58233928ba1095b21ee76de1726080f6d755741138d3b22d3476871871e69ba7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "啦",
+  "id": "0619a08e55e483901718a908",
+  "level": 6,
+  "meaning": "particle expressing excitement or certainty",
+  "pinyin": "la",
+  "pos": "助",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-812-1779527163215"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

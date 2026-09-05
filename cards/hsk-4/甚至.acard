@@ -1,0 +1,31 @@
+{
+  "audio": "c73151097edd886e056f19358419239da14e4853da9dbb20b7b9f6d6776a2fe0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "至"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "甚至",
+  "id": "74721046212433a7506906cd",
+  "level": 4,
+  "meaning": "even, so much as that",
+  "pinyin": "shènzhì",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-IYum_e2Ms&-1779527160448"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "audio": "7c257cdead2af5104476796bc042d5a103ef1cd45575a4e2a0ce20885a110c1d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "多",
+      "差"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "差不多",
+  "id": "765cdaceabf98efe0acf4b24",
+  "level": 3,
+  "meaning": "almost, similar; nearly",
+  "pinyin": "chàbuduō",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Alkeu]D9@z-1779527159355"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

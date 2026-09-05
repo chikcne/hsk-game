@@ -1,0 +1,29 @@
+{
+  "audio": "c5ff925ef82177ce820a30bfb0c19ca597e50654cf4ce3b2a58c2cac7b16e1e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "其",
+  "id": "5c257f27268947ab9cada1cb",
+  "level": 5,
+  "meaning": "his, its, that",
+  "pinyin": "qí",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kiq&z!q?/q-1779527161656"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

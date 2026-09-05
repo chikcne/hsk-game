@@ -1,0 +1,32 @@
+{
+  "audio": "bf83ce484c9d724f4df3066fefaa0c9f48a396c21653630210bdcf71729c09b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "初",
+      "最"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "最初",
+  "id": "c54753f782c0b547c4f1997e",
+  "level": 5,
+  "meaning": "at first, initially",
+  "pinyin": "zuìchū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-b4r]@W+d4C-1779527162399"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

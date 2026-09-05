@@ -1,0 +1,29 @@
+{
+  "audio": "e423a92844a27e2058a8d6fc1981b89a106dc03c64e6d9c027922463b3dac60f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "艘",
+  "id": "c922d13dd32e6b2a99b8d4d8",
+  "level": 6,
+  "meaning": "measure word for ships",
+  "pinyin": "sōu",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1243-1779527163646"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "90a49214503d1ca81520e0544d100c521cc4835ffd6826e6f570acfd536a192e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "时机",
+  "id": "885ca868a3ac6755217f87f4",
+  "level": 6,
+  "meaning": "opportunity",
+  "pinyin": "shíjī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1187-1779527163590"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

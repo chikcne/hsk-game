@@ -1,0 +1,29 @@
+{
+  "audio": "dccde048a6cf51e139cad6543f4297643957a1554b33babfa917b031a0277fe0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "骄傲",
+  "id": "ef95a4fc856c1856c904b095",
+  "level": 4,
+  "meaning": "proud, arrogant, conceited; pride, arrogance",
+  "pinyin": "jiāo’ào",
+  "pos": "adjective、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-g%j]z[6V4#-1779527160171"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

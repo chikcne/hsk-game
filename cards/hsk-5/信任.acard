@@ -1,0 +1,31 @@
+{
+  "audio": "39aab96725ad93dc41ece15aa676fb370d56425b2d24638b6818d67fe6145a36.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "信"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "信任",
+  "id": "4590f256e32c5cecc50e0ac2",
+  "level": 5,
+  "meaning": "to trust",
+  "pinyin": "xìnrèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x;_w7h#,OR-1779527162087"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

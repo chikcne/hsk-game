@@ -1,0 +1,32 @@
+{
+  "audio": "91b79e58e2a2854ddfde838f7686a291ce95e962d9158f7cabc93705c5eef382.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "小"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小于",
+  "id": "02a9e89be66423577da90602",
+  "level": 5,
+  "meaning": "to be less than",
+  "pinyin": "xiǎoyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Hz{2(tXe:6-1779527162074"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

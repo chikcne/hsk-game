@@ -1,0 +1,32 @@
+{
+  "audio": "e24fa74e79e9579ff919c8a432553ca0d7a2d2f52308b5fc3b934734ff018f49.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "求",
+      "追"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "追求",
+  "id": "fc4e191f9c297e59fe16c8fc",
+  "level": 5,
+  "meaning": "to pursue",
+  "pinyin": "zhuīqiú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-H0_$v`6RX!-1779527162369"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

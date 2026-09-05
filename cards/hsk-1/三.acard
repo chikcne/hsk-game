@@ -1,0 +1,29 @@
+{
+  "audio": "a0f7f4a9030bd6aac1ff301f87c992d39952eacffeebc6c9385f38706ed996d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "三",
+  "id": "e21385532e85bc86a848c581",
+  "level": 1,
+  "meaning": "three",
+  "pinyin": "sān",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Eb$qB%>+sW-1779527158976"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

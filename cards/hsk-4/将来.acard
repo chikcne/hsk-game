@@ -1,0 +1,32 @@
+{
+  "audio": "171b1d889fd4ede9ce4d5c15fec819e9bf0251e0c547148203a96550afca4989.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "将",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "将来",
+  "id": "4c110a4dd139c681ddc64b4a",
+  "level": 4,
+  "meaning": "future",
+  "pinyin": "jiānglái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-KsKhgJY@,a-1779527160160"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

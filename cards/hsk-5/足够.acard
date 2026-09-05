@@ -1,0 +1,32 @@
+{
+  "audio": "701bb14c69c36788c058495db6b9c51f2e5cf37f22c0c8a497006becd237bc1c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "够",
+      "足"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "足够",
+  "id": "eedaf01f3017161f91c43aa1",
+  "level": 5,
+  "meaning": "sufficient, enough; to be sufficient",
+  "pinyin": "zúgòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zUxM5N3hUK-1779527162392"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

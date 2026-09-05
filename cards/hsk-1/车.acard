@@ -1,0 +1,29 @@
+{
+  "audio": "35e011f24d625afd4101c26b39b8e2cd07cc99ade604d116a77b15b007b35bb7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "车",
+  "id": "b03f4c65589cc0b9af755dc2",
+  "level": 1,
+  "meaning": "vehicle, car",
+  "pinyin": "chē",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-B]*TV,1lCi-1779527158823"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

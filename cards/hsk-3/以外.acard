@@ -1,0 +1,32 @@
+{
+  "audio": "fd61d20461b8b9f3a84c9ac06cea0430641c00205e102c34426a07e114a45722.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "以",
+      "外"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "以外",
+  "id": "edab9b65f65c71a165abcca7",
+  "level": 3,
+  "meaning": "except, besides",
+  "pinyin": "yǐwài",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-JQVU`0dm]c-1779527159732"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

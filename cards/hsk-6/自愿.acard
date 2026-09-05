@@ -1,0 +1,32 @@
+{
+  "audio": "069934c4878b409ac31e02e768403cca04fbbe8bd6ec25defa0c46f57bf52e7b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "愿",
+      "自"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自愿",
+  "id": "d6b176b3d58a34429692214f",
+  "level": 6,
+  "meaning": "to be willing",
+  "pinyin": "zìyuàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1784-1779527164187"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

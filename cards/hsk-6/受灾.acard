@@ -1,0 +1,32 @@
+{
+  "audio": "0dcc92b0da82b6f53754e2b2e667b50417b57b73367d712b0de0fdb5d99ed135.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "受",
+      "灾"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "受灾",
+  "id": "235022d3e231700704a66f40",
+  "level": 6,
+  "meaning": "to be hit by a disaster",
+  "pinyin": "shòuzāi",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1217-1779527163620"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "153a45f64cb7a737d0fef7b8b087b04e6fec438c9be9b8225c96372e47a4e413.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "刮",
+  "id": "9456fe65605f20b8e04b21d7",
+  "level": 3,
+  "meaning": "to scrape, to blow",
+  "pinyin": "guā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-HAgrPh<N<}-1779527159454"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

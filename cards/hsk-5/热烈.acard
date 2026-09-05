@@ -1,0 +1,31 @@
+{
+  "audio": "88ddf501c723b5f7667948da6a3f12ac998b3d2ede5832537b20a69444b8dad6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "热"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热烈",
+  "id": "cc22571da6b1ae8509a78c05",
+  "level": 5,
+  "meaning": "warm, enthusiastic",
+  "pinyin": "rèliè",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-LK:YR!$CGH-1779527161718"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

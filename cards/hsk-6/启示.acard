@@ -1,0 +1,29 @@
+{
+  "audio": "764e8801fa0ae54382bd8d3c441b32f0a22073dbea00680487a785ffe45afd4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "启示",
+  "id": "957a220846cf94e300be765d",
+  "level": 6,
+  "meaning": "to reveal; enlightenment",
+  "pinyin": "qǐshì",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1022-1779527163425"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

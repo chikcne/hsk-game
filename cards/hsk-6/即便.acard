@@ -1,0 +1,31 @@
+{
+  "audio": "11e61387caee2113593c1da8038e78ac01308cfb7e2dc0358a6a682ee5a2c6d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "便"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "即便",
+  "id": "364bca0f5cdb16867efe5b49",
+  "level": 6,
+  "meaning": "even if, even though",
+  "pinyin": "jíbiàn",
+  "pos": "连",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-615-1779527163018"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

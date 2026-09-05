@@ -1,0 +1,31 @@
+{
+  "audio": "71882cdddaace42d3df2056a0c5d0e842b5e3520fd975ef18b37661d2f20fba1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "补"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "补充",
+  "id": "b2b36d9f6593604d27d8e1c0",
+  "level": 5,
+  "meaning": "to supplement, to replenish",
+  "pinyin": "bǔchōng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nEC0a+Di$w-1779527160879"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

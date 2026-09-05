@@ -1,0 +1,32 @@
+{
+  "audio": "f6fa7501e1c231c194080913d44666ea581e918c0b94a0da73ad26347f92458c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亏",
+      "多"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "多亏",
+  "id": "900677d97e1220af979ae8ee",
+  "level": 6,
+  "meaning": "thanks to, fortunately",
+  "pinyin": "duōkuī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-337-1779527162740"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

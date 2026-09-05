@@ -1,0 +1,32 @@
+{
+  "audio": "20696b0f761fdc7910f542f0319ff764e690f4b189392e65f7004da2de9d3e1c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "测",
+      "试"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "测试",
+  "id": "455c1e5bc2d37f78152ad068",
+  "level": 5,
+  "meaning": "to test",
+  "pinyin": "cèshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mD)d!DKyr5-1779527160899"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

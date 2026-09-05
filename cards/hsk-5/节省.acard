@@ -1,0 +1,32 @@
+{
+  "audio": "e46d609d8578464132fb26d12cacca38f6c74805112ba1b42fe5423094a0c6a2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "省",
+      "节"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "节省",
+  "id": "21fb13c765f207648b3fee10",
+  "level": 5,
+  "meaning": "to save, to economize",
+  "pinyin": "jiéshěng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-n|g*:|ceW%-1779527161407"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

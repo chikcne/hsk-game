@@ -1,0 +1,31 @@
+{
+  "audio": "bddad5639e97494140f775aef1150ddd58c0e23fd2022f79aed53e5a655a07d5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "跟"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跟踪",
+  "id": "196fe06cba3f56ab46526f5d",
+  "level": 6,
+  "meaning": "to track, to tail",
+  "pinyin": "gēnzōng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-449-1779527162852"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

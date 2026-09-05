@@ -1,0 +1,31 @@
+{
+  "audio": "f3ccc2a2138521c0deb74a79ca9b733f605026edf2d0696a61099b2a95028db6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "活"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "活跃",
+  "id": "18a202e2d8a87c78bdb96cd4",
+  "level": 6,
+  "meaning": "active, dynamic; to be active",
+  "pinyin": "huóyuè",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-598-1779527163001"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

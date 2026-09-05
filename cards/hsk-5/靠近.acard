@@ -1,0 +1,32 @@
+{
+  "audio": "d98232f465376f02831a6a041b09704fe7d5bbc27d86393e6ac966117537b9bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "近",
+      "靠"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "靠近",
+  "id": "757c99c3dc3cefad86507ead",
+  "level": 5,
+  "meaning": "to approach, to get close to",
+  "pinyin": "kàojìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w#`FL7_@HH-1779527161464"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

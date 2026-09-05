@@ -1,0 +1,29 @@
+{
+  "audio": "bcd0efa6df55d9c155331e84e865906859a26d8ba33badecc2662f48d5f94572.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "撞",
+  "id": "9753e28b5326636203aba351",
+  "level": 5,
+  "meaning": "to bump, to collide",
+  "pinyin": "zhuàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-e~G]/1sAXI-1779527162365"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

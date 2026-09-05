@@ -1,0 +1,29 @@
+{
+  "audio": "283e0beaacc95338b9f3815103760faf8198196b7c2d05a05403b9aa1fe3df9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "八",
+  "id": "8163fc9fe54c7cdc6705db7c",
+  "level": 1,
+  "meaning": "eight",
+  "pinyin": "bā",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-G%&1qrvO3O-1779527158805"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

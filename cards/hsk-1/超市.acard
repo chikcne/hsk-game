@@ -1,0 +1,32 @@
+{
+  "audio": "11298cb7b9f04f0c1c7f592f7ddb2f16150f04a77392b9a9582e107c13fb5d33.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "市",
+      "超"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "超市",
+  "id": "03c8464291efde02429db5e9",
+  "level": 1,
+  "meaning": "supermarket",
+  "pinyin": "chāoshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-QOkw[^lEy3-1779527158822"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

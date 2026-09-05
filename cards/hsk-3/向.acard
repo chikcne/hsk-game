@@ -1,0 +1,29 @@
+{
+  "audio": "6aa67b1619d4360c664c11a4b9c9d5c4ea800b434467fbe2aadf13f34f889503.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "向",
+  "id": "2e789b7542edde06e524588c",
+  "level": 3,
+  "meaning": "to face, to turn toward; toward, to",
+  "pinyin": "xiàng",
+  "pos": "verb、preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-O8u+w{zHg$-1779527159697"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

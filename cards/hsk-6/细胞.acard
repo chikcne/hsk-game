@@ -1,0 +1,31 @@
+{
+  "audio": "36688186e86cd8d6bdd43316be086ec67e034cf6029ee23425724ba84dd73c46.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "细"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "细胞",
+  "id": "ea11dadb2bbdcb4f5cdeaabf",
+  "level": 6,
+  "meaning": "cell",
+  "pinyin": "xìbāo",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1408-1779527163811"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

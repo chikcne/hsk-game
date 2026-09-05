@@ -1,0 +1,32 @@
+{
+  "audio": "0a03b55a002494c54d9414e2c6ee7dfd263373961e5fab22d246d8ca81e56f54.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "乡",
+      "家"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "家乡",
+  "id": "db0849e08f3ff186cd0aa433",
+  "level": 4,
+  "meaning": "hometown",
+  "pinyin": "jiāxiāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-C9%@~U+/e8-1779527160144"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

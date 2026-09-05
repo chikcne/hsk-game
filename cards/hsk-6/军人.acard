@@ -1,0 +1,31 @@
+{
+  "audio": "d3fe60bad63918ee6ec0c5053c3311f1eda0a4361e5f1e49a0faa1ae40106813.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "军人",
+  "id": "f62d01f473873df8651d2901",
+  "level": 6,
+  "meaning": "soldier",
+  "pinyin": "jūnrén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-758-1779527163161"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

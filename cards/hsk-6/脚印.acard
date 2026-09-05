@@ -1,0 +1,32 @@
+{
+  "audio": "4b4942b79ed4cf48b916a4db31727faa619e8e88e500448bc4c1bbdbb7c115ff.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "印",
+      "脚"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "脚印",
+  "id": "3dff4a369f31541e4772610b",
+  "level": 6,
+  "meaning": "footprint",
+  "pinyin": "jiǎoyìn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-678-1779527163081"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

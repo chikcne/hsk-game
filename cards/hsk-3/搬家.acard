@@ -1,0 +1,32 @@
+{
+  "audio": "8dc701156cca604bf7e9860131e9f273b0cc3ffacf2373daad757d5a0345aecb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "家",
+      "搬"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "搬家",
+  "id": "27a1a8145cf0642bf2a14cce",
+  "level": 3,
+  "meaning": "to move house",
+  "pinyin": "bānjiā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-eQ6vxrX`R*-1779527159312"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

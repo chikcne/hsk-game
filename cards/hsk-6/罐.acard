@@ -1,0 +1,29 @@
+{
+  "audio": "92b5298b3bd2cdc2114b520831ac9c39cf75057b2713235b71479124990eb0ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "罐",
+  "id": "06008d3d87f00e679c5f25ec",
+  "level": 6,
+  "meaning": "can, jar",
+  "pinyin": "guàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-497-1779527162900"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

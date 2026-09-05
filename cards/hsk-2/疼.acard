@@ -1,0 +1,29 @@
+{
+  "audio": "911eb5ebfccb99fa3b56757ef00a7526a9051d34df6dfc7d8afeb57cd3344d24.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "疼",
+  "id": "ba5f352be64772c9b092f550",
+  "level": 2,
+  "meaning": "painful, sore; (to hurt)",
+  "pinyin": "téng",
+  "pos": "adjective、 （verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-vA_5JNlh/m-1779527159243"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

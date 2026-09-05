@@ -1,0 +1,29 @@
+{
+  "audio": "da40ca701a9de1382bf47f41283f4543f842ca37b8d63009bb04332052b79ac6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爸爸",
+  "id": "eb85b29077a607e0eb5c204b",
+  "level": 1,
+  "meaning": "dad",
+  "pinyin": "bàba",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-pr.]UbiuYm-1779527158806"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

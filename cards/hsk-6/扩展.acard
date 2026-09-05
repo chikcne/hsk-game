@@ -1,0 +1,29 @@
+{
+  "audio": "f0b0f2a33cb0fffa255b3269d674f7fc094eef32b07562ba04f79bf7f05f4d54.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扩展",
+  "id": "cc4e91eca4e80b41debd0121",
+  "level": 6,
+  "meaning": "to expand",
+  "pinyin": "kuòzhǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-809-1779527163212"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

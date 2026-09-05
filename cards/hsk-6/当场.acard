@@ -1,0 +1,32 @@
+{
+  "audio": "f7c1ac91ffb6a5dabe2442a746a68304f65cdd687dd13fb8249d8221fd056adf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场",
+      "当"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当场",
+  "id": "e0f5f26cc37dd6da5e8cef38",
+  "level": 6,
+  "meaning": "on the spot, at the scene",
+  "pinyin": "dāngchǎng",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-267-1779527162670"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

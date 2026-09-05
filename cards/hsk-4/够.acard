@@ -1,0 +1,29 @@
+{
+  "audio": "4d9bc6ed6e9010b54ca2f52b83a51ed59388fa2a7a28f1030dc230df7b169e88.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "够",
+  "id": "f3d24fa6e611a3399a8bb691",
+  "level": 4,
+  "meaning": "enough; sufficiently",
+  "pinyin": "gòu",
+  "pos": "verb、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o$(HfQ7N[@-1779527160063"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

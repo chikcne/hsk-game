@@ -1,0 +1,29 @@
+{
+  "audio": "4130ca65d5ed420734f43672561117253006b9238e9069d98ec31d1bacda8bba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "日",
+  "id": "7f5677cad455b748cf9eb118",
+  "level": 1,
+  "meaning": "measure word for days; (sun)",
+  "pinyin": "rì",
+  "pos": "classifier、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-z<^vj=x~2G-1779527158975"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

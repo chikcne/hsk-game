@@ -1,0 +1,32 @@
+{
+  "audio": "8f5ac3008293195528ac99062f93336fdf7809f2405c5bdc9e66c6cc028783f0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "老"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "老人",
+  "id": "5c5229c251e72f386081aeee",
+  "level": 3,
+  "meaning": "elderly person",
+  "pinyin": "lǎorén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-j/.G{qnzmB-1779527159549"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "a831fc181769e2756efdcda5d8c318dad306019280eacbe3dd8c9cc178f6cfe0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "激发",
+  "id": "b214fccea5f13b7350c68c95",
+  "level": 6,
+  "meaning": "to inspire, to stimulate",
+  "pinyin": "jīfā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-607-1779527163010"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

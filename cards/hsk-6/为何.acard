@@ -1,0 +1,31 @@
+{
+  "audio": "e40604df826bda6a45eeb3977ddc8c9c4d4ecff1ff3c02c5e96717a010571f9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "为何",
+  "id": "5104e344345310221cbbf120",
+  "level": 6,
+  "meaning": "why, for what reason",
+  "pinyin": "wèihé",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1381-1779527163784"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

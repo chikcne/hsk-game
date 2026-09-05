@@ -1,0 +1,29 @@
+{
+  "audio": "9c4f2f2fe23597d32dc5f434ac6235dedca9a6f64363ae8a7b2697a9a3d91150.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "戴",
+  "id": "fa0551d6e536670298eecbd9",
+  "level": 4,
+  "meaning": "to wear, to put on",
+  "pinyin": "dài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-F`l+X&p=SM-1779527159935"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

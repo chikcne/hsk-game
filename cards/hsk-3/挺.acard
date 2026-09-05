@@ -1,0 +1,29 @@
+{
+  "audio": "368b31ca6f17fa54a9e2e58b133819496d30591737be88e2d8ef4ff2fd104b04.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "挺",
+  "id": "a572fb0225e5570d8fd9280a",
+  "level": 3,
+  "meaning": "quite, rather; (to endure)",
+  "pinyin": "tǐng",
+  "pos": "adverb、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-o^]P-YA;=q-1779527159661"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

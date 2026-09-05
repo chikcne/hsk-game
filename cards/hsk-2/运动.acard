@@ -1,0 +1,32 @@
+{
+  "audio": "69e477a0801ac347ae9fbeda033c7e348f72cbc73457802c91050094c7ae3ac1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "运"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "运动",
+  "id": "c550d124f04ab767b45bdb4d",
+  "level": 2,
+  "meaning": "to move, to exercise; sports, exercise",
+  "pinyin": "yùndòng",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-muMAqVq~Pw-1779527159288"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

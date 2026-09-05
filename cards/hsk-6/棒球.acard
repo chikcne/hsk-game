@@ -1,0 +1,32 @@
+{
+  "audio": "e51acb03ff1a4ed1f9763e5f629df6b156906e0c5e860590fc47f6b48911cc51.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "棒",
+      "球"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "棒球",
+  "id": "38b3c5ddbe6671f8c8f1b5cd",
+  "level": 6,
+  "meaning": "baseball",
+  "pinyin": "bàngqiú",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-21-1779527162424"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

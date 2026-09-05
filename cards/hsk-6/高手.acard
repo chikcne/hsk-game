@@ -1,0 +1,32 @@
+{
+  "audio": "46f957150aabd07aa0c1eba831809de7688c2dcb4332c32971dce6f39e515f06.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高手",
+  "id": "5020db537eb5295c19c06c02",
+  "level": 6,
+  "meaning": "expert, master",
+  "pinyin": "gāoshǒu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-436-1779527162839"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

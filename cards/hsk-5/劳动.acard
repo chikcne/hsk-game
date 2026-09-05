@@ -1,0 +1,36 @@
+{
+  "audio": "ec5fb1faa3f4613263432f9e78119ba37a27796db7b1c735b1a3f305bf176f10.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "劳动",
+  "id": "e39475aca6c47b8c06535871",
+  "level": 5,
+  "meaning": "labor, work; to work",
+  "pinyin": "láodòng",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-V}>OiO&8T-1779527161486"
+    ],
+    "overrides": [
+      {
+        "guid": "official-2026-V}>OiO&8T-1779527161486",
+        "reason": "Source Hanzi is '劳verb'; pinyin, meaning, and sentence identify 劳动."
+      }
+    ],
+    "sharedId": 345498902
+  }
+}

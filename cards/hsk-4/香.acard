@@ -1,0 +1,29 @@
+{
+  "audio": "8f501f823e70ce50f1a9ca2e16668a94d4b0e2f010219cf5aed5ec48bc9d02ab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "香",
+  "id": "98979416406e5b2898db5dad",
+  "level": 4,
+  "meaning": "fragrant",
+  "pinyin": "xiāng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-B>}eD#A^@J-1779527160605"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

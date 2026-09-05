@@ -1,0 +1,32 @@
+{
+  "audio": "a408c192e5b3a1849407761a91918cb8598c5a3c110aed2d349d7be56bba63a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "爱"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爱心",
+  "id": "f78069d9ee7ec58d2dd4fc38",
+  "level": 4,
+  "meaning": "compassion, caring",
+  "pinyin": "àixīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Js=O,32;1J-1779527159806"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

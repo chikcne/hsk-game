@@ -1,0 +1,32 @@
+{
+  "audio": "774f0c7228104bceb6507c584778a46254708565d6a454074ff711844406804a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "弹",
+      "性"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "弹性",
+  "id": "a9605ebd62b7d38e626d0565",
+  "level": 6,
+  "meaning": "elasticity",
+  "pinyin": "tánxìng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1263-1779527163666"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

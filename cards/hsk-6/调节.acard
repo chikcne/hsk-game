@@ -1,0 +1,32 @@
+{
+  "audio": "40516edaf6c632746ef0485b498dded06bdbf8a54e85f053662c2ebaeb354767.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "节",
+      "调"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "调节",
+  "id": "727d2c0e09b289b0c0031ac9",
+  "level": 6,
+  "meaning": "to adjust",
+  "pinyin": "tiáojié",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1297-1779527163700"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

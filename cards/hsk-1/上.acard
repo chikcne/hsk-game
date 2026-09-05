@@ -1,0 +1,29 @@
+{
+  "audio": "78f9708522cf0ca71f6432e2f38ee6ac4eb595f36a7971036dda939ef8f9deb4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上",
+  "id": "094298a6b2d6066654d07a4e",
+  "level": 1,
+  "meaning": "up, above; to go up",
+  "pinyin": "shàng",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-y``f)/h^m3-1779527158978"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

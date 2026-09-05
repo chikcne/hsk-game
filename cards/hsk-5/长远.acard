@@ -1,0 +1,32 @@
+{
+  "audio": "7f3d611a108a13ff7cdf02495ee4a96faeb5be9b7ff4b75a3a548c7c5671e3e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "远",
+      "长"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "长远",
+  "id": "f22003c10ce144235a2d85a7",
+  "level": 5,
+  "meaning": "long-term, far-reaching",
+  "pinyin": "chángyuǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O)nV@r%u73-1779527160918"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

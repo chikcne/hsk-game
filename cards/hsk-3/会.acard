@@ -1,0 +1,29 @@
+{
+  "audio": "36f7718c11527bb991fdc25a3c2a1ff4363a85c88ec9c1b7a4712ccf318d16e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "会",
+  "id": "b58c422eee8d451d6dfb0cab",
+  "level": 3,
+  "meaning": "meeting",
+  "pinyin": "huì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-LFVD*?GaTK-1779527159486"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

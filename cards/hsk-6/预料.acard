@@ -1,0 +1,31 @@
+{
+  "audio": "ab023cf4c9384cc80904a0720ef4be183769dbde9ac98b1682a81ec9b9866d8a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "料"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "预料",
+  "id": "98845153e0cf705371f30630",
+  "level": 6,
+  "meaning": "to predict; prediction",
+  "pinyin": "yùliào",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1611-1779527164014"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

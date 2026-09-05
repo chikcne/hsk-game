@@ -1,0 +1,31 @@
+{
+  "audio": "91815d838e74432d183c8de8019e3f3c2efcfadafbfae5996509225d5813dd9a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "严"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "严寒",
+  "id": "bf58e133d89902c7758d582b",
+  "level": 6,
+  "meaning": "severe cold",
+  "pinyin": "yánhán",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1505-1779527163908"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "96c7d79de061f596e4d57efecaf4b5694d8255992c5cf7d2c8fe83b28973959f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "厂",
+  "id": "9cffe965e94c14537c7d2946",
+  "level": 4,
+  "meaning": "factory, plant",
+  "pinyin": "chǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-q8qoMRaPKT-1779527159875"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

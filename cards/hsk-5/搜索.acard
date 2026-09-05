@@ -1,0 +1,31 @@
+{
+  "audio": "d3a523b923186975d1e1f85a6a045b0b5da446d74320c025252a9460b76dc220.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "搜"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "搜索",
+  "id": "3fb7f91b03eb1dfa23b9ec76",
+  "level": 5,
+  "meaning": "to search",
+  "pinyin": "sōusuǒ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-H`]S5rsu2*-1779527161888"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

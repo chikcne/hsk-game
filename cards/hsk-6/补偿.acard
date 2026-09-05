@@ -1,0 +1,31 @@
+{
+  "audio": "8dc61a7fa5e4fc5a063bffd3bad1e50a670c8276cde3bcd0bdb03b9ffe4fdfd5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "补"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "补偿",
+  "id": "4ce6e7eb655debee762a21f8",
+  "level": 6,
+  "meaning": "to compensate",
+  "pinyin": "bǔcháng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-74-1779527162477"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

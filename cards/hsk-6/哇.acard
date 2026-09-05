@@ -1,0 +1,29 @@
+{
+  "audio": "08327ff7adf41a57b0b783baf58df712d7558212179179693e2a5037b7e9e6ff.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哇",
+  "id": "9153c98441f7f0226440fb6a",
+  "level": 6,
+  "meaning": "wow",
+  "pinyin": "wā",
+  "pos": "拟声",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1348-1779527163751"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

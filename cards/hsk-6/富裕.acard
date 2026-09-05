@@ -1,0 +1,31 @@
+{
+  "audio": "0052c38df6e76f8cba8fcb1aabc449738b5b5f2e3823f30d4e1659f8ee350b4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "富"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "富裕",
+  "id": "eaf998bc40294cf194a2d3c3",
+  "level": 6,
+  "meaning": "wealthy; to enrich",
+  "pinyin": "fùyù",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-411-1779527162814"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

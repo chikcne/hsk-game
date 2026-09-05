@@ -1,0 +1,31 @@
+{
+  "audio": "eb58450ef84f529aac56a05aa1b068439b1d049b24df8c4a830725dca7038367.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成绩",
+  "id": "670df546802ec19141ae3237",
+  "level": 3,
+  "meaning": "score, grade, achievement",
+  "pinyin": "chéngjì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-DVaE$7r`xL-1779527159362"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

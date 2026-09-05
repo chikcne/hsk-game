@@ -1,0 +1,31 @@
+{
+  "audio": "330948754b3649baec04429f997a1d8a4cf7cef3a98fe9da17d63e6fd7c9f684.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "自"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自助",
+  "id": "4b4a0537a32dd1151bdb9454",
+  "level": 6,
+  "meaning": "self-service",
+  "pinyin": "zìzhù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1785-1779527164188"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "606797cc9227f8c067ac14c10eaf7402c3ec20c8ca7f49a49a363c43bdde0f07.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水",
+      "酒"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "酒水",
+  "id": "f288926bd92cacc79a957430",
+  "level": 6,
+  "meaning": "alcoholic beverages",
+  "pinyin": "jiǔshuǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-733-1779527163136"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

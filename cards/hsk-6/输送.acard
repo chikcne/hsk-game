@@ -1,0 +1,32 @@
+{
+  "audio": "b8e00135b5e19f9a145cc95be4183a98f9603dfa2b27c8b4723947b47a72cc34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "输",
+      "送"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "输送",
+  "id": "b1db309eb57a3bf6ee73862e",
+  "level": 6,
+  "meaning": "to transport, to convey",
+  "pinyin": "shūsòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1222-1779527163625"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

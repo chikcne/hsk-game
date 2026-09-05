@@ -1,0 +1,31 @@
+{
+  "audio": "080f57052434b1dc12d8dc85369115f322be2aa5e45c8f1ffbfcb5298b8631da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "含"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "含义",
+  "id": "6bd47bd2ced162283d1afa65",
+  "level": 6,
+  "meaning": "meaning, implication",
+  "pinyin": "hányì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-524-1779527162927"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

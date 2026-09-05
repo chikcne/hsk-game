@@ -1,0 +1,32 @@
+{
+  "audio": "0a035b6ce55403f3e31fea5d1b3b97780f33ce1fae157e541c3ade190747df5a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "提"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前提",
+  "id": "88fc217d5f75b64015585bba",
+  "level": 6,
+  "meaning": "premise",
+  "pinyin": "qiántí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1038-1779527163441"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

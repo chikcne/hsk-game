@@ -1,0 +1,29 @@
+{
+  "audio": "ad6688c28b58b503613408a1fccb1af7bb6f624197e39c4ca87b4a5b6bb2eb96.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "奶奶",
+  "id": "21c028cdcc9d3b42005c907c",
+  "level": 2,
+  "meaning": "grandmother",
+  "pinyin": "nǎinai",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-Jp)<a&jsi$-1779527159212"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

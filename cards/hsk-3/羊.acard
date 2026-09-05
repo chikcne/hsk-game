@@ -1,0 +1,29 @@
+{
+  "audio": "d55a27759ad9ce6ef33fbae258fc25e92cf8fd511b81e56ca61525bd18e8b6ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "羊",
+  "id": "d72835bf78cc0bb6ef93612c",
+  "level": 3,
+  "meaning": "sheep",
+  "pinyin": "yáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-ca9:N<X`gG-1779527159721"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

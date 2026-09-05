@@ -1,0 +1,31 @@
+{
+  "audio": "0ab7e22e837c120556647272b3b5d0d4c48dbd9d1e6e6dfbebf0daa5590b5937.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "称"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "称呼",
+  "id": "b8f150f106bc092f3cf540c0",
+  "level": 6,
+  "meaning": "to address; form of address",
+  "pinyin": "chēnghu",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-154-1779527162557"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

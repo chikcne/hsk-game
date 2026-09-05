@@ -1,0 +1,31 @@
+{
+  "audio": "c73f73f1f831c53858458d10f8e76b4391acc8870b03ca0b754351ed140f3dc1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "酒"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "啤酒",
+  "id": "9fb63e93c77eed608640510e",
+  "level": 3,
+  "meaning": "beer",
+  "pinyin": "píjiǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-o85,q?!m}>-1779527159597"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

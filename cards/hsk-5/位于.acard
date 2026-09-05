@@ -1,0 +1,32 @@
+{
+  "audio": "c6517e21435010e479566159185d827695144e348f7250d6ebbd7f2fc34d3c6a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "位"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "位于",
+  "id": "d32a15aaae3ee3986c3a3618",
+  "level": 5,
+  "meaning": "to be located at",
+  "pinyin": "wèiyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-dBQL,]JDZg-1779527162000"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

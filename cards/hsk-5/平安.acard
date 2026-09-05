@@ -1,0 +1,32 @@
+{
+  "audio": "ed4985cdf88090f1a4c5f7fb354364a65c7dacce63d0020294611c8e7aa45f0a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "安",
+      "平"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平安",
+  "id": "0fcf5510b11cbb5f0dd1b83c",
+  "level": 5,
+  "meaning": "safe, peaceful",
+  "pinyin": "píng’ān",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t<k4]yHD$>-1779527161643"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

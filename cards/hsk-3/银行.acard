@@ -1,0 +1,32 @@
+{
+  "audio": "3a81c71f6077ba1657d328f8e565949ff87b63e06729fdb3bee18f880bed4983.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "行",
+      "银"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "银行",
+  "id": "90afdf805a3616dbf6ba30cc",
+  "level": 3,
+  "meaning": "bank",
+  "pinyin": "yínháng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-!M]/rF[hE-1779527159739"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

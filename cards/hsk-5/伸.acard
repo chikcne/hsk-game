@@ -1,0 +1,29 @@
+{
+  "audio": "6a5ded42961e386460c71393036d81c9b7079d14d9ecbd3dc4bbb175f3d4916e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "伸",
+  "id": "c974d21e0ccab92dced89a70",
+  "level": 5,
+  "meaning": "to stretch",
+  "pinyin": "shēn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g.,GT&Pow,-1779527161782"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

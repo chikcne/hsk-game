@@ -1,0 +1,31 @@
+{
+  "audio": "85975bb03bd915309b45ac6d875de2264f38c0e528353fd82911c2336b65f060.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "理"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "经理",
+  "id": "65653c7c7d1e1b53a7ad6a60",
+  "level": 3,
+  "meaning": "manager",
+  "pinyin": "jīnglǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-I7mTS*#mrg-1779527159521"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "0c1d23bd2c43b8829e1154b639af0f6f52645442b25acb21bc74d93219875ca2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "金子",
+  "id": "7e82c180f271165be6328f58",
+  "level": 6,
+  "meaning": "gold",
+  "pinyin": "jīnzi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-705-1779527163108"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

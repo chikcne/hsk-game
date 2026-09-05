@@ -1,0 +1,31 @@
+{
+  "audio": "97283149032c48ef419340264e68d53c4899bcc5616947571107ec183f0235f0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有益",
+  "id": "0d3dc8b3ba099c9521cda085",
+  "level": 5,
+  "meaning": "beneficial",
+  "pinyin": "yǒuyì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gyzdb<>?vt-1779527162216"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

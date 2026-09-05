@@ -1,0 +1,32 @@
+{
+  "audio": "7c88133245de3974fe0e99c4deaddeddc99079efabd39458deddb0fe7479a3d6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "化",
+      "强"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "强化",
+  "id": "bed58ed71c9c61be5004d7c8",
+  "level": 6,
+  "meaning": "to strengthen",
+  "pinyin": "qiánghuà",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1042-1779527163445"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

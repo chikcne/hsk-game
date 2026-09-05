@@ -1,0 +1,31 @@
+{
+  "audio": "58e68436f50951d9660f81b3bb22dbd84839b474c9242145e1685435ae62a8cd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "投"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "投诉",
+  "id": "195dbe6b7de82eac0f5167a8",
+  "level": 6,
+  "meaning": "to complain",
+  "pinyin": "tóusù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1320-1779527163723"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

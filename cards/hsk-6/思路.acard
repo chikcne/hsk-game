@@ -1,0 +1,31 @@
+{
+  "audio": "cd78ab23da64944d8dfbc760348b8721e377ad8cf42294683163b5abffb7970f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "路"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "思路",
+  "id": "530e1146e555aced5911af28",
+  "level": 6,
+  "meaning": "train of thought",
+  "pinyin": "sīlù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1239-1779527163642"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

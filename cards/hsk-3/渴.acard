@@ -1,0 +1,29 @@
+{
+  "audio": "3fea226a837ef4f8b955d71dc6863ae8d67863837110790bc5de3d76f0dac8a2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "渴",
+  "id": "4e6c00210bea46f8e74cfc4a",
+  "level": 3,
+  "meaning": "thirsty",
+  "pinyin": "kě",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-O<Bh,+A9_e-1779527159535"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

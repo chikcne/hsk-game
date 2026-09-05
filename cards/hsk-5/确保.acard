@@ -1,0 +1,31 @@
+{
+  "audio": "a3bbc8f25ff84ff12caa192ec873ce97fe1dddf66f53240c43de12966b2d3c9a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "确保",
+  "id": "f657c79d93f0526b84e80dc2",
+  "level": 5,
+  "meaning": "to ensure",
+  "pinyin": "quèbǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-A!t2gP#Np0-1779527161709"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

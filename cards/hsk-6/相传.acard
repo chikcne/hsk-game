@@ -1,0 +1,31 @@
+{
+  "audio": "7b85271fa524f83bfbc581761b5d32b2647917ca9b3a64866d26273a8c346be2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相传",
+  "id": "9962dda5c5a55061623c2b0d",
+  "level": 6,
+  "meaning": "to hand down, to pass on",
+  "pinyin": "xiāngchuán",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1436-1779527163839"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

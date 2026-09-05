@@ -1,0 +1,31 @@
+{
+  "audio": "02304191ea16e68c7cdb685760af69a41558db3b8f0fd0b5f7b56fd1d821cf86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "眼"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "眼睛",
+  "id": "64b6f48e8914fb3c59f2d264",
+  "level": 2,
+  "meaning": "eye",
+  "pinyin": "yǎnjing",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-kz;icefB3<-1779527159270"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

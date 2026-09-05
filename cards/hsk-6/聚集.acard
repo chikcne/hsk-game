@@ -1,0 +1,32 @@
+{
+  "audio": "f328c3cc873264c4baf465ea076437d2153bd67bf59b93fc45a9de160c1ead89.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "聚",
+      "集"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "聚集",
+  "id": "dbb4961f2b9b1e90fc6e4c3b",
+  "level": 6,
+  "meaning": "to gather",
+  "pinyin": "jùjí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-748-1779527163151"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

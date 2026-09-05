@@ -1,0 +1,29 @@
+{
+  "audio": "99bc2e2766bda9c564855d54cb2f92cee39c5e00860b5f247d2ac09e0a716045.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "却",
+  "id": "46f47aa2444eee886f38b895",
+  "level": 4,
+  "meaning": "but, yet, however",
+  "pinyin": "què",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-oC6hL<2$O:-1779527160409"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

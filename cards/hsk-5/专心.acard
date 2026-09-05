@@ -1,0 +1,31 @@
+{
+  "audio": "50231cfded3ce93ef259d02370e82363fc500d5577623bd2046f95e3a9b69665.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "专心",
+  "id": "9cb83cded4d0c54a081b9b5a",
+  "level": 5,
+  "meaning": "concentrated, attentive",
+  "pinyin": "zhuānxīn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g^1$B2(.nj-1779527162360"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

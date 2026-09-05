@@ -1,0 +1,31 @@
+{
+  "audio": "5de0e5f9fab531bacf9ead63c45d9511985618cccc839ebb9aa4d9910ca23e9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "道"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "轨道",
+  "id": "3d77e1f50f6d526607b73361",
+  "level": 6,
+  "meaning": "track, orbit",
+  "pinyin": "guǐdào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-504-1779527162907"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

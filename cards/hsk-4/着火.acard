@@ -1,0 +1,32 @@
+{
+  "audio": "236e2640c4261080ada54958157dca4ac1869b5089e849acc7b156fe67cce2cf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "火",
+      "着"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "着火",
+  "id": "185ed270845d2d49178e3a2a",
+  "level": 4,
+  "meaning": "to catch fire, to ignite",
+  "pinyin": "zháohuǒ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-LdyEzo@K)S-1779527160728"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

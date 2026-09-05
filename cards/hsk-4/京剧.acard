@@ -1,0 +1,29 @@
+{
+  "audio": "51879b8113a9d5ae17230a4657316a1b484cee823646e7f60888fec5f3d5b320.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "京剧",
+  "id": "722d0fcf786d56c294996d35",
+  "level": 4,
+  "meaning": "Beijing opera",
+  "pinyin": "jīngjù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Hx0>L+K=Bn-1779527160200"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

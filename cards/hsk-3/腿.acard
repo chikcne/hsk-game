@@ -1,0 +1,29 @@
+{
+  "audio": "0d633e07d6574f7dbf236845edf05a6060976839d53c82afde3b4176c4c4ce9d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "腿",
+  "id": "909d9a19e3069d35d6d46f9d",
+  "level": 3,
+  "meaning": "leg",
+  "pinyin": "tuǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n0-pQ~;bl)-1779527159667"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

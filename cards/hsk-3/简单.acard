@@ -1,0 +1,31 @@
+{
+  "audio": "8bf3d9133b670a7ec8f192bfa7c55f364c4834e511e6db50c17bf5c3af045a47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "单"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "简单",
+  "id": "423c171d9db056d8abf120db",
+  "level": 3,
+  "meaning": "simple",
+  "pinyin": "jiǎndān",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-OI*)7!9LeC-1779527159502"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

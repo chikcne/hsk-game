@@ -1,0 +1,29 @@
+{
+  "audio": "a815b3110405f0485040ca236b99d6ab4db80edfe9be22d93f4d77520a384168.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "温柔",
+  "id": "fa552606b644164fe81c20e7",
+  "level": 6,
+  "meaning": "gentle, tender",
+  "pinyin": "wēnróu",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1385-1779527163788"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

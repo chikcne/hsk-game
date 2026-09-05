@@ -1,0 +1,31 @@
+{
+  "audio": "eab324bad20a318e00d60acde389abbdfc040f993f994d5e810f201c9f41c8b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "微小",
+  "id": "f4e3cdfbd6c887bd482873dd",
+  "level": 6,
+  "meaning": "tiny",
+  "pinyin": "wēixiǎo",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1367-1779527163770"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

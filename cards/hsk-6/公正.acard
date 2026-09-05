@@ -1,0 +1,32 @@
+{
+  "audio": "927fcf53d4f726cea2059dedacd1525b754e4c20dcae495efdcf7a2ac1a17cf1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "正"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公正",
+  "id": "0009feabd60f84a0f76e2cfc",
+  "level": 6,
+  "meaning": "fair, just",
+  "pinyin": "gōngzhèng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-466-1779527162869"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

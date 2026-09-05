@@ -1,0 +1,29 @@
+{
+  "audio": "dba6b31398513ce5211d20734b781f5955f9b2eaf39988834af4842ffe64bbfd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大",
+  "id": "6c12b94a8c6921e968608ca0",
+  "level": 1,
+  "meaning": "big",
+  "pinyin": "dà",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-QG:7PH:m>T-1779527158828"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

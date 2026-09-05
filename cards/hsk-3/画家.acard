@@ -1,0 +1,32 @@
+{
+  "audio": "90342607f04ab3e5d64c5c135398cbd5167fa4dee31e8a1ce578e972a8ae812a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "家",
+      "画"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "画家",
+  "id": "89b8a08fa899dabab61253d1",
+  "level": 3,
+  "meaning": "painter, artist",
+  "pinyin": "huàjiā",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-A8{ZrpPysl-1779527159479"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

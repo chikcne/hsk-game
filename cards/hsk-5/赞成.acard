@@ -1,0 +1,31 @@
+{
+  "audio": "90f4a52da0394f9cb72599db9f3827875e5762c139d6af6f88008526d6ad6b62.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赞成",
+  "id": "f728bd24fbd4a21d22921814",
+  "level": 5,
+  "meaning": "to approve, to endorse",
+  "pinyin": "zànchéng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zo]WjW;k-b-1779527162250"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

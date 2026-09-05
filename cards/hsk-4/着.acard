@@ -1,0 +1,29 @@
+{
+  "audio": "edc2885e5d05625ba028e2bf1ce71b68a2068da549a6f208fae562bc6d4bccc5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "着",
+  "id": "100d092f42a4450646763f87",
+  "level": 4,
+  "meaning": "to touch, to get to, to catch (fire)",
+  "pinyin": "zháo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Axm#+qlPqr-1779527160727"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

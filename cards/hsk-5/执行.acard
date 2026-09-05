@@ -1,0 +1,31 @@
+{
+  "audio": "4e3b2ef62bce1789488e8eb3c2ef22b6984f320a575afe75f4f399484c139b60.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "行"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "执行",
+  "id": "2ca49c69a4193c354b375684",
+  "level": 5,
+  "meaning": "to execute, to carry out; executive",
+  "pinyin": "zhíxíng",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-~Wrr1bx[3-1779527162308"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "13c22225b3ce39ca4916be51771e6e82edde6d63acd1979cf5c431a79c64a6e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出现",
+  "id": "0c5d42e918b81c2dee26515b",
+  "level": 4,
+  "meaning": "to appear, to emerge",
+  "pinyin": "chūxiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J,:c8H|G}z-1779527159893"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

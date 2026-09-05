@@ -1,0 +1,31 @@
+{
+  "audio": "bb08f254d016eddeb102ec7de23575fc50af4d98943ef39c4a2ee8b2822d2f1b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "印"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "复印",
+  "id": "9449366818babd600f5fb41a",
+  "level": 4,
+  "meaning": "to photocopy, to duplicate",
+  "pinyin": "fùyìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xZY]]q0tMZ-1779527160016"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

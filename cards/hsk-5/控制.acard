@@ -1,0 +1,31 @@
+{
+  "audio": "bf736a41cdc5c24a64b55f0a7c24eeae7e6301055e17b235d2177875ed0aa671.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "制"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "控制",
+  "id": "3d5b918783b3031c3bbd6aeb",
+  "level": 5,
+  "meaning": "to control",
+  "pinyin": "kòngzhì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-L9q0c}Bgf--1779527161476"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

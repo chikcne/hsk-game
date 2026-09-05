@@ -1,0 +1,29 @@
+{
+  "audio": "d6d5ae69e7e33f98b3358ce19752a580333bf3030dc108c13dcc77bd0b6b56da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "逗",
+  "id": "51f0e1aa95a0aef4ed36db83",
+  "level": 6,
+  "meaning": "to tease; funny",
+  "pinyin": "dòu",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-322-1779527162725"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

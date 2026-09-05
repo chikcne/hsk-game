@@ -1,0 +1,32 @@
+{
+  "audio": "0421ed84523045d576bb25540fe3a428bcd0afd5793c120f9d6774299a5fd951.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "等"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中等",
+  "id": "f01c0a8d8b74853998c6897f",
+  "level": 6,
+  "meaning": "medium, moderate",
+  "pinyin": "zhōngděng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1720-1779527164123"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

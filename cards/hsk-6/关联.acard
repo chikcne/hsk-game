@@ -1,0 +1,31 @@
+{
+  "audio": "231377072c31603e3f0036228c784aae79d954f0f2c4b531a8789c12c4bd57bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "关联",
+  "id": "dde4fb3eef7b6b38c3dd419a",
+  "level": 6,
+  "meaning": "to be related, to be connected",
+  "pinyin": "guānlián",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-493-1779527162896"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

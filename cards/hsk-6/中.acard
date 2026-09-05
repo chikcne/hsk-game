@@ -1,0 +1,29 @@
+{
+  "audio": "deb0978047ddc7657a9bf31a5d54ffd7946471d627328576ad7e0a671c196163.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中",
+  "id": "d7b0ae5de41a47be55630a0c",
+  "level": 6,
+  "meaning": "to hit, to be hit by",
+  "pinyin": "zhòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1728-1779527164131"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

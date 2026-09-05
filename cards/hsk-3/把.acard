@@ -1,0 +1,29 @@
+{
+  "audio": "5e6949b6d2f7301e386e9a8cf5075365581b4c919d1a1b78f0bd2aa8132221bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "把",
+  "id": "24be65d4ad2560eef06a5c0d",
+  "level": 3,
+  "meaning": "measure word for objects with handles; particle for object-fronting",
+  "pinyin": "bǎ",
+  "pos": "classifier、preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-L8qo!2u]xS-1779527159309"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

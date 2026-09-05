@@ -1,0 +1,31 @@
+{
+  "audio": "9ae1ffbca8b54ea2c48ce6c0a9ebeb0d0922166bc044609fb76cc9f209b8ed83.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "饭"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "饭馆",
+  "id": "4ac05657b2bee22210cb5193",
+  "level": 2,
+  "meaning": "restaurant",
+  "pinyin": "fànguǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-pis?8$xj2?-1779527159142"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

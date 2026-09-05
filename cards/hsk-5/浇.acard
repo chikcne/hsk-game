@@ -1,0 +1,29 @@
+{
+  "audio": "7282d87cfe26660274b8081faf67af355d17ef6caed7a45eef41ffea8e2d2385.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "浇",
+  "id": "e70faa7c053fb953c52629d1",
+  "level": 5,
+  "meaning": "to water, to pour",
+  "pinyin": "jiāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-MQ6[*mI)gX-1779527161390"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

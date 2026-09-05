@@ -1,0 +1,29 @@
+{
+  "audio": "78e37961e6f1afd5cf0d796f8d58be6d3fc121fa1ca6df19f46d6a94ec3d614f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "咖啡",
+  "id": "1c95a50c65a6c3e7ff5a9393",
+  "level": 2,
+  "meaning": "coffee",
+  "pinyin": "kāfēi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-QOs.uTrgoM-1779527159180"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "e3984eb3d3e6093d31c5a0f6b53b7ed1cd764f734a518ceb83646b7ca74748e1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "升"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "升温",
+  "id": "e30a72a937d11fb50df57bea",
+  "level": 5,
+  "meaning": "to heat up",
+  "pinyin": "shēngwēn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PVY8sCr!y+-1779527161797"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

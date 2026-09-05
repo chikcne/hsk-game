@@ -1,0 +1,31 @@
+{
+  "audio": "13f85ce3dfc7a65a911fc7e46934841791f7df541fc9f9b14d601af0084a139b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "王子",
+  "id": "0fc9333a93de9b9e3fce4ad4",
+  "level": 6,
+  "meaning": "prince",
+  "pinyin": "wángzǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1360-1779527163763"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "e0078970ea377d8a9f6a88d107fdb54e9dc4e33d6b136370360a997d50206329.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "深",
+      "远"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "深远",
+  "id": "91500b29a219cb714fda45b4",
+  "level": 5,
+  "meaning": "far-reaching",
+  "pinyin": "shēnyuǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-eC-&8d)7%*-1779527161789"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

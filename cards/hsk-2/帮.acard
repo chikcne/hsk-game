@@ -1,0 +1,29 @@
+{
+  "audio": "638dc8881a7fcc601f4d411a21fa485c9440e6be2b6dfcdcaded37dbbbdbe1f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "帮",
+  "id": "d31ea6aa882a7b4f56a2d3c2",
+  "level": 2,
+  "meaning": "to help / to help someone directly (+ object usually follows)",
+  "pinyin": "bāng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-lPR:{k)f,L-1779527159108"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "5d2357aaa2463746757aa2692744c74629f739d09dcb03e817333bee77213e23.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "看"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "观看",
+  "id": "d66a162b01297a5b75c3e280",
+  "level": 4,
+  "meaning": "to watch, to view",
+  "pinyin": "guānkàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Fz60CGyAPf-1779527160073"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

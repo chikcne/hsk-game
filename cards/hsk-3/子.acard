@@ -1,0 +1,29 @@
+{
+  "audio": "9135990450e8c0e4311cbd138ba6d40d5faed62776351b4f42a861cd3be8a2db.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "子",
+  "id": "422db5b520677e3309874838",
+  "level": 3,
+  "meaning": "noun suffix",
+  "pinyin": "zi",
+  "pos": "suffix",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-fxhj~;Iu[^-1779527159795"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

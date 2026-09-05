@@ -1,0 +1,31 @@
+{
+  "audio": "c6beeeffd14be04a62aa868893c2672b16dd264de6dafc2d8797c433e8418349.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "国"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "祖国",
+  "id": "e411246cbfbc92ca0cb8921c",
+  "level": 6,
+  "meaning": "motherland",
+  "pinyin": "zǔguó",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1797-1779527164200"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

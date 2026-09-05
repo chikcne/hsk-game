@@ -1,0 +1,31 @@
+{
+  "audio": "8828f2303e71605fed3f5e34a88decd1d9ad449da63cba755944155bb041a863.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "石头",
+  "id": "f5afade189a536a46e102073",
+  "level": 5,
+  "meaning": "stone",
+  "pinyin": "shítou",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-H:A%c9hPgr-1779527161821"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

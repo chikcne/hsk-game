@@ -1,0 +1,29 @@
+{
+  "audio": "12a13f3715de9189ec28be4d4d4f550da7268c3726afe22078fc2226ad970b48.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "牌",
+  "id": "97fa5dc49c36e8caefd0a297",
+  "level": 4,
+  "meaning": "card, brand, plaque, sign",
+  "pinyin": "pái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-wEPcDVBv1g-1779527160347"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

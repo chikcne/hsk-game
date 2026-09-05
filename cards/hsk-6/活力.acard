@@ -1,0 +1,32 @@
+{
+  "audio": "5f56857cf7605be2e1f656a08004457962dac3e807f7026955520c89b1c05374.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "活"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "活力",
+  "id": "0e88fcf03e8cca9a27860037",
+  "level": 6,
+  "meaning": "vitality, energy",
+  "pinyin": "huólì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-597-1779527163000"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

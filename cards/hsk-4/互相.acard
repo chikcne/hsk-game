@@ -1,0 +1,29 @@
+{
+  "audio": "4dc9a21d9d16c2e2d80eaf3b3e277feffd48f0be020be8c13fed4671a8f3925b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "互相",
+  "id": "ceee4cc2973675eb10249fbf",
+  "level": 4,
+  "meaning": "each other",
+  "pinyin": "hùxiāng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-D5l,F.yTLx-1779527160104"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

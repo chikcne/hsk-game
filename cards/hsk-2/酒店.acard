@@ -1,0 +1,32 @@
+{
+  "audio": "10f3d3cde3e83d2f1a00b644ed760982bb11f8b39a9d99ab68fd13c0cf9f5258.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "店",
+      "酒"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "酒店",
+  "id": "a6e6f71fdcadde33cc810f9b",
+  "level": 2,
+  "meaning": "hotel",
+  "pinyin": "jiǔdiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-Rg(83N]8eC-1779527159178"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

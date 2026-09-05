@@ -1,0 +1,32 @@
+{
+  "audio": "03b5c19c872bbb47cda251a250cafde7151fae1460e336bcb54b6722d0f0eacf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "身"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "身心",
+  "id": "57460ceee1a968eda6faaf61",
+  "level": 6,
+  "meaning": "body and mind",
+  "pinyin": "shēnxīn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1163-1779527163566"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

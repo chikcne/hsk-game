@@ -1,0 +1,32 @@
+{
+  "audio": "82715620255c3d8bbdfaab5d799f7b24c7bebf432080e64a2315b0aeaa88b6ce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气",
+      "球"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "气球",
+  "id": "a978a55b4504decf2ea5482b",
+  "level": 5,
+  "meaning": "balloon",
+  "pinyin": "qìqiú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-n`17D`y$Hy-1779527161660"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

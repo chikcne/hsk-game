@@ -1,0 +1,32 @@
+{
+  "audio": "73c8e4b5bc577c8ef5858958a959a1d3bacde9f30c36982707f41a8b02c1e885.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "付",
+      "支"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "支付",
+  "id": "1eb8a0fa37c95a61e3d3f03b",
+  "level": 4,
+  "meaning": "to pay (money)",
+  "pinyin": "zhīfù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-DV?sC.{ql~-1779527160743"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

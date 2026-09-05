@@ -1,0 +1,32 @@
+{
+  "audio": "07b1999bda14e529ebe3ae9ced095a3d7de50a298cefe155bfeb1f9db22b0ea8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "单",
+      "调"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "单调",
+  "id": "9bdbfd5e0458d43eaed936ba",
+  "level": 6,
+  "meaning": "monotonous, dull",
+  "pinyin": "dāndiào",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-262-1779527162665"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

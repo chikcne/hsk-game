@@ -1,0 +1,29 @@
+{
+  "audio": "3e1fc9cd970e6287b0d1ae8d67c82e7067796006fd75d5e8317d3d473beefa51.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "误",
+  "id": "263ca9410a268da775ceda6d",
+  "level": 6,
+  "meaning": "to mistake, to misunderstand",
+  "pinyin": "wù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1399-1779527163802"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "868e0f834350877c7a067755a571d2c319838e7ad5968faa4376da9b43a65f46.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "再"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一再",
+  "id": "a7e40bde2a48a8455ff9b9c5",
+  "level": 6,
+  "meaning": "repeatedly, time and again",
+  "pinyin": "yízài",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1556-1779527163959"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

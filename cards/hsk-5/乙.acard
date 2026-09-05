@@ -1,0 +1,29 @@
+{
+  "audio": "ff03a56f2997e91349bb685d21d1667b69e7b7187d910d081116e8cce1c5556a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "乙",
+  "id": "f0be3867911b6173ea933cda",
+  "level": 5,
+  "meaning": "second in sequence",
+  "pinyin": "yǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-s8~<Q;f~|o-1779527162164"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

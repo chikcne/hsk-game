@@ -1,0 +1,29 @@
+{
+  "audio": "b8e17101ef77d9dd0956ade730a0d3869106c1aca86b8ccf831d903036b53799.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "颜色",
+  "id": "6f1c6487ccdd194fc2710269",
+  "level": 2,
+  "meaning": "color",
+  "pinyin": "yánsè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-Ph0SBK@J;Q-1779527159269"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "77f7e44ca5d43592949e159a0374d3d7815ec649535e7ea4f40b3b33241cfa65.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "球"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "乒乓球",
+  "id": "c3477afc317dbfa579e29ed2",
+  "level": 4,
+  "meaning": "table tennis, ping-pong",
+  "pinyin": "pīngpāngqiú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J-Am3<N7C>-1779527160359"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

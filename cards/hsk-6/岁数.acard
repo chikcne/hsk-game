@@ -1,0 +1,32 @@
+{
+  "audio": "9e49ac7864ddf51ff19b3198da2cd48e8beb723d25678135803bd40bf2b77a9d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "岁",
+      "数"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "岁数",
+  "id": "f75d4c9959ffa4ff89fabcb1",
+  "level": 6,
+  "meaning": "age",
+  "pinyin": "suìshu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1250-1779527163653"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

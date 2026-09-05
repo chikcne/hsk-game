@@ -1,0 +1,32 @@
+{
+  "audio": "dfe058df4972b446a4df43297bc4edc6147b298275c1a50393ebe48098931964.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "尽",
+      "管"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "尽管",
+  "id": "6fae8544b732a37c37051999",
+  "level": 4,
+  "meaning": "feel free to, not hesitate to (often in the pattern 尽管 + verb); although, even though, despite",
+  "pinyin": "jǐnguǎn",
+  "pos": "adverb、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-B;!QjRKZHG-1779527160192"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

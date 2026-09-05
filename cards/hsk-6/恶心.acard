@@ -1,0 +1,31 @@
+{
+  "audio": "3833a47f3b2861c9710a8e068d472e8a89ea617239f42f9a8a2f4ddd8a68ee11.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "恶心",
+  "id": "0d68ec892167a0ceb0baf101",
+  "level": 6,
+  "meaning": "nauseating, disgusting; to feel nauseous",
+  "pinyin": "ěxin",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-344-1779527162747"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

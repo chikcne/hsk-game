@@ -1,0 +1,32 @@
+{
+  "audio": "98f6587663b2ebaa293c57c9fc034d0287bde4785cb397b5e75c891ac054ff39.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事",
+      "项"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "事项",
+  "id": "cd7b0641580894d3e22984f6",
+  "level": 6,
+  "meaning": "item, matter",
+  "pinyin": "shìxiàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1206-1779527163609"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

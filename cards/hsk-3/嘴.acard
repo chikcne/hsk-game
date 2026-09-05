@@ -1,0 +1,29 @@
+{
+  "audio": "7c14c64be46ff7e678ab5b6147eb82c0d18591bf5ab542152affd9d4f31783dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "嘴",
+  "id": "0ec6a56d965430e62396883d",
+  "level": 3,
+  "meaning": "mouth",
+  "pinyin": "zuǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-hQ|gunQy&e-1779527159798"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

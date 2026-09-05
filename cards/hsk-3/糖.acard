@@ -1,0 +1,29 @@
+{
+  "audio": "66352a658cde4c70c63082de54d5b2dcd7317d0033979523a296225c766ec8b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "糖",
+  "id": "61513fb4ecf59cf6b41f1a83",
+  "level": 3,
+  "meaning": "candy, sugar",
+  "pinyin": "táng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-oVE#H@6T&*-1779527159653"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

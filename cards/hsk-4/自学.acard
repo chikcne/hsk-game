@@ -1,0 +1,32 @@
+{
+  "audio": "f2823f337044a5d341b441a3e21bb0d4784fdd980a4b39a4184f1bdccec7b7ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "自"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自学",
+  "id": "f18385471c6c297a3c2a0925",
+  "level": 4,
+  "meaning": "to teach oneself, to self-study",
+  "pinyin": "zìxué",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Kq<k0-^+c(-1779527160787"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

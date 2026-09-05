@@ -1,0 +1,32 @@
+{
+  "audio": "2e918ff29fd31666bbb161e8a29c0482f252d9fe9124f63050d9dfbe01441bd7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "脏"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "心脏",
+  "id": "c37201ac976aabc74bfe6727",
+  "level": 6,
+  "meaning": "heart",
+  "pinyin": "xīnzàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1472-1779527163875"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "f227edaf90fb660a87aabc6c8fec65e5c0191fe6212ea644b502c7f3498f6169.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "海"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "海拔",
+  "id": "f6638e1cd17e52c70839e634",
+  "level": 6,
+  "meaning": "altitude",
+  "pinyin": "hǎibá",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-519-1779527162922"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

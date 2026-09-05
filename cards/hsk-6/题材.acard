@@ -1,0 +1,31 @@
+{
+  "audio": "639a2618bb48266349bb049de6436fec53d92c04b0142ebe388d6589e4aa7dba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "题"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "题材",
+  "id": "61538e4ed98a6e8da26d127f",
+  "level": 6,
+  "meaning": "theme, subject matter",
+  "pinyin": "tícái",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1281-1779527163684"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "008ca3716aac7304665b7173c1c10e111f76ab19f9797f1afd582920fa36280d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鱼",
+  "id": "0993dbeb00b4a71632e9b176",
+  "level": 2,
+  "meaning": "fish",
+  "pinyin": "yú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-c7L!73A?yj-1779527159286"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "47d59b2cece4ea572e3aaf6199a4faaa5b38dab4a1ed4b914c27b81f4afbec1d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "科"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "科普",
+  "id": "3ff5d93217b67b83519ea261",
+  "level": 6,
+  "meaning": "to popularize science",
+  "pinyin": "kēpǔ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-782-1779527163185"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "2bb9c11bbb6f8c5a3f68feac240b34e2d30b06209a738998be5e9a58d5d7d88a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "动物",
+  "id": "8262a3b54d8edad77aee3295",
+  "level": 3,
+  "meaning": "animal",
+  "pinyin": "dòngwù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-m8NgGG4dE!-1779527159406"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

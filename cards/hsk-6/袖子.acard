@@ -1,0 +1,31 @@
+{
+  "audio": "80881f7532e111b49452e28e98eb347aad2db5449a597d236c44b8b9eea85c6a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "袖子",
+  "id": "8af7a4b2d80dc63899b14305",
+  "level": 6,
+  "meaning": "sleeve",
+  "pinyin": "xiùzi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1483-1779527163886"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

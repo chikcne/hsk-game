@@ -1,0 +1,29 @@
+{
+  "audio": "ded9bbd576bb7b15c21c269d7b4d25ea04bbfe85e618d50f1aa9d60fc7432619.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "庄稼",
+  "id": "b88ea35333740c2259084de8",
+  "level": 6,
+  "meaning": "crops",
+  "pinyin": "zhuāngjia",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1772-1779527164175"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

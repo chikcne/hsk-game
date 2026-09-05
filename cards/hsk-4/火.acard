@@ -1,0 +1,29 @@
+{
+  "audio": "37a14a049c0cad08cefd4231ff3779a94de55f7e3b4a6056f6a2d7faf436db86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "火",
+  "id": "93d40769809b936633d2a1d8",
+  "level": 4,
+  "meaning": "fire; urgent, popular, hot",
+  "pinyin": "huǒ",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Qyz?+C~nZA-1779527160117"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

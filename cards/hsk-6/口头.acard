@@ -1,0 +1,32 @@
+{
+  "audio": "ed817a2ae6ae97c1deb91fff3b11e445985b72e060553afb89157db065021ced.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口",
+      "头"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "口头",
+  "id": "8612cc011ba08972d7433bb2",
+  "level": 6,
+  "meaning": "oral, verbal; superficial",
+  "pinyin": "kǒutóu",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-796-1779527163199"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

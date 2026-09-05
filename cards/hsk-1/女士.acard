@@ -1,0 +1,31 @@
+{
+  "audio": "a9f8e946c4848b06f5292c25c20154ee630765cfabb3a3396ececb27afd48de6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "女"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "女士",
+  "id": "ce42e30d6f1cd05f40269d5d",
+  "level": 1,
+  "meaning": "lady, Ms.",
+  "pinyin": "nǚshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-lwHj0t3kr3-1779527158958"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

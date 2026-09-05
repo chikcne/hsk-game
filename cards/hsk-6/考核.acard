@@ -1,0 +1,31 @@
+{
+  "audio": "054dc158a6bff7639fa9473d9673c7a2a8f437b26d14d77447895ff266c42a88.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "考"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "考核",
+  "id": "1f33e20d6178ea51e666b667",
+  "level": 6,
+  "meaning": "to assess, to examine",
+  "pinyin": "kǎohé",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-777-1779527163180"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

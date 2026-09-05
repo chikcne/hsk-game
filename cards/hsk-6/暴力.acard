@@ -1,0 +1,31 @@
+{
+  "audio": "737f4345cb7c0cc1f15408298ba85e05318cade6f44190e236c87b653ab2f97a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暴力",
+  "id": "ae20b1d2127625788d115858",
+  "level": 6,
+  "meaning": "violence",
+  "pinyin": "bàolì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-30-1779527162433"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

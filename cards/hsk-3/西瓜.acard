@@ -1,0 +1,31 @@
+{
+  "audio": "b43ad1fe6a5badbb931a5af034f6154296051e54c4b90ad1602644c30785513d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "西"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "西瓜",
+  "id": "dbbb230d57266b613c64f485",
+  "level": 3,
+  "meaning": "watermelon",
+  "pinyin": "xīguā",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n9r>`AD&GC-1779527159686"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

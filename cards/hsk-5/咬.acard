@@ -1,0 +1,29 @@
+{
+  "audio": "664a9efa6ad31cbe0a35f229587ffdd7d61f7f05bc62b56f4e74a8afb22f661c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "咬",
+  "id": "e7ad0b9fe9039866339ef4d2",
+  "level": 5,
+  "meaning": "to bite",
+  "pinyin": "yǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wC1!Q?eE#/-1779527162140"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

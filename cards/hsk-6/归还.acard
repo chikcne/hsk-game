@@ -1,0 +1,32 @@
+{
+  "audio": "789463c40cf98986147707e9ee431faa0f69276f0d80135448fdb7195a66c20b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "归",
+      "还"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "归还",
+  "id": "5d144d42d8e6af187809e8b2",
+  "level": 6,
+  "meaning": "to return",
+  "pinyin": "guīhuán",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-502-1779527162905"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

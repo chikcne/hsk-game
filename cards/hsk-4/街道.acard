@@ -1,0 +1,32 @@
+{
+  "audio": "2ff4ca175fa7d13b16dc9571801ada326218889ab8fddad513422789254a10ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "街",
+      "道"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "街道",
+  "id": "a9906ad747461285bee654e0",
+  "level": 4,
+  "meaning": "street",
+  "pinyin": "jiēdào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-HQZXIZ!*f-1779527160182"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

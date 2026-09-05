@@ -1,0 +1,32 @@
+{
+  "audio": "6d94d56bdc1d315b4fbbed607cc7ba06eb01d2e0f7774aab4a40ddfea15d393a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "右",
+      "左"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "左右",
+  "id": "1356fa6fa1ca6e70b84aa84c",
+  "level": 4,
+  "meaning": "about, around, left and right; (to control)",
+  "pinyin": "zuǒyòu",
+  "pos": "noun、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-gO=G],o*)A-1779527160793"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

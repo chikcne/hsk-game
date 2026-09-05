@@ -1,0 +1,31 @@
+{
+  "audio": "8afe11ed28f3299d99b8ef8fdd54bf4de8e4d892b632e852e33e6af761e87cb1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "意外",
+  "id": "0999fafb1aadacd113ccd14c",
+  "level": 5,
+  "meaning": "accidental, unexpected; accident",
+  "pinyin": "yìwài",
+  "pos": "adjective、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-D6D4^YqMX;-1779527162170"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

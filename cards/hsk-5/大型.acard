@@ -1,0 +1,31 @@
+{
+  "audio": "23a619fc2faf5bf1eb172fc98341452e5eb9166b1f5727d6d6c3393f82a811dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大型",
+  "id": "169d9671de21582f8cb68927",
+  "level": 5,
+  "meaning": "large-scale",
+  "pinyin": "dàxíng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wZrny^YD]r-1779527161032"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

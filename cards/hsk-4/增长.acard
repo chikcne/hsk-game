@@ -1,0 +1,32 @@
+{
+  "audio": "853ecad8e68502b150df5bcbf88d0a380f8b515989fe4715b19e6532af7caf48.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "增",
+      "长"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "增长",
+  "id": "e936aaf4299c81d720dd1111",
+  "level": 4,
+  "meaning": "to increase, to grow, to rise",
+  "pinyin": "zēngzhǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bU)gQdP2,j-1779527160725"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "7adc4386e8878e49e7ae424eba39f9f69b02003951ca686db8478c6ba3afbb78.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "怎么",
+  "id": "770d8f2e5d7a83d8d8960c76",
+  "level": 1,
+  "meaning": "how",
+  "pinyin": "zěnme",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-NejSX!x$E8-1779527159079"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

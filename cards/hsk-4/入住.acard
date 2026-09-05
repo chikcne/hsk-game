@@ -1,0 +1,32 @@
+{
+  "audio": "67a67e7c2749ac7cbd8da074318d0738c4325b1d51285321c5336306a04b6726.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "住",
+      "入"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "入住",
+  "id": "0b1795fa498c1560267619e7",
+  "level": 4,
+  "meaning": "to check in, to move in",
+  "pinyin": "rùzhù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-G0brr,a@<[-1779527160428"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

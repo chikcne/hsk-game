@@ -1,0 +1,32 @@
+{
+  "audio": "9afcfcf4a47c0d0661117286456d44464796f4b298c8bbb493d78ddca85e8c2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "快",
+      "要"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "快要",
+  "id": "fbbe5de9c59a8f81731d10c6",
+  "level": 2,
+  "meaning": "soon, almost",
+  "pinyin": "kuàiyào",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-gj,+[K@glB-1779527159189"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

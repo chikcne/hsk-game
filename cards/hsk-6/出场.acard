@@ -1,0 +1,32 @@
+{
+  "audio": "e9992c6a2ce5001a006c3429123e92ba491a73f8048d5b9dcf368f2e9d1ff8ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "场"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出场",
+  "id": "bf5068c5e8d83f2e136b55f9",
+  "level": 6,
+  "meaning": "to appear on stage, to enter",
+  "pinyin": "chūchǎng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-185-1779527162588"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

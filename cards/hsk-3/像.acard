@@ -1,0 +1,29 @@
+{
+  "audio": "6aa67b1619d4360c664c11a4b9c9d5c4ea800b434467fbe2aadf13f34f889503.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "像",
+  "id": "5ac5f0b954bc85045dea1896",
+  "level": 3,
+  "meaning": "to resemble, to be like; (as if, such as); (image, statue, portrait)",
+  "pinyin": "xiàng",
+  "pos": "verb、 （adverb）、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Q4cI_0CUAo-1779527159698"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

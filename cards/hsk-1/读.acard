@@ -1,0 +1,29 @@
+{
+  "audio": "67a07a7a9616d6df00346c885519820349d138980155c8cb130200bc0d9cc274.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "读",
+  "id": "d7e70d5bd5cccb07182065c5",
+  "level": 1,
+  "meaning": "to read",
+  "pinyin": "dú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-x0N,La/!SF-1779527158845"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

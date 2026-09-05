@@ -1,0 +1,31 @@
+{
+  "audio": "d6e99c8635a3bc5ebb8f0fb1fb30d3353136294c1bbc381afaee6386eaad95ce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "在"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "在意",
+  "id": "6554564812a262bfa1a872c1",
+  "level": 6,
+  "meaning": "to care about, to mind",
+  "pinyin": "zàiyì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1645-1779527164048"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "91e7df5e83b2d7f1af08cf539dd543b5e991bdcd7d0edd9f3c2c5f73a82f313b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "米"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "毫米",
+  "id": "907d987da7cf316f6c5e5cb3",
+  "level": 6,
+  "meaning": "millimeter",
+  "pinyin": "háomǐ",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-530-1779527162933"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "a05ac4d9ac7cfafe5370d0d50a1e142c01ef290a041925d68454acd709983b85.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "热",
+      "门"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热门",
+  "id": "2bc648d44239039f586784d0",
+  "level": 6,
+  "meaning": "hot, popular",
+  "pinyin": "rèmén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1090-1779527163493"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "611adee197dc799055e80dd129bbe0cf7c9cc169bd0d7bc3b939626d3e7640ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "流"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "流利",
+  "id": "ab60dfdeaacffcb1a56150d1",
+  "level": 4,
+  "meaning": "fluent, smooth",
+  "pinyin": "liúlì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ph9=MZ4v$4-1779527160287"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

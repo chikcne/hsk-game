@@ -1,0 +1,31 @@
+{
+  "audio": "45725f604d59e929140ef6ee11c8d96382aec7926520b30380fe53d03903c678.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "肥"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肥沃",
+  "id": "5e639bde4a031a5b05a8d50a",
+  "level": 6,
+  "meaning": "fertile",
+  "pinyin": "féiwò",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-381-1779527162784"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

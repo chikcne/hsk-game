@@ -1,0 +1,29 @@
+{
+  "audio": "341b670140b24f1b93c9a47c378df635ee61244677f2a26a7b73cda47b01e8c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "煤",
+  "id": "06a3a19a59aea07d454f6356",
+  "level": 6,
+  "meaning": "coal",
+  "pinyin": "méi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-896-1779527163299"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

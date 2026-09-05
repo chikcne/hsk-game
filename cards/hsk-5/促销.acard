@@ -1,0 +1,29 @@
+{
+  "audio": "bba434e05103ee4c29f39e319a5922f1a3e8a59a07e15b338f4078a85a6e3a97.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "促销",
+  "id": "637c9b1c576525b2005b6873",
+  "level": 5,
+  "meaning": "to promote (sales)",
+  "pinyin": "cùxiāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x>_{t3*Fy<-1779527161009"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

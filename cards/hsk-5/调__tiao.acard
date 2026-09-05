@@ -1,0 +1,29 @@
+{
+  "audio": "4a4b2f051b83adc0fea0b01a5b71b3f5088aadbcf5bfc61fcfa975caa881dc21.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "调",
+  "id": "d4962988df2192fe2e230c11",
+  "level": 5,
+  "meaning": "to adjust, to tune",
+  "pinyin": "tiáo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F@r4&mbut,-1779527161933"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

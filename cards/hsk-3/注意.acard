@@ -1,0 +1,29 @@
+{
+  "audio": "49fc6d72c4c7ab0e730bfab6b2b0fa9a5e19bf91bc99dfdbeeb19d96b51f372b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "注意",
+  "id": "22751fb697adb7056aea0491",
+  "level": 3,
+  "meaning": "to pay attention to",
+  "pinyin": "zhùyì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-HP8#uAUw3Y-1779527159791"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

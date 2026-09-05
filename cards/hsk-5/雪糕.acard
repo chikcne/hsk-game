@@ -1,0 +1,31 @@
+{
+  "audio": "4a4f82a99a73c2e8569bfd0c57b642599aa2a10a1cb7819b9f70b9a4c460456e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "雪"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "雪糕",
+  "id": "663eaf0a75051f88334475fd",
+  "level": 5,
+  "meaning": "ice cream",
+  "pinyin": "xuěgāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qS{24J.a%k-1779527162118"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

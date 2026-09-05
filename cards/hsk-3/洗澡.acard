@@ -1,0 +1,31 @@
+{
+  "audio": "0f6626c139f39ca8931276ed04d9ba606a0956b00159be016e986f3cfb0710e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "洗"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "洗澡",
+  "id": "9bc77b25249b9682377bacef",
+  "level": 3,
+  "meaning": "to take a bath",
+  "pinyin": "xǐzǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-cO_bu!jeX?-1779527159691"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

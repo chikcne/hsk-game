@@ -1,0 +1,31 @@
+{
+  "audio": "12c26a31951ac5f68ae1754964ff45f0a08e4c788fadb7a5d458d2333b6d8b2f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "放"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "释放",
+  "id": "501ce39adf15122dc29408f6",
+  "level": 6,
+  "meaning": "to release",
+  "pinyin": "shìfàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1199-1779527163602"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

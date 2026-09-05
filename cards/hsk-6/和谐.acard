@@ -1,0 +1,31 @@
+{
+  "audio": "81993bddf0db9f565f258349a11fa843161b024f37593263f311ab042122bb3f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "和"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "和谐",
+  "id": "79ab4c5289b1447da9eabf86",
+  "level": 6,
+  "meaning": "harmonious",
+  "pinyin": "héxié",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-541-1779527162944"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

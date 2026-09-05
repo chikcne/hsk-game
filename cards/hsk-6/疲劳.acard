@@ -1,0 +1,29 @@
+{
+  "audio": "de8138ae29be3f2e7de6cdbe19762b85f4bf276c98835f29d2857d1e66d5b7a8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "疲劳",
+  "id": "a93c2d3925d0a61d0a297719",
+  "level": 6,
+  "meaning": "tired",
+  "pinyin": "píláo",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-986-1779527163389"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

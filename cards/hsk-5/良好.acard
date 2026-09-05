@@ -1,0 +1,31 @@
+{
+  "audio": "6f7c2b31c9adcb09671f0f6e83010ca9280b94ef15ff3bdafa7b54c558521a5f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "良好",
+  "id": "0c3cb9aec6ed4a7326665bd4",
+  "level": 5,
+  "meaning": "good, favorable",
+  "pinyin": "liánghǎo",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bgzVTMuzZ;-1779527161520"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

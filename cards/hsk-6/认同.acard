@@ -1,0 +1,32 @@
+{
+  "audio": "47483f871cafd22bb5e4e95f684752bfc6c0330fabcd5afebb97c255e611623b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同",
+      "认"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "认同",
+  "id": "30a52a853c26d443fb9e4b80",
+  "level": 6,
+  "meaning": "to identify with",
+  "pinyin": "rèntóng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1106-1779527163509"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

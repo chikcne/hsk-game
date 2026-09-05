@@ -1,0 +1,32 @@
+{
+  "audio": "973535a4bb195fb62bc377338abb8849ee8191ef8ca9bffc1bd6af89c6870f50.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "区",
+      "市"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "市区",
+  "id": "be5f1f350da760eb6fb4830a",
+  "level": 4,
+  "meaning": "urban area, city center",
+  "pinyin": "shìqū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-gWA]`B_@W]-1779527160477"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

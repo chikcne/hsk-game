@@ -1,0 +1,32 @@
+{
+  "audio": "664ef7e29ba06e722ec11a3ef4a9a3c7e0619a849890085afb44cd4e7fd98a8a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加",
+      "添"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "添加",
+  "id": "69890f7c48642753985433c1",
+  "level": 6,
+  "meaning": "to add",
+  "pinyin": "tiānjiā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1289-1779527163692"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

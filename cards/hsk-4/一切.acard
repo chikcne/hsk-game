@@ -1,0 +1,32 @@
+{
+  "audio": "360219f5595e39c0ecf18d32918c758fdb13a9522641855f9c4f80d4b373109a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "切"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一切",
+  "id": "3d98d8cc326ad59f6b3033a3",
+  "level": 4,
+  "meaning": "everything",
+  "pinyin": "yíqiè",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-EBGIrHU5PY-1779527160668"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

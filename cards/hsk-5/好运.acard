@@ -1,0 +1,32 @@
+{
+  "audio": "94e269d8310d6b329b26d95a55e11a5be26649502125e9b9efa006fa82b66064.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "运"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好运",
+  "id": "6c35645c397c84a160013245",
+  "level": 5,
+  "meaning": "good luck",
+  "pinyin": "hǎoyùn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M9E!r>EItH-1779527161273"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

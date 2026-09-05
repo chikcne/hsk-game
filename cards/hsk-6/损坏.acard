@@ -1,0 +1,31 @@
+{
+  "audio": "6d2d82959beec164cca8d3078611325bd6548627200f9f59af803893a3f38ee7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "坏"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "损坏",
+  "id": "460104433ec73ef5b8f70161",
+  "level": 6,
+  "meaning": "to damage",
+  "pinyin": "sǔnhuài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1252-1779527163655"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

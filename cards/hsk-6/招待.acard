@@ -1,0 +1,32 @@
+{
+  "audio": "1c7b52f13c1ebf06f8eb930e0afd1db2dd286e8b1f882be0b63b2bc677d61bb1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "待",
+      "招"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "招待",
+  "id": "ef15f10074b013f1788b7591",
+  "level": 6,
+  "meaning": "to entertain",
+  "pinyin": "zhāodài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1670-1779527164073"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

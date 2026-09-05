@@ -1,0 +1,29 @@
+{
+  "audio": "abee0650656ef51f6f87765e54cad7ef0613ed4ed027c2962d2bceb1a0f00876.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "油",
+  "id": "b20e268675dbbc17603e69f8",
+  "level": 4,
+  "meaning": "oil, fat, grease",
+  "pinyin": "yóu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-k#f<Vp4LSQ-1779527160688"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

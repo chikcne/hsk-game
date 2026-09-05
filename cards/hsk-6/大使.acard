@@ -1,0 +1,32 @@
+{
+  "audio": "91cdfbb1719bf52a7ece446195daaed1489abcc83dac844d89a961dd98d4d65d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "使",
+      "大"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大使",
+  "id": "b673d0747d8c90537a170767",
+  "level": 6,
+  "meaning": "ambassador",
+  "pinyin": "dàshǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-251-1779527162654"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

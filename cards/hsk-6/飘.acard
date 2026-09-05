@@ -1,0 +1,29 @@
+{
+  "audio": "12d3d921ec746a5c94fab0b00409bfd4b34304d0c1fe3a79e816aa140fd58384.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "飘",
+  "id": "8e824ab91b4744f73788e861",
+  "level": 6,
+  "meaning": "to float; light, airy",
+  "pinyin": "piāo",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-990-1779527163393"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "44794026f0dc9487d64991ed69493c21907a91ebbb933eeaa32d4fc200ced0e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "粘",
+  "id": "badc044e267769bb1921b540",
+  "level": 6,
+  "meaning": "to stick, to glue",
+  "pinyin": "zhān",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1656-1779527164059"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

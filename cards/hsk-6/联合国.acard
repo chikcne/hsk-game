@@ -1,0 +1,33 @@
+{
+  "audio": "d38bd9c27f25c6cd2a4bcba173d61a0e3bb6cf74cb2c9b923a80710a782fd0c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合",
+      "国",
+      "联合"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "联合国",
+  "id": "db0fb9581ed488db8d5427e0",
+  "level": 6,
+  "meaning": "United Nations",
+  "pinyin": "Liánhéguó",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-843-1779527163246"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

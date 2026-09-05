@@ -1,0 +1,31 @@
+{
+  "audio": "a8badbcb95e5fc7f5d7f869345caacb57bc2ea74609cfaeae75176a77f8243c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一贯",
+  "id": "50af275a9f2938f343f72330",
+  "level": 6,
+  "meaning": "consistent, unswerving",
+  "pinyin": "yíguàn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1548-1779527163951"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

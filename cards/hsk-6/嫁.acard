@@ -1,0 +1,29 @@
+{
+  "audio": "79f5ac35b958e52cd5693cad87669081131eed0860e8b244baa6bea3a410f581.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "嫁",
+  "id": "9ed0bb8d321b599d11a7549f",
+  "level": 6,
+  "meaning": "to marry",
+  "pinyin": "jià",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-639-1779527163042"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

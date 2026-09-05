@@ -1,0 +1,32 @@
+{
+  "audio": "d1edeabb0eb3091eb5fd114890ecebd0591a92c14de7366390f486f6a6d44864.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "戏",
+      "游"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "游戏",
+  "id": "1a4359ed6e433c7572a3af91",
+  "level": 3,
+  "meaning": "game",
+  "pinyin": "yóuxì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-I$UQ+WWXGd-1779527159747"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

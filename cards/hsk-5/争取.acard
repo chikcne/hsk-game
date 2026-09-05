@@ -1,0 +1,32 @@
+{
+  "audio": "075aa6365947032dc0d026e1b5329993f91b9304776a8da9b5aa1f623282d035.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "争",
+      "取"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "争取",
+  "id": "86e530be165346db13f9a61e",
+  "level": 5,
+  "meaning": "to strive for, to win over",
+  "pinyin": "zhēngqǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JoW3ksF82R-1779527162292"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

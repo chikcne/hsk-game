@@ -1,0 +1,29 @@
+{
+  "audio": "aa547c4aa80d900fbabf003bce19fd8538c73ddc854e2082f411bcf2b66ffb22.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "束",
+  "id": "2b5327bb3aca3c8f9b2325ed",
+  "level": 5,
+  "meaning": "measure word for bunches",
+  "pinyin": "shù",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Dj8oJ6trxb-1779527161869"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

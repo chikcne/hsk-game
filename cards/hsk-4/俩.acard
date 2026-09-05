@@ -1,0 +1,29 @@
+{
+  "audio": "d55b452958a1ba4b247fdb03fb6d73375137e6a640307119cb83baae7efc8f5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "俩",
+  "id": "ccedc7dd8a9204b3ade1e89f",
+  "level": 4,
+  "meaning": "two, both",
+  "pinyin": "liǎ",
+  "pos": "number-classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vQjZs_*l3P-1779527160271"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

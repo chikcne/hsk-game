@@ -1,0 +1,32 @@
+{
+  "audio": "a5ba24189eeec3201c707f1ca55b3792944afecc2a7237e487ef6caf10970592.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生气",
+  "id": "6b162cd88195535698099e10",
+  "level": 3,
+  "meaning": "to get angry",
+  "pinyin": "shēngqì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-vM>?(DUg61-1779527159633"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

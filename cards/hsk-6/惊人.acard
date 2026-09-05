@@ -1,0 +1,31 @@
+{
+  "audio": "95f2277f81a0b557328a4036d88b4068ad05d1e763b2af23fa31982587783012.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "惊人",
+  "id": "11d6ae7570f36b04a6ade33a",
+  "level": 6,
+  "meaning": "astonishing, amazing",
+  "pinyin": "jīngrén",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-715-1779527163118"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

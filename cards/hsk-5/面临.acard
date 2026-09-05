@@ -1,0 +1,31 @@
+{
+  "audio": "d2bb8631748823947291637a6332353a8e9923a4381c63534cf49fe109b0c2d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "面"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "面临",
+  "id": "4aa314e99dfd6b3e54fe1556",
+  "level": 5,
+  "meaning": "to face",
+  "pinyin": "miànlín",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GO0y8Bm0Nq-1779527161572"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

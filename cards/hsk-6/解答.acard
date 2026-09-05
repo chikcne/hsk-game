@@ -1,0 +1,32 @@
+{
+  "audio": "1305c3ba0a1f2f6c4e9c88261afc80ae4851cc1a691a1047b18194919642cd33.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "答",
+      "解"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "解答",
+  "id": "0aedabc075f3ed7754ed51c7",
+  "level": 6,
+  "meaning": "to answer, to explain",
+  "pinyin": "jiědá",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-693-1779527163096"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

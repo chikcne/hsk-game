@@ -1,0 +1,31 @@
+{
+  "audio": "ad02ac4bcccf2c109126757192d542cbbfe5bd767034697a3d75f9ea66827456.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "严"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "严禁",
+  "id": "4c62a7d07e53488fbc206d3b",
+  "level": 6,
+  "meaning": "strictly prohibit",
+  "pinyin": "yánjìn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1506-1779527163909"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

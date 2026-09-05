@@ -1,0 +1,32 @@
+{
+  "audio": "c6dffec7400cee844549bdcddb89f3eae9b6dd2c5d54fcd9112d4e2f094d10f9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "那",
+      "里"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "那里",
+  "id": "42fc6df1c893521bd8114d66",
+  "level": 1,
+  "meaning": "there (formal; Southern China; written Mandarin)",
+  "pinyin": "nàlǐ",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-cqwO8KtZnQ-1779527158942"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

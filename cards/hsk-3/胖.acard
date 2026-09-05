@@ -1,0 +1,29 @@
+{
+  "audio": "a7480d0c5905beba20937b9eccaa0097c64b3c13e09c20ace0593cfe181761a8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "胖",
+  "id": "09f3b92f8a8a8436fa69cf17",
+  "level": 3,
+  "meaning": "fat",
+  "pinyin": "pàng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-FI<E]?)fYl-1779527159596"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

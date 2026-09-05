@@ -1,0 +1,29 @@
+{
+  "audio": "c7d63f67b51aa5effec442d3f4f3f680ea18784830b3beea5db3b2917630fbbe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "玩",
+  "id": "4a6d015436c2d9e7f5204c9d",
+  "level": 1,
+  "meaning": "to play",
+  "pinyin": "wán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-g)Z/^Bzp;S-1779527159017"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

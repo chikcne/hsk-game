@@ -1,0 +1,29 @@
+{
+  "audio": "7ca4a26fecd1c5b29b60498f0a8dd398291b3098ded8413030e562b555dc3355.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "英雄",
+  "id": "26199fc5c7052455edf082ac",
+  "level": 6,
+  "meaning": "hero",
+  "pinyin": "yīngxióng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1587-1779527163990"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

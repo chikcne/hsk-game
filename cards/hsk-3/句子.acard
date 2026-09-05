@@ -1,0 +1,32 @@
+{
+  "audio": "c4f1f991e317724a23ba8e1b21850e20e0da23c80c6748d73bd5050836da6696.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "句",
+      "子"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "句子",
+  "id": "9cd37ed567dab012382a35ea",
+  "level": 3,
+  "meaning": "sentence",
+  "pinyin": "jùzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-sI0IUSOI/|-1779527159526"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

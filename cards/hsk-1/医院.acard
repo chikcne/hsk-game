@@ -1,0 +1,29 @@
+{
+  "audio": "607fc33f3332f589d5bb83d85639d2a6292d37cf6b51ac53452742cf0b2a0bf7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "医院",
+  "id": "fac57f47e10dd0581e7e6159",
+  "level": 1,
+  "meaning": "hospital",
+  "pinyin": "yīyuàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-D?)sz`Nhl6-1779527159060"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

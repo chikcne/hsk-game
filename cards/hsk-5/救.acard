@@ -1,0 +1,29 @@
+{
+  "audio": "aab9575f8c5d9b8d67a343269deb999c5e6c0353495c6f4bbab79f9da3881e25.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "救",
+  "id": "8f9b2e346faa4f24268ebd95",
+  "level": 5,
+  "meaning": "to save, to rescue",
+  "pinyin": "jiù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-H1m(RR|Fz9-1779527161432"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

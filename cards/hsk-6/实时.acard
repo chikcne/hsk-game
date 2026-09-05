@@ -1,0 +1,31 @@
+{
+  "audio": "f31dca1268befe8f76f93b8adfcb30a46a766a13eccbd3a713931fdd121a237d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实时",
+  "id": "acbd0af47fcd54c2b0d214e9",
+  "level": 6,
+  "meaning": "real-time, in real time",
+  "pinyin": "shíshí",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1189-1779527163592"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

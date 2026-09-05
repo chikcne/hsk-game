@@ -1,0 +1,29 @@
+{
+  "audio": "6bd28172bb87bc49410aaa2584989102c976f62933770bef86953afec273e39f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成",
+  "id": "1b2c16db0cfbea93c10563dc",
+  "level": 6,
+  "meaning": "measure word for one-tenth",
+  "pinyin": "chéng",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-156-1779527162559"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

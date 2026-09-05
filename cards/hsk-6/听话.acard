@@ -1,0 +1,31 @@
+{
+  "audio": "895ba02b310f0a2dcb6aaf4d64b5aba3c63d597df5ea41b1137d97d9717b4545.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "听"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "听话",
+  "id": "4c7d026d64871a79628da048",
+  "level": 6,
+  "meaning": "obedient, well-behaved",
+  "pinyin": "tīnghuà",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1300-1779527163703"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

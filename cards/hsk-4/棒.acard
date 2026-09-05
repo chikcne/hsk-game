@@ -1,0 +1,29 @@
+{
+  "audio": "1bfe8d4b195afa2898df39d5bcd6a4c63f3c54321bd93a2892dfe61fa0f87d0b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "棒",
+  "id": "0604a01dcc9b9b0da0f6d4db",
+  "level": 4,
+  "meaning": "great, excellent; (stick, club)",
+  "pinyin": "bàng",
+  "pos": "adjective、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-f:L#=6Wd/P-1779527159816"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

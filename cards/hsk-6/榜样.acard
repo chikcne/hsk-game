@@ -1,0 +1,31 @@
+{
+  "audio": "f6b49ca292f3a409095e3891c363630298ad0b63cd0b48e9d2ded42a1667ddb7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "样"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "榜样",
+  "id": "27b4b7b5ef94cc2bf78e300f",
+  "level": 6,
+  "meaning": "example, model",
+  "pinyin": "bǎngyàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-20-1779527162423"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

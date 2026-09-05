@@ -1,0 +1,31 @@
+{
+  "audio": "7b98c9e0ab3f489bd2568ae1f7866c05325304219b5b83f4ae4b185993769ea8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "后悔",
+  "id": "af8dca59f93ba77931b04f2b",
+  "level": 4,
+  "meaning": "regret",
+  "pinyin": "hòuhuǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-v+cqwTc>85-1779527160100"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

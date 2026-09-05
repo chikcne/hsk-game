@@ -1,0 +1,32 @@
+{
+  "audio": "fd02405739ee7658b6c6c8971d63dba6bdc55a836a18f4739ace73f8f052eb6f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名",
+      "排"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "排名",
+  "id": "5a4aef5965b82a4d28422469",
+  "level": 6,
+  "meaning": "to rank",
+  "pinyin": "páimíng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-969-1779527163372"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

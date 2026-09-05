@@ -1,0 +1,29 @@
+{
+  "audio": "7086a544e2b467a7549e308a33fc6989f3e41f743681b0697094de6d07d6299a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "落",
+  "id": "a7debb91802b9ddea3e1ad0a",
+  "level": 4,
+  "meaning": "to fall, to drop, to land",
+  "pinyin": "luò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hZu@o,l*Ro-1779527160296"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "18652cf6f816a65370353d0205d355e73de50e905e011acbe56666837b5391af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "液体",
+  "id": "8c3da5345515b217b2682dfb",
+  "level": 6,
+  "meaning": "liquid",
+  "pinyin": "yètǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1535-1779527163938"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

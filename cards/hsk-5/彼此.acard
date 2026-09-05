@@ -1,0 +1,31 @@
+{
+  "audio": "b7b459faefd300cb0c61a807dea55978b66709587a5c88f2e081ac033ab20e3a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "此"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "彼此",
+  "id": "8d8fed500e4a11a9aa20a62e",
+  "level": 5,
+  "meaning": "each other, one another",
+  "pinyin": "bǐcǐ",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bnUqxcz|&d-1779527160848"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

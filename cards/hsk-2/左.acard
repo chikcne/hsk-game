@@ -1,0 +1,29 @@
+{
+  "audio": "d4aacdce3a341a0b2fa8ebd6a59edc027db69abe9c95c38291e9ced9b7074f6a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "左",
+  "id": "078eb305b286a700cde0230d",
+  "level": 2,
+  "meaning": "left",
+  "pinyin": "zuǒ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-l_U&]`=NBG-1779527159302"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

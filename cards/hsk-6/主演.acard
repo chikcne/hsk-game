@@ -1,0 +1,31 @@
+{
+  "audio": "0fbac84c76649c646eed0b91f914edd392622d3f93258f103783d23c1e06c607.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "演"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主演",
+  "id": "46f2167d993288709512764d",
+  "level": 6,
+  "meaning": "to star in; lead actor",
+  "pinyin": "zhǔyǎn",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1750-1779527164153"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

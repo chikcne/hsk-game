@@ -1,0 +1,31 @@
+{
+  "audio": "b3e4d019bdab95460ef04068f2769402bc1a4b32ed5554cb0ae6189ef8cbdde6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "飞"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "飞速",
+  "id": "50e89d07b647f7a88b932c3f",
+  "level": 6,
+  "meaning": "at lightning speed, rapidly",
+  "pinyin": "fēisù",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-378-1779527162781"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

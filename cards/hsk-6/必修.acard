@@ -1,0 +1,32 @@
+{
+  "audio": "d470ff18f4f2279f17b1c951639350b8d547faeb815c62527de3668a4f5d0dc7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "修",
+      "必"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "必修",
+  "id": "e8a3be2691815f8dc2be5860",
+  "level": 6,
+  "meaning": "compulsory (course)",
+  "pinyin": "bìxiū",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-53-1779527162456"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "b17f9ca338879454d46a2164c2c1c94950f968283a2deb5d6aef179ac1221f1a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "仍"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "仍然",
+  "id": "1e09363e216f47c5087b9d2d",
+  "level": 4,
+  "meaning": "still, yet",
+  "pinyin": "réngrán",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-jx1oWqp%Cx-1779527160420"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

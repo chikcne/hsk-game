@@ -1,0 +1,32 @@
+{
+  "audio": "4caec10baf3bcd20c42075282648f274f1453b46279dfa8261717ad14d2355a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "期",
+      "长"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "长期",
+  "id": "42c830b9572be41d11dd8135",
+  "level": 5,
+  "meaning": "long-term; long period",
+  "pinyin": "chángqī",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-re2H:fxxAp-1779527160914"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

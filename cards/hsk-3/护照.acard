@@ -1,0 +1,31 @@
+{
+  "audio": "114c73635f76895ad7394efdcb3da24b2551f1892b8c4eb27070031b60b25044.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "照"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "护照",
+  "id": "de864ff619e8cd4ccaa72ea7",
+  "level": 3,
+  "meaning": "passport",
+  "pinyin": "hùzhào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-ohkW?h(ofM-1779527159477"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

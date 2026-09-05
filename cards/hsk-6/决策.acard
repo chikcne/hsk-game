@@ -1,0 +1,29 @@
+{
+  "audio": "a8b54c808e281e20c95826d9ea4f0fefa160e468d462419b0727c35740c16e79.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "决策",
+  "id": "8ba3e5fbdfd96abc11ad533c",
+  "level": 6,
+  "meaning": "to decide; decision-making",
+  "pinyin": "juécè",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-755-1779527163158"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

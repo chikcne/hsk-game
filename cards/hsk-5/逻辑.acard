@@ -1,0 +1,29 @@
+{
+  "audio": "b12454f443ab48a12d5d0039c0622bcb1b767bb0b7c91e60c0931d8ee1f200c6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "逻辑",
+  "id": "13f18f2c8dce903f650f4e1e",
+  "level": 5,
+  "meaning": "logic",
+  "pinyin": "luójí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bexEx~=WMw-1779527161550"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

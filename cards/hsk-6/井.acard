@@ -1,0 +1,29 @@
+{
+  "audio": "576c8dfcb5146c9852482031d274a6045123927a8a4a6adedf1069c7cf2853f7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "井",
+  "id": "6b12e7d22bd82c3bb8974493",
+  "level": 6,
+  "meaning": "well",
+  "pinyin": "jǐng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-722-1779527163125"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

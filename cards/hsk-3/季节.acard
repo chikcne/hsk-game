@@ -1,0 +1,32 @@
+{
+  "audio": "4987f15d17dacbf08b3f8abf568906a62b17e34f2cedb6cd8f67daf724e8ba0b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "季",
+      "节"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "季节",
+  "id": "00fda7d3e08dafea50669b5e",
+  "level": 3,
+  "meaning": "season",
+  "pinyin": "jìjié",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-o=LwGoks_*-1779527159497"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "ccddc089a089d888ee2e63fbc0022ee40e9eb9861ec99653ba07661adf660bb9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "条",
+  "id": "c3e274bcf20ed7753180bcff",
+  "level": 2,
+  "meaning": "measure word for long, thin, or strip-like objects; (clause, item)",
+  "pinyin": "tiáo",
+  "pos": "classifier、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-wP}AwvVEfT-1779527159246"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

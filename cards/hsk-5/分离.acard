@@ -1,0 +1,32 @@
+{
+  "audio": "56190215cdec7acfa953c9c4c1a40b7eaba49edb556c52ba195acd771e9f93f8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "离"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分离",
+  "id": "c5531ad01c98728760553927",
+  "level": 5,
+  "meaning": "to separate",
+  "pinyin": "fēnlí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-N>gK8^vEkm-1779527161155"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "8bdafb2c646779fb9012fa7db4149772f1b0120e7d10ab537ad48d292bf441a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "望",
+  "id": "5c70c6d903d93b5df1f2ba4e",
+  "level": 6,
+  "meaning": "to look at, to gaze",
+  "pinyin": "wàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1365-1779527163768"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

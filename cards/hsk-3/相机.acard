@@ -1,0 +1,29 @@
+{
+  "audio": "c4393ff5184633d0d9631dd79a8c40bf34401727b36789177de8ab3995b03ad6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相机",
+  "id": "e29d2f838d14259222897584",
+  "level": 3,
+  "meaning": "camera",
+  "pinyin": "xiàngjī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-fDH{{M,IwY-1779527159699"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

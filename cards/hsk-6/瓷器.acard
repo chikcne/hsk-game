@@ -1,0 +1,29 @@
+{
+  "audio": "12b6001a6b5ffd877d9fd37b05aa9d1b1c58f3f11ef3328d86d59895a94a514f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "瓷器",
+  "id": "bb7190c90ce890ce80a1666a",
+  "level": 6,
+  "meaning": "porcelain",
+  "pinyin": "cíqì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-218-1779527162621"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

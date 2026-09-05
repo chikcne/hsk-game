@@ -1,0 +1,32 @@
+{
+  "audio": "89e57cd0484e1aec882ab471b3e4b8ee825feacdf4cbee522968b82954dde664.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "样",
+      "这"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "这样",
+  "id": "60a103a6989d01f8861d869f",
+  "level": 2,
+  "meaning": "like this, so",
+  "pinyin": "zhèyàng",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-s$ua|(GIO<-1779527159292"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

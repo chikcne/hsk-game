@@ -1,0 +1,31 @@
+{
+  "audio": "fb70c8e31a5347def11a5114171063de8bd35176c296e23f596519b0b31bdf02.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "字"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "文字",
+  "id": "3e8c50b2423bd9ce17023587",
+  "level": 4,
+  "meaning": "writing, character",
+  "pinyin": "wénzì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z+N@72vSmw-1779527160582"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

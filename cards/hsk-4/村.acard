@@ -1,0 +1,29 @@
+{
+  "audio": "745d0a697acdd1c10c3b55bb7ef6aaf2b6c5202b343315a27b7223f943881f61.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "村",
+  "id": "6154c1b909c6e8aaa5acf3fd",
+  "level": 4,
+  "meaning": "village",
+  "pinyin": "cūn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MG/QfD)@j7-1779527159910"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

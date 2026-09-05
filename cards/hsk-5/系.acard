@@ -1,0 +1,29 @@
+{
+  "audio": "41aff36f4e77bf0aed4209d5fc3ff1d705f297f674ef2257114824e39a11ef9a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "系",
+  "id": "28f99f8bc6553ea1c768b382",
+  "level": 5,
+  "meaning": "to tie, to fasten",
+  "pinyin": "jì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-CyH7vyTfWV-1779527161342"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

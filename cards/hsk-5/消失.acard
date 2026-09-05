@@ -1,0 +1,29 @@
+{
+  "audio": "2331988837fa7e7f6c19779ec421b8012d43e265aea7a3b7cc69266d5c3f01de.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "消失",
+  "id": "506bfd41bac8ccc0dc46b0e0",
+  "level": 5,
+  "meaning": "to disappear",
+  "pinyin": "xiāoshī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-NzZAQ2J?*Q-1779527162070"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

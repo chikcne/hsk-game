@@ -1,0 +1,31 @@
+{
+  "audio": "2286bc40ef9fc83f2a1f10b6bd40f47ff4a29ca75fb224017b14885b17368f4e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "解"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "缓解",
+  "id": "aec472212577c975b3d021f6",
+  "level": 5,
+  "meaning": "to ease, to alleviate",
+  "pinyin": "huǎnjiě",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-AFAz4NvHt--1779527161306"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "6794e41464e71161eab1adf473b56bb16c3d333b1d04f0e7b4619b55f63a413c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "二",
+  "id": "f7d2c91c550e0fe87eaa6007",
+  "level": 1,
+  "meaning": "two",
+  "pinyin": "èr",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-BsC4bSpD}<-1779527158852"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

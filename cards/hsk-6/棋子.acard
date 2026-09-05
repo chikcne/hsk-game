@@ -1,0 +1,31 @@
+{
+  "audio": "165771e0606e4f85e256bf5430006fa944c269cb82ef713c52d008435e7c5a79.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "棋子",
+  "id": "0a9c4e32d12d6d539bccba55",
+  "level": 6,
+  "meaning": "chess piece",
+  "pinyin": "qízǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1017-1779527163420"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

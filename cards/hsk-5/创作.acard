@@ -1,0 +1,29 @@
+{
+  "audio": "c53ae0354efe369db3c59c82c937407a290a5169f4c0583c2409aeda3437ef5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "创作",
+  "id": "35260f82e2f1e6659b0f9928",
+  "level": 5,
+  "meaning": "to create; creation",
+  "pinyin": "chuàngzuò",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G_I3@C{_Eg-1779527160996"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

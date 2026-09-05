@@ -1,0 +1,31 @@
+{
+  "audio": "b8aff04ea8f5ec84c93be09c3b946f1a3b0b76a4d4053239ac9fd73a3346196c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "手机",
+  "id": "84bba28f2d5a7bfc4910f31f",
+  "level": 1,
+  "meaning": "cell phone",
+  "pinyin": "shǒujī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-p*)uDVX>rX-1779527158992"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

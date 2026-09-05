@@ -1,0 +1,29 @@
+{
+  "audio": "b18ced178c2faaee33d413efec969fe079e35e1b20d81f857c10c41689a2582d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "让",
+  "id": "8e056921d5c4d3dce11881bf",
+  "level": 2,
+  "meaning": "to let, to allow; (by)",
+  "pinyin": "ràng",
+  "pos": "verb、 （preposition）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-Qm&Ye83IZu-1779527159225"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

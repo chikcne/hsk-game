@@ -1,0 +1,31 @@
+{
+  "audio": "df144a8be64b7a7ff8c60aea2e85f9e5464bc847fbaecd767f6dde57ebfbe3fe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大厅",
+  "id": "3aaef11373eebdebb34689a7",
+  "level": 4,
+  "meaning": "hall, lobby",
+  "pinyin": "dàtīng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-w)vfWRj=/e-1779527159931"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

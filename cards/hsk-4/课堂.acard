@@ -1,0 +1,31 @@
+{
+  "audio": "c8b67186ca7bb9f76134ea9ca5fefaad7beabcd577d83fcccde08312eb589ee3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "课"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "课堂",
+  "id": "f61497813bc154b1ab6e377d",
+  "level": 4,
+  "meaning": "classroom",
+  "pinyin": "kètáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Nrj<X5RU&k-1779527160236"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

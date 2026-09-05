@@ -1,0 +1,32 @@
+{
+  "audio": "017d6b2e9261a0962de7702bcdef1b7b121b205f6aad17ea130f22a7c0a6239d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "元",
+      "公"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公元",
+  "id": "e6e8dda7d922bdd83b783967",
+  "level": 6,
+  "meaning": "Gregorian calendar A.D.",
+  "pinyin": "gōngyuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-465-1779527162868"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

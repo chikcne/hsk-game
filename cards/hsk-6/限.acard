@@ -1,0 +1,29 @@
+{
+  "audio": "bfac16324f6e106c1945b5e4501f27a6a37fde48ca817e633ea015a1610893ca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "限",
+  "id": "98d3460ba74441fdcbad00ac",
+  "level": 6,
+  "meaning": "to limit",
+  "pinyin": "xiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1426-1779527163829"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

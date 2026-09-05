@@ -1,0 +1,29 @@
+{
+  "audio": "472cf20b2804b5e260da5a5e1ae5a576a0b99b76583bd0bac9719d7bbbc74d32.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "每",
+  "id": "510764206453f30a6d396487",
+  "level": 2,
+  "meaning": "every, each; (per)",
+  "pinyin": "měi",
+  "pos": "pronoun、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-h(z6gq(y4+-1779527159202"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

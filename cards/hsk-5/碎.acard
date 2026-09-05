@@ -1,0 +1,29 @@
+{
+  "audio": "66d6cb8d6e2d0438990a7d6f0415eca030f5f279134589fc61f64413409b7c27.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "碎",
+  "id": "f6ad33631ba201ce51814997",
+  "level": 5,
+  "meaning": "to break, to smash; broken",
+  "pinyin": "suì",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Og^ztY=C!z-1779527161896"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

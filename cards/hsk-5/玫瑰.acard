@@ -1,0 +1,29 @@
+{
+  "audio": "757ffbb7c429160b37869d569daba088649879b17f4b776c36781dab223dfb31.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "玫瑰",
+  "id": "e2167642f0d0f1453f327132",
+  "level": 5,
+  "meaning": "rose",
+  "pinyin": "méigui",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-NG:QeFb}#K-1779527161559"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "85999a4f3ffc060e9516d0d37f6550dddf0b15b7096f0548f94d286046aeb4cb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "位",
+      "座"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "座位",
+  "id": "f63ff756e300a367dc531747",
+  "level": 4,
+  "meaning": "seat",
+  "pinyin": "zuòwèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-um.S1*7)b!-1779527160800"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

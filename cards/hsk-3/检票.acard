@@ -1,0 +1,31 @@
+{
+  "audio": "434feeea5970111e646422c89a31a69d66386e9bfdd8fd07d8c2ca5966141f9a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "票"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "检票",
+  "id": "3405f0a41a1776923fde4107",
+  "level": 3,
+  "meaning": "ticket checking",
+  "pinyin": "jiǎnpiào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-K)zt04;]Xh-1779527159503"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

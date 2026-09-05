@@ -1,0 +1,31 @@
+{
+  "audio": "7860ba7f092762a883a1f51c5f863d83c512261b1195783960da390dd69935e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "现代",
+  "id": "0ca7a44fcdc1e1fde8b575e9",
+  "level": 5,
+  "meaning": "modern times; modern",
+  "pinyin": "xiàndài",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-fa|/5fLXNc-1779527162042"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

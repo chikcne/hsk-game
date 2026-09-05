@@ -1,0 +1,32 @@
+{
+  "audio": "d9afa7d5cc44942a1c6a711f7f7e57f8e5d0e3303f204e13824f9afc2a4fcc9e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "员",
+      "演"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "演员",
+  "id": "708ec21cb93ae506ea90d55f",
+  "level": 4,
+  "meaning": "actor, performer",
+  "pinyin": "yǎnyuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-eO>2iqQm`o-1779527160657"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "6273aa784b77a5617f4b487164dca70335e2238014a6a6249210991f21a7e477.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "担心",
+  "id": "220bc7156ecc07a63a527a7c",
+  "level": 3,
+  "meaning": "to worry",
+  "pinyin": "dānxīn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-H)1I&qdV_e-1779527159382"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

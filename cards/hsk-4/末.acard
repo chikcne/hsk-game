@@ -1,0 +1,29 @@
+{
+  "audio": "78ab25e1b868aa811a9c3341133da95b02f2448bf361559da2d334ca392ed136.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "末",
+  "id": "26c34ce4f184a5c5648b3611",
+  "level": 4,
+  "meaning": "end, last",
+  "pinyin": "mò",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-fls-TlFYGO-1779527160316"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

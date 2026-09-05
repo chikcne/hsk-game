@@ -1,0 +1,32 @@
+{
+  "audio": "0ed89d338e103d2b77a99c688369b7ade36c08ac095c0791a6541aca97495904.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同",
+      "如"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "如同",
+  "id": "2d6e1890eed893da61372520",
+  "level": 5,
+  "meaning": "like, as",
+  "pinyin": "rútóng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-OQ:y,XVHJ6-1779527161739"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

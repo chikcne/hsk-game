@@ -1,0 +1,29 @@
+{
+  "audio": "2580730c51b5b9bd1cd32c664d07a7ce84ba7bdfa8d4dcb21e928b74c90d30b8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "设置",
+  "id": "678a627694783447f810c0e1",
+  "level": 5,
+  "meaning": "to set up, to install",
+  "pinyin": "shèzhì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rq]16IF|Yd-1779527161781"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

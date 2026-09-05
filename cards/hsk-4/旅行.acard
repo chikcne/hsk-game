@@ -1,0 +1,31 @@
+{
+  "audio": "215639e1b7249a6e4f35731f194b9918520d2bef10ac8002c2e0bc5c890ab02e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "行"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "旅行",
+  "id": "3515cecc6e5fe67c1af28862",
+  "level": 4,
+  "meaning": "to travel",
+  "pinyin": "lǚxíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-i_U&ufedC9-1779527160293"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

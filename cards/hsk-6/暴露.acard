@@ -1,0 +1,31 @@
+{
+  "audio": "3b7325671674970b0c1a569086514223a9469cd8c9db4df65bc3be15d6c498b1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "露"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暴露",
+  "id": "8fcf8970263305adc5581c42",
+  "level": 6,
+  "meaning": "to expose",
+  "pinyin": "bàolù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-31-1779527162434"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

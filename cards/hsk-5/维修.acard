@@ -1,0 +1,31 @@
+{
+  "audio": "2122f36324b0417aeb88afe1930ce898a3aefd5ad21af0ec6f0c36de1b498932.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "修"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "维修",
+  "id": "0bed9a82ed54d0f1a758e03b",
+  "level": 5,
+  "meaning": "to maintain, to repair",
+  "pinyin": "wéixiū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zEGdP?<Hlr-1779527161993"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

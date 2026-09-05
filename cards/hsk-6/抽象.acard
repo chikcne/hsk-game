@@ -1,0 +1,31 @@
+{
+  "audio": "e906e097f474b8cc5b1c1594774b7239f376288174cdf80fe85c4ca93c8a2d98.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "抽"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抽象",
+  "id": "582c50c54ddccef3e922f1a6",
+  "level": 6,
+  "meaning": "abstract",
+  "pinyin": "chōuxiàng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-181-1779527162584"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "fb97a9b1edad1a994b16c94a3f695a66c6db72dc5bfca2e8802c0958039a2ca3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "骗",
+  "id": "61ef2c55536b7b4ac6be1519",
+  "level": 5,
+  "meaning": "to cheat, to deceive",
+  "pinyin": "piàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-DTk[tVcLUt-1779527161632"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

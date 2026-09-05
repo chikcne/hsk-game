@@ -1,0 +1,32 @@
+{
+  "audio": "32cd59dcb3fc57db7cda027014f08869205ba6404f6bf24b43f0e9877ca8e633.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "折"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打折",
+  "id": "0f7ae6b97622bee8a1b2324c",
+  "level": 4,
+  "meaning": "to give a discount",
+  "pinyin": "dǎzhé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xX3oH-%B.z-1779527159924"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

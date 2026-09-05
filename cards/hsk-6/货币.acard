@@ -1,0 +1,31 @@
+{
+  "audio": "24ec8c87fceebfae791c62f10abd545c57cf8f76bdb2b75700a8bc7868536676.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "货"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "货币",
+  "id": "6e25cbce7f2dc34acc48889c",
+  "level": 6,
+  "meaning": "currency",
+  "pinyin": "huòbì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-601-1779527163004"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

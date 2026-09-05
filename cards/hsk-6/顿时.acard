@@ -1,0 +1,32 @@
+{
+  "audio": "b4c3389cc10a264ca1c61b9d0a9f3f7cdc1215cef0ea2ea62a8388fce3b2ccca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时",
+      "顿"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "顿时",
+  "id": "9415a1f2c88f7d5dda8007ab",
+  "level": 6,
+  "meaning": "suddenly, immediately",
+  "pinyin": "dùnshí",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-335-1779527162738"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

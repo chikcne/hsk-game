@@ -1,0 +1,32 @@
+{
+  "audio": "e12c0356fd934fe4a33ec37bf76e12da08c38e3b9e81151267fe239cbfa4c0a7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亲",
+      "切"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亲切",
+  "id": "f0bed34f53fec22772170889",
+  "level": 5,
+  "meaning": "cordial, kind",
+  "pinyin": "qīnqiè",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nzBj|8L6--1779527161684"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "367c40585b8cc358e3b56e507b3f80ebaf01889389157e034bd51d67ecb45b3a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "也",
+      "好"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "也好",
+  "id": "e1a52cba0a3222ebe591d913",
+  "level": 6,
+  "meaning": "that’s fine, or",
+  "pinyin": "yěhǎo",
+  "pos": "助",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1531-1779527163934"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

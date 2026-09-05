@@ -1,0 +1,29 @@
+{
+  "audio": "4e504c8a9614ea32b00a6343cef672828dc68c3f91cc673cd916fe1f4ad8ae3d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "坚持",
+  "id": "3f89d948a3d547b7d5733783",
+  "level": 3,
+  "meaning": "to persist",
+  "pinyin": "jiānchí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-mw_P#a9ApI-1779527159500"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "1119ceceb5c9834f29c9e297f0aef12753edd8327e1b1a8e57b180ee0c4a142b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "形势",
+  "id": "1ceca739aaf08e4421988c8b",
+  "level": 5,
+  "meaning": "situation, circumstances",
+  "pinyin": "xíngshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-vJH=kyHY?.-1779527162095"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

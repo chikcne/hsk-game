@@ -1,0 +1,32 @@
+{
+  "audio": "fca5b8fd0c34370c9c3bf4ac1dea338da776aac97bcd929c7459f6c8ba3d387c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开",
+      "水"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开水",
+  "id": "ee73c8370c4cb77e315d61ff",
+  "level": 5,
+  "meaning": "boiled water",
+  "pinyin": "kāishuǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uc<6>r#/}[-1779527161456"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "5cd8f4577cbd0532e6f5d00b497ef66dbf9a5cfd5565ff53bcb52521d3f460eb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加",
+      "增"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "增加",
+  "id": "954aab2e9cc4599c852a54f4",
+  "level": 4,
+  "meaning": "to increase, to add, to raise",
+  "pinyin": "zēngjiā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vpr{-N%}J)-1779527160724"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

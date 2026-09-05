@@ -1,0 +1,32 @@
+{
+  "audio": "ea7640329194737e843a3ca803f7f7e88ad150b010387e2e267d4d85f1e57e65.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "方"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前方",
+  "id": "8e801676397557a27fdd56bd",
+  "level": 4,
+  "meaning": "ahead, front",
+  "pinyin": "qiánfāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-LPmtcp:46R-1779527160380"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "42d28aae7661c9a7036ed6f230b81bf227d804b2a79d09516f3f97ad42ed8f42.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "回",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "回来",
+  "id": "2d568b4360eeee6a2b4723d0",
+  "level": 2,
+  "meaning": "to come back / come back (toward the speaker)",
+  "pinyin": "huílái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-HWK?)^JInk-1779527159164"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

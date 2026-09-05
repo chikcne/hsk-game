@@ -1,0 +1,29 @@
+{
+  "audio": "015b2b6accd01a4b75f0baf51074ea480e56cfcbdabb2ec44d6143680499c1f0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "涌现",
+  "id": "f6a79050af05201fce527f2c",
+  "level": 6,
+  "meaning": "to emerge, to appear",
+  "pinyin": "yǒngxiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1590-1779527163993"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

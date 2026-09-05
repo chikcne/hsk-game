@@ -1,0 +1,31 @@
+{
+  "audio": "fbf8470e935fd278f59e6edab6abf2a3d79c9e38ed679131a48a6603adfbb5c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发育",
+  "id": "65c8d16cd22d7b652df2346c",
+  "level": 6,
+  "meaning": "to grow, to develop",
+  "pinyin": "fāyù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-358-1779527162761"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

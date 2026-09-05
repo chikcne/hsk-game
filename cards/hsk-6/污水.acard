@@ -1,0 +1,31 @@
+{
+  "audio": "5dbb25321082b9370bbbd560c762d373d26650c05e4f13c0755a64b032b21cbf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "污水",
+  "id": "1b1ec2f035ba327e72e10714",
+  "level": 6,
+  "meaning": "sewage",
+  "pinyin": "wūshuǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1395-1779527163798"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

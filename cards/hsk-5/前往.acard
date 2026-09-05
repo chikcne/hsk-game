@@ -1,0 +1,32 @@
+{
+  "audio": "80d9d8d2df510fa47982d1d95e86b447ecf7b5f43f56d61874288adb48fa6d7d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "往"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前往",
+  "id": "eed5e43917dfe05436e7251a",
+  "level": 5,
+  "meaning": "to go to, to head for",
+  "pinyin": "qiánwǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jJqa3rwJ@p-1779527161669"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

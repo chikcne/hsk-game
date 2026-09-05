@@ -1,0 +1,29 @@
+{
+  "audio": "9c33cceaa898b8d9bf9e3f1033b2374f1793fb18744aeb245fa8c69c179eb4cb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "通",
+  "id": "a606e68f1de3b45ddcb589f2",
+  "level": 4,
+  "meaning": "to go through, to be open; to lead to, to connect; (measure word for whole sets)",
+  "pinyin": "tōng",
+  "pos": "verb、adjective、 （classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-c]PO[i[VuK-1779527160546"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

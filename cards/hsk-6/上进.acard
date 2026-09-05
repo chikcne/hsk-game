@@ -1,0 +1,32 @@
+{
+  "audio": "920144ad419ddfa489b5fbc4ae930d7be98348d9b0b44aef8453e36a5ae40aa1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上进",
+  "id": "3ec8731c7dce324745c9e170",
+  "level": 6,
+  "meaning": "to make progress",
+  "pinyin": "shàngjìn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1149-1779527163552"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "e5b8f73ed5a726ba3ac6c88fffb8a8530c649e766523df340adb87ca26acb9bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "架",
+  "id": "674e16a68745ba5e96e5dfac",
+  "level": 5,
+  "meaning": "shelf, frame; to fight; measure word for planes, etc.",
+  "pinyin": "jià",
+  "pos": "noun、verb、",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E9JrXBX(3f-1779527161363"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

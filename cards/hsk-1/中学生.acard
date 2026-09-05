@@ -1,0 +1,35 @@
+{
+  "audio": "d3b24d74b7e0a331611b029776753c8903641aec5b81bf5ab66be0d8ca2fb444.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "中学",
+      "学",
+      "学生",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中学生",
+  "id": "aefb8016064d60339bc9fd1c",
+  "level": 1,
+  "meaning": "middle school student",
+  "pinyin": "zhōngxuéshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-eT>sU;w9F6-1779527159096"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

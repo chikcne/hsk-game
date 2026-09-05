@@ -1,0 +1,31 @@
+{
+  "audio": "398b50706880eb944b30ecc9dcf2e6e1015a4a6b4ca964288d10bad3d4a0f31d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "异常",
+  "id": "07347c0e0fdb81c1702949d7",
+  "level": 6,
+  "meaning": "unusual, abnormal; extremely",
+  "pinyin": "yìcháng",
+  "pos": "形、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1562-1779527163965"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

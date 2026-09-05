@@ -1,0 +1,29 @@
+{
+  "audio": "5264b39d9838a4375c5971e3e7e89534d52acc69f2a2de3bef752095205d8204.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "信",
+  "id": "8424c48af096e850c4e4cd5a",
+  "level": 3,
+  "meaning": "to believe; letter",
+  "pinyin": "xìn",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-mXq76&f[[.-1779527159709"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

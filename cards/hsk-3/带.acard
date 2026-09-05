@@ -1,0 +1,29 @@
+{
+  "audio": "55648e8da3abeb66792bbd333c43ee129b739b17763fd334e19cea3b0c538234.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "带",
+  "id": "537b6ee10f07a826c3b12e37",
+  "level": 3,
+  "meaning": "to bring, to take; (belt)",
+  "pinyin": "dài",
+  "pos": "verb、（noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-o/U6hD>GhN-1779527159381"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

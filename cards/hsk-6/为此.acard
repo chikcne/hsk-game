@@ -1,0 +1,32 @@
+{
+  "audio": "cc3dd0d378087ed9c33e44044717d14f4ee34154462cac5c4fcbb7ec4849098e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为",
+      "此"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "为此",
+  "id": "1d1b24854f2ecce958ebee19",
+  "level": 6,
+  "meaning": "for this reason, therefore",
+  "pinyin": "wèicǐ",
+  "pos": "连",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1380-1779527163783"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

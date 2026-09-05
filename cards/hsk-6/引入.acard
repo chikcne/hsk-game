@@ -1,0 +1,32 @@
+{
+  "audio": "9ae898975640322b881ac5e65d07a3a47dee5c6c3655d4f6f720ab57969d4bd4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入",
+      "引"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "引入",
+  "id": "abbc69b8089371b1a1f36e3a",
+  "level": 6,
+  "meaning": "to introduce",
+  "pinyin": "yǐnrù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1582-1779527163985"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

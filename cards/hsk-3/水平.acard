@@ -1,0 +1,32 @@
+{
+  "audio": "96eeb9aab59020bf8b29cd1b94f11995e6a1c777fc9e992301d373af662f112c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "平",
+      "水"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "水平",
+  "id": "f381f7fb0ffd11e3f4cdffa5",
+  "level": 3,
+  "meaning": "level, standard",
+  "pinyin": "shuǐpíng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-gHwXPF9-^}-1779527159649"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

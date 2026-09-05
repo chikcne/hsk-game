@@ -1,0 +1,32 @@
+{
+  "audio": "621909c1716dd1b65c460fda74e9995126d4ba925a8bb178e98875956098f715.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "货",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "货车",
+  "id": "5e6cdbdd58c9adcac019bb6f",
+  "level": 6,
+  "meaning": "truck, freight car",
+  "pinyin": "huòchē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-602-1779527163005"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

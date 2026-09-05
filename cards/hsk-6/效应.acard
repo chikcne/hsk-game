@@ -1,0 +1,29 @@
+{
+  "audio": "8996cea2aec0a1a17714371533e42453f8ec4be9106cf7783728568fa1f7cfd6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "效应",
+  "id": "febaa2cbeedebd178843c82b",
+  "level": 6,
+  "meaning": "effect",
+  "pinyin": "xiàoyìng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1454-1779527163857"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

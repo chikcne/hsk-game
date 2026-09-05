@@ -1,0 +1,29 @@
+{
+  "audio": "ec19dcd1e3b8c5b29499a874239ecf303ba89557869f0859598aa66018c63d64.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "练",
+  "id": "0c4c20c531bad9ed2acaa33d",
+  "level": 3,
+  "meaning": "to practice",
+  "pinyin": "liàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-jTH[#bNwH`-1779527159554"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "af48033c4d038750a53530b59da38bb49cc272bed2f9c8893c0f82b35f69c2b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "信"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相信",
+  "id": "65f6e382fd20af799de599e2",
+  "level": 3,
+  "meaning": "to believe",
+  "pinyin": "xiāngxìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-ilfU@)&r{v-1779527159695"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

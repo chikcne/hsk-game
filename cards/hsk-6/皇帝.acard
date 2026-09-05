@@ -1,0 +1,29 @@
+{
+  "audio": "c71656f6e274e3808d72386f5b48a1d380e948d109092937b19b4a308cff7159.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "皇帝",
+  "id": "2b73fac3066a4b711d990adb",
+  "level": 6,
+  "meaning": "emperor",
+  "pinyin": "huángdì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-582-1779527162985"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

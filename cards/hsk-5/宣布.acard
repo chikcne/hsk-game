@@ -1,0 +1,31 @@
+{
+  "audio": "c2e97c199174d7b715c625e8cc282e7c3c97058f42bdc68ea683844e704e5951.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "布"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "宣布",
+  "id": "5da9b15a0d6d70fda9eecabe",
+  "level": 5,
+  "meaning": "to announce, to declare",
+  "pinyin": "xuānbù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-moUyO8*`Wk-1779527162109"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

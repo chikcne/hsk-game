@@ -1,0 +1,31 @@
+{
+  "audio": "d512acccb574c3c14aa695661154786c4bca6684d6fb3109e01d07cf8b13ebb3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "词"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "词典",
+  "id": "c3affd052a1030c9de3b5f03",
+  "level": 3,
+  "meaning": "dictionary",
+  "pinyin": "cídiǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-E/8AA_Bq&&-1779527159372"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

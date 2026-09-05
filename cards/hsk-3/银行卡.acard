@@ -1,0 +1,34 @@
+{
+  "audio": "d889292fe057a1ca6f35f9d972bc316b564ceef5dd5210c5573cb42a1c2422aa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "卡",
+      "行",
+      "银",
+      "银行"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "银行卡",
+  "id": "f6092fdc87b3fc7b0f408e30",
+  "level": 3,
+  "meaning": "bank card",
+  "pinyin": "yínhángkǎ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-k>k83C38SJ-1779527159740"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

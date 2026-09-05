@@ -1,0 +1,32 @@
+{
+  "audio": "2cc1f98a39c12d00a563108c82343c51c28547481fa800588eca1786362d8577.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "路"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公路",
+  "id": "57686de8e82437b96bf74700",
+  "level": 4,
+  "meaning": "highway, road",
+  "pinyin": "gōnglù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-l2jVr!`J!>-1779527160058"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

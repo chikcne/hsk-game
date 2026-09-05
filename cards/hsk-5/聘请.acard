@@ -1,0 +1,31 @@
+{
+  "audio": "0bcf7aa9790c7e3436e8c3517e5c7b77fd6bc3166e5078f45a10274d7058faac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "请"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "聘请",
+  "id": "887f4881e5367aa71fb26739",
+  "level": 5,
+  "meaning": "to hire",
+  "pinyin": "pìnqǐng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jK+}~Av35P-1779527161639"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

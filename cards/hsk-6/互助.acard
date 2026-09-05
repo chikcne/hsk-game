@@ -1,0 +1,29 @@
+{
+  "audio": "21ef8725bd1aa2dce380859cb920617274d0ce40d10c357abe986413cc6cd7aa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "互助",
+  "id": "f4356cc79fb42c713acd3b3f",
+  "level": 6,
+  "meaning": "mutual aid",
+  "pinyin": "hùzhù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-561-1779527162964"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

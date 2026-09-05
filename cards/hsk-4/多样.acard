@@ -1,0 +1,32 @@
+{
+  "audio": "d847f571f9b61cc2ab78a2e741b0b08005479b071bd42407d5da8dc18a7370d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "多",
+      "样"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "多样",
+  "id": "bb1477f8c5506a1ae4ddeb47",
+  "level": 4,
+  "meaning": "diverse, varied",
+  "pinyin": "duōyàng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p4_K?-&9LE-1779527159985"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "daf544409e6007528d10aabc8d094694da0573a9697fd55fe26d97bf46976075.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "魅力",
+  "id": "9a52edd5fba6b1a91d558b65",
+  "level": 5,
+  "meaning": "charm, appeal",
+  "pinyin": "mèilì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ND,{|[Oh.Q-1779527161563"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

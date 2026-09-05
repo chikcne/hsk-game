@@ -1,0 +1,31 @@
+{
+  "audio": "cb1b40ed01e3c4c03189405e3d7185df92f89b39925d376837b3bf89b1c4c173.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "受"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "享受",
+  "id": "8f930c982dfde6d126e45630",
+  "level": 5,
+  "meaning": "to enjoy",
+  "pinyin": "xiǎngshòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lphA8wIz&r-1779527162058"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

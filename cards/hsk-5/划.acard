@@ -1,0 +1,29 @@
+{
+  "audio": "70ef29f845afa145a9d7eb1afcd673f7cdde248c722de0acbf878eb1b5789b9c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "划",
+  "id": "4acd69cf36bfb56a2b086f8d",
+  "level": 5,
+  "meaning": "to row, to paddle",
+  "pinyin": "huá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B7h{nP8n44-1779527161299"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

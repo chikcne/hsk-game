@@ -1,0 +1,29 @@
+{
+  "audio": "ec6973b79c7fbfb56b620c5d6fa659d2f04fd44344dd9b9da24d14841ef267a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扣",
+  "id": "bba7ea7ee59c7dcfab4e6c25",
+  "level": 6,
+  "meaning": "to deduct, to button; button",
+  "pinyin": "kòu",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-797-1779527163200"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

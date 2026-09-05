@@ -1,0 +1,32 @@
+{
+  "audio": "9efb0afdc7fd0a7b22ec5b2db339d3b3808abd7986ff42bc0c050e0e8a8f01b2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "误",
+      "错"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "错误",
+  "id": "edf364396b0414fe2de8b74f",
+  "level": 4,
+  "meaning": "wrong, mistaken; mistake, error",
+  "pinyin": "cuòwù",
+  "pos": "adjective、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-q:!w0x|GSD-1779527159913"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

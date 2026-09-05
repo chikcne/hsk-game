@@ -1,0 +1,31 @@
+{
+  "audio": "4e70e9b0e22309bae89a22d8555371d6843f165bb1b72a7cbebeed4a6391a73f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主动",
+  "id": "dcf046e708d8ce38a73ac533",
+  "level": 5,
+  "meaning": "proactive, active",
+  "pinyin": "zhǔdòng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g`%ev%:{GB-1779527162345"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

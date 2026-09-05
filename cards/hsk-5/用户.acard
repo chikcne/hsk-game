@@ -1,0 +1,32 @@
+{
+  "audio": "0245cdf89cd7981d5d541a1d952524e0ba9eb204ac1d51c67898459da0d11e02.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "户",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "用户",
+  "id": "b52e9a45486078219602bfbc",
+  "level": 5,
+  "meaning": "user",
+  "pinyin": "yònghù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mCu*VmiC@4-1779527162195"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

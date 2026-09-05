@@ -1,0 +1,32 @@
+{
+  "audio": "5b5c2a04c94a7af4254dba984405a5636f4420ed9c3ddfc6fafc9665b835b1e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "扫"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打扫",
+  "id": "785f3bc4dc9d976b22e4e7dd",
+  "level": 3,
+  "meaning": "to clean",
+  "pinyin": "dǎsǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-cWRILAGg1j-1779527159374"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

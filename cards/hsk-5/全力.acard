@@ -1,0 +1,32 @@
+{
+  "audio": "47bb769db91e9d2dc78ce3791fa180f8e61e9e670d1da99dc4b2766c93dd4770.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "全",
+      "力"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "全力",
+  "id": "6c0fc7d256fe3df4dc598e8c",
+  "level": 5,
+  "meaning": "full strength, all-out effort; with all one's might",
+  "pinyin": "quánlì",
+  "pos": "noun、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gzaO}tD{,9-1779527161703"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

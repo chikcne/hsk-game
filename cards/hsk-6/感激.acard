@@ -1,0 +1,31 @@
+{
+  "audio": "f97902e304c41e05c96bf264eb066167fa229dfeaa62917f5503405469eb456d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "感"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "感激",
+  "id": "affd18b4f7aff895c6f83a69",
+  "level": 6,
+  "meaning": "to appreciate, to be grateful",
+  "pinyin": "gǎnjī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-423-1779527162826"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

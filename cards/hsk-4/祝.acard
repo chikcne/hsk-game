@@ -1,0 +1,29 @@
+{
+  "audio": "bafc34c0525bb60cfa6a0fb3ccd6308fba8a5df51e9bb04a9377168a89b9af86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "祝",
+  "id": "26ea40c6fb186e47e001d883",
+  "level": 4,
+  "meaning": "to wish, to express good wishes",
+  "pinyin": "zhù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-H8jf6:eqOt-1779527160768"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

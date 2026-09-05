@@ -1,0 +1,32 @@
+{
+  "audio": "1216c59fee43802eebecaea02012658cb0a7c344884df1db5b0eaaf057c14496.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "超"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "超出",
+  "id": "250a7c87f31bbfdd9d1c22dc",
+  "level": 5,
+  "meaning": "to exceed, to go beyond",
+  "pinyin": "chāochū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ml#/Dvv|El-1779527160921"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "66675ae24425847a3782868eb82298d3820f6bd5b6d95b900e6574e943ed2ec4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "者"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前者",
+  "id": "29aaad64b4fc7996bc19f78c",
+  "level": 6,
+  "meaning": "the former",
+  "pinyin": "qiánzhě",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1039-1779527163442"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

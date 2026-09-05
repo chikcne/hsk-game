@@ -1,0 +1,29 @@
+{
+  "audio": "105819c5bee951aec210a16d63b9fd9cea72de7cdc15919512519273b07434a7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "歌",
+  "id": "281eed4b50eeae5fc11e517c",
+  "level": 1,
+  "meaning": "song",
+  "pinyin": "gē",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-b@_`C.Z!rf-1779527158861"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "d103f63899be2491612ce026134b01f391f03a9d85749a2a8a149e8e5bb0b250.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "唱",
+  "id": "04d6504338b77d00f14d5f1d",
+  "level": 1,
+  "meaning": "to sing",
+  "pinyin": "chàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-IEaDZQ7<SS-1779527158821"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

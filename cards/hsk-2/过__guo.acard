@@ -1,0 +1,29 @@
+{
+  "audio": "42f449f3b7a27e02e2f6ee4a8bac4bd05e8dcfb3debbd80927649930f8d77f79.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过",
+  "id": "d864ab5316df80ef24d59b30",
+  "level": 2,
+  "meaning": "particle indicating past experience",
+  "pinyin": "guo",
+  "pos": "auxiliary",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-GC?`#LY_4F-1779527159154"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

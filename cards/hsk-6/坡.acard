@@ -1,0 +1,29 @@
+{
+  "audio": "9b5ae46717f644b2ba6ca4b5cf0e6eb41d484bbb70992b848faf929cf2869f4b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "坡",
+  "id": "efd1d2ef7725991c64479e7d",
+  "level": 6,
+  "meaning": "slope; sloping",
+  "pinyin": "pō",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1004-1779527163407"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

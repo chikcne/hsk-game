@@ -1,0 +1,31 @@
+{
+  "audio": "f9c920ad1405231d8a4f1658dd20fa959b37d9695d0d343f1e896c19a7969e51.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "店"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "商店",
+  "id": "1e9834a18fde83fb7865498c",
+  "level": 1,
+  "meaning": "store, shop",
+  "pinyin": "shāngdiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-g?6~{[DtRz-1779527158977"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

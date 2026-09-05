@@ -1,0 +1,32 @@
+{
+  "audio": "f2a048a8e61cae17cc6015c564dd658abfd827bcc027bafe7c1e14fed98167a0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "像",
+      "好"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好像",
+  "id": "c06a9ac15ea0b05cfef777c2",
+  "level": 3,
+  "meaning": "to seem, as if; perhaps",
+  "pinyin": "hǎoxiàng",
+  "pos": "verb、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-ONwr*]%aE9-1779527159468"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

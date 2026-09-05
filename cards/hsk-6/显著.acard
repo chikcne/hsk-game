@@ -1,0 +1,31 @@
+{
+  "audio": "a9fd5f89813a258b8a2cb030e0d35691d13d27b6c67ee348fdf6cc3695e8687c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "显"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "显著",
+  "id": "86ec8d13373cbc78bd556e72",
+  "level": 6,
+  "meaning": "significant, remarkable",
+  "pinyin": "xiǎnzhù",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1425-1779527163828"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

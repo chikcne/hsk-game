@@ -1,0 +1,29 @@
+{
+  "audio": "d9a0a103ff81b1827b00a297c1d18d8fea54041ef1f8f88b0ba0fe37c3a954ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "催",
+  "id": "ad1526f6d7a4eb5d3a60b0a9",
+  "level": 5,
+  "meaning": "to urge, to hurry",
+  "pinyin": "cuī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Q_A-x(xLQw-1779527161010"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

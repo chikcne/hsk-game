@@ -1,0 +1,32 @@
+{
+  "audio": "16d39879f5bd8690868e93af843611ab9771ba5ed32388e05deeb5ddd9b050ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "但",
+      "是"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "但是",
+  "id": "5396170c1a4911c56657d881",
+  "level": 2,
+  "meaning": "but, however",
+  "pinyin": "dànshì",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-Nr{{Z-Y=5C-1779527159134"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

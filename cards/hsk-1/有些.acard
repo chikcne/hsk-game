@@ -1,0 +1,32 @@
+{
+  "audio": "80360c383cbb2c3df619126178a503dba6736d961d01172b3f6788fab6ba525a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "些",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有些",
+  "id": "53d6ad639d485112bb090b60",
+  "level": 1,
+  "meaning": "some, some of; (somewhat, rather)",
+  "pinyin": "yǒuxiē",
+  "pos": "pronoun、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Bsoa#VP>Ad-1779527159069"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

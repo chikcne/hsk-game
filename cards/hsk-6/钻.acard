@@ -1,0 +1,29 @@
+{
+  "audio": "fb0ba37eb1e26003f2d9cf8e1bbf919619bc2066c16e05738ee46a90917f5819.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "钻",
+  "id": "6995cb6e9a4d52b645fe9ce4",
+  "level": 6,
+  "meaning": "to drill, to go into",
+  "pinyin": "zuān",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1799-1779527164202"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

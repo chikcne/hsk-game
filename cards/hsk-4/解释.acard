@@ -1,0 +1,31 @@
+{
+  "audio": "b4141da77b938671da1926747cccb4440ba951b48e7ec9ec39c6af55612d7431.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "解"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "解释",
+  "id": "48a1aa347b3d80589ffe9e1d",
+  "level": 4,
+  "meaning": "to explain, to interpret, to account for",
+  "pinyin": "jiěshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ub;.OK*<?g-1779527160189"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "3d94468bf04e8e02bd2665b4f090cab02f4f49959590ba4dbc2df40c68c0fdaf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "故障",
+  "id": "339a255cc3e3ea6ac162631f",
+  "level": 6,
+  "meaning": "breakdown, malfunction",
+  "pinyin": "gùzhàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-485-1779527162888"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

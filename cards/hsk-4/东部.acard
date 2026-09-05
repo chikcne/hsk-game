@@ -1,0 +1,32 @@
+{
+  "audio": "0f06385f3ae2093780ba14c809360eada12b64ab5f5d328d637455435b0f0d0c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "东",
+      "部"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "东部",
+  "id": "7e1e47766572c901b22480db",
+  "level": 4,
+  "meaning": "eastern part",
+  "pinyin": "dōngbù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-OJ|z;44#q,-1779527159968"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

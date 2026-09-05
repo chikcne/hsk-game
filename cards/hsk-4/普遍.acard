@@ -1,0 +1,31 @@
+{
+  "audio": "f365603c8a0b8ab5ba45b8fdffa0586041521319d19a3d03d50061e727e711e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "遍"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "普遍",
+  "id": "e1d77053da8bade50c03cb17",
+  "level": 4,
+  "meaning": "widespread, universal, common",
+  "pinyin": "pǔbiàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-L))xb1Cg`;-1779527160364"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

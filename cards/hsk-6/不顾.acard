@@ -1,0 +1,32 @@
+{
+  "audio": "12acad9a85a5dec74d2ba7951326e654fce221e1817a640577e7fa2aa03ee0ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "顾"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不顾",
+  "id": "91ea99429a14064c421ce92a",
+  "level": 6,
+  "meaning": "to disregard, to ignore",
+  "pinyin": "búgù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-68-1779527162471"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

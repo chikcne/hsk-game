@@ -1,0 +1,29 @@
+{
+  "audio": "4b2b3881144e565f40ba97f2b187f96d75395b1b659c0114acf64602467f430a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "被",
+  "id": "c6f33bc83bea0077ca75b2ac",
+  "level": 3,
+  "meaning": "by",
+  "pinyin": "bèi",
+  "pos": "preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-f]T9GneU8s-1779527159322"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

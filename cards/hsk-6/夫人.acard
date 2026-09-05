@@ -1,0 +1,31 @@
+{
+  "audio": "f064a6be665dbb9829c243735ad25f14ff87c8fd2bb923c80700cf121773a8d3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夫人",
+  "id": "8f82ed222d9cb9aab99c805d",
+  "level": 6,
+  "meaning": "wife, madam",
+  "pinyin": "fūrén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-397-1779527162800"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

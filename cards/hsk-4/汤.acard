@@ -1,0 +1,29 @@
+{
+  "audio": "1288cff607bf979a32d8887aa2fc024ccca3c6f5500cb69d0e70ab00d77189ca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "汤",
+  "id": "42da5e5f7c9353f67a572f26",
+  "level": 4,
+  "meaning": "soup",
+  "pinyin": "tāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xjQ%Ruv{)q-1779527160523"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

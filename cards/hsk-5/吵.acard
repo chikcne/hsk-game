@@ -1,0 +1,29 @@
+{
+  "audio": "6c250ba37430b4ac52ba62af8a5d0067f8904241eb946c83e8d96ea43e84366e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吵",
+  "id": "e3bac2fa4e1850185438344e",
+  "level": 5,
+  "meaning": "noisy; to quarrel",
+  "pinyin": "chǎo",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zN]n?Z1A%?-1779527160925"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

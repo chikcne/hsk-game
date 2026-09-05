@@ -1,0 +1,32 @@
+{
+  "audio": "c2c56a3c264f22fbb56d971cd2ce4c2407fb1e29d0f4f409ab67cc47bddab5c8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "可",
+      "见"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "可见",
+  "id": "da5cab946f30a9eb653dc356",
+  "level": 5,
+  "meaning": "it can be seen that, obviously",
+  "pinyin": "kějiàn",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Q0d8^<IU%1-1779527161467"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

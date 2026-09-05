@@ -1,0 +1,31 @@
+{
+  "audio": "9b612dc481ab6b8d1bdf13162a77153047211be18c36fd2b6c535920eeef0ef5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出境",
+  "id": "84cb81fcbe4faa879aad3e3a",
+  "level": 6,
+  "meaning": "to leave the country",
+  "pinyin": "chūjìng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-187-1779527162590"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

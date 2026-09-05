@@ -1,0 +1,31 @@
+{
+  "audio": "4669a9d24736025e22fc9b7da8ce873613d836d20f19e8685c7beba4e9b08e2d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "见"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "意见",
+  "id": "529fd337fec07db4ad901371",
+  "level": 4,
+  "meaning": "opinion",
+  "pinyin": "yìjiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-pW{l)I(M@p-1779527160671"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

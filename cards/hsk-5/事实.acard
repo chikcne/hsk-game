@@ -1,0 +1,31 @@
+{
+  "audio": "19f79a4f172a05c7fc4df7ebe781d6f435d48f46f8436ba34b397e8ab0e65c38.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "事实",
+  "id": "d7e5b12f1d51e92ac249f2f9",
+  "level": 5,
+  "meaning": "fact",
+  "pinyin": "shìshí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Kxn#VJ~^TI-1779527161838"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "03e089a74780010872adf8a95572fa3c9618d3dc86e41ff5e2eeb9930b2213f7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "毫不",
+  "id": "554dbf0942531c72e42c200c",
+  "level": 6,
+  "meaning": "not at all",
+  "pinyin": "háobù",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-528-1779527162931"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

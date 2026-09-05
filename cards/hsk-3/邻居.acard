@@ -1,0 +1,29 @@
+{
+  "audio": "e6bb4fa96f1b2fc43b870f49df525f3536e84b90c1760afdce76e1041c6f1b9c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "邻居",
+  "id": "bc9079d072511b0059755a51",
+  "level": 3,
+  "meaning": "neighbor",
+  "pinyin": "línjū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Q2fWYd(T8p-1779527159561"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

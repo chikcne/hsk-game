@@ -1,0 +1,31 @@
+{
+  "audio": "a7f4b2af55aebcac6f8869cb04f8f8cf8fe5262ae1b4583c53cc5ba37fe883a8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "理"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "理财",
+  "id": "d5c8725aaad9b301483a2858",
+  "level": 6,
+  "meaning": "to manage money",
+  "pinyin": "lǐcái",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-831-1779527163234"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

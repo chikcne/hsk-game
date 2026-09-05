@@ -1,0 +1,32 @@
+{
+  "audio": "bdf459ec618708803f28c3b459a48f01d1445d84e6004019df10b22b7fd5eb8d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "留"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "留学",
+  "id": "00a22629e696ae918158f0f4",
+  "level": 3,
+  "meaning": "to study abroad",
+  "pinyin": "liúxué",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Mw/FTC9cD{-1779527159562"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

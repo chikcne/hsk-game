@@ -1,0 +1,31 @@
+{
+  "audio": "0bd4e1e6ab3b5dd8f2cc5990dfa1c680c582aae8f19eee36904dd31383360482.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "美"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "美观",
+  "id": "1765b7c45f22beafb59c042f",
+  "level": 6,
+  "meaning": "beautiful, aesthetically pleasing",
+  "pinyin": "měiguān",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-899-1779527163302"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

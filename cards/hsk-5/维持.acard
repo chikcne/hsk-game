@@ -1,0 +1,29 @@
+{
+  "audio": "ce6092375a121b6b49b822504b68f026c98cf8dc08cbacc18d4f4d426e08328e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "维持",
+  "id": "4b32d2d679df8d102d39a564",
+  "level": 5,
+  "meaning": "to maintain, to keep",
+  "pinyin": "wéichí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w%.dzKK,8r-1779527161988"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "d625709db2382512d3e119d7be79114aad5b761330e9668be5f45bddc1e61933.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "能"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "能力",
+  "id": "f9b860bf0c237c1a73f7e57b",
+  "level": 4,
+  "meaning": "ability, capability, capacity",
+  "pinyin": "nénglì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nsZ/)~%th_-1779527160336"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "63bf0a9582be2fe59ef8ef1ed52e92db3b77d8e0f9d7de4ce9ae66746d6d18ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "信"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "信息",
+  "id": "2e05d456245bd270addc5b8f",
+  "level": 4,
+  "meaning": "information, message",
+  "pinyin": "xìnxī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Qw;(@tA1P!-1779527160626"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

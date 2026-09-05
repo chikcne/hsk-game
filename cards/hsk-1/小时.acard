@@ -1,0 +1,32 @@
+{
+  "audio": "a1349e9e7a4dec769bef1424a30c2e3bbec55ce456978ec7e025b71d52c39750.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小时",
+  "id": "e50be5c96645153ac3a184fe",
+  "level": 1,
+  "meaning": "hour",
+  "pinyin": "xiǎoshí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-z8Mocp(M%[-1779527159039"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

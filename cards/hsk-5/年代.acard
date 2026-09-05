@@ -1,0 +1,32 @@
+{
+  "audio": "5804684253087fa0ae92a4ffe5926665feb36d2a2b3f4c2bdc26248c4880e482.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代",
+      "年"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "年代",
+  "id": "b44f55fa7203623075719f8c",
+  "level": 5,
+  "meaning": "era, decade",
+  "pinyin": "niándài",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l<jL5;cpkW-1779527161601"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

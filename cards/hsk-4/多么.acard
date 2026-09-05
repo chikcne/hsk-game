@@ -1,0 +1,31 @@
+{
+  "audio": "595d2077f9ea8d5eb28578a53509e71c19d656aa84e091263dca6904c6b9e7e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "多"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "多么",
+  "id": "d32f6db9c055be8000c91fd7",
+  "level": 4,
+  "meaning": "how, so, what",
+  "pinyin": "duōme",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-x=hMdiBe2p-1779527159983"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

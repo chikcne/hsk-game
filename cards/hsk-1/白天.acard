@@ -1,0 +1,32 @@
+{
+  "audio": "2aabbfef4c2c734648a6b27104be1dcb2971c56ef151d824dea408ebcae42986.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天",
+      "白"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "白天",
+  "id": "104099cc5f3a9bebb39be860",
+  "level": 1,
+  "meaning": "daytime",
+  "pinyin": "báitiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-xC5q0whIU1-1779527158808"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

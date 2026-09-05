@@ -1,0 +1,33 @@
+{
+  "audio": "e1da725d3b84f59504639205fc276efd084d202803f094eea11b5417d0388ddf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开",
+      "玩",
+      "笑"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开玩笑",
+  "id": "0175f5473e82e21ec63cdbcc",
+  "level": 4,
+  "meaning": "make fun of",
+  "pinyin": "kāi wánxiào",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Qj]kteAH3l-1779527160222"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

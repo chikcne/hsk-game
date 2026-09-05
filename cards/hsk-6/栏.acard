@@ -1,0 +1,29 @@
+{
+  "audio": "50b38659483158cc841186b7bd4e242d2e94df8ec6add27189f94434afeb51a1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "栏",
+  "id": "1ac5f2df8eebc3cd938e528e",
+  "level": 6,
+  "meaning": "railing, column",
+  "pinyin": "lán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-817-1779527163220"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

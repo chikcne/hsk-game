@@ -1,0 +1,31 @@
+{
+  "audio": "6396245e2fc4421b8de25b62f24c9331a0409bc6878a6e0933cc45a8b2592665.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "福"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "福利",
+  "id": "5148c5da1872cbe094acd9e1",
+  "level": 6,
+  "meaning": "welfare, benefit; to provide welfare",
+  "pinyin": "fúlì",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-403-1779527162806"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

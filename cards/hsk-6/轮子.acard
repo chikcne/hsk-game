@@ -1,0 +1,32 @@
+{
+  "audio": "d6e054fd673728892b505af4f90d95812f3cac56d5c9ae1b6529b669904baaa8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子",
+      "轮"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "轮子",
+  "id": "e207dc8c69b75ade7db28d07",
+  "level": 6,
+  "meaning": "wheel",
+  "pinyin": "lúnzi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-879-1779527163282"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

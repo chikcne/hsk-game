@@ -1,0 +1,31 @@
+{
+  "audio": "e3165658285645b8aabec0606167ec0c1a3e33ecd8dcfb0a6bd278c4e2b0ee98.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "方"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "方言",
+  "id": "6d44ae14f8fa3d949ea6b632",
+  "level": 6,
+  "meaning": "dialect",
+  "pinyin": "fāngyán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-371-1779527162774"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

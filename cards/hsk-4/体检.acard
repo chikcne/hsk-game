@@ -1,0 +1,29 @@
+{
+  "audio": "0762a6708dad7f94f1a29056dc2ca5bb44ab224c7a32c11457b96dc61890596e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "体检",
+  "id": "3f97e9a5b51d362d846c6b0e",
+  "level": 4,
+  "meaning": "to undergo a physical examination, to have a medical checkup",
+  "pinyin": "tǐjiǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-n7s7wRPoTC-1779527160535"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

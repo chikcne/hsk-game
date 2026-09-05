@@ -1,0 +1,32 @@
+{
+  "audio": "a858be9afb57207db66b68a817043bc45d27969573c2ed672c56b1dcb7afff64.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "准",
+      "批"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "批准",
+  "id": "da221174df8e2a8692877295",
+  "level": 5,
+  "meaning": "to approve",
+  "pinyin": "pīzhǔn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-QyKP^o2-~<-1779527161630"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

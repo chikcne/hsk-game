@@ -1,0 +1,31 @@
+{
+  "audio": "81c53b6225e6c775e071a046f322bf09fbc8dd0df1de4c558850dba66079a210.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "见"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遇见",
+  "id": "d42522eb40c12029411a91ca",
+  "level": 3,
+  "meaning": "to meet",
+  "pinyin": "yùjiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-jO>m8RjCq`-1779527159757"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

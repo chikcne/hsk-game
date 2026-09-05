@@ -1,0 +1,32 @@
+{
+  "audio": "381e163b82758519c1f2c61f17b2282f344f9e86296251cee814dca75da8de81.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "信",
+      "短"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "短信",
+  "id": "ae3955bbaff732b2f68496e9",
+  "level": 4,
+  "meaning": "text message",
+  "pinyin": "duǎnxìn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r.1]^7],Ml-1779527159975"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

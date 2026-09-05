@@ -1,0 +1,29 @@
+{
+  "audio": "19409cc15dd2ef5f351d4794849348f85d06c24a7ec546e7e377306672a28541.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "还",
+  "id": "f2afb6d94745cfa483743945",
+  "level": 3,
+  "meaning": "to return, to give back",
+  "pinyin": "huán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-l?<#W>4.x6-1779527159481"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

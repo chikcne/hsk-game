@@ -1,0 +1,32 @@
+{
+  "audio": "fc336f39f6c1c6656304b75f84860d6eb4bfdb0536e38eb3941b35230963768a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为",
+      "止"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "为止",
+  "id": "613345b0b9b3b095d6cef54a",
+  "level": 6,
+  "meaning": "up to, until",
+  "pinyin": "wéizhǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1374-1779527163777"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "7413221740bff264019fe34605ee57dc074dc2a289e961207bdac6e8226b3151.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "试",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "面试",
+  "id": "3837697eb1da0d201751b774",
+  "level": 4,
+  "meaning": "interview, audition; to interview",
+  "pinyin": "miànshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-b`8K%T`:FE-1779527160313"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

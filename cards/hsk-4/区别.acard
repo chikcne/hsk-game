@@ -1,0 +1,32 @@
+{
+  "audio": "387fe10511428ba044f4090e680f263eeeee68405d1dd2571a0d2efa012aedb0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "别",
+      "区"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "区别",
+  "id": "6e03ab6403742ac78fcb2c82",
+  "level": 4,
+  "meaning": "difference; to distinguish, to differ",
+  "pinyin": "qūbié",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Jq_j:Hp%t9-1779527160397"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

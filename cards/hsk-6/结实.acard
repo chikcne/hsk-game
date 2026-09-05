@@ -1,0 +1,31 @@
+{
+  "audio": "63cd6c3cdb0ba9de5c46a605721a0cf2713e1e251176fc626308c14f4aa5943d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "结"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "结实",
+  "id": "212b6476f7c35d49d69517a6",
+  "level": 6,
+  "meaning": "sturdy, strong",
+  "pinyin": "jiēshi",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-684-1779527163087"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

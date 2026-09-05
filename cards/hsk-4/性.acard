@@ -1,0 +1,29 @@
+{
+  "audio": "ea9a435bcfc28abc8de8add1209cc154ec875d66becf19ec5198f2182e7bf797.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "性",
+  "id": "c9cf6a030cf8e1beeccab674",
+  "level": 4,
+  "meaning": "suffix meaning nature, character, quality",
+  "pinyin": "xìng",
+  "pos": "suffix",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-tFcVFA!!Ml-1779527160631"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

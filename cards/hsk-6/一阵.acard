@@ -1,0 +1,32 @@
+{
+  "audio": "859604ada891684605783013aad58c958360aebb29f78c9c640ffa7b4b0fb457.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "阵"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一阵",
+  "id": "1b757a20740c291276b33f3d",
+  "level": 6,
+  "meaning": "a period of, a burst of",
+  "pinyin": "yízhèn",
+  "pos": "数量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1557-1779527163960"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

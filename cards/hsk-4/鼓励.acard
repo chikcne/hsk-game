@@ -1,0 +1,31 @@
+{
+  "audio": "4721f66c3da066444e713374780706d11ef8f3fc4ee121fa251330727e51e82f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "鼓"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鼓励",
+  "id": "572a3810ec6dbe0e1433f222",
+  "level": 4,
+  "meaning": "to encourage",
+  "pinyin": "gǔlì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zE?%uvo1U|-1779527160068"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

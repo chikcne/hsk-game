@@ -1,0 +1,32 @@
+{
+  "audio": "2d65758ead7da2993091463124b3ff160d948125fbc51724ce6dffa73924aad6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "免",
+      "费"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "免费",
+  "id": "44fc992d41c19864895acf30",
+  "level": 4,
+  "meaning": "free of charge, to be free",
+  "pinyin": "miǎnfèi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-l%IfK]b>$w-1779527160311"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

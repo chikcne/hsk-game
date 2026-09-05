@@ -1,0 +1,29 @@
+{
+  "audio": "a6709678d8b1f1ed65b59c988716c15ca12eca818c83c8a78723840a1faaf49a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "叔叔",
+  "id": "9ee9ff97ac69c8b7c7ee8172",
+  "level": 3,
+  "meaning": "uncle",
+  "pinyin": "shūshu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-KjVmp$T]8Y-1779527159644"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

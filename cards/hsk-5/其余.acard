@@ -1,0 +1,31 @@
+{
+  "audio": "a782f63c7af42b391648479680e75c492aa6a8c246ee1b3ab7b45a4a18ca59e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "其"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "其余",
+  "id": "6d0447701ffc1a40098f70da",
+  "level": 5,
+  "meaning": "the rest, the others",
+  "pinyin": "qíyú",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wL!lJLuRV$-1779527161658"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

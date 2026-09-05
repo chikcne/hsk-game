@@ -1,0 +1,32 @@
+{
+  "audio": "13455a13ff9707fcb4b7051effd8808be4d42d6ec2561c4ac8063330db45e20c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "理",
+      "解"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "理解",
+  "id": "08ba1d111de4718c19164681",
+  "level": 4,
+  "meaning": "to understand, to comprehend",
+  "pinyin": "lǐjiě",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Fkv#syYI=&-1779527160264"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

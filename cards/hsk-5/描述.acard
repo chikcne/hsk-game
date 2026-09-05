@@ -1,0 +1,29 @@
+{
+  "audio": "d8f7e90aa5cdf83ab000ae49ab0ae4df324ec1545d28871342359820795de495.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "描述",
+  "id": "90c151ebb58b22e238a5d2a6",
+  "level": 5,
+  "meaning": "to describe",
+  "pinyin": "miáoshù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bKy|0@IX]6-1779527161574"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "27b6551f78bbb0855f8110ccbf4672b29cdd6b4bc9013b7a56288f87fd2b01fa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "称"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "称赞",
+  "id": "f94d4a092a6c0d257a221458",
+  "level": 5,
+  "meaning": "to praise, to commend",
+  "pinyin": "chēngzàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-h}uE`=75/#-1779527160938"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

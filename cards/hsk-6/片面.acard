@@ -1,0 +1,32 @@
+{
+  "audio": "b729324609bbdeb8be5acc07e28ffdc931f38645e8dec667e9d0199a7bf5fdd5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "片",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "片面",
+  "id": "ce21bef7d3aa29f08d8ac9e9",
+  "level": 6,
+  "meaning": "one-sided",
+  "pinyin": "piànmiàn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-988-1779527163391"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

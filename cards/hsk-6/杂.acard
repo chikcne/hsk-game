@@ -1,0 +1,29 @@
+{
+  "audio": "bacafc7f1186cafb21d28293760c8a605a649e8738f69e106fc6fe60e41e1044.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "杂",
+  "id": "8e6e64cf6f550c40f54d94af",
+  "level": 6,
+  "meaning": "miscellaneous, mixed",
+  "pinyin": "zá",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1638-1779527164041"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

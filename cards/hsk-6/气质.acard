@@ -1,0 +1,31 @@
+{
+  "audio": "925788c8ce7a783c1c4e53b0f846bb9aef377998695c7969be0ebbacd70f1c15.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "气质",
+  "id": "e35d82df1c733615cde98fe6",
+  "level": 6,
+  "meaning": "temperament",
+  "pinyin": "qìzhì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1028-1779527163431"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

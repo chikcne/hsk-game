@@ -1,0 +1,31 @@
+{
+  "audio": "4bcb929db6e5509be863f230b575b2e9708f367d5ee0f89c99057cd68d32bceb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "回"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "回复",
+  "id": "efd89fbf29c509c61a6cb1b0",
+  "level": 4,
+  "meaning": "reply",
+  "pinyin": "huífù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zJf$R[@JA%-1779527160110"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

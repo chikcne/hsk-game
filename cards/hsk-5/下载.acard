@@ -1,0 +1,31 @@
+{
+  "audio": "b3a59bdb908dae7cf5bab7fc1b6f60a8d92de559660830fedb96d10ab0b96ee0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下载",
+  "id": "12f0c2e140fc487fbc1d2bda",
+  "level": 5,
+  "meaning": "to download",
+  "pinyin": "xiàzài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ear~C08Rg--1779527162033"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

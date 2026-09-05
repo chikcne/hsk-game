@@ -1,0 +1,31 @@
+{
+  "audio": "fb2715372c76cc4c709f333380bec9fc5faab6c91f848474e2fc02e219accd16.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "争"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "战争",
+  "id": "45e31fce4e9e69b919196a65",
+  "level": 6,
+  "meaning": "war",
+  "pinyin": "zhànzhēng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1664-1779527164067"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "de76f1c67a146c052db695af642a50ebbae0a4dc17bfca219b5bed23201ab12f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "字"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "字幕",
+  "id": "1f6e5f6fc9e6481a95368a5e",
+  "level": 6,
+  "meaning": "subtitles, captions",
+  "pinyin": "zìmù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1780-1779527164183"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

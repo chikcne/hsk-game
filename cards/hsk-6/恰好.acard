@@ -1,0 +1,31 @@
+{
+  "audio": "e8980f297ee944c673074815f29ee166e023c7c3d8806a60653342df003eff84.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "恰好",
+  "id": "747d22056476914b23cf782e",
+  "level": 6,
+  "meaning": "just right, exactly",
+  "pinyin": "qiàhǎo",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1030-1779527163433"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

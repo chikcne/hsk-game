@@ -1,0 +1,32 @@
+{
+  "audio": "96040fb17be6fe990fede477d98911bf35d2f066d8300b7d6ccf225514bf00ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "向",
+      "方"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "方向",
+  "id": "26e466a2b2c6995d4bf47aa7",
+  "level": 3,
+  "meaning": "direction",
+  "pinyin": "fāngxiàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-AZS$`4N!Pk-1779527159425"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

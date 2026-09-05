@@ -1,0 +1,31 @@
+{
+  "audio": "eb34005240473b6b0fb07e41839fe8a8cc8e7cbee9a69805a491373f48147885.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "长"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "延长",
+  "id": "5f2f3a8d71fcc35d49732f38",
+  "level": 5,
+  "meaning": "to extend, to prolong",
+  "pinyin": "yáncháng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-f[M$lx;Sq)-1779527162129"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "861c41f581ac95a5d557a08e04bafc7556a265f6809fedf856162bd0915c0f39.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "收",
+      "藏"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "收藏",
+  "id": "4bd246462cd195bcee008944",
+  "level": 6,
+  "meaning": "to collect",
+  "pinyin": "shōucáng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1208-1779527163611"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

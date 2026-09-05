@@ -1,0 +1,32 @@
+{
+  "audio": "95c94b6ca883afb66094f342912f21b4068e4060c11bb31f8b4f229b87d25b8b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "奖",
+      "学"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "奖学金",
+  "id": "9de01fa29f128ab8d4a23a27",
+  "level": 4,
+  "meaning": "scholarship, fellowship",
+  "pinyin": "jiǎngxuéjīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-x.}n=h=69i-1779527160164"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

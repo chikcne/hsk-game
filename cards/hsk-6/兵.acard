@@ -1,0 +1,29 @@
+{
+  "audio": "ed2544be8a684c16cf6c85ae4c5bbc7e78af75ebb40c523805ad186fbcee9684.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "兵",
+  "id": "2a0eaa0f05e8e3d21b287d02",
+  "level": 6,
+  "meaning": "soldier",
+  "pinyin": "bīng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-60-1779527162463"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

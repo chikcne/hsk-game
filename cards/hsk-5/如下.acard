@@ -1,0 +1,32 @@
+{
+  "audio": "c99252e6ecec83ab93e0527f406b833922afe7e422227bbb5356772264b18f8b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "如"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "如下",
+  "id": "cf765de01363d2d41199c884",
+  "level": 5,
+  "meaning": "as follows",
+  "pinyin": "rúxià",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tG0X)NU?Dy-1779527161740"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

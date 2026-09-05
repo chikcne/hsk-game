@@ -1,0 +1,32 @@
+{
+  "audio": "12315d5366014c50c7b2297f1f2273cc3406b2cfbd914cc3ad699d29200d8520.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头",
+      "抬"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抬头",
+  "id": "1da19ba2501889f0b2a52de3",
+  "level": 4,
+  "meaning": "to raise one's head, to look up",
+  "pinyin": "táitóu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-k_*=g7?4%:-1779527160519"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

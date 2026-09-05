@@ -1,0 +1,32 @@
+{
+  "audio": "bc3eb8e75cf594e7d189287a9b5f0a5082fa9a08934a07c4c93ed016d079cff9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "热"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热心",
+  "id": "50fb20e4bdae25ebfc319c27",
+  "level": 5,
+  "meaning": "enthusiastic, warmhearted",
+  "pinyin": "rèxīn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-An(8.9@J(~-1779527161719"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

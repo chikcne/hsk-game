@@ -1,0 +1,29 @@
+{
+  "audio": "979c63029d66da9891ff5bfb53ac701df0e1b8737db81abdefcc9cd31a56541a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "播",
+  "id": "6d2916db3d0b04dfe5bae887",
+  "level": 6,
+  "meaning": "to broadcast",
+  "pinyin": "bō",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-62-1779527162465"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

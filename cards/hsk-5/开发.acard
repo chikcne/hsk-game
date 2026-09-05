@@ -1,0 +1,32 @@
+{
+  "audio": "dd6541c096a28d7bda4cd3c510c2ba09435ad17913d8ab60d3432df237336c7e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "开"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开发",
+  "id": "79278bd24377640acb907efd",
+  "level": 5,
+  "meaning": "to develop",
+  "pinyin": "kāifā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-giMT3q;C6P-1779527161452"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

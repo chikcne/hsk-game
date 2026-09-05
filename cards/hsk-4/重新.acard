@@ -1,0 +1,32 @@
+{
+  "audio": "2639c51789e3465ca90987f905ba9c0d26fb9cd57cb817a267f7ae628aa3befb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "新",
+      "重"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "重新",
+  "id": "e25ef92bbb1d1b9f41f31539",
+  "level": 4,
+  "meaning": "again, anew",
+  "pinyin": "chóngxīn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-E>Y?$O^Q,g-1779527159890"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

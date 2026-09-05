@@ -1,0 +1,32 @@
+{
+  "audio": "58022b0d585a0f6d50cf58349f443bef91400485ed22cddeafd9f981cfa421fc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "冷",
+      "静"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "冷静",
+  "id": "8b08de1918c7ac82725aec29",
+  "level": 4,
+  "meaning": "calm, cool-headed",
+  "pinyin": "lěngjìng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-QUFqI;eN1$-1779527160262"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "4335f6b7b429016e26ed725bb798278a8f923277d715c29c7dd3fd76c1b97d6d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "东",
+      "西"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "东西",
+  "id": "bc9cccdae135f61c393eaaf2",
+  "level": 1,
+  "meaning": "thing, object",
+  "pinyin": "dōngxi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-od+Qw?fRhX-1779527158843"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

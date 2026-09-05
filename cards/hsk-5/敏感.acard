@@ -1,0 +1,31 @@
+{
+  "audio": "d2ad4047d901b30e52ee0d1a4d4c03169af32def42f548b7a351e6136a0df07f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "感"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "敏感",
+  "id": "b40d1ab32f6f07f33b39ff2a",
+  "level": 5,
+  "meaning": "sensitive",
+  "pinyin": "mǐngǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-FLpP1N~B`.-1779527161575"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "71d2f33eb5e84f00cc7c0f2803cb56926697ce874bdaa46c666b3b965710d8f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合",
+      "集"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "集合",
+  "id": "61cbfed9d411e32ef1191f9d",
+  "level": 5,
+  "meaning": "to gather, to assemble",
+  "pinyin": "jíhé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wE-wUs?jOn-1779527161333"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

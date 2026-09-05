@@ -1,0 +1,32 @@
+{
+  "audio": "656242f00ca45bf7ed95ddfa905cd1cf3d76f4b0f99d22d61f5ec144b14249c7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "向"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "向上",
+  "id": "edb9fc55d1cf8ddab23aafec",
+  "level": 5,
+  "meaning": "upward; to go up",
+  "pinyin": "xiàngshàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-n&8zV~xep.-1779527162063"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "2194cd7330d590645a8e724a40837dac4cd1c78d599ee52abe4f5b0000cb31bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "经商",
+  "id": "57aefc13ae9e8173359a7b01",
+  "level": 6,
+  "meaning": "to engage in business",
+  "pinyin": "jīngshāng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-716-1779527163119"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

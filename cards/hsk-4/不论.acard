@@ -1,0 +1,31 @@
+{
+  "audio": "1dca8d593c5c5aa3b037352978ae5a2379833e42fcb67d9f2165c0356bff2a93.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不论",
+  "id": "4d172d57536c61a7da77aa95",
+  "level": 4,
+  "meaning": "no matter, regardless",
+  "pinyin": "búlùn",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-cLrE8z,c]c-1779527159851"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

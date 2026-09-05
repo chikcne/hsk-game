@@ -1,0 +1,31 @@
+{
+  "audio": "5f54c9ea7c68f97655e7334109dc07f28fe1c00e9d45c9072f838576839b9298.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保护",
+  "id": "0cf253d13c244224d4a7d486",
+  "level": 4,
+  "meaning": "to protect",
+  "pinyin": "bǎohù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-F![6V/&%;|-1779527159817"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

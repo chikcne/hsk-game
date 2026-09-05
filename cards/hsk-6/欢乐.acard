@@ -1,0 +1,29 @@
+{
+  "audio": "8374ac6b717213be5e80abbd6a4f7f1b43358aba023f0f787d6d176ea2f27d9f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "欢乐",
+  "id": "6009017e36be03f84598f9a1",
+  "level": 6,
+  "meaning": "happy, joyful",
+  "pinyin": "huānlè",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-575-1779527162978"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

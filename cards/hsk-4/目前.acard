@@ -1,0 +1,31 @@
+{
+  "audio": "cb07672998c661e782649c19423db06bd6b9dfa16114d7548cd2df788ebff79b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "目前",
+  "id": "c15520f011606dc9ea241c78",
+  "level": 4,
+  "meaning": "currently, at present",
+  "pinyin": "mùqián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-LD*-gjj%9x-1779527160323"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

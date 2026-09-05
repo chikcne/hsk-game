@@ -1,0 +1,29 @@
+{
+  "audio": "4d6ed3597352189a64ad6a3a4776e23fb2854a4d8adafa7f7af5d763b1883f5b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "玻璃",
+  "id": "9cc0295421db0a949e7477b2",
+  "level": 5,
+  "meaning": "glass",
+  "pinyin": "bōli",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-OSVdcL~;>7-1779527160874"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

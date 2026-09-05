@@ -1,0 +1,32 @@
+{
+  "audio": "9bdd397ae8b1d4f0993278684315a5753aecb796b1476db8b4d8fdb247686e4c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "行",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "进行",
+  "id": "23e9969f4eeebb4a3876238c",
+  "level": 4,
+  "meaning": "to carry out, to conduct, to proceed with, to undertake",
+  "pinyin": "jìnxíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-BU=J-E_h-[-1779527160196"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

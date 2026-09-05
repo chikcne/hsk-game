@@ -1,0 +1,32 @@
+{
+  "audio": "f17507c57f248b2b35f6f057a902ed65dc17de15871ba5ca7d2f1e66da3325b8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "晚",
+      "饭"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "晚饭",
+  "id": "7db6b4f6926d74789a69a786",
+  "level": 1,
+  "meaning": "dinner",
+  "pinyin": "wǎnfàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-sf?2h{66@3-1779527159019"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "d2bfc5be40914631c494fd8b8861416f8786837b1fd1c636e0cd533999176e4c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主导",
+  "id": "177ce306969b1f1f41ef88b7",
+  "level": 6,
+  "meaning": "to lead, to guide; leadership",
+  "pinyin": "zhǔdǎo",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1746-1779527164149"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

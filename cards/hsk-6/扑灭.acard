@@ -1,0 +1,32 @@
+{
+  "audio": "1d5f273725eb2cca179591feb98aafe96d71fb6a82b399e3580c0fd659435ed3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "扑",
+      "灭"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扑灭",
+  "id": "97bc12a2d13641e5176f5b5d",
+  "level": 6,
+  "meaning": "to extinguish",
+  "pinyin": "pūmiè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1010-1779527163413"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "ea679219a297e6ae923a1a48c08d5525768ef35c2da7f61fdab60df96194d0ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "池",
+      "电"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电池",
+  "id": "ef468bee0c83360bd3983a5a",
+  "level": 5,
+  "meaning": "battery",
+  "pinyin": "diànchí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mY+Z#.S6o6-1779527161081"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

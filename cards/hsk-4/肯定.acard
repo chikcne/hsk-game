@@ -1,0 +1,32 @@
+{
+  "audio": "473d404b26c15eaa82bbcceca4b283bc35cf4855d25fa21c2e9b74fa2fce0d73.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定",
+      "肯"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肯定",
+  "id": "3459c7757dae6843d78a0433",
+  "level": 4,
+  "meaning": "to be certain, to be sure, to affirm; positive, affirmative, definite; surely, certainly, definitely",
+  "pinyin": "kěndìng",
+  "pos": "verb、adjective、 adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-M[U+,;oX{{-1779527160238"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

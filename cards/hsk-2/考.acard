@@ -1,0 +1,29 @@
+{
+  "audio": "95577134b5e929aec43e01fc7a8026cae5304dca7bce320dc07cb41d4a6bda44.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "考",
+  "id": "1eabd3e480ec38456e9c5f71",
+  "level": 2,
+  "meaning": "to test, to take an exam",
+  "pinyin": "kǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-J~KC!G>``v-1779527159183"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "fd98852b63cece7781565f4281008e06eb0095e6fa5ac351f130e68eb774442c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "灯"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "灯笼",
+  "id": "3acf2f7f096902d53c59a16a",
+  "level": 6,
+  "meaning": "lantern",
+  "pinyin": "dēnglong",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-285-1779527162688"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

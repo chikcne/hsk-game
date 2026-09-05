@@ -1,0 +1,29 @@
+{
+  "audio": "225bf11f09050a978df34eaa5b889324024585ff62aaab14230975192c1f9a03.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "套",
+  "id": "92533e6fa80e81a82c813f70",
+  "level": 5,
+  "meaning": "set, suit; to cover, to encase; measure word for sets",
+  "pinyin": "tào",
+  "pos": "noun、verb、",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-un;PV0~TLK-1779527161909"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

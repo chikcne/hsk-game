@@ -1,0 +1,32 @@
+{
+  "audio": "7ec69fe60896a8d12cf761517fc601af32404aea1735e5a9abd8f51811fd073d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "楼",
+      "道"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "楼道",
+  "id": "8c761521a511a3a81605b573",
+  "level": 6,
+  "meaning": "corridor, hallway",
+  "pinyin": "lóudào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-860-1779527163263"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

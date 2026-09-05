@@ -1,0 +1,32 @@
+{
+  "audio": "e0d3281f859bc0e8a0aa18cc621e9b614d1a8833663ee4b870ab1d52c66adab8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "送"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发送",
+  "id": "b2a6ddc72e6f7c24c40d5c1c",
+  "level": 4,
+  "meaning": "to send",
+  "pinyin": "fāsòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-KE8b@lc6:9-1779527159989"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

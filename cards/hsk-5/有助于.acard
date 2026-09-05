@@ -1,0 +1,32 @@
+{
+  "audio": "6f2c2748158e4f7d148e63978243d76b38a537a4a3ef50f947790052d7e3c587.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有助于",
+  "id": "d43eba8b874008d1bd462841",
+  "level": 5,
+  "meaning": "to help, to contribute to",
+  "pinyin": "yǒuzhùyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-DA9?pMo9Fg-1779527162217"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

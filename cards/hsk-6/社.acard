@@ -1,0 +1,29 @@
+{
+  "audio": "cd51aa5847da859f07cb0c5f1d859371636fb4c289289ec794644f8b216eb766.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "社",
+  "id": "d4a61ac89cdfc63a014109f4",
+  "level": 6,
+  "meaning": "society",
+  "pinyin": "shè",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1156-1779527163559"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

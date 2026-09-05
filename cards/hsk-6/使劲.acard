@@ -1,0 +1,31 @@
+{
+  "audio": "e9a4f72d57f99969613045f59793699430edf1d4412452e96eed3f7b53355ef9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "使"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "使劲",
+  "id": "b67ecd1721538a7d0c61867e",
+  "level": 6,
+  "meaning": "to exert effort",
+  "pinyin": "shǐjìn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1195-1779527163598"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

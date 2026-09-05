@@ -1,0 +1,31 @@
+{
+  "audio": "36259f6b4d314d5c599d87ca6441f7a20a775b428e35bc5182c7257d81367b9c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "败"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "失败",
+  "id": "88f4e96a94479b8fbbddee1f",
+  "level": 4,
+  "meaning": "to fail; failed, unsuccessful",
+  "pinyin": "shībài",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-GM>cQ,W8yU-1779527160455"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

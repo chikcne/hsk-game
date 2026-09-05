@@ -1,0 +1,29 @@
+{
+  "audio": "deb577b5b3eadb3cb5c7e535342333f74c3b0f6054496bdbad60e1aec4a7f1b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "机械",
+  "id": "b2abd8caef1105f5839d959d",
+  "level": 6,
+  "meaning": "machinery, machine; mechanical",
+  "pinyin": "jīxiè",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-611-1779527163014"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

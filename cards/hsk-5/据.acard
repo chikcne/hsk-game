@@ -1,0 +1,29 @@
+{
+  "audio": "bd9cb0e78af48b9434d44f8890e6bb4669ecaa1abea3fddf772ab34e0e2a423f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "据",
+  "id": "4b6a8c8f911d4e55f0515359",
+  "level": 5,
+  "meaning": "according to, based on",
+  "pinyin": "jù",
+  "pos": "preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Om.QGq1w($-1779527161439"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

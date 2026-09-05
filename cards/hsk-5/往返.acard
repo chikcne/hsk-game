@@ -1,0 +1,31 @@
+{
+  "audio": "17ca03e27f5a6f5e356dd7238e3f53a0a80c6aec41758b7ab62374352df88383.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "往"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "往返",
+  "id": "857f07b110cf6adc546debcd",
+  "level": 5,
+  "meaning": "to go back and forth",
+  "pinyin": "wǎngfǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HRU6JHie_P-1779527161981"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

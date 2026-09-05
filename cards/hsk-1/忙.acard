@@ -1,0 +1,29 @@
+{
+  "audio": "98fc29edd0a233dda2b0ac98af669500e8a8059a2fd381cb8c34a615885e49d5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "忙",
+  "id": "5d81e4d6d63d61d4d8ccfef1",
+  "level": 1,
+  "meaning": "busy; to be busy",
+  "pinyin": "máng",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-H<!S_Ez~>N-1779527158921"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

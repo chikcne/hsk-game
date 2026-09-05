@@ -1,0 +1,32 @@
+{
+  "audio": "822485f03525a4d074d68c57dc12c0270240e73b4e6b3c0b7a6cf44ece5a4818.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有用",
+  "id": "4c9f95562045beb55f44f0ff",
+  "level": 3,
+  "meaning": "useful",
+  "pinyin": "yǒuyòng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-fPW=#kkpd0-1779527159751"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

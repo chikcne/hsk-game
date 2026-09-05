@@ -1,0 +1,32 @@
+{
+  "audio": "c72d88df79b8abd5ed4af8dcea59e57dc31533ae12f4da8493eeba4e26de2b41.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "场面",
+  "id": "fd94eb415dfadc43076b03e9",
+  "level": 6,
+  "meaning": "scene, spectacle",
+  "pinyin": "chǎngmiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-136-1779527162539"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

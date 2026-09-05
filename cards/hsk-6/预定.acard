@@ -1,0 +1,31 @@
+{
+  "audio": "f2cea03fd74ef9c3f64a20d8171e8b719bc61bf9812bad975eae981652b467d0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "预定",
+  "id": "d69689e593bb528acd0129b0",
+  "level": 6,
+  "meaning": "to book, to reserve",
+  "pinyin": "yùdìng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1610-1779527164013"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

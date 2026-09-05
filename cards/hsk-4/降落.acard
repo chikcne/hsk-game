@@ -1,0 +1,32 @@
+{
+  "audio": "cdba2f361b40019ecebff48db305282d2d4e5845c99bbd0b5f3b5a400f651c3a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "落",
+      "降"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "降落",
+  "id": "3237bc0cb074105bc30eb378",
+  "level": 4,
+  "meaning": "to descend, to land, to touch down",
+  "pinyin": "jiàngluò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-wHPmt0DO`r-1779527160168"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

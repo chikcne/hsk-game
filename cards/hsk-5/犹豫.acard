@@ -1,0 +1,29 @@
+{
+  "audio": "29656713923aca52bb6d24e8838bbdb131fa79aaec0a78a05ad1c66fd3cbc275.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "犹豫",
+  "id": "07e1bbdf66bf4014f4b26b2f",
+  "level": 5,
+  "meaning": "hesitant, indecisive",
+  "pinyin": "yóuyù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jvL.k%eT-l-1779527162211"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

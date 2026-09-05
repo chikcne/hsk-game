@@ -1,0 +1,32 @@
+{
+  "audio": "026e1d7469708b0c225154ffcb5ba79b04e3b38cbcc742229e7fa4d916eef9b1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "常用",
+  "id": "c10a7e248d9ba170ac9bad74",
+  "level": 3,
+  "meaning": "commonly used",
+  "pinyin": "cháng yòng",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-1xx#{;9W=-1779527159359"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

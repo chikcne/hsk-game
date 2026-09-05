@@ -1,0 +1,31 @@
+{
+  "audio": "fc84a2775ef89dc749a151c25ea435b4b369f5fe6e8ac5d06bc059fd63c504d2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "厂"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "厂商",
+  "id": "eacc4c0bf81e289998395113",
+  "level": 6,
+  "meaning": "manufacturer, company",
+  "pinyin": "chǎngshāng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-137-1779527162540"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "f6907614946984233f722d3a34fb6a19a69a17b6bf05d774cabc745af6e3d738.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "孩子",
+  "id": "0b6731d6c9fcd55690914f89",
+  "level": 1,
+  "meaning": "child",
+  "pinyin": "háizi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-W:/=jui`J-1779527158871"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

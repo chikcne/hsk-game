@@ -1,0 +1,32 @@
+{
+  "audio": "6a188733382cabbabf0aba1cf95339eed8727928993243f65b0a467100169ba0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "在",
+      "存"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "存在",
+  "id": "76bd35f2bb6bb5246155f59d",
+  "level": 5,
+  "meaning": "to exist",
+  "pinyin": "cúnzài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-cpTm{)b@yV-1779527161013"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

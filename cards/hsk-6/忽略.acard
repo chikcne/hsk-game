@@ -1,0 +1,29 @@
+{
+  "audio": "9e1bd0ce8b63df39623a99925c1f9cdc368dde8f98db6f864aa0bbb36b2a5fcf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "忽略",
+  "id": "a5bd1dd4a13a4193fa628aae",
+  "level": 6,
+  "meaning": "to neglect, to overlook",
+  "pinyin": "hūlüè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-557-1779527162960"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

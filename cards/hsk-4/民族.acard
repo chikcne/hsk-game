@@ -1,0 +1,31 @@
+{
+  "audio": "9a2f44b36e3592816a14e1679dccbf3cabc498165cab3a99ce0b3f18a70f2960.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "族"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "民族",
+  "id": "83b0ccb035241a285b549e5c",
+  "level": 4,
+  "meaning": "ethnic group, nationality",
+  "pinyin": "mínzú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-A8W}onyGnH-1779527160315"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

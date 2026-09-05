@@ -1,0 +1,29 @@
+{
+  "audio": "a9bd05cce4b7e052ec2ea2604da5aa7506cafb28c80b15574a44b9ceabe2d29c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实质",
+  "id": "b9666a657b67a272cd5ed0d1",
+  "level": 6,
+  "meaning": "substance, essence",
+  "pinyin": "shízhì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1193-1779527163596"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

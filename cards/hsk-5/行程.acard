@@ -1,0 +1,31 @@
+{
+  "audio": "7d1273fe99dd094eedb91819a44f1f0369acdd1d15ffdfa0c2e0466a832b8e58.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "行"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "行程",
+  "id": "4ec78cbd426e32737f87f77f",
+  "level": 5,
+  "meaning": "itinerary",
+  "pinyin": "xíngchéng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jhM)oZP]_--1779527162089"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

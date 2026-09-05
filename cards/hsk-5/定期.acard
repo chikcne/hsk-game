@@ -1,0 +1,32 @@
+{
+  "audio": "6ef0b64dda5796d33817bed07c02cefe1590101f67fd577bf068b55d9d90295f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "定期",
+  "id": "0c0cc688aabe496ffd2d9e7d",
+  "level": 5,
+  "meaning": "to fix regularly; regular",
+  "pinyin": "dìngqī",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O{f$Qd#RZQ-1779527161089"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

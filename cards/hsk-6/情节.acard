@@ -1,0 +1,31 @@
+{
+  "audio": "f04b6019d731984d7e169e466596270c74a2935dd6e9371610a9dff073c007d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "节"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "情节",
+  "id": "b657594869eb6df795d0695f",
+  "level": 6,
+  "meaning": "plot",
+  "pinyin": "qíngjié",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1065-1779527163468"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

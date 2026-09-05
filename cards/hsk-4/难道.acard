@@ -1,0 +1,32 @@
+{
+  "audio": "28b1416b00bc5b2999a6a4972ed1d3963bc5478b7ab9101610b2b6f0d8ba17c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "道",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难道",
+  "id": "f7ea1e17211d665eb38ac503",
+  "level": 4,
+  "meaning": "could it be that...?",
+  "pinyin": "nándào",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-rFchf<PlS(-1779527160326"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

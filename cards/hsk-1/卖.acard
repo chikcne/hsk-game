@@ -1,0 +1,29 @@
+{
+  "audio": "78c093c7922e45440a794426bf896bbfde86909835b5d05a05f0084ea078ffc8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "卖",
+  "id": "52d7e16b86c4ca6f78e17ccd",
+  "level": 1,
+  "meaning": "to sell; betray (one's country or friends); spare no effort; show off; make a living by one's skill.",
+  "pinyin": "mài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-g,{v_-@.z?-1779527158920"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

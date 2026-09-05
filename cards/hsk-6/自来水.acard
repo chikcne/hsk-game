@@ -1,0 +1,33 @@
+{
+  "audio": "bac7665b6a0afc618f8ed9f548a4495ecc5845fe0e9e0d96fe9854bc26da6d73.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "来",
+      "水",
+      "自"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自来水",
+  "id": "c46664617ee2cff24fbb1cfd",
+  "level": 6,
+  "meaning": "running water, tap water",
+  "pinyin": "zìláishuǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1778-1779527164181"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

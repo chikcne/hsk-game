@@ -1,0 +1,31 @@
+{
+  "audio": "020e43ae099e1fff80e8b652382622753b89120d8f46710bcd3c2c9ade18d1e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "流"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "潮流",
+  "id": "700edd8d0df10c95421b727f",
+  "level": 6,
+  "meaning": "trend, tide",
+  "pinyin": "cháoliú",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-143-1779527162546"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

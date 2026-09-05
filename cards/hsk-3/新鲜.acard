@@ -1,0 +1,32 @@
+{
+  "audio": "823d4564ef0771b0ea110637eaf1ea0b3d8b9fba4c4e8f84248c274e9e253b40.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "新",
+      "鲜"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "新鲜",
+  "id": "cb8455837c0742a729690951",
+  "level": 3,
+  "meaning": "fresh",
+  "pinyin": "xīnxiān",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-koPPi(!K_~-1779527159708"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

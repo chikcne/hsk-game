@@ -1,0 +1,32 @@
+{
+  "audio": "559ba748447df721890a6fb9a3cf5ad3a3fe99b1d63c48f4e7562d9abfd7bf8c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加",
+      "深"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加深",
+  "id": "3313912999a6e0180f96ea2d",
+  "level": 5,
+  "meaning": "to deepen",
+  "pinyin": "jiāshēn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EI1Nm.)/%u-1779527161358"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

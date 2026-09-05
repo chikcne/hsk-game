@@ -1,0 +1,31 @@
+{
+  "audio": "e9b9197b97b0d8d1073eb091ebea46ea3b8dfccc98d14b1fd9fa669feb45a3be.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学历",
+  "id": "5d8182e1086bf3f413f6763d",
+  "level": 5,
+  "meaning": "educational background",
+  "pinyin": "xuélì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O-W8o%0K-!-1779527162114"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

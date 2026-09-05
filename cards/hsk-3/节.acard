@@ -1,0 +1,29 @@
+{
+  "audio": "8f309b76b619dde095ec13ad045eea4523aed82785602753e612d34e8f98682d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "节",
+  "id": "4dd3a3d24381bda8c6b89a2e",
+  "level": 3,
+  "meaning": "measure word for segments, sections, lessons; festival, joint; (to save, to control)",
+  "pinyin": "jié",
+  "pos": "classifier、noun、 （verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-M~H#]0;S}}-1779527159511"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

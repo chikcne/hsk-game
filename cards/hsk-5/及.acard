@@ -1,0 +1,29 @@
+{
+  "audio": "fbb1b3eb0fa7bc0891e065586437713aef0ba22a9ac3a5bbc7d3d66a1714f740.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "及",
+  "id": "cd54eddb55546f3f57d357cc",
+  "level": 5,
+  "meaning": "and, as well as",
+  "pinyin": "jí",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-cNC=xWf14Y-1779527161328"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

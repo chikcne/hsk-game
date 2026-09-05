@@ -1,0 +1,29 @@
+{
+  "audio": "ea82b659700d86bbc44ee105e9f3a9c34c297b28fb1c25f6c004f3e173e09a48.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "民俗",
+  "id": "f5b68da1e9607bde151373be",
+  "level": 6,
+  "meaning": "folk custom",
+  "pinyin": "mínsú",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-920-1779527163323"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

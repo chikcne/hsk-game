@@ -1,0 +1,31 @@
+{
+  "audio": "58d5f6a4bcdb95f2317855ec66e16cbc350d6e5240d367801a084f98ed2e1843.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "望"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "欲望",
+  "id": "e2f1728387aea79fd68ae420",
+  "level": 6,
+  "meaning": "desire",
+  "pinyin": "yùwàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1614-1779527164017"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

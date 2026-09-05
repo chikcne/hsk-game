@@ -1,0 +1,31 @@
+{
+  "audio": "397ef1bbf6fbd7d852d41474415845ae2dc82c90e5f529c764e4810c0a3bf110.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "叫"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "叫作",
+  "id": "d1ef14037a5836c57aa5141c",
+  "level": 4,
+  "meaning": "be called, be known as",
+  "pinyin": "jiàozuò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-f^AYj8@AeM-1779527160181"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

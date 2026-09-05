@@ -1,0 +1,32 @@
+{
+  "audio": "8ae3a6ccad1f2e9f56cff2eeb6cec057a0f58b9cb5a0c24090290affa4688d3f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "放"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "放学",
+  "id": "35f62b73a7ca4aaf76da9cb5",
+  "level": 3,
+  "meaning": "school is over",
+  "pinyin": "fàngxué",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-g<!kD{}4l&-1779527159430"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

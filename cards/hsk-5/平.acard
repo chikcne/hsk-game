@@ -1,0 +1,29 @@
+{
+  "audio": "f402e8508d70379f45962fd9e7695723ea5d4058ee0c4d2be8d46db868a4e6c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平",
+  "id": "bdb4ab99e0c79d031cdf1812",
+  "level": 5,
+  "meaning": "flat, level; (to level)",
+  "pinyin": "píng",
+  "pos": "adjective、 （verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-z}Ux881A>J-1779527161640"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

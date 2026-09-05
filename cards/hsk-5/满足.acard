@@ -1,0 +1,32 @@
+{
+  "audio": "f9c0d5f5ec8c1f5b6aaaf7956f3eb9d2275af5a94f25b6a4289c999f9b67ebf6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "满",
+      "足"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "满足",
+  "id": "7a4af6400eb73dfc328238a3",
+  "level": 5,
+  "meaning": "to satisfy",
+  "pinyin": "mǎnzú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-o~=VU@@@h;-1779527161553"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

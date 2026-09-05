@@ -1,0 +1,29 @@
+{
+  "audio": "ae7a76fc7c20c3474be7d6245bd3f2fbd8380409fa0d9bbfed52773f6bddda82.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "巧",
+  "id": "fbda072a692c7a5d63c9fea0",
+  "level": 4,
+  "meaning": "skillful, clever, opportune",
+  "pinyin": "qiǎo",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bPXFniY:BF-1779527160385"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

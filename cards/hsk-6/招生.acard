@@ -1,0 +1,32 @@
+{
+  "audio": "e907bca2fce762539e57e9e61e9caa15fbb0ed1de0e2a4e6aa46f5b1f704f012.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "招",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "招生",
+  "id": "d504542912faf7b4d27be44a",
+  "level": 6,
+  "meaning": "to recruit students",
+  "pinyin": "zhāoshēng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1671-1779527164074"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

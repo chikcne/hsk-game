@@ -1,0 +1,33 @@
+{
+  "audio": "524113c93525a53af57502a610ce1366432753337d7b7fda4833bcce6012580e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "电",
+      "锅",
+      "饭"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电饭锅",
+  "id": "fd5ff1788cd453ec1a9fea55",
+  "level": 6,
+  "meaning": "rice cooker",
+  "pinyin": "diànfànguō",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-300-1779527162703"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "5d238c27beef0740fcdf12e5f7b2b17575d36d7a51adfb1a973cba3cecd62e47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "低"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "低于",
+  "id": "9f726222681a28f2b61abaca",
+  "level": 4,
+  "meaning": "to be lower than",
+  "pinyin": "dīyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-yWLVMDJtZ6-1779527159955"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

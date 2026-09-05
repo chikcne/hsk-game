@@ -1,0 +1,29 @@
+{
+  "audio": "8ab33086ee18b300cd623a59fdd6cc4c59ea43195b18ea3f7f8389ebdc705457.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "枝",
+  "id": "cee88263e0f7ef1aa69e25b3",
+  "level": 6,
+  "meaning": "branch; measure word for long, thin objects",
+  "pinyin": "zhī",
+  "pos": "名、量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1695-1779527164098"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

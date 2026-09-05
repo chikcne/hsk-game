@@ -1,0 +1,29 @@
+{
+  "audio": "c68a731a7fd87aa165e864f57559ee09af6e87f042760f779b89fe5c21d0910f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "锻炼",
+  "id": "214544dc2c81d38e410a0036",
+  "level": 3,
+  "meaning": "to exercise",
+  "pinyin": "duànliàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-gAqlS.9}a;-1779527159411"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

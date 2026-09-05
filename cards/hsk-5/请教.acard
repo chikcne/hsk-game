@@ -1,0 +1,32 @@
+{
+  "audio": "0c93da82e6f6ecc2697e60833657366407b364a49ca0dd8bf584ef98857ea993.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "教",
+      "请"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "请教",
+  "id": "04166bead0bf62f2e23bcae5",
+  "level": 5,
+  "meaning": "to ask for advice",
+  "pinyin": "qǐngjiào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-A`gW*#i3x-1779527161695"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

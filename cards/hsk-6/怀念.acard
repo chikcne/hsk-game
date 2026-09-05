@@ -1,0 +1,32 @@
+{
+  "audio": "9e46bd0a09e914f4486367bed783a3c3a1d4ef2ea676a3d5acf8763ea005211f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "念",
+      "怀"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "怀念",
+  "id": "f745157bd5b0f97fe9502b73",
+  "level": 6,
+  "meaning": "to cherish the memory of",
+  "pinyin": "huáiniàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-573-1779527162976"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

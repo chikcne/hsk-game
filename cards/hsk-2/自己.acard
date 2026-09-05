@@ -1,0 +1,31 @@
+{
+  "audio": "01f92cf78f9edf28506538216b925d1d320a6260ee91cbe9aeb363a274b8204d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "自"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自己",
+  "id": "1453f2bb53aa7036e4f8b09f",
+  "level": 2,
+  "meaning": "oneself",
+  "pinyin": "zìjǐ",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-AOL+rD>Nrm-1779527159297"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

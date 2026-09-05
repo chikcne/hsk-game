@@ -1,0 +1,32 @@
+{
+  "audio": "3c80a07e4d6791f97ca65883824aa067aac39fcd5e47abc29a8307d9dadf2418.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "容易"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好容易",
+  "id": "827cc118c424eec887c4cfc3",
+  "level": 6,
+  "meaning": "with difficulty",
+  "pinyin": "hǎoróngyì",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-534-1779527162937"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

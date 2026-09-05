@@ -1,0 +1,29 @@
+{
+  "audio": "50b38659483158cc841186b7bd4e242d2e94df8ec6add27189f94434afeb51a1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拦",
+  "id": "812cae4159938444f1241137",
+  "level": 6,
+  "meaning": "to block",
+  "pinyin": "lán",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-816-1779527163219"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

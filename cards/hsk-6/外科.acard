@@ -1,0 +1,32 @@
+{
+  "audio": "ac46da2315d63e7c729d21dbeebb24a6b3372d1d79cf11541b613103421f6f64.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外",
+      "科"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外科",
+  "id": "d920bb8efc86a13c24f32c84",
+  "level": 6,
+  "meaning": "surgery",
+  "pinyin": "wàikē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1354-1779527163757"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

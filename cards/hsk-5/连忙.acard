@@ -1,0 +1,32 @@
+{
+  "audio": "07410bca60078f036d78729eac6549d60c1b255fae2a7ad7b08e45c6c97ba394.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "忙",
+      "连"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "连忙",
+  "id": "372fa1674d9cdd830ba3cfad",
+  "level": 5,
+  "meaning": "hurriedly, quickly",
+  "pinyin": "liánmáng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ld{Rx+#UGi-1779527161516"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "4ea7ea02e0d48d279864521345536cf53ceb71ebc04da8c9d218a5be09709016.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "迟",
+  "id": "aa819798a9896c183f7d042b",
+  "level": 4,
+  "meaning": "late, delayed",
+  "pinyin": "chí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nTNjCtN;#$-1779527159888"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "9781e603e1dc9c10dad49e45a0e1d64a22154b075802a2f5ab6142e01bd9a81b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出行",
+  "id": "7cbfe41f3eb6242016285c62",
+  "level": 4,
+  "meaning": "to travel, to go out",
+  "pinyin": "chūxíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o-j</TJ/7~-1779527159894"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "1f081be93740793a0dd4398dd8f6365b70749107e71516106e0edfdd1108c7f7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "转"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转动",
+  "id": "6e7eec28fc1fe8bc6ed04ee3",
+  "level": 6,
+  "meaning": "to rotate, to spin",
+  "pinyin": "zhuàndòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1770-1779527164173"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "bbcbc35aa8dbc3feba5e78cabb122fa5734d4c0d397f329456c407beaa7bf49c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "基本",
+  "id": "dea8d303e746e1a3dcc2d8c2",
+  "level": 4,
+  "meaning": "basic, fundamental, essential; basically, essentially, on the whole",
+  "pinyin": "jīběn",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-n2/Q)mA.zQ-1779527160122"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

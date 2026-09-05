@@ -1,0 +1,29 @@
+{
+  "audio": "e1fda3b4f5be424e3d1802c87a20ade7a490f5c1c05ab041a24aeaed7cd2b4c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主食",
+  "id": "1c9f17846024f551ff4c171c",
+  "level": 5,
+  "meaning": "staple food",
+  "pinyin": "zhǔshí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-iIc48L*zX;-1779527162349"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

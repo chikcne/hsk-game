@@ -1,0 +1,29 @@
+{
+  "audio": "ae289fe60d372ba5e633c843e6e6c8340a04af5b2028f76996f1c6a95fb9ebd0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "从",
+  "id": "865f3e3018645d5263c7eebd",
+  "level": 2,
+  "meaning": "from; (ever)",
+  "pinyin": "cóng",
+  "pos": "preposition、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-AieI0{wCwl-1779527159127"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

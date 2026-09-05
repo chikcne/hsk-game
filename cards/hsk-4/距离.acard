@@ -1,0 +1,32 @@
+{
+  "audio": "53ecadf937b5bc63cbf80d99050c0d2ec4196cd607065cf6646ad749998351f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "离",
+      "距"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "距离",
+  "id": "b47a04e1fbdb420f4cf82af6",
+  "level": 4,
+  "meaning": "to be away from, to be at a distance from; distance, gap",
+  "pinyin": "jùlí",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-QF9]+0$I$e-1779527160220"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "e496a129c222c8e5c3c456fbde32209f15f6deac3a29d0aad6a1a03e4cb33b75.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "喜事",
+  "id": "11ac352d35933c546adf11b6",
+  "level": 6,
+  "meaning": "happy event",
+  "pinyin": "xǐshì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1406-1779527163809"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

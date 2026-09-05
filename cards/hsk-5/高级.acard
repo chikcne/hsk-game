@@ -1,0 +1,32 @@
+{
+  "audio": "2b25f24b4e8c8b098de3c1c225721b150923fd89f4c0dbba5cdb0e833acd97de.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "级",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高级",
+  "id": "1708c26cab5a51a74985ba99",
+  "level": 5,
+  "meaning": "advanced, high-level",
+  "pinyin": "gāojí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-K5oPl(dm!l-1779527161192"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

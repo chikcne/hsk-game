@@ -1,0 +1,29 @@
+{
+  "audio": "ad5dc26f233b0c0e4e0791d2e5e8627267976833adbee4b321f6f26037c48777.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "雪",
+  "id": "c1eed43a09c1477a0d0cc19c",
+  "level": 1,
+  "meaning": "snow",
+  "pinyin": "xuě",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-ZIG{_()td-1779527159054"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

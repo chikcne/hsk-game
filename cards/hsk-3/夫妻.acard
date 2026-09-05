@@ -1,0 +1,29 @@
+{
+  "audio": "26caddcc45bfa25a7f29a3526407e3d58e1132cffeb7ccadf1bd210d05729d7b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夫妻",
+  "id": "c0515ddec587889220dc684d",
+  "level": 3,
+  "meaning": "husband and wife",
+  "pinyin": "fūqī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-dqR5YYam[l-1779527159434"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

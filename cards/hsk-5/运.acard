@@ -1,0 +1,29 @@
+{
+  "audio": "b6a380fb6e54e7a33ea4ad3da42976775d7668b0833b4116d57f4ac9d081530f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "运",
+  "id": "e35f7a92d31b2577f7995210",
+  "level": 5,
+  "meaning": "to transport, to use",
+  "pinyin": "yùn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-H8CQ)[>M`F-1779527162240"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

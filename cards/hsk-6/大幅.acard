@@ -1,0 +1,32 @@
+{
+  "audio": "823ba47b2fdfdf0e358d9b8da8f1d55e10800e034d75bfdb58116cf2d8085fea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "幅"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大幅",
+  "id": "cd818e7e4d3cbdbaa55bdf3f",
+  "level": 6,
+  "meaning": "substantially, greatly",
+  "pinyin": "dàfú",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-249-1779527162652"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "71f1f0ef95210ef7fca1073211c9daf147371e6b60a58468825f23c29f39ddab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "装",
+  "id": "01840e6a244bb0b9b9fd4faa",
+  "level": 4,
+  "meaning": "to load, to pack, to pretend, to install",
+  "pinyin": "zhuāng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d?v3G_p;t`-1779527160777"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "15386b3417d0e706f7d9f893e15ca041b38d994d0613d7fec652c7e700cf313b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "荣誉",
+  "id": "0c04baecedeb0319d93f4bd1",
+  "level": 6,
+  "meaning": "honor",
+  "pinyin": "róngyù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1117-1779527163520"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

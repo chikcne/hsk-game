@@ -1,0 +1,32 @@
+{
+  "audio": "232353bea4770980b493eafd2c6046aca87cefbe394935b9f1c6d7ddad74c513.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "克",
+      "服"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "克服",
+  "id": "437129ce6dcafd91e5c92cf4",
+  "level": 5,
+  "meaning": "to overcome",
+  "pinyin": "kèfú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nm*0rSvsx4-1779527161470"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "afc9d675fe48d07ae208dec7b2af894969afdfd3f86348ffe01dd359f4919484.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "墙",
+  "id": "3bb34dfb5756139459fe8c5f",
+  "level": 5,
+  "meaning": "wall",
+  "pinyin": "qiáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-b{I{9wdk1b-1779527161672"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "2e5ef2a23b55804c084cd8ef00ec305d85cf2a5b669cc90f7d42f0c4f858f241.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "模拟",
+  "id": "2944f7ad4537b83b7de0bb95",
+  "level": 6,
+  "meaning": "to simulate",
+  "pinyin": "mónǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-932-1779527163335"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "100eafd938df56d535713568dbe9f58156e23715b407b095f526bb8748ba783c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "躺",
+  "id": "e3613d670d061e7376d0058c",
+  "level": 4,
+  "meaning": "to lie down",
+  "pinyin": "tǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I}Aks[S@/S-1779527160524"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

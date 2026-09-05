@@ -1,0 +1,31 @@
+{
+  "audio": "fd1da8018b95e0aacf2a0583d6ac482088557112290bf5a79f770d1f136ee66a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "烧"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "燃烧",
+  "id": "66a0f439dc7b809db7ead349",
+  "level": 5,
+  "meaning": "to burn",
+  "pinyin": "ránshāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-m~P@{rj_Sb-1779527161714"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "34d7781ef0f6bcca7522488bc375024aa5837a46effb28fd17376fce2cb415c2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "用",
+      "运"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "运用",
+  "id": "94ac5da0c134c224584bde06",
+  "level": 5,
+  "meaning": "to apply, to utilize",
+  "pinyin": "yùnyòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wBtipLl`Pd-1779527162244"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

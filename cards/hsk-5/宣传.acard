@@ -1,0 +1,31 @@
+{
+  "audio": "9688206910c0d48f22f693ef6a82117c8247dd62808c697992b611e8d14ec3f7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "宣传",
+  "id": "89bb49c5c0c7d3ecbc11dc2b",
+  "level": 5,
+  "meaning": "to promote, to publicize",
+  "pinyin": "xuānchuán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hJU`&m,/U%-1779527162110"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

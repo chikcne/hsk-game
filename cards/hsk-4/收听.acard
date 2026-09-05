@@ -1,0 +1,32 @@
+{
+  "audio": "efcec0b025f2cc7c1428ed317151e984558c14569d865525b24778139013e317.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "听",
+      "收"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "收听",
+  "id": "318e4f820ee974ebf810dad1",
+  "level": 4,
+  "meaning": "to listen in, to tune in",
+  "pinyin": "shōutīng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-cG%vIWyYce-1779527160483"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

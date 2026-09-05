@@ -1,0 +1,31 @@
+{
+  "audio": "9b0bbe86a4fa3cf81b89433b58b16a0cce62443a8308857ba173f0d502dd411d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "春天",
+  "id": "b7937e5b0fee26b56e938578",
+  "level": 3,
+  "meaning": "spring",
+  "pinyin": "chūntiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-E:;Ha*]p^9-1779527159371"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

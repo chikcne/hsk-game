@@ -1,0 +1,31 @@
+{
+  "audio": "284e9ee903d25f65c8953782848b9b1cbe4ca719eb7d8a57c9e7970920c1eb13.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "救"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "救助",
+  "id": "aff7903942d99bdc712ffb40",
+  "level": 6,
+  "meaning": "to help, to rescue",
+  "pinyin": "jiùzhù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-740-1779527163143"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

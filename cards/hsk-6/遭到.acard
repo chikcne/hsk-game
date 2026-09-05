@@ -1,0 +1,31 @@
+{
+  "audio": "a03e7fb058a6c61d5bc767ee718c848c90906831ca548aa64b9716bc3aed0bcd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遭到",
+  "id": "907f7f7d8a74fe3b795d98a1",
+  "level": 6,
+  "meaning": "to suffer, to meet with",
+  "pinyin": "zāodào",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1648-1779527164051"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

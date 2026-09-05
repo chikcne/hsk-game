@@ -1,0 +1,32 @@
+{
+  "audio": "6b6084e98ad32294309b30a5669b8ae611e73399ef305b2a7e3c8335b5818638.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "布"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分布",
+  "id": "0ea461f421c6dd18749f815d",
+  "level": 5,
+  "meaning": "to distribute, to spread",
+  "pinyin": "fēnbù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ft`u8*N<1w-1779527161152"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

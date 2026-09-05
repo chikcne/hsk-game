@@ -1,0 +1,29 @@
+{
+  "audio": "2cf12cfb641baa562cdd7f66152c0bc227b518323ed79451a75faf6797f22b94.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "海",
+  "id": "d221bcb2fe02abb6cf8191a8",
+  "level": 3,
+  "meaning": "sea",
+  "pinyin": "hǎi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-h/dmgc($1R-1779527159464"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

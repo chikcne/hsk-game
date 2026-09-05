@@ -1,0 +1,31 @@
+{
+  "audio": "54969d9f22b0e09a0e63b3d61dd3e94a65f9787e8bb7f86edb97c197e7a4b612.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "用"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "应用",
+  "id": "4ff8cfcfe9d67b5ed89910f4",
+  "level": 5,
+  "meaning": "to apply, to use; applied, practical",
+  "pinyin": "yìngyòng",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ff9K^>rPhF-1779527162190"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

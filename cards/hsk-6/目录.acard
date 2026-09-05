@@ -1,0 +1,31 @@
+{
+  "audio": "837af26d523c986874b28e8d64dfdd0795492ccf917015980eee536964d3337e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "录"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "目录",
+  "id": "ad25b96e6effb0c40f86a935",
+  "level": 6,
+  "meaning": "catalog, list",
+  "pinyin": "mùlù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-941-1779527163344"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "87ee1f770f6cd0d1c6d7608c4d2870b5244e635cf6a6c7af6bca7447e850a3fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "新"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "新兴",
+  "id": "fca4062fef666b5aa88bef4f",
+  "level": 6,
+  "meaning": "emerging",
+  "pinyin": "xīnxīng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1469-1779527163872"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "b034c0210632a5765dd17b35ad18e97b099b68d5f3ba70a4c467c14b792a6fda.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "望",
+      "看"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看望",
+  "id": "7344ae6d5fa665b9bb47b0a9",
+  "level": 5,
+  "meaning": "to visit",
+  "pinyin": "kànwàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-}h}gk.D!*-1779527161461"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "ecc04ccb78d24a889ff7c7b917e2aa683260c85581d3b98c46fede25ba3d86cd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "贵"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "珍贵",
+  "id": "040ae00251bdc9af35a2adc1",
+  "level": 5,
+  "meaning": "precious, valuable",
+  "pinyin": "zhēnguì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B@^Y=s7fgv-1779527162286"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

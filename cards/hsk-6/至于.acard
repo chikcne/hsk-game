@@ -1,0 +1,32 @@
+{
+  "audio": "06e8ec3ba09152282d54f69419cc15bb806d87b1e47242dd462addd6ef6dd157.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "至"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "至于",
+  "id": "a0f6b46658f7fa41762ec1d6",
+  "level": 6,
+  "meaning": "to go so far as to; as for, as to",
+  "pinyin": "zhìyú",
+  "pos": "动、介",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1719-1779527164122"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "36e8b8ca66046ffb31d81b99c0fe83761be1b84f6af5e612741188bf2bd32018.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "协会",
+  "id": "83f6fcf1e18d01be344e3d33",
+  "level": 6,
+  "meaning": "association",
+  "pinyin": "xiéhuì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1457-1779527163860"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

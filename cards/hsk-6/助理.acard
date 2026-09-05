@@ -1,0 +1,31 @@
+{
+  "audio": "e1581cf79453529c482061d1d767e2b6a8b08454b2724764204adef1b25b3846.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "理"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "助理",
+  "id": "68248d01ab223a9fc73b2e27",
+  "level": 6,
+  "meaning": "assisting; assistant",
+  "pinyin": "zhùlǐ",
+  "pos": "形、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1753-1779527164156"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

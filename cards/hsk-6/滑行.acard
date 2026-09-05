@@ -1,0 +1,32 @@
+{
+  "audio": "db853bdc88dc4888bf837f43939b07e29a56301fd86bf4a41fc7a93586979f5b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "滑",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "滑行",
+  "id": "749aaed066234bc00f80bdd9",
+  "level": 6,
+  "meaning": "to glide, to slide",
+  "pinyin": "huáxíng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-565-1779527162968"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "c4f8d9834a1044c749541d711b2e3b9d922ed416e916fe8f6616d8fa2c485fc5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "淹",
+  "id": "eeaff446c075fab3570158cb",
+  "level": 6,
+  "meaning": "to flood, to submerge",
+  "pinyin": "yān",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1501-1779527163904"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

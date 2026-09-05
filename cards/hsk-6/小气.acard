@@ -1,0 +1,32 @@
+{
+  "audio": "e51869fc9bb4d636507719392dca95911b44d06afbbda130a75f54f22e8da498.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小",
+      "气"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小气",
+  "id": "02f5850bf829c2ce2ac2f9f6",
+  "level": 6,
+  "meaning": "stingy",
+  "pinyin": "xiǎoqi",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1451-1779527163854"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

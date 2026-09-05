@@ -1,0 +1,32 @@
+{
+  "audio": "89799ecc51844cea0ad029fb4b9b83dfc5fdb5343c0d95a7a0abde695e08402a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "卡",
+      "片"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "卡片",
+  "id": "0d84b10b2e4f6458d8300c0b",
+  "level": 6,
+  "meaning": "card",
+  "pinyin": "kǎpiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-760-1779527163163"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

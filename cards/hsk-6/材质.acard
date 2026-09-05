@@ -1,0 +1,29 @@
+{
+  "audio": "57c436b9a7fa1afba97f067a9d2a3a1b343e983c1d8926b42530a079b14d848d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "材质",
+  "id": "94fc77c3dd6c33bf01e85898",
+  "level": 6,
+  "meaning": "material, texture",
+  "pinyin": "cáizhì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-100-1779527162503"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

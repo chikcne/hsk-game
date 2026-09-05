@@ -1,0 +1,31 @@
+{
+  "audio": "a9e4a89b10ab921789129dca986042bba43e374fa110cfe05909233cdeb56c0a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "科"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "专科",
+  "id": "6c4175ec48d623db9065bd17",
+  "level": 6,
+  "meaning": "specialized subject, specialty",
+  "pinyin": "zhuānkē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1759-1779527164162"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

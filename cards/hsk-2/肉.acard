@@ -1,0 +1,29 @@
+{
+  "audio": "15e63621fcdfdfc43be1fb0e2b3fd315701a80416bc761013d8a2f6a46136ed4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肉",
+  "id": "fcb91856a1653a996f9aa82c",
+  "level": 2,
+  "meaning": "meat",
+  "pinyin": "ròu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-t>>:v-6Gb!-1779527159226"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "50130243a33833688168135f11730e5c733350f4e735690e74238ac97fc333e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "望"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "绝望",
+  "id": "7379a3ef6fbec8569918aa42",
+  "level": 6,
+  "meaning": "to despair",
+  "pinyin": "juéwàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-756-1779527163159"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

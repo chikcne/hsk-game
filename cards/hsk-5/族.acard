@@ -1,0 +1,29 @@
+{
+  "audio": "a164188564afca534b869d61210f3059e29fbaa2f3cb803ce1a97c80ad6019ad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "族",
+  "id": "2519c4c181b6b554a8e85919",
+  "level": 5,
+  "meaning": "suffix meaning ethnic group, race",
+  "pinyin": "zú",
+  "pos": "suffix",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-AFgTmaOg7Y-1779527162391"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

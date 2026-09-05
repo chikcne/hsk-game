@@ -1,0 +1,31 @@
+{
+  "audio": "21dc4c0f6467afb4e640ed7a8fc613e492c7ed3aa5a864cca95ab43431d24df4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "气候",
+  "id": "cc7809cef3cf934e1373c286",
+  "level": 4,
+  "meaning": "climate",
+  "pinyin": "qìhòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-G8RVIn!hD+-1779527160374"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

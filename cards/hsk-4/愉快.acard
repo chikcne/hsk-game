@@ -1,0 +1,31 @@
+{
+  "audio": "3c8757e892ac0ec6dc0da6b606cd7e727332a8e7300b7e3130bda72d08de06aa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "快"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "愉快",
+  "id": "a4ce5934f0bcc1eeb61519e5",
+  "level": 4,
+  "meaning": "pleasant, cheerful",
+  "pinyin": "yúkuài",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qgf4&,}&Vz-1779527160698"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

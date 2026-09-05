@@ -1,0 +1,31 @@
+{
+  "audio": "0b4bc523673b0b11c371509876c16f0917ccad46c0827a7b32b0943116e3e116.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不利",
+  "id": "3bf13f071bb826a7e9ea5948",
+  "level": 5,
+  "meaning": "unfavorable",
+  "pinyin": "búlì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-osD_qA5sLP-1779527160876"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

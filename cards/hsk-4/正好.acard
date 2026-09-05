@@ -1,0 +1,32 @@
+{
+  "audio": "ab3b764a758cc1279feb37565130a7038087a35ab8cd8ec458f602f8fada2b1a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "正"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "正好",
+  "id": "f27278f9366cbb304bfcc18d",
+  "level": 4,
+  "meaning": "exactly right, just in time; coincidentally",
+  "pinyin": "zhènghǎo",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-G,{|rvNt[$-1779527160736"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

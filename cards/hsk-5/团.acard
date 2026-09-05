@@ -1,0 +1,29 @@
+{
+  "audio": "e48a2bade377bed4b64f2b730857be33e17e1751b8b7ef9830ad79604fe993e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "团",
+  "id": "3b19ea80f40a329f380b14dd",
+  "level": 5,
+  "meaning": "to unite; group; measure word for round objects",
+  "pinyin": "tuán",
+  "pos": "verb、noun、",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Gj1<XC--OY-1779527161959"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

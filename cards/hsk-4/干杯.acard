@@ -1,0 +1,31 @@
+{
+  "audio": "e43aac6f3afe14ffde4dc0c4a4f1c1ea7eebf2374b2d0c01e31e6f1bfab79923.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "干"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "干杯",
+  "id": "344b1c121c78b52d75bc8567",
+  "level": 4,
+  "meaning": "to toast, cheers",
+  "pinyin": "gānbēi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ir`J_G/Y.?-1779527160024"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

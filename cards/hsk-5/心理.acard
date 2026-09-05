@@ -1,0 +1,32 @@
+{
+  "audio": "0103f55c25f3aa8ccad2f662e0a16e4759a48417d2c0ab8c483b11c36edcd415.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "心理",
+  "id": "0b0b4b89fea6a5852427301d",
+  "level": 5,
+  "meaning": "psychology, mentality",
+  "pinyin": "xīnlǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lwgmb~.q/#-1779527162080"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

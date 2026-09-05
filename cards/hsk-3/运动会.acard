@@ -1,0 +1,34 @@
+{
+  "audio": "e63541fc5ead7d8c447642cd8dc2f463a626310e3a9821a97bdee855ded10dd4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "动",
+      "运",
+      "运动"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "运动会",
+  "id": "3d40269a6ac5e39bb5d02045",
+  "level": 3,
+  "meaning": "sports meet",
+  "pinyin": "yùndònghuì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-BXQ~^8evjH-1779527159763"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

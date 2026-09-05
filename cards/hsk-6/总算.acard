@@ -1,0 +1,32 @@
+{
+  "audio": "62f5ef2fe0a94fd040c70a87669c632fecec5738732bf476bd9e684fee507b4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "总",
+      "算"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "总算",
+  "id": "b499b75cab38cd3fa2f8c993",
+  "level": 6,
+  "meaning": "finally, at last",
+  "pinyin": "zǒngsuàn",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1790-1779527164193"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

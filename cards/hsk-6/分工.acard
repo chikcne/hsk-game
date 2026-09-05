@@ -1,0 +1,31 @@
+{
+  "audio": "470ce3b91b3f20e146d2e3dc3255c883f361709867875e66787acf558d607350.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分工",
+  "id": "effbc7862e1a9e5fc0b8c42d",
+  "level": 6,
+  "meaning": "division of labour",
+  "pinyin": "fēngōng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-384-1779527162787"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

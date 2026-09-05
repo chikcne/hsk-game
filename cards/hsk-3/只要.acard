@@ -1,0 +1,32 @@
+{
+  "audio": "11e5462f1ce65a5dd7c6a07675de91bf251f73db0848ff6597c3434121f109d6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "只",
+      "要"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "只要",
+  "id": "3cd177bdb7d1f158c5975448",
+  "level": 3,
+  "meaning": "as long as",
+  "pinyin": "zhǐyào",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-hq6_a>eI<}-1779527159782"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

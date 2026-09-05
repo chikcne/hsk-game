@@ -1,0 +1,31 @@
+{
+  "audio": "6b19e21df8b4bfd6980f3dd2017f97133629615a9c58a30690391f8e74ad4a4b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "想"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "设想",
+  "id": "92e2dcbd3ea4dcc060c94da4",
+  "level": 6,
+  "meaning": "to imagine, to conceive",
+  "pinyin": "shèxiǎng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1161-1779527163564"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

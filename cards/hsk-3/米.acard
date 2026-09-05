@@ -1,0 +1,29 @@
+{
+  "audio": "7231e764f127dec9364cdc530ca824c22c763d2470622bcd8b045c0b030e7b2d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "米",
+  "id": "2d70e4665c52cfc712b68ae9",
+  "level": 3,
+  "meaning": "meter",
+  "pinyin": "mǐ",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-h8#(RCE3EK-1779527159572"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

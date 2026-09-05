@@ -1,0 +1,32 @@
+{
+  "audio": "b24414afad8340a5700f0d199e45d8992071356ceb01d4b7ad95c880ee9ad731.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "测",
+      "量"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "测量",
+  "id": "a4f93c25f00a90e4efe175e2",
+  "level": 6,
+  "meaning": "to measure",
+  "pinyin": "cèliáng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-113-1779527162516"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

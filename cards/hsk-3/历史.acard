@@ -1,0 +1,29 @@
+{
+  "audio": "583d8817c5cad4d7342af0b734d1c5c99b41c9cf0ba3ecb1694a865e05c65f8c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "历史",
+  "id": "78d56f6e941a74e9a1c1bb46",
+  "level": 3,
+  "meaning": "history",
+  "pinyin": "lìshǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-QgZfHD#M$<-1779527159552"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

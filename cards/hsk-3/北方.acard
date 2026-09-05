@@ -1,0 +1,32 @@
+{
+  "audio": "d05ab0e612c2fbbe0d2f2394f7d1d27c0caf9144beeaf57586a4b647b74c102d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "北",
+      "方"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "北方",
+  "id": "1081879d3f11e5d525e4822d",
+  "level": 3,
+  "meaning": "north",
+  "pinyin": "běifāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-M@xk0/Cj21-1779527159321"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

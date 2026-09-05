@@ -1,0 +1,31 @@
+{
+  "audio": "c1668db7dd0a93d8ff2533b496b3860f56c22e4a2d71d653c8b9dec9eba78da6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "师生",
+  "id": "5f0d3a3b92abf50bc14aeb18",
+  "level": 4,
+  "meaning": "teacher and student, teachers and students",
+  "pinyin": "shīshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-h[GIqf;ENX-1779527160458"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

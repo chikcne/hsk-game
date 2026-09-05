@@ -1,0 +1,29 @@
+{
+  "audio": "46073f705ed7b8994bfac9903be7c3ba767a129b3e0642653bd9c92ac320b36b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抄",
+  "id": "293eed98986c0f3ea81b2058",
+  "level": 6,
+  "meaning": "to copy, to transcribe",
+  "pinyin": "chāo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-140-1779527162543"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "2f6e2f9aad4c35bcf8df72d716926d204084e6dd87d4e0be05c0b57470ee26a2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "级"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中级",
+  "id": "489cc731261f68cc968c3b2a",
+  "level": 5,
+  "meaning": "intermediate, mid-level",
+  "pinyin": "zhōngjí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-i#rds_|7$&-1779527162325"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

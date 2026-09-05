@@ -1,0 +1,31 @@
+{
+  "audio": "5cc4254d1ceacb93d306bb35319bbe14bbd38d7d876579c974e184088b4d2d3e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "对"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "应对",
+  "id": "ecc48a0d56cbd54ad9f9a5f3",
+  "level": 5,
+  "meaning": "to deal with, to handle",
+  "pinyin": "yìngduì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lAo1<tbPQ$-1779527162188"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

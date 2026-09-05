@@ -1,0 +1,31 @@
+{
+  "audio": "c6614ad3e7a40572f816b74e7a08cb7406d4e5ebc294081090afe49b3dc0f84e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大大",
+  "id": "66f1f278dbac8834839b9a1c",
+  "level": 4,
+  "meaning": "greatly, significantly",
+  "pinyin": "dàdà",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-O:EJ,nO2!%-1779527159927"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

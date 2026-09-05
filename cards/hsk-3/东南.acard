@@ -1,0 +1,32 @@
+{
+  "audio": "32281c22d417000720c17acd8b3f7c6d542f1ac60a4c90a718276a4fca09211b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "东",
+      "南"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "东南",
+  "id": "039622f0655ab36397efff68",
+  "level": 3,
+  "meaning": "southeast",
+  "pinyin": "dōngnán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-J_q9;6j7%~-1779527159403"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

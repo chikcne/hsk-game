@@ -1,0 +1,32 @@
+{
+  "audio": "6eee92ae394e1ee748efa9b0e44639d1b24b1bd6ba8ac7ea1e1f69fd3e8d192c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "份",
+      "省"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "省份",
+  "id": "c21a01ff77ef89b82d0263bb",
+  "level": 5,
+  "meaning": "province",
+  "pinyin": "shěngfèn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-K@@2+8w#hm-1779527161802"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

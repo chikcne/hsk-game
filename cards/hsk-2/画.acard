@@ -1,0 +1,29 @@
+{
+  "audio": "651b1fddac31dee3b1023c5f1963921b0d4e183b7a67d7fd133ac087c0ab161a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "画",
+  "id": "4d34930782d89d1590ec3724",
+  "level": 2,
+  "meaning": "to draw, to paint; painting, picture",
+  "pinyin": "huà",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-lT@wUq9vmQ-1779527159162"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "521451c566f830003e31bb7331a61e20da4f5a8fb1e7dac224527b43556c43b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "沙发",
+  "id": "050f82b6aee8cb92b6eba7a5",
+  "level": 3,
+  "meaning": "sofa",
+  "pinyin": "shāfā",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-O!/BE>ou`b-1779527159625"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

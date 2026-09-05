@@ -1,0 +1,31 @@
+{
+  "audio": "8be923d0ef808d14f922a57b2be1035fae2ee279b0ee51d92825e4f24641c888.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "集"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "集体",
+  "id": "b24aa7f27a2c9d25ae64ab1a",
+  "level": 5,
+  "meaning": "collective, group",
+  "pinyin": "jítǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u=VY>3wKe$-1779527161337"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

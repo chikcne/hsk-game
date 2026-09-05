@@ -1,0 +1,32 @@
+{
+  "audio": "11dca38fdc6e8f7984acdad83df07d292e95db9f775c2be268c20af2ad3f89c2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "刚",
+      "才"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "刚才",
+  "id": "54b3803dcb1ff28f4b9cc0d0",
+  "level": 3,
+  "meaning": "just now",
+  "pinyin": "gāngcái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-B0E5wKH~!W-1779527159445"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

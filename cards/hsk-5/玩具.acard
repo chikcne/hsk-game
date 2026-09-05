@@ -1,0 +1,31 @@
+{
+  "audio": "b3c426f6b080d0f2c3583c47da69e81b47753cfc169031621609dbf5a58978ce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "玩"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "玩具",
+  "id": "5f90ab7f4ba3ade45176303b",
+  "level": 5,
+  "meaning": "toy",
+  "pinyin": "wánjù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-IhT@X+>YHg-1779527161976"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

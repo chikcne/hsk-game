@@ -1,0 +1,35 @@
+{
+  "audio": "5b59b1dba850ce40c95f048310343511f7ccd7627e7cf784f5f1391cf5f433bc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关",
+      "至",
+      "要",
+      "重",
+      "重要"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "至关重要",
+  "id": "c614090162e9c4169a5ce3e3",
+  "level": 6,
+  "meaning": "crucially important",
+  "pinyin": "zhìguān-zhòngyào",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1713-1779527164116"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

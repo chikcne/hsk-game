@@ -1,0 +1,29 @@
+{
+  "audio": "a4fa51508242885bb14242e08fd5f79049ff479c2c38f95f45149e079762ce49.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "少",
+  "id": "8ded265986480fa50b71906a",
+  "level": 1,
+  "meaning": "few, little; to lack",
+  "pinyin": "shǎo",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-oFuW92}n3S-1779527158983"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

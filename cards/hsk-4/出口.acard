@@ -1,0 +1,32 @@
+{
+  "audio": "1796a56b869d3504af77ac272c30cf505a03af70592d9daa7b00e8cfbabde048.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "口"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出口",
+  "id": "225c14d7a5967648075a8635",
+  "level": 4,
+  "meaning": "exit; (to export)",
+  "pinyin": "chūkǒu",
+  "pos": "noun、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-h/cc|sf501-1779527159892"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

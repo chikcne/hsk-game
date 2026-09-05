@@ -1,0 +1,29 @@
+{
+  "audio": "0319516a5de5b7c37f5eb728725b32407c1e73574537c09797af8d4068f1992c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "辅助",
+  "id": "a553407759ea748f2f589ddd",
+  "level": 6,
+  "meaning": "to assist, auxiliary",
+  "pinyin": "fǔzhù",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-406-1779527162809"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

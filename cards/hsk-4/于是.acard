@@ -1,0 +1,32 @@
+{
+  "audio": "29d6969ceb44fa7ce87cba1626a5a74985a2535e9c117cddf9c13b2eb3aca7e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "是"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "于是",
+  "id": "0e173808ac85e6262d0ea192",
+  "level": 4,
+  "meaning": "therefore, hence, so",
+  "pinyin": "yúshì",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z3FXtZ&W[?-1779527160699"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

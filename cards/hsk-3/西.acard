@@ -1,0 +1,29 @@
+{
+  "audio": "1e929f25cf07d1a50d530596cfb30f3db106abf07d80c14fa51e36935db2eb4b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "西",
+  "id": "20536da8f7f5458e0c0c60ab",
+  "level": 3,
+  "meaning": "west",
+  "pinyin": "xī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-o*ji,#.p~`-1779527159683"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

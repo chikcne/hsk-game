@@ -1,0 +1,32 @@
+{
+  "audio": "caae8e23b4a6c8789f2fbb661f670ab367bbdec53ce7986ceaa36b8a30e9250c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年",
+      "新"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "新年",
+  "id": "b7d79e0b6660d0053727418c",
+  "level": 3,
+  "meaning": "New Year",
+  "pinyin": "xīnnián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-kwHEES:U96-1779527159706"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

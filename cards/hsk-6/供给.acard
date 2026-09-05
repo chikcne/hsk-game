@@ -1,0 +1,31 @@
+{
+  "audio": "e7a0d3df22ad88d684d44cc672c067274a2f146f97d4b074aa5e2003ef136017.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "给"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "供给",
+  "id": "4bef6d8e5195279d5be48ac4",
+  "level": 6,
+  "meaning": "to supply, to provide",
+  "pinyin": "gōngjǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-456-1779527162859"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

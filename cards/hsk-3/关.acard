@@ -1,0 +1,29 @@
+{
+  "audio": "3942416eef928ab729511190208f5a41e3451ddb268714d2778ba16f36180531.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "关",
+  "id": "47fd0a0c15a24c60fd9812c0",
+  "level": 3,
+  "meaning": "to close, to turn off; pass",
+  "pinyin": "guān",
+  "pos": "verb、（noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Nz`M/fd>8a-1779527159455"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

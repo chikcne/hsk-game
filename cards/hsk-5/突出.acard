@@ -1,0 +1,31 @@
+{
+  "audio": "9ffb4c0deae583a46a49dee690638762cdbf972574ea0e6d322f77682d43ea9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "突出",
+  "id": "479b45a5d3d78f9dc4f48dbe",
+  "level": 5,
+  "meaning": "to protrude; outstanding",
+  "pinyin": "tūchū",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mJ.jdE&[p<-1779527161953"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

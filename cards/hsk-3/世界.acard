@@ -1,0 +1,29 @@
+{
+  "audio": "7ff1a0de4e6ffef7346295b0a813c735d30d0660fd35d14cb0da3b4849271875.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "世界",
+  "id": "16610b28a3c5d27156f12a87",
+  "level": 3,
+  "meaning": "world",
+  "pinyin": "shìjiè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-K[S#T;rhu2-1779527159638"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

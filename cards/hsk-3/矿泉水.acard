@@ -1,0 +1,31 @@
+{
+  "audio": "3191d2ad79847aedf7db966c80a26d3a0cce770dc805a1efb50564670c02a59a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "矿泉水",
+  "id": "464796a98b4bdf0b250e5934",
+  "level": 3,
+  "meaning": "mineral water",
+  "pinyin": "kuàngquánshuǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-pWF_X9;P-,-1779527159545"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

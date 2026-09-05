@@ -1,0 +1,31 @@
+{
+  "audio": "1527406ebf7bfc3d88f718cacd15078a10a4eb5688a4c1328a815792364375c2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "房子",
+  "id": "5f0f6ed1286ee41edf1d3739",
+  "level": 3,
+  "meaning": "house",
+  "pinyin": "fángzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Q3}/!P+(fD-1779527159426"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

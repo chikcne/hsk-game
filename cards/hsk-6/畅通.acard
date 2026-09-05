@@ -1,0 +1,31 @@
+{
+  "audio": "0d3d17dffc2f9e2997064e5f3b68725e83d09c28207cf11083bbcb5d6f74cd84.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "通"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "畅通",
+  "id": "3a2b6943da874e64ed76a077",
+  "level": 6,
+  "meaning": "unimpeded, clear",
+  "pinyin": "chàngtōng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-138-1779527162541"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

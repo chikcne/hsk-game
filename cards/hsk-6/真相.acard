@@ -1,0 +1,31 @@
+{
+  "audio": "6ff7f9b5e32e0b7f9f34a9b86379064cdc4b66b58ed8797c2730891b495a52ab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "真"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "真相",
+  "id": "67a5b33ce30943f4ff0af0e0",
+  "level": 6,
+  "meaning": "truth",
+  "pinyin": "zhēnxiàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1677-1779527164080"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

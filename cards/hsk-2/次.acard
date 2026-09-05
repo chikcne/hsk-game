@@ -1,0 +1,29 @@
+{
+  "audio": "1b3c6cf7bdf0c16d60cc8067276f7b250584541789dddf10ba28d8f5a7cf62ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "次",
+  "id": "1566428d629078518be82a22",
+  "level": 2,
+  "meaning": "measure word of time or occasion; (next in order)",
+  "pinyin": "cì",
+  "pos": "classifier、 （adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-K%ncEnw]LG-1779527159126"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

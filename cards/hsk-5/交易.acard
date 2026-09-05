@@ -1,0 +1,31 @@
+{
+  "audio": "303f3b9f25d1873a15713e0deac95d46f377c4bf9466089ea6e63047b809ca4c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "交易",
+  "id": "2b58336537959967bb84bb10",
+  "level": 5,
+  "meaning": "to trade; transaction, deal",
+  "pinyin": "jiāoyì",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-eE%d/6#m9=-1779527161393"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "25f3015705781d42a90185e69984489e8576280cf9f6a1700232fcfe9b6ef88c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代",
+      "表"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "代表",
+  "id": "6f2423dc49b157ceff032a8a",
+  "level": 5,
+  "meaning": "representative; to represent",
+  "pinyin": "dàibiǎo",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P<,em,TT{,-1779527161037"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

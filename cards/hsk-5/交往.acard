@@ -1,0 +1,32 @@
+{
+  "audio": "62692b297c6f7ed04fe94e3774625f379a78145a9b28efc661e6a5259dc0aab0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交",
+      "往"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "交往",
+  "id": "866ad3310d5e4488050c6b3a",
+  "level": 5,
+  "meaning": "to associate, to interact",
+  "pinyin": "jiāowǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ksw.Tpv;92-1779527161392"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

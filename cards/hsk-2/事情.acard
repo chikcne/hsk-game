@@ -1,0 +1,31 @@
+{
+  "audio": "2cf7e33248831d16f60e6fc0e5fee381ec547be1b3463427fa44e50b04dced06.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "事情",
+  "id": "6bf86ef49bdf433588bb3086",
+  "level": 2,
+  "meaning": "matter, affair",
+  "pinyin": "shìqing",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-I5WxJzN@5]-1779527159235"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

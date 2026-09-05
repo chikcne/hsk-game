@@ -1,0 +1,32 @@
+{
+  "audio": "55b8212c12ac6017669541132f580c44315fde1f7e503de499916d79f7ddd2a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "重",
+      "量"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "重量",
+  "id": "758bd27074f66c8f5cf4aa52",
+  "level": 5,
+  "meaning": "weight",
+  "pinyin": "zhòngliàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-CKKu-qN+6G-1779527162336"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

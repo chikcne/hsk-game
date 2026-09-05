@@ -1,0 +1,31 @@
+{
+  "audio": "dd261ff703165e41b27a15770cf6005d867446b0cb5a90aab8b2cf1aa1636d2d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "新"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "新娘",
+  "id": "d6733c113631120d39f109cf",
+  "level": 5,
+  "meaning": "bride",
+  "pinyin": "xīnniáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B]BMXhr?U0-1779527162081"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

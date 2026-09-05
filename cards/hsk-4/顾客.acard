@@ -1,0 +1,31 @@
+{
+  "audio": "188d95bce40912570dcc3323e216fc69560724c9999ca3cceb28b632c123db5f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "顾"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "顾客",
+  "id": "3d0e232aaabca17133d047cc",
+  "level": 4,
+  "meaning": "customer",
+  "pinyin": "gùkè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-POFY8#9>8|-1779527160069"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

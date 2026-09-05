@@ -1,0 +1,29 @@
+{
+  "audio": "d5a5735cb52a30bbae05dd5cb07436641f99ed1cbc1d9482c3efe0cb548efcf6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "我",
+  "id": "b755617c48bfeec4d694db49",
+  "level": 1,
+  "meaning": "I",
+  "pinyin": "wǒ",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-gz-U%jxte3-1779527159024"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

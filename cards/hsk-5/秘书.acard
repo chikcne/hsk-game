@@ -1,0 +1,31 @@
+{
+  "audio": "2c406e8c817e9d45a47eb77949d4b00e7c349d6aa72cdce09b728c187996e35b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "书"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "秘书",
+  "id": "f256b2e448a1c87af369f11e",
+  "level": 5,
+  "meaning": "secretary",
+  "pinyin": "mìshū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O4Bc[9~)Mm-1779527161569"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

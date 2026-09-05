@@ -1,0 +1,32 @@
+{
+  "audio": "5fe0e642d7e66ff3365565c44998d2d1e0c21bca3a0587e8d6f851cda2a18a10.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "通",
+      "风"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "通风",
+  "id": "9ffa085c9517cd6d8505aec0",
+  "level": 6,
+  "meaning": "to ventilate",
+  "pinyin": "tōngfēng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1304-1779527163707"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

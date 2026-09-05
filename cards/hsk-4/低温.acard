@@ -1,0 +1,31 @@
+{
+  "audio": "50dcc9a7b72429e8ac259d67451a9379a28864e9f5c19cf89e4976529221e43d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "低"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "低温",
+  "id": "436dffa7b1a0efc5b494e450",
+  "level": 4,
+  "meaning": "low temperature",
+  "pinyin": "dīwēn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-yeTQn{,PIK-1779527159954"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

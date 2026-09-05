@@ -1,0 +1,32 @@
+{
+  "audio": "af4c932612c2b608ba54645678260cbc456ed385a8cd738e0f53f1773c8abb40.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "全",
+      "都"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "全都",
+  "id": "ff6e57c544bb254ce74962c5",
+  "level": 4,
+  "meaning": "all, entirely",
+  "pinyin": "quándōu",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-NP6umOqv3)-1779527160403"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

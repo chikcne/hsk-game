@@ -1,0 +1,32 @@
+{
+  "audio": "28b6e34d9470ea430ecac615368c12ae99f8af7206c04aa811530a40c49ed0ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "引",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "引进",
+  "id": "4bf95fc7ed0ffe8dcaef94fc",
+  "level": 5,
+  "meaning": "to introduce, to bring in",
+  "pinyin": "yǐnjìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hO>Vzxj+v/-1779527162177"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

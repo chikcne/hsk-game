@@ -1,0 +1,31 @@
+{
+  "audio": "9690123be299dde89aa102c8f7ff95d790d77e5b190e07e79785b0e43f483512.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "及"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "涉及",
+  "id": "c57294f497064c3c482a598a",
+  "level": 6,
+  "meaning": "to involve, to relate to",
+  "pinyin": "shèjí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1158-1779527163561"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

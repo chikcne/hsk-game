@@ -1,0 +1,32 @@
+{
+  "audio": "607b66ad017422f21f80dca401a1916ea0f47ba50b3e342ef85991f77b25adfe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "十"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "十分",
+  "id": "a59ae1c9cd0c9715fea05145",
+  "level": 4,
+  "meaning": "very, extremely, fully",
+  "pinyin": "shífēn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-rV^5;y;fkh-1779527160460"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "audio": "c510b6107af7a3e601b0beadeedf71aecc68281eb1536c92583b14dff2e223b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "了",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "了不起",
+  "id": "fce58d5875eece164b8bc5a2",
+  "level": 5,
+  "meaning": "amazing, extraordinary",
+  "pinyin": "liǎobuqǐ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tnTN<>K%cU-1779527161523"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "0352a8411d9ac73e3202546e49ee0c18a15fa158667891f11452ac537f7cf18b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "宝"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "珠宝",
+  "id": "bf0fd100dfa6b70c181116fb",
+  "level": 6,
+  "meaning": "jewelry, gems",
+  "pinyin": "zhūbǎo",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1742-1779527164145"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

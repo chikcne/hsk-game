@@ -1,0 +1,32 @@
+{
+  "audio": "3032f5be5eefa369a32c63549215dca5673d7833933c4d3f027bbfbc8adc4617.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "洗",
+      "清"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "清洗",
+  "id": "cebd38b9ee47347512400237",
+  "level": 6,
+  "meaning": "to wash",
+  "pinyin": "qīngxǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1061-1779527163464"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

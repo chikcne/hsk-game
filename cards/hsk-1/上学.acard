@@ -1,0 +1,32 @@
+{
+  "audio": "8b77b0421ed8ad605277fd795f23b4a862b350e57e3c5b0d5cb923cef97dbe26.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "学"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上学",
+  "id": "fa3a0d0e69de9bd43f13e904",
+  "level": 1,
+  "meaning": "to go to school",
+  "pinyin": "shàngxué",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-tySMlt}m;4-1779527158982"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

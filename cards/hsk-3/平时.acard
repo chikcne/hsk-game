@@ -1,0 +1,32 @@
+{
+  "audio": "a38a841443d2f2d09d66c83acaefcaf724d2a48706d671faa56b455965d0dcf9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "平",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平时",
+  "id": "529a9dd10b80895da2ef1474",
+  "level": 3,
+  "meaning": "usually",
+  "pinyin": "píngshí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-F|wg~KDHaR-1779527159598"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

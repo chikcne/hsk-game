@@ -1,0 +1,31 @@
+{
+  "audio": "dd8b6cda436d83945f525860c0a705aa2bc4f099ce7f48dba4cbde4467eb0b5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "机场",
+  "id": "8269cce24f628e032e33351a",
+  "level": 2,
+  "meaning": "airport",
+  "pinyin": "jīchǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-w|Z4!~j4bA-1779527159166"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

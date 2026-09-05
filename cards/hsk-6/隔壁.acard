@@ -1,0 +1,31 @@
+{
+  "audio": "d848f86bf04a04fd61b3ed7709ce4e5888c4b0682d8a9bc249d1c8c4b57d6fcd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "隔"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "隔壁",
+  "id": "8a128f20fc0ab4ee9f84a7a3",
+  "level": 6,
+  "meaning": "next door",
+  "pinyin": "gébì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-443-1779527162846"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

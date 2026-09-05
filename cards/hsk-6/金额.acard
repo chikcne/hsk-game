@@ -1,0 +1,29 @@
+{
+  "audio": "e1908e2b25956595a8a9cc58fff0a77659b898c0852edb1c9d616630d0c791c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "金额",
+  "id": "a7ed3b60038e58ff74db02fa",
+  "level": 6,
+  "meaning": "amount of money",
+  "pinyin": "jīn’é",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-700-1779527163103"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

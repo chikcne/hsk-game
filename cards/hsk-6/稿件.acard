@@ -1,0 +1,31 @@
+{
+  "audio": "3b643f2d5aa574ca670da138e469ab0ad51942535c0d2083618d2fc33ac8e557.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "件"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "稿件",
+  "id": "c0a25190bdeb756b61af5ad9",
+  "level": 6,
+  "meaning": "manuscript",
+  "pinyin": "gǎojiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-439-1779527162842"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

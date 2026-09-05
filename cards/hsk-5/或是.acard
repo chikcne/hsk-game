@@ -1,0 +1,32 @@
+{
+  "audio": "11ca349b3938527bb962d3a3bcb2305512ac346c4cb6f21b420554b3b5c89e16.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "或",
+      "是"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "或是",
+  "id": "a6cbfbb964baee4bc50c6cab",
+  "level": 5,
+  "meaning": "or; either... or...",
+  "pinyin": "huòshì",
+  "pos": "adverb、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Fnv[J.+Q1i-1779527161320"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

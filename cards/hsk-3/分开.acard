@@ -1,0 +1,32 @@
+{
+  "audio": "8c69f83cd73c7292b7f4a1bd202e3737ac9530e8561c3b0529302cf0beffbcd5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "开"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分开",
+  "id": "5e06025711e2440c960d9438",
+  "level": 3,
+  "meaning": "to separate",
+  "pinyin": "fēnkāi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-JMbkiJ5!ae-1779527159431"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

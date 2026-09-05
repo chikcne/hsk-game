@@ -1,0 +1,29 @@
+{
+  "audio": "6e9b2bee052500f7db337c4e3174618554c835874677e51aae6ea4db5cd4afdd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "质疑",
+  "id": "80d947356a68ed1f513be176",
+  "level": 6,
+  "meaning": "to question, to doubt",
+  "pinyin": "zhìyí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1718-1779527164121"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

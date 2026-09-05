@@ -1,0 +1,31 @@
+{
+  "audio": "50f84eece0bbb1efb7588bec19c8cdc1f9fc081de04d3f9f3fb58129b397fe4f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "艺人",
+  "id": "e431d242cb884f4431277023",
+  "level": 6,
+  "meaning": "artist, performer",
+  "pinyin": "yìrén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1568-1779527163971"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

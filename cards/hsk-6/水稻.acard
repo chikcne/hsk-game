@@ -1,0 +1,31 @@
+{
+  "audio": "13c1ace7d1b5f450f0061974134e9daf2fd51beab814bcf4ef4f3e6ab14ead7c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "水稻",
+  "id": "630a9def0b412838ce599d62",
+  "level": 6,
+  "meaning": "unhusked rice",
+  "pinyin": "shuǐdào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1233-1779527163636"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "audio": "718af4135a2e7f804dad5186e91d3e65a283e11720e83a63867d33ebd1e72f2c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "太",
+      "太阳",
+      "能"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "太阳能",
+  "id": "5ea206576a340070f95aecbd",
+  "level": 6,
+  "meaning": "solar energy",
+  "pinyin": "tàiyángnéng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1260-1779527163663"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

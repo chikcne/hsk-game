@@ -1,0 +1,31 @@
+{
+  "audio": "b5d78f993bed63a9a0386170d2e4bb99d2b2c488d6c2f501fa11ba64283c3b82.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中医",
+  "id": "d0283b204ede25b3a4dabe0f",
+  "level": 5,
+  "meaning": "traditional Chinese medicine practitioner",
+  "pinyin": "zhōngyī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O*^XSuhOVV-1779527162331"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

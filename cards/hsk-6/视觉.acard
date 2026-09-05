@@ -1,0 +1,29 @@
+{
+  "audio": "ce0c59faf64f9950246a9a8864bcd47683f05bd871c62722b1d374c288ddb729.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "视觉",
+  "id": "ecbc02739a409c24f09db84c",
+  "level": 6,
+  "meaning": "vision",
+  "pinyin": "shìjué",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1201-1779527163604"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

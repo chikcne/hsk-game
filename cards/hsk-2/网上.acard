@@ -1,0 +1,32 @@
+{
+  "audio": "494f6d372c99e47d3326cc272b0610bb99c4bcecd3fa52ea5881aa716822bf98.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "网"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "网上",
+  "id": "ba70d6b5be6d1c2d2e641064",
+  "level": 2,
+  "meaning": "online",
+  "pinyin": "wǎngshang",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-MXt`:EEUqI-1779527159254"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

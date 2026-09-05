@@ -1,0 +1,31 @@
+{
+  "audio": "d11c47ba51679f1f277e45b517360ae3bb8230db38b06d2836a48970e31e5d02.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "家"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "家庭",
+  "id": "74cd19a647728c9369fe8949",
+  "level": 4,
+  "meaning": "family",
+  "pinyin": "jiātíng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-cfd&^r2%+H-1779527160143"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

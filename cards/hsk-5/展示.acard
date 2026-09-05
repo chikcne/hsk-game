@@ -1,0 +1,29 @@
+{
+  "audio": "46183f91c6e9dbadedc15820e3ee51271aacc5799028a2b202c8ea233d76987d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "展示",
+  "id": "8cd20d855ac41080400b54e5",
+  "level": 5,
+  "meaning": "to show, to display",
+  "pinyin": "zhǎnshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-y:niCwW>|;-1779527162269"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

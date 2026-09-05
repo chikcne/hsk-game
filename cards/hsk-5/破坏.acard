@@ -1,0 +1,32 @@
+{
+  "audio": "869f937cde00a1c8c7ef9ba7cb96d3dfae0ef9801d16ffd769dfc0363eac02dc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "坏",
+      "破"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "破坏",
+  "id": "f31885f1dd045a364df6bcda",
+  "level": 5,
+  "meaning": "to destroy",
+  "pinyin": "pòhuài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-A=7RJbIl0.-1779527161651"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

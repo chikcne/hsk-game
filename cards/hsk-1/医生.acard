@@ -1,0 +1,31 @@
+{
+  "audio": "4ce1384801f0585852d5455f01637546ff72c001da3c1337d686dd6175f24406.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "医生",
+  "id": "8769d56b1314fc510f034a6e",
+  "level": 1,
+  "meaning": "doctor",
+  "pinyin": "yīshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-z^=$tcUI]>-1779527159059"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "958bac52fa39bae802f364e82d9ed1a00bd56c49052d7b3c43fb0282ae94c1c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "站",
+      "网"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "网站",
+  "id": "1af26d1ebe4c24d62e677824",
+  "level": 3,
+  "meaning": "website",
+  "pinyin": "wǎngzhàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Nf1Ix6`t*&-1779527159676"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "2d94b88c028b2b0ef468212ac1839f91547de422900df48645609c206d9c22a1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "先",
+      "率"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "率先",
+  "id": "31e1933f59f1c02676ba866f",
+  "level": 6,
+  "meaning": "to take the lead",
+  "pinyin": "shuàixiān",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1232-1779527163635"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

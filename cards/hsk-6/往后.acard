@@ -1,0 +1,32 @@
+{
+  "audio": "fa43691f16154ba7cc86e3ced20395bb9bff322daa4938cb0fd3a98da2f7bb57.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "往"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "往后",
+  "id": "b8c93da4911e64197bacc65c",
+  "level": 6,
+  "meaning": "from now on, later",
+  "pinyin": "wǎnghòu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1362-1779527163765"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

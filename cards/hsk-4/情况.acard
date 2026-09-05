@@ -1,0 +1,29 @@
+{
+  "audio": "b660b7f43e7aa33483a5d7c32ec6577dc662badba08aa78fd7438d2f7a4166ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "情况",
+  "id": "526b0e178d5095580be5c41e",
+  "level": 4,
+  "meaning": "situation, circumstance",
+  "pinyin": "qíngkuàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kREbJ?iqxR-1779527160392"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

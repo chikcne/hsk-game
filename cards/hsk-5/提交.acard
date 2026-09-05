@@ -1,0 +1,32 @@
+{
+  "audio": "51b2656f90615af47c74347c98ef38891b88b4ba4b144c2bedd780939710f6ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交",
+      "提"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "提交",
+  "id": "f78185e62855f4d3d1efd703",
+  "level": 5,
+  "meaning": "to submit, to hand in",
+  "pinyin": "tíjiāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lIB56KS^SZ-1779527161917"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "9c7ab2f12bc7bae710a897c99d04815d7f2d15c168df157cc347934fe1647d00.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "本",
+  "id": "b16759d99af2a9056074c7a7",
+  "level": 5,
+  "meaning": "originally; this, current",
+  "pinyin": "běn",
+  "pos": "adverb、pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HakQd*4`sB-1779527160843"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

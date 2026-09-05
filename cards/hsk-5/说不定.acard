@@ -1,0 +1,33 @@
+{
+  "audio": "8fe0b86d0b4cb663df7488ad2eeb66004532db15007cc0bc27394003030fdbc2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "定",
+      "说"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "说不定",
+  "id": "7556a05f6b93a5c48de96a1e",
+  "level": 5,
+  "meaning": "hard to say; maybe, perhaps",
+  "pinyin": "shuōbudìng",
+  "pos": "verb、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-NDK>,lxc~h-1779527161878"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "aac7b73507aabb104046e4defd3b2d3fa67367fe58f8a4e327e815ffde5e663c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "朋友",
+  "id": "a31f64685d659ce66ce8ba4c",
+  "level": 1,
+  "meaning": "friend",
+  "pinyin": "péngyou",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-gc=Bp*r+P?-1779527158959"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

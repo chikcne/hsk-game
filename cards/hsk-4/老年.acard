@@ -1,0 +1,32 @@
+{
+  "audio": "2729a98d089433f4222cb6cd3280aaf76cb76bc81b8ec2fce33e434773ab5563.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年",
+      "老"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "老年",
+  "id": "f06deca88c3a8e7eac6573c7",
+  "level": 4,
+  "meaning": "elderly",
+  "pinyin": "lǎonián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ksh3caSZa>-1779527160260"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "11fb7a5d1f3821c7fae3567775c98c06fcf73d430c902c11d238cd5ad9c4a405.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发现",
+  "id": "8b2a2805410da70512f10430",
+  "level": 3,
+  "meaning": "to find, to discover",
+  "pinyin": "fāxiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-b|+)1|2]0y-1779527159420"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

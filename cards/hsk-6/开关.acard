@@ -1,0 +1,32 @@
+{
+  "audio": "04327db930235f2b3d8b03e55a476f8d7d6583440bb2dfb79ea3221132b55385.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关",
+      "开"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开关",
+  "id": "d64ed4b0568c6e0d4c3c9554",
+  "level": 6,
+  "meaning": "switch",
+  "pinyin": "kāiguān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-762-1779527163165"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "4a5d9f1f216de6d47222269c0d57a9b3046a19cdb842182a81d366fe4ed2dd6e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "看",
+      "见"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看见",
+  "id": "e6ac9f4e3f897c47200a84e0",
+  "level": 1,
+  "meaning": "to see",
+  "pinyin": "kànjiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-h&+gGffPun-1779527158904"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

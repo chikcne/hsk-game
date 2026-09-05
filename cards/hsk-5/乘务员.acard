@@ -1,0 +1,32 @@
+{
+  "audio": "8723e91db3e5312f1e124d97bac7107f2c7c0a135c9f583ec7389c9667383124.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "乘",
+      "员"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "乘务员",
+  "id": "7cb6527cf9270f75ef55d8b7",
+  "level": 5,
+  "meaning": "attendant, crew member",
+  "pinyin": "chéngwùyuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ii}ti]=g&-1779527160952"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

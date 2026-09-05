@@ -1,0 +1,29 @@
+{
+  "audio": "dfc882527b2df6bdaba711dd547a689ace5ab3c21dfed89ee29849aedaa41420.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "听",
+  "id": "c1e1c15dc2c539258c2358fc",
+  "level": 1,
+  "meaning": "to listen (the action of hearing; ongoing activity)",
+  "pinyin": "tīng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-dIIY@}eGaZ-1779527159012"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

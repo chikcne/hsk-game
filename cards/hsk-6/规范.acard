@@ -1,0 +1,29 @@
+{
+  "audio": "34b6deeb14d7db7cfebbee30470e5076b080c5483e5536f6fe2280ffe646c377.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "规范",
+  "id": "26659eb29db87cb5d6a4626a",
+  "level": 6,
+  "meaning": "norm, standard, rule; standard, normative; to standardize, to regulate",
+  "pinyin": "guīfàn",
+  "pos": "名、形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-500-1779527162903"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

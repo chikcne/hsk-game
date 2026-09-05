@@ -1,0 +1,29 @@
+{
+  "audio": "a0ba2180f174159e8cb0b9d59a177f9064048eb0b68729d0ec6a90b05e995968.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "取",
+  "id": "486dabd58fb0bb34b6037e07",
+  "level": 4,
+  "meaning": "to take, to get, to obtain",
+  "pinyin": "qǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zHd_xWuIf$-1779527160398"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

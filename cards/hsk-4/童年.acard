@@ -1,0 +1,31 @@
+{
+  "audio": "608cfd3b4f92abb771fe6dc6574936e8e31ac41ee78032dc8461f283d0d6c9dc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "童年",
+  "id": "180093a671daae4667223035",
+  "level": 4,
+  "meaning": "childhood",
+  "pinyin": "tóngnián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Q!!UI[Dem;-1779527160549"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

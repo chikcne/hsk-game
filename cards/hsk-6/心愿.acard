@@ -1,0 +1,32 @@
+{
+  "audio": "e64812e72ebb860c8db4f5e3f6c2476dc3d766d86a6a3fb2a1b0ecd59affb8c7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "愿"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "心愿",
+  "id": "14263802bab1822898678acc",
+  "level": 6,
+  "meaning": "wish, desire",
+  "pinyin": "xīnyuàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1471-1779527163874"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

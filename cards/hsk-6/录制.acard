@@ -1,0 +1,32 @@
+{
+  "audio": "83d2c72c1affa4671e9d75de829378c017452c4c4a67773a7e7c8ff8df4130f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "制",
+      "录"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "录制",
+  "id": "6d5845da1b609fd7d65c58d2",
+  "level": 6,
+  "meaning": "to record",
+  "pinyin": "lùzhì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-869-1779527163272"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

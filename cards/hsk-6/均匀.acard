@@ -1,0 +1,29 @@
+{
+  "audio": "227dd9813bab08f7a1dda09ce03634291b91d146e21adc84903adae58b1edf99.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "均匀",
+  "id": "8133306de092f9a876c4da02",
+  "level": 6,
+  "meaning": "even, uniform",
+  "pinyin": "jūnyún",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-759-1779527163162"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

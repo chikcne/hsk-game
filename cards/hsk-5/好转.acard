@@ -1,0 +1,32 @@
+{
+  "audio": "11313129567f9a1abdaea3d15a03efeef94932a9cde05580150cb9e7cfa2c158.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "转"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好转",
+  "id": "45c588d800681835240bc4ce",
+  "level": 5,
+  "meaning": "to take a turn for the better",
+  "pinyin": "hǎozhuǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gFi&tz8a8S-1779527161274"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

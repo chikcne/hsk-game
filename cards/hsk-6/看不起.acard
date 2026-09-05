@@ -1,0 +1,33 @@
+{
+  "audio": "265d0b9f2ce5b38e61e71ef296cebfac24c8bc4c7fae2c38841ff2306734ed69.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "看",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看不起",
+  "id": "f1a7a721a92c0e96d707bfda",
+  "level": 6,
+  "meaning": "to look down upon",
+  "pinyin": "kànbuqǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-767-1779527163170"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

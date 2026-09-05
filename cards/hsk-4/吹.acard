@@ -1,0 +1,29 @@
+{
+  "audio": "d96be3bc22c15d0f2843ca7e43c6df2aafa9680fd46c25f5c35a03ecaf093c6c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吹",
+  "id": "cf29160fe325115e2d45e79b",
+  "level": 4,
+  "meaning": "to blow",
+  "pinyin": "chuī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Rc)_,H~gns-1779527159900"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

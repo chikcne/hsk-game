@@ -1,0 +1,32 @@
+{
+  "audio": "e3556703863927643d4cc8c5469a79f9b343d5fd7779da421033da24b8fde322.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本",
+      "版"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "版本",
+  "id": "b902662db1eb3c28a951963e",
+  "level": 6,
+  "meaning": "version",
+  "pinyin": "bǎnběn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-17-1779527162420"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "6d959b56f2cca1de64c0da222c52916a6c566e5f153235d2cb5f3cce88515b2b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "总",
+      "是"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "总是",
+  "id": "b184582c795b4056e22eb0fe",
+  "level": 3,
+  "meaning": "always",
+  "pinyin": "zǒngshì",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-nIYD{QX2UQ-1779527159797"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

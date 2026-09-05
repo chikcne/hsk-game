@@ -1,0 +1,34 @@
+{
+  "audio": "71fa9ab4f6c631dca57d8b089cc8055070ac6845be406320783433ad50e24c53.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "平",
+      "平方",
+      "方",
+      "米"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平方米",
+  "id": "827b785758d51f7476861779",
+  "level": 6,
+  "meaning": "square meter",
+  "pinyin": "píngfāngmǐ",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1000-1779527163403"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

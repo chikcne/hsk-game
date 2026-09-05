@@ -1,0 +1,32 @@
+{
+  "audio": "68efdbe94c6a428c2e47a2ee56298484322f131f2e6304fdb819f113217d3293.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "身"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一身",
+  "id": "17c89b14b2fb26b6df4faf45",
+  "level": 6,
+  "meaning": "whole body",
+  "pinyin": "yìshēn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1569-1779527163972"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

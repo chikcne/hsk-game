@@ -1,0 +1,32 @@
+{
+  "audio": "5c43fd1028a9b31ffbdc2a88c8317aec1df2144c69002c323c3cb842463ad91f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "光",
+      "眼"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "眼光",
+  "id": "ee7671395c6b830b24eeaceb",
+  "level": 6,
+  "meaning": "vision, sight, judgment",
+  "pinyin": "yǎnguāng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1515-1779527163918"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

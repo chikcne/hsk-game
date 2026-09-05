@@ -1,0 +1,31 @@
+{
+  "audio": "11cc029002e0137efab7b4f7c840a765e17fa0fc8557ce32baf7828687c716ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "长"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "长途",
+  "id": "e69bcb42639d365dd3a804de",
+  "level": 5,
+  "meaning": "long-distance",
+  "pinyin": "chángtú",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u51QPTQr~@-1779527160917"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

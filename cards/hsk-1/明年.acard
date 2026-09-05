@@ -1,0 +1,31 @@
+{
+  "audio": "5d0fc08f5cd24c4a6feb2d61f4fea82f71bade36ca0925d3c06d4f228f2cf6b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "明年",
+  "id": "f8df6d8f88ea1c580b875fce",
+  "level": 1,
+  "meaning": "next year",
+  "pinyin": "míngnián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-x5HG$mNF6G-1779527158931"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

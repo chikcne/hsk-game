@@ -1,0 +1,31 @@
+{
+  "audio": "0baeb972988b861f3a07bedcbb37c1cb5b7a4ee9c9ded028800a6b1f39fdf064.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "火"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "火柴",
+  "id": "3c4506a3e2f0e49a002f5a8f",
+  "level": 6,
+  "meaning": "match",
+  "pinyin": "huǒchái",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-599-1779527163002"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

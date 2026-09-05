@@ -1,0 +1,32 @@
+{
+  "audio": "58c0acf40fa4aaf8ea6ef4674c797d8d476e9330b4e52ddbd771df522f288d12.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "平"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公平",
+  "id": "7ff1893912293e129830d294",
+  "level": 5,
+  "meaning": "fair, just",
+  "pinyin": "gōngpíng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-AWRuk6@84{-1779527161215"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

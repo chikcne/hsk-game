@@ -1,0 +1,31 @@
+{
+  "audio": "55af74f4dd831d92a029543bfa405605198c8127bf38cdf4af750e1ceed3b550.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "关注",
+  "id": "1e830136222e76332bce4dc8",
+  "level": 3,
+  "meaning": "to pay attention to, to follow",
+  "pinyin": "guānzhù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-F&%2g{&hD>-1779527159460"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

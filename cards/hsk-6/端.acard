@@ -1,0 +1,29 @@
+{
+  "audio": "b7cb49f65ef713be0188276b7f6cf2040a3634f979d77571d91f5db60aa1076a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "端",
+  "id": "08dd3f720ff0b58a9cf2e499",
+  "level": 6,
+  "meaning": "to hold, to carry",
+  "pinyin": "duān",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-327-1779527162730"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "99a6500776b57353cf6133973fa2ba19087f4068c9e0b0cfe0d1b78555389191.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "替",
+  "id": "4fc50d246fa1f73e5cae2cfa",
+  "level": 5,
+  "meaning": "to replace, to substitute; on behalf of",
+  "pinyin": "tì",
+  "pos": "verb、preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B#r35gb~OJ-1779527161926"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

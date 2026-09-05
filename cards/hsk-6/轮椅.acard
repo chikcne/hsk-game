@@ -1,0 +1,31 @@
+{
+  "audio": "38e4e8f82695085b70e1700a757749618788e43ecb33acbe5f7cc1923d115ca2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "轮"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "轮椅",
+  "id": "3a472ae6d8f3c5e9125460e2",
+  "level": 6,
+  "meaning": "wheelchair",
+  "pinyin": "lúnyǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-878-1779527163281"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

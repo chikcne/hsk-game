@@ -1,0 +1,31 @@
+{
+  "audio": "d1d1ab133aabf590fb352a3535db6f88507f8ba54cbc37d257a8e14d197b8b18.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "临时",
+  "id": "e5f6e81e13fc18b2f2161560",
+  "level": 5,
+  "meaning": "temporarily; temporary",
+  "pinyin": "línshí",
+  "pos": "adverb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uCWx}[6<&g-1779527161525"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

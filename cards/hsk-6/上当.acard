@@ -1,0 +1,32 @@
+{
+  "audio": "256ba10afc8fb2016f282c620bc1307fb54187a1e83ae459ca56bc926c48576e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "当"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上当",
+  "id": "69c81c70ece0b7536be815d4",
+  "level": 6,
+  "meaning": "to be cheated, to fall for a trick",
+  "pinyin": "shàngdàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1147-1779527163550"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

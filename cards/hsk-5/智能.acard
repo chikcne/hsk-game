@@ -1,0 +1,31 @@
+{
+  "audio": "4c079bd3f045192c7a1958ba78a155a5bf48d58dd0f29708c08eb230e5c29cfe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "能"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "智能",
+  "id": "f18f834b3c835788ea70e46e",
+  "level": 5,
+  "meaning": "intelligence; intelligent, smart",
+  "pinyin": "zhìnéng",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kcX(D=zU6m-1779527162319"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

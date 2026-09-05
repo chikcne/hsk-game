@@ -1,0 +1,31 @@
+{
+  "audio": "0aeaf10710f393c362d71955b3f63aa990ca5522c9ac0959b81222aedc8b4c22.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "闲"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "休闲",
+  "id": "62b27283cdbb21e9d63aa8f9",
+  "level": 5,
+  "meaning": "leisure, to relax",
+  "pinyin": "xiūxián",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-z!eDM{2]Cj-1779527162105"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

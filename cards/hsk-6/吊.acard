@@ -1,0 +1,29 @@
+{
+  "audio": "4a4b2f051b83adc0fea0b01a5b71b3f5088aadbcf5bfc61fcfa975caa881dc21.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吊",
+  "id": "1ca3daa4b27654ee6d28f2ff",
+  "level": 6,
+  "meaning": "to hang, to suspend",
+  "pinyin": "diào",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-304-1779527162707"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

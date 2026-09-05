@@ -1,0 +1,32 @@
+{
+  "audio": "a54dafe2c50c158dbdcf3c1d5260bd8cb8a82bb2751656bebd3925067d07bbad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "等",
+      "级"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "等级",
+  "id": "3e2b16cfc2de6c5f95ebd77a",
+  "level": 6,
+  "meaning": "grade, rank",
+  "pinyin": "děngjí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-286-1779527162689"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

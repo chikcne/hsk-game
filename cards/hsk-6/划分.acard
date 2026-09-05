@@ -1,0 +1,32 @@
+{
+  "audio": "24255bb1369d554ec07d7fcd1fe3b302a7f81400cb7cbd3eacc87fb41e75e2a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "划"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "划分",
+  "id": "154c13f19bd7450098a86e1a",
+  "level": 6,
+  "meaning": "to divide, to partition",
+  "pinyin": "huàfēn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-568-1779527162971"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

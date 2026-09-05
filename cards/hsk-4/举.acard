@@ -1,0 +1,29 @@
+{
+  "audio": "339c5bb531ae3f5f2aee7a6e1bec41f0e0999d5c9fb2134e81c8d4c0c0a38f82.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "举",
+  "id": "83c9735142de8e8d77a444cf",
+  "level": 4,
+  "meaning": "to raise, to lift; to hold (an event); to give (an example); to recommend",
+  "pinyin": "jǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-htU`h0!8$K-1779527160212"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

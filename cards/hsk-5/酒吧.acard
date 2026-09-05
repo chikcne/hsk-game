@@ -1,0 +1,32 @@
+{
+  "audio": "bbb52ee591403c3573542474e2f25bbb59a0091dd83762ec0f2c11854ad0b4ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "吧",
+      "酒"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "酒吧",
+  "id": "75011cf9f3655a839565184b",
+  "level": 5,
+  "meaning": "bar",
+  "pinyin": "jiǔbā",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hmjA|X/|db-1779527161430"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

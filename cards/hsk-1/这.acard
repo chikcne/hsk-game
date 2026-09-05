@@ -1,0 +1,29 @@
+{
+  "audio": "a9b7937848699d24c75073311da3c970b337cbe0824f1508b15d6f99b92e2bd3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "这",
+  "id": "a505094bacb7a5a107cfcd00",
+  "level": 1,
+  "meaning": "this",
+  "pinyin": "zhè",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-u7Lb~vq}+:-1779527159082"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

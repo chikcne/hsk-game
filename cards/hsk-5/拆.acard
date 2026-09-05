@@ -1,0 +1,29 @@
+{
+  "audio": "4c8b7e1a22c81a277683edeb7f0a6b4ed7b134c46869835f3732cafebc3f9f5c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拆",
+  "id": "a634dab7d894f820bbba8663",
+  "level": 5,
+  "meaning": "to tear down, to dismantle",
+  "pinyin": "chāi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rtnwd+(]Hf-1779527160906"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

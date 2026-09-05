@@ -1,0 +1,32 @@
+{
+  "audio": "7cd640811e49b7330deb74172ab477314fe11cdd0640de571282f057ab965e32.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "和",
+      "暖"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暖和",
+  "id": "7c93d07d7e0607754d76a2da",
+  "level": 4,
+  "meaning": "warm; to warm up",
+  "pinyin": "nuǎnhuo",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-B.:I{9?9cp-1779527160343"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "db2538edea6da4f19cbd599b882076f2875152f81d96bb166a1bbcc076b7624f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外",
+      "表"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外表",
+  "id": "7cc5756de0dab80455ce4618",
+  "level": 6,
+  "meaning": "appearance, exterior",
+  "pinyin": "wàibiǎo",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1351-1779527163754"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

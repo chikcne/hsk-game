@@ -1,0 +1,31 @@
+{
+  "audio": "c49ee391bd4e373b089e4cc0e1cd357c4b2d5442b554b69638ab1654ad1d00da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "专业",
+  "id": "0e517246e78ba569cc845fbc",
+  "level": 4,
+  "meaning": "specialty, major; professional, specialized",
+  "pinyin": "zhuānyè",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-mC#-)L.6L.-1779527160772"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

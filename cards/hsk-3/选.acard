@@ -1,0 +1,29 @@
+{
+  "audio": "a1df85d8b5b682c20018801e3acf86f643c8258fff7ed3d86093c65773ae4a1a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "选",
+  "id": "36c29cf49b17026110ae3c61",
+  "level": 3,
+  "meaning": "to choose",
+  "pinyin": "xuǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-uabeLDc#f,-1779527159716"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

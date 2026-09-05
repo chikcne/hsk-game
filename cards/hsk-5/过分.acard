@@ -1,0 +1,32 @@
+{
+  "audio": "20dd802939ddc51bc6915e4cfcdbdfacefcc6cb0946acdac502a5b46f60b79f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过分",
+  "id": "aa6f5e4f9568f730e3159683",
+  "level": 5,
+  "meaning": "excessive, over the top",
+  "pinyin": "guòfèn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hhIY0K*Z{+-1779527161258"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

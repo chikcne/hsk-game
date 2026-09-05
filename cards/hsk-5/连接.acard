@@ -1,0 +1,32 @@
+{
+  "audio": "92d3bb4f8c4aacbe2f691e233c5c6118ad3a0f60b2dfe880089f0878c15c1084.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "接",
+      "连"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "连接",
+  "id": "ff15d2df2342537c15127190",
+  "level": 5,
+  "meaning": "to connect, to link",
+  "pinyin": "liánjiē",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J/vX+g=yS1-1779527161515"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

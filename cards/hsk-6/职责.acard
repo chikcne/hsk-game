@@ -1,0 +1,29 @@
+{
+  "audio": "42a182281dd20fb45d334ea43b2c5274fc56b6d147d9c2508aaa1420db25ff2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "职责",
+  "id": "60882025d848a45ce91c8acd",
+  "level": 6,
+  "meaning": "responsibility, duty",
+  "pinyin": "zhízé",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1704-1779527164107"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

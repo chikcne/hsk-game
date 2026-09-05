@@ -1,0 +1,29 @@
+{
+  "audio": "67e63305fd05e02efff599f517a4c8195a3de029ed27c27a1d8a83b1498448fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "操作",
+  "id": "0de10045bbf4168bb8e16de9",
+  "level": 5,
+  "meaning": "to operate",
+  "pinyin": "cāozuò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M!N,Q!*XrW-1779527160896"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

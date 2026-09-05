@@ -1,0 +1,29 @@
+{
+  "audio": "b2f417046f2d973a7bfccf2ca67018feee0862e58d6c594bd0b96303aecc2478.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "匆匆",
+  "id": "399017ad687e0ad8aef2fb84",
+  "level": 6,
+  "meaning": "hasty, hurried",
+  "pinyin": "cōngcōng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-222-1779527162625"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

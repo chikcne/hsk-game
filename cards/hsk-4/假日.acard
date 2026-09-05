@@ -1,0 +1,32 @@
+{
+  "audio": "82440e103f1bdc94e1060cd25a55e6bb246d793f0b34ed9102e06b524a4bb852.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "假",
+      "日"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "假日",
+  "id": "04abb55d2179efd72b0a2d1d",
+  "level": 4,
+  "meaning": "holiday, day off, vacation",
+  "pinyin": "jiàrì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-C7RraCmdKO-1779527160151"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

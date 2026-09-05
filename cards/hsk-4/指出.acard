@@ -1,0 +1,32 @@
+{
+  "audio": "366ac491aea7648c7d08126f08fa1749bed077026437fb3696883b83b92c9377.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "指"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "指出",
+  "id": "7e50af2a22de642ae7f0d651",
+  "level": 4,
+  "meaning": "to point out, to indicate",
+  "pinyin": "zhǐchū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-g6;By_duD[-1779527160755"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

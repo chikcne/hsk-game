@@ -1,0 +1,31 @@
+{
+  "audio": "8d8acd7d890912c38f4eba6386c26897aa43acbcf3d78026ab9d0d06298951ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "天然",
+  "id": "60f5a5cd0cce5be5ffe979d1",
+  "level": 6,
+  "meaning": "natural, innate",
+  "pinyin": "tiānrán",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1290-1779527163693"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

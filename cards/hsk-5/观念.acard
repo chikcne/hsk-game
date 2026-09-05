@@ -1,0 +1,31 @@
+{
+  "audio": "e22a11d7023047b4f5e62c222b6f863147ea2a4d9a6175fd174e866b4d6218a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "念"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "观念",
+  "id": "db2826aa5df79bd3d273cbcb",
+  "level": 5,
+  "meaning": "concept, idea",
+  "pinyin": "guānniàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-L?]+CGOdsh-1779527161237"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

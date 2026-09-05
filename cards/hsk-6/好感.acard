@@ -1,0 +1,32 @@
+{
+  "audio": "6d1535d05bbf2a00da6f4280d14fd227208c716018ea04ad9535960f42e62b46.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "感"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好感",
+  "id": "8fe0275003f6c4f61d956fb4",
+  "level": 6,
+  "meaning": "good feeling",
+  "pinyin": "hǎogǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-533-1779527162936"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

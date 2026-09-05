@@ -1,0 +1,32 @@
+{
+  "audio": "d9d71040038f05230c1a3f2ea1e386b3ab83776a55f18e87c5c4dda089012f7f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业",
+      "产"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "产业",
+  "id": "732579fa908865b7622bbab9",
+  "level": 5,
+  "meaning": "industry",
+  "pinyin": "chǎnyè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-MV(?i/GsG;-1779527160910"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

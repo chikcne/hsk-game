@@ -1,0 +1,29 @@
+{
+  "audio": "93a5e88820c351e5d89f84c0e9457e8ff65f68b2def3f17eedfc278a29d08769.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "冷",
+  "id": "b52557390d90f91c21dfc5a8",
+  "level": 1,
+  "meaning": "cold",
+  "pinyin": "lěng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-e@^DE-8<5v-1779527158912"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "0c217e66737ccc05b86857a5299a5923d34f58880b2b06881edf53c36b29da9f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "城",
+      "市"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "城市",
+  "id": "048a15ab2732d45b46557ee3",
+  "level": 3,
+  "meaning": "city",
+  "pinyin": "chéngshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-f|KEVKNkV,-1779527159363"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

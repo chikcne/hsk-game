@@ -1,0 +1,31 @@
+{
+  "audio": "537c99096f75f9d70fc7e7a56b62ae89d25a5e115f8e1051e14777a4f3ecd968.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有劲",
+  "id": "d14d27b930fd2b9ebe4db690",
+  "level": 6,
+  "meaning": "energetic, vigorous; to be strong",
+  "pinyin": "yǒujìn",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1604-1779527164007"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "097eeb16ec7ff945dd019172e123af3831d0df0c510c1be931de5fa6dca991ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "类"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "类似",
+  "id": "1ad379dda4477b41d3835617",
+  "level": 5,
+  "meaning": "similar, alike",
+  "pinyin": "lèisì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mq3VKrj6SW-1779527161498"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

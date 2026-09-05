@@ -1,0 +1,29 @@
+{
+  "audio": "0860bb6f438f6c2e6da28e80bf32824f1415314a1b5b0729898e57da7630525c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "舅舅",
+  "id": "60bf6f24fcdd021243b1db0d",
+  "level": 6,
+  "meaning": "uncle",
+  "pinyin": "jiùjiu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-735-1779527163138"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

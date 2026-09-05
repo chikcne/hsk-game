@@ -1,0 +1,32 @@
+{
+  "audio": "120d365f48c716375c93a0f5f50d48e7d67815ed6b5a03e5fb43934c4088f13f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "毒"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中毒",
+  "id": "e20ee7b6c051919374c5452a",
+  "level": 6,
+  "meaning": "to be poisoned",
+  "pinyin": "zhòngdú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1730-1779527164133"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

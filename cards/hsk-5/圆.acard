@@ -1,0 +1,29 @@
+{
+  "audio": "98580ec82499a985c46194406608d29eeaff5051df2fdbff9ebcf58578f38d10.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "圆",
+  "id": "cdb936ccb2c3a7e7d5089940",
+  "level": 5,
+  "meaning": "circle, round; round, circular",
+  "pinyin": "yuán",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-v,C/3l3GUn-1779527162232"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

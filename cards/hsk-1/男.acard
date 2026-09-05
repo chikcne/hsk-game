@@ -1,0 +1,29 @@
+{
+  "audio": "d7e804faf8a2e45a61d8c30c216a27d45b0250113d9b424e67762be120766218.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "男",
+  "id": "b8ff23fd4d59d309a4021399",
+  "level": 1,
+  "meaning": "male",
+  "pinyin": "nán",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-j#?X;)IO.w-1779527158945"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

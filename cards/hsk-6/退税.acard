@@ -1,0 +1,32 @@
+{
+  "audio": "47257144c570700d64598743b1ad5c50c70dd34ab57d3b63774030745d8b20bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "税",
+      "退"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "退税",
+  "id": "039694db803781b78cc4615c",
+  "level": 6,
+  "meaning": "tax refund",
+  "pinyin": "tuìshuì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1342-1779527163745"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

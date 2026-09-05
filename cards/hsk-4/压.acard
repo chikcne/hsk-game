@@ -1,0 +1,29 @@
+{
+  "audio": "402c26618b58e9bf9cebd1dd48410eddb6fd9f551fc837881fe8ae2081f1b77e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "压",
+  "id": "8827daccdcf43608ecd9b87d",
+  "level": 4,
+  "meaning": "to press, to push down, to weigh down",
+  "pinyin": "yā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Jx5gjT*z6a-1779527160642"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

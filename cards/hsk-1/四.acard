@@ -1,0 +1,29 @@
+{
+  "audio": "e3dd8eacc221dd466570e7f585214031fad878dc014ca0e48ea50fc109c6bc85.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "四",
+  "id": "ab10a7ffecaa7e584b50bf28",
+  "level": 1,
+  "meaning": "four",
+  "pinyin": "sì",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-C}RTCwxdH9-1779527159001"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

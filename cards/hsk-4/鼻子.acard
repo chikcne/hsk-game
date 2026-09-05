@@ -1,0 +1,31 @@
+{
+  "audio": "c4583b1ec84faf8e23c2d439cf621659d4cdddbff344edba59e2baab3d39f492.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鼻子",
+  "id": "c6d5f5855a7193a8cffb2a28",
+  "level": 4,
+  "meaning": "nose",
+  "pinyin": "bízi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qBL]//l*Nk-1779527159830"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

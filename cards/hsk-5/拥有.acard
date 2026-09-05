@@ -1,0 +1,31 @@
+{
+  "audio": "13deca1e7ed8ade9e3c3becc8bf43483298e7951ba5cec967ddcd08a5ac544e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拥有",
+  "id": "a62dfdd73ecc3dd1dfbeffd2",
+  "level": 5,
+  "meaning": "to possess, to own",
+  "pinyin": "yōngyǒu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-K@fm[/[q--1779527162192"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "67b9054d85572fdf5c1285df729f15eea84795c7de923997174fa4c0dfa82cdb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "正"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "纠正",
+  "id": "badf96c06b8b8fd4eec8fb3c",
+  "level": 6,
+  "meaning": "to correct, to rectify",
+  "pinyin": "jiūzhèng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-731-1779527163134"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "7b955f5b6ec6a59a1fede5c87a1363830757f119b21593657c54107892ea6292.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "头",
+  "id": "52364a7fe5c03dadfae1fdf9",
+  "level": 5,
+  "meaning": "suffix used after nouns",
+  "pinyin": "tou",
+  "pos": "suffix",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-fJH^`W/Qs/-1779527161952"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "de656085495e58926587099b64a1d7ac93a420aaae844cc0fe65dcb7b59af089.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当",
+  "id": "d3d984091235c18e91ecb01e",
+  "level": 4,
+  "meaning": "to serve as, to be; at the time of",
+  "pinyin": "dāng",
+  "pos": "verb、preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ig!O@Us6]?-1779527159938"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

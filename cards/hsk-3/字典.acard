@@ -1,0 +1,31 @@
+{
+  "audio": "125c78c3b4b7868d1b1baae14618aa6c77bd6dbda2af1d2ef6ac80cc7f38a46d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "字"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "字典",
+  "id": "f68875efd92d1f2a4c87d79f",
+  "level": 3,
+  "meaning": "dictionary",
+  "pinyin": "zìdiǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-eq3J0siRz,-1779527159793"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

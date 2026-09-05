@@ -1,0 +1,29 @@
+{
+  "audio": "8ffddabb29bb9c654c8f5dc27a4c144b8e7ea6b398f39379db88af49b97cf177.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "罪",
+  "id": "dca50cae2cf58fd3330735bb",
+  "level": 6,
+  "meaning": "crime, guilt",
+  "pinyin": "zuì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1800-1779527164203"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

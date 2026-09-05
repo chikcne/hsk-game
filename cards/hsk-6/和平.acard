@@ -1,0 +1,32 @@
+{
+  "audio": "4ac13bd808641df67d5887fcec124704965788d69022841317e0b8c1e0dc1101.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "和",
+      "平"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "和平",
+  "id": "e69b94f6f5b731fbe60b01a4",
+  "level": 6,
+  "meaning": "peace",
+  "pinyin": "hépíng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-540-1779527162943"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

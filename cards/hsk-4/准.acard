@@ -1,0 +1,29 @@
+{
+  "audio": "795b1b2c3f9d0b369442c59c008e70a5d01c39cedac9746e021d5afe265f1eaf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "准",
+  "id": "12dff228e2e170879092e316",
+  "level": 4,
+  "meaning": "accurate, exact, standard; (definitely, certainly)",
+  "pinyin": "zhǔn",
+  "pos": "adjective、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-jt!:8#4d>i-1779527160778"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

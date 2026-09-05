@@ -1,0 +1,32 @@
+{
+  "audio": "0c765cbdd2d6473631ef4c9442d317129617de7fdaa9e3ea90fda2d8961bdbc2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "进口",
+  "id": "4197c9aebd42ef4db2d8dc39",
+  "level": 5,
+  "meaning": "to import",
+  "pinyin": "jìnkǒu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KNnu.DQJQA-1779527161418"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

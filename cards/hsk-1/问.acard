@@ -1,0 +1,29 @@
+{
+  "audio": "82697209a1521b064e1b03ff151b0363a1835839a3e41a01f65f1919aae4d282.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "问",
+  "id": "65a505b525a9b8e7af86d518",
+  "level": 1,
+  "meaning": "to ask",
+  "pinyin": "wèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-I&98T&}v:C-1779527159022"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "b423a858be386450167f10c56f3af85c207f113f703933552532fa051014c476.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "流"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "流动",
+  "id": "089fad991ee68f162add0610",
+  "level": 6,
+  "meaning": "to flow",
+  "pinyin": "liúdòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-855-1779527163258"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

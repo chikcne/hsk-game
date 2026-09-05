@@ -1,0 +1,29 @@
+{
+  "audio": "b73499391ee561f578811ba7dedd117a008af16a2c05037be9a0f069a5c78cc7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扫",
+  "id": "76938230fe3fc2a7c1067cfd",
+  "level": 3,
+  "meaning": "to sweep",
+  "pinyin": "sǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Ow*0Ylg_:f-1779527159624"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

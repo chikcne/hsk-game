@@ -1,0 +1,29 @@
+{
+  "audio": "378ac60ae3b5491da8f8f244c7f96b782aaf7e4563fbcd34645a0834779be3c4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "凌晨",
+  "id": "3c04b96a75049abc4d50eea6",
+  "level": 6,
+  "meaning": "very early morning, dawn",
+  "pinyin": "língchén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-853-1779527163256"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "b01539d16b29caddb7e564dbb9489fec59c8357e59efc13ac6840fca38493f51.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "原",
+  "id": "0939cf8bba324f52636a59f3",
+  "level": 5,
+  "meaning": "original, former",
+  "pinyin": "yuán",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GVH:r|K;+P-1779527162231"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

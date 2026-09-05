@@ -1,0 +1,32 @@
+{
+  "audio": "7bdb84a725bf1a81807b1c144b13ed53b2e4fce087da62f066a696f70c4c12bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "步",
+      "脚"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "脚步",
+  "id": "68fc798a4e05b8222327949a",
+  "level": 5,
+  "meaning": "footstep, step",
+  "pinyin": "jiǎobù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Bq,V/o<3#-1779527161394"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

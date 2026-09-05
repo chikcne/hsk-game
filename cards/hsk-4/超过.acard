@@ -1,0 +1,32 @@
+{
+  "audio": "e30f8b263e83a78110f42e15027eef84cbc8b196b35600e174c219cef3e620f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "超",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "超过",
+  "id": "f356ab2d368b9b934e46d61d",
+  "level": 4,
+  "meaning": "to exceed, to surpass",
+  "pinyin": "chāoguò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-es~ItTK#|-1779527159877"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

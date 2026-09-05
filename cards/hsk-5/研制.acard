@@ -1,0 +1,31 @@
+{
+  "audio": "bd7c13795ecb98dd01ffd03fc8d73d7f5b3253bdcc9325d08d85b717c1077d6d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "制"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "研制",
+  "id": "05b76f359026d73571332e92",
+  "level": 5,
+  "meaning": "to research and develop",
+  "pinyin": "yánzhì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-j_=+x&:Vun-1779527162132"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

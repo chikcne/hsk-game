@@ -1,0 +1,29 @@
+{
+  "audio": "bfab675580a44e699c0346fe4fea9c15d0b758940a12feb0bed318ae0848d152.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "工序",
+  "id": "75ed40657390588ed3497237",
+  "level": 6,
+  "meaning": "process, procedure",
+  "pinyin": "gōngxù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-462-1779527162865"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

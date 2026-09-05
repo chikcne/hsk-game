@@ -1,0 +1,29 @@
+{
+  "audio": "1f7fa775c0a51c0f935d6dc2fdb331be5fda41f1d0dfccdabc012d510eaa580f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "骑",
+  "id": "dfd572f6f9aa527e995d0e0b",
+  "level": 3,
+  "meaning": "to ride",
+  "pinyin": "qí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-QiD;V#+?M}-1779527159600"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "80f25ed7a6aac0c402e5f095338dd57ccd89e9344ac497ff9317b786845d7aeb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时",
+      "间"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "时间",
+  "id": "c4dc9fc37c4d4435bf8fa267",
+  "level": 1,
+  "meaning": "time, duration, hours/minutes. (talking about the abstract concept of time, clock time, or a span/amount of time)",
+  "pinyin": "shíjiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-GJpiG:G5?0-1779527158989"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

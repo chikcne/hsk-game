@@ -1,0 +1,34 @@
+{
+  "audio": "19e381b69e67d810a402399f0025a21c16a418411e40525d25180c34e92d9a97.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "化",
+      "字",
+      "数",
+      "数字"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "数字化",
+  "id": "9a5f2b554acbd91a29f1c857",
+  "level": 6,
+  "meaning": "to digitize",
+  "pinyin": "shùzìhuà",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1229-1779527163632"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

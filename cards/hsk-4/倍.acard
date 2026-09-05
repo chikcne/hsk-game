@@ -1,0 +1,29 @@
+{
+  "audio": "4b2b3881144e565f40ba97f2b187f96d75395b1b659c0114acf64602467f430a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "倍",
+  "id": "9ceb6fdcb1f4c41a2a5b6b77",
+  "level": 4,
+  "meaning": "measure word meaning times, -fold",
+  "pinyin": "bèi",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kQbH[>Apv9-1779527159826"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

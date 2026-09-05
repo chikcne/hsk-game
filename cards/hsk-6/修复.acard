@@ -1,0 +1,31 @@
+{
+  "audio": "ae1af6703775d48a896c2b575f6ff4ff80278374c552dd6c785887d14732f44c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "修"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "修复",
+  "id": "ab4d668ae1c811db1397fcd9",
+  "level": 6,
+  "meaning": "to repair",
+  "pinyin": "xiūfù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1482-1779527163885"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

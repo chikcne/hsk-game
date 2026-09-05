@@ -1,0 +1,32 @@
+{
+  "audio": "7c20deb2ed24a827e0cd4c7b88380fb5d641d84c9126c40834d563b97324c3b9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "命",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生命",
+  "id": "2086cba6e07b8df789ae0b92",
+  "level": 4,
+  "meaning": "life",
+  "pinyin": "shēngmìng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-UY2w4~p8o-1779527160451"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

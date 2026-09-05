@@ -1,0 +1,29 @@
+{
+  "audio": "ccf8da63c6f7648a150b88b2cf07d25b248e8e11fa5f6be38f7e78d6845cd6c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "秒",
+  "id": "e59e8b589889b9e4e4dc63b0",
+  "level": 4,
+  "meaning": "second, unit of time",
+  "pinyin": "miǎo",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-rRSxwt:ae:-1779527160314"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

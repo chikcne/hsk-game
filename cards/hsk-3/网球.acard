@@ -1,0 +1,32 @@
+{
+  "audio": "f5e55b57d8c3d1c40f4521a9ee1becc10ecf293f61deeebd69b1808ac2d8c0e8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "球",
+      "网"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "网球",
+  "id": "d8bc15dd1a9203ce319da0be",
+  "level": 3,
+  "meaning": "tennis",
+  "pinyin": "wǎngqiú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-MMx8TU0oZ.-1779527159675"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

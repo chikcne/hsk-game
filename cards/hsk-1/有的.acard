@@ -1,0 +1,32 @@
+{
+  "audio": "22b630ef9c4a9b96dc8baec9b0b90136195864c5d0c452e226ea83736fb95521.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有",
+      "的"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有的",
+  "id": "ee1fc61feb78da2a746a5d30",
+  "level": 1,
+  "meaning": "some of them",
+  "pinyin": "yǒude",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-JFOkjxjGaS-1779527159067"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

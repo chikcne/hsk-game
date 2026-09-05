@@ -1,0 +1,32 @@
+{
+  "audio": "dfbf98f3dd625b070db2d9352cdf28afd2b663733dc50106daf15af23ab46f21.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "着",
+      "随"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "随着",
+  "id": "abef83ab179763d134347325",
+  "level": 4,
+  "meaning": "along with, following",
+  "pinyin": "suízhe",
+  "pos": "preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-t);w;FE,^m-1779527160513"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

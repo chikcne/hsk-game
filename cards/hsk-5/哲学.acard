@@ -1,0 +1,31 @@
+{
+  "audio": "75552aed049b2eae8047d655b4e0eecaff77ae1f17c4ee61f42cef8876d790e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哲学",
+  "id": "383bfbd5132585d257c818e5",
+  "level": 5,
+  "meaning": "philosophy",
+  "pinyin": "zhéxué",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Go9&l3YP#$-1779527162283"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "fdb108430add0d85d068c1faa21ced318a9cd6078fbe302d56ab0409ef9888ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "短"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "短裤",
+  "id": "c3f8f1a40dfbf14a0445188c",
+  "level": 3,
+  "meaning": "shorts",
+  "pinyin": "duǎnkù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-A#Z=via|o-1779527159409"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

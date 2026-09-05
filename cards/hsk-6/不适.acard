@@ -1,0 +1,31 @@
+{
+  "audio": "a603852e10d05add53bc51463dfb2a0080897eb82e8d9f6a98e6abd9cc8a0d31.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不适",
+  "id": "23f149741cd499a141d031b9",
+  "level": 6,
+  "meaning": "uncomfortable, unwell",
+  "pinyin": "búshì",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-70-1779527162473"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

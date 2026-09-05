@@ -1,0 +1,31 @@
+{
+  "audio": "e87ca3cfe9e82cbc56a7e0790cc870accaba4de07dd2e6865823a23024333268.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出示",
+  "id": "06f0900ac8f62313e45bc07f",
+  "level": 6,
+  "meaning": "to show, to present",
+  "pinyin": "chūshì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-191-1779527162594"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

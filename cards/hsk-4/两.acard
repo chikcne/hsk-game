@@ -1,0 +1,29 @@
+{
+  "audio": "cc149ac0eaad47c8e02c530e04e2f18405f8b78135254425d0fdc471a425f1ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "两",
+  "id": "1de58947763255ea0ea838e5",
+  "level": 4,
+  "meaning": "measure word for vehicles, animals, etc.",
+  "pinyin": "liǎng",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-g[:S>Ku]SB-1779527160276"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

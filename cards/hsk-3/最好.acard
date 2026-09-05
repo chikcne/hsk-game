@@ -1,0 +1,32 @@
+{
+  "audio": "c46b60d6b77e3149db24dc4c5cf4cceaa89f7abc3c120c12e03255a60292c851.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "最"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "最好",
+  "id": "8bb3916f3202f5b97ef42ee3",
+  "level": 3,
+  "meaning": "best",
+  "pinyin": "zuìhǎo",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-GfR@T{2)qO-1779527159799"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "67eda3144440b04687add8d9b2fe82c23a6d943fc8a4397c7323d3d3cfa2f278.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "游"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "游泳",
+  "id": "c579e7ac905560998aaae149",
+  "level": 2,
+  "meaning": "to swim",
+  "pinyin": "yóuyǒng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-cQvKq5RjAt-1779527159281"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

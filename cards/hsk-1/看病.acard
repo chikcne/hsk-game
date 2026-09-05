@@ -1,0 +1,32 @@
+{
+  "audio": "48295331962f233377d3ed1183f62e5730399f7d758668a3b8aea8845eb48945.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "病",
+      "看"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看病",
+  "id": "4281a29868a392add1890926",
+  "level": 1,
+  "meaning": "to see a doctor",
+  "pinyin": "kànbìng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-bvb>#yp]Gl-1779527158903"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

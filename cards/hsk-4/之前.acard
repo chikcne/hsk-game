@@ -1,0 +1,32 @@
+{
+  "audio": "293979527333713dffcf186434d1d96ee952810b9f2163d96c407473f6372bda.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "之",
+      "前"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "之前",
+  "id": "a4cc6b3ad2a87866612cd2ca",
+  "level": 4,
+  "meaning": "before, prior to",
+  "pinyin": "zhīqián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z-d8SP]>wL-1779527160746"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

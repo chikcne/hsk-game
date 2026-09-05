@@ -1,0 +1,31 @@
+{
+  "audio": "987f210d2c71953b94318df839f7c3d9107f8da91650d879baf6883828a610f9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "元"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "元宵",
+  "id": "5165583284d7e99cedd3d108",
+  "level": 6,
+  "meaning": "sweet dumplings, Yuanxiao",
+  "pinyin": "yuánxiāo",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1624-1779527164027"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

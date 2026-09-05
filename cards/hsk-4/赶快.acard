@@ -1,0 +1,32 @@
+{
+  "audio": "b9393d6f92491d3dd611150d65aab6defed6ada0c12549084cbe2acb1e677de3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "快",
+      "赶"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赶快",
+  "id": "4b8fe81b9277dd6af2fd55b1",
+  "level": 4,
+  "meaning": "quickly, at once",
+  "pinyin": "gǎnkuài",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vJoGyW%F2>-1779527160031"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "bc20c30488db0133bd9ba5336faeda8f2e93c0b42fe94a873451feaefd11ebc5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "拍"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拍摄",
+  "id": "ede1092c65bb492b3fd65000",
+  "level": 5,
+  "meaning": "to shoot (photo or film)",
+  "pinyin": "pāishè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-y_Xl4D]gB*-1779527161613"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

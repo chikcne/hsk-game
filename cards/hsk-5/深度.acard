@@ -1,0 +1,32 @@
+{
+  "audio": "9f4bca569815046e6a46de8427aaac65c0077b42f092408a95b604945be6ddb7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度",
+      "深"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "深度",
+  "id": "2e4f7df0b97471a40bf2f0fc",
+  "level": 5,
+  "meaning": "depth; deep",
+  "pinyin": "shēndù",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-CQw.kvj~hd-1779527161784"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

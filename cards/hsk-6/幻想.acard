@@ -1,0 +1,31 @@
+{
+  "audio": "a14a0b2568f150d65f9e33609a261e8f3f041587bd7ece5d6a98414aac03c6ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "想"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "幻想",
+  "id": "405fe2e6f58fd9acb0b4bd44",
+  "level": 6,
+  "meaning": "to fantasize; fantasy, illusion",
+  "pinyin": "huànxiǎng",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-579-1779527162982"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

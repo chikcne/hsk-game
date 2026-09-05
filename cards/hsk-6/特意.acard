@@ -1,0 +1,31 @@
+{
+  "audio": "4209b66e6b83384d5224353605f397e204bc0b44abe1daa1abd983a8cac98443.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "特"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "特意",
+  "id": "fd3c49e914b2384e154d5d13",
+  "level": 6,
+  "meaning": "deliberately, on purpose",
+  "pinyin": "tèyì",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1280-1779527163683"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

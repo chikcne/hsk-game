@@ -1,0 +1,31 @@
+{
+  "audio": "73f04074f64c442a06c102af5254a0e9b7ff04f0cf5698314d273c916709bd32.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "制"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "机制",
+  "id": "53de663a6ecdbfb46a8e8315",
+  "level": 6,
+  "meaning": "mechanism",
+  "pinyin": "jīzhì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-614-1779527163017"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

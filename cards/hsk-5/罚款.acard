@@ -1,0 +1,32 @@
+{
+  "audio": "2af3a68735bcb05f6b5b28529a49366fb84a32516e404f1a945e154b922aaba3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "款",
+      "罚"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "罚款",
+  "id": "dd65abb91d1b26cdac0b075f",
+  "level": 5,
+  "meaning": "to fine; fine",
+  "pinyin": "fákuǎn",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-h.Zj$t&SYU-1779527161128"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

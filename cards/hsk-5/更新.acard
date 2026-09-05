@@ -1,0 +1,32 @@
+{
+  "audio": "e8ad2e5bfe0343511814c310e6f733b18c967264e3a3467e16254eb3f63f2bad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "新",
+      "更"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "更新",
+  "id": "683f09c6f27e49eebaf34b10",
+  "level": 5,
+  "meaning": "to update",
+  "pinyin": "gēngxīn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-pM`dep(Nc>-1779527161209"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

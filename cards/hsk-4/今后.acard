@@ -1,0 +1,31 @@
+{
+  "audio": "05ff30ca5de6e033438476f25d3de0a7b268d02a7daafa245b6adae555027fa4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "今后",
+  "id": "f3e9bb1002af31e5ec189acf",
+  "level": 4,
+  "meaning": "from now on, in the future, henceforth",
+  "pinyin": "jīnhòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-q|g;/0K;0!-1779527160190"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

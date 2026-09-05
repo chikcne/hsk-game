@@ -1,0 +1,31 @@
+{
+  "audio": "a347a5d3bba365775e8ef5764f2722d74a6dc387c8359c01e8b8f7573b5550a6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "显"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "明显",
+  "id": "ccf6c62ab632e9d37da680f5",
+  "level": 5,
+  "meaning": "obvious, evident",
+  "pinyin": "míngxiǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B49Tm]s&kw-1779527161580"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

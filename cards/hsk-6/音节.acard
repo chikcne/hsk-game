@@ -1,0 +1,31 @@
+{
+  "audio": "c8fdc6c63216f0d90018e490cf3753730f0bedbb30cd07db0c2f6a0a1122a61b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "节"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "音节",
+  "id": "644c05422bea31363befdc0c",
+  "level": 6,
+  "meaning": "syllable",
+  "pinyin": "yīnjié",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1575-1779527163978"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

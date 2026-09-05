@@ -1,0 +1,29 @@
+{
+  "audio": "a4de26850d632a7ad9856297dff1e554b4420b854d10b90e3841645b5bc52ac6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "敲",
+  "id": "ba605d124f20dcfa7d25cf04",
+  "level": 4,
+  "meaning": "to knock, to tap, to strike",
+  "pinyin": "qiāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Hg;E:gFlkM-1779527160383"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

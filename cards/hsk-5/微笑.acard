@@ -1,0 +1,31 @@
+{
+  "audio": "51132c9cf28abc9ecb7aadcb7db553a34df7a4b717ca6f4aeb4b5ca64999ded5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "笑"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "微笑",
+  "id": "31d772b068de47469c23cc60",
+  "level": 5,
+  "meaning": "to smile; smile",
+  "pinyin": "wēixiào",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GRif;F]2n$-1779527161984"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

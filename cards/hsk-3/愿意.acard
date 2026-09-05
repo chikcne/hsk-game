@@ -1,0 +1,31 @@
+{
+  "audio": "f656c491b302e10171ce80c244f5dd13da2d63d9b86634f4f0e7f7e3fd431ff6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "愿"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "愿意",
+  "id": "c2f8538b23cbcf6c59189576",
+  "level": 3,
+  "meaning": "willing",
+  "pinyin": "yuànyì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n{gY(1zs^P-1779527159760"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

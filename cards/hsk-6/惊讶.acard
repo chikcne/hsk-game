@@ -1,0 +1,29 @@
+{
+  "audio": "d3c00b9d6f9565c8b4e49572bce6deda818391cd5928c80682db93d863f37510.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "惊讶",
+  "id": "9ba88709f0365f1048b7b860",
+  "level": 6,
+  "meaning": "surprised, amazed",
+  "pinyin": "jīngyà",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-719-1779527163122"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "a8a6ff916f271547e6d52e8ce792b61e51da5cc8e68ba7ca9cfd335382e56af0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "要",
+      "需"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "需要",
+  "id": "8df642acc05326219308f10a",
+  "level": 3,
+  "meaning": "to need; need",
+  "pinyin": "xūyào",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-t!o+(W-F`b-1779527159715"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

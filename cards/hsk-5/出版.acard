@@ -1,0 +1,32 @@
+{
+  "audio": "e5a21ced7e4fcf88ef5d70bb59a2daf16ec6a21584c3bc9d142b6ef47f27b2d7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "版"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出版",
+  "id": "d6f894f96194638993f41483",
+  "level": 5,
+  "meaning": "to publish",
+  "pinyin": "chūbǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F8tx//_LO[-1779527160974"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "2a8a877deaaa2676e068297b3807354162de2b677808abbb312eeaaa1a4972b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成语",
+  "id": "f5d80599eae010a59b43b10c",
+  "level": 6,
+  "meaning": "idiom, chengyu",
+  "pinyin": "chéngyǔ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-167-1779527162570"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

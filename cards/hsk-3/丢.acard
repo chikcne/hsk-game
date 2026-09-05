@@ -1,0 +1,29 @@
+{
+  "audio": "ead53dc8d28e97ce4a6c9b859d8b67f9580efc975171f64d8252d0418fa53584.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "丢",
+  "id": "a3696d002c307ce561deb521",
+  "level": 3,
+  "meaning": "to lose, to throw away",
+  "pinyin": "diū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-KO9r{?Kn>)-1779527159399"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "7eecb2385d091102d6f298814144420cebd484dc6df07303ac5d003ceb904793.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "久"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不久",
+  "id": "513d9bb682a4ac40023d1a40",
+  "level": 3,
+  "meaning": "soon, not long after",
+  "pinyin": "bùjiǔ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-mGG?]@Z3nD-1779527159345"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

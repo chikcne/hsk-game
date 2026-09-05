@@ -1,0 +1,32 @@
+{
+  "audio": "6bc041f67e1e663027f3d6ded6ccd9ce6ddc04136d3af06ad515639756415fde.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "急",
+      "紧"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "紧急",
+  "id": "85c8f2f057ca7690d1c912c2",
+  "level": 5,
+  "meaning": "urgent, critical",
+  "pinyin": "jǐnjí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mF2YQ<lbZj-1779527161411"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

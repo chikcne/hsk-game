@@ -1,0 +1,32 @@
+{
+  "audio": "ce1df148c36999b68f0f298727171e05e283a70be21a0376ec269ccc586c701c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场",
+      "市"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "市场",
+  "id": "8abef17c9c26ed60d2be4e55",
+  "level": 4,
+  "meaning": "market, marketplace",
+  "pinyin": "shìchǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kRK6uc{XoI-1779527160472"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

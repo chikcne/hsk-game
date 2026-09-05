@@ -1,0 +1,29 @@
+{
+  "audio": "c3c6cf1cec7e5476e7ffb3837f41bdc6b40ec4927b1b67d38381712bb5b38682.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "忍",
+  "id": "586283df39090bdc988dbce6",
+  "level": 5,
+  "meaning": "to endure, to bear",
+  "pinyin": "rěn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bK3[h0G)vt-1779527161731"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

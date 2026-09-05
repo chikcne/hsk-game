@@ -1,0 +1,29 @@
+{
+  "audio": "f87bb94f69caaf10f7a57ff2f2b641e8c5fb5e6d7b4580ec0d6aa2e74dfe3c59.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "仿佛",
+  "id": "9dbcda235e549d6944d2e9d7",
+  "level": 5,
+  "meaning": "as if, seem",
+  "pinyin": "fǎngfú",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nvw_+jF^jo-1779527161146"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

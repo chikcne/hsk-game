@@ -1,0 +1,32 @@
+{
+  "audio": "2f9b7efead162faca919c4be89ca1fba1a5f13d482fe184a400a5cdb00ba4d85.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "全",
+      "身"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "全身",
+  "id": "e12e408a79b2e9543da1df6b",
+  "level": 4,
+  "meaning": "whole body",
+  "pinyin": "quánshēn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-P=eJj~Yp!C-1779527160405"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

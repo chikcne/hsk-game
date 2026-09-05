@@ -1,0 +1,29 @@
+{
+  "audio": "f06e702bf97f99ca823e2ae0afe10b898abd170e6a82c47e27f464b4f676619e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "件",
+  "id": "0b8e67269df7d70f14f1217c",
+  "level": 1,
+  "meaning": "measure word for items",
+  "pinyin": "jiàn",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-sX})^+a8/e-1779527158892"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

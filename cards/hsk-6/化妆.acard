@@ -1,0 +1,31 @@
+{
+  "audio": "5da74da1ce8dffc48a3e4bcfd235845592e467fe845d0f45cba15cd264ea0894.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "化"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "化妆",
+  "id": "009a39e873402df6de49aa41",
+  "level": 6,
+  "meaning": "to put on makeup",
+  "pinyin": "huàzhuāng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-571-1779527162974"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

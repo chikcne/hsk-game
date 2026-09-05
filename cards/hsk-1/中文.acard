@@ -1,0 +1,31 @@
+{
+  "audio": "36e3a15c38e03d2cb5eb5215f8f11b410cd31b8b650558d6bef31bc7ec503390.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中文",
+  "id": "11ae51822224e5d923460048",
+  "level": 1,
+  "meaning": "Chinese language",
+  "pinyin": "Zhōngwén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-E[RxEj)1bZ-1779527159093"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

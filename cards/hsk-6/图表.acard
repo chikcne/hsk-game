@@ -1,0 +1,32 @@
+{
+  "audio": "2f98c203bd2f5644839762caea0bb0119d25ab3d472845991653369b0546da0a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "图",
+      "表"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "图表",
+  "id": "a702d4c0f78d166ba90b092c",
+  "level": 6,
+  "meaning": "chart, diagram",
+  "pinyin": "túbiǎo",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1329-1779527163732"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

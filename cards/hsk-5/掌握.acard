@@ -1,0 +1,31 @@
+{
+  "audio": "741a47b361de8fbdae269fa2f551fcedd6becdd966aa3086061d7e92126e4d44.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "握"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "掌握",
+  "id": "e5e526b146df72914011ab37",
+  "level": 5,
+  "meaning": "to grasp, to master",
+  "pinyin": "zhǎngwò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G*`4uqC+Wg-1779527162277"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

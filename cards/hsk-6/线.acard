@@ -1,0 +1,29 @@
+{
+  "audio": "bfac16324f6e106c1945b5e4501f27a6a37fde48ca817e633ea015a1610893ca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "线",
+  "id": "357ac31896eaa1deeb4c9f8c",
+  "level": 6,
+  "meaning": "thread, line; measure word for lines",
+  "pinyin": "xiàn",
+  "pos": "名、量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1427-1779527163830"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

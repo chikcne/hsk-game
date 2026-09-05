@@ -1,0 +1,32 @@
+{
+  "audio": "f5456df7c93ece266eeed2b41cf5351ba745818fe329f186ad4012e77abdfe2c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "向"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一向",
+  "id": "e4d66630208ea7118133a3a5",
+  "level": 6,
+  "meaning": "always, consistently",
+  "pinyin": "yíxiàng",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1554-1779527163957"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

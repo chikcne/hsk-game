@@ -1,0 +1,31 @@
+{
+  "audio": "89a3de99b5518658c88a4d3b2f8af1f070178afbc55da5220f4215d2c439b95b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "剧场",
+  "id": "b93fc577079d67fa0b862f23",
+  "level": 5,
+  "meaning": "theater",
+  "pinyin": "jùchǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-fE6/p@W-YQ-1779527161442"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

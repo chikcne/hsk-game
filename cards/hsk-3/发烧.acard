@@ -1,0 +1,32 @@
+{
+  "audio": "b565804a8dcc66663b0060791b648d2ce1751698396852901056d79a9f2bca2c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "烧"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发烧",
+  "id": "9d96833ebee6e6c49499e102",
+  "level": 3,
+  "meaning": "to have a fever",
+  "pinyin": "fāshāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-QA%27-~abq-1779527159418"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

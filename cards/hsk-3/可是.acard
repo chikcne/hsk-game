@@ -1,0 +1,32 @@
+{
+  "audio": "a74189535e9af15b1c3a50ce6bb030958e736ab294f47e7e452b1fb57bf13afe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "可",
+      "是"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "可是",
+  "id": "f541399545b9a38eb74cd375",
+  "level": 3,
+  "meaning": "but",
+  "pinyin": "kěshì",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-z<O,9g&J}}-1779527159537"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

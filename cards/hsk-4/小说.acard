@@ -1,0 +1,32 @@
+{
+  "audio": "bf742954fecc34c4de9a0aec92aeb400289ffa1653f9a9577bfc56336f88ffd2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小",
+      "说"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小说",
+  "id": "7d5aaf55a77c378b57063ff0",
+  "level": 4,
+  "meaning": "novel, fiction",
+  "pinyin": "xiǎoshuō",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-cLu3m~ew!]-1779527160617"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

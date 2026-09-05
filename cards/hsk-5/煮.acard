@@ -1,0 +1,29 @@
+{
+  "audio": "7aa99cb42dec3d5d7a2eaea28801600ff282c319a16ad8d6d94b1db33d00c79c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "煮",
+  "id": "6ce03cda65ecf3fd42c23a07",
+  "level": 5,
+  "meaning": "to boil",
+  "pinyin": "zhǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ce(8q=$Ql+-1779527162343"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

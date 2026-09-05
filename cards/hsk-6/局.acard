@@ -1,0 +1,30 @@
+{
+  "audio": "3d367b302a9753265d4fa5d74b62a6870f5a69fccc3b1292d732e5d0a5b37069.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "局",
+  "id": "5e5291b9377afd068bb7166f",
+  "level": 6,
+  "meaning": "measure word for games, sets",
+  "pinyin": "jú",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": "sense 1",
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-741-1779527163144",
+      "official-2026-6-742-1779527163145"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

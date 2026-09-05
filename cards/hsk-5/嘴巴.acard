@@ -1,0 +1,31 @@
+{
+  "audio": "ced0147af410e9caf33544f59d34383874517872b8ff414c00316e099c6f4f14.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "嘴"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "嘴巴",
+  "id": "624d69e7cfd1979d0e3c8f0b",
+  "level": 5,
+  "meaning": "mouth",
+  "pinyin": "zuǐba",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Lyp`&Y2SB--1779527162397"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

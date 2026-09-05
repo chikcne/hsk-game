@@ -1,0 +1,32 @@
+{
+  "audio": "f2f72611d9f0b62109337ebea6921b1f40ab6efa00af8cadb5e7ab8eb7313f16.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "皮",
+      "调"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "调皮",
+  "id": "76de8aab579af2d3e5c10b82",
+  "level": 5,
+  "meaning": "naughty, mischievous",
+  "pinyin": "tiáopí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-h1-AznE3/2-1779527161934"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "91ab656572732c7105652ada3ae229c5749f0919956aee95a56843d8d40ec32f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "考"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "考验",
+  "id": "5ed05c425e177b2df049a92b",
+  "level": 6,
+  "meaning": "to test, to put to the test",
+  "pinyin": "kǎoyàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-778-1779527163181"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

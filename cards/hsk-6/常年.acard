@@ -1,0 +1,32 @@
+{
+  "audio": "dc8cabd0de6cb3b2ab7a802b863cbcfc610b52aa287862de13eda421728fe828.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常",
+      "年"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "常年",
+  "id": "c43d6ebf4d5e97e15e7fd4b2",
+  "level": 6,
+  "meaning": "all year round; perennial",
+  "pinyin": "chángnián",
+  "pos": "副、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-127-1779527162530"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

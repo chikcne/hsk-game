@@ -1,0 +1,29 @@
+{
+  "audio": "0bf8c67a3345059a73e50386dbe7d346bbcc49a0edf9fb1250ee09fa45a74dbd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "坚决",
+  "id": "a5307332ae2482d769bb7a6a",
+  "level": 6,
+  "meaning": "resolute, determined",
+  "pinyin": "jiānjué",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-646-1779527163049"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

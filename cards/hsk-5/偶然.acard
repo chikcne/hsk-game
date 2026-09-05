@@ -1,0 +1,29 @@
+{
+  "audio": "760cd43cf52d8d44aeea3c3108bbff93d823768a3c6131a9e9efb710312f4cf0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "偶然",
+  "id": "6e4558beaae439851c83a633",
+  "level": 5,
+  "meaning": "accidental, by chance",
+  "pinyin": "ǒurán",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-MI<QX#ppUk-1779527161612"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

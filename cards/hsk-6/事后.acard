@@ -1,0 +1,32 @@
+{
+  "audio": "ba1021514f3b1c36c689006af5620572e7d8c4e6ca0dade928825f828c1c1f07.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事",
+      "后"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "事后",
+  "id": "715bf48ac4f7716db40bd2a0",
+  "level": 6,
+  "meaning": "after the event",
+  "pinyin": "shìhòu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1200-1779527163603"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

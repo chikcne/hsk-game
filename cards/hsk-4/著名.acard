@@ -1,0 +1,31 @@
+{
+  "audio": "da3153ccc380dd4ce1685c0dfe098e5236a48d665aa5cff78ef2525825b6ce3f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "著名",
+  "id": "1218f8f4971a651c41ed8d05",
+  "level": 4,
+  "meaning": "famous, well-known",
+  "pinyin": "zhùmíng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o*s8/?2vij-1779527160770"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

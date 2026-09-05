@@ -1,0 +1,29 @@
+{
+  "audio": "5d7c8ee584ce2436ecefc30f42f2391bcc99a50d12765671f55a966d98db30d8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "猫",
+  "id": "c5787ebf4d04fc94a2b7b576",
+  "level": 1,
+  "meaning": "cat",
+  "pinyin": "māo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Fy[.x5H)?D-1779527158922"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "d152f89114c20fc8d10bbe1f3e83127ca91a61f6e51122fe01677f6c41752da7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "允许",
+  "id": "d5629e4dd033a2a5edd1a049",
+  "level": 4,
+  "meaning": "to permit, to allow, to give permission",
+  "pinyin": "yǔnxǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-b)s04B{l_b-1779527160715"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "6db7881e210983e8c180d2f28313000d8a71949f0d5c8b7439fb0134acc7485f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "外"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外地",
+  "id": "dea3888e86165664b8b45b42",
+  "level": 3,
+  "meaning": "other place",
+  "pinyin": "wàidì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Kk$>ed}ziw-1779527159668"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

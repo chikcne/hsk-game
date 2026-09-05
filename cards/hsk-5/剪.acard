@@ -1,0 +1,29 @@
+{
+  "audio": "332a362663af5c40aa28d835f58aaf17b11340a6e5fff04c0e4f9cd81b99679f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "剪",
+  "id": "904a265ab18aeab0ca960312",
+  "level": 5,
+  "meaning": "to cut",
+  "pinyin": "jiǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g`6Ka4Nqea-1779527161370"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

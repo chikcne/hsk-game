@@ -1,0 +1,29 @@
+{
+  "audio": "00dab5994facbf1301a809457e2b360278bfd7534a03b86bc474cd82b572358b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "课",
+  "id": "5076902bcbffef04be8ee3b3",
+  "level": 1,
+  "meaning": "class, lesson",
+  "pinyin": "kè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-xaqMOY}cmo-1779527158906"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

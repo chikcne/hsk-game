@@ -1,0 +1,31 @@
+{
+  "audio": "d0a4c29bad902b4b2fa2ee751f19aeb44156cac87634dc3b87dc18c468c532d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "游"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "游览",
+  "id": "3ef344ca780f48ac6ad4deba",
+  "level": 5,
+  "meaning": "to visit, to tour",
+  "pinyin": "yóulǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-BYp]U3ho$P-1779527162208"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

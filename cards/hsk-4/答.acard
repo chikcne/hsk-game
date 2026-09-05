@@ -1,0 +1,29 @@
+{
+  "audio": "2bf9717df82b6a2d8c12b80ecf38ba26f870998c1de0de4d047bc76e3dbf7718.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "答",
+  "id": "7a931f9dfa5241aed7c952d9",
+  "level": 4,
+  "meaning": "to answer, to reply",
+  "pinyin": "dá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-j2N{x7VeJR-1779527159915"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

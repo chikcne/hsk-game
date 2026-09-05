@@ -1,0 +1,31 @@
+{
+  "audio": "286fe7ab755cc9e0ad7bb5ee72f3ab548fdbe6f532c61e559bfcfd33e49bbb47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "套"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "套餐",
+  "id": "fc6c523f8de2c9fe3fe243ba",
+  "level": 6,
+  "meaning": "set meal, combo",
+  "pinyin": "tàocān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1274-1779527163677"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

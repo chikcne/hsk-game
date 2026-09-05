@@ -1,0 +1,29 @@
+{
+  "audio": "8ef8d5aede44e66064af7677985d5ad213857d963574b11cb56cbd1b7fccdd10.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暗",
+  "id": "047844424bdc1beb8482091b",
+  "level": 5,
+  "meaning": "dark",
+  "pinyin": "àn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-FQN0D}0zuN-1779527160812"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "e02e888dd228552047dbb74bd9710e08381c1392a0d3a0dbebc4e90e62658597.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "光"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "光临",
+  "id": "9f15ecf83f3746a011a75773",
+  "level": 5,
+  "meaning": "to honor with one's presence",
+  "pinyin": "guānglín",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Lr}qsKJ(DZ-1779527161239"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

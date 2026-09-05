@@ -1,0 +1,29 @@
+{
+  "audio": "cc9ff9f6d512392d8874984071b49f7be80970ad1a374c322b114de823b1d7f3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "技艺",
+  "id": "eb3e9a4a441b408ca8b1508a",
+  "level": 6,
+  "meaning": "skill, artistry",
+  "pinyin": "jìyì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-627-1779527163030"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

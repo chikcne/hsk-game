@@ -1,0 +1,32 @@
+{
+  "audio": "d89d98d28c2f6bd5b4710a9a3ce773260905591a8e6145c1ff99f736b0cc0f90.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "回",
+      "收"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "回收",
+  "id": "0e6ed4476ac10bce3f86b215",
+  "level": 5,
+  "meaning": "to recycle",
+  "pinyin": "huíshōu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-H(@*A-bqAM-1779527161314"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

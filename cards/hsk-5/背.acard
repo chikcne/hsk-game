@@ -1,0 +1,29 @@
+{
+  "audio": "4b2b3881144e565f40ba97f2b187f96d75395b1b659c0114acf64602467f430a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "背",
+  "id": "926a122aeec60d77066a4f40",
+  "level": 5,
+  "meaning": "back, the back of the body; to carry on the back, to bear, to recite from memory; out-of-the-way, remote",
+  "pinyin": "bèi",
+  "pos": "noun、verb、 adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ncu}9w9aOm-1779527160839"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

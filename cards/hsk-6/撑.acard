@@ -1,0 +1,29 @@
+{
+  "audio": "cff23c94e5da0852f936eb84e8c9b6f59b616249d27c6698fe0a6ef0f881ac17.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "撑",
+  "id": "df111f585efc4511f4449408",
+  "level": 6,
+  "meaning": "to prop up, to support",
+  "pinyin": "chēng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-152-1779527162555"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

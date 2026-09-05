@@ -1,0 +1,29 @@
+{
+  "audio": "d0cd70231d822fcb71593297a2eb19d9f4aedcc03308732359622888ba965ae8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "劝",
+  "id": "bbb014c670414c9832eb9463",
+  "level": 5,
+  "meaning": "to persuade",
+  "pinyin": "quàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JYi=Lh*svZ-1779527161707"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

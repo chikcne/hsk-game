@@ -1,0 +1,29 @@
+{
+  "audio": "a09cb17dbfc0b49c1c53e5a90ef9b18c899fa7b803340996b35acdd7e3456592.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "桥",
+  "id": "6760690d4c783736b1be7cd7",
+  "level": 4,
+  "meaning": "bridge",
+  "pinyin": "qiáo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-OC~AKrFMqT-1779527160384"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "b052d351b1371a5660bdfa75fa8ac2b07c9d9be910bf84004876911abaf5a05b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "方"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大方",
+  "id": "b82841a7b19d92b6b0cb1149",
+  "level": 6,
+  "meaning": "generous, natural",
+  "pinyin": "dàfang",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-248-1779527162651"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

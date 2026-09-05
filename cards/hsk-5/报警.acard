@@ -1,0 +1,29 @@
+{
+  "audio": "1dd7e09d98c6376583507b1ac4a9a7aab3551556088d2498080499d13a0b89ce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "报警",
+  "id": "5f0f1b8cfcfa5ac16d4d86fe",
+  "level": 5,
+  "meaning": "to report to the police",
+  "pinyin": "bàojǐng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ttNR,.M8xe-1779527160836"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

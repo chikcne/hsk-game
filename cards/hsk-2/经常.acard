@@ -1,0 +1,31 @@
+{
+  "audio": "0718e8408e1f063a3376f9f11c6f108ec54fadf91d7a887296b490665c0bf594.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "经常",
+  "id": "aeae68893516ab8863768875",
+  "level": 2,
+  "meaning": "often",
+  "pinyin": "jīngcháng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-A]{@?Scif=-1779527159177"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

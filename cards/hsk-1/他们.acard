@@ -1,0 +1,32 @@
+{
+  "audio": "ea5198cf2838f02e0e185e333e3f8c84c7a2939b8afae49e214251a862db4535.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "他",
+      "们"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "他们",
+  "id": "cbc8a8db8c2628d549276cd8",
+  "level": 1,
+  "meaning": "they (man)",
+  "pinyin": "tāmen",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-pG__?L;==P-1779527159006"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

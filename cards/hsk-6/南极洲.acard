@@ -1,0 +1,32 @@
+{
+  "audio": "13ace4ac8026c505ed25870fb3f2567d81f1456b85db2dea571b1c7c94a67218.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "南",
+      "极"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "南极洲",
+  "id": "9946cedd94cc50693844e356",
+  "level": 6,
+  "meaning": "Antarctica",
+  "pinyin": "Nánjízhōu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-944-1779527163347"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "b659b17aad6391fbffbd4e657397030997920621e08441e3306f3c9ff44dd9f8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伙",
+      "大"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大伙儿",
+  "id": "5543e3821f318d49b879b44d",
+  "level": 6,
+  "meaning": "everyone",
+  "pinyin": "dàhuǒr",
+  "pos": "代",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-250-1779527162653"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

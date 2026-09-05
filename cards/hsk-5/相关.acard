@@ -1,0 +1,31 @@
+{
+  "audio": "66a0e05ee10fd74cad39033c837dc9c72f688d58294c7367ad199db4e466a4da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相关",
+  "id": "89986658c98eadf8d0b1086d",
+  "level": 5,
+  "meaning": "to be related, to be correlated",
+  "pinyin": "xiāngguān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-dWp#dOP[nK-1779527162054"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "99f95ef1a394a912cb964c93494d9df0618c009d1d14c8ca2ab8134b3d126e92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "服"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "舒服",
+  "id": "708435312bccb78175c3ad3d",
+  "level": 2,
+  "meaning": "comfortable",
+  "pinyin": "shūfu",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-f?M}[zM9MY-1779527159239"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

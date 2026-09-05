@@ -1,0 +1,31 @@
+{
+  "audio": "8144eba41c958c425ccf603cb241e1c19fe5fae079d201d600d889dd79415fe4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "使"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "即使",
+  "id": "8da5f5a9eeeb2e825878dab0",
+  "level": 4,
+  "meaning": "even if",
+  "pinyin": "jíshǐ",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-M/6o)R><%X-1779527160129"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

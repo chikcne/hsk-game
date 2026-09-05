@@ -1,0 +1,32 @@
+{
+  "audio": "0207c0ea050237ef67b4deb53f46f8ad24d3ec280458268cfa8d7bf74c9ead10.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "问",
+      "顾"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "顾问",
+  "id": "0e3fc49fffa0579966718687",
+  "level": 6,
+  "meaning": "consultant, advisor",
+  "pinyin": "gùwèn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-484-1779527162887"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

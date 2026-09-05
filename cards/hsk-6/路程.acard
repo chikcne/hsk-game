@@ -1,0 +1,31 @@
+{
+  "audio": "b752aa7fa63e5c5a3abe34ef55a288e2ccf6aaa7880a2b12a49687519c493cc9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "路"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "路程",
+  "id": "e68cf4eb16b11c7a6280879c",
+  "level": 6,
+  "meaning": "distance, journey",
+  "pinyin": "lùchéng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-864-1779527163267"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

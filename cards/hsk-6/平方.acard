@@ -1,0 +1,32 @@
+{
+  "audio": "039f2f369a888f86575879e030391f8bb0bb8f1185ad53a0b5c9d70386e2ffe1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "平",
+      "方"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平方",
+  "id": "8fe76dc8fdc380bf2dfa02c3",
+  "level": 6,
+  "meaning": "square; measure word",
+  "pinyin": "píngfāng",
+  "pos": "名、量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-999-1779527163402"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

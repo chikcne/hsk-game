@@ -1,0 +1,32 @@
+{
+  "audio": "6a6acc11fd2a60028d8612600b80471b61e393e85ccf24a1a92cb31996b3271a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "害",
+      "灾"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "灾害",
+  "id": "e135123abe75829323518799",
+  "level": 6,
+  "meaning": "calamity",
+  "pinyin": "zāihài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1640-1779527164043"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

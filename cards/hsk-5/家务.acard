@@ -1,0 +1,31 @@
+{
+  "audio": "ff28c1768f40d54f5bdd63ad7bf824fc4ff14a5445d05183397450e0d5943612.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "家"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "家务",
+  "id": "9bf742bd719c3824c559ba6a",
+  "level": 5,
+  "meaning": "household chores",
+  "pinyin": "jiāwù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-s!+HTmVV1>-1779527161360"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "07cdbf0acf23318a7825c59347d0744bfabccee396727927c2ee136bffc8077b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "丧失",
+  "id": "0aba7dff93d5a4692a9d57aa",
+  "level": 6,
+  "meaning": "to lose",
+  "pinyin": "sàngshī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1131-1779527163534"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

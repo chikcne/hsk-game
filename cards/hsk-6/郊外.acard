@@ -1,0 +1,31 @@
+{
+  "audio": "708304faa43a6e1f053b046f66cfa3f07ef42dac4917e04dbaba688c1c49726c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "郊外",
+  "id": "6d5d53e3c58e46e32696e4ab",
+  "level": 6,
+  "meaning": "suburb",
+  "pinyin": "jiāowài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-676-1779527163079"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

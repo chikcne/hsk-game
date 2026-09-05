@@ -1,0 +1,31 @@
+{
+  "audio": "f866aee00fb5524cb5187649fd3fe45ec3608f0aecbcbfb3507a2721b6bde69b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "化"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "化石",
+  "id": "cebfffafd9188cc1bad369de",
+  "level": 6,
+  "meaning": "fossil",
+  "pinyin": "huàshí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-569-1779527162972"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

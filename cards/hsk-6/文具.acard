@@ -1,0 +1,29 @@
+{
+  "audio": "7e61c98114e4fff27d6f2cc14abb7c1fad5cd717c83fc0362e362415ae605c68.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "文具",
+  "id": "939ea0483184b1a7148cfcf4",
+  "level": 6,
+  "meaning": "stationery",
+  "pinyin": "wénjù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1387-1779527163790"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

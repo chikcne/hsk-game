@@ -1,0 +1,31 @@
+{
+  "audio": "5582e83f7b1fa0baeb4c1f9d01ba770ff6028e1a221c7ee58a1262d7a98bae5b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "反"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相反",
+  "id": "1ed4cd1102c9de4c6f8d0b10",
+  "level": 4,
+  "meaning": "opposite, contrary; on the contrary",
+  "pinyin": "xiāngfǎn",
+  "pos": "adjective、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-h}($i_f#c+-1779527160607"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

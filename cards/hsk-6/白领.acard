@@ -1,0 +1,32 @@
+{
+  "audio": "b750de4f65d5f0a00bed988c26e795d26b70d54d2d66e498631a74a60136f713.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "白",
+      "领"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "白领",
+  "id": "fa8c903c6cd32ba76d069684",
+  "level": 6,
+  "meaning": "white-collar worker",
+  "pinyin": "báilǐng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-7-1779527162410"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

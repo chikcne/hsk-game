@@ -1,0 +1,29 @@
+{
+  "audio": "f15c32953aef10d89f1237d5f47881cefd38eef0c6cd48b43c309f801cb28871.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "得",
+  "id": "0b8f67ecbbd5350afc93590c",
+  "level": 3,
+  "meaning": "must, need",
+  "pinyin": "děi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-I.~X+h>WNM-1779527159390"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

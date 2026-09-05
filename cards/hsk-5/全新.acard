@@ -1,0 +1,32 @@
+{
+  "audio": "e4ead9d7dbbadfccdf1369777139ab85e0630b85a829f960dcaa04e9d4a3c8be.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "全",
+      "新"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "全新",
+  "id": "6f4336efc8acc6ce218590c9",
+  "level": 5,
+  "meaning": "brand new",
+  "pinyin": "quánxīn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-b)D3sI5#|S-1779527161706"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

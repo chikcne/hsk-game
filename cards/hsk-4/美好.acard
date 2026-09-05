@@ -1,0 +1,32 @@
+{
+  "audio": "f0e96c1e67efada55fb94a9ff2d2cc6ca3c6dcf23a4184e236fd3897b1ac4d2c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "美"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "美好",
+  "id": "3935ccd31813566bf44346a2",
+  "level": 4,
+  "meaning": "beautiful, splendid",
+  "pinyin": "měihǎo",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-yYQg^d%2AN-1779527160304"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

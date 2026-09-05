@@ -1,0 +1,31 @@
+{
+  "audio": "48ae1124fbfecb9cc6d4877f40353a43a527d4f4461c745f785a716f9bc43a2f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发达",
+  "id": "ed94aa29fa98c4e8ef6ec5a6",
+  "level": 5,
+  "meaning": "to develop; developed",
+  "pinyin": "fādá",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zAIXXY`iX}-1779527161121"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

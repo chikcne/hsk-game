@@ -1,0 +1,32 @@
+{
+  "audio": "c39bbc5f4029e058c39e44755140af3615c1b5ac5467bb86e3b0aae36d34446d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "身",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "身高",
+  "id": "ce5fdae7f300b0353efd4c55",
+  "level": 3,
+  "meaning": "height",
+  "pinyin": "shēngāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-?per{yU2@-1779527159630"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "e8d3eee609bf742ecc7f27baaabd0ca81c7b5279ee813b77c4c28755df6f47b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "算"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "计算",
+  "id": "9b09dc680b0593809337eec4",
+  "level": 5,
+  "meaning": "to calculate",
+  "pinyin": "jìsuàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w[8jzv|abD-1779527161350"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

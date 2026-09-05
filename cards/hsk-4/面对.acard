@@ -1,0 +1,32 @@
+{
+  "audio": "84b50dca13c544cfaf114edceedda9e786c1c4f7a0de83f0b1aa1fcd001b6ea0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "对",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "面对",
+  "id": "7c9ce32625a306dedbb83de9",
+  "level": 4,
+  "meaning": "to face, to confront",
+  "pinyin": "miànduì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-fx,,h%./xE-1779527160312"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

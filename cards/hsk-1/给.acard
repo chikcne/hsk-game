@@ -1,0 +1,29 @@
+{
+  "audio": "102b23c72d37fa4faf39ae417d40a836bd0f936ed878c33729647c19f97cbddc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "给",
+  "id": "2ec20b2d72c7d53f2d0a92bf",
+  "level": 1,
+  "meaning": "to give; (to, for)",
+  "pinyin": "gěi",
+  "pos": "verb、 （preposition）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-k[StuSI/Cv-1779527158864"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "faab518098e3508e1657b9122f6f709f16f069c991ae2ce6b238007371474f22.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "字"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "汉字",
+  "id": "34fc3b853b25759618b473e7",
+  "level": 1,
+  "meaning": "Chinese character",
+  "pinyin": "Hànzì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-nKCMVp}KCD-1779527158873"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

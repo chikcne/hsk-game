@@ -1,0 +1,31 @@
+{
+  "audio": "e3f221b9cd0c5cce3deb932c86e40673a1aca71d7447886d2894a4757afa5900.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "饭"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "午饭",
+  "id": "a932efea62af953f828e52ce",
+  "level": 1,
+  "meaning": "lunch",
+  "pinyin": "wǔfàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-yVpn`jl,*p-1779527159027"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "4a4498b528fdc9bbcbd8e87c8ce20895e89db8b40d3f5a6fb9e4afba8a4b81e6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "先",
+  "id": "b752de0caffaaf16d99cebf0",
+  "level": 3,
+  "meaning": "first, before",
+  "pinyin": "xiān",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-ml,a+:/M}K-1779527159693"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

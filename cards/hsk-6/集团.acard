@@ -1,0 +1,32 @@
+{
+  "audio": "dce2ed07f445a8c82573ec2bf4abc24f90745fa4f14381e67eddbecebed73641.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "团",
+      "集"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "集团",
+  "id": "a2059346a14ffa51a609a95f",
+  "level": 6,
+  "meaning": "group, corporation",
+  "pinyin": "jítuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-619-1779527163022"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "f11a5a06e5c552b87212400327b0a31fd2cc08624e205fb68d3bdf8961706216.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "件",
+      "条"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "条件",
+  "id": "564b6339f6a6ef45fce51480",
+  "level": 4,
+  "meaning": "condition, requirement, terms",
+  "pinyin": "tiáojiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nKXNdhrwW=-1779527160539"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

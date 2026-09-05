@@ -1,0 +1,32 @@
+{
+  "audio": "3afcaa1ed53bb09aeaf8f272533b86c608cc58924c033dc5c6b2c667596f83f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "取",
+      "夺"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夺取",
+  "id": "b13ebe1e27d0ab4d88c4b5cd",
+  "level": 6,
+  "meaning": "to capture, to take by force",
+  "pinyin": "duóqǔ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-342-1779527162745"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

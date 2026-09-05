@@ -1,0 +1,29 @@
+{
+  "audio": "713be7952d271e3fd4f36c5e2adf4822abc92566b23f0264160d41f3049bc4bc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看",
+  "id": "d0a8a7bd1b799464cb405f40",
+  "level": 1,
+  "meaning": "to look after, to watch",
+  "pinyin": "kān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-LuPh+T$Ac:-1779527158902"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

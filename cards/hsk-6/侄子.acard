@@ -1,0 +1,31 @@
+{
+  "audio": "29010a5f672955683627583e57d870e2f38b513bee897d14b473cf94562c366b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "侄子",
+  "id": "0ea3458b2db0cc503871dd3d",
+  "level": 6,
+  "meaning": "nephew",
+  "pinyin": "zhízi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1705-1779527164108"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

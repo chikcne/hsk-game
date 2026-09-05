@@ -1,0 +1,32 @@
+{
+  "audio": "0fc80828048c9072180b7f1d7734a3a700dbbb15ee42e8e3c9efcfe0573f411f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "位",
+      "方"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "方位",
+  "id": "12d8283ed7c6ac977f9130fb",
+  "level": 6,
+  "meaning": "direction, position",
+  "pinyin": "fāngwèi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-370-1779527162773"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

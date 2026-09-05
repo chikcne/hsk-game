@@ -1,0 +1,29 @@
+{
+  "audio": "66670a884a865c19f8778a2f2d432535cb73f21f5480f58b9b3c92c8b166f034.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "科",
+  "id": "b8ad18862bec7ef180e79354",
+  "level": 6,
+  "meaning": "field, branch of study",
+  "pinyin": "kē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-779-1779527163182"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "bc7dc9f952af9017ce8241071fb9118f61ff9f68d0236361c19aa8c5541a7639.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "白"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "蛋白质",
+  "id": "2152f9e7c037eb567b974dac",
+  "level": 6,
+  "meaning": "protein",
+  "pinyin": "dànbáizhì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-265-1779527162668"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

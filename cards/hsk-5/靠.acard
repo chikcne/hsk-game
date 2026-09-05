@@ -1,0 +1,29 @@
+{
+  "audio": "9d162e1f6014bf60a187f9853accbdd5cb7a5cc785b48b288fdb0e90307ea681.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "靠",
+  "id": "197f96f4ff8b05ffc85a3f9e",
+  "level": 5,
+  "meaning": "to lean on, to rely on, to be close to",
+  "pinyin": "kào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-q,2-g:wMcI-1779527161463"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

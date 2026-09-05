@@ -1,0 +1,31 @@
+{
+  "audio": "d7668ad08dedf58c6693b05ac6d9fa4854ba8d1e8d392de3892f2e0c01a1333d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "乐于",
+  "id": "175e399103a13e5f48c6b63f",
+  "level": 6,
+  "meaning": "to be happy to, to be willing to",
+  "pinyin": "lèyú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-827-1779527163230"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

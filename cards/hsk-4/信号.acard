@@ -1,0 +1,32 @@
+{
+  "audio": "1c1edf799a8498c29e400f06f908b918d66a196856423c5ab1c57f7ef738c465.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "信",
+      "号"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "信号",
+  "id": "35a3f0e19a1b561789265db6",
+  "level": 4,
+  "meaning": "signal",
+  "pinyin": "xìnhào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-cj_/~<Kp96-1779527160625"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "03a74dec94ae0ddcb8df9af97b7ca2d95a7a903b2dc366f4cf2c1a05a39abd90.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "移"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "移民",
+  "id": "95291cdf0e6ef101bf85f32f",
+  "level": 6,
+  "meaning": "to immigrate; immigrant",
+  "pinyin": "yímín",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1551-1779527163954"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

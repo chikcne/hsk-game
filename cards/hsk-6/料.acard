@@ -1,0 +1,30 @@
+{
+  "audio": "26129f0b6c3ff13df7936d20f987eb9b2d3ae7d165c947f2df990cfca1603770.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "料",
+  "id": "abfd6ece0c206a6c11aba490",
+  "level": 6,
+  "meaning": "material",
+  "pinyin": "liào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": "sense 1",
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-850-1779527163253",
+      "official-2026-6-851-1779527163254"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

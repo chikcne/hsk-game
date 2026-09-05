@@ -1,0 +1,32 @@
+{
+  "audio": "8a893dbaacb260a11690fbd573c6d40355a435083716c9f82d5e8864f9f3bea6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天",
+      "才"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "天才",
+  "id": "e615bb169076a4c85f0b5c7c",
+  "level": 6,
+  "meaning": "genius",
+  "pinyin": "tiāncái",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1288-1779527163691"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

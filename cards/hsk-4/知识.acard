@@ -1,0 +1,31 @@
+{
+  "audio": "7f04c706fa7ea0dde09a89ec586efde7fcc168d42037f830ddd448398cae688e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "识"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "知识",
+  "id": "bf8146e26f2cd574330c7399",
+  "level": 4,
+  "meaning": "knowledge",
+  "pinyin": "zhīshi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-x;51.R9|%N-1779527160747"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

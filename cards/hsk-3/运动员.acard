@@ -1,0 +1,34 @@
+{
+  "audio": "d7c63acbfd54eed1cc74b01820a1d6020014d66c453dea45eda507def5b1aea6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "员",
+      "运",
+      "运动"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "运动员",
+  "id": "1464c569bdc1e7fe19434dde",
+  "level": 3,
+  "meaning": "athlete",
+  "pinyin": "yùndòngyuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-KJDgQ<~kF--1779527159764"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

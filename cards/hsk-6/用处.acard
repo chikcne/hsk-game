@@ -1,0 +1,32 @@
+{
+  "audio": "d15f13925663a066006daaa376e20ad15d6796bd5be4941259f529b3e6b400b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "处",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "用处",
+  "id": "91fd2620bd2984eaa2b024f7",
+  "level": 6,
+  "meaning": "use, value",
+  "pinyin": "yòngchù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1593-1779527163996"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

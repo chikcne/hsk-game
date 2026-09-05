@@ -1,0 +1,32 @@
+{
+  "audio": "30ee915389a22b0b2779dbbfaeb2a32eb5412f12cfb59f660f6dc8e8f1d16f2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口",
+      "感"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "口感",
+  "id": "856eaa797c73386ea00c6ec7",
+  "level": 6,
+  "meaning": "taste, texture",
+  "pinyin": "kǒugǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-793-1779527163196"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "2fa0f01bbdd665decd4e0e03adeb7bf3425253a5b135986a9490ecca4fb86fd3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "此",
+      "由"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "由此",
+  "id": "c35e3dee4c0e0559269cb10d",
+  "level": 5,
+  "meaning": "from this, thus",
+  "pinyin": "yóu cǐ",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-k14}FV?|2T-1779527162205"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

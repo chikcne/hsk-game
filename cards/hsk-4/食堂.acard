@@ -1,0 +1,29 @@
+{
+  "audio": "6f110f496aff3c7b6754ef67f210aed8f2f99c303d8f6f93bb7afd887451cc5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "食堂",
+  "id": "fa0b7ed99841a68cf581ddc3",
+  "level": 4,
+  "meaning": "cafeteria, dining hall",
+  "pinyin": "shítáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o3$qX$d;G6-1779527160465"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

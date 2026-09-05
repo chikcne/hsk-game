@@ -1,0 +1,32 @@
+{
+  "audio": "7df6e87f27ddeee7e84de158de53f520d25ff98f7fb85660e520c97a105169d5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "共",
+      "同"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "共同",
+  "id": "41f511c76d96b8457ea0c65e",
+  "level": 4,
+  "meaning": "common, joint",
+  "pinyin": "gòngtóng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Luo>oBYP^r-1779527160062"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

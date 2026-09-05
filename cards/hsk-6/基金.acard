@@ -1,0 +1,29 @@
+{
+  "audio": "0fa80f3321f7b04a7ac83c8df12a608bc3900ff41e57d5cc4ba9306683213033.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "基金",
+  "id": "e7bd5fd56a3c30f0b419b863",
+  "level": 6,
+  "meaning": "fund",
+  "pinyin": "jījīn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-608-1779527163011"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

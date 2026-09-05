@@ -1,0 +1,31 @@
+{
+  "audio": "3d5831e07132d35945c05b441d8723a838b4a44caf96bd98faddb71f56f70b67.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地域",
+  "id": "0519dd69979b06074cbc04a5",
+  "level": 6,
+  "meaning": "region, area",
+  "pinyin": "dìyù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-294-1779527162697"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

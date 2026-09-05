@@ -1,0 +1,31 @@
+{
+  "audio": "d334fc13f9900484b889e71b14d6d10d0bb680593bbb17c6439df5c44cfd5e20.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "播"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主播",
+  "id": "3e0dfa55d4f0a09b55f02d74",
+  "level": 6,
+  "meaning": "to host a live stream; live streamer",
+  "pinyin": "zhǔbō",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1745-1779527164148"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "9c6b96695bd2fe1ff51e8b19372e20aa0f012b5fafbcb52dafd28ef0f64f178f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "系"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "体系",
+  "id": "b672b28037a87b9006e470dd",
+  "level": 6,
+  "meaning": "system",
+  "pinyin": "tǐxì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1286-1779527163689"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

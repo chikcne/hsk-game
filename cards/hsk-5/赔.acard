@@ -1,0 +1,29 @@
+{
+  "audio": "52cfaf1ac7cd59159477a9130c038bd7aa55d6c1fa771160329c7bf3fe57e13a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赔",
+  "id": "fdd02036452cc9c63227d9f2",
+  "level": 5,
+  "meaning": "to compensate",
+  "pinyin": "péi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gL{5jtvM*r-1779527161618"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

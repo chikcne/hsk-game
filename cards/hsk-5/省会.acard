@@ -1,0 +1,32 @@
+{
+  "audio": "af3de083522b1e845a60486699e1cb238a06150dc1aa5819749b9fd3a82a4d71.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "省"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "省会",
+  "id": "fac6e4fdb7bd134baaae286b",
+  "level": 5,
+  "meaning": "provincial capital",
+  "pinyin": "shěnghuì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-y9,1/>G&P_-1779527161803"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

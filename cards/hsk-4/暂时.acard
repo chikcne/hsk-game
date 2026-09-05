@@ -1,0 +1,31 @@
+{
+  "audio": "b13e9dd8850149b6f2678629fd026e01aaf6e0578dd9dce72baf39db5d24f790.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暂时",
+  "id": "354da4b76fbaed88cc81207f",
+  "level": 4,
+  "meaning": "temporary, for the time being",
+  "pinyin": "zànshí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-9zKyA6KPG-1779527160719"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

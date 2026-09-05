@@ -1,0 +1,29 @@
+{
+  "audio": "ea9a435bcfc28abc8de8add1209cc154ec875d66becf19ec5198f2182e7bf797.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "姓",
+  "id": "58b7d5794eca41ae0cd624a9",
+  "level": 2,
+  "meaning": "surname; to be surnamed",
+  "pinyin": "xìng",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-e)z-I5PqkZ-1779527159267"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

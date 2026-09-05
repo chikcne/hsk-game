@@ -1,0 +1,31 @@
+{
+  "audio": "dad038c9fa1e7a95a862dc994b1a8c18a74116548e6f4165edb6a1337a55ed06.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "苦"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "艰苦",
+  "id": "47d9df865b9ed9e7f99a9c27",
+  "level": 5,
+  "meaning": "arduous, difficult",
+  "pinyin": "jiānkǔ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J|qNKz+.J.-1779527161367"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

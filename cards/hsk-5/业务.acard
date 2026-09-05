@@ -1,0 +1,31 @@
+{
+  "audio": "90a7073dc5966cd9f9f4e56db9f7184b7ea59510313bb2dddc1a679df918b2eb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "业务",
+  "id": "0fe62f5d0f45a3ab74907f8b",
+  "level": 5,
+  "meaning": "business, professional work",
+  "pinyin": "yèwù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-be_Tj7Sp.,-1779527162147"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

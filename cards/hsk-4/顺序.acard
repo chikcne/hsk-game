@@ -1,0 +1,31 @@
+{
+  "audio": "ff81630f3dea89532c3ed26ee8d057f96bd681d7405eb4ab4c57d112a924eccd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "顺"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "顺序",
+  "id": "518696b8d2eacbdc5b64d94b",
+  "level": 4,
+  "meaning": "order, sequence",
+  "pinyin": "shùnxù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ChN*ve7Nh;-1779527160501"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

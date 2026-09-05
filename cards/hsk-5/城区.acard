@@ -1,0 +1,32 @@
+{
+  "audio": "cf1fdb709cf8d8bf3f2f3a140d60b16301570a54bbfa5a72b48ba58fabcb118a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "区",
+      "城"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "城区",
+  "id": "1c1d1de7280fbcda9c9997ef",
+  "level": 5,
+  "meaning": "urban area",
+  "pinyin": "chéngqū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ng{v$=%pFB-1779527160947"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

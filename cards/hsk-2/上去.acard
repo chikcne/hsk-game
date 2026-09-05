@@ -1,0 +1,32 @@
+{
+  "audio": "e8c82fb22c2592d0ed96f598db37dbe0d22d750705b1af663ecd6d0930a86465.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "去"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上去",
+  "id": "036d6067a46568757b022c38",
+  "level": 2,
+  "meaning": "to go up",
+  "pinyin": "shàngqù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-fw5~l24a8C-1779527159230"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "884e383a12f7367b78b8599497749f1c4bd89a5c017d95f4f19b22ebd3f95bb0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合",
+      "结"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "结合",
+  "id": "a4f7bf587451581c2abdade2",
+  "level": 5,
+  "meaning": "to combine, to unite",
+  "pinyin": "jiéhé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-s4ucyDP[@!-1779527161405"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

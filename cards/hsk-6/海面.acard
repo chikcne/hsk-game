@@ -1,0 +1,32 @@
+{
+  "audio": "7bf78bfe0847c868648ffd47a61f907206fa258cdb07dcdf6d4c29dc2c2ab4db.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "海",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "海面",
+  "id": "7dab06f1a2a80d39bd9df527",
+  "level": 6,
+  "meaning": "sea surface",
+  "pinyin": "hǎimiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-520-1779527162923"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

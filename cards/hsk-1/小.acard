@@ -1,0 +1,29 @@
+{
+  "audio": "dee14f22ea99522bca3884512b33a4f047063a7ff8702db5465f09c464b0c9ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小",
+  "id": "83dd48fe462d9185c0bc7b90",
+  "level": 1,
+  "meaning": "small; prefix indicating small size or endearment",
+  "pinyin": "xiǎo",
+  "pos": "adjective、prefix",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-IL:/uXui4L-1779527159037"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

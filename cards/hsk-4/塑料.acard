@@ -1,0 +1,31 @@
+{
+  "audio": "a8f86dfef066bbfdf183b7abdd3cf73015d8e980fbecd2f2c3d9036b23bdb86a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "料"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "塑料",
+  "id": "7044143621a195655d6032f4",
+  "level": 4,
+  "meaning": "plastic",
+  "pinyin": "sùliào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-h%4T~[4;C^-1779527160508"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "f06e702bf97f99ca823e2ae0afe10b898abd170e6a82c47e27f464b4f676619e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "剑",
+  "id": "844ef410ba068fc03f59b7ba",
+  "level": 6,
+  "meaning": "sword",
+  "pinyin": "jiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-657-1779527163060"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

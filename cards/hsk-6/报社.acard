@@ -1,0 +1,31 @@
+{
+  "audio": "fd91faf66164dfffae8608709d1e1fea1e751d49c3cfe8226145e91bf6808cf9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "社"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "报社",
+  "id": "b3c9616c38a737d868bdd709",
+  "level": 6,
+  "meaning": "newspaper office",
+  "pinyin": "bàoshè",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-32-1779527162435"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

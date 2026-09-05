@@ -1,0 +1,29 @@
+{
+  "audio": "c5d95dbb53ea949308f874479dd2369a5d058964a18e57dd718a0f6c7e22b82d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "锁",
+  "id": "99ce36bff348909f9e061fb8",
+  "level": 5,
+  "meaning": "lock; to lock",
+  "pinyin": "suǒ",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KF@~*(n!vc-1779527161902"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "70ffa6ac66a8e5659baab293a5e9b38c6dc45ba443b96de31b66a9eb9e88b65a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年",
+      "轻"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "年轻",
+  "id": "db4abb574cda7cbb7b8633e1",
+  "level": 3,
+  "meaning": "young",
+  "pinyin": "niánqīng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-IyHo_`v9mQ-1779527159587"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

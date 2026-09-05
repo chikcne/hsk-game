@@ -1,0 +1,32 @@
+{
+  "audio": "98127c4ae897a2d8de6a26b4b73158bfe1c4a181565b18a85ad88c2a962da17f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合",
+      "法"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "合法",
+  "id": "927387f2c91315e21ba4bbc0",
+  "level": 5,
+  "meaning": "legal, lawful",
+  "pinyin": "héfǎ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HEct<`(a2d-1779527161278"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

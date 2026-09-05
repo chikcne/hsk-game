@@ -1,0 +1,31 @@
+{
+  "audio": "2288ff5597016479806d89be3a3923eba934deeeb95af399a476d5b4f1bbb46b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "酸"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "酸奶",
+  "id": "0fec2ee9cab9a118bd464989",
+  "level": 4,
+  "meaning": "yogurt",
+  "pinyin": "suānnǎi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-n{Zzw_t0>,-1779527160510"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

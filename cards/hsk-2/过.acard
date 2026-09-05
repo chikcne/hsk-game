@@ -1,0 +1,29 @@
+{
+  "audio": "a92c2ebffdbe0caff5e032a010a92265cb97c9e0743ddf609f88403aded880bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过",
+  "id": "828c8965546bc3e310770811",
+  "level": 2,
+  "meaning": "to pass, to cross; excessive",
+  "pinyin": "guò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-h]8808@L)b-1779527159150"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

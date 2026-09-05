@@ -1,0 +1,31 @@
+{
+  "audio": "24d06957c4b179bbccf28a6772858df0a18babb521c935054f1dca08bb2f7a45.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "见"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "罕见",
+  "id": "cca27e25e102846ef173730a",
+  "level": 6,
+  "meaning": "rare, seldom seen",
+  "pinyin": "hǎnjiàn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-525-1779527162928"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

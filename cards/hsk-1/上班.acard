@@ -1,0 +1,32 @@
+{
+  "audio": "a906488dc06e7f4b2ca0e9993b5a4a68ba1ba5a8fe676673bac459c94eba1bd3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "班"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上班",
+  "id": "203543850d38ca4336543edb",
+  "level": 1,
+  "meaning": "to go to work",
+  "pinyin": "shàngbān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-N%d<n5lMP9-1779527158979"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

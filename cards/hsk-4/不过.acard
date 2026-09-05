@@ -1,0 +1,32 @@
+{
+  "audio": "09b0007630dfa6384a8acd24a1e071bc1c7d681ef9b0c7b09b519e7cb3d261e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不过",
+  "id": "74a53a1953cedd75ff786c44",
+  "level": 4,
+  "meaning": "but, however; (only, merely)",
+  "pinyin": "búguò",
+  "pos": "conjunction、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bvhrf_[7cA-1779527159850"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

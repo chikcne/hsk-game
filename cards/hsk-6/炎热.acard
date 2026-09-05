@@ -1,0 +1,31 @@
+{
+  "audio": "92cc8d979db401316d070ca512943390b18d28c06d55495c4da39ccadc50dc2c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "热"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "炎热",
+  "id": "c78ed7cab29c1de7fa3f5003",
+  "level": 6,
+  "meaning": "hot, scorching",
+  "pinyin": "yánrè",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1509-1779527163912"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

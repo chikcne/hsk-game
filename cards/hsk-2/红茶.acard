@@ -1,0 +1,32 @@
+{
+  "audio": "a07b1cd6902784ca084eda2045bb628d3ed889970ad830c0c0d6ce931d6f9e5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "红",
+      "茶"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "红茶",
+  "id": "afc9295514a594c86c59fbe6",
+  "level": 2,
+  "meaning": "black tea",
+  "pinyin": "hóngchá",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-G*0+?o5wPY-1779527159157"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

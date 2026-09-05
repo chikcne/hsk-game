@@ -1,0 +1,32 @@
+{
+  "audio": "751ecfe9b78b8d31b183177cc68910a0e7b952f0d267463c15e0795ca142b070.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "个",
+      "哪"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哪个",
+  "id": "a80a6a1f0aba93d2cff76dee",
+  "level": 1,
+  "meaning": "which one",
+  "pinyin": "nǎge",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-FwI%aUQA}N-1779527158935"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "6574dac1c968d781abcf69cf16809a33997746175fc285098de4c641bb4fbe60.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "败"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打败",
+  "id": "825ca855dbb10d560274b693",
+  "level": 4,
+  "meaning": "to defeat, to beat",
+  "pinyin": "dǎbài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-heVAp{b+Y-1779527159919"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

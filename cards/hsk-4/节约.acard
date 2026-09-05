@@ -1,0 +1,32 @@
+{
+  "audio": "8bcf7e1874f5d52c37f580f14042210635ae4740b30d202f1e19c16f14cce624.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "约",
+      "节"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "节约",
+  "id": "39d52ad9e9621ed76b7e2d5d",
+  "level": 4,
+  "meaning": "to save, to economize, to conserve",
+  "pinyin": "jiéyuē",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-h1zcBuzv?/-1779527160187"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

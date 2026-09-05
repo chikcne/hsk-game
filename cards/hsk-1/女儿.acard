@@ -1,0 +1,31 @@
+{
+  "audio": "27a1ceadec8d9f5f579813bd008e30ba5398215d2390f8472fa90bc3d56644bc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "女"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "女儿",
+  "id": "ed5437196eaaa8b7085ea76b",
+  "level": 1,
+  "meaning": "daughter",
+  "pinyin": "nǚ’ér",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-C?Ujec*#.l-1779527158956"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

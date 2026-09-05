@@ -1,0 +1,29 @@
+{
+  "audio": "6139e0efcdac1d09a79b2a9f5797b1ad0e587e08d746c34f49a5ce3f7803164e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外",
+  "id": "e997e57bedac92588833cf14",
+  "level": 1,
+  "meaning": "outside, exterior",
+  "pinyin": "wài",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-cMFJ.$!Z&a-1779527159015"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

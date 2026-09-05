@@ -1,0 +1,29 @@
+{
+  "audio": "7282d87cfe26660274b8081faf67af355d17ef6caed7a45eef41ffea8e2d2385.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "交",
+  "id": "63328bc16c7787e751e18be2",
+  "level": 4,
+  "meaning": "to hand in, to submit; to meet, to cross; to make friends with; friend, acquaintance, relationship",
+  "pinyin": "jiāo",
+  "pos": "verb、（noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bN1JzdKy3r-1779527160170"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

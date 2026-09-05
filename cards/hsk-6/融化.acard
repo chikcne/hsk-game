@@ -1,0 +1,31 @@
+{
+  "audio": "dfced366a90925bc4bdb6c9cdd55c829710e3941aee1825d910f09c08e78eec2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "化"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "融化",
+  "id": "497e77e010d0c2a70eedefc0",
+  "level": 6,
+  "meaning": "to melt",
+  "pinyin": "rónghuà",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1114-1779527163517"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "4034dbcaac3bc86f6dc1be1781a06ef1df8a56900ed8742c608d78500d0616ff.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "监督",
+  "id": "b1abca9220b9482b6bffe374",
+  "level": 6,
+  "meaning": "to supervise",
+  "pinyin": "jiāndū",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-644-1779527163047"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

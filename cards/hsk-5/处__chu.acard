@@ -1,0 +1,29 @@
+{
+  "audio": "580d67d6696d146d0e314499f78e65e7d77df74239a85344c496f10672654a5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "处",
+  "id": "f6a09ed53a10370f486f4753",
+  "level": 5,
+  "meaning": "to handle, to manage",
+  "pinyin": "chǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E!}Af%OWdW-1779527160982"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

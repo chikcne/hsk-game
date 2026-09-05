@@ -1,0 +1,31 @@
+{
+  "audio": "3396845504c451ccd4fdaad9f6629a5950c07a2282dfde75fe2f705fc6db5bdb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "画"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "绘画",
+  "id": "da8cbe589a2b88be0ca855dc",
+  "level": 6,
+  "meaning": "to draw, to paint",
+  "pinyin": "huìhuà",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-590-1779527162993"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

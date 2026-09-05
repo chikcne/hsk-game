@@ -1,0 +1,29 @@
+{
+  "audio": "99e109a9a9fb1cc01981a8fdd51b4000d51187888d7b84696aaf4c95ab17f68a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "灾",
+  "id": "19004ce443c0f0629d15bd26",
+  "level": 6,
+  "meaning": "disaster",
+  "pinyin": "zāi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1639-1779527164042"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

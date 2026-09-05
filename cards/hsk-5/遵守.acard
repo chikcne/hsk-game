@@ -1,0 +1,31 @@
+{
+  "audio": "40d9d64c7c98c0820a5c74995f0fac0f299840248c157a582b5f7609208ca21c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "守"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遵守",
+  "id": "9b8cd51146b63ae0e88fff64",
+  "level": 5,
+  "meaning": "to obey, to abide by",
+  "pinyin": "zūnshǒu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x0)i{~6BSS-1779527162402"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "bc7653bd6aeedbeb38e7aa418f6f68753de5e8bb5c354c8425071b52518dc97b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "空",
+      "调"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "空调",
+  "id": "e7c024093b9d9639ad5678a9",
+  "level": 3,
+  "meaning": "air conditioner",
+  "pinyin": "kōngtiáo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-CIO;Gd&e[/-1779527159542"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

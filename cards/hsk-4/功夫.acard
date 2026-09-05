@@ -1,0 +1,29 @@
+{
+  "audio": "d0388fd32ed1b81596bdf3c844a918791b61a09dec0ac1dd11d1094ba69a24f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "功夫",
+  "id": "7552136c661f3204ff2f8a94",
+  "level": 4,
+  "meaning": "kung fu, skill, effort",
+  "pinyin": "gōngfu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-i.aj,N^~L-1779527160054"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

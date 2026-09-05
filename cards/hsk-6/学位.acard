@@ -1,0 +1,32 @@
+{
+  "audio": "c1c9a7a5d25eedfcdc2b5920831350e0e84a181057d2fb3e39e1d020eb922186.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "位",
+      "学"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学位",
+  "id": "0845360c26dce3c1ae81328f",
+  "level": 6,
+  "meaning": "academic degree",
+  "pinyin": "xuéwèi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1490-1779527163893"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

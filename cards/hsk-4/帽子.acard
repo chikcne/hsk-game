@@ -1,0 +1,31 @@
+{
+  "audio": "e3381ad7ab43c8d4caa8eb30ed5692b2bbcdb4cd3099ff1846b60f34b21c640a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "帽子",
+  "id": "b31354f3db42f04288eac9b7",
+  "level": 4,
+  "meaning": "hat, cap",
+  "pinyin": "màozi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-KHnbS(!2]0-1779527160302"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

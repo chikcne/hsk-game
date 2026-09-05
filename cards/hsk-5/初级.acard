@@ -1,0 +1,32 @@
+{
+  "audio": "0988645c885533cfff6754b65d014c93ca7af3417ab113faaeb7d80a9813581b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "初",
+      "级"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "初级",
+  "id": "f38eaeb9d357c368330f39dc",
+  "level": 5,
+  "meaning": "elementary, primary",
+  "pinyin": "chūjí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O0a5!Dg[|4-1779527160975"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

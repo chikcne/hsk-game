@@ -1,0 +1,29 @@
+{
+  "audio": "bafc34c0525bb60cfa6a0fb3ccd6308fba8a5df51e9bb04a9377168a89b9af86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "住",
+  "id": "2caaafaa1a6afeff176ed2bc",
+  "level": 1,
+  "meaning": "to live, to reside",
+  "pinyin": "zhù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-mlc1V)(k32-1779527159097"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

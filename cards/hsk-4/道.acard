@@ -1,0 +1,29 @@
+{
+  "audio": "77e729a21bab41162ec16303106417f6e42df407dd5c90324ff2bbc81d63a32e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "道",
+  "id": "4907a7212a4435a5bf89afe3",
+  "level": 4,
+  "meaning": "path, way, method; measure word for long objects",
+  "pinyin": "dào",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-f:a9CJoZVF-1779527159943"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

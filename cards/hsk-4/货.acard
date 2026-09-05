@@ -1,0 +1,29 @@
+{
+  "audio": "ccfe5c0a690d65b0222c28dc43fb969472bcfec63bd41af32aec0ab1f7734f74.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "货",
+  "id": "3c009ee2f6465ce1a00b0dd2",
+  "level": 4,
+  "meaning": "goods, commodity, money",
+  "pinyin": "huò",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Bq*HUs)leF-1779527160118"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

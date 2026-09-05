@@ -1,0 +1,32 @@
+{
+  "audio": "3a2b07a1af5a98a688e9800b3b6f28ed421b49cc443a462232bcae9f67b95882.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合",
+      "场"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "场合",
+  "id": "30633b9edcac11f59f85cf19",
+  "level": 6,
+  "meaning": "occasion, situation",
+  "pinyin": "chǎnghé",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-133-1779527162536"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

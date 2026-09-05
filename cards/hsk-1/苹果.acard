@@ -1,0 +1,29 @@
+{
+  "audio": "8a14bf5fa19fe0a9891b703664a402b511e1e1d8e480bff32b44f2ab3dc852b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "苹果",
+  "id": "3fb53fdbf6cf0b6f5e728b8e",
+  "level": 1,
+  "meaning": "apple",
+  "pinyin": "píngguǒ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-v,i|##2V}=-1779527158962"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

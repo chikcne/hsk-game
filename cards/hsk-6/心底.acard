@@ -1,0 +1,32 @@
+{
+  "audio": "16172ce3aca254e08b9f8341317305afa8204f6f63a3cca4f57d88a48aba78ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "底",
+      "心"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "心底",
+  "id": "ed991c04a7933a0f2eda13bb",
+  "level": 6,
+  "meaning": "bottom of the heart",
+  "pinyin": "xīndǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1461-1779527163864"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

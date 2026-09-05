@@ -1,0 +1,31 @@
+{
+  "audio": "eb46f3e8fdd0e0b254f5a044ca3919dbbfe3158367e1191cfa77688209b6a40f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "长"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "长辈",
+  "id": "2baa0430240fb5c214bf72b5",
+  "level": 6,
+  "meaning": "elder generation",
+  "pinyin": "zhǎngbèi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1666-1779527164069"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

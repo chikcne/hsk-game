@@ -1,0 +1,31 @@
+{
+  "audio": "d8fc30f9d9ec624aedbeb84ffc884e749dd1b0aa2fff6d0eb41182503a3a5473.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "海"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "海域",
+  "id": "5ce62ce47f94ca07bfc6176c",
+  "level": 6,
+  "meaning": "sea area",
+  "pinyin": "hǎiyù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-521-1779527162924"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

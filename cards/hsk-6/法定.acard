@@ -1,0 +1,32 @@
+{
+  "audio": "a50ae6c4ebfb2eb817aeca52d7a747b772c57165d944844cd4861a2f2266b9a0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定",
+      "法"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "法定",
+  "id": "1248d1c77c95d31edd8d9353",
+  "level": 6,
+  "meaning": "legal, statutory",
+  "pinyin": "fǎdìng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-359-1779527162762"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

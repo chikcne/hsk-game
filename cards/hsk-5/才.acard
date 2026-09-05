@@ -1,0 +1,29 @@
+{
+  "audio": "771d89376078d3d68f7bd91935121a6e59ba4f817efd6153897edc9347c29de8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "才",
+  "id": "3bc388a4fd43a32dcf8d55eb",
+  "level": 5,
+  "meaning": "talent, ability",
+  "pinyin": "cái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-d1Bx(I|W?H-1779527160886"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

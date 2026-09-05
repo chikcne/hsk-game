@@ -1,0 +1,29 @@
+{
+  "audio": "73a701d54ccf8f48f4f48f87174eab2f10ed2f61d01c980ce1219387d30b99de.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "门",
+  "id": "b4cfd24f6c1faccc24875468",
+  "level": 2,
+  "meaning": "door, gate",
+  "pinyin": "mén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-O1@7bJg#.:-1779527159203"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

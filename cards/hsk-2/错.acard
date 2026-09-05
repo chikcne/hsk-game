@@ -1,0 +1,29 @@
+{
+  "audio": "162b9ac5a585f8d06e03403136b3713ee42432f7899fcf9d67502ea8717d30de.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "错",
+  "id": "a018a9017290f4231f8f01f3",
+  "level": 2,
+  "meaning": "wrong, mistaken",
+  "pinyin": "cuò",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-uoL;~:kOJ3-1779527159129"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

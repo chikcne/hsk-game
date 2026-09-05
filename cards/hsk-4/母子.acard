@@ -1,0 +1,32 @@
+{
+  "audio": "4289f567c0846652382230193f7f219d176eab5f6a54d46b63f95ce3c37b1008.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子",
+      "母"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "母子",
+  "id": "dad1661ced51018d34dde857",
+  "level": 4,
+  "meaning": "mother and son",
+  "pinyin": "mǔzǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-EU:xf3>Tu--1779527160319"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

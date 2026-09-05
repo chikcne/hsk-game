@@ -1,0 +1,32 @@
+{
+  "audio": "e72c3b8b1f2b462a203457e2c2f1a0c2c083470567e647a96b6c6eb907712558.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "北",
+      "极"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "北极",
+  "id": "5b13cc8c7e9a983fdaa74868",
+  "level": 6,
+  "meaning": "North Pole",
+  "pinyin": "běijí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-37-1779527162440"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

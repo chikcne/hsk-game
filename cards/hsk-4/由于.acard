@@ -1,0 +1,32 @@
+{
+  "audio": "2f4ee1a7feec7841bd0e171c863da0604e48b37f217e1c91f81858081ad94a72.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "由"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "由于",
+  "id": "bcf57a74c64ef05b8e545766",
+  "level": 4,
+  "meaning": "because of, due to; owing to",
+  "pinyin": "yóuyú",
+  "pos": "preposition、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-G/#NQ#C!_>-1779527160691"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

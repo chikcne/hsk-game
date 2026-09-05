@@ -1,0 +1,34 @@
+{
+  "audio": "a73c9a3aedc569de318573f6b003ae84a6f1fe1d8c7768a122a3866810a94c71.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小",
+      "小时",
+      "时",
+      "时候"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小时候",
+  "id": "5a3f8068c5f9cef299c600b8",
+  "level": 2,
+  "meaning": "childhood",
+  "pinyin": "xiǎoshíhou",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-M9iL&vj~{m-1779527159265"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

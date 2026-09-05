@@ -1,0 +1,32 @@
+{
+  "audio": "cb4dcf6f901b46640e130c2a49265310d6f76537db4424fd8a4ea28974bed187.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "日",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生日",
+  "id": "add9e632f9319bc493bb46b0",
+  "level": 2,
+  "meaning": "birthday",
+  "pinyin": "shēngrì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-MVZpR!U&|Y-1779527159233"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

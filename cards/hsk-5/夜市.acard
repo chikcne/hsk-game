@@ -1,0 +1,32 @@
+{
+  "audio": "30a3fab299e4bc12d16d42d2e1de653c3ea0d64011b778166efab30e4e0418ab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "夜",
+      "市"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夜市",
+  "id": "73cfe2547f4e244c0bebf19e",
+  "level": 5,
+  "meaning": "night market",
+  "pinyin": "yèshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-i@?,H|!*e8-1779527162146"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

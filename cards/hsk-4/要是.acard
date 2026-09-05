@@ -1,0 +1,32 @@
+{
+  "audio": "3ada8c8bf6903838422e5a0fc8d5a870e066232730c384ae304d2a2b584f925b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "是",
+      "要"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "要是",
+  "id": "5aad5e458120f57f69b26ee1",
+  "level": 4,
+  "meaning": "if, suppose",
+  "pinyin": "yàoshi",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-iv7I&^Zq=;-1779527160662"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "b450866240b571500bcbe8bcff6d37a69cf936081cc7a656c332577ac12aed57.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "写",
+  "id": "778a4d177a75ff7e32c872bb",
+  "level": 1,
+  "meaning": "to write",
+  "pinyin": "xiě",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-cw>xdhD>H--1779527159043"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

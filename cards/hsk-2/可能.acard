@@ -1,0 +1,32 @@
+{
+  "audio": "16080db2f7f98021dd382547089bc54ae6659112fe7f81ce8adbcd6497b926ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "可",
+      "能"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "可能",
+  "id": "1a744e740fdfabe00dec50c9",
+  "level": 2,
+  "meaning": "possible; possibility; may",
+  "pinyin": "kěnéng",
+  "pos": "adjective、noun、 verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-OpP?-228?R-1779527159185"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

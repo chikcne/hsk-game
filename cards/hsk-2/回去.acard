@@ -1,0 +1,32 @@
+{
+  "audio": "ca6d1d6dbc3597679100c06827d5bf4f5c987881aa84fff51c00b8a5cb5f4413.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "去",
+      "回"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "回去",
+  "id": "cd3f4c433ac75c9c3e4f7697",
+  "level": 2,
+  "meaning": "to go back / go back (away from the speaker)",
+  "pinyin": "huíqù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-p^,iqXVKAZ-1779527159165"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

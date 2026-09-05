@@ -1,0 +1,32 @@
+{
+  "audio": "826ea8fbc656fb1430d8e4f41c3a36c6e7ef7ddf710be2a540572dfcabc8d7ae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "想",
+      "梦"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "梦想",
+  "id": "c97513b3cb28f8d750964065",
+  "level": 4,
+  "meaning": "to dream; dream",
+  "pinyin": "mèngxiǎng",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Q7:n~c5/T.-1779527160309"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "06288eb19271daa6395820acab2e6a2cb8ecccaec0233561c07d1a024a002ab2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "再",
+      "见"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "再见",
+  "id": "dec60bd7df536c386a316dd4",
+  "level": 1,
+  "meaning": "goodbye",
+  "pinyin": "zàijiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-ePd6/HhK&)-1779527159075"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

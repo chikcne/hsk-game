@@ -1,0 +1,29 @@
+{
+  "audio": "e6efee3f30b97052df29d1b8e53730acd86306e74320f58a42e4c3903c64940c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "的",
+  "id": "103186ef1c17a3aed22716cd",
+  "level": 1,
+  "meaning": "possessive or modifying particle",
+  "pinyin": "de",
+  "pos": "auxiliary",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Lv8QkJcCTX-1779527158833"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

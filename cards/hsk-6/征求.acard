@@ -1,0 +1,31 @@
+{
+  "audio": "7efffd6ed65983ec83ba56b2c77899ad6b987761a05b59ee7ce94b437be58f6c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "求"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "征求",
+  "id": "ddcfa44c947d62b53f80bcda",
+  "level": 6,
+  "meaning": "to solicit, to seek",
+  "pinyin": "zhēngqiú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1686-1779527164089"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

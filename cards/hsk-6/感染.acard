@@ -1,0 +1,32 @@
+{
+  "audio": "1a586cedf03d3806b62a71ae148bcb16e9167bb8fb1b97a2f5aa5995c5926e4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "感",
+      "染"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "感染",
+  "id": "05099c2e8d429ad001bcfabd",
+  "level": 6,
+  "meaning": "to infect, to influence",
+  "pinyin": "gǎnrǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-425-1779527162828"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

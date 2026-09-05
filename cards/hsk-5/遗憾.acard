@@ -1,0 +1,29 @@
+{
+  "audio": "d39a75979d49a7884d2ed55a3de45dd595723ef280d1f01df780fdafe22aea63.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遗憾",
+  "id": "00e987e88494abc08e620c92",
+  "level": 5,
+  "meaning": "regret; regrettable",
+  "pinyin": "yíhàn",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l@0*7yTZ=]-1779527162159"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

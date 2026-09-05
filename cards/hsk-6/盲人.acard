@@ -1,0 +1,31 @@
+{
+  "audio": "b61b94211942c53a0947b09ac63739ca880e1a57bf69fd5dba649bf8a813ef51.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "盲人",
+  "id": "e0a3bfd9da742582a868311d",
+  "level": 6,
+  "meaning": "blind person",
+  "pinyin": "mángrén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-892-1779527163295"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

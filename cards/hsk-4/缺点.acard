@@ -1,0 +1,32 @@
+{
+  "audio": "13ce7d5a085db873cece378208d2b922ba5f3f0c1b62dd62fef327c1216bb492.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点",
+      "缺"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "缺点",
+  "id": "1d998ad5674e4cfbe8a8f9d6",
+  "level": 4,
+  "meaning": "shortcoming, defect",
+  "pinyin": "quēdiǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-tAsO1[yw1V-1779527160407"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

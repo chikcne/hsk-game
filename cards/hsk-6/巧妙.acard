@@ -1,0 +1,32 @@
+{
+  "audio": "5b3a7f3e3bd7e327cec047f471e2969fbfbb2324e9b0b898400b342fb925ea40.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "妙",
+      "巧"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "巧妙",
+  "id": "74d7ebd796177c311f2cac0c",
+  "level": 6,
+  "meaning": "clever, ingenious",
+  "pinyin": "qiǎomiào",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1047-1779527163450"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

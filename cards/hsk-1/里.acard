@@ -1,0 +1,29 @@
+{
+  "audio": "6f69cbe4e6e30121b70657a1a5b081b243335fa9fc2b9e2cfc534dec8d84f291.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "里",
+  "id": "c0ac7131390a58e8bfe8fd8e",
+  "level": 1,
+  "meaning": "inside, in, mile",
+  "pinyin": "lǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-w4yL-*b7kF-1779527158913"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "71a56bff745cce8d31de1c503dc0008b8ecdedb577c07696f5aa8e730b219c41.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "咸",
+  "id": "546e1105891e2ee3734b56ac",
+  "level": 4,
+  "meaning": "salty",
+  "pinyin": "xián",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-se%%1(F=m|-1779527160599"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

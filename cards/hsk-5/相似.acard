@@ -1,0 +1,29 @@
+{
+  "audio": "972c5bc45b7360401e66231c7910a998c333e2188aaa41ce86ecc55fbf71d8ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相似",
+  "id": "a3b50b50c45df9328059c608",
+  "level": 5,
+  "meaning": "similar",
+  "pinyin": "xiāngsì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uzc&_&{bQq-1779527162055"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

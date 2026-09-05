@@ -1,0 +1,32 @@
+{
+  "audio": "25bf799be32f746aabad5f96e4da6cea81a81ef58e0efdd9a194efcbae826684.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "密",
+      "紧"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "紧密",
+  "id": "3f701dd2465ee941d0262532",
+  "level": 5,
+  "meaning": "close, tight",
+  "pinyin": "jǐnmì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-dOl1xSJ+~a-1779527161414"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

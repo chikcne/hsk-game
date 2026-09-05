@@ -1,0 +1,29 @@
+{
+  "audio": "cf0b666155ba40f2dbacab930d55b1078d4eba6541aee75daae8ebdbdf4df045.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哥哥",
+  "id": "9011d6134c13cba0c0f632c5",
+  "level": 1,
+  "meaning": "older brother",
+  "pinyin": "gēge",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-G!#3#GqN[j-1779527158862"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

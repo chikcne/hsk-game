@@ -1,0 +1,32 @@
+{
+  "audio": "064576005b6d5d6d6f57fa87009e689bb496d2fd2e31be756fd446d08a32a987.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "花",
+      "鲜"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鲜花",
+  "id": "ba1552ad9be8057165ddba2b",
+  "level": 4,
+  "meaning": "fresh flower",
+  "pinyin": "xiānhuā",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-f`gPaKw)k`-1779527160598"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

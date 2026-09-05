@@ -1,0 +1,32 @@
+{
+  "audio": "391d1ac50cf760e85a52c0c4ac10435772915ddc0f2dda35acf07377707c0d72.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "为期",
+  "id": "38fbe338a37aad1595f95905",
+  "level": 6,
+  "meaning": "to be scheduled for, to last",
+  "pinyin": "wéiqī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1372-1779527163775"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

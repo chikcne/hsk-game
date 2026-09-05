@@ -1,0 +1,31 @@
+{
+  "audio": "297e570f5142a17f9554f549989cefc376d81add59bd749194d4cfe1b2e9d57e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "头脑",
+  "id": "ee2f6cebeab75c7654b38e73",
+  "level": 6,
+  "meaning": "mind, brains",
+  "pinyin": "tóunǎo",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1318-1779527163721"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

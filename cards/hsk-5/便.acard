@@ -1,0 +1,29 @@
+{
+  "audio": "8b35c84260992b789bc187c77814d45ee1f07d027adbe4aebc322f3e83b99e92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "便",
+  "id": "795677d46ac8322905015bf6",
+  "level": 5,
+  "meaning": "then, in that case",
+  "pinyin": "biàn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JmX9}?&>)`-1779527160859"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

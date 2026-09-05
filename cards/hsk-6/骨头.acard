@@ -1,0 +1,31 @@
+{
+  "audio": "a6eb49e81527ce6f75e8718c770248ad515f4d3ef1937bb4be555c638e71dc33.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "骨头",
+  "id": "0c43cf9b8f5e58be81c33556",
+  "level": 6,
+  "meaning": "bone",
+  "pinyin": "gǔtou",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-480-1779527162883"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

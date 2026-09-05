@@ -1,0 +1,29 @@
+{
+  "audio": "94446bcf1c80a47c9664fd57907650c7564f72fdcdfeb0ef7d7129db44df05a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "博士",
+  "id": "c4e3f8b941520c2a4c6e3791",
+  "level": 4,
+  "meaning": "doctor",
+  "pinyin": "bóshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-BY4JhDOk#Q-1779527159845"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

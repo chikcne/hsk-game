@@ -1,0 +1,32 @@
+{
+  "audio": "6486587be1edb4ba840a8c55d7d850bfa38c2446b047bf4159db84608f2307c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "得",
+      "显"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "显得",
+  "id": "4ca3df954c0827358338484c",
+  "level": 5,
+  "meaning": "to appear, to seem",
+  "pinyin": "xiǎnde",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Da@mFhQU{T-1779527162037"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

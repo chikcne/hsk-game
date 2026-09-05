@@ -1,0 +1,29 @@
+{
+  "audio": "eb4fb7ff551945f12f40aa1de66784b3d8a87d4d9b1cae21ac5d4829598a95c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "工作",
+  "id": "2fdd79fc3b5121a9068db893",
+  "level": 1,
+  "meaning": "work; to work",
+  "pinyin": "gōngzuò",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-ADVRAph(W/-1779527158866"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

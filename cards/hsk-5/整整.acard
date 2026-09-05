@@ -1,0 +1,31 @@
+{
+  "audio": "161a4371f349c1097bfd8c3bf32860f0a1f021ab7e3fc190053023906e751f52.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "整"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "整整",
+  "id": "986d0ffd919987c00800d838",
+  "level": 5,
+  "meaning": "whole, full",
+  "pinyin": "zhěngzhěng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-z,#bxtvHh2-1779527162295"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

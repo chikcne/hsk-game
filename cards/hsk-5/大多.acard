@@ -1,0 +1,32 @@
+{
+  "audio": "0a8bcea9865772418be7a9e9f33623148dba3b5e2e4444940287949412939b01.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "多",
+      "大"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大多",
+  "id": "fd28d5500b66954cc29dbd91",
+  "level": 5,
+  "meaning": "mostly",
+  "pinyin": "dàduō",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-j,)ru^,mTJ-1779527161022"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

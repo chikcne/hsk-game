@@ -1,0 +1,31 @@
+{
+  "audio": "41fc1e743ba9aaa16e0be929f5bb77ac0976aaadb44ca3f69e841d1ba4253283.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地铁",
+  "id": "fda702bcefacf9fb81dd3aad",
+  "level": 2,
+  "meaning": "subway, metro",
+  "pinyin": "dìtiě",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-LKYPD)SU%2-1779527159138"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

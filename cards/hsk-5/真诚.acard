@@ -1,0 +1,31 @@
+{
+  "audio": "e005284ede8cd30f7b4aa32abb15046ea2ea822a4205c8e5e435f9d0a449dc86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "真"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "真诚",
+  "id": "2972bb224924f317a9e862a9",
+  "level": 5,
+  "meaning": "sincere, genuine",
+  "pinyin": "zhēnchéng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qH*){G:a)3-1779527162284"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

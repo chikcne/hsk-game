@@ -1,0 +1,32 @@
+{
+  "audio": "6c5fa1eb00554b72192ac834719e0fff253c9a9bee8a34b41231264d19fb87c7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "聚"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "聚会",
+  "id": "31dd0876a0f71dd7c0c7c531",
+  "level": 4,
+  "meaning": "to get together, to meet, to gather; party, gathering, meeting",
+  "pinyin": "jùhuì",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-QJ9s1N2E>E-1779527160218"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

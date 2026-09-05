@@ -1,0 +1,31 @@
+{
+  "audio": "a4a20bceb8145e15074433d0ec6e08137cb323d7d693fdafaa959491fc54d43d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "男"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "男士",
+  "id": "159794de5b104b8fc29ba5cb",
+  "level": 4,
+  "meaning": "man, gentleman",
+  "pinyin": "nánshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Kh!C?9KnnX-1779527160327"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

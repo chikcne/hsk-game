@@ -1,0 +1,32 @@
+{
+  "audio": "de962a1c0558a83b52a0f8c7b7022f48cd2c301bd0f6dfdde61b7f0b12b9674b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "端",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高端",
+  "id": "56438308ae8eeb7b87e0c92d",
+  "level": 6,
+  "meaning": "high-end, high-level; high-end product",
+  "pinyin": "gāoduān",
+  "pos": "形、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-433-1779527162836"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

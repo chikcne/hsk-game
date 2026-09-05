@@ -1,0 +1,32 @@
+{
+  "audio": "a4e568686c55cce33e47610286545f1edfe38d9838fd19a42de9a6113316ed13.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "之",
+      "总"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "总之",
+  "id": "1027493699816aa22e4720cd",
+  "level": 5,
+  "meaning": "in short, in brief",
+  "pinyin": "zǒngzhī",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hpz^uRjc{K-1779527162389"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

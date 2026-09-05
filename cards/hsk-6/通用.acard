@@ -1,0 +1,32 @@
+{
+  "audio": "19daf7a02dbe0963fc888ea955f4ae9f2f7797217161cce36585b345c42f7d96.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "用",
+      "通"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "通用",
+  "id": "f9b4080d6fc6b92a44e0d373",
+  "level": 6,
+  "meaning": "to be in common use",
+  "pinyin": "tōngyòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1308-1779527163711"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

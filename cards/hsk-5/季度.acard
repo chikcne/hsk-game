@@ -1,0 +1,32 @@
+{
+  "audio": "2999ea6386e5bd545c79133ec74370c262f51d95c7e970a4bf0ad87e65ac07c2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "季",
+      "度"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "季度",
+  "id": "c6e77eab72203b5681fd3043",
+  "level": 5,
+  "meaning": "quarter (of a year)",
+  "pinyin": "jìdù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E(xuwhtTVm-1779527161343"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

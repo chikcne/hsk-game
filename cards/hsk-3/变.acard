@@ -1,0 +1,29 @@
+{
+  "audio": "8b35c84260992b789bc187c77814d45ee1f07d027adbe4aebc322f3e83b99e92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "变",
+  "id": "13f42165dff5e162631c8e20",
+  "level": 3,
+  "meaning": "to change, to become",
+  "pinyin": "biàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-NiJC(PpX6v-1779527159329"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

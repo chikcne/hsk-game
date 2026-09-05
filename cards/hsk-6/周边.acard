@@ -1,0 +1,32 @@
+{
+  "audio": "245a256ad0fa50f92fd8d577ab9f029675397a6b4fc40b9d9fa6c439689abe70.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "周",
+      "边"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "周边",
+  "id": "a92c49b6106edd2521b779d7",
+  "level": 6,
+  "meaning": "surrounding area, periphery",
+  "pinyin": "zhōubiān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1738-1779527164141"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

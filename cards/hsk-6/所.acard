@@ -1,0 +1,29 @@
+{
+  "audio": "e8c7c75b8dc064c5a47c4fbed97efc01e14e3d1262f8bb7f7b71275a2e921af9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "所",
+  "id": "1d65af97c9d5873fdfc4f93d",
+  "level": 6,
+  "meaning": "particle used to indicate passive voice or to nominalize verbs",
+  "pinyin": "suǒ",
+  "pos": "助",
+  "schema": "acard/1",
+  "senseLabel": "sense 2",
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1254-1779527163657"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

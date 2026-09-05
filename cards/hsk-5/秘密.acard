@@ -1,0 +1,31 @@
+{
+  "audio": "8d403fa40055a74e96f808a042eadd5f6bb3a8592012abc2c762ca6eaaeaf6a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "密"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "秘密",
+  "id": "922f366e173b098acda0b0ab",
+  "level": 5,
+  "meaning": "secret; secret",
+  "pinyin": "mìmì",
+  "pos": "adjective、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-&euK6M:*Z-1779527161567"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

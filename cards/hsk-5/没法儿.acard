@@ -1,0 +1,31 @@
+{
+  "audio": "d209590b1fa94272801fe9432ab9eae09ace8efe07f7ff73d88c686c9b2b00dc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "法"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "没法儿",
+  "id": "20c75e55d85e9f937b9be330",
+  "level": 5,
+  "meaning": "there is no way",
+  "pinyin": "méifǎr",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-cd<[U7uuk^-1779527161558"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

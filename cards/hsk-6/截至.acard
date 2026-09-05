@@ -1,0 +1,31 @@
+{
+  "audio": "904eb6ae39d73266e278c93e1d5eb04f26b90a57247820c9ae6d4a6fb345b500.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "至"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "截至",
+  "id": "caf43438bde33fc550ed48c6",
+  "level": 6,
+  "meaning": "as of, up to",
+  "pinyin": "jiézhì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-689-1779527163092"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

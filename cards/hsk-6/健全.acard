@@ -1,0 +1,31 @@
+{
+  "audio": "990fd60cffd805e7d9fc4884f01062bd44e0d9f8cef2b7a51118aa338bd77ca4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "全"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "健全",
+  "id": "e4fbeb822345714e380c889b",
+  "level": 6,
+  "meaning": "sound, healthy; to perfect",
+  "pinyin": "jiànquán",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-662-1779527163065"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

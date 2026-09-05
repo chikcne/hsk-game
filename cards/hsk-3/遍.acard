@@ -1,0 +1,29 @@
+{
+  "audio": "8b35c84260992b789bc187c77814d45ee1f07d027adbe4aebc322f3e83b99e92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遍",
+  "id": "3c804f11c25f6a0860f5ebbe",
+  "level": 3,
+  "meaning": "measure word for actions",
+  "pinyin": "biàn",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-z}fJl1-S?;-1779527159330"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

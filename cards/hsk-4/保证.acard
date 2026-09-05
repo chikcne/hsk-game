@@ -1,0 +1,32 @@
+{
+  "audio": "e270c9ba973c8f6c60b0ce127b7678ec5bd0679b3e36282d5f9ce5ed450aa8f8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保",
+      "证"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保证",
+  "id": "ccf04534f86cbd6e9f5af1f5",
+  "level": 4,
+  "meaning": "to guarantee, to ensure; guarantee, assurance",
+  "pinyin": "bǎozhèng",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-slSh:k7F/K-1779527159818"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

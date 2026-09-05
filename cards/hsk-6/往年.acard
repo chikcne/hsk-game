@@ -1,0 +1,32 @@
+{
+  "audio": "a4dfb216df6c0da3a33f15cbd1298a668392dbb6e682550820d63cac68ef7c90.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年",
+      "往"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "往年",
+  "id": "1ef04d6cf567a6831e9faa43",
+  "level": 6,
+  "meaning": "past years",
+  "pinyin": "wǎngnián",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1364-1779527163767"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

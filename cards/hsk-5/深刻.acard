@@ -1,0 +1,32 @@
+{
+  "audio": "8814f724536f27a4a0f5aa5354b28d7d54bc1a0bde0eeccec860467f5f448101.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "刻",
+      "深"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "深刻",
+  "id": "23cbe603b7e2462fcaa80c8d",
+  "level": 5,
+  "meaning": "profound, deep",
+  "pinyin": "shēnkè",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-o1yaXY+wNL-1779527161787"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "f9f992e867b3f99dbbe10eb8cf46353ae6c888867e267719380866a1af8395bc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "是",
+      "算"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "算是",
+  "id": "8cf42fcb6a9437cced57f295",
+  "level": 6,
+  "meaning": "to be considered as; quite",
+  "pinyin": "suànshì",
+  "pos": "动、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1248-1779527163651"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

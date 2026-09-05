@@ -1,0 +1,29 @@
+{
+  "audio": "66d6cb8d6e2d0438990a7d6f0415eca030f5f279134589fc61f64413409b7c27.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "岁",
+  "id": "6dd56aa3a924d5e793d1b750",
+  "level": 1,
+  "meaning": "measure word for age",
+  "pinyin": "suì",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-d<F2jcDDN~-1779527159002"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

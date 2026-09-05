@@ -1,0 +1,31 @@
+{
+  "audio": "ac89de119efca1359a639b9a0dd5116954ccb25929649047fc47bc2939ca6678.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "感"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "感谢",
+  "id": "2262039d24a2334a8c8f9a28",
+  "level": 4,
+  "meaning": "to thank",
+  "pinyin": "gǎnxiè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Fsk?0EC4(q-1779527160036"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

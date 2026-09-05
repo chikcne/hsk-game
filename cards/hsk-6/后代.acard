@@ -1,0 +1,32 @@
+{
+  "audio": "6469079239bb4ed737f9a15f1bf2617255b039acca011f63b65016c62f668e6b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代",
+      "后"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "后代",
+  "id": "39df48d945427a5ef95b980b",
+  "level": 6,
+  "meaning": "offspring, descendants",
+  "pinyin": "hòudài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-552-1779527162955"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

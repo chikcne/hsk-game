@@ -1,0 +1,32 @@
+{
+  "audio": "ac2c34ed31489103fbe3af7d7e08249528568b4868b1f20e83780ba996ef0893.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "些"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一些",
+  "id": "d76777fe5ea7dc24157ec006",
+  "level": 1,
+  "meaning": "some, a few",
+  "pinyin": "yìxiē",
+  "pos": "number-classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-N{C8(~jM)e-1779527159065"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

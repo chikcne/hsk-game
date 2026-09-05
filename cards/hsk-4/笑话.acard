@@ -1,0 +1,31 @@
+{
+  "audio": "b391e182c08a5d267a32b872ad30af27748697c000dd7a862e9f5ff1941359ab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "笑"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "笑话",
+  "id": "0e375e783285fa70e8ab4bef",
+  "level": 4,
+  "meaning": "joke, laughter; to joke, to laugh at",
+  "pinyin": "xiàohua",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s*arrggW]k-1779527160620"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

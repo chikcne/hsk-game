@@ -1,0 +1,32 @@
+{
+  "audio": "a324f9d07a66480585d46f506ffedfb63f1ff07cbffbe62b45f640ff49faa1f1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "表"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发表",
+  "id": "a6689bf77cc06efcc7e1cff0",
+  "level": 5,
+  "meaning": "to publish, to issue",
+  "pinyin": "fābiǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u6/@ar#>&G-1779527161119"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

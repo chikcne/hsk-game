@@ -1,0 +1,32 @@
+{
+  "audio": "d57690e03e3b7d15903855dde748a0cfd04acf5e22e2be9966b29de17b869d96.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "路",
+      "迷"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "迷路",
+  "id": "6a79b4d0508bac1e5606a407",
+  "level": 5,
+  "meaning": "to lose one's way",
+  "pinyin": "mílù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jF<{*ykhYH-1779527161566"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "7970ccc0670dd58f7b64465c00fb3d232981874edc0f7cbb8756519eb9b8e66b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "笑"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好笑",
+  "id": "f8464db2d5718ef4aeb1a92e",
+  "level": 4,
+  "meaning": "funny, ridiculous",
+  "pinyin": "hǎoxiào",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-dpt>F$)}9>-1779527160095"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

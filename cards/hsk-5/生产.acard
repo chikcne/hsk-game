@@ -1,0 +1,32 @@
+{
+  "audio": "291293310380f59381f4258551b313515248362aee2d522f84b4699af8503328.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "产",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生产",
+  "id": "ecc6b53800fe97b18cbc9819",
+  "level": 5,
+  "meaning": "to produce, to manufacture",
+  "pinyin": "shēngchǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kdz4^XexIT-1779527161793"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

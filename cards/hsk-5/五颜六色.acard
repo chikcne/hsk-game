@@ -1,0 +1,32 @@
+{
+  "audio": "5e274993e05f52c373a6265b63399003b382444236e3d01a33064a14605b7607.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "五",
+      "六"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "五颜六色",
+  "id": "f1ada2ca419a788fba7de804",
+  "level": 5,
+  "meaning": "colorful",
+  "pinyin": "wǔyán-liùsè",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hVL52yp<a9-1779527162017"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

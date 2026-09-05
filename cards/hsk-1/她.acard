@@ -1,0 +1,29 @@
+{
+  "audio": "f9f45ce1a3c551c28e9d54717302cc80e66334df0c4ba4daef5cb42b7e9222da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "她",
+  "id": "0c6feac4d07c76bcab42b105",
+  "level": 1,
+  "meaning": "she",
+  "pinyin": "tā",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-js)aVC*}k6-1779527159005"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "19f3423c623c6a47182b9b4df7e4cb6ca5088ad15ce294d0287ce7f20178e4ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "几",
+  "id": "607e614825a8fd95f489ef02",
+  "level": 1,
+  "meaning": "how many, a few",
+  "pinyin": "jǐ",
+  "pos": "pronoun、 number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-d5.|$GoJ]}-1779527158888"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

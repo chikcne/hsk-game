@@ -1,0 +1,31 @@
+{
+  "audio": "f5a28819eb4084e71355f9aa3b2f4ce7082f1623d4c9a914ca4104d16fe8912f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "古"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "古迹",
+  "id": "91358e16861944fe77e1b187",
+  "level": 6,
+  "meaning": "historic site, relic",
+  "pinyin": "gǔjì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-476-1779527162879"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

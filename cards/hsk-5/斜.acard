@@ -1,0 +1,29 @@
+{
+  "audio": "7aee0f3f861506782d575adbf962cd10c7130a71e488f8a3fcfc5536297b450a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "斜",
+  "id": "3679de4270e48fb11140b103",
+  "level": 5,
+  "meaning": "slanted; to tilt",
+  "pinyin": "xié",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O_s[Z?sOpV-1779527162076"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "bedcf49c5f5bb1b53cacc09265f1ac641592e09cbb7eb3dac0c75ab22c42c7fe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "售价",
+  "id": "4f428afdb0c05cb0b854b854",
+  "level": 5,
+  "meaning": "selling price",
+  "pinyin": "shòujià",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-De~*l2TK9a-1779527161857"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "caf52cfb947bda17f93747675a0236cb091386ee0046e8fd7e889fcee6e01148.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "服"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "客服",
+  "id": "3efa7db36bea25ad5aae35cc",
+  "level": 5,
+  "meaning": "customer service",
+  "pinyin": "kèfú",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P|,&B*u.K=-1779527161471"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

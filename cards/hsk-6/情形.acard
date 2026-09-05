@@ -1,0 +1,29 @@
+{
+  "audio": "5d15c775c70b77f7f2bfe7cceac6e78a08e92ade05645aee2c5e54d3fe9ea38a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "情形",
+  "id": "5d75288f3ac8fbcc7ca1edf9",
+  "level": 6,
+  "meaning": "situation",
+  "pinyin": "qíngxing",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1067-1779527163470"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

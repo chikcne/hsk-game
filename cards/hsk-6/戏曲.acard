@@ -1,0 +1,32 @@
+{
+  "audio": "855a68cee7820991053ebd681be8a3522f11c3e830e39303e5f6e99c2c2391ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "戏",
+      "曲"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "戏曲",
+  "id": "03a0de8c2834997248a6d11f",
+  "level": 6,
+  "meaning": "traditional opera",
+  "pinyin": "xìqǔ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1411-1779527163814"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "c85ae656ac9cc8f92e954ec2f92f146c4e85ecdf2140923b8e7fc2e56e7f4baa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开",
+      "心"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开心",
+  "id": "8c60b086a108300bab5c3a2e",
+  "level": 3,
+  "meaning": "happy",
+  "pinyin": "kāixīn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-q*RnLh4sH_-1779527159532"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

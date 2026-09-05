@@ -1,0 +1,32 @@
+{
+  "audio": "ae43f7e15b0cf591c251a3dc5ce385bfba6ad68c414a34c0a4dea4731c72b1fe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "取",
+      "录"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "录取",
+  "id": "49cd09cfd4947b9d81c8b10a",
+  "level": 5,
+  "meaning": "to enroll, to admit",
+  "pinyin": "lùqǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jH3@xRTmB0-1779527161543"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

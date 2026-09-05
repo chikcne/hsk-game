@@ -1,0 +1,32 @@
+{
+  "audio": "4b21e46b29d1fb7bc991cd6b33523e55b95fa02301218cdb40951e8625eff211.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "员"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "会员",
+  "id": "1ccf49140fc452055195cde0",
+  "level": 4,
+  "meaning": "membership",
+  "pinyin": "huìyuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-l_,`DqLww`-1779527160113"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

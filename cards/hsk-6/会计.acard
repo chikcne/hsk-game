@@ -1,0 +1,31 @@
+{
+  "audio": "dac179137194c6e45a42d7522e8ea72bce54041400d3e715e1767d9606333ff3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "会计",
+  "id": "c25961fdcf0fe5460f895fe2",
+  "level": 6,
+  "meaning": "accountant",
+  "pinyin": "kuàijì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-803-1779527163206"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "602df0386a40c91260ea3118ffae8a646996afbd3dec6160abb6ecdac13cc41c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "受"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "承受",
+  "id": "3ca9780782d36ad5affa6a7f",
+  "level": 5,
+  "meaning": "to bear, to endure",
+  "pinyin": "chéngshòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wqH;6!$~e=-1779527160950"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "c955f2cc7822e3fe6488a468ad6d0849f7ea0c9386d66815622b1aa053687edf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "终于",
+  "id": "02d315c04b60437da76fe645",
+  "level": 3,
+  "meaning": "finally",
+  "pinyin": "zhōngyú",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-f{2Z9?0]mh-1779527159786"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

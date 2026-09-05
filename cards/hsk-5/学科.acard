@@ -1,0 +1,32 @@
+{
+  "audio": "0ab7c10f206ca80854d4397c95e99e77fd8fc1346e53290dad7df38e9241cd31.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "科"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学科",
+  "id": "be1ea740d18e7a41504c97bb",
+  "level": 5,
+  "meaning": "discipline, subject",
+  "pinyin": "xuékē",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KQwMd)RD%Z-1779527162113"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

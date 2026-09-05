@@ -1,0 +1,29 @@
+{
+  "audio": "52e09cf93b5052fadf3cb3566931aa1534cb3d58224664ca368606e1cb481b90.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实际",
+  "id": "a078fd91bd693688c9427c73",
+  "level": 4,
+  "meaning": "reality, actuality; actual, practical",
+  "pinyin": "shíjì",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-An3)Ew]ux#-1779527160461"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

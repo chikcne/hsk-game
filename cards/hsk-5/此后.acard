@@ -1,0 +1,32 @@
+{
+  "audio": "3d25c5c697809c2a4231695da92fa47d6ccbfc4188d1928509f41ca6a7d7ee43.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "此"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "此后",
+  "id": "0199f6739e0402fa851ba8cf",
+  "level": 5,
+  "meaning": "after this",
+  "pinyin": "cǐhòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-p^7PR#TWe@-1779527160999"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

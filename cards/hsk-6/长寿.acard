@@ -1,0 +1,31 @@
+{
+  "audio": "d1ce2b07fa22e267e2f2535b4e6afee33c5f1c927ec051484f0aebcd16315028.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "长"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "长寿",
+  "id": "a2dc9c8f2a3f1d9ac41ef4a7",
+  "level": 6,
+  "meaning": "longevity",
+  "pinyin": "chángshòu",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-128-1779527162531"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

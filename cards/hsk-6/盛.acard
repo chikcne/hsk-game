@@ -1,0 +1,29 @@
+{
+  "audio": "80270d59890b9e162bc1bbe27d711c6a5fa5b1dc0b208f6fd296717395276131.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "盛",
+  "id": "717593a34b919176bc5cd889",
+  "level": 6,
+  "meaning": "to hold, to contain",
+  "pinyin": "chéng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-158-1779527162561"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

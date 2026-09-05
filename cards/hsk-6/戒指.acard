@@ -1,0 +1,31 @@
+{
+  "audio": "10a57f2e874425cbdff306546f25a723e9be527878617049498850e691afbd02.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "指"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "戒指",
+  "id": "ec1e53b7bde2384080a51559",
+  "level": 6,
+  "meaning": "ring",
+  "pinyin": "jièzhi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-698-1779527163101"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

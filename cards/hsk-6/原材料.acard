@@ -1,0 +1,33 @@
+{
+  "audio": "5d04290a32b053b3f08cb0aaced611425d3c26b0417a3a9b187317a48c050141.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "原",
+      "料",
+      "材料"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "原材料",
+  "id": "cd2c283fab492fa15a9a763b",
+  "level": 6,
+  "meaning": "raw material",
+  "pinyin": "yuáncáiliào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1616-1779527164019"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

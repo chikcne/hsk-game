@@ -1,0 +1,31 @@
+{
+  "audio": "0261705f23753e9ce29771ceda0ec5a8b1169da8605f504879b7084e53a9385d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学习",
+  "id": "81bb85dfc5f7d8034bfa33f6",
+  "level": 1,
+  "meaning": "to study",
+  "pinyin": "xuéxí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-B>jymc)W9A-1779527159052"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

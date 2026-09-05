@@ -1,0 +1,29 @@
+{
+  "audio": "8352719362210fa83d5ced3256aaa83ef7e36c8f73229922e650ada11e20e1c4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "狼",
+  "id": "066a5e3aa0ed5fade000fc0e",
+  "level": 6,
+  "meaning": "wolf",
+  "pinyin": "láng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-820-1779527163223"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

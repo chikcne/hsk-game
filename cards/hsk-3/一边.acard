@@ -1,0 +1,32 @@
+{
+  "audio": "3d4f16b03475ce40269891023199321dafbd6cc69f4ce288badc9de078148a63.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "边"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一边",
+  "id": "c29fbdc94c1a65cbbf81d1b2",
+  "level": 3,
+  "meaning": "at the same time",
+  "pinyin": "yìbiān",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-A?abAbE[{A-1779527159736"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

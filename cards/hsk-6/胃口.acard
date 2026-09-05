@@ -1,0 +1,32 @@
+{
+  "audio": "7efb155b7b0812201bf271779dc3b89db563cfe3aefa867fadeacd896c016800.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口",
+      "胃"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "胃口",
+  "id": "75ee21bdfcc09c44ca495c95",
+  "level": 6,
+  "meaning": "appetite",
+  "pinyin": "wèikǒu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1383-1779527163786"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

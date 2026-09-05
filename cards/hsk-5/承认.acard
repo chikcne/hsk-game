@@ -1,0 +1,31 @@
+{
+  "audio": "2ef2d6dd503ea5ed2d1ae33999e2cca1044a0d3acb09baa64479f329c17230b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "认"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "承认",
+  "id": "e139a7326f3dba28d8f91c18",
+  "level": 5,
+  "meaning": "to admit, to acknowledge",
+  "pinyin": "chéngrèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-oR!8xy0+~R-1779527160949"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

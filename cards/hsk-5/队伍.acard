@@ -1,0 +1,31 @@
+{
+  "audio": "47d788f3f711669b17e90254e5cc5a32f3ce6045440d4d075c275897e36fa38e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "队"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "队伍",
+  "id": "ba878c344d2e80ab10061bca",
+  "level": 5,
+  "meaning": "team, ranks",
+  "pinyin": "duìwu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PFvn7LB`fv-1779527161111"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

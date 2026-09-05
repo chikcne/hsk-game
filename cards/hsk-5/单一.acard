@@ -1,0 +1,32 @@
+{
+  "audio": "7f94d16e98ec3a6e6ddaba71db0c4eaaa77eb06e0ea7194cb445ee40253ab7f1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "单"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "单一",
+  "id": "83a9fdb3b08b8cfa48c2dee1",
+  "level": 5,
+  "meaning": "single, singular",
+  "pinyin": "dānyī",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-xs8T`yymYz-1779527161044"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

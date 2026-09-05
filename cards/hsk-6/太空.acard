@@ -1,0 +1,32 @@
+{
+  "audio": "711d79229120863f5a41d22c199761544e14e360720114be38b288b0fba56c1d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "太",
+      "空"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "太空",
+  "id": "9949dbcec0e2f821e8ec2699",
+  "level": 6,
+  "meaning": "space",
+  "pinyin": "tàikōng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1259-1779527163662"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

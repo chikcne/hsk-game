@@ -1,0 +1,29 @@
+{
+  "audio": "0edff6c4c0bf4a7524a8a23c6ea0e1134468f6da748ad68826e88e245b0d3767.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "研究",
+  "id": "776817cddd6fec7d98bb79e7",
+  "level": 4,
+  "meaning": "to research, to study",
+  "pinyin": "yánjiū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-t}s~~>0C&K-1779527160649"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

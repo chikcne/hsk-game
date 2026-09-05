@@ -1,0 +1,29 @@
+{
+  "audio": "9695c3240426eef30f927a789c2ae206eada3ee927a34023a64f32aa811a469c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "青",
+  "id": "51d2ca774e8a767109f1f862",
+  "level": 5,
+  "meaning": "green, blue",
+  "pinyin": "qīng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-N6_{<E0Gcr-1779527161689"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

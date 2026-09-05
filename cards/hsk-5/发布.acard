@@ -1,0 +1,32 @@
+{
+  "audio": "26d8444a8bc0c0da8ff17e3b50d002c14cddedc26831fe14e22cc64ae8bae7d0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "布"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发布",
+  "id": "3ce651458038aa0a258ed2e6",
+  "level": 5,
+  "meaning": "to release, to announce",
+  "pinyin": "fābù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ib[a9Hm?@X-1779527161120"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "81888dd8db8cd1e1a870dc97869da0384ed16d4523a1fd5cc15593b6b6cc2797.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "多",
+      "数"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "多数",
+  "id": "62b6bc1c495ac69996d51f04",
+  "level": 4,
+  "meaning": "majority",
+  "pinyin": "duōshù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xO-2B7HkBJ-1779527159984"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

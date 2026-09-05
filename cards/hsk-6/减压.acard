@@ -1,0 +1,32 @@
+{
+  "audio": "f659c5cfcfaaa7b6013b81692c14915480faed7d3466ec37c21813acc416afe3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "减",
+      "压"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "减压",
+  "id": "dbe43cbc7a54d1d7848a71c2",
+  "level": 6,
+  "meaning": "to reduce pressure",
+  "pinyin": "jiǎnyā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-655-1779527163058"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

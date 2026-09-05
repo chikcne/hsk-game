@@ -1,0 +1,31 @@
+{
+  "audio": "9621948bbc524d5b084f44865ada41cddcc5bc6e8854b47199f628a6a1dd2713.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "得"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "舍得",
+  "id": "12f235547f470eaf44869f86",
+  "level": 5,
+  "meaning": "to be willing to",
+  "pinyin": "shěde",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nOaO;e2^qx-1779527161774"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

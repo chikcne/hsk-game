@@ -1,0 +1,31 @@
+{
+  "audio": "d49d5e18f4b0cf4714ebf654252b0a65fb04482b205d7b8c7706e2c40a2de2b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "诞生",
+  "id": "5eb2d0edc1ed6fdd34e0891c",
+  "level": 6,
+  "meaning": "to be born, to emerge",
+  "pinyin": "dànshēng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-266-1779527162669"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

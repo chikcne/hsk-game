@@ -1,0 +1,29 @@
+{
+  "audio": "4a4b2f051b83adc0fea0b01a5b71b3f5088aadbcf5bfc61fcfa975caa881dc21.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "掉",
+  "id": "b4c407200525215e2d861d60",
+  "level": 4,
+  "meaning": "to fall, to drop",
+  "pinyin": "diào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Oc(=|ti66{-1779527159964"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

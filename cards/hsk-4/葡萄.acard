@@ -1,0 +1,29 @@
+{
+  "audio": "6618ecf49f0153bd173abcb15ffd685992e9fc2184529e779b693794405ad4e0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "葡萄",
+  "id": "8f6cccd45ad140b1becbbfef",
+  "level": 4,
+  "meaning": "grape",
+  "pinyin": "pútao",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nA:(hwxidY-1779527160362"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

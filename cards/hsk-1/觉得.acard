@@ -1,0 +1,31 @@
+{
+  "audio": "0511117e38454478f7224358ef82326bab04aa70922cfe9b4fabc9f66a21e544.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "得"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "觉得",
+  "id": "8e332a8072f380e18307b8c2",
+  "level": 1,
+  "meaning": "to feel, to think",
+  "pinyin": "juéde",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-NITsUn@#S%-1779527158899"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

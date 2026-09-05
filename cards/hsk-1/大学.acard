@@ -1,0 +1,32 @@
+{
+  "audio": "89b1ab1e06a78c23386914a53e9a9f8532625de933f88b2c28d0e33b292ec5eb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "学"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大学",
+  "id": "79765fd2a7cb5218ec61eb3a",
+  "level": 1,
+  "meaning": "university",
+  "pinyin": "dàxué",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-q@9`97HV31-1779527158830"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

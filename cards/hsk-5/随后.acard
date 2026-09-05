@@ -1,0 +1,32 @@
+{
+  "audio": "941811ca7636651f8b8f7dc93e85e3b87b373daa4f34dc3be8a248fbf6f01373.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "随"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "随后",
+  "id": "8ea3c4213d363c2ff7a57a9c",
+  "level": 5,
+  "meaning": "afterward",
+  "pinyin": "suíhòu",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-CYR$q:n4}6-1779527161892"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

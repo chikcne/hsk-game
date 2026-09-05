@@ -1,0 +1,32 @@
+{
+  "audio": "3e27c1f9f8c93ec2416d06e1e83fead0b505aa6761b7971fe63e44db7aac330e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "路",
+      "马"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "马路",
+  "id": "0d1ad75bc5a91653654c2fd7",
+  "level": 3,
+  "meaning": "road",
+  "pinyin": "mǎlù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-dI]d$EjwPG-1779527159568"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

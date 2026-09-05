@@ -1,0 +1,31 @@
+{
+  "audio": "9110512ef7f2a247763a435042e5203cf0097c9a0a4df934dd394523c67476f9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "止"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "阻止",
+  "id": "5d505514921aeb664bee7238",
+  "level": 5,
+  "meaning": "to prevent, to stop",
+  "pinyin": "zǔzhǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wTjEIF%W06-1779527162395"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "edf7459d405b6f25af33fb3ac207109ddb9c5e10288542a1c7ee5a050679601f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "袋子",
+  "id": "7dc4ef88f50a20413a6888fb",
+  "level": 4,
+  "meaning": "bag, sack",
+  "pinyin": "dàizi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s?`U;QE$j[-1779527159936"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

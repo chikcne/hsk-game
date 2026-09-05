@@ -1,0 +1,31 @@
+{
+  "audio": "ccd18e87504e2ce60a4521d6d2a2e8d398d47dc168a4e7ed0ae499fa0d2e9ff5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "太"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "太阳",
+  "id": "d882c243353949a22e6cc714",
+  "level": 3,
+  "meaning": "sun",
+  "pinyin": "tàiyáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-l>s1apbmMN-1779527159652"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "4f317c72ca2aa094fad21809f1f4796a14f5b6a1c4e7bb946caf203fd0e562ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "万",
+      "千"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "千万",
+  "id": "014c8bbd32db43c5cefd4051",
+  "level": 4,
+  "meaning": "ten million, by all means, absolutely",
+  "pinyin": "qiānwàn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ulv^Ki[*%9-1779527160378"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

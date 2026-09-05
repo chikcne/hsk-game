@@ -1,0 +1,29 @@
+{
+  "audio": "6c250ba37430b4ac52ba62af8a5d0067f8904241eb946c83e8d96ea43e84366e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "炒",
+  "id": "cd199d5434e91c4596bd30f1",
+  "level": 5,
+  "meaning": "to stir-fry",
+  "pinyin": "chǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-xNBE.r(2vV-1779527160926"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

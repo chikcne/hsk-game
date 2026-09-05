@@ -1,0 +1,29 @@
+{
+  "audio": "bf93a12b1f33d0efc741a775e655814660eef0fcb75e736fe2507b1adf276a0f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "全",
+  "id": "4f3dc8aeb12b16e5927133e6",
+  "level": 4,
+  "meaning": "whole, entire; completely, entirely",
+  "pinyin": "quán",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-i/0:]voKZB-1779527160401"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

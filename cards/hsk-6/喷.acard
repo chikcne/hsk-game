@@ -1,0 +1,29 @@
+{
+  "audio": "2e2674e16ecc6ac2c3d866a0891a99b0d0b8411eff876f252cf4e4de4ccc56b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "喷",
+  "id": "1a97a384dbf19d129b92b874",
+  "level": 6,
+  "meaning": "to spray",
+  "pinyin": "pēn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-981-1779527163384"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

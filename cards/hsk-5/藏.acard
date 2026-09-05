@@ -1,0 +1,29 @@
+{
+  "audio": "bcf6d6c017a0fc32417226880870d6627c8c9f3bd478dc7a28967cf8518d01fb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "藏",
+  "id": "19ad05a3f72ddc54bddf7251",
+  "level": 5,
+  "meaning": "to hide",
+  "pinyin": "cáng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-cEln8LUZ)|-1779527160895"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

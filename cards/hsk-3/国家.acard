@@ -1,0 +1,32 @@
+{
+  "audio": "003edd62f549b6b77912b50991cf456fcdc08267a4794c522844eb50e914482b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "国",
+      "家"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "国家",
+  "id": "fd94f08774f800c9442d0b99",
+  "level": 3,
+  "meaning": "country",
+  "pinyin": "guójiā",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-zZ=<CVo5%K-1779527159461"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

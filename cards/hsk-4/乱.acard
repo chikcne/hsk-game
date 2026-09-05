@@ -1,0 +1,29 @@
+{
+  "audio": "43f91246f0c17d4e8f1d875c0a4b9aed209b40d46720a525d4dac64d20bc63c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "乱",
+  "id": "379e38333ae7ffff55adbc34",
+  "level": 4,
+  "meaning": "messy, disorderly; arbitrarily, recklessly",
+  "pinyin": "luàn",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bW*&uM{kOK-1779527160295"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

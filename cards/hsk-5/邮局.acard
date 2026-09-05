@@ -1,0 +1,31 @@
+{
+  "audio": "9ee1439d3c78e85ebb7e50d0191d559dccb2b87360fdf98f1a8ed82b8fdb87c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "局"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "邮局",
+  "id": "80cc1c4896daf08951516f3d",
+  "level": 5,
+  "meaning": "post office",
+  "pinyin": "yóujú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-NESS&F_3g!-1779527162207"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

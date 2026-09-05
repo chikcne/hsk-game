@@ -1,0 +1,31 @@
+{
+  "audio": "b5721879a523a5da3cfba3f1d2a83ded3c0a56aad4f8223a60f5b20a4dfc41b2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "进"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "促进",
+  "id": "480384507dc2002b3ca11f48",
+  "level": 5,
+  "meaning": "to promote, to advance",
+  "pinyin": "cùjìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Mm*1S7BKb+-1779527161007"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

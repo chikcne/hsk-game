@@ -1,0 +1,32 @@
+{
+  "audio": "35c6abe2aee797d9e3a8e67a94766fc9c6b809495123c8cf763c35546f6d2709.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "环",
+      "节"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "环节",
+  "id": "b85290afca1ad176d1ff0f8d",
+  "level": 5,
+  "meaning": "link, segment",
+  "pinyin": "huánjié",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E9(6]I6m}m-1779527161305"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

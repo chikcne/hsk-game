@@ -1,0 +1,29 @@
+{
+  "audio": "e4abeba4f797a3c9778ba4f8fc075751236fb314393d0b5fa597d584f6e66bca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "文献",
+  "id": "7fa253acf0d8ab9f6cf3a742",
+  "level": 6,
+  "meaning": "document, literature",
+  "pinyin": "wénxiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1392-1779527163795"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

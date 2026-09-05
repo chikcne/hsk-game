@@ -1,0 +1,31 @@
+{
+  "audio": "12d44674886af55c92d3e4c6a52315b2dc50f5305e9ff975eb080573c5283e7e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人际",
+  "id": "109b9ddfbcbf2840e4aeef7e",
+  "level": 5,
+  "meaning": "interpersonal",
+  "pinyin": "rénjì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J!GDkg}Ol|-1779527161722"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

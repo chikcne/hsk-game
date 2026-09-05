@@ -1,0 +1,31 @@
+{
+  "audio": "d59cb44f8f0ebbcad3e059a4c793a7efceb80afb8f0cf95a9550afbeffbceb74.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "家"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "作家",
+  "id": "0e7e1a8ad07467ba078bc602",
+  "level": 4,
+  "meaning": "writer, author",
+  "pinyin": "zuòjiā",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ewgT@b~SaV-1779527160796"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

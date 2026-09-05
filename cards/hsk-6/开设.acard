@@ -1,0 +1,31 @@
+{
+  "audio": "ac646940f301323d37abe7de04f7541b941f6224996eda32b740e4c5c188dae0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开设",
+  "id": "439917a46ad69ec7de81aa08",
+  "level": 6,
+  "meaning": "to open a business or course",
+  "pinyin": "kāishè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-764-1779527163167"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

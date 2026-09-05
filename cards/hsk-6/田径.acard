@@ -1,0 +1,31 @@
+{
+  "audio": "40d469d05af11877a4097d215ff5546837a5defbe080627797b7565cf73d212d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "田"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "田径",
+  "id": "6fc6a09882817f2fe76a0189",
+  "level": 6,
+  "meaning": "track and field",
+  "pinyin": "tiánjìng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1296-1779527163699"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

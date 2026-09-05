@@ -1,0 +1,32 @@
+{
+  "audio": "e74e540d3245129de80a3b2e534f6b8d714d8b733e388f4ab9c87d7fa1bbeb7f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "原",
+      "还"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "还原",
+  "id": "37957be2f26ba95032f2f7ac",
+  "level": 6,
+  "meaning": "to restore, to return to original state",
+  "pinyin": "huányuán",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-577-1779527162980"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

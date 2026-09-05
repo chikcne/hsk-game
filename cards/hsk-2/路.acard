@@ -1,0 +1,29 @@
+{
+  "audio": "3fd8435534a0a94cd4c16181dd8e463be35f40661ff1f2b89f32b2765c8c412a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "路",
+  "id": "c8ccd6821c9d318f13b8e713",
+  "level": 2,
+  "meaning": "road, path",
+  "pinyin": "lù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-y/twrX-x%9-1779527159195"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

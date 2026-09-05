@@ -1,0 +1,29 @@
+{
+  "audio": "af67284e4baff4240aa69a3bcbdc4b4cfbd0cafff953554fda56c1c48d804934.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "孤独",
+  "id": "c4eb252555547a4c960de9ce",
+  "level": 6,
+  "meaning": "lonely",
+  "pinyin": "gūdú",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-473-1779527162876"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

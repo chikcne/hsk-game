@@ -1,0 +1,31 @@
+{
+  "audio": "10d5315655d62a4b53b69ffacec5c0d47235ed69423c1d171567c85be1bfb254.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "干"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "干扰",
+  "id": "a262ebfe7f3c26ad7cf2cb8a",
+  "level": 6,
+  "meaning": "to disturb, to interfere",
+  "pinyin": "gānrǎo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-421-1779527162824"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

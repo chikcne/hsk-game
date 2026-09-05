@@ -1,0 +1,31 @@
+{
+  "audio": "2215a3065b291535191475bdce35153aa962e7ce1cf028c2a8a40b6f7698db7d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "节"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "节目",
+  "id": "81e674f4a6f834bb436ed313",
+  "level": 3,
+  "meaning": "program",
+  "pinyin": "jiémù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-gy^:,pVWnq-1779527159513"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

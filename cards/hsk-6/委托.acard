@@ -1,0 +1,29 @@
+{
+  "audio": "8df2c26a386a37dd1d910c79d349b758c3e524f52e7552bf2cc028f8cdf07024.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "委托",
+  "id": "5adda2b8dc0025bb45c65ffa",
+  "level": 6,
+  "meaning": "to entrust, to commission",
+  "pinyin": "wěituō",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1376-1779527163779"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

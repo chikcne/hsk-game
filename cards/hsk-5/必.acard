@@ -1,0 +1,29 @@
+{
+  "audio": "10238543903377fd01e17bfa739c815b84119134d5149fc1c71460db9fd5d598.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "必",
+  "id": "9ffba1639f9a83fb0a3f553e",
+  "level": 5,
+  "meaning": "certainly, necessarily",
+  "pinyin": "bì",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nA1h;1r`F]-1779527160852"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

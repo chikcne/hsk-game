@@ -1,0 +1,31 @@
+{
+  "audio": "cd08f8408b1d757c2a23de0e6d58011acdf0c3dcd751f204872483e2384bcec4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "变"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "变质",
+  "id": "7dfed91509d1671c26e11f90",
+  "level": 6,
+  "meaning": "to go bad, to deteriorate",
+  "pinyin": "biànzhì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-59-1779527162462"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

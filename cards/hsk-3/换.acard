@@ -1,0 +1,29 @@
+{
+  "audio": "ac1e570005aa13561d7e546e54569d17ba23476798650486cfe5366d839390eb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "换",
+  "id": "09577eba98fea3a843c29f1b",
+  "level": 3,
+  "meaning": "to exchange, to change",
+  "pinyin": "huàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-IzuYCgjROM-1779527159483"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

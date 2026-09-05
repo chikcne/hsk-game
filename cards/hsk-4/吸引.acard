@@ -1,0 +1,32 @@
+{
+  "audio": "c8c22ea61c41cbee6beadbca869ae6f086e1886d421e6be44df77a3777d90635.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "吸",
+      "引"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吸引",
+  "id": "6fd36d4d7e4bb748e8117ed5",
+  "level": 4,
+  "meaning": "to attract",
+  "pinyin": "xīyǐn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-CrW/oUS2_c-1779527160593"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

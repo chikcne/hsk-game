@@ -1,0 +1,32 @@
+{
+  "audio": "87317487907cd8ddfd7688590cb31bdf3bcaf96f08a48a1f32e886494e5997c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "得"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不得",
+  "id": "0bdebd854575d3ea3c280db7",
+  "level": 6,
+  "meaning": "must not, cannot",
+  "pinyin": "bùdé",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-82-1779527162485"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

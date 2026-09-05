@@ -1,0 +1,29 @@
+{
+  "audio": "f30837925be3ae43b72f79c05b6cbd791e2efbe30530fc080e92549c7620c5e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "家",
+  "id": "0a848e0a9139b748bcf72753",
+  "level": 1,
+  "meaning": "home, family; measure word for families; (suffix indicating a person specializing in something)",
+  "pinyin": "jiā",
+  "pos": "noun、classifier、 （suffix）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-dy0Pc<ca9!-1779527158889"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

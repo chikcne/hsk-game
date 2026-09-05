@@ -1,0 +1,29 @@
+{
+  "audio": "4a49c8e03d16c3b6064bfa88999292f009c627d47cc633b6c53e93179f88426e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "习惯",
+  "id": "66456ab862fc9f7f8326ebaf",
+  "level": 3,
+  "meaning": "to be used to; habit",
+  "pinyin": "xíguàn",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-dp85U^yxh2-1779527159688"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

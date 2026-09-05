@@ -1,0 +1,32 @@
+{
+  "audio": "bc3db6dd16eb2d6212468cf84a064c2d1ed3036e492197b56309e9f3e976fb2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "建",
+      "建筑"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "建筑物",
+  "id": "c0e4ad5ce843b1dbc91722e1",
+  "level": 6,
+  "meaning": "building",
+  "pinyin": "jiànzhùwù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-663-1779527163066"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

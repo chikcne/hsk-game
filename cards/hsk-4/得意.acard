@@ -1,0 +1,31 @@
+{
+  "audio": "041fe792752c4484480ee0523011760006b663de92b99b552eae5fea32cff6bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "得"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "得意",
+  "id": "472739cf49dffd1c27648c82",
+  "level": 4,
+  "meaning": "proud, complacent",
+  "pinyin": "déyì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-uQ<1LMOf:8-1779527159948"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "f870c5361301d9686d34c412f0b94f61200476677a263e985fd9c101cc9aa468.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "姨",
+  "id": "6dd31ea75237f2e86db35666",
+  "level": 6,
+  "meaning": "aunt",
+  "pinyin": "yí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1542-1779527163945"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

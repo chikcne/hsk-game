@@ -1,0 +1,32 @@
+{
+  "audio": "fb27a8bc16782520f791e7ac5b884d5fad645417a000b12ce5c64cbb6f1c6dd9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "周",
+      "年"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "周年",
+  "id": "bdf652f710387f22bb74db94",
+  "level": 5,
+  "meaning": "anniversary",
+  "pinyin": "zhōunián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bUua>Q6PYO-1779527162338"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

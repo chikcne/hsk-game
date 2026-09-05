@@ -1,0 +1,32 @@
+{
+  "audio": "adeb6299e60bebe777c2612c3da39fa2b6d03d7187073a3e46bba1e4a583ad14.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "产",
+      "出"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "产出",
+  "id": "5733b1efdd08fdf13adf721b",
+  "level": 6,
+  "meaning": "to produce, to yield",
+  "pinyin": "chǎnchū",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-122-1779527162525"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

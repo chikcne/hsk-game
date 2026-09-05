@@ -1,0 +1,32 @@
+{
+  "audio": "130b58716e9b5126f842795578e222d01be7818a7ba7e303b5de2e7e47bb9c29.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "再",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "再生",
+  "id": "ff332ce4b09a22019da5507f",
+  "level": 6,
+  "meaning": "to regenerate, to recycle",
+  "pinyin": "zàishēng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1644-1779527164047"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

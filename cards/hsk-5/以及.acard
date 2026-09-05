@@ -1,0 +1,32 @@
+{
+  "audio": "daf66567e7f331c0c8370dabbfc04a9216c226594b37b509d740afa0edfbaa08.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "以",
+      "及"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "以及",
+  "id": "331bc133c4f62f4c31ab0060",
+  "level": 5,
+  "meaning": "as well as, and",
+  "pinyin": "yǐjí",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hWx1/C,?x6-1779527162166"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

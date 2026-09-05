@@ -1,0 +1,31 @@
+{
+  "audio": "a355e36e8b4d03902bc18e19e49b6f74f4cfb0c4c4fcc2910af508819c85603e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "化"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "绿化",
+  "id": "1df94acb9f9d3257c842b1ab",
+  "level": 6,
+  "meaning": "to afforest, to green",
+  "pinyin": "lǜhuà",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-874-1779527163277"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

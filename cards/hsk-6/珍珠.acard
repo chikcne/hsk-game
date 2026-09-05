@@ -1,0 +1,29 @@
+{
+  "audio": "90ff38b89b07534630108a9bdebe53d9c7230d83621de917c9f9cd44b5a49529.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "珍珠",
+  "id": "e7050c125c7a89eb2356f102",
+  "level": 6,
+  "meaning": "pearl",
+  "pinyin": "zhēnzhū",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1678-1779527164081"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

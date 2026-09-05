@@ -1,0 +1,32 @@
+{
+  "audio": "223a6b9a4c107e87d4c966160c175578f255276e7c4aff87f857332c6e2a76bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "路"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "路上",
+  "id": "c96546803742db73638bf394",
+  "level": 2,
+  "meaning": "on the road",
+  "pinyin": "lùshang",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-u5w9C!q^gM-1779527159196"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

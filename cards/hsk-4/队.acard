@@ -1,0 +1,29 @@
+{
+  "audio": "af23caf91e8f4bbe5c5e24f26c9dfbeacfef91ac3e4bcf61de20e35640c82fd8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "队",
+  "id": "46f80b4713849491f23c067d",
+  "level": 4,
+  "meaning": "team, squad; (measure word for teams)",
+  "pinyin": "duì",
+  "pos": "noun、 （classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-OdLvo/a1dz-1779527159976"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "5dd487a992c691c05e80f8dce5398a526c835ceeeb56ec127726441d5efc0543.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "假",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "假期",
+  "id": "18189ba98d10abf17eb3e2ef",
+  "level": 3,
+  "meaning": "vacation",
+  "pinyin": "jiàqī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-K]y(;ZMs1r-1779527159499"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

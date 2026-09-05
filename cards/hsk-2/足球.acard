@@ -1,0 +1,32 @@
+{
+  "audio": "72f6ab2aa80a4e86dee505a48dccad673c1ef2573036151d385b86d70cb95156.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "球",
+      "足"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "足球",
+  "id": "0f3f3a3e16ed340bced1ad8c",
+  "level": 2,
+  "meaning": "soccer, football",
+  "pinyin": "zúqiú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-LB;aN=yd3r-1779527159300"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

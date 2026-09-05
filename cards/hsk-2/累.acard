@@ -1,0 +1,29 @@
+{
+  "audio": "c4da0ea37a2c1677398e949e1bcaf79cc25ff62b1de1331e99879ed307f7f111.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "累",
+  "id": "c31a788ca58465dd02c28abf",
+  "level": 2,
+  "meaning": "tired; to tire",
+  "pinyin": "lèi",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-AwWX;`p`Mc-1779527159191"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

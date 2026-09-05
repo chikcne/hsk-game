@@ -1,0 +1,29 @@
+{
+  "audio": "6a1f45e83d3b774543da4fbe79b5700836fb8eb48c7df00ec8936a258d81df40.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "品",
+  "id": "ff9a002522ef59f008e6ceef",
+  "level": 5,
+  "meaning": "suffix indicating character, quality; (product)",
+  "pinyin": "pǐn",
+  "pos": "suffix、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-sQm%I,K>A@-1779527161635"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

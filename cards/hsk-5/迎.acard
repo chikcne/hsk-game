@@ -1,0 +1,29 @@
+{
+  "audio": "90a631cd47d8f94388e87c265f8cbc6a23c197133377d4d6f4b346771e21dcf9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "迎",
+  "id": "de45d49d3a2f6729f7fad501",
+  "level": 5,
+  "meaning": "to welcome",
+  "pinyin": "yíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G1:|aK~u^=-1779527162181"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

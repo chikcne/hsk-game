@@ -1,0 +1,31 @@
+{
+  "audio": "9184046441a4336a671ad61d7e12c5629316645934571c9a89c5baebb54a2ece.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "边"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "旁边",
+  "id": "81a582bcaf607a2311b3c153",
+  "level": 2,
+  "meaning": "side",
+  "pinyin": "pángbiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-u,6Y7wQ?JN-1779527159216"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

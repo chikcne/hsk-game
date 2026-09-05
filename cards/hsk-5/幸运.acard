@@ -1,0 +1,31 @@
+{
+  "audio": "d1cfc39465faeb4b4537bbf3c56b576febd6865b02c8d0079fd0b9a3d46a6301.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "运"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "幸运",
+  "id": "0fda9db50e7fcc87d8470ce5",
+  "level": 5,
+  "meaning": "luck; lucky, fortunate",
+  "pinyin": "xìngyùn",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-APF&5H,3;u-1779527162101"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

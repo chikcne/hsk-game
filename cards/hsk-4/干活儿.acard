@@ -1,0 +1,32 @@
+{
+  "audio": "b4bb24b892b9dcc7a2566a70b676c1de2000c191e41c0b426aa3cbef44e2b1d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "干",
+      "活"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "干活儿",
+  "id": "bd4d20af090bbbdd178c72a6",
+  "level": 4,
+  "meaning": "to work",
+  "pinyin": "gànhuór",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Q#I4M6Ow;.-1779527160037"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

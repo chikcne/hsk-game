@@ -1,0 +1,29 @@
+{
+  "audio": "4e90f5ee678516bea6ac64c6a4c2cbf6afb1365f2623a8304a7bd459608a8754.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保",
+  "id": "3903a48aad1687d61f4e79aa",
+  "level": 5,
+  "meaning": "to protect, to safeguard; guardian",
+  "pinyin": "bǎo",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-b-@0tg/K4A-1779527160824"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

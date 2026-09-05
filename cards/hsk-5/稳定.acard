@@ -1,0 +1,31 @@
+{
+  "audio": "ad61b68ec239a6080bc1305ea24ea35ed274ff083c5d2697a45982910c3710d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "稳定",
+  "id": "d00ddf445061f0eb38158378",
+  "level": 5,
+  "meaning": "stable; to stabilize",
+  "pinyin": "wěndìng",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-k5/CGoK)$B-1779527162004"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

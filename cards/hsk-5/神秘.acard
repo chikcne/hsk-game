@@ -1,0 +1,31 @@
+{
+  "audio": "eb9b4b474e21155451ccf42398ebde9d52e92c2b34f19cd0beee9123c0fb044c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "神"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "神秘",
+  "id": "8f3e904b2b2eff03e9448ea2",
+  "level": 5,
+  "meaning": "mysterious",
+  "pinyin": "shénmì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P2z;]pJA!u-1779527161791"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

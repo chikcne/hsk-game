@@ -1,0 +1,31 @@
+{
+  "audio": "979d13985bf8e4e62b66e71c35c7a685e83943101bedbf559a38ba409d92d45e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "纸"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "报纸",
+  "id": "644e5beed4836a0aa47af2d4",
+  "level": 3,
+  "meaning": "newspaper",
+  "pinyin": "bàozhǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-y*oBkyx*m?-1779527159319"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

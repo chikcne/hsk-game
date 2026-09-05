@@ -1,0 +1,32 @@
+{
+  "audio": "11eb8a2f0433fb7c46f54f2e26b9a2cb6be58a3b8ecb8a729fbcd4a9852b584d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "种"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "种地",
+  "id": "92c1c1bf67d684490bc323b8",
+  "level": 6,
+  "meaning": "to farm, to cultivate land",
+  "pinyin": "zhòngdì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1729-1779527164132"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

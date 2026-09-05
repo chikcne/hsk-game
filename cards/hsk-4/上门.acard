@@ -1,0 +1,32 @@
+{
+  "audio": "d4ab9892147413c12a7d7ec5efe62c197a0bdedfdd584481892d6b7c6d3d9b40.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "门"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上门",
+  "id": "c5fd6e856ff88c72a98ea668",
+  "level": 4,
+  "meaning": "to visit, to go to someone's house",
+  "pinyin": "shàngmén",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Pt;<[m/KYX-1779527160435"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

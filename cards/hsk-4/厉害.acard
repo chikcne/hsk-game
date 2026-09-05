@@ -1,0 +1,31 @@
+{
+  "audio": "d826240b070d97a3569d5a1594cadebafdd29f6e97f3973dd51a628b01468512.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "害"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "厉害",
+  "id": "4181873d22d91eb416e6a2dc",
+  "level": 4,
+  "meaning": "severe, fierce, impressive, excellent",
+  "pinyin": "lìhai",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-gGdUB=tN(i-1779527160267"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

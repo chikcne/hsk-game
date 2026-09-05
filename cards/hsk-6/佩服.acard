@@ -1,0 +1,31 @@
+{
+  "audio": "7dc83e389fc41e431b26f4977f0fc4bd5b764dc1155ccd7dbcff4f4a03cc46b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "服"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "佩服",
+  "id": "263d9e8e73cc9b2986a63a0e",
+  "level": 6,
+  "meaning": "to admire",
+  "pinyin": "pèifú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-979-1779527163382"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

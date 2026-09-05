@@ -1,0 +1,32 @@
+{
+  "audio": "2d21400b16eec045162c55328ffd6dc465f8f737e914fe81ed4d1167f424b174.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "本"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "本地",
+  "id": "d2d1576e85a4be4a2e16de0c",
+  "level": 5,
+  "meaning": "local area",
+  "pinyin": "běndì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JzkgXh]Vna-1779527160844"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "12455baf579cb12db01f43ec86c86a872420c2521e37256e2076eb0e45fb6709.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "经营",
+  "id": "0ebc351167bc890aedc6d7b1",
+  "level": 5,
+  "meaning": "to manage, to operate",
+  "pinyin": "jīngyíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JE]z7Zd9oL-1779527161428"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

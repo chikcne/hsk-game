@@ -1,0 +1,32 @@
+{
+  "audio": "4543bbed5938cca9de8c198e9b8d32b011c3bc509ff364d4670974d8caeb1b98.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "想",
+      "法"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "想法",
+  "id": "54d3651a78000f595a465ba5",
+  "level": 4,
+  "meaning": "thought, idea, opinion",
+  "pinyin": "xiǎngfǎ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-rGm6@gaj#*-1779527160612"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

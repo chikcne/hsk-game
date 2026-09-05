@@ -1,0 +1,29 @@
+{
+  "audio": "02abf8c2dc9094b6cb0c261c7e31b0181b026e8757cf5ef7bac9bfeacd469fb6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "声",
+  "id": "dcdc104c41fdc46600bb6ba0",
+  "level": 3,
+  "meaning": "sound, voice; measure word for sounds",
+  "pinyin": "shēng",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-ckRh=Hl!*k-1779527159631"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

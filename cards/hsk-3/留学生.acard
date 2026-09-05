@@ -1,0 +1,35 @@
+{
+  "audio": "217423791e0e3190dfd42a9cda922a6e291f1e981394b49494e0fd7767153cb2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "学生",
+      "生",
+      "留",
+      "留学"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "留学生",
+  "id": "04a83c291465a05a8b83f5ed",
+  "level": 3,
+  "meaning": "overseas student",
+  "pinyin": "liúxuéshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-w~izs/Kr*g-1779527159563"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

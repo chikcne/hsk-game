@@ -1,0 +1,31 @@
+{
+  "audio": "87c532fe93f06ddb628b1c1276366d29fc9aaa50a36f2d6b7aec332bc9154a54.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "势力",
+  "id": "d54f036a103d4c30cf71afe8",
+  "level": 6,
+  "meaning": "power, influence",
+  "pinyin": "shìlì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1202-1779527163605"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

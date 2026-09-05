@@ -1,0 +1,32 @@
+{
+  "audio": "8e06391f9da6933ff346f852b315e4dcc166d820d2b926d470ce3c6ee3a0f77e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "提"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "提前",
+  "id": "5f781070b30bb33b27a70c5d",
+  "level": 4,
+  "meaning": "to advance, to move up, to do something ahead of time",
+  "pinyin": "tíqián",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kkxC:7x(79-1779527160533"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

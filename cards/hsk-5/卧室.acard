@@ -1,0 +1,31 @@
+{
+  "audio": "58eefc6d005225730114fb116d72ae06e5f637e48a17d77dc4e6364cbf3ab36f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "室"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "卧室",
+  "id": "cd5485b110d6c24dadf97aed",
+  "level": 5,
+  "meaning": "bedroom",
+  "pinyin": "wòshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GTS?F5CKhD-1779527162007"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

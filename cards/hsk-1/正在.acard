@@ -1,0 +1,32 @@
+{
+  "audio": "48213e6ccf6cbb8e7ee259378b805ef1730a47249bf8485dc3425e9e4b6d3ade.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "在",
+      "正"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "正在",
+  "id": "279c7f36fa459ffd99515475",
+  "level": 1,
+  "meaning": "in the process of",
+  "pinyin": "zhèngzài",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-J]94h!C9i$-1779527159089"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

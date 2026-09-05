@@ -1,0 +1,32 @@
+{
+  "audio": "a2e4c4f33bad3a9663b8123b93ce6d14350ad14d708ac3582258c72dd22ea184.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "广",
+      "播"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "广播",
+  "id": "45e9a3212def014b10793a41",
+  "level": 4,
+  "meaning": "broadcast, air; radio broadcast, boradcasting",
+  "pinyin": "guǎngbō",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-PSQw<?yfeW-1779527160078"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

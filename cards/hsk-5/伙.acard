@@ -1,0 +1,29 @@
+{
+  "audio": "37a14a049c0cad08cefd4231ff3779a94de55f7e3b4a6056f6a2d7faf436db86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "伙",
+  "id": "9743c96ad138fe627747297a",
+  "level": 5,
+  "meaning": "measure word for groups",
+  "pinyin": "huǒ",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tffG-JqM1_-1779527161317"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

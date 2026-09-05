@@ -1,0 +1,32 @@
+{
+  "audio": "e6353b14695c9f4d1d552e585e7a63d7882f05812f47f58ebd35e6345aca48ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "等",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高等",
+  "id": "c8c1869858b0c2fc7086c180",
+  "level": 6,
+  "meaning": "higher, advanced",
+  "pinyin": "gāoděng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-432-1779527162835"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

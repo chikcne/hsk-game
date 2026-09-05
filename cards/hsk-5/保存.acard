@@ -1,0 +1,32 @@
+{
+  "audio": "438f53f0e4d93541a77e1c3eff08f1f18cf90d7b6bc71eeaaca54f7d8eb5e6aa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保",
+      "存"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保存",
+  "id": "6028560eaa95b85d7f727909",
+  "level": 5,
+  "meaning": "to preserve, to save",
+  "pinyin": "bǎocún",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-c%(+(i4RqD-1779527160828"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

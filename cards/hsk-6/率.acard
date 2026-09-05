@@ -1,0 +1,29 @@
+{
+  "audio": "2322b7f738639ad2f03775427132a958c514e6e53eab9368de43d461b5719d4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "率",
+  "id": "c11277c0bdc898d9de41ca3e",
+  "level": 6,
+  "meaning": "suffix meaning rate, proportion",
+  "pinyin": "lǜ",
+  "pos": "后缀",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-873-1779527163276"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

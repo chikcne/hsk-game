@@ -1,0 +1,32 @@
+{
+  "audio": "d41f317033e5080ee050de10ebb3a5866159dd297b3bb3c898057249bc1ddf7f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "米",
+      "饭"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "米饭",
+  "id": "32a502259c9bd8f32798f03b",
+  "level": 1,
+  "meaning": "cooked rice",
+  "pinyin": "mǐfàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-I[{kge__@;-1779527158928"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "6207ad3b89563059d27f4ea9eb46bfed1dbd880ee3801b012e5cd36b22466a96.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "带"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一带",
+  "id": "2587a13df9d93ace1e51da4c",
+  "level": 6,
+  "meaning": "region, area",
+  "pinyin": "yídài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1546-1779527163949"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

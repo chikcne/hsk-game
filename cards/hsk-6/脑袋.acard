@@ -1,0 +1,29 @@
+{
+  "audio": "20dbba1ae840addeb6520a4af1b74685f2f37e57ee6748cb8f7f604817b982c9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "脑袋",
+  "id": "2eeb53d91efcb0e6f3301c87",
+  "level": 6,
+  "meaning": "head",
+  "pinyin": "nǎodai",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-947-1779527163350"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

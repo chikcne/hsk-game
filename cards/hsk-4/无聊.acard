@@ -1,0 +1,32 @@
+{
+  "audio": "e3297c5b13da1d11e6f586dbac168e4fe27b0eec8a8798592651723e2b21f58f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "无",
+      "聊"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "无聊",
+  "id": "13b9ad31fdd8b4490d36f147",
+  "level": 4,
+  "meaning": "boring, dull",
+  "pinyin": "wúliáo",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r$m(Ck75i0-1779527160586"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

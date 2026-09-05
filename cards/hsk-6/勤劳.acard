@@ -1,0 +1,29 @@
+{
+  "audio": "8e3c54353cb26c2a668cd3c57d01862873fc510ca031775276388b20af0b64f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "勤劳",
+  "id": "f888bc71eca94164c2c7dc2f",
+  "level": 6,
+  "meaning": "hardworking",
+  "pinyin": "qínláo",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1051-1779527163454"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

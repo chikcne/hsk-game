@@ -1,0 +1,29 @@
+{
+  "audio": "968589eaefbc359dff449b80d1a89e5d0ec70a3d7748d63691dee9738eab9b54.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "脚",
+  "id": "90e50fe8b96e0b61c2b1e32d",
+  "level": 3,
+  "meaning": "foot",
+  "pinyin": "jiǎo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-A*<Hot/a1N-1779527159508"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

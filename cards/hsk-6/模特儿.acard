@@ -1,0 +1,31 @@
+{
+  "audio": "79a90e02447e4bbcb242437f6111699bf2e59cd2fd6a619f2964afd8589a7f5b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "特"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "模特儿",
+  "id": "f70f5a3e7b8500aa71a5e903",
+  "level": 6,
+  "meaning": "model",
+  "pinyin": "mótèr",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-933-1779527163336"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "d4387264245ccb516481af34a2aea19b87b53f75bfc79d135ecbb50dd88dcc9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "始终",
+  "id": "c38144e82d404aab61bfa46b",
+  "level": 5,
+  "meaning": "from beginning to end; always",
+  "pinyin": "shǐzhōng",
+  "pos": "noun、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JuzJNHyNAG-1779527161830"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

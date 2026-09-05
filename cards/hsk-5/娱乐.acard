@@ -1,0 +1,29 @@
+{
+  "audio": "02b1011188afcf9c248fa12cc5646f3e0b566a74999a39afe0ab1cf8f4ea7aa8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "娱乐",
+  "id": "9fafbcd4482c6e35a34a3dc8",
+  "level": 5,
+  "meaning": "to entertain; entertainment",
+  "pinyin": "yúlè",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-LcN:>=D/wc-1779527162219"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

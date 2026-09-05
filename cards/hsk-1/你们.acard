@@ -1,0 +1,32 @@
+{
+  "audio": "d663a4ed94be34d8701e65fc152ef839a58796efe74bda42ebef13d9a8052d78.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "们",
+      "你"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "你们",
+  "id": "3c5739e3494d78c7193110e5",
+  "level": 1,
+  "meaning": "you plural",
+  "pinyin": "nǐmen",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-zzOPbZBw@]-1779527158951"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

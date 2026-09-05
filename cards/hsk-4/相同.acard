@@ -1,0 +1,31 @@
+{
+  "audio": "aedd763a5fec6ee0e62b1dfb44c8729d3d2f934e35fef071de3198ad6456090a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相同",
+  "id": "d72d7d4cacbda57dfe7096e4",
+  "level": 4,
+  "meaning": "same, identical",
+  "pinyin": "xiāngtóng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-f]8E`C.^i<-1779527160609"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

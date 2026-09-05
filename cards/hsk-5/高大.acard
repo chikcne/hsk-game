@@ -1,0 +1,32 @@
+{
+  "audio": "62629feb5e765d91116b150a7f94b4256d7bc3ab70c584851e7ff5089212d1b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高大",
+  "id": "1657aa5ee955e4d7616be887",
+  "level": 5,
+  "meaning": "tall, lofty",
+  "pinyin": "gāodà",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kOco{V`PYo-1779527161189"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

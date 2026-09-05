@@ -1,0 +1,29 @@
+{
+  "audio": "1d43da3f72a6a85b7a3ace6fa641fff0d1b0828e477f02550d69a39d24cb0643.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "谨慎",
+  "id": "09e2e783a93810abcf330bbb",
+  "level": 5,
+  "meaning": "cautious, prudent",
+  "pinyin": "jǐnshèn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-OezAy0t67P-1779527161415"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

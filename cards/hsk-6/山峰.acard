@@ -1,0 +1,31 @@
+{
+  "audio": "7cc16ae65892c854969e631293c530b6f0f2e02e22e6cca532bbade9ed90edaf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "山"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "山峰",
+  "id": "52d3b8652c1905ae3b5b38cb",
+  "level": 6,
+  "meaning": "mountain peak",
+  "pinyin": "shānfēng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1138-1779527163541"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

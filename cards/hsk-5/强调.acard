@@ -1,0 +1,32 @@
+{
+  "audio": "78ba3f511111254b8f43310a477958f56d24225ecfb8db23fd7293a6fed452d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "强",
+      "调"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "强调",
+  "id": "d1713328d43fcd8b0d54abd1",
+  "level": 5,
+  "meaning": "to emphasize",
+  "pinyin": "qiángdiào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-N(c=&24k7_-1779527161674"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

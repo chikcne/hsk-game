@@ -1,0 +1,31 @@
+{
+  "audio": "f5c7dd722c1ae9280ff4c4a612ae69de08a370afd83859cf53e7e0b686a5edfc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "动作",
+  "id": "6217c3f8165324baa2f77fc5",
+  "level": 4,
+  "meaning": "movement, action",
+  "pinyin": "dòngzuò",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-F;Q9dS(i8M-1779527159970"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

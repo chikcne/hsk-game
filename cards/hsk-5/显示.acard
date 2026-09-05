@@ -1,0 +1,31 @@
+{
+  "audio": "16616483f70077028588794e2f28954c6ca974f38d0534080ee677f3acd049a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "显"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "显示",
+  "id": "c43f201a4b354a5fa2f9d050",
+  "level": 5,
+  "meaning": "to show, to display",
+  "pinyin": "xiǎnshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-r`GG%(PB2<-1779527162039"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

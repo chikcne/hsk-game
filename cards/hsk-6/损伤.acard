@@ -1,0 +1,31 @@
+{
+  "audio": "1664c3192e93744b3dcd3a3e3e61e4766237812d7c7e0cac0523884f0d3f4250.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伤"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "损伤",
+  "id": "dc1424805e6f0fc3eedf5616",
+  "level": 6,
+  "meaning": "to harm",
+  "pinyin": "sǔnshāng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1253-1779527163656"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

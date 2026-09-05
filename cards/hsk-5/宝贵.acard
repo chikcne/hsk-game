@@ -1,0 +1,32 @@
+{
+  "audio": "ffbb6e003b6de29f578884968e2c1c1b9c17420ffc3c4317fd4e06ec4587ff92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "宝",
+      "贵"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "宝贵",
+  "id": "85ee1b7fa8e793c83afe1820",
+  "level": 5,
+  "meaning": "precious, valuable",
+  "pinyin": "bǎoguì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Jli]7TG~rM-1779527160829"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

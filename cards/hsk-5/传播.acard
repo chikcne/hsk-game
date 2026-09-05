@@ -1,0 +1,32 @@
+{
+  "audio": "073c5bc8c2f0270bfbf977b69a006b3d49571fed934fef32ebe4242c8aec7c87.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传",
+      "播"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "传播",
+  "id": "45aef8e9a613fbb4b021f90a",
+  "level": 5,
+  "meaning": "to spread, to propagate",
+  "pinyin": "chuánbō",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-LF;gk>&7ZQ-1779527160987"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

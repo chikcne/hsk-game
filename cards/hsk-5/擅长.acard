@@ -1,0 +1,31 @@
+{
+  "audio": "d35063971d55bc7252f3032540762ee560b2d261193e4b5dbf4044767441069f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "长"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "擅长",
+  "id": "54bdcfc5983cad4e9c95c9d2",
+  "level": 5,
+  "meaning": "to be good at, to be skilled in",
+  "pinyin": "shàncháng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-r@x~KX/$0=-1779527161755"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

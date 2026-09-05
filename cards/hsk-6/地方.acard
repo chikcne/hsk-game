@@ -1,0 +1,32 @@
+{
+  "audio": "7966a11f010192f627d90d1661b34abee84069baa7cec4fcd7f43d59c19d7ebd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "方"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地方",
+  "id": "c9acff7912eed9ca79648ae8",
+  "level": 6,
+  "meaning": "place, location",
+  "pinyin": "dìfāng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-292-1779527162695"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

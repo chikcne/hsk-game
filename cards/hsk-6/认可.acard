@@ -1,0 +1,32 @@
+{
+  "audio": "354b6bfc71a13119ccb7c840aff9fdd86acb76c2c02e92ab0f480fbaed9db9d5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "可",
+      "认"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "认可",
+  "id": "be24bec213e3679c7a22ad1a",
+  "level": 6,
+  "meaning": "to approve",
+  "pinyin": "rènkě",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1105-1779527163508"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

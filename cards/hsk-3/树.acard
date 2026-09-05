@@ -1,0 +1,29 @@
+{
+  "audio": "aa547c4aa80d900fbabf003bce19fd8538c73ddc854e2082f411bcf2b66ffb22.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "树",
+  "id": "7e348e9bbdd0e128754b2cc0",
+  "level": 3,
+  "meaning": "tree",
+  "pinyin": "shù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-BEZkKu]^nu-1779527159645"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

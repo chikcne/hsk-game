@@ -1,0 +1,29 @@
+{
+  "audio": "669412e469fa29b9d3a8a6c94876cba94a1540c3d3559b525792a66e62d0d553.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "侧",
+  "id": "3bd6ad305f467c26847f5f84",
+  "level": 6,
+  "meaning": "side; to lean to one side",
+  "pinyin": "cè",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-111-1779527162514"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "0f2805fe54e4f5bed3684309c488ff063a8bd170fc1299ec67524a2f74134146.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "国",
+  "id": "af1a2e4b7d1365abab002639",
+  "level": 1,
+  "meaning": "country",
+  "pinyin": "guó",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-U*lu:0aMU-1779527158869"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

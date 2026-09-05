@@ -1,0 +1,31 @@
+{
+  "audio": "3899c908bbd6292c2acae5b6aa7a8d8639a8b470632cd7a14a8c1fae06da68e6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "点赞",
+  "id": "4c4972122a32112f3cfcad0f",
+  "level": 5,
+  "meaning": "to like, to give a thumbs-up",
+  "pinyin": "diǎnzàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G*P=W{|s~N-1779527161080"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

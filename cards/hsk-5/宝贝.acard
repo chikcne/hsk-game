@@ -1,0 +1,31 @@
+{
+  "audio": "c6db07e1ca83ac2c5a737175bf31ce3f3c74f94b896b425d91d142afb456b390.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "宝"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "宝贝",
+  "id": "55181c1bfaf8a31eab26fe9b",
+  "level": 5,
+  "meaning": "treasure, baby",
+  "pinyin": "bǎobèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-N;:<;hEWUk-1779527160826"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

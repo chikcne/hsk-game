@@ -1,0 +1,29 @@
+{
+  "audio": "b27044a3ab1d70dc7d9d04b7a2f4ecd70cd6a55dcdd87111fbf7c00f142f4482.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "恨",
+  "id": "772c339d3106af306fdbb7f0",
+  "level": 6,
+  "meaning": "to hate",
+  "pinyin": "hèn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-547-1779527162950"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

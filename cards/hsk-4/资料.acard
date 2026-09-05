@@ -1,0 +1,31 @@
+{
+  "audio": "996ee3743de59b58ed169d9f000d3a450ff8de640cab540c3b3894a1e37238f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "料"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "资料",
+  "id": "dac347364b6d80233615be35",
+  "level": 4,
+  "meaning": "materials, data, information",
+  "pinyin": "zīliào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Hcmx*hTDR.-1779527160781"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

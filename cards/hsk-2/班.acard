@@ -1,0 +1,29 @@
+{
+  "audio": "7a6b8019579054d0b597856a7c79956a36bf598d1648e86fedff5bac691bd130.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "班",
+  "id": "ead4324cbde83b8b58b82576",
+  "level": 2,
+  "meaning": "class, team; (measure word for groups)",
+  "pinyin": "bān",
+  "pos": "noun、 （classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-CN&Im0d(mc-1779527159107"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

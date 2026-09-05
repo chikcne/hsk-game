@@ -1,0 +1,32 @@
+{
+  "audio": "2952fc80d0a77b9b6c7e2a9a091edcb71c107855a035714b3f8b1f6f260c9ab0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "台"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上台",
+  "id": "ead828c959be6bf68b9efba6",
+  "level": 6,
+  "meaning": "to take the stage",
+  "pinyin": "shàngtái",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1152-1779527163555"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

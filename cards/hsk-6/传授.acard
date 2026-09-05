@@ -1,0 +1,31 @@
+{
+  "audio": "cf3e6fd18848444509a301d3bdf4bb038d945b860897f5fbcfb2728f6c62600b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "传授",
+  "id": "9a3e2ba6775fa180156aeac2",
+  "level": 6,
+  "meaning": "to impart, to teach",
+  "pinyin": "chuánshòu",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-205-1779527162608"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

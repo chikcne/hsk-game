@@ -1,0 +1,31 @@
+{
+  "audio": "332ae5a68620cfcf1bf9455fde6120a755aa749873e824385318cdc35505347a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "田"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "农田",
+  "id": "cfac4784ecf7bebc43e755de",
+  "level": 6,
+  "meaning": "farmland",
+  "pinyin": "nóngtián",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-962-1779527163365"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

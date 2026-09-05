@@ -1,0 +1,31 @@
+{
+  "audio": "57096f1d3d4927ab4819bfb7046097ff5dd297ac856d452b482a902620eb2a97.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加工",
+  "id": "74cae4acd58cd39c597a92e2",
+  "level": 5,
+  "meaning": "to process",
+  "pinyin": "jiāgōng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gQvMcl:/p[-1779527161356"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

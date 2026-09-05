@@ -1,0 +1,32 @@
+{
+  "audio": "d0d89efd26844c5c960ecd3a7879c4686be2ff7da1ae1ca76abacc722592b28c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "少",
+      "见"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "少见",
+  "id": "3cb1fcd2ec1bb8f3981db26f",
+  "level": 4,
+  "meaning": "rare, seldom seen",
+  "pinyin": "shǎojiàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-f=Zj6$PSbE-1779527160438"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

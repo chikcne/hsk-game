@@ -1,0 +1,29 @@
+{
+  "audio": "bf16b2baf37c4493a204e49d12481f32a7a5bce1f10e36082175a6bf47f8ae50.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "体现",
+  "id": "4e1a9aae373721d6343bf84e",
+  "level": 5,
+  "meaning": "to embody, to reflect",
+  "pinyin": "tǐxiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rg*`iCufgR-1779527161924"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "af4733cd248e736985d83e54e270b7f6f8bbcaf3bf77ea07537ca5105df133da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "河",
+  "id": "2c25fcac9c876cf4df184c03",
+  "level": 3,
+  "meaning": "river",
+  "pinyin": "hé",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Kk9SA[@k_2-1779527159470"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

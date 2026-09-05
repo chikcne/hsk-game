@@ -1,0 +1,31 @@
+{
+  "audio": "09df7920e1545df84e357f22cb29c83b78f2b02795372a2eac55ad10e864d599.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "声"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "掌声",
+  "id": "b7f1278c35180d77ea63f2d6",
+  "level": 5,
+  "meaning": "applause",
+  "pinyin": "zhǎngshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w%{G%z9g>M-1779527162276"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

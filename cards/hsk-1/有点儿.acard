@@ -1,0 +1,32 @@
+{
+  "audio": "d82c130c3b911499a0ad5eaa194658121e5ffeeb66165bd3bea7e97c63cc91b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有",
+      "点"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有点儿",
+  "id": "41bce65e53f1ff0ba2d638b5",
+  "level": 1,
+  "meaning": "a little, slightly",
+  "pinyin": "yǒudiǎnr",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-xgm3%Q~5{3-1779527159068"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

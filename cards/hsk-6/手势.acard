@@ -1,0 +1,31 @@
+{
+  "audio": "9402a9b42ff5674b6c3e0b8b0c6a7f8b5b8beb752c8ded1d7c700118dca97dde.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "手势",
+  "id": "3a3e9db1d37a472e8efdad74",
+  "level": 6,
+  "meaning": "gesture",
+  "pinyin": "shǒushì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1214-1779527163617"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

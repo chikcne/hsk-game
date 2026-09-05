@@ -1,0 +1,29 @@
+{
+  "audio": "1ba3ddafa9f55c55276f0ef8e2aee794fd922e7b5a53e78d7fd3165face23ead.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "弱",
+  "id": "94f92830088afd02b117128b",
+  "level": 5,
+  "meaning": "weak",
+  "pinyin": "ruò",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w#4>T/,+7i-1779527161743"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

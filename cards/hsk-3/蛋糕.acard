@@ -1,0 +1,29 @@
+{
+  "audio": "741435be159dff4ae37510a3391c1e0df68b419d7285649af9a618803f52f874.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "蛋糕",
+  "id": "a4fa47d225f54279270c5a79",
+  "level": 3,
+  "meaning": "cake",
+  "pinyin": "dàngāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-D.2*.v-DnD-1779527159383"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "68933a80c53a927d20b50e88f354bc68c84036e5361c2d30fa978d9d521abd4e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "步",
+      "跑"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跑步",
+  "id": "1fa92c0d677d37de362cd1bd",
+  "level": 2,
+  "meaning": "to run, jogging",
+  "pinyin": "pǎobù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-J}Q#!^[/)7-1779527159218"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "84a0f0c48f115bac4111df8d35d4497fe01ba5bcc831ad724e1a12410c04bbbe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "改",
+      "造"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "改造",
+  "id": "e54f99ceb8487c7f321bee82",
+  "level": 6,
+  "meaning": "to transform, to rebuild",
+  "pinyin": "gǎizào",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-415-1779527162818"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

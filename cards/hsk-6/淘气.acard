@@ -1,0 +1,31 @@
+{
+  "audio": "886eb09370c048f620596729795130d7efb8bbfcf199e5ab4b9c79167a66623b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "淘气",
+  "id": "06f9469ae44a6268ed529b74",
+  "level": 6,
+  "meaning": "naughty",
+  "pinyin": "táoqì",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1272-1779527163675"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "474abeb9b24d2738b64729c378ef386d71517541f14ed95e6de26bb96b281929.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "剧烈",
+  "id": "19535a17094896d45bf105e1",
+  "level": 6,
+  "meaning": "intense, fierce",
+  "pinyin": "jùliè",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-750-1779527163153"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

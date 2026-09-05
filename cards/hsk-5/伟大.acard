@@ -1,0 +1,31 @@
+{
+  "audio": "6b55239c678a94084dedd5a38dcf3329b6e1ed4fced3653c40b081bb4909649d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "伟大",
+  "id": "f3af110febdfa4e093c1eff6",
+  "level": 5,
+  "meaning": "great, mighty",
+  "pinyin": "wěidà",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Eve#Y(VWNj-1779527161996"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

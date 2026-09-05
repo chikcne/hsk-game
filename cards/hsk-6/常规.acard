@@ -1,0 +1,31 @@
+{
+  "audio": "7485bfca29ea3b33e73ca524bc51ec4af627892203db62c96dc338f3026d4125.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "常规",
+  "id": "412bf868ec2fa6adb0ceb2f3",
+  "level": 6,
+  "meaning": "convention, rule; conventional",
+  "pinyin": "chángguī",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-126-1779527162529"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "c5a3be8e07294de893a99716e6d11a6371d67a34cec68e23416c204d80265c56.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "用"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "用餐",
+  "id": "5195c1b61096cdefbf0fcc9d",
+  "level": 6,
+  "meaning": "to have a meal",
+  "pinyin": "yòngcān",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1592-1779527163995"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

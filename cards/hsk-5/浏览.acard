@@ -1,0 +1,29 @@
+{
+  "audio": "08c3342f63230f4f6f79ee71f0e1db10ffd3dbfae92ce54bb414f78185b1ff8c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "浏览",
+  "id": "777c60e466c7efbe2b76f655",
+  "level": 5,
+  "meaning": "to browse",
+  "pinyin": "liúlǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-j5kgxmsF$S-1779527161537"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "377743dc71912ebd39788e25deeb7c4dc7d713fc2f69ddf3a9886894a0e5a6ca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "趋势",
+  "id": "57d99d69d92b5f4a417ec184",
+  "level": 5,
+  "meaning": "trend",
+  "pinyin": "qūshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HL[L+h<e.~-1779527161698"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

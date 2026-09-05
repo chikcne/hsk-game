@@ -1,0 +1,31 @@
+{
+  "audio": "f9873f2aab418721a830ad4884bdb09e3447f0cf0b2569fe1d57cb7e8064f233.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "强"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "顽强",
+  "id": "7651940df099c347311f2080",
+  "level": 6,
+  "meaning": "tenacious, indomitable",
+  "pinyin": "wánqiáng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1358-1779527163761"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

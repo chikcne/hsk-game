@@ -1,0 +1,29 @@
+{
+  "audio": "244d9a1db4eda636c79e8414b61b8e8aeb975bb168d45254aac4353e4f7d9b49.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "沉",
+  "id": "49cdc48bdf5b98f01b6ea64e",
+  "level": 5,
+  "meaning": "to sink; deep, heavy",
+  "pinyin": "chén",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u@dv$F4tUh-1779527160933"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

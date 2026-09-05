@@ -1,0 +1,29 @@
+{
+  "audio": "3ee50a5fbd3b0f01266a0815651040df87756e1cc1e32b888561631cbb546bb9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "承诺",
+  "id": "fb20b8f696c6cb45606c6b92",
+  "level": 6,
+  "meaning": "to promise, to commit",
+  "pinyin": "chéngnuò",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-162-1779527162565"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "38295c67a614e2b013d3eb612aa866bf8b6621dca99b96e3ebf5d06bf2d8f03d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "跑",
+      "逃"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "逃跑",
+  "id": "e91e44647e1e9d2e52052f1e",
+  "level": 6,
+  "meaning": "to flee, to run away",
+  "pinyin": "táopǎo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1271-1779527163674"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

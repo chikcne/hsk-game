@@ -1,0 +1,29 @@
+{
+  "audio": "06d7c8242cc6289652d6bd9a37f21696703504e7087c893d11428311b177e4e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "弟弟",
+  "id": "4589a3a0e2cb5bd61f8fc6a2",
+  "level": 1,
+  "meaning": "younger brother",
+  "pinyin": "dìdi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-v`%~.wW%^~-1779527158835"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

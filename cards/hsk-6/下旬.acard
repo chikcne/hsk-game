@@ -1,0 +1,31 @@
+{
+  "audio": "22491f34eb0c8c2b7a0b61e947423c6040f9bfb58dc16e105ea3e74b96d10294.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下旬",
+  "id": "87d3ea7d1911d48cc377f49f",
+  "level": 6,
+  "meaning": "late part of the month",
+  "pinyin": "xiàxún",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1418-1779527163821"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

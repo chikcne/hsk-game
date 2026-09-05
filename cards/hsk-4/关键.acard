@@ -1,0 +1,32 @@
+{
+  "audio": "6d4ad153febd3dd4f94dc6751ede0ae7aba3eccd1c621d3e357feae846f6604d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关",
+      "键"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "关键",
+  "id": "a2de7b6cc98e8d14f3db43e7",
+  "level": 4,
+  "meaning": "crux; key, crucial",
+  "pinyin": "guānjiàn",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-k)eBwVjGlP-1779527160072"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

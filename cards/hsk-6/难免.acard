@@ -1,0 +1,32 @@
+{
+  "audio": "ea13fa74336ebb2eb77b0b2df165b625830f6e0836c41942f9c847f40bd3a6f7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "免",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难免",
+  "id": "a3834bdffc92cbcd7b57495e",
+  "level": 6,
+  "meaning": "inevitable, hard to avoid",
+  "pinyin": "nánmiǎn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-946-1779527163349"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

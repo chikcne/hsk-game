@@ -1,0 +1,31 @@
+{
+  "audio": "619e44d657b18695bf477434014a6b8f0623750b57f8aa4cc4aa37bec2c23ac5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "料"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "饮料",
+  "id": "149e77905a312084fbecaecf",
+  "level": 3,
+  "meaning": "beverage",
+  "pinyin": "yǐnliào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-yHH}T+RSFe-1779527159741"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

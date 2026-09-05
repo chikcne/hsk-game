@@ -1,0 +1,31 @@
+{
+  "audio": "d0feb89fb5cab556db4620bcfeaddb405d22790c9a9d379474fcb8d0591c03ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "声"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相声",
+  "id": "bd97250a05b75a8b90038fcc",
+  "level": 6,
+  "meaning": "crosstalk",
+  "pinyin": "xiàngsheng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1443-1779527163846"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

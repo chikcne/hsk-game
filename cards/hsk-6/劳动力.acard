@@ -1,0 +1,34 @@
+{
+  "audio": "8bdbc9d2ee719a1b8343e243cf108a5758bb9dc2e29a634c7edbf5c0a1e4d777.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "动",
+      "动力",
+      "劳动"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "劳动力",
+  "id": "760fe978bfa864511436d167",
+  "level": 6,
+  "meaning": "labor force",
+  "pinyin": "láodònglì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-823-1779527163226"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

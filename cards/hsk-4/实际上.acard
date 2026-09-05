@@ -1,0 +1,32 @@
+{
+  "audio": "5b4143fbd1e42267308fe155c424a9f06acc63c8fe74fae122dbbbd9cfe5d18a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "实际"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实际上",
+  "id": "46ace9981534cd524ce55a04",
+  "level": 4,
+  "meaning": "actually, in fact",
+  "pinyin": "shíjìshàng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-D*C~^Rhii^-1779527160463"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

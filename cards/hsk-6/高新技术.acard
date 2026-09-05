@@ -1,0 +1,33 @@
+{
+  "audio": "5196bc7ce2ff39cb7e6325522da79806dc86f480e08749dd12c224fde03d28b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "技术",
+      "新",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高新技术",
+  "id": "012b2b1eabb58c3b68851436",
+  "level": 6,
+  "meaning": "high and new technology",
+  "pinyin": "gāoxīn-jìshù",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-437-1779527162840"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

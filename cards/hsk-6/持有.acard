@@ -1,0 +1,31 @@
+{
+  "audio": "c559fa5b6026ccec4e74ee20dbaf54eac2026e73266069bae8067d8415adabcd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "持有",
+  "id": "04ec760249ec5751e14d0451",
+  "level": 6,
+  "meaning": "to hold, to possess",
+  "pinyin": "chíyǒu",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-170-1779527162573"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

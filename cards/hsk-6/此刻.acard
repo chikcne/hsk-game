@@ -1,0 +1,32 @@
+{
+  "audio": "2efcc9278f4f371a2c5729a87e2155eced1bdbc4d74689bfab4573524fcd9f92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "刻",
+      "此"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "此刻",
+  "id": "a236781a89e78faedade147e",
+  "level": 6,
+  "meaning": "this moment",
+  "pinyin": "cǐkè",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-219-1779527162622"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "40614ece4c43be162f9b6342fd02816457735b8ce0c4e2a96e051ce4028c985e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "减",
+      "弱"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "减弱",
+  "id": "76e6b3eb3e6c4ffc214b3b78",
+  "level": 6,
+  "meaning": "to weaken, to diminish",
+  "pinyin": "jiǎnruò",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-654-1779527163057"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

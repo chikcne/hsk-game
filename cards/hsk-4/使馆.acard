@@ -1,0 +1,31 @@
+{
+  "audio": "5e5eebf37295fd19114f77503671ae440f553fad6d36e471bf74e5c47c69c435.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "使"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "使馆",
+  "id": "c7925fa541c3b0cb711f6d10",
+  "level": 4,
+  "meaning": "embassy",
+  "pinyin": "shǐguǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r[cOzK9$B9-1779527160470"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

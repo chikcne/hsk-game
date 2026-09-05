@@ -1,0 +1,29 @@
+{
+  "audio": "76581cff6ce7f3a4bf838fb290685e6ba44bab004d284cd6ce92ebc195e5dc09.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "船",
+  "id": "11621a867903adea5b3c34a0",
+  "level": 3,
+  "meaning": "boat",
+  "pinyin": "chuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Pji;QFgi|O-1779527159370"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

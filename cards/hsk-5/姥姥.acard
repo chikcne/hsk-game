@@ -1,0 +1,29 @@
+{
+  "audio": "e9684301948da4d4739c7bb99aa7aa9ed4bd00df8bd9d88a12ec1bf8a6054c76.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "姥姥",
+  "id": "275ed73b5441714043042f5e",
+  "level": 5,
+  "meaning": "grandmother",
+  "pinyin": "lǎolao",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-c%Wh1;+!SS-1779527161490"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

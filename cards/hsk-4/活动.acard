@@ -1,0 +1,32 @@
+{
+  "audio": "f04c06028caef3bd0317c4222e8067a220dc6eb584453002cfaa51875ecc540a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "活"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "活动",
+  "id": "63a0af302e7438e3362c3a32",
+  "level": 4,
+  "meaning": "move, exercise, beactive; activity, event, exercise",
+  "pinyin": "huódòng",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-HyP4D:YXnt-1779527160115"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

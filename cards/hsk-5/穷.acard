@@ -1,0 +1,29 @@
+{
+  "audio": "8e6883a7a3630d852349bc3070520e23affb34b4d96ef426020785961cfad0f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "穷",
+  "id": "88b312180f03d12b9626f146",
+  "level": 5,
+  "meaning": "poor",
+  "pinyin": "qióng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-)c_:#oL-3-1779527161697"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

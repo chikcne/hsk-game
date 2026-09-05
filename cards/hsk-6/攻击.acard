@@ -1,0 +1,29 @@
+{
+  "audio": "53d987b1d7d52ca2079ade2fbb4654388a087101fbb32ff250b76d84ab9ce18c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "攻击",
+  "id": "ccd9bcf9a57bf4d9d7bfb53b",
+  "level": 6,
+  "meaning": "to attack",
+  "pinyin": "gōngjī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-457-1779527162860"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

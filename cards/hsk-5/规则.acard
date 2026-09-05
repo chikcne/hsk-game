@@ -1,0 +1,31 @@
+{
+  "audio": "aa5f306a038641a47115591887c96ed776ebdc120391cbc6024fa65c176bf6ce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "则"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "规则",
+  "id": "e60e49751fb391fbc8b5843a",
+  "level": 5,
+  "meaning": "rule, regulation; regular",
+  "pinyin": "guīzé",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-On+x;&FMQZ-1779527161248"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

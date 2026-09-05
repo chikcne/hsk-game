@@ -1,0 +1,32 @@
+{
+  "audio": "d7adf2a536f18e659fd7ccd3577115d738111e29d1d202c265236a9fedd03a0c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传",
+      "流"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "流传",
+  "id": "518df24adcbe1f2f723b6e38",
+  "level": 5,
+  "meaning": "to spread, to circulate",
+  "pinyin": "liúchuán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w@T%BVUGu(-1779527161535"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

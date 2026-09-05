@@ -1,0 +1,32 @@
+{
+  "audio": "ab1e400260b5821599de48688b0010df55bad91df49061bc03027346571b8684.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "停",
+      "止"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "停止",
+  "id": "303d2b79b4a53f09a3633a28",
+  "level": 4,
+  "meaning": "to stop, to cease",
+  "pinyin": "tíngzhǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-6%d])$=nb-1779527160545"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

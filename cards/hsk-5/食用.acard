@@ -1,0 +1,31 @@
+{
+  "audio": "3174f5546e8fe9e7a8c1ac9edfa83db146cd636eaff776eb4b2dffb022967ecf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "用"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "食用",
+  "id": "7be5afa022c685398fba7037",
+  "level": 5,
+  "meaning": "to eat, to be edible",
+  "pinyin": "shíyòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gzhtC8uLl`-1779527161828"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

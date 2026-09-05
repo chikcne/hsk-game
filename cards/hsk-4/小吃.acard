@@ -1,0 +1,32 @@
+{
+  "audio": "ec761a7e396985d8d4d78080643c595fb2b1263f69cae8172109f18cbb098b35.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "吃",
+      "小"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小吃",
+  "id": "64bad7f9fd44b0b516b5b9c4",
+  "level": 4,
+  "meaning": "snack, light meal",
+  "pinyin": "xiǎochī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vxr2Ka>/kQ-1779527160615"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

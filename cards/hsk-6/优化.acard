@@ -1,0 +1,31 @@
+{
+  "audio": "e3410ba4f0b636598dc5c6d1e50eda1d36aa2b0dd3afe2b5c40a0148b370ce0c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "化"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "优化",
+  "id": "c03aa085e997d82bd21d5af2",
+  "level": 6,
+  "meaning": "to optimize",
+  "pinyin": "yōuhuà",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1597-1779527164000"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

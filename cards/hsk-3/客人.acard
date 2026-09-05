@@ -1,0 +1,31 @@
+{
+  "audio": "bf7748fe21f75e79ab68e144a0586800c0a69f143360f97c471b07d40a975144.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "客人",
+  "id": "88580faec5d20ce895a96e7d",
+  "level": 3,
+  "meaning": "guest",
+  "pinyin": "kèrén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-iz5`Zg3S}3-1779527159540"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

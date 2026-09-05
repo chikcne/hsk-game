@@ -1,0 +1,31 @@
+{
+  "audio": "8c36ff5ba9d405484bf51cbded2e0e4725cc7e8a3cacd0237a17ce707c04cfb8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "厂"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "工厂",
+  "id": "4dceb966449d4e0e7f0323c9",
+  "level": 4,
+  "meaning": "factory",
+  "pinyin": "gōngchǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-tv8DJ*cPG]-1779527160053"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "090d14037db224a856b59d9bc4550b85eb8a77be14a765365ec2aab999ac879f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "疼"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "心疼",
+  "id": "79e8656658cad8548d2a4eb3",
+  "level": 6,
+  "meaning": "to feel distressed",
+  "pinyin": "xīnténg",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1468-1779527163871"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

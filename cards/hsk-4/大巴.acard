@@ -1,0 +1,31 @@
+{
+  "audio": "778966b3d9ff2eaf7fc61359c22fb58ce3bd3328fb1ea84838ba3ae2bdcf1053.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大巴",
+  "id": "0391b3caa5fee2d218e70cd0",
+  "level": 4,
+  "meaning": "large bus, coach",
+  "pinyin": "dàbā",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s:Cmh/}?2]-1779527159926"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

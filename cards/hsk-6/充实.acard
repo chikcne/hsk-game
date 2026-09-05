@@ -1,0 +1,29 @@
+{
+  "audio": "e405e51fcf6be66b9210ca1eedaa8438ba37d3fae1e8e1dcbe16f5139150f0db.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "充实",
+  "id": "2cd7b8ea47455759bfc52057",
+  "level": 6,
+  "meaning": "substantial, rich; to enrich",
+  "pinyin": "chōngshí",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-175-1779527162578"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "45ef0f5b222271f7d3afb7b124000c0c20360b1cae63c5dc6749e75b6a2f3d3d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "差"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出差",
+  "id": "a1a2dfb4fa3c700c4f3fa345",
+  "level": 4,
+  "meaning": "to go on a business trip",
+  "pinyin": "chūchāi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-tIS{HSoaBW-1779527159891"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

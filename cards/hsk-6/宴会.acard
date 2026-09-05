@@ -1,0 +1,31 @@
+{
+  "audio": "effbc3c58390deab9a8d8b08908825f56a9f3a36c358c6890acba6493a90105c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "宴会",
+  "id": "33e70d762dba39b919f6745e",
+  "level": 6,
+  "meaning": "banquet",
+  "pinyin": "yànhuì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1518-1779527163921"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

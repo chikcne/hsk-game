@@ -1,0 +1,29 @@
+{
+  "audio": "c215b86f3696b8c9e112689d4c7f87e7b16f080ca8c9d0ef355377d8f160a642.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "宾馆",
+  "id": "c90d58b8c395b59f0438eeb8",
+  "level": 3,
+  "meaning": "hotel",
+  "pinyin": "bīnguǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-D~|iPHlMx5-1779527159336"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

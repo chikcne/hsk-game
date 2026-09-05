@@ -1,0 +1,29 @@
+{
+  "audio": "78a5b3967c67d0a526ea60d751c59b39307043bc9aa2187e5f1a5952d7acc461.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赠",
+  "id": "0921d53d282258fe19281b63",
+  "level": 5,
+  "meaning": "to give as a gift",
+  "pinyin": "zèng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-j8cD0~&lDl-1779527162261"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

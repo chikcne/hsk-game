@@ -1,0 +1,31 @@
+{
+  "audio": "b4c7fda632d9741691ae583fe27c0c1aca1cf2c036c24df6ef182ee504752c1c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "国"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "国际",
+  "id": "a009eddb066e3ae57dbd03f4",
+  "level": 4,
+  "meaning": "international; world",
+  "pinyin": "guójì",
+  "pos": "adjective、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-w3bNd}5]Y}-1779527160083"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "c78ed75162da2ca39947ffd941773db5c47ddab16897dae3e18134c81f67bd28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "其"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "尤其",
+  "id": "d3092a5b4b7db3924085ac6f",
+  "level": 4,
+  "meaning": "especially, particularly",
+  "pinyin": "yóuqí",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bo.t7~A}TY-1779527160689"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

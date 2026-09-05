@@ -1,0 +1,29 @@
+{
+  "audio": "674c709dd605cbd881b5f193af4ee67d5513fba553202ce482756032a9f33f1e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "视频",
+  "id": "1c852766e2d44570220e794f",
+  "level": 4,
+  "meaning": "video, video clip",
+  "pinyin": "shìpín",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-IOv=oCiy)r-1779527160476"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

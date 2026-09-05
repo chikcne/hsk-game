@@ -1,0 +1,29 @@
+{
+  "audio": "9da0df547058f2c03c829507cc982918ec17ef3e6c00d10bbc8ecd0d8b21a223.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "物质",
+  "id": "08d2d3c82b49f3b7bd9a84df",
+  "level": 5,
+  "meaning": "matter, substance",
+  "pinyin": "wùzhì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-sL-Rwz&N@L-1779527162023"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

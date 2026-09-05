@@ -1,0 +1,29 @@
+{
+  "audio": "dd50881741fc54212e9452dc9649efcd149ebc82c9a0a3e3f4c8b4b4572c2e7c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "旅客",
+  "id": "5fcea43aefe025396ee9b6c5",
+  "level": 4,
+  "meaning": "traveler, passenger",
+  "pinyin": "lǚkè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-m);`M)#5.u-1779527160292"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "40c8414cff02fe0f5632df388a5f5f8de1de7dd4522403e944235cd7e08407a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "背"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "背心",
+  "id": "c9a868436a292e11c70a6776",
+  "level": 6,
+  "meaning": "vest, undershirt",
+  "pinyin": "bèixīn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-41-1779527162444"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

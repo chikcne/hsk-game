@@ -1,0 +1,29 @@
+{
+  "audio": "d17c54c542b0acee00166b8b1a8bf5255c4873526a3304d7e45f22d993fd7997.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "餐饮",
+  "id": "2f583fc9016a289fbfad763d",
+  "level": 5,
+  "meaning": "catering",
+  "pinyin": "cānyǐn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kaSG)cqn=v-1779527160893"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

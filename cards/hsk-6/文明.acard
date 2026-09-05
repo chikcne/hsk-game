@@ -1,0 +1,29 @@
+{
+  "audio": "ab2c59e32f25df6771c7cbc4e521061b389ac79fc7bfd03d16c7a84b49f2e67c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "文明",
+  "id": "c8b0739926622869c77f3591",
+  "level": 6,
+  "meaning": "civilization; civilized",
+  "pinyin": "wénmíng",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1389-1779527163792"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

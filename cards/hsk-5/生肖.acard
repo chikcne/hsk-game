@@ -1,0 +1,31 @@
+{
+  "audio": "89c8d921e5fdec3723960f220b1556fc133cc5fccc07a1054c6a207a3e3e0304.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生肖",
+  "id": "0fdde8c9e97fccbfc879166e",
+  "level": 5,
+  "meaning": "Chinese zodiac",
+  "pinyin": "shēngxiào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uo>i}4*_<h-1779527161799"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

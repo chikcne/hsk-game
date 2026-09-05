@@ -1,0 +1,32 @@
+{
+  "audio": "0097caeee2e88cb92834a3b4a2c1d5038316ab4cb542968001f21858c1f3acf2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "引",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "引起",
+  "id": "6d0863c10d389c7f97d39720",
+  "level": 4,
+  "meaning": "cause",
+  "pinyin": "yǐnqǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-grBH-G_L^--1779527160675"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

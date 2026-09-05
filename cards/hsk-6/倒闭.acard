@@ -1,0 +1,32 @@
+{
+  "audio": "4ba2d1d8d702ae3fb47745230b0f64cc9c55a60095712dc9ce400231852f90d0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "倒",
+      "闭"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "倒闭",
+  "id": "b9185b79c7c76d224d91cc95",
+  "level": 6,
+  "meaning": "to go bankrupt",
+  "pinyin": "dǎobì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-277-1779527162680"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

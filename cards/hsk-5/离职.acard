@@ -1,0 +1,31 @@
+{
+  "audio": "6acaf339bc1614cc446dd353a9dcdfa19f31febb120fa818e0ae50af1891ce34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "离"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "离职",
+  "id": "cbd7f6c1d6eeca28b7b56de1",
+  "level": 5,
+  "meaning": "to resign, to leave a job",
+  "pinyin": "lízhí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nv+*jY4]JO-1779527161503"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "093e2bfb35feafe0d10a32d29950ec7801bb7e0f1d394de7ca422b20273d66e6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "认",
+      "错"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "认错",
+  "id": "32cf12219821fb888815bbb0",
+  "level": 6,
+  "meaning": "to admit a mistake",
+  "pinyin": "rèncuò",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1103-1779527163506"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

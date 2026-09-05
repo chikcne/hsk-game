@@ -1,0 +1,31 @@
+{
+  "audio": "befd64901925aa4f63649013397d8f77b2c02cb2eada45b18430828d439bc8bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "收"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "收购",
+  "id": "6e4921bd6915e5f1e2be6844",
+  "level": 6,
+  "meaning": "to purchase, to acquire",
+  "pinyin": "shōugòu",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1209-1779527163612"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

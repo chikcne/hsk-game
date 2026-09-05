@@ -1,0 +1,31 @@
+{
+  "audio": "c3339c556808ddc39e2c2e2c054d912a75878c3d733b0c026baa5a912fb3a0c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "要"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "要素",
+  "id": "17d0e469b9039e981eca0442",
+  "level": 6,
+  "meaning": "essential element, factor",
+  "pinyin": "yàosù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1529-1779527163932"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "5a9bb7df341d36cc322388d33d6ca08be92748772b4b65db30bf004737f05a3f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "车"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "车祸",
+  "id": "209480b241b790669e6fa4e0",
+  "level": 5,
+  "meaning": "car accident",
+  "pinyin": "chēhuò",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Pg2yCYif[`-1779527160927"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

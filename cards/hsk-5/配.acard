@@ -1,0 +1,29 @@
+{
+  "audio": "60160f335c8aa4cf5ecffda13bcb426d88f5e7e584452e0b2946e09d42ca7ba5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "配",
+  "id": "44440b3c61a5e751ed0ea0b6",
+  "level": 5,
+  "meaning": "to match; suitable, well-matched",
+  "pinyin": "pèi",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-sC5Y),r1;k-1779527161622"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

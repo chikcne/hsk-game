@@ -1,0 +1,31 @@
+{
+  "audio": "8f0f240507c98c6610c7cd68763f53947edbfcab12961e80e50f78ae5197aff2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "善于",
+  "id": "26875fdd08eb4c0dbc745137",
+  "level": 5,
+  "meaning": "to be good at",
+  "pinyin": "shànyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-k_25]K3Bpq-1779527161757"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

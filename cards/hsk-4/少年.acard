@@ -1,0 +1,32 @@
+{
+  "audio": "cc695028d314f8200f8dad54287bfc04e3cbf5cc63ec6cec0073d2ae574a30da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "少",
+      "年"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "少年",
+  "id": "f53ead1ca8c8112872b5b35d",
+  "level": 4,
+  "meaning": "juvenile, teenager, youth",
+  "pinyin": "shàonián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-FjVf{w1YpJ-1779527160441"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

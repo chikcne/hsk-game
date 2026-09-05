@@ -1,0 +1,29 @@
+{
+  "audio": "8ca5f184c917fa03f590215aaf7110bcfb1a9c4077e2a145cabc34de500e8f38.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "负担",
+  "id": "f728e434cbfaddd234e0b26d",
+  "level": 5,
+  "meaning": "to bear; burden",
+  "pinyin": "fùdān",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-joxaS)RP:[-1779527161175"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

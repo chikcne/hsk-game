@@ -1,0 +1,32 @@
+{
+  "audio": "046088a8f44abc6dde4a4a37bad5e757aef57a05086ae2f890f41dcaa3868776.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "待",
+      "接"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "接待",
+  "id": "9e85d29dde27c6d6b1842d4b",
+  "level": 5,
+  "meaning": "to receive (guests), to host",
+  "pinyin": "jiēdài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-QXIzK+:LS@-1779527161399"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

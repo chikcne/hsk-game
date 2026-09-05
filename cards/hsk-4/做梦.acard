@@ -1,0 +1,32 @@
+{
+  "audio": "97e3371a2ce02560a0def55001af8b4a603a4c7736aaa9e2971d16b2f5c8dd6e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "做",
+      "梦"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "做梦",
+  "id": "3bc45b2a6657f92e8c55c9af",
+  "level": 4,
+  "meaning": "to dream, to have a dream",
+  "pinyin": "zuòmèng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-y~.91mmgaO-1779527160797"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

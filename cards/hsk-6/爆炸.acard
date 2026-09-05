@@ -1,0 +1,32 @@
+{
+  "audio": "2ed57f49bd8c8f657008cdccb22c53d4e33a781810033ab363e86048d0e4aeef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "炸",
+      "爆"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爆炸",
+  "id": "80cdeee64f6bf4b8cd9c37ed",
+  "level": 6,
+  "meaning": "to explode",
+  "pinyin": "bàozhà",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-33-1779527162436"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

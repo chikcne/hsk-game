@@ -1,0 +1,32 @@
+{
+  "audio": "644320512bb2c33aa810a9650105f80c001dededcc5cc64a668d3dfb5b41959f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "安",
+      "晚"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "晚安",
+  "id": "24803d0f0615a4d69ab14747",
+  "level": 4,
+  "meaning": "good night",
+  "pinyin": "wǎn’ān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ndgLU<kz(X-1779527160566"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "dbf8efb7f078b70b3bb01b5111e901e8e67b1bfca7ac43e4cceab7a4b2eaf2c6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大师",
+  "id": "fe852e0470840853050bf68b",
+  "level": 6,
+  "meaning": "master, expert",
+  "pinyin": "dàshī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-252-1779527162655"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "e88c264202b45e6f97e372715e1c09b912db7b9fbcf8fdf573b9ba6939319f9c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "失眠",
+  "id": "c67fa18134f045bb9753521d",
+  "level": 5,
+  "meaning": "to suffer from insomnia",
+  "pinyin": "shīmián",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-I$%FE=:3<Q-1779527161809"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "076114d11a6c35647fc213f568d9b29775a773bd7e89eeddf65fa8e1075fce60.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "敢"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "敢于",
+  "id": "c362b291ed806c6c8506b449",
+  "level": 5,
+  "meaning": "to dare to",
+  "pinyin": "gǎnyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mZzaYs+0|#-1779527161187"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

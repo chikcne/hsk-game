@@ -1,0 +1,29 @@
+{
+  "audio": "9495534e5a05fdc281cb5c0089f7ea125fe8aad4c9edad01d4a52095c4429146.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "口",
+  "id": "8b2ca086ef57442fcbb8ef02",
+  "level": 1,
+  "meaning": "mouth; measure word for family members, bites",
+  "pinyin": "kǒu",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-iws]F4e;{!-1779527158907"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

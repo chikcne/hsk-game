@@ -1,0 +1,32 @@
+{
+  "audio": "08913278660f79ab47eb4f87583a2ce4ce94c53e3cf957ea87e5f3f884ecc49a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "球",
+      "队"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "球队",
+  "id": "263aff7bfa0f62b02d2e98f3",
+  "level": 4,
+  "meaning": "sports team, ball team",
+  "pinyin": "qiúduì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Bh^IMNgiWh-1779527160394"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

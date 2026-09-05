@@ -1,0 +1,32 @@
+{
+  "audio": "cbb169a5592f488f5c5f8f9e94a5f3b1dd6d33b94fbd407d7fe421dbcb82379a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "办",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "办理",
+  "id": "fa1e9a03aeb1740751933f2e",
+  "level": 4,
+  "meaning": "to handle, to process",
+  "pinyin": "bànlǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-B72jXo5RPI-1779527159814"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

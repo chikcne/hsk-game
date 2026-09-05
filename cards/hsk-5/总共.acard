@@ -1,0 +1,32 @@
+{
+  "audio": "13a3d92e8df558274e3b7c895b80ffcbd8b6401dcf86e19012f84b82b829afd7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "共",
+      "总"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "总共",
+  "id": "84efd20f916e84df969f821e",
+  "level": 5,
+  "meaning": "in total, altogether",
+  "pinyin": "zǒnggòng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-s+<?h1YJyu-1779527162385"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

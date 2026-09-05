@@ -1,0 +1,31 @@
+{
+  "audio": "cdca307e787c80d76a76b988b72cd93ee84f824b4c1c2eb5124bfe3ee83f3914.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开启",
+  "id": "bc3504e9212cdb06888be27b",
+  "level": 6,
+  "meaning": "to open, to start",
+  "pinyin": "kāiqǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-763-1779527163166"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

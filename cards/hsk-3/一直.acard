@@ -1,0 +1,32 @@
+{
+  "audio": "094593accc6e051a77d5728fb2b094d849775317d07973ff6582df34561bd205.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "直"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一直",
+  "id": "57b84256c60fbe63c844725f",
+  "level": 3,
+  "meaning": "always, straight",
+  "pinyin": "yìzhí",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-w|crNuk%K~-1779527159737"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

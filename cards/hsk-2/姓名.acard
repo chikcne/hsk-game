@@ -1,0 +1,32 @@
+{
+  "audio": "db0450afe838a5b1a435d243041b55875f31e8b51ad71c911a48f64896883144.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名",
+      "姓"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "姓名",
+  "id": "6221fc6e1ee8d262d664ae74",
+  "level": 2,
+  "meaning": "full name",
+  "pinyin": "xìngmíng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-y~iRqYwsT#-1779527159268"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

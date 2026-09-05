@@ -1,0 +1,33 @@
+{
+  "audio": "11d0e97ecd51535084fd0b4f076b704f0e964299759741d4af89d0c0a542bc23.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "录",
+      "片",
+      "纪录"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "纪录片",
+  "id": "6e51f15052ad1a5760e4735c",
+  "level": 5,
+  "meaning": "documentary",
+  "pinyin": "jìlùpiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-N@VV.0zv~p-1779527161346"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "b883154a4a7793d8c6a74a72fd695ce17e01dd941f7a0275990caccf72ca4fc3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "布"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公布",
+  "id": "a90939ab9e683ac14037b5be",
+  "level": 5,
+  "meaning": "to announce, to make public",
+  "pinyin": "gōngbù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gnVc6,:)^o-1779527161210"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

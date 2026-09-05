@@ -1,0 +1,32 @@
+{
+  "audio": "063b94a7e3e6066be17c44ac058d9a8389bfa91b348cc419e453c0a92790f27a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "晕",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "晕车",
+  "id": "43c5393bd04899afa043137c",
+  "level": 6,
+  "meaning": "to get carsick",
+  "pinyin": "yùnchē",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1634-1779527164037"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

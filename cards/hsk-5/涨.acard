@@ -1,0 +1,29 @@
+{
+  "audio": "42293ce89d71b9213d54ce9b237e0ff40c07aa329e26cf61025cda0e9824cc88.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "涨",
+  "id": "2cb3dccb17f73fe6bcd84880",
+  "level": 5,
+  "meaning": "to rise, to increase",
+  "pinyin": "zhǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Nr.ZOdzEb=-1779527162274"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

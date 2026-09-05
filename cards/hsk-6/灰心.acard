@@ -1,0 +1,32 @@
+{
+  "audio": "ace65ba8a07bb29446ac6f7f83b40104092da2370e3bb6b9fb84b10eacd12ce5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "灰"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "灰心",
+  "id": "291ce8bbb0ef579535d374fb",
+  "level": 6,
+  "meaning": "discouraged, downhearted",
+  "pinyin": "huīxīn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-584-1779527162987"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

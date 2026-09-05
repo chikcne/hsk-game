@@ -1,0 +1,29 @@
+{
+  "audio": "0e6ae18f65aef3381b64d63f3c273f1c6cf4f3c3c024260ce19fd29fa1e34cfb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "房屋",
+  "id": "639fbd8b47eb66827cc603ef",
+  "level": 5,
+  "meaning": "house, building",
+  "pinyin": "fángwū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-vFxTO;s=?f-1779527161144"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

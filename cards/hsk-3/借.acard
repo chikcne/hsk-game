@@ -1,0 +1,29 @@
+{
+  "audio": "e95a561e9c0bb554b6f205ab33c544deb8fdfb3f5e1360583090cc4c7b4e0e3e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "借",
+  "id": "e24b4635359d6fa0ed400f56",
+  "level": 3,
+  "meaning": "to borrow",
+  "pinyin": "jiè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n=47sBciLd-1779527159518"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

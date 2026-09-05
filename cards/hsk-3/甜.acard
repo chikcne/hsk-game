@@ -1,0 +1,29 @@
+{
+  "audio": "7c36f15e45ea7ff2bd8da13eced46569e95520e7fbc442afab59d20470adaf8a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "甜",
+  "id": "b385b089a7996e2245b9485c",
+  "level": 3,
+  "meaning": "sweet",
+  "pinyin": "tián",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-H1U@>4Kpa6-1779527159658"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

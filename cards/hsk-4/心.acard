@@ -1,0 +1,29 @@
+{
+  "audio": "abb95ad7e1b2367a21f40c7472d68a668bbdcd12012b43f1ea9eef3ebf7cb784.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "心",
+  "id": "38bb7174b466ee9c16ea6d9b",
+  "level": 4,
+  "meaning": "heart",
+  "pinyin": "xīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-OZ&zOG5oy4-1779527160622"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

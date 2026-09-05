@@ -1,0 +1,32 @@
+{
+  "audio": "00e391c2bceb548240cd130f3ff1581e6044bff84fca995ebe99b26497edc601.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "待",
+      "看"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看待",
+  "id": "5a2aa2f9aec9e3b707e8184b",
+  "level": 6,
+  "meaning": "to regard, to treat",
+  "pinyin": "kàndài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-768-1779527163171"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "32afdc27070202bd73e6ee6e93cf9f46c881c5d557a4b101f9e87bcc9226ef13.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "表"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "表达",
+  "id": "97bf641d7d77a9b7ea81008c",
+  "level": 5,
+  "meaning": "to express",
+  "pinyin": "biǎodá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-pN3D)2a_aX-1779527160865"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

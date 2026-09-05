@@ -1,0 +1,31 @@
+{
+  "audio": "e6257401e8529baa07e0c9206a226f33351f4916d70aa31e7d60305d36aa7741.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "身"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "终身",
+  "id": "2474f61df122ac97610e9b4e",
+  "level": 6,
+  "meaning": "lifelong, entire life",
+  "pinyin": "zhōngshēn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1723-1779527164126"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

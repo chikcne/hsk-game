@@ -1,0 +1,29 @@
+{
+  "audio": "d5425b494622c1fb5716d1efbbde85d6fd4f28f1bc9ffd45cbf54ed58ddb06c4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "午餐",
+  "id": "86ed237e7b587e5ab6669be7",
+  "level": 4,
+  "meaning": "lunch",
+  "pinyin": "wǔcān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-j7~3g+;!tl-1779527160588"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

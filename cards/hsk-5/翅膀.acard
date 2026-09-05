@@ -1,0 +1,29 @@
+{
+  "audio": "35d9ff71e9d5a3d2dd296dd1f4485ffe21d050aae6fa10af1a29987fc57a088e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "翅膀",
+  "id": "3b7b39a5b6175a8e2f8c4e0b",
+  "level": 5,
+  "meaning": "wing",
+  "pinyin": "chìbǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JPuO5I76;>-1779527160960"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "26ecec76b3a469e2bba48622b357c851e3779042ca5da69637030794e95a152e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "当"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当今",
+  "id": "7efae5dd00e8720c69c3a372",
+  "level": 6,
+  "meaning": "now, at present",
+  "pinyin": "dāngjīn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-270-1779527162673"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

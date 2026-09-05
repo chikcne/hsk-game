@@ -1,0 +1,32 @@
+{
+  "audio": "57bdab08d58ee14a5020402dc45ba1f3fa9538c060a13a6ceccd6b2df0d35b0f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "感"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "感到",
+  "id": "9afdeb4ebc495c82fccd9c92",
+  "level": 3,
+  "meaning": "to feel",
+  "pinyin": "gǎndào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-utz_3O0DK#-1779527159441"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

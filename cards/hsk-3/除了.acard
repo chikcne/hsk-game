@@ -1,0 +1,32 @@
+{
+  "audio": "bac21a504077bd6509adbc5b99800da71cfc42234b9b4a641b32996e24a27d4f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "了",
+      "除"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "除了",
+  "id": "355ee96f515f0a89e5aecc68",
+  "level": 3,
+  "meaning": "except, besides",
+  "pinyin": "chúle",
+  "pos": "preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-psAy.k.OXT-1779527159369"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

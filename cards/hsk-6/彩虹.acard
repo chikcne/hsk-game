@@ -1,0 +1,29 @@
+{
+  "audio": "7dbea6eda2305bd510bb1c18bca3f1c5a426eb700f317b9712edf6a49d09d1c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "彩虹",
+  "id": "c405da1d015330d2c4356567",
+  "level": 6,
+  "meaning": "rainbow",
+  "pinyin": "cǎihóng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-103-1779527162506"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

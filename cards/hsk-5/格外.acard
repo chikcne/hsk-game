@@ -1,0 +1,31 @@
+{
+  "audio": "9723229a0e96780c6cf6c36298e262af5cac3ddc02d7aa9135146f3611af4d95.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "格外",
+  "id": "8df33259cadfeaa4c77e2222",
+  "level": 5,
+  "meaning": "especially, particularly",
+  "pinyin": "géwài",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-znfyoCVnc1-1779527161200"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

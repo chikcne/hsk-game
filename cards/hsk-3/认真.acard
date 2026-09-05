@@ -1,0 +1,32 @@
+{
+  "audio": "8dc2e84bf1e98f35f1a3aca4b109b8c5c8ee742af9d8236f60af01dfde718a5c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "真",
+      "认"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "认真",
+  "id": "f05613ae2e6c7ef91cba3acf",
+  "level": 3,
+  "meaning": "serious, earnest",
+  "pinyin": "rènzhēn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-oZ<bmcu7r&-1779527159620"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "2f55ab72111d0e1160530b7272b4e2a5d00fce0c86fac6f158d41149d294c20c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "断"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中断",
+  "id": "aa55dfec55ae8b28e4b15c55",
+  "level": 6,
+  "meaning": "to interrupt",
+  "pinyin": "zhōngduàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1722-1779527164125"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

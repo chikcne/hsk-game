@@ -1,0 +1,31 @@
+{
+  "audio": "22feeec5f5f2a8e5d1208fb96890f8f82ae80f2467537384fc50ae0ebebe3aba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "农业",
+  "id": "f29cc0364af9780008043a5a",
+  "level": 5,
+  "meaning": "agriculture",
+  "pinyin": "nóngyè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-h4etOsp[27-1779527161608"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

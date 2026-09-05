@@ -1,0 +1,32 @@
+{
+  "audio": "449413396e2cee60a2bad49d7041869827ce2024f414cbca3c7c5bad4449c460.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "之"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "之中",
+  "id": "3a66ed658bc7249d56327ffb",
+  "level": 4,
+  "meaning": "among, inside",
+  "pinyin": "zhīzhōng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-M05Lov(!4--1779527160748"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

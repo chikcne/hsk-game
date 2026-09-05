@@ -1,0 +1,29 @@
+{
+  "audio": "a6a9af17523f8abbbdd569304869ce2658d1373b962be00577f925ede73c5b9f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "撤销",
+  "id": "b40309a8dab77b726f822fac",
+  "level": 6,
+  "meaning": "to cancel, to abolish",
+  "pinyin": "chèxiāo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-149-1779527162552"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

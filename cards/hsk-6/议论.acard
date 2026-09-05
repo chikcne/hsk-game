@@ -1,0 +1,29 @@
+{
+  "audio": "71c53d29e262b235b68c0e16cf179812847045c0068f45846f75e79a4b8dda41.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "议论",
+  "id": "9f5c607447d06882ce0aafce",
+  "level": 6,
+  "meaning": "to discuss, to comment; discussion",
+  "pinyin": "yìlùn",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1566-1779527163969"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

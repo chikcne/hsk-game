@@ -1,0 +1,32 @@
+{
+  "audio": "52985517f0ed0d4e35a809a9d0fbd88cec3e757451e624f99f53543bb8848cd7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "图",
+      "片"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "图片",
+  "id": "e04d2e69c44a9cb1419225ab",
+  "level": 4,
+  "meaning": "picture, image, photograph",
+  "pinyin": "túpiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-uW&[I>zCxW-1779527160556"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

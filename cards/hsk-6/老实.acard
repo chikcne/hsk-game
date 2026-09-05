@@ -1,0 +1,31 @@
+{
+  "audio": "576d8cd3bf49a3a78954d94f8700de2f9828f51c3156e5f4a0a0cec99c21f10a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "老"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "老实",
+  "id": "a1e2158b5761d6849e0eb86f",
+  "level": 6,
+  "meaning": "honest, well-behaved",
+  "pinyin": "lǎoshi",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-824-1779527163227"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

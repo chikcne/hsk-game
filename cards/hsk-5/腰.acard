@@ -1,0 +1,29 @@
+{
+  "audio": "5606777e0d2bb330eedf9a2640ec6c03a09ef9511d13124e6595b3cd275ae245.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "腰",
+  "id": "90be00eb51668b719aba6ddd",
+  "level": 5,
+  "meaning": "waist",
+  "pinyin": "yāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hPz0r1@btp-1779527162138"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "634a11dfa0262d06c775e1f5866f4d5f81803912fac6e489dbe983f26a16af32.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "环"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "循环",
+  "id": "e3a334f5322c10fb222f4e2e",
+  "level": 6,
+  "meaning": "to circulate",
+  "pinyin": "xúnhuán",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1497-1779527163900"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "8fed1fea6dce6d792122e763a262a01d9f500bcade1c7b2a2b741ca7ae1d5c32.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入",
+      "流"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "流入",
+  "id": "570c168cfc73d8e7bcdc5846",
+  "level": 6,
+  "meaning": "to flow into",
+  "pinyin": "liúrù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-858-1779527163261"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

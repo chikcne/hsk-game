@@ -1,0 +1,31 @@
+{
+  "audio": "bc394c2bdb189c55006deb01cef62e34f4ba748566bd64dc3cfb77bd23944d73.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "细"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "详细",
+  "id": "b141316a36e3b789cf433460",
+  "level": 4,
+  "meaning": "detailed, thorough",
+  "pinyin": "xiángxì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-cU:K!oMMcG-1779527160610"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

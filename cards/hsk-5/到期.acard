@@ -1,0 +1,32 @@
+{
+  "audio": "b88fd1de1ebd78301d141e235db6860aacbfd4a2ce5126229d28edeb89bdbb25.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "到期",
+  "id": "cc1299243f88efe7a07dc2e8",
+  "level": 5,
+  "meaning": "to expire",
+  "pinyin": "dàoqī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-duLw:K#T4L-1779527161061"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

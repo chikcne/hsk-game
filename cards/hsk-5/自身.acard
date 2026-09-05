@@ -1,0 +1,32 @@
+{
+  "audio": "1713be80ded162ef0c94aaf58621acd9d82759d6f030fa258c113e9528f26c43.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "自",
+      "身"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自身",
+  "id": "14fb72ba6d80f0223735bd1c",
+  "level": 5,
+  "meaning": "oneself",
+  "pinyin": "zìshēn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PN&sv;GPsr-1779527162381"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

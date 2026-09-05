@@ -1,0 +1,32 @@
+{
+  "audio": "351ec313522e1b26279d80a843bdfe5c4cd5c72028d46a8f69baffbdffa83d86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "部",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "面部",
+  "id": "d86ed30a06f88049bf4e2941",
+  "level": 6,
+  "meaning": "face, facial part",
+  "pinyin": "miànbù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-911-1779527163314"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

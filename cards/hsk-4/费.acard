@@ -1,0 +1,29 @@
+{
+  "audio": "5742e65405cae15e189204e2a5a4a2d078af78f1ed58dd60bf21046bef01557c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "费",
+  "id": "8bfdbcb12752a23179c5998a",
+  "level": 4,
+  "meaning": "fee, expense; to spend",
+  "pinyin": "fèi",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-BO$*)Vf2o7-1779527160002"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

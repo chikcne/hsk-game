@@ -1,0 +1,29 @@
+{
+  "audio": "e07a3b2f7cebfcab3254487fa5918a3621ce9874dc9e7b7e4ab0d9d895109213.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "逃",
+  "id": "8ea561e94fe9fc42b1014590",
+  "level": 6,
+  "meaning": "to escape",
+  "pinyin": "táo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1270-1779527163673"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "2288b2f94193a8f6bc9bd3ebd212fa24bd276d05cfd48c9a2c806c1f12d8be6c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亮",
+      "漂"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "漂亮",
+  "id": "852cd1eee97ad712ef800c2e",
+  "level": 1,
+  "meaning": "beautiful",
+  "pinyin": "piàoliang",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-yvu#|/f2Go-1779527158961"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "b9c2f998926f87738ab74ebfaef36d9c0ee7d6a5bdefd5b23bf6fffce8db820c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "篇",
+  "id": "a2ef0b97680ee840192c2b7d",
+  "level": 4,
+  "meaning": "measure word for essays, articles, papers; piece, sheet",
+  "pinyin": "piān",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-!P6))w%$.-1779527160357"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "fbb2fef456def4e1c522159d15c4d7d6a9a326adc6c52220c0ae3741564fa405.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "破"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打破",
+  "id": "dfe8da56b2ad60032ba056e2",
+  "level": 5,
+  "meaning": "to break",
+  "pinyin": "dǎpò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-pTzd]{fv^&-1779527161019"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

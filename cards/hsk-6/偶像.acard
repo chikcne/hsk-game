@@ -1,0 +1,31 @@
+{
+  "audio": "91e63ca26c879c682c4da2e141c8fb5a108e8c51e53ae7cb601411cc2d41aeac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "像"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "偶像",
+  "id": "c4f5876d9954d436f3a5c122",
+  "level": 6,
+  "meaning": "idol",
+  "pinyin": "ǒuxiàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-965-1779527163368"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

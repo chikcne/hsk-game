@@ -1,0 +1,32 @@
+{
+  "audio": "bf753ecb7fa349c2db558cbbd0269212df1794bdded22019ed48740bba41bf88.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事",
+      "先"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "事先",
+  "id": "f6b0794609bc9bed6e43ce62",
+  "level": 5,
+  "meaning": "in advance",
+  "pinyin": "shìxiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-y::_tnH0ox-1779527161841"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "2130d51caa4c6914e124211504d3d4967a204f22bc1de1317ee7912ea1fa7055.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "结"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "结果",
+  "id": "7f7fbf1c776b176ea78384bb",
+  "level": 4,
+  "meaning": "to bear fruit, to produce a result",
+  "pinyin": "jiēguǒ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J!LQ_m{mtb-1779527160185"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

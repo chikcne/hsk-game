@@ -1,0 +1,32 @@
+{
+  "audio": "f128fc5213b87a76bb5afce2810fe7da0aff691dd9595a0060ffcb66c8db7e6e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "滑",
+      "雪"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "滑雪",
+  "id": "5c43e8575469e6a4f923f036",
+  "level": 6,
+  "meaning": "to ski",
+  "pinyin": "huáxuě",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-566-1779527162969"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

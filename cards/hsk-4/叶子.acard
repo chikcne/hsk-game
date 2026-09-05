@@ -1,0 +1,31 @@
+{
+  "audio": "881c58ceac11d39b9014e5708cc74f2afef0f67922dbcad444211107b3c452d8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "叶子",
+  "id": "b856538ec6fffd428bd1f952",
+  "level": 4,
+  "meaning": "Leaf",
+  "pinyin": "yèzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nCIjj,0#+g-1779527160667"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

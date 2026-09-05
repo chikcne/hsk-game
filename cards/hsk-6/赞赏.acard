@@ -1,0 +1,31 @@
+{
+  "audio": "eaaddbe82859aea711b0827a61b446b543ff7a3af7dc585dca30a4e6d70a8742.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "赏"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赞赏",
+  "id": "8419edf5b1235de1948a6d9f",
+  "level": 6,
+  "meaning": "to admire, to appreciate",
+  "pinyin": "zànshǎng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1646-1779527164049"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

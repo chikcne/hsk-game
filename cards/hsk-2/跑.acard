@@ -1,0 +1,29 @@
+{
+  "audio": "5fd7000444ff89cbbf14142a1aa93a61c73a1e274ef0578a839a7e4be50df50d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跑",
+  "id": "bcad86d2d6bb03a3967df2b8",
+  "level": 2,
+  "meaning": "to run",
+  "pinyin": "pǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-z~4vpp2l3}-1779527159217"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

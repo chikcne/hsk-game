@@ -1,0 +1,31 @@
+{
+  "audio": "f1c82f66c88a2544bf6b7084037248835ab4fc428034b388046e3a864475b727.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "等"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "等候",
+  "id": "bd5bce2a70afabcadedd3835",
+  "level": 5,
+  "meaning": "to wait",
+  "pinyin": "děnghòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EhO53w]UWx-1779527161067"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

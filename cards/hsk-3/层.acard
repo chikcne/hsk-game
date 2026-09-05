@@ -1,0 +1,29 @@
+{
+  "audio": "6211c3ce152dd03b24365be5e4bb1ced000587920c3b77b736ce60d5e505f6a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "层",
+  "id": "a465c47736d7ff57869f4325",
+  "level": 3,
+  "meaning": "measure word for layer, floor",
+  "pinyin": "céng",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-g);?FA@/xy-1779527159352"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "b3ee296124356316d8bb784e9a76d3c49a7fd5a12f99e1c00d0095870e81c9ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "总",
+      "结"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "总结",
+  "id": "084a2848066a2088cf5dd913",
+  "level": 4,
+  "meaning": "to summarize, to sum up; summary",
+  "pinyin": "zǒngjié",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J]$.Rl<+<F-1779527160788"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

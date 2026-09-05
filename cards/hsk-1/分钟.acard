@@ -1,0 +1,31 @@
+{
+  "audio": "182c971c35a5a8d8d827f25ae85a8731e1e695a919fccc4f2cde67490b78e387.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分钟",
+  "id": "f48d139d079208c657985b2a",
+  "level": 1,
+  "meaning": "minute",
+  "pinyin": "fēnzhōng",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-P1/hnYx:IF-1779527158859"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "644d0768465313dc58c51f6c623f00aa2cb5f1aa27f160f8576a076e3c22766e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "同"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不同",
+  "id": "4a2772e025a3bdaaaf8b904b",
+  "level": 3,
+  "meaning": "different",
+  "pinyin": "bù tóng",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-erm1f1;[_=-1779527159344"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

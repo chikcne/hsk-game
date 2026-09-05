@@ -1,0 +1,32 @@
+{
+  "audio": "2ce97d3369c28a81958e00b449972d0877caef8405871cc05ef09aa70f4df7b8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度",
+      "湿"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "湿度",
+  "id": "4958fbee1a05a90494cc2da8",
+  "level": 6,
+  "meaning": "humidity",
+  "pinyin": "shīdù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1177-1779527163580"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

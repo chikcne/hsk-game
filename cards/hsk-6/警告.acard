@@ -1,0 +1,29 @@
+{
+  "audio": "1a69845c95f5f9a910212064d604956b21fe5296751e7f3dcac36748e0b06838.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "警告",
+  "id": "09fcac66b2183909e88e4da7",
+  "level": 6,
+  "meaning": "to warn",
+  "pinyin": "jǐnggào",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-723-1779527163126"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "a136759f32f35e5714e305475b0c78c18e6827285a37352eed4c390f24ae0ae7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "害",
+  "id": "e66112a6616188d1aad744cc",
+  "level": 6,
+  "meaning": "harm; to harm",
+  "pinyin": "hài",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-522-1779527162925"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

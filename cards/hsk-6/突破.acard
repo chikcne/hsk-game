@@ -1,0 +1,31 @@
+{
+  "audio": "164b73bae3cafb551686d2565e976f374f4333773edf6ad0f8279fcb2be8c4eb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "破"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "突破",
+  "id": "68db52ba4acfb38bfa765469",
+  "level": 6,
+  "meaning": "to break through",
+  "pinyin": "tūpò",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1327-1779527163730"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "7ad13f65e846e71ec5ea6942219761b4f4bfcb1df8c8cbd043aee8ba23e56ac1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "付",
+      "出"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "付出",
+  "id": "cea6322be6d1f0292f68737b",
+  "level": 5,
+  "meaning": "to pay, to give",
+  "pinyin": "fùchū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qz~pay:DOj-1779527161174"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

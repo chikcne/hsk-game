@@ -1,0 +1,31 @@
+{
+  "audio": "3bb4b91f0da813952b7fa4d5bc438d9fb274a3221c6f2234250987e00361777a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "科"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "科研",
+  "id": "0a3c7991d282b6a44c3f4b92",
+  "level": 5,
+  "meaning": "scientific research",
+  "pinyin": "kēyán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-d4AeO*8>:t-1779527161466"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

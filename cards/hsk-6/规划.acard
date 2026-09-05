@@ -1,0 +1,31 @@
+{
+  "audio": "1d4038064a8576186b4a303d0f6104513d49c09c1dbc8296238857353cdb401e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "划"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "规划",
+  "id": "ae723445102d027a6c451eef",
+  "level": 6,
+  "meaning": "plan; to plan",
+  "pinyin": "guīhuà",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-501-1779527162904"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

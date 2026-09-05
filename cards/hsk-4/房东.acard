@@ -1,0 +1,31 @@
+{
+  "audio": "03649eb7f11218632efa53dc263bc6474c944c6cbd3272b9a9a4589749e86702.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "东"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "房东",
+  "id": "4bd44f366cece37ea18a6470",
+  "level": 4,
+  "meaning": "landlord",
+  "pinyin": "fángdōng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-eoY}54#6??-1779527159998"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

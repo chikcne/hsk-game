@@ -1,0 +1,31 @@
+{
+  "audio": "d99983d5f779c8f4521b5493903c189ed1fc326c5d337ee775bb589eac7ed1a2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "真"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "真实",
+  "id": "98fdd16dfbdcc1a6c69b3462",
+  "level": 5,
+  "meaning": "true, real",
+  "pinyin": "zhēnshí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t:Pw[=*Prz-1779527162287"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "e4fa8c9553b383d29fbffe8e1c0067f99be9260f13ac6210c93771536ba1a115.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "化",
+      "变"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "变化",
+  "id": "7298d0ff140faac36bb078fc",
+  "level": 3,
+  "meaning": "to change; change",
+  "pinyin": "biànhuà",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-uAqdS>z^%%-1779527159332"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

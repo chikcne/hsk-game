@@ -1,0 +1,29 @@
+{
+  "audio": "b4385d4e5ce1931a0988d119e9105bea3503adf7e4f8a746865d586047025d0d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "快",
+  "id": "1ae1dc47b68ca49117f9ebc8",
+  "level": 2,
+  "meaning": "fast; soon, quickly",
+  "pinyin": "kuài",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-QKo</)r##K-1779527159187"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

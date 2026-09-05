@@ -1,0 +1,32 @@
+{
+  "audio": "bf0f5bfc6a7c91db7060ce87e595cf442af6f996c9c4a27179b743e0cebf1341.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "举",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "举行",
+  "id": "18a2890ad1a467c7237cc44a",
+  "level": 4,
+  "meaning": "to hold, to convene, to conduct (a ceremony, meeting, event)",
+  "pinyin": "jǔxíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vqen*$@uNf-1779527160215"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

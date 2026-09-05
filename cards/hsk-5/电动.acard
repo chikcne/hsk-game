@@ -1,0 +1,32 @@
+{
+  "audio": "4b06bb26735674bde55be66874a9898742effe5d1b886c6d67885f3dc721ad28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "电"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电动",
+  "id": "e0a61db3dfda21bdb11a364a",
+  "level": 5,
+  "meaning": "electric, electrically powered",
+  "pinyin": "diàndòng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tAtkiH]ZYW-1779527161082"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

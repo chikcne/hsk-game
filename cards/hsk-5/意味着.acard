@@ -1,0 +1,32 @@
+{
+  "audio": "86c251de29f33ea294fa716dedf8fede1d0ad393be28ac16101ab85f2f79dd74.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "味",
+      "着"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "意味着",
+  "id": "81d01688b6acd452e6b9a9d9",
+  "level": 5,
+  "meaning": "to mean, to imply",
+  "pinyin": "yìwèizhe",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Fuq1tC8`9M-1779527162171"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

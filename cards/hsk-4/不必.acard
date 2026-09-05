@@ -1,0 +1,32 @@
+{
+  "audio": "3e0931d87e07ce157883ed7a53d3338ce05753d5e9ef4a14e35c44bb5af4e5e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "必"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不必",
+  "id": "ff6492ac79b4936f34c4d921",
+  "level": 4,
+  "meaning": "need not, not necessary",
+  "pinyin": "búbì",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-HR-b~G<Rlt-1779527159846"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

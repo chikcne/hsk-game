@@ -1,0 +1,29 @@
+{
+  "audio": "747fdf8cde2a88906bdfe0dd190c1c8c82fc6273b5fba4afec127c9bfef5f49c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "纪律",
+  "id": "58d66e5be2389117e5c4c357",
+  "level": 6,
+  "meaning": "discipline",
+  "pinyin": "jìlǜ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-624-1779527163027"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "59d25b198730e959c7916a72c8c8d2f14f2d6d0cdf0a630550a096de72bb8b0f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "特"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "特地",
+  "id": "221beb75cc69aef7a05c151d",
+  "level": 6,
+  "meaning": "especially, for a specific purpose",
+  "pinyin": "tèdì",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1277-1779527163680"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

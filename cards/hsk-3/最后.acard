@@ -1,0 +1,32 @@
+{
+  "audio": "ea0d57d7e1acf2b9e2805b3d95e93acccb1607a8bd2f8c3a6993c77d62a261fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "最"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "最后",
+  "id": "7c9bc45da362121390ebc6f2",
+  "level": 3,
+  "meaning": "last, final",
+  "pinyin": "zuìhòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-P9g~ZA};*b-1779527159800"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

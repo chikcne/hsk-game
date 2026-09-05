@@ -1,0 +1,32 @@
+{
+  "audio": "2cf9f49ed613b87cbf9939fe64ff5b0db381aa3604a605c8e4a4dc7f8d140cfc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "游"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "游人",
+  "id": "56f08cda12aa454ede8ca1ee",
+  "level": 6,
+  "meaning": "tourist",
+  "pinyin": "yóurén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1601-1779527164004"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

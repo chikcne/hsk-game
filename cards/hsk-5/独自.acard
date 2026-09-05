@@ -1,0 +1,31 @@
+{
+  "audio": "600483fc977d84d36068e2f0e6044204060bd6191f45a373d1fbbf6d5605d0db.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "自"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "独自",
+  "id": "672e8d80d92e5898b52bb454",
+  "level": 5,
+  "meaning": "alone, by oneself",
+  "pinyin": "dúzì",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-vd$$Y)4eHx-1779527161101"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

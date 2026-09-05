@@ -1,0 +1,32 @@
+{
+  "audio": "fb5587236bfabe6a427d6528ece84e5626ef8f267d465106e634edf52cc4554b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "个",
+      "别"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "个别",
+  "id": "ec13e98a4475b972337a3692",
+  "level": 5,
+  "meaning": "individual, a few; special, exceptional",
+  "pinyin": "gèbié",
+  "pos": "adverb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G@=]Z/p,Pf-1779527161201"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

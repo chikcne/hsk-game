@@ -1,0 +1,31 @@
+{
+  "audio": "96c1d7a5559d79b6a005003bdb4561d409badce38a8b27ea9baf227b36edca76.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "进"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "进展",
+  "id": "b9a3f23e79df7f42a4bd4fd0",
+  "level": 6,
+  "meaning": "progress, advance",
+  "pinyin": "jìnzhǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-712-1779527163115"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

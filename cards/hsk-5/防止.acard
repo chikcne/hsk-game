@@ -1,0 +1,32 @@
+{
+  "audio": "6b2218510c43f2040a2275a66bd3c31184129ecf2c33453348930d2add5f85e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "止",
+      "防"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "防止",
+  "id": "2b536d33e30492baed50423d",
+  "level": 5,
+  "meaning": "to prevent",
+  "pinyin": "fángzhǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-BQ0d(2<XD9-1779527161145"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

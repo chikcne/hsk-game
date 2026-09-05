@@ -1,0 +1,32 @@
+{
+  "audio": "ff0bdeef4fa91d00ff4d4672b7544ed1017ab8abe0c2fb4f5e91e92aa2b2e47a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天",
+      "气"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "天气",
+  "id": "ae19070e1600332b790839c6",
+  "level": 1,
+  "meaning": "weather",
+  "pinyin": "tiānqì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-lEWO4{h-zH-1779527159011"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "2af86229b2a51eee78dab1836c2d23bf0f6df337eefb49e6963d5fb64d4a9763.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "摆",
+      "放"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "摆放",
+  "id": "f5621a5fda56dd6fcde9ed68",
+  "level": 6,
+  "meaning": "to put, to place",
+  "pinyin": "bǎifàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-9-1779527162412"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

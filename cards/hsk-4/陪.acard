@@ -1,0 +1,29 @@
+{
+  "audio": "52cfaf1ac7cd59159477a9130c038bd7aa55d6c1fa771160329c7bf3fe57e13a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "陪",
+  "id": "063e41962fe61191f1ac0f4c",
+  "level": 4,
+  "meaning": "to accompany, to keep someone company",
+  "pinyin": "péi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-psd5Ri3?x+-1779527160352"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

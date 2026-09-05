@@ -1,0 +1,29 @@
+{
+  "audio": "13e8d0ff113aa25e6afaa6f442def44cee1ca5a3db97dc9beabf37e513b26f5f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "干",
+  "id": "bbf3b79cba9b1348a72a1f6d",
+  "level": 4,
+  "meaning": "dry; (dried food)",
+  "pinyin": "gān",
+  "pos": "adjective、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-CZ1C2j=bS]-1779527160023"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

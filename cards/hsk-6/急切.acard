@@ -1,0 +1,32 @@
+{
+  "audio": "0287ff552829daf3e866c7f3c916b9bd708a7f2c72c93a6a2718efc84cd431ae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "切",
+      "急"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "急切",
+  "id": "d7edbc550e77e9eaef7d50e8",
+  "level": 6,
+  "meaning": "eager, impatient",
+  "pinyin": "jíqiè",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-618-1779527163021"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "7e9e75427948f0121bab12e170a22be9342a3df21fc51ad7635dac8c15e70701.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "刷",
+      "印"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "印刷",
+  "id": "3006bc05cddd0412a5507540",
+  "level": 5,
+  "meaning": "to print",
+  "pinyin": "yìnshuā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mLg^Yf(#wy-1779527162179"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

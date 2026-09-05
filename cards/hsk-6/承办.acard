@@ -1,0 +1,31 @@
+{
+  "audio": "1d56ac2eaa6f4e03df6ebbb8205e64a9ec3ea1f2f7a222e9509722d5cc88c040.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "办"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "承办",
+  "id": "32c82a7ade4e40d1c96ab915",
+  "level": 6,
+  "meaning": "to undertake, to contract",
+  "pinyin": "chéngbàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-159-1779527162562"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

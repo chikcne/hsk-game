@@ -1,0 +1,32 @@
+{
+  "audio": "de446521a863833ef8ce9d76f1694424944a5e70e7505f5601af49f8cd3d61e8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "别",
+      "特"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "特别",
+  "id": "e4b4166bf29766e7ea4d5490",
+  "level": 3,
+  "meaning": "special; particularly",
+  "pinyin": "tèbié",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-v?;i7(<pfm-1779527159654"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

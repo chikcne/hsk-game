@@ -1,0 +1,32 @@
+{
+  "audio": "c30aa5ca0cbaa12b875c6c3b6d8329120354deb10ea38a28ab2b471a5be5504c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "时代",
+  "id": "1941dd8edf4ca33d10d20f45",
+  "level": 5,
+  "meaning": "era, times",
+  "pinyin": "shídài",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Qyr#x]p2CV-1779527161815"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "8d3f919696cf10bfffa3d710b4d052b31848586f5712871034005b77a32f8ea0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "列",
+      "排"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "排列",
+  "id": "171e8639ae768ba812717ecc",
+  "level": 5,
+  "meaning": "to arrange",
+  "pinyin": "páiliè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PO&OT?P.mi-1779527161614"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

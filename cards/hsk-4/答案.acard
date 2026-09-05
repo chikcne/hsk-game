@@ -1,0 +1,31 @@
+{
+  "audio": "c46b2dc0bb485d189aeb7b7416e5712d2506d88ac6041666272ea4275257c551.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "答"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "答案",
+  "id": "4edb6d18614002bff99f6390",
+  "level": 4,
+  "meaning": "answer, solution",
+  "pinyin": "dá’àn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-P=_-~|crsy-1779527159916"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

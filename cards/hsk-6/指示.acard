@@ -1,0 +1,31 @@
+{
+  "audio": "62d91ea288c657e622993ac03199c00dc3e010c3e2ed5b7f17e2de6694c14dde.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "指"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "指示",
+  "id": "60034c3d3ada4e49097e1d8c",
+  "level": 6,
+  "meaning": "to instruct; instruction",
+  "pinyin": "zhǐshì",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1710-1779527164113"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "e9e6384d27aa9c113e245bf3479503c881a8f278ae5c974ecdb51374dd542322.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "晒",
+  "id": "852ca21d7e96f8af7d875f00",
+  "level": 5,
+  "meaning": "to sunbathe, to dry in the sun",
+  "pinyin": "shài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KpMv}-!_x&-1779527161750"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

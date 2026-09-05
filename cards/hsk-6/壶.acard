@@ -1,0 +1,29 @@
+{
+  "audio": "e3ac4688bc9e82336010111631bb036f9987a5fdf8aa6a674dd41dbe87f6ac4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "壶",
+  "id": "4f8b48c39baa7226b079b6de",
+  "level": 6,
+  "meaning": "pot, kettle",
+  "pinyin": "hú",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-558-1779527162961"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

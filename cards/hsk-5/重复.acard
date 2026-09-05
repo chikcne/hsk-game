@@ -1,0 +1,31 @@
+{
+  "audio": "8fb7cd112d314b4635bf45addc3778f1be282769e764d6a6a1445b7250210115.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "重"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "重复",
+  "id": "4b10384171052d9357485c60",
+  "level": 5,
+  "meaning": "to repeat",
+  "pinyin": "chóngfù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-A{m4*5rF-Z-1779527160967"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

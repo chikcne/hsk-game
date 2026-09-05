@@ -1,0 +1,31 @@
+{
+  "audio": "10d6df8ba3cf5712aaca55704d0ca5e0254fe631d277ec37675a57f122d88f22.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大洋洲",
+  "id": "46a841008a9c3a3e2d01e1e1",
+  "level": 6,
+  "meaning": "Oceania",
+  "pinyin": "Dàyángzhōu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-253-1779527162656"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

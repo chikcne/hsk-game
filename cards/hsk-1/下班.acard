@@ -1,0 +1,32 @@
+{
+  "audio": "0a7309d57db8b3c1f37a127dfcb2c82b61868d601ebdfe00c24f8a38ab77b0af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "班"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下班",
+  "id": "5bb566282b3d925d0d92cc9a",
+  "level": 1,
+  "meaning": "to get off work",
+  "pinyin": "xiàbān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-xx4`Gtd0[q-1779527159031"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

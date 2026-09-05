@@ -1,0 +1,31 @@
+{
+  "audio": "0e9499a66918be5dcf1e8ce1fe7254ea237c9297311a99104e7ba245c3c008fb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "表"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "表格",
+  "id": "6b74de8666cd0a5343637eb0",
+  "level": 4,
+  "meaning": "form, table",
+  "pinyin": "biǎogé",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-O,<Xt3/%5%-1779527159837"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

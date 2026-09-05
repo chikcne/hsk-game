@@ -1,0 +1,32 @@
+{
+  "audio": "8e8c1c7ac4f8dd5c869361be5d3655205fd849606eed39b6d13ac74936b37182.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "放"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发放",
+  "id": "c231100a4acf24c0007bd5c4",
+  "level": 6,
+  "meaning": "to distribute, to issue",
+  "pinyin": "fāfàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-353-1779527162756"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

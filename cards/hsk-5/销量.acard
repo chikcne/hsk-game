@@ -1,0 +1,31 @@
+{
+  "audio": "be6ac21cda47c4a32f1bdf1a9859555dd59c6c623463439a694732b11fa09087.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "量"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "销量",
+  "id": "3dabca67fd6a8e5a550a3e5b",
+  "level": 5,
+  "meaning": "sales volume",
+  "pinyin": "xiāoliàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w`ACX/58A&-1779527162069"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

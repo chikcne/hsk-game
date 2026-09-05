@@ -1,0 +1,32 @@
+{
+  "audio": "6f74c49a94e9d2e7510084c942ea44bfbc8e9b2fd05eb12cd3fadd2d1132e868.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "当",
+      "成"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当成",
+  "id": "92a7a5210b411b97149dab68",
+  "level": 5,
+  "meaning": "to treat as, to regard as",
+  "pinyin": "dàngchéng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-L&nz5tIpWm-1779527161054"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

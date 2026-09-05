@@ -1,0 +1,32 @@
+{
+  "audio": "ad7b0e0a242c56c5089fe4fb5dd6b1a97da1d0255bb758e42a6a4d43b53a2aa2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "退"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "退出",
+  "id": "65aafe6a8854956d65a1fd59",
+  "level": 5,
+  "meaning": "to withdraw, to exit",
+  "pinyin": "tuìchū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-q^;M}<QcB(-1779527161966"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "17ee6e05b861379c4c0473e3b0e95ba8f45831d09b4f3c638c3f37e043c8601b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "号",
+      "称"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "称号",
+  "id": "155918da4bc06b6e7e20b80f",
+  "level": 6,
+  "meaning": "title, appellation",
+  "pinyin": "chēnghào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-153-1779527162556"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

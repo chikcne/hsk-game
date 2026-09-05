@@ -1,0 +1,32 @@
+{
+  "audio": "a7356f669a0c32bbe7a3a268610bd554ef7f1514c941542bed616aa7de10d46c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合",
+      "组"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "组合",
+  "id": "3cab4243f9fc0edb2a826c0b",
+  "level": 5,
+  "meaning": "to combine; combination",
+  "pinyin": "zǔhé",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-z.Hx**^:xA-1779527162394"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

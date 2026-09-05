@@ -1,0 +1,31 @@
+{
+  "audio": "5d60dd59984fdd79c895e4002a645724552dc08d7249f5aaadb349038dfe9728.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "失业",
+  "id": "8eb6d679ed8d9f31c9c9810b",
+  "level": 5,
+  "meaning": "to lose one's job, to be unemployed",
+  "pinyin": "shīyè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-oUE;=@{5M@-1779527161812"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

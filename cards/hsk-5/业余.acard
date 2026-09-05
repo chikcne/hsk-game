@@ -1,0 +1,31 @@
+{
+  "audio": "2d24cc8b4af4829e7c8fa007825293abdbfd8344e7d84ab7138cc73a9ead35aa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "业余",
+  "id": "79f21be126ed755f99b9a690",
+  "level": 5,
+  "meaning": "amateur, spare time",
+  "pinyin": "yèyú",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mdyq[wH)U:-1779527162148"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

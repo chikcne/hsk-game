@@ -1,0 +1,32 @@
+{
+  "audio": "31243844cbc0a31954743905c22b60fd60ee04c9577c50160d47cdac6a959e52.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "要"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "要不",
+  "id": "3223b0fa04879adbdfdeb5e1",
+  "level": 5,
+  "meaning": "otherwise, or else",
+  "pinyin": "yàobù",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Q7_fk[+g|c-1779527162141"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

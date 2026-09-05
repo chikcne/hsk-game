@@ -1,0 +1,29 @@
+{
+  "audio": "0a5c9d7ec8c111dbc8d12f8ba824f7f610d06961e0f375d8e8dca88f7b6babde.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "捕",
+  "id": "c651f0c80bb4a25248db33c9",
+  "level": 6,
+  "meaning": "to catch, to capture",
+  "pinyin": "bǔ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-73-1779527162476"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

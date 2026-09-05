@@ -1,0 +1,31 @@
+{
+  "audio": "5d7443344b43729172780acf1fa4082ff03745b84f7f94750b2100c9763d2817.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "港口",
+  "id": "6c0bf83bfee8f14b6b213f67",
+  "level": 6,
+  "meaning": "port",
+  "pinyin": "gǎngkǒu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-428-1779527162831"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

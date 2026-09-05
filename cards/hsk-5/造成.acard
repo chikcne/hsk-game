@@ -1,0 +1,32 @@
+{
+  "audio": "705d1083094a552be86a8aa2a81d48edfbaa96e7b15e2797539b012d3be90b9c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成",
+      "造"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "造成",
+  "id": "99b4a7772058c9ab4b2fd90c",
+  "level": 5,
+  "meaning": "to cause, to bring about",
+  "pinyin": "zàochéng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-k2}n`6z,>s-1779527162257"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

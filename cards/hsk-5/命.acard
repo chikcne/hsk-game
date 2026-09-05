@@ -1,0 +1,29 @@
+{
+  "audio": "b9088a82c71bdae2c0a625b8a0889272614d161fc8009afcdb2e2652924c39ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "命",
+  "id": "73705b3ac119ba3cf501702e",
+  "level": 5,
+  "meaning": "life, fate",
+  "pinyin": "mìng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-IdeZxS`A75-1779527161582"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

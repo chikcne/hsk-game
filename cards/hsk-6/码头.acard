@@ -1,0 +1,31 @@
+{
+  "audio": "8716d354286631b175a42dcdec6a7f34cd2c6e432ea0810a15b2b8cf95e0f5e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "码头",
+  "id": "739afaee5eac50ab0aa5a56c",
+  "level": 6,
+  "meaning": "dock, pier",
+  "pinyin": "mǎtóu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-884-1779527163287"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

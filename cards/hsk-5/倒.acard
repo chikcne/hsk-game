@@ -1,0 +1,29 @@
+{
+  "audio": "92ddf204aca24e18b7e1cd710b30996a0a884ad87e9afdbd0e4b354ee59ee108.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "倒",
+  "id": "bdc9c0ab7cb9575d29e1ffc9",
+  "level": 5,
+  "meaning": "to fall, to collapse",
+  "pinyin": "dǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-C[A9o%f~;P-1779527161056"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

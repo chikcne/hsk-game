@@ -1,0 +1,32 @@
+{
+  "audio": "0016021fcd50a31658b56e4d1fa92d3477d0ff1666ea4bf03e910b8039167a07.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "服",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "服用",
+  "id": "bc05b14fb6f0fd3162a67406",
+  "level": 6,
+  "meaning": "to take (medicine)",
+  "pinyin": "fúyòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-404-1779527162807"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

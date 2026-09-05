@@ -1,0 +1,31 @@
+{
+  "audio": "3144619e1707718176bb013c10c18f295a19eb417bcf8d824fe9dcfaffe134a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "差"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "差异",
+  "id": "1caea30550c9cfa707365c8d",
+  "level": 6,
+  "meaning": "difference",
+  "pinyin": "chāyì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-118-1779527162521"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

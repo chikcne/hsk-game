@@ -1,0 +1,33 @@
+{
+  "audio": "79743daab6a0a703a3926342ee49b5b8ba8e9454ee22fd4a87d3ad295bcc2e2d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "动物",
+      "园"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "动物园",
+  "id": "88bf26c26337ce923ca8d473",
+  "level": 3,
+  "meaning": "zoo",
+  "pinyin": "dòngwùyuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-s;-M.`Re.=-1779527159407"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

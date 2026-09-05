@@ -1,0 +1,32 @@
+{
+  "audio": "84cf0306a0b6bf26f866a81a7a846a8ed82aeb061ff12f4d3745001b1edfd7e6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "断"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打断",
+  "id": "5dd36668a609466fa4602c74",
+  "level": 5,
+  "meaning": "to interrupt",
+  "pinyin": "dǎduàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-unMw8TYmS3-1779527161018"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

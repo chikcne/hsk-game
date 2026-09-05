@@ -1,0 +1,31 @@
+{
+  "audio": "0493c89d0d59e265e87077c990c452f6954fe3836e2bffce3c8da5c815f2e8da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "定义",
+  "id": "80122bdb4c89de735ae6530d",
+  "level": 6,
+  "meaning": "definition; to define",
+  "pinyin": "dìngyì",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-314-1779527162717"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

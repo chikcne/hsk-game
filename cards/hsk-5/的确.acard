@@ -1,0 +1,31 @@
+{
+  "audio": "b93a00c70b806a314dc7cf81caad49b40d1469d4c84c3ba9e11ee80ce1ae8f06.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "的"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "的确",
+  "id": "1eaf78214d6d426a89cfda8b",
+  "level": 5,
+  "meaning": "indeed, certainly",
+  "pinyin": "díquè",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lO`AIEQRic-1779527161070"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

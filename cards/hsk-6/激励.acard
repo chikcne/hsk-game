@@ -1,0 +1,29 @@
+{
+  "audio": "9fc1cca87cfd8455d71b3bed6fa6cd8bb7947ff691f8204f98f34f01a63446f6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "激励",
+  "id": "6f351eacc35b9d87bfdb5263",
+  "level": 6,
+  "meaning": "to encourage, to motivate",
+  "pinyin": "jīlì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-609-1779527163012"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "73911ca297301fe5eac00854cf5deb3cdd1e053b7f9fb395d1b124218afd1943.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "死"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "死亡",
+  "id": "100885778f4651b2582989af",
+  "level": 6,
+  "meaning": "to die",
+  "pinyin": "sǐwáng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1241-1779527163644"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "da89c2578f13482a76f736d24bfdd5d682306adda2343944a4a1cb36c7700aac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "粥",
+  "id": "44c3ab8459ffcee36f977325",
+  "level": 6,
+  "meaning": "porridge",
+  "pinyin": "zhōu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1737-1779527164140"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

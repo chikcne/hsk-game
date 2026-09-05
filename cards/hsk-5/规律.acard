@@ -1,0 +1,29 @@
+{
+  "audio": "43122f1d34161c2c9df70cbd65c93a8bf74f865002596894e733a902e3670f94.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "规律",
+  "id": "792e2092efdb7184da2679a9",
+  "level": 5,
+  "meaning": "law, regular pattern; regular",
+  "pinyin": "guīlǜ",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-i!bFD@utyW-1779527161246"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

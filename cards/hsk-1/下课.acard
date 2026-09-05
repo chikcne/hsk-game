@@ -1,0 +1,32 @@
+{
+  "audio": "1575ef19d41454701db45e9268fe2561d92eab937d81df592bd151be8a7cceb8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "课"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下课",
+  "id": "75af594850db49a566de7740",
+  "level": 1,
+  "meaning": "to finish class",
+  "pinyin": "xiàkè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-yX(,{^n{9i-1779527159032"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

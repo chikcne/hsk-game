@@ -1,0 +1,31 @@
+{
+  "audio": "e18bd36d8384148420c0bbbb81be63315bb855dc0f70d421c38b8ba35e7bc677.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "系"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "联系",
+  "id": "21c5196663e3a112e1eafd25",
+  "level": 4,
+  "meaning": "to contact, to connect",
+  "pinyin": "liánxì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-y=b0|P~yZ!-1779527160273"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

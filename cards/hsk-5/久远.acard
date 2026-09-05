@@ -1,0 +1,32 @@
+{
+  "audio": "c9fe2512f1475ff8f883ce07412c655abb243ceacd26a4fe8ec436696d8ee345.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "久",
+      "远"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "久远",
+  "id": "fc8010371c3053597640ee51",
+  "level": 5,
+  "meaning": "long, remote, far-reaching",
+  "pinyin": "jiǔyuǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tQVb/gnJp~-1779527161431"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

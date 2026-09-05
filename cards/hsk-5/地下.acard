@@ -1,0 +1,32 @@
+{
+  "audio": "55809cd33cc5abbe480be174b3cd1dad708ece0b0be78015bd1e3fa710bcfaeb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "地"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地下",
+  "id": "f428fcca95c918f380148863",
+  "level": 5,
+  "meaning": "underground, basement; underground",
+  "pinyin": "dìxià",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-f45s(y}z#q-1779527161077"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

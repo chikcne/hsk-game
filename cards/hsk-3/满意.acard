@@ -1,0 +1,31 @@
+{
+  "audio": "8b835d711f4d8d7a392a183626cc04da16a62c18e1a28c6db54525811d5c0334.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "满"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "满意",
+  "id": "f066c3bc0d0e8c705819412b",
+  "level": 3,
+  "meaning": "satisfied",
+  "pinyin": "mǎnyì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-JC3|T9YyN0-1779527159570"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

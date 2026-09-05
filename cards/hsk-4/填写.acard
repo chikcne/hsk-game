@@ -1,0 +1,32 @@
+{
+  "audio": "86dd6c11aea3fca6b9d50f670ceb344e4b2bc31fb1d0eb041edd2f09566bf7d7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "写",
+      "填"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "填写",
+  "id": "3c29e02baba24b59de036520",
+  "level": 4,
+  "meaning": "to fill in, to complete (a form)",
+  "pinyin": "tiánxiě",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-yqPzdMveP<-1779527160538"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

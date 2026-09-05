@@ -1,0 +1,29 @@
+{
+  "audio": "f434e7673a1b9ff8213a9985e13cd5303d0bb55721cb04f92286918ed2d09605.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "灭",
+  "id": "abfc7e449e404051f6454e0a",
+  "level": 6,
+  "meaning": "to extinguish, to destroy",
+  "pinyin": "miè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-917-1779527163320"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

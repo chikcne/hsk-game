@@ -1,0 +1,29 @@
+{
+  "audio": "e37c78a3f9f2f96ac3c7a242619ff3136b481e3d41ce589e0c871def86641a02.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "算",
+  "id": "a35729df051aca2eca25742c",
+  "level": 4,
+  "meaning": "to calculate, to count; considered, at last",
+  "pinyin": "suàn",
+  "pos": "verb、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-LPhl[)>r0o-1779527160511"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "d40694e630f21d10cbe2a57535a32008d37a8b5a8c0b709d001181440437f6e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "叫",
+  "id": "81d5c5099df13f586ba8b0ab",
+  "level": 1,
+  "meaning": "to be called, to call; to make; (by)",
+  "pinyin": "jiào",
+  "pos": "verb、 （preposition）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-D&L*N[4F]O-1779527158894"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

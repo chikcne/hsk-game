@@ -1,0 +1,31 @@
+{
+  "audio": "f60b4509a7602f5bd9644b5803b7521bba18d1eb1d711c9e796e22f20c140442.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "量"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "衡量",
+  "id": "8ae27423e957771ee4ecc13a",
+  "level": 6,
+  "meaning": "to measure, to weigh",
+  "pinyin": "héngliáng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-549-1779527162952"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

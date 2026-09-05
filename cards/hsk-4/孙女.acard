@@ -1,0 +1,31 @@
+{
+  "audio": "f53f8d1bc0ac333486b75cb1f35b5b69d9ce5e6b388451ed868ed2c449cab488.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "女"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "孙女",
+  "id": "f3f74382f93983c345b388e6",
+  "level": 4,
+  "meaning": "granddaughter",
+  "pinyin": "sūnnǚ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z@P:V<u.0L-1779527160514"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

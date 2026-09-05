@@ -1,0 +1,29 @@
+{
+  "audio": "b9ec7d0696321c3d175a9f4c23bd1aad12f6c2d68cb5469926457c8bff93d9e6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "愿",
+  "id": "a97c45a957f16773ef21fbc9",
+  "level": 5,
+  "meaning": "to wish, to be willing",
+  "pinyin": "yuàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hY{kG*!*Fw-1779527162237"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

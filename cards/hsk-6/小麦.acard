@@ -1,0 +1,31 @@
+{
+  "audio": "a3c99a069883c24d685fbbf5b3ad7ddf563473835ab733ac1780c61c3b208ebf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小麦",
+  "id": "59483bc3f9c88efcd98af5e4",
+  "level": 6,
+  "meaning": "wheat",
+  "pinyin": "xiǎomài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1450-1779527163853"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

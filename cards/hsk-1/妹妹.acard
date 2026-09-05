@@ -1,0 +1,29 @@
+{
+  "audio": "f4a059f4dac14ff0055957b63b915f050cadbb4a64020fa4a1d4f622452092f3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "妹妹",
+  "id": "d5d3b2c54935a20460ba8f28",
+  "level": 1,
+  "meaning": "younger sister",
+  "pinyin": "mèimei",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-El(S_lQ}/<-1779527158926"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

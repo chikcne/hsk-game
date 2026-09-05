@@ -1,0 +1,29 @@
+{
+  "audio": "3d2966a6644e2242cc3debfbe16223f1540e1ff2737113e607b7da3915e0c8bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "匹",
+  "id": "2b28a0ef016ac731d80ac9a9",
+  "level": 5,
+  "meaning": "measure word for horses, cloth",
+  "pinyin": "pǐ",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qV~^d4}()J-1779527161631"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

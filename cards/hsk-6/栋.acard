@@ -1,0 +1,29 @@
+{
+  "audio": "d6c14512cbc856017c2de879b0b0d341a1e62ba81d3d500b96efec01545c1da4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "栋",
+  "id": "86a3f568efa0596a3d30a24f",
+  "level": 6,
+  "meaning": "measure word for buildings",
+  "pinyin": "dòng",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-316-1779527162719"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

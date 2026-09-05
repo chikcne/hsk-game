@@ -1,0 +1,32 @@
+{
+  "audio": "9ce565fd74ed26f645e55e0ae5b4071b6b1fb9445bdce413680e815f275dff94.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "晚"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "晚会",
+  "id": "ea6fb0f867469ecbd879fbea",
+  "level": 3,
+  "meaning": "evening party",
+  "pinyin": "wǎnhuì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-eb=*V84g<?-1779527159674"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

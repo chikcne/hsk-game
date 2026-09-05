@@ -1,0 +1,32 @@
+{
+  "audio": "4c3f7aa55db1e5dc1ecf0aacc807fd0e8327a53f2c57f8fa3799f54837cbc846.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "跳",
+      "远"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跳远",
+  "id": "65d6f8823d5def8427ba91b8",
+  "level": 5,
+  "meaning": "long jump",
+  "pinyin": "tiàoyuǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P$,Q2OKC#y-1779527161938"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

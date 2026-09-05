@@ -1,0 +1,29 @@
+{
+  "audio": "7ae68b185742248d9ab0249cd92c61aa3da3bfb5023f9f44ec4e6293c525fca4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "本",
+  "id": "e0af7fc75a7534df35558b40",
+  "level": 1,
+  "meaning": "measure word for books",
+  "pinyin": "běn",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": "classifier",
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-cF}aVx9s)!-1779527158813"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

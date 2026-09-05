@@ -1,0 +1,32 @@
+{
+  "audio": "31dabc30de488a6cd292c35306d3ed1e23270f1ebbc3e8f90c3f7fe2c047abab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交",
+      "谈"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "交谈",
+  "id": "ec1f174e358bb7c541fd5442",
+  "level": 6,
+  "meaning": "to chat, to converse",
+  "pinyin": "jiāotán",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-675-1779527163078"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

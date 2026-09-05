@@ -1,0 +1,31 @@
+{
+  "audio": "a5f66f05eaac2fa0d0384c8650ca2c0c43e45e3d00415fedd0ae95651655d94c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "鱼"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鲨鱼",
+  "id": "983dfc5b92f59199285d5dc1",
+  "level": 6,
+  "meaning": "shark",
+  "pinyin": "shāyú",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1135-1779527163538"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

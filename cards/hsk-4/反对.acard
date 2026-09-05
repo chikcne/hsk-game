@@ -1,0 +1,32 @@
+{
+  "audio": "d52b7499282177f6d4d9e7d1e83d59e592a682d9509a11e98eec99cb55554e0a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "反",
+      "对"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "反对",
+  "id": "83dba2dd335079698ac0df7f",
+  "level": 4,
+  "meaning": "to oppose, to be against",
+  "pinyin": "fǎnduì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bfn<_5I`5K-1779527159995"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

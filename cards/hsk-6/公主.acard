@@ -1,0 +1,31 @@
+{
+  "audio": "d79071c20ef3377afd2268099cc9a45809360807d2a0623e923c51d5a84b6db5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公主",
+  "id": "6abaafc6d8500e0ec6ff9e38",
+  "level": 6,
+  "meaning": "princess",
+  "pinyin": "gōngzhǔ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-468-1779527162871"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

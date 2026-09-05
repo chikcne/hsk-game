@@ -1,0 +1,29 @@
+{
+  "audio": "fee29a419c1260ff61945e7d3adec26ea1272ab307e8991bf64a3bff0546cafb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "妈妈",
+  "id": "b72696a6967da2fdb693701b",
+  "level": 1,
+  "meaning": "mom",
+  "pinyin": "māma",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-D-p<!x]juf-1779527158917"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

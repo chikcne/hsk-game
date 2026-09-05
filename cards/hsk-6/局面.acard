@@ -1,0 +1,32 @@
+{
+  "audio": "af4dde8ec5c778fdab542271df5f2415ee5154c450296df8d49ef3006da1e747.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "局",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "局面",
+  "id": "7a856100869d67ac11821d3c",
+  "level": 6,
+  "meaning": "situation",
+  "pinyin": "júmiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-744-1779527163147"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

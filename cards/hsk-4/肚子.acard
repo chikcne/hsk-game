@@ -1,0 +1,31 @@
+{
+  "audio": "fd2168c711e0a09b79a1c3c5079546824b2422058e92112aaa68861ca12770f8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肚子",
+  "id": "e04768067dbab6d9317ec846",
+  "level": 4,
+  "meaning": "belly, stomach",
+  "pinyin": "dùzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-yYuXRI-fO.-1779527159974"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

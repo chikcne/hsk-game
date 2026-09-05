@@ -1,0 +1,32 @@
+{
+  "audio": "779123453622e1d870d51f2953ee45b8744059e035613517812ffc76d1741450.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "声",
+      "歌"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "歌声",
+  "id": "f5511a7c9db19b9f6487fb1f",
+  "level": 4,
+  "meaning": "sound of singing, song",
+  "pinyin": "gēshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ge25/w$*|/-1779527160045"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

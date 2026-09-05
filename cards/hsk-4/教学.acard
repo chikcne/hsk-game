@@ -1,0 +1,32 @@
+{
+  "audio": "fbc7e23a3dfd6a013349448dc321938e37e6f1946582c34cfc21ec25636bdee9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "教"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "教学",
+  "id": "aff5950cb8e7c84955e08d94",
+  "level": 4,
+  "meaning": "teach",
+  "pinyin": "jiàoxué",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z03I+i1>~H-1779527160179"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

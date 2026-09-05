@@ -1,0 +1,32 @@
+{
+  "audio": "4e6a9c7b5d862161cdaf78f9d2f4699c1e3e6ca0ccf84d9b1832e42fbc55c5d0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同",
+      "学"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "同学",
+  "id": "8c6831bf2a09961465f28205",
+  "level": 1,
+  "meaning": "classmate",
+  "pinyin": "tóngxué",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-e$>>/P7xC<-1779527159014"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

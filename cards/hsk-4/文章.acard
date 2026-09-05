@@ -1,0 +1,31 @@
+{
+  "audio": "9a712f99b78a9ca6d0c19b41eb3f28b7120a83dba3c26bb74bfc5769343d1e09.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "章"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "文章",
+  "id": "48d5f510ff1e0db7ef5eb2d9",
+  "level": 4,
+  "meaning": "essay, article",
+  "pinyin": "wénzhāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-N6Kct0wTKL-1779527160581"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

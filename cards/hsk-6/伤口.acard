@@ -1,0 +1,32 @@
+{
+  "audio": "2af94d5cb9627a350848f6361e04b8eb882aa719d237905b93684e7ce71d2f0d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伤",
+      "口"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "伤口",
+  "id": "2e4bf5d785811e76e04e62ad",
+  "level": 6,
+  "meaning": "wound",
+  "pinyin": "shāngkǒu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1144-1779527163547"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

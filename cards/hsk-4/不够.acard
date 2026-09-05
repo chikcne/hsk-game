@@ -1,0 +1,32 @@
+{
+  "audio": "47b13eb6ebb9c643abccde7a0ca364c9c49aef227de6c633222ed2fe3b67a022.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "够"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不够",
+  "id": "b1235935cf4820771303633b",
+  "level": 4,
+  "meaning": "not enough, insufficient; not sufficiently",
+  "pinyin": "búgòu",
+  "pos": "verb、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bZiT*8mxSU-1779527159849"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

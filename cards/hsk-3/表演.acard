@@ -1,0 +1,32 @@
+{
+  "audio": "be27512b0abeadb1dea7906bbdb66e73e4ec018f5fa2fe0dd5db9954ef8d2cef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "演",
+      "表"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "表演",
+  "id": "f5c0f59722b4454e5e2fcfd6",
+  "level": 3,
+  "meaning": "to perform, to act",
+  "pinyin": "biǎoyǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-K$:?K<%,t7-1779527159333"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

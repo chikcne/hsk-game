@@ -1,0 +1,32 @@
+{
+  "audio": "170d864816393f7ec9205f6ad5f57deaed835827c4fb2af8318baa716eb1bcc1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "西",
+      "部"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "西部",
+  "id": "779a2d3ccf065471740a29d9",
+  "level": 4,
+  "meaning": "western region, west part",
+  "pinyin": "xībù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Dd~+7Eu2]R-1779527160591"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

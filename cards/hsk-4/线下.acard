@@ -1,0 +1,32 @@
+{
+  "audio": "376728e3a9f551941ac90a52e815987daf9b6222bbc820d02a4470fb977a17d6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "线"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "线下",
+  "id": "64a573c72dc8c9af4cbf954b",
+  "level": 4,
+  "meaning": "offline",
+  "pinyin": "xiànxià",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Mg9zncUrE^-1779527160603"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

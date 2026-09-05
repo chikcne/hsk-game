@@ -1,0 +1,32 @@
+{
+  "audio": "eb26f38b965b9c8b264ba79891906732e7f097475f9ab0398558763cbb0355b9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "平",
+      "静"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平静",
+  "id": "a9c66c81645dee598d0a2cf2",
+  "level": 5,
+  "meaning": "calm, quiet",
+  "pinyin": "píngjìng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KXzW8WB8aM-1779527161647"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

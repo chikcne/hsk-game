@@ -1,0 +1,29 @@
+{
+  "audio": "ef97368854877932de36a315f1513ae97a7648c3fea2bd6670280fb410df1789.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爱",
+  "id": "5bc2950ce15ddb821c318c0e",
+  "level": 1,
+  "meaning": "to love",
+  "pinyin": "ài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-J/^Ye~[EU`-1779527158804"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

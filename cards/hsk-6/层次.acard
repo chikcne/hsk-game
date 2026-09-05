@@ -1,0 +1,32 @@
+{
+  "audio": "ae2fb94796c9e7093e04757645a8ad9aa565000c211da2fe1f25bb972654be3d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "层",
+      "次"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "层次",
+  "id": "44a05d2a53da83b6263ef51d",
+  "level": 6,
+  "meaning": "level, layer",
+  "pinyin": "céngcì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-115-1779527162518"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

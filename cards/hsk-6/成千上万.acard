@@ -1,0 +1,34 @@
+{
+  "audio": "2890ea69dd83239c21868e6cb9d70c5741c8aa900b44cdc1fd7d8003f36258b9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "万",
+      "上",
+      "千",
+      "成"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成千上万",
+  "id": "f079c04119b7fb030b12598f",
+  "level": 6,
+  "meaning": "tens of thousands, numerous",
+  "pinyin": "chéngqiān-shàngwàn",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-163-1779527162566"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

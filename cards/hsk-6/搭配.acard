@@ -1,0 +1,32 @@
+{
+  "audio": "99189ee2faa1385dcf76b08a741a778f935704ca2610f8dfe32a7efd983ddac3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "搭",
+      "配"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "搭配",
+  "id": "fa6a9934ad71c5e7f89e5064",
+  "level": 6,
+  "meaning": "to match, to pair; matching",
+  "pinyin": "dāpèi",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-234-1779527162637"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

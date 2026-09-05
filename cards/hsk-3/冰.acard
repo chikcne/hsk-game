@@ -1,0 +1,29 @@
+{
+  "audio": "b6995335dcd1113b759ef863e44bd16c0ba58710e874f1db5018820caf9e75b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "冰",
+  "id": "c798688eccae43af7e94ca6d",
+  "level": 3,
+  "meaning": "ice; (to freeze)",
+  "pinyin": "bīng",
+  "pos": "noun、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-yo8T<gY[x5-1779527159337"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

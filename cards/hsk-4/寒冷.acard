@@ -1,0 +1,31 @@
+{
+  "audio": "7f937dc05c5a95ba78da696b9e8d7b1ba2122dd371c275f5c7d64cc0c86b324f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "冷"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "寒冷",
+  "id": "ebd8d0104216d0a5b7544b4d",
+  "level": 4,
+  "meaning": "cold, frigid, chilly",
+  "pinyin": "hánlěng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ACQXtx@%.F-1779527160089"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

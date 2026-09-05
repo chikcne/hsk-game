@@ -1,0 +1,31 @@
+{
+  "audio": "5f40e2275ed927f88b43f2f8acb600b2878f47081820e388193791a05ecc50c7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "后果",
+  "id": "e3d82c43cf8f12793398487f",
+  "level": 5,
+  "meaning": "consequence, aftermath",
+  "pinyin": "hòuguǒ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zMPE)+3jV*-1779527161289"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "a182fdeeac0e33ea55f6f31787920e297f2d675a685fc04a7fd033a1b5f174ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "休息",
+  "id": "92bc28aaa84dcadc95208826",
+  "level": 1,
+  "meaning": "to rest",
+  "pinyin": "xiūxi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-y1Ug1O!iY0-1779527159049"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

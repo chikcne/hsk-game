@@ -1,0 +1,32 @@
+{
+  "audio": "0c4e150a2fbe6d16e3284036a99b5a4b135ac5ae87955f50f55da66e85fd3a94.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "女"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "女人",
+  "id": "a998b00878bc8fcc9d5f1d9f",
+  "level": 3,
+  "meaning": "woman",
+  "pinyin": "nǚrén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-f[&Xsx`@|p-1779527159590"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

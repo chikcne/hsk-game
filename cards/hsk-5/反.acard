@@ -1,0 +1,29 @@
+{
+  "audio": "5713ee9ada27a0ad8d53bd61f75f5c55dd9caeae52b4a92c21c51269f02271c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "反",
+  "id": "6e9e26dbf21f84962b02c34f",
+  "level": 5,
+  "meaning": "opposite; to oppose; on the contrary",
+  "pinyin": "fǎn",
+  "pos": "adjective、verb、 adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M@}wWMc/A`-1779527161133"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

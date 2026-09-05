@@ -1,0 +1,32 @@
+{
+  "audio": "ade5453d856ead0e0f04a1b1afccc6de8bf1d8ddf326bafaf75742268a7bf0a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "平",
+      "等"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平等",
+  "id": "9bd6035516583a796e790276",
+  "level": 6,
+  "meaning": "equal",
+  "pinyin": "píngděng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-997-1779527163400"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

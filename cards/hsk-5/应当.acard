@@ -1,0 +1,31 @@
+{
+  "audio": "ea1f416e6927b3e5aa8c53282ee6adf5a24565913ac8417c3bcccb816ac73259.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "当"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "应当",
+  "id": "aa21b63a3f714810f75c677f",
+  "level": 5,
+  "meaning": "should, ought to",
+  "pinyin": "yīngdāng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-m8N186VJVg-1779527162180"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

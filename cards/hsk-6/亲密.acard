@@ -1,0 +1,32 @@
+{
+  "audio": "f0ed7157eb98e9eaae6b7eaaf2cd2b53cee25eb837e297fede516d1d2862500b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亲",
+      "密"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亲密",
+  "id": "23536f0d33709e9ecb08b964",
+  "level": 6,
+  "meaning": "close, intimate",
+  "pinyin": "qīnmì",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1049-1779527163452"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

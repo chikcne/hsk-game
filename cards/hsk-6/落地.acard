@@ -1,0 +1,32 @@
+{
+  "audio": "ead38549f569e7ffbc155dcd042b54b88e257c13ac73c0f675bd7b1e087f5156.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "落"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "落地",
+  "id": "d3d097e6ccf5f477fa1a388a",
+  "level": 6,
+  "meaning": "to land",
+  "pinyin": "luòdì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-881-1779527163284"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

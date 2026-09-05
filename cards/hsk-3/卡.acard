@@ -1,0 +1,29 @@
+{
+  "audio": "043442886be2e9dc17184095d125f95f23a8b78ff8eea40c5289ae4e1f7aa4cd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "卡",
+  "id": "e39213363cc728a0236d2dd9",
+  "level": 3,
+  "meaning": "card",
+  "pinyin": "kǎ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-F/{|dYQ;3p-1779527159528"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "e21dd36511b2f3b79b9233f370ce68e39a06cfcae6c4da15f22eccd28d66e62c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "破",
+  "id": "f7a85ef34dfbbffea2c249d3",
+  "level": 4,
+  "meaning": "broken, damaged; to break, to ruin",
+  "pinyin": "pò",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-h>PI^fWuJW-1779527160361"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "a0c10e3ddfca31d5911712c0ab912252a60f0f0786836b3d4c4deeaa1867476e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "捧",
+  "id": "42ebcbbb1b894397469c4939",
+  "level": 6,
+  "meaning": "to hold in both hands; (measure word for handfuls)",
+  "pinyin": "pěng",
+  "pos": "动、量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-982-1779527163385"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

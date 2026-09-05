@@ -1,0 +1,29 @@
+{
+  "audio": "d16c2c094d8bb41e62ade2f79ec96266daa14f65aac29d085fbca9c64302cb60.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "产",
+  "id": "2675fb92282d207224dac43b",
+  "level": 5,
+  "meaning": "to produce",
+  "pinyin": "chǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P-!R^)1W6O-1779527160907"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

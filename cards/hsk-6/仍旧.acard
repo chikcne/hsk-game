@@ -1,0 +1,32 @@
+{
+  "audio": "6c9fb9d7581196396442595cc56edaecf995ae478dc83505d460805dece4f01f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "仍",
+      "旧"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "仍旧",
+  "id": "0184c718c48dd335a9b17743",
+  "level": 6,
+  "meaning": "still, yet",
+  "pinyin": "réngjiù",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1108-1779527163511"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

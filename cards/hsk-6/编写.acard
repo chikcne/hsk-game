@@ -1,0 +1,32 @@
+{
+  "audio": "df77a02dbfca9438bdfd0f242cd27a2d28606cf9a9ac18bf3fc709c4b1c69d2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "写",
+      "编"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "编写",
+  "id": "8056222a52dba5d2d9ff07ad",
+  "level": 6,
+  "meaning": "to write",
+  "pinyin": "biānxiě",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-56-1779527162459"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

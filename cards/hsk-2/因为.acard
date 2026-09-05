@@ -1,0 +1,32 @@
+{
+  "audio": "7e3a584c58893f973f7013e8738d708a3dd9bef2d3e9086024315191a41b4280.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为",
+      "因"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "因为",
+  "id": "73c52d5dcef1e14773f105e8",
+  "level": 2,
+  "meaning": "because; because of",
+  "pinyin": "yīnwèi",
+  "pos": "preposition、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-zV[n?CZ}K[-1779527159279"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

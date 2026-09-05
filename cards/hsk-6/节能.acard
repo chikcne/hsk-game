@@ -1,0 +1,32 @@
+{
+  "audio": "b53c3168e23c1b123ab0c6ecb44d4548ba915d272a9d93a8331da12195b8be4d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "能",
+      "节"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "节能",
+  "id": "5a028ce6d3a2e37369f9e294",
+  "level": 6,
+  "meaning": "to save energy",
+  "pinyin": "jiénéng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-687-1779527163090"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "9b6f7bc39f30a32dd6446ef0d25cde9cbdd420cef6a6ebd9a3457a052a30f14d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开",
+      "花"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开花",
+  "id": "c6b2f3982669bb6bc9ae027a",
+  "level": 3,
+  "meaning": "to bloom",
+  "pinyin": "kāihuā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Yi=E?F]UY-1779527159529"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

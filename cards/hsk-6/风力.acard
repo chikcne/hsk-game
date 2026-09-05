@@ -1,0 +1,32 @@
+{
+  "audio": "05cabdfe4a055c18d988d4e0a4b60315e0a175f7f1bff93a9dca9662438baa4d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "风"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "风力",
+  "id": "0486749e432a8562090e4f07",
+  "level": 6,
+  "meaning": "wind power, wind force",
+  "pinyin": "fēnglì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-393-1779527162796"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

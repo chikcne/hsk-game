@@ -1,0 +1,29 @@
+{
+  "audio": "f06e702bf97f99ca823e2ae0afe10b898abd170e6a82c47e27f464b4f676619e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "键",
+  "id": "323e88d9ba995b57854c6aaf",
+  "level": 5,
+  "meaning": "key (on keyboard), button",
+  "pinyin": "jiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ul(!cXez8X-1779527161376"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

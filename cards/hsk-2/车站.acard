@@ -1,0 +1,32 @@
+{
+  "audio": "4e03135aca74bb9953cfcc16a26c28423f32e8016fdc43261bfb9bdcfa035675.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "站",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "车站",
+  "id": "a9b174b196ff5deda441e842",
+  "level": 2,
+  "meaning": "station",
+  "pinyin": "chēzhàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-xB<N4c%O=6-1779527159118"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "2ad578df50aff2e73a32cc826466341720bfd1fe41487a281f52230bac2044b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "毕竟",
+  "id": "822600058f4c5f1752c6e772",
+  "level": 5,
+  "meaning": "after all, after all",
+  "pinyin": "bìjìng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-OI_ePIQu~z-1779527160853"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

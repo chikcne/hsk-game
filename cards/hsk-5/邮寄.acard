@@ -1,0 +1,31 @@
+{
+  "audio": "a8f3b4845d4a95a3addc7ff1bd46f949aba576e6f5d340436d7ef7a5c2bb41d2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "寄"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "邮寄",
+  "id": "1c13f1209d955a840c744653",
+  "level": 5,
+  "meaning": "to send by mail",
+  "pinyin": "yóujì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bMR51]4mqH-1779527162206"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

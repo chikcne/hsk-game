@@ -1,0 +1,31 @@
+{
+  "audio": "bd5da77a8ab738dd33fad9ab2e56f52f5f86765dc4e6416ef20edef13805efe8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "决心",
+  "id": "7f471da3421e76410c4deb8c",
+  "level": 5,
+  "meaning": "determination, resolve; to be determined",
+  "pinyin": "juéxīn",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Eh-t#Ue&x#-1779527161451"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

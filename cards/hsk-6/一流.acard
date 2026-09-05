@@ -1,0 +1,32 @@
+{
+  "audio": "2db40801b9a82e0e1517d97c35a560616b539bba4c3574bec7e7089a18788c2c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "流"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一流",
+  "id": "f7505b8050e59363ccb8e934",
+  "level": 6,
+  "meaning": "first-class",
+  "pinyin": "yīliú",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1538-1779527163941"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

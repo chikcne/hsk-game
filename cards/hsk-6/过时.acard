@@ -1,0 +1,32 @@
+{
+  "audio": "0f322378fe9b9d6b8ba0baa3063cff26823aac6e7f5548a14e088e20f969764c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过时",
+  "id": "2cc27dc16a21fa4d97a472ff",
+  "level": 6,
+  "meaning": "to go out of fashion; outdated, obsolete",
+  "pinyin": "guòshí",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-516-1779527162919"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

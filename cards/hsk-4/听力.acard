@@ -1,0 +1,32 @@
+{
+  "audio": "ecb0724a23fb17a928eb37c158ed4be06a6852e09be62205a236616eae8be9a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "听"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "听力",
+  "id": "5dbc13abed79259b52fca5ef",
+  "level": 4,
+  "meaning": "listening ability, hearing",
+  "pinyin": "tīnglì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r95)}(%}iT-1779527160540"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

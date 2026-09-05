@@ -1,0 +1,32 @@
+{
+  "audio": "885c4e320f79ff9638ad13653eddcdd6fd95ad0f54da248410e9b6838f1f2a47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "右",
+      "边"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "右边",
+  "id": "a2b741c36e84e6b236660bc8",
+  "level": 2,
+  "meaning": "right side",
+  "pinyin": "yòubian",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-KU8WjS&=}Q-1779527159285"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

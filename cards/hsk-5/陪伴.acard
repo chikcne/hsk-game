@@ -1,0 +1,31 @@
+{
+  "audio": "a59e731f008c68e28b6183bcec26accbd73a09df09ad87c0d40d0af41cf6185c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "陪"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "陪伴",
+  "id": "c926578200c7ea033424bf45",
+  "level": 5,
+  "meaning": "to accompany",
+  "pinyin": "péibàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Gl`I+9(t>I-1779527161619"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

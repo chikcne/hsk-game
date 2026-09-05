@@ -1,0 +1,32 @@
+{
+  "audio": "5b43cde7e92782edb089d21e62de6fdc48008abdd5b731a1e541bb198c4c15ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "低",
+      "降"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "降低",
+  "id": "7a2f170f68df9404e1aa25f8",
+  "level": 4,
+  "meaning": "to reduce, to lower, to bring down",
+  "pinyin": "jiàngdī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-wUp4IFcr:M-1779527160166"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

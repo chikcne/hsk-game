@@ -1,0 +1,32 @@
+{
+  "audio": "2eee7985173f83d4740208798941b71395708260c525300545f2375331ccf1e6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "因",
+      "此"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "因此",
+  "id": "bcc1f4b7d411bae0a842ac70",
+  "level": 4,
+  "meaning": "therefore",
+  "pinyin": "yīncǐ",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-NghJdUhkrY-1779527160674"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

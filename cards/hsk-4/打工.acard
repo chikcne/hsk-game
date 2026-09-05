@@ -1,0 +1,31 @@
+{
+  "audio": "73b0eb134900c50cb8337708b12a451894eb1a15d42b23a6ac6a5cf3c47f494e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打工",
+  "id": "f3c8e957c1259bf3d1f0c748",
+  "level": 4,
+  "meaning": "to work a temporary job",
+  "pinyin": "dǎgōng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Nu&dimYdA4-1779527159920"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

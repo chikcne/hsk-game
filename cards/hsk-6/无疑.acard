@@ -1,0 +1,31 @@
+{
+  "audio": "2207561b98ab5b0199f2d36fec73065832e7dab6da666d09127718bc8e85bb4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "无"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "无疑",
+  "id": "3188b04933f3cab1a9b92f0a",
+  "level": 6,
+  "meaning": "undoubtedly",
+  "pinyin": "wúyí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1397-1779527163800"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

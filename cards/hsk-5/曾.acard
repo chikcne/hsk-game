@@ -1,0 +1,29 @@
+{
+  "audio": "6211c3ce152dd03b24365be5e4bb1ced000587920c3b77b736ce60d5e505f6a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "曾",
+  "id": "268903457d739c5b4598d2ec",
+  "level": 5,
+  "meaning": "once, ever",
+  "pinyin": "céng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-c[1UqvM.GD-1779527160900"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

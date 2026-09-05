@@ -1,0 +1,29 @@
+{
+  "audio": "09e103be92417496f98aae294ecc757ee678c4a9382a695ee13aaf096c6bf5f0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "硕士",
+  "id": "cd7c3f336187b42defaa8bc1",
+  "level": 4,
+  "meaning": "master",
+  "pinyin": "shuòshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-c)xqrCK*4/-1779527160505"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "ccc06b7dcf4f5f82ca37b796e1f0aabcf721b120bc577d4488e892f765a69871.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "颈椎",
+  "id": "f69910c230c2c6eb618da874",
+  "level": 6,
+  "meaning": "cervical vertebra",
+  "pinyin": "jǐngzhuī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-726-1779527163129"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

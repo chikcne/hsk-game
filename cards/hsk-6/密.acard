@@ -1,0 +1,29 @@
+{
+  "audio": "65cd8837b7322be1bc4287f6fada441bf34022128f58d65208ad76a8ef6f1a94.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "密",
+  "id": "0a5fa572f3d105983672d935",
+  "level": 6,
+  "meaning": "dense, close",
+  "pinyin": "mì",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-902-1779527163305"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

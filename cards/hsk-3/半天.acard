@@ -1,0 +1,32 @@
+{
+  "audio": "608a5439681357778fb307680094b68f56568db17325b2fe0d6bdc4cb75057d6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "半",
+      "天"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "半天",
+  "id": "814486676faa99f0b5eb0225",
+  "level": 3,
+  "meaning": "half a day, a long time",
+  "pinyin": "bàntiān",
+  "pos": "number-classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-kZ(Qr4]lzt-1779527159316"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

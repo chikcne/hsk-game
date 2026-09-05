@@ -1,0 +1,32 @@
+{
+  "audio": "65809cc9b7f52c82c912cf1b03859b647d8dfd3c6505aa09c40cd20f9af27808.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "位",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "车位",
+  "id": "befbb35f691f6bbbc0d89f10",
+  "level": 4,
+  "meaning": "parking space",
+  "pinyin": "chēwèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-wO-JJr0&gG-1779527159879"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

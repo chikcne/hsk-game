@@ -1,0 +1,29 @@
+{
+  "audio": "66846220a6c071045754f1e6c0c7a00f517f2e939909d099f2c036b559557658.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "递",
+  "id": "62ebc78d71965b76c3553b2f",
+  "level": 5,
+  "meaning": "to pass, to hand over",
+  "pinyin": "dì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Co}@;s.0LE-1779527161072"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

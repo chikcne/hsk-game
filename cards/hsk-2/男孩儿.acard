@@ -1,0 +1,31 @@
+{
+  "audio": "e8f299130dfd1c08b6ee94b7e99fa51ad445070387cf36e4cfa3f35b460d7cf4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "男"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "男孩儿",
+  "id": "f0881ffc1dda0206844dfdd9",
+  "level": 2,
+  "meaning": "boy",
+  "pinyin": "nánháir",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-u^mt|fur0D-1779527159213"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

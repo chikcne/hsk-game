@@ -1,0 +1,32 @@
+{
+  "audio": "2f305ca22a595d381004d3ba05412933898e2aead3c95c144c5055464f3b7616.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手",
+      "握"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "握手",
+  "id": "bda96e5ac7d187bac55f10c2",
+  "level": 5,
+  "meaning": "to shake hands",
+  "pinyin": "wòshǒu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bh2UK@Vi9u-1779527162008"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

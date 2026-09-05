@@ -1,0 +1,29 @@
+{
+  "audio": "2987db4236fd9fd3d923912f49393d9c61c34339981fcfab82750c3ab7b1eaf3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扇",
+  "id": "70a5af3c138d4bb8e3c9e7c9",
+  "level": 5,
+  "meaning": "to fan",
+  "pinyin": "shān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-e`6hXPsl_o-1779527161752"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

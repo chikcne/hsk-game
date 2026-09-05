@@ -1,0 +1,32 @@
+{
+  "audio": "630bcb0ed0b6129886ced09617085e78510c581e8ed86c36412e7056a58059f9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "还",
+      "退"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "退还",
+  "id": "2d3990959a983b6b36e47983",
+  "level": 5,
+  "meaning": "to refund",
+  "pinyin": "tuìhuán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tWIAz=5j}7-1779527161967"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

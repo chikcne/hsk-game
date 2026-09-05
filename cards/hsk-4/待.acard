@@ -1,0 +1,29 @@
+{
+  "audio": "302efcb43ffe62e745278e653b7ffdb393122b915f2d1380825e771fb7f4b0e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "待",
+  "id": "a5028f0d5f87ad57ea8d7fc3",
+  "level": 4,
+  "meaning": "to stay",
+  "pinyin": "dāi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MTu.r)uV,3-1779527159934"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "1cbbf44203d60c1483bfba7d7f4dbd770683527f26e972c1d0bbadf010764dcd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "赏"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "欣赏",
+  "id": "545361d4b168aab5eb40e079",
+  "level": 5,
+  "meaning": "to appreciate, to enjoy",
+  "pinyin": "xīnshǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-d;jc?Gbp![-1779527162083"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

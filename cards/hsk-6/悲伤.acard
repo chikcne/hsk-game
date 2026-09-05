@@ -1,0 +1,31 @@
+{
+  "audio": "afcb018702b37b2e47ca248344dbebd49d89db34c7569d98d0210023461af20c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伤"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "悲伤",
+  "id": "82cd4bed88363a2d0fa6474b",
+  "level": 6,
+  "meaning": "sad",
+  "pinyin": "bēishāng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-36-1779527162439"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

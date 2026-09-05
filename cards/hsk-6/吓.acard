@@ -1,0 +1,29 @@
+{
+  "audio": "f138792697182bbcc914e8fec3e8cd8e10a6b2ba5a8f251909e50553a0311528.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吓",
+  "id": "d2d67f4dcc6214fea4514552",
+  "level": 6,
+  "meaning": "to frighten",
+  "pinyin": "xià",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1413-1779527163816"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "78aaaa8a4dbc47ba61fcd6c9b5146fd724aa29f6a1c31048421f6d1540a3a197.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "推",
+  "id": "94460f92fd2dd6b313c50528",
+  "level": 4,
+  "meaning": "to push, to shove",
+  "pinyin": "tuī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-N,D]to[nB1-1779527160558"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

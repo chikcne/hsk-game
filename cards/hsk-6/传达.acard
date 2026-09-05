@@ -1,0 +1,31 @@
+{
+  "audio": "636e643847edb23d5b08a80625be304fd8cdde8a7e7f66c4c81dcd5f7494ce9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "传达",
+  "id": "9c8a6a675f2a7124a78b2123",
+  "level": 6,
+  "meaning": "to convey, to pass on",
+  "pinyin": "chuándá",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-202-1779527162605"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

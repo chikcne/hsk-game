@@ -1,0 +1,33 @@
+{
+  "audio": "e95a16dee5bb71fd6ee0ca61df6dbdf0c493fb8870a8cad8c49aa40ba903aa01.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "不得",
+      "得"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不得不",
+  "id": "21e5e87c9ab3f0d3be8fdd42",
+  "level": 4,
+  "meaning": "have to, cannot but",
+  "pinyin": "bùdébù",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-C.!MAmf]&@-1779527159854"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

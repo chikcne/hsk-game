@@ -1,0 +1,29 @@
+{
+  "audio": "853f38246273e1b834adb3f653739556b4cd093d02908dcc90b2e51fa5b266d3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "消耗",
+  "id": "1ce7b47f28c97ce28dcbdb46",
+  "level": 6,
+  "meaning": "to consume",
+  "pinyin": "xiāohào",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1448-1779527163851"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

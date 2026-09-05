@@ -1,0 +1,29 @@
+{
+  "audio": "aad62d8429389b89b6987345d6c482001967974890920b0ff3e8564d8b457928.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "模仿",
+  "id": "89cc94c53fdeb7ae844dfdbf",
+  "level": 6,
+  "meaning": "to imitate",
+  "pinyin": "mófǎng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-931-1779527163334"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "802a557b134ced327652d54fa7dcd760c4cc3464a8bf5663bed573382d2fe0e6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "改",
+  "id": "833026a0c1a2fcb342c09e90",
+  "level": 4,
+  "meaning": "to change, to alter",
+  "pinyin": "gǎi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-D5B(.}gLL--1779527160021"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "e2fca65b0a52b5a4cbadad0c75326b696b63f96d588b60c88ab0ac9e869bcd61.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "手"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "动手",
+  "id": "a3e99c566f36679686fa2bc1",
+  "level": 5,
+  "meaning": "to start work, to take action",
+  "pinyin": "dòngshǒu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-d(Hzkr5(o.-1779527161095"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

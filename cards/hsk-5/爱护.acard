@@ -1,0 +1,31 @@
+{
+  "audio": "f17fb4d2c1cb035cde97cc6f73f511752c5990c2063e7eb320d132cf0bf7080f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "爱"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爱护",
+  "id": "739fd6530aa4666416cdffa0",
+  "level": 5,
+  "meaning": "to cherish, to take good care of",
+  "pinyin": "àihù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-MZ(Zqd#pcH-1779527160807"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "5c22d46fd1407ee802c3548d9c5a910b889c1b177c7ae7d3d625126048e3addc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "初",
+      "年"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "年初",
+  "id": "299fe63d6d56c0bb4d92c149",
+  "level": 5,
+  "meaning": "beginning of the year",
+  "pinyin": "niánchū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Esb+M{zSeW-1779527161600"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "03d895686e49186dcc939d8df98f267e3ece79d7bbb208b38e4b514b30a749d0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "节"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "节奏",
+  "id": "58e87820f2d9d06d292f90d5",
+  "level": 6,
+  "meaning": "rhythm",
+  "pinyin": "jiézòu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-691-1779527163094"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

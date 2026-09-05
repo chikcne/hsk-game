@@ -1,0 +1,29 @@
+{
+  "audio": "6fa03743531ba9d571ec07f80fa3b81234e9ee9f8754c41da502389e66645d8e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "评",
+  "id": "60c852483c079263ef464056",
+  "level": 5,
+  "meaning": "to judge, to evaluate",
+  "pinyin": "píng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F{YDWk1+;&-1779527161641"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

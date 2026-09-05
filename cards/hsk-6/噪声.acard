@@ -1,0 +1,31 @@
+{
+  "audio": "b53c97183db089fe64a017e8943409f1361080ab6839023a42c4719adda10541.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "声"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "噪声",
+  "id": "65c91913db85c9a454c39515",
+  "level": 6,
+  "meaning": "noise",
+  "pinyin": "zàoshēng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1651-1779527164054"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

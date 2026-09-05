@@ -1,0 +1,29 @@
+{
+  "audio": "13466977073da4b402b8d6cda52767a79f6ba604d035e14a3b7799fb197822fe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "体育",
+  "id": "915c808df1c1006e6ba34b1b",
+  "level": 3,
+  "meaning": "physical education",
+  "pinyin": "tǐyù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-rXdk7V9UMM-1779527159656"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

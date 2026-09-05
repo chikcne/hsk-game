@@ -1,0 +1,29 @@
+{
+  "audio": "1fbf597bdb38719d3860fc1deb8796f109e5b994ea1b3789eb26a626b6b4bc86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "恭喜",
+  "id": "8875a9f0a3b19fa9b22043fe",
+  "level": 5,
+  "meaning": "to congratulate",
+  "pinyin": "gōngxǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F=*dC%%OVH-1779527161217"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

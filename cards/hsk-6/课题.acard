@@ -1,0 +1,32 @@
+{
+  "audio": "ea0bc623b964399619464db1088f39a9dceb167c0669475d357a6d8dc2177815.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "课",
+      "题"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "课题",
+  "id": "c402b29803e69fe647dffe9a",
+  "level": 6,
+  "meaning": "topic, research question",
+  "pinyin": "kètí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-788-1779527163191"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

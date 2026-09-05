@@ -1,0 +1,32 @@
+{
+  "audio": "4bbb0f3b345ba2d533727807222e0fbf4327bf373a360ed66e265413b21d3d96.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "打"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打动",
+  "id": "0f5e7fc09bdd5a9e9d735505",
+  "level": 6,
+  "meaning": "to move, to touch",
+  "pinyin": "dǎdòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-237-1779527162640"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

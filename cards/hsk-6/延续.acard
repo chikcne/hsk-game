@@ -1,0 +1,29 @@
+{
+  "audio": "b5303cb370b548a3786bef54cc64b32ec7e6a9a4687efdb7eacd43309be038bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "延续",
+  "id": "1d9c9bb8632ebd48640054b8",
+  "level": 6,
+  "meaning": "to continue",
+  "pinyin": "yánxù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1512-1779527163915"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

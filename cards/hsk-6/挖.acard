@@ -1,0 +1,29 @@
+{
+  "audio": "e07fe4c8ff433ce7de69717b11cbc91b820987577b52288920fbc1d0c2f7e274.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "挖",
+  "id": "89556b07a86532cafc53e464",
+  "level": 6,
+  "meaning": "to dig",
+  "pinyin": "wā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1347-1779527163750"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

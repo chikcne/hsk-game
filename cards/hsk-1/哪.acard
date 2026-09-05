@@ -1,0 +1,29 @@
+{
+  "audio": "8c1551607c0672804ad8dee3958f41f510327ab664af20030cc675e894a343ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哪",
+  "id": "59e2015df48399f639efbed1",
+  "level": 1,
+  "meaning": "which",
+  "pinyin": "nǎ",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-faFx_l2B]@-1779527158934"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

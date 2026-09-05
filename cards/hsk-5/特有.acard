@@ -1,0 +1,32 @@
+{
+  "audio": "d3aa5896c5cc10d1c0a5636e80925245c528932f25d1e4b5411a7e631538a902.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有",
+      "特"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "特有",
+  "id": "5c71a8e69924cdd2e7888626",
+  "level": 5,
+  "meaning": "characteristic, distinctive",
+  "pinyin": "tèyǒu",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B4w>|pxdc>-1779527161913"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

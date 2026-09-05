@@ -1,0 +1,31 @@
+{
+  "audio": "37c4bdd9db3f992330a42fa9158b4b79d25125df26957ced878ae72def1243a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学院",
+  "id": "a160e6a70390b97ba8dd4a1e",
+  "level": 4,
+  "meaning": "college, academy, institute",
+  "pinyin": "xuéyuàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ej8Qa<$@o9-1779527160641"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

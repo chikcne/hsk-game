@@ -1,0 +1,31 @@
+{
+  "audio": "413d6730559d39cfa1af98a7d8cdfdfa6332cb04791ea67d6cbfa6979b8daef4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "网"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "网络",
+  "id": "ee0125ccf3762ac4894a425d",
+  "level": 5,
+  "meaning": "network",
+  "pinyin": "wǎngluò",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l+URt]dSn`-1779527161982"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

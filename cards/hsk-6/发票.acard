@@ -1,0 +1,32 @@
+{
+  "audio": "514662d9782c37ca007900fe98a067cc2e48c0689b391f06260bea226228b57e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "票"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发票",
+  "id": "7b0ae4c5534c5bb4563551ad",
+  "level": 6,
+  "meaning": "invoice, receipt",
+  "pinyin": "fāpiào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-355-1779527162758"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

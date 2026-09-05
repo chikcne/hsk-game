@@ -1,0 +1,31 @@
+{
+  "audio": "a03a004c45d7b663696a1d86a2d1254dc2ad81712f8dccc92c4afc99ce2b0ac6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "行"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "履行",
+  "id": "0fc3d98cd83c88bf1619372e",
+  "level": 6,
+  "meaning": "to perform, to fulfil",
+  "pinyin": "lǚxíng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-872-1779527163275"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "928fde508d8ad47a9baf2402a20972f08910b25b76c20e4680553efe62277c15.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "们",
+      "我"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "我们",
+  "id": "32282301042d0cf0da4346c5",
+  "level": 1,
+  "meaning": "we",
+  "pinyin": "wǒmen",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-P8ABwcZr,3-1779527159025"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "6053abac61ce1017b8829f66acc4682eb483b9bff510c5f358121cd04cfe0421.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保质期",
+  "id": "82953178aa54bc25b89b85c8",
+  "level": 5,
+  "meaning": "shelf life, expiration date",
+  "pinyin": "bǎozhìqī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Cl;D_?sQlt-1779527160832"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

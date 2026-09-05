@@ -1,0 +1,32 @@
+{
+  "audio": "52487905cd85e029c0d6866ea09e2eab9f7c47031a19b0fb9a7b3cc1e0327a91.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事",
+      "人"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人事",
+  "id": "a92300d8cb9b5de08d03c6c5",
+  "level": 6,
+  "meaning": "personnel, human resources",
+  "pinyin": "rénshì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1099-1779527163502"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

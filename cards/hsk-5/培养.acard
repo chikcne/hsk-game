@@ -1,0 +1,31 @@
+{
+  "audio": "bb6f765e0af91c0ccb55a384d75ff0d58244f59089d971fefddf714d0613bbcd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "养"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "培养",
+  "id": "e578f4d1d625c5f6327a67e4",
+  "level": 5,
+  "meaning": "to cultivate, to foster",
+  "pinyin": "péiyǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-emYRbULY6v-1779527161621"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

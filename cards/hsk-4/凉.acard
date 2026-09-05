@@ -1,0 +1,29 @@
+{
+  "audio": "c3ec370e6d89ef2c625142b018cb43c150a0a1d63291204db77bf0f0e253e90f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "凉",
+  "id": "f4add112fddf3df2af6118e6",
+  "level": 4,
+  "meaning": "cool, cold",
+  "pinyin": "liáng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-PpWwXI>51$-1779527160274"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

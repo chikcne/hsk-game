@@ -1,0 +1,31 @@
+{
+  "audio": "6150f0f75b9116a6d5546eb88a785aeabc8aac10de60d728846f284706a20774.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "将"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "将军",
+  "id": "20c07a5689c7c2bb3015b5f2",
+  "level": 6,
+  "meaning": "general",
+  "pinyin": "jiāngjūn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-664-1779527163067"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

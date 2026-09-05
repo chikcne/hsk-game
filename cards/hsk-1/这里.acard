@@ -1,0 +1,32 @@
+{
+  "audio": "f7fea9128172e5575a16c5bd7374cc6c2a6dcebb5e0767095cec220a18eb9717.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "这",
+      "里"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "这里",
+  "id": "f99d26a6ee7cdc10839a8af0",
+  "level": 1,
+  "meaning": "here (formal; southern china)",
+  "pinyin": "zhèlǐ",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-I_+-!:4Ur)-1779527159085"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

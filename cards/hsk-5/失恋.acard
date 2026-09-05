@@ -1,0 +1,29 @@
+{
+  "audio": "5dbf980cfaa5eac47961f9365fb8e52daca08d5f740774f6eb94d3319116a95c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "失恋",
+  "id": "7a702a0fdbc24c6c002a0e88",
+  "level": 5,
+  "meaning": "to lose in love",
+  "pinyin": "shīliàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-y8u8_OP*g2-1779527161808"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

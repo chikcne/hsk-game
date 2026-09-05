@@ -1,0 +1,31 @@
+{
+  "audio": "3ad3d00942c8e0b098bbf0d373b5b017aa397e9d4db7262e131886d485ea337a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保障",
+  "id": "e3ab034b8093b6bec7e08d13",
+  "level": 6,
+  "meaning": "to ensure, to guarantee; guarantee",
+  "pinyin": "bǎozhàng",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-26-1779527162429"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

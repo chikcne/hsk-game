@@ -1,0 +1,32 @@
+{
+  "audio": "0a37b1be84a3c0812b683e86db8c85c8b045b56eb7d5287b3585be3431efcf6b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "对",
+      "立"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "对立",
+  "id": "6abb4250b80c5f37362b70d0",
+  "level": 6,
+  "meaning": "to oppose, to be in opposition",
+  "pinyin": "duìlì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-332-1779527162735"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

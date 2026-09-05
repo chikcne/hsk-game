@@ -1,0 +1,29 @@
+{
+  "audio": "e425b32b18c6965335e82bb64fd30a33edbeb98fa73e548596295173ebfcd3dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "居然",
+  "id": "e02a3691bb481364551acabb",
+  "level": 5,
+  "meaning": "unexpectedly",
+  "pinyin": "jūrán",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x9LI?{Ej}r-1779527161436"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

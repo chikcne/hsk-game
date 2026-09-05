@@ -1,0 +1,31 @@
+{
+  "audio": "c02c81bde7265d820d7b15de5bb7c11f399192b6eeebce1b632970bd910586c6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "停"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暂停",
+  "id": "c93e2501136bb8716c5baa34",
+  "level": 4,
+  "meaning": "to suspend, to pause",
+  "pinyin": "zàntíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-B86f%OEzvJ-1779527160720"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

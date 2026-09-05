@@ -1,0 +1,31 @@
+{
+  "audio": "6c8453c59de33f443c4ad15b404134cac2460bb1e9273c8eb69660802c45c9cd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "追"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "追究",
+  "id": "9deb251cdfaea25a64f16507",
+  "level": 6,
+  "meaning": "to investigate, to look into",
+  "pinyin": "zhuījiū",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1773-1779527164176"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "895538cb3c7f4248a295b76114062bb442d0937a072877b75052bd3999c52120.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "珍惜",
+  "id": "1ab546781b9596497e55e00a",
+  "level": 5,
+  "meaning": "to cherish",
+  "pinyin": "zhēnxī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-b!|SmjeMkf-1779527162288"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

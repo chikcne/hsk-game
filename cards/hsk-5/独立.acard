@@ -1,0 +1,31 @@
+{
+  "audio": "909d4578e197510b2f489dc1d776c5aa29765a75b01c8bc0c2c3cd739389e875.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "立"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "独立",
+  "id": "12621cb14fbbbbc708a00475",
+  "level": 5,
+  "meaning": "to be independent; independent",
+  "pinyin": "dúlì",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zKVzSO1];h-1779527161098"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

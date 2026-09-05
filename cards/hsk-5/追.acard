@@ -1,0 +1,29 @@
+{
+  "audio": "1133484be175931c392b7a5eb31ae5112afb7234fd2b4e39a92f69551662d3dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "追",
+  "id": "4140b882afbb1b5120095f6e",
+  "level": 5,
+  "meaning": "to chase, to pursue",
+  "pinyin": "zhuī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-K((2],{;}c-1779527162368"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

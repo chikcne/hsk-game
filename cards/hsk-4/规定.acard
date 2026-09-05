@@ -1,0 +1,31 @@
+{
+  "audio": "c46419e2c25f02b912b4a3bc732205c9768d844d264704158212dfda6bb23b2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "规定",
+  "id": "5fa3c0a03f84aa3a8e40c1cc",
+  "level": 4,
+  "meaning": "stipulate, prescribe, set rules; regulation, rule, stipulation",
+  "pinyin": "guīdìng",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vu|eH%~@gI-1779527160081"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

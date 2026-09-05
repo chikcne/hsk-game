@@ -1,0 +1,31 @@
+{
+  "audio": "f75fb2c71bea895dc641230d093efad5e1a498f6adf9b5cb3856d9beaf1324f7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "其"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "其实",
+  "id": "5106da3c7802956cf3b936b9",
+  "level": 3,
+  "meaning": "actually",
+  "pinyin": "qíshí",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-HD)9T32D%0-1779527159602"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

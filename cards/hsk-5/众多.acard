@@ -1,0 +1,31 @@
+{
+  "audio": "f43379983b970ef7bd350126d5176675182c161a3fe6c065722834b4f064b920.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "多"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "众多",
+  "id": "4e2585d08e4c49d9d025e223",
+  "level": 5,
+  "meaning": "numerous",
+  "pinyin": "zhòngduō",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gacQ-d(vL^-1779527162335"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

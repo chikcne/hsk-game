@@ -1,0 +1,29 @@
+{
+  "audio": "4957f7fab1ac4c4da160b45b2af80582cd94a1ef32f2b840ed703f938d529d9e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "量",
+  "id": "8a8b24da0ce0dd9f34e7ac96",
+  "level": 4,
+  "meaning": "to measure, to weigh",
+  "pinyin": "liáng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-PC~$Ga=|b@-1779527160275"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

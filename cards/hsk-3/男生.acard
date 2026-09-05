@@ -1,0 +1,32 @@
+{
+  "audio": "a99ffd1eb59d4c541ca0f1c78fd5ac75fea89db7e012c660cbab330247fe48d3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生",
+      "男"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "男生",
+  "id": "cf02d69d7cad7b156908ee8a",
+  "level": 3,
+  "meaning": "boy student",
+  "pinyin": "nánshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-v,l=q/cD%U-1779527159583"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

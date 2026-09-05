@@ -1,0 +1,29 @@
+{
+  "audio": "d2626bb5ba5a2912a3aaa1322901236042c3a89f7afd6fbe839703061b66adcb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "病",
+  "id": "01cd5edaa55fb2c97ccee0ad",
+  "level": 1,
+  "meaning": "illness, disease; to be ill",
+  "pinyin": "bìng",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-eGbaAyq;`p-1779527158815"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

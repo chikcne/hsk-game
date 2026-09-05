@@ -1,0 +1,31 @@
+{
+  "audio": "6689fa57030fa391943c0358e62c9d2e143186ce584ef421bb380e93ffc78245.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "速度",
+  "id": "13e2815d0be1949caae362ac",
+  "level": 4,
+  "meaning": "speed",
+  "pinyin": "sùdù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s[JfS0~}[V-1779527160507"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

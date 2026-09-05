@@ -1,0 +1,31 @@
+{
+  "audio": "0985b2db25bdcbfa93c5618600776e4578d9b8afabdefadd616f7b799b465d30.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保健",
+  "id": "76767b14ec297175259c6130",
+  "level": 6,
+  "meaning": "health care",
+  "pinyin": "bǎojiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-23-1779527162426"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

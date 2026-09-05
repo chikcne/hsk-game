@@ -1,0 +1,31 @@
+{
+  "audio": "18e6ef6bd2146623c2029e3a910e0ad5ec51ba43b91baed0c69482e551d6a8e1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "们"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "咱们",
+  "id": "1368bc8c0b54caded02c00a2",
+  "level": 3,
+  "meaning": "we",
+  "pinyin": "zánmen",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-dd;#B0=HKu-1779527159765"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

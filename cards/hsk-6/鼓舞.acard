@@ -1,0 +1,31 @@
+{
+  "audio": "ee93c17421fc1dc84bc83c7f961675fa67aa69bd8eb0077eb18d1cdb02302396.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "鼓"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鼓舞",
+  "id": "e7763adb4e462b9e171a10c2",
+  "level": 6,
+  "meaning": "to inspire, to encourage; inspiring",
+  "pinyin": "gǔwǔ",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-481-1779527162884"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

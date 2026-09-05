@@ -1,0 +1,32 @@
+{
+  "audio": "d65dd9c267de1aa009c91357618f8aeff36050cfe30c59267608afc266121189.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "收",
+      "费"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "收费",
+  "id": "edbba748d2d8d6cd29df713d",
+  "level": 4,
+  "meaning": "to charge a fee, to collect payment",
+  "pinyin": "shōufèi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hG!TN;wO^_-1779527160480"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "3ada8c8bf6903838422e5a0fc8d5a870e066232730c384ae304d2a2b584f925b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "钥匙",
+  "id": "7b0e4d16de0e3966d96f0c6a",
+  "level": 4,
+  "meaning": "key",
+  "pinyin": "yàoshi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-i5,i]r8%8l-1779527160663"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "ef3f6a24b23be8ce06dcf540ce3606772071069f1f5fef241cd778ee82058cf7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "正",
+  "id": "e8d70681072ec20e3d98f473",
+  "level": 2,
+  "meaning": "just, exactly, right; (straight)",
+  "pinyin": "zhèng",
+  "pos": "adverb、 （adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-GEn%_YC{t$-1779527159294"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

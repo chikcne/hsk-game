@@ -1,0 +1,31 @@
+{
+  "audio": "6156d71b6e8d2d88a0d44ae703c8edc51a0504da4aac78d5cd177afc03fec81e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "间"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "瞬间",
+  "id": "543e25d5366776e504a7204e",
+  "level": 6,
+  "meaning": "instant",
+  "pinyin": "shùnjiān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1238-1779527163641"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

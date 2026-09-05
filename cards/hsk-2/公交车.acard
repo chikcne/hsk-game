@@ -1,0 +1,33 @@
+{
+  "audio": "bce2752c4f9c01256fa488eb202c0fe649a866a73bd0d417525cabe6fda2b5cb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交",
+      "公",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公交车",
+  "id": "3339dbb1c1deb51a45aa7922",
+  "level": 2,
+  "meaning": "bus",
+  "pinyin": "gōngjiāochē",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-B|4ZdTDPU-1779527159149"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

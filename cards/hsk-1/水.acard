@@ -1,0 +1,29 @@
+{
+  "audio": "f923807237da4eaef718530be2229d85e38896343d7a12340881db4e6f2f4098.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "水",
+  "id": "2411d805203f9aa9b797f81b",
+  "level": 1,
+  "meaning": "water",
+  "pinyin": "shuǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-EP?d8mWN+y-1779527158995"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

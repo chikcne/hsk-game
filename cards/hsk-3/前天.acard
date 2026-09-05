@@ -1,0 +1,32 @@
+{
+  "audio": "987f7e1f8895f18bb0146b55c161d5e219d5f68a75d1d46b9e614d876b0802ff.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "天"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前天",
+  "id": "c376d1e070b8d07033b0b75d",
+  "level": 3,
+  "meaning": "the day before yesterday",
+  "pinyin": "qiántiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-G1jzzS{@2)-1779527159609"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

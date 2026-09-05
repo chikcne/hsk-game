@@ -1,0 +1,31 @@
+{
+  "audio": "8b3c5d9c3ce7b4dd28fa07d06f2497cccb86fb489e3364eac17a0e6b2acd63c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "手臂",
+  "id": "a049bbeb603c7bdb5c2276f9",
+  "level": 6,
+  "meaning": "arm",
+  "pinyin": "shǒubì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1212-1779527163615"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

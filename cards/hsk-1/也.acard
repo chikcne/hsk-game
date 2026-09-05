@@ -1,0 +1,29 @@
+{
+  "audio": "6a5aad38bfe29b4ec270bd6b9ad486802256f5a9eaa9939ec2cc4afd77451cb5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "也",
+  "id": "0bee4a7c80d56591b956c4de",
+  "level": 1,
+  "meaning": "also, too",
+  "pinyin": "yě",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-g2RUm1wKi;-1779527159056"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

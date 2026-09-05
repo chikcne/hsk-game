@@ -1,0 +1,31 @@
+{
+  "audio": "1335d7c7fb4c07640869610d970ec0d2250b686412c74e95dccbea075bb21d2b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "电"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电影",
+  "id": "16d7d40e6d6c2baba975e852",
+  "level": 1,
+  "meaning": "movie, film",
+  "pinyin": "diànyǐng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-^%FzzOOEd-1779527158841"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

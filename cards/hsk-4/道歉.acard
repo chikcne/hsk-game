@@ -1,0 +1,31 @@
+{
+  "audio": "e6b13ca3233bc00f17f22438660aabd9c34786a3eb92f25b781c4e6ef8ade420.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "道"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "道歉",
+  "id": "086e2bc7adf8e3a9873336f6",
+  "level": 4,
+  "meaning": "to apologize",
+  "pinyin": "dàoqiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-uSNYid-aLC-1779527159947"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

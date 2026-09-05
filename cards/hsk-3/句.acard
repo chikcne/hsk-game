@@ -1,0 +1,29 @@
+{
+  "audio": "8cd4c2bdff8c580e84844d2710788c067ae28c2a6be3f74c5c47064fe528ebab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "句",
+  "id": "743bb51d7592c0d425763b54",
+  "level": 3,
+  "meaning": "measure word of sentence",
+  "pinyin": "jù",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-EV9$gy/;wj-1779527159525"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

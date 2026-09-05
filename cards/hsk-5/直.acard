@@ -1,0 +1,29 @@
+{
+  "audio": "d2daf3bd7e94c29dbb91239fb0ddb018900b7d81666d7bd0276a4c100e440a30.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "直",
+  "id": "3462bed7d028912a8a5c0e08",
+  "level": 5,
+  "meaning": "straight; to straighten; directly, continuously",
+  "pinyin": "zhí",
+  "pos": "adjective、verb、 adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-m/c_6WNBOY-1779527162304"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

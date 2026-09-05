@@ -1,0 +1,29 @@
+{
+  "audio": "bd648a0a4ed00fcded06ddad461950b16b5a5020864ca45465a6969604d2b98a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "列",
+  "id": "7482b75dd18de175889f88f9",
+  "level": 4,
+  "meaning": "to arrange in a row, to list; measure word for rows or lines",
+  "pinyin": "liè",
+  "pos": "verb、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vQmua0][|i-1779527160278"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

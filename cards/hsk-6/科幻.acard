@@ -1,0 +1,31 @@
+{
+  "audio": "87315d8ca1a0154aee495a992a8a7bb5c5fc2cc34966d30fb6653043a872b5a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "科"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "科幻",
+  "id": "25fc53ae379547bfa62817ca",
+  "level": 6,
+  "meaning": "science fiction",
+  "pinyin": "kēhuàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-780-1779527163183"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

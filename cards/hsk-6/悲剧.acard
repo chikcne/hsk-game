@@ -1,0 +1,29 @@
+{
+  "audio": "daf8ad3f15307bf1310f463a5b564d0ab475662ac1b740d90bee7986704b54b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "悲剧",
+  "id": "d4df7ca92f25ec590a98a1d5",
+  "level": 6,
+  "meaning": "tragedy",
+  "pinyin": "bēijù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-35-1779527162438"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

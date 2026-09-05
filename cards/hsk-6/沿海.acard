@@ -1,0 +1,32 @@
+{
+  "audio": "a303816850ced7694e443414eb5c2e1678638cd0fa2a8ed465d731b1be8f8b94.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "沿",
+      "海"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "沿海",
+  "id": "184acb2a41de24ad2e29e286",
+  "level": 6,
+  "meaning": "coastal area",
+  "pinyin": "yánhǎi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1504-1779527163907"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "aee9cd4e491d500f5e1e9026e4ab80ae2675e3745a4f2f982287a8e213bf31ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "怪"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "奇怪",
+  "id": "6dea165fb4bb0a262e448b1b",
+  "level": 3,
+  "meaning": "strange",
+  "pinyin": "qíguài",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-mj(>f3-.0,-1779527159601"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

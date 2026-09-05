@@ -1,0 +1,31 @@
+{
+  "audio": "c1b183cf2e1ea1292c05aa2d7e331c0c61459d91149f20d72fc930c899278c5c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不良",
+  "id": "803142ee1e18ca2ac578a2fa",
+  "level": 5,
+  "meaning": "bad, harmful",
+  "pinyin": "bùliáng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Bb9@Sz[puR-1779527160882"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

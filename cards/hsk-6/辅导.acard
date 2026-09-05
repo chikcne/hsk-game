@@ -1,0 +1,29 @@
+{
+  "audio": "788447e799ece1d6ca89becf2237c1f6dd9d5b776de87616bb7bb638975de262.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "辅导",
+  "id": "c3399867cd27dc89c42c7bb1",
+  "level": 6,
+  "meaning": "to coach, to tutor",
+  "pinyin": "fǔdǎo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-405-1779527162808"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

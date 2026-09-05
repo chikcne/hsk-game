@@ -1,0 +1,29 @@
+{
+  "audio": "226c1aa0907ff0ae664eb43cac16223bfe4e5b2b622a8432625de154a57495c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "踩",
+  "id": "08ad6a98bdc450ca90033b8f",
+  "level": 6,
+  "meaning": "to step on",
+  "pinyin": "cǎi",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-101-1779527162504"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

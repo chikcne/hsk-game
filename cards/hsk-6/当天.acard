@@ -1,0 +1,32 @@
+{
+  "audio": "98b255f5e47602b2c03c52c46db53dae2f922e4f4939b289269b0913d4a17946.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天",
+      "当"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当天",
+  "id": "af12fced69426117734a85da",
+  "level": 6,
+  "meaning": "that very day",
+  "pinyin": "dàngtiān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-275-1779527162678"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "9f3b3008b39de9dbb7baa47e997b3a5f3762e6402752560ded3805ae035a3524.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分",
+  "id": "82aceee44bf66056e45a441e",
+  "level": 1,
+  "meaning": "minute; (to divide, to separate; component, part)",
+  "pinyin": "fēn",
+  "pos": "classifier、 （verb、noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-OgC0WxORf3-1779527158858"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

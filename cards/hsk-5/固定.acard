@@ -1,0 +1,31 @@
+{
+  "audio": "d9ad70265467fa35ff59d8add377f638dd52d2f11fce4de866130c7ecd43f5e0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "固定",
+  "id": "203b2cd414d95100b0829d26",
+  "level": 5,
+  "meaning": "to fix, to fasten",
+  "pinyin": "gùdìng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HG>}A)Mc5|-1779527161230"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

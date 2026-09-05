@@ -1,0 +1,32 @@
+{
+  "audio": "ae6d8864d36733c0186fa32394a62f92b46ad7c029a54aa8643bbd398df44fe7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "先",
+      "首"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "首先",
+  "id": "47994b7f324f8265d5b863a1",
+  "level": 4,
+  "meaning": "first, firstly; first of all",
+  "pinyin": "shǒuxiān",
+  "pos": "adverb、pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-QL)>mlD?&K-1779527160486"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

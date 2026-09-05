@@ -1,0 +1,29 @@
+{
+  "audio": "7d00b6a57ce878566cd9072acdd67eb846c3cef1591612976f7ad6dc1b7c24af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "既",
+  "id": "de9ab03a4c9e2f276d044352",
+  "level": 4,
+  "meaning": "already, since; both ... and ..., as well as (used in the pattern 既...又/也...)",
+  "pinyin": "jì",
+  "pos": "adverb、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d=u|xXY?O[-1779527160130"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "746d3b617dfbd2522d99d8837dc0605c7109ba2611587e6b0f9caf716a3ed2c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "数",
+  "id": "95ce4f940648702673c09998",
+  "level": 5,
+  "meaning": "to count",
+  "pinyin": "shǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-o^CS/;a~*<-1779527161866"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

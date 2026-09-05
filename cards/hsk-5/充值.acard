@@ -1,0 +1,31 @@
+{
+  "audio": "038b846779ec1efb96e24544a389f6f55e2a30219353dcdb8302254eadf632e4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "值"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "充值",
+  "id": "7624d0f98e2f5c14622ac148",
+  "level": 5,
+  "meaning": "to recharge, to top up",
+  "pinyin": "chōngzhí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-v7_42h+Dh~-1779527160965"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

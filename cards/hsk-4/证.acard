@@ -1,0 +1,29 @@
+{
+  "audio": "6c44af59562307413f5095c6ba0b3585b1f1a31670e86fdf9c45caa30f8aae04.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "证",
+  "id": "bcba2b3fcda1b9a39c074dc9",
+  "level": 4,
+  "meaning": "certificate, proof, evidence",
+  "pinyin": "zhèng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-i5&=.Q{%$/-1779527160734"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

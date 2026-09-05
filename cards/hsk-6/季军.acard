@@ -1,0 +1,31 @@
+{
+  "audio": "bc4522e6fcf8574d78741ca4ad538356acb272a1d10d7ef4e22879ec6c44a70f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "季"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "季军",
+  "id": "5037074671a000f4426673fd",
+  "level": 6,
+  "meaning": "third place, bronze medalist",
+  "pinyin": "jìjūn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-623-1779527163026"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

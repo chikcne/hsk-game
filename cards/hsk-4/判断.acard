@@ -1,0 +1,31 @@
+{
+  "audio": "4e2beb69a655665929d8ecdb80f6ea3ecb2108c9af535d8926832c3088e8be6e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "断"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "判断",
+  "id": "77041b85e0bb6013feb19c14",
+  "level": 4,
+  "meaning": "to judge, to determine",
+  "pinyin": "pànduàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MFOp&mmJ:h-1779527160351"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

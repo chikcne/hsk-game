@@ -1,0 +1,31 @@
+{
+  "audio": "471f39b295ea7091ed8a51f8f5a508591382022ab0878eb0e1cff251336f832c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "快"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "快速",
+  "id": "2e800157a5990678e95ccdcd",
+  "level": 4,
+  "meaning": "fast, high-speed",
+  "pinyin": "kuàisù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d.Q+nP2;)P-1779527160247"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

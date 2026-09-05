@@ -1,0 +1,31 @@
+{
+  "audio": "5659f482c8eb0068813301586fbc7cb88aa306701796d2c1eebefd86f150c8a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "老"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "老虎",
+  "id": "536f2cbc86846c824dae29b3",
+  "level": 4,
+  "meaning": "tiger",
+  "pinyin": "lǎohǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-h4>qcCqqa3-1779527160258"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

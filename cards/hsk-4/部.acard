@@ -1,0 +1,29 @@
+{
+  "audio": "83c714c225fcbdc0f748cdd67d9640a3776a0e0f7cd9a1d43044c1c8b6006bd8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "部",
+  "id": "2b14f146ceaad930b6979ace",
+  "level": 4,
+  "meaning": "department, part; measure word for books, machines, etc.",
+  "pinyin": "bù",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-EoM2#`O5r@-1779527159853"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

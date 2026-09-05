@@ -1,0 +1,29 @@
+{
+  "audio": "df43d53cd6fcaaa3c9bcefc72c896e9cac68c7c5070155bd917bbf8c060aa6b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "景象",
+  "id": "c0c61963871c5b17be21001e",
+  "level": 6,
+  "meaning": "scene, sight",
+  "pinyin": "jǐngxiàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-725-1779527163128"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

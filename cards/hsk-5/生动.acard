@@ -1,0 +1,32 @@
+{
+  "audio": "7d917d609f49aaa4a034abfe9c35a1d1b9c3d6da6d2761d257a2b2f6585e0c5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生动",
+  "id": "d83b238916bc89f245e85b4a",
+  "level": 5,
+  "meaning": "vivid, lively",
+  "pinyin": "shēngdòng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hiVTz8xzwP-1779527161795"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

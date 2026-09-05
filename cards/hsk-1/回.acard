@@ -1,0 +1,29 @@
+{
+  "audio": "91d52339ab8791f104f050e7de86bb56ddbd3b32bdb1113fc6140facf5b5a9fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "回",
+  "id": "394bd8c0fca6610799002301",
+  "level": 1,
+  "meaning": "to return; (measure word for times)",
+  "pinyin": "huí",
+  "pos": "verb、 （classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-J;Mzw)|IS/-1779527158884"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

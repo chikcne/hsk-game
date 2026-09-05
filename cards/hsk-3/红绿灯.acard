@@ -1,0 +1,32 @@
+{
+  "audio": "696407971a5dd44058c35d4591ab11991cd14d7b0f8958d85eef63f48fa09028.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "灯",
+      "红"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "红绿灯",
+  "id": "0dbb94850b77c52e6d804bde",
+  "level": 3,
+  "meaning": "traffic light",
+  "pinyin": "hóng-lǜdēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-lf52lO_owT-1779527159473"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "6224e246ef29f2e4e80d1a15ca03f07e7b2d03bb3edafba39bc7f4a6d1e98d9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "照",
+      "片"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "照片",
+  "id": "a31c42e5a9aefa00ef46ba5c",
+  "level": 3,
+  "meaning": "photo",
+  "pinyin": "zhàopiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-EHkcflefJ8-1779527159775"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

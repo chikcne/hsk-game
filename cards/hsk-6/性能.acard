@@ -1,0 +1,32 @@
+{
+  "audio": "b8d2003e6a650a9fbebc743a801607dd18186c32e897c7893a5195032b2da3ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "性",
+      "能"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "性能",
+  "id": "8a98f83dc9bfa0388a726118",
+  "level": 6,
+  "meaning": "performance",
+  "pinyin": "xìngnéng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1479-1779527163882"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

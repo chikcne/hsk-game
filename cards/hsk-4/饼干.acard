@@ -1,0 +1,32 @@
+{
+  "audio": "643cb38bf532f9df491591eb90b48089cce0dfd97c23bdc4e870b4a58bb9a6c2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "干",
+      "饼"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "饼干",
+  "id": "f793a5ca6094a0c9f5e5a42f",
+  "level": 4,
+  "meaning": "biscuit, cracker",
+  "pinyin": "bǐnggān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ea%c9u(5ld-1779527159841"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

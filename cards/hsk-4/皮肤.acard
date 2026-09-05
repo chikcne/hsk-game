@@ -1,0 +1,31 @@
+{
+  "audio": "6c128c21a8c2db908c1a9a134ff4a581b399c4e885a284666107162fd4aa0258.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "皮"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "皮肤",
+  "id": "bd445587fa9b657bba8854d6",
+  "level": 4,
+  "meaning": "skin",
+  "pinyin": "pífū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-x[7d{H&<8Z-1779527160354"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

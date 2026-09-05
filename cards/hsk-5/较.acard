@@ -1,0 +1,29 @@
+{
+  "audio": "d40694e630f21d10cbe2a57535a32008d37a8b5a8c0b709d001181440437f6e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "较",
+  "id": "f5571f1667431a5276de41d8",
+  "level": 5,
+  "meaning": "than; relatively, comparatively",
+  "pinyin": "jiào",
+  "pos": "preposition、 adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wQiCMV)|E;-1779527161396"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

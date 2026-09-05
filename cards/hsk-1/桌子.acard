@@ -1,0 +1,31 @@
+{
+  "audio": "3e2da9987a5a4facea7381b8893f3afeb8bc32daee04de0c5fee8d57ac08d4da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "桌子",
+  "id": "9f75870e0354b405195dfacc",
+  "level": 1,
+  "meaning": "table, desk",
+  "pinyin": "zhuōzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-t&DS13N|z~-1779527159098"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "5b82323d077db0aab4d0da2f8a16a418e508a7ee1af539e1ec2ccee7c0402bee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爷爷",
+  "id": "dca923d522fd4fbd8237da21",
+  "level": 2,
+  "meaning": "grandfather",
+  "pinyin": "yéye",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-Ia9g<TETZp-1779527159273"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

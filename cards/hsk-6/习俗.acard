@@ -1,0 +1,29 @@
+{
+  "audio": "9ec8c0fe179e504e442febc2cca433189c5f1312a34fc206fbc7db65f53f6104.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "习俗",
+  "id": "76935cf8bf2a3e52b71370b6",
+  "level": 6,
+  "meaning": "custom",
+  "pinyin": "xísú",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1404-1779527163807"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

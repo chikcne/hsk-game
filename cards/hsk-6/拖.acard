@@ -1,0 +1,29 @@
+{
+  "audio": "cca417cc3cd8b1de98ac7aeb7a7fd0a63fcd65e7195872ad18a96c71d77ccd78.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拖",
+  "id": "d352d9abb5c1b242bfeadc89",
+  "level": 6,
+  "meaning": "to drag, to pull",
+  "pinyin": "tuō",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1344-1779527163747"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

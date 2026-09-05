@@ -1,0 +1,29 @@
+{
+  "audio": "0fe797c77db8d19b2d1bf4a6237b1cd98bd71cd4ee7b7ab4e8cc9f310b57977d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "防",
+  "id": "459c25b3f6fa8511e4f034e6",
+  "level": 5,
+  "meaning": "to prevent",
+  "pinyin": "fáng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PDxj9(pZh,-1779527161143"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "9135990450e8c0e4311cbd138ba6d40d5faed62776351b4f42a861cd3be8a2db.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "紫",
+  "id": "3a4ce514ab01899b59c8978d",
+  "level": 5,
+  "meaning": "purple",
+  "pinyin": "zǐ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w}pg6xv@/#-1779527162375"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

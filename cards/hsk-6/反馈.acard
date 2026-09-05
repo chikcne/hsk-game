@@ -1,0 +1,31 @@
+{
+  "audio": "d9e044f2c491e58a90a187693cb99b2ddd3e005443ba50deca22df0ae825a8a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "反"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "反馈",
+  "id": "9c50acf1c4f33d6438d86ef6",
+  "level": 6,
+  "meaning": "to give feedback",
+  "pinyin": "fǎnkuì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-366-1779527162769"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "790a3cf0a66f9c69d436965f68e3a729088d00136cddefc9450e7cc7fa14239a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "脆",
+  "id": "6685c21b480b70b07ad15cbe",
+  "level": 6,
+  "meaning": "crisp, brittle",
+  "pinyin": "cuì",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-227-1779527162630"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

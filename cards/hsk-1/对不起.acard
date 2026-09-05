@@ -1,0 +1,33 @@
+{
+  "audio": "5c5215d12dcfce428e0258ff43b1b9df5b687762fed3799d2b31f5351c39d68e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "对",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "对不起",
+  "id": "96ac2559c2f95be9133a07d2",
+  "level": 1,
+  "meaning": "sorry",
+  "pinyin": "duìbuqǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-gf8YCu*JH^-1779527158848"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

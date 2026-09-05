@@ -1,0 +1,32 @@
+{
+  "audio": "01e6ef3a23d20b631d8c144977de12a1189d6f3d19e5640918cbe6b840c0480d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "受",
+      "感"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "感受",
+  "id": "99f692fbf45dc98ec9a616ee",
+  "level": 4,
+  "meaning": "feeling, experience; to feel",
+  "pinyin": "gǎnshòu",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-O>F+MMmi(~-1779527160035"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

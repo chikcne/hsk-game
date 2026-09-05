@@ -1,0 +1,29 @@
+{
+  "audio": "20ea6f03adc1032c06ed085dd398d3ee5bc351ead24842bc603f9b626ebacf73.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拿",
+  "id": "028b133c8cd683234a486308",
+  "level": 2,
+  "meaning": "to take, to hold",
+  "pinyin": "ná",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-Gr($:c/IED-1779527159208"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

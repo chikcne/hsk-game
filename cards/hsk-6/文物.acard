@@ -1,0 +1,29 @@
+{
+  "audio": "8013f9510e8d2f900f1f981ebadcb35eeb429acd16a17b969fae54af9958f7b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "文物",
+  "id": "3607a72a2a70189a320b575e",
+  "level": 6,
+  "meaning": "cultural relic",
+  "pinyin": "wénwù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1391-1779527163794"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

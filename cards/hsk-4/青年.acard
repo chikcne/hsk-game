@@ -1,0 +1,32 @@
+{
+  "audio": "3371f5e2dafb0bbacac20ca549ae890968b7e9eac81126cae6a9d00852351df8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年",
+      "青"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "青年",
+  "id": "1b7a2f3c0db29734d460810c",
+  "level": 4,
+  "meaning": "youth, young people",
+  "pinyin": "qīngnián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-dSh=TJIL#@-1779527160390"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

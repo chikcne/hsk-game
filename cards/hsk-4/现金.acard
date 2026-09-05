@@ -1,0 +1,29 @@
+{
+  "audio": "7371bd7f399a1c6688ab76da5ef671d4c17115d3f7423795a80ffcdf1ffb5e40.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "现金",
+  "id": "474b45fa5f9df2b4db6cbbe9",
+  "level": 4,
+  "meaning": "cash",
+  "pinyin": "xiànjīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-t/nPRr@l(x-1779527160600"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

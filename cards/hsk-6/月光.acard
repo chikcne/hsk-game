@@ -1,0 +1,32 @@
+{
+  "audio": "14a7824d65b66ba6c4438d64823fc4f329a1c9360756ccb317a2431699ee04d7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "光",
+      "月"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "月光",
+  "id": "2441d6921643109678e01f05",
+  "level": 6,
+  "meaning": "moonlight",
+  "pinyin": "yuèguāng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1629-1779527164032"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

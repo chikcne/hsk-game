@@ -1,0 +1,29 @@
+{
+  "audio": "b927fdf3d6bc7240163834781128f6e16585e425bd96b14687733d488a75b0df.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "婚姻",
+  "id": "d5380c7740089538c7505085",
+  "level": 6,
+  "meaning": "marriage",
+  "pinyin": "hūnyīn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-593-1779527162996"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "6730c6da972a30053c5fef1a416101d178143e20aba20be67e404ee5df18045f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "挤"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拥挤",
+  "id": "d398ae67a864945cdbcbd61c",
+  "level": 6,
+  "meaning": "crowded; to crowd",
+  "pinyin": "yōngjǐ",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1589-1779527163992"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

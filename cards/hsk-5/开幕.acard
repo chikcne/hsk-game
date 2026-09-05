@@ -1,0 +1,31 @@
+{
+  "audio": "25153a61fa57b48e45d79e57c606ee7e0c1846fa98e0735dc2804ac51eb01be3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开幕",
+  "id": "8b794880af962ed550af1077",
+  "level": 5,
+  "meaning": "to open a ceremony or exhibition",
+  "pinyin": "kāimù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t[Ar4/G^jG-1779527161454"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

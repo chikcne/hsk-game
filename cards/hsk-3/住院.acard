@@ -1,0 +1,31 @@
+{
+  "audio": "88fd0138b59fc3a780d6ef0355b9e85d4af994bbbbe45c5acc47f06a14b143d6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "住"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "住院",
+  "id": "a5dc6eee641b603655406c00",
+  "level": 3,
+  "meaning": "to be hospitalized",
+  "pinyin": "zhùyuàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-hQTGZVc>;{-1779527159792"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

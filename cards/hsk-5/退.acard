@@ -1,0 +1,29 @@
+{
+  "audio": "e78df3875f9653927c4f32a21db56de2fb3db132b509aefdbb1a6d293b92dd2e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "退",
+  "id": "c1760c5a8b257d04e4e35d2a",
+  "level": 5,
+  "meaning": "to retreat, to withdraw",
+  "pinyin": "tuì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-pQ_(xQhMH6-1779527161965"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

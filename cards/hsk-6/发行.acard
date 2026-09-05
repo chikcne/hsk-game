@@ -1,0 +1,32 @@
+{
+  "audio": "c60337a5699b426be0b050f29d106d6340b469ad8861b220d0a282d10e7629e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发行",
+  "id": "8ba15d443e148d24f1c858f5",
+  "level": 6,
+  "meaning": "to publish, to issue",
+  "pinyin": "fāxíng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-356-1779527162759"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

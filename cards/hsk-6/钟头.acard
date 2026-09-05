@@ -1,0 +1,31 @@
+{
+  "audio": "16e29ed373fec37c1fe322c3f1666bf169cb302bdd1085ad05fb77a676581946.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "钟头",
+  "id": "d3cb358b1d331d830bdbabc7",
+  "level": 6,
+  "meaning": "hour",
+  "pinyin": "zhōngtóu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1724-1779527164127"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

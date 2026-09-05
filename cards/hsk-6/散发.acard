@@ -1,0 +1,32 @@
+{
+  "audio": "60c06c957ffea4912e914e8e1391820da4a46c1113fd82b19f8622882cec323f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "散"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "散发",
+  "id": "b333237624a1ccfba018a623",
+  "level": 6,
+  "meaning": "to emit, to give off",
+  "pinyin": "sànfā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1129-1779527163532"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

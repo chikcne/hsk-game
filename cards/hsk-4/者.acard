@@ -1,0 +1,29 @@
+{
+  "audio": "a44df97f4ebe6884cc833c8deb7c917d8747392da9d89ac04c16f9ff635071ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "者",
+  "id": "f28eb513690eff9045770398",
+  "level": 4,
+  "meaning": "suffix meaning person, one who",
+  "pinyin": "zhě",
+  "pos": "auxiliary",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-PgEjt$t}~N-1779527160729"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "4576c4c9125d697b0f4aecc3a212b0fbeb006823bbc8e55637a8862cf3894363.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "外"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中外",
+  "id": "5bf231dc725440693b92dc3d",
+  "level": 5,
+  "meaning": "China and abroad, domestic and foreign",
+  "pinyin": "zhōngwài",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-j}=<FZ+kCg-1779527162328"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

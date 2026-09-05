@@ -1,0 +1,29 @@
+{
+  "audio": "35983d839b6e872cbd429c6f824902db84ce8b8dae8aefc3eb9f8f02d995a7f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "露",
+  "id": "948290c20bc3d5c84464987b",
+  "level": 6,
+  "meaning": "to expose, to reveal",
+  "pinyin": "lòu",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-861-1779527163264"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

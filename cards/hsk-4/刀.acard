@@ -1,0 +1,29 @@
+{
+  "audio": "b4da785ffa00f5161d3f61fad913bef217c1ed08a692c0efaededb6751c412e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "刀",
+  "id": "eaee4d6586768aba09021551",
+  "level": 4,
+  "meaning": "knife",
+  "pinyin": "dāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-t]%%hsG1@z-1779527159940"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

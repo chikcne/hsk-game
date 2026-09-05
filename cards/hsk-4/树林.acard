@@ -1,0 +1,31 @@
+{
+  "audio": "d41219daf93b4ea99506ea2d816251dcc745ba18c81cfc3f5b5b421807cf7158.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "树"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "树林",
+  "id": "04aedf63e5a18945613645c5",
+  "level": 4,
+  "meaning": "woods, forest",
+  "pinyin": "shùlín",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-h8D)l^F]M4-1779527160496"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

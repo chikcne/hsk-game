@@ -1,0 +1,32 @@
+{
+  "audio": "9dae0bec6081d348622df1c0eaee9cf94675494a5b371229b19a24dd9b5d8efc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事",
+      "大"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大事",
+  "id": "ca5117265b234fdf7a979e1a",
+  "level": 5,
+  "meaning": "important matter",
+  "pinyin": "dàshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-js|ja@$Bt=-1779527161030"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

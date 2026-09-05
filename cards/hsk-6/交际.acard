@@ -1,0 +1,31 @@
+{
+  "audio": "1dca346b09a6561915c196d4dcdc1d0657c2f749e1c8aba3ec74608aad5976ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "交际",
+  "id": "7af7b76c8578c8aadd0c2d78",
+  "level": 6,
+  "meaning": "social interaction",
+  "pinyin": "jiāojì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-672-1779527163075"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

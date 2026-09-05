@@ -1,0 +1,29 @@
+{
+  "audio": "cc9d7444a770248fbe01bd54fbd5ce2b8a44753092043cddfc2982c203c96926.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "行",
+  "id": "448704512b862aabb9552e2b",
+  "level": 5,
+  "meaning": "line, row; measure word for lines",
+  "pinyin": "háng",
+  "pos": "noun、",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-yQ{{im{`{v-1779527161270"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

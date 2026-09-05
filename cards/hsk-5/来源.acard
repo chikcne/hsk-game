@@ -1,0 +1,31 @@
+{
+  "audio": "981f98d92dae938591a1e9771d36df53e2b0eb9370eac8613b81e5cb33a3dbec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "来"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "来源",
+  "id": "174d42ccb3abea5d9ed5ec9b",
+  "level": 5,
+  "meaning": "source, origin; to originate from",
+  "pinyin": "láiyuán",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x]m`W,m@;F-1779527161485"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

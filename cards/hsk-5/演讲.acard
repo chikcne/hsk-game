@@ -1,0 +1,32 @@
+{
+  "audio": "1f4d9ff1f3ed353e1c0d22916d19929cc0307b8b20b647e43162eee9624aaf17.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "演",
+      "讲"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "演讲",
+  "id": "86a830767e39243b2792f8e2",
+  "level": 5,
+  "meaning": "to give a speech",
+  "pinyin": "yǎnjiǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-yfuJElcwTM-1779527162134"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "814747cc1d0212e850ba43c055828a055ad08127d5b726a33abb661ab419e523.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前来",
+  "id": "2e93dc7bfe52458e994c8f7e",
+  "level": 5,
+  "meaning": "to come, to come forward",
+  "pinyin": "qiánlái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l1qq`U9br<-1779527161667"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "c72a5bd66f7593897fc0bffadfda80f3dbb210915625faac9d727656f0fcb703.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好好",
+  "id": "9bb906e271a2a92b992cb1e7",
+  "level": 4,
+  "meaning": "good, nice, proper; well, thoroughly, serious, all out",
+  "pinyin": "hǎohǎo",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-rRw.[i>rpx-1779527160094"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

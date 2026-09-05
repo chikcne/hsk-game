@@ -1,0 +1,32 @@
+{
+  "audio": "973f09f96e8a975de3da5d6ca7bb1f143dbab1c6ca03d7fddd7910e546e91feb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "来",
+      "看"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看来",
+  "id": "616a8a0740f6c772eb98dc43",
+  "level": 3,
+  "meaning": "it seems, it appears",
+  "pinyin": "kànlái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-B0+d5vqA/s-1779527159533"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

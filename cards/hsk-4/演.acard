@@ -1,0 +1,29 @@
+{
+  "audio": "f245a786cdeda566a21c1ba1a08e3f1650ccd63b5f269337347f9324c0a8e886.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "演",
+  "id": "dc081cfb712185f79870b080",
+  "level": 4,
+  "meaning": "to act, to perform, to play",
+  "pinyin": "yǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hT(0Uj3#((-1779527160652"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

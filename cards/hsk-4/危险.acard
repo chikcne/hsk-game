@@ -1,0 +1,31 @@
+{
+  "audio": "de0a7c01f18592311af59f83711ef2d33761eaa220cf798b1f308cb15bf0a774.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "险"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "危险",
+  "id": "e371ddcc6b9383146454ba45",
+  "level": 4,
+  "meaning": "dangerous; danger",
+  "pinyin": "wēixiǎn",
+  "pos": "adjective、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-eo/3f{KPxW-1779527160573"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

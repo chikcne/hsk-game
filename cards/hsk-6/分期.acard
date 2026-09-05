@@ -1,0 +1,32 @@
+{
+  "audio": "87e7a08e8a433551a8c6e67964ad9958dd0251520fb4864957607fa2a68634e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分期",
+  "id": "338281f63a7fd6eefdfdea00",
+  "level": 6,
+  "meaning": "to pay in instalments",
+  "pinyin": "fēnqī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-386-1779527162789"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "8e30f9a1e6bef01ca3b8a1aa0059a1d84d3f2c0b9a32ccfd06c125bda3f84f3e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "才"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "才华",
+  "id": "96bbe43c9784f3570d44554c",
+  "level": 6,
+  "meaning": "talent",
+  "pinyin": "cáihuá",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-96-1779527162499"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

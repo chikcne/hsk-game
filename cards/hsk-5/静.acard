@@ -1,0 +1,29 @@
+{
+  "audio": "72ff1208e0b07b353da76cc2c8c4dbce1d93d7d1d5f6f61c7d897a9dfc6c14fc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "静",
+  "id": "ec61beef070c4ece45bfea13",
+  "level": 5,
+  "meaning": "quiet, still; to become quiet",
+  "pinyin": "jìng",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-NAmC[4kAY.-1779527161429"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

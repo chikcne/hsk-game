@@ -1,0 +1,32 @@
+{
+  "audio": "d0eea7f5f943dd343b14a486912723d6d6b4963773f5550d4b0361587d1b488c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水",
+      "泥"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "水泥",
+  "id": "fce0115a5606a55e227630ea",
+  "level": 6,
+  "meaning": "cement",
+  "pinyin": "shuǐní",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1237-1779527163640"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

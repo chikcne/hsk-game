@@ -1,0 +1,31 @@
+{
+  "audio": "fe02d9fda7152314e5f42abc7796c60b05e40f8e07bc380a58357263886eb0df.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上旬",
+  "id": "32a1ef84eddb444ae64ed0e3",
+  "level": 6,
+  "meaning": "early part of the month",
+  "pinyin": "shàngxún",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1153-1779527163556"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

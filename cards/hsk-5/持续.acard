@@ -1,0 +1,29 @@
+{
+  "audio": "d52e36f3de305ac1c2372038d07158bdc8248c4b6ecc8108fcfb55f135624ad9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "持续",
+  "id": "14850146258410c86990caae",
+  "level": 5,
+  "meaning": "to continue, to last",
+  "pinyin": "chíxù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HYr9N1~4<l-1779527160958"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

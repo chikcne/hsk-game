@@ -1,0 +1,29 @@
+{
+  "audio": "683c3a9afa7951922206020c744912ea88b4626b3f56d23a67ff5e5205bda1e8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好",
+  "id": "cef395fac3e2b1220f0b0b0a",
+  "level": 1,
+  "meaning": "good; (well); (to be fond of)",
+  "pinyin": "hǎo",
+  "pos": "adjective、 （adverb）、 （verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-IIufgmA:k3-1779527158874"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

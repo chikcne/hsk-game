@@ -1,0 +1,29 @@
+{
+  "audio": "b68a6d5eccf08385656cec374122af701a4ec5b6fbc0ed15037b0edb43dc0382.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "晾",
+  "id": "d0ecdebcbd9214c83d847d5a",
+  "level": 6,
+  "meaning": "to dry, to air",
+  "pinyin": "liàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-849-1779527163252"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

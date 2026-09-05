@@ -1,0 +1,33 @@
+{
+  "audio": "fa81f90911b57e0a2f0a86dc988bb3050ff4f4935bbe7b73773bd315894aa7d8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "夜",
+      "年",
+      "饭"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "年夜饭",
+  "id": "84da944ad51596e3abd8f8bf",
+  "level": 5,
+  "meaning": "New Year's Eve dinner",
+  "pinyin": "niányèfàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-e5Bu.u~7;t-1779527161603"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

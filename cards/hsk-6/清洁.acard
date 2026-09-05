@@ -1,0 +1,31 @@
+{
+  "audio": "2812f065580c23095fae97260f0acabbea469e6b2269c256c6e6a14af11e9694.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "清"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "清洁",
+  "id": "6737270a6751d8e4fda4a224",
+  "level": 6,
+  "meaning": "clean",
+  "pinyin": "qīngjié",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1057-1779527163460"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

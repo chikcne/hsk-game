@@ -1,0 +1,32 @@
+{
+  "audio": "a0e5c2b1d96005064719ee5b52af59caea2d31b74eafd0efb5e20670d76dac9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "电"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电力",
+  "id": "76fad2c998d44c37fd7c5829",
+  "level": 6,
+  "meaning": "power, electricity",
+  "pinyin": "diànlì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-301-1779527162704"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "11cda53ee28a68761ffb0292f689f6e804e11cfedb829dcd733c011543909037.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "体力",
+  "id": "7f04f15fdeb75b93a408731a",
+  "level": 5,
+  "meaning": "physical strength",
+  "pinyin": "tǐlì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t}@bH!FvKZ-1779527161923"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

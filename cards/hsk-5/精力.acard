@@ -1,0 +1,31 @@
+{
+  "audio": "c8891d7ac2f4b111bf7d96118aab0ba8b76aa710c209535b31a91882cb97159a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "精力",
+  "id": "e7e6a047974d298fda48452d",
+  "level": 5,
+  "meaning": "energy, vigor",
+  "pinyin": "jīnglì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GHM=v;mYd4-1779527161425"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

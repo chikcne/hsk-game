@@ -1,0 +1,33 @@
+{
+  "audio": "b4923fd3a9c3f19733ab05f7077ac6c848b2e95d4571600f43403156eef494f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关",
+      "关系",
+      "系"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "没关系",
+  "id": "87ee31a304af1de0bee7dc7e",
+  "level": 1,
+  "meaning": "never mind, it's okay",
+  "pinyin": "méi guānxi",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-I}hi|BHlqk-1779527158923"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

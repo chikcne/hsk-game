@@ -1,0 +1,32 @@
+{
+  "audio": "a9aaa320e1be7107b9e82230825fb95dc42fec1cede3b93e538fd61e10bfcb88.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "方"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地方",
+  "id": "634c23770349f0feef0d6e0d",
+  "level": 3,
+  "meaning": "place",
+  "pinyin": "dìfang",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-xArLl0x@K+-1779527159394"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

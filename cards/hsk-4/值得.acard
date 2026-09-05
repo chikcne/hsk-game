@@ -1,0 +1,32 @@
+{
+  "audio": "3c4fc3befca94681538b370729dd7037d1718564c33b970d41df64f17e062390.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "值",
+      "得"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "值得",
+  "id": "6f9ce46625b35896def4a621",
+  "level": 4,
+  "meaning": "to be worth, to deserve",
+  "pinyin": "zhídé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-N4Ga/0~kKp-1779527160750"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

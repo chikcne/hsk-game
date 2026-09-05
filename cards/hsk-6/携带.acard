@@ -1,0 +1,31 @@
+{
+  "audio": "0cda471512c2e8d0a3a9f24fefc8279b3eb9d7c870af8feb7fdd554d53eb1021.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "带"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "携带",
+  "id": "db4393dd3f1937cb7fe884c6",
+  "level": 6,
+  "meaning": "to carry",
+  "pinyin": "xiédài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1456-1779527163859"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

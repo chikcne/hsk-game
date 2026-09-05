@@ -1,0 +1,32 @@
+{
+  "audio": "225f9105888133852f8ae489c21ecf5643899092920488e85b68fc1870b25202.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "从",
+      "未"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "从未",
+  "id": "d20279c2d3a78a7693b1d043",
+  "level": 6,
+  "meaning": "never, ever",
+  "pinyin": "cóngwèi",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-224-1779527162627"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

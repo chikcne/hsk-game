@@ -1,0 +1,32 @@
+{
+  "audio": "c17e695727724169b32515bb26f655f1b07c041fc6812fbf468d7d586416687f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "跳",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跳高",
+  "id": "5ead781334f475ab2ed2ddc3",
+  "level": 5,
+  "meaning": "high jump",
+  "pinyin": "tiàogāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-s|1$[sWjbu-1779527161937"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "0c90ba57f51c081856c2ff3ee13090523b68e4db59b0964716780f7c7daeec18.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "慢"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "缓慢",
+  "id": "a0c998053d7f4b7ee289535c",
+  "level": 5,
+  "meaning": "slow",
+  "pinyin": "huǎnmàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-r8~[NZAQ;G-1779527161307"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

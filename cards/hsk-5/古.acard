@@ -1,0 +1,29 @@
+{
+  "audio": "8bd56230b6e212bdcb12ccdc86744126f27ad092553a1cbf3a9b5272cd7dbb92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "古",
+  "id": "22d0603b6243131547c28eca",
+  "level": 5,
+  "meaning": "ancient",
+  "pinyin": "gǔ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zOQk8cx4fk-1779527161225"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "a1a842ac93e5e38797b4990b234ba355b58586a620bc8c2294dbba4418f27420.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "省",
+  "id": "febed59eda87a01d2967c4cc",
+  "level": 4,
+  "meaning": "province",
+  "pinyin": "shěng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ot*EFs]5q8-1779527160453"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

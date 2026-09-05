@@ -1,0 +1,31 @@
+{
+  "audio": "ad3860bb842196ac6afade1750e125756d7e7c71c9721a1764703d85a2f42a67.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学术",
+  "id": "c430d4530babb7053ae3e2bb",
+  "level": 5,
+  "meaning": "academics, scholarship",
+  "pinyin": "xuéshù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-yIS8?&LUa;-1779527162116"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

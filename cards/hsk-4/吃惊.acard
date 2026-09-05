@@ -1,0 +1,31 @@
+{
+  "audio": "3967537b037d0d43885e30742870a342bccc9efb126d3bcd80244663ddd0fd3b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "吃"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吃惊",
+  "id": "a9e321d2a7b34fa069fd72da",
+  "level": 4,
+  "meaning": "to be startled, to be shocked",
+  "pinyin": "chījīng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-i{FO8xCW=~-1779527159887"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "b521510a8fef99d3acafd3cef09404799b067bc8dc224ce9b973bf9db8424658.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "假"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "寒假",
+  "id": "f50fb5e2554e82e561f617c3",
+  "level": 4,
+  "meaning": "the winter vacation",
+  "pinyin": "hánjià",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-E,70Cq?B:;-1779527160088"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

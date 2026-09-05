@@ -1,0 +1,29 @@
+{
+  "audio": "14782caf653f76d9f318eeda94e6a3bbcd4aa73b39182ee9d5358d32971763e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "汗",
+  "id": "1a33e6896469a6f84bb3e8b0",
+  "level": 4,
+  "meaning": "sweat",
+  "pinyin": "hàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-B#gSBHI?a6-1779527160091"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

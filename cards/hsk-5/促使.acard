@@ -1,0 +1,31 @@
+{
+  "audio": "f68663fa8e65141f5f75380e8e022eeb620e5a19b987004a17651adcc3bf54e0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "使"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "促使",
+  "id": "4a24f348ddb0208ab182468c",
+  "level": 5,
+  "meaning": "to urge, to prompt",
+  "pinyin": "cùshǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-v>@K|bJh%G-1779527161008"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

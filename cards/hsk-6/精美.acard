@@ -1,0 +1,31 @@
+{
+  "audio": "00a30faab266dfd24f07e33c793e2ae82df75bcb378bed73d02976ada439b3e1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "美"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "精美",
+  "id": "c9472c0fd2e919e359de6b3b",
+  "level": 6,
+  "meaning": "exquisite, delicate",
+  "pinyin": "jīngměi",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-713-1779527163116"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

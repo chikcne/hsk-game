@@ -1,0 +1,32 @@
+{
+  "audio": "b92a281e8abd6fbe48c28ebe55bcd0e98577486dbb74f85abb13a29f5d290639.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "率",
+      "领"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "率领",
+  "id": "54c02848f6c3e25e08b8c040",
+  "level": 6,
+  "meaning": "to lead, to command",
+  "pinyin": "shuàilǐng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1231-1779527163634"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

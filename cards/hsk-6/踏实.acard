@@ -1,0 +1,29 @@
+{
+  "audio": "83af8e623241a796db4ebb40ac9fa536e8b3db317201f38f9dd8f774db9d15cb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "踏实",
+  "id": "8778b57404dc38629c4fde6c",
+  "level": 6,
+  "meaning": "steady, firm",
+  "pinyin": "tāshi",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1255-1779527163658"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

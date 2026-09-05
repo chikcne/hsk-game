@@ -1,0 +1,29 @@
+{
+  "audio": "c7d63f67b51aa5effec442d3f4f3f680ea18784830b3beea5db3b2917630fbbe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "完",
+  "id": "1fdacb3b5f0bb8671eff883b",
+  "level": 2,
+  "meaning": "to finish",
+  "pinyin": "wán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-vSd0W7O|Yx-1779527159251"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

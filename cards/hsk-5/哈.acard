@@ -1,0 +1,29 @@
+{
+  "audio": "8d562efa8a3cdd44f96ee2d4c17d7ecbee39433b70a63e5bdbe34f34ca348e56.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哈",
+  "id": "fa512640e1c25d1efb0bdb8e",
+  "level": 5,
+  "meaning": "ha, onomatopoeia for laughter",
+  "pinyin": "hā",
+  "pos": "拟声、interjection",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zQPV`A95GY-1779527161262"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

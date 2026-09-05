@@ -1,0 +1,29 @@
+{
+  "audio": "1a94942432b6c18eff7a3a587deef1d9b8f884cfbe3a99fd618d04a4b6ed8da3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "券",
+  "id": "cf5322bed9157a141ba1e18e",
+  "level": 6,
+  "meaning": "ticket, coupon",
+  "pinyin": "quàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1082-1779527163485"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

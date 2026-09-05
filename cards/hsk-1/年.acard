@@ -1,0 +1,29 @@
+{
+  "audio": "c7776de6076417952786d7cb085ccb6474afb9ca4b9dc5c50f4f4babf07e291e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "年",
+  "id": "ccdabcbd3b321bdd87b82a4b",
+  "level": 1,
+  "meaning": "year; measure word for years",
+  "pinyin": "nián",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-x7wM*;VT8a-1779527158952"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

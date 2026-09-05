@@ -1,0 +1,29 @@
+{
+  "audio": "9d977f41caf646dbe52cc7d316b4eb7c2f06ff93c967a1b1342e2c8192f6376a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "果然",
+  "id": "076c4be0f87b4d43ee20c7ee",
+  "level": 5,
+  "meaning": "indeed, as expected",
+  "pinyin": "guǒrán",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-grwNY=WN`S-1779527161255"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

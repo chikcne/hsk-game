@@ -1,0 +1,32 @@
+{
+  "audio": "f1ae049a9f7c3708d4d50ff29e86c7d654ae0f245270ef4b1972e59b87d0b095.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "早",
+      "饭"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "早饭",
+  "id": "16638de4d1ca92007389d3d2",
+  "level": 1,
+  "meaning": "breakfast",
+  "pinyin": "zǎofàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-j9Q.CAqzRr-1779527159077"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

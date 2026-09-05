@@ -1,0 +1,29 @@
+{
+  "audio": "fa7f9500ecc05bb615fbc14e753c17898687afdcc1b9c89e177cdc9771677e8e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跌",
+  "id": "19906fba8beb7d5017fbedd4",
+  "level": 6,
+  "meaning": "to fall",
+  "pinyin": "diē",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-307-1779527162710"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

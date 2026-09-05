@@ -1,0 +1,29 @@
+{
+  "audio": "850612a0bf42637370f99bafb031af601bf5b71aa2b2175194da709304784bf2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "冲",
+  "id": "a7e1b7891c5ee7017373c1af",
+  "level": 5,
+  "meaning": "to rush, to rinse, to pour",
+  "pinyin": "chōng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gbClSLoQBN-1779527160961"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

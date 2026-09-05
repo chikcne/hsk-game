@@ -1,0 +1,31 @@
+{
+  "audio": "7e3f0e1c3e37d91ab6ec701e25d5a9ff06940c9dcefd689e45a7653206573eab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "例外",
+  "id": "f60a0312fa1253fb2c981643",
+  "level": 6,
+  "meaning": "to be an exception; exception",
+  "pinyin": "lìwài",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-841-1779527163244"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

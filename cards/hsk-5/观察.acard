@@ -1,0 +1,29 @@
+{
+  "audio": "a61b8e46272feec6962134791e384e2f8218d30f4ee42e8c623128c9b970b2a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "观察",
+  "id": "0b876622be6521e556d8c064",
+  "level": 5,
+  "meaning": "to observe",
+  "pinyin": "guānchá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PEdGpwIL,D-1779527161235"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

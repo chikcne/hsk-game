@@ -1,0 +1,32 @@
+{
+  "audio": "2cd262b830ec0cd7d41322c8e0441990ceb682d894859d7d1c424521fb0bce67.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "解",
+      "读"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "解读",
+  "id": "144ea8fb8b6a18dc38c33260",
+  "level": 6,
+  "meaning": "to interpret",
+  "pinyin": "jiědú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-694-1779527163097"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

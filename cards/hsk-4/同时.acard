@@ -1,0 +1,32 @@
+{
+  "audio": "765c9c9237bebaeb55236b7a7654c398e7cf3c610e3752653a8cea24a3ee3c7b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "同时",
+  "id": "99aac4c3f1613fdeabd5daa2",
+  "level": 4,
+  "meaning": "at the same time; meanwhile, moreover",
+  "pinyin": "tóngshí",
+  "pos": "noun、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-A1>S%?~=;1-1779527160550"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

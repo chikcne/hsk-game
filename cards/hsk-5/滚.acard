@@ -1,0 +1,29 @@
+{
+  "audio": "1cae2d1b62304d258348b0b73d92a0ae78099651652e8ce4d8ada4451ea6ec22.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "滚",
+  "id": "2bf25bd4b4c429c0d0ef27cf",
+  "level": 5,
+  "meaning": "to roll",
+  "pinyin": "gǔn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-da518Z^G.J-1779527161251"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

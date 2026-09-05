@@ -1,0 +1,31 @@
+{
+  "audio": "92548dbdf8ea120c602f1a13f277120707efb339105d9b0e5b9a8be65ea29a3e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "划"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "计划",
+  "id": "9095fdf75452abcd5b4560f8",
+  "level": 4,
+  "meaning": "plan, project, program, scheme; to plan, to map out, to intend",
+  "pinyin": "jìhuà",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-yamyQ5,r15-1779527160132"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "7ff9e8d938a723f1b950f16678a4dfb1719d339e9a338b144e5b7af9e686bdfb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "想"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "想象",
+  "id": "17f32fc07d323b58ab6275fc",
+  "level": 5,
+  "meaning": "to imagine, to picture",
+  "pinyin": "xiǎngxiàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tael2>UmF?-1779527162059"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

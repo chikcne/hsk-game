@@ -1,0 +1,32 @@
+{
+  "audio": "2734e5ea64055d8e93cd833b509d1299cea50ea0a2742dc9d9cd5e6ee7e6628e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "国"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出国",
+  "id": "eb713043d48ece94445c5b07",
+  "level": 2,
+  "meaning": "to go abroad",
+  "pinyin": "chūguó",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-k/dZ!<!8tF-1779527159120"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "1e500aaab0f40f1189b9829e2d30ff828f7c8f39de752c2f272edf6bcf99d39a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亿",
+  "id": "8fbd97fc7b7f09818394df87",
+  "level": 5,
+  "meaning": "hundred million",
+  "pinyin": "yì",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Bh_d*/&egD-1779527162168"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

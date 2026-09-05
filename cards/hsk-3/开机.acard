@@ -1,0 +1,31 @@
+{
+  "audio": "bf9d47acc754dab9588bb85b29cfae62440a44f2e680255a10e0bc8b555f1910.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开机",
+  "id": "fde06be6b112cfd8d821954b",
+  "level": 3,
+  "meaning": "to turn on device",
+  "pinyin": "kāijī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-nTrReBT{3y-1779527159531"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

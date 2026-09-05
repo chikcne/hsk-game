@@ -1,0 +1,29 @@
+{
+  "audio": "71a56bff745cce8d31de1c503dc0008b8ecdedb577c07696f5aa8e730b219c41.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "嫌",
+  "id": "147a171af6f960f24b1564eb",
+  "level": 6,
+  "meaning": "to suspect, to dislike",
+  "pinyin": "xián",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1422-1779527163825"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

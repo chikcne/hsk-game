@@ -1,0 +1,29 @@
+{
+  "audio": "2aa31b68fcb2c7b47e770f1922bb91f36ca02518b028215ff54372e27bd9f81a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肝",
+  "id": "8376172ac003ff8ba38903c4",
+  "level": 6,
+  "meaning": "liver",
+  "pinyin": "gān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-417-1779527162820"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

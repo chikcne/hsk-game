@@ -1,0 +1,29 @@
+{
+  "audio": "8e4926cbf9457be8a6e09321a22c00ea15da6b33704519b3f2b9a9081c2c83dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "精致",
+  "id": "40c826957d83dc39b326af44",
+  "level": 6,
+  "meaning": "delicate, refined",
+  "pinyin": "jīngzhì",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-720-1779527163123"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

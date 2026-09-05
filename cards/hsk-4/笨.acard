@@ -1,0 +1,29 @@
+{
+  "audio": "9e830ad8dc8d95985b964ac6926c44717a683ed4b760835db3f79bb62a6e3a98.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "笨",
+  "id": "3f6e3182a4e06ef9b5442482",
+  "level": 4,
+  "meaning": "stupid, foolish",
+  "pinyin": "bèn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Gh.<Z!|m;1-1779527159829"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

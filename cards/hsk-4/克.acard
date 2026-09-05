@@ -1,0 +1,29 @@
+{
+  "audio": "00dab5994facbf1301a809457e2b360278bfd7534a03b86bc474cd82b572358b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "克",
+  "id": "c7b5eb96da8104bcc9694fc2",
+  "level": 4,
+  "meaning": "gram",
+  "pinyin": "kè",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p]w!8#94h_-1779527160233"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

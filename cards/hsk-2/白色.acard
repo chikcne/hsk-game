@@ -1,0 +1,31 @@
+{
+  "audio": "2ee797d1cc6c71f3b28afadafcdb390ef39103251dce71a21cea7ac4ccfe2360.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "白"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "白色",
+  "id": "bee10774f8197da936588e22",
+  "level": 2,
+  "meaning": "white",
+  "pinyin": "báisè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-PQs0jj|M^M-1779527159106"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

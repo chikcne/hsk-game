@@ -1,0 +1,31 @@
+{
+  "audio": "07db174bddb24af474d7e154eaf1d3b0388b2db01ec408e4f9f5e8f178c1acaf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "放"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "放弃",
+  "id": "f223172d9ae6b7932de4d4f7",
+  "level": 4,
+  "meaning": "to give up",
+  "pinyin": "fàngqì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-P0LZ]!;lZl-1779527160000"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

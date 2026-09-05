@@ -1,0 +1,31 @@
+{
+  "audio": "e042017838ec0f102f13c8c108140c3cba51c7c9b895532f36d02b2cd2b6476f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "班"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "航班",
+  "id": "e1da643c425809814c5b8c9e",
+  "level": 4,
+  "meaning": "flight",
+  "pinyin": "hángbān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-wm$=G)aZV{-1779527160092"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

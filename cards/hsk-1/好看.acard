@@ -1,0 +1,32 @@
+{
+  "audio": "d595356e10385e0c26b39164d45c27d59f52ade832fe75cda579271eef14ba55.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "看"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好看",
+  "id": "11a8a14748aab6b37194b934",
+  "level": 1,
+  "meaning": "good-looking",
+  "pinyin": "hǎokàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-i0mH$Qi33}-1779527158876"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

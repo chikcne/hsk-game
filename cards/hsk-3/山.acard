@@ -1,0 +1,29 @@
+{
+  "audio": "bb23c8772b1d97cbd366f33be2dae117c52539b2c0a39ee64e232090bf5a81c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "山",
+  "id": "9f9855aebd6f53990e36ce27",
+  "level": 3,
+  "meaning": "mountain",
+  "pinyin": "shān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-tBh|t7OdNh-1779527159626"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

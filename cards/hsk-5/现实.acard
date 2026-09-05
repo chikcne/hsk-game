@@ -1,0 +1,29 @@
+{
+  "audio": "4e093d589c1f3547416525c6d939301cb0b29057528d28aed039c426073b3cbd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "现实",
+  "id": "4571cc665af06c9ec5b16ddf",
+  "level": 5,
+  "meaning": "reality; real",
+  "pinyin": "xiànshí",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zc5FXzr(BW-1779527162045"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "061d4480015be3a06f11899c937ecf1b829a3a6bc0cd654daf0fb808e3ea6501.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "灰"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "灰尘",
+  "id": "bf51ca9e4665f5eff4c6f3ed",
+  "level": 6,
+  "meaning": "dust",
+  "pinyin": "huīchén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-583-1779527162986"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

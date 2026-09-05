@@ -1,0 +1,29 @@
+{
+  "audio": "f6abd01dd424ec4d57d170a6b5c9d00aaf98d01db79ed7d85e626b00c9e80650.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "细",
+  "id": "81ee96cddc3490b3220de2e6",
+  "level": 4,
+  "meaning": "thin, fine, detailed",
+  "pinyin": "xì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-oz*JIRF+,g-1779527160594"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

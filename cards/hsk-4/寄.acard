@@ -1,0 +1,29 @@
+{
+  "audio": "7d00b6a57ce878566cd9072acdd67eb846c3cef1591612976f7ad6dc1b7c24af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "寄",
+  "id": "01f68d0539ea06d09adb0170",
+  "level": 4,
+  "meaning": "send",
+  "pinyin": "jì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-A)])PzIG.~-1779527160131"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

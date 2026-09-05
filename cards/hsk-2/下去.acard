@@ -1,0 +1,32 @@
+{
+  "audio": "6f126ca3e7e1d083d3bd5fba11cefef669580179b7854d5bfd892929dfbec822.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "去"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下去",
+  "id": "e1fa93903c12c6a9c7e854e9",
+  "level": 2,
+  "meaning": "to go down",
+  "pinyin": "xiàqù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-pKNUNr--vr-1779527159263"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

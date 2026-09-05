@@ -1,0 +1,29 @@
+{
+  "audio": "7a6fc83b95a61c2e70483ecf0c5738cb0b8867b1843d2de480bb74a0b7ea74d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "经典",
+  "id": "cb41f801bde3188631906373",
+  "level": 5,
+  "meaning": "classic; classical",
+  "pinyin": "jīngdiǎn",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zvt!l1tP)p-1779527161424"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

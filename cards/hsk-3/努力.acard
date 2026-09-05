@@ -1,0 +1,31 @@
+{
+  "audio": "f1bcc86c8fbf89702b55d11a49d80f42aceb1ea5d884e4e824d4d1387d2676c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "努力",
+  "id": "147db0cfc36017f644de95ed",
+  "level": 3,
+  "meaning": "to work hard; hardworking",
+  "pinyin": "nǔlì",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-A&?9}r<lK$-1779527159589"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

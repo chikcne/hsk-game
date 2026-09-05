@@ -1,0 +1,31 @@
+{
+  "audio": "c911399ec4c217a48c3e8fadaa1c44ec254b51c5d560d1e8fd4d8c2eef4d5256.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "平"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平衡",
+  "id": "8ba204c4a0b246ef2030d245",
+  "level": 5,
+  "meaning": "balanced, even; to balance",
+  "pinyin": "pínghéng",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JHfKl@SU];-1779527161644"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

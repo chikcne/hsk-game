@@ -1,0 +1,29 @@
+{
+  "audio": "bd9d72709bffd39d5bc5c6535f8add4e50a9ff3312c555f19339ac0d8e056071.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "担任",
+  "id": "f8087e770004e95f9c9964f4",
+  "level": 5,
+  "meaning": "to hold the position of",
+  "pinyin": "dānrèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-L,m,z`|uil-1779527161043"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

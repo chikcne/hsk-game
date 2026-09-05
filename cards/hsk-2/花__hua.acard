@@ -1,0 +1,29 @@
+{
+  "audio": "aa9c758708b7670bccd0c04f6fda3446f6ff246a624d82167d69d145f06b35f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "花",
+  "id": "f111b8950e41b4f0c54248c6",
+  "level": 2,
+  "meaning": "to spend (money or time)",
+  "pinyin": "huā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-xdg<&X@=wZ-1779527159160"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

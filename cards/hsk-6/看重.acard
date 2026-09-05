@@ -1,0 +1,32 @@
+{
+  "audio": "3db154dafd3853e45768330c285b8f45a6afc69eac24aeada0b526c13dfcbbc6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "看",
+      "重"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看重",
+  "id": "579cdf31c96b73bb82f1992d",
+  "level": 6,
+  "meaning": "to value, to regard as important",
+  "pinyin": "kànzhòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-773-1779527163176"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

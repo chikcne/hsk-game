@@ -1,0 +1,31 @@
+{
+  "audio": "7d29e199ee1f0d96925211b039f81c368851d3b3c0398f814e97d72cea73f77f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "袜子",
+  "id": "7483e2cf2b1087056253aeaa",
+  "level": 4,
+  "meaning": "socks",
+  "pinyin": "wàzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-uRNM>&ppA&-1779527160562"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

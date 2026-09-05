@@ -1,0 +1,29 @@
+{
+  "audio": "d020d3e5716e7a07d1e1bc462e34ecb8901179ef5c5eb64b13657567ac77f91d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相应",
+  "id": "14ba0ecbcab4a45400236777",
+  "level": 6,
+  "meaning": "to correspond, to match",
+  "pinyin": "xiāngyìng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1440-1779527163843"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

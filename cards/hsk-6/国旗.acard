@@ -1,0 +1,31 @@
+{
+  "audio": "82a5ff73b2c1554308a5f7cfde9c98b499656ed6a7190b22fa09f1dde462e09d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "国"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "国旗",
+  "id": "323f9d956f590765886e5f17",
+  "level": 6,
+  "meaning": "national flag",
+  "pinyin": "guóqí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-511-1779527162914"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

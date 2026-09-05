@@ -1,0 +1,32 @@
+{
+  "audio": "2d8554289680b162f52a70318a363024d7786c65a440c295d886e4e30ce88789.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "成"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不成",
+  "id": "e3a1a02e34ce3e4de19f6e56",
+  "level": 6,
+  "meaning": "won’t do, not work; no good; used in rhetorical questions",
+  "pinyin": "bùchéng",
+  "pos": "动、形、助",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-81-1779527162484"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

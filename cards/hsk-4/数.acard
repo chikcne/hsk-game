@@ -1,0 +1,29 @@
+{
+  "audio": "746d3b617dfbd2522d99d8837dc0605c7109ba2611587e6b0f9caf716a3ed2c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "数",
+  "id": "1b5913ad7a000f2c4b10b4f2",
+  "level": 4,
+  "meaning": "number, figure; several, a few",
+  "pinyin": "shù",
+  "pos": "noun、number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-j&|A7s&+d0-1779527160494"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

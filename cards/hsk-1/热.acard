@@ -1,0 +1,29 @@
+{
+  "audio": "4268749655c494980ae807db2a43ae5c7448ff5db582a882505f2e6960c3048d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热",
+  "id": "df47ce04031b878390370500",
+  "level": 1,
+  "meaning": "hot",
+  "pinyin": "rè",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-l).Tq!ZRLe-1779527158972"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "afc24507682c007a32945ea532602786c0afe5312e5daf85c33bf012494a0a14.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "病"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "病房",
+  "id": "4f9e240d94624903ee76969b",
+  "level": 5,
+  "meaning": "sickroom, ward",
+  "pinyin": "bìngfáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KAU8]}>N+8-1779527160871"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

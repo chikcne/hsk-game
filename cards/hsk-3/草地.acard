@@ -1,0 +1,32 @@
+{
+  "audio": "c87790e2951b3c102ea48ccac0a63735c6ddd8526f6aa9900a6e51dff73f525f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "草"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "草地",
+  "id": "05d3ecbbb46be2a2f11d9cc7",
+  "level": 3,
+  "meaning": "grassland",
+  "pinyin": "cǎodì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n9h$6_aPi.-1779527159351"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

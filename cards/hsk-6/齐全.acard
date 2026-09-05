@@ -1,0 +1,32 @@
+{
+  "audio": "fd6b6098fc1cf1a835b4c1b584df810d3eea27f60a3cc3901449ef1895165bfb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "全",
+      "齐"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "齐全",
+  "id": "943b2c3a3ecad1f584c9d88e",
+  "level": 6,
+  "meaning": "complete, full set",
+  "pinyin": "qíquán",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1016-1779527163419"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

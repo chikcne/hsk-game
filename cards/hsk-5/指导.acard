@@ -1,0 +1,31 @@
+{
+  "audio": "c045ed37c70b0a7261e459edfc01bf90bda54d4aedd645afb9dac34cf51fd816.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "指"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "指导",
+  "id": "33493f7150cdf55ba2b716ad",
+  "level": 5,
+  "meaning": "to guide, to direct",
+  "pinyin": "zhǐdǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l6j).jyZ7%-1779527162310"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

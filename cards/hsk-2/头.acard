@@ -1,0 +1,29 @@
+{
+  "audio": "d91e27801425bb89069e665258479509326fca402e927cf2ed68670fbd37a747.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "头",
+  "id": "f28c2b255904a1193d08ac12",
+  "level": 2,
+  "meaning": "head; (measure word for animals); (first)",
+  "pinyin": "tóu",
+  "pos": "noun、 （classifier）、 （adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-F$AVM*Z7tX-1779527159248"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

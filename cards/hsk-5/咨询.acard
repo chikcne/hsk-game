@@ -1,0 +1,29 @@
+{
+  "audio": "43d3ee7e582406d49b666b576f87b5c61ff59c68cc2ba6a086d903bbb169fe27.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "咨询",
+  "id": "5bccdcc178acb348bcf170d6",
+  "level": 5,
+  "meaning": "to consult, to seek advice",
+  "pinyin": "zīxún",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hz]j=Q&(Xj-1779527162373"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

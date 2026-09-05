@@ -1,0 +1,32 @@
+{
+  "audio": "c5f102161c7aee04aa920123c064eed51466c08a048b525b6a985da41caa7efe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "理",
+      "管"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "管理",
+  "id": "4ee733f1045447e1ffda01aa",
+  "level": 4,
+  "meaning": "manage",
+  "pinyin": "guǎnlǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-GdkMf_?&*2-1779527160076"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

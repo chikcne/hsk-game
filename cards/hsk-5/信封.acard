@@ -1,0 +1,32 @@
+{
+  "audio": "4f6d0888f227e177e593f5519ebddd80f9e353ca892c45d4d8f71566c2ad3938.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "信",
+      "封"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "信封",
+  "id": "691ffe44549f62518460a98c",
+  "level": 5,
+  "meaning": "envelope",
+  "pinyin": "xìnfēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uWUtt#5m)>-1779527162086"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

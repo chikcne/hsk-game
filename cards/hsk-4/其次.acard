@@ -1,0 +1,32 @@
+{
+  "audio": "8548c80ec48c9cb9a2ad6f045236f08893dc8ca5552716dee9118d900054acf7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "其",
+      "次"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "其次",
+  "id": "be42ce07304f8e11fe4072bf",
+  "level": 4,
+  "meaning": "next, secondly, then",
+  "pinyin": "qícì",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xbse*]i8Pk-1779527160370"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

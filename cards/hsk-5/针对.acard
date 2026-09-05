@@ -1,0 +1,32 @@
+{
+  "audio": "0609f47825eafc15058e5c81c13b47b919c13b8b361d87c68b9fb793e57484e1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "对",
+      "针"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "针对",
+  "id": "f2ca64780f5e770b358893a3",
+  "level": 5,
+  "meaning": "to target, to aim at",
+  "pinyin": "zhēnduì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zP.IRG7|WQ-1779527162285"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

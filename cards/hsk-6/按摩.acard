@@ -1,0 +1,31 @@
+{
+  "audio": "3ff71be0d0144bbdd81842c9265094c6dd0d22ebfde558fb2230255380d5b0fe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "按"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "按摩",
+  "id": "3cf74796191492e9d24c3aae",
+  "level": 6,
+  "meaning": "massage",
+  "pinyin": "ànmó",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-3-1779527162406"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

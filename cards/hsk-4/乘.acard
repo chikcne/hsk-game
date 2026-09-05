@@ -1,0 +1,29 @@
+{
+  "audio": "6bd28172bb87bc49410aaa2584989102c976f62933770bef86953afec273e39f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "乘",
+  "id": "b4db463429225386c8e4887b",
+  "level": 4,
+  "meaning": "to ride, to take, to multiply",
+  "pinyin": "chéng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qm(M1=E!WF-1779527159881"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

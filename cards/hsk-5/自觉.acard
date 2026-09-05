@@ -1,0 +1,31 @@
+{
+  "audio": "aa46a4b95dd63e5183a38fbfff74a1ae7489cbd85d5b437c322ee42b20c7a4b2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "自"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自觉",
+  "id": "84dad9a774f2422c431a8b56",
+  "level": 5,
+  "meaning": "to be aware, to act on one's own; conscious",
+  "pinyin": "zìjué",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-QdmX1[+oZi-1779527162379"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

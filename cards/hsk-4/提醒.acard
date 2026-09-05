@@ -1,0 +1,32 @@
+{
+  "audio": "9848a20bb9eb151767f5a331e4df49ecee84fb3edd769fb41db021763ed89839.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "提",
+      "醒"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "提醒",
+  "id": "4077c7f80a1e59186e4178b6",
+  "level": 4,
+  "meaning": "to remind, to alert",
+  "pinyin": "tíxǐng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-CE~i7J5.sF-1779527160534"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "22ac94709d3e032fa1cd9cfa83c26548acc4505725b6fd098ad8c7dd43ba8ec0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成",
+      "长"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成长",
+  "id": "6e18294991f097fec810c71f",
+  "level": 5,
+  "meaning": "to grow up",
+  "pinyin": "chéngzhǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G:g3!~3ht6-1779527160955"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

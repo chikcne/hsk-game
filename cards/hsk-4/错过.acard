@@ -1,0 +1,32 @@
+{
+  "audio": "4628501cc7d9bad75d053a1f8e837b4c0344317f96f278d904020d38b28b21b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "过",
+      "错"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "错过",
+  "id": "7faf246dec9570eb309e6347",
+  "level": 4,
+  "meaning": "to miss, to let slip",
+  "pinyin": "cuòguò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-x>>TAVZ%Q-1779527159912"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

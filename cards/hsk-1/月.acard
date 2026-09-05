@@ -1,0 +1,29 @@
+{
+  "audio": "c7153715401672af5e5c7402d787fda559ff35c5db803ee5a19d71e828d0d627.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "月",
+  "id": "8fb96b6a71522c3847b30238",
+  "level": 1,
+  "meaning": "month; moon",
+  "pinyin": "yuè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-NPT),^H~6s-1779527159072"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

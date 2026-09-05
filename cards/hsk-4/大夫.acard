@@ -1,0 +1,31 @@
+{
+  "audio": "0a443e24582c58768a7b177011f9b9bc816520cbbb4ef4e3af8b47fb56d07527.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大夫",
+  "id": "8ae1274757d8ae913494ae37",
+  "level": 4,
+  "meaning": "doctor (medical)",
+  "pinyin": "dàifu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-fvT!@X|7iA-1779527159928"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

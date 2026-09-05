@@ -1,0 +1,29 @@
+{
+  "audio": "c523cfa8df25fdd92b87dd8f11833632e5f47d98e30d6166635ec2e602a7f7c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "徒弟",
+  "id": "2e03d89987e80144e34ee5bf",
+  "level": 6,
+  "meaning": "apprentice",
+  "pinyin": "túdì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1330-1779527163733"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

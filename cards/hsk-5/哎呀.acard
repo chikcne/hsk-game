@@ -1,0 +1,32 @@
+{
+  "audio": "013fb5914aadd041969e6d68bbb989e75e910af73c963addc644caac7549fa4f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "呀",
+      "哎"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哎呀",
+  "id": "afc78190d6e2656f8bada2d3",
+  "level": 5,
+  "meaning": "oh my, ah",
+  "pinyin": "āiyā",
+  "pos": "interjection",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-n#BR7j1*:f-1779527160805"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

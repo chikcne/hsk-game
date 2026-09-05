@@ -1,0 +1,29 @@
+{
+  "audio": "d6cbcaa0661015e7c1dfefed171464e5f9390825aa5b2fe3618192cc218262bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "为",
+  "id": "9079d57389bb800d474477d3",
+  "level": 5,
+  "meaning": "for, for the sake of",
+  "pinyin": "wéi",
+  "pos": "preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-dEIeEX?:@E-1779527161987"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

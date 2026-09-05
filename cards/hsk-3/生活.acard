@@ -1,0 +1,32 @@
+{
+  "audio": "98c9cf9cb28190bcec28360879175e02cfabc1eb862f086469f319759a1c23e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "活",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生活",
+  "id": "ef00526cbd56524e5c9f515b",
+  "level": 3,
+  "meaning": "life; to live",
+  "pinyin": "shēnghuó",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-g;>O<<&ECE-1779527159632"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "a2b99ad906384209703235ae32cf205c682930bd6911bde7d6ea5339516c78a2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "少",
+      "至"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "至少",
+  "id": "37bc20a7f2c38d04adefbb2c",
+  "level": 4,
+  "meaning": "at least",
+  "pinyin": "zhìshǎo",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-IJ_8^78N:H-1779527160759"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

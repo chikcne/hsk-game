@@ -1,0 +1,29 @@
+{
+  "audio": "93e5439441ff8a79b1fc71a903b91c987e8c21f065749e5360cfc98baeba9ac0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "逼",
+  "id": "90d861f189c68d9eed033b89",
+  "level": 6,
+  "meaning": "to force",
+  "pinyin": "bī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-48-1779527162451"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

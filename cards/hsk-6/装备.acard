@@ -1,0 +1,31 @@
+{
+  "audio": "090a89b6657a0381efd2732902b23ecee42c8f85bc47bfabd8ac8d7fcd469c85.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "装"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "装备",
+  "id": "18da2e848dc481f90c1b5e69",
+  "level": 6,
+  "meaning": "to equip; equipment",
+  "pinyin": "zhuāngbèi",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1771-1779527164174"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

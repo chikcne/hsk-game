@@ -1,0 +1,32 @@
+{
+  "audio": "f133ffc2423d205acf7322e850b5b4e7cc3be0beba92dcc4813b4df5c6261970.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "推",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "推进",
+  "id": "375de62659a6f9403f53d07b",
+  "level": 5,
+  "meaning": "to push forward, to advance",
+  "pinyin": "tuījìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-LZLxllITIA-1779527161964"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

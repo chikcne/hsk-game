@@ -1,0 +1,32 @@
+{
+  "audio": "24f3c0fdb4bcffac7809c5f9cb6a0cdb23518a167853b33558b88ffeeef22fac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "假",
+      "如"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "假如",
+  "id": "ff9a48776f44b4f73cd281e6",
+  "level": 5,
+  "meaning": "if",
+  "pinyin": "jiǎrú",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-BLV:O=5/D)-1779527161362"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

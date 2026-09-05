@@ -1,0 +1,29 @@
+{
+  "audio": "adde960163ddee263cd561fea45407cf9eaacb3ea7b84dc78285206db7890ff2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "事",
+  "id": "e2522d163bf792d3d54c1663",
+  "level": 1,
+  "meaning": "matter, thing",
+  "pinyin": "shì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-CUTz!^8W.}-1779527158990"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

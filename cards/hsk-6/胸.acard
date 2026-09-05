@@ -1,0 +1,29 @@
+{
+  "audio": "5435f6a40286f1b09fbf425ea704119d6fc76fd07023c8de7ddc7b3530caecd4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "胸",
+  "id": "889945908dbaf6ecb304fc05",
+  "level": 6,
+  "meaning": "chest",
+  "pinyin": "xiōng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1480-1779527163883"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

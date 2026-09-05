@@ -1,0 +1,29 @@
+{
+  "audio": "4acc98a3f5d81a82dfdc91821568a0f193e33f4b77608d58178392bea9fef0f3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肠",
+  "id": "7e84ef3ee35e9306531c4181",
+  "level": 6,
+  "meaning": "intestine",
+  "pinyin": "cháng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-124-1779527162527"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

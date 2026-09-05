@@ -1,0 +1,32 @@
+{
+  "audio": "b4f95709d12acb024b3c6e5597e58de1bd930fc2ce1a79b934836dc1104bc3a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "来",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "起来",
+  "id": "eb8e43830ef3df2659ec242b",
+  "level": 2,
+  "meaning": "to get up, to stand up; used after verbs to indicate upward movement or beginning",
+  "pinyin": "qǐlái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-M]Vwg47HIA-1779527159221"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

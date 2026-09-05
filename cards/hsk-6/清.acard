@@ -1,0 +1,29 @@
+{
+  "audio": "9695c3240426eef30f927a789c2ae206eada3ee927a34023a64f32aa811a469c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "清",
+  "id": "7447a629ba64c9a519882fc5",
+  "level": 6,
+  "meaning": "clear; to clear",
+  "pinyin": "qīng",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1052-1779527163455"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

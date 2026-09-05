@@ -1,0 +1,29 @@
+{
+  "audio": "248eee75d5c6029af9ae84acb6d08d2c1485686a472c44f0e4f972f794cbd03e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "参展",
+  "id": "817de0f0a6a7c9f9dfde3704",
+  "level": 6,
+  "meaning": "to participate in an exhibition",
+  "pinyin": "cānzhǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-107-1779527162510"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

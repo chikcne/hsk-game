@@ -1,0 +1,32 @@
+{
+  "audio": "c3934cafac49b725acaece4791efbe1e8f9e1e8b995228f3bc6ee9b9bb1ce300.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "可",
+      "靠"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "可靠",
+  "id": "1680c81e1d041d84b8751aa1",
+  "level": 5,
+  "meaning": "reliable, dependable",
+  "pinyin": "kěkào",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qS,X$aF4[A-1779527161468"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

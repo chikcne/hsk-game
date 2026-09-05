@@ -1,0 +1,29 @@
+{
+  "audio": "90978f61a7cdf584a476a7fb1e73b2ad329fe4196845f43c2ae30c1b2771e49c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "琴",
+  "id": "4d9da9c4b982e8a072903374",
+  "level": 4,
+  "meaning": "musical instrument, piano, etc.",
+  "pinyin": "qín",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-AN?%$H79,p-1779527160388"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "9c360e0a10acba0cae1ee0bdbbe2762423f51f615ec495580f02c980ff859eaf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "困"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "困扰",
+  "id": "3a588fa34238194e8c0c21d5",
+  "level": 6,
+  "meaning": "to trouble, to disturb",
+  "pinyin": "kùnrǎo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-808-1779527163211"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

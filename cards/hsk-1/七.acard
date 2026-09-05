@@ -1,0 +1,29 @@
+{
+  "audio": "b78fcc5ef800f5aec46cf9f548888f8bc01c71e398dd4ef1ed2700938ebae660.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "七",
+  "id": "c5615308b8c45eb0353774ff",
+  "level": 1,
+  "meaning": "seven",
+  "pinyin": "qī",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-gfX2%o?C$C-1779527158963"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

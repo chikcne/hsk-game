@@ -1,0 +1,31 @@
+{
+  "audio": "be00564073c6692cc55237cdb26d2d365511a54aebd4f96098e4c0168f3d6e91.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "糖"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "糖果",
+  "id": "f75a81ec03df97db6f54dafa",
+  "level": 6,
+  "meaning": "candy",
+  "pinyin": "tángguǒ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1267-1779527163670"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "a91b15a84e0e5060f5be5773d5fb7278ef7ca5f5d026c2ab5e092626ba812708.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "万"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "万物",
+  "id": "4a0cc8dd05989b141cb9506e",
+  "level": 6,
+  "meaning": "all things, everything",
+  "pinyin": "wànwù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1359-1779527163762"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

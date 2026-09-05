@@ -1,0 +1,33 @@
+{
+  "audio": "1ad810e76ab1380ca56ea31f48be3ba9b491996b78936c8edfb59b28d4298257.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交",
+      "打",
+      "道"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打交道",
+  "id": "07d593a4cff60f2fc6630660",
+  "level": 6,
+  "meaning": "to come into contact with, to deal with",
+  "pinyin": "dǎjiāodao",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-236-1779527162639"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "b967c7705fa0e8f262dd1b9ede5f0055c88e46dc10b7cc00b0cf2b97d1c20739.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "裙子",
+  "id": "89f510beb847cae2dafa1bd1",
+  "level": 3,
+  "meaning": "skirt",
+  "pinyin": "qúnzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-ItRUj_8DG%-1779527159615"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

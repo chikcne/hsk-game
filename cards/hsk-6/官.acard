@@ -1,0 +1,29 @@
+{
+  "audio": "3942416eef928ab729511190208f5a41e3451ddb268714d2778ba16f36180531.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "官",
+  "id": "b6972497371a2f8689c67199",
+  "level": 6,
+  "meaning": "official, government official",
+  "pinyin": "guān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-488-1779527162891"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

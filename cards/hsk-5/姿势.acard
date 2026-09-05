@@ -1,0 +1,29 @@
+{
+  "audio": "f1b2deb2f26de60c0e0646ab6cf2ff9c26bea43be8e7fa6a79d62901ead07021.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "姿势",
+  "id": "51dcec79952453b095785b2d",
+  "level": 5,
+  "meaning": "posture",
+  "pinyin": "zīshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M:~4cU3bm|-1779527162372"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

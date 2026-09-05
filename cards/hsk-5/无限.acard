@@ -1,0 +1,32 @@
+{
+  "audio": "28452c79c98f7c6bfea1020913d0e5c3cf2ed6fb825b3109725710866a171447.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "无",
+      "限"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "无限",
+  "id": "1af2a16302de299e2e829630",
+  "level": 5,
+  "meaning": "unlimited, infinite",
+  "pinyin": "wúxiàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JRk-{fu&G*-1779527162012"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

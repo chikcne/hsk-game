@@ -1,0 +1,31 @@
+{
+  "audio": "46df0b40ba8c72df054aa5cae06ee72fbc7687ee7d4afd0fd9c2ee92b47bf153.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "血"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "血型",
+  "id": "6b48991ccb1d88d91bb02d47",
+  "level": 6,
+  "meaning": "blood type",
+  "pinyin": "xuèxíng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1494-1779527163897"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

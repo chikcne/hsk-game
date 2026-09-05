@@ -1,0 +1,29 @@
+{
+  "audio": "dccfbafab684ba417b906a18b3ccf1efcde65e3dad768541d53ac7cc8202c484.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "承担",
+  "id": "5d4de9c43d9b650636040fae",
+  "level": 5,
+  "meaning": "to bear, to undertake",
+  "pinyin": "chéngdān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GxpPy2gIee-1779527160940"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

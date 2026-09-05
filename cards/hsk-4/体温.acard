@@ -1,0 +1,29 @@
+{
+  "audio": "da2b7a6940e0c3590b19da0c1c125f8df0165208018bb1d9f401c3cb9abb62d7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "体温",
+  "id": "73ece5904165a9fe286c4bdb",
+  "level": 4,
+  "meaning": "body temperature",
+  "pinyin": "tǐwēn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Po.H}mHuvf-1779527160536"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

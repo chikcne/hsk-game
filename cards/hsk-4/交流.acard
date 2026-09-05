@@ -1,0 +1,32 @@
+{
+  "audio": "c1cd709cbc5ea0a89373ec4184111564b957aaaf9881caecb30f2510a80f63f6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交",
+      "流"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "交流",
+  "id": "1460af872a4456d689473a5f",
+  "level": 4,
+  "meaning": "communicate",
+  "pinyin": "jiāoliú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-lz*oBX%ea9-1779527160173"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

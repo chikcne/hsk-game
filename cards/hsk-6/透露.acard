@@ -1,0 +1,32 @@
+{
+  "audio": "63a1606332e0ee1e663949c5e207317535141b97d1b52d8dcbc07e7f768ed970.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "透",
+      "露"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "透露",
+  "id": "baf7631321fc41e3243377c6",
+  "level": 6,
+  "meaning": "to reveal",
+  "pinyin": "tòulù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1324-1779527163727"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "c2d860ed21ca0e137e869a5f87c07046009b9e611b9098e0502542c1b1de8fe5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "塔",
+  "id": "353b89c4ed94e2a101979d3f",
+  "level": 6,
+  "meaning": "pagoda",
+  "pinyin": "tǎ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1256-1779527163659"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

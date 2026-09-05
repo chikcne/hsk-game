@@ -1,0 +1,29 @@
+{
+  "audio": "d6cbcaa0661015e7c1dfefed171464e5f9390825aa5b2fe3618192cc218262bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "为",
+  "id": "4c0fc00f9a6515b8913f5f65",
+  "level": 3,
+  "meaning": "for, because of, to",
+  "pinyin": "wèi",
+  "pos": "preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-M_,Yh:eUKz-1779527159678"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

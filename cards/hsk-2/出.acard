@@ -1,0 +1,29 @@
+{
+  "audio": "18484d0b68b04c579166560008baf2138378dec9d3fb8d84080e5b630587da72.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出",
+  "id": "b82bceb6d8af97de7d798c30",
+  "level": 2,
+  "meaning": "to go out, to leave",
+  "pinyin": "chū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-u2q1yWo=1]-1779527159119"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

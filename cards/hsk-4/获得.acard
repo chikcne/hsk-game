@@ -1,0 +1,31 @@
+{
+  "audio": "f08a94a57bda68f85a350da2f1c3e8abe19b9d79134c2cf516754f47906f5e9a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "得"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "获得",
+  "id": "c871a9081955348f93134c3c",
+  "level": 4,
+  "meaning": "get",
+  "pinyin": "huòdé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-q3r,Ui?I^?-1779527160119"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

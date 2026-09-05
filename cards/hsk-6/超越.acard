@@ -1,0 +1,32 @@
+{
+  "audio": "6c7666155908ea44c915b98dd6741a4ee1db623d85432a5721087b87c10b5ac2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "超",
+      "越"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "超越",
+  "id": "32d4ab9e3330b3d1e9a597ed",
+  "level": 6,
+  "meaning": "to surpass, to exceed",
+  "pinyin": "chāoyuè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-141-1779527162544"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

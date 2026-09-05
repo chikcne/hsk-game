@@ -1,0 +1,31 @@
+{
+  "audio": "153cd9bc35498121b8efde3ef3cb98e891979a4cc3e254fe3dd63ec5e4339057.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "评"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "评论",
+  "id": "39a274daf1e1cee93c054690",
+  "level": 6,
+  "meaning": "to comment; comment",
+  "pinyin": "pínglùn",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1002-1779527163405"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

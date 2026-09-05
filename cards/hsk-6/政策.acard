@@ -1,0 +1,29 @@
+{
+  "audio": "b871487dd44cb25e6882ee3947d25832f0936a03816b7dbaa52f9ab35d873792.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "政策",
+  "id": "eca6d4f2a67f71f8f5f798e8",
+  "level": 6,
+  "meaning": "policy",
+  "pinyin": "zhèngcè",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1688-1779527164091"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

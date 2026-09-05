@@ -1,0 +1,29 @@
+{
+  "audio": "06a4f28575a3b1885704065d4ead20d9904fdfcde1aebc26e7af8680cec44aaa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "维护",
+  "id": "99d95ed3ec3c828b58cdc519",
+  "level": 6,
+  "meaning": "to maintain, to uphold",
+  "pinyin": "wéihù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1369-1779527163772"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "49fc0244515cc7176ce5f22837f7cf0ce20b1eba0691b10ba1953d6ab2cee42d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "短",
+      "长"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "长短",
+  "id": "1cb7fd480c09d11ae56ee86f",
+  "level": 6,
+  "meaning": "length, duration",
+  "pinyin": "chángduǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-125-1779527162528"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

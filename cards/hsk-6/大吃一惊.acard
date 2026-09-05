@@ -1,0 +1,33 @@
+{
+  "audio": "80fd0be705ec3d50682c32d23dc088490ebc57e05d411a64162c0d72b6ddc325.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "吃",
+      "大"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大吃一惊",
+  "id": "0cb52afb359044b106bcf377",
+  "level": 6,
+  "meaning": "to be greatly surprised",
+  "pinyin": "dàchī-yìjīng",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-245-1779527162648"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

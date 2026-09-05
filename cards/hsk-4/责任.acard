@@ -1,0 +1,29 @@
+{
+  "audio": "48c17834c6a9dea0db3655d98051d50ea74e38d185584480f49c2bda51d6398f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "责任",
+  "id": "111aab7254c5966582d973cf",
+  "level": 4,
+  "meaning": "responsibility, duty",
+  "pinyin": "zérèn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-OkK[N1GxJF-1779527160723"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

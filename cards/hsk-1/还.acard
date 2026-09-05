@@ -1,0 +1,29 @@
+{
+  "audio": "d397afa27189526fe7046cc01b1ab41d1b94ba805c7184cfd0783a7626ec41a7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "还",
+  "id": "6f9a14d77d14f508e97e8e93",
+  "level": 1,
+  "meaning": "still, also; quite",
+  "pinyin": "hái",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-nF%Ivv^{^#-1779527158870"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

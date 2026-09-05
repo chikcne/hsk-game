@@ -1,0 +1,29 @@
+{
+  "audio": "d0e9f14995ff8e1aadc7c71893ebae189f03ea506404f9feeb7e15d34b8b04af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "猜",
+  "id": "d3d2a1f4bf7f6f1bcef241e6",
+  "level": 4,
+  "meaning": "to guess",
+  "pinyin": "cāi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-KH2hBEqiLn-1779527159863"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

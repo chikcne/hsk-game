@@ -1,0 +1,31 @@
+{
+  "audio": "06b972ee452d0115440e73997fba968d628c39d200b4047abd299561a84f6270.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "洪水",
+  "id": "03155b4397875309bf354a94",
+  "level": 6,
+  "meaning": "flood",
+  "pinyin": "hóngshuǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-551-1779527162954"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

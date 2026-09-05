@@ -1,0 +1,32 @@
+{
+  "audio": "13333772f3fda6906b5b789a133c4278f4c8d140e7c7ec158b30e3f2e804de7c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "假",
+      "请"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "请假",
+  "id": "5950d6d165f2492b1afcc22a",
+  "level": 3,
+  "meaning": "to ask for leave",
+  "pinyin": "qǐngjià",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-EG2y%Ew[AL-1779527159611"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

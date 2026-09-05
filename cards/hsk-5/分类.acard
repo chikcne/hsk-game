@@ -1,0 +1,32 @@
+{
+  "audio": "637e4e4faa2d770a9b2d484dc18628a20b7ab2d42d852f068e22ce5f7f9e2223.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "类"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分类",
+  "id": "c152ecd719c54acaa3446e6b",
+  "level": 5,
+  "meaning": "to classify",
+  "pinyin": "fēnlèi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-j3>!6Y0$[7-1779527161154"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

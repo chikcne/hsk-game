@@ -1,0 +1,29 @@
+{
+  "audio": "9b3052962d6d2b7653fc46c848499f2bc28d1db9dc5b66ad07546173fe069ea1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "话筒",
+  "id": "3c69e9889dd2f65d77c45b9f",
+  "level": 6,
+  "meaning": "microphone",
+  "pinyin": "huàtǒng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-570-1779527162973"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

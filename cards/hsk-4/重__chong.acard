@@ -1,0 +1,29 @@
+{
+  "audio": "894112ade1f6b96f86b4bd80d0ffc8e90896e1a9f28898b478c2a088bc76ee28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "重",
+  "id": "91f909bd400fe89b2d05c252",
+  "level": 4,
+  "meaning": "again, once more; (to repeat)",
+  "pinyin": "chóng",
+  "pos": "adverb、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I9]L73d:u;-1779527159889"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

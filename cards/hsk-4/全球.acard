@@ -1,0 +1,32 @@
+{
+  "audio": "5e596bb9068c4de1074c50082e4944cd7d99a574d4257180f2b346b01ae53f02.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "全",
+      "球"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "全球",
+  "id": "e2d047388dd6c1b6fb7d20bd",
+  "level": 4,
+  "meaning": "the whole world, global",
+  "pinyin": "quánqiú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-sR[iE,0|:x-1779527160404"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "2e51bd2c411c0bf68a54ddbf9a25ec039efebe2f12b64852aca0c0595f94c11a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "听",
+      "见"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "听见",
+  "id": "c1324fad5d294dd9f1f66b0b",
+  "level": 1,
+  "meaning": "to hear (the result)",
+  "pinyin": "tīngjiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-j)U^gzt$_@-1779527159013"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

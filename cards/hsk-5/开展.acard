@@ -1,0 +1,31 @@
+{
+  "audio": "2c7dd164e7113dc1f19e690c0c8af7370bbd59f7d0cdcbd65e3d44c4acef35f9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开展",
+  "id": "af6c303bcbf2b3a64b9612ae",
+  "level": 5,
+  "meaning": "to develop, to carry out",
+  "pinyin": "kāizhǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x+k)m!_`FL-1779527161459"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

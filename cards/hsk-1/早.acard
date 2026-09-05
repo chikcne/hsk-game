@@ -1,0 +1,29 @@
+{
+  "audio": "df6387974fc6a23c1765ae836a2e4979144eb1286c6b97804810d78900bd0599.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "早",
+  "id": "756eb3f15fdef8c1d5fac369",
+  "level": 1,
+  "meaning": "early",
+  "pinyin": "zǎo",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-QbgI!frA?,-1779527159076"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

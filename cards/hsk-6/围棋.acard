@@ -1,0 +1,31 @@
+{
+  "audio": "d5acd5c27c29b11a4d895ee5e8dc4a133d6300c0fd275cc91d66db2a7b800035.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "围"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "围棋",
+  "id": "70d4cbd34bd227632f1bfbed",
+  "level": 6,
+  "meaning": "Go",
+  "pinyin": "wéiqí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1371-1779527163774"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

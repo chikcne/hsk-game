@@ -1,0 +1,31 @@
+{
+  "audio": "f324b72d67af0066ee5017ed6a69f9d9cf0c7cc2974eb6261fdb617eb476b376.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "充分",
+  "id": "1b69dea7e6ba291f4a20d56a",
+  "level": 5,
+  "meaning": "sufficient, ample",
+  "pinyin": "chōngfèn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-o-^Crih@!f-1779527160963"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

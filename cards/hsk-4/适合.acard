@@ -1,0 +1,31 @@
+{
+  "audio": "65d6f90657bf4fb6b57d0c610c5b369ce74804d9bc3bce80120ad6849858d65d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "适合",
+  "id": "d411e88d6990bbfb69c1038e",
+  "level": 4,
+  "meaning": "to suit, to fit, to be suitable",
+  "pinyin": "shìhé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-gcE/j)A?b~-1779527160474"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

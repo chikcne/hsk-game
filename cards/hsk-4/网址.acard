@@ -1,0 +1,31 @@
+{
+  "audio": "7d639921e5b7c381dd791f77ca7f43672c80d38d55be8c42a5db5cdaf263432b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "网"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "网址",
+  "id": "c9bde8a3348954f1b006c10a",
+  "level": 4,
+  "meaning": "website URL, web address",
+  "pinyin": "wǎngzhǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-oa91TG`U5N-1779527160572"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

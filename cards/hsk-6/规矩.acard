@@ -1,0 +1,29 @@
+{
+  "audio": "44c02abb33662527bed07eadada5a151305a53741e1871cc62a055ef0ce5a3fb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "规矩",
+  "id": "0f60e863cedfc0e3d85131d9",
+  "level": 6,
+  "meaning": "rule, custom; well-behaved",
+  "pinyin": "guīju",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-503-1779527162906"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

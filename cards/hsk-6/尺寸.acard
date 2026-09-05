@@ -1,0 +1,32 @@
+{
+  "audio": "0630f6bc42aa4d199d044d58b132716eb0539221bed6c1394af2b11bc8dc9799.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "寸",
+      "尺"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "尺寸",
+  "id": "fd5fde93a756d8849d5901bf",
+  "level": 6,
+  "meaning": "size",
+  "pinyin": "chǐcùn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-172-1779527162575"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

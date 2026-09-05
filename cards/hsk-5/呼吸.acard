@@ -1,0 +1,31 @@
+{
+  "audio": "7b20f5578bd243ca11ddda1494eb72ecdff2391854aefab87f610fbc32c8deb2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "吸"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "呼吸",
+  "id": "0500d0fcecf0aaced9f60d0c",
+  "level": 5,
+  "meaning": "to breathe",
+  "pinyin": "hūxī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-NbuDP.==c{-1779527161291"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

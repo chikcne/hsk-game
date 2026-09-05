@@ -1,0 +1,29 @@
+{
+  "audio": "b02ac92401e73cd5ca284d07dc4378120e677e3fa3b4347bfaf87cc75f4db19d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "预计",
+  "id": "59cf4e2d5d02cd6c0537a7b1",
+  "level": 5,
+  "meaning": "to estimate, to expect",
+  "pinyin": "yùjì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-IcxmGr(A#R-1779527162228"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

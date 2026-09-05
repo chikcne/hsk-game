@@ -1,0 +1,31 @@
+{
+  "audio": "b48352dd918b492c3d0d9a6a04ace4a1e6fc81ceb0ea5c5be726c476fdf80a4d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "问"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "疑问",
+  "id": "dce0e8050bf225081a0ef104",
+  "level": 5,
+  "meaning": "doubt, question",
+  "pinyin": "yíwèn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ihyo>U}tuI-1779527162162"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

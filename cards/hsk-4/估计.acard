@@ -1,0 +1,29 @@
+{
+  "audio": "a60d7c1dc16202d837133cd5ef42aad0c96b86bb0c17eb55d8b045795637ebdb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "估计",
+  "id": "35f2bcfae4de614eea1a0e21",
+  "level": 4,
+  "meaning": "to estimate, to guess",
+  "pinyin": "gūjì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ymc[w-$?dC-1779527160066"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

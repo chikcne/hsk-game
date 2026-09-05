@@ -1,0 +1,32 @@
+{
+  "audio": "11158b9b7b274af352ff28b78a5f8a59ef0cc54c1f0e8ce0d554e7b2e7ae2dd0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "日",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "日期",
+  "id": "f732ded4775987b4ac0608f7",
+  "level": 4,
+  "meaning": "date",
+  "pinyin": "rìqī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MNMMGc|Iw4-1779527160423"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "688dbc2aaa18817d7b453049b9087fe6f6a5e9d795f4c0f97f695c372111c22c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "提"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "提示",
+  "id": "d37cbe9a342d868bc178f8bf",
+  "level": 6,
+  "meaning": "to prompt, to point out",
+  "pinyin": "tíshì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1283-1779527163686"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

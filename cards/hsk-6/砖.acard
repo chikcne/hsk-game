@@ -1,0 +1,29 @@
+{
+  "audio": "3384fd289e3389a575d4f8d64f2cb901e5e09eff566c23262ee9c74b760445ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "砖",
+  "id": "92c5edcb3346ef4e5d9afe4c",
+  "level": 6,
+  "meaning": "brick",
+  "pinyin": "zhuān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1758-1779527164161"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

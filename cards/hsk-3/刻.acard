@@ -1,0 +1,29 @@
+{
+  "audio": "d7d3563238ca2fd87a6967045c59b739b129da3ffa7c478d3b0f17394e2e904b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "刻",
+  "id": "8fd927e6ce89bcf77a04f606",
+  "level": 3,
+  "meaning": "quarter; to carve",
+  "pinyin": "kè",
+  "pos": "classifier、 （verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-M_yV[#MLRt-1779527159538"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "audio": "2ede60d8e4734efb634103356169ce8c9a4db7bb6ebc36195bdd2ff33a325f77.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "科",
+      "科技",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高科技",
+  "id": "21c43a9ba11cf05bc5120d79",
+  "level": 5,
+  "meaning": "high technology, high-tech",
+  "pinyin": "gāokējì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l`f>iG[P=d-1779527161193"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

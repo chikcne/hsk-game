@@ -1,0 +1,31 @@
+{
+  "audio": "26e8f1fb987e0fd67f3cb1883179e12aa00e429194b4594819c35a5f4d077e69.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "登"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "登机",
+  "id": "460ad5bebd0f138ba197b0bc",
+  "level": 4,
+  "meaning": "to board a plane",
+  "pinyin": "dēngjī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Cuc6P2D@WV-1779527159949"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

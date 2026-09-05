@@ -1,0 +1,32 @@
+{
+  "audio": "6bb8111e60bf5abdbe592b89d1f8f3c7d94df828126d094893faf3875639240e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "认"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公认",
+  "id": "74c5227b1f1d4f86c5a36d03",
+  "level": 6,
+  "meaning": "to be generally recognized",
+  "pinyin": "gōngrèn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-460-1779527162863"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

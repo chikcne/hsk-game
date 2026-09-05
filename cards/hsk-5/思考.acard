@@ -1,0 +1,31 @@
+{
+  "audio": "f99d2da77b2d863f943f1b32986e3b74f80fb5bcff9faedc0f70d98a03e2c4a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "考"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "思考",
+  "id": "dc0b02e493c6349d58debb36",
+  "level": 5,
+  "meaning": "to think",
+  "pinyin": "sīkǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-j1gVrKlU+R-1779527161880"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

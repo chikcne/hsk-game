@@ -1,0 +1,32 @@
+{
+  "audio": "b61be95e17a48bdbc61f3a9d988237617066e18410bc0ed1041d1b7bc81486b1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "再",
+      "次"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "再次",
+  "id": "84665143cf697757609aac12",
+  "level": 4,
+  "meaning": "once again, once more",
+  "pinyin": "zàicì",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-N105%/x7(}-1779527160717"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

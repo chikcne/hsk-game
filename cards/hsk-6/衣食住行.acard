@@ -1,0 +1,32 @@
+{
+  "audio": "81fad32673e0587fe8939c95d8c9eba7f0aecdd1565575d89b950aba7d3ecf62.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "住",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "衣食住行",
+  "id": "6455edb7d396e51aefae861c",
+  "level": 6,
+  "meaning": "basic necessities of life",
+  "pinyin": "yī-shí-zhù-xíng",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1539-1779527163942"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "8847b4ab9d1cfd938d3fa214722598a3f8b4ec5b0b3afb0b8cb2c4293ab45f6b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本",
+      "课"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "课本",
+  "id": "8fd301d0b025c784074f8c28",
+  "level": 3,
+  "meaning": "textbook",
+  "pinyin": "kèběn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-wHf,;*f3/>-1779527159539"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

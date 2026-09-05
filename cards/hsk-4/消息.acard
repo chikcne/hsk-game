@@ -1,0 +1,29 @@
+{
+  "audio": "942a0e704a360a37b841d4219f095718605314483c7e50e8734e2d05c12fac86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "消息",
+  "id": "2ddc58cdef4fc80ca6878bb2",
+  "level": 4,
+  "meaning": "news, message, information",
+  "pinyin": "xiāoxi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I-l-ex/Q!t-1779527160614"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

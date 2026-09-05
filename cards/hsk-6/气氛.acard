@@ -1,0 +1,31 @@
+{
+  "audio": "2c64706d8283fdbf3a3e5b52ca3cfe0e3b9007e9cf76eabe0613683ec320128b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "气氛",
+  "id": "358cf985e4c55d1d96c32013",
+  "level": 6,
+  "meaning": "atmosphere",
+  "pinyin": "qìfēn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1025-1779527163428"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

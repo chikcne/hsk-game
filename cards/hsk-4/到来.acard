@@ -1,0 +1,32 @@
+{
+  "audio": "783f309078dc606bd9febc28aa9ca7a45baad618727e99b44c5bbe230c22ea50.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "到来",
+  "id": "53f7d58ae68fedc1839b6d72",
+  "level": 4,
+  "meaning": "to arrive",
+  "pinyin": "dàolái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-j)4^EjbF%$-1779527159945"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

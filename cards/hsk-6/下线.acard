@@ -1,0 +1,32 @@
+{
+  "audio": "283516bfcc878dea4665c61e062428bcfe929734e4e79f717bdaf5b2895e2389.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "线"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下线",
+  "id": "841ecdf19ec2d5eb2a3ea7fa",
+  "level": 6,
+  "meaning": "to go offline",
+  "pinyin": "xiàxiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1417-1779527163820"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

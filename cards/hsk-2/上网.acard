@@ -1,0 +1,32 @@
+{
+  "audio": "a469dd13f89dae226959ac92442bfa74452cfc82ef74535f84cc6eff2d61fe28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "网"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上网",
+  "id": "42b75f3c449096c20544e175",
+  "level": 2,
+  "meaning": "to go online, to surf the Internet",
+  "pinyin": "shàngwǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-lSXpW5RJ#k-1779527159231"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

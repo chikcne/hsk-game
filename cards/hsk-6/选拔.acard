@@ -1,0 +1,31 @@
+{
+  "audio": "ddc5a3719bcaeff6fb5faa71af0e2148b51707032e0bad003f6c7f0ceff779ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "选"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "选拔",
+  "id": "ac4957aa96cec1081be150b9",
+  "level": 6,
+  "meaning": "to select, to choose",
+  "pinyin": "xuǎnbá",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1487-1779527163890"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "f268c1e104c7d7694e011c5acf3e514a65c14b6b3f45ddcac23807e17def7425.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交",
+      "成"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成交",
+  "id": "451138d6af99e944bb25af8b",
+  "level": 6,
+  "meaning": "to conclude a deal, to transact",
+  "pinyin": "chéngjiāo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-161-1779527162564"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

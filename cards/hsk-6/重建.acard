@@ -1,0 +1,32 @@
+{
+  "audio": "60bd91a5ce363b8dc82e4d18b9f2db7025af066e37127adbef71136c8852407c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "建",
+      "重"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "重建",
+  "id": "1ce693174daa71c5d685fec2",
+  "level": 6,
+  "meaning": "to rebuild",
+  "pinyin": "chóngjiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-178-1779527162581"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

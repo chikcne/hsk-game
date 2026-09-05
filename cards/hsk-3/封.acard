@@ -1,0 +1,29 @@
+{
+  "audio": "c673a3c7fdbb19c5834510b2c9005dd18c996a61fd57dad2c016798c6a561895.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "封",
+  "id": "27674ef321985ae66488381b",
+  "level": 3,
+  "meaning": "measure word for letters; (to seal)",
+  "pinyin": "fēng",
+  "pos": "classifier、 （verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-BQn:s>_Vln-1779527159433"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

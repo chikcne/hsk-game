@@ -1,0 +1,32 @@
+{
+  "audio": "10ea4a06f6042aec96dd8c601d5344050896922d6753d3e730a57901ccfb0530.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外来",
+  "id": "70bfa5df927c3869043c36e9",
+  "level": 6,
+  "meaning": "external, foreign",
+  "pinyin": "wàilái",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1355-1779527163758"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

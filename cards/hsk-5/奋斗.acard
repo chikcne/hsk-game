@@ -1,0 +1,29 @@
+{
+  "audio": "c49b0eb6184e91a2b456845e83c24f5494bb7b0e7025f4d4f701713f56e1191b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "奋斗",
+  "id": "e4447db2654d14efb5bf84dc",
+  "level": 5,
+  "meaning": "to strive, to struggle",
+  "pinyin": "fèndòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jIBMDA(1SY-1779527161160"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

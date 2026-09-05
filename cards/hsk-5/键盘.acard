@@ -1,0 +1,32 @@
+{
+  "audio": "cf3d0d5abc2a621521f0566d828569cc4fd14f532d7cd85ad926bff68c5b3934.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "盘",
+      "键"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "键盘",
+  "id": "f9049e58efe342acc83d6be9",
+  "level": 5,
+  "meaning": "keyboard",
+  "pinyin": "jiànpán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-RcZU%B;GAK-1779527161379"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

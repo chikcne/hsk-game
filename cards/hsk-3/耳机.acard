@@ -1,0 +1,29 @@
+{
+  "audio": "bb87478ca81ef3fabe15a7d471a0e32b6d3b8f0dcbc6dc082d961620247127c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "耳机",
+  "id": "c20501a8f87402973ac8d5bc",
+  "level": 3,
+  "meaning": "earphone",
+  "pinyin": "ěrjī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-oNww6qq/N2-1779527159416"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

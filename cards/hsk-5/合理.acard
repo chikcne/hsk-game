@@ -1,0 +1,32 @@
+{
+  "audio": "ea50cd9581c52283908b4ea85f49f46c661ba988784b785edc23bff56134f894.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "合理",
+  "id": "2879f864c8a7dab11bbd3aaf",
+  "level": 5,
+  "meaning": "reasonable, rational",
+  "pinyin": "hélǐ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O=Xeo[P8bN-1779527161280"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

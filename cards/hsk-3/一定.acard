@@ -1,0 +1,32 @@
+{
+  "audio": "458b13c78bbe12f5c195daa0c02c4d10020d7c059b9210bd578c86dee8c064e8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "定"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一定",
+  "id": "1d285b6ee36684d7e4b8629f",
+  "level": 3,
+  "meaning": "certain; certainly",
+  "pinyin": "yídìng",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-E(~M(]y(rZ-1779527159725"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

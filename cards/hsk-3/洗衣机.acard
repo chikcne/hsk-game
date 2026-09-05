@@ -1,0 +1,31 @@
+{
+  "audio": "bcba2fc055ebdef6fe140ea2f816cf7c39651929d278aaac42ee0fa860d056f6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "洗"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "洗衣机",
+  "id": "bd17e11eb78c03f3c54ba12e",
+  "level": 3,
+  "meaning": "washing machine",
+  "pinyin": "xǐyījī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-w>F^f]0?N4-1779527159690"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "056615feba9fcb2e507cd339170b4f60d1aa533dc636b1b1e8f5fe29772fa80a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "演"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "演出",
+  "id": "a8e72cc22910e98d23e8b13f",
+  "level": 4,
+  "meaning": "to perform, to put on a show",
+  "pinyin": "yǎnchū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-mXww8^4V,6-1779527160654"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

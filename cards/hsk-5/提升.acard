@@ -1,0 +1,32 @@
+{
+  "audio": "96edb34dd200d3317b7dfbc5a8f962b867b5a308e70e1bbab4f38e95655cf2e0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "升",
+      "提"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "提升",
+  "id": "7ff8e34b50cfaa07bfc1ee8d",
+  "level": 5,
+  "meaning": "to promote, to raise",
+  "pinyin": "tíshēng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-dsI3*E61@y-1779527161920"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

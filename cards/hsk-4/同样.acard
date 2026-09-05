@@ -1,0 +1,32 @@
+{
+  "audio": "7f782350e2e35602b28f2ba21e3c8bf35296258f63b8853140e55730019b4bd5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同",
+      "样"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "同样",
+  "id": "4be056ae4ca0452575e2c09b",
+  "level": 4,
+  "meaning": "same, similar",
+  "pinyin": "tóngyàng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d.KjGLys(e-1779527160551"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

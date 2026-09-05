@@ -1,0 +1,32 @@
+{
+  "audio": "bb28751fd005a15d08de9bb2ab87b721c271ee6fde5ed37029e9c129e138bec8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "扣",
+      "折"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "折扣",
+  "id": "1590c43a13231ed209e53f56",
+  "level": 5,
+  "meaning": "discount",
+  "pinyin": "zhékòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-r|h/H6`6nH-1779527162282"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

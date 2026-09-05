@@ -1,0 +1,32 @@
+{
+  "audio": "73fe0464083cabdc63a3be39739ac140258a8d115e9b7b8999afccb9a8cf9e60.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "急",
+      "救"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "急救",
+  "id": "05c62ce709d37082fbef33ee",
+  "level": 6,
+  "meaning": "first aid, emergency treatment",
+  "pinyin": "jíjiù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-617-1779527163020"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

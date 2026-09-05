@@ -1,0 +1,29 @@
+{
+  "audio": "bcf6b4553f7dd3a1328e3b56ef321c96045caad3da13e2cfc516dabcd58e09b9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "具体",
+  "id": "83d22d2bc98fa3a2a768adab",
+  "level": 5,
+  "meaning": "concrete, specific; to embody",
+  "pinyin": "jùtǐ",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wfHaQ`zF^j-1779527161445"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

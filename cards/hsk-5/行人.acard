@@ -1,0 +1,32 @@
+{
+  "audio": "8a0cd2f5830a01df5fc9e94bc3bf9f20c5534c9d021a278a26d172f9f3d0a814.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "行人",
+  "id": "69a9cc8bd563ff72b3ca82f0",
+  "level": 5,
+  "meaning": "pedestrian",
+  "pinyin": "xíngrén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Q4t.Ks*J)y-1779527162092"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

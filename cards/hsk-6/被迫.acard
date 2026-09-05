@@ -1,0 +1,31 @@
+{
+  "audio": "9dad7d3759d3395b663b1497bdddb47f7171c08cd71548581a6464779e5ddc92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "被"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "被迫",
+  "id": "4713d868bb07e2fe9e76f618",
+  "level": 6,
+  "meaning": "to be forced",
+  "pinyin": "bèipò",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-40-1779527162443"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

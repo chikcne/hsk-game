@@ -1,0 +1,31 @@
+{
+  "audio": "d197cb46ce0310ba5b3643551356575b93d4f910ae46d5ac8a670c864271ddba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "刚"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "刚刚",
+  "id": "1fadd7e2b06c914aaadadc98",
+  "level": 3,
+  "meaning": "just now, a moment ago",
+  "pinyin": "gānggāng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-A?PrI3oU&+-1779527159446"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

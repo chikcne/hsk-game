@@ -1,0 +1,29 @@
+{
+  "audio": "02abf8c2dc9094b6cb0c261c7e31b0181b026e8757cf5ef7bac9bfeacd469fb6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "升",
+  "id": "1d73378bf600a0bc659a03a9",
+  "level": 5,
+  "meaning": "to rise, to go up",
+  "pinyin": "shēng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gW?l$6<TgW-1779527161792"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

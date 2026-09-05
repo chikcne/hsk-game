@@ -1,0 +1,29 @@
+{
+  "audio": "b7d0f949364aad53ca3076dc3063abe81658fa5667ef149d1bfb4ffa83e44dea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "文艺",
+  "id": "d4f4d5a9ec460d625b8d4e8a",
+  "level": 6,
+  "meaning": "literature and art",
+  "pinyin": "wényì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1393-1779527163796"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

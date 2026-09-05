@@ -1,0 +1,29 @@
+{
+  "audio": "da879f29a3c620636af16b245905157f053bb3db51b6041af43dfb5d523ea946.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "度",
+  "id": "211eaba831f68484893caa60",
+  "level": 5,
+  "meaning": "measure word for occurrences; degree; to measure; suffix for degree",
+  "pinyin": "dù",
+  "pos": "、noun、verb、 suffix",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M~GYpxfeoF-1779527161103"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "adde960163ddee263cd561fea45407cf9eaacb3ea7b84dc78285206db7890ff2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "是",
+  "id": "3176e0539e27ccb4c8e4fb56",
+  "level": 1,
+  "meaning": "to be",
+  "pinyin": "shì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-ER4tn^2.H}-1779527158991"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "61dff7728fd29172bbd6e3c37625b91c132906e997d2d4e2352f8c97873ec753.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中央",
+  "id": "017ea5069b7c23e57dcdd14a",
+  "level": 6,
+  "meaning": "center",
+  "pinyin": "zhōngyāng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1726-1779527164129"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

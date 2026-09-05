@@ -1,0 +1,32 @@
+{
+  "audio": "fb9bcee265eb66712a8fa1facc9f777ef56b93fcac4aba3f91013ce7b8095567.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "家"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大家",
+  "id": "51b33dd0eaef26c7960b2cd8",
+  "level": 1,
+  "meaning": "everyone",
+  "pinyin": "dàjiā",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-yz5?lE+8#H-1779527158829"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

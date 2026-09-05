@@ -1,0 +1,33 @@
+{
+  "audio": "1d50f1451950c3a88bdf186bb0049eae94a3f30e03a3cd63acf50c2ab9b24075.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "旅行",
+      "社",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "旅行社",
+  "id": "d93cb25cb9e8c7765f31320d",
+  "level": 5,
+  "meaning": "travel agency",
+  "pinyin": "lǚxíngshè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-BYb|r<G@4S-1779527161548"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

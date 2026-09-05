@@ -1,0 +1,32 @@
+{
+  "audio": "71edafffad64e84701fe39795cf3e74b4e793fd1b7b6386f75729b67c62e6b65.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "大"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大力",
+  "id": "3442e11dee071e2cfeafa61f",
+  "level": 5,
+  "meaning": "great strength; vigorously, with great effort",
+  "pinyin": "dàlì",
+  "pos": "noun、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Bm-?6{&f-V-1779527161024"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

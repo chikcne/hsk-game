@@ -1,0 +1,29 @@
+{
+  "audio": "6e46894ff8c456f10709411cc515f29f60b9a1a30da221782b9b03b678d26ffe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "痛",
+  "id": "97d964d1d2402868e91f5048",
+  "level": 4,
+  "meaning": "painful, sore; (extremely, bitterly)",
+  "pinyin": "tòng",
+  "pos": "adjective、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hjtktbJ@-r-1779527160553"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

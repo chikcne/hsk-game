@@ -1,0 +1,29 @@
+{
+  "audio": "3c700dae5df06f55e3a79b8583ea8ff2edad6be52df35ce15dfd30d658869528.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "串",
+  "id": "5169e4eb37eeb874aa87d6fe",
+  "level": 6,
+  "meaning": "string, bunch; measure word for strings",
+  "pinyin": "chuàn",
+  "pos": "名、量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-209-1779527162612"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

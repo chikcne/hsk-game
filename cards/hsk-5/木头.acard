@@ -1,0 +1,31 @@
+{
+  "audio": "a7095ce1b016ab0d3ac43305e4d19661fc92a690668dd34dee9e19565e79b36b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "木头",
+  "id": "6b1a151c78f7504dc0a4cd5d",
+  "level": 5,
+  "meaning": "wood",
+  "pinyin": "mùtou",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ECHy,ooKv(-1779527161590"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

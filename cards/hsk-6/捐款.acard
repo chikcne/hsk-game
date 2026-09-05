@@ -1,0 +1,32 @@
+{
+  "audio": "340fe3d91107acfe9cdb2ac83e2af1c6bf0fbe5753f65d4d0a1227c1491baee2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "捐",
+      "款"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "捐款",
+  "id": "772648611b3ff8739d454148",
+  "level": 6,
+  "meaning": "to donate money; donation",
+  "pinyin": "juānkuǎn",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-751-1779527163154"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

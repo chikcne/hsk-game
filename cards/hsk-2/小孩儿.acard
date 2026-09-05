@@ -1,0 +1,31 @@
+{
+  "audio": "940a4a3241011894597f435362ab655c0957a0dfe5e2a69a7923ed50082cc132.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小孩儿",
+  "id": "a8210342a3ff8218aa8a860e",
+  "level": 2,
+  "meaning": "child, little kid",
+  "pinyin": "xiǎoháir",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-HgdhE2Tasj-1779527159264"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

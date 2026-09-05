@@ -1,0 +1,31 @@
+{
+  "audio": "a01a9197913f447875459cdc536ef566ee3f6e85c9d1d4b7ea2954b022b4a8c7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "是"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "是否",
+  "id": "b51ad5cf1107c5885afd9774",
+  "level": 4,
+  "meaning": "whether or not, if",
+  "pinyin": "shìfǒu",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s2R:dOKoZ7-1779527160473"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

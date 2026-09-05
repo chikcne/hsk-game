@@ -1,0 +1,32 @@
+{
+  "audio": "6332987f195cd2253854c4c3444e0e52fc426a5c2ca05de4e7eb6eb43abfaad5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "家",
+      "长"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "家长",
+  "id": "8a2a96c40f703540ec1803e9",
+  "level": 4,
+  "meaning": "parent, the head of the family",
+  "pinyin": "jiāzhǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-QyI9hopbHe-1779527160147"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

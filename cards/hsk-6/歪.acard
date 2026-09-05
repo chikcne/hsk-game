@@ -1,0 +1,29 @@
+{
+  "audio": "b490cb93de477eaefa28bdc6711e5bcb283597da43c5b6ce1755dd482c26f32d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "歪",
+  "id": "2272f568afb1ff2b675f2f06",
+  "level": 6,
+  "meaning": "crooked",
+  "pinyin": "wāi",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1350-1779527163753"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

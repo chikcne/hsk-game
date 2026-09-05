@@ -1,0 +1,32 @@
+{
+  "audio": "e29223ca327fc9da27058f3ab35abf1fab46ddb7168a0a6a148a332e2f737600.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过年",
+  "id": "a092f44a61f8b9e45c4c4b39",
+  "level": 2,
+  "meaning": "to celebrate the New Year",
+  "pinyin": "guònián",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-pib*Lvo@qu-1779527159152"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "bf72ef60e868eff3d1f0f73cb1da854acb089817e9186165f652c054b41d9328.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "收"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "收到",
+  "id": "432a514af1efc243f01dd002",
+  "level": 3,
+  "meaning": "to receive",
+  "pinyin": "shōudào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-way3.$kUFw-1779527159640"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

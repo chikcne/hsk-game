@@ -1,0 +1,32 @@
+{
+  "audio": "cb0caecd062db6615426d78c6c58fdd62395852180d9dc819fdaf8b36ba20d5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "品",
+      "奖"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "奖品",
+  "id": "63923919a41d81585db08202",
+  "level": 6,
+  "meaning": "prize",
+  "pinyin": "jiǎngpǐn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-667-1779527163070"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

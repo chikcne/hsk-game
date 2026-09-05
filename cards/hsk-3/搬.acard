@@ -1,0 +1,29 @@
+{
+  "audio": "7a6b8019579054d0b597856a7c79956a36bf598d1648e86fedff5bac691bd130.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "搬",
+  "id": "166fde242b008765d9a092fd",
+  "level": 3,
+  "meaning": "to move, to carry",
+  "pinyin": "bān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-E,-XmO@2Md-1779527159310"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "a89ea2e885075f6d940839d20276e29606b902ed684d70276fa102e5a2dfdc1a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "怀"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "怀孕",
+  "id": "2be67ccaf976f8dd13c0877c",
+  "level": 6,
+  "meaning": "to be pregnant",
+  "pinyin": "huáiyùn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-574-1779527162977"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

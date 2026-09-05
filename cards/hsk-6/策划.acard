@@ -1,0 +1,31 @@
+{
+  "audio": "610a66ed94670495434f146aa0e406e84bff1946669af9550484067f358cc7d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "划"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "策划",
+  "id": "602d693111ec5c425f656077",
+  "level": 6,
+  "meaning": "to plan, to plot",
+  "pinyin": "cèhuà",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-112-1779527162515"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

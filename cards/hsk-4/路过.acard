@@ -1,0 +1,32 @@
+{
+  "audio": "0b66de12807f84d484db7f0f825739eb896012f9bd06c26d9ff4b44d4aef493b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "路",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "路过",
+  "id": "073b0a8cd06c917b5790082c",
+  "level": 4,
+  "meaning": "to pass by, to go by",
+  "pinyin": "lùguò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-N]bRs~:M6L-1779527160290"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

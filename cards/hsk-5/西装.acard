@@ -1,0 +1,32 @@
+{
+  "audio": "194c8604ecbae8c2c5555e22bc209e969b85bec111913cc8ff128daeb5dec926.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "装",
+      "西"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "西装",
+  "id": "777f4a30621d44b7e3a74d7f",
+  "level": 5,
+  "meaning": "suit",
+  "pinyin": "xīzhuāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t_elD`=!(&-1779527162027"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

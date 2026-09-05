@@ -1,0 +1,32 @@
+{
+  "audio": "95a76d520138c1ef9c0bce78862f450a048fedf86eeb3c7bf4377163808e9b04.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "超",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高超",
+  "id": "c3b4bb8756f89ea2a8ff5e0a",
+  "level": 6,
+  "meaning": "superb, excellent",
+  "pinyin": "gāochāo",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-431-1779527162834"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

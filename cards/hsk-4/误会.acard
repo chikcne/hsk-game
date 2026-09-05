@@ -1,0 +1,32 @@
+{
+  "audio": "c58132258211e475ab6a927b7ff8200fa3e7d0c94f6baca5a6af7b9e7936ab3e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "误"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "误会",
+  "id": "736e2b0adc64d5882b303e8c",
+  "level": 4,
+  "meaning": "to misunderstand; misunderstanding",
+  "pinyin": "wùhuì",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nUvP?`c}EA-1779527160589"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

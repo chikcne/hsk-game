@@ -1,0 +1,32 @@
+{
+  "audio": "9ae651c5347dd9ef1a3a2e1ff4257f9bc502bad107f45d2232ab0f50f0980809.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "部",
+      "门"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "部门",
+  "id": "2a9ac9789065cd891ffadc81",
+  "level": 4,
+  "meaning": "department, unit",
+  "pinyin": "bùmén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-F[(Uhy8-]A-1779527159860"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

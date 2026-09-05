@@ -1,0 +1,31 @@
+{
+  "audio": "08ac1b7857c91c483e356997bcd32e5608b08fdaaff96f7c0e8d32abe831ba47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "剧本",
+  "id": "0cf45328aefa1dbeca639245",
+  "level": 6,
+  "meaning": "script",
+  "pinyin": "jùběn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-747-1779527163150"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

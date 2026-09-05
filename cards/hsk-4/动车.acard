@@ -1,0 +1,32 @@
+{
+  "audio": "7d829ef366682eb51bb124fede3740267e7a36a89d5cbaeddb3e4e2eba758cff.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "动车",
+  "id": "d684e8c670d9a333bd1bddc9",
+  "level": 4,
+  "meaning": "high-speed train",
+  "pinyin": "dòngchē",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-LisqP]^i3>-1779527159969"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

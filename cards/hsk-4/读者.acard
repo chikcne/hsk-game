@@ -1,0 +1,32 @@
+{
+  "audio": "16af883ec81c016f2bc9117724c5a2b156091e89f315ec3446d7571ccbe2029c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "者",
+      "读"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "读者",
+  "id": "f847edcb6cb72215025e8da0",
+  "level": 4,
+  "meaning": "reader",
+  "pinyin": "dúzhě",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r]`Y#C|yV*-1779527159971"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

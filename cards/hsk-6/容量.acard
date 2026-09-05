@@ -1,0 +1,31 @@
+{
+  "audio": "ad6d31b37ff904a13be177ef95aa8429c4d070c953d05d9239e49fb802fa23a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "量"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "容量",
+  "id": "db029b333e11eb7892d7ca79",
+  "level": 6,
+  "meaning": "capacity",
+  "pinyin": "róngliàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1115-1779527163518"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

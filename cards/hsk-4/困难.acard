@@ -1,0 +1,32 @@
+{
+  "audio": "1f019f7a086f98e82a65c6951c0ef4feb058901f38cabd59c567381e0ad9bb71.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "困",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "困难",
+  "id": "1ce8c521a6b4d3606f8a0b97",
+  "level": 4,
+  "meaning": "difficult, hard; difficulty, trouble",
+  "pinyin": "kùnnan",
+  "pos": "adjective、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-mZH&9R_hYf-1779527160249"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

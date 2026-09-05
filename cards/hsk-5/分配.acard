@@ -1,0 +1,32 @@
+{
+  "audio": "d214e49fc59bc44741f996c00ac05d90898c1421c4ae2ddfbd0d6961fd1959a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "配"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分配",
+  "id": "89b22e4cbcab6bf12fe53668",
+  "level": 5,
+  "meaning": "to allocate, to distribute",
+  "pinyin": "fēnpèi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-LJ_/ebC{!n-1779527161156"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

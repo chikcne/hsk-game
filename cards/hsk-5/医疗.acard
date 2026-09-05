@@ -1,0 +1,29 @@
+{
+  "audio": "fbe591c6c1a1b473412c0187429f4637f446b7ffd9f64da33c862f72f5c6eb0d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "医疗",
+  "id": "3a8425bd3ba5cc8b81eda281",
+  "level": 5,
+  "meaning": "medical treatment",
+  "pinyin": "yīliáo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g(_N]g7u>z-1779527162151"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

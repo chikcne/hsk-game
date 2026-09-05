@@ -1,0 +1,34 @@
+{
+  "audio": "7a8e7655e152c997994b53dbbb888275317f69210c8623e529ed4f232ac90096.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "份",
+      "证",
+      "身",
+      "身份"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "身份证",
+  "id": "49f7946e74e8271e68ea5655",
+  "level": 4,
+  "meaning": "ID card, identification card",
+  "pinyin": "shēnfènzhèng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-t@i|VN-@/D-1779527160446"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "292e729cd50d806e001003f9e41f04c22d098a0eb14922c26028ab45ca492a8d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "报名",
+  "id": "8e74ecbe35967231ca24f648",
+  "level": 4,
+  "meaning": "to sign up, to register",
+  "pinyin": "bàomíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ww=Y<,#97|-1779527159821"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

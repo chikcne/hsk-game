@@ -1,0 +1,31 @@
+{
+  "audio": "8c3a8a38fb556b49ca71b12f16ec57521f7bf457b6abb00baf5084c4c9a2f40e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "产"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "财产",
+  "id": "e341371a3404b275fd8ba4ec",
+  "level": 6,
+  "meaning": "property, assets",
+  "pinyin": "cáichǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-94-1779527162497"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

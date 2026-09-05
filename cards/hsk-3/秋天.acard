@@ -1,0 +1,31 @@
+{
+  "audio": "8f4e8c75f4f3c44b1d63b3e83d5aa6d033ee520961d7da9efc96a86f0669abaf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "秋天",
+  "id": "720a401052a741e1b7ad36f2",
+  "level": 3,
+  "meaning": "autumn",
+  "pinyin": "qiūtiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-LAFmY<3!_N-1779527159613"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

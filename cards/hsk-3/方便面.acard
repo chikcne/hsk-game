@@ -1,0 +1,34 @@
+{
+  "audio": "0d4fe9d1008027299aa3f93f4381eb28593044a74125f5842cbff7e9a0eb7439.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "便",
+      "方",
+      "方便",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "方便面",
+  "id": "0250adbb2207d9b167533e06",
+  "level": 3,
+  "meaning": "instant noodles",
+  "pinyin": "fāngbiànmiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-sx&KkVxGd9-1779527159423"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

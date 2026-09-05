@@ -1,0 +1,31 @@
+{
+  "audio": "9fb3b99dcdd1359a90e46e7175056eb7f9a975d4ae6a930829c7fd4491340e9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "这"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "这儿",
+  "id": "fc8c2525f61b6521a7504aeb",
+  "level": 1,
+  "meaning": "here (informal; northern China)",
+  "pinyin": "zhèr",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-q/U_g5:OPh-1779527159086"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

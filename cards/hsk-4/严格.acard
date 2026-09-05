@@ -1,0 +1,31 @@
+{
+  "audio": "aaf59471dd8fe4ae6d2b30662209110abe008a2696c108c17da31d7f5cbd4c14.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "严"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "严格",
+  "id": "5359ccda5158a8e4b7e37ebc",
+  "level": 4,
+  "meaning": "strict, stringent; to restrict strictly",
+  "pinyin": "yángé",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-q6oVwZD&l)-1779527160648"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

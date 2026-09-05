@@ -1,0 +1,29 @@
+{
+  "audio": "aa305c53dcd71ebdcc835d4548d6e9817870be66198a04ebadf0d42b73f6302f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "活",
+  "id": "a1d94f80f12e0ed46766e16f",
+  "level": 4,
+  "meaning": "live; alive, living, flexible; work, job, livelihood",
+  "pinyin": "huó",
+  "pos": "verb、adjective、 noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-csGNrBz:)9-1779527160114"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

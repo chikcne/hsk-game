@@ -1,0 +1,29 @@
+{
+  "audio": "6fb9083363d720d97771f22c271aaa2ddadaf9a23828c36d1ff9d68e06765858.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "素质",
+  "id": "b73dbc5a7bda64cb417e7cbf",
+  "level": 6,
+  "meaning": "quality, caliber",
+  "pinyin": "sùzhì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1246-1779527163649"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

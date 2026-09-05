@@ -1,0 +1,32 @@
+{
+  "audio": "9216b16141928219097c488f8073f9372ee1fc6b09630cad9880004ced6ab2d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "凉",
+      "着"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "着凉",
+  "id": "9775121491f9378c07737c35",
+  "level": 5,
+  "meaning": "to catch cold",
+  "pinyin": "zháoliáng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J)X9w^RF@<-1779527162280"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

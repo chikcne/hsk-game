@@ -1,0 +1,33 @@
+{
+  "audio": "4466082cc56ac0ef80330bd08ca89d1e33cc4d1210d33e3a8f701bfb3203d0af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "熊",
+      "猫"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大熊猫",
+  "id": "d4497d73c011ec3907db95dc",
+  "level": 3,
+  "meaning": "giant panda",
+  "pinyin": "dàxióngmāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-w3mb`I0GY+-1779527159379"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

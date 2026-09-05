@@ -1,0 +1,31 @@
+{
+  "audio": "4384e579868a1ba5be425e69adfa12ece9a9472b86eaa478ddf2114e2b88a323.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "重"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "尊重",
+  "id": "cf615c7364b70e10a53f78c0",
+  "level": 4,
+  "meaning": "to respect, to value; respected",
+  "pinyin": "zūnzhòng",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Q(vNlNw3*S-1779527160792"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

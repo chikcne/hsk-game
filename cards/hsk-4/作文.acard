@@ -1,0 +1,29 @@
+{
+  "audio": "67caeeb17ca15ddedd79e5405f53f74e5f2d8e1d651268dcf52d6a41f9fb2608.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "作文",
+  "id": "5b97fe28d0044a15f05d7e38",
+  "level": 4,
+  "meaning": "composition; to write a composition",
+  "pinyin": "zuòwén",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-i#|YG|&3.1-1779527160801"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "987f7066970d3b33a11c724bda4128b52249c4aaa8bca73e2d5b9937124f6316.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "部"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "俱乐部",
+  "id": "9c23a4f578b1d285c0a395d7",
+  "level": 6,
+  "meaning": "club",
+  "pinyin": "jùlèbù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-749-1779527163152"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

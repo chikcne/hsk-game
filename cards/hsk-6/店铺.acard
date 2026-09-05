@@ -1,0 +1,32 @@
+{
+  "audio": "a26093318f060d41ea893a3f38fc3c013108bc40dbe2c95ce6e869f19198e3ae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "店",
+      "铺"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "店铺",
+  "id": "a7720060ded19a852063d4c9",
+  "level": 6,
+  "meaning": "shop, store",
+  "pinyin": "diànpù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-302-1779527162705"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "c391a90502df378d54db36661bfcab10eb7acf9c35c8c1e2e10a76ad0d24eadb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "商场",
+  "id": "9f51026a2a071bc197fcacef",
+  "level": 2,
+  "meaning": "shopping mall",
+  "pinyin": "shāngchǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-z0}wwih&[Y-1779527159227"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

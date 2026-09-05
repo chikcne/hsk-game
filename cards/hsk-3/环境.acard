@@ -1,0 +1,31 @@
+{
+  "audio": "ed187e4b5d019120feba86fdafbe4448c5ed659d9f8f86f98b4ccb40ec0461f6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "环"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "环境",
+  "id": "ad39d76c6e75e33daca41a09",
+  "level": 3,
+  "meaning": "environment",
+  "pinyin": "huánjìng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-KP%Q/f7H6^-1779527159482"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

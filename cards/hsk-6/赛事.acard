@@ -1,0 +1,31 @@
+{
+  "audio": "692323706a568abb105ee590114f345d60cec1375aa68ecc1a7f0ddd356321ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赛事",
+  "id": "9629063d3f5ed9b48d0eeb21",
+  "level": 6,
+  "meaning": "competition event",
+  "pinyin": "sàishì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1125-1779527163528"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

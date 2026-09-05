@@ -1,0 +1,31 @@
+{
+  "audio": "7e2428db01b5dc357a524345b80ca507402441b6e765a7562ae5613d11a4e04b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "陌生",
+  "id": "640e9ce7a95629b1fc9eefcf",
+  "level": 5,
+  "meaning": "strange, unfamiliar",
+  "pinyin": "mòshēng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-IjC?=LWXr@-1779527161587"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "2e608fe4bd77c3f6754a26b91ce95dbe3460a231ac6407e5677563852878fd53.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "据",
+      "说"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "据说",
+  "id": "101c2ea02b9f8269c2bef4df",
+  "level": 5,
+  "meaning": "it is said, reportedly",
+  "pinyin": "jùshuō",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-juG+n0{7oR-1779527161444"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

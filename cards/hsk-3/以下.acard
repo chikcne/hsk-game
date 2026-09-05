@@ -1,0 +1,32 @@
+{
+  "audio": "ea85f9cab27189091487b5a9984cfe2e1d481a34cebed539833698c0d1eb2710.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "以"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "以下",
+  "id": "555f8ba7e0ecbd769a73a2c8",
+  "level": 3,
+  "meaning": "below, less than",
+  "pinyin": "yǐxià",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-w,-,4b[C=`-1779527159734"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

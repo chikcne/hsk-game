@@ -1,0 +1,32 @@
+{
+  "audio": "9dcfead4ae44104fc77369806255e5b6b70629c9bb436d442eaa3b33ee09804f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "自"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自动",
+  "id": "56d1c02be201a4dd30e1d8dc",
+  "level": 5,
+  "meaning": "automatically; automatic",
+  "pinyin": "zìdòng",
+  "pos": "adverb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Q)XGDfPcUb-1779527162378"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

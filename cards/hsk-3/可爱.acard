@@ -1,0 +1,32 @@
+{
+  "audio": "a72e59b17f3de399300ebc5451469a141d59c281ca727eb24d8148b9a8c32c57.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "可",
+      "爱"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "可爱",
+  "id": "a01a9594000189ea7556ba71",
+  "level": 3,
+  "meaning": "lovely",
+  "pinyin": "kě’ài",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-gdXfV_h;#%-1779527159536"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

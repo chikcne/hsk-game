@@ -1,0 +1,31 @@
+{
+  "audio": "4f63b56656a34eda36cf25d61bf5b6bddec621d4e80a9392e810946fbdb8fed7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "期"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "预期",
+  "id": "87874e194b9fba4610cc22ce",
+  "level": 6,
+  "meaning": "to expect, to anticipate",
+  "pinyin": "yùqī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1612-1779527164015"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

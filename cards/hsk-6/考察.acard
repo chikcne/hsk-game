@@ -1,0 +1,31 @@
+{
+  "audio": "738a94169e12b0caeb38f564d2269604d78a610e29c11b199b34c888f0de0834.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "考"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "考察",
+  "id": "9cf0d0fa6ac1e468a07b5f18",
+  "level": 6,
+  "meaning": "to investigate, to inspect",
+  "pinyin": "kǎochá",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-775-1779527163178"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

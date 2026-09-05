@@ -1,0 +1,32 @@
+{
+  "audio": "ccc8c532afd4e7d7081eaecf268212f0f065209852b537b66afbf46cb4c14e5b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "性",
+      "男"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "男性",
+  "id": "32ec28c6b4e66065a840af5d",
+  "level": 4,
+  "meaning": "male, masculine",
+  "pinyin": "nánxìng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-oz3Up8Vy#T-1779527160330"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "8a09f9499a4868ec64058046d4c2036f424112aa130fed99e3b833990d7da259.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "无"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "无效",
+  "id": "ff170efbc59dc3208390bfee",
+  "level": 5,
+  "meaning": "invalid, ineffective",
+  "pinyin": "wúxiào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-fi*q-Z5,si-1779527162013"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

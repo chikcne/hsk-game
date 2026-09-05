@@ -1,0 +1,31 @@
+{
+  "audio": "dfedd0acf76b5292d73562e2ab822b2c8697e8f69328e5afecbf87b2c639cb39.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "易于",
+  "id": "18af0168d851bbda414de068",
+  "level": 6,
+  "meaning": "to be easy to",
+  "pinyin": "yìyú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1572-1779527163975"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

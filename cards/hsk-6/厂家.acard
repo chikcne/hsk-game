@@ -1,0 +1,32 @@
+{
+  "audio": "7c4de03fa3196cc1c49479aedde44476856af2c01e78271407036ae3ac51fdcb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "厂",
+      "家"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "厂家",
+  "id": "b4c7d328395e4b01d8797cd5",
+  "level": 6,
+  "meaning": "manufacturer",
+  "pinyin": "chǎngjiā",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-134-1779527162537"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

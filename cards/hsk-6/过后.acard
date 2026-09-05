@@ -1,0 +1,32 @@
+{
+  "audio": "c712bef5529c655ea68b79798f94972b7b097015f86ca94696e3e5d88ff5132a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过后",
+  "id": "069ece3220f6f44a9ee409f6",
+  "level": 6,
+  "meaning": "afterwards",
+  "pinyin": "guòhòu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-515-1779527162918"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

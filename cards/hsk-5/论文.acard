@@ -1,0 +1,29 @@
+{
+  "audio": "4f5e8d6a5d024e655d0aa52ad2367e62a2f1b96663bf6308d0438660e8e3db8b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "论文",
+  "id": "ed75d83b5c8cfe11a65b67ba",
+  "level": 5,
+  "meaning": "thesis, paper",
+  "pinyin": "lùnwén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Oe;[J8OE:h-1779527161549"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

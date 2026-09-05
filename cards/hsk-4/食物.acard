@@ -1,0 +1,29 @@
+{
+  "audio": "43a1065d14c91b0a3d94787bfb993c86d7e89f70ab8d5b0a6aa3f7449280b73f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "食物",
+  "id": "7cd1a3dad6f0bb62aaebc9cd",
+  "level": 4,
+  "meaning": "food",
+  "pinyin": "shíwù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-m]ETNivOO`-1779527160466"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

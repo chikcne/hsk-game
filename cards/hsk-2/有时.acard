@@ -1,0 +1,32 @@
+{
+  "audio": "e3621fb5a25d6b5e8c757816095bc05ec0a6e582bf9160b62c91c9e31646a7e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有时",
+  "id": "04003ec2dd5ff4fbd1465d43",
+  "level": 2,
+  "meaning": "sometimes",
+  "pinyin": "yǒushí",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-QXUE1EfD4W-1779527159283"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

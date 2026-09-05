@@ -1,0 +1,31 @@
+{
+  "audio": "ea43bdbdf4f798984d1097983f31ca0d608d0e76c3344c14502ac266855fa95c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "考"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "报考",
+  "id": "9ec783ed6388ef3e33a2d673",
+  "level": 4,
+  "meaning": "to apply for an exam, to register for a test",
+  "pinyin": "bàokǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-C@a2+t#p_a-1779527159820"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "4854baec60adb6130a8c32ea19c520b7b2ac8310d221633599f1668821c065b8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "像",
+      "图"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "图像",
+  "id": "7167080789e28fee4f998e2b",
+  "level": 6,
+  "meaning": "image",
+  "pinyin": "túxiàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1332-1779527163735"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

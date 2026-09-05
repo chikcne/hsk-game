@@ -1,0 +1,29 @@
+{
+  "audio": "a3195677d83a4b33e401cfae7fcdc920e3264787477a25dc06d72203f4babd46.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吞",
+  "id": "562e690b6abafb4cdc8b4a90",
+  "level": 6,
+  "meaning": "to swallow",
+  "pinyin": "tūn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1343-1779527163746"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

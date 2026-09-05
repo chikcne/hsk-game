@@ -1,0 +1,32 @@
+{
+  "audio": "7ff05af7a03f7a9bad5de226a0df1f44202074af0ba3374a9d905320ab074093.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "周",
+      "所"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "众所周知",
+  "id": "f12480a1bd9343614e4215f9",
+  "level": 6,
+  "meaning": "as everyone knows",
+  "pinyin": "zhòngsuǒzhōuzhī",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1734-1779527164137"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

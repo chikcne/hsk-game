@@ -1,0 +1,29 @@
+{
+  "audio": "a09cb17dbfc0b49c1c53e5a90ef9b18c899fa7b803340996b35acdd7e3456592.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "瞧",
+  "id": "261e1e84b1f3eda0e05774e5",
+  "level": 6,
+  "meaning": "to look, to see",
+  "pinyin": "qiáo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1045-1779527163448"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

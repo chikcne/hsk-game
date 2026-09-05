@@ -1,0 +1,32 @@
+{
+  "audio": "9bfda98b8d703d9b065b73716c06c79b0e129375d987445223fc2cecf56b1ca0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "土",
+      "本"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "本土",
+  "id": "1053c3a4556a7640fc87952f",
+  "level": 6,
+  "meaning": "local, native territory",
+  "pinyin": "běntǔ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-47-1779527162450"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

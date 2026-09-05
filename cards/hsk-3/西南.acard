@@ -1,0 +1,32 @@
+{
+  "audio": "f931322a6ce95f71d4dfc9e3941014d4b8f567de341c3ad4160c96149ebc3693.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "南",
+      "西"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "西南",
+  "id": "01d361e2a36b1d1b02c5b229",
+  "level": 3,
+  "meaning": "southwest",
+  "pinyin": "xīnán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-z)o^5pim?H-1779527159687"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

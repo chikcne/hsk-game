@@ -1,0 +1,29 @@
+{
+  "audio": "d1b438da44553be226452f61aec4a616ad919632b86316bec82404ce8e9f68d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "要",
+  "id": "3807a32426ebd3a3919d17c5",
+  "level": 1,
+  "meaning": "to want, to need",
+  "pinyin": "yào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Kj43(27hw%-1779527159055"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

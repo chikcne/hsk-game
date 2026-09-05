@@ -1,0 +1,31 @@
+{
+  "audio": "4a3c2e76d55a40379b5c44800380b95d689f424f7ab2912085758484ee9a03bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "行"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实行",
+  "id": "6b24dbb0c7081a5bdba8df2c",
+  "level": 5,
+  "meaning": "to implement, to carry out",
+  "pinyin": "shíxíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F6NA||l~j;-1779527161824"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

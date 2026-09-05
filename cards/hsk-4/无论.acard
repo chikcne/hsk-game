@@ -1,0 +1,31 @@
+{
+  "audio": "4b4209adbd73f81fcb2671b3948d3ff753efdb342f142ee7df971d2b000083fe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "无"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "无论",
+  "id": "e3cdadc864b007d3aa9c2377",
+  "level": 4,
+  "meaning": "no matter what, regardless",
+  "pinyin": "wúlùn",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Kz=JKT|Tu.-1779527160587"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "3071bd63f1a631d92230347b3ba8d5f99afd5a9e79a3c1fa958bea7e3deaf7b3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "次",
+      "此"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "此次",
+  "id": "ceb2d74a73830a079308005d",
+  "level": 4,
+  "meaning": "this time",
+  "pinyin": "cǐ cì",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J+74flv*dA-1779527159903"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

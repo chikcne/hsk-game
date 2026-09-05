@@ -1,0 +1,31 @@
+{
+  "audio": "dfe25a2697b1aac7288d642ddd2ab9844b598f71b1d0afcc4affdc6422fd69d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "推"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "推销",
+  "id": "a88f98d8885de4dba5f88a14",
+  "level": 6,
+  "meaning": "to promote sales",
+  "pinyin": "tuīxiāo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1340-1779527163743"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

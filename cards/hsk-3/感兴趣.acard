@@ -1,0 +1,32 @@
+{
+  "audio": "5bbb7e4d50b9fefdcdfedc4851e98f76550a02df6992f9614643be5142c17738.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "兴趣",
+      "感"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "感兴趣",
+  "id": "2c84d3cc594b6d53137bc46d",
+  "level": 3,
+  "meaning": "to be interested in",
+  "pinyin": "gǎn xìngqù",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-hmMglVTIlA-1779527159440"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

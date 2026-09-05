@@ -1,0 +1,31 @@
+{
+  "audio": "9b83b820d1a1a30cfc130341f6e5af1811e8396fdedbb8e3f4a5108dcdf1b1ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "理"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "理论",
+  "id": "73d605ee050b49dbbd19e792",
+  "level": 5,
+  "meaning": "to theorize; theory",
+  "pinyin": "lǐlùn",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-5u%dZB_<@-1779527161504"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

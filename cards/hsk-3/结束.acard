@@ -1,0 +1,32 @@
+{
+  "audio": "a6834813c55c2e66bd86b88e05d99304c599b23ed536988b9b7f6427f27caadf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "束",
+      "结"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "结束",
+  "id": "36f29f6aa9a24404638925d5",
+  "level": 3,
+  "meaning": "to end",
+  "pinyin": "jiéshù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-J`@q?dtxBq-1779527159515"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

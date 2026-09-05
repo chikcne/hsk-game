@@ -1,0 +1,32 @@
+{
+  "audio": "20763b7fb3a75f4bba911e6a9ef29341f72edd56518bba3625ad83fc4c323455.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "单",
+      "床"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "床单",
+  "id": "1066ddfb73231cf05e76288e",
+  "level": 5,
+  "meaning": "bedsheet",
+  "pinyin": "chuángdān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kx`@f!]5jM-1779527160992"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

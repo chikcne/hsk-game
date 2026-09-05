@@ -1,0 +1,31 @@
+{
+  "audio": "fd18e5b8f5662c44d49dc0c26ffc4bf254aa004c409ac74c61f087a282ade238.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "性"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "性格",
+  "id": "8638ed3bcc6714c141484be1",
+  "level": 4,
+  "meaning": "character",
+  "pinyin": "xìnggé",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vW1P&<d<UU-1779527160634"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

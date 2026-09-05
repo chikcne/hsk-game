@@ -1,0 +1,29 @@
+{
+  "audio": "df6793fd50d3359ea3713859ebd69dea69ab4dcaddd1a1d23283bb6cd55f2884.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "蚂蚁",
+  "id": "b459d8e2c9c2ec0f148df7ed",
+  "level": 6,
+  "meaning": "ant",
+  "pinyin": "mǎyǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-885-1779527163288"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

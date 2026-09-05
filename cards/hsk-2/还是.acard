@@ -1,0 +1,32 @@
+{
+  "audio": "6733bf1dcda1d47b13dfc374e2eeb12ec28aec06478e4b4ae0dfe0ee6fda1957.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "是",
+      "还"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "还是",
+  "id": "39c38bf37fdec51529a7dad8",
+  "level": 2,
+  "meaning": "still; or",
+  "pinyin": "háishi",
+  "pos": "adverb、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-ty[,//)>jI-1779527159155"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

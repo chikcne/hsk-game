@@ -1,0 +1,29 @@
+{
+  "audio": "feac7a18acdf2eeeb5ef1888548dda32830dccf8fa761450b4a2a1e53b659b2b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "友谊",
+  "id": "d1aa0fd990f07a4938953a2e",
+  "level": 4,
+  "meaning": "friendship",
+  "pinyin": "yǒuyì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ye,cyf7v#v-1779527160696"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

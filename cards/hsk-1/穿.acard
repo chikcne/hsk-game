@@ -1,0 +1,29 @@
+{
+  "audio": "5f3cd99977f372f85965d24048bfa405886ae43d2a74a7f012cc2606f9762c0e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "穿",
+  "id": "28a205809317455ef2ef7293",
+  "level": 1,
+  "meaning": "to wear",
+  "pinyin": "chuān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-K/)mw-,uEo-1779527158826"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

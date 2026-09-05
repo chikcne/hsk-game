@@ -1,0 +1,32 @@
+{
+  "audio": "d5485cd94fcfa762589c7c610f58e61de93bbe0bbef3b3dfadc2f084291e9629.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "其",
+      "间"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "其间",
+  "id": "d17ed0e76566b2919901f413",
+  "level": 6,
+  "meaning": "in the meantime",
+  "pinyin": "qíjiān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1015-1779527163418"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "af4fbca3eed2090eea80698ba708436d85b688376a21420f07563f34b4d6e5b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "天文",
+  "id": "cacfabe4e7f0600efdd0e189",
+  "level": 6,
+  "meaning": "astronomy",
+  "pinyin": "tiānwén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1292-1779527163695"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

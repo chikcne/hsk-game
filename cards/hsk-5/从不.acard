@@ -1,0 +1,32 @@
+{
+  "audio": "015203448ede577d399a314142e498d0f19d47518eca6cbfd2af03b2c5a76db8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "从"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "从不",
+  "id": "7e2036cc968c50d0bdc855a3",
+  "level": 5,
+  "meaning": "never",
+  "pinyin": "cóng bù",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ka+Z#o8W+R-1779527161003"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

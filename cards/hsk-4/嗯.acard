@@ -1,0 +1,29 @@
+{
+  "audio": "381ea0c8ccfc95237da53c42b28b82c5ed96aa47690c265b39f9251ba2b3c6f7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "嗯",
+  "id": "f5b22fcf590714cde22a3e37",
+  "level": 4,
+  "meaning": "uh-huh, hmm",
+  "pinyin": "ǹg",
+  "pos": "interjection",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-KOB(Q77Ll6-1779527160337"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

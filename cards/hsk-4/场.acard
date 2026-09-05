@@ -1,0 +1,29 @@
+{
+  "audio": "96c7d79de061f596e4d57efecaf4b5694d8255992c5cf7d2c8fe83b28973959f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "场",
+  "id": "5bd6e947ed36eed0670c6c65",
+  "level": 4,
+  "meaning": "measure word for events, performances, etc.",
+  "pinyin": "chǎng",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vlRFTBeWK^-1779527159876"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

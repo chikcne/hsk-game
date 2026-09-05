@@ -1,0 +1,29 @@
+{
+  "audio": "13b846fe0cb6a562477ea76adbb9d412676ae85981953cec2162859d459a11e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "化",
+  "id": "2512ca031660f9047fa0b76d",
+  "level": 5,
+  "meaning": "suffix indicating change, transformation; (to change)",
+  "pinyin": "huà",
+  "pos": "suffix、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-e0Wr;*{%E(-1779527161300"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

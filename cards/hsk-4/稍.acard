@@ -1,0 +1,29 @@
+{
+  "audio": "6212b3103bb877fce78fddcbafb6a03c0564f3a1e44970d438140e5eab735eea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "稍",
+  "id": "4193afb003856d9e532215dd",
+  "level": 4,
+  "meaning": "a little, slightly",
+  "pinyin": "shāo",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nuUp8OF<zq-1779527160436"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

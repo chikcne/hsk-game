@@ -1,0 +1,32 @@
+{
+  "audio": "3fcd4509bd26202ffd0db465f26062ed26c71de5cde84188f9ea0d6fc4e4e0d2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外",
+      "海"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "海外",
+  "id": "49f03f44a8dd351e6d48534e",
+  "level": 5,
+  "meaning": "overseas, abroad",
+  "pinyin": "hǎiwài",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-pjgGw=?2CG-1779527161264"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

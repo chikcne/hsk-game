@@ -1,0 +1,29 @@
+{
+  "audio": "8577ad005364d2caa0f5cbd65d3fc826ca74f3652aa4a757f00d884f48de8227.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "搭",
+  "id": "90016ef98786441563462115",
+  "level": 6,
+  "meaning": "to build, to set up",
+  "pinyin": "dā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-233-1779527162636"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

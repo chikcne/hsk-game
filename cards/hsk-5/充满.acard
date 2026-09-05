@@ -1,0 +1,31 @@
+{
+  "audio": "7125140ae9415d1ed5293adc499fd9b29bbaa0a3b89af8bb46a5a08543f0cce9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "满"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "充满",
+  "id": "dc7334e49e434f61ea88b87d",
+  "level": 5,
+  "meaning": "to fill, to be full of",
+  "pinyin": "chōngmǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-I%:hGF0:+L-1779527160964"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

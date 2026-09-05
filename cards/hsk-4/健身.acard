@@ -1,0 +1,31 @@
+{
+  "audio": "b3315962c4fe5c83b6f693b744e60ec052263a7881f072d6ecce6a0be2908ffb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "身"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "健身",
+  "id": "f98904263f879a4fd33c23ab",
+  "level": 4,
+  "meaning": "to exercise, to work out, to keep fit, to engage in fitness activities",
+  "pinyin": "jiànshēn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-br^%`Z`z*c-1779527160155"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

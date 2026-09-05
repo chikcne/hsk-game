@@ -1,0 +1,32 @@
+{
+  "audio": "6b394b605d7e575756462759d032237e4bf2fdbf5784ad695c3165cab417ac69.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "暗",
+      "黑"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "黑暗",
+  "id": "e42fbb2e88878ffcf8dbccdf",
+  "level": 6,
+  "meaning": "dark",
+  "pinyin": "hēi’àn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-544-1779527162947"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

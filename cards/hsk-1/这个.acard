@@ -1,0 +1,32 @@
+{
+  "audio": "8ee595251f4ed8cc678d03439d8e43296c368d43a480892c645d8504506622f1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "个",
+      "这"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "这个",
+  "id": "bb38fd8f55615acf2053eafb",
+  "level": 1,
+  "meaning": "this one",
+  "pinyin": "zhège",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-o5+,-:03QG-1779527159084"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "0a1ff2bd3b83b542a3fcfc19266eb73efb2035ea2d3c55905397f32e657febc1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成功",
+  "id": "1003d89b8459871b8eb1c292",
+  "level": 4,
+  "meaning": "to succeed; successful",
+  "pinyin": "chénggōng",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-eXF(QlsGT0-1779527159882"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "e23d74777abebb75f3950d8c6245e5063eb3d3c4890e49665059404e8d218bb5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "单",
+      "菜"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "菜单",
+  "id": "2c3b84b92b66eebe06ae9645",
+  "level": 3,
+  "meaning": "menu",
+  "pinyin": "càidān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-d#-(v1NuiU-1779527159348"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

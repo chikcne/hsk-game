@@ -1,0 +1,32 @@
+{
+  "audio": "8e82b8396fa24a33c9d7c0d1fa4b0d0ce2905761490cd7f1d5e29b1477983dcf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "小"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大小",
+  "id": "e8885c3d3c57f5ccf8ed7f09",
+  "level": 3,
+  "meaning": "size",
+  "pinyin": "dàxiǎo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Eu$tAS2{qV-1779527159378"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

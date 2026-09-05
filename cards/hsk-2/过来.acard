@@ -1,0 +1,32 @@
+{
+  "audio": "fdb95b4131fb06ab9293bfd94809309d81a6031a04664dc9d4dc44bf4d392859.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "来",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过来",
+  "id": "d3cc8559d8ecf2a94c2789ad",
+  "level": 2,
+  "meaning": "to come over",
+  "pinyin": "guòlái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-FGpv*^b_ZM-1779527159151"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

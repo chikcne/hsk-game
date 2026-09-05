@@ -1,0 +1,29 @@
+{
+  "audio": "e12124c9f3908f209e5409e6bff76f028e0bed752c7b74355d6660ecebb39905.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "饿",
+  "id": "6e6f9dede2f39ccc90662ed3",
+  "level": 3,
+  "meaning": "hungry",
+  "pinyin": "è",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-NM@JljGwf1-1779527159413"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

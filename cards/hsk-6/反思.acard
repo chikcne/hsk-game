@@ -1,0 +1,31 @@
+{
+  "audio": "5241b40867a5d83ffbde7dec96d3d9f031c6a0b62838ac9c632b762572f3be54.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "反"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "反思",
+  "id": "69062cfb4c4b926fd545c127",
+  "level": 6,
+  "meaning": "to reflect, to think back",
+  "pinyin": "fǎnsī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-367-1779527162770"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

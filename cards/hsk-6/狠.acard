@@ -1,0 +1,29 @@
+{
+  "audio": "56f9f835b774eb9eed356c4207a19d17a50b1e77b9ad114801a442217596216b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "狠",
+  "id": "bb943024aa23c6cc672db791",
+  "level": 6,
+  "meaning": "fierce, cruel; to harden one’s heart; fiercely",
+  "pinyin": "hěn",
+  "pos": "形、动、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-546-1779527162949"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

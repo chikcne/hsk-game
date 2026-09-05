@@ -1,0 +1,29 @@
+{
+  "audio": "64a130e1ff09f0d362c097de472a17b1978a169f756ac347da37d3f040961a12.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "各",
+  "id": "bd465e1f7c4551ae300b2042",
+  "level": 4,
+  "meaning": "each, every; respectively",
+  "pinyin": "gè",
+  "pos": "pronoun、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-f0~rd!v9qb-1779527160047"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

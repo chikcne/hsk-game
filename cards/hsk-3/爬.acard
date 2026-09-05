@@ -1,0 +1,29 @@
+{
+  "audio": "4f6e9571a249d12e1068ced9673bfd8bc8691d741e7b25b9657da5837a78eaf2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爬",
+  "id": "809cbb34ccf6d87b23ea5d42",
+  "level": 3,
+  "meaning": "to climb",
+  "pinyin": "pá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Q#}9od+=Jc-1779527159592"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

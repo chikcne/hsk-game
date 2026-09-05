@@ -1,0 +1,31 @@
+{
+  "audio": "e993fe56c6416a277acd33c722ab4e9adfe65af674528e212abc019e2711191d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "科"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "儿科",
+  "id": "5eb28791b6a351f37918ff30",
+  "level": 6,
+  "meaning": "pediatrics",
+  "pinyin": "érkē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-346-1779527162749"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

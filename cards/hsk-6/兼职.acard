@@ -1,0 +1,29 @@
+{
+  "audio": "bd0c09a5ef607059dbc7436fa240fbdc8c94bd144713c9fb365bf8a2ab1ad629.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "兼职",
+  "id": "d34fe7f96da74565628e7416",
+  "level": 6,
+  "meaning": "to hold multiple jobs; part-time job",
+  "pinyin": "jiānzhí",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-650-1779527163053"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

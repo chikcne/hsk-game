@@ -1,0 +1,31 @@
+{
+  "audio": "6fc128d36bc889eebecf8f7e12fd5f13d36d0a140f3f6ad44e213a72df870d56.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一一",
+  "id": "1fde2dda4fe3d787b62e43b5",
+  "level": 6,
+  "meaning": "one by one",
+  "pinyin": "yīyī",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1541-1779527163944"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

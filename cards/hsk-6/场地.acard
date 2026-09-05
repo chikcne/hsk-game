@@ -1,0 +1,32 @@
+{
+  "audio": "e6bc3ea7fc39b0bfd9f7da03a0ece4eaabd6a825a09edeb851c419c5910b0cd1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "场"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "场地",
+  "id": "983b0e176d31b0d428ab7489",
+  "level": 6,
+  "meaning": "site, location",
+  "pinyin": "chǎngdì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-131-1779527162534"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

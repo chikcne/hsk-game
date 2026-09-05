@@ -1,0 +1,29 @@
+{
+  "audio": "98580ec82499a985c46194406608d29eeaff5051df2fdbff9ebcf58578f38d10.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "园",
+  "id": "35f81f32af6dfba0d490e9b7",
+  "level": 3,
+  "meaning": "garden",
+  "pinyin": "yuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-z]cj4iVHAe-1779527159758"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

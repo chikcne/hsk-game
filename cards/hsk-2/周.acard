@@ -1,0 +1,29 @@
+{
+  "audio": "6456407cf7f0952951c3c89569c14258f42e206ed718aefdac85c2fb15abda6d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "周",
+  "id": "a506b236ded7e072c7530285",
+  "level": 2,
+  "meaning": "week; (measure word for circumference, cycle)",
+  "pinyin": "zhōu",
+  "pos": "noun、 （classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-f8D|S#%QHJ-1779527159295"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

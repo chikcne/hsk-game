@@ -1,0 +1,29 @@
+{
+  "audio": "a6253c43160b03d9528a3035ab18b4eec60579f9b078c2844f20c405556e085c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "伞",
+  "id": "21404ef73fe0e452eb96ed9f",
+  "level": 3,
+  "meaning": "umbrella",
+  "pinyin": "sǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-yB&9bJ|~QY-1779527159623"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

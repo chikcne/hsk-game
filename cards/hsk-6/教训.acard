@@ -1,0 +1,31 @@
+{
+  "audio": "d3a93eff844c2001bbc5cc0f1441aaf11e4162b68234ffb648fa1deb9f275e7d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "教"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "教训",
+  "id": "06798cae9d978d28f0c24cca",
+  "level": 6,
+  "meaning": "to teach a lesson; lesson",
+  "pinyin": "jiàoxùn",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-680-1779527163083"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

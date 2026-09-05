@@ -1,0 +1,31 @@
+{
+  "audio": "6c2265e478036be894955b8aa1a6e5a939e7d70217fac8a2654e237da1fabc88.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "光"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "光明",
+  "id": "b7979fb132ae5b95b8016834",
+  "level": 5,
+  "meaning": "brightness; bright, light",
+  "pinyin": "guāngmíng",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KjesM1^rQR-1779527161240"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

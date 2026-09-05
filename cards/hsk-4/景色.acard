@@ -1,0 +1,29 @@
+{
+  "audio": "419225687b9e71558c57f6b9ae501a8929883704cbe7bf87fe94ca1c5c570c91.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "景色",
+  "id": "add63c9f24aa1a863e625f30",
+  "level": 4,
+  "meaning": "scenery",
+  "pinyin": "jǐngsè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-w-hIsS@z@R-1779527160206"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

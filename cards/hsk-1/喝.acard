@@ -1,0 +1,29 @@
+{
+  "audio": "c8db6230a3cb1f8ac2b5d8abfa0b0e76d9ddd5edd2950cc6a6dd7dcc76c9050f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "喝",
+  "id": "5c7a30713138ffb9df1573aa",
+  "level": 1,
+  "meaning": "to drink",
+  "pinyin": "hē",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-uLn;Hx^YG]-1779527158880"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

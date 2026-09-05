@@ -1,0 +1,32 @@
+{
+  "audio": "10b30db5369398f90e42478bd5cbe0a8234e0017ecdc9de1b9f1a796fb8f3b27.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "款",
+      "汇"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "汇款",
+  "id": "a4a3d0f51848f459c4876601",
+  "level": 6,
+  "meaning": "to remit money; remittance",
+  "pinyin": "huìkuǎn",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-592-1779527162995"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

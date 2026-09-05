@@ -1,0 +1,29 @@
+{
+  "audio": "990105d456dab9c322c8559a3b654e8df6adf66dc44f1622b973d6dcaa145ab7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肯",
+  "id": "5da4dd133f2bdee49b0d8b27",
+  "level": 6,
+  "meaning": "to be willing",
+  "pinyin": "kěn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-789-1779527163192"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "b26facb49ce76bb3586a27a268a430962d55d6c413998abb488baf057b3903a1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "只",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "只有",
+  "id": "09b7e44efa64045987b89203",
+  "level": 3,
+  "meaning": "only if",
+  "pinyin": "zhǐyǒu",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-dA.oG.mqh$-1779527159783"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "35d1972939c47641537baffa6021243aec3c005d41bc2ea3a6615b1b56a50563.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点",
+      "热"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热点",
+  "id": "706192577982b68d825f89fb",
+  "level": 6,
+  "meaning": "hot spot",
+  "pinyin": "rèdiǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1088-1779527163491"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

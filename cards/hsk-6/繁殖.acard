@@ -1,0 +1,29 @@
+{
+  "audio": "0aa079fd6169b7528d8c6ea0209e66e66ce1546813b88f76409c6a4d9627a466.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "繁殖",
+  "id": "7e49c64de81db029b987bb8c",
+  "level": 6,
+  "meaning": "to breed, to reproduce",
+  "pinyin": "fánzhí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-365-1779527162768"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

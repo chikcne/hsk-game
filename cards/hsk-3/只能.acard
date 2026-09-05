@@ -1,0 +1,32 @@
+{
+  "audio": "f7710dbcb8050e1d6af4faceb7dc6d9732bad7ba0e33b3a7f8f1a3695cb6cc01.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "只",
+      "能"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "只能",
+  "id": "411867f99dcf06e9ec36912a",
+  "level": 3,
+  "meaning": "can only",
+  "pinyin": "zhǐ néng",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-H<y5Hx4GMP-1779527159780"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

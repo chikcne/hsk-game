@@ -1,0 +1,29 @@
+{
+  "audio": "1af0d8eddd97600a4578801485ac1264867211afa47f5e278bff7249f62c9ddc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "泡",
+  "id": "a45212e4ef0a278538d48e72",
+  "level": 6,
+  "meaning": "bubble; to steep",
+  "pinyin": "pào",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-974-1779527163377"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

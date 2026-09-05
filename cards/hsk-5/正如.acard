@@ -1,0 +1,32 @@
+{
+  "audio": "4e188bdda270c7b2bcb6877b15b3724df792af441bbc59beb7ecd38716a0865e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "如",
+      "正"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "正如",
+  "id": "f64376f0bbac8ac91a911c5f",
+  "level": 5,
+  "meaning": "just like, as",
+  "pinyin": "zhèngrú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-xNYy+53c[s-1779527162299"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

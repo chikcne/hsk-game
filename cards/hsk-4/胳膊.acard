@@ -1,0 +1,29 @@
+{
+  "audio": "d6b169147aa068d6eca4250b6161c2eac09c5d2f15b6c771f19470c5845edeee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "胳膊",
+  "id": "5992563262f3be594229f551",
+  "level": 4,
+  "meaning": "arm",
+  "pinyin": "gēbo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-g@I!9o>$I.-1779527160044"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

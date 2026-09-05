@@ -1,0 +1,31 @@
+{
+  "audio": "a7ef17a24655768d03798ed940d4711de8563c9a975779503d0cab298bbad2e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "考"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "参考",
+  "id": "28d03ff37ff21c4f07aff0c6",
+  "level": 5,
+  "meaning": "to consult, to refer to",
+  "pinyin": "cānkǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-iOgC3?P^Y4-1779527160892"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

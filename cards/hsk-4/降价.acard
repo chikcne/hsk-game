@@ -1,0 +1,31 @@
+{
+  "audio": "d2fa2df9895f1f07eba26d7f76399f0a8c9283f5221c20d0e7bb324697705b84.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "降"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "降价",
+  "id": "d45cc9946ca3d74589af8f81",
+  "level": 4,
+  "meaning": "to descend, to land, to touch down",
+  "pinyin": "jiàngjià",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-fJZu#79o8w-1779527160167"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "eccf3f7fc304b28a3615426c6621bb881bb0515783a410532c7ea2016e08a8df.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "再",
+      "说"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "再说",
+  "id": "5088d2bde98e2c64374fddaa",
+  "level": 4,
+  "meaning": "to put off, to postpone; besides, moreover",
+  "pinyin": "zàishuō",
+  "pos": "verb、conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-fJ1+/[l)xt-1779527160718"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

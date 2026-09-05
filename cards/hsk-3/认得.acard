@@ -1,0 +1,32 @@
+{
+  "audio": "e499ed883399fee9fe1687c0e4d3eb13536df10d7a79d5fd1781fc21a8558b93.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "得",
+      "认"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "认得",
+  "id": "fb8bed6ccbbe5648514fbc0e",
+  "level": 3,
+  "meaning": "to recognize, to know",
+  "pinyin": "rènde",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-tQ)jQI}m3a-1779527159618"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "ef64f629059059e1567e34c94a2a97b363339246842554c9641fc82a96fe51c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "起",
+      "飞"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "起飞",
+  "id": "027abb1d8a3616b5998f36bf",
+  "level": 3,
+  "meaning": "to take off",
+  "pinyin": "qǐfēi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-fZeK$F)`ZH-1779527159605"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

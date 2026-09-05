@@ -1,0 +1,29 @@
+{
+  "audio": "05bb9794745340461aced87b1a5bd71ec8fb57557e48797321ef320c7a639808.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "竖",
+  "id": "5dc27a19af804e9b09427814",
+  "level": 6,
+  "meaning": "vertical; to erect; vertical line",
+  "pinyin": "shù",
+  "pos": "形、动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1226-1779527163629"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

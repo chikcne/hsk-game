@@ -1,0 +1,29 @@
+{
+  "audio": "ea1780ebe81d0ae75d63ae25f9534265fd083575b3db6a4db07e7533141068a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "程序",
+  "id": "cf941f037259d8a5438e22a6",
+  "level": 5,
+  "meaning": "procedure, program",
+  "pinyin": "chéngxù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w/%%hz>EAh-1779527160953"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

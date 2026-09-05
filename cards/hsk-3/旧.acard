@@ -1,0 +1,29 @@
+{
+  "audio": "aab9575f8c5d9b8d67a343269deb999c5e6c0353495c6f4bbab79f9da3881e25.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "旧",
+  "id": "9db852bcbe9bc826a0e880a1",
+  "level": 3,
+  "meaning": "old",
+  "pinyin": "jiù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-CoQH:|j%,R-1779527159524"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

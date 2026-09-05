@@ -1,0 +1,32 @@
+{
+  "audio": "dd658b5fe62ec07a1d1a6555307ff2b38567a7abdbcb602a31f07287e408f93c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "别"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "别人",
+  "id": "db541b422f525eb7dacb4dbc",
+  "level": 3,
+  "meaning": "other people",
+  "pinyin": "biérén",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-E=JtNAOu&3-1779527159335"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

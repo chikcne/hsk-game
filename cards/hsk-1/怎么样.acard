@@ -1,0 +1,32 @@
+{
+  "audio": "1ef80cb1cfd6c7c1a612b253394e8afcadb4bda46a9a1dcefd71cd5018123581.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "怎么",
+      "样"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "怎么样",
+  "id": "1f926ee535cefef1dd387e2e",
+  "level": 1,
+  "meaning": "how about, what do you think",
+  "pinyin": "zěnmeyàng",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-F8fn,zwTvk-1779527159080"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "0ee3bfe21fabe46894851bb58960d5f0937517c656ef95e80cdbbd24acac3654.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "著作",
+  "id": "70ceec9f1d98a632b1cdd280",
+  "level": 6,
+  "meaning": "work, writing",
+  "pinyin": "zhùzuò",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1757-1779527164160"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

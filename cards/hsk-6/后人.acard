@@ -1,0 +1,32 @@
+{
+  "audio": "3a912961de2578dc88dcb5f06587ce36274e6cba8481098f351f773c847fe4dc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "后"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "后人",
+  "id": "1c919420254bb6724b8ded32",
+  "level": 6,
+  "meaning": "later generations, people of later times",
+  "pinyin": "hòurén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-554-1779527162957"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

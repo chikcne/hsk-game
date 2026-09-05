@@ -1,0 +1,31 @@
+{
+  "audio": "3270ffd6536f45987542207e967d2e227712e8f9180f0f3e20a23e335646a999.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "场景",
+  "id": "656d9b4b35fa631256621269",
+  "level": 6,
+  "meaning": "scene",
+  "pinyin": "chǎngjǐng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-135-1779527162538"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

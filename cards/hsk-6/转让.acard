@@ -1,0 +1,32 @@
+{
+  "audio": "087262551a502c7e6a884cd06a544b4f19f95b9d9adb4163f659194647d7c1c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "让",
+      "转"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转让",
+  "id": "8bc80bed20c85bd37a4154aa",
+  "level": 6,
+  "meaning": "to transfer",
+  "pinyin": "zhuǎnràng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1766-1779527164169"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

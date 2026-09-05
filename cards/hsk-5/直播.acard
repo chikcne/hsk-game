@@ -1,0 +1,32 @@
+{
+  "audio": "a1f5c777a8a612defdb12659f2d166634279b7f51c1659b33a58be523e81b9b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "播",
+      "直"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "直播",
+  "id": "02db0360392d8eace5a5511f",
+  "level": 5,
+  "meaning": "live broadcast",
+  "pinyin": "zhíbō",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zKYz?SD`</-1779527162305"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

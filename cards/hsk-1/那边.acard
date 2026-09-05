@@ -1,0 +1,32 @@
+{
+  "audio": "0a810d152fa59b715c44727bc1194fa16c15006eb295951ea42dad969c126dfb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "边",
+      "那"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "那边",
+  "id": "064e4c66735bf30bd5e47913",
+  "level": 1,
+  "meaning": "over there",
+  "pinyin": "nàbiān",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-f.hfd1Q!??-1779527158940"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

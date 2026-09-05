@@ -1,0 +1,31 @@
+{
+  "audio": "2695919309bc67d4fe22b5d421e5f649060daadb16d6997a06723e2088becd59.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "比"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "比赛",
+  "id": "aa257ab08b1fbfe40ad71808",
+  "level": 3,
+  "meaning": "to compete; game, match",
+  "pinyin": "bǐsài",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-iFl+p$@2J8-1779527159327"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

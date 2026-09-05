@@ -1,0 +1,31 @@
+{
+  "audio": "65be49ec387bf472de630cbb6d4268c304749a256cd13f95d5f59c5b424d6982.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "众人",
+  "id": "313b44a1e6fe6e824ad80d5e",
+  "level": 6,
+  "meaning": "crowd, everyone",
+  "pinyin": "zhòngrén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1732-1779527164135"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

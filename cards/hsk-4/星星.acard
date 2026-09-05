@@ -1,0 +1,29 @@
+{
+  "audio": "a55baa586bfdaa4b004f46a134241ab385fd57a5d779ada1092e89997333a9fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "星星",
+  "id": "3b74595e20823aec2a38c7a9",
+  "level": 4,
+  "meaning": "star",
+  "pinyin": "xīngxing",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p%iC~}U#pN-1779527160629"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

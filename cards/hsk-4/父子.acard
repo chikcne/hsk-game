@@ -1,0 +1,31 @@
+{
+  "audio": "aa622a8fe632a0731ae7a4619a1a5fdcbfce9f9d3dc2b90f3f9b60b93fc6c0d2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "父子",
+  "id": "6e23c95a45c5841457d3ec09",
+  "level": 4,
+  "meaning": "father and son",
+  "pinyin": "fùzǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-PO9Ftp1aXl-1779527160020"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

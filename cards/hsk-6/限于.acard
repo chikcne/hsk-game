@@ -1,0 +1,32 @@
+{
+  "audio": "4aec561da1347743e184f48f9e2e8632ab8272ef4f47b477f1d039e191a467ca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "限"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "限于",
+  "id": "8a02d93b35b5660d47fa2c06",
+  "level": 6,
+  "meaning": "to be limited to",
+  "pinyin": "xiànyú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1433-1779527163836"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

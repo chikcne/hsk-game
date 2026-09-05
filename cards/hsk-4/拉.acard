@@ -1,0 +1,29 @@
+{
+  "audio": "e2cf6e9d61af023cddcd0958aaff9ed0a952d5e32be79a17154b50e4a7859f10.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拉",
+  "id": "4dac0b78534dd736e4b96fac",
+  "level": 4,
+  "meaning": "to pull, to drag, to draw",
+  "pinyin": "lā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nFBqYxRCkb-1779527160250"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

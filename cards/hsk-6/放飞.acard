@@ -1,0 +1,32 @@
+{
+  "audio": "b3c4897c25cc2ab2775215295a63d21a73768bf4f14aa8e343bd341220f677c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "放",
+      "飞"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "放飞",
+  "id": "bd69eac91e53a65638a9e8be",
+  "level": 6,
+  "meaning": "to fly freely",
+  "pinyin": "fàngfēi",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-377-1779527162780"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

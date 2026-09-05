@@ -1,0 +1,29 @@
+{
+  "audio": "ff03a56f2997e91349bb685d21d1667b69e7b7187d910d081116e8cce1c5556a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "以",
+  "id": "cda90eb0542f88adc8d65184",
+  "level": 5,
+  "meaning": "with, by, according to; (in order to)",
+  "pinyin": "yǐ",
+  "pos": "preposition、 （conjunction）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-LJ79NkVStI-1779527162165"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

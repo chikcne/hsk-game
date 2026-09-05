@@ -1,0 +1,32 @@
+{
+  "audio": "83a41a503bab46eb49117ab81be0444f188a2b335d0e46ba9f988ca29d1979cf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "听",
+      "好"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好听",
+  "id": "ce067aabea41e26fb81ea036",
+  "level": 1,
+  "meaning": "pleasant to listen to",
+  "pinyin": "hǎotīng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-dGR@@hu%tE-1779527158877"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

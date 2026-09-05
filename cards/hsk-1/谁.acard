@@ -1,0 +1,29 @@
+{
+  "audio": "ef857aeee5526f54e19912828ee81e2680d23d7c96fc9843380dfc0bdc7b8883.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "谁",
+  "id": "142e35be1afacae1c367fee3",
+  "level": 1,
+  "meaning": "who",
+  "pinyin": "shéi/shuí",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-mxW//Nqx?c-1779527158984"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

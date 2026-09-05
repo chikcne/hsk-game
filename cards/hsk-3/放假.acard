@@ -1,0 +1,32 @@
+{
+  "audio": "abc0fe457f9fda6f8477358dcf6620d6db29b5edc7940ab2529ad380f4e4ec78.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "假",
+      "放"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "放假",
+  "id": "150c01aee4c4c6a7e69fcc61",
+  "level": 3,
+  "meaning": "to have a holiday",
+  "pinyin": "fàngjià",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-LCopnXTu~Q-1779527159428"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

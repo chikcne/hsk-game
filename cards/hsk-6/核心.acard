@@ -1,0 +1,31 @@
+{
+  "audio": "e727b03b5fb03c7844790776c2b196365b8e31e9de614189b44bee1caa0751e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "核心",
+  "id": "4dc4769f05fe27fc26c9a11a",
+  "level": 6,
+  "meaning": "core",
+  "pinyin": "héxīn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-542-1779527162945"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

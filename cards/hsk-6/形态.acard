@@ -1,0 +1,29 @@
+{
+  "audio": "df48e57c8c835d4b7d9078dbb529959ed90bd04234f91503d01cf3f17cf0d210.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "形态",
+  "id": "dee135c21b66dd0bc3a0410b",
+  "level": 6,
+  "meaning": "form, shape",
+  "pinyin": "xíngtài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1477-1779527163880"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

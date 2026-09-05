@@ -1,0 +1,29 @@
+{
+  "audio": "22def46eaa3446931ba5943f9b9f5555587f9c659737354dd8993408d13a3db7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "兄弟",
+  "id": "dcb16f8c8f62027d5518b429",
+  "level": 4,
+  "meaning": "brothers",
+  "pinyin": "xiōngdì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-NjT<AZ0UBq-1779527160635"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

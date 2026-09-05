@@ -1,0 +1,31 @@
+{
+  "audio": "be550cc9548514e5c8c9a9796de15e9d169f75cef59dbc4438630685927b44b4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "睡"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "睡觉",
+  "id": "f9970785ed5700224cc110f3",
+  "level": 1,
+  "meaning": "to sleep (talking about the general act of sleeping)",
+  "pinyin": "shuìjiào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-7K|4D9I)#-1779527158998"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "6fe998b91226aa78ec51bb77a66b8c326ab94ce3357b1d3f862c8c0b386e0610.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "迅速",
+  "id": "04e9dca1dcc77792b50fc5a8",
+  "level": 5,
+  "meaning": "rapid, quick",
+  "pinyin": "xùnsù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GsGN;z1BFJ-1779527162122"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

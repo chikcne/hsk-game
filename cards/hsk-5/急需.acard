@@ -1,0 +1,32 @@
+{
+  "audio": "75e78bf8944f22a1d01f04ec937afcd0944d80994471d13beca05fa8ebc240e1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "急",
+      "需"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "急需",
+  "id": "003c46d31c8851e9b1a811dc",
+  "level": 5,
+  "meaning": "to urgently need",
+  "pinyin": "jíxū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M`I!U6LZJK-1779527161338"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

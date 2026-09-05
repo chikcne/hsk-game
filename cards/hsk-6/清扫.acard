@@ -1,0 +1,32 @@
+{
+  "audio": "a59673d372acc0548c310c5a5ec792e583336a701e09e0b3d27e16de8ac0f495.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "扫",
+      "清"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "清扫",
+  "id": "4bbd3e0aa04606074536109e",
+  "level": 6,
+  "meaning": "to sweep",
+  "pinyin": "qīngsǎo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1059-1779527163462"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "08791b11a6dcf2f53e10c6f890bff3cbd846f55618ff56b7e150f3f1d136ca60.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "区",
+      "山"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "山区",
+  "id": "31bae4bd7dc7107e60cce01d",
+  "level": 5,
+  "meaning": "mountain area",
+  "pinyin": "shānqū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-llB6XiEWW_-1779527161754"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

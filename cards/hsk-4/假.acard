@@ -1,0 +1,29 @@
+{
+  "audio": "642822d920871a131e6eee05d6d3881475856d16be4cdfad00c98b29c39a0710.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "假",
+  "id": "08ce1b88c6281a4cc3fa4bb6",
+  "level": 4,
+  "meaning": "false, fake",
+  "pinyin": "jiǎ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Q2:&[*C|xc-1779527160148"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

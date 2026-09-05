@@ -1,0 +1,29 @@
+{
+  "audio": "d08798a7297cf74435b6155e6311855451494bc1a74d415cb0b56d3afa660d18.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亲",
+  "id": "ac7db6b2e7d2d776ee4abdf1",
+  "level": 5,
+  "meaning": "close, dear; to kiss",
+  "pinyin": "qīn",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HUO)^?%o#<-1779527161681"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "aad31e740394c60dea20a3fe173377bfb6a2e358991575430776ab08e6523f7e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "系"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "系统",
+  "id": "a25338dc89a84e1fa3efe971",
+  "level": 5,
+  "meaning": "system; systematic",
+  "pinyin": "xìtǒng",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-dux/hZ(V3c-1779527162032"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

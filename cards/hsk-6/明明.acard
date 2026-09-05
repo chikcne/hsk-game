@@ -1,0 +1,29 @@
+{
+  "audio": "18ec39958a3370331f15c5d40e3ec85e3100d9b120d597693f2fb28751c2dac3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "明明",
+  "id": "f923b03bdce7a2e06c9b91d9",
+  "level": 6,
+  "meaning": "obviously, clearly",
+  "pinyin": "míngmíng",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-926-1779527163329"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

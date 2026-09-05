@@ -1,0 +1,29 @@
+{
+  "audio": "792ce40be91ee824305fa77fae9d09fd2b900f619d8296f7c59186726f641b25.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鸡",
+  "id": "f58ea7393f6a38772c8e2704",
+  "level": 3,
+  "meaning": "chicken",
+  "pinyin": "jī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-K|+[$y)3_`-1779527159490"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

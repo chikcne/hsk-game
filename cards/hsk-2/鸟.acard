@@ -1,0 +1,29 @@
+{
+  "audio": "4abc1d05668309e854d1da4aa3fab4de1bcf70be83c9a43cc9dc5b6abf44ce5f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鸟",
+  "id": "5da845234880f876e4ad3521",
+  "level": 2,
+  "meaning": "bird",
+  "pinyin": "niǎo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-F!GAK`0t(T-1779527159214"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

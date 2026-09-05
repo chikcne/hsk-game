@@ -1,0 +1,32 @@
+{
+  "audio": "9c9bf65eae1c7c3cfd197ad739bf4e002f8708dcf2ba19575f2b126eea5b0453.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "汇",
+      "词"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "词汇",
+  "id": "329e177a58e995702c7a1e5e",
+  "level": 5,
+  "meaning": "vocabulary",
+  "pinyin": "cíhuì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-K#.1K2)h*)-1779527160997"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

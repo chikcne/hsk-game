@@ -1,0 +1,31 @@
+{
+  "audio": "7b81bb0ef7ff7bc4b69bf69b2e66217ad7e97fbcc492eb3d9669dbccea2c7b07.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "菜"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "蔬菜",
+  "id": "cd3efc6a81b37da77e8c6e0a",
+  "level": 5,
+  "meaning": "vegetable",
+  "pinyin": "shūcài",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zdZ9niA[*&-1779527161858"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

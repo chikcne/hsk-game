@@ -1,0 +1,32 @@
+{
+  "audio": "a9512372a2a73f9562cd1cc4e87655395f2d67d848bbb68f4eeb530a99f75869.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "初",
+      "步"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "初步",
+  "id": "b09185ca3c7491860de3b292",
+  "level": 6,
+  "meaning": "preliminary, initial",
+  "pinyin": "chūbù",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-184-1779527162587"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

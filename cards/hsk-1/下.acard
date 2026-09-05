@@ -1,0 +1,29 @@
+{
+  "audio": "79dea08178abf8dd7f5bd467bf0cfc431224fd3787bfe7ee14b7d4fa68446de5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下",
+  "id": "43bcb4aadac65506f50b1df9",
+  "level": 1,
+  "meaning": "down, below; to go down; measure word for times",
+  "pinyin": "xià",
+  "pos": "noun、verb、 classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-oXlePqG~I^-1779527159029"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

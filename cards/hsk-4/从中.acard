@@ -1,0 +1,32 @@
+{
+  "audio": "0a95366a7133b23a9f2d3786d714bbe8dacce3fed97a2ffd1634697bde70c8ea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "从"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "从中",
+  "id": "1f9eb2ebd3d594b658176312",
+  "level": 4,
+  "meaning": "from among, from it",
+  "pinyin": "cóngzhōng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-KWQZ>^i:h~-1779527159907"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

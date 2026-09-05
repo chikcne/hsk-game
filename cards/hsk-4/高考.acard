@@ -1,0 +1,32 @@
+{
+  "audio": "fe99df0fa18b4f8d72ee0b4299185b8ffea4731e2ef0ff79785377271e3ae578.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "考",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高考",
+  "id": "b70dae62a34abebf523a20f3",
+  "level": 4,
+  "meaning": "Gaokao, college entrance examination",
+  "pinyin": "gāokǎo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-y.VhFc,Ao5-1779527160040"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

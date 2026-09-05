@@ -1,0 +1,32 @@
+{
+  "audio": "6edcf3135993e4a2a1543dcf408814ee96dcc24f63a5ec1f75c12cd4345e1223.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合",
+      "成"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "合成",
+  "id": "17e23a8ea5f557779ba4b211",
+  "level": 6,
+  "meaning": "to synthesize, to compose",
+  "pinyin": "héchéng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-539-1779527162942"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

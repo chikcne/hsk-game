@@ -1,0 +1,32 @@
+{
+  "audio": "9302d11ff35d4f64727fd3e136adb7da537fb931eded9c975f5cb15dd82df81b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "招",
+      "收"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "招收",
+  "id": "c9a88c681b55257a8c85ce76",
+  "level": 6,
+  "meaning": "to hire, to recruit",
+  "pinyin": "zhāoshōu",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1673-1779527164076"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

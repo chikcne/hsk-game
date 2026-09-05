@@ -1,0 +1,29 @@
+{
+  "audio": "245c4c62b221fd861cef91d952b5fdc3f73dc60180c7e4cf3065c29466e9b85f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "黄",
+  "id": "a3a3cb1e9292291b4012df6c",
+  "level": 6,
+  "meaning": "yellow",
+  "pinyin": "huáng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-581-1779527162984"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

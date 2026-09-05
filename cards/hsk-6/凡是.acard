@@ -1,0 +1,31 @@
+{
+  "audio": "8b8a7ae6e381eea96e337164d19f607d59438bacb477671977668dbf1f4ae540.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "是"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "凡是",
+  "id": "0046547f4d50f458b002296f",
+  "level": 6,
+  "meaning": "all, every",
+  "pinyin": "fánshì",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-364-1779527162767"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

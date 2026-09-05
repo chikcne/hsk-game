@@ -1,0 +1,29 @@
+{
+  "audio": "cffa7e79a89e3bec117c4f18f74992d254e1619e736746e07feb0757476cf260.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "掏",
+  "id": "3e4de0f5d64799b455ecc76f",
+  "level": 6,
+  "meaning": "to pull out, to dig out",
+  "pinyin": "tāo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1269-1779527163672"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "b010df931712255ab763014a9403580d598321e80ec5ca41362f3e13fbe576f1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "美"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "美景",
+  "id": "bcdc088f7cf5db3de70813f2",
+  "level": 4,
+  "meaning": "beautiful scenery",
+  "pinyin": "měijǐng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-rnen-(JdEK-1779527160305"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

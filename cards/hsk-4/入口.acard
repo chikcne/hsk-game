@@ -1,0 +1,32 @@
+{
+  "audio": "67457871d8462de52c3e45bb105c4953e2d1647eba20f65da3c61a4d8153b13a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入",
+      "口"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "入口",
+  "id": "fec2d7804d0895100767c751",
+  "level": 4,
+  "meaning": "entrance",
+  "pinyin": "rùkǒu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-le/(P(xQ7{-1779527160426"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

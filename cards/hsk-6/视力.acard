@@ -1,0 +1,31 @@
+{
+  "audio": "b6723fb6967a90ddb950d78e2c9d5f8d0ac6e561349b9ed42d1f511435505902.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "视力",
+  "id": "2045d5fdf32e4511e952f9dd",
+  "level": 6,
+  "meaning": "eyesight",
+  "pinyin": "shìlì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1203-1779527163606"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

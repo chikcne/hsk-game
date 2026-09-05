@@ -1,0 +1,31 @@
+{
+  "audio": "760b0e940d06c7f7d74c2efce3b5221fbeec6a5ddfc4947fa0d1fc196d28c40b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "勇于",
+  "id": "7f616415697173efaef1bf02",
+  "level": 6,
+  "meaning": "to be brave enough to",
+  "pinyin": "yǒngyú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1591-1779527163994"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

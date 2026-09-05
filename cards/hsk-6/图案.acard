@@ -1,0 +1,31 @@
+{
+  "audio": "74cee8e2c79709de402d33c928ee7c5fa18cbae03a90bd8c9795bbbfe8bb3c25.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "图"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "图案",
+  "id": "689aaa62e600763ffcdbfb7d",
+  "level": 6,
+  "meaning": "pattern, design",
+  "pinyin": "tú’àn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1328-1779527163731"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

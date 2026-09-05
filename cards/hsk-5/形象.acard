@@ -1,0 +1,29 @@
+{
+  "audio": "56989302b2013fc455f343e02ed40b68611b76914e30c533276493c32602075b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "形象",
+  "id": "e4510e1ffda2feb544cad351",
+  "level": 5,
+  "meaning": "image, figure; image",
+  "pinyin": "xíngxiàng",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nPpoiAzt1<-1779527162098"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "a60c262fcba89c627b18acb75d7525717fe5319f2ad393457b33b24ae3a9943c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "踢",
+  "id": "d972dad168300752bb0a2dd8",
+  "level": 2,
+  "meaning": "to kick",
+  "pinyin": "tī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-w[)d0iDS-/-1779527159244"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

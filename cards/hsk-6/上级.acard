@@ -1,0 +1,32 @@
+{
+  "audio": "607788e3ce0251ec65e46f939eac7b8f8dd9280f01e889f8014316b90006eb8d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "级"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上级",
+  "id": "a15d6efd705cb2828e5d5b38",
+  "level": 6,
+  "meaning": "superior, higher level",
+  "pinyin": "shàngjí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1148-1779527163551"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

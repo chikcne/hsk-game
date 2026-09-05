@@ -1,0 +1,32 @@
+{
+  "audio": "78d1d6c0b1bf957d068e6759046019cd5835c5aeb01f89c5cccb473c2a3fb58e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天",
+      "真"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "天真",
+  "id": "69a90f01194d2d22c5533bf7",
+  "level": 6,
+  "meaning": "naive, innocent",
+  "pinyin": "tiānzhēn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1294-1779527163697"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

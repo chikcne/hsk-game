@@ -1,0 +1,29 @@
+{
+  "audio": "9d6f48ba63088f6d9de2d70f8184adef550f99feb499012b43816dc072e5b50b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "碰",
+  "id": "d3cd4500d1d56b9be27b26b8",
+  "level": 5,
+  "meaning": "to bump, to touch",
+  "pinyin": "pèng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O{N<mW/.@}-1779527161626"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

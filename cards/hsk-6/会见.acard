@@ -1,0 +1,32 @@
+{
+  "audio": "e1f7bab158202a2db5acd2167f79a6e25573da7e44bbf78b7cf822700d13f424.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "见"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "会见",
+  "id": "c2bcead46b8b26b7819a28af",
+  "level": 6,
+  "meaning": "to meet",
+  "pinyin": "huìjiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-591-1779527162994"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

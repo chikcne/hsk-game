@@ -1,0 +1,32 @@
+{
+  "audio": "e527a77df182fc23f357f1efa72827db2ca170eb929a89ebb72e8d3552d9db4c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "里"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公里",
+  "id": "ba816d3a50f56d19f3c33c09",
+  "level": 4,
+  "meaning": "kilometer",
+  "pinyin": "gōnglǐ",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hY0Bph#Qia-1779527160057"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

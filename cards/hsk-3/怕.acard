@@ -1,0 +1,29 @@
+{
+  "audio": "00afa1831059486202937cf9bcbec11da6f2244edb902fba532f68b64eaaab6e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "怕",
+  "id": "5dfde5170df5d5857ac368b1",
+  "level": 3,
+  "meaning": "to fear; (perhaps)",
+  "pinyin": "pà",
+  "pos": "verb、（adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-GD6[J}124c-1779527159593"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

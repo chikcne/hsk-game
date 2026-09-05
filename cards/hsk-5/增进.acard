@@ -1,0 +1,32 @@
+{
+  "audio": "f86e571c7975ce760f981e0cc2e66fa65f9b808e813be1ec6a704586436aa08c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "增",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "增进",
+  "id": "5050e037430650f76ed7d3d2",
+  "level": 5,
+  "meaning": "to enhance, to promote",
+  "pinyin": "zēngjìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-j/hHZ~4Xlk-1779527162259"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

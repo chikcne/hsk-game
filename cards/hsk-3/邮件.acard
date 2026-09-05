@@ -1,0 +1,31 @@
+{
+  "audio": "48655bafc0839d27da3b154cc688969214b14da8776fbeaf79239e0fb717ca48.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "件"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "邮件",
+  "id": "6bb2bd12a1c129a8c8fe6611",
+  "level": 3,
+  "meaning": "mail",
+  "pinyin": "yóujiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-C>pcL/Eff#-1779527159745"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

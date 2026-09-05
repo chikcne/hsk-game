@@ -1,0 +1,29 @@
+{
+  "audio": "ed5e87912710ddb9cdc3328ec1335d366253e5b9a15559ff23a67a3626245940.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "区",
+  "id": "c5f106446e3b81584700a06e",
+  "level": 4,
+  "meaning": "district, area, region",
+  "pinyin": "qū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z$X|/Y0*3m-1779527160396"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

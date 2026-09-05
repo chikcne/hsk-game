@@ -1,0 +1,29 @@
+{
+  "audio": "66846220a6c071045754f1e6c0c7a00f517f2e939909d099f2c036b559557658.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地",
+  "id": "85c93711f2298dd8ebc0f93f",
+  "level": 2,
+  "meaning": "particle modifying an adjective into an adverb",
+  "pinyin": "de",
+  "pos": "auxiliary",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-H:cf{Tj-PF-1779527159136"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "fd270ba906ab1b5efbbad34e5e5e27316ad03a57d461c8a9ea78e79ecaaac6aa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "书",
+      "架"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "书架",
+  "id": "765e19885e854a070945e4c7",
+  "level": 5,
+  "meaning": "bookshelf",
+  "pinyin": "shūjià",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B?f0V[(sE[-1779527161861"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

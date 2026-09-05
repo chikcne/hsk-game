@@ -1,0 +1,29 @@
+{
+  "audio": "468d780fcda1744e6c758a25047bd8e31a2d169e102876a92220e94fd95b135b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "话剧",
+  "id": "2ba8514d330e2c23d3297f56",
+  "level": 4,
+  "meaning": "drama",
+  "pinyin": "huàjù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-fdbc=_2=w_-1779527160105"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

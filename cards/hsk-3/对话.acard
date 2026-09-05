@@ -1,0 +1,31 @@
+{
+  "audio": "10fbcdb4f2641696ab13bf6aecdf62ccc48bb003281adb566c349539b8fbb2e1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "对"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "对话",
+  "id": "11af4769a8df42cad77ff11d",
+  "level": 3,
+  "meaning": "dialogue, conversation",
+  "pinyin": "duìhuà",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-LAxi&]+^@k-1779527159412"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

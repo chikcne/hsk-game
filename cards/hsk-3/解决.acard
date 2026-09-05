@@ -1,0 +1,31 @@
+{
+  "audio": "77a3adeb9bc5a2f027a458811fa0fe20452c35103934880a3f0d0e2cae829b60.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "解"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "解决",
+  "id": "75c0ea3347d7bb57aa7e1372",
+  "level": 3,
+  "meaning": "to solve",
+  "pinyin": "jiějué",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-s=Yi%KOy-5-1779527159516"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

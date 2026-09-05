@@ -1,0 +1,29 @@
+{
+  "audio": "f4c48dca4331f9bab05d379489fa50d5bcd01dd898351def7133ecafa64be6fe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主持",
+  "id": "9d42ac75e0a26554830abec2",
+  "level": 5,
+  "meaning": "to host, to preside over",
+  "pinyin": "zhǔchí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w3*z4b->$^-1779527162344"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

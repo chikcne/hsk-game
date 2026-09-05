@@ -1,0 +1,32 @@
+{
+  "audio": "10a04b7e4d6828d5460715dee85d250f3973e6266a82a64c528a4b915a6c779b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "图",
+      "试"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "试图",
+  "id": "eb7c4e83954aa9ed222dc60d",
+  "level": 6,
+  "meaning": "to attempt, to try",
+  "pinyin": "shìtú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1204-1779527163607"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

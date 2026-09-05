@@ -1,0 +1,29 @@
+{
+  "audio": "e0944cb3b91a1e04d1aeace2e8527af4360a52f9287fea91606b2c2f3efcaa53.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跪",
+  "id": "1a50239c427573ae9ff23a43",
+  "level": 6,
+  "meaning": "to kneel",
+  "pinyin": "guì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-505-1779527162908"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

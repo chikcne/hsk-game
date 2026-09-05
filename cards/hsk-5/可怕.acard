@@ -1,0 +1,32 @@
+{
+  "audio": "cc8e20bb1556294ac6b37168c8f2001dbe55f1524eeb781d2c5ff23a2b947d11.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "可",
+      "怕"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "可怕",
+  "id": "26eb42ae03f128c4a6cf5b00",
+  "level": 5,
+  "meaning": "terrible, frightening",
+  "pinyin": "kěpà",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-DX3LP[.oBH-1779527161469"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

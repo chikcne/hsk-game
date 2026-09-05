@@ -1,0 +1,29 @@
+{
+  "audio": "ba0ff39da1a4f93f3a08f9b4e51e29456e9f28570461421217ae37ddfc42b520.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "乐器",
+  "id": "8874ff4458cd292ad59e2310",
+  "level": 6,
+  "meaning": "musical instrument",
+  "pinyin": "yuèqì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1630-1779527164033"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

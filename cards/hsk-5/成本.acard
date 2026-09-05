@@ -1,0 +1,32 @@
+{
+  "audio": "a4655f6610b2985f6bcd5ef60d22d028fc9661c0a8132e0b143f19ce1744bfd7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成",
+      "本"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成本",
+  "id": "cc6823aa303e7663bb95a8a3",
+  "level": 5,
+  "meaning": "cost",
+  "pinyin": "chéngběn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lAwpRd(fOk-1779527160939"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "5a31618d1daa6a1e2aa918f34502551a11bf490070950efb4182c712d294283a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "过",
+      "通"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "通过",
+  "id": "3019618f135338270ef0535a",
+  "level": 4,
+  "meaning": "to pass through, to go through; by means of",
+  "pinyin": "tōngguò",
+  "pos": "verb、preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-g)/pfGQonX-1779527160547"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

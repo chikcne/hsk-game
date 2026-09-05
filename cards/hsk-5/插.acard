@@ -1,0 +1,29 @@
+{
+  "audio": "b14c64c8175cfa7bafff1ac4058431c74ae5dbd0c0de1b9d370b60479f1876e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "插",
+  "id": "0bb01c212b473e8e5972bf95",
+  "level": 5,
+  "meaning": "to insert",
+  "pinyin": "chā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F.f8,hfKub-1779527160902"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

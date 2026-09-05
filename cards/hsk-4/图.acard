@@ -1,0 +1,29 @@
+{
+  "audio": "db0f8f34f5f55ab5cf99fd14d7db35a67d9e6bf29cb52dc1538ee615a43cf0e1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "图",
+  "id": "bf6cc72420703514f4bf6668",
+  "level": 4,
+  "meaning": "picture, drawing, diagram; (to plan, to scheme)",
+  "pinyin": "tú",
+  "pos": "noun、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r1.e`un@({-1779527160555"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

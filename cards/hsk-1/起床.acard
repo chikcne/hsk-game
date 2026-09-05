@@ -1,0 +1,32 @@
+{
+  "audio": "2a97ae3b2b0647b7c575468bb6886e087cf3a236e1ae8c59a56cb081f9e60f05.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "床",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "起床",
+  "id": "aa89c70dbb17199e33c1aead",
+  "level": 1,
+  "meaning": "to get up",
+  "pinyin": "qǐchuáng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-g*[n`6=31W-1779527158964"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

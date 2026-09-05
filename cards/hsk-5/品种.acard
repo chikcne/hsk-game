@@ -1,0 +1,32 @@
+{
+  "audio": "c97ec64b8d99d180eafe9595172e475812c1e1e1a7ebc58804195862112e9591.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "品",
+      "种"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "品种",
+  "id": "7b0f7e78e5de1f548e809a2d",
+  "level": 5,
+  "meaning": "variety, breed",
+  "pinyin": "pǐnzhǒng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l;gJd@2xSw-1779527161638"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

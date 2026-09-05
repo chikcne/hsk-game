@@ -1,0 +1,31 @@
+{
+  "audio": "5be584e525d6134b7c50e4588e69bee7ba3aad717625b65694aeafe024b31cf3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "库"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "仓库",
+  "id": "c81eed18b709a905ba0f6a5c",
+  "level": 6,
+  "meaning": "warehouse",
+  "pinyin": "cāngkù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-109-1779527162512"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

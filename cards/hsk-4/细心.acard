@@ -1,0 +1,32 @@
+{
+  "audio": "ea809f335c20000213af9c271e95da05823e9c572a2f8966b9d5bd5046d634e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "细"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "细心",
+  "id": "af1e163381e265f668fd15a3",
+  "level": 4,
+  "meaning": "careful, attentive",
+  "pinyin": "xìxīn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nee/S8@_F3-1779527160595"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

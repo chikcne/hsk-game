@@ -1,0 +1,31 @@
+{
+  "audio": "64a8edfcb9a4b2a87f0bc1400ae5105f0084d982c756380c5e3d651f5bc2b1bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "必"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "必须",
+  "id": "aabe6fe0cc58843415d14af4",
+  "level": 3,
+  "meaning": "must",
+  "pinyin": "bìxū",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-wfov-/L=>o-1779527159328"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "e113957e411eafab141b39f4fa0fc5f4369def4fa7ab148bea78b0316a826f21.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "名额",
+  "id": "0b6724707b6c0dd609896eb2",
+  "level": 6,
+  "meaning": "quota, number of places",
+  "pinyin": "míng’é",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-924-1779527163327"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

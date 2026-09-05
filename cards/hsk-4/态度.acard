@@ -1,0 +1,31 @@
+{
+  "audio": "7e3a6b04690e23aa5a33155eb42c7e6d26a0305aaf4695927d80eae2ff2ff2af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "态度",
+  "id": "0eaed6d228a7f35cd65d2513",
+  "level": 4,
+  "meaning": "attitude, manner",
+  "pinyin": "tàidù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-iyePD9v<Os-1779527160520"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

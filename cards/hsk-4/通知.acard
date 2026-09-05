@@ -1,0 +1,31 @@
+{
+  "audio": "3102259c83b4870b1ae4dbdd376a518a53b77d2eb0dc65ee7261de9100b99899.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "通"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "通知",
+  "id": "304312d2817d844b13a5b73d",
+  "level": 4,
+  "meaning": "to notify, to inform; notice, notification",
+  "pinyin": "tōngzhī",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kKm[3}@=M^-1779527160548"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

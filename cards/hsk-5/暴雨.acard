@@ -1,0 +1,31 @@
+{
+  "audio": "23386c188a7b9d3b148b99102ca437ae88844d457d7d46315fe858d541c07715.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "雨"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暴雨",
+  "id": "0be0dd4446a06d52009287ee",
+  "level": 5,
+  "meaning": "torrential rain, rainstorm",
+  "pinyin": "bàoyǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JyW&Hkvz!A-1779527160837"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

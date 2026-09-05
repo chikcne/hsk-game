@@ -1,0 +1,32 @@
+{
+  "audio": "517dbbf6a92a775615966be91a47893f8952ece015ae1bd298d90c8b4bdeb52d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "原",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "原来",
+  "id": "755fc8ed2f3d3c072932d4d3",
+  "level": 4,
+  "meaning": "original, former; originally, actually",
+  "pinyin": "yuánlái",
+  "pos": "noun、adjective、 adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-L2mp!D^v+f-1779527160703"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

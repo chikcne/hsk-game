@@ -1,0 +1,31 @@
+{
+  "audio": "8635f29c9ae2412ad9fff7e5035ba34a7ce1ce04351276febb87f9e016cdc99b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中餐",
+  "id": "291920888b0c3a4bf68ebc65",
+  "level": 4,
+  "meaning": "Chinese food, Chinese meal",
+  "pinyin": "zhōngcān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-mg;e*JPqNR-1779527160760"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

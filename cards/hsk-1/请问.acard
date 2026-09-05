@@ -1,0 +1,32 @@
+{
+  "audio": "ec4ac05ea1f5830eee706b41202420f70fe625c35940dbbf7ddeede0d109356a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "请",
+      "问"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "请问",
+  "id": "abf6911e87db0e667e61ab78",
+  "level": 1,
+  "meaning": "may I ask",
+  "pinyin": "qǐngwèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-y7rt40E.[.-1779527158969"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

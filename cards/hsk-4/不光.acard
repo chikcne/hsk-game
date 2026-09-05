@@ -1,0 +1,32 @@
+{
+  "audio": "2874971f56280dd83c23cd74043c5b90f3527db96aec8fac10bd063cfb16832b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "光"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不光",
+  "id": "24ca59e72e544d9ca8abcf0c",
+  "level": 4,
+  "meaning": "not only; not only... (but also)",
+  "pinyin": "bùguāng",
+  "pos": "adverb、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p?o-~k|=xb-1779527159857"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "ca762f68f342b1135c986a3fe3a5dddaf21bdfe173b23d66e0128b54855e778f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "进入",
+  "id": "3cd289bfb8bd6d2009508897",
+  "level": 4,
+  "meaning": "to enter, to access, to be admitted to",
+  "pinyin": "jìnrù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-LmRPB5Ndpj-1779527160195"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

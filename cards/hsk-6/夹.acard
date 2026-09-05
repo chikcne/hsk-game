@@ -1,0 +1,29 @@
+{
+  "audio": "f30837925be3ae43b72f79c05b6cbd791e2efbe30530fc080e92549c7620c5e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夹",
+  "id": "08322a989dca459375bd52eb",
+  "level": 6,
+  "meaning": "to press, to squeeze",
+  "pinyin": "jiā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-628-1779527163031"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

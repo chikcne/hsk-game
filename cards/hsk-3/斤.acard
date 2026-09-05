@@ -1,0 +1,29 @@
+{
+  "audio": "d2804160995ffc54775568646fee7038d439d77f2b1e331a1ea4914c5c812413.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "斤",
+  "id": "3c588694c5f1fb9e96f5876a",
+  "level": 3,
+  "meaning": "catty",
+  "pinyin": "jīn",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-kyzsnWt^PR-1779527159519"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

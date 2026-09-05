@@ -1,0 +1,31 @@
+{
+  "audio": "ac52bca3fa7a489eaeb36327479989de3e2c1dbd536da22972d14118d2bda266.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "期"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "延期",
+  "id": "d5200c330f67893fa19ddf8b",
+  "level": 6,
+  "meaning": "to postpone",
+  "pinyin": "yánqī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1508-1779527163911"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

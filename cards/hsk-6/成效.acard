@@ -1,0 +1,31 @@
+{
+  "audio": "5a15dcce920dc7fcf23f94efac61f53e010e3ee412e66e1c5280a9a66531296b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成效",
+  "id": "55ed20de942fc5b4b7dbdcf8",
+  "level": 6,
+  "meaning": "effect, result",
+  "pinyin": "chéngxiào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-165-1779527162568"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

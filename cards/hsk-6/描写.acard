@@ -1,0 +1,31 @@
+{
+  "audio": "39476ab0338132881b078e9c2df6c6b8c2b02bba41648ffe337207f48d253330.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "写"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "描写",
+  "id": "26e63cfa3929f8132c5f3a6d",
+  "level": 6,
+  "meaning": "to describe",
+  "pinyin": "miáoxiě",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-915-1779527163318"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

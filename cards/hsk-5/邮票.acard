@@ -1,0 +1,31 @@
+{
+  "audio": "32c4ba4ef649fb52df301737e5a1dbba3ac33fb224c52bcad29938c8eb3d1a91.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "票"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "邮票",
+  "id": "4f73f67533d514f1b68aae9d",
+  "level": 5,
+  "meaning": "postage stamp",
+  "pinyin": "yóupiào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tboK6]gasn-1779527162209"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

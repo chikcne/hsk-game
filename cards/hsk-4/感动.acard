@@ -1,0 +1,32 @@
+{
+  "audio": "c8a3f43c438b473930a41a94cf196c8c3455660922b3446bbc2cfbd6bea7c838.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "感"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "感动",
+  "id": "d296ac48447a10dbfd4ee591",
+  "level": 4,
+  "meaning": "moved, touched; to move, to touch",
+  "pinyin": "gǎndòng",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-iH#;`~sxLF-1779527160028"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

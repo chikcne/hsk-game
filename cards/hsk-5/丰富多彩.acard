@@ -1,0 +1,33 @@
+{
+  "audio": "95df71788b5a4f27fe9b3bb767cb2243ab91831dcb50a7038eba72eea9b9a011.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "丰富",
+      "多",
+      "富"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "丰富多彩",
+  "id": "c0358e6db6404765ef6fd69b",
+  "level": 5,
+  "meaning": "rich and colorful",
+  "pinyin": "fēngfù-duōcǎi",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-c3s^pv:<xx-1779527161161"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

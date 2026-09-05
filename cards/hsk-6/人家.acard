@@ -1,0 +1,32 @@
+{
+  "audio": "efeb67803552c435819962e7dc64c34b06a369d3039a30563ae61068077d6fdd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "家"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人家",
+  "id": "59aa84c78f75207f8d3ac8bd",
+  "level": 6,
+  "meaning": "other people, I, you",
+  "pinyin": "rénjia",
+  "pos": "代",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1095-1779527163498"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

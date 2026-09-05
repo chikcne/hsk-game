@@ -1,0 +1,32 @@
+{
+  "audio": "a29fe97ec6de299de004a684172e237645e7d78bd420793f0fc17531aa1a62b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "移",
+      "转"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转移",
+  "id": "b9c955be4941c2c8a6636b89",
+  "level": 6,
+  "meaning": "to transfer, to shift",
+  "pinyin": "zhuǎnyí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1768-1779527164171"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

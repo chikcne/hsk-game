@@ -1,0 +1,32 @@
+{
+  "audio": "1cae0e30678d591e1305c561d03cba964fd5bce4cadfb0e7e26de32b151210eb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高度",
+  "id": "82dbb8c2df098f8115a6eaae",
+  "level": 5,
+  "meaning": "height; high",
+  "pinyin": "gāodù",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zi4Z(xXs@J-1779527161191"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

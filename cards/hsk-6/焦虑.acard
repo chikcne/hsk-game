@@ -1,0 +1,29 @@
+{
+  "audio": "79c824d45f730ed9dc65488e87ea5ed4ff7300f7799b5c17c1733752507c7a2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "焦虑",
+  "id": "4ed0c59bdd8081df48be606d",
+  "level": 6,
+  "meaning": "anxious",
+  "pinyin": "jiāolǜ",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-673-1779527163076"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

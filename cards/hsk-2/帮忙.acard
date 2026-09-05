@@ -1,0 +1,32 @@
+{
+  "audio": "c36785dd04eaf18a413c2785af2720616448c83c02c1f714e4ce137e339083d4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "帮",
+      "忙"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "帮忙",
+  "id": "f0c217c53bdda992fea8efa7",
+  "level": 2,
+  "meaning": "to help / to give help / lend a hand (more general action)",
+  "pinyin": "bāngmáng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-H|F$NKhqWf-1779527159109"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

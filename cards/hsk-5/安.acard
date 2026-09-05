@@ -1,0 +1,29 @@
+{
+  "audio": "7b14e3b465aecd8c902df9eca0f9df4c0f94f975a2e189279d8f048917cf260d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "安",
+  "id": "a72ddd86446dc67938a04b83",
+  "level": 5,
+  "meaning": "peaceful, calm; to pacify, to comfort",
+  "pinyin": "ān",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zLUG.uf|g[-1779527160808"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "a57b5bff77f40cb845d58dd5cb7093d8d730e3983ab2ce0e844d515ed09ccdcd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "黄"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "黄金",
+  "id": "9c9677676cc518d7a3ebd350",
+  "level": 5,
+  "meaning": "gold",
+  "pinyin": "huángjīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-DvhU;NFoLY-1779527161309"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "58f49a7544e108555bf0ff6877a58aca8ef4d27d6a692cda6df06b2db14b5f04.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "蹲",
+  "id": "11067bebb6b6e6e6ff69ac33",
+  "level": 6,
+  "meaning": "to squat",
+  "pinyin": "dūn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-334-1779527162737"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

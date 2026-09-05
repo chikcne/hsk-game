@@ -1,0 +1,32 @@
+{
+  "audio": "cb8b99ff80e93b6954dbaeb5c7009656f5b80d5936b8800563ac15552c6dd30e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "治",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "治理",
+  "id": "b03f75b7cb29136d511ed54c",
+  "level": 6,
+  "meaning": "to govern, to manage",
+  "pinyin": "zhìlǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1715-1779527164118"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

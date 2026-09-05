@@ -1,0 +1,31 @@
+{
+  "audio": "8e9b19fd5ede773f8a612696c0c0adb497b2ad23ac61c1e459f733b7243bfa26.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "西"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "西餐",
+  "id": "274da531759a5c62e1792225",
+  "level": 5,
+  "meaning": "Western food",
+  "pinyin": "xīcān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t5*3{[kV8?-1779527162024"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

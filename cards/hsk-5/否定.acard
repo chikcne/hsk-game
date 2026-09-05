@@ -1,0 +1,31 @@
+{
+  "audio": "5108969595f30e1d653154d3986b0485b85bbbc078f66c9b19b866b41aac8a1b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "否定",
+  "id": "0f43c80efc3d703033082ef7",
+  "level": 5,
+  "meaning": "to negate; negative",
+  "pinyin": "fǒudìng",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-eN3@,eYv[g-1779527161166"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

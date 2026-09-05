@@ -1,0 +1,32 @@
+{
+  "audio": "9ee39372c9cfa9bb93c4119084fdb9720342c6c91b5fd580cf2c42c519d587a2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "含",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "含有",
+  "id": "d510756f95a871868ef19339",
+  "level": 5,
+  "meaning": "to contain",
+  "pinyin": "hányǒu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-DV=Eh[1{16-1779527161268"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

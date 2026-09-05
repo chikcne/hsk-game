@@ -1,0 +1,31 @@
+{
+  "audio": "530d1096b26ed8f56f687f3b4b865b04b3e5bbdba0412e280659cfd65d543e46.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "连"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相连",
+  "id": "6e8f6fe66be231e9cb0b8303",
+  "level": 6,
+  "meaning": "to be connected",
+  "pinyin": "xiānglián",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1438-1779527163841"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

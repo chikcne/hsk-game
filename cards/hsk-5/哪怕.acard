@@ -1,0 +1,32 @@
+{
+  "audio": "74ba750cbe817d0b6cfc405eb500b4896a9a35543ce964265ef47deec1f335d8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "哪",
+      "怕"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哪怕",
+  "id": "2b24f8d16e555c80ab8a19f8",
+  "level": 5,
+  "meaning": "even if, no matter",
+  "pinyin": "nǎpà",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P6QKfKV)o1-1779527161591"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

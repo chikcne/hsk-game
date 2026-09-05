@@ -1,0 +1,31 @@
+{
+  "audio": "429518c423cececac8a2ca47434062329dc2bb1a0b5343ce42b9d668dfd016b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "造"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "构造",
+  "id": "321eff5beeaa69a55f2a8748",
+  "level": 6,
+  "meaning": "to construct, to build",
+  "pinyin": "gòuzào",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-472-1779527162875"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

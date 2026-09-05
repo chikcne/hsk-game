@@ -1,0 +1,29 @@
+{
+  "audio": "f85869ee8eacd1537029cb2c7eb6da83aa082f5f112f075fdfed3db722a5bf41.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "崇拜",
+  "id": "b3169550f255c6b04c3d80de",
+  "level": 6,
+  "meaning": "to worship, to adore",
+  "pinyin": "chóngbài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-177-1779527162580"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

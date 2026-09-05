@@ -1,0 +1,29 @@
+{
+  "audio": "9bbf56cd13b7b38e549769b7ca86dea5464095e36a9733137063f30ff8da1134.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "笔",
+  "id": "575fbb221a684506a47a25c8",
+  "level": 2,
+  "meaning": "pen; (measure word for writing tools)",
+  "pinyin": "bǐ",
+  "pos": "noun、 （classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-kDnA=DCPT--1779527159113"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

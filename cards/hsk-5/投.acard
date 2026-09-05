@@ -1,0 +1,29 @@
+{
+  "audio": "3a68dc39f8391c45bc3ad90f797e9e5f757d28defc0a4503e871e77b214214ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "投",
+  "id": "45b1d3b4dfdc3ed276b293c1",
+  "level": 5,
+  "meaning": "to throw, to cast",
+  "pinyin": "tóu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HM7Cn!D;5@-1779527161950"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

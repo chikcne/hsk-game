@@ -1,0 +1,29 @@
+{
+  "audio": "3e6ef4ab71ec864cb0577036efebfb5a249c8e9da3ee402d2b4d0b28d6b687d2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "旅途",
+  "id": "f11fa2f9595d95d6a4a5acce",
+  "level": 6,
+  "meaning": "trip, journey",
+  "pinyin": "lǚtú",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-871-1779527163274"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

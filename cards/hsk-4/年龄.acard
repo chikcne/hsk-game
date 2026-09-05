@@ -1,0 +1,31 @@
+{
+  "audio": "f514090118c34a1fadb2a2f8fea14369810d91608753b2eff2a6659fc5419dcc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "年龄",
+  "id": "3ccc3493a0b5aa5abcd1ea59",
+  "level": 4,
+  "meaning": "age",
+  "pinyin": "niánlíng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-N%!F&5XQ}e-1779527160339"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

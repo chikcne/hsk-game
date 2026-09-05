@@ -1,0 +1,32 @@
+{
+  "audio": "57e80ebdecfe01db090b005d723c68d5cd012d19650877badac9ab5f1c2571b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "间",
+      "隔"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "间隔",
+  "id": "74d11c7a4608c82091399ec4",
+  "level": 6,
+  "meaning": "interval, gap; to separate",
+  "pinyin": "jiàngé",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-660-1779527163063"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

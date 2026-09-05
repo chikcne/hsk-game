@@ -1,0 +1,29 @@
+{
+  "audio": "6ded0b30517f513317908a0aac3b2479ab41b5c23578409e76b541014c324902.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "挥",
+  "id": "c161de8a17fdba92165dc436",
+  "level": 5,
+  "meaning": "to wave, to wield",
+  "pinyin": "huī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PeLC1Ct1B}-1779527161311"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

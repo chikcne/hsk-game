@@ -1,0 +1,31 @@
+{
+  "audio": "72eab9e5a7f04eb3e4cf7ccaa611614071e3e108a4500eb479f399aa63122c93.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "细"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "细菌",
+  "id": "afe21a160e74d92690439365",
+  "level": 6,
+  "meaning": "bacteria",
+  "pinyin": "xìjūn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1409-1779527163812"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

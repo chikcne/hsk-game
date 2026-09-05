@@ -1,0 +1,32 @@
+{
+  "audio": "cd0637cc8253139e303ad256071523e4ffed3999f731a2da399f5a4fb699e915.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "尽",
+      "量"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "尽量",
+  "id": "290f48eca33e2780cacca239",
+  "level": 5,
+  "meaning": "to the best of one's ability",
+  "pinyin": "jǐnliàng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tn8=fMlH~w-1779527161413"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

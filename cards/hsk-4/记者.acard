@@ -1,0 +1,32 @@
+{
+  "audio": "40f7587546c52a058a3445fc94d57af04a413c4b88f8f9d2ba9b90d6d9921d5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "者",
+      "记"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "记者",
+  "id": "a96b40cda8344e8dc73eaae4",
+  "level": 4,
+  "meaning": "reporter",
+  "pinyin": "jìzhě",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vF5HqsNNoY-1779527160136"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

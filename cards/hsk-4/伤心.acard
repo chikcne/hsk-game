@@ -1,0 +1,32 @@
+{
+  "audio": "1db371a3dac2e24664ecced429f4e246de4d5371ec729574466eb48194e0f393.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伤",
+      "心"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "伤心",
+  "id": "ba8330f25f51b361570f2f66",
+  "level": 4,
+  "meaning": "sad, heartbroken",
+  "pinyin": "shāngxīn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xaM;YATci--1779527160434"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "990d10884e653c636ec4475d4b317a3a9b0e7751f14a03c2bc509dbd038ecdd2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "求"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "求婚",
+  "id": "5113db26490bff373f5de4d3",
+  "level": 6,
+  "meaning": "to propose marriage",
+  "pinyin": "qiúhūn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1069-1779527163472"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

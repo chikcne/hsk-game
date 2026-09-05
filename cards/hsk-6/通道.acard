@@ -1,0 +1,32 @@
+{
+  "audio": "c19f0ed0b103cdc6e9b98876fbd00730ab87996d9b4cba71fe744b1d8a507a4e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "通",
+      "道"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "通道",
+  "id": "a87bcc019063d34694ee9eb1",
+  "level": 6,
+  "meaning": "passage, channel",
+  "pinyin": "tōngdào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1303-1779527163706"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

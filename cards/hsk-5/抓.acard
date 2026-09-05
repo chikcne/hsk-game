@@ -1,0 +1,29 @@
+{
+  "audio": "6e348b6d2ba8fd072d22abb9245ea273c564ebf9437ffd0793a4f6b9f36f5239.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抓",
+  "id": "9c3483ca60bb80642e78cd17",
+  "level": 5,
+  "meaning": "to grab, to catch",
+  "pinyin": "zhuā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-FJb60dl-yl-1779527162357"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

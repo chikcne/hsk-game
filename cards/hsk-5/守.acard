@@ -1,0 +1,29 @@
+{
+  "audio": "394c4d1b35b9d227cc65ff8b59e638b3568509b5dd98d62b317de025dbdc5b9e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "守",
+  "id": "dde5b54706deff9fcb220014",
+  "level": 5,
+  "meaning": "to guard, to keep",
+  "pinyin": "shǒu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O8<_hp8:Bw-1779527161849"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

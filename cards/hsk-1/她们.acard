@@ -1,0 +1,32 @@
+{
+  "audio": "ea5198cf2838f02e0e185e333e3f8c84c7a2939b8afae49e214251a862db4535.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "们",
+      "她"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "她们",
+  "id": "5358e735dec0df8bed833ac2",
+  "level": 1,
+  "meaning": "they (womans)",
+  "pinyin": "tāmen",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-A`Us&1pdTg-1779527159008"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

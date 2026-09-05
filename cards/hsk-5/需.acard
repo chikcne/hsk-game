@@ -1,0 +1,29 @@
+{
+  "audio": "37188756db1e28955d7b90ec17d6211ad86d9f9ec12c59e4d0258405cf0a61ff.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "需",
+  "id": "fc1d577350f1b17d1bca57b1",
+  "level": 5,
+  "meaning": "to need",
+  "pinyin": "xū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-cyVkgR|VC=-1779527162106"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "c26cf4ce554df0570dcc0151efc1ba0f2b1c97145a06a846eea5ec8b21122a5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "只",
+      "好"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "只好",
+  "id": "f36a40a130f2c613b5eb7de2",
+  "level": 4,
+  "meaning": "have to, be forced to",
+  "pinyin": "zhǐhǎo",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-uw8|5!kVf)-1779527160756"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "93a2bacb83cee518d37adbd8f2c5518d5f9401b8d158e019181f34f050037f5a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实力",
+  "id": "4fba758174bdc2216a6d51be",
+  "level": 5,
+  "meaning": "strength, capability",
+  "pinyin": "shílì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-k}5nd92F/b-1779527161818"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

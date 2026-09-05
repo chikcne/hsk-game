@@ -1,0 +1,32 @@
+{
+  "audio": "dd78d2a78573d50aea49f5637a692b28de943df70cdf34602bdd702f5c5e3b9f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "等"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "等于",
+  "id": "8fe62f7ef56c99fc02fa608a",
+  "level": 5,
+  "meaning": "to be equal to",
+  "pinyin": "děngyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-w`nv})Q_u|-1779527161068"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

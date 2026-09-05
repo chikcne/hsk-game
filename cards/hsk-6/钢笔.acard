@@ -1,0 +1,31 @@
+{
+  "audio": "5d35df870b5ed86cb014995616440eea06479f359bc175310e245f48ff7a87b3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "笔"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "钢笔",
+  "id": "89e6b000b1fbefda1794b85b",
+  "level": 6,
+  "meaning": "pen",
+  "pinyin": "gāngbǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-427-1779527162830"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

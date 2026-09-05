@@ -1,0 +1,31 @@
+{
+  "audio": "4e8084cde3b8461447041dd9b0fa8d38ff79a5fef6cb1cf69e16846574fcd533.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "当"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当然",
+  "id": "71157ab47e22d50e1a10ff2d",
+  "level": 3,
+  "meaning": "of course",
+  "pinyin": "dāngrán",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-E*zI+R7&#1-1779527159384"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

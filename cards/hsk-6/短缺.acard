@@ -1,0 +1,32 @@
+{
+  "audio": "cc5b5c4591c989f5abebe2c2252fa9f4f12d540a915e3c3b228f0e5c2a030a45.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "短",
+      "缺"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "短缺",
+  "id": "8c29fdabffb518f67311e2d9",
+  "level": 6,
+  "meaning": "shortage, to be short of",
+  "pinyin": "duǎnquē",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-328-1779527162731"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

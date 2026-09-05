@@ -1,0 +1,29 @@
+{
+  "audio": "72ab47bcdefad255aa098c0ea5b9c3bafa97dfe34aa50d8f8adb75af6eed5874.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "摄影",
+  "id": "642ba46a1083ecd8c4ef1ce9",
+  "level": 5,
+  "meaning": "to take a photograph",
+  "pinyin": "shèyǐng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-eUZo1M_[Qb-1779527161780"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

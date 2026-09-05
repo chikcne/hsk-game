@@ -1,0 +1,31 @@
+{
+  "audio": "e62715b54cc00038a609373511e98ade349daa1c702f355bbc14c2e5353f3c5b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "办"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "创办",
+  "id": "12211cdf9611fe4cb8eef93d",
+  "level": 6,
+  "meaning": "to establish, to found",
+  "pinyin": "chuàngbàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-212-1779527162615"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "efcfb1e017960708fa645df99cf41304eda222fbc5dffe15ee9cc40d5ce836fa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "特"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "特色",
+  "id": "e20ca27d1fb6d9e0e1bef91b",
+  "level": 5,
+  "meaning": "characteristic, feature",
+  "pinyin": "tèsè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HlTo_gyS({-1779527161911"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

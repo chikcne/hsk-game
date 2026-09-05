@@ -1,0 +1,29 @@
+{
+  "audio": "f48803c55b262e683a953b238a431e8a619c03b0e3f9d254361aab74ad61fb72.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "修",
+  "id": "0587f34591ed8813af5a52c6",
+  "level": 4,
+  "meaning": "to repair, to fix",
+  "pinyin": "xiū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-GX;g3G9d%,-1779527160637"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

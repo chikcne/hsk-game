@@ -1,0 +1,31 @@
+{
+  "audio": "9689f37f4cfdd6e81b1a86c742d59732686fa719e9b5210e4893ae9f3dcb7660.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "传承",
+  "id": "bcc21d9534739c9c696227e5",
+  "level": 6,
+  "meaning": "to inherit and carry forward",
+  "pinyin": "chuánchéng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-201-1779527162604"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

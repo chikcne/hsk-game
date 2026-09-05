@@ -1,0 +1,29 @@
+{
+  "audio": "d263a63bab11d289cbe5ca53c201e2986e3d3c1f9650ae6f85127451d1bb3645.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "们",
+  "id": "327084571a30777280f10644",
+  "level": 1,
+  "meaning": "plural suffix for pronouns and nouns",
+  "pinyin": "men",
+  "pos": "suffix",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-KJxu(r_/`[-1779527158927"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

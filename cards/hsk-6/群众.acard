@@ -1,0 +1,31 @@
+{
+  "audio": "86b4477595f42978a7194df73dcd4e2ed29005df068e8925a6642829c3eae91c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "群"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "群众",
+  "id": "abfa3b4b9f9adcf28829062e",
+  "level": 6,
+  "meaning": "crowd, masses",
+  "pinyin": "qúnzhòng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1085-1779527163488"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

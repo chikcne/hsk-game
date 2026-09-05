@@ -1,0 +1,29 @@
+{
+  "audio": "73d9eb803e041393a1ceed949211a6642605368aea146dbca34ac2d0ad835755.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "票",
+  "id": "61d3328920a34d1c4a4da0a2",
+  "level": 2,
+  "meaning": "ticket",
+  "pinyin": "piào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-l/kwM-_MHM-1779527159219"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

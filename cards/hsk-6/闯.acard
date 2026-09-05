@@ -1,0 +1,29 @@
+{
+  "audio": "dcc2ba14679b0e74e094bd20039194f579d6fd0cbc6a0e8900b2cc80984159f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "闯",
+  "id": "11da20dca4edb155c1f1f7c5",
+  "level": 6,
+  "meaning": "to rush, to break in",
+  "pinyin": "chuǎng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-211-1779527162614"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

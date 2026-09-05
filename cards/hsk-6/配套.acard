@@ -1,0 +1,32 @@
+{
+  "audio": "7920f3c5a710a497dada04a8fff00116c0ab8c8b4fed5efb1a2b543c99f27b99.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "套",
+      "配"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "配套",
+  "id": "5529584297c4e6e4d1becf28",
+  "level": 6,
+  "meaning": "to form a complete set",
+  "pinyin": "pèitào",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-980-1779527163383"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

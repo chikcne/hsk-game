@@ -1,0 +1,32 @@
+{
+  "audio": "d2cba31ef8bbc26557b2cd553f327397e5d015f623b5ee04b9357b454dd096d6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有",
+      "限"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有限",
+  "id": "bc6227477d9d3788e0e7b159",
+  "level": 5,
+  "meaning": "limited",
+  "pinyin": "yǒuxiàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jMHy>A[<3q-1779527162215"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

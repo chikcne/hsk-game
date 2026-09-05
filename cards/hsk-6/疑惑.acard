@@ -1,0 +1,29 @@
+{
+  "audio": "e9fe85d05526ccd3ded66ffc95b6d524c545ca768fb2b1c5c57f358feacf0010.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "疑惑",
+  "id": "88992e4adeda3670b7b5f22e",
+  "level": 6,
+  "meaning": "to doubt; doubt",
+  "pinyin": "yíhuò",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1549-1779527163952"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

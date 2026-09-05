@@ -1,0 +1,32 @@
+{
+  "audio": "bf053ac2eaf93ac53789fcd11df82625cf8178ca23e0a9b4d5f6da80114f5250.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地",
+      "球"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地球",
+  "id": "7e7e08a5ef231808b92fec61",
+  "level": 4,
+  "meaning": "earth",
+  "pinyin": "dìqiú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hK;WazckN.-1779527159958"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

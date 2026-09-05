@@ -1,0 +1,31 @@
+{
+  "audio": "6ca7365692e0d5baa440da73ca8ddf54637154266db38bca8ebdedca9f1f6027.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "车"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "车速",
+  "id": "5e0bd8cdab01175ab8c1c4be",
+  "level": 4,
+  "meaning": "vehicle speed",
+  "pinyin": "chēsù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d{T/>>j-VM-1779527159878"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

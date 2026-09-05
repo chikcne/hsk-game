@@ -1,0 +1,31 @@
+{
+  "audio": "4b1f38cbe6bd2ce465980c4a8117a35fcb4695ef10bac90ced8a270356f0404e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "自"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自习",
+  "id": "edb49682c6a8e67ec42e236f",
+  "level": 4,
+  "meaning": "to study on one's own",
+  "pinyin": "zìxí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-g[dAJAN=k7-1779527160785"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

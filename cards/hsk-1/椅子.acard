@@ -1,0 +1,31 @@
+{
+  "audio": "cd378249b0ad584877da0e93f983139379d9ef98e99d7411f7f11daffa768a8a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "椅子",
+  "id": "ac3060ceda23ad1fbe87955e",
+  "level": 1,
+  "meaning": "chair",
+  "pinyin": "yǐzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-gf/a,W^?Q*-1779527159063"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

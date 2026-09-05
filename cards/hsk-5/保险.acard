@@ -1,0 +1,32 @@
+{
+  "audio": "f858a5295226dd9bd4df987a2ad492cddc2ecf1f05c6507f1b8c21c8e92f8143.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保",
+      "险"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保险",
+  "id": "5024dfd935cdb6e020f520f5",
+  "level": 5,
+  "meaning": "insurance; safe, secure",
+  "pinyin": "bǎoxiǎn",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-cHwEAzm>E~-1779527160831"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

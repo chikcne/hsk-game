@@ -1,0 +1,32 @@
+{
+  "audio": "7af21c3ae42710b1c03ffd839c4c7dcf82273581df4f21083350281f29c3ce78.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "取",
+      "得"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "取得",
+  "id": "22781b51a3234b1fab348667",
+  "level": 4,
+  "meaning": "to obtain, to gain",
+  "pinyin": "qǔdé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MiRxWH2f1=-1779527160399"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

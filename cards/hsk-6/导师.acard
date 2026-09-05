@@ -1,0 +1,29 @@
+{
+  "audio": "6b99a5f035712a27d94efb92a49afcda60ba15593d21ae74368236cb61ceedfe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "导师",
+  "id": "297cdfd60419af1546ef0177",
+  "level": 6,
+  "meaning": "supervisor, mentor",
+  "pinyin": "dǎoshī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-279-1779527162682"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

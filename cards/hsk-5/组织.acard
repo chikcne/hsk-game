@@ -1,0 +1,31 @@
+{
+  "audio": "e145cf2c01a13447003a663c7e0deadb1c5b079b667cc014cb57bc01c454d14f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "组"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "组织",
+  "id": "397970880906cda819dca49c",
+  "level": 5,
+  "meaning": "to organize; organization",
+  "pinyin": "zǔzhī",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-xHbThsza`h-1779527162396"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

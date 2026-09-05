@@ -1,0 +1,29 @@
+{
+  "audio": "b3b22f92d8b6591554e5038dec2c17ea87eb7ace94158da45fad75e6e583f1ce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "烫",
+  "id": "18addaca250b744da6102fac",
+  "level": 6,
+  "meaning": "to scald; hot",
+  "pinyin": "tàng",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1268-1779527163671"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

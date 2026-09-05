@@ -1,0 +1,32 @@
+{
+  "audio": "018384a9d446e64da7b808a4e43338fb2defa12e1966ba4ff9e918394537b6bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过度",
+  "id": "bbc1cc198923bf40f4d44253",
+  "level": 5,
+  "meaning": "excessive",
+  "pinyin": "guòdù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u^EqYYX::z-1779527161257"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "7ae2257f5b4921fca2df7b3dbc885c7317c80ec6c902d09484fc30692c708b58.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "建",
+      "立"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "建立",
+  "id": "bc354369531e2ca082e61297",
+  "level": 5,
+  "meaning": "to establish",
+  "pinyin": "jiànlì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-OSVRVO{J$1-1779527161378"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

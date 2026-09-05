@@ -1,0 +1,31 @@
+{
+  "audio": "a0bb8829143fb7cedf9bd8414540e8485739e7af866e510ef61cddd7bde48a72.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "退"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "退休",
+  "id": "822f7f69501ec5bc5e3bea4a",
+  "level": 5,
+  "meaning": "to retire",
+  "pinyin": "tuìxiū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Qvr,x=#Aw9-1779527161968"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

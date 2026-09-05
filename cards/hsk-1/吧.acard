@@ -1,0 +1,29 @@
+{
+  "audio": "5f328ea2640bedc94cfc4a886a53d2ff74f3582eb0019c4ba2cac1114c22d203.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吧",
+  "id": "b83f15e0356dee95a70809cb",
+  "level": 1,
+  "meaning": "particle indicating suggestion, confirmation, or hesitation",
+  "pinyin": "ba",
+  "pos": "auxiliary",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-cQv>o=$,h}-1779527158807"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

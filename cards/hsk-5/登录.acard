@@ -1,0 +1,32 @@
+{
+  "audio": "494028ca5433def3a5d8e99200e282caa383d58fe0c8c7347e4032eebb3fc40d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "录",
+      "登"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "登录",
+  "id": "ae2e67ac909152e8ea2ab634",
+  "level": 5,
+  "meaning": "to log in",
+  "pinyin": "dēnglù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kbsGYfe32:-1779527161065"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "f70ed638a2a7ae12ae7f78e8fae26fe337f15d6521029866a9d8d49da2e62bd5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名",
+      "点"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "点名",
+  "id": "9a2ff5c4cca5d871c2005bb8",
+  "level": 4,
+  "meaning": "to call the roll, to mention by name",
+  "pinyin": "diǎnmíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-K8[f?i,KLI-1779527159960"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

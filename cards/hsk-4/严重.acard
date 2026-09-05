@@ -1,0 +1,32 @@
+{
+  "audio": "e072672ed0900657b58ff60e2d14f4c0b6536746f5b7ceb5a02fe3c7157a4d9f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "严",
+      "重"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "严重",
+  "id": "5da4821dae114555f0536648",
+  "level": 4,
+  "meaning": "serious, severe, grave",
+  "pinyin": "yánzhòng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-GQ{]$40.Md-1779527160651"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

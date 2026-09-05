@@ -1,0 +1,32 @@
+{
+  "audio": "1998327ff2c43e59bd37c14ec33416996ba594656d2642d31bbe8ce374ed04b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头",
+      "里"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "里头",
+  "id": "aae4bbc4acaa43b10cd01901",
+  "level": 5,
+  "meaning": "inside",
+  "pinyin": "lǐtou",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HN|cm3:ax,-1779527161505"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

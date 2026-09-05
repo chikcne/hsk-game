@@ -1,0 +1,33 @@
+{
+  "audio": "624f41983dae72542b5c9f0dffa03942e37ff2d84425b027dd3ce2b78b289a08.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "性",
+      "次"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一次性",
+  "id": "1d2aa55e409ed98c3f29eb08",
+  "level": 5,
+  "meaning": "disposable",
+  "pinyin": "yícìxìng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GRMHrGZ<kQ-1779527162155"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

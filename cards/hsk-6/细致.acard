@@ -1,0 +1,31 @@
+{
+  "audio": "2b621a795483368d1cd99af6751e873b4886a190445c9fb8a63638e4b83c6e4d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "细"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "细致",
+  "id": "0cf853e19e1057415e7458f2",
+  "level": 6,
+  "meaning": "meticulous, careful",
+  "pinyin": "xìzhì",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1412-1779527163815"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

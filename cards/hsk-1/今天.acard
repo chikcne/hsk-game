@@ -1,0 +1,31 @@
+{
+  "audio": "d3e5aa5b942c7f98700c584c8994298e9d3bb9c140e6fe328d84dacf2c79928e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "今天",
+  "id": "12b34b0698b8b7389b80b48c",
+  "level": 1,
+  "meaning": "today",
+  "pinyin": "jīntiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-y)}a%wF*;:-1779527158897"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

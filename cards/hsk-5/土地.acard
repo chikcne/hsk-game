@@ -1,0 +1,32 @@
+{
+  "audio": "f5387d28f84f240090762e300a14aab6f12e50b8b13dcac4d5c693b9d8a53cf2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "土",
+      "地"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "土地",
+  "id": "6a5450d7c7798d471998ad1a",
+  "level": 5,
+  "meaning": "land",
+  "pinyin": "tǔdì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J7<RUOxHj[-1779527161956"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

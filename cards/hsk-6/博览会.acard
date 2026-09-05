@@ -1,0 +1,31 @@
+{
+  "audio": "f00f4d853eb2d6ce3cfa1857b6bc1bc2f7a7eb6821b7b3193a52af377b95c469.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "博览会",
+  "id": "4c918545c8ca78c1cd9c1bb9",
+  "level": 6,
+  "meaning": "exposition, fair",
+  "pinyin": "bólǎnhuì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-64-1779527162467"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "224e659c816de8fbd2afa81db3888055c4eddb007f9a0ae0e87c91f9bc9e864b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "智慧",
+  "id": "2c5b77553983efaa2fb71035",
+  "level": 5,
+  "meaning": "wisdom, intelligence",
+  "pinyin": "zhìhuì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HT#0L-.[8}-1779527162316"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

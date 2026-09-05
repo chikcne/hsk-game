@@ -1,0 +1,29 @@
+{
+  "audio": "370d2342034b72b575a74ab98930069255906852e102eae902e8a78c68280c35.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "他",
+  "id": "4473c682e51be511c6427db3",
+  "level": 1,
+  "meaning": "he, him",
+  "pinyin": "tā",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-n,</ekB1k$-1779527159003"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

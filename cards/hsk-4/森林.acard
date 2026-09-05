@@ -1,0 +1,29 @@
+{
+  "audio": "90ab5aa1123b6f2743f5466fd296d49ecf537a4505081c3befcf95ba0cf62375.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "森林",
+  "id": "60979aa4e2ecab6c041f7d9a",
+  "level": 4,
+  "meaning": "forest",
+  "pinyin": "sēnlín",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-jDpyWLtK&@-1779527160431"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "13fee8f5abcdc307cfbbe805fce0000101d1fae9bb5cf744b5fc27e655438ec6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "服",
+      "说"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "说服",
+  "id": "fe8d1aadbd41b534eb897af3",
+  "level": 5,
+  "meaning": "to persuade",
+  "pinyin": "shuōfú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-de1nN}%V-6-1779527161879"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "67ed6854fd241314ccbe434d8495c28fbbebb77125f7ca4a5c62a57323e9e8d2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "预习",
+  "id": "09a87db114664264d67828ad",
+  "level": 4,
+  "meaning": "to preview, to prepare",
+  "pinyin": "yùxí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Issv4L/K_k-1779527160702"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

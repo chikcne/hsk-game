@@ -1,0 +1,31 @@
+{
+  "audio": "51fd7b77ab77fc1248da5912d50ffdce967c029a416bb1f35c85aa2f1d4a1940.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "考"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "考虑",
+  "id": "d03bc6b6e08afeb93e369556",
+  "level": 4,
+  "meaning": "to consider, to think over, to contemplate",
+  "pinyin": "kǎolǜ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-t-8-6h}1K,-1779527160225"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "d1c3eefff6e4c3b2e1b8439c40498a659f3c2018c5a511fa845730425821e8a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "电"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电源",
+  "id": "0c53407cd4419e08ddf7387d",
+  "level": 6,
+  "meaning": "power source, outlet",
+  "pinyin": "diànyuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-303-1779527162706"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

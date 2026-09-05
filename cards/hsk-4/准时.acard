@@ -1,0 +1,32 @@
+{
+  "audio": "a1076abb54e96f23cbd93ad98f1dfe82bafb6849ff1c1b5db4d4bbc2d4f584e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "准",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "准时",
+  "id": "421ce6cbe1a2108fa98304f7",
+  "level": 4,
+  "meaning": "on time, punctual",
+  "pinyin": "zhǔnshí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MO/o9Z{[wC-1779527160780"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

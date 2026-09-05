@@ -1,0 +1,31 @@
+{
+  "audio": "a0c0e6e5d36bb8ebb1dcd5b2cdfa664d4ef683f91fc502f5b7af608db76c857c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "难"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "艰难",
+  "id": "abba56d2f953ac7b1e1cbbf1",
+  "level": 6,
+  "meaning": "difficult, hard",
+  "pinyin": "jiānnán",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-647-1779527163050"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

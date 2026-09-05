@@ -1,0 +1,31 @@
+{
+  "audio": "c03b7a88068c2c584b246c270b9e82f362ffeb431ab91afc42cf9de7286ef29f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "科"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "科目",
+  "id": "d6726cd9b5769d3e2bc8b699",
+  "level": 6,
+  "meaning": "subject, course",
+  "pinyin": "kēmù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-781-1779527163184"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

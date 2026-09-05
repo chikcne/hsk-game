@@ -1,0 +1,32 @@
+{
+  "audio": "b080cbc548cf1671525fa6ba6312fc203be3cd01cda945a65bdadfbc55abb2ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成",
+      "组"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "组成",
+  "id": "901c50162446912bd780331f",
+  "level": 5,
+  "meaning": "to form, to compose",
+  "pinyin": "zǔchéng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HKoJviWsbI-1779527162393"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

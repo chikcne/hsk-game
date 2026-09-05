@@ -1,0 +1,32 @@
+{
+  "audio": "1fc216b3c777ff763d90f1df2db0aad2c3e8a7b4a77454f61f8edeb8d3f9377c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "招"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打招呼",
+  "id": "a3b86d2e4568051f0fecab86",
+  "level": 4,
+  "meaning": "to greet, to say hello",
+  "pinyin": "dǎ zhāohu",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hrARCE|[3p-1779527159918"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

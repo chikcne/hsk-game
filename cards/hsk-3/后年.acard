@@ -1,0 +1,32 @@
+{
+  "audio": "f275078415ae5218c6c026598e0ec77de8bc14e3f45ad6e89baf62d8e5d0e2e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "年"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "后年",
+  "id": "28136fe9668725f327368fa2",
+  "level": 3,
+  "meaning": "the year after next",
+  "pinyin": "hòunián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-hlUuK=05{-1779527159475"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

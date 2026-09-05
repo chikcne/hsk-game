@@ -1,0 +1,29 @@
+{
+  "audio": "261caabbb04acec35e46104475c5d738bcf4188d9614720401f9aeea877643b1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "女",
+  "id": "de5e28439a0d2f1294332038",
+  "level": 1,
+  "meaning": "female",
+  "pinyin": "nǚ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Lfd+@?^4L4-1779527158955"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

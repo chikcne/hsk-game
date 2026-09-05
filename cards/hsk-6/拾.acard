@@ -1,0 +1,29 @@
+{
+  "audio": "5730d2d215d3ae947ee98750954d5deb3b48dd327434e155a975c5d81fa189cf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拾",
+  "id": "ee2c0afe10702ed44acd91b2",
+  "level": 6,
+  "meaning": "to pick up",
+  "pinyin": "shí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1182-1779527163585"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "9dde14f39540d77695297ea5c427a7e4db82a8499d35270ca7c9ea85f322f5b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "新",
+      "闻"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "新闻",
+  "id": "40e042cc60f1ebaa5810615c",
+  "level": 3,
+  "meaning": "news",
+  "pinyin": "xīnwén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-O>wPjuG3-1779527159707"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

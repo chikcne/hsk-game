@@ -1,0 +1,31 @@
+{
+  "audio": "c034af90d9ec83fc3c4d9e215a22d2ed041353799864063e4f93bd99948d36ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "场馆",
+  "id": "7c421ff64dd7e2ac182b4836",
+  "level": 6,
+  "meaning": "venue, stadium, exhibition centre",
+  "pinyin": "chǎngguǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-132-1779527162535"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

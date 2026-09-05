@@ -1,0 +1,31 @@
+{
+  "audio": "974e628ff1bc5fee602a3362356debff45e78843501fd4fd17f7424d30c34cfb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "焦点",
+  "id": "3fab7c9cd2be99e8ad129745",
+  "level": 6,
+  "meaning": "focus",
+  "pinyin": "jiāodiǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-671-1779527163074"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "4913169563e0dd0726e0113aab8732c0aa8f85dc3688cc3419c156b59fa74716.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夺",
+  "id": "f7132e1474f738cc439fc68a",
+  "level": 6,
+  "meaning": "to seize, to take",
+  "pinyin": "duó",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-341-1779527162744"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

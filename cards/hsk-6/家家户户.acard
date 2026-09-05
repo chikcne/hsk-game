@@ -1,0 +1,32 @@
+{
+  "audio": "fd19d96b679caeb9737a0bd932b36d07a40aa0eff077efd7575930116e8d26bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "家",
+      "户"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "家家户户",
+  "id": "42ab8d9cfb2b8aa104a31234",
+  "level": 6,
+  "meaning": "every household",
+  "pinyin": "jiājiāhùhù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-631-1779527163034"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

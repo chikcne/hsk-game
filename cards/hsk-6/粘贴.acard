@@ -1,0 +1,32 @@
+{
+  "audio": "cc96b39abf6a05eda0b4c9ed51769ef3f9d2532938f5b7ab8ed0833c302979f6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "粘",
+      "贴"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "粘贴",
+  "id": "c0dd7a811362d6d73d201a4c",
+  "level": 6,
+  "meaning": "to stick, to paste",
+  "pinyin": "zhāntiē",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1657-1779527164060"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

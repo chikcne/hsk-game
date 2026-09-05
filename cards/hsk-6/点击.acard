@@ -1,0 +1,31 @@
+{
+  "audio": "686a883ff44cdf0256f16ebedab82eb6c958d9b9f26c305bc6acad76953102a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "点击",
+  "id": "d99ab74b4429b91fdf7a9e2d",
+  "level": 6,
+  "meaning": "to click",
+  "pinyin": "diǎnjī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-296-1779527162699"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

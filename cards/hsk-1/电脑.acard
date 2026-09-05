@@ -1,0 +1,31 @@
+{
+  "audio": "cded83ba7c76df08dbafb65623b9430d37981102753b0329b2d607e4095cca60.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "电"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电脑",
+  "id": "11f99bef44b43f5cf4040f19",
+  "level": 1,
+  "meaning": "computer",
+  "pinyin": "diànnǎo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-K(zmf(9i5P-1779527158839"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

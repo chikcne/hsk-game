@@ -1,0 +1,31 @@
+{
+  "audio": "d816ea88e410fe324b2ad14f3feebfb8d2db678ac6ef0b5af488fb97bd0bb934.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "时速",
+  "id": "107f718f41672c8dc5f0dcf1",
+  "level": 6,
+  "meaning": "speed per hour",
+  "pinyin": "shísù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1190-1779527163593"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

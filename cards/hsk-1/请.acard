@@ -1,0 +1,29 @@
+{
+  "audio": "d8074d72cb2cdfc4d1a9840502fa15ed83cb9430cbe76fd750a36f2a0a587c7b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "请",
+  "id": "fff85cd31b49446b14e486d2",
+  "level": 1,
+  "meaning": "please",
+  "pinyin": "qǐng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-CZ}*GAcwCU-1779527158968"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

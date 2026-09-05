@@ -1,0 +1,32 @@
+{
+  "audio": "dcf680893e0c7b2e86b6ea2eb9804b9e76cf4f37795b4ccd1269d1cb7b1075f8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "日"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "日后",
+  "id": "e20754da1b21edb93e521017",
+  "level": 6,
+  "meaning": "in the future",
+  "pinyin": "rìhòu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1109-1779527163512"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "462c2a76134c78fe42553d25c7a55a59a95ccb03bbe911a0652bd05cf582f2dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "繁荣",
+  "id": "2f761578e7d73aa55485305f",
+  "level": 5,
+  "meaning": "prosperous; to prosper",
+  "pinyin": "fánróng",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ku-w!=;.u`-1779527161132"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

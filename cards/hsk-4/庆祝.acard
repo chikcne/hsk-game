@@ -1,0 +1,31 @@
+{
+  "audio": "da3ba11102d9588b1868984f2664e517e35dc338b11e367610b2e56ce1dc59ad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "祝"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "庆祝",
+  "id": "e3c2112b3ce973d38dbb26cf",
+  "level": 4,
+  "meaning": "to celebrate",
+  "pinyin": "qìngzhù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d~EGMe?Uj;-1779527160393"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

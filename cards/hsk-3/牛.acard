@@ -1,0 +1,29 @@
+{
+  "audio": "dcd5abc6f5740e7fbf0a1518d61692614f5428e3c6de4eadb1201e5c5f534a65.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "牛",
+  "id": "291901c83c879e7930501309",
+  "level": 3,
+  "meaning": "cow; (awesome)",
+  "pinyin": "niú",
+  "pos": "noun、 （adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Hew7_#^%cF-1779527159588"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

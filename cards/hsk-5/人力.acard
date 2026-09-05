@@ -1,0 +1,32 @@
+{
+  "audio": "ac8486a8a118132abef6eaa9cbdfff0c51da666213439d56643b94deac7f8750.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "力"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人力",
+  "id": "a2ed5d918672da4d1a3763ee",
+  "level": 5,
+  "meaning": "manpower, labor",
+  "pinyin": "rénlì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-I<v!k@Po($-1779527161725"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

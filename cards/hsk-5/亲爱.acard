@@ -1,0 +1,32 @@
+{
+  "audio": "9a61500967bc50b45b60698fd9da4ce47a0abf0d9532a7980a0642589adacf40.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亲",
+      "爱"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亲爱",
+  "id": "4f1e865f50703611ba1e99fd",
+  "level": 5,
+  "meaning": "dear",
+  "pinyin": "qīn’ài",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lAlHDlUME{-1779527161682"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

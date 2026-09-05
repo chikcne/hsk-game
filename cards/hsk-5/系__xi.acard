@@ -1,0 +1,29 @@
+{
+  "audio": "50d39e0771500beaed0dfc88614a42211fca9b6482414ad9367d11fca2cd9c59.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "系",
+  "id": "2d00e8518984ccb1eee4c79d",
+  "level": 5,
+  "meaning": "department, system",
+  "pinyin": "xì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kHCD5&aD?<-1779527162029"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

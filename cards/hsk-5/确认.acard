@@ -1,0 +1,31 @@
+{
+  "audio": "e2374169d963f698af40456b27710aa853855a0609eb6a2b5f08625d1a8f63d8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "认"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "确认",
+  "id": "6e6d79f60db69e3883e062b4",
+  "level": 5,
+  "meaning": "to confirm",
+  "pinyin": "quèrèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kdO5j])kd--1779527161711"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

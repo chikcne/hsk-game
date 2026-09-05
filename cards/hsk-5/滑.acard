@@ -1,0 +1,29 @@
+{
+  "audio": "578b491d011798243efe462d0887928b74c4ca26b08cc4d1a81692725f81bd0d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "滑",
+  "id": "e979f5e0c99ba4acc1ed883f",
+  "level": 5,
+  "meaning": "slippery; to slide",
+  "pinyin": "huá",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Qc|RPl;N/,-1779527161298"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

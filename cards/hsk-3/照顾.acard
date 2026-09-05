@@ -1,0 +1,32 @@
+{
+  "audio": "da07562c2f3be576a642ba313d2cf31c158f899cc814ba038e58471998ab885d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "照",
+      "顾"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "照顾",
+  "id": "9cc848a20785537d3f96627d",
+  "level": 3,
+  "meaning": "to take care of",
+  "pinyin": "zhàogù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-H?Xrj)jvS?-1779527159774"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

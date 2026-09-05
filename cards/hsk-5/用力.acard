@@ -1,0 +1,32 @@
+{
+  "audio": "c6fc4982af56c2bb9b8d764ccc6b61d3c77a669237701865c79bdbe12cc84a27.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "用力",
+  "id": "df9362c19a7aa26bf29c0c7c",
+  "level": 5,
+  "meaning": "to exert effort, to use strength",
+  "pinyin": "yònglì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-xTSN(A*^3B-1779527162196"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

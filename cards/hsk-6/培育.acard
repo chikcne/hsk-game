@@ -1,0 +1,29 @@
+{
+  "audio": "68956ed919550ad4fe0d3e60b580a6d133d17e4f1b4411d9ceafd5c9d3a72dc6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "培育",
+  "id": "6ede64239adaa3bed023a171",
+  "level": 6,
+  "meaning": "to cultivate, to breed",
+  "pinyin": "péiyù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-977-1779527163380"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "73f182b281ab3a57eb1710075689736c02e3719b25979db69ac8d7a80955a0dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "尽",
+      "快"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "尽快",
+  "id": "29e3515adc62029369009bfa",
+  "level": 5,
+  "meaning": "as soon as possible",
+  "pinyin": "jǐnkuài",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-fQblB5ed#p-1779527161412"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

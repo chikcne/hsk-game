@@ -1,0 +1,29 @@
+{
+  "audio": "6bd808f83d14d78ba991e7b0609ed31446487a53a9066953cd3752bc00accf1d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "狗",
+  "id": "52f3b03be8daeea9ed36f29d",
+  "level": 1,
+  "meaning": "dog",
+  "pinyin": "gǒu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-mc)`%Npn$0-1779527158867"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "3dcbc37b68777c095fbca9171ccac01d78dc098f10b9c28421d73b97a97240bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名",
+      "字"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "名字",
+  "id": "bd3d02366b3502ed1b7a4582",
+  "level": 1,
+  "meaning": "name",
+  "pinyin": "míngzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-E3z6F>-5BV-1779527158933"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

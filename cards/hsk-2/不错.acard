@@ -1,0 +1,32 @@
+{
+  "audio": "d2dce6e8d3d1d6767a874fe6473ea68b6d7d9cd929d081b321c9af2719aaa97b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "错"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不错",
+  "id": "8682fee074597db8273629a2",
+  "level": 2,
+  "meaning": "not bad, pretty good",
+  "pinyin": "búcuò",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-j>Bi^.0)QO-1779527159115"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

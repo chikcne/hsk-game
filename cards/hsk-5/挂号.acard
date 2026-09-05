@@ -1,0 +1,32 @@
+{
+  "audio": "baae28bf0e5f677a21d3919dbf6b5fb5cb0a704b2e12576c58cb2eb0db87effc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "号",
+      "挂"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "挂号",
+  "id": "9249ac27a830230baa94ee79",
+  "level": 5,
+  "meaning": "to register for medical appointment",
+  "pinyin": "guàhào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-czM)l=igld-1779527161232"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

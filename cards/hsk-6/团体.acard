@@ -1,0 +1,31 @@
+{
+  "audio": "2a6f8c35e37148612b01855c0b8c71b8a46ab3f10179e6e102a00fee3c815420.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "团"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "团体",
+  "id": "45aa22f3eecb29ddd97ce8a7",
+  "level": 6,
+  "meaning": "group",
+  "pinyin": "tuántǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1337-1779527163740"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

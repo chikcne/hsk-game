@@ -1,0 +1,32 @@
+{
+  "audio": "5235d62dfc887708dc9e60ba81a19c20f2596d1ed51a6d6469e085dff669309e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "式",
+      "方"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "方式",
+  "id": "daeaf384ccd430f6681848e2",
+  "level": 4,
+  "meaning": "way, method",
+  "pinyin": "fāngshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-BWw#pK)Pei-1779527159997"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

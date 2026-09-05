@@ -1,0 +1,29 @@
+{
+  "audio": "42a81d67031a9df328e370b0e5c2261c314627f9b777d4608b1625bc43f0f356.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "漏",
+  "id": "50145ee512e0505a8f634283",
+  "level": 5,
+  "meaning": "to leak",
+  "pinyin": "lòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-m4NKsQiZOg-1779527161540"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

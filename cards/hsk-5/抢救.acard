@@ -1,0 +1,32 @@
+{
+  "audio": "0bbf5e2218809c7ce53ba116a82f1a111460555bf4f6338c41df6f98f189ec36.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "抢",
+      "救"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抢救",
+  "id": "58ad1de70a39ee27b7ec766d",
+  "level": 5,
+  "meaning": "to rescue",
+  "pinyin": "qiǎngjiù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P;u`kU61af-1779527161678"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

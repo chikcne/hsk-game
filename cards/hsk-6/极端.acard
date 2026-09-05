@@ -1,0 +1,32 @@
+{
+  "audio": "f9dd15e5c535e1956f085a5a99c711a2d852cb4e3d3600e2cb0d17ea8a4f4109.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "极",
+      "端"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "极端",
+  "id": "1c396feeda8d10289719c3ba",
+  "level": 6,
+  "meaning": "extreme, extremity; extremely; extreme, radical",
+  "pinyin": "jíduān",
+  "pos": "名、副、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-616-1779527163019"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

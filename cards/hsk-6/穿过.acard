@@ -1,0 +1,32 @@
+{
+  "audio": "9201b372a7786fff49f40f8d2d701780d5813b02995dfa8a839db415d04bd60c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "穿",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "穿过",
+  "id": "73f2d30a9d4ede33443227ca",
+  "level": 6,
+  "meaning": "to go through, to pass through",
+  "pinyin": "chuānguò",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-200-1779527162603"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

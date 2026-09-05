@@ -1,0 +1,31 @@
+{
+  "audio": "6e2cc6347ad0295a6ee19b5e08aaf99222de5e68c069f6f8a928ce9c8a905a71.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "门"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "门诊",
+  "id": "175c20731ef0d4553a4c3070",
+  "level": 5,
+  "meaning": "outpatient clinic",
+  "pinyin": "ménzhěn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uf+soJI/)N-1779527161564"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

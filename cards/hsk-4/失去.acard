@@ -1,0 +1,31 @@
+{
+  "audio": "638f8794d1fb6fe4327641a2bf6ef972f32a72903d01086baf7dc4d9bf525e4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "去"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "失去",
+  "id": "5ff4d9f16dd73fad25fb3761",
+  "level": 4,
+  "meaning": "to lose, to be lost",
+  "pinyin": "shīqù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xPHR!5l]RL-1779527160457"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

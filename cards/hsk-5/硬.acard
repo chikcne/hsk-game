@@ -1,0 +1,29 @@
+{
+  "audio": "80b0af36635039a562020b3a6e4d6589e71842c4bad9f3637d0e8590549b452a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "硬",
+  "id": "b9de60f7254b9a576553a9d2",
+  "level": 5,
+  "meaning": "hard; forcibly, with effort",
+  "pinyin": "yìng",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u}CH{w=^R.-1779527162187"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

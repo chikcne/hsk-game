@@ -1,0 +1,32 @@
+{
+  "audio": "deb86c3df9783149b90cff6b8f8d2f7f4aad5dbb31e499b46786c12272592b1c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "碰",
+      "见"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "碰见",
+  "id": "619589ddeee06b77a452fab0",
+  "level": 5,
+  "meaning": "to run into, to meet",
+  "pinyin": "pèngjiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-L/xCFC&y&[-1779527161627"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

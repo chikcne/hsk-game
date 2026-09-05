@@ -1,0 +1,32 @@
+{
+  "audio": "fa6415d85462c2c8d5c808374d407b9a3bac6e7bb4974854cd4ed02df396f13b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "功夫"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下功夫",
+  "id": "9bed449aa6ab7fe88c29b4a8",
+  "level": 6,
+  "meaning": "to put in effort, to work hard",
+  "pinyin": "xiàgōngfu",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1414-1779527163817"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

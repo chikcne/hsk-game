@@ -1,0 +1,29 @@
+{
+  "audio": "1c038efbdddd17e4bc2f72b695d946139e8f2a56d3b62d8c1203f0c45482b7f3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "刷",
+  "id": "5c00e1ce5009ecb8bb94a066",
+  "level": 3,
+  "meaning": "to brush, to scrub",
+  "pinyin": "shuā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-q*s!9hMI8A-1779527159647"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

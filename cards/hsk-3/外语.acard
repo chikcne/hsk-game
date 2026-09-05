@@ -1,0 +1,31 @@
+{
+  "audio": "4b15c4745d771ec470dd1a0d31dc92920ae4037bb0cefd20df3258123d2f85c8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外语",
+  "id": "081217bf9f7d3fb46c579eb7",
+  "level": 3,
+  "meaning": "foreign language",
+  "pinyin": "wàiyǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-F<L`jt#SA`-1779527159670"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

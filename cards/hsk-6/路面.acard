@@ -1,0 +1,32 @@
+{
+  "audio": "9fd478e0167893cda2dc3d84b1ac8091baf9afa7c4045dedcf350570c1a9f294.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "路",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "路面",
+  "id": "15fa64aeb89efcbbb987a15c",
+  "level": 6,
+  "meaning": "road surface",
+  "pinyin": "lùmiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-866-1779527163269"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

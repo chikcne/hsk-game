@@ -1,0 +1,32 @@
+{
+  "audio": "f4bfcafb6d7f11f538f2d188e41e0348a95bbd545a7b228e47248951f7782163.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "减",
+      "轻"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "减轻",
+  "id": "48d5091ec30ff9c67897b208",
+  "level": 4,
+  "meaning": "to lighten, to ease, to alleviate, to reduce (burden, weight, pressure)",
+  "pinyin": "jiǎnqīng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-lTi<j.57Qv-1779527160153"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

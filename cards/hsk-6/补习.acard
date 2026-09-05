@@ -1,0 +1,31 @@
+{
+  "audio": "833c51406bc837abe9652b93c973e018c8babed7cd9f43a1163dbbe5c27d39cf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "补"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "补习",
+  "id": "e4473c789e5d32c8ec8017ee",
+  "level": 6,
+  "meaning": "to take supplementary lessons",
+  "pinyin": "bǔxí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-77-1779527162480"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

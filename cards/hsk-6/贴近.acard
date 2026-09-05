@@ -1,0 +1,32 @@
+{
+  "audio": "b5610b3a9f4d2125907c712b29e3f1156a545fcfcc584db03b8fd8dd2b9eadd4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "贴",
+      "近"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "贴近",
+  "id": "be8c3f972db49f9761b9b2fd",
+  "level": 6,
+  "meaning": "to press close to; close, intimate",
+  "pinyin": "tiējìn",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1299-1779527163702"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

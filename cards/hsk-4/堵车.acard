@@ -1,0 +1,32 @@
+{
+  "audio": "1c0b5afef525175920932774483fc45635d9ddce73f8113f74500ab032617362.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "堵",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "堵车",
+  "id": "7f1575d6e8901b3db2dfffbb",
+  "level": 4,
+  "meaning": "traffic jam",
+  "pinyin": "dǔchē",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I|,/(swai{-1779527159972"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "06b386a611946b1904bef18232f1de0fc37d97059f4d9d3852ce30ec958de9d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "建"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "建设",
+  "id": "a5a5cc1b8ee676fccceb65a0",
+  "level": 5,
+  "meaning": "to construct, to build",
+  "pinyin": "jiànshè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B^[Z!.d@J8-1779527161380"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

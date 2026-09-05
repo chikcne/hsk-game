@@ -1,0 +1,29 @@
+{
+  "audio": "40fa0728c6ca7223168665eb911955faf851710ce47f869594d219d95f564b83.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "顺",
+  "id": "45a1eed4c3684cda49467a3b",
+  "level": 5,
+  "meaning": "to go along; to arrange; smooth; in sequence",
+  "pinyin": "shùn",
+  "pos": "verb、 preposition、 adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Mo]d,!(/nU-1779527161877"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

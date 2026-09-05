@@ -1,0 +1,31 @@
+{
+  "audio": "58efc2245ae0374da7e210144b92a04e5dc1772c9acc266e151422b71fd579db.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出售",
+  "id": "2a5e301f6f7a178ede0c5e01",
+  "level": 5,
+  "meaning": "to sell",
+  "pinyin": "chūshòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ex@b/)zv-$-1779527160978"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

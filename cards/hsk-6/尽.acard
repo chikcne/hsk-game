@@ -1,0 +1,29 @@
+{
+  "audio": "7cd8ee44b9f6c2b29a7e0ed0a8c663b074440e24bff54a49df71a5af43dbdf86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "尽",
+  "id": "5df846cedb15748beef42e09",
+  "level": 6,
+  "meaning": "to exhaust, to use up; (to the utmost)",
+  "pinyin": "jìn",
+  "pos": "动、（副）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-706-1779527163109"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "6b3feeb8ad5d76430365e699cc194fc58652942e576fc8b1e4f1482097b69e1f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本",
+      "能"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "本能",
+  "id": "8391a9103db1a566c5349452",
+  "level": 6,
+  "meaning": "instinct; instinctively",
+  "pinyin": "běnnéng",
+  "pos": "名、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-45-1779527162448"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

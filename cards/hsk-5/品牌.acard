@@ -1,0 +1,32 @@
+{
+  "audio": "32e3a46d996332d1383c03467d816e4bca76e383fe31d8063bc671c0cd3adc0e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "品",
+      "牌"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "品牌",
+  "id": "2fbee1253fef38cfab81f52e",
+  "level": 5,
+  "meaning": "brand",
+  "pinyin": "pǐnpái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-N)h)`2OO~%-1779527161636"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

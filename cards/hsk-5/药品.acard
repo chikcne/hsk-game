@@ -1,0 +1,32 @@
+{
+  "audio": "de2f098c2cf453bab688e69a5aefe14193440da456dfdaa2f392fb90ded7e9c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "品",
+      "药"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "药品",
+  "id": "4d02258a7ae1155f7a46b00c",
+  "level": 5,
+  "meaning": "medicine, pharmaceutical",
+  "pinyin": "yàopǐn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-O5xx1`uIdc-1779527162143"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "e35ad92be72fc2186a129ff9c472bf881066cb21df10466fa72c68ac4810cec8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发生",
+  "id": "e322a39fb68e0aee179b0cce",
+  "level": 3,
+  "meaning": "to happen",
+  "pinyin": "fāshēng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-iTPkk-p,@;-1779527159419"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

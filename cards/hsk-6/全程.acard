@@ -1,0 +1,31 @@
+{
+  "audio": "4bc4b32ae3930bdc3dc3592ff5b53f584d771141606e7a34fa43359ad518184e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "全"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "全程",
+  "id": "ac9ee1ed53013c465fc13506",
+  "level": 6,
+  "meaning": "whole journey",
+  "pinyin": "quánchéng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1080-1779527163483"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

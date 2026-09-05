@@ -1,0 +1,32 @@
+{
+  "audio": "92edb852e67782ede6172c0cb54a4e22c4d9c1c7cee00aa7e790002ecc765703.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "干",
+      "脆"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "干脆",
+  "id": "518ee7fc138d41d5d77641ce",
+  "level": 6,
+  "meaning": "decisive, straightforward; simply, just",
+  "pinyin": "gāncuì",
+  "pos": "形、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-418-1779527162821"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

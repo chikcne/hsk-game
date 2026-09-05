@@ -1,0 +1,31 @@
+{
+  "audio": "bb41b54bf350016e577f8cdc8c4cec74c4bf1422d7cbed56dfe3c829dde30444.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加剧",
+  "id": "0e4445a87ce412037ac69c83",
+  "level": 6,
+  "meaning": "to intensify, to aggravate",
+  "pinyin": "jiājù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-632-1779527163035"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

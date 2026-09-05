@@ -1,0 +1,29 @@
+{
+  "audio": "f62a1e97e06d4d36f488e9c433e20708a4b4441aa6e521cf87ecdea9624ac406.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "仪器",
+  "id": "63911416b1b0bef37b7e88f5",
+  "level": 6,
+  "meaning": "instrument, apparatus",
+  "pinyin": "yíqì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1552-1779527163955"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

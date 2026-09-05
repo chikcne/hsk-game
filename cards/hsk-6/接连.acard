@@ -1,0 +1,32 @@
+{
+  "audio": "db65dd80a0ce6aaafd8e8d10293c17f8e6f2101b7ec442fb4a418f05e27892c8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "接",
+      "连"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "接连",
+  "id": "a2712a5a0dfeff78d651e916",
+  "level": 6,
+  "meaning": "in a row, one after another; repeatedly",
+  "pinyin": "jiēlián",
+  "pos": "动、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-683-1779527163086"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

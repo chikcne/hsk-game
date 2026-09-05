@@ -1,0 +1,32 @@
+{
+  "audio": "959bf2bf2cfc3768cfca12f643cb931ea821abbd0b65ce8fd7a09c791d267d11.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "步",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "进步",
+  "id": "ec844c5b5e579602ebd065bd",
+  "level": 5,
+  "meaning": "to advance, to improve; progress, improvement",
+  "pinyin": "jìnbù",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F5(S.>eY?J-1779527161416"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "015f6ed54b99f943e210cc8456dcc56b4cb7e5620eb2e354c2ca31afd2bd30d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "摆",
+  "id": "b7bf00f785c144692b05d5fe",
+  "level": 6,
+  "meaning": "to place, to arrange",
+  "pinyin": "bǎi",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-8-1779527162411"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

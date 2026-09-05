@@ -1,0 +1,29 @@
+{
+  "audio": "e6372fc6402708f31b864d7ccdad9879419561d5a80a473c5569fbb200664547.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "余额",
+  "id": "5e0d0d7f2b708b21922e90fa",
+  "level": 6,
+  "meaning": "balance, remainder",
+  "pinyin": "yú’é",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1607-1779527164010"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

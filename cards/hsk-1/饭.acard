@@ -1,0 +1,29 @@
+{
+  "audio": "ee4a6d00b8ba7fddb85e54dbdb8fa53e727073bae59ab914e44c77378d6220b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "饭",
+  "id": "3d0a4134b2aab3826115a94b",
+  "level": 1,
+  "meaning": "cooked rice, meal",
+  "pinyin": "fàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-K_0xR^q`@!-1779527158853"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

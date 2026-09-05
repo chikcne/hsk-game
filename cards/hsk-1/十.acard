@@ -1,0 +1,29 @@
+{
+  "audio": "5730d2d215d3ae947ee98750954d5deb3b48dd327434e155a975c5d81fa189cf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "十",
+  "id": "cbe5404e14b7002f13e7cdf7",
+  "level": 1,
+  "meaning": "ten",
+  "pinyin": "shí",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Ho[0BrQv-e-1779527158987"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

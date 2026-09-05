@@ -1,0 +1,29 @@
+{
+  "audio": "bbc6f33a335cdd4e7b56a6f1d4cc3f61eaea0e19a0c98093dc54c6685be28c54.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "江",
+  "id": "68fe17789daf9b9ee7cd1da1",
+  "level": 4,
+  "meaning": "river",
+  "pinyin": "jiāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-gq>Gd3jIeU-1779527160158"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "d7908c8cef463845152e55ef2dc5abfb4193660471e2e4cb9fae976732fe21a2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "忘",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难忘",
+  "id": "52190ccc8d43b1c1569f6585",
+  "level": 4,
+  "meaning": "unforgettable, to be hard to forget",
+  "pinyin": "nánwàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-DfKM+.+0YX-1779527160329"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

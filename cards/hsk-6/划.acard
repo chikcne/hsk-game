@@ -1,0 +1,29 @@
+{
+  "audio": "cb8548b349f81aed860b5317844e7753cf9ebe41433f4ed54e76b10a04f938a8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "划",
+  "id": "a2c1a0e5197ff7b4ba53eed7",
+  "level": 6,
+  "meaning": "to row, to paddle",
+  "pinyin": "huà",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-567-1779527162970"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

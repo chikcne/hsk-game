@@ -1,0 +1,32 @@
+{
+  "audio": "bd8af05f9d594ab9dff5798f02c58e677dcd6b3e095b6566178abb75f266f517.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前进",
+  "id": "86ab0ce8f637c13c54bbf280",
+  "level": 5,
+  "meaning": "to advance, to go forward",
+  "pinyin": "qiánjìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-c!#tM`.vP_-1779527161666"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

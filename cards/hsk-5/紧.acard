@@ -1,0 +1,29 @@
+{
+  "audio": "8c43c09e69b7bd5c0ea06781343ea6bce7886206a53208cf7814453cfbf1e3d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "紧",
+  "id": "baf69cfa01e395abb78bfccd",
+  "level": 5,
+  "meaning": "tight; to tighten",
+  "pinyin": "jǐn",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g}gJMHdFr8-1779527161410"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

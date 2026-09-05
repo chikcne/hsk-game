@@ -1,0 +1,31 @@
+{
+  "audio": "f75783a9867514ff9dedabcd5e832e76a85ee46e3b5378544540143764992049.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "往"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "往往",
+  "id": "4c7edceb3ac7096256716e86",
+  "level": 4,
+  "meaning": "often, frequently",
+  "pinyin": "wǎngwǎng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-JTmJ2`1,_N-1779527160569"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

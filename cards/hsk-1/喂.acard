@@ -1,0 +1,29 @@
+{
+  "audio": "d6cbcaa0661015e7c1dfefed171464e5f9390825aa5b2fe3618192cc218262bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "喂",
+  "id": "2d8ec7e5f3c1af9a625a9c81",
+  "level": 1,
+  "meaning": "hello used when answering the phone)",
+  "pinyin": "wèi",
+  "pos": "interjection",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-xI3#_2K&,A-1779527159021"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

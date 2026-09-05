@@ -1,0 +1,31 @@
+{
+  "audio": "fc4826d6adf4e9045ad6f506354906eb739092c62ca68dbf4ac9dbebf0f92e4b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "结"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "结账",
+  "id": "e5d6e621d527ce4f0d688104",
+  "level": 4,
+  "meaning": "to pay the bill, to settle an account, to check out",
+  "pinyin": "jiézhàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-uY(]^:51x:-1779527160188"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

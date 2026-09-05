@@ -1,0 +1,32 @@
+{
+  "audio": "cc2e69e8b2fc53572220b9fd72e72fb4c76283fd86ef8ed1299083585cc6be34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "只",
+      "船"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "船只",
+  "id": "38b4ce49602e07d390d3473b",
+  "level": 6,
+  "meaning": "ship, vessel",
+  "pinyin": "chuánzhī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-208-1779527162611"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

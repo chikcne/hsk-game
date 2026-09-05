@@ -1,0 +1,29 @@
+{
+  "audio": "81f1f2d35504a3bcdba6c5bccdf1b15991643e58531bdef74bdc24cdebb0983e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "趁",
+  "id": "f2a2075984ee1d3aeb699bca",
+  "level": 6,
+  "meaning": "to take advantage of",
+  "pinyin": "chèn",
+  "pos": "介",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-151-1779527162554"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

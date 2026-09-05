@@ -1,0 +1,31 @@
+{
+  "audio": "bb4e13cf6796b6d7cdc317c11ff24e47d1dfcdea1aafcf317efd5b539b02d45a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "误"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "失误",
+  "id": "6d31b0b284f4fc5068df4589",
+  "level": 5,
+  "meaning": "to make a mistake; mistake, error",
+  "pinyin": "shīwù",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ef},152V9N-1779527161811"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

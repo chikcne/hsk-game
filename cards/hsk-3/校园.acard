@@ -1,0 +1,31 @@
+{
+  "audio": "774209cae9733861c4454cad5dd80b45752b9a91687c56baa4c6d06b43b84a11.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "园"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "校园",
+  "id": "ba544520d965c997fed06182",
+  "level": 3,
+  "meaning": "campus",
+  "pinyin": "xiàoyuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n|Y}?0;$/r-1779527159702"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

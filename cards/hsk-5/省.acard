@@ -1,0 +1,29 @@
+{
+  "audio": "a1a842ac93e5e38797b4990b234ba355b58586a620bc8c2294dbba4418f27420.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "省",
+  "id": "1213c922a64b567d99abb37d",
+  "level": 5,
+  "meaning": "to save",
+  "pinyin": "shěng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-AAhzhbrEXp-1779527161801"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

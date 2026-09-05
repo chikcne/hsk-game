@@ -1,0 +1,31 @@
+{
+  "audio": "29c649e527fb6aad8994f23326d003bc35979a1b8a8bade9643cb308cdea93cf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大致",
+  "id": "2762b6325c2538f1aa75740b",
+  "level": 6,
+  "meaning": "roughly, approximately; general",
+  "pinyin": "dàzhì",
+  "pos": "形、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-254-1779527162657"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

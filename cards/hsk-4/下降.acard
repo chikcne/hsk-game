@@ -1,0 +1,32 @@
+{
+  "audio": "12bd7f472139a405ef553aeac0c1035bda654fdf3269d08c02b23f1488ca7abd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下",
+      "降"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下降",
+  "id": "aadbf2c83afcd0f2ffc18184",
+  "level": 4,
+  "meaning": "to decline, to drop, to go down",
+  "pinyin": "xiàjiàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r@y_n0/@?`-1779527160596"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "c7153715401672af5e5c7402d787fda559ff35c5db803ee5a19d71e828d0d627.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "越",
+  "id": "ba5251194fbc451088832272",
+  "level": 3,
+  "meaning": "more, increasingly",
+  "pinyin": "yuè",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-B8q1!zAx&i-1779527159761"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

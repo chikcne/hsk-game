@@ -1,0 +1,31 @@
+{
+  "audio": "40d3285d7f9ab0d22934d0bb3d7015f95422808cbd370494c20233cf6a680a0e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "已"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "已经",
+  "id": "68f85dc01000a7c43f92baf5",
+  "level": 2,
+  "meaning": "already",
+  "pinyin": "yǐjīng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-vU_$#iM1jT-1779527159275"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

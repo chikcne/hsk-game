@@ -1,0 +1,31 @@
+{
+  "audio": "61d471e98fc23ab3f01f2edf275a2978d67a1fda1856a2b4463248743c60c263.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出色",
+  "id": "699b9000809cd8a708957bae",
+  "level": 5,
+  "meaning": "outstanding, excellent",
+  "pinyin": "chūsè",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wSp2WkIY@f-1779527160977"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

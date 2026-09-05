@@ -1,0 +1,32 @@
+{
+  "audio": "a4969815fcc2c368d5bc67cab9c9af38026b6c9292bc3df8ea044dc9601a0119.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "假",
+      "度"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "度假",
+  "id": "16b2aa2687d9c514032bcf86",
+  "level": 4,
+  "meaning": "to go on vacation",
+  "pinyin": "dùjià",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-wfW)+iQfiO-1779527159973"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

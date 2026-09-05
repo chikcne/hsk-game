@@ -1,0 +1,31 @@
+{
+  "audio": "bedc60d69c42c6f5c3dacc6822a7a0aa6507390115760ee40655d752071a18ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "票"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "机票",
+  "id": "f7996e9279e977e931bbb859",
+  "level": 2,
+  "meaning": "airplane ticket",
+  "pinyin": "jīpiào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-sCHaJiWH9?-1779527159167"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

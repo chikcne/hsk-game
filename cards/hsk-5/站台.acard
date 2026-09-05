@@ -1,0 +1,32 @@
+{
+  "audio": "cc48b5e1a8a5c865a9265b66d712d751f7581d310f6d6511db81563fc09ba1bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "台",
+      "站"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "站台",
+  "id": "1587d15b64cbe87be18e42e8",
+  "level": 5,
+  "meaning": "platform",
+  "pinyin": "zhàntái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uUL`u?C0#|-1779527162272"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

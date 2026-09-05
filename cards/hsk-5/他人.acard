@@ -1,0 +1,32 @@
+{
+  "audio": "27de4fa922a053528cbca6e3e721a7b846a4e56eb8ba24b083d3358fd70ce414.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "他"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "他人",
+  "id": "9f49a36131fe9dbc61919e11",
+  "level": 5,
+  "meaning": "others, other people",
+  "pinyin": "tārén",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rSw%d6or98-1779527161903"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "3bf5a3e13a2cec9c8f81b641f59bf23323f2420b2afed230035c6f36ffa11f8f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业",
+      "开"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开业",
+  "id": "e6ae6d1035bbc6ec491cad2d",
+  "level": 5,
+  "meaning": "to open for business",
+  "pinyin": "kāiyè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-s8O2y1$Zm`-1779527161458"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

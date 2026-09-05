@@ -1,0 +1,29 @@
+{
+  "audio": "46073f705ed7b8994bfac9903be7c3ba767a129b3e0642653bd9c92ac320b36b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "超",
+  "id": "e3bf330b821742c85bb3ff92",
+  "level": 5,
+  "meaning": "to exceed, to surpass",
+  "pinyin": "chāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F[&v<8SHHs-1779527160920"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

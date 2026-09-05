@@ -1,0 +1,31 @@
+{
+  "audio": "f2cea03fd74ef9c3f64a20d8171e8b719bc61bf9812bad975eae981652b467d0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "订"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "预订",
+  "id": "76be6115f08b4cd94d9d8f4b",
+  "level": 5,
+  "meaning": "to book, to reserve",
+  "pinyin": "yùdìng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tMJ+.,(`;j-1779527162226"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

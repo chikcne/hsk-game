@@ -1,0 +1,32 @@
+{
+  "audio": "a9c492e9ad88b6242325621d160223cc5662808dbe1fe611f03563ee9f669f46.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "处",
+      "罚"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "处罚",
+  "id": "de7e0847a1b38dc13ce408ab",
+  "level": 6,
+  "meaning": "to punish",
+  "pinyin": "chǔfá",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-197-1779527162600"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "ff26c884180100e35da7733492f309f7d8b7eb94de813bb735032ae62d1e5488.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "群",
+  "id": "c3991078b10894c14bbbb1ad",
+  "level": 5,
+  "meaning": "measure word for groups; group",
+  "pinyin": "qún",
+  "pos": "、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qeV]Uk<t%1-1779527161712"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

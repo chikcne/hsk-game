@@ -1,0 +1,31 @@
+{
+  "audio": "f4d5cb85783005a611410ebe376c938b9e260f37d9ee6d35b9cc2f5e855c27ce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "属"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "金属",
+  "id": "3fd734f5ec126fb9b1c55fd1",
+  "level": 6,
+  "meaning": "metal",
+  "pinyin": "jīnshǔ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-704-1779527163107"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "bcbb83d2a44c29268d2a5b63e600241b98d80a96213508df3c13d2fe3a0a5d3a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "直"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "直到",
+  "id": "1d36eee591d82eab173aa187",
+  "level": 3,
+  "meaning": "until",
+  "pinyin": "zhídào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-pxqvz1rXuB-1779527159777"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

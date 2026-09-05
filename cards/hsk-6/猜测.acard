@@ -1,0 +1,32 @@
+{
+  "audio": "b18ca47fe6687367d9b7608d17180fdb2fec25773ed6826d450e52a8f0dedc44.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "测",
+      "猜"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "猜测",
+  "id": "20cb9b4578b768bbdfc555b2",
+  "level": 6,
+  "meaning": "to guess",
+  "pinyin": "cāicè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-93-1779527162496"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "504bd3bee28b44777f8c0f8af0f26f14472ff60ba5d6abc6ef8fe499df737976.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "造",
+  "id": "54ef1c740756ed3e96065cb3",
+  "level": 5,
+  "meaning": "to make, to build",
+  "pinyin": "zào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-b3!|ms*RSc-1779527162256"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

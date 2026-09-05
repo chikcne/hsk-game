@@ -1,0 +1,31 @@
+{
+  "audio": "bf8d555405e6f047d21f12fc93b630d63d1f3c75ae437bf24542bbb79af3c0a2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "优点",
+  "id": "3968d194f01df2b49726d254",
+  "level": 4,
+  "meaning": "advantage, merit, strong point",
+  "pinyin": "yōudiǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-IJE``k+jVY-1779527160684"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

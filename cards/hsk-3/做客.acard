@@ -1,0 +1,31 @@
+{
+  "audio": "2307d8babe01048e5fe0d5d7ed1e2138027965d3a4f54e127ce95937b7e25578.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "做"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "做客",
+  "id": "3f58b7a975e2f312cc5a8a94",
+  "level": 3,
+  "meaning": "to be a guest",
+  "pinyin": "zuòkè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-w(zM3g:+---1779527159802"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

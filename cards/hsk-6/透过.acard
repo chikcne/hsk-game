@@ -1,0 +1,32 @@
+{
+  "audio": "e3dd7e0a76be330739c58647bd0211454ab57ba0adba7627f946d90060d41385.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "过",
+      "透"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "透过",
+  "id": "ed9e0e01f4b949b90351703d",
+  "level": 6,
+  "meaning": "through",
+  "pinyin": "tòuguò",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1323-1779527163726"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "6215765e604cbbc2bee64fe66e17550b90a250f586dbdc85363b5bddaf4a0faf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "想"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "联想",
+  "id": "3c19a20ec541518348bf29f4",
+  "level": 6,
+  "meaning": "to associate, to connect",
+  "pinyin": "liánxiǎng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-845-1779527163248"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

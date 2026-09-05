@@ -1,0 +1,29 @@
+{
+  "audio": "7af407d999ee0c2dca85ad203eb5aad94b179495ad8673ec7cd675c63e3112d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "景观",
+  "id": "fdd078537347fa2c5b3f1397",
+  "level": 6,
+  "meaning": "landscape, view",
+  "pinyin": "jǐngguān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-724-1779527163127"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

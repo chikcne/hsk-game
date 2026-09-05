@@ -1,0 +1,32 @@
+{
+  "audio": "a8466a754dd0379bb009b96a2af734233093e047909934051e5c0513cc853c06.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "性",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "理性",
+  "id": "acf63303641a51be8820b16e",
+  "level": 6,
+  "meaning": "rational, reasonable; reason",
+  "pinyin": "lǐxìng",
+  "pos": "形、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-834-1779527163237"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

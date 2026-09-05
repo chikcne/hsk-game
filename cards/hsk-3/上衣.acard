@@ -1,0 +1,31 @@
+{
+  "audio": "cd6b31878d133f3e51246ae675f25e29279e421c61f57d9237f784f8c17f7e11.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上衣",
+  "id": "bdf462b6680783de8e7960c3",
+  "level": 3,
+  "meaning": "jacket, top garment",
+  "pinyin": "shàngyī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-l|8&92Q/:j-1779527159627"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

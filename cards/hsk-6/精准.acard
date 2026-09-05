@@ -1,0 +1,31 @@
+{
+  "audio": "ed8082c53661b7d60ec2f440ae6de40ed8e1fd509cc2470849907d51ced8fedd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "准"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "精准",
+  "id": "598f2a39179337c17a4228d5",
+  "level": 6,
+  "meaning": "accurate, precise",
+  "pinyin": "jīngzhǔn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-721-1779527163124"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

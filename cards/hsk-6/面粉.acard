@@ -1,0 +1,32 @@
+{
+  "audio": "cde430cf5da15bb8c64141b4441bff54291a009ad9fbe93b13c1520e50042245.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "粉",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "面粉",
+  "id": "855088323a674026fcdac5f8",
+  "level": 6,
+  "meaning": "flour",
+  "pinyin": "miànfěn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-912-1779527163315"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

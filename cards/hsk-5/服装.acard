@@ -1,0 +1,32 @@
+{
+  "audio": "344369b8522156b87d4f1d8d2c5e1a31df6713a83513d14d66ab07010fd6c7c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "服",
+      "装"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "服装",
+  "id": "876bf38ca68d3589d2ebffb2",
+  "level": 5,
+  "meaning": "clothing, apparel",
+  "pinyin": "fúzhuāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jRZ+J;O+JW-1779527161171"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

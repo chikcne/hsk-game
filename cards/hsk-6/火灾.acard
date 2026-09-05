@@ -1,0 +1,32 @@
+{
+  "audio": "6977db9d732262e085b4627d2ea8ecf7f2268afd6d9d77da4a8b8c0b2d7ccaaf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "火",
+      "灾"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "火灾",
+  "id": "f31cf195287e5c2ee08d3cab",
+  "level": 6,
+  "meaning": "fire disaster, fire",
+  "pinyin": "huǒzāi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-600-1779527163003"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

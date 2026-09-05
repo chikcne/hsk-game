@@ -1,0 +1,29 @@
+{
+  "audio": "a847203ecad35a9a186449306ab6aa99824fa340df283ea9940cbd43931e87a8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "留",
+  "id": "059bde6bbd48e2c330d6fbc9",
+  "level": 4,
+  "meaning": "to stay, to remain, to keep",
+  "pinyin": "liú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ql$uG|q>!O-1779527160285"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

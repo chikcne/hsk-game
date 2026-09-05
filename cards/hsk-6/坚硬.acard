@@ -1,0 +1,31 @@
+{
+  "audio": "c7ee6fd88ae012ec1244ad7c427cdf3659753310bb692164a41a3d5cb4c8db25.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "硬"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "坚硬",
+  "id": "1603b3747d8de876f0cf277c",
+  "level": 6,
+  "meaning": "hard, solid",
+  "pinyin": "jiānyìng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-649-1779527163052"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

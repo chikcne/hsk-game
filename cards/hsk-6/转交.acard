@@ -1,0 +1,32 @@
+{
+  "audio": "207567410b50b2e263e9e51e7e7cc6fe6005f3a62ad485ea24a95ac5fd6f3533.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交",
+      "转"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转交",
+  "id": "9bcda692b7ea7a9d72ea4500",
+  "level": 6,
+  "meaning": "to pass on, to hand over",
+  "pinyin": "zhuǎnjiāo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1765-1779527164168"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

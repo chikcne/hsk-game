@@ -1,0 +1,32 @@
+{
+  "audio": "304efdc96fe21c5937b6e15c18ff31cb22da1bdc91902ffa3db7a96874b7a05e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "整",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "整理",
+  "id": "3e0a00aeab768eff7a5591e0",
+  "level": 4,
+  "meaning": "to arrange, to put in order, to tidy up",
+  "pinyin": "zhěnglǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Pj!9|GT=DQ-1779527160733"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

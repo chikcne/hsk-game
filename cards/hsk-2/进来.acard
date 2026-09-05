@@ -1,0 +1,32 @@
+{
+  "audio": "6824789eae31fc6e0cc0156a87234c137c20223db6575e88d2689e69da589c3b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "来",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "进来",
+  "id": "723ce079956754ac2dae84f0",
+  "level": 2,
+  "meaning": "to come in",
+  "pinyin": "jìnlái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-u+@iV!RN3)-1779527159175"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

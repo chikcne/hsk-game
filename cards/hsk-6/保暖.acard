@@ -1,0 +1,32 @@
+{
+  "audio": "6837beb9e66d52e7d83e9875c51e8aa740e594f2e5e9a9d3970cea6338000352.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保",
+      "暖"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保暖",
+  "id": "67aeefc6c9463a4352f070e7",
+  "level": 6,
+  "meaning": "to keep warm",
+  "pinyin": "bǎonuǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-24-1779527162427"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

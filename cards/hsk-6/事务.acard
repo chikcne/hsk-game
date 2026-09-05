@@ -1,0 +1,31 @@
+{
+  "audio": "0adbc2512b38ddf5e9bfc880e7d34785c604e6592f51c276a9feb2704f4c0949.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "事务",
+  "id": "46c6a76500b05b6979a33b2c",
+  "level": 6,
+  "meaning": "affairs, matters",
+  "pinyin": "shìwù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1205-1779527163608"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

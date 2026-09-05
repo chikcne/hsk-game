@@ -1,0 +1,29 @@
+{
+  "audio": "3fd8435534a0a94cd4c16181dd8e463be35f40661ff1f2b89f32b2765c8c412a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "录",
+  "id": "3bbc0cd594c8e0ce640364c0",
+  "level": 5,
+  "meaning": "to record",
+  "pinyin": "lù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-f1*JNvN%(h-1779527161541"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

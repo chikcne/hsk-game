@@ -1,0 +1,31 @@
+{
+  "audio": "9857beb506bba1b5759987ccc249113111cc2320b37e27aeed6613bfd1635fce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "瓶子",
+  "id": "691cf808a3656d12a0f3b3c2",
+  "level": 3,
+  "meaning": "bottle",
+  "pinyin": "píngzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-D~:S%i?^X>-1779527159599"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "82274e75bf9a4a28a93026cd5c50fd51991a637c695ebf67d12d56711460eb03.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "过"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过程",
+  "id": "17e944a8799e0240c69beef0",
+  "level": 4,
+  "meaning": "process",
+  "pinyin": "guòchéng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-w:MVj2ohd[-1779527160085"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

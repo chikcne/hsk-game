@@ -1,0 +1,32 @@
+{
+  "audio": "17784fa8a6136338ef3878a0c5520ed872d8d3a1679eb314fd1d261e166019e0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "米"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大米",
+  "id": "04b069af84b68f4fbb7adb52",
+  "level": 5,
+  "meaning": "rice",
+  "pinyin": "dàmǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-e(7n$.D)k~-1779527161026"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

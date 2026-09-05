@@ -1,0 +1,31 @@
+{
+  "audio": "6887baffec874f229d30fcc2c18f05fa21827b9199dcc09756574b484468b077.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "语气",
+  "id": "6e8ad5856eba6672955bde2a",
+  "level": 5,
+  "meaning": "tone, manner of speaking",
+  "pinyin": "yǔqì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-FwssN|Dn}p-1779527162220"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

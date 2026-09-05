@@ -1,0 +1,31 @@
+{
+  "audio": "9cfb28a27c74b39248d3204847a8f232a6a978b5a776458791ef65c81c07505d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "操场",
+  "id": "c88b5c1f3245920ba10a8b8b",
+  "level": 4,
+  "meaning": "playground",
+  "pinyin": "cāochǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d(cUjVD]bo-1779527159868"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

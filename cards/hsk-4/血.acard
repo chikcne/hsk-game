@@ -1,0 +1,29 @@
+{
+  "audio": "8fbe565b9b3afbbca3109e9372cb743b9cddc43573606d4af3b7c62f2f8ead32.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "血",
+  "id": "7613d850ca491ee44a472268",
+  "level": 4,
+  "meaning": "blood",
+  "pinyin": "xiě",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-CY-T^y|`X4-1779527160621"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

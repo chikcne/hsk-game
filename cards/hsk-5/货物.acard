@@ -1,0 +1,31 @@
+{
+  "audio": "af726427042a3b7804a74d36d67ddbd61334558555f67724333bbbcdabb48bd7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "货"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "货物",
+  "id": "a23ce1a58cb060bab06c87b2",
+  "level": 5,
+  "meaning": "goods",
+  "pinyin": "huòwù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-vY=7,Yy~A,-1779527161321"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

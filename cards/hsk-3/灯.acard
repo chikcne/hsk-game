@@ -1,0 +1,29 @@
+{
+  "audio": "8f3b0574160ed714f456c659c72f0937657a67b9e9859fe805a361cb0585daed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "灯",
+  "id": "7b8f892b361377bff2aca793",
+  "level": 3,
+  "meaning": "lamp, light",
+  "pinyin": "dēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-J-G]cq_E?S-1779527159391"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

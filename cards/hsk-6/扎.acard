@@ -1,0 +1,29 @@
+{
+  "audio": "c0bbf1d3e6278e6e6e999c49eecb73cb0202c39046b45a9f544ecb20f63042a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扎",
+  "id": "2ef371cdc57a9d69905f1485",
+  "level": 6,
+  "meaning": "to prick, to stab",
+  "pinyin": "zhā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1654-1779527164057"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

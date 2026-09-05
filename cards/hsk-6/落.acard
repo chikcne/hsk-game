@@ -1,0 +1,29 @@
+{
+  "audio": "7086a544e2b467a7549e308a33fc6989f3e41f743681b0697094de6d07d6299a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "落",
+  "id": "fcf771b9e21d217ec51c7563",
+  "level": 6,
+  "meaning": "to leave behind, to lag behind",
+  "pinyin": "là",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-810-1779527163213"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

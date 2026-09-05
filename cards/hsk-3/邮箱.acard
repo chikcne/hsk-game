@@ -1,0 +1,29 @@
+{
+  "audio": "4dd68d5e86b608e5b9d0b1970ad82b5963dd670b94a25c631ebc3382a7ab8787.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "邮箱",
+  "id": "ce021fad3b9a1b81ffcb1c82",
+  "level": 3,
+  "meaning": "mailbox",
+  "pinyin": "yóuxiāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-J_Ymd]ZD<i-1779527159748"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

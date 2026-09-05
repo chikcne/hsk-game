@@ -1,0 +1,29 @@
+{
+  "audio": "bc3b5e9218bc05d09e76cd1341d588e2bc8b281a7fc8777a0c151d0be1c73ace.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "此",
+  "id": "40c2b6f7c53d65fbf1ff076d",
+  "level": 4,
+  "meaning": "this",
+  "pinyin": "cǐ",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-b&poe-l/XZ-1779527159902"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

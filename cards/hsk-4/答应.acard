@@ -1,0 +1,31 @@
+{
+  "audio": "8252a0c95abdb25594b872f7a455f911ddc0dd5b2e06055f7dcbbb26f587c544.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "答"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "答应",
+  "id": "3f542c21e57df1d6cce25787",
+  "level": 4,
+  "meaning": "to agree, to promise, to reply",
+  "pinyin": "dāying",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-uttBnwDG/<-1779527159914"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

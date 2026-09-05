@@ -1,0 +1,29 @@
+{
+  "audio": "9737404326cbd32a2cc682a020a94ed7de6475eb0cd3f369e855f49c8502a0a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "颗",
+  "id": "2cc36dff651b3ca9e38b7590",
+  "level": 5,
+  "meaning": "measure word for small round objects",
+  "pinyin": "kē",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nAz&YF8pDd-1779527161465"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

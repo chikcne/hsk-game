@@ -1,0 +1,29 @@
+{
+  "audio": "adadb84d8da7f173e70a8e645a1810b4aa30b11bcdfe10b66ce2e714fdbe9592.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "满",
+  "id": "0e17242f06cf844c5418a117",
+  "level": 4,
+  "meaning": "full, filled; to fill",
+  "pinyin": "mǎn",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-rT@ai_*(gs-1779527160299"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

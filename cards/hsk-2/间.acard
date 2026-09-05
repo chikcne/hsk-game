@@ -1,0 +1,29 @@
+{
+  "audio": "39b0d051ed1a6c3a309e8f03224fb27e64d1c2e74fccc4e6cebb6fdfbc51ff9f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "间",
+  "id": "196ade78d104b5d38817c012",
+  "level": 2,
+  "meaning": "measure word for rooms; between",
+  "pinyin": "jiān",
+  "pos": "classifier、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-H|nySGnNse-1779527159169"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

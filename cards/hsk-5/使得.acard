@@ -1,0 +1,32 @@
+{
+  "audio": "41d28f03250a8799e9e70e884d821c08d63ff030b30180c350134612e585aebe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "使",
+      "得"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "使得",
+  "id": "c940d2960e5229876cd18ffb",
+  "level": 5,
+  "meaning": "to cause, to make",
+  "pinyin": "shǐde",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-e:JI&$|;-h-1779527161829"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

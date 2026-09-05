@@ -1,0 +1,32 @@
+{
+  "audio": "dde5957f88adcb1141a9ed5e44f66bfaecdf559e9ee8f0193bec99540c1895f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "安",
+      "排"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "安排",
+  "id": "71eae7deba8b6571d56e6db4",
+  "level": 4,
+  "meaning": "to arrange",
+  "pinyin": "ānpái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-x^8;t9ID8,-1779527159808"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

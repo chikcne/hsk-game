@@ -1,0 +1,29 @@
+{
+  "audio": "b248978472b6c1b2b5c8b0ed1e7fb5350f76a21dd8d6df96dfb12bd313793df5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "内",
+  "id": "91c38c928104ecfb0af273b0",
+  "level": 4,
+  "meaning": "inside, within",
+  "pinyin": "nèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-M{upF$(cP}-1779527160331"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

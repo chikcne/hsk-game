@@ -1,0 +1,31 @@
+{
+  "audio": "5ec60ef29355bef166e193115e3afe4946976be154850fb128d9a60226209b12.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "收"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "收益",
+  "id": "8565db90912d758ba986cdab",
+  "level": 6,
+  "meaning": "profit, gain",
+  "pinyin": "shōuyì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1211-1779527163614"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

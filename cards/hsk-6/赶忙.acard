@@ -1,0 +1,32 @@
+{
+  "audio": "2d528dfe740e593be80fe548725d4adb9c507d954b840ae0de5b7ff1e955e5f3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "忙",
+      "赶"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赶忙",
+  "id": "ed3642b41b14493f888981bc",
+  "level": 6,
+  "meaning": "hurriedly, quickly",
+  "pinyin": "gǎnmáng",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-424-1779527162827"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "1333c1c5d7ce6eb90de596a04dcdc08f0ea040c5682ae2eff03e90f2f9a2c3c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "说"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "说明",
+  "id": "5bbb5cab0406d691426ad7c0",
+  "level": 4,
+  "meaning": "to explain, to clarify; explanation, instructions",
+  "pinyin": "shuōmíng",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Mtv`n4mI}!-1779527160503"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

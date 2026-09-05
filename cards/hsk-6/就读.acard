@@ -1,0 +1,32 @@
+{
+  "audio": "06d24979bc112518749eda62efa5c9dcf376aff391e47501787ddd67ec9a9137.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "就",
+      "读"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "就读",
+  "id": "0301ad65a2a1a013cd43107b",
+  "level": 6,
+  "meaning": "to attend school",
+  "pinyin": "jiùdú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-734-1779527163137"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

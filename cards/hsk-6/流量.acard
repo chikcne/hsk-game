@@ -1,0 +1,32 @@
+{
+  "audio": "f9e7d416da07b2eb2690c5f39e916397150364f0d004b17086fe924507060729.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "流",
+      "量"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "流量",
+  "id": "322c9ea53d4da6738944f92f",
+  "level": 6,
+  "meaning": "traffic, internet data, flow rate",
+  "pinyin": "liúliàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-857-1779527163260"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

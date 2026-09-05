@@ -1,0 +1,32 @@
+{
+  "audio": "230ecb7a86673a7bb88369d92e46e263ea5dc02f001bfa5cb5677e58982eef0b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "毛",
+      "笔"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "毛笔",
+  "id": "f16b2fbbf0d1fd039c08f657",
+  "level": 5,
+  "meaning": "writing brush",
+  "pinyin": "máobǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-IAY,NKHqs&-1779527161555"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

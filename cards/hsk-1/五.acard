@@ -1,0 +1,29 @@
+{
+  "audio": "c34d05b7b7e68657c845906c31a501bc924dd2811371c4c742d3c8c2e985021b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "五",
+  "id": "3047f319067d1e3dff88ab0e",
+  "level": 1,
+  "meaning": "five",
+  "pinyin": "wǔ",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-bg2Tcq4.cp-1779527159026"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

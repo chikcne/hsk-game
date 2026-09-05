@@ -1,0 +1,29 @@
+{
+  "audio": "15ab43bac1ee87b1f90ee1045a685b6386ea8a37773697c9361ab625f3764acb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抬",
+  "id": "65644bf68b833e0f5eea2241",
+  "level": 4,
+  "meaning": "to lift, to raise",
+  "pinyin": "tái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-pxL=W(lK+]-1779527160518"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

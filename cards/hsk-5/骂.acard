@@ -1,0 +1,29 @@
+{
+  "audio": "eef48831e7761604ae8256f4946b1b687feb7c0efee1b6655397e738043c460d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "骂",
+  "id": "d2148692be81f163b381933f",
+  "level": 5,
+  "meaning": "to scold, to swear",
+  "pinyin": "mà",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wSk>txvh2@-1779527161551"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

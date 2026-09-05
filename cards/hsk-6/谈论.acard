@@ -1,0 +1,31 @@
+{
+  "audio": "eb4148a965710492b5405adf982936977cf0c77ed32393cd8f10bc2686009204.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "谈"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "谈论",
+  "id": "b8e81bfa167d47d52d209908",
+  "level": 6,
+  "meaning": "to discuss",
+  "pinyin": "tánlùn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1261-1779527163664"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

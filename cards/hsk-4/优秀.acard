@@ -1,0 +1,29 @@
+{
+  "audio": "071977749cb34c9ed224e0c6ffa8e2f0b9718fc232d9861d11252a3b1d371fb1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "优秀",
+  "id": "d83ec29f7d744b2272253137",
+  "level": 4,
+  "meaning": "excellent, outstanding",
+  "pinyin": "yōuxiù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-gWb~QyMx{P-1779527160686"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

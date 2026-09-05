@@ -1,0 +1,29 @@
+{
+  "audio": "86342487ab8db3d999edd00609b6744342441f2742bdadbf4bc6c7c6f0c6d28f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "啊",
+  "id": "1264750104aac778d9b15c8b",
+  "level": 4,
+  "meaning": "ah, oh",
+  "pinyin": "ā",
+  "pos": "interjection",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-dy!OZRu13g-1779527159804"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

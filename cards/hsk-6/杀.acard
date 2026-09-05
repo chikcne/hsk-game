@@ -1,0 +1,29 @@
+{
+  "audio": "e2f61a8064ecb3e4ba2a2c456390d18480250d84c63380723a6d588862bb8c6e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "杀",
+  "id": "0779c7b6e5aff8582cef5bbd",
+  "level": 6,
+  "meaning": "to kill",
+  "pinyin": "shā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1133-1779527163536"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

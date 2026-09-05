@@ -1,0 +1,32 @@
+{
+  "audio": "bd8db01f918cd6204ead387f79294c1e347e9a56dce5b13f0f7d232fda33fce2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保",
+      "安"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保安",
+  "id": "42ae64872267255083c1642c",
+  "level": 5,
+  "meaning": "to ensure safety; security guard",
+  "pinyin": "bǎo’ān",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-dF%f{lQ%@a-1779527160825"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

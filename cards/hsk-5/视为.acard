@@ -1,0 +1,31 @@
+{
+  "audio": "70765dfd3f738032d55c8566456ec41060ff2e48b3884a36d1cded6550aa03f3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "视为",
+  "id": "bb5c2fcf67af442d41ffce62",
+  "level": 5,
+  "meaning": "to regard as",
+  "pinyin": "shìwéi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lJ4iXz9IuC-1779527161839"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

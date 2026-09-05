@@ -1,0 +1,31 @@
+{
+  "audio": "e8aac87d5c3c8a385a5d14f5b9006ca8e00a07cdf36154ac00eb04eace731e72.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "灾"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "旱灾",
+  "id": "60800dd2dd095290f7f04f65",
+  "level": 6,
+  "meaning": "drought",
+  "pinyin": "hànzāi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-526-1779527162929"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

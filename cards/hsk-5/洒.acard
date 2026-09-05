@@ -1,0 +1,29 @@
+{
+  "audio": "a1f230b0514d808dbec00dbc6875ecae289f8cd79bb792096a7c90ac75d499e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "洒",
+  "id": "448bc6febcd2caa03c4b8d41",
+  "level": 5,
+  "meaning": "to sprinkle",
+  "pinyin": "sǎ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kqdUU10%pl-1779527161744"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

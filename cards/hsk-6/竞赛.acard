@@ -1,0 +1,29 @@
+{
+  "audio": "d4cfa6f79b23de1693b2ba7aca90505dfc1a51c72cc845664de05c956cbe15ae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "竞赛",
+  "id": "2c87c237fbe01d9c8df0c588",
+  "level": 6,
+  "meaning": "to compete",
+  "pinyin": "jìngsài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-728-1779527163131"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

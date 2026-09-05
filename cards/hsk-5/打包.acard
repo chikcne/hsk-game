@@ -1,0 +1,32 @@
+{
+  "audio": "18f7b610cc30e4e574eabef8ebbec7484e57050f98e6d8a29ae8bfa0bf795fa1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "包",
+      "打"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打包",
+  "id": "8b14dc9ea3074eabe131ce14",
+  "level": 5,
+  "meaning": "to pack, to take out",
+  "pinyin": "dǎbāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bn2<[Y>I{7-1779527161017"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

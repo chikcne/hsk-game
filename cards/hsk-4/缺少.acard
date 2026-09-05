@@ -1,0 +1,32 @@
+{
+  "audio": "22cd2ddee1459e8085ea944f7572eaa000e31570c866d3272facd7607c824f5f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "少",
+      "缺"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "缺少",
+  "id": "eddda75da82500035addc36d",
+  "level": 4,
+  "meaning": "to lack, to be short of",
+  "pinyin": "quēshǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-F0!n2c#PL*-1779527160408"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

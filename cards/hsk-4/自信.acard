@@ -1,0 +1,32 @@
+{
+  "audio": "f8e2df1b45f5bb61dcc5179b9e0e783731371d659eed8b9b8fcd011019bacb2d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "信",
+      "自"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自信",
+  "id": "ebf7b0375237da71470a3e3d",
+  "level": 4,
+  "meaning": "to believe in oneself; self-confidence, confidence; confident",
+  "pinyin": "zìxìn",
+  "pos": "verb、noun、 adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-A-.v{Y8gd(-1779527160786"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "audio": "a0160c1fa8f33a585279e3bfb03501b5055990b3eb88ff52996f38f26c6b7980.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "行",
+      "道"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人行道",
+  "id": "926f130979f1157b644405ee",
+  "level": 6,
+  "meaning": "sidewalk",
+  "pinyin": "rénxíngdào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1101-1779527163504"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

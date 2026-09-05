@@ -1,0 +1,32 @@
+{
+  "audio": "cc67dc49f0292c26e6ef7b4b9d59f65f7abf2c483444d018974b6af74535900d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "架"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打架",
+  "id": "06512f5bf3c4c69c2d28706f",
+  "level": 6,
+  "meaning": "to fight",
+  "pinyin": "dǎjià",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-239-1779527162642"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

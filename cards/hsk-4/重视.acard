@@ -1,0 +1,31 @@
+{
+  "audio": "46a5a0d65306c163510444cbca76883e1848d9b3b32af1cae171ec76e4290808.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "重"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "重视",
+  "id": "c8d1a6895f77f526dc92c6be",
+  "level": 4,
+  "meaning": "to pay attention to, to value",
+  "pinyin": "zhòngshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-E@FCCJB:/;-1779527160765"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "b97ad57a7b501f63c57a6752e05fa686e318a40327279ab270958df9c1cdfac0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "死",
+  "id": "2c00fd9d711c84553ed449a0",
+  "level": 4,
+  "meaning": "to die, to be dead; dead, extreme; extremely, to death",
+  "pinyin": "sǐ",
+  "pos": "verb、adjective、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-NjFxs[8Q7Y-1779527160506"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "42293ce89d71b9213d54ce9b237e0ff40c07aa329e26cf61025cda0e9824cc88.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "长",
+  "id": "9a51cf41b1abe5a13ab59e73",
+  "level": 2,
+  "meaning": "long",
+  "pinyin": "cháng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-mOgWw80v^U-1779527159117"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

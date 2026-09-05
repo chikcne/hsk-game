@@ -1,0 +1,31 @@
+{
+  "audio": "2b90716a6ecb4b2b94a99ea7f083a9ffc7eb6690834916774b72a8a1c00f889e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "清"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "清晨",
+  "id": "bafc6dcbca57bdf1374cc576",
+  "level": 6,
+  "meaning": "early morning",
+  "pinyin": "qīngchén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1053-1779527163456"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

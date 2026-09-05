@@ -1,0 +1,31 @@
+{
+  "audio": "aef58f88ab48d85c375d9cb1d94cb8fcfe98dfb5f04b9cc7d9ba72e74a1a0975.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "花"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "菊花",
+  "id": "7b19488739c0fff484365b86",
+  "level": 6,
+  "meaning": "chrysanthemum",
+  "pinyin": "júhuā",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-743-1779527163146"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

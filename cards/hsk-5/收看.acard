@@ -1,0 +1,32 @@
+{
+  "audio": "af57615a57562356b5b2df421bb918543eb9356bd492793eb1548d1d6b869231.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "收",
+      "看"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "收看",
+  "id": "67dd23fc0947e8464b393062",
+  "level": 5,
+  "meaning": "to watch (TV, program)",
+  "pinyin": "shōukàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-L<?2B1q~^w-1779527161848"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

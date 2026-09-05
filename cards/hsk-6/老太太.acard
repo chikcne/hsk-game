@@ -1,0 +1,33 @@
+{
+  "audio": "17b0bae382e2d3a613396182399a460cce145ae896480db5cdda8122ee5bcb66.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "太",
+      "太太",
+      "老"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "老太太",
+  "id": "ff846eac73420a0b2a7b333c",
+  "level": 6,
+  "meaning": "old lady",
+  "pinyin": "lǎotàitai",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-826-1779527163229"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

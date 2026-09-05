@@ -1,0 +1,32 @@
+{
+  "audio": "417969aa52bb40557a108c681417637c688e57495f7bb7f1df20273d65f2c76c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定",
+      "约"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "约定",
+  "id": "f7ac4be3b7dcdbdcbb3d5f52",
+  "level": 5,
+  "meaning": "to agree on, to arrange; agreement",
+  "pinyin": "yuēdìng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ki``<]%p8T-1779527162239"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

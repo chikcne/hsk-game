@@ -1,0 +1,32 @@
+{
+  "audio": "3904978fe5176abceed16617eb01ec502e4c496b9e6a97a72034a64ecca10c64.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "爱"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爱人",
+  "id": "e813c71752879e8e65fd463e",
+  "level": 3,
+  "meaning": "spouse",
+  "pinyin": "àiren",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-ioz^49CKi(-1779527159306"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

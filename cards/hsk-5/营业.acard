@@ -1,0 +1,31 @@
+{
+  "audio": "638598a7a4479492c2b37763aee8d8f28955f4d306707b40bb81a80fbcb03ac0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "营业",
+  "id": "85a71b263c2ad42664c92695",
+  "level": 5,
+  "meaning": "to do business, to be open",
+  "pinyin": "yíngyè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-OB)JLJwv3(-1779527162184"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "389ec3365ec9d517dbe9471bc7dcce2bf0d3583bbf3914b554701919ddb048de.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "茶"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "奶茶",
+  "id": "1244eff0ed9390a4bf9dc852",
+  "level": 2,
+  "meaning": "milk tea",
+  "pinyin": "nǎichá",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-x%uyz,YE_W-1779527159211"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

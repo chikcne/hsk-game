@@ -1,0 +1,32 @@
+{
+  "audio": "dede88fb543c9c41d42f4195811b4b96e358746294ebf44954328ee3392323b2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "歌",
+      "词"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "歌词",
+  "id": "b0ab1a6d7fbb03e5b3f3916d",
+  "level": 5,
+  "meaning": "lyrics",
+  "pinyin": "gēcí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-I}a@(0z::}-1779527161197"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

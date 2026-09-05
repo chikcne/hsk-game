@@ -1,0 +1,32 @@
+{
+  "audio": "ef1219a398b8a2c52d7252bca07d0e3d695010c2bf589ccd9f28ce77039ebcb3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加",
+      "强"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加强",
+  "id": "2fc92143e84ea9ac40935e33",
+  "level": 4,
+  "meaning": "strengthen, reinforce",
+  "pinyin": "jiāqiáng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o]zV},UDh&-1779527160140"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

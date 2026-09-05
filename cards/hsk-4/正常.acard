@@ -1,0 +1,32 @@
+{
+  "audio": "f17c29bdc58b3ba71285a4cc00212340fd835a1803ff7f0b0c5f508130bf7b47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常",
+      "正"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "正常",
+  "id": "12ebec0060d522af1ae2ed74",
+  "level": 4,
+  "meaning": "normal, regular, proper",
+  "pinyin": "zhèngcháng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kA[M=n2=[g-1779527160735"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

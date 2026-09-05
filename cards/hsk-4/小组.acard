@@ -1,0 +1,32 @@
+{
+  "audio": "62c85951f2a268f1eb49026938db7317de89073f76eaec7490b246167f8e8cc8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小",
+      "组"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小组",
+  "id": "89b38b918a102aef5be77481",
+  "level": 4,
+  "meaning": "small group, team",
+  "pinyin": "xiǎozǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p!gGeY{?eD-1779527160618"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

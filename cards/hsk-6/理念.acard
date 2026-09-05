@@ -1,0 +1,32 @@
+{
+  "audio": "a0e11bcf643032f5d029d2ff90e6bf9b76904c9d3af89ec4364e9cd72fb8c741.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "念",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "理念",
+  "id": "fb615b05dbc2900a73e22000",
+  "level": 6,
+  "meaning": "idea, concept",
+  "pinyin": "lǐniàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-833-1779527163236"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

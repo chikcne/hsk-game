@@ -1,0 +1,32 @@
+{
+  "audio": "3578e36c7589c424cdec707112a6787f2a41d678f8b05831d5c1b5b61a75aead.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "制",
+      "订"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "制订",
+  "id": "361c9566914049342b12ce9e",
+  "level": 5,
+  "meaning": "to formulate, to work out",
+  "pinyin": "zhìdìng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rxqs50pYDG-1779527162313"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

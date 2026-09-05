@@ -1,0 +1,31 @@
+{
+  "audio": "d80a651ca3dab26a5da6fc8078da986f5b012c19d0df9b93990fa5a54d870285.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "巧"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "技巧",
+  "id": "a23bf348c85008d505780def",
+  "level": 6,
+  "meaning": "skill, technique",
+  "pinyin": "jìqiǎo",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-626-1779527163029"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

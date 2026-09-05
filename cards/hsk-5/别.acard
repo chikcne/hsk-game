@@ -1,0 +1,29 @@
+{
+  "audio": "579f6b43d6df38ff544de09db594cc5057ad33fa986b062fb60d472c6dd46682.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "别",
+  "id": "8a5bb284eea90689cbcd11a4",
+  "level": 5,
+  "meaning": "to leave, to part ways",
+  "pinyin": "bié",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-OE=:HO^x!u-1779527160869"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

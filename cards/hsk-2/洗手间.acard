@@ -1,0 +1,33 @@
+{
+  "audio": "10c7fc20b75f4c79afcf468258904f48ce18f1fc8d549e8732c9d921f0e0c02b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手",
+      "洗",
+      "间"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "洗手间",
+  "id": "fa9783875c3c8f93dab99c13",
+  "level": 2,
+  "meaning": "restroom, toilet",
+  "pinyin": "xǐshǒujiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-b^_ae`L<@C-1779527159260"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

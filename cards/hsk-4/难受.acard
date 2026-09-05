@@ -1,0 +1,32 @@
+{
+  "audio": "6b23c2d6815a83c6aedaf336164e577d89c079586afd789452a231ac4f634db6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "受",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难受",
+  "id": "a4df023f3862987997f27c68",
+  "level": 4,
+  "meaning": "uncomfortable, painful, hard to bear",
+  "pinyin": "nánshòu",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-oR=;g2E<fI-1779527160328"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

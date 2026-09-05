@@ -1,0 +1,31 @@
+{
+  "audio": "fad5ced71c6114a73f4fa562620e90e18f68a0f5e8f47d0ffdef39af12fb6982.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "费"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "消费",
+  "id": "9039b264ca7eea1ae29b1352",
+  "level": 5,
+  "meaning": "to consume",
+  "pinyin": "xiāofèi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-DvVB&-#tyc-1779527162065"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "97f44613aa3daa0d7b1bcc0537979fb4e942fbf7d10506b8cf160685daa42d1a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "二",
+      "化"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "二氧化碳",
+  "id": "4698c79b5255d1aa7773e959",
+  "level": 6,
+  "meaning": "carbon dioxide",
+  "pinyin": "èryǎnghuàtàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-348-1779527162751"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "2df46db65bc8dffad602c12224851c938f37a83781690f19789ab4466da9a97b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "缩小",
+  "id": "08a73b7a80191e8b7a54ec2d",
+  "level": 5,
+  "meaning": "to shrink, to reduce",
+  "pinyin": "suōxiǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-y{l?|EutG2-1779527161900"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

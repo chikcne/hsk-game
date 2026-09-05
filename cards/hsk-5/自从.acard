@@ -1,0 +1,32 @@
+{
+  "audio": "9b87eb247c02483f19509987b33df9d507e90e33e321de379ed0385648eceb9d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "从",
+      "自"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自从",
+  "id": "d0c95220a633db50d17a2228",
+  "level": 5,
+  "meaning": "since",
+  "pinyin": "zìcóng",
+  "pos": "preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-r}>pBcz^@,-1779527162377"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

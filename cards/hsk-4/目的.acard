@@ -1,0 +1,31 @@
+{
+  "audio": "8fe4f09f416b8ce5dd579aaceba9cb3e73185eb496797e972e9969db00f19fda.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "的"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "目的",
+  "id": "980f45e2d829b187aa430bca",
+  "level": 4,
+  "meaning": "purpose, aim, goal",
+  "pinyin": "mùdì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z.g)w=eLsd-1779527160321"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

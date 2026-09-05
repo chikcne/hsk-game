@@ -1,0 +1,32 @@
+{
+  "audio": "c15cb8aafa787b5b1ab0db871c8157459b4261061b33c495cb78a7a622ecd82b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "唱",
+      "演"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "演唱",
+  "id": "74297ecd50904a31479cfb5a",
+  "level": 4,
+  "meaning": "to sing, to perform vocally",
+  "pinyin": "yǎnchàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d>MSiy@A@y-1779527160653"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

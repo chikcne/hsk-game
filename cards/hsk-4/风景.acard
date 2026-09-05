@@ -1,0 +1,31 @@
+{
+  "audio": "dc9cca703a2a09133c935ad2145d71c4a98be994dcb80cd1daeb0aedc66be4ae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "风"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "风景",
+  "id": "16dccc74dd163f7fd4e44197",
+  "level": 4,
+  "meaning": "scenery, landscape",
+  "pinyin": "fēngjǐng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-v>nRrCAv&*-1779527160008"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

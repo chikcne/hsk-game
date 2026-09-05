@@ -1,0 +1,31 @@
+{
+  "audio": "12f09fd01a4e1b77425edfe383a369ac8c0b971adb1817628d1586eae35abc3b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "血"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "血液",
+  "id": "b422539b6a6a4ffdd385631e",
+  "level": 6,
+  "meaning": "blood",
+  "pinyin": "xuèyè",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1496-1779527163899"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

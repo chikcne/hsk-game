@@ -1,0 +1,32 @@
+{
+  "audio": "8aaec2b60e9fd421df70d652e024503dff126bee2d21565434e30005bbcdcdd9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "争",
+      "吵"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "争吵",
+  "id": "fee27386999ba817a940e2c1",
+  "level": 6,
+  "meaning": "to quarrel, to argue",
+  "pinyin": "zhēngchǎo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1683-1779527164086"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "c5835ec7a342c7a4116b7f07a0f79a9705ebfff2a6d515f9ac5e591214638923.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "表",
+  "id": "e7ea6b77c3d2a590fa924a8f",
+  "level": 4,
+  "meaning": "watch, meter, table, form; (to express)",
+  "pinyin": "biǎo",
+  "pos": "noun、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-eM*MW.CMZQ-1779527159836"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

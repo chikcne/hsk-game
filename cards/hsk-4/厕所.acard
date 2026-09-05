@@ -1,0 +1,31 @@
+{
+  "audio": "c039e82f0a45854002cf443dcecf398b2f2d89f2f0915050ebcd11ca24a527fa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "所"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "厕所",
+  "id": "7dcb18c91439bcf04c4fe922",
+  "level": 4,
+  "meaning": "toilet, restroom",
+  "pinyin": "cèsuǒ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Q7h2eZ,6ni-1779527159869"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

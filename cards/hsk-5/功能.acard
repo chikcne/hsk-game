@@ -1,0 +1,31 @@
+{
+  "audio": "65e268e89d72a2b1c47708f03bf4697fe5bb472b37380c937719c5a251388ffc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "能"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "功能",
+  "id": "4120d9b874399412921f58d8",
+  "level": 5,
+  "meaning": "function",
+  "pinyin": "gōngnéng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g!L~8kI6%h-1779527161214"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "1bb2cad3fe153be920cf8f9bb557b0de2c261cdd70c2e2fdc54a45c4fa808fa7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "快",
+      "递"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "快递",
+  "id": "968b974bd0fd6514fc0d80ff",
+  "level": 4,
+  "meaning": "express delivery",
+  "pinyin": "kuàidì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J)^B+{!*lv-1779527160246"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

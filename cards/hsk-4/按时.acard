@@ -1,0 +1,32 @@
+{
+  "audio": "fce248be3a1e335e54d9ae3d61caa396452d5a9cff58a838772972a08e89dd4c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "按",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "按时",
+  "id": "adeee223173adfff980379e6",
+  "level": 4,
+  "meaning": "on time, on schedule",
+  "pinyin": "ànshí",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-G8#J9tC]{H-1779527159810"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

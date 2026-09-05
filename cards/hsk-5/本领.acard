@@ -1,0 +1,32 @@
+{
+  "audio": "274e64c787583b5f73557e2fc6c73843f90663847f328bde4f5523ef779572ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本",
+      "领"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "本领",
+  "id": "a1eae1730f1c9e75a9185f1f",
+  "level": 5,
+  "meaning": "skill, ability",
+  "pinyin": "běnlǐng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-z)rJJ?m|S_-1779527160845"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

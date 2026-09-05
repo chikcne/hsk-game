@@ -1,0 +1,31 @@
+{
+  "audio": "6c524e9024420cd044031f974d1cad0411670eb532f8430717da70d85fa6f2f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "品"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "商品",
+  "id": "0f0516ffc5f12269ab8a7098",
+  "level": 4,
+  "meaning": "product, commodity",
+  "pinyin": "shāngpǐn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ah,qi4+ipY-1779527160433"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

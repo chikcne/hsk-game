@@ -1,0 +1,32 @@
+{
+  "audio": "e56f64f919fb07616e0c7b42b127a06392dabe4a053366578693308cd08c553b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "批",
+      "评"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "批评",
+  "id": "04fffc107e9985b9f0b1a8f4",
+  "level": 4,
+  "meaning": "to criticize",
+  "pinyin": "pīpíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-n,~ZxbRsy~-1779527160353"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

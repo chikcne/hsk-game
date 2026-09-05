@@ -1,0 +1,31 @@
+{
+  "audio": "74e3b11add5b0de58eac9abd89c54339be232708347c9a0c2e2e664b3c410feb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "问"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "询问",
+  "id": "b08fdd87a66b4fc73238d8a4",
+  "level": 5,
+  "meaning": "to inquire, to ask",
+  "pinyin": "xúnwèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-o]~#gU5ejk-1779527162119"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

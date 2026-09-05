@@ -1,0 +1,31 @@
+{
+  "audio": "b7f3a8ff808849e540b99c1f61f7086e7b3f431fabcbef35b62b565a7086b783.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "招"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "招聘",
+  "id": "89c6e0c5c5c0bd7d1d4e0fae",
+  "level": 4,
+  "meaning": "to recruit, to hire",
+  "pinyin": "zhāopìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-fPcOdlM0@b-1779527160726"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

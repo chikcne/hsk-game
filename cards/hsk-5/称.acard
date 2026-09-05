@@ -1,0 +1,29 @@
+{
+  "audio": "ee2e9cea17a9aad60f292e038eb532b9239589bbc0d5ecc588cdc07fd33fb2bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "称",
+  "id": "a045b95b8e05b44094bbce18",
+  "level": 5,
+  "meaning": "to call, to address",
+  "pinyin": "chēng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": "sense 1",
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-I#|Id=z}AI-1779527160935"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

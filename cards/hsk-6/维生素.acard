@@ -1,0 +1,31 @@
+{
+  "audio": "80b5ef68426a8a8a6f0900f0643a45f183092115b479c276e85478071e19a514.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "维生素",
+  "id": "993a7cebf720ee5c1b6c6d09",
+  "level": 6,
+  "meaning": "vitamin",
+  "pinyin": "wéishēngsù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1373-1779527163776"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "5ec7d4136910ad01482bd71b555777cdc96768cffb99f7c01a1e8f4ddcd82b85.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "响"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "影响",
+  "id": "e7fbe6700836949d0f8ec818",
+  "level": 3,
+  "meaning": "to affect; influence",
+  "pinyin": "yǐngxiǎng",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-N^h{xB@g9=-1779527159743"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

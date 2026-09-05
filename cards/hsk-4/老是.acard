@@ -1,0 +1,32 @@
+{
+  "audio": "fd8db62df32e771359743f18244297d69a3f46d0ec8d2304ebf3ebeb509918fc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "是",
+      "老"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "老是",
+  "id": "3b71f2993dda1004270c935e",
+  "level": 4,
+  "meaning": "always, constantly",
+  "pinyin": "lǎoshì",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Er,f=N,|5>-1779527160261"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

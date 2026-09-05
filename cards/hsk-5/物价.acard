@@ -1,0 +1,29 @@
+{
+  "audio": "f20f14b42a5f0860db4cc87c9fe19dcf2fd9e9fe427526c57c4d9140c9312753.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "物价",
+  "id": "df2415ee04cb265d11dbde71",
+  "level": 5,
+  "meaning": "price",
+  "pinyin": "wùjià",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GGJIZi}@yE-1779527162019"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "4d1226b386538f69da75818c3360661c1ef39f10b4a44063c1a6f10615d3fd83.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一般",
+  "id": "f7c90504689d96eb80f40b38",
+  "level": 3,
+  "meaning": "general, ordinary",
+  "pinyin": "yìbān",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-I~VMJR*d-A-1779527159735"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

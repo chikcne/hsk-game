@@ -1,0 +1,32 @@
+{
+  "audio": "0de062fe574da0e28dc82d723185415356a8bdce43a8dc1214a8077e99d8e13d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关",
+      "心"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "关心",
+  "id": "8411fd3afe48100ef82b0d20",
+  "level": 3,
+  "meaning": "to care about, to be concerned",
+  "pinyin": "guānxīn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-c?#bqcu8yp-1779527159458"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

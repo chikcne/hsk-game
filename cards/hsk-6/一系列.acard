@@ -1,0 +1,34 @@
+{
+  "audio": "e34195b4ae422d703b2a1d6b6f319a9c17efc2ddf2f15dce8b48b727c65f12b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "列",
+      "系",
+      "系列"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一系列",
+  "id": "3eef9d9f0e63053fd63875de",
+  "level": 6,
+  "meaning": "a series of",
+  "pinyin": "yíxìliè",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1555-1779527163958"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

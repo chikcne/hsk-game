@@ -1,0 +1,29 @@
+{
+  "audio": "0382ee0b36face2bc17ed0d45706d5c051d2934c5d0f37e2fc2cfe984bb8f575.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "究竟",
+  "id": "a4f907dc9bcf7ea9659440c5",
+  "level": 4,
+  "meaning": "actually, exactly, after all (used for emphasis in questions); the outcome, the details of a situation",
+  "pinyin": "jiūjìng",
+  "pos": "adverb、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-F?]ISU:4M&-1779527160210"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

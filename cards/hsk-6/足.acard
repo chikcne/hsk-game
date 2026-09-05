@@ -1,0 +1,29 @@
+{
+  "audio": "4a059424479c7bfffd34d32b560f18ebcd55f3ae53427fce40146b16720dcdd6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "足",
+  "id": "aa6fe0472e61737c5620f736",
+  "level": 6,
+  "meaning": "foot, sufficient; sufficiently, fully",
+  "pinyin": "zú",
+  "pos": "形、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1793-1779527164196"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

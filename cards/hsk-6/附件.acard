@@ -1,0 +1,31 @@
+{
+  "audio": "27181a7f3008a9e0c8f05aec93d2573ee659b42bb1a37370da0b4b7eaf30c81d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "件"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "附件",
+  "id": "a97ea2a10eeef7366a74c615",
+  "level": 6,
+  "meaning": "attachment; accessory",
+  "pinyin": "fùjiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-409-1779527162812"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "f513abdf040459d194d6a414e71a9790d924503a7bd7b46f98659550b1dbadd7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "厨房",
+  "id": "548bb2e6d9ec3a477b77de99",
+  "level": 4,
+  "meaning": "kitchen",
+  "pinyin": "chúfáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-jI-=Sp^(w4-1779527159896"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

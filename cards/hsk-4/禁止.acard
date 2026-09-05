@@ -1,0 +1,31 @@
+{
+  "audio": "e4ebe71b2cd4d9fc510e614402861789d1d3952ffb5e5d70d9c0cea902fa84db.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "止"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "禁止",
+  "id": "c5af51b457c3bd4b293a86db",
+  "level": 4,
+  "meaning": "to prohibit, to forbid, to ban",
+  "pinyin": "jìnzhǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-sG;^7Mpj:e-1779527160197"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

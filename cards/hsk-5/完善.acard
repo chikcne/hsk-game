@@ -1,0 +1,31 @@
+{
+  "audio": "6ec257336ade00d6c2c7b4a947189bdd6416cb2bb1979eba54ed2362635f57d4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "完"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "完善",
+  "id": "bc2d63634d6de7cb0b7dfc55",
+  "level": 5,
+  "meaning": "perfect, flawless; to improve, to perfect",
+  "pinyin": "wánshàn",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JF^YZQ~ok,-1779527161978"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

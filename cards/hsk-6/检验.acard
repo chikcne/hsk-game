@@ -1,0 +1,29 @@
+{
+  "audio": "b521910f0c4aa967afd1dfadf23db5ebd7d03f6715efc65eb697a477d168b432.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "检验",
+  "id": "15cfed4692e0c51e2f555417",
+  "level": 6,
+  "meaning": "to inspect, to test",
+  "pinyin": "jiǎnyàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-656-1779527163059"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "db6e98a401f837c9db0bbb3501e729bb24986b82451d55e90fa3d1b30db77d42.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "重"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "体重",
+  "id": "04ae8640d44cc5eef7dabef0",
+  "level": 4,
+  "meaning": "body weight",
+  "pinyin": "tǐzhòng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-HZfDr_Ddd1-1779527160537"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

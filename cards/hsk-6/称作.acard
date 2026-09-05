@@ -1,0 +1,31 @@
+{
+  "audio": "76077e2493dd0b8ebccbe77c44676860f0b7b655afd58d8f3945e4f137195fb7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "称"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "称作",
+  "id": "3f44a1ed9106e7e6ad457bc5",
+  "level": 6,
+  "meaning": "to be called",
+  "pinyin": "chēngzuò",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-155-1779527162558"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

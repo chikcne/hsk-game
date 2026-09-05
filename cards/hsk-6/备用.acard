@@ -1,0 +1,31 @@
+{
+  "audio": "7dfae62057353b4c012764b9a7586e50f1d0e22956260ab5ddaadd8bbafbc2d2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "用"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "备用",
+  "id": "8ea5d17bbbb98a7635af9c6f",
+  "level": 6,
+  "meaning": "standby, backup",
+  "pinyin": "bèiyòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-42-1779527162445"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

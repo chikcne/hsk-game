@@ -1,0 +1,32 @@
+{
+  "audio": "31a4be2414030d6815772ea03af64a38f68eb06982b4a2af5944ffe70dacc684.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "如",
+      "此"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "如此",
+  "id": "72689925f693ad8a6bb09f55",
+  "level": 5,
+  "meaning": "such, so",
+  "pinyin": "rúcǐ",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EtLr}gRtcP-1779527161736"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

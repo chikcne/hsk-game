@@ -1,0 +1,31 @@
+{
+  "audio": "fc7388179b52bcb3df4e1767b8bf329c267c7aea0e3a9c37213311d2abd98a80.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "毒"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "消毒",
+  "id": "54d6933d1e840fbebe913e03",
+  "level": 6,
+  "meaning": "to disinfect",
+  "pinyin": "xiāodú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1446-1779527163849"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "f5bd5669d082c7b3f0ee778e48cb496fedd81317e068f3d44a3ec9eaeab6117c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "正"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "正确",
+  "id": "f887a687e573be67eb08d730",
+  "level": 4,
+  "meaning": "correct, right, accurate",
+  "pinyin": "zhèngquè",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hA<6t?kom0-1779527160739"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

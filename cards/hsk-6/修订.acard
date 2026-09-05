@@ -1,0 +1,32 @@
+{
+  "audio": "a2369c91145b1a41f09efc5a577cad5c5e1a1a88813382cf4a9434549854b047.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "修",
+      "订"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "修订",
+  "id": "69cdbb4371abef944b1a0a48",
+  "level": 6,
+  "meaning": "to revise",
+  "pinyin": "xiūdìng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1481-1779527163884"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

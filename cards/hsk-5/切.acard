@@ -1,0 +1,29 @@
+{
+  "audio": "404bdec2cdeff5b845daa25c9816162f4849485f48b425e92096fd7f29cba3d0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "切",
+  "id": "88976f8b9143d16291b0c88a",
+  "level": 5,
+  "meaning": "to cut",
+  "pinyin": "qiē",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-o!r.ME]+8I-1779527161680"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

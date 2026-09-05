@@ -1,0 +1,29 @@
+{
+  "audio": "13daffafad74c6d553f6e8b79b08e0a290e1b1d522e0781eaffbc57912a6b6ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "伤",
+  "id": "049e7679c0a2217e1e746add",
+  "level": 5,
+  "meaning": "injury, wound; to injure",
+  "pinyin": "shāng",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g{WN}[:#HL-1779527161759"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

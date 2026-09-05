@@ -1,0 +1,32 @@
+{
+  "audio": "1f1b798163369708745c19c3ee80b91c9aa38ea37204e225385de6ad43c9b771.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "坏",
+      "处"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "坏处",
+  "id": "7ed2e4a2e92ceec1c92706cc",
+  "level": 4,
+  "meaning": "disadvantage, harm",
+  "pinyin": "huàichù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Evj<J0na@v-1779527160107"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "79c3af06ee7b418ea80ac4ccd791e9c1fe9ac3df574cc49019ac46a8929b335c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "像"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "摄像",
+  "id": "e7200e8ef96d5a71ec740fd3",
+  "level": 6,
+  "meaning": "to videotape, to film",
+  "pinyin": "shèxiàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1160-1779527163563"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "cb78a8e97d22f16bb6f09daa76e7db5a995a04386dd1db030bfbb7cb667b3f96.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "模型",
+  "id": "70d6613357c60f47fc753184",
+  "level": 6,
+  "meaning": "model, mold",
+  "pinyin": "móxíng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-935-1779527163338"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

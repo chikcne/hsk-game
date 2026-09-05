@@ -1,0 +1,32 @@
+{
+  "audio": "86cc39e8b471a955c3fb24be60e4a17785b9015f4355ff208c77452bd20d0475.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "取",
+      "吸"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吸取",
+  "id": "b57c47800c92af874f0068ae",
+  "level": 6,
+  "meaning": "to absorb",
+  "pinyin": "xīqǔ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1402-1779527163805"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

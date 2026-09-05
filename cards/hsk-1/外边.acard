@@ -1,0 +1,32 @@
+{
+  "audio": "29374b6108a71dad5d17685cc6705b66984d51a498d22b9ed72e2c8dd3baf2d5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外",
+      "边"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外边",
+  "id": "f73845179d485902fdd1c3ff",
+  "level": 1,
+  "meaning": "outside",
+  "pinyin": "wàibian",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-t*t3j@HtNT-1779527159016"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

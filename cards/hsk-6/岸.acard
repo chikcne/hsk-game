@@ -1,0 +1,29 @@
+{
+  "audio": "82c06aef8dc7aa31576d1db52eb1746cd0cee49dfe607a453db9272ad0b07376.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "岸",
+  "id": "092d4922485151f02bed768b",
+  "level": 6,
+  "meaning": "shore, coast, bank",
+  "pinyin": "àn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1-1779527162404"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

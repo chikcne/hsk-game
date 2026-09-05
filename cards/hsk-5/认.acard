@@ -1,0 +1,29 @@
+{
+  "audio": "0d9d2608d3025371988309a6ef43cc0cb3c6b99947a6de09c15f0c3b3f9af4f7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "认",
+  "id": "c800309c37f0b85f3c1b5396",
+  "level": 5,
+  "meaning": "to recognize, to know",
+  "pinyin": "rèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-opLv|Jcyg3-1779527161732"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

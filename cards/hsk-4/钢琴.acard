@@ -1,0 +1,31 @@
+{
+  "audio": "339631033a59380e7dcbf8e9c54e19df8b6bbb9642de1d969696b1fbd746acad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "琴"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "钢琴",
+  "id": "dbf59147774f16dc412a151a",
+  "level": 4,
+  "meaning": "piano",
+  "pinyin": "gāngqín",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-gv?4G96eMP-1779527160038"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

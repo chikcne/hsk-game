@@ -1,0 +1,31 @@
+{
+  "audio": "174f5d4e9b0023441d06be4c359370f7abf74e3fca89cc7411842b0bb0c62bc6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "书"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "书籍",
+  "id": "1af7877b039ba3ce59fa1b9e",
+  "level": 6,
+  "meaning": "books",
+  "pinyin": "shūjí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1220-1779527163623"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "7a6ed7b5e35b13e73355e665ac800ecd4b0abdc692d1cf02554ef3421885e2f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "随",
+  "id": "f2b390421a04d2da28f1daa6",
+  "level": 5,
+  "meaning": "to follow",
+  "pinyin": "suí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-I9{cg58S[H-1779527161891"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

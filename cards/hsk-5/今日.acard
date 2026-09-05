@@ -1,0 +1,31 @@
+{
+  "audio": "b9d871933288cdd40a09a429a6908fd3e41bbbd30bdb2e80061a926d10a757c7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "日"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "今日",
+  "id": "627ffd97d6d9a495dd940582",
+  "level": 5,
+  "meaning": "today",
+  "pinyin": "jīnrì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Awl/Z=2-MK-1779527161409"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

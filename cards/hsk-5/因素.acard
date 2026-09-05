@@ -1,0 +1,31 @@
+{
+  "audio": "9bec35284ea355ae86d2509c4a20ad46e61527842ec33f2e51d81bb9c4af9ec1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "因"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "因素",
+  "id": "a49c2dbd326db0359ce7d2fa",
+  "level": 5,
+  "meaning": "factor, element",
+  "pinyin": "yīnsù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E4X8`*Ib(~-1779527162176"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

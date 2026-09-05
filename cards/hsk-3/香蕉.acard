@@ -1,0 +1,31 @@
+{
+  "audio": "26bd81a866b46c52bd00fa2f143b894b3511ae34419e5c6c6a23188f8caa0e46.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "香"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "香蕉",
+  "id": "c072b938cc7acb4f716c9fb2",
+  "level": 3,
+  "meaning": "banana",
+  "pinyin": "xiāngjiāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-nVN<OIPEwI-1779527159694"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

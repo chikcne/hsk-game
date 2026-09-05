@@ -1,0 +1,29 @@
+{
+  "audio": "4470fdf9c2c6fc790075f9cf1f65733e5ec6a2364bc5a204de0c60bd14794571.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "九",
+  "id": "cd122b3ccc8dc00bb741ebad",
+  "level": 1,
+  "meaning": "nine",
+  "pinyin": "jiǔ",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-D^Vnn4C$/[-1779527158898"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

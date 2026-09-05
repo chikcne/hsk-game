@@ -1,0 +1,31 @@
+{
+  "audio": "379918fb9f541f8d84b3d0570b5dd3cd37ffed17fd61433b39d2ec95c73641af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "脑子",
+  "id": "5428e8854fc1275ee9ced1de",
+  "level": 6,
+  "meaning": "brain",
+  "pinyin": "nǎozi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-948-1779527163351"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

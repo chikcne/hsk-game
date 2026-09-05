@@ -1,0 +1,31 @@
+{
+  "audio": "29946c7c68bb5711dbca9a1eb9477161b0bbc2449579b4c67cdb183a269345f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "运"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "托运",
+  "id": "1389a25f3b85f91e6152e449",
+  "level": 6,
+  "meaning": "to check luggage",
+  "pinyin": "tuōyùn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1346-1779527163749"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

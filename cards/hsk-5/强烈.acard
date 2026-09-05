@@ -1,0 +1,31 @@
+{
+  "audio": "e13eb9de8878b2f127d2b526cd3f351113b7567695d3cfbabc80922e039928e0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "强"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "强烈",
+  "id": "277edac1a6439a1c7ed6404c",
+  "level": 5,
+  "meaning": "strong, intense",
+  "pinyin": "qiángliè",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JCTBlen472-1779527161676"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

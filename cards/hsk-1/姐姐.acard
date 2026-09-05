@@ -1,0 +1,29 @@
+{
+  "audio": "6f2ed035a682ada0a249b1f1349605d2814d1f2f8ba9957a3c4c5758aba46b3c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "姐姐",
+  "id": "99ac9f47af7a245b175f8f36",
+  "level": 1,
+  "meaning": "older sister",
+  "pinyin": "jiějie",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-AH<dit7eI=-1779527158895"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

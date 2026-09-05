@@ -1,0 +1,29 @@
+{
+  "audio": "fece59b5ac346a71d6a25e6e5d6e76bc571f61a978f3989defe65cef8f35070b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "了",
+  "id": "9a2e83580c9a639f9a618672",
+  "level": 1,
+  "meaning": "particle indicating completed action or change of state",
+  "pinyin": "le",
+  "pos": "auxiliary",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-bep+7{J1{X-1779527158911"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "09f5b903b70853d064243209ca4f6c4ff42e98e7274952c9907d13929d6a5e28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "电"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电商",
+  "id": "9a23087ad780eba5f3e9fd9e",
+  "level": 5,
+  "meaning": "e-commerce",
+  "pinyin": "diànshāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jh^L3`[Gnq-1779527161084"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

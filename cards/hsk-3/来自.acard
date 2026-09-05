@@ -1,0 +1,32 @@
+{
+  "audio": "12cab30fde3b6ab607823469209b2624035362e9c1741fe2baa4819344aea812.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "来",
+      "自"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "来自",
+  "id": "66244a685d1d1d3a740718fc",
+  "level": 3,
+  "meaning": "to come from",
+  "pinyin": "láizì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Q!<ku/9N=!-1779527159546"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

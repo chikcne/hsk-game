@@ -1,0 +1,31 @@
+{
+  "audio": "06ad2612c45eb426d0e7cf96b44653abf159107469d4b4b1b947553cfe1dcbb7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "料"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "材料",
+  "id": "c093b1e040dc2df8a360e7bb",
+  "level": 4,
+  "meaning": "material, data",
+  "pinyin": "cáiliào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-PPY>j7bmHK-1779527159864"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

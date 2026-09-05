@@ -1,0 +1,32 @@
+{
+  "audio": "554b2970d7722be61d690919e1cfad98f74ba219715237453c254ae222618a1e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有力",
+  "id": "2cf65e62b99c7bb0fe2e18b6",
+  "level": 5,
+  "meaning": "powerful, strong",
+  "pinyin": "yǒulì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bjobsWy._#-1779527162213"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

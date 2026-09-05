@@ -1,0 +1,29 @@
+{
+  "audio": "54e90d1851e7830e8fdafec99706c5c4871b2f57d881f91209a9d8882cb99af4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "支",
+  "id": "b22b02ea5e3440f1125e7c1d",
+  "level": 5,
+  "meaning": "measure word for long, slender objects",
+  "pinyin": "zhī",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Oq_9gdLDp%-1779527162302"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

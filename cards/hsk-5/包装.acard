@@ -1,0 +1,32 @@
+{
+  "audio": "03ed388d6a908b6c7d8ca07485f91c880ee6eaaf535277e2b71e35ae235373dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "包",
+      "装"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "包装",
+  "id": "21a791e42bff26c27335a1be",
+  "level": 5,
+  "meaning": "to pack, to package; packaging",
+  "pinyin": "bāozhuāng",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hQey/#BO2]-1779527160821"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

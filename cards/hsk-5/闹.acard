@@ -1,0 +1,29 @@
+{
+  "audio": "803c448d75a8df12432ed87042551226846504063298b0bef1def203b73544cd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "闹",
+  "id": "41a54d2dc5f245ecff4cf559",
+  "level": 5,
+  "meaning": "noisy, lively; to make a noise",
+  "pinyin": "nào",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-s9q>m;D}tz-1779527161596"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

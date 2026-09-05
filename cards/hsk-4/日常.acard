@@ -1,0 +1,32 @@
+{
+  "audio": "8ce17a9773a2955afd17f764bb49787b0c9e329fd2ba0fda447ae44aaf3e427c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常",
+      "日"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "日常",
+  "id": "e7cabc82e7f1dd68b437d406",
+  "level": 4,
+  "meaning": "daily, everyday",
+  "pinyin": "rìcháng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bz+}w0IL4Q-1779527160421"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

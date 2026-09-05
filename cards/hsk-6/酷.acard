@@ -1,0 +1,29 @@
+{
+  "audio": "37b352f100c621f41115767150a05cd1f926323e13b8227ddc2cf66f6d515f47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "酷",
+  "id": "1b3daa42c7c2594ce1dca5ff",
+  "level": 6,
+  "meaning": "cool, awesome",
+  "pinyin": "kù",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-799-1779527163202"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

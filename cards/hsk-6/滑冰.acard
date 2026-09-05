@@ -1,0 +1,32 @@
+{
+  "audio": "615b68a4312f98f972f3c734766aeb1f98b5c03a3da1d8554db2d59a81a5da28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "冰",
+      "滑"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "滑冰",
+  "id": "7ec4ff96b6cb6f07f405cf5b",
+  "level": 6,
+  "meaning": "to skate",
+  "pinyin": "huábīng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-564-1779527162967"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

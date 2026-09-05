@@ -1,0 +1,32 @@
+{
+  "audio": "091a3817a0f03462cb86c3569ed02d2e829f8b8f2cb5245aa314eee83e036c24.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "回",
+      "答"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "回答",
+  "id": "f4931abccc6543ae6709a446",
+  "level": 3,
+  "meaning": "to answer",
+  "pinyin": "huídá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-ziX;V%9Fa--1779527159485"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

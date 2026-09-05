@@ -1,0 +1,29 @@
+{
+  "audio": "7139efc4cf30be1852696e4d940b162ed3d5fc71e298e74522bf355cc32de7dc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "睡",
+  "id": "44c0ca3235341dbd4617d5a9",
+  "level": 1,
+  "meaning": "to sleep (to attach specific details—like a duration of time, a direct object, or adjectives—directly to the verb.)",
+  "pinyin": "shuì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-BT[&@u#|]x-1779527158997"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

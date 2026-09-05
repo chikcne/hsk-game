@@ -1,0 +1,29 @@
+{
+  "audio": "4b2b3881144e565f40ba97f2b187f96d75395b1b659c0114acf64602467f430a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "背",
+  "id": "fa4adf559d99318fd1f5620c",
+  "level": 4,
+  "meaning": "to carry on the back",
+  "pinyin": "bēi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-pz*&AMT/K)-1779527159823"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

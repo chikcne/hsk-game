@@ -1,0 +1,31 @@
+{
+  "audio": "24d2e387588dbb240107eb9deb5e5542dc745951b5dae0e30ac251fb46a91b69.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "缺"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "缺乏",
+  "id": "cdd83886250f6077594e6ac9",
+  "level": 5,
+  "meaning": "to lack",
+  "pinyin": "quēfá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P[DBZN-jS!-1779527161708"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

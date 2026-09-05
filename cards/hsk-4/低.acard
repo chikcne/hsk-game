@@ -1,0 +1,29 @@
+{
+  "audio": "a307bb97b5f7816fccac3d4c6478f1caf466ce9cac72e2d83ce5d143c595c78d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "低",
+  "id": "cf04c13869f11ef933b8e191",
+  "level": 4,
+  "meaning": "low; to lower",
+  "pinyin": "dī",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p%@tNIDS%^-1779527159952"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

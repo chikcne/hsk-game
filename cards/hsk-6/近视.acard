@@ -1,0 +1,31 @@
+{
+  "audio": "ee72bdc3eabdba3f5a175480b8e553170915dabca88218e5bf52ac01f9c62624.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "近"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "近视",
+  "id": "f7d5434b6974aaee57c47676",
+  "level": 6,
+  "meaning": "nearsighted",
+  "pinyin": "jìnshì",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-711-1779527163114"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

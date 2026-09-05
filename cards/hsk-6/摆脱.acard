@@ -1,0 +1,32 @@
+{
+  "audio": "8921724e3bdce3c32e2cd95001aa8b56edcea221a8107b7c10880092ba8b7274.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "摆",
+      "脱"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "摆脱",
+  "id": "fa075d318486e23735bd989f",
+  "level": 6,
+  "meaning": "to get rid of, to break away from",
+  "pinyin": "bǎituō",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-12-1779527162415"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

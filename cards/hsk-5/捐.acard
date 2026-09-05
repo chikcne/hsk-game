@@ -1,0 +1,29 @@
+{
+  "audio": "c00e96ea926490d743f40d89fd902b4f3f66eef7b63f00b064bb7fef04c7285e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "捐",
+  "id": "fa378ba82e9c2a6513255284",
+  "level": 5,
+  "meaning": "to donate",
+  "pinyin": "juān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g4jj.*Bcv--1779527161447"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

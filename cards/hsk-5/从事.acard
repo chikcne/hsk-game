@@ -1,0 +1,32 @@
+{
+  "audio": "c1d3b1d4ab91217160a4cf05fa87b99152bdbbf5758fce43af9c66767fd70939.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事",
+      "从"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "从事",
+  "id": "1d2bb378f40dd6bf99fdbd48",
+  "level": 5,
+  "meaning": "to engage in, to pursue",
+  "pinyin": "cóngshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lmrfY*0!~o-1779527161006"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

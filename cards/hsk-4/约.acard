@@ -1,0 +1,29 @@
+{
+  "audio": "28ca3f024c7bd4388ce3b32d1256aec625cd4c2dc0e90a2cbe71f65344920f9f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "约",
+  "id": "1e35a7468f10c40158e7a941",
+  "level": 4,
+  "meaning": "to make an appointment, to arrange; about, approximately",
+  "pinyin": "yuē",
+  "pos": "verb、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-K5G*Z+*ELl-1779527160709"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "9df97fb7892d2e1e11e37b81db01a1c0a06906a15467bdfde696827cbf80695c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "古",
+      "考"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "考古",
+  "id": "260b5e5f01ff0f96546db16a",
+  "level": 6,
+  "meaning": "to engage in archaeology; archaeology",
+  "pinyin": "kǎogǔ",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-776-1779527163179"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

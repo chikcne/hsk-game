@@ -1,0 +1,31 @@
+{
+  "audio": "0ecbbb267519be0544d8f9ae29ce6e5afa26f77a54814e76883d4a389a834386.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "勇气",
+  "id": "37db32fe27847dadfb8f0e5f",
+  "level": 5,
+  "meaning": "courage",
+  "pinyin": "yǒngqì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-r|ES5)d?-L-1779527162193"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

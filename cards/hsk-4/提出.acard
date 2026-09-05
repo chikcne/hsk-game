@@ -1,0 +1,32 @@
+{
+  "audio": "05a2f2e9db465189233b2d329881ab85d7b782fd6b0f6924bddb102fe72d9221.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "提"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "提出",
+  "id": "d60437d0e8005bf8f715ab18",
+  "level": 4,
+  "meaning": "to put forward, to propose, to raise",
+  "pinyin": "tíchū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-G-F+N|X|Nl-1779527160530"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

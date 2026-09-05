@@ -1,0 +1,31 @@
+{
+  "audio": "2f19f9fecf443710ee2dfc81c0b29ddae03f3856229730e2cbd49408c174a081.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "课"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "功课",
+  "id": "0ab49971da4023bf8fc08124",
+  "level": 4,
+  "meaning": "schoolwork, homework",
+  "pinyin": "gōngkè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I|qW{:B=xB-1779527160056"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

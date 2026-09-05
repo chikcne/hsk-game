@@ -1,0 +1,32 @@
+{
+  "audio": "f40790dd84d69cfee54bd68d090ba02bab58707be408df517fa075574ca984fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "算",
+      "计算"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "计算机",
+  "id": "9bc0c30059ea798d288bb86d",
+  "level": 5,
+  "meaning": "computer",
+  "pinyin": "jìsuànjī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-C`VZ~I8xqJ-1779527161351"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

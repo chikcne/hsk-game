@@ -1,0 +1,29 @@
+{
+  "audio": "3db3ce01e7549b20be1932569e830be087fa06a3accd4e7800783dcd08bafd6a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跟",
+  "id": "af706ffac0240d43d75b1003",
+  "level": 2,
+  "meaning": "with; and; (heel; to follow, to accompany)",
+  "pinyin": "gēn",
+  "pos": "preposition、 conjunction、 （noun、verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-FUWy+}ioP@-1779527159148"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

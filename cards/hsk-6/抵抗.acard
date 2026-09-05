@@ -1,0 +1,29 @@
+{
+  "audio": "08c0da19e44893b7a671cfef5621ca8737d55e3c6036b5c39232a594c8d5b3a0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抵抗",
+  "id": "cce7663fbd5f76f05e5022a0",
+  "level": 6,
+  "meaning": "to resist",
+  "pinyin": "dǐkàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-290-1779527162693"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

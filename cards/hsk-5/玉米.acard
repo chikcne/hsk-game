@@ -1,0 +1,31 @@
+{
+  "audio": "10684b495655adc2adbb8b3e7c82e539c824acf2c570336cef213becabafddac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "米"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "玉米",
+  "id": "3938a09700431712e357ecc5",
+  "level": 5,
+  "meaning": "corn",
+  "pinyin": "yùmǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-n{;Y`LA3F%-1779527162229"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

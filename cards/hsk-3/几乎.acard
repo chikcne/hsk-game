@@ -1,0 +1,31 @@
+{
+  "audio": "69649335d99492f0792a494289090cbe5dcf125c31263d55681f5d06b2f58876.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "几"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "几乎",
+  "id": "3bd25318ff2bab6402b79df0",
+  "level": 3,
+  "meaning": "almost",
+  "pinyin": "jīhū",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-C*^e)]ThH)-1779527159491"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

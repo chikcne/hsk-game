@@ -1,0 +1,32 @@
+{
+  "audio": "edf24cfb63f726d0be0452cc936a8909c5350e865616bcd8e0da0c69a0baebc1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "暖",
+      "气"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暖气",
+  "id": "b6116e4763c2bb7e4c722a5b",
+  "level": 6,
+  "meaning": "heater",
+  "pinyin": "nuǎnqì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-964-1779527163367"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

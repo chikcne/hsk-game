@@ -1,0 +1,31 @@
+{
+  "audio": "c22bb160679badaf12bd919c2948d2c9f0e959be14066a7aee3d12b152cf3394.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "查"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "检查",
+  "id": "5385d81464db2a91e75e6204",
+  "level": 3,
+  "meaning": "to check, to inspect",
+  "pinyin": "jiǎnchá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n?1m!ns33b-1779527159501"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

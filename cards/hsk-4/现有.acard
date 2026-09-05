@@ -1,0 +1,31 @@
+{
+  "audio": "ec3c900bcb1c9b41f7d7cae9ce025aeef5114f57c40812f991bdbb3aef626493.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "现有",
+  "id": "44f5f17036eef7d630f11066",
+  "level": 4,
+  "meaning": "existing, currently available; to have currently",
+  "pinyin": "xiànyǒu",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-pIjXKZj=={-1779527160604"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

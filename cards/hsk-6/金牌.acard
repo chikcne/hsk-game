@@ -1,0 +1,31 @@
+{
+  "audio": "0598f68a6957a0353ad861c59138165116e8d54772986e8a2f2a6537cf8be303.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "牌"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "金牌",
+  "id": "0905132256bafa2409d5294d",
+  "level": 6,
+  "meaning": "gold medal",
+  "pinyin": "jīnpái",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-701-1779527163104"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

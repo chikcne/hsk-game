@@ -1,0 +1,31 @@
+{
+  "audio": "08d587979073ec55319cd76fe013b447222c1fa472b52584b6706f0cb7db3c07.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "制"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "复制",
+  "id": "a29eae2a4965d12c6f7701be",
+  "level": 5,
+  "meaning": "to duplicate, to copy",
+  "pinyin": "fùzhì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B2ts~6ri*&-1779527161178"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "32fdebd95aa98ada9f0cd2ec79b4cd93b682dd967ffd9992a3c23f80ab853299.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "吵",
+      "架"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吵架",
+  "id": "7bdbdfca4444e4e719daf5fb",
+  "level": 6,
+  "meaning": "to quarrel",
+  "pinyin": "chǎojià",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-147-1779527162550"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

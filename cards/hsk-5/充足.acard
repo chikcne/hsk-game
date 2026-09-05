@@ -1,0 +1,31 @@
+{
+  "audio": "9766270b92600a191ecc93a541de341cc529d04b07b61bd2f5675d65bf71494e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "足"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "充足",
+  "id": "bccad4ab410633a6626bb2e7",
+  "level": 5,
+  "meaning": "sufficient, adequate",
+  "pinyin": "chōngzú",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F=T%S!1y)W-1779527160966"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

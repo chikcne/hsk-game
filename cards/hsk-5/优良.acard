@@ -1,0 +1,29 @@
+{
+  "audio": "787391adc040f8cdd86ecfe49c515c4267baf0e66d78a502dc047865c987d2f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "优良",
+  "id": "24eb9753e22cd10ef704e67b",
+  "level": 5,
+  "meaning": "excellent, fine",
+  "pinyin": "yōuliáng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wxzeGBW>#6-1779527162201"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

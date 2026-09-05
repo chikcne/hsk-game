@@ -1,0 +1,32 @@
+{
+  "audio": "8c34e97423dbfd662b2396f75e3f0a12b9110197f8512f7e032d3c47ac169b2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "部",
+      "队"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "部队",
+  "id": "a6c10a24d9844625dfec2efb",
+  "level": 6,
+  "meaning": "troops, army",
+  "pinyin": "bùduì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-83-1779527162486"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "54e90d1851e7830e8fdafec99706c5c4871b2f57d881f91209a9d8882cb99af4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "之",
+  "id": "105d37e09363a341dfacf5ba",
+  "level": 4,
+  "meaning": "auxiliary word (classical)",
+  "pinyin": "zhī",
+  "pos": "auxiliary",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-QgbTZp<,Y+-1779527160741"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "f135c0bfa3b2dea0c455c250bdbda802386cb5664766c701d3db1846f327c12b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "部"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "部分",
+  "id": "2452c5e0b9408de2a97e8c06",
+  "level": 4,
+  "meaning": "part, portion",
+  "pinyin": "bùfen",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-GlwX_9vQ%m-1779527159855"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

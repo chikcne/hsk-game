@@ -1,0 +1,31 @@
+{
+  "audio": "c178999c6b5d24520645abc486e715fa8e0672f35729171456006105a5f64815.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "融合",
+  "id": "74f6c14ba85eb8f7e5f7cfbe",
+  "level": 6,
+  "meaning": "to blend, to merge",
+  "pinyin": "rónghé",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1113-1779527163516"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

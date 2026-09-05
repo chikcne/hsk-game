@@ -1,0 +1,32 @@
+{
+  "audio": "0b13f0a744abbb34c7d2a8743b2846be491c95acb685caf148038fddc63546bc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "斤"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公斤",
+  "id": "162fb78ca959af882a522b6f",
+  "level": 3,
+  "meaning": "kilogram",
+  "pinyin": "gōngjīn",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n~^e:y@j6#-1779527159450"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

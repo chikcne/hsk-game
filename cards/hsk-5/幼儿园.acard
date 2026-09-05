@@ -1,0 +1,31 @@
+{
+  "audio": "79e243459c468c0a6a2f918b1542b6bbbf3c1751f47d48011ffe7bf5ba4b7141.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "园"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "幼儿园",
+  "id": "ab253a4f1e1cce7ec5d302b9",
+  "level": 5,
+  "meaning": "kindergarten",
+  "pinyin": "yòu’éryuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uK!oqk.Oz(-1779527162218"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

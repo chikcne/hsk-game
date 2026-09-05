@@ -1,0 +1,32 @@
+{
+  "audio": "9d0cc30249f25b4c43a926a27690caffa04f6bbcef3f3fdd2d5f4bb04188b718.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "名"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "名人",
+  "id": "86e3dd4a3e548fc2aabec62c",
+  "level": 3,
+  "meaning": "famous person",
+  "pinyin": "míngrén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-c:F$vBA_^j-1779527159576"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

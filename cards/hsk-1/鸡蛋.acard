@@ -1,0 +1,31 @@
+{
+  "audio": "22b20a638bf5e7b45c05083bc19b24a691beef342e97d6b3e2a972d6b80db10d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "鸡"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鸡蛋",
+  "id": "4314cf20fa28ebb71d3b8941",
+  "level": 1,
+  "meaning": "egg",
+  "pinyin": "jīdàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-JPhYp27PgR-1779527158887"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

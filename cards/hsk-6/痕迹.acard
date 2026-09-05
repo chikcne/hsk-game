@@ -1,0 +1,29 @@
+{
+  "audio": "07a35ff0f8c179caa83b5b7588257cfe1b8a3d823c05b8094e269b090b3abed9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "痕迹",
+  "id": "69c6cfa597a4b661937eb3bd",
+  "level": 6,
+  "meaning": "trace, mark",
+  "pinyin": "hénjì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-545-1779527162948"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

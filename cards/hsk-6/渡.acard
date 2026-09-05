@@ -1,0 +1,29 @@
+{
+  "audio": "2f1614a807a71fd0bbd76631962fb6feefd363e75a22addc82b0b30cb6e58d86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "渡",
+  "id": "c9392ac03f67a8c75718ea7e",
+  "level": 6,
+  "meaning": "to cross a river",
+  "pinyin": "dù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-326-1779527162729"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

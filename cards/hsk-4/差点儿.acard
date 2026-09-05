@@ -1,0 +1,32 @@
+{
+  "audio": "e609fd22d88eed8930edcc9e385615645e47660f8caace78f91e49fae34e8c46.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "差",
+      "点"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "差点儿",
+  "id": "f6f6832f5dd7c4c4b4e54297",
+  "level": 4,
+  "meaning": "poor, not good enough; almost, nearly",
+  "pinyin": "chàdiǎnr",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-i!65$<e#]G-1779527159873"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

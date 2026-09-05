@@ -1,0 +1,31 @@
+{
+  "audio": "a940b5171fdb4858ecb9a96ef0de332b06a9fc2a02e10572fa57663a29c84b49.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "写"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "写作",
+  "id": "3bbc065de384c6a8062bb610",
+  "level": 5,
+  "meaning": "to write",
+  "pinyin": "xiězuò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-efy9&`0gIf-1779527162078"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "109dcbdb82c530486e2ccf4b3b47949c8d728a8a6ddded75a8dfa48d5fe0aeec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "转"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转告",
+  "id": "55a2a19f11b12237c61e75b5",
+  "level": 5,
+  "meaning": "to pass on a message, to relay",
+  "pinyin": "zhuǎngào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JaYG`YAItJ-1779527162362"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

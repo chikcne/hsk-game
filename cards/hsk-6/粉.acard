@@ -1,0 +1,29 @@
+{
+  "audio": "5048b1f16a47becdf1f4655ffb787c73af4a0b96f09bf764ec66a47ed9d08b08.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "粉",
+  "id": "e4be54fdad3daeca051b2620",
+  "level": 6,
+  "meaning": "powder; pink",
+  "pinyin": "fěn",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-389-1779527162792"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

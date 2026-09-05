@@ -1,0 +1,31 @@
+{
+  "audio": "68c1a67986716c0add426ec21355f5099d15a3767b5a176e83904d99e2d02154.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "防"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "预防",
+  "id": "8db50651b2d71197d22e6d33",
+  "level": 5,
+  "meaning": "to prevent",
+  "pinyin": "yùfáng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Dkr1Vkjl8w-1779527162227"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

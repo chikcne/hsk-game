@@ -1,0 +1,32 @@
+{
+  "audio": "4b660bbca563a24bd8f493f3e59a0431e48f58439ccb9ec48362cde4e2bab57c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "病"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "病人",
+  "id": "f3c9b4ee85895c0a1a1c4868",
+  "level": 3,
+  "meaning": "patient",
+  "pinyin": "bìngrén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-i*+GR)&GZ[-1779527159340"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

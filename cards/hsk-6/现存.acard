@@ -1,0 +1,31 @@
+{
+  "audio": "ef4e6155a13ae9d03fdd6f3d971d914b7a1149b831f9510b81785f7bddc64a27.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "存"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "现存",
+  "id": "50ef8954a49506812a4eb32b",
+  "level": 6,
+  "meaning": "existing",
+  "pinyin": "xiàncún",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1428-1779527163831"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

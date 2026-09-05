@@ -1,0 +1,29 @@
+{
+  "audio": "40798a7819450d7b177eee4bcd01d76d9e387270718b27d5e53274e2d85926b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "刚",
+  "id": "c045f93fe8b2f0380ef439d6",
+  "level": 3,
+  "meaning": "just, just now",
+  "pinyin": "gāng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-DOW7vtr1&U-1779527159444"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

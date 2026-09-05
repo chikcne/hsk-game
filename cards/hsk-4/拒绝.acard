@@ -1,0 +1,29 @@
+{
+  "audio": "cdd6c82fa3b601d7c385ce6bf3641374ea5f3008f229db31d67ba93e291ac118.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拒绝",
+  "id": "66e1a3370ad320e93e5c1456",
+  "level": 4,
+  "meaning": "to refuse, to reject, to decline",
+  "pinyin": "jùjué",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I]:C=cGFW--1779527160219"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

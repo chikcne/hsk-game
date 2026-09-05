@@ -1,0 +1,31 @@
+{
+  "audio": "950b1c997c34f4765ceb4d8593196f35dd46b2158dc89a0df315af7457bae272.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "坚定",
+  "id": "dfb5dc2bcd1fadcb959bd493",
+  "level": 6,
+  "meaning": "firm, steadfast; to strengthen",
+  "pinyin": "jiāndìng",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-643-1779527163046"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "68e6c14eaa71e1ea19f5c437fe1e27cd8caf1c71b5253d1a0e00406d24e68c4f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "云",
+  "id": "6155c79c097d33bf4cbe7ab1",
+  "level": 4,
+  "meaning": "cloud",
+  "pinyin": "yún",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-dDp;_8:T^7-1779527160714"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

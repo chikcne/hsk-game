@@ -1,0 +1,32 @@
+{
+  "audio": "8347ba93b789b8fe46c5b0b6fac8f5ed39bb43eb34ad03cf873047503d188d28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "看",
+      "眼"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "眼看",
+  "id": "2256e63f7133844070f7089c",
+  "level": 6,
+  "meaning": "soon, in a moment; to see something happen",
+  "pinyin": "yǎnkàn",
+  "pos": "副、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1516-1779527163919"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

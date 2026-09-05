@@ -1,0 +1,32 @@
+{
+  "audio": "a6448c2803d7b5f77a4ab830e4f65a5f44f0d70f24dee1435c91e91c70775316.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "行",
+      "运"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "运行",
+  "id": "9119a2ea9cc9f316a6f50b4d",
+  "level": 6,
+  "meaning": "to operate",
+  "pinyin": "yùnxíng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1636-1779527164039"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

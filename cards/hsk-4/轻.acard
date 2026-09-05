@@ -1,0 +1,29 @@
+{
+  "audio": "9695c3240426eef30f927a789c2ae206eada3ee927a34023a64f32aa811a469c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "轻",
+  "id": "a7dba1bc68795df05f46c544",
+  "level": 4,
+  "meaning": "light, not heavy, gentle, easy",
+  "pinyin": "qīng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qjvWEIx$O4-1779527160389"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "69453e1876317319474ddd1640b6a40e9fa2f67045f300cc857c9b45a73d9a57.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "识"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "意识",
+  "id": "84e1c6be04d76d6d69e8f8a4",
+  "level": 5,
+  "meaning": "to realize; consciousness",
+  "pinyin": "yìshí",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qIERt5$z~.-1779527162169"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

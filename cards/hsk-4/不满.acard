@@ -1,0 +1,32 @@
+{
+  "audio": "33108aee708d3cd51ecc05fb6f4a1d0bc1695b7932a3325fe7acacb3f5719a02.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "满"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不满",
+  "id": "e9809703d791a192e8739e40",
+  "level": 4,
+  "meaning": "dissatisfied, displeased",
+  "pinyin": "bùmǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-C.j^=BV!%P-1779527159859"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

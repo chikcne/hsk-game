@@ -1,0 +1,29 @@
+{
+  "audio": "946af1faf49f53c3669b0159c987a868133275da1d2e63381c38d0b6a9126100.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "治",
+  "id": "39aa13a1a0935d1e2e83e4f3",
+  "level": 5,
+  "meaning": "to treat, to manage, to cure",
+  "pinyin": "zhì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l7n+(hQ6SS-1779527162312"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

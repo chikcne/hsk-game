@@ -1,0 +1,32 @@
+{
+  "audio": "f9dd9029a9932f2dd4aee7137447c3f184b43d4539293f76d4a9535de91e8481.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传",
+      "染"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "传染",
+  "id": "68ca3967424346ba359813d9",
+  "level": 6,
+  "meaning": "to infect",
+  "pinyin": "chuánrǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-203-1779527162606"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

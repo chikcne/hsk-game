@@ -1,0 +1,29 @@
+{
+  "audio": "9e12d3fac1b0bccc440bf7fcb20386a206b813893c893a32afd0a2e7c9f9a1c7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "目标",
+  "id": "d83d6582271f237147fe6a4c",
+  "level": 4,
+  "meaning": "goal, target, objective",
+  "pinyin": "mùbiāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-dgC]ESEhv~-1779527160320"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

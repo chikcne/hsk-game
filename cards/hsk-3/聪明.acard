@@ -1,0 +1,29 @@
+{
+  "audio": "7a82bf5e599d56cc6021e52715e455d4f9555e33f62bdb1a2804118c54d53a19.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "聪明",
+  "id": "49b19d7faaaa5c4db9f7998d",
+  "level": 3,
+  "meaning": "smart, clever",
+  "pinyin": "cōngmíng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-o>=)=pWLSO-1779527159373"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

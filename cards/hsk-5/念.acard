@@ -1,0 +1,29 @@
+{
+  "audio": "a507e3044899ef6c7fbd23d35604175352f830f1ca7341fb60278fbee7415b77.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "念",
+  "id": "0959819757c6983d5000f26e",
+  "level": 5,
+  "meaning": "to read aloud, to miss",
+  "pinyin": "niàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-n?M;<irvsl-1779527161604"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

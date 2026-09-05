@@ -1,0 +1,32 @@
+{
+  "audio": "742a923c795e056fa184bdea7253ba34658c5ea482391f52df567a3d2942a455.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "全",
+      "安"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "安全",
+  "id": "b0c42074d912a7b4982959ef",
+  "level": 3,
+  "meaning": "safe",
+  "pinyin": "ānquán",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-y:?nx#{uUd-1779527159308"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

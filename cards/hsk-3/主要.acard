@@ -1,0 +1,31 @@
+{
+  "audio": "464643796b5367042e62eb97c215fbfcf7958219b3c663679b5d68e521d678d4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "要"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主要",
+  "id": "3c0e46ac9bbf0102606fc904",
+  "level": 3,
+  "meaning": "main",
+  "pinyin": "zhǔyào",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-i+3&xT=cC<-1779527159790"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

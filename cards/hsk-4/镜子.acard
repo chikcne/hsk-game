@@ -1,0 +1,31 @@
+{
+  "audio": "c4118ef3103115bb52ac311dc2bdf68b5921e809477ad47b906f52cb76ffeeea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "镜子",
+  "id": "e06e1bb5b8a7574f81a6b921",
+  "level": 4,
+  "meaning": "mirror",
+  "pinyin": "jìngzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xUpK!dyU(m-1779527160209"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

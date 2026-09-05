@@ -1,0 +1,32 @@
+{
+  "audio": "9157cc229715350a10f85fb52f655677d3c1e2d2af26f5ccd5fed5add76a4ab0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "杀",
+      "自"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自杀",
+  "id": "0e584f50c5e0d826ce7853c6",
+  "level": 6,
+  "meaning": "to commit suicide",
+  "pinyin": "zìshā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1781-1779527164184"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

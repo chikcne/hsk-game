@@ -1,0 +1,29 @@
+{
+  "audio": "578aeda9b2ebe663b0c76dd7d2e58fb69fe0513748689da685e715f8ee60175d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "批",
+  "id": "f1a5f8825146f233941edb97",
+  "level": 5,
+  "meaning": "to criticize, to approve",
+  "pinyin": "pī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": "verb",
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bWnIjO0%~!-1779527161629"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

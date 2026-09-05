@@ -1,0 +1,32 @@
+{
+  "audio": "6266c6babae7f2e5bf504208ffbbae497ccec2a023b33dfd1b5629fecc41a90e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "落",
+      "角"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "角落",
+  "id": "72159ea7738145cae01866ea",
+  "level": 6,
+  "meaning": "corner",
+  "pinyin": "jiǎoluò",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-677-1779527163080"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

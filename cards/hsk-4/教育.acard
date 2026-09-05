@@ -1,0 +1,31 @@
+{
+  "audio": "a8fc017e9d04fb9b428365c197b9cf4393ccbe1d959be2c734b48b74dc712e14.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "教"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "教育",
+  "id": "53790e742d1465c9a816f3f6",
+  "level": 4,
+  "meaning": "education; to educate",
+  "pinyin": "jiàoyù",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-lT/t-o|4yG-1779527160180"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

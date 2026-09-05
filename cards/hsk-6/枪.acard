@@ -1,0 +1,29 @@
+{
+  "audio": "405427a0411bcb5ddd9ae3d86931ffa84b2141a17fe56b33d444d4e11e62c0c8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "枪",
+  "id": "4a57d3bad14e25eb2f2b3a13",
+  "level": 6,
+  "meaning": "gun",
+  "pinyin": "qiāng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1040-1779527163443"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

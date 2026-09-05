@@ -1,0 +1,33 @@
+{
+  "audio": "557a8312369410d946d562f4de03ae778fbc1a185c4914e0c3628b519a30ff66.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代",
+      "化",
+      "现代"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "现代化",
+  "id": "011a8ae91010433830b4cb8c",
+  "level": 5,
+  "meaning": "to modernize",
+  "pinyin": "xiàndàihuà",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P$tJ9web$}-1779527162043"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

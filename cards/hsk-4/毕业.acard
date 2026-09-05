@@ -1,0 +1,31 @@
+{
+  "audio": "f51b27177b2777b976d3aa506f37a041e5a6a4a914f012949aa1576c15a30c5b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "毕业",
+  "id": "1bc95fc75d4263cd1436398d",
+  "level": 4,
+  "meaning": "to graduate",
+  "pinyin": "bìyè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-x*9_3UcNpQ-1779527159832"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

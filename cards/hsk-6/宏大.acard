@@ -1,0 +1,31 @@
+{
+  "audio": "19da93d18454065b911ce0e0360e966bb0c061421c73dac906db740a7bcb9b2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "宏大",
+  "id": "b806b52caaf6363efddd948e",
+  "level": 6,
+  "meaning": "grand, magnificent",
+  "pinyin": "hóngdà",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-550-1779527162953"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

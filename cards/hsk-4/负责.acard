@@ -1,0 +1,29 @@
+{
+  "audio": "4aa93160522c87d21903ce602689cd7c5f9e5e5e760f0a55e7e51e41aa0083fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "负责",
+  "id": "5b086ff8fdb8800a656576a8",
+  "level": 4,
+  "meaning": "to be responsible; responsible",
+  "pinyin": "fùzé",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-q#jv6J`,cr-1779527160018"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

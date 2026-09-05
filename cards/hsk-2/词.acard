@@ -1,0 +1,29 @@
+{
+  "audio": "463c611f1a5efebaa25d55ea27bfff52d6ee3162a1e665b16af41220080ddb35.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "词",
+  "id": "486837b1e3cf138c6824b0f6",
+  "level": 2,
+  "meaning": "word, term",
+  "pinyin": "cí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-vt*VXXOq^o-1779527159125"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

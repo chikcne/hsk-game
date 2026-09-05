@@ -1,0 +1,32 @@
+{
+  "audio": "f5ff04daca3e2fbe84129eeb71eaa0a88611f843c28a161edcfb42490024144b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "就",
+      "算"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "就算",
+  "id": "672282214533008828303929",
+  "level": 6,
+  "meaning": "even if",
+  "pinyin": "jiùsuàn",
+  "pos": "连",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-737-1779527163140"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

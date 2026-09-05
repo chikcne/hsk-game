@@ -1,0 +1,32 @@
+{
+  "audio": "3fc4d10eae5f3f819aeaa256d833b4882f084344e09a049522d8c6e5a932a51c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "行",
+      "通"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "通行",
+  "id": "c0240a3464f0f6f9fb4bc631",
+  "level": 5,
+  "meaning": "to pass through",
+  "pinyin": "tōngxíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HMzfa.Z&pB-1779527161943"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

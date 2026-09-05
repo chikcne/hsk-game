@@ -1,0 +1,31 @@
+{
+  "audio": "859233281f6739d62b3ea4f56fdf0b7ebf80b5ab6f911ef1c0cbe36fc27a3a81.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "海"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "海洋",
+  "id": "a6cd55f7a99262d44b3c1c1d",
+  "level": 4,
+  "meaning": "ocean, sea",
+  "pinyin": "hǎiyáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-JcQ4NcmsY@-1779527160086"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

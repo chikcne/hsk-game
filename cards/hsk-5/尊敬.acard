@@ -1,0 +1,29 @@
+{
+  "audio": "9d136701ab3b4435aa3f41f9f8ce9ef4a1832a3dbdefec3576b8a1141f62525d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "尊敬",
+  "id": "ac23753408bc23a2d3f56842",
+  "level": 5,
+  "meaning": "to respect; respectful",
+  "pinyin": "zūnjìng",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qj*J~ZS47k-1779527162401"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

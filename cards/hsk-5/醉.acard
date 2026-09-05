@@ -1,0 +1,29 @@
+{
+  "audio": "8ffddabb29bb9c654c8f5dc27a4c144b8e7ea6b398f39379db88af49b97cf177.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "醉",
+  "id": "d7920d84cc775f0e6595ffe4",
+  "level": 5,
+  "meaning": "to be drunk",
+  "pinyin": "zuì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-m9<.Ha`0dA-1779527162398"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

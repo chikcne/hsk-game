@@ -1,0 +1,31 @@
+{
+  "audio": "08a4bfaa306e62b6e7139ae43227b473b67fa88f5aaaf4f1bc2edfa3bfadf33c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "产"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遗产",
+  "id": "0ee69e03253f056a86f8fbfb",
+  "level": 6,
+  "meaning": "heritage",
+  "pinyin": "yíchǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1544-1779527163947"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

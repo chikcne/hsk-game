@@ -1,0 +1,29 @@
+{
+  "audio": "73e6f29575e744eec0f70e373c67c98de45419a69c9b3c599a002d630200d88d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哦",
+  "id": "3deca5f4dcec702038b99030",
+  "level": 5,
+  "meaning": "oh (interjection indicating understanding)",
+  "pinyin": "ò",
+  "pos": "interjection",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-OhCDNE=Nm[-1779527161610"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

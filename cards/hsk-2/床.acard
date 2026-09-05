@@ -1,0 +1,29 @@
+{
+  "audio": "6bcedf6146d39de2a9122cc314a0b6d8fe4c301cad5ee19661291f6f1c53223c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "床",
+  "id": "6063754c5093856472e1e748",
+  "level": 2,
+  "meaning": "bed",
+  "pinyin": "chuáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-GVB4CYumLO-1779527159124"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

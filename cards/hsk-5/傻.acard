@@ -1,0 +1,29 @@
+{
+  "audio": "4f1a860fd5f04bc224a520a974fe2cb80d934082878bad4af85d0319b97387c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "傻",
+  "id": "337d11811a0f79dcccf6de0d",
+  "level": 5,
+  "meaning": "stupid, foolish",
+  "pinyin": "shǎ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ldUC{uj#A!-1779527161749"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

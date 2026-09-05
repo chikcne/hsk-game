@@ -1,0 +1,31 @@
+{
+  "audio": "ac31e7a9a06a8ff22e02f20ef0ec700d45e064dd7f49da13a10cea5755956c47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "庞大",
+  "id": "a5907bda75f859315bf528c0",
+  "level": 6,
+  "meaning": "huge",
+  "pinyin": "pángdà",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-972-1779527163375"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "02f7614ae9c21c5979f3d3d6cd7c6ab3b68e93a1c3efd5eadfcad8cfff01c265.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "要",
+      "首"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "首要",
+  "id": "920a50a32eb8e6f60506ae65",
+  "level": 6,
+  "meaning": "primary, chief",
+  "pinyin": "shǒuyào",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1215-1779527163618"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

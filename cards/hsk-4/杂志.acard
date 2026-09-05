@@ -1,0 +1,31 @@
+{
+  "audio": "0dbbce13396e386f30d7dd12cb6da034538f0c0de5afc8738fa4cb38ac647672.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "杂"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "杂志",
+  "id": "bcbe262423253e338cd4aa59",
+  "level": 4,
+  "meaning": "magazine",
+  "pinyin": "zázhì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ccM!8h`be%-1779527160716"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

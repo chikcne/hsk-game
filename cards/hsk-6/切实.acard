@@ -1,0 +1,31 @@
+{
+  "audio": "d65d3f26be5f600fa118063ebc75c013c71f8fb19fdcd202626538ab9a16f4f6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "切"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "切实",
+  "id": "e1e5cbaca49897eed936aebf",
+  "level": 6,
+  "meaning": "practical, realistic",
+  "pinyin": "qièshí",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1048-1779527163451"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

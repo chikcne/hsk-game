@@ -1,0 +1,29 @@
+{
+  "audio": "6589cf914a76c2b8e2373aed4a1c2e3a8e08c0e4b96ab32ff29974a4bdb51f84.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "顿",
+  "id": "00261f83d8207784f8c070bf",
+  "level": 4,
+  "meaning": "measure word for meals, scolding; (to pause)",
+  "pinyin": "dùn",
+  "pos": "classifier、 （verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-QqzHTyBFA=-1779527159982"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

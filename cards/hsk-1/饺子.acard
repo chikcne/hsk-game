@@ -1,0 +1,31 @@
+{
+  "audio": "200f4a4f17a091ac337e134c28710a7ad75ec1ad482fbeb3279f18a6e5d55901.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "饺子",
+  "id": "5759db0c810f988c240acc19",
+  "level": 1,
+  "meaning": "dumpling",
+  "pinyin": "jiǎozi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-g#gGn=g{a*-1779527158893"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

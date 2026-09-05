@@ -1,0 +1,33 @@
+{
+  "audio": "db09ad32d717d516ed193e386014f644f8d0a283a217e635ad80256e241d5340.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "书",
+      "图",
+      "图书"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "图书馆",
+  "id": "0ec891f356bdf95d50522885",
+  "level": 3,
+  "meaning": "library",
+  "pinyin": "túshūguǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-iWRvTOR1,=-1779527159666"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

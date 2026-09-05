@@ -1,0 +1,31 @@
+{
+  "audio": "913915ee56bcecd26abd4ef0d01c2b85be93171f71c7a74bbc678ff63e92e385.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "鱼"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "钓鱼",
+  "id": "5f8a34c561baf1bd61b0c89e",
+  "level": 6,
+  "meaning": "to fish",
+  "pinyin": "diàoyú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-306-1779527162709"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

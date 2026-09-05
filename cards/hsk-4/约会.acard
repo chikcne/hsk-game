@@ -1,0 +1,32 @@
+{
+  "audio": "c917819573639567a8f92e1823a130fc6780b98eaea69891c9a80c91fe23fdd7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "约"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "约会",
+  "id": "c3389d7e505204695a8739ff",
+  "level": 4,
+  "meaning": "to date, to meet up; date, appointment",
+  "pinyin": "yuēhuì",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-jFgLEb~kec-1779527160710"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

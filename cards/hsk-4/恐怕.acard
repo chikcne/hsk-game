@@ -1,0 +1,31 @@
+{
+  "audio": "3e72a4582920134a8b6777221c57ebf68a1ec86dad701ea128798108772a7426.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "怕"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "恐怕",
+  "id": "df42cf3633b60efec86bd903",
+  "level": 4,
+  "meaning": "to fear, to be afraid; I'm afraid, perhaps, maybe",
+  "pinyin": "kǒngpà",
+  "pos": "verb、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vKXSj@$9;%-1779527160241"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

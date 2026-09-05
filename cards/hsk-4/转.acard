@@ -1,0 +1,29 @@
+{
+  "audio": "f22bc72037fb2a32638fa4d67e00977e432450c41d82bca24758ba179de94466.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转",
+  "id": "237c441f286a7b0184e4645e",
+  "level": 4,
+  "meaning": "to turn, to shift, to transfer",
+  "pinyin": "zhuǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-q+=t(;&2VY-1779527160773"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

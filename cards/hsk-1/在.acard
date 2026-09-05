@@ -1,0 +1,29 @@
+{
+  "audio": "d76043c4bb3c68864614c1dc5f0f19e866d3cc16b965029bb7a6043d42bca0a7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "在",
+  "id": "944cf5f64bb7b26816440186",
+  "level": 1,
+  "meaning": "to be at; at; in the middle of",
+  "pinyin": "zài",
+  "pos": "verb、 preposition、 adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-KFL2Ps!/?Q-1779527159074"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

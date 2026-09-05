@@ -1,0 +1,32 @@
+{
+  "audio": "a33a9661db49acd6ebe281b3846675a4b2a8cf59662ac4661654e2657bfeee07.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "包",
+      "含"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "包含",
+  "id": "8baf60f3df3aefd1e7466811",
+  "level": 5,
+  "meaning": "to contain",
+  "pinyin": "bāohán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E,+w.wAmSw-1779527160819"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

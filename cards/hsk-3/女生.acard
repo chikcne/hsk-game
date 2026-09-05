@@ -1,0 +1,32 @@
+{
+  "audio": "637c438e19a9c04f02fc675ad69899d4f67e32fb43d8d464e597a79c43b80971.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "女",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "女生",
+  "id": "e8042009467c4edae7ed37c9",
+  "level": 3,
+  "meaning": "girl student",
+  "pinyin": "nǚshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-b)t!|O?0dW-1779527159591"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

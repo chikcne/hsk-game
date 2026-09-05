@@ -1,0 +1,32 @@
+{
+  "audio": "717dffabd0de0f21fecc5274061809c2cfc2854490a4b67dab6287e6c97e175a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "份",
+      "月"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "月份",
+  "id": "061059ece1ebd0573b198c9f",
+  "level": 4,
+  "meaning": "month",
+  "pinyin": "yuèfèn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zf20ZX[S15-1779527160713"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

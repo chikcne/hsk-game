@@ -1,0 +1,29 @@
+{
+  "audio": "405298ae7d829011f0a64a797705642a7ebae1cb7e41842b13ce52e594cde854.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "摔",
+  "id": "d52b89a32e4f47b9ccf6b216",
+  "level": 5,
+  "meaning": "to fall, to throw",
+  "pinyin": "shuāi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hm<iGx]6eR-1779527161872"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

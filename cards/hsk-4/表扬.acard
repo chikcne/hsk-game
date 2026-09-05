@@ -1,0 +1,31 @@
+{
+  "audio": "bdfba1da98054ddac05a033eeddfecf3bd44c51cc406d3c940139f1ab4b8dba4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "表"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "表扬",
+  "id": "d4facea9adfa0525457a6e76",
+  "level": 4,
+  "meaning": "to praise, to commend",
+  "pinyin": "biǎoyáng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zU&,?6X/2U-1779527159840"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

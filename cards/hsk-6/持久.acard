@@ -1,0 +1,31 @@
+{
+  "audio": "3a54e7a624116292bacbd08dcdddeb16d76a0e13e767d9ebe146c07f4a5acf9f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "久"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "持久",
+  "id": "93fe43105be2041c950d166c",
+  "level": 6,
+  "meaning": "lasting, enduring",
+  "pinyin": "chíjiǔ",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-169-1779527162572"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

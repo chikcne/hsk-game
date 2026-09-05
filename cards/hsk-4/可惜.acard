@@ -1,0 +1,31 @@
+{
+  "audio": "b33a817e8930b7eea49b9239df8d299e26f439f2ee2cb9391170f71471c0ef27.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "可"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "可惜",
+  "id": "07a2d3974fd16c2da5dbbf6f",
+  "level": 4,
+  "meaning": "regrettable, unfortunate, a pity",
+  "pinyin": "kěxī",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qv[IijTEQ`-1779527160232"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

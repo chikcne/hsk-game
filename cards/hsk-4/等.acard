@@ -1,0 +1,29 @@
+{
+  "audio": "c964be837dc52a5a81e83baddbab5187b530020ff91824cba6cd309c1665ec1e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "等",
+  "id": "b393078535c074b4ffbdfafa",
+  "level": 4,
+  "meaning": "and so on, etc.; (class, grade; measure word)",
+  "pinyin": "děng",
+  "pos": "auxiliary、 （noun、 classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J:|oQ4z|w)-1779527159950"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

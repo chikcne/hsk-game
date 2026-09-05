@@ -1,0 +1,32 @@
+{
+  "audio": "302ee903b95ce028d4a9a54ccc17254b75f497f5e479df8456f2e813b3a6d709.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "封",
+      "闭"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "封闭",
+  "id": "26dcc1dfd96d8714492a476d",
+  "level": 6,
+  "meaning": "to seal, to close",
+  "pinyin": "fēngbì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-391-1779527162794"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

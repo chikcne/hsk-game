@@ -1,0 +1,32 @@
+{
+  "audio": "df014cbfcb781c7ce04636f3dbac8f112e51990a86fb6aefe87b33ae05b48153.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "性",
+      "比"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "性价比",
+  "id": "ceed20844c9e706b3ce34d3b",
+  "level": 6,
+  "meaning": "cost-performance ratio",
+  "pinyin": "xìngjiàbǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1478-1779527163881"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

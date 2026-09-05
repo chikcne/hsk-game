@@ -1,0 +1,32 @@
+{
+  "audio": "bb17801786f4c00c01e6d2b7bfa159a51e010b170a6acfe6ed5e22cec2b4f7ab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "发"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发出",
+  "id": "13b1e52254bd6db73541f8d8",
+  "level": 4,
+  "meaning": "to send out, to issue",
+  "pinyin": "fāchū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I7wQOLg)W9-1779527159988"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

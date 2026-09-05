@@ -1,0 +1,31 @@
+{
+  "audio": "8050d8d4102a3dace15e3c3561587eb9918bd7bf910fb834d3206550b6737ab2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "黑"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "黑板",
+  "id": "74094169fd0f7ee3f3d9a0d8",
+  "level": 3,
+  "meaning": "blackboard",
+  "pinyin": "hēibǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-CEV^H6h9N8-1779527159472"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

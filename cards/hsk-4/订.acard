@@ -1,0 +1,29 @@
+{
+  "audio": "40df3ee5fcb26b8939c1869ba1d3119cf1bf87d66bf99ef540c8103ac0afbb6a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "订",
+  "id": "cc3aa256acc1c63ffde267e5",
+  "level": 4,
+  "meaning": "to order, to book",
+  "pinyin": "dìng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-LTgjp1{5u_-1779527159966"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

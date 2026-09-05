@@ -1,0 +1,31 @@
+{
+  "audio": "de39f3b819ffcecfb709ce8f5eddfa5992664b6735a0533a5e58282f5220d0e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "提"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "提供",
+  "id": "ce91e6fe8d57992f7ae1e2a9",
+  "level": 4,
+  "meaning": "to provide, to supply, to offer",
+  "pinyin": "tígōng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-CH6k}?n?%p-1779527160532"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

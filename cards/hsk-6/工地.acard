@@ -1,0 +1,31 @@
+{
+  "audio": "542d6a72d441e334df206122d0e8c67a6db07e5aa67eeba110519c53eaa394aa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "工地",
+  "id": "1f071d0dbe27963f011c1de2",
+  "level": 6,
+  "meaning": "construction site",
+  "pinyin": "gōngdì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-453-1779527162856"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

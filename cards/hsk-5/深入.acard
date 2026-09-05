@@ -1,0 +1,32 @@
+{
+  "audio": "18cef14d0de0801d57d889dc58db85ad98908b2aa3f40c6cb9e3cae4b90711d2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入",
+      "深"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "深入",
+  "id": "351de35d08797a1033863b12",
+  "level": 5,
+  "meaning": "to penetrate deeply; deep, thorough",
+  "pinyin": "shēnrù",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bxLIH40x8}-1779527161788"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "15ab43bac1ee87b1f90ee1045a685b6386ea8a37773697c9361ab625f3764acb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "台",
+  "id": "cf3c8bd8de03f3ddadc74517",
+  "level": 4,
+  "meaning": "measure word for machines, vehicles, etc.; (platform, stage)",
+  "pinyin": "tái",
+  "pos": "classifier、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-sY3@1`dGfn-1779527160517"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

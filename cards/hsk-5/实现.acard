@@ -1,0 +1,29 @@
+{
+  "audio": "179eec4b48abee421c5a57cb9bcb99d235eba0ff429b352e0c8addeee5fbbe2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实现",
+  "id": "4a6f83ff96f74229c0e05e7e",
+  "level": 5,
+  "meaning": "to realize, to achieve",
+  "pinyin": "shíxiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qIf*/cv=}M-1779527161823"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

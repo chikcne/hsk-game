@@ -1,0 +1,29 @@
+{
+  "audio": "411b3d50cfc10396f25f6fa0f8a71a73c49f371ca3591a4ae93b5e3b59db7afc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肩膀",
+  "id": "29b0b88b151896e45771a75e",
+  "level": 6,
+  "meaning": "shoulder",
+  "pinyin": "jiānbǎng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-641-1779527163044"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "60961a19161af3146e692dba6d25ff24e2cc02e2bdb3c83ffb4fe1b4b671434d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外形",
+  "id": "38af4eeb3ff784ade8b3862c",
+  "level": 5,
+  "meaning": "appearance, shape",
+  "pinyin": "wàixíng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wyjd*wa>i!-1779527161974"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

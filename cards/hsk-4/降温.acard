@@ -1,0 +1,31 @@
+{
+  "audio": "f7b1bb9030e405d8e3342923413d017fe724ab93fcb89610b6c78d920a6c6ec3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "降"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "降温",
+  "id": "d50468d9e9fa27189efb76c4",
+  "level": 4,
+  "meaning": "to cool down, to lower the temperature",
+  "pinyin": "jiàngwēn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o0t+`4rDB4-1779527160169"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

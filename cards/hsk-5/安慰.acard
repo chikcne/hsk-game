@@ -1,0 +1,31 @@
+{
+  "audio": "5d73f07a0d72407693abafc406337cd6f7c2263b9e8b9781a44f808de3cdbde4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "安"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "安慰",
+  "id": "fc3bc31c08d3d271d37acd4d",
+  "level": 5,
+  "meaning": "to comfort, to console; comforting",
+  "pinyin": "ānwèi",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-orbAj~])?A-1779527160810"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

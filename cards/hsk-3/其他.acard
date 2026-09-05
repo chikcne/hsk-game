@@ -1,0 +1,32 @@
+{
+  "audio": "b3399f94d45fea13e789d1fb1fc7ac2e5e4377045d42a046cc8ff564854458f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "他",
+      "其"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "其他",
+  "id": "14f4e251155e2574bfd6f9fe",
+  "level": 3,
+  "meaning": "other",
+  "pinyin": "qítā",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-G/9GYABX.q-1779527159603"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

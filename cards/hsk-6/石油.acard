@@ -1,0 +1,31 @@
+{
+  "audio": "5afe4fdab0663679dc8f40f0a7b492ec7b4213de8bf50d5d538d80d43d93160f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "油"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "石油",
+  "id": "a617c22a262b1038e376d52d",
+  "level": 6,
+  "meaning": "petroleum",
+  "pinyin": "shíyóu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1191-1779527163594"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

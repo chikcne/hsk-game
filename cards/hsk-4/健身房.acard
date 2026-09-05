@@ -1,0 +1,32 @@
+{
+  "audio": "24baf0be4e11bcc4368fa62ea29ee47075d67ab8cf662d1351b2fdb3b514fb5e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "健身",
+      "身"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "健身房",
+  "id": "ef4aa09ef50e97c7937c1994",
+  "level": 4,
+  "meaning": "gym",
+  "pinyin": "jiànshēnfáng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-OjKBT^Znio-1779527160156"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

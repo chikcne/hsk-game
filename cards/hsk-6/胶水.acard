@@ -1,0 +1,31 @@
+{
+  "audio": "009962a937cd1e3f7489f8d625ea4f0eaf3dbd8ee78734391924b213c64fa3ea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "胶水",
+  "id": "70628a714df878710fe38b3c",
+  "level": 6,
+  "meaning": "glue",
+  "pinyin": "jiāoshuǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-674-1779527163077"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

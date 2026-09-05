@@ -1,0 +1,29 @@
+{
+  "audio": "1f0859432869195936d831a0cddfe1f6e84de698e886149b84372c84fe686d5f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "饼",
+  "id": "5864077b1b87eb89bf2c5bbe",
+  "level": 5,
+  "meaning": "cake, biscuit",
+  "pinyin": "bǐng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-H6B3Zd<MGL-1779527160870"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

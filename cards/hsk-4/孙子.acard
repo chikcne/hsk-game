@@ -1,0 +1,31 @@
+{
+  "audio": "7e9141bdbd741bb58ed9a2142b5364bbcf2bbbcc3866b3d28d57bdebe2ae6f2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "孙子",
+  "id": "a2170240c515c02b10da4f62",
+  "level": 4,
+  "meaning": "grandson",
+  "pinyin": "sūnzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o`2|}agP?$-1779527160515"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

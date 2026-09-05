@@ -1,0 +1,31 @@
+{
+  "audio": "93a324a6e26c51cf614f7ffcdde047846290e71fc7e84c1e107fd3b132bb7bcd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "争"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "斗争",
+  "id": "4a3240beb40298da51ee5169",
+  "level": 6,
+  "meaning": "to struggle; struggle, fight",
+  "pinyin": "dòuzhēng",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-323-1779527162726"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

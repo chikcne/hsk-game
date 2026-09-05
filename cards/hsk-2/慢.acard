@@ -1,0 +1,29 @@
+{
+  "audio": "abe01d28b379bf50c754adbb5dcc662de2292336498ecec315d69b12b7c255d2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "慢",
+  "id": "8c6eec9f51c5c5ec54205539",
+  "level": 2,
+  "meaning": "slow",
+  "pinyin": "màn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-om<GDk9]SL-1779527159200"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

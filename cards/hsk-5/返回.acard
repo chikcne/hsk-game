@@ -1,0 +1,31 @@
+{
+  "audio": "b7b7973cd3b6b5a6ff013952748eb11d9602c62dcafad88a4b1982c6c56966f6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "回"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "返回",
+  "id": "79a21f21241f13bc17507bef",
+  "level": 5,
+  "meaning": "to return, to turn back",
+  "pinyin": "fǎnhuí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ba]U0l,Zh$-1779527161136"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

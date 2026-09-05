@@ -1,0 +1,29 @@
+{
+  "audio": "ece4ec6eeb2a6b8d8d6a02be14776afe374034fb74b1ff4ea2db3b494eb01752.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "户",
+  "id": "34342f5773bc4dafc4030a42",
+  "level": 6,
+  "meaning": "measure word for households",
+  "pinyin": "hù",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-560-1779527162963"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

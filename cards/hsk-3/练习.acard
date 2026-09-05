@@ -1,0 +1,31 @@
+{
+  "audio": "e0732d725aa8a54ffa17b8f51090ac7977c8527fcfb79662b1c149317ba2268c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "练"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "练习",
+  "id": "78c9017a6a1ab8a5ab2aa7e9",
+  "level": 3,
+  "meaning": "to practice; exercise",
+  "pinyin": "liànxí",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-n7P-+R(SF=-1779527159555"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

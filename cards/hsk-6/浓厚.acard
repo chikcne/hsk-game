@@ -1,0 +1,32 @@
+{
+  "audio": "4f5fbb24a40a46a23b80764c275219b12b7c823e372b158c8440f4317995c1e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "厚",
+      "浓"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "浓厚",
+  "id": "a37cf02962f678f702775309",
+  "level": 6,
+  "meaning": "strong, rich",
+  "pinyin": "nónghòu",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-961-1779527163364"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

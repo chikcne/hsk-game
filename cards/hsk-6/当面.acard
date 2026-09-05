@@ -1,0 +1,32 @@
+{
+  "audio": "8890d5ad1eae6cc07ccfca0ced73914accb4fae9134b1e07c622edf85d299c76.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "当",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当面",
+  "id": "cd9f18a87912d40bf870ae15",
+  "level": 6,
+  "meaning": "face to face, in person",
+  "pinyin": "dāngmiàn",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-271-1779527162674"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

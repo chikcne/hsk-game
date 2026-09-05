@@ -1,0 +1,29 @@
+{
+  "audio": "8c9b422a23fdda9b3077437041e1d738ca2e85692f8d999f7751672e390a2554.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亚洲",
+  "id": "240ac7a83f5313e5172695d1",
+  "level": 4,
+  "meaning": "Asia",
+  "pinyin": "Yàzhōu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-G@(*GUh.)n-1779527160645"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

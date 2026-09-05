@@ -1,0 +1,31 @@
+{
+  "audio": "699154217d03f7ce231903e20506e0e7caecd6b63149f83a26c438a755b30c37.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "车"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "客车",
+  "id": "5bb95893ae36ddd3d88c6110",
+  "level": 6,
+  "meaning": "passenger bus",
+  "pinyin": "kèchē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-787-1779527163190"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

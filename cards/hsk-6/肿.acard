@@ -1,0 +1,29 @@
+{
+  "audio": "31f5670444e15cf8e9cd42bbffcb3c5b63c02323a078573ee9f5bcd915a0c685.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肿",
+  "id": "ee630698375b083ba7995841",
+  "level": 6,
+  "meaning": "to swell",
+  "pinyin": "zhǒng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1727-1779527164130"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

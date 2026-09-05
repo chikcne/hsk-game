@@ -1,0 +1,32 @@
+{
+  "audio": "af2f90f1e73edd38ae2670aaa3fa07cc2fe63a14d4c76b7365ff198dfcf97afe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "放"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "放心",
+  "id": "15b1d650c436271428c6524b",
+  "level": 3,
+  "meaning": "to relax, to feel at ease",
+  "pinyin": "fàngxīn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-bjDPT;NGtk-1779527159429"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

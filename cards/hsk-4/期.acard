@@ -1,0 +1,29 @@
+{
+  "audio": "b78fcc5ef800f5aec46cf9f548888f8bc01c71e398dd4ef1ed2700938ebae660.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "期",
+  "id": "96437fbf5e4aefa4dc347d1e",
+  "level": 4,
+  "meaning": "period, phase; measure word for issues, semesters, etc.",
+  "pinyin": "qī",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-F+Ji&B_~AS-1779527160367"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

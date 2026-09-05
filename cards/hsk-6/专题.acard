@@ -1,0 +1,31 @@
+{
+  "audio": "13a067df26ef7286453746f51b46b9d42566ced2f2b4ccbb60fb7ae790f5a3c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "题"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "专题",
+  "id": "015836d557c615fb4144c9c1",
+  "level": 6,
+  "meaning": "special topic",
+  "pinyin": "zhuāntí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1761-1779527164164"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

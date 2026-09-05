@@ -1,0 +1,32 @@
+{
+  "audio": "d0655ab9cc0858d4f21e2f7a7366a351b06336c295f982df180a70d7a9036d04.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "总",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "总理",
+  "id": "8e73442023547523ffffb4c5",
+  "level": 6,
+  "meaning": "premier, prime minister",
+  "pinyin": "zǒnglǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1789-1779527164192"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

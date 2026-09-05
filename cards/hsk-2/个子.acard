@@ -1,0 +1,32 @@
+{
+  "audio": "55a51fc557f988645e10326d0e98a7aebed73edf56e71d3855ed667edfac5b5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "个",
+      "子"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "个子",
+  "id": "9ed4321cfcb6e0636a2a386c",
+  "level": 2,
+  "meaning": "height, stature",
+  "pinyin": "gèzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-jABf}Qy#YE-1779527159147"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

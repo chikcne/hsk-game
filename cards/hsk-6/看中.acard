@@ -1,0 +1,32 @@
+{
+  "audio": "65634ee29aa22e3b167755e39d42a32e53e0fd94110a992f44daa572ef5708c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "看"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看中",
+  "id": "4184958158cb291f5685de56",
+  "level": 6,
+  "meaning": "to take a fancy to",
+  "pinyin": "kànzhòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-772-1779527163175"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

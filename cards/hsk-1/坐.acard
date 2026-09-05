@@ -1,0 +1,29 @@
+{
+  "audio": "17c1764acbb415e4d5658b3d848870103988d98010adc16f8e28fb2def9e804c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "坐",
+  "id": "af13dcef1a3adc7ad428ee8f",
+  "level": 1,
+  "meaning": "to sit",
+  "pinyin": "zuò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-M=<yANuFBz-1779527159101"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

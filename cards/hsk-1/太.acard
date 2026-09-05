@@ -1,0 +1,29 @@
+{
+  "audio": "32e3234a2e4397b2ab2e7baa520d0ddfce0e5a00f61b9f50cb5bd4bbec5b05aa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "太",
+  "id": "ae4b88c4baec7e3c820bb0af",
+  "level": 1,
+  "meaning": "too, extremely",
+  "pinyin": "tài",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-j.Y:zEI&a6-1779527159009"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

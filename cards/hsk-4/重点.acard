@@ -1,0 +1,32 @@
+{
+  "audio": "a3b3839ef384e66f49ea37f52c7ff32e1e24a34a9a044de8d7a7955d9068eeb6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点",
+      "重"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "重点",
+  "id": "09f93e82f27788ab363e3651",
+  "level": 4,
+  "meaning": "key point, emphasis; mainly, emphatically",
+  "pinyin": "zhòngdiǎn",
+  "pos": "noun、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-baEuyNT($+-1779527160764"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

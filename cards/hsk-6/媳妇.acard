@@ -1,0 +1,29 @@
+{
+  "audio": "31359af3460317c003b000b2ac86f4384c0b5a28a19a91a5e6e75d14c071549e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "媳妇",
+  "id": "a969b0480c2165106f1d3050",
+  "level": 6,
+  "meaning": "daughter-in-law",
+  "pinyin": "xífu",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1403-1779527163806"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

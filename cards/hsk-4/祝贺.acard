@@ -1,0 +1,31 @@
+{
+  "audio": "4749435f52849cbdd388cd2aadc20c2c90217a60119b5107e616cfdc7cb5233d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "祝"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "祝贺",
+  "id": "d5b29d95d9ce7cb2d448bc06",
+  "level": 4,
+  "meaning": "to congratulate, to offer congratulations",
+  "pinyin": "zhùhè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-c&]d|xOpVx-1779527160769"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

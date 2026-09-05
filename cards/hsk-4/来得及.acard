@@ -1,0 +1,33 @@
+{
+  "audio": "80233e19efe10daba421b5db6fce7a7c54e0bd028cc6c85ef7458af7d2a70d2e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "及",
+      "得",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "来得及",
+  "id": "af7968a20b3265dd38125dac",
+  "level": 4,
+  "meaning": "there's still time, can make it in time",
+  "pinyin": "láidejí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-pk;#fXlF?E-1779527160254"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "2d6a2d4c13786851e856b20ffd8f0d9d8ee0a9b2e358c3465117cf2400ea17c9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "湿"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "潮湿",
+  "id": "39da12e62f69106542cd8219",
+  "level": 6,
+  "meaning": "damp, humid",
+  "pinyin": "cháoshī",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-144-1779527162547"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

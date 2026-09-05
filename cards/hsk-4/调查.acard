@@ -1,0 +1,32 @@
+{
+  "audio": "51c03255fb873a870e4880f85dc58aa7df6990d41779a3921a408a356194f9e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "查",
+      "调"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "调查",
+  "id": "3ba84fe2415b4fc7e5ab9175",
+  "level": 4,
+  "meaning": "to investigate",
+  "pinyin": "diàochá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-O4+!A>%UGL-1779527159965"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

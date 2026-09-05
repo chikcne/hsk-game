@@ -1,0 +1,31 @@
+{
+  "audio": "b58b8842391f71f0040cfa35b1f9ae9e9f5f706a8e0bda94d7984b218a7cefb0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赞同",
+  "id": "50761f0ec1dedf6eed0b80d9",
+  "level": 6,
+  "meaning": "to agree, to approve",
+  "pinyin": "zàntóng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1647-1779527164050"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

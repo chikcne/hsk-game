@@ -1,0 +1,32 @@
+{
+  "audio": "1f60acea3d86e377ca1709610f875cbd16c30bea6230998874a43f490b6e62e8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "排",
+      "球"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "排球",
+  "id": "9487a6a38169ff7757a6b1e8",
+  "level": 4,
+  "meaning": "volleyball",
+  "pinyin": "páiqiú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-N`pF~SAP3:-1779527160349"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

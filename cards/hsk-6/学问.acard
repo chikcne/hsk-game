@@ -1,0 +1,32 @@
+{
+  "audio": "b4130940c6cf106519f624db157cc5dfd3ab5b5a013f449d1a54129ba7d18b3a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "问"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学问",
+  "id": "a1f77b4a7f28389df814c841",
+  "level": 6,
+  "meaning": "knowledge",
+  "pinyin": "xuéwen",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1491-1779527163894"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

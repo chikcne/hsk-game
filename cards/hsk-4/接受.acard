@@ -1,0 +1,32 @@
+{
+  "audio": "00adc0ccb30756b55716e8efdac45406203a9a8fc34e258d60cfd3753b1b2371.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "受",
+      "接"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "接受",
+  "id": "b43bed1244be9a5c92796419",
+  "level": 4,
+  "meaning": "accept",
+  "pinyin": "jiēshòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-F[:Q|jzD|X-1779527160183"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

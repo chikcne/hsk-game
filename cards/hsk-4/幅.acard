@@ -1,0 +1,29 @@
+{
+  "audio": "9a407362d37d199e00a9c4f0529eeae4309de59a42bcfe0044d614f715245f99.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "幅",
+  "id": "c67569b10c6b8c9de87f3cc1",
+  "level": 4,
+  "meaning": "measure word for paintings, photos, etc.",
+  "pinyin": "fú",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Hv*ld*vh8+-1779527160010"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

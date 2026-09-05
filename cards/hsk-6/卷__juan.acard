@@ -1,0 +1,29 @@
+{
+  "audio": "3c3ac46ef6b7d8f8b387e4ba397e808f67e48a93d7f375648ae76a6432307b48.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "卷",
+  "id": "bcb4ff8abb10ec66f787e452",
+  "level": 6,
+  "meaning": "measure word for books; volume",
+  "pinyin": "juàn",
+  "pos": "量、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-754-1779527163157"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

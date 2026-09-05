@@ -1,0 +1,29 @@
+{
+  "audio": "dd29a7c6ebc191d0384ac6e2c055e4c07bef620976934344e76c8b9f3ef71abb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "季",
+  "id": "6aeb06315e07f25cedff8437",
+  "level": 3,
+  "meaning": "season",
+  "pinyin": "jì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-tn1CSce6PF-1779527159496"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

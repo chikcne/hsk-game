@@ -1,0 +1,29 @@
+{
+  "audio": "7fb80076df319f933169099e4e2e56599eec2d1377ed6b07a9acc2aaf3e81ce0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "烟",
+  "id": "973d058b71045eba0faf495e",
+  "level": 4,
+  "meaning": "cigarette, smoke, mist",
+  "pinyin": "yān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-OphvU253`j-1779527160646"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

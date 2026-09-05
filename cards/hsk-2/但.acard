@@ -1,0 +1,29 @@
+{
+  "audio": "65e5c0789f9724e0783ed66e128565b471583fb5d9b5ac2402e41f4457b5db19.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "但",
+  "id": "402ba4263d6aa6d2742985af",
+  "level": 2,
+  "meaning": "but, however; (only, merely)",
+  "pinyin": "dàn",
+  "pos": "conjunction、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-O4edZ@[pYx-1779527159133"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

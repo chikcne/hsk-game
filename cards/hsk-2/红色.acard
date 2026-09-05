@@ -1,0 +1,31 @@
+{
+  "audio": "4bf2bfe441ff6ce378b108fa2ce60224a42871100420cae511a5ea3b04805707.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "红"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "红色",
+  "id": "b813f6e6a0c285bcc733d51c",
+  "level": 2,
+  "meaning": "red",
+  "pinyin": "hóngsè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-NfFh8|q}C`-1779527159158"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

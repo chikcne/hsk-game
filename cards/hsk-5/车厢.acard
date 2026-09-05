@@ -1,0 +1,31 @@
+{
+  "audio": "7d7f382dc9cc24b9f377c243e8f4ebe9efc05149112a8ce71593ac2043ccc9ff.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "车"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "车厢",
+  "id": "3bf9ede8781504d0fde1986a",
+  "level": 5,
+  "meaning": "carriage, compartment",
+  "pinyin": "chēxiāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hQ``1hllB{-1779527160930"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

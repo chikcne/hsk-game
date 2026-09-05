@@ -1,0 +1,32 @@
+{
+  "audio": "e46781321be49cf33f8a58a2d0c5fd17632aa450b340f39fe0a466084d0faf37.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "签",
+      "订"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "签订",
+  "id": "2249f8f641041e60d34161a1",
+  "level": 5,
+  "meaning": "to sign, to conclude a contract",
+  "pinyin": "qiāndìng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Bk1;/W6u:q-1779527161663"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

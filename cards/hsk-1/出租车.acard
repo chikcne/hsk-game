@@ -1,0 +1,34 @@
+{
+  "audio": "19784442b77a187aa9ac28e637b365b14c2112f5994ddf2403defe3dece50bb3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "出租",
+      "租",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出租车",
+  "id": "3ecf2244cc16ce9d5baf6112",
+  "level": 1,
+  "meaning": "taxi",
+  "pinyin": "chūzūchē",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-rVqS@s5rVF-1779527158825"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

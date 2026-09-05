@@ -1,0 +1,31 @@
+{
+  "audio": "ad6e0cbab1d5fd2d98eaa36d06081247de10767e81549e7657d07931f66df8b3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "制"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "制作",
+  "id": "fb7143f8540ecefeb06c7cb1",
+  "level": 5,
+  "meaning": "to produce, to make",
+  "pinyin": "zhìzuò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KuIftK82%I-1779527162322"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

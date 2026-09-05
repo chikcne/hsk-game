@@ -1,0 +1,31 @@
+{
+  "audio": "1932f48c44ec77b3212cdd91629656e21f0d3ff723410eae22514d9471652b2a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "直"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "简直",
+  "id": "87c03844ed966cd7ceb462d7",
+  "level": 5,
+  "meaning": "simply, absolutely",
+  "pinyin": "jiǎnzhí",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-N{<j[P>2aH-1779527161374"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

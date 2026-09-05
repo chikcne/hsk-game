@@ -1,0 +1,32 @@
+{
+  "audio": "6f8ec34b1726d4ee7e449e935717a6d8bf0dee507e0b0ca29836f8f8b1cd852d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "开"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "开学",
+  "id": "81e01b62e523cee1a123415c",
+  "level": 2,
+  "meaning": "school starts",
+  "pinyin": "kāixué",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-d5L3+Zb.]m-1779527159182"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

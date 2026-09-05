@@ -1,0 +1,29 @@
+{
+  "audio": "aa41e2bca1c9154e9a64b12c9d7c1bbd1c5e53329fd8b43aed2e9246e7a44807.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "挑",
+  "id": "84e1cad80e373f222b0c32a1",
+  "level": 5,
+  "meaning": "to choose, to pick",
+  "pinyin": "tiāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G3ZIA:[MCV-1779527161931"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

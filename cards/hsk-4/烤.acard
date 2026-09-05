@@ -1,0 +1,29 @@
+{
+  "audio": "95577134b5e929aec43e01fc7a8026cae5304dca7bce320dc07cb41d4a6bda44.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "烤",
+  "id": "4265d7e55140f48f991c15fa",
+  "level": 4,
+  "meaning": "to bake, to roast, to grill, to toast",
+  "pinyin": "kǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-E7d,vB:=(1-1779527160224"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

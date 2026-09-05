@@ -1,0 +1,32 @@
+{
+  "audio": "b7d5b8e6409dad91713dcd4f2be56bb43d20ec65e54a3d64d58b87b675a7e74f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不用",
+  "id": "039c80d529554b7eaab9192d",
+  "level": 3,
+  "meaning": "need not",
+  "pinyin": "búyòng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-JiG(W7Y[<?-1779527159343"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

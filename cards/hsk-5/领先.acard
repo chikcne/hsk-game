@@ -1,0 +1,32 @@
+{
+  "audio": "763addf16c109d44589fcf90a217fb38e18419b85ad93bc041f13a37e381b264.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "先",
+      "领"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "领先",
+  "id": "1abbe14a5f9174b46a95be7d",
+  "level": 5,
+  "meaning": "to lead, to be in the lead",
+  "pinyin": "lǐngxiān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-MzCg.C>RFW-1779527161532"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "7934c14dc5f8f1860fc1031fe93c982be1918914ccbe7e6f5e3931004ac42307.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拨打",
+  "id": "e70de746c5c3f98e6639e919",
+  "level": 5,
+  "meaning": "to dial",
+  "pinyin": "bōdǎ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-H>^3LZEmyl-1779527160873"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

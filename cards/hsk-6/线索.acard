@@ -1,0 +1,31 @@
+{
+  "audio": "b8ceb7b5d0a211be249216ab54df4edcd62396e53c78f72cc41421782808031c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "线"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "线索",
+  "id": "8e15872995dc3338cbaac82a",
+  "level": 6,
+  "meaning": "clue",
+  "pinyin": "xiànsuǒ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1432-1779527163835"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

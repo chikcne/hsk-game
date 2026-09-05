@@ -1,0 +1,29 @@
+{
+  "audio": "c873894aafd5e2942716641e4f4c621e686611d1b250489fe6323ad087b94bc6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "驾驶",
+  "id": "36a879f104b08903f0d5f4e3",
+  "level": 5,
+  "meaning": "to drive",
+  "pinyin": "jiàshǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-NE?#@UkPTH-1779527161364"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

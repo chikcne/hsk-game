@@ -1,0 +1,32 @@
+{
+  "audio": "e6cb047d21714e1a23ada500e63878f1e6d33f1ce6544125acd6949e560693a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "园",
+      "家"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "家园",
+  "id": "be04d9d3bda9fd98b88e3d07",
+  "level": 6,
+  "meaning": "homeland",
+  "pinyin": "jiāyuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-636-1779527163039"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

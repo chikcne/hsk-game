@@ -1,0 +1,31 @@
+{
+  "audio": "bb438d51bd4d665017a80edf49f64939e515d532036a147db41cbd2c1472881b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "问"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "访问",
+  "id": "3f8afa9f23b85c94f09267ae",
+  "level": 5,
+  "meaning": "to visit",
+  "pinyin": "fǎngwèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-o}[FPy_6^l-1779527161147"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

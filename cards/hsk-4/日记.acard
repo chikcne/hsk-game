@@ -1,0 +1,32 @@
+{
+  "audio": "0976d55d0acba85ab55c7a16cb1bbb70dc8df0059cc9a808c0ca484e301a1edb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "日",
+      "记"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "日记",
+  "id": "417a979b3215ba8d1f51e508",
+  "level": 4,
+  "meaning": "diary",
+  "pinyin": "rìjì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-AaCz;#!y:0-1779527160422"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

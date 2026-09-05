@@ -1,0 +1,32 @@
+{
+  "audio": "70dfafd6c4de1476fa360afb028023310aac37c43c0176c4e42b2328a42dcf1b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "原",
+      "本"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "原本",
+  "id": "cdbc10e75019932be9164b71",
+  "level": 6,
+  "meaning": "originally, at first",
+  "pinyin": "yuánběn",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1615-1779527164018"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

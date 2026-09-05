@@ -1,0 +1,32 @@
+{
+  "audio": "10ab6c455a6f055707a49624ea40b68746c7025a6cae31354809e34640cd0c33.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "类"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人类",
+  "id": "6a8e58a0383a2a0a054433f1",
+  "level": 5,
+  "meaning": "humanity, mankind",
+  "pinyin": "rénlèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EWuq}.DmB4-1779527161724"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "b6a0873dcf8e5ef2e3e03e00345f33f5b5c0d57372b59cc42e834c849dc4a3d4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "投",
+      "票"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "投票",
+  "id": "86d8de97811b42902722c8aa",
+  "level": 6,
+  "meaning": "to vote",
+  "pinyin": "tóupiào",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1319-1779527163722"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

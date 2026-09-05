@@ -1,0 +1,31 @@
+{
+  "audio": "a0142b936a9e3c6f6942f7982e0c23c066c7be40a6e9a0da3a9fe2c62991ee26.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "心目",
+  "id": "1c9b4ec30168b42ff7032f2e",
+  "level": 6,
+  "meaning": "mind's eye",
+  "pinyin": "xīnmù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1465-1779527163868"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

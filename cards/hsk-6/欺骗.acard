@@ -1,0 +1,31 @@
+{
+  "audio": "758932a81858305a8f11c16cdd536eda64447f62a5d91ff3aa5f844f3a4600ca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "骗"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "欺骗",
+  "id": "070b8c5c0b949afecdd3f7a6",
+  "level": 6,
+  "meaning": "to deceive",
+  "pinyin": "qīpiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1012-1779527163415"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

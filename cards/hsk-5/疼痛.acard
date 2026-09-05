@@ -1,0 +1,32 @@
+{
+  "audio": "271623a199906d1eb136750150fc09dc0577917e56850774967ce4ded19e5818.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "疼",
+      "痛"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "疼痛",
+  "id": "40c7cfb37794534add0848a3",
+  "level": 5,
+  "meaning": "painful",
+  "pinyin": "téngtòng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J%LV5sc1^<-1779527161915"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "d7e46447990c352f77575c839179eb2f67fd263fd30f429e94935b323a7bf8ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年",
+      "级"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "年级",
+  "id": "7968d6e61f7784c6332d7d57",
+  "level": 3,
+  "meaning": "grade",
+  "pinyin": "niánjí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-p{D.z;Gx4M-1779527159586"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "b6e30461d89abd209d28744e4b053e05b3c41eb35d7672344bf63b07e9f49c2b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "车"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "刹车",
+  "id": "1e8339f18b08a62625e34e78",
+  "level": 6,
+  "meaning": "to brake; brake",
+  "pinyin": "shāchē",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1134-1779527163537"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

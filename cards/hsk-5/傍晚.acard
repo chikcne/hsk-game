@@ -1,0 +1,31 @@
+{
+  "audio": "a0424d7694b48a8972bcc95432356b0c90479cbaf18070bb1693a9ff824f5b34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "晚"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "傍晚",
+  "id": "a06b954426b1ae05ec83fe8c",
+  "level": 5,
+  "meaning": "evening, dusk",
+  "pinyin": "bàngwǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gqXE}Rwk^h-1779527160817"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

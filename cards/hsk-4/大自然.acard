@@ -1,0 +1,33 @@
+{
+  "audio": "ec8673bbfabcc7d75074443e44c1da1235fdbcaacd11bf48b9967357b5f92841.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "自",
+      "自然"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大自然",
+  "id": "e53ca47de376307adaf39d4d",
+  "level": 4,
+  "meaning": "nature, the natural world",
+  "pinyin": "dàzìrán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s2^HJ]f2PS-1779527159933"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

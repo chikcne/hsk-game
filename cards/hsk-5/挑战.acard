@@ -1,0 +1,31 @@
+{
+  "audio": "5e81e1b30a201b4588548784d37e197d561d53809a123c5e0543d4571520a65d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "挑"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "挑战",
+  "id": "da47386af1dc5e56fffa2787",
+  "level": 5,
+  "meaning": "to challenge; challenge",
+  "pinyin": "tiǎozhàn",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-y6w-v~oe|f-1779527161936"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

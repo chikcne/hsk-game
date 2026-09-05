@@ -1,0 +1,31 @@
+{
+  "audio": "04e317a020a3384e9ecff39137d1807f86d750f7004ac91d0a282592193a3ab7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "处"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相处",
+  "id": "8e4050c5942f24a9ae3eee46",
+  "level": 5,
+  "meaning": "to get along",
+  "pinyin": "xiāngchǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-cQw0?&jf]1-1779527162050"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

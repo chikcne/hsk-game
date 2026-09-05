@@ -1,0 +1,31 @@
+{
+  "audio": "0dd76f925bdd1afae1d7215efe1cdaccdefc6246f6624ff472dc1fb7d66ffbc9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "及"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "及格",
+  "id": "f83d2e532d95845e95033ba3",
+  "level": 5,
+  "meaning": "to pass an exam",
+  "pinyin": "jígé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-DDE/*cS|oz-1779527161332"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

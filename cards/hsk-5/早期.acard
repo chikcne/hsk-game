@@ -1,0 +1,32 @@
+{
+  "audio": "1395551266f65ee81b7966ececde555357f264657943188a2168942a10c70659.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "早",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "早期",
+  "id": "20a1b0a75a13c48ab531195e",
+  "level": 5,
+  "meaning": "early stage",
+  "pinyin": "zǎoqī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qd{R9dOcaW-1779527162253"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

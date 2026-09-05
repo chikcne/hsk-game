@@ -1,0 +1,29 @@
+{
+  "audio": "24a68a6c2585d555cb55440215faaf036ac3c1bc5ab16143f281ef2608dbf928.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "共",
+  "id": "332b5519111194805c40f150",
+  "level": 4,
+  "meaning": "together, in total",
+  "pinyin": "gòng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-dL_^)audq7-1779527160061"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

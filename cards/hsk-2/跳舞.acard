@@ -1,0 +1,31 @@
+{
+  "audio": "3c239b4dd383a9d5c16522ca1cf150ce40190028006a4a6cf9e953afe807b2c9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "跳"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跳舞",
+  "id": "27849f12cdd4a57751c7488e",
+  "level": 2,
+  "meaning": "to dance",
+  "pinyin": "tiàowǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-nu*b1pH9j(-1779527159247"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

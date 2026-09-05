@@ -1,0 +1,32 @@
+{
+  "audio": "eb9395601f458bef55b7bf37501a6760ed90fba2ca52d6c92e94dc08eb06a619.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "必",
+      "需"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "必需",
+  "id": "863324552835b07adf3407a8",
+  "level": 5,
+  "meaning": "must have, essential",
+  "pinyin": "bìxū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-d`rw~Wo}0%-1779527160857"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

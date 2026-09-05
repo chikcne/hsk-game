@@ -1,0 +1,31 @@
+{
+  "audio": "de7b313a157de71c14b05f386532090ced50275ebaa029607d4059d3e544aa46.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "据"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "依据",
+  "id": "ce63066c7c2d950817d9e449",
+  "level": 5,
+  "meaning": "basis, foundation; to base on, to rely on; according to, based on",
+  "pinyin": "yījù",
+  "pos": "noun、verb、 preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-C&;,l}4m22-1779527162149"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

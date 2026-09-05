@@ -1,0 +1,32 @@
+{
+  "audio": "700db83753c990c93859a11aa4f5bf5b4757bce3f7a5b2dc5741990aebbe5d44.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "网",
+      "联网"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "互联网",
+  "id": "4ffe96887e5d8503ec6bd93c",
+  "level": 4,
+  "meaning": "Internet",
+  "pinyin": "hùliánwǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-KPEZ(4&cO9-1779527160102"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "1a46a6addfc8f84ca7e3f0c954ec2fcdf8c9c8a999c0690e542dff066f57ae92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出来",
+  "id": "3505bec09a878a75d71c70d7",
+  "level": 2,
+  "meaning": "to come out",
+  "pinyin": "chūlái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-LN[bhMsObn-1779527159121"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

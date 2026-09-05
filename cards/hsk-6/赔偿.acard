@@ -1,0 +1,31 @@
+{
+  "audio": "c5ac91f7a129eb8bead149a444495e49c3773950c6f60842a487a0e9cc42ca20.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "赔"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赔偿",
+  "id": "38790329054084a9fc4aa15e",
+  "level": 6,
+  "meaning": "to compensate",
+  "pinyin": "péicháng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-975-1779527163378"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

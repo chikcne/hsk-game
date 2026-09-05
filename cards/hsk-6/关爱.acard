@@ -1,0 +1,32 @@
+{
+  "audio": "dd36285897aa12a80bdea2486964dfec1343be322951ec3caebdc9202425ab5f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关",
+      "爱"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "关爱",
+  "id": "48833c62e825ad50f5b15260",
+  "level": 6,
+  "meaning": "to care for, to show concern",
+  "pinyin": "guān’ài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-489-1779527162892"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

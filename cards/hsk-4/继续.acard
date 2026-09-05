@@ -1,0 +1,29 @@
+{
+  "audio": "fbb7fba30b761dc32674266e212b7cd5d277884e0a071e27183143d01e7a4030.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "继续",
+  "id": "ab027f0e4ea7448f752cc624",
+  "level": 4,
+  "meaning": "continue",
+  "pinyin": "jìxù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zUKz_.t8<V-1779527160135"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

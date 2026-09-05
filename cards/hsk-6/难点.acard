@@ -1,0 +1,32 @@
+{
+  "audio": "6281e6fbf81c6b14f7fd129f41f570b2d06269682018cbfcff93fd646bd7d1a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难点",
+  "id": "1219b14e6cf5b347d3ed2835",
+  "level": 6,
+  "meaning": "difficult point",
+  "pinyin": "nándiǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-943-1779527163346"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

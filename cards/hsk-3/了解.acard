@@ -1,0 +1,32 @@
+{
+  "audio": "7eb81fb797fb814d0adc12d44dd6770e73c5889390bfc5629dbb984b523d8036.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "了",
+      "解"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "了解",
+  "id": "7fba318b23c191961e361e04",
+  "level": 3,
+  "meaning": "to understand",
+  "pinyin": "liǎojiě",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-C-ss9!Ir-U-1779527159560"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

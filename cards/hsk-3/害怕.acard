@@ -1,0 +1,32 @@
+{
+  "audio": "782826e4a722908764514d3d61a1d7abcd97332e8160be3a003ffa339e7ab3bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "害",
+      "怕"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "害怕",
+  "id": "1dcb47a88793afc0372d463f",
+  "level": 3,
+  "meaning": "to be afraid",
+  "pinyin": "hàipà",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-jl=F/LeYn--1779527159465"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

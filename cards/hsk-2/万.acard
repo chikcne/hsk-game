@@ -1,0 +1,29 @@
+{
+  "audio": "a6903ba7040bab2dc11436638b661d4e85053ecb2cd3cfb9ddd727b342d67151.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "万",
+  "id": "c03d720209c6b67db41d2578",
+  "level": 2,
+  "meaning": "ten thousand",
+  "pinyin": "wàn",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-iXe]lat7gu-1779527159252"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

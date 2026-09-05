@@ -1,0 +1,31 @@
+{
+  "audio": "18dc654a8dc7287d4668f13d8b515e7e7b7bb878671654a7ddc601ec78e09d4c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "找"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "寻找",
+  "id": "b9a0d9309d0828f8ab97e938",
+  "level": 5,
+  "meaning": "to look for, to seek",
+  "pinyin": "xúnzhǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E#l)mjM1FB-1779527162120"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "3ff33a3a16c5354d5eb7dbba7e0d90325ba793fc896721fb065b9719676e0f5c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "角"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主角",
+  "id": "34891cd3107df8e72d5a6477",
+  "level": 6,
+  "meaning": "leading role, protagonist",
+  "pinyin": "zhǔjué",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1748-1779527164151"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

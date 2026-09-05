@@ -1,0 +1,32 @@
+{
+  "audio": "57c92064bb9caeb4c83263b123389c0218025533e8e38dbeeb8a651e8cea23ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "书",
+      "画"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "书画",
+  "id": "cff68ad699af3e995e555c8f",
+  "level": 6,
+  "meaning": "calligraphy and painting",
+  "pinyin": "shūhuà",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1219-1779527163622"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

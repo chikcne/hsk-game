@@ -1,0 +1,29 @@
+{
+  "audio": "c876e69bb11fbce67148ed813c08e2a35aa2a9bda29bd615a7c0d9d70af104ea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "怀",
+  "id": "ffe15276c49772040524a2f9",
+  "level": 6,
+  "meaning": "chest, bosom; to hold in mind",
+  "pinyin": "huái",
+  "pos": "名、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-572-1779527162975"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

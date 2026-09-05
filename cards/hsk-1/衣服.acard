@@ -1,0 +1,31 @@
+{
+  "audio": "fa3f7d2a6685bd3d591e5700c79c4701461ea47757fb0b50c1513d645a7fb104.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "服"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "衣服",
+  "id": "71783abf4e864203f906e3c7",
+  "level": 1,
+  "meaning": "clothes",
+  "pinyin": "yīfu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Cu}YcXicHU-1779527159058"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

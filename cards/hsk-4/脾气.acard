@@ -1,0 +1,31 @@
+{
+  "audio": "4861325acd6bb73837adca1c480e45e4b087610423f6ca9a6cb12e3920110788.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "脾气",
+  "id": "f8b6dfc5d099d7431194ce1f",
+  "level": 4,
+  "meaning": "temperament, disposition, temper",
+  "pinyin": "píqi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-fZ1UT>MAdZ-1779527160355"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

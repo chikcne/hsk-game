@@ -1,0 +1,31 @@
+{
+  "audio": "3a75189f4aea46c417adfa6e21875061a9b738ccc9411d9390561f04d6e67316.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分享",
+  "id": "53e7b8387d7e3147ecb8208a",
+  "level": 5,
+  "meaning": "to share",
+  "pinyin": "fēnxiǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-op;kxE`pxm-1779527161159"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

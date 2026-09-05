@@ -1,0 +1,31 @@
+{
+  "audio": "8e1044cd9c3e44b65fec551a81c6ae9ccbb15d87863794410920bb7408941902.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "流"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主流",
+  "id": "1a9d5572ed8740fe000777a5",
+  "level": 6,
+  "meaning": "mainstream",
+  "pinyin": "zhǔliú",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1749-1779527164152"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

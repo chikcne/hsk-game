@@ -1,0 +1,29 @@
+{
+  "audio": "894f42e73466dd31e205098345c868428f3b9d75cd7720b9c81661631cc9b3f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "身",
+  "id": "8a19dcb2f593255391707886",
+  "level": 4,
+  "meaning": "body, oneself; measure word for clothes",
+  "pinyin": "shēn",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J9k&96k?JZ-1779527160444"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

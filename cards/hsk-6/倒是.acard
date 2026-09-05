@@ -1,0 +1,32 @@
+{
+  "audio": "759d748ddb538e5f06b387ce4d931ba4293d1d9012edc3e1949df4a98654aa71.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "倒",
+      "是"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "倒是",
+  "id": "9cb5e130298d14e47f92c29f",
+  "level": 6,
+  "meaning": "contrary to expectation, but",
+  "pinyin": "dàoshì",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-281-1779527162684"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

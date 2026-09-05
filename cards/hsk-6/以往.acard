@@ -1,0 +1,32 @@
+{
+  "audio": "938a8470c85d4ef40762d445d0c58c89609f0a3e4498a2b5f37fee1325422e6a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "以",
+      "往"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "以往",
+  "id": "b7f1bd5f3b281035dba15cdc",
+  "level": 6,
+  "meaning": "in the past",
+  "pinyin": "yǐwǎng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1561-1779527163964"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

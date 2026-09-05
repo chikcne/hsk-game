@@ -1,0 +1,29 @@
+{
+  "audio": "a276f0e5abf58c8b93699aceeb13403a367da1524f2c07297af35306adf89ea3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "同",
+  "id": "711f9585833acdf808f4cbe0",
+  "level": 5,
+  "meaning": "same, alike; to share, to be the same; together; with; and, as well as",
+  "pinyin": "tóng",
+  "pos": "adjective、verb、 adverb、 preposition、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gNI{Tf77I3-1779527161944"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

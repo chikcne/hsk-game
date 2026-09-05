@@ -1,0 +1,31 @@
+{
+  "audio": "943905bbbb74c90f004811f4016213f0f18e524bd9e65977c2fb7468f8bd5e15.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "白"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "白白",
+  "id": "f004c27cbde2a1b4d34838cd",
+  "level": 6,
+  "meaning": "in vain, for nothing",
+  "pinyin": "báibái",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-6-1779527162409"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

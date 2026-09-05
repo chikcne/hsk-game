@@ -1,0 +1,32 @@
+{
+  "audio": "2510832cb81a28a26f7960d62bddf8a6d213cf93ab9a28c9e86e5b41053df684.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "各",
+      "自"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "各自",
+  "id": "f1c078495cb71d1edb177fbc",
+  "level": 5,
+  "meaning": "each, respective",
+  "pinyin": "gèzì",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-d3;0X-sjwa-1779527161205"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

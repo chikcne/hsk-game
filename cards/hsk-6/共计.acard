@@ -1,0 +1,31 @@
+{
+  "audio": "5406b4c468548a164cc8caf2efbbb2f0210222d71356862ba4966c54eaeee7cb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "共"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "共计",
+  "id": "24aa2141720b49674ac85796",
+  "level": 6,
+  "meaning": "to total, to amount to",
+  "pinyin": "gòngjì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-470-1779527162873"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

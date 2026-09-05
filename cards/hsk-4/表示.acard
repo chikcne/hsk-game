@@ -1,0 +1,31 @@
+{
+  "audio": "20b600795e3403c4979e6c54f368442e5369f369162ba994ca411fa6c6ebb581.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "表"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "表示",
+  "id": "3d8bae8b1c29bca90bd05b91",
+  "level": 4,
+  "meaning": "to express, to indicate, to show",
+  "pinyin": "biǎoshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-O]x-s?[$5H-1779527159838"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

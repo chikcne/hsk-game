@@ -1,0 +1,31 @@
+{
+  "audio": "757025def0e948429c4a118e80023b0e374d17d1caf1688fe4cf17089a57458a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "强"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "坚强",
+  "id": "71463f2f75466e24a85abcf7",
+  "level": 5,
+  "meaning": "strong, steadfast",
+  "pinyin": "jiānqiáng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rRcnOW~8n6-1779527161368"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

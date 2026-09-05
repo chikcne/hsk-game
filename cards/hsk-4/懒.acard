@@ -1,0 +1,29 @@
+{
+  "audio": "a00eb5671f29b266f0a462a4b25306984ad61845d7faf70d8235b004b321e65e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "懒",
+  "id": "138fcf00d913030c5e2bba0e",
+  "level": 4,
+  "meaning": "lazy, idle",
+  "pinyin": "lǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kph42*?%X--1779527160255"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

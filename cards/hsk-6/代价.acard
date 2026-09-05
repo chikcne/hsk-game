@@ -1,0 +1,31 @@
+{
+  "audio": "d9f368a79851ec85eef55c994cee38d570e9e83086b680b8f649580733f19c40.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "代价",
+  "id": "98d33806ed22ca4dda3b4d94",
+  "level": 6,
+  "meaning": "price, cost",
+  "pinyin": "dàijià",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-257-1779527162660"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

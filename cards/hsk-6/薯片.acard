@@ -1,0 +1,31 @@
+{
+  "audio": "5f715e7ab36e71611fff53243acf863e13a826ff917dc700c50e80e6918ecbd1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "片"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "薯片",
+  "id": "10b3207502e67c39161b2977",
+  "level": 6,
+  "meaning": "potato chip",
+  "pinyin": "shǔpiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1225-1779527163628"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

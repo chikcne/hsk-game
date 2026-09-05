@@ -1,0 +1,32 @@
+{
+  "audio": "3337a9a641d7f8ac16dcab13405789689b3917353b21045d81f1742d480084ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "沟",
+      "通"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "沟通",
+  "id": "8c8873d29cea71f7c173e7f8",
+  "level": 5,
+  "meaning": "to communicate",
+  "pinyin": "gōutōng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-j8147`|9T:-1779527161223"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

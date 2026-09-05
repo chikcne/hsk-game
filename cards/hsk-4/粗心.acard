@@ -1,0 +1,32 @@
+{
+  "audio": "6eec571629a13e84fc781be7103d37bcacba512aadee8461a007c5e98f2eb3bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "粗"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "粗心",
+  "id": "c4b4cc14141a32e61fecd193",
+  "level": 4,
+  "meaning": "careless",
+  "pinyin": "cūxīn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MexAT&k]rL-1779527159909"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

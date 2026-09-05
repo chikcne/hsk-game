@@ -1,0 +1,31 @@
+{
+  "audio": "830e9b7f5de82f758036745879badace12a9c3a0d4c8916b592121f5f128122a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "面"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "面积",
+  "id": "d5a8a0920636b7a5bf94def2",
+  "level": 5,
+  "meaning": "area",
+  "pinyin": "miànjī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-c1:F(fd_@s-1779527161571"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

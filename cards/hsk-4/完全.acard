@@ -1,0 +1,32 @@
+{
+  "audio": "11a252767c9275f4c1f6b978abf1075770730cdfd0b96993356ca3e43c6a1cad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "全",
+      "完"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "完全",
+  "id": "55cd56b89ddb8d864c299aa7",
+  "level": 4,
+  "meaning": "complete, total; completely, absolutely",
+  "pinyin": "wánquán",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-7V>HFgR)w-1779527160565"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

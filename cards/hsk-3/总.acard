@@ -1,0 +1,29 @@
+{
+  "audio": "9474bb200b05bfdf677537977b3a9e94063543766e52af1caf60ae9e2c4b9850.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "总",
+  "id": "224d4b42707e6794aeabae40",
+  "level": 3,
+  "meaning": "always, invariably; (to sum up, to assemble; total, overall)",
+  "pinyin": "zǒng",
+  "pos": "adverb、（verb、 adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-i0=qMIW)P&-1779527159796"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "ea527f5ef536a558190e02648df3111192c22774705ce8696415167426e9f384.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "环",
+  "id": "cf983126e12a11e69f30499d",
+  "level": 6,
+  "meaning": "ring, loop; measure word for rings; to surround",
+  "pinyin": "huán",
+  "pos": "名、量、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-576-1779527162979"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

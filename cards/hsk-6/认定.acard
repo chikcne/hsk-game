@@ -1,0 +1,32 @@
+{
+  "audio": "dd233cf9a075a08dd6a430774d927b8e4236576e1f4d4c40829fedbbed36c925.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定",
+      "认"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "认定",
+  "id": "49200d236e1cec99572949bc",
+  "level": 6,
+  "meaning": "to determine, to conclude",
+  "pinyin": "rèndìng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1104-1779527163507"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

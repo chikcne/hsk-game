@@ -1,0 +1,32 @@
+{
+  "audio": "cdfec724c2e127ab653e203d8bf5fedc698b9e77242e91d95aac631d80bd06aa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一时",
+  "id": "595bd4c0cde52bab2797f830",
+  "level": 6,
+  "meaning": "temporarily; for a moment",
+  "pinyin": "yìshí",
+  "pos": "名、副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1570-1779527163973"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

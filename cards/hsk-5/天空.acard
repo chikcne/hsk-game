@@ -1,0 +1,32 @@
+{
+  "audio": "9ca64f2403156f367067e8d9cf7c34bcdaf95fac413b20481f8cbf89f008f81f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天",
+      "空"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "天空",
+  "id": "54187771d8df42a54e4778e8",
+  "level": 5,
+  "meaning": "sky",
+  "pinyin": "tiānkōng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-e7Q-S@fv[;-1779527161927"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

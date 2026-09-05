@@ -1,0 +1,32 @@
+{
+  "audio": "456d53ef99c98be4f9ab9c26eb1ce367f15563d0ae6fadfa93b474c7548063a6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "挥"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发挥",
+  "id": "dfb5d4b459dad44066e36000",
+  "level": 5,
+  "meaning": "to bring into play, to give full play to",
+  "pinyin": "fāhuī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P@H~!.~V7%-1779527161122"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

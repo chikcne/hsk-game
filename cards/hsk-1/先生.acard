@@ -1,0 +1,32 @@
+{
+  "audio": "c81866829229a9bf18083ee67643cd28e05a8d9a6ff4259ff0db72f0a2b151e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "先",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "先生",
+  "id": "041994635f960239b1a2e157",
+  "level": 1,
+  "meaning": "Mr., husband",
+  "pinyin": "xiānsheng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-rZa`EA/_XH-1779527159034"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "c5507c227356789d2eb6a35c40ecafd8ac10c10e2ba93e3c393a4b795d03ba85.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "躲",
+  "id": "b1a881471692020d2e4c94e4",
+  "level": 5,
+  "meaning": "to hide, to avoid",
+  "pinyin": "duǒ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-A6i$,MA-2<-1779527161115"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

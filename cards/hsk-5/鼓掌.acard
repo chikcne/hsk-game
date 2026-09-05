@@ -1,0 +1,31 @@
+{
+  "audio": "949d5f1b1c00a58079d62ced55f26b6f43e3e1987cf6bb48ef0a06d4e0ea3d62.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "鼓"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鼓掌",
+  "id": "598e8c4f8e4034fc0e45b5e4",
+  "level": 5,
+  "meaning": "to applaud",
+  "pinyin": "gǔzhǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jS=1r[qJPZ-1779527161229"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

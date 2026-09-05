@@ -1,0 +1,32 @@
+{
+  "audio": "2966e13cc30adc19e62461437fe9776eb2c1460fae4b6da9965db608e0d30aed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "修",
+      "改"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "修改",
+  "id": "a46311122ee27f3aced9e1fa",
+  "level": 5,
+  "meaning": "to modify, to correct",
+  "pinyin": "xiūgǎi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-A3l?^E$yxS-1779527162103"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

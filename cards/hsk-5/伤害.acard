@@ -1,0 +1,32 @@
+{
+  "audio": "10855d6e4bbddd13afa1d61f8744107f4fe2896958ff6b918b4a5c4e88834bb7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伤",
+      "害"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "伤害",
+  "id": "367547f6f9389dd7e5f42712",
+  "level": 5,
+  "meaning": "to harm",
+  "pinyin": "shānghài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u(?>1!MV]2-1779527161760"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

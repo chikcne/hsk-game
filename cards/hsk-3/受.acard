@@ -1,0 +1,29 @@
+{
+  "audio": "5ed66c3c7a1b89e52e94d925fc801c416daf7296adfa78d3ee041e4bea9898be.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "受",
+  "id": "de01493411e66454bb4294aa",
+  "level": 3,
+  "meaning": "to receive, to be affected",
+  "pinyin": "shòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-of`M=CxE/-1779527159641"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

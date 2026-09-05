@@ -1,0 +1,31 @@
+{
+  "audio": "48eb02db1d6180dbe97c0dacbbf9753054a355c65eedc5d0f32ed9db4e7256a2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "统一",
+  "id": "0d5022290cbb091119684c9c",
+  "level": 5,
+  "meaning": "to unify; unified",
+  "pinyin": "tǒngyī",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M;N%L14-l!-1779527161948"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

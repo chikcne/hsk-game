@@ -1,0 +1,31 @@
+{
+  "audio": "aafb280c6d883768dc9312c260345ed22a9e7676d56c6699d09f463a2ecace56.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "兔子",
+  "id": "0f644be6b22fd795b91b05af",
+  "level": 5,
+  "meaning": "rabbit",
+  "pinyin": "tùzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u1tc#,42co-1779527161958"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

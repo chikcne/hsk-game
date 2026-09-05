@@ -1,0 +1,32 @@
+{
+  "audio": "659d628ee3f98e24e282e81d8623f77637ef4ceff5b04a998e9d81823a95f40e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "在",
+      "线"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "在线",
+  "id": "0f7d0e946d8f522745db1fa1",
+  "level": 5,
+  "meaning": "online",
+  "pinyin": "zàixiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Mc`-]>RTfe-1779527162248"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

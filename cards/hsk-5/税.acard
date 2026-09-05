@@ -1,0 +1,29 @@
+{
+  "audio": "7139efc4cf30be1852696e4d940b162ed3d5fc71e298e74522bf355cc32de7dc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "税",
+  "id": "ae07fb88e3d24cfdb1b60f7e",
+  "level": 5,
+  "meaning": "tax",
+  "pinyin": "shuì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l0u)E+yD2{-1779527161875"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

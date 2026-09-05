@@ -1,0 +1,29 @@
+{
+  "audio": "9cf54310d214a9358dbb6eea34774d98c0ea093357a61265f1a80390971a0f0b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "光",
+  "id": "e51c3895a37488b36c8571c2",
+  "level": 4,
+  "meaning": "light, rayl smooth, shiny, used up; bare, expose; only, merely, solely",
+  "pinyin": "guāng",
+  "pos": "noun、adjective、 verb、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-i7w$@`-XVV-1779527160077"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

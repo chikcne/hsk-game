@@ -1,0 +1,31 @@
+{
+  "audio": "c8ddc6a4303e971a54648833eb5623f43e6bd9131f20c10ea5feb2274d0f8601.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "元"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "元素",
+  "id": "002b4e8ec38894d924fe2035",
+  "level": 6,
+  "meaning": "element",
+  "pinyin": "yuánsù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1622-1779527164025"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

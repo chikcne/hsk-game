@@ -1,0 +1,31 @@
+{
+  "audio": "e9a57a0523e4a8c0d5f267c870c1db18018a85cfd89f5c1955453b0d19d4439d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "笑"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "笑容",
+  "id": "a8324dce1bf01630c9b53cb5",
+  "level": 6,
+  "meaning": "smile",
+  "pinyin": "xiàoróng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1453-1779527163856"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "85176a1e92da0af5e8505c6ed369b71b8cc909c77e3dd3ea04a7351206b2f7ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "圆",
+      "汤"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "汤圆",
+  "id": "584d2ec127a6b97352aeb48e",
+  "level": 6,
+  "meaning": "sweet dumplings, Tangyuan",
+  "pinyin": "tāngyuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1266-1779527163669"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

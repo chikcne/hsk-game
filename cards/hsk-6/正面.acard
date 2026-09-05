@@ -1,0 +1,32 @@
+{
+  "audio": "c319490947bef59931727e68bf9b30c6e26c37ee2efdcab9898fa9c3bdeb68a2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "正",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "正面",
+  "id": "2d914f2a9283354888d313d4",
+  "level": 6,
+  "meaning": "front side; positive, direct",
+  "pinyin": "zhèngmiàn",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1690-1779527164093"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

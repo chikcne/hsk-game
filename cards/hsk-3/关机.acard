@@ -1,0 +1,31 @@
+{
+  "audio": "4ae3a01e5cf9025f759c6b151399e2552c517adbbf4b82b357df85959f11bd36.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "关机",
+  "id": "39c43f1eeb7d5ccef89caf0e",
+  "level": 3,
+  "meaning": "to turn off device",
+  "pinyin": "guānjī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-bHL{W_a-in-1779527159456"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

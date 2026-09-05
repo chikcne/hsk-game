@@ -1,0 +1,32 @@
+{
+  "audio": "2b148e2c256fc89d63c0ac0e1363387fe47b33f19532a70498c4222b97857bf0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "曾"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不曾",
+  "id": "ce56dd1a69dfa2d9ba48f92c",
+  "level": 6,
+  "meaning": "never, not yet",
+  "pinyin": "bùcéng",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-80-1779527162483"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

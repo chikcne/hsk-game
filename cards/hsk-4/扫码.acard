@@ -1,0 +1,31 @@
+{
+  "audio": "589ba76624d39cc78bbf20229e945b1ef9092e361c20deb5300e3236c6c6c56e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "扫"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扫码",
+  "id": "799c82a129b87d77d041b123",
+  "level": 4,
+  "meaning": "to scan a code",
+  "pinyin": "sǎomǎ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-pAka_u6hpN-1779527160430"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

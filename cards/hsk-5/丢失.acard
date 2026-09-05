@@ -1,0 +1,31 @@
+{
+  "audio": "72ee86f9f4c63db0c2b666ff159de9bf2cc6fb68581dfdd6ec2c6d306321e8e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "丢"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "丢失",
+  "id": "e3b8155d13bbc39d9325e5ac",
+  "level": 5,
+  "meaning": "to lose, to be missing",
+  "pinyin": "diūshī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-IZ-M0Vg>6U-1779527161090"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

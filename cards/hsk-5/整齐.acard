@@ -1,0 +1,32 @@
+{
+  "audio": "8e8ceb21aef5b4d4a2c33c88c7d7779b49abba949c18a889e599b0ee858891f6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "整",
+      "齐"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "整齐",
+  "id": "5d7cd86825ef5c0ffdf3689c",
+  "level": 5,
+  "meaning": "neat, orderly",
+  "pinyin": "zhěngqí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-IE5?L<If@1-1779527162293"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

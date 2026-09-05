@@ -1,0 +1,31 @@
+{
+  "audio": "2bcdd51087dc6b81563afb3dd4595679072c663d57cf80967abafda659621774.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "自"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自律",
+  "id": "90766cb2e0dc22f1c1daa904",
+  "level": 6,
+  "meaning": "self-discipline",
+  "pinyin": "zìlǜ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1779-1779527164182"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

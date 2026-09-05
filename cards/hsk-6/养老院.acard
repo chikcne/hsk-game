@@ -1,0 +1,33 @@
+{
+  "audio": "c180a560c073801dcfa0e2935ad754a7a7409cd494853a816a3371f772c54a72.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "养",
+      "养老",
+      "老"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "养老院",
+  "id": "a59524c5174e96471b6e5ab1",
+  "level": 6,
+  "meaning": "nursing home",
+  "pinyin": "yǎnglǎoyuàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1523-1779527163926"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

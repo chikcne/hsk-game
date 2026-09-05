@@ -1,0 +1,29 @@
+{
+  "audio": "a79aa81904acc7f69ab77ae5f5d36c5b981d805013a78e90376f2983e6cb6fc6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "浪漫",
+  "id": "7166cace27c841e5fdf9e4d9",
+  "level": 4,
+  "meaning": "romantic",
+  "pinyin": "làngmàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-lzDhU|5pC3-1779527160257"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "b0320f3bd066b5e29527f133295f1b303c053a759e28d22fe74b52b92243d41d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亏",
+  "id": "5e3245440a6a4657f95c4605",
+  "level": 5,
+  "meaning": "to lose, to suffer a loss",
+  "pinyin": "kuī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ccz(G!-h*M-1779527161482"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

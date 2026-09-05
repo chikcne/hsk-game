@@ -1,0 +1,32 @@
+{
+  "audio": "3242c274924a44870231cc467bc7b7983cdbc994a86bf7c37b46d082649767e8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "加"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加上",
+  "id": "147ad957f19bd045d009abec",
+  "level": 4,
+  "meaning": "plus, add, with the addition of",
+  "pinyin": "jiāshàng",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z@^!29rgda-1779527160142"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

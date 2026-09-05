@@ -1,0 +1,31 @@
+{
+  "audio": "4e118dfcf023c2ab0e279da890c0b874ebf8da04ebcf6c022631b02ac7bf3f96.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "因"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "基因",
+  "id": "f9653ef569cbe67e7691e9d0",
+  "level": 6,
+  "meaning": "gene",
+  "pinyin": "jīyīn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-612-1779527163015"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

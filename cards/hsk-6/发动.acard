@@ -1,0 +1,32 @@
+{
+  "audio": "d588bd0fe64faef8e9d01c57abadbd753131728287d0037fc9ab5ec7577e6703.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "发"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发动",
+  "id": "6b6200dd6a88ea71f7700179",
+  "level": 6,
+  "meaning": "to start, to launch",
+  "pinyin": "fādòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-352-1779527162755"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

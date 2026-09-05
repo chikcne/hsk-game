@@ -1,0 +1,32 @@
+{
+  "audio": "f20673151542449785ac0ed7c399b76f074b2762745dea87bf662c3ae97fee53.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "二",
+      "手"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "二手",
+  "id": "bbbacb6263a643491d38a855",
+  "level": 5,
+  "meaning": "second-hand",
+  "pinyin": "èrshǒu",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-FF0O,H1^F]-1779527161117"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

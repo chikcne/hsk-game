@@ -1,0 +1,32 @@
+{
+  "audio": "6d0bac7d73c72ba4cb45ade63be207be9006a8af98639342242752b60a1ccb0a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "起到",
+  "id": "fca15969b519ebd2bac5478a",
+  "level": 4,
+  "meaning": "to play the role of, to function as, to act as",
+  "pinyin": "qǐdào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-PJt;Q8&,;(-1779527160372"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

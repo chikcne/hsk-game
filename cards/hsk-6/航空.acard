@@ -1,0 +1,31 @@
+{
+  "audio": "ec051f09eefbd2b3fe4d106085b0cf84affe604e405e491102e27554b5acb3df.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "空"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "航空",
+  "id": "5185829ce1ab2b367b79edaa",
+  "level": 6,
+  "meaning": "aviation",
+  "pinyin": "hángkōng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-527-1779527162930"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

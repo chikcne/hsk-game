@@ -1,0 +1,32 @@
+{
+  "audio": "7d35fb5c1eba8c3260fdebb71f149ebaa1f903002b3af2bff45f4ac8a11eec9d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "节",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过节",
+  "id": "e9dd27a4912cdc57a2ffa445",
+  "level": 3,
+  "meaning": "to celebrate a festival",
+  "pinyin": "guòjié",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-H0sMdj/B(e-1779527159462"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

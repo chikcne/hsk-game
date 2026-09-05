@@ -1,0 +1,29 @@
+{
+  "audio": "72f5f6234d711387475997a4567ddacce697d4424e3d406f834d2acf3d0d2d4e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "疯狂",
+  "id": "024fe60784babf99fdb470c8",
+  "level": 5,
+  "meaning": "crazy, insane",
+  "pinyin": "fēngkuáng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-k%OrD06*Lx-1779527161163"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

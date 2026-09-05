@@ -1,0 +1,32 @@
+{
+  "audio": "b2538f81a833abfd8607afc7ac285968331b1f2146be8b95f53b3d40530894a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "便",
+      "随"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "随便",
+  "id": "14742583719dcaf64fd2aef4",
+  "level": 4,
+  "meaning": "to do as one pleases, casual; casual, informal; anyway, whatever",
+  "pinyin": "suíbiàn",
+  "pos": "verb、adjective、 conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-M=o&?AR9B&-1779527160512"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

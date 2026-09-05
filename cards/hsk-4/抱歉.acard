@@ -1,0 +1,31 @@
+{
+  "audio": "4657a52bb3f7bfe95843ee227c96c9ddf74943a1b9e1a50e2320d279e4d7e80c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "抱"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抱歉",
+  "id": "14279012236d623fac11ed45",
+  "level": 4,
+  "meaning": "sorry, apologetic",
+  "pinyin": "bàoqiàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kmOq^*z.k?-1779527159822"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

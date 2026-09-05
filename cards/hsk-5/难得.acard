@@ -1,0 +1,32 @@
+{
+  "audio": "00374ef29e1de405864381dee8c23175840ef08cec6c5a66363ea6c50568fc2d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "得",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难得",
+  "id": "cd60561488198ce80336a697",
+  "level": 5,
+  "meaning": "rare, hard to come by",
+  "pinyin": "nándé",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-pKpGR?h=&3-1779527161592"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

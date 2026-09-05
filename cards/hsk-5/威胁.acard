@@ -1,0 +1,29 @@
+{
+  "audio": "31b942409d8a64fa69db60d2177027c52f808f4178ef0d5666598be3e24ad0d4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "威胁",
+  "id": "f8715ae926c87ceb5d733731",
+  "level": 5,
+  "meaning": "to threaten",
+  "pinyin": "wēixié",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-c7zv]i(V!=-1779527161985"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

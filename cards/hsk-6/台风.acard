@@ -1,0 +1,32 @@
+{
+  "audio": "147317395434b68eeb7e7d89d37cc52992424d5864c629be96f3bb0c5a998ac5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "台",
+      "风"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "台风",
+  "id": "5f655725acd43d8060e5c2d2",
+  "level": 6,
+  "meaning": "typhoon",
+  "pinyin": "táifēng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1257-1779527163660"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

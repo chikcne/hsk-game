@@ -1,0 +1,29 @@
+{
+  "audio": "78c093c7922e45440a794426bf896bbfde86909835b5d05a05f0084ea078ffc8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "迈",
+  "id": "3adf6b343ee69695c083c10a",
+  "level": 6,
+  "meaning": "to step, to stride",
+  "pinyin": "mài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-888-1779527163291"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

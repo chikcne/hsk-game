@@ -1,0 +1,31 @@
+{
+  "audio": "ca1d8c5da6a48cce813f37b576c1d61ec04b18fedf3eb3b5081ce3baa2f0508d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "反"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "违反",
+  "id": "e622dd6d996f98c2a624d26b",
+  "level": 5,
+  "meaning": "to violate",
+  "pinyin": "wéifǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-yrHbn0VU^i-1779527161990"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

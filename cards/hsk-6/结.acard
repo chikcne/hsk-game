@@ -1,0 +1,29 @@
+{
+  "audio": "8f309b76b619dde095ec13ad045eea4523aed82785602753e612d34e8f98682d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "结",
+  "id": "61c043c6b7cd0f0605ab7692",
+  "level": 6,
+  "meaning": "to bear (fruit)",
+  "pinyin": "jiē",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-681-1779527163084"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

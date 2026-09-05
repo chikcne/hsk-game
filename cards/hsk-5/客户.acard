@@ -1,0 +1,31 @@
+{
+  "audio": "8e6aa21f8d6c96677bc94b6e615e5a685651d5b1f614111d73e31ef5e5ab057e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "户"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "客户",
+  "id": "06d46aec97a89e16cac6312d",
+  "level": 5,
+  "meaning": "client, customer",
+  "pinyin": "kèhù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uqXy2<Y,Dp-1779527161473"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

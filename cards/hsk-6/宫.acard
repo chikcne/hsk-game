@@ -1,0 +1,29 @@
+{
+  "audio": "aa13ef38f95e0402777c8140ea40d35a16e3f3fb552b7ec837f2d0b8757451c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "宫",
+  "id": "b6405648bf22937e90455321",
+  "level": 6,
+  "meaning": "palace, temple",
+  "pinyin": "gōng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-451-1779527162854"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

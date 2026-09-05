@@ -1,0 +1,31 @@
+{
+  "audio": "c18431c8278be6b554902690c1b802fe4890822bc88ba32446cc420ec218cec5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "认"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "否认",
+  "id": "89025c1d448dc7d50e582825",
+  "level": 5,
+  "meaning": "to deny",
+  "pinyin": "fǒurèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-eim+!rS7as-1779527161167"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

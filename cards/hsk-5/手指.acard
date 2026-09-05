@@ -1,0 +1,32 @@
+{
+  "audio": "6533125b9ba4e559cf8f5129f6aa21e790caf01aca15f067f21c5cb0d2fab8b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手",
+      "指"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "手指",
+  "id": "cbdbe60d5898db104e49f72c",
+  "level": 5,
+  "meaning": "finger",
+  "pinyin": "shǒuzhǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Fol1WwH6@{-1779527161856"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

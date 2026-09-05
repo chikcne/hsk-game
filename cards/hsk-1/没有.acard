@@ -1,0 +1,31 @@
+{
+  "audio": "d0742bcd12884b1c9ced308c1650df6937be3abdacc33211699779d000b40bbf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "没有",
+  "id": "9b9f4c7345eaf3bfbc206f45",
+  "level": 1,
+  "meaning": "to not have; have not",
+  "pinyin": "méiyǒu",
+  "pos": "verb、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-JB{q6G0$]<-1779527158925"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

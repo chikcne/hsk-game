@@ -1,0 +1,32 @@
+{
+  "audio": "31fdaf84be34a50255b7f02205bc0da81ccd8d9455623478df6703053ce43e8a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "试",
+      "题"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "试题",
+  "id": "e39bae22201bb228f4bc42b1",
+  "level": 4,
+  "meaning": "test questions, exam paper",
+  "pinyin": "shìtí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-uQEQF+9jWO-1779527160478"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "bd4fbb55c5f84fe410f4b7090f3478a21cd6f1c54a0048f85c30f0d6d93afd11.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "音乐",
+  "id": "a99dc5342e07334af11d1a9a",
+  "level": 3,
+  "meaning": "music",
+  "pinyin": "yīnyuè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Gy</]eb+j?-1779527159738"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

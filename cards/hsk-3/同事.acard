@@ -1,0 +1,32 @@
+{
+  "audio": "112caae50fe0bdad089273b148ded8e5396a8522aecb2a7e1012cacdc393b537.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "事",
+      "同"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "同事",
+  "id": "70a6aff8b8c2a22fd086da6e",
+  "level": 3,
+  "meaning": "colleague",
+  "pinyin": "tóngshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Q3^a4V1ucj-1779527159662"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

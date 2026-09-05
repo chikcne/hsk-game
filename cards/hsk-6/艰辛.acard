@@ -1,0 +1,29 @@
+{
+  "audio": "853f0f8a3902300a5002072833a51856ceadf079d955a7fea6c6814b773e71f1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "艰辛",
+  "id": "bb43e12faba1c2fa4897963d",
+  "level": 6,
+  "meaning": "arduous, tough",
+  "pinyin": "jiānxīn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-648-1779527163051"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

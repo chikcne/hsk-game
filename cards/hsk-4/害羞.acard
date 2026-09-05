@@ -1,0 +1,31 @@
+{
+  "audio": "e271d52141f07c79a1351970eacc338606b8ce8c3e89797292f29b6e3d0f73b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "害"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "害羞",
+  "id": "2249f99540f092e8e1674708",
+  "level": 4,
+  "meaning": "shy, bshful",
+  "pinyin": "hàixiū",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r,Wf3G!LV[-1779527160087"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

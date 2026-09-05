@@ -1,0 +1,31 @@
+{
+  "audio": "dd57f29aee46c662987fd8e499e22de6509a9955da28f6409b0c692ad8cbaa92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "爱"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "喜爱",
+  "id": "e789a476339e83b9d21815b6",
+  "level": 3,
+  "meaning": "to like, to love",
+  "pinyin": "xǐ’ài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-c?mQR<3&UH-1779527159689"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

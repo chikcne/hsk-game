@@ -1,0 +1,32 @@
+{
+  "audio": "8b1282024b30385bc620c2100415d7042cb75a6a00856f4e88a30a8d5ff6842d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小",
+      "朋友"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小朋友",
+  "id": "dfe107c1f25d4326ac7a42fd",
+  "level": 1,
+  "meaning": "little friend, child",
+  "pinyin": "xiǎopéngyǒu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-b^|DL&^sT_-1779527159038"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

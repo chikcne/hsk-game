@@ -1,0 +1,29 @@
+{
+  "audio": "4d4fe841199dfac82f8249441b02adb0c7147cf6790bf4a84897874474e49cfc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "棵",
+  "id": "fd2af1abc35ec0c3439518da",
+  "level": 4,
+  "meaning": "measure word for trees, plants, and other similar objects",
+  "pinyin": "kē",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-gTB0^H}Ox<-1779527160227"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

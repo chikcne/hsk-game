@@ -1,0 +1,32 @@
+{
+  "audio": "48121ed8df2bf60bd2c8fe9053359e097daaafcc537904bce1bad38c0f0f3999.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "力"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出力",
+  "id": "9bc2d2ad346777af7bce3eef",
+  "level": 6,
+  "meaning": "to exert effort, to contribute",
+  "pinyin": "chūlì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-188-1779527162591"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

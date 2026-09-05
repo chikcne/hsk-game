@@ -1,0 +1,29 @@
+{
+  "audio": "ff6e7f8c622d8d130b3ecd839d3070c9dfdaea1df4a848d3bec0a10c39be7353.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "财物",
+  "id": "b2d275da9f56273f7b240e0c",
+  "level": 6,
+  "meaning": "property, belongings",
+  "pinyin": "cáiwù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-99-1779527162502"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

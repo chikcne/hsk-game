@@ -1,0 +1,32 @@
+{
+  "audio": "4889e2812611b89dc6302c629e5f08bd23ab901e19cd4739327b887cbe6e33ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "夜",
+      "深"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "深夜",
+  "id": "3aed6db74ead629881a18ea7",
+  "level": 6,
+  "meaning": "late night",
+  "pinyin": "shēnyè",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1164-1779527163567"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

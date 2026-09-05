@@ -1,0 +1,31 @@
+{
+  "audio": "f17b54d7f648657e9b9ca3b9f30eb9d1796958f107ff75ce3f25c379daf1234e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "在"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实在",
+  "id": "1bc2af9b8d9bc5bdfab3a0b7",
+  "level": 4,
+  "meaning": "honest, reliable; really, indeed",
+  "pinyin": "shízài",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-b88@>)d@`r-1779527160467"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

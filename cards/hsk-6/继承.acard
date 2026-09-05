@@ -1,0 +1,29 @@
+{
+  "audio": "65cb10882a6ac0a6bbe6b6af5e253574f775c0ced345e23c1aced719dda1cea2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "继承",
+  "id": "ddb0df770d1c8ac74c7dd0c0",
+  "level": 6,
+  "meaning": "to inherit",
+  "pinyin": "jìchéng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-622-1779527163025"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

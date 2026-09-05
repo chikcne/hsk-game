@@ -1,0 +1,29 @@
+{
+  "audio": "309c84f19066cfe35d76ae90d89c7472f30f63d5aa12c063f4c5c416eee7b8a6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "效果",
+  "id": "4047542ba881e82eb190d514",
+  "level": 4,
+  "meaning": "effect, result",
+  "pinyin": "xiàoguǒ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ns,NEQ@LoA-1779527160619"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

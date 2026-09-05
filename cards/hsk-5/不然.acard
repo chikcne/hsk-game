@@ -1,0 +1,31 @@
+{
+  "audio": "70c0a22c6ba3535b94aa8a39f1b3842213a561ff4a6b02a00fb34baaf50c5065.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不然",
+  "id": "bb0ec7502fef70aecaee4ae0",
+  "level": 5,
+  "meaning": "otherwise; (or else)",
+  "pinyin": "bùrán",
+  "pos": "conjunction、 （adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-olv:ykNLbY-1779527160883"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

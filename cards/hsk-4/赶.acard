@@ -1,0 +1,29 @@
+{
+  "audio": "23231c650f10d17da36d3d66e673c2475761fbfa33e9050b55b8d65dfed075fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赶",
+  "id": "1c688f26c3cb65cf6a98896a",
+  "level": 4,
+  "meaning": "to hurry, to catch up",
+  "pinyin": "gǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ny}S%c2v.(-1779527160025"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

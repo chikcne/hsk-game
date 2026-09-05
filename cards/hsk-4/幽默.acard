@@ -1,0 +1,29 @@
+{
+  "audio": "6da0a8025a6aead7061e28300a7940b51cc990c40c68fb0e36e67a54c35c50cf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "幽默",
+  "id": "ff0ad003db31a45d257d70a0",
+  "level": 4,
+  "meaning": "humorous",
+  "pinyin": "yōumò",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-JCi5%&WQ8(-1779527160685"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

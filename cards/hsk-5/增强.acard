@@ -1,0 +1,32 @@
+{
+  "audio": "3c95f667dc4f423a419092e587f3baf19feddd7b628f99a168986ee32514478a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "增",
+      "强"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "增强",
+  "id": "72e6b0957b72f782713cc52d",
+  "level": 5,
+  "meaning": "to strengthen",
+  "pinyin": "zēngqiáng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rX/PVR4$PL-1779527162260"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

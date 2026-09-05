@@ -1,0 +1,32 @@
+{
+  "audio": "d4c8c809b30f74cb341e52fbcb91524f303396c31ddace04f8c01bc81dd78c8c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "幅",
+      "度"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "幅度",
+  "id": "0cd47e7c9cda1e2deaed709b",
+  "level": 6,
+  "meaning": "range, scope, extent",
+  "pinyin": "fúdù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-401-1779527162804"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

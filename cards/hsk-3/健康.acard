@@ -1,0 +1,29 @@
+{
+  "audio": "b583f312125974e7c8ca892e49933a63f82ba15665ec3391b20944363481fc81.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "健康",
+  "id": "3471bf95b9240b891d557df4",
+  "level": 3,
+  "meaning": "healthy",
+  "pinyin": "jiànkāng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-mn|^|J6hIV-1779527159504"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

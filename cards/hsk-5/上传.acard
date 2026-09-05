@@ -1,0 +1,32 @@
+{
+  "audio": "548a8fa67c6a1ec815b02aecc30445f1f972b6876f2ba029c0d5b1992a527dcf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "传"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上传",
+  "id": "f34bc85fe817a2174b93c72d",
+  "level": 5,
+  "meaning": "to upload",
+  "pinyin": "shàngchuán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PX26TX&;)4-1779527161766"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

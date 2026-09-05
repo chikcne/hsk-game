@@ -1,0 +1,29 @@
+{
+  "audio": "9a407362d37d199e00a9c4f0529eeae4309de59a42bcfe0044d614f715245f99.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扶",
+  "id": "54713e71efcade35d37ab876",
+  "level": 5,
+  "meaning": "to support with hand",
+  "pinyin": "fú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JKG268fre-1779527161169"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

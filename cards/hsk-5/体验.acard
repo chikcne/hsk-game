@@ -1,0 +1,29 @@
+{
+  "audio": "3c14fe6a4dc429f26042a221e40da2221007308c0cf755f307bd853e35cc10ad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "体验",
+  "id": "e59529fb346fca0965ce8ca8",
+  "level": 5,
+  "meaning": "to experience",
+  "pinyin": "tǐyàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ReyS/>!9T9-1779527161925"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "97e7663c60ba6da1205f53ccff9a1fdb27f1e79ed9bc5f3944816dac459620c4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "命"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "革命",
+  "id": "633e03a21e04e3d8507b981f",
+  "level": 6,
+  "meaning": "revolution; revolutionary",
+  "pinyin": "gémìng",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-444-1779527162847"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

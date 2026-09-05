@@ -1,0 +1,32 @@
+{
+  "audio": "ebaef20b63dd393bc689576c676cf39e11d5342702fde0984fba9a139bf75620.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "多",
+      "才"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "多才多艺",
+  "id": "011318a17429b985087413a4",
+  "level": 6,
+  "meaning": "versatile, gifted in many ways",
+  "pinyin": "duōcái-duōyì",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-336-1779527162739"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

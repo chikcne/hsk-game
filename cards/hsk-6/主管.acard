@@ -1,0 +1,31 @@
+{
+  "audio": "dd0c30f779049b2916ab1abfed5ffab3c7dc0da0bf80807a83ab7dbee1a1c33c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "管"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主管",
+  "id": "0dd24be21c258ab7a6505bcd",
+  "level": 6,
+  "meaning": "to be in charge; supervisor",
+  "pinyin": "zhǔguǎn",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1747-1779527164150"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

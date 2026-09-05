@@ -1,0 +1,29 @@
+{
+  "audio": "d6c14512cbc856017c2de879b0b0d341a1e62ba81d3d500b96efec01545c1da4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "冻",
+  "id": "3c14b9e975e1b6dd77de7313",
+  "level": 5,
+  "meaning": "to freeze",
+  "pinyin": "dòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hMk@q5Gls_-1779527161091"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "eee81ff54542d21d77f87e64518ced858ec39e27ec2d539e87e955e80abd73c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "风"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "风格",
+  "id": "ff9334cd04390aadb4ca7ffe",
+  "level": 5,
+  "meaning": "style",
+  "pinyin": "fēnggé",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-oe}^n,}H8$-1779527161162"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

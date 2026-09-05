@@ -1,0 +1,29 @@
+{
+  "audio": "b890c8d4edf411ca2f17f36f56bce420b98046e32c7ea3a1c34ffad73ccd4f68.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "工资",
+  "id": "dee9b7ca803b78e0a6e64f5b",
+  "level": 4,
+  "meaning": "wage, salary",
+  "pinyin": "gōngzī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zBkI<i6How-1779527160060"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

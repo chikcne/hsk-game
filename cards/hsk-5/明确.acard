@@ -1,0 +1,29 @@
+{
+  "audio": "7354113e572e5d62a7033f7b487ba339e15843025b9cb9f67e15f48f788efd3d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "明确",
+  "id": "9bded5a341621bb261bb394f",
+  "level": 5,
+  "meaning": "clear, explicit; to clarify",
+  "pinyin": "míngquè",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ws/|PW%m+u-1779527161579"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

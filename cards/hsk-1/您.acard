@@ -1,0 +1,29 @@
+{
+  "audio": "3b0993e97816218f40cdaf9573247857d0b930689706200f99adaf4bd7a54301.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "您",
+  "id": "bc4dba2b9e710debd7830d16",
+  "level": 1,
+  "meaning": "you (polite)",
+  "pinyin": "nín",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-m;/3MiGgCQ-1779527158953"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

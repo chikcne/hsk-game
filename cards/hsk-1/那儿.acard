@@ -1,0 +1,31 @@
+{
+  "audio": "fabaa0221bbbddc81f4d6d434c4d7142d6e615a3906923759e70e67d943cd469.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "那"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "那儿",
+  "id": "eb3a3fcb529d9c4f0db21a5d",
+  "level": 1,
+  "meaning": "there (casual; northern China; spoken Mandarin)",
+  "pinyin": "nàr",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-s*CuJ[tM_j-1779527158943"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

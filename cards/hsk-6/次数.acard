@@ -1,0 +1,32 @@
+{
+  "audio": "01026c18a118935a1358cefc5b9e643e1cef000cc39af60862ea75e6553a4319.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "数",
+      "次"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "次数",
+  "id": "668160bb8f91048649b50060",
+  "level": 6,
+  "meaning": "number of times",
+  "pinyin": "cìshù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-221-1779527162624"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

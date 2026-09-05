@@ -1,0 +1,32 @@
+{
+  "audio": "30f4106117a339cdb267c9adc2e75de8d5c4b2916dc34f0e292ba1631ae0d846.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "费"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学费",
+  "id": "5cfb5d5bf222def1f77c34bd",
+  "level": 4,
+  "meaning": "tuition fee",
+  "pinyin": "xuéfèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qZ9OEX)j<n-1779527160640"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

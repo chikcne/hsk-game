@@ -1,0 +1,29 @@
+{
+  "audio": "2ed07cb13573b626f121d16096c5cef887a1061a616385ef6e564975d71ed255.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "除",
+  "id": "98aa76c680d1e11858a830ed",
+  "level": 6,
+  "meaning": "to remove, to divide; except",
+  "pinyin": "chú",
+  "pos": "动、介",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-194-1779527162597"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "6a3e7503e52e4f1284df4ca8b0d6400c996f45388eee608bdb50f679d2b79c0c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "误"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "耽误",
+  "id": "16dd8b4ccb24ed0d27c485fe",
+  "level": 6,
+  "meaning": "to delay, to waste time",
+  "pinyin": "dānwu",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-263-1779527162666"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

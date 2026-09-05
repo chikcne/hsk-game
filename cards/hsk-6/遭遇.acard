@@ -1,0 +1,29 @@
+{
+  "audio": "8daa180a752cee47e3f584db68e6f144e16cc87633189852fc8b905d30f63336.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遭遇",
+  "id": "cf080dd4f2d73f011d25b9ce",
+  "level": 6,
+  "meaning": "to encounter; fate, luck",
+  "pinyin": "zāoyù",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1650-1779527164053"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

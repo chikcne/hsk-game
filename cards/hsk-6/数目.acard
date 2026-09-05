@@ -1,0 +1,31 @@
+{
+  "audio": "907caec0e5cf953717c8ecb389e546b832cf1b151b1eb34b451361d54a29a960.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "数"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "数目",
+  "id": "c78afc8a96d7906aa88d4249",
+  "level": 6,
+  "meaning": "number, quantity",
+  "pinyin": "shùmù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1228-1779527163631"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

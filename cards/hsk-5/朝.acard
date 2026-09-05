@@ -1,0 +1,29 @@
+{
+  "audio": "1f35f6bd4de6e11ce331480eef6ff0d240a9958ddef109671ad97574101c58ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "朝",
+  "id": "5374263181722cf56d8b20e3",
+  "level": 5,
+  "meaning": "to face; towards",
+  "pinyin": "cháo",
+  "pos": "verb、preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M[_l@xnR?r-1779527160924"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "7f08385d27ccb7a0549c39c3d9ca55cadec9338504c3760cace33203b78c4bd7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "处",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "处理",
+  "id": "59b70adf5d26de0905ff307d",
+  "level": 5,
+  "meaning": "to handle, to deal with",
+  "pinyin": "chǔlǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-oP+d@uz*-n-1779527160983"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

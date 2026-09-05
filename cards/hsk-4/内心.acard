@@ -1,0 +1,32 @@
+{
+  "audio": "de4eb4646b8354e3ad922d1c49cf55980066f442b8c398f57af190a5be61be1f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "内",
+      "心"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "内心",
+  "id": "6008ceca10c43d4b13aa202e",
+  "level": 4,
+  "meaning": "heart, inner self",
+  "pinyin": "nèixīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-sZ=[CUH1oz-1779527160333"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

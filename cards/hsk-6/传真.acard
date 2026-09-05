@@ -1,0 +1,32 @@
+{
+  "audio": "57cc0dba328b2c06cefab16e5c7516053322e235bfeed5e894541712bb0a9591.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传",
+      "真"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "传真",
+  "id": "63fd90f0c1de662c08d6a0b5",
+  "level": 6,
+  "meaning": "fax",
+  "pinyin": "chuánzhēn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-207-1779527162610"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

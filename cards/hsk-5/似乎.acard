@@ -1,0 +1,29 @@
+{
+  "audio": "1352f2a2a3334a1d9e33a51b4f8680bf020c8157113d4487ced1b056e33cf2a6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "似乎",
+  "id": "8489f10559449a1e974af30d",
+  "level": 5,
+  "meaning": "seem, as if",
+  "pinyin": "sìhū",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-CSAsXa]s1s-1779527161885"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

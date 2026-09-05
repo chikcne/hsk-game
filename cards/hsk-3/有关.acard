@@ -1,0 +1,32 @@
+{
+  "audio": "377d9e173020cc3a49ead9aa6cec38924e3db283c72468fb98c674c1c18272ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有关",
+  "id": "6d709e01a19777a7059c11d8",
+  "level": 3,
+  "meaning": "to have to do with; concerning",
+  "pinyin": "yǒuguān",
+  "pos": "verb、preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-BzT.ijc#R9-1779527159749"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

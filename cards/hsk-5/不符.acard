@@ -1,0 +1,31 @@
+{
+  "audio": "22041c3bd14df8a7ab935ec46b9252cb16a807ed2b0b039f97b9328b92072161.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不符",
+  "id": "929f72bda97a9162454da574",
+  "level": 5,
+  "meaning": "not in accordance with",
+  "pinyin": "bùfú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J54fv7{Hva-1779527160881"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

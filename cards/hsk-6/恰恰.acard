@@ -1,0 +1,29 @@
+{
+  "audio": "91bef9d5f4adaa17e59fdc368fa06bc0be3fff29dd4cbe9bd3c3716fd5f7c349.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "恰恰",
+  "id": "c1100b52597cf7a11458cf2e",
+  "level": 6,
+  "meaning": "just, exactly",
+  "pinyin": "qiàqià",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1031-1779527163434"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

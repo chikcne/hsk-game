@@ -1,0 +1,31 @@
+{
+  "audio": "fb4af968a27968f10b480ab891f05852bee0e2f3e40cc14e25db4db3f49ffe9a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人体",
+  "id": "6f4b59aec11173828c69831d",
+  "level": 5,
+  "meaning": "human body",
+  "pinyin": "réntǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KU[Tj`~i>I-1779527161729"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

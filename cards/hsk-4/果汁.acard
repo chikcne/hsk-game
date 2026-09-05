@@ -1,0 +1,29 @@
+{
+  "audio": "2a64ca8b955bc6859627c623a198d76cb419980d1c4d8df6caf7e1a17279741d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "果汁",
+  "id": "599afa3492a3064a04a3a824",
+  "level": 4,
+  "meaning": "fruit juice",
+  "pinyin": "guǒzhī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-se}a]~^c>[-1779527160084"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

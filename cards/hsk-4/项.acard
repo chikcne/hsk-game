@@ -1,0 +1,29 @@
+{
+  "audio": "6aa67b1619d4360c664c11a4b9c9d5c4ea800b434467fbe2aadf13f34f889503.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "项",
+  "id": "265d1a0a34f5e2a8a90e1846",
+  "level": 4,
+  "meaning": "measure word for projects, items",
+  "pinyin": "xiàng",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-P>H#j|OkP<-1779527160613"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

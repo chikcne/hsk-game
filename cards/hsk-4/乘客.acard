@@ -1,0 +1,31 @@
+{
+  "audio": "dcbfb5351a16a97cdfba0a6704eb03b943b49812943b3cf2cd6dc0ddcf055d9f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "乘"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "乘客",
+  "id": "0d2283d5e530d12f145266fe",
+  "level": 4,
+  "meaning": "passenger",
+  "pinyin": "chéngkè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Kn:0NdX*eH-1779527159883"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

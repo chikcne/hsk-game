@@ -1,0 +1,32 @@
+{
+  "audio": "ab628d8dcfc6c7349deac38e7b77bcf33151aa378ec0a6ded415d751a7894f14.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "提"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "提到",
+  "id": "dc8d0fdd9677c17d8a996887",
+  "level": 4,
+  "meaning": "to mention, to refer to",
+  "pinyin": "tídào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I*_8wZ81^--1779527160531"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

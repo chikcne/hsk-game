@@ -1,0 +1,31 @@
+{
+  "audio": "142d76ffc9141451922452c1a5d28a87d94045df413572538a734b50d031fd16.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "作为",
+  "id": "12bd4b2f7a308f83eac7ee0f",
+  "level": 4,
+  "meaning": "to act as, to serve as; as, being",
+  "pinyin": "zuòwéi",
+  "pos": "verb、preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-jxk.AY2?Ht-1779527160799"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

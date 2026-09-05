@@ -1,0 +1,32 @@
+{
+  "audio": "44ee847c2b4db4cbdeed1cbe5c8ef99369becc723c5ee85803c24eb4d70f12fb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "爱"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爱好",
+  "id": "9294942c175b4e47fe50af94",
+  "level": 2,
+  "meaning": "to like; hobby",
+  "pinyin": "àihào",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-OxmG{uqV!M-1779527159105"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

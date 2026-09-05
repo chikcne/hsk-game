@@ -1,0 +1,31 @@
+{
+  "audio": "7220d9ccd48fcb82b752cbada52bf9d70cb0efb4647a9b5699a725864f57d395.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "切"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "迫切",
+  "id": "0359028bec81e588e6c47696",
+  "level": 6,
+  "meaning": "urgent, pressing",
+  "pinyin": "pòqiè",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1007-1779527163410"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

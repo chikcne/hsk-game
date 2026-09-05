@@ -1,0 +1,32 @@
+{
+  "audio": "488e41ef808ba81a4fdfa6c3cb0a41ebf58c768c0a723a3743dc001b652a9e75.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "式",
+      "正"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "正式",
+  "id": "9fb1c7d351df294b7c16564e",
+  "level": 4,
+  "meaning": "formal, official",
+  "pinyin": "zhèngshì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-SrDe%fTb!-1779527160740"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "3a8b8d956ae9e7b80364abd200e0654802310a738e601a439c308d20d6d71cdf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "如",
+  "id": "a0c4c63df53f097423c5e911",
+  "level": 5,
+  "meaning": "like, as; if",
+  "pinyin": "rú",
+  "pos": "verb、conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-LHCD=a-dj`-1779527161735"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

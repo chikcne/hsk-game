@@ -1,0 +1,32 @@
+{
+  "audio": "72f2c4e1f6d32314ca48fe28f9752f112c609bd1eab1a89ef98270fe18dbd08d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "位",
+      "单"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "单位",
+  "id": "a1f6d3a0febd5f60de9e5138",
+  "level": 4,
+  "meaning": "unit, department",
+  "pinyin": "dānwèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s[GD+:HBax-1779527159937"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

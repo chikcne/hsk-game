@@ -1,0 +1,29 @@
+{
+  "audio": "51942e2ba4c850cca78e66322e92b961f1c75aaf4f8d6e95ddbe980950c1f68e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "炸",
+  "id": "ee43e583c59a7fa25985a886",
+  "level": 5,
+  "meaning": "to fry",
+  "pinyin": "zhá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-e`:n[RBdw`-1779527162263"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "a8c964514689daa30819d1753b8b57ddb50543e33d2fd9d3e4c994a58336072a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "假"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "假设",
+  "id": "c479028a52c0beafda4379ae",
+  "level": 6,
+  "meaning": "to suppose; hypothesis",
+  "pinyin": "jiǎshè",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-638-1779527163041"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

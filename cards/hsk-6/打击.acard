@@ -1,0 +1,31 @@
+{
+  "audio": "9bce276abb9665a3594f59304f519fd4f5835efbac512ba08fb5d6ab8fe2059d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打击",
+  "id": "b495a6ba6b810d2c3fb44c6b",
+  "level": 6,
+  "meaning": "to strike, to attack",
+  "pinyin": "dǎjī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-238-1779527162641"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "0b71c80667d6871e38a1be4386af957f0108e48423d83dd2586db10456b21968.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "去"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "去世",
+  "id": "9f747803eec0906c02611ddf",
+  "level": 5,
+  "meaning": "to pass away",
+  "pinyin": "qùshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rQ6`*^3J2Y-1779527161700"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

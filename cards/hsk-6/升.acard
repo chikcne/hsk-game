@@ -1,0 +1,29 @@
+{
+  "audio": "9cc809bf23478d519ca21e03dcf5947aa1f503f508fcd293654d491b0da949ca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "升",
+  "id": "ed63502c864f77db26bb2a20",
+  "level": 6,
+  "meaning": "liter",
+  "pinyin": "shēng",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": "sense 2",
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1169-1779527163572"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

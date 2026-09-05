@@ -1,0 +1,32 @@
+{
+  "audio": "82256db846204cd5f1584836fa72e539d8b5abb93f9c983cc340211870dfae8e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "仅"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不仅",
+  "id": "6c76f7a5287d0cf9de832b92",
+  "level": 4,
+  "meaning": "not only",
+  "pinyin": "bùjǐn",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z[Oe~{h`5j-1779527159858"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

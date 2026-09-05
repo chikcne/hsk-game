@@ -1,0 +1,29 @@
+{
+  "audio": "fce9d1bccc7e2abca14a4794398fe584b3e20f88de41c800949a588be5035206.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "银",
+  "id": "7f524a5e09728cae18d43bf4",
+  "level": 6,
+  "meaning": "silver",
+  "pinyin": "yín",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1576-1779527163979"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

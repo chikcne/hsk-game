@@ -1,0 +1,32 @@
+{
+  "audio": "f4f40e94e584192d7c16e30dc3f779b0836f33773f6ae10f0f8a8d8e950943bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "去",
+      "过"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "过去",
+  "id": "0fc13298adb74d6263ca9c3f",
+  "level": 3,
+  "meaning": "past",
+  "pinyin": "guòqù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-fzsU`,4<|Z-1779527159463"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

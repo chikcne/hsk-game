@@ -1,0 +1,29 @@
+{
+  "audio": "191d0455f0702c4252017ef99ec1bc030f33821bf888d1df289cf83afb022e08.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "忽视",
+  "id": "6113a28ceb2a3c44e25e5249",
+  "level": 5,
+  "meaning": "to overlook, to ignore",
+  "pinyin": "hūshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-H.iNd<Hb+8-1779527161290"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "740fc540e392787d97f62164d0738fb087214e21afdd961b764ca81f2bd050c9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "友好",
+  "id": "7c7fdfa522318eceae79e19b",
+  "level": 4,
+  "meaning": "friendly",
+  "pinyin": "yǒuhǎo",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-j7Re8Z}s;o-1779527160692"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

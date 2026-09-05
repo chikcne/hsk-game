@@ -1,0 +1,32 @@
+{
+  "audio": "9c0fa4f4b6247928da8fbb3f79a35620a67ee69b69352eb7bd9af9655724fa6c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "从",
+      "此"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "从此",
+  "id": "8af6d937111c95abbce7b8a2",
+  "level": 4,
+  "meaning": "from then on, since then",
+  "pinyin": "cóngcǐ",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-M%(nONn8U@-1779527159905"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

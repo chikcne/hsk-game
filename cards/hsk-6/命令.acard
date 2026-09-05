@@ -1,0 +1,32 @@
+{
+  "audio": "68b1d16a001a8d9197f0cc8cb2abc0609060f4099f359f0cd77f942e349f4b70.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "令",
+      "命"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "命令",
+  "id": "fb22f12c2516898707663a51",
+  "level": 6,
+  "meaning": "to order, to command; order",
+  "pinyin": "mìnglìng",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-929-1779527163332"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

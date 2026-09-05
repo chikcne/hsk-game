@@ -1,0 +1,32 @@
+{
+  "audio": "0f61ab33f22b2ac534346f18d110ee0b81b8324404fbd9e7456551edbb5068a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关",
+      "系"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "关系",
+  "id": "2500be2330d8b3ea0f7adbf0",
+  "level": 3,
+  "meaning": "relationship; (to relate)",
+  "pinyin": "guānxì",
+  "pos": "noun、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-gzMyj0HM4s-1779527159457"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

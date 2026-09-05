@@ -1,0 +1,29 @@
+{
+  "audio": "c85289538f99dadbbb5e0badae72b7cd640b373370e2a4645d454a946e5551a1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "都",
+  "id": "bd5c2dbb390fb21ef9e57467",
+  "level": 1,
+  "meaning": "all, both",
+  "pinyin": "dōu",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-bhle$AM+<;-1779527158844"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

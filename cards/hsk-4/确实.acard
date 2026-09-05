@@ -1,0 +1,29 @@
+{
+  "audio": "80cceabc7a4c56b652afb5c51131c7836d2fae2fe1f9da3b30082d9e3d41bcbd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "确实",
+  "id": "060a997a2753766ad91c5a84",
+  "level": 4,
+  "meaning": "indeed, really",
+  "pinyin": "quèshí",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-F=jf;At2>0-1779527160410"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

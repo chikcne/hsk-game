@@ -1,0 +1,32 @@
+{
+  "audio": "3e4e90aeff3424547336e4457920eae1b25793a58d7cdeae4b9fe86139327882.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "书",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "书面",
+  "id": "dc9466f1209934b570f2d6a8",
+  "level": 6,
+  "meaning": "written, in writing",
+  "pinyin": "shūmiàn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1221-1779527163624"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

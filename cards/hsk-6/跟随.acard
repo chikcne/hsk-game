@@ -1,0 +1,32 @@
+{
+  "audio": "6ebc91577524d04e84e6408cf7534bc4720dd183145075b92ee40b6f7cfbbe1b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "跟",
+      "随"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跟随",
+  "id": "a16990fba7c6c66a9ea06213",
+  "level": 6,
+  "meaning": "to follow",
+  "pinyin": "gēnsuí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-448-1779527162851"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "ffc5268ee99ae597241036742af02f2c8c53e76f25502cf9c4fdd4aa98db1c28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "遇到",
+  "id": "7d373bef88cc1be8dd337305",
+  "level": 3,
+  "meaning": "to encounter",
+  "pinyin": "yùdào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-I#9;&*aE.E-1779527159756"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

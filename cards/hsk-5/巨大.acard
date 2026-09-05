@@ -1,0 +1,31 @@
+{
+  "audio": "1f48522872dc12b9f5b80f4943bb61bd5e7f38191abe4e6e1b88d9b5dfa33ec8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "巨大",
+  "id": "85973031598c61b6baab30a2",
+  "level": 5,
+  "meaning": "huge, enormous",
+  "pinyin": "jùdà",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JR~9}D|h1[-1779527161443"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

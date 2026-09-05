@@ -1,0 +1,31 @@
+{
+  "audio": "0d8899459e7a7fffde8ae37aaefc9aa533ba081c76e1b733c18df86ff32db6ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "化"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "消化",
+  "id": "24c7b8f98fdc97e12734b48d",
+  "level": 5,
+  "meaning": "to digest",
+  "pinyin": "xiāohuà",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-hAq#OyIl!w-1779527162067"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

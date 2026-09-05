@@ -1,0 +1,31 @@
+{
+  "audio": "8fde4becd66cf1a03d52521287089100996c83d1eab6b1d086ec543eb35ccbbf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "口腔",
+  "id": "0a22944aeee943c40fc9c97c",
+  "level": 6,
+  "meaning": "oral cavity",
+  "pinyin": "kǒuqiāng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-795-1779527163198"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

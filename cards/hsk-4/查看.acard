@@ -1,0 +1,32 @@
+{
+  "audio": "6d3756e64dc83fcfee7fe3b9fc680564b8e9235b78792e774bb7c285f7cc144a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "查",
+      "看"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "查看",
+  "id": "86758c1f3d5a5c5c556a9882",
+  "level": 4,
+  "meaning": "to check, to view",
+  "pinyin": "chákàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Bs#z=>#EJC-1779527159870"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

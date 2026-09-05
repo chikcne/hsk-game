@@ -1,0 +1,32 @@
+{
+  "audio": "582baedfd01e8247965d5a03cf5606bbfee9ac7339ec12110a8331e0420e09e4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "船",
+      "轮"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "轮船",
+  "id": "faf84b9b4ea188b92f890cf9",
+  "level": 6,
+  "meaning": "steamship, ship",
+  "pinyin": "lúnchuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-876-1779527163279"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

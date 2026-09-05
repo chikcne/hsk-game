@@ -1,0 +1,31 @@
+{
+  "audio": "7577eb45f0d2341b96cd1b6a6bb444728935e9fb7f89317b9ea5d11b1b1ab801.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "可"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "可怜",
+  "id": "df6b1cac0b423241d37e9f19",
+  "level": 6,
+  "meaning": "pitiful; to pity",
+  "pinyin": "kělián",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-784-1779527163187"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

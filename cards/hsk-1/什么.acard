@@ -1,0 +1,29 @@
+{
+  "audio": "cbe18a6d7099868107a5e23b3c006155e45eebfeda0ec0c8ec431b5d124c1d60.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "什么",
+  "id": "25ff7e048016210fa0dd4edb",
+  "level": 1,
+  "meaning": "what",
+  "pinyin": "shénme",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-pc*]TxY:BZ-1779527158985"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

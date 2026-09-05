@@ -1,0 +1,29 @@
+{
+  "audio": "62031ecd530e1419e770c3449d289297ba622b6a578a0cf44ed944d49d71d07f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "资源",
+  "id": "2237dd0af7aafba03f477948",
+  "level": 5,
+  "meaning": "resources",
+  "pinyin": "zīyuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bR=>`MD-XO-1779527162374"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

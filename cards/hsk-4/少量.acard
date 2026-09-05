@@ -1,0 +1,32 @@
+{
+  "audio": "d4270b06df7060ae852ebabde47d6f134686eaa775200eaddb68ada8a981c158.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "少",
+      "量"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "少量",
+  "id": "0525ebc831009a18596b5d75",
+  "level": 4,
+  "meaning": "small amount, a little",
+  "pinyin": "shǎoliàng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Q-,?E,q;fn-1779527160439"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "709e0bb4b9709dcdbefacdc28029f445a732e7f2c99d7261b9e51e78fc8fa57f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伤"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "伤亡",
+  "id": "8cbd22d017fdc3253847eb9b",
+  "level": 6,
+  "meaning": "to be injured; casualties",
+  "pinyin": "shāngwáng",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1145-1779527163548"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "8346c81d0b4e4a9fc2cc21ade5a14ef74030cb875dd1cebb67710c733fc03329.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "回"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "撤回",
+  "id": "3f72713be28ded18b62735dc",
+  "level": 6,
+  "meaning": "to withdraw, to recall",
+  "pinyin": "chèhuí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-148-1779527162551"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

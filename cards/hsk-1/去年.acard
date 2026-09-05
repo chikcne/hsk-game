@@ -1,0 +1,32 @@
+{
+  "audio": "d027b969c45590fb91d2d66704dfad042985814f232fdf07869934e55d8127e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "去",
+      "年"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "去年",
+  "id": "734f74ac77b4c069d8b5e949",
+  "level": 1,
+  "meaning": "last year",
+  "pinyin": "qùnián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-j:eP?J^2?6-1779527158971"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "4580a5e4c9afa658b197115efede1fe2f7018cbc671b04c7a5c67e86094c818d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "测"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "预测",
+  "id": "e5345732f1aac90eb5e8a23a",
+  "level": 5,
+  "meaning": "to predict",
+  "pinyin": "yùcè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gAJV9^O)3-1779527162225"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

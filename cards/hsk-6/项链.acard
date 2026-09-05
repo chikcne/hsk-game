@@ -1,0 +1,31 @@
+{
+  "audio": "853b17877df7d52ec2cfa529d5ec1b5ad05ec82e4e8cdfa02f29ef9df1008692.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "项"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "项链",
+  "id": "92cd87f7fb89d1cc04b281b7",
+  "level": 6,
+  "meaning": "necklace",
+  "pinyin": "xiàngliàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1441-1779527163844"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

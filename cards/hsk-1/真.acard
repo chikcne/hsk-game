@@ -1,0 +1,29 @@
+{
+  "audio": "187f1a607e00de13dc8926faa876fd6d4ac904809a9eb93ddf18d565d467610c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "真",
+  "id": "8d45e68ddaa816b31ca422a5",
+  "level": 1,
+  "meaning": "really; (true)",
+  "pinyin": "zhēn",
+  "pos": "adverb、 （adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Kx4!;WD}0Q-1779527159088"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

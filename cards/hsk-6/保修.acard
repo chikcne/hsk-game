@@ -1,0 +1,32 @@
+{
+  "audio": "09226b8aa6455ce0753207b334e7b959bc48afc39abae20a5d763bd7365f9f9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保",
+      "修"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保修",
+  "id": "141da1da4eb224f9cf8e5120",
+  "level": 6,
+  "meaning": "to guarantee repair",
+  "pinyin": "bǎoxiū",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-25-1779527162428"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "410fdc5656e37d5c11f9d7604eab3a046cc019cd81cd99a244e5d5d5a39cee7f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "去",
+  "id": "b275e1a63d9abfe68a87d6f5",
+  "level": 1,
+  "meaning": "to go",
+  "pinyin": "qù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-DG^?z]O{Bz-1779527158970"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

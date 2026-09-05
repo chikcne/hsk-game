@@ -1,0 +1,32 @@
+{
+  "audio": "b32fe2f983b0cebdba48165e96ffd1463ce6959ef0727a39b46ac8de7380b7f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "排",
+      "放"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "排放",
+  "id": "3a98450cabdb84fc12ff64a0",
+  "level": 6,
+  "meaning": "to emit, to discharge",
+  "pinyin": "páifàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-967-1779527163370"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

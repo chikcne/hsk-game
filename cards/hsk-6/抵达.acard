@@ -1,0 +1,29 @@
+{
+  "audio": "ee67261a036b896d7af90ede81d6831c38f1778d689843ad094eb2200325d28c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抵达",
+  "id": "ed38a67f297212305e9fcbbc",
+  "level": 6,
+  "meaning": "to arrive, to reach",
+  "pinyin": "dǐdá",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-289-1779527162692"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

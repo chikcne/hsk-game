@@ -1,0 +1,32 @@
+{
+  "audio": "ee714f12c770cdfb6ffba8620c1ba707dc8aa18ccade76963b6bc34f05abaf4f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "抓",
+      "紧"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抓紧",
+  "id": "f3b88abf4e78706e3690448b",
+  "level": 5,
+  "meaning": "to grasp firmly",
+  "pinyin": "zhuājǐn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t(E~]n<]n.-1779527162358"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

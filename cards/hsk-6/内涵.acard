@@ -1,0 +1,31 @@
+{
+  "audio": "56a53cdaa18d29c6c887ee839a8b85e79748281f7d3f210532e96be6808a651d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "内"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "内涵",
+  "id": "2f3d42d2d501808d440c1599",
+  "level": 6,
+  "meaning": "connotation",
+  "pinyin": "nèihán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-949-1779527163352"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

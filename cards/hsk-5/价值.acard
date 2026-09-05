@@ -1,0 +1,31 @@
+{
+  "audio": "1e1538137b6ce2fede2c3bdb9f46738ed3031016af465802ff122bd476f0afd2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "值"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "价值",
+  "id": "809d4ebe78d86aef94bf7c90",
+  "level": 5,
+  "meaning": "value",
+  "pinyin": "jiàzhí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-p$LKl$|0>V-1779527161366"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

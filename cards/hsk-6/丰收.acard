@@ -1,0 +1,31 @@
+{
+  "audio": "12e7dbe947a85b6b2172e636e7209745628598f6b3a7da295eba84c46e74f8d7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "收"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "丰收",
+  "id": "ef1bf591162a3c031489f19b",
+  "level": 6,
+  "meaning": "bountiful harvest",
+  "pinyin": "fēngshōu",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-394-1779527162797"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

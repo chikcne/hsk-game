@@ -1,0 +1,32 @@
+{
+  "audio": "24ce69c5500dad56fab1ab5aca1c3c002e9b4eb21402d180d6f78b6820e4c80c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "书",
+      "店"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "书店",
+  "id": "7da6d5785ce1eefd96c21897",
+  "level": 1,
+  "meaning": "bookstore",
+  "pinyin": "shūdiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-L>qy(Lh[tZ-1779527158994"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

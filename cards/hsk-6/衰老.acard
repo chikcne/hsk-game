@@ -1,0 +1,31 @@
+{
+  "audio": "776f2880ecb56afde736ad824ff5f56e24a0d9b4eed76ea15933aff38ca0842c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "老"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "衰老",
+  "id": "08107f48cc418158e58c0f56",
+  "level": 6,
+  "meaning": "to age, to grow old",
+  "pinyin": "shuāilǎo",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1230-1779527163633"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

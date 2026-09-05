@@ -1,0 +1,29 @@
+{
+  "audio": "1a1f0942403d5ba7d5fa123c71450c83f4f5b38799643c83b895c1a8d679132a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "奖",
+  "id": "d32d6126a4b58f47c9f1664c",
+  "level": 4,
+  "meaning": "prize, award, reward; to award, to reward, to praise",
+  "pinyin": "jiǎng",
+  "pos": "noun、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-t.&rgfbr/I-1779527160162"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "1ca22b40d842c66d7ca501817a978687b3dd66e72ae2eb04719f48c9ccc5567a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "作出",
+  "id": "9fae22d9f6fa2cd069d7b81a",
+  "level": 5,
+  "meaning": "to put forward, to make a decision",
+  "pinyin": "zuòchū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-yYRNic@>m7-1779527162403"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

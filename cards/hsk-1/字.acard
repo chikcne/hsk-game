@@ -1,0 +1,29 @@
+{
+  "audio": "85148f0c982851bcc58909204c870f49b1855dae48fd0a76101f2f745fa3c3fb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "字",
+  "id": "e92f59db7bd3eff7a0bdd450",
+  "level": 1,
+  "meaning": "character, script",
+  "pinyin": "zì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-cn%yS2`||H-1779527159099"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "17ab74af5748de89a640bd01e4724b1af63edf8891055ae2583f3f6784915aaa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "压"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "压力",
+  "id": "d37de3b9fd11a967769dbdb8",
+  "level": 4,
+  "meaning": "pressure, stress",
+  "pinyin": "yālì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nb^iAPx|}--1779527160643"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

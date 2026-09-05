@@ -1,0 +1,32 @@
+{
+  "audio": "09c1bbec6ece698f234f7d02d45942746941a0b25439fb71eaab9d3b9a17fed0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合",
+      "配"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "配合",
+  "id": "61c0da41892db65728c455a6",
+  "level": 5,
+  "meaning": "to coordinate, to cooperate",
+  "pinyin": "pèihé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-In)6_vZ*@k-1779527161623"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

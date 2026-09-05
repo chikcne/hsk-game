@@ -1,0 +1,32 @@
+{
+  "audio": "7f139e4472dae958aee3b2cad5a72c006d8bf09afd7dbb988edcc2718d4289dc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合",
+      "并"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "合并",
+  "id": "37669f37cdf87758c3f0ce21",
+  "level": 6,
+  "meaning": "to merge, to combine",
+  "pinyin": "hébìng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-538-1779527162941"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

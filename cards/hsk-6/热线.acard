@@ -1,0 +1,32 @@
+{
+  "audio": "0ab3f35895946a16f775ce6f4735b2430148e4b3a8a715d6d62acc5a6f144c74.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "热",
+      "线"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热线",
+  "id": "9ddd54471a6a4c1a5b12585e",
+  "level": 6,
+  "meaning": "hotline",
+  "pinyin": "rèxiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1092-1779527163495"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

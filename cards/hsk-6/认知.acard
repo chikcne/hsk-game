@@ -1,0 +1,31 @@
+{
+  "audio": "9293deb653fdaa98752bd2d344e7db3e89ac064278535f5a9bd6e7190b4569e0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "认"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "认知",
+  "id": "70c7bca4b9401520eac733a9",
+  "level": 6,
+  "meaning": "to recognize, to be aware of",
+  "pinyin": "rènzhī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1107-1779527163510"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

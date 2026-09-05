@@ -1,0 +1,32 @@
+{
+  "audio": "fc27ba1d4be8615bd0a9c54ca41fc0a0fcc8ca6a487f0e4d272d6b3730028e26.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "样",
+      "那"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "那样",
+  "id": "783283c59fd7d67e8b8aeb93",
+  "level": 2,
+  "meaning": "like that",
+  "pinyin": "nàyàng",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-d8z)SB98Wm-1779527159210"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "cf9c4c7e1cf5fe1ce63a1c92d336cf322b9b9cc0fbd8963cf83931825da9ed82.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "便",
+      "顺"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "顺便",
+  "id": "1f52014e003341817e27fe61",
+  "level": 4,
+  "meaning": "conveniently, in passing",
+  "pinyin": "shùnbiàn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-CR&Qi{MH!{-1779527160499"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

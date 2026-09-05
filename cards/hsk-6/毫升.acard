@@ -1,0 +1,31 @@
+{
+  "audio": "75500267ec6526bad926a796780a32d5f5942fbb7d3b78b40ca785b0f88af892.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "升"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "毫升",
+  "id": "5fc96b99e86ec860aaa7862e",
+  "level": 6,
+  "meaning": "milliliter",
+  "pinyin": "háoshēng",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-531-1779527162934"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

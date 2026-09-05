@@ -1,0 +1,31 @@
+{
+  "audio": "ff2aceb8821171cd1f4a3d376a4f91c3a3f06dce1b70aec0d10e7d990cf1c60c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "教"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "教材",
+  "id": "32a826eabe61b6a99b5a806d",
+  "level": 5,
+  "meaning": "teaching materials",
+  "pinyin": "jiàocái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-p0Ex4[d#cO-1779527161397"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

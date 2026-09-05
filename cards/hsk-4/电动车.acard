@@ -1,0 +1,35 @@
+{
+  "audio": "289efc07f79638b31337a618cd9cf683f838f27ea14d47fc7b0a40abca9f2cf6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "动车",
+      "电",
+      "电动",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电动车",
+  "id": "136fad44b201540d60dda502",
+  "level": 4,
+  "meaning": "electric vehicle, e-bike",
+  "pinyin": "diàndòngchē",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xdsL)w}6@f-1779527159962"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

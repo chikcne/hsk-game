@@ -1,0 +1,33 @@
+{
+  "audio": "ea557e9ee2db846fef8fc5ee16d6a9d7ce7bd68ce9ebc96aa0e583bd123d3029.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "便",
+      "便利",
+      "店"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "便利店",
+  "id": "4d623989363af5841b4457d8",
+  "level": 5,
+  "meaning": "convenience store",
+  "pinyin": "biànlìdiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Oj|.SHvf)]-1779527160862"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

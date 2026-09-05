@@ -1,0 +1,32 @@
+{
+  "audio": "d214299f897b1fce423ebb70204fb19e8542b66bdd7029e964f58c4eb9b4b0a1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "元",
+      "多"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "多元",
+  "id": "d6e1c1c61c001545d928173a",
+  "level": 6,
+  "meaning": "diverse, pluralistic",
+  "pinyin": "duōyuán",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-340-1779527162743"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

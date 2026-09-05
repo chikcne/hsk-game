@@ -1,0 +1,32 @@
+{
+  "audio": "3b075a8fae3143552720ebff3f15b6dee4b0cfbc44077d6323826d03680f53e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "接",
+      "间"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "间接",
+  "id": "eecd55053306df0e865d8f11",
+  "level": 6,
+  "meaning": "indirect",
+  "pinyin": "jiànjiē",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-661-1779527163064"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "db1dc275f62ec54da171fed323384e3997108511a0d463e1b97b103bf1c155ad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "望"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "盼望",
+  "id": "389587d20f62d781d0c7008d",
+  "level": 6,
+  "meaning": "to long for, to look forward to",
+  "pinyin": "pànwàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-971-1779527163374"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

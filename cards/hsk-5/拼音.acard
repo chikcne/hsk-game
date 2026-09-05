@@ -1,0 +1,31 @@
+{
+  "audio": "721e8ad31dcbbae84653e790cbd50a95639c7194d1e92cd61bf60d8ccae3e59c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "拼"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拼音",
+  "id": "86b47f6ec5ff153af9811849",
+  "level": 5,
+  "meaning": "to spell, pinyin",
+  "pinyin": "pīnyīn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-K<Bt})WovX-1779527161634"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

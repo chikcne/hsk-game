@@ -1,0 +1,32 @@
+{
+  "audio": "a8fd3949a9070f65068818413888a4f6eee528f69cc287f53878363d024111f7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "牌",
+      "铜"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "铜牌",
+  "id": "e7f73bf496dfa8b1cfc82e05",
+  "level": 6,
+  "meaning": "bronze medal",
+  "pinyin": "tóngpái",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1314-1779527163717"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

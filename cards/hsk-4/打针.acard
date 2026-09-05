@@ -1,0 +1,32 @@
+{
+  "audio": "d9c32ea7df5327826c27745b4ddf29f268c968356d68bba5d0af170fbce114c4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "针"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打针",
+  "id": "f80a461c608af69fd5606ac5",
+  "level": 4,
+  "meaning": "to get an injection, to receive a shot",
+  "pinyin": "dǎzhēn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-B.IGOVzSuc-1779527159925"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

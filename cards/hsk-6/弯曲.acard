@@ -1,0 +1,32 @@
+{
+  "audio": "3b59cde02a482b359c4a4b738e0bd18a132a85747538e11143cccefb393c4b52.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "弯",
+      "曲"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "弯曲",
+  "id": "478d153dd9e954bb1b51a84b",
+  "level": 6,
+  "meaning": "curved",
+  "pinyin": "wānqū",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1357-1779527163760"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

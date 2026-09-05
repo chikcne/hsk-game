@@ -1,0 +1,32 @@
+{
+  "audio": "5d8cd063786017e1786a99b2fe3e28f95e14542690d2bc219c54c0311a721858.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "男"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "男人",
+  "id": "8b10485865519b4d3a800c6d",
+  "level": 3,
+  "meaning": "man",
+  "pinyin": "nánrén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-DSD`]$I&<D-1779527159582"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

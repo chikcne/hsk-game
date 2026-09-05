@@ -1,0 +1,31 @@
+{
+  "audio": "c52118042b4b04ec33c73de84850c47a0ec03fb275181ea9ddd1b5529b3a0bb1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "货"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "现货",
+  "id": "f08f3113eb3b0371ce681fd6",
+  "level": 6,
+  "meaning": "spot goods",
+  "pinyin": "xiànhuò",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1430-1779527163833"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

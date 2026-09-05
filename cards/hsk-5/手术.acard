@@ -1,0 +1,31 @@
+{
+  "audio": "258735a4f3d48cceb410a38064f1f67bd4149fd4835615098ca7a715bfc93393.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "手术",
+  "id": "c49f49e64e13929718fc8b23",
+  "level": 5,
+  "meaning": "surgery; to operate",
+  "pinyin": "shǒushù",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-iYQNrKE$y%-1779527161853"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

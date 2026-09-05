@@ -1,0 +1,32 @@
+{
+  "audio": "171616c5cd3267c5e67fcacfc57cc79ac91f2853c704f9ae335d840e61c64fd1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "以",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难以",
+  "id": "c12672183666762ad442290c",
+  "level": 5,
+  "meaning": "difficult to, hard to",
+  "pinyin": "nányǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uXur+o*sQ<-1779527161594"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

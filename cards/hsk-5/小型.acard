@@ -1,0 +1,31 @@
+{
+  "audio": "269f9eb373234fedbe1be106f437f509bc9694993f04642ca12b42f34da34773.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小型",
+  "id": "d68e4bd7be5e7043c197fd2b",
+  "level": 5,
+  "meaning": "small-scale, compact",
+  "pinyin": "xiǎoxíng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EXs0Cl?z7l-1779527162073"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "5a79ebc24ae49a2cdbb598f1278cb19f81d876712177b26952740e55ad3e1998.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "对",
+      "方"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "对方",
+  "id": "dad9ce051d4df11d83c35744",
+  "level": 4,
+  "meaning": "the other party, counterpart",
+  "pinyin": "duìfāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Qo&k~$$*1{-1779527159977"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

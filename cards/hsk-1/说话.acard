@@ -1,0 +1,31 @@
+{
+  "audio": "715491be13bbbfb79afa6d192d344f216eb1559be8e934cd0f8bbfe8cbebf4bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "说"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "说话",
+  "id": "a1829b8c6586846c64690333",
+  "level": 1,
+  "meaning": "to talk",
+  "pinyin": "shuōhuà",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Pp>Q?H8W@`-1779527159000"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

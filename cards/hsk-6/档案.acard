@@ -1,0 +1,29 @@
+{
+  "audio": "17268f57c264deeb994dd4abd58b3fe2a129ef71cf01f9314c041488a011c1b8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "档案",
+  "id": "8a4abae7dbefee3da27c9942",
+  "level": 6,
+  "meaning": "file, record",
+  "pinyin": "dàng’àn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-274-1779527162677"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

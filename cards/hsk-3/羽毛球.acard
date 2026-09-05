@@ -1,0 +1,32 @@
+{
+  "audio": "a4256324e7fb23312b0ac9589dbd47f25fb6fffb0864fcc99f57b0b0efd76c01.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "毛",
+      "球"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "羽毛球",
+  "id": "30a1ae44e52fbfdd307d9dc5",
+  "level": 3,
+  "meaning": "badminton",
+  "pinyin": "yǔmáoqiú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Ah8`mm}72[-1779527159753"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

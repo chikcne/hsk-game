@@ -1,0 +1,31 @@
+{
+  "audio": "3d5165bb67fd8c81559330f80ff9f20e83e406827c2dc1ee483c3f42e343012b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "医学",
+  "id": "0d8d094e5fa1b21371e20b02",
+  "level": 5,
+  "meaning": "medicine",
+  "pinyin": "yīxué",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ctsts#?G}Y-1779527162153"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

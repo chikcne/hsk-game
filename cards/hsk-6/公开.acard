@@ -1,0 +1,32 @@
+{
+  "audio": "4ee5a1809f90a78751e0ab3e45904c4a28dbc7309b8cbfba47a1e1f29a3cbfb6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "开"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公开",
+  "id": "a79a32771570b380d74076aa",
+  "level": 6,
+  "meaning": "open, public; to make public",
+  "pinyin": "gōngkāi",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-458-1779527162861"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

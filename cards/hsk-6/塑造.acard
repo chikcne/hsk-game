@@ -1,0 +1,31 @@
+{
+  "audio": "c009a7bc5f2f31346044e4cd362a14bb31ae73248a0bebee02825f4df9ead0c2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "造"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "塑造",
+  "id": "b59ddab7d42c0876b09780b0",
+  "level": 6,
+  "meaning": "to shape, to mold",
+  "pinyin": "sùzào",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1245-1779527163648"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

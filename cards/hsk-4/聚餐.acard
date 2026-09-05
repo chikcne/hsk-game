@@ -1,0 +1,31 @@
+{
+  "audio": "011e422a63a982aff680e394339ad0754cea51945441bc23cd8c8fb5030a8da6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "聚"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "聚餐",
+  "id": "028ebc3e2f7027bae558afe3",
+  "level": 4,
+  "meaning": "to have a dinner together, to dine together",
+  "pinyin": "jùcān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Px^m*^bs=L-1779527160217"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

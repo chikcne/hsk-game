@@ -1,0 +1,31 @@
+{
+  "audio": "6bd22e8e9a6819b86987d5a215f8e7b46b846c5747897b57bf9bec9611a333a1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "册"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相册",
+  "id": "127b8afbb266f7825e855d94",
+  "level": 5,
+  "meaning": "photo album",
+  "pinyin": "xiàngcè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lYjBTqnYw4-1779527162060"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

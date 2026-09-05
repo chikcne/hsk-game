@@ -1,0 +1,32 @@
+{
+  "audio": "09aa49a46205d3a368b98a137dbc621afb9759acc8b7dd4b9e148f8120e75e4c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "必",
+      "未"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "未必",
+  "id": "f042a4b7f70c684acd2dca19",
+  "level": 6,
+  "meaning": "not necessarily, may not",
+  "pinyin": "wèibì",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1378-1779527163781"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

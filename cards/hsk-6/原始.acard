@@ -1,0 +1,31 @@
+{
+  "audio": "e32535230720069d9f7f1dbe8e2b73e14e0f72f78ed02e97ad096e88c545af64.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "原"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "原始",
+  "id": "5b9c1fad63ded42a0870bb34",
+  "level": 6,
+  "meaning": "primitive, original",
+  "pinyin": "yuánshǐ",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1621-1779527164024"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

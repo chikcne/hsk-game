@@ -1,0 +1,32 @@
+{
+  "audio": "2827ef0a1197f50eb6001c62c03d212ae96a6f165eca539fd6c3790b1ce13778.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "定时",
+  "id": "7766094f3ba28c281f229004",
+  "level": 6,
+  "meaning": "to set a time; timing",
+  "pinyin": "dìngshí",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-312-1779527162715"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

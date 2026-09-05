@@ -1,0 +1,32 @@
+{
+  "audio": "4289b8f64ed37cff5264a73d23ebe7b83418b674828ccd5e16a7ba598d601189.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "肥",
+      "胖"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肥胖",
+  "id": "4af517631b16e060f3921d58",
+  "level": 6,
+  "meaning": "obese, fat",
+  "pinyin": "féipàng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-380-1779527162783"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

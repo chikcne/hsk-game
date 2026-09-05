@@ -1,0 +1,29 @@
+{
+  "audio": "5b6bfef12d3d1c0ea6899f1acd0c0f1c3982b154045ff17fdc51cfbcebed2f34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "优质",
+  "id": "71461696f9a124a6a93bc6a3",
+  "level": 5,
+  "meaning": "high quality",
+  "pinyin": "yōuzhì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-k4`%U`aBne-1779527162204"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "f1373e3b2b6a952fbf14e8b45ee6ea73b5139a366ea7eaa31397c37f1a4b694b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中旬",
+  "id": "48af295c5e711f4682eb2a47",
+  "level": 6,
+  "meaning": "middle ten days of a month",
+  "pinyin": "zhōngxún",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1725-1779527164128"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

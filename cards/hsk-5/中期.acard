@@ -1,0 +1,32 @@
+{
+  "audio": "6714571e0ed9b32c15685097d24c457ddb2c6cd6beff205a8c662fc34024d16b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中期",
+  "id": "b6d9a8b1af0abb5bce64035e",
+  "level": 5,
+  "meaning": "medium term, mid-term",
+  "pinyin": "zhōngqī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-AZ]X0A]p=)-1779527162327"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

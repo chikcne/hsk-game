@@ -1,0 +1,31 @@
+{
+  "audio": "44ce71248d041d84b63a3af807e017e357d43ae4000edec7ba9a65488fa18a32.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "冰"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "冰激凌",
+  "id": "5c5cc2d6f012c4f9a3977dab",
+  "level": 3,
+  "meaning": "ice cream",
+  "pinyin": "bīngjīlíng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-rXqsflmGsF-1779527159338"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "5a5085bd4f67bc216d1e135a3815beafe96c8b7ea41a7c1d0eef3e24439ecd49.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "够",
+      "能"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "能够",
+  "id": "434e1d72798ac98375e8e885",
+  "level": 4,
+  "meaning": "can, be able to, be capable of",
+  "pinyin": "nénggòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-c.=OB0Tza{-1779527160335"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "97d136682d4e51f59733ab67b66094f23b74e684a68c407dd2adece9d0fc9036.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常",
+      "见"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "常见",
+  "id": "cadf30cbd8dd0993e71c2ef1",
+  "level": 3,
+  "meaning": "common",
+  "pinyin": "cháng jiàn",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-u4$QW^q,nt-1779527159358"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "eb679fc00e7a370acb62a4df7df8cdc6e3c5c0ccb3d9d03f97430e59e89f8e6a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生",
+      "长"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生长",
+  "id": "83fd4d1b5dc00bfff50fa855",
+  "level": 5,
+  "meaning": "to grow",
+  "pinyin": "shēngzhǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lrL!^Bc4En-1779527161800"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

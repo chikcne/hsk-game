@@ -1,0 +1,32 @@
+{
+  "audio": "87f5baa51c19d9abbb587f274d11adc296c60dab6f17df57a47eb9746d4a8a34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "就",
+      "成"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成就",
+  "id": "9770535abd68ef74ee8568f6",
+  "level": 5,
+  "meaning": "accomplishment, achievement; to achieve",
+  "pinyin": "chéngjiù",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nK4W}3D8_b-1779527160944"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

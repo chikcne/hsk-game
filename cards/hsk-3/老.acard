@@ -1,0 +1,29 @@
+{
+  "audio": "e4afda07079409c8061137280d23918a88799c0ad7ec444168f72ac56bfab805.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "老",
+  "id": "b481dfbe4160e1ff4effedaa",
+  "level": 3,
+  "meaning": "old, aged; prefix indicating seniority or endearment; (always, constantly)",
+  "pinyin": "lǎo",
+  "pos": "adjective、 prefix、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-LK.@.L;a~Y-1779527159548"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

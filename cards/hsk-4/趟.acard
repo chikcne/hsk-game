@@ -1,0 +1,29 @@
+{
+  "audio": "3fd3bed3078878d2319a6644b4c2bb88f52804889a30aa4d3f20be8bb76d2feb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "趟",
+  "id": "0ecfc9afaf464d6ea7bbb35f",
+  "level": 4,
+  "meaning": "measure word for trips, journeys",
+  "pinyin": "tàng",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ff5:Xovt!)-1779527160525"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "6ede5e53a694ef782e366924c9087ba581577454f5d6654d5c6b3098515d1197.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "困",
+  "id": "f007e65db652ee88ca0619bb",
+  "level": 4,
+  "meaning": "sleepy, tired; （to trap, to confine）",
+  "pinyin": "kùn",
+  "pos": "adjective、 （verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-K5_K3.kcWv-1779527160248"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

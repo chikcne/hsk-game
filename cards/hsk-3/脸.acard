@@ -1,0 +1,29 @@
+{
+  "audio": "151f197e7ad3835fd6f51d29ea49806b0b5418f466964e6420c4a0c65dd7b993.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "脸",
+  "id": "41c54c2320e9bb666317fea0",
+  "level": 3,
+  "meaning": "face",
+  "pinyin": "liǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-DITT4wI${4-1779527159553"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

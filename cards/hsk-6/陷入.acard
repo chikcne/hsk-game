@@ -1,0 +1,31 @@
+{
+  "audio": "bbb4e9a865e836d2a91cbef9af03ba52bf9d26d29462730f51085e499c0735a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "陷入",
+  "id": "4805305291ed8a442e6d69f3",
+  "level": 6,
+  "meaning": "to fall into, to be caught in",
+  "pinyin": "xiànrù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1431-1779527163834"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "426caf271161ad9a629358751deb4e1e7125aeefc5dabf62139cbc3a142fbea7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "立"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "创立",
+  "id": "4160e09d1b1df8dc40404204",
+  "level": 6,
+  "meaning": "to found, to set up",
+  "pinyin": "chuànglì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-214-1779527162617"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

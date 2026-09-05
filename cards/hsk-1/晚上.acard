@@ -1,0 +1,32 @@
+{
+  "audio": "11897e7838cf51f0447ba597a5b04ccfc324b9747f70f0a8669d9c6d52988e2f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "晚"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "晚上",
+  "id": "2482b3d1354042144bc3c136",
+  "level": 1,
+  "meaning": "evening",
+  "pinyin": "wǎnshang",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-tT$ZtJt}ik-1779527159020"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

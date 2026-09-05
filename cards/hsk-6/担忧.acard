@@ -1,0 +1,29 @@
+{
+  "audio": "cb9e7b5852e08d6649f156e762f48bb91d49cc51b3902ba6ed0010eb117802ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "担忧",
+  "id": "8788b54a9417714e4c895287",
+  "level": 6,
+  "meaning": "to worry, to be anxious",
+  "pinyin": "dānyōu",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-264-1779527162667"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

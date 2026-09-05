@@ -1,0 +1,29 @@
+{
+  "audio": "c5d1b08744df7a26d3c89f5aa3cdeb3c555a2d36ca8993fd225504a72ed5bed8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "嘉宾",
+  "id": "f1c0363375578c99d02b27de",
+  "level": 5,
+  "meaning": "guest, honored guest",
+  "pinyin": "jiābīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G)A7_wDA$;-1779527161354"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

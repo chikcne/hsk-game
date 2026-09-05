@@ -1,0 +1,32 @@
+{
+  "audio": "d56d2d356cb1d3bb5f01caaa93c0dfdb552ccbf1e941c51f1d84c942baecad0b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "包",
+      "子"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "包子",
+  "id": "9385b6de7178a5d60b0e61d8",
+  "level": 1,
+  "meaning": "steamed stuffed bun",
+  "pinyin": "bāozi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-efNgn7xbVg-1779527158811"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

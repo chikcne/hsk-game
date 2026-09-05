@@ -1,0 +1,31 @@
+{
+  "audio": "58332674662714abad04696c6e25b3cc815676f35d46d1067ca77722dafdc509.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "综合",
+  "id": "5ba37065f3ff0c9c0169549c",
+  "level": 5,
+  "meaning": "to synthesize, to sum up",
+  "pinyin": "zōnghé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tNSN,KH>S[-1779527162383"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

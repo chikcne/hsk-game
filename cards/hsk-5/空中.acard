@@ -1,0 +1,32 @@
+{
+  "audio": "f74cbacc1139477655b5b8273ed51cf64e52cf0670064a4b618a5bf1c9e7df5c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "空"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "空中",
+  "id": "7fc13a905c9cc75082c87e87",
+  "level": 5,
+  "meaning": "in the air, sky; aerial",
+  "pinyin": "kōngzhōng",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-duATNWw](=-1779527161475"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

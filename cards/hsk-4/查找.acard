@@ -1,0 +1,32 @@
+{
+  "audio": "676a5e7aa9217911b21c3e844949f27839e51f7dbe1bd251c39a98019213b8be.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "找",
+      "查"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "查找",
+  "id": "7b5423ebb9711995e67aefcf",
+  "level": 4,
+  "meaning": "to search for, to look up",
+  "pinyin": "cházhǎo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-u1s${x{n6]-1779527159872"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

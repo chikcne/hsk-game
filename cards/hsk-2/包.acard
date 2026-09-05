@@ -1,0 +1,29 @@
+{
+  "audio": "aaf5b6504bc0d4f587cf1726ed5e61ccaec682599a97fbebe68a4809e7b0b033.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "包",
+  "id": "259b37fedce24c112c736c83",
+  "level": 2,
+  "meaning": "to wrap, to pack; bag; measure word for bundles",
+  "pinyin": "bāo",
+  "pos": "verb、noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-mOnuhWW4#A-1779527159110"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

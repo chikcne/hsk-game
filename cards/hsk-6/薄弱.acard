@@ -1,0 +1,32 @@
+{
+  "audio": "0e63cfa61eb94fe54add77af6321ec50db1ca0d674435d326f043eb4952718ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "弱",
+      "薄"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "薄弱",
+  "id": "e0b600077c8b3059e9909e2a",
+  "level": 6,
+  "meaning": "weak, fragile",
+  "pinyin": "bóruò",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-65-1779527162468"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "49147aefb9af76de5cf8c76f31273a11891ee079f416cb88a878a5d145e9804a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "高"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高价",
+  "id": "bdf72ca07f326a31c9c209a3",
+  "level": 4,
+  "meaning": "high price",
+  "pinyin": "gāojià",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-A:D:#_V-+r-1779527160039"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

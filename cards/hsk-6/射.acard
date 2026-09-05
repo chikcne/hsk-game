@@ -1,0 +1,29 @@
+{
+  "audio": "160ce84be65e2b3259e8b572097aab76048a9b44ac42d8673f88caf46df23159.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "射",
+  "id": "5a79018a70abe3272280b3c4",
+  "level": 6,
+  "meaning": "to shoot",
+  "pinyin": "shè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1157-1779527163560"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

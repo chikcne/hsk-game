@@ -1,0 +1,32 @@
+{
+  "audio": "5bb0957a0d8a6a564d14f3bfd1c6d536bc823008125dd31a91ef6e5f4f36c18e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "换",
+      "转"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转换",
+  "id": "26468ad1a729cd6d937de67d",
+  "level": 6,
+  "meaning": "to convert, to transform",
+  "pinyin": "zhuǎnhuàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1764-1779527164167"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

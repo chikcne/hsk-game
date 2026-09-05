@@ -1,0 +1,31 @@
+{
+  "audio": "fbe76bef314e10b15f67e6d3dbf7946ce2261083681f72163405d59b2170aaba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "热"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热议",
+  "id": "4be0f49b527c3bea2539175a",
+  "level": 6,
+  "meaning": "heated discussion",
+  "pinyin": "rèyì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1093-1779527163496"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "cdc491f3c35403b69511de28cfa7b542569497eab8bb96e6a04f2f69b5f04df2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "头"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "头发",
+  "id": "e4db4b31b48d2129ebeda97d",
+  "level": 3,
+  "meaning": "hair",
+  "pinyin": "tóufa",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-jJSEy0YxXf-1779527159664"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

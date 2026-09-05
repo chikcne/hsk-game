@@ -1,0 +1,29 @@
+{
+  "audio": "276a93e42d62ffd9b199d95a57a0fd389cd6668ec9e79a170bb19775831fcfa0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不",
+  "id": "4276ff830efeb87f2826a8ba",
+  "level": 1,
+  "meaning": "not, no",
+  "pinyin": "bù",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-kGV%ngB@$h-1779527158816"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

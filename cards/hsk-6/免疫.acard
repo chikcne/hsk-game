@@ -1,0 +1,31 @@
+{
+  "audio": "6463d1f5e98c41d75d57d33dd8b485abf5d309514de074fb9b857ebea6af02af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "免"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "免疫",
+  "id": "6072fc3c9c6e743f8c04ac7d",
+  "level": 6,
+  "meaning": "to be immune",
+  "pinyin": "miǎnyì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-910-1779527163313"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "e442934939cb4524784309c6225e17d1d28e4c01fe43a093bcc960c7ffba36c2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "神"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "精神",
+  "id": "5879b12ee8aa35b573cb68c8",
+  "level": 5,
+  "meaning": "spirit, mind; mental, lively",
+  "pinyin": "jīngshen",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-R*n!CkWOG-1779527161426"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

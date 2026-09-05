@@ -1,0 +1,31 @@
+{
+  "audio": "36202132078c3802dbf804b2481966502c5969544309f1b87c9425ca5284b8e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "区"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "景区",
+  "id": "aeeeefdbffc7895ae0374c1e",
+  "level": 4,
+  "meaning": "scenic area, tourist attraction zone",
+  "pinyin": "jǐngqū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-x[!.xd8`S!-1779527160205"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

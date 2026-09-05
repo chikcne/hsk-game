@@ -1,0 +1,32 @@
+{
+  "audio": "ad6ccd62cd4fe15342b519371a58a62387c3a2e01e78fedd16264fbf127aa3e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "位",
+      "各"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "各位",
+  "id": "8cbd22c3f665e94a91a0d70b",
+  "level": 4,
+  "meaning": "everyone, all (respectful)",
+  "pinyin": "gèwèi",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-tp6F#>4vti-1779527160050"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

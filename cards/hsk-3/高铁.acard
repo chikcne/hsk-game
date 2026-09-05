@@ -1,0 +1,31 @@
+{
+  "audio": "15d7182d2ae498d89cd40f4ca64df2abb4ce7472e59d9f6a4f5b42c518b179ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "高"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高铁",
+  "id": "adebceb5df8fb20cfcd8f12f",
+  "level": 3,
+  "meaning": "high-speed rail",
+  "pinyin": "gāotiě",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-c24x4[Gc;3-1779527159447"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

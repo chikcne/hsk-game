@@ -1,0 +1,31 @@
+{
+  "audio": "161119aeb36893a689c844ca299cccf6125c92304edcb2540ebae3fdbeeaa137.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "新"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "新型",
+  "id": "6aee3a3fd48248070d421df1",
+  "level": 5,
+  "meaning": "new type",
+  "pinyin": "xīnxíng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-P_Y.mFB+4w-1779527162085"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

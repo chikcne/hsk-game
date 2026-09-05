@@ -1,0 +1,32 @@
+{
+  "audio": "5ff8f5ef1d1e2251c7a9752fab8e852f0afde9f6f891c489d5c9596338a59f28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "制",
+      "品"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "制品",
+  "id": "d7c73a3c69ede5df48e9fa17",
+  "level": 6,
+  "meaning": "product",
+  "pinyin": "zhìpǐn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1716-1779527164119"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

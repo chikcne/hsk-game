@@ -1,0 +1,29 @@
+{
+  "audio": "5562d42a3efabf94d1c7859ed4af3f5ad3adb639d48e35d7400a1c537cbc6c11.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拼",
+  "id": "296f5eb8a666d2b6cfb02f92",
+  "level": 5,
+  "meaning": "to piece together, to work hard",
+  "pinyin": "pīn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HQna^`2%bE-1779527161633"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

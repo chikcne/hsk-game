@@ -1,0 +1,29 @@
+{
+  "audio": "3a951d7c8aa65114ba5e075aab8fd8ffb0827b52d4a5cc8ad7a0ead16155fc34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "畅销",
+  "id": "1c7bbc61a6f21a150769482d",
+  "level": 6,
+  "meaning": "to sell well",
+  "pinyin": "chàngxiāo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-139-1779527162542"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

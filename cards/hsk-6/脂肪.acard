@@ -1,0 +1,29 @@
+{
+  "audio": "67ad49fc4ddcd50b8479eafe346ffc98b06f95e47252e818b7e8101000102a1f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "脂肪",
+  "id": "4b37bcdad94502045da284c6",
+  "level": 6,
+  "meaning": "fat",
+  "pinyin": "zhīfáng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1698-1779527164101"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

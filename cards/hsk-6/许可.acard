@@ -1,0 +1,31 @@
+{
+  "audio": "4ea2858ff281b40d16f591c0dbf91024397f5c7b652fe2c5c7d98cd154552571.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "可"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "许可",
+  "id": "f5c8745e7bf39afe48571973",
+  "level": 6,
+  "meaning": "to permit",
+  "pinyin": "xǔkě",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1484-1779527163887"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

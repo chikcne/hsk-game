@@ -1,0 +1,32 @@
+{
+  "audio": "e9f50d1ce78e06a0303f7a9442c6856e1f83b93b741cffcee9a6ad15d6405d78.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "周",
+      "围"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "周围",
+  "id": "e436f253955b3d8aec3a436f",
+  "level": 4,
+  "meaning": "around, surrounding",
+  "pinyin": "zhōuwéi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-JUYn,k27$I-1779527160766"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

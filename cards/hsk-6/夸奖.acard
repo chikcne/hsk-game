@@ -1,0 +1,32 @@
+{
+  "audio": "7c2b24c01b76c2fca86e6193c54f1fec826ff848525b7216a7e530995f3b9b16.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "夸",
+      "奖"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夸奖",
+  "id": "0d983341a638c02bbd9de7f0",
+  "level": 6,
+  "meaning": "to praise",
+  "pinyin": "kuājiǎng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-801-1779527163204"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

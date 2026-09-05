@@ -1,0 +1,32 @@
+{
+  "audio": "72d367e15eebf1abf63ef6254b067d02257f6f541359d298c50bc7e00256a3d3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "卷",
+      "问"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "问卷",
+  "id": "ffee45021df6ab883fb4b471",
+  "level": 5,
+  "meaning": "questionnaire",
+  "pinyin": "wènjuàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-riq=k5mcjr-1779527162005"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

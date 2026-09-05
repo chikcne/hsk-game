@@ -1,0 +1,31 @@
+{
+  "audio": "65837be3f121228745238d520de5c2e57469974154a0d29a8e4e49e9d11b45f6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "母"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "母语",
+  "id": "f2076d00245d65f019e36e76",
+  "level": 6,
+  "meaning": "mother tongue",
+  "pinyin": "mǔyǔ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-939-1779527163342"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "fbb81f756a55c9911531b61b120a5ca14d49dcffc95885cb3a62766f08a16f0b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "动态",
+  "id": "59aedc95b797a0cda902da47",
+  "level": 6,
+  "meaning": "dynamic, trend; dynamic",
+  "pinyin": "dòngtài",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-320-1779527162723"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "7c6ae8851732f16baf4b675fffafd68897771ed57e8eb91efb23c168b62076b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夜",
+  "id": "65fa0343062662f5c8a7ac2c",
+  "level": 4,
+  "meaning": "night; measure word for segments of the night",
+  "pinyin": "yè",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-H-`=Cnu)wA-1779527160665"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

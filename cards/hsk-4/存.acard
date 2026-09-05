@@ -1,0 +1,29 @@
+{
+  "audio": "09ab24a0fbfbe09da7ef11e6c480d6ea29c5b0370a0f04a8c39f789ce3ac1626.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "存",
+  "id": "bff4bf042927edca43db0156",
+  "level": 4,
+  "meaning": "to store, to keep, to exist",
+  "pinyin": "cún",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kB:xL&HFV#-1779527159911"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

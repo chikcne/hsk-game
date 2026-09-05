@@ -1,0 +1,32 @@
+{
+  "audio": "433c199650abcf377d4f2a7357e8cf7cad023e23303c9835492e6c185bf77452.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "离",
+      "远"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "远离",
+  "id": "5941a00a0d4c678d1a841c69",
+  "level": 4,
+  "meaning": "to stay away from, to keep away from",
+  "pinyin": "yuǎnlí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-GbPuJy=<,^-1779527160706"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

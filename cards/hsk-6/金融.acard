@@ -1,0 +1,29 @@
+{
+  "audio": "0101599512d7f8b881ac4e442b939231371f4b1793b28222e5963ddd8426e552.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "金融",
+  "id": "2018d11ccbc508ad3eec728a",
+  "level": 6,
+  "meaning": "finance",
+  "pinyin": "jīnróng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-703-1779527163106"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

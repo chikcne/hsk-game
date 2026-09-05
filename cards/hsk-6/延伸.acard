@@ -1,0 +1,31 @@
+{
+  "audio": "f42e66f2370f84dc60237b93237fa02c4c8af48f0bc924301a93c0e9300f856e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伸"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "延伸",
+  "id": "c73963427060ea7c90cbe71f",
+  "level": 6,
+  "meaning": "to extend",
+  "pinyin": "yánshēn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1510-1779527163913"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

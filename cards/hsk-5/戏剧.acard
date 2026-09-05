@@ -1,0 +1,31 @@
+{
+  "audio": "329dc2a694ff33258e3c285946d073b9bed94e20df107fbd96ba0d7f63cc6fef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "戏"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "戏剧",
+  "id": "71fb877f6c7f014ad0db3d8e",
+  "level": 5,
+  "meaning": "drama",
+  "pinyin": "xìjù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-I5rJ^iv3$M-1779527162031"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

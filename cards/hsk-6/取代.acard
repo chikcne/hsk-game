@@ -1,0 +1,32 @@
+{
+  "audio": "30c8855e2feadce5737f4d2459f75c8a70d445b5049541e01a3fcdbbb654a997.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代",
+      "取"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "取代",
+  "id": "a3f7f83f4d9f7eb89d167516",
+  "level": 6,
+  "meaning": "to replace",
+  "pinyin": "qǔdài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1077-1779527163480"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

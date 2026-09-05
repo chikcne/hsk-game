@@ -1,0 +1,31 @@
+{
+  "audio": "c52bba2f9f2354cc49b43d158a2d4ef60a2aa58c2c51597f703af1645b1b6363.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "温度",
+  "id": "5ff3da0d5469b7ded4989738",
+  "level": 4,
+  "meaning": "temperature",
+  "pinyin": "wēndù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-m==1+F>zuo-1779527160578"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

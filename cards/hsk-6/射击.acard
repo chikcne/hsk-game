@@ -1,0 +1,31 @@
+{
+  "audio": "36c686d6e0b5bcd5f4252e3fda579c5dc561303c45e561338a9a120f7d86e0a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "射"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "射击",
+  "id": "70cbcb1add99e9666c32bb9e",
+  "level": 6,
+  "meaning": "shooting",
+  "pinyin": "shèjī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1159-1779527163562"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

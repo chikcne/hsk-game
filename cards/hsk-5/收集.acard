@@ -1,0 +1,32 @@
+{
+  "audio": "e4050313ab232988a68ffea23d63e27f3da81ba4248001a0cd458599acdf3148.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "收",
+      "集"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "收集",
+  "id": "32be1b57dcc639271d957397",
+  "level": 5,
+  "meaning": "to collect",
+  "pinyin": "shōují",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PmovXX5;BG-1779527161847"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

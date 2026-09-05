@@ -1,0 +1,33 @@
+{
+  "audio": "16261c5fa7bf088bbb954709246d319f328c4abb8af8c7ecf13e12b0431be16e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "卫生",
+      "生",
+      "间"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "卫生间",
+  "id": "d3a76c6d81adde8befe00652",
+  "level": 3,
+  "meaning": "bathroom, restroom",
+  "pinyin": "wèishēngjiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-IF6/ZqBmqd-1779527159680"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

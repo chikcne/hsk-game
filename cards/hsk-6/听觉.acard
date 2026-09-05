@@ -1,0 +1,31 @@
+{
+  "audio": "4527913f8283e2a888e30ddc3eb306b7d21941c2bc6eed32e20fa580c104b9be.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "听"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "听觉",
+  "id": "1da24c13bdfc82031bb73acc",
+  "level": 6,
+  "meaning": "sense of hearing",
+  "pinyin": "tīngjué",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1301-1779527163704"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

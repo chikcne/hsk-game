@@ -1,0 +1,32 @@
+{
+  "audio": "b73931d28c30f0fb54142c9b42e451bc9a3b7e1b04f1bc1fd75493d1f0cfc457.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本",
+      "身"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "本身",
+  "id": "3f206cdaffd28d1cd26629f3",
+  "level": 6,
+  "meaning": "itself",
+  "pinyin": "běnshēn",
+  "pos": "代",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-46-1779527162449"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "7da960f3d521241533a7801ab39296a849a50b1833b3a9337834ef79aa804cd7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "宽",
+  "id": "bde28d1b30f311a4ed076d8e",
+  "level": 5,
+  "meaning": "wide, broad; width; (to widen)",
+  "pinyin": "kuān",
+  "pos": "adjective、noun、 （verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-K`&YfcUf{L-1779527161480"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

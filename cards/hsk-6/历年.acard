@@ -1,0 +1,31 @@
+{
+  "audio": "fed612b4eeade9178b75a308b1ac52e09cc4e765c55f12e7abc2aa14531289de.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "年"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "历年",
+  "id": "2b935b11d8a81b6857dafd38",
+  "level": 6,
+  "meaning": "over the years",
+  "pinyin": "lìnián",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-840-1779527163243"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

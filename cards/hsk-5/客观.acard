@@ -1,0 +1,29 @@
+{
+  "audio": "1e983b0974758f0533130e970c7a822bb6cecf4afa6acbc9685183f4dc7dc746.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "客观",
+  "id": "d2a87763ede3d4f0dac290f2",
+  "level": 5,
+  "meaning": "objective",
+  "pinyin": "kèguān",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Fzg=<5#^qr-1779527161472"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

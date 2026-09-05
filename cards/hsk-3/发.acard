@@ -1,0 +1,29 @@
+{
+  "audio": "298ba587eeb10f88a83745d0c5725561cf5a4e8f37ef4688cdc17792cfeabbb4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发",
+  "id": "4dcdf25ce493e55cd9497edc",
+  "level": 3,
+  "meaning": "to send, to issue",
+  "pinyin": "fā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-x?~YH-u;|J-1779527159417"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

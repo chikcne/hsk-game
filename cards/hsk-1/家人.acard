@@ -1,0 +1,32 @@
+{
+  "audio": "397ae986271b97f28ea1270471d9ea5ea80f085e6ef485263a771954d63395a1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "家"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "家人",
+  "id": "8e3ccda795ddb78773869ab0",
+  "level": 1,
+  "meaning": "family member",
+  "pinyin": "jiārén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-L8ER)|fzc~-1779527158890"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

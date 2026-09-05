@@ -1,0 +1,32 @@
+{
+  "audio": "c747293c10416bdde9740196ee3750c780b61304240ccf22269efd520344ef63.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "来",
+      "由"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "由来",
+  "id": "2546323418ad60fc6935070a",
+  "level": 6,
+  "meaning": "origin, history",
+  "pinyin": "yóulái",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1600-1779527164003"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

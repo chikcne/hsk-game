@@ -1,0 +1,31 @@
+{
+  "audio": "39f13500dd3845a711e16ecd8ca0aad216dd61b70e0b1cf6d9a8e3b6fc50cd90.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "与"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "参与",
+  "id": "9b048559e5e4e7348cd2f4f1",
+  "level": 5,
+  "meaning": "to participate",
+  "pinyin": "cānyù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x}f,6i$yZT-1779527160894"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

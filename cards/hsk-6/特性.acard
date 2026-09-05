@@ -1,0 +1,32 @@
+{
+  "audio": "99ee4d6cf9921b183f29483e8cc9463b1d143c8090bed563a12ea1e939211c40.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "性",
+      "特"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "特性",
+  "id": "8bc25414beaaa4dc03af5676",
+  "level": 6,
+  "meaning": "characteristic",
+  "pinyin": "tèxìng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1279-1779527163682"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

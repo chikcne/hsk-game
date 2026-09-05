@@ -1,0 +1,29 @@
+{
+  "audio": "a6f18522f61f572b9b5f36c043d820a494bbae32c62c7307786260b918a390b9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "辣",
+  "id": "d0a74d92412491fba77f7b86",
+  "level": 4,
+  "meaning": "hot, spicy",
+  "pinyin": "là",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-fB99Q)Oaaa-1779527160252"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

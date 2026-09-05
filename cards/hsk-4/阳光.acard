@@ -1,0 +1,31 @@
+{
+  "audio": "465b6d1550bd13bd767a46b689ebb2cdd7749f4aeb5f59c4209e9633c5617964.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "光"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "阳光",
+  "id": "cb42517bd0e2d34f5c00c52e",
+  "level": 4,
+  "meaning": "sunlight, sunshine",
+  "pinyin": "yángguāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qQnPsl[,rT-1779527160658"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

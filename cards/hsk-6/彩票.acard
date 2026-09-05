@@ -1,0 +1,31 @@
+{
+  "audio": "9a9106027e89203e6f7b8a967e4c822676f23fe7a6bf3f85df86e099980b9e17.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "票"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "彩票",
+  "id": "c041b3fc15a5cf74dae994f7",
+  "level": 6,
+  "meaning": "lottery ticket",
+  "pinyin": "cǎipiào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-106-1779527162509"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

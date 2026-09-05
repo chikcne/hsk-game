@@ -1,0 +1,31 @@
+{
+  "audio": "9ab411ac5408a83fd3a259a8ae8c26d31df95e7807b70237c5926bdd13c22637.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "舌头",
+  "id": "7dc35f339dff95015ba421d2",
+  "level": 6,
+  "meaning": "tongue",
+  "pinyin": "shétou",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1155-1779527163558"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

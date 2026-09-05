@@ -1,0 +1,29 @@
+{
+  "audio": "4cf98c0af3ac16cb1e0dedac5ab6371f046fc16e3688a8fdc2c4e2e0536eda9a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "朴素",
+  "id": "4de5fe2491ced7c08625a60c",
+  "level": 6,
+  "meaning": "simple, plain",
+  "pinyin": "pǔsù",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1011-1779527163414"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

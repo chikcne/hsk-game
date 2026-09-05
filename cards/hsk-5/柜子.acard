@@ -1,0 +1,31 @@
+{
+  "audio": "f9f7c302e0d414a42268b8af4979bc3cc42b1520f4f2fb76173974fc341458f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "柜子",
+  "id": "334cd647b76a5649be66a6fc",
+  "level": 5,
+  "meaning": "cupboard, cabinet",
+  "pinyin": "guìzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-QVIvao+?X[-1779527161250"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

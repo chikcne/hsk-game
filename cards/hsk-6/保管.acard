@@ -1,0 +1,32 @@
+{
+  "audio": "d9937b00ab5943255fb3021b575ed156ad28025a6fb3a7507a17de9c4d8a1ca8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保",
+      "管"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "保管",
+  "id": "af76a14de2b242614663bf27",
+  "level": 6,
+  "meaning": "to take care of, to keep",
+  "pinyin": "bǎoguǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-22-1779527162425"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

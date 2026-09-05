@@ -1,0 +1,31 @@
+{
+  "audio": "538040556a7ffb8f63479017b9fe785f0bcf9aef23e8d5d5485e2b884f802a3f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "达到",
+  "id": "b568b934326dbd1c0bcf62db",
+  "level": 4,
+  "meaning": "to reach, to achieve",
+  "pinyin": "dádào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bqh!a9xOl{-1779527159917"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

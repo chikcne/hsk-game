@@ -1,0 +1,29 @@
+{
+  "audio": "835c7fdab85be5cf4964fecba9437803b13af41dd7fc0b96e262f810b39b0018.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "双",
+  "id": "8d04f2ef77bf6a5d0e925fab",
+  "level": 3,
+  "meaning": "pair, measure word for pairs",
+  "pinyin": "shuāng",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-C<yEtFzXN[-1779527159648"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

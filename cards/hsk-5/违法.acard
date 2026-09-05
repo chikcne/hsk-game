@@ -1,0 +1,31 @@
+{
+  "audio": "99501063bb64d7b59b864020aa44c6549b07fb75a2bd9c5e5d047b1cd308e9fa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "法"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "违法",
+  "id": "ccf862e9844c6c09fa3521dc",
+  "level": 5,
+  "meaning": "to violate the law",
+  "pinyin": "wéifǎ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KEa-$6!Rm-1779527161989"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

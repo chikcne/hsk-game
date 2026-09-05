@@ -1,0 +1,32 @@
+{
+  "audio": "0093804fcc682ec127599635763a3b1dc01bb53151e94d894aa1156939588b72.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "传",
+      "输"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "传输",
+  "id": "0bd43b10d78d40c923baab67",
+  "level": 6,
+  "meaning": "to transmit, to transfer",
+  "pinyin": "chuánshū",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-206-1779527162609"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

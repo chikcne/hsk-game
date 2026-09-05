@@ -1,0 +1,32 @@
+{
+  "audio": "93ed30cb7335f7226005492a8cbe1a692011908eea02cce5d508981a093079df.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "落"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "落后",
+  "id": "d57f4cf770dab8be0bb358e8",
+  "level": 6,
+  "meaning": "to lag behind; backward",
+  "pinyin": "luòhòu",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-882-1779527163285"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

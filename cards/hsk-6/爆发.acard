@@ -1,0 +1,32 @@
+{
+  "audio": "f14ec87f5c866a59c3e959cfb17a3734d4c6b93fc7428fdc158a9f6462d2c8bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "爆"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "爆发",
+  "id": "19b842f4f81e2b197b55f535",
+  "level": 6,
+  "meaning": "to break out",
+  "pinyin": "bàofā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-28-1779527162431"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

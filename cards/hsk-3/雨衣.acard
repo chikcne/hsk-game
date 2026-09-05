@@ -1,0 +1,31 @@
+{
+  "audio": "71fe876f3d400d4dc9bc64a10d69e8a4d0cb54e4595165728ded7eefc2fea71b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "雨"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "雨衣",
+  "id": "29e4a19821c6efe20258b002",
+  "level": 3,
+  "meaning": "raincoat",
+  "pinyin": "yǔyī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-wpDHa|ni9J-1779527159755"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

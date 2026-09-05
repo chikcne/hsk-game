@@ -1,0 +1,31 @@
+{
+  "audio": "3174f5546e8fe9e7a8c1ac9edfa83db146cd636eaff776eb4b2dffb022967ecf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "用"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实用",
+  "id": "25d80cb2b99106f81054045f",
+  "level": 5,
+  "meaning": "practical, functional",
+  "pinyin": "shíyòng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-eRf5w|Y&O-1779527161827"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

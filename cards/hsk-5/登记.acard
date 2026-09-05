@@ -1,0 +1,32 @@
+{
+  "audio": "19001761127d77cd5a344e13ad602ad4c97cd7f6a413c777bd49f99f3282ca9a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "登",
+      "记"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "登记",
+  "id": "f394bbd53c437a78e49a7ac0",
+  "level": 5,
+  "meaning": "to register, to record",
+  "pinyin": "dēngjì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-BN+#el3CW6-1779527161064"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

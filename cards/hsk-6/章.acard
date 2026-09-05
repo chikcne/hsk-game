@@ -1,0 +1,29 @@
+{
+  "audio": "150b007771ae2d76b19d2c6dc1a873359e6993d1cdac2acb791ddf6de7f0696b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "章",
+  "id": "534779a7e7b9983c4ce53ef9",
+  "level": 6,
+  "meaning": "measure word for chapters",
+  "pinyin": "zhāng",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1665-1779527164068"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "402e6ba9e47df0a4d062d9c57fcb02aa2674f38a3dc6407c5da14c4fde0552e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "段",
+  "id": "6744175e8ad83710d1200a37",
+  "level": 3,
+  "meaning": "measure word of segment, paragraph",
+  "pinyin": "duàn",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-oJ|}~:PDU+-1779527159410"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

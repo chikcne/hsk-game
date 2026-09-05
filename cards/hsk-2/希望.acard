@@ -1,0 +1,31 @@
+{
+  "audio": "f3f9c3b8f63b22e1fe6f6a3aa9435c4118225815ecd0570ef3ae82b3737abfa8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "望"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "希望",
+  "id": "2213ac0cf8100754be474c7a",
+  "level": 2,
+  "meaning": "to hope",
+  "pinyin": "xīwàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-N$TYy^,NHX-1779527159258"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

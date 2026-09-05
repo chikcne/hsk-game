@@ -1,0 +1,32 @@
+{
+  "audio": "3a00d3bff6fe427e6ff06eae9b8a68ca98d29cfb1b9c7bb65b30f10a69343f08.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成",
+      "立"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成立",
+  "id": "ecd75a7b83ca7287a25fa4a2",
+  "level": 5,
+  "meaning": "to establish, to set up",
+  "pinyin": "chénglì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-h@y[6aC)<&-1779527160945"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "a7e55b02c0ab3deb6aa528d7d2b437036b9b17085e4b8cd2bf48f737e854458e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "罚",
+  "id": "d8732863457d0b929cee7192",
+  "level": 5,
+  "meaning": "to punish, to fine",
+  "pinyin": "fá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-g}|uwXw$x5-1779527161127"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

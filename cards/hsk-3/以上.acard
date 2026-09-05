@@ -1,0 +1,32 @@
+{
+  "audio": "0a44a4cb71c4001b9c1f89312662b2ed7f5246da1fbaf6bf0ac29f99f7ac5d69.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "以"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "以上",
+  "id": "04a9ba18a82ee9576b358215",
+  "level": 3,
+  "meaning": "above, more than",
+  "pinyin": "yǐshàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-d-Q6y;.3K~-1779527159731"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

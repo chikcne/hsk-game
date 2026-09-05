@@ -1,0 +1,29 @@
+{
+  "audio": "b68a6d5eccf08385656cec374122af701a4ec5b6fbc0ed15037b0edb43dc0382.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亮",
+  "id": "643f449fa3d9c9aff9cc3439",
+  "level": 4,
+  "meaning": "bright, light; to shine, to show",
+  "pinyin": "liàng",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-y+7]A_o!zt-1779527160277"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

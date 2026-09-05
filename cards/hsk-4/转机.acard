@@ -1,0 +1,31 @@
+{
+  "audio": "7b3b9749a4c65693c3c0a8fb690c028b2f7e3b8a47d9af9126ae654f08680378.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "转"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转机",
+  "id": "3a05de401d1aaddae4c89df5",
+  "level": 4,
+  "meaning": "to transfer (flight), to change planes",
+  "pinyin": "zhuǎnjī",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-NqA#TA(`;)-1779527160775"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

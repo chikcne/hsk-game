@@ -1,0 +1,29 @@
+{
+  "audio": "bb38756f058c9c1e0a392ecaa1bc2a1d36b3391dd355180809299d41c3c7988c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "差",
+  "id": "4a319139d23f94aca4bdd77d",
+  "level": 3,
+  "meaning": "bad, poor; to lack",
+  "pinyin": "chà",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-B9tX%2]|Bx-1779527159354"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

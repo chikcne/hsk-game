@@ -1,0 +1,32 @@
+{
+  "audio": "6a53bbe0a2cc8c58f8651f79eb1094ceb859c8fcea16fdd34fcc27229f1bafdf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "围",
+      "绕"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "围绕",
+  "id": "923a7fb86a3bdd6c9c047f67",
+  "level": 5,
+  "meaning": "to surround, to revolve around",
+  "pinyin": "wéirào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E|>/j<DnH;-1779527161992"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

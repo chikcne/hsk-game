@@ -1,0 +1,32 @@
+{
+  "audio": "fab9e7f2650166d19e24ba38efeacdd8e641b5d7c09f9220dbf5f665eb153ca3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头",
+      "痛"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "头痛",
+  "id": "ad2b2a17061da033ca50ab6e",
+  "level": 4,
+  "meaning": "headache",
+  "pinyin": "tóutòng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MLpurN>rm=-1779527160554"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

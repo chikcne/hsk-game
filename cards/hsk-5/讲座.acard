@@ -1,0 +1,32 @@
+{
+  "audio": "751bf3bcff18a804da34ac289c003ce083054d228f105b3205d73d9e9c8aa458.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "座",
+      "讲"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "讲座",
+  "id": "65cf22603cf5975425899d9e",
+  "level": 5,
+  "meaning": "lecture, seminar",
+  "pinyin": "jiǎngzuò",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-l(2B,NQF9T-1779527161388"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

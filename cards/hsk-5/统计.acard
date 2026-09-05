@@ -1,0 +1,29 @@
+{
+  "audio": "6abae53988d26ba6ba3a65d286e4109d875c806d190b12ad3bf38e848638b71a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "统计",
+  "id": "3a941ca88bfddcef62b7b5be",
+  "level": 5,
+  "meaning": "to count, to tally",
+  "pinyin": "tǒngjì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t#<ZfUfJ@l-1779527161947"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

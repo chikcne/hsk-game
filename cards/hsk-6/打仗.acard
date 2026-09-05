@@ -1,0 +1,31 @@
+{
+  "audio": "c6eca5b35dfe11f9568712b76b00839047a28a33e70188e2adb98262f27d12cd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打仗",
+  "id": "0ba32a79bdae2a1916fa8b58",
+  "level": 6,
+  "meaning": "to fight, to go to war",
+  "pinyin": "dǎzhàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-243-1779527162646"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

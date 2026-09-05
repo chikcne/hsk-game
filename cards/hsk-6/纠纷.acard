@@ -1,0 +1,29 @@
+{
+  "audio": "9e59c2caeefaa83d46155ca7f7ebf300e91cf167365de3b4682133372bed3c34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "纠纷",
+  "id": "d0a406881aafdaf517698885",
+  "level": 6,
+  "meaning": "dispute",
+  "pinyin": "jiūfēn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-730-1779527163133"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

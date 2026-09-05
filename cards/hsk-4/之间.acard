@@ -1,0 +1,32 @@
+{
+  "audio": "7c160c67d885647dccd20db1fe499fe63598c579722aba569265ce066ca2f555.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "之",
+      "间"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "之间",
+  "id": "983fc21c8954f8fd1ce40494",
+  "level": 4,
+  "meaning": "between, among",
+  "pinyin": "zhījiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-pNEy<*=]hk-1779527160745"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

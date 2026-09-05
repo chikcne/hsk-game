@@ -1,0 +1,32 @@
+{
+  "audio": "c0a3a89f1ba080a9066bfbda7634ac753b2ca692be74169ec7e910946897d340.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "安",
+      "装"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "安装",
+  "id": "70c066bcd88e792f475be91d",
+  "level": 5,
+  "meaning": "to install, to set up",
+  "pinyin": "ānzhuāng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-LnD.a^Tuxd-1779527160811"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

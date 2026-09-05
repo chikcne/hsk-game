@@ -1,0 +1,32 @@
+{
+  "audio": "f0549a045ef41ca1b00fb729f2c4d94f877deb5051642a7ff8ab6a3fddcd85f8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "小"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小学",
+  "id": "ff62b97528166af290fc3216",
+  "level": 1,
+  "meaning": "primary school",
+  "pinyin": "xiǎoxué",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-u&Oq=@AgvD-1779527159040"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

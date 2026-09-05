@@ -1,0 +1,31 @@
+{
+  "audio": "6c6646a59ce2f884c97d5ac73591805f374f60dbcf189792c60b6e4b5113db5a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "低"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "低价",
+  "id": "8f9edfc8a3c4e1fd1b1d471e",
+  "level": 4,
+  "meaning": "low price",
+  "pinyin": "dījià",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-tQfd^=ISU;-1779527159953"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

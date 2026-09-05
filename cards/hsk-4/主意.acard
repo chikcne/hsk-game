@@ -1,0 +1,29 @@
+{
+  "audio": "a3631745512151be86132cb98e0af649175b9180ef2f09b8c1017603dc4e3fcc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主意",
+  "id": "f478625593db5deca3378d09",
+  "level": 4,
+  "meaning": "idea, thought, plan",
+  "pinyin": "zhǔyi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s@6SppvlPB-1779527160767"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

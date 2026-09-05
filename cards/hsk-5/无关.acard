@@ -1,0 +1,32 @@
+{
+  "audio": "94924e6452d80ceea862ba24218bdc42a062277d6cc839cbeda97cd21971e7df.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关",
+      "无"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "无关",
+  "id": "9db9f80c944c05bcce10ec60",
+  "level": 5,
+  "meaning": "to have nothing to do with, to be unrelated",
+  "pinyin": "wúguān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-W6/&xrU<*-1779527162009"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

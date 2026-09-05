@@ -1,0 +1,32 @@
+{
+  "audio": "0f830c3420d0eaaaf2b2104e5ff6d3d4427a5c407b97604061dfcf9a7941c277.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "早"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "早上",
+  "id": "25161ccb59e5ccabb2f7ca06",
+  "level": 1,
+  "meaning": "morning",
+  "pinyin": "zǎoshang",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-uqejGkHGL:-1779527159078"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

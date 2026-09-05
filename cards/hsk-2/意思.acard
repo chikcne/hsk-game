@@ -1,0 +1,29 @@
+{
+  "audio": "8bf9001430c926c35277685db140e7693618c7c39b6b54a1ec43830bef8c9ed4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "意思",
+  "id": "a9be03e6ebe04dfd178dc4a4",
+  "level": 2,
+  "meaning": "meaning, idea",
+  "pinyin": "yìsi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-e:|+wZ.GMz-1779527159277"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "947761afb1becf01790c529b9de06ca4414c2b80276f05c47c25e04ebe29cab4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "久",
+      "长"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "长久",
+  "id": "c5770aaa870a818ab3dc6db9",
+  "level": 5,
+  "meaning": "long-lasting",
+  "pinyin": "chángjiǔ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t5Ql#F>EL|-1779527160913"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

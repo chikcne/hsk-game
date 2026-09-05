@@ -1,0 +1,32 @@
+{
+  "audio": "5a3294a5013fa24dffded0c29d8f3808a0e97405cd17bd4be5776ffa3a41e58e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "从",
+      "小"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "从小",
+  "id": "adc492c4da556be427f78ef0",
+  "level": 2,
+  "meaning": "from childhood",
+  "pinyin": "cóngxiǎo",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-n.ktd4T*MM-1779527159128"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

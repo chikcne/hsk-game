@@ -1,0 +1,29 @@
+{
+  "audio": "042bd331d523327736c13d0f183a6d4636a4902e9e79be85a83c856587f644ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "贡献",
+  "id": "5deef15e1d8575de437ddb03",
+  "level": 5,
+  "meaning": "to contribute; contribution",
+  "pinyin": "gòngxiàn",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mBSZo?4%Cp-1779527161221"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "030b9d4cb92194f317d5b4d3ddb01c6a38f3683e20247944948e978741b67542.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "点燃",
+  "id": "7e31ffdbc7d04acfca8783a9",
+  "level": 6,
+  "meaning": "to ignite",
+  "pinyin": "diǎnrán",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-298-1779527162701"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

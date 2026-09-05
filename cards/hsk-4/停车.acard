@@ -1,0 +1,32 @@
+{
+  "audio": "0397faa491db361bd8e5383f83ece80bd4e8f54c40cc815a55eacc654a1f6df0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "停",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "停车",
+  "id": "aebb90812cd40795357ab741",
+  "level": 4,
+  "meaning": "to park, to stop a vehicle",
+  "pinyin": "tíngchē",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-GAc<WWSj9@-1779527160543"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "d81e49f9939352be44d73b80727c38cba4f373547765ca06703c07039d5ac977.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "库",
+      "水"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "水库",
+  "id": "d95e2409f7391ebfc15b7c40",
+  "level": 6,
+  "meaning": "reservoir",
+  "pinyin": "shuǐkù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1234-1779527163637"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

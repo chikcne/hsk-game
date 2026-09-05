@@ -1,0 +1,31 @@
+{
+  "audio": "bb41b54bf350016e577f8cdc8c4cec74c4bf1422d7cbed56dfe3c829dde30444.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "家"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "家具",
+  "id": "82affe16ed273e3adb7712d9",
+  "level": 4,
+  "meaning": "furniture",
+  "pinyin": "jiājù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-PO{ZHV;n1z-1779527160138"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

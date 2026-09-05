@@ -1,0 +1,32 @@
+{
+  "audio": "35ec7a60ba57b62893f695f0f99a1b3f8a80bc0cbc36b1135ab667333230d45a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "等"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "等到",
+  "id": "471b44b1e6d9c68f834f6fb0",
+  "level": 4,
+  "meaning": "until, by the time",
+  "pinyin": "děngdào",
+  "pos": "preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-K8k05.,I,--1779527159951"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "4842a315f66b01cafb4aea2dd929a782438bc6d34f569805b6bca2deda792357.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "局",
+      "限"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "局限",
+  "id": "30ae89cfedd040a40913001a",
+  "level": 6,
+  "meaning": "to limit, to restrict",
+  "pinyin": "júxiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-745-1779527163148"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

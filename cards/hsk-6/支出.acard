@@ -1,0 +1,32 @@
+{
+  "audio": "136bb304114b073e00ab18c2609be2a7a4cb582832215261855f15b998be43cb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "支"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "支出",
+  "id": "69b256212a8ab1067e511afd",
+  "level": 6,
+  "meaning": "to pay out; expenditure",
+  "pinyin": "zhīchū",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1697-1779527164100"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "709f61404cb990577497ece9050bcf9b2c473c2c7e2375c5992831305f0cd480.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "用"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "采用",
+  "id": "3fbb994f7e77c8fe728919f9",
+  "level": 5,
+  "meaning": "to adopt, to use",
+  "pinyin": "cǎiyòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-C00|jl2*k|-1779527160891"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

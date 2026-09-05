@@ -1,0 +1,32 @@
+{
+  "audio": "7c9532ad80b5e639c7d36756072c975e4697c145e001fc3149f953876379ebc6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代",
+      "朝"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "朝代",
+  "id": "8e8c1cffab3f2017c91b1859",
+  "level": 6,
+  "meaning": "dynasty",
+  "pinyin": "cháodài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-142-1779527162545"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

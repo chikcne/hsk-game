@@ -1,0 +1,29 @@
+{
+  "audio": "9a1a85539e94cd6e28b14360279d8c249e7bd4b08c9681c86e1e5bfd8563fe61.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "违规",
+  "id": "f7e04ce70a03c56a52f4ca80",
+  "level": 6,
+  "meaning": "to violate a rule",
+  "pinyin": "wéiguī",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1368-1779527163771"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

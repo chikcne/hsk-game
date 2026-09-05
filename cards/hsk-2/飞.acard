@@ -1,0 +1,29 @@
+{
+  "audio": "5893d7481778e9e5e7ed567f222ab207e005a63b9fa7580acdf3217427a36e20.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "飞",
+  "id": "552f6ba143f99c1bd513c42f",
+  "level": 2,
+  "meaning": "to fly",
+  "pinyin": "fēi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-cCVlIKL}n$-1779527159143"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

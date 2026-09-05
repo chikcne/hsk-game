@@ -1,0 +1,33 @@
+{
+  "audio": "753b2c86c1846312406c0ed869309493b6a302cb60ddf1eee1dee660b544a12d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "点",
+      "百"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "百分点",
+  "id": "95270cf7f49fde2a8928eb39",
+  "level": 6,
+  "meaning": "percentage point",
+  "pinyin": "bǎifēndiǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-10-1779527162413"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

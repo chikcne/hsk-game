@@ -1,0 +1,29 @@
+{
+  "audio": "9d248570fce29ab6bc0f7b32f7b54c656301449583d7e67cb70edbc97f683d8c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "醒",
+  "id": "cb25deeaea76905775e17555",
+  "level": 4,
+  "meaning": "to wake up, to sober up",
+  "pinyin": "xǐng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-CK@?JDfa?V-1779527160630"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

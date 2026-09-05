@@ -1,0 +1,29 @@
+{
+  "audio": "96002121f73893ad5ce41431b2e789d014e62fb49628bcf2d00cc59908d39a45.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "摘",
+  "id": "05a39ef7024aa2ddf7f7ba57",
+  "level": 5,
+  "meaning": "to pick, to pluck",
+  "pinyin": "zhāi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-byyz<k|5YG-1779527162264"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

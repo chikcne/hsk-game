@@ -1,0 +1,29 @@
+{
+  "audio": "bfc15d58dc74ed7a660a88f3b90add86378d04b9372d6ae4af6a62dddd1a2ee9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "往",
+  "id": "0628ce4c35d433e33db65035",
+  "level": 2,
+  "meaning": "to go; toward",
+  "pinyin": "wǎng",
+  "pos": "verb、preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-NVY=w#=&}/-1779527159253"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

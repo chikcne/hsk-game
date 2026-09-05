@@ -1,0 +1,29 @@
+{
+  "audio": "bd1b28afe7bfb5b596b69ff8f5f5eb4689e02d9868c60f656a016342b54563a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "案例",
+  "id": "da9ed25e583a1afc340024f1",
+  "level": 6,
+  "meaning": "case, example",
+  "pinyin": "ànlì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-2-1779527162405"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

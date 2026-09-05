@@ -1,0 +1,29 @@
+{
+  "audio": "9861de86e29c8002ba859a543f849de382a8f06fb1c66696d31782bfffdc6cbd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "空",
+  "id": "36bffbd97ace8f88f455d7c7",
+  "level": 4,
+  "meaning": "empty, vacant, hollow; （in vain, for nothing）",
+  "pinyin": "kōng",
+  "pos": "adjective、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-y.v%3=aG)P-1779527160239"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

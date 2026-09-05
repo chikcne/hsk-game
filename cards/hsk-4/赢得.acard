@@ -1,0 +1,32 @@
+{
+  "audio": "eecdca40b4eb4d8987754e6d42c45fb2e99d8266c3b92f8bd97698397c54eb25.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "得",
+      "赢"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赢得",
+  "id": "c36c9f9effa47d6b984a4333",
+  "level": 4,
+  "meaning": "gain, win",
+  "pinyin": "yíngdé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o_n/o]`xoP-1779527160678"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

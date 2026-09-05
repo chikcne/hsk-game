@@ -1,0 +1,32 @@
+{
+  "audio": "e6f9b278580cd402264a0685ac4adfca140fa69094dba16d7dc4ce1e171da0a3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "手"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分手",
+  "id": "ec8c4912960c769d5baccffa",
+  "level": 5,
+  "meaning": "to break up, to part ways",
+  "pinyin": "fēnshǒu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lOiO:d+al@-1779527161157"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

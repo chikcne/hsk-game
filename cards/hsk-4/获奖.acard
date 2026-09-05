@@ -1,0 +1,31 @@
+{
+  "audio": "b95e20525aa532c5c14149bfd531c577e5ed3eeed80f7d0e2ef99eb32880278d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "奖"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "获奖",
+  "id": "986e7716ba944623286ae5ca",
+  "level": 4,
+  "meaning": "win a prize, receive an award",
+  "pinyin": "huòjiǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ps*-BW{3#Q-1779527160120"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

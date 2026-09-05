@@ -1,0 +1,31 @@
+{
+  "audio": "e8725bfb55059e0cf7c01b64b443e51b828ad4a229db7146e1a08e2e33b3963d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "游"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "游客",
+  "id": "90c837bc3598c047e2c9d05b",
+  "level": 3,
+  "meaning": "tourist",
+  "pinyin": "yóukè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-H;+:UsI6ym-1779527159746"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "a7935d9d6d57795cd28aa582c24b1a4406f230fa7a07a9609e96ec109dcbd67a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "得"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "得到",
+  "id": "d355f80c8fc39c0a24dcf58b",
+  "level": 3,
+  "meaning": "to get, to obtain",
+  "pinyin": "dédào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-tV(ITvB:A*-1779527159387"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

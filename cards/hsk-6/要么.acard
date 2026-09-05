@@ -1,0 +1,31 @@
+{
+  "audio": "8c2aaaa63d069047343b4a09442ccbd491e9e6079fb23971d958e0894f0b0df8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "要"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "要么",
+  "id": "80b38bf396b40d5f3f33d6f6",
+  "level": 6,
+  "meaning": "either... or...",
+  "pinyin": "yàome",
+  "pos": "连",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1528-1779527163931"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

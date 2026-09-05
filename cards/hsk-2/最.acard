@@ -1,0 +1,29 @@
+{
+  "audio": "8ffddabb29bb9c654c8f5dc27a4c144b8e7ea6b398f39379db88af49b97cf177.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "最",
+  "id": "594ca275daafd6a17023b3f4",
+  "level": 2,
+  "meaning": "most, -est",
+  "pinyin": "zuì",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-e&|,.{oTsp-1779527159301"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

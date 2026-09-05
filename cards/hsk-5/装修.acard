@@ -1,0 +1,32 @@
+{
+  "audio": "49f0274f71e61d14a7bcf7e47fdd8b3422a8ebde4cd91282b46e3cd06571bdef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "修",
+      "装"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "装修",
+  "id": "184187064f36b68f77eabc4f",
+  "level": 5,
+  "meaning": "to renovate, to decorate",
+  "pinyin": "zhuāngxiū",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qhDgh?T+xv-1779527162364"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

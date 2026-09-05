@@ -1,0 +1,32 @@
+{
+  "audio": "69435ad255808f30dea53a5fb00fe415e39d0a8a7ecdbd00940635c05927353e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "要",
+      "重"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "重要",
+  "id": "cec1d87d780e3eeaa490a222",
+  "level": 3,
+  "meaning": "important",
+  "pinyin": "zhòngyào",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-bRWh}%?m!U-1779527159788"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "0b96ae7930cf62c1459716d5f0b30c2464540c4a455fc520b0d59856602353ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "既"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "既然",
+  "id": "f4e43cc58a8dc19230028728",
+  "level": 4,
+  "meaning": "since",
+  "pinyin": "jìrán",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qXE6<U6apC-1779527160133"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

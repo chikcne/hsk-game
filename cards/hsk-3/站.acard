@@ -1,0 +1,29 @@
+{
+  "audio": "a8cb85be1c67025d737296d4c737d34f21cd2ec6e405d4a21b7c8c5259f72473.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "站",
+  "id": "4a5e71208be4b496a0f613f2",
+  "level": 3,
+  "meaning": "to stand; station",
+  "pinyin": "zhàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-q+L|6cZs)V-1779527159769"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

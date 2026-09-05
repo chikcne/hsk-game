@@ -1,0 +1,31 @@
+{
+  "audio": "dee52d2c700900235676674a3c6ddbc1c7b7d723fef198ed9bfa5ac241eb8e21.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "行"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "行李",
+  "id": "1b0dbc576da1bbe24c1abc13",
+  "level": 3,
+  "meaning": "luggage",
+  "pinyin": "xíngli",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-IT>e}Z97y.-1779527159712"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

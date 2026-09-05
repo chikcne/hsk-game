@@ -1,0 +1,32 @@
+{
+  "audio": "9762a496f87cb26957c50a69a2451a8f8ae55956614fdefa5c3a08e9e279d1f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "养",
+      "成"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "养成",
+  "id": "89d7591b8deeaa230d964fcb",
+  "level": 4,
+  "meaning": "to develop, to cultivate, to form",
+  "pinyin": "yǎngchéng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vo:FN>rGg1-1779527160659"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

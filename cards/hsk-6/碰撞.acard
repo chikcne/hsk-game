@@ -1,0 +1,32 @@
+{
+  "audio": "23f4796ffeb3b5642ffa2e48b30a780f072da5423983ae631c0f0a044f819ff4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "撞",
+      "碰"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "碰撞",
+  "id": "0e58926f52058975ece31a1e",
+  "level": 6,
+  "meaning": "to collide",
+  "pinyin": "pèngzhuàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-983-1779527163386"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

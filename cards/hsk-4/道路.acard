@@ -1,0 +1,32 @@
+{
+  "audio": "1438c2e69e15d499732527f9572f35bb6b48c6cca7b7ad1f51e8943686ac1eab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "路",
+      "道"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "道路",
+  "id": "1893464e5b385dde2d1cf0ae",
+  "level": 4,
+  "meaning": "road, path",
+  "pinyin": "dàolù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-yxtBG|O`op-1779527159946"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

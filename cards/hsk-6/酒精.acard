@@ -1,0 +1,31 @@
+{
+  "audio": "996c12c3fc1d72159748a8f08c8bc6bc8a0e515f881cf7fe8277071b80189633.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "酒"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "酒精",
+  "id": "055643838f1e127fb53a309f",
+  "level": 6,
+  "meaning": "alcohol",
+  "pinyin": "jiǔjīng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-732-1779527163135"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

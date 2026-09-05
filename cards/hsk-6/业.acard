@@ -1,0 +1,29 @@
+{
+  "audio": "7c6ae8851732f16baf4b675fffafd68897771ed57e8eb91efb23c168b62076b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "业",
+  "id": "d23f76a53bf7c0eb8f374f48",
+  "level": 6,
+  "meaning": "suffix meaning industry, trade",
+  "pinyin": "yè",
+  "pos": "后缀",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1534-1779527163937"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

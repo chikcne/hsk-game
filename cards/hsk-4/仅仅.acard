@@ -1,0 +1,31 @@
+{
+  "audio": "71751d7debeca4e64eda5113631f0fae76145d89d274c53fac7b3aa735d12bee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "仅"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "仅仅",
+  "id": "5e36ae2abc1a1558a96d9f79",
+  "level": 4,
+  "meaning": "only, merely, barely, simply",
+  "pinyin": "jǐnjǐn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-cj;dDZZ)|!-1779527160193"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

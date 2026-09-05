@@ -1,0 +1,31 @@
+{
+  "audio": "95adaffee282bd7b1aac63d58d6cb5b9604d4113045b82610f32c68607dc2937.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "单"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "账单",
+  "id": "3a242d92676496df2566bf57",
+  "level": 6,
+  "meaning": "bill, check",
+  "pinyin": "zhàngdān",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1668-1779527164071"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

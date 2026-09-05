@@ -1,0 +1,29 @@
+{
+  "audio": "c082abef82eda12ea323314cd8abf9ee12b7a80e865108e638cde49496af90dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "痒",
+  "id": "44f5ce1f68bedd872f745a50",
+  "level": 6,
+  "meaning": "itchy",
+  "pinyin": "yǎng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1521-1779527163924"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

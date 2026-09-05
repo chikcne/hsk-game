@@ -1,0 +1,32 @@
+{
+  "audio": "092a8fce7cb28b7dcd2b9f625734546219a96a86841df2b78710022e18db041c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "初",
+      "等"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "初等",
+  "id": "9f0a84bcdd4827c19215f6ad",
+  "level": 6,
+  "meaning": "elementary",
+  "pinyin": "chūděng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-186-1779527162589"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

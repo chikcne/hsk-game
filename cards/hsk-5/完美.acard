@@ -1,0 +1,32 @@
+{
+  "audio": "76f32b0b442b1857911f4dc506d99ee27cea1923eed1291c572fca3b6d05a65d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "完",
+      "美"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "完美",
+  "id": "b24b2364aa36ad630193754e",
+  "level": 5,
+  "meaning": "perfect",
+  "pinyin": "wánměi",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PeWT,<RR}{-1779527161977"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

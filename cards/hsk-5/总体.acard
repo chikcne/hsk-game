@@ -1,0 +1,31 @@
+{
+  "audio": "eb510dc1e7f6eb883b658556107795515fc03a47361b054d987f780b753dfd01.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "总"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "总体",
+  "id": "4bfdfe344109d5c31a2f788f",
+  "level": 5,
+  "meaning": "overall, general",
+  "pinyin": "zǒngtǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-s8V=(@*2y]-1779527162387"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "4c9f5367837ffd45ec8dc8711bc481b949a32ed45e3c05fab12c1ae2a55e00b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "销售",
+  "id": "dba46c644deaab98dae38e1b",
+  "level": 5,
+  "meaning": "to sell",
+  "pinyin": "xiāoshòu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-CJP5TI5P32-1779527162071"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

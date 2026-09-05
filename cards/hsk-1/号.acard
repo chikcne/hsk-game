@@ -1,0 +1,29 @@
+{
+  "audio": "c5c39fd86bb6716e1d4a6074d5bb4d4e575d93db7f21ea68b24046ac292bdaf3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "号",
+  "id": "76cfa95ae41824b9a6efab23",
+  "level": 1,
+  "meaning": "number; measure word for people, items",
+  "pinyin": "hào",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-mRfOmX-rzX-1779527158879"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

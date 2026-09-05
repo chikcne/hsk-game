@@ -1,0 +1,31 @@
+{
+  "audio": "d398f78faba8b46683f440c758e2ae6db63ac353a4f65b6d8e20ea13041d11c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "者"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "作者",
+  "id": "050a7401eda9cbd00c63ddae",
+  "level": 4,
+  "meaning": "author, writer",
+  "pinyin": "zuòzhě",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zz(PSz=.kf-1779527160803"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

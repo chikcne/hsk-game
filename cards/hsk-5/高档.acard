@@ -1,0 +1,31 @@
+{
+  "audio": "5bbf5bf6f92c464ca45719e281d97697febd783af2979e3568eb6fee55a3e722.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "高"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高档",
+  "id": "46c7d2b5aac6910f0ab4ebcd",
+  "level": 5,
+  "meaning": "high-end, upscale",
+  "pinyin": "gāodàng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rolk0Ss0CQ-1779527161190"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

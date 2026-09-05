@@ -1,0 +1,32 @@
+{
+  "audio": "7614a33dbd25f27935da97f282d22f1f030acdb26649b7715e44c3b214e04c98.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生",
+      "研究"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "研究生",
+  "id": "aee890e1f3e408ef6c41b3e7",
+  "level": 4,
+  "meaning": "graduate student, postgraduate",
+  "pinyin": "yánjiūshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bDJ#jovnmR-1779527160650"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

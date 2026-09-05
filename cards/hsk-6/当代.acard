@@ -1,0 +1,32 @@
+{
+  "audio": "a93b3242c4779278b4657dcada47bb59f9f4954b6a70e32645504f452c016930.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代",
+      "当"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当代",
+  "id": "b647499841832909c80e382b",
+  "level": 6,
+  "meaning": "contemporary, the present age",
+  "pinyin": "dāngdài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-269-1779527162672"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "a87bc45059e87af5ea317aef6e46923bf22ba290cad4a0d827ea3037ffd23e53.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高",
+  "id": "10b26ee237166430a644f8f0",
+  "level": 2,
+  "meaning": "tall, high; height",
+  "pinyin": "gāo",
+  "pos": "adjective、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-D3[MOKskg,-1779527159144"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

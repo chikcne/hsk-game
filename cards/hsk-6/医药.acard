@@ -1,0 +1,31 @@
+{
+  "audio": "c7d7753d8c7536c9a54539c81950e8b4c5b721c5293d1e8520a125c00d6895af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "药"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "医药",
+  "id": "bd74fbf06c11883c92ee5beb",
+  "level": 6,
+  "meaning": "medicine",
+  "pinyin": "yīyào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1540-1779527163943"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

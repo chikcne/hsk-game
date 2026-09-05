@@ -1,0 +1,32 @@
+{
+  "audio": "3f72a31d5d7e19a949cffa6fe46ab52963000368a80ca1499936c61c05375d30.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "学"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中学",
+  "id": "1e2baa990b8edbfa2d8841f8",
+  "level": 1,
+  "meaning": "middle school",
+  "pinyin": "zhōngxué",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-vNk{h3kPjy-1779527159095"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

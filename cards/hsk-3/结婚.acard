@@ -1,0 +1,31 @@
+{
+  "audio": "bd192e737e8c8012d637fdffd8d16acd729329ed905caff21ac0ea7696a1ffae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "结"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "结婚",
+  "id": "d041622895298e07188cb32f",
+  "level": 3,
+  "meaning": "to marry",
+  "pinyin": "jiéhūn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-B352(*f!uR-1779527159512"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

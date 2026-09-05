@@ -1,0 +1,32 @@
+{
+  "audio": "d7cdbd0c877f16b5d556de20c54cfd1805269126ea253ef168c1722cf40f21f0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "切",
+      "密"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "密切",
+  "id": "b82968dd0baeff54460f70f2",
+  "level": 5,
+  "meaning": "close, intimate; to become close",
+  "pinyin": "mìqiè",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F1^he2*GRI-1779527161568"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

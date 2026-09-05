@@ -1,0 +1,32 @@
+{
+  "audio": "14526f005b77ab0d82d7b6616822983762209fdd9e75838a491ed854aa00cfad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "推",
+      "测"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "推测",
+  "id": "32ce28f399566873de4eb291",
+  "level": 6,
+  "meaning": "to speculate, to guess",
+  "pinyin": "tuīcè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1339-1779527163742"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

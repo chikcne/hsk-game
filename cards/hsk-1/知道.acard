@@ -1,0 +1,31 @@
+{
+  "audio": "1873ab1bd4da58bafd979dff00300a4778638e25f6afe0798a730be53577f3e4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "道"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "知道",
+  "id": "c9782b3c0f9301cf7c1b5361",
+  "level": 1,
+  "meaning": "to know",
+  "pinyin": "zhīdào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-laXI-+d00{-1779527159091"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

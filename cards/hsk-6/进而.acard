@@ -1,0 +1,32 @@
+{
+  "audio": "aa747891001f780ffabf33f66bc7097fb8ab223fb668482ee7a7c1dbea100fbf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "而",
+      "进"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "进而",
+  "id": "dc2535a814a0ff9681fba0d1",
+  "level": 6,
+  "meaning": "then, and then",
+  "pinyin": "jìn’ér",
+  "pos": "连",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-707-1779527163110"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

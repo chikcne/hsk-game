@@ -1,0 +1,31 @@
+{
+  "audio": "bac90ef8097cc8e3d40c9182016cf09a7feb868f773d0183f5d48cb1b8b8610b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "命"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "寿命",
+  "id": "3c6d55d626737b7f69ad11b6",
+  "level": 6,
+  "meaning": "lifespan",
+  "pinyin": "shòumìng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1216-1779527163619"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "f6e4047857ca4f907da2c717d4082acae5fa778e383f3b5a30fe9dc97902d2e4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "应聘",
+  "id": "5fb939b7392b0a9482e643c1",
+  "level": 4,
+  "meaning": "to apply for a job, to respond to a job advertisement",
+  "pinyin": "yìngpìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-t($5(=UNj4-1779527160679"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

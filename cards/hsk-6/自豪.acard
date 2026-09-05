@@ -1,0 +1,31 @@
+{
+  "audio": "98d46c2663ed3c0a633f04b8b3757ce7a54cde16ccf2b7a72da964886eab277f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "自"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自豪",
+  "id": "74e9b1b6ee5f1b12258d1ddd",
+  "level": 6,
+  "meaning": "proud, self-respecting",
+  "pinyin": "zìháo",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1777-1779527164180"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

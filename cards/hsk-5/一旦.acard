@@ -1,0 +1,31 @@
+{
+  "audio": "7ff14e5f782b64bc283b2e94d94ce5fbe2761c4bffc7f8554a4660d2d36311c9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一旦",
+  "id": "0c43353d275a469ad750ce2b",
+  "level": 5,
+  "meaning": "once, in case",
+  "pinyin": "yídàn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JdNFEO~?F[-1779527162157"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

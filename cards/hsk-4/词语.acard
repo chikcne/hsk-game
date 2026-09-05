@@ -1,0 +1,31 @@
+{
+  "audio": "f5b5947247055800746b30242e9ff5abe7bf215bbbae8067f2bc2d2bfaee9d20.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "词"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "词语",
+  "id": "f52b80ffedfca31d7a14baf9",
+  "level": 4,
+  "meaning": "word, phrase",
+  "pinyin": "cíyǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-LD>ceQ.>r}-1779527159901"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

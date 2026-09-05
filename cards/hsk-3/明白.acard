@@ -1,0 +1,31 @@
+{
+  "audio": "67a94ede6cbd37cbdc7b28fca7e31adb867208351dab40a3c38605f9d824bbeb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "白"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "明白",
+  "id": "9f9da5fb787c37cb856911d5",
+  "level": 3,
+  "meaning": "to understand; clear",
+  "pinyin": "míngbai",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-B`#EGZDtjN-1779527159574"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

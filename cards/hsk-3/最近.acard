@@ -1,0 +1,32 @@
+{
+  "audio": "6cd5ab07f6105296ccc21bfc90737b1df5ee20e2963832d5cd9f97bf1901c702.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "最",
+      "近"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "最近",
+  "id": "46570c2e7ae4fa382f36864f",
+  "level": 3,
+  "meaning": "recently",
+  "pinyin": "zuìjìn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Ce,c8vpm]y-1779527159801"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

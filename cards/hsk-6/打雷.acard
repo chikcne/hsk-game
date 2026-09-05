@@ -1,0 +1,32 @@
+{
+  "audio": "d9e71a2fa5d99238ddbfefb0695862c5700e4a0f9ea2362bee18e9987166c226.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "雷"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打雷",
+  "id": "84a3cfd786cf8e9a64924b90",
+  "level": 6,
+  "meaning": "to thunder",
+  "pinyin": "dǎléi",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-241-1779527162644"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

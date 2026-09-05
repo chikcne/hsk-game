@@ -1,0 +1,31 @@
+{
+  "audio": "e8ea54cd789163bd527447099e1b86615b46cb23be34a894b87c092cf8b3cb75.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "风"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "风俗",
+  "id": "364e2a957cfab8317bea017b",
+  "level": 5,
+  "meaning": "custom, tradition",
+  "pinyin": "fēngsú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EFFK:U+bQU-1779527161164"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

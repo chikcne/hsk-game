@@ -1,0 +1,32 @@
+{
+  "audio": "9b5cd93e214a34765e49159b57d47d93601b1d24c841b3f38bfe41cb53747ce5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子",
+      "盘"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "盘子",
+  "id": "c1ae693ea5a81321ea70ff5b",
+  "level": 3,
+  "meaning": "plate",
+  "pinyin": "pánzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-kjS;GP[{0G-1779527159595"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

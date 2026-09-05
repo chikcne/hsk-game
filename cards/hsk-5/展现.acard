@@ -1,0 +1,29 @@
+{
+  "audio": "1bd7ad900e0b998ae9316f33c1fe3a1dbc9dc7c76a5ad954c15a29d3b706b7e1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "展现",
+  "id": "aeb76032c9ace86125147445",
+  "level": 5,
+  "meaning": "to reveal, to appear",
+  "pinyin": "zhǎnxiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-DPn#TE$BPk-1779527162270"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "1304054063c2bc13ef7b789acb17772dc22804512d3f1ecfac8ac9097b953513.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "处"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "到处",
+  "id": "c7f888e686c8a17dc08a80d8",
+  "level": 3,
+  "meaning": "everywhere",
+  "pinyin": "dàochù",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-AS}(N%AN&Q-1779527159385"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

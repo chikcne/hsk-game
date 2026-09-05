@@ -1,0 +1,29 @@
+{
+  "audio": "ebc591132bee0c9cab9552151d8fb2b44812d9459443b2c774a4b35251d7c5fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "枯燥",
+  "id": "e9fb8fbc45cec6519f7968af",
+  "level": 6,
+  "meaning": "dry, boring",
+  "pinyin": "kūzào",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-798-1779527163201"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

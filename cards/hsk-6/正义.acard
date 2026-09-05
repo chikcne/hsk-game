@@ -1,0 +1,31 @@
+{
+  "audio": "6c34b231fef3571e920158e55f7ae0da004baee42e1a5a2757feb8f531c8f744.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "正"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "正义",
+  "id": "2d42711610945de413fe62ef",
+  "level": 6,
+  "meaning": "justice; just",
+  "pinyin": "zhèngyì",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1692-1779527164095"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

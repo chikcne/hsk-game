@@ -1,0 +1,29 @@
+{
+  "audio": "cd643a7cd01f85d79b9cade0fe1f06494e80ac50d16d81ccefdb3894826bc551.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拍",
+  "id": "775395ca9878787b187073e0",
+  "level": 4,
+  "meaning": "to pat, to clap, to take (a photo); beat, rhythm",
+  "pinyin": "pāi",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hZdpu#.cil-1779527160345"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

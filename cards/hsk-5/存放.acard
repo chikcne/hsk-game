@@ -1,0 +1,32 @@
+{
+  "audio": "b1fee70b0fce48d86eef7df1f954bdca4cf2282058423e726263cecc3cf0286f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "存",
+      "放"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "存放",
+  "id": "3094dd7436ec0a6d266048d6",
+  "level": 5,
+  "meaning": "to deposit, to store",
+  "pinyin": "cúnfàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-K@hPtX3(Y&-1779527161011"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

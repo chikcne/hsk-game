@@ -1,0 +1,32 @@
+{
+  "audio": "d49054cc4ee269db3a55733f638c6d05e79997da1ed37b72a4a1f0fee89e8de4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水",
+      "降"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "降水",
+  "id": "f40647e675f2304b50a0f4b0",
+  "level": 5,
+  "meaning": "to have precipitation, to precipitate",
+  "pinyin": "jiàngshuǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t9ECmC2oM[-1779527161389"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

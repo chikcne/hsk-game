@@ -1,0 +1,32 @@
+{
+  "audio": "dbe88e48ab916ecea7089dda4bc4cf11acb95d533565ff5e7e8928cef9214702.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加",
+      "班"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加班",
+  "id": "0015d78f7cc5437c29f28d0a",
+  "level": 4,
+  "meaning": "work overtime",
+  "pinyin": "jiābān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-IVWb){hkbF-1779527160137"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

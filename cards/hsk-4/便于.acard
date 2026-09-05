@@ -1,0 +1,32 @@
+{
+  "audio": "afaf5b9b399707a886d7b4aa0bb9b67a23df87e5e422e0d9741c933eae38b469.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "便"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "便于",
+  "id": "4dabb781c83852ab0cf3b04b",
+  "level": 4,
+  "meaning": "to be convenient for, to facilitate",
+  "pinyin": "biànyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-H+-a7MEUQ}-1779527159834"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

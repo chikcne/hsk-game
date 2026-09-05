@@ -1,0 +1,29 @@
+{
+  "audio": "80f50c46733b850c47bca3726f14d85c832cc46fd00dcf3dea1dcbdacb797ed5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "楼",
+  "id": "6584b68df0918a284c1e9af7",
+  "level": 2,
+  "meaning": "building, floor",
+  "pinyin": "lóu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-EvwaLD@}pz-1779527159194"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

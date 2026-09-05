@@ -1,0 +1,32 @@
+{
+  "audio": "f82cf57f7d0fefb828ec5cf3d2ca042b774607d86dd3b9ba0f98f50c768c7036.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "改",
+      "编"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "改编",
+  "id": "34b879ce4dd29347317fde22",
+  "level": 6,
+  "meaning": "to adapt",
+  "pinyin": "gǎibiān",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-414-1779527162817"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

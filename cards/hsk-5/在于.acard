@@ -1,0 +1,32 @@
+{
+  "audio": "3547de316a61f277dab619dbaf294e10dde1384f8c286fd8731fc8f5b3b4ed98.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "在"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "在于",
+  "id": "e13d2b788f4d982e4ef6c82f",
+  "level": 5,
+  "meaning": "to lie in, to be determined by",
+  "pinyin": "zàiyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Q0;qA8%|?,-1779527162249"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

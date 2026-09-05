@@ -1,0 +1,31 @@
+{
+  "audio": "cce88fe943239e22c2489b33e0413de49dbf3be3f984d6df9f684f4adc396533.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "烦"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "麻烦",
+  "id": "3a0216d7f5f1c8a1c4528f7d",
+  "level": 4,
+  "meaning": "troublesome, annoying; to trouble, to bother; trouble, inconvenience",
+  "pinyin": "máfan",
+  "pos": "adjective、verb、 noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z5LWK;qP+T-1779527160297"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

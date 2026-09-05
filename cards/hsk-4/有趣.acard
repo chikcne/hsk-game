@@ -1,0 +1,31 @@
+{
+  "audio": "e23a84088b43ce2b528118aa86bc077c7986a114b1f317f6948488a43c6d7eeb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有趣",
+  "id": "9604828a5c0afb6111ae0f14",
+  "level": 4,
+  "meaning": "interesting, enjoyable, fun",
+  "pinyin": "yǒuqù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MbP-VyP)0S-1779527160694"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

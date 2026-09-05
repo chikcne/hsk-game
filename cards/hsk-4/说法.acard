@@ -1,0 +1,32 @@
+{
+  "audio": "b6e7138615b132d24c967237ebfbb2a588f5a845faa483855180212b1a7356b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "法",
+      "说"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "说法",
+  "id": "1353038dcce1ff1922396616",
+  "level": 4,
+  "meaning": "way of saying something, version, statement",
+  "pinyin": "shuōfǎ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-pa8tw:vi5f-1779527160502"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

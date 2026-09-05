@@ -1,0 +1,29 @@
+{
+  "audio": "4fcf30407fc8a2c5dfa8c31574df7bf4378e87249e8c96b0798bc867f13a5fe9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "购物",
+  "id": "74642978d322c3749cda019c",
+  "level": 4,
+  "meaning": "to shop",
+  "pinyin": "gòuwù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-K|IVxaVext-1779527160065"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "bc5626a215da12ac8c12b05c75b8cba005dc0f163968521487075a8babf6fd67.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "接",
+      "收"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "接收",
+  "id": "9ce88f7a977eb411eef91f4b",
+  "level": 5,
+  "meaning": "to receive",
+  "pinyin": "jiēshōu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-eUil84{l~+-1779527161402"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

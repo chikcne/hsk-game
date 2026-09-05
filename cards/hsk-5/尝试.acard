@@ -1,0 +1,32 @@
+{
+  "audio": "43f97c4be50583f2b2de2012c1a97ccd230069cd7a2da2b1eb6b99089c777575.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "尝",
+      "试"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "尝试",
+  "id": "42eea5cbb504e0d16644088b",
+  "level": 5,
+  "meaning": "to attempt, to try",
+  "pinyin": "chángshì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-pVW05[!xp0-1779527160916"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

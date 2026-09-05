@@ -1,0 +1,32 @@
+{
+  "audio": "aa093dfdb1fc70c3ab5be63f52ad196e6c21c617a72eef0aa7a77b2ffbd53786.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "干",
+      "能"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "能干",
+  "id": "90a1499024bfdaef75d02815",
+  "level": 5,
+  "meaning": "capable, competent",
+  "pinyin": "nénggàn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-oKISd9Al?$-1779527161599"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

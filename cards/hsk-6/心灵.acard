@@ -1,0 +1,31 @@
+{
+  "audio": "797fc7f2190c0530ac2bf372a3ba90d66704a5876b7d5011b5f7d58d74af12d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "心灵",
+  "id": "95119863090e3fa5f92c90e0",
+  "level": 6,
+  "meaning": "heart, soul",
+  "pinyin": "xīnlíng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1463-1779527163866"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "b720de6b73db1527be5e711811130fc887b12e0bb7f1233411c3d1d7d3907592.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "测"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "检测",
+  "id": "e6684ffdbc1f837f5e79f9cb",
+  "level": 6,
+  "meaning": "to test, to examine",
+  "pinyin": "jiǎncè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-651-1779527163054"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "49a163f38aa32e4dd5f4bcfe1254c75664aff1148deba52a66de0c17edf2e66e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "调"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "协调",
+  "id": "9bb41001b9f15e8f6173c01c",
+  "level": 6,
+  "meaning": "coordinated; to coordinate",
+  "pinyin": "xiétiáo",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1458-1779527163861"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

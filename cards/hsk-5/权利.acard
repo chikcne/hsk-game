@@ -1,0 +1,31 @@
+{
+  "audio": "b53bfa44b0c2a3da6b99a25989f3c09865d485c5e0f334d90e8800043d26b941.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "权"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "权利",
+  "id": "026268e41fed822cdcd65c2c",
+  "level": 5,
+  "meaning": "right, entitlement",
+  "pinyin": "quánlì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uz~h;[t0z`-1779527161702"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

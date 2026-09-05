@@ -1,0 +1,32 @@
+{
+  "audio": "a219db8099ef3c6206108d63c0a4d06483daf2ef225e53e8b24ccfcfdc89ce8e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "原",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "原理",
+  "id": "81f28be34c646c9cfc64dff2",
+  "level": 6,
+  "meaning": "principle",
+  "pinyin": "yuánlǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1617-1779527164020"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

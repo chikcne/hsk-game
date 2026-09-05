@@ -1,0 +1,29 @@
+{
+  "audio": "01559bd263e4d3eb70676d9a283e492ac89c326cf3e9cbd7d9f59380b7e840b1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "采购",
+  "id": "d0ac851d1bfb871402e9db21",
+  "level": 6,
+  "meaning": "to purchase; procurement",
+  "pinyin": "cǎigòu",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-102-1779527162505"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

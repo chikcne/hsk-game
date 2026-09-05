@@ -1,0 +1,31 @@
+{
+  "audio": "31566aa2ef9f63d3cd098e66e940f27c36cd1407e0da14ec9992f0bd3e105092.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好奇",
+  "id": "58d8b36c36f440f8b9aa9c78",
+  "level": 5,
+  "meaning": "curious",
+  "pinyin": "hàoqí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-q.<dMvQey%-1779527161276"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

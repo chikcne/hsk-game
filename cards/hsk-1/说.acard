@@ -1,0 +1,29 @@
+{
+  "audio": "dee28e55c0a0a0560c34100db11c7ea24eec6c89872b6cc1fa102486be7186cd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "说",
+  "id": "63293112cee7ac1ae56df8b1",
+  "level": 1,
+  "meaning": "to speak, to say",
+  "pinyin": "shuō",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-k-;PDVe[o%-1779527158999"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "6c2e799bebe1959ed5938821fc580f561d88fac461cfd48d5c6f9120ed5dedda.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "储蓄",
+  "id": "1046871d4443b4fe6fef8f9a",
+  "level": 6,
+  "meaning": "to save, to deposit; savings",
+  "pinyin": "chǔxù",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-198-1779527162601"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

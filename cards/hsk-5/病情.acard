@@ -1,0 +1,31 @@
+{
+  "audio": "a4d2864cfc7a9ad5174df713fbbbf796a6feb53fa8577d7dc086323bb2a79afe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "病"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "病情",
+  "id": "7c88311b20b90c5585ea7ac7",
+  "level": 5,
+  "meaning": "illness condition",
+  "pinyin": "bìngqíng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-oGF5qm}*`A-1779527160872"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

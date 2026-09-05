@@ -1,0 +1,31 @@
+{
+  "audio": "969c12dde391ad6079663373457c58550f37739a74ca970f0803e5df72979c47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "向"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "倾向",
+  "id": "c6dcfee16c174a8d5ce28443",
+  "level": 6,
+  "meaning": "to tend; tendency",
+  "pinyin": "qīngxiàng",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1063-1779527163466"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "74a09922c52fc56ba268272e0f9ee15546e8e50036df09af3c4db14cc8f0512d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "将",
+      "要"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "将要",
+  "id": "d6ca85d24d29248c6b7e451b",
+  "level": 4,
+  "meaning": "will, be going to, be about to",
+  "pinyin": "jiāngyào",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-L8u;;5xFxi-1779527160161"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

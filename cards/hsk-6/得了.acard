@@ -1,0 +1,32 @@
+{
+  "audio": "00003df6ed7c0b5397b579a34269f806d4aec6dbe5e1eafb7f49a9a13a6b8b8c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "了",
+      "得"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "得了",
+  "id": "250674a0cfa10ddc40551c2e",
+  "level": 6,
+  "meaning": "to finish; used after verbs to express possibility",
+  "pinyin": "déle",
+  "pos": "动、助",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-282-1779527162685"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

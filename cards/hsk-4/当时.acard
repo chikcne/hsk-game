@@ -1,0 +1,32 @@
+{
+  "audio": "82c928fb864e7aeda50396c2ec04759eefff3326c02062f1dae23ec7e754bc42.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "当",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当时",
+  "id": "50e5a3d24068e5a196739555",
+  "level": 4,
+  "meaning": "at that time, then",
+  "pinyin": "dāngshí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Q=>?y1lf]O-1779527159939"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

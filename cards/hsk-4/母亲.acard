@@ -1,0 +1,32 @@
+{
+  "audio": "f2b290dd5e2c9d6cd05125c3d6d9eced621fdd7897af4658e912f4db146cb52b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亲",
+      "母"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "母亲",
+  "id": "847649e20ae243f58f0a9088",
+  "level": 4,
+  "meaning": "mother",
+  "pinyin": "mǔqīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-IcdgSpIsTd-1779527160318"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

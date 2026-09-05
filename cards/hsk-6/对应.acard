@@ -1,0 +1,31 @@
+{
+  "audio": "d6ffb97cae5c415d72d719f77afeeb315dce6e59ecc1bebe7dccce1d690ccabe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "对"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "对应",
+  "id": "4470298316a3cc19b765f9fc",
+  "level": 6,
+  "meaning": "to correspond; corresponding",
+  "pinyin": "duìyìng",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-333-1779527162736"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "bedd8bfced99520e0c5f4bdb638e2028eebf9c35fc3085e55741f0398b473df6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "立"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "确立",
+  "id": "c1eb2a14f7f747d71c28d391",
+  "level": 6,
+  "meaning": "to establish",
+  "pinyin": "quèlì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1084-1779527163487"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

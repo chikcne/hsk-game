@@ -1,0 +1,31 @@
+{
+  "audio": "6f918cee7852b8cdd2f522c2710ccf1250294e061cb3c07361db45e9975d30df.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "奖"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "奖励",
+  "id": "78466f701379e3c6715a4867",
+  "level": 5,
+  "meaning": "to reward, to award",
+  "pinyin": "jiǎnglì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-szE)bak.7q-1779527161386"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

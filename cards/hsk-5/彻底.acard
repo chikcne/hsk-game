@@ -1,0 +1,31 @@
+{
+  "audio": "d95dc9c463ba3e6b93d42fbab443c79f7d0e8fb69b69b3da2f23bc811d181498.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "底"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "彻底",
+  "id": "155cd5aaa99d29e8eba9dfc3",
+  "level": 5,
+  "meaning": "thorough, complete",
+  "pinyin": "chèdǐ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PIHk*AT*![-1779527160932"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

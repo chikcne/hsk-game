@@ -1,0 +1,31 @@
+{
+  "audio": "ff4e141d579d1a120d7e1d6e2cb9548369a99693ee875620144f2aee529582d6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "同意",
+  "id": "45adca05403bc587426d0322",
+  "level": 3,
+  "meaning": "to agree",
+  "pinyin": "tóngyì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-oYgXgH{<OQ-1779527159663"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

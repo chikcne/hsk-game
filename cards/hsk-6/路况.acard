@@ -1,0 +1,31 @@
+{
+  "audio": "325d59377a8c972a6572888cc8dfc02aa3617de3a88c54cbf952922e149b779d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "路"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "路况",
+  "id": "e3e4bdfef18e9388b7a7d050",
+  "level": 6,
+  "meaning": "road conditions",
+  "pinyin": "lùkuàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-865-1779527163268"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

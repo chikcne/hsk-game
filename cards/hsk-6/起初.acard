@@ -1,0 +1,32 @@
+{
+  "audio": "ee261c38f749544d164e84a4b66dea9a494915fb5c0cfe583677c28245c1c9b1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "初",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "起初",
+  "id": "afffd076ee6b1e38afcc0e71",
+  "level": 6,
+  "meaning": "at first",
+  "pinyin": "qǐchū",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1018-1779527163421"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "10ad98e517d2d5d723fbfd1f3ddbb137acc4f5f63dec1cb3404731904ca084d9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "别",
+      "识"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "识别",
+  "id": "5b9eed45ea210bfdd290fc21",
+  "level": 6,
+  "meaning": "to distinguish",
+  "pinyin": "shíbié",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1183-1779527163586"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

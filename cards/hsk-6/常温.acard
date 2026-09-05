@@ -1,0 +1,31 @@
+{
+  "audio": "cc26188915d262a28cd2ec2cc603b7ab355d252ec32f3cd1f17696e20f877ce4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "常温",
+  "id": "44993db22689ced88ad4cd89",
+  "level": 6,
+  "meaning": "room temperature",
+  "pinyin": "chángwēn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-129-1779527162532"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

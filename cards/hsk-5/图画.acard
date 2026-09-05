@@ -1,0 +1,32 @@
+{
+  "audio": "97366883c4cc55f9cfb7a51018e3a3ef68ae376b95e75d848efe10052f1c8264.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "图",
+      "画"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "图画",
+  "id": "62c9a8eaa4a49173a6b0ce2c",
+  "level": 5,
+  "meaning": "picture, drawing",
+  "pinyin": "túhuà",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ht;^ZP72Fu-1779527161954"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

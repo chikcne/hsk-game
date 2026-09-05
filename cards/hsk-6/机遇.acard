@@ -1,0 +1,29 @@
+{
+  "audio": "e4b442d2451f02f190b6f3a2ab33f186525cbc7c439b7047f856489e84991197.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "机遇",
+  "id": "57bd8cdc9bccfc08ec58af3f",
+  "level": 6,
+  "meaning": "opportunity",
+  "pinyin": "jīyù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-613-1779527163016"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

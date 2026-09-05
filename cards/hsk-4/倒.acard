@@ -1,0 +1,29 @@
+{
+  "audio": "cf5ff61111fde38e41bfabd227470f2ac209b6000e5313b1c579ca3e097ad880.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "倒",
+  "id": "1f2383baee003a0c75cbd959",
+  "level": 4,
+  "meaning": "to fall, to collapse; (however, but)",
+  "pinyin": "dào",
+  "pos": "verb、（adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r}($?*bOJ4-1779527159942"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

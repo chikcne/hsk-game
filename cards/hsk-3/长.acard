@@ -1,0 +1,29 @@
+{
+  "audio": "2ca91c27f1e2aa71e800f6aa97979e8ac3e307f1ca896b5399e29584063c6527.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "长",
+  "id": "74c6d3a0ce0f7c1e1c49b441",
+  "level": 3,
+  "meaning": "to grow; suffix for head",
+  "pinyin": "zhǎng",
+  "pos": "verb、suffix",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-sC%cBtXgjG-1779527159771"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

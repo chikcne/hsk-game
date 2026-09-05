@@ -1,0 +1,32 @@
+{
+  "audio": "fd852380a14779eba054de471b1e8f6b486a8e0681d08ae3aeda06847c3fcaa6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "岸",
+      "海"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "海岸",
+  "id": "8bc6b0eeff606433f35d0154",
+  "level": 6,
+  "meaning": "coast, shore",
+  "pinyin": "hǎi’àn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-518-1779527162921"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

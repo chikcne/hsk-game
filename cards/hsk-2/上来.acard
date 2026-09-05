@@ -1,0 +1,32 @@
+{
+  "audio": "f2e935f040b23e97671f3008feda07c870575269cc32865644541a29671f6d51.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "上来",
+  "id": "ab36338ed4809fdb0ef5baeb",
+  "level": 2,
+  "meaning": "to come up",
+  "pinyin": "shànglái",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-v0zZv&$)~T-1779527159228"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

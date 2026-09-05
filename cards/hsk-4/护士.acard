@@ -1,0 +1,29 @@
+{
+  "audio": "2c17538fcc1bdc823f6ae552abc051cf93089b8a54c97c8cc828674ddfeeffd4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "护士",
+  "id": "c5e63a7a6876e36b9fbe5641",
+  "level": 4,
+  "meaning": "nurse",
+  "pinyin": "hùshi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I!zK:96-m1-1779527160103"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

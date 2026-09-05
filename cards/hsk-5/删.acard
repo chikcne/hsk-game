@@ -1,0 +1,29 @@
+{
+  "audio": "bb23c8772b1d97cbd366f33be2dae117c52539b2c0a39ee64e232090bf5a81c0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "删",
+  "id": "17aea1c643ae7a9275e5533d",
+  "level": 5,
+  "meaning": "to delete",
+  "pinyin": "shān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zdbO*vcTav-1779527161751"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

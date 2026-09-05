@@ -1,0 +1,32 @@
+{
+  "audio": "1c9ade14cfc19d6994fffd5517f0036a1883899ffde8f24b64d3f565fbd166c6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打车",
+  "id": "7a343650e6da8ce6eeeedef0",
+  "level": 2,
+  "meaning": "to take a taxi",
+  "pinyin": "dǎchē",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-oA.tw>_(<l-1779527159131"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

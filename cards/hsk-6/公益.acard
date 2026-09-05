@@ -1,0 +1,31 @@
+{
+  "audio": "f02060d06ed9a1a08258f5b8d1886c5376f9dbe0cea86f5bc80b57a824986117.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公益",
+  "id": "491f896c34810377440986b6",
+  "level": 6,
+  "meaning": "public welfare",
+  "pinyin": "gōngyì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-463-1779527162866"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

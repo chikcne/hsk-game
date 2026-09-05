@@ -1,0 +1,31 @@
+{
+  "audio": "3c1bcc1efe527f742a179f18211cabadbbd599fe9c3c176420623426b9b30971.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "起"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "起源",
+  "id": "aef0c866e0cb075bf60a622f",
+  "level": 6,
+  "meaning": "to originate; origin",
+  "pinyin": "qǐyuán",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1024-1779527163427"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

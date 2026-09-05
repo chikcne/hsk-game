@@ -1,0 +1,32 @@
+{
+  "audio": "9874ff946bc9183f31617c33ebe8996cd7912c99c96069c31d5e99bfe7d3af22.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "特",
+      "长"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "特长",
+  "id": "f58265ddfd0abe25babf294d",
+  "level": 6,
+  "meaning": "specialty, strong point",
+  "pinyin": "tècháng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1276-1779527163679"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

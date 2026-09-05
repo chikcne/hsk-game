@@ -1,0 +1,34 @@
+{
+  "audio": "249f295ff3d52ec712b953600e58dc83423fee751e288f288a0061e4e1c2ca80.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "万",
+      "千",
+      "家",
+      "户"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "千家万户",
+  "id": "8f700cecfb4765aad5e49b2b",
+  "level": 6,
+  "meaning": "countless households",
+  "pinyin": "qiānjiā-wànhù",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1033-1779527163436"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

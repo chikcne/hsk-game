@@ -1,0 +1,32 @@
+{
+  "audio": "70eee5c9d0dd8ad1b5803d3376ce52ff73f6fee7b3893893796cc3454cb2cd47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "回",
+      "顾"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "回顾",
+  "id": "e8cae1212a329e073f0dec7d",
+  "level": 6,
+  "meaning": "to look back, to review",
+  "pinyin": "huígù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-586-1779527162989"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

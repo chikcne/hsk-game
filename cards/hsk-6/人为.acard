@@ -1,0 +1,32 @@
+{
+  "audio": "ff6ab047e0518f0c28a160482ae7eecf5dc1b5546da70037a08f3597fcd4798c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为",
+      "人"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人为",
+  "id": "87ff6e02ae0fad0e15b4a4f4",
+  "level": 6,
+  "meaning": "man-made",
+  "pinyin": "rénwéi",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1100-1779527163503"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

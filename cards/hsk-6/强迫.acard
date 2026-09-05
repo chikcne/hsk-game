@@ -1,0 +1,31 @@
+{
+  "audio": "ba61712b3835156db2a95133481b725b0e7d2c2fa511392f902f2f0eea150d47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "强"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "强迫",
+  "id": "0615700a3a8dca46fa939aa5",
+  "level": 6,
+  "meaning": "to force",
+  "pinyin": "qiǎngpò",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1044-1779527163447"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "c5bf04d3a3bc64b0e6398e1e115363899e36d652ee49ec9fd7e49b5e5e65d950.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "忽然",
+  "id": "2b5d34e0f123d539656c3c1c",
+  "level": 4,
+  "meaning": "suddenly",
+  "pinyin": "hūrán",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-P!FMS}|9(/-1779527160101"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

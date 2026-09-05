@@ -1,0 +1,32 @@
+{
+  "audio": "d5765686d89eccd94d838e45119ebb7435d0d408242a0177d400b7a1e1bb7831.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "以",
+      "便"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "以便",
+  "id": "910ce8932982479d7f9c7ef9",
+  "level": 6,
+  "meaning": "so that, in order to",
+  "pinyin": "yǐbiàn",
+  "pos": "连",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1559-1779527163962"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

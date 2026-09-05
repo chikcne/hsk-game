@@ -1,0 +1,29 @@
+{
+  "audio": "a4921abbf2b40c8bd8485b79169cc83c21d936c52a9c3e63c189ff1a31022eaa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "思维",
+  "id": "82b4ed8476f096fea9d63184",
+  "level": 5,
+  "meaning": "thought, thinking; to think",
+  "pinyin": "sīwéi",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-cXyEh}$lDf-1779527161882"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

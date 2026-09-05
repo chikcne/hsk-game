@@ -1,0 +1,31 @@
+{
+  "audio": "059efea6b5a94ed6d37e20b9161b7748471396542c9e6f90cab815cb93b5dabb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "薪水",
+  "id": "b2be53be0f714a9fd8010218",
+  "level": 6,
+  "meaning": "salary",
+  "pinyin": "xīnshui",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1467-1779527163870"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

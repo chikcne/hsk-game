@@ -1,0 +1,32 @@
+{
+  "audio": "335df16916b9911315069038d77d752bff99336e9a37ccb40318695ef9084da8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入",
+      "选"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "入选",
+  "id": "9570690cd33e9ed329ffeb67",
+  "level": 6,
+  "meaning": "to be selected",
+  "pinyin": "rùxuǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1121-1779527163524"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

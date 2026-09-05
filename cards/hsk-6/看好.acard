@@ -1,0 +1,32 @@
+{
+  "audio": "30f64cc277040e55a1434cf586390f2b1a2904a3ea644df995cbbd1f3595a660.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "好",
+      "看"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看好",
+  "id": "90f1e1f6b42ab66327867484",
+  "level": 6,
+  "meaning": "to be optimistic about, to fancy",
+  "pinyin": "kànhǎo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-770-1779527163173"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "42d48e23e2b0f68ed9a8df270e9442e173ec900c93497e762a379470fda0547d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不时",
+  "id": "170e59ea5751ae94a51ac12e",
+  "level": 6,
+  "meaning": "at times, occasionally; sometimes",
+  "pinyin": "bùshí",
+  "pos": "副、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-85-1779527162488"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

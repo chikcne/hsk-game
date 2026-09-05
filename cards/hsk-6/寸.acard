@@ -1,0 +1,29 @@
+{
+  "audio": "1879a54c8de2d04876dd2feb0fe511ac6f7305a6ff2d5a5adc04c4ea4b85146c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "寸",
+  "id": "fa86194bf6bd14ee6b754895",
+  "level": 6,
+  "meaning": "cun, Chinese inch",
+  "pinyin": "cùn",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-231-1779527162634"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

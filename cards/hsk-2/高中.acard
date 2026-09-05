@@ -1,0 +1,32 @@
+{
+  "audio": "3e5a98e938a6c494924fab3287a7353430600bf5b73b6d22fa829c8c6bb5707d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高中",
+  "id": "3cacd5b6200e2367ce4e82b4",
+  "level": 2,
+  "meaning": "high school",
+  "pinyin": "gāozhōng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-hvgaB{>uRh-1779527159145"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

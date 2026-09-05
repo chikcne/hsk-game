@@ -1,0 +1,32 @@
+{
+  "audio": "884e6127ecdfe654308591482af0a34f984303afe336ea88b4e6b336eb0710c9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "已",
+      "早"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "早已",
+  "id": "e20e1d9b03ec87c54f1d69fc",
+  "level": 5,
+  "meaning": "long ago, already",
+  "pinyin": "zǎoyǐ",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M|*v6}`xkq-1779527162255"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

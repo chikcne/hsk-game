@@ -1,0 +1,31 @@
+{
+  "audio": "ad8d435b9971b7d4f5d4a1df195c832c2f75b00603ef7eeae382db3e6a96d3f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "题"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "标题",
+  "id": "2a8830ba7cd255c31f281e3a",
+  "level": 5,
+  "meaning": "title, heading",
+  "pinyin": "biāotí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qm[/fF&pDW-1779527160863"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

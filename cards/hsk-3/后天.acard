@@ -1,0 +1,32 @@
+{
+  "audio": "1fbb1f0cddc2d39223e8ff51e62581f3587f63e55d8d642de4b74822960fd4bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "天"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "后天",
+  "id": "0f1447a9fc54e37d3e6b1bf0",
+  "level": 3,
+  "meaning": "the day after tomorrow",
+  "pinyin": "hòutiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-jDu|rWMX_I-1779527159476"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

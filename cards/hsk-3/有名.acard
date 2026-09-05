@@ -1,0 +1,32 @@
+{
+  "audio": "98a3862a5174ca9a123e0956e54c78d2828052fc5df8f5ad1c3fe9bef8be660c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有名",
+  "id": "06c805620fe06f56edc85330",
+  "level": 3,
+  "meaning": "famous",
+  "pinyin": "yǒumíng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-vIs!mKF;X~-1779527159750"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

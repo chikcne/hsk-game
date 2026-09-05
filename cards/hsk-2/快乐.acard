@@ -1,0 +1,31 @@
+{
+  "audio": "f243d3990373662c74f509b754b964781670bc7f97cc235c09cf8ae5824fa0d0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "快"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "快乐",
+  "id": "62e183421af555a6697128f0",
+  "level": 2,
+  "meaning": "happy, joyful",
+  "pinyin": "kuàilè",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-qB^uhRLb(U-1779527159188"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

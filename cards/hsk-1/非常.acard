@@ -1,0 +1,31 @@
+{
+  "audio": "7ef8d1c9f233c3a477b165624a9c99d438223a3d71a517006babc703ae20c540.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "非常",
+  "id": "11e42b33a05987f69e983c74",
+  "level": 1,
+  "meaning": "very, extremely",
+  "pinyin": "fēicháng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-Dy=<Rd*J7o-1779527158856"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

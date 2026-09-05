@@ -1,0 +1,32 @@
+{
+  "audio": "b2bdb6bcb163ec9222509df1ac1437e76aff75b547aace725e8da2e2dcc92f03.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "块"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一块儿",
+  "id": "1c483e6c248865934920c7fa",
+  "level": 3,
+  "meaning": "the same place; together",
+  "pinyin": "yíkuàir",
+  "pos": "noun、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-tm7(quJ:%X-1779527159727"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

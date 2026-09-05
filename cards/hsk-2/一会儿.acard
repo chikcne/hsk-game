@@ -1,0 +1,32 @@
+{
+  "audio": "1a945ff5fbbcc1703ed155dc981a6295467eb68d1e6afe69788273978353e413.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "会"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一会儿",
+  "id": "55f71b0b074f2ffc308489ef",
+  "level": 2,
+  "meaning": "a while, a moment; (soon, in a little while)",
+  "pinyin": "yíhuìr",
+  "pos": "numberclassifier、 （adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-nVT^%|0%mA-1779527159274"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

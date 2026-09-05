@@ -1,0 +1,32 @@
+{
+  "audio": "5b2c9f3fd63c8c613be8a1b647d6c189fec61e895c059c95107e49e6cfc0d5cf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "批"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大批",
+  "id": "9e98ec319132560bc29b45d4",
+  "level": 5,
+  "meaning": "large batch",
+  "pinyin": "dàpī",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ET=P712_7C-1779527161028"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

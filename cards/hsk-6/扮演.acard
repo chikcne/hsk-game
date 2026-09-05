@@ -1,0 +1,31 @@
+{
+  "audio": "6d722c1512da6ebb765058105b95b37534b5f8952d70e7bbcacdb8aa2f9bc195.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "演"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扮演",
+  "id": "39674431be26dad63dc5d3a4",
+  "level": 6,
+  "meaning": "to play the role of, to act as",
+  "pinyin": "bànyǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-19-1779527162422"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

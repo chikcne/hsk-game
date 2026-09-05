@@ -1,0 +1,32 @@
+{
+  "audio": "17c05898ac985ed25fd5f2f5b4955299ac3b92a348bebf668e1c3c4e0e376cb1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交",
+      "通"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "交通",
+  "id": "1888d9e88b16c1dc73bc0ef6",
+  "level": 4,
+  "meaning": "traffic",
+  "pinyin": "jiāotōng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qyZ!R;B*=_-1779527160175"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

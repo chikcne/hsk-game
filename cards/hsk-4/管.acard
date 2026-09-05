@@ -1,0 +1,29 @@
+{
+  "audio": "a0c643839da50644e90e3daedd7f74802c03e34dfaf9f403d6cd347af27103f7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "管",
+  "id": "0fe5c0a49a5c1422e7dbe6b2",
+  "level": 4,
+  "meaning": "control, manage, care about, bother with; (pipe, tube); (measure word for tubular objects)",
+  "pinyin": "guǎn",
+  "pos": "verb、（noun、 classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-oqK+mXQP8z-1779527160075"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

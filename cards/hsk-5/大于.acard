@@ -1,0 +1,32 @@
+{
+  "audio": "133a4413e4c69ea3560e375d73f71b76553480e4a819441be9026e45cb751db4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "于",
+      "大"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大于",
+  "id": "90241bf1c57460e4043c1a06",
+  "level": 5,
+  "meaning": "to be greater than",
+  "pinyin": "dàyú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M[k&[7&V:H-1779527161034"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

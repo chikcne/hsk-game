@@ -1,0 +1,31 @@
+{
+  "audio": "b1363dbc078e2e0ade32610e32d8d23ddc4448d16ea4d0a5a29963a2abe89a8c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前景",
+  "id": "1a6c26c9c30ab2b72afa67d4",
+  "level": 6,
+  "meaning": "prospect, future",
+  "pinyin": "qiánjǐng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1035-1779527163438"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

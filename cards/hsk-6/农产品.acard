@@ -1,0 +1,33 @@
+{
+  "audio": "64186135cf1ed71b9b9d3c2b35509a735f04e5e6f4147b289ccccc6f3085d5e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "产",
+      "产品",
+      "品"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "农产品",
+  "id": "fe074aafef3c6ee474ba56e9",
+  "level": 6,
+  "meaning": "agricultural product",
+  "pinyin": "nóngchǎnpǐn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-960-1779527163363"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

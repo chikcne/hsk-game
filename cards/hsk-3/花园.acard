@@ -1,0 +1,32 @@
+{
+  "audio": "f1221093061d4b30443c1edd94ee6b64aae5bcaf3cdaa2f6d129fa06e0819dd3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "园",
+      "花"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "花园",
+  "id": "efa1c2c77658b5613070c3cc",
+  "level": 3,
+  "meaning": "garden",
+  "pinyin": "huāyuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-l]}4omPF2r-1779527159478"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

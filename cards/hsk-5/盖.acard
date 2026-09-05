@@ -1,0 +1,29 @@
+{
+  "audio": "89b6a47d106e388adf7ce930f1b25c9f671b70d53326ee6ffe15a9c54151546b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "盖",
+  "id": "d53862b75c5a46fe8a6969e9",
+  "level": 5,
+  "meaning": "lid, cover; to cover",
+  "pinyin": "gài",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-giP`s-vq:p-1779527161184"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

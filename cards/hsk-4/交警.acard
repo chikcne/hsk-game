@@ -1,0 +1,31 @@
+{
+  "audio": "7ae8cf504c0fceb422fa3e0a1039f5167fa50142f7813c4d9b95f8fd440d4152.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "交警",
+  "id": "795e8d9b27ed23cebf46a2db",
+  "level": 4,
+  "meaning": "traffic police",
+  "pinyin": "jiāojǐng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-cPK|7t3r7}-1779527160172"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

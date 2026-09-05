@@ -1,0 +1,29 @@
+{
+  "audio": "5407d3b6025a37e64cbf9ffdaf042113dc7059343457520cb21ec61efbfe0814.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "闻",
+  "id": "5aeb7668c2e3b139a0d61826",
+  "level": 4,
+  "meaning": "to smell, to sniff",
+  "pinyin": "wén",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-y]b8Cn$pjr-1779527160579"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

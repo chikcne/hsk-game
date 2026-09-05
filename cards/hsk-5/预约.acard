@@ -1,0 +1,31 @@
+{
+  "audio": "b7dad75a995c33ea7430a0871ae3b3f286c401b906c8fb26c83ad18a997f3595.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "约"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "预约",
+  "id": "7b0fd82a1e42cc32941b3fe4",
+  "level": 5,
+  "meaning": "to make an appointment, to reserve",
+  "pinyin": "yùyuē",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-iCH2A5a3`o-1779527162230"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

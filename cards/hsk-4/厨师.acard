@@ -1,0 +1,29 @@
+{
+  "audio": "812b521e38cf9c79854616f1cf855bd1601277ec7f25ba131f2e37cd95bda2a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "厨师",
+  "id": "09396a10f7966ddd43104905",
+  "level": 4,
+  "meaning": "chef, cook",
+  "pinyin": "chúshī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-h:f@o<oF+6-1779527159897"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "12fbc61c7d174f3d17d5a3352143870439fbbaff309aff47352210afea2ec941.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "如"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不如",
+  "id": "1149aadbb2ee83efe515add2",
+  "level": 4,
+  "meaning": "not as good as, inferior to",
+  "pinyin": "bùrú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-NHD_Q3N_^4-1779527159861"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

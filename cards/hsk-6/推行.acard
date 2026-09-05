@@ -1,0 +1,32 @@
+{
+  "audio": "42a588705bb1d242394c7a28bc92a1a2a35b4de43d40bbc1b4a6d7115199eb31.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "推",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "推行",
+  "id": "63adee54cfd6a99c8510dc58",
+  "level": 6,
+  "meaning": "to carry out, to implement",
+  "pinyin": "tuīxíng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1341-1779527163744"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

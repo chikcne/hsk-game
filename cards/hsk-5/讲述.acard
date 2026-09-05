@@ -1,0 +1,31 @@
+{
+  "audio": "d6e0b25f85a7f5e4b0daccd4a9f9bdfe687a9d5e14f99048d8308d1553f316cf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "讲"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "讲述",
+  "id": "8a0de34bd565dcccd7b73e1e",
+  "level": 5,
+  "meaning": "to narrate, to tell",
+  "pinyin": "jiǎngshù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M/b/9$JR[5-1779527161387"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

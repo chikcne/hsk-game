@@ -1,0 +1,31 @@
+{
+  "audio": "f3da2c9ec2072ed877e5a183df56225a6f62ae6579636e49a533b1a796b86a5a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "美"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "美丽",
+  "id": "43d4c850084f549333caf8b9",
+  "level": 4,
+  "meaning": "beautiful, lovely",
+  "pinyin": "měilì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-rAIn$3%M%%-1779527160306"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "fef45f35264a641236ecc60b384e68e4f673adb083cf21c2f9c2984d8b76ff7f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "酸",
+  "id": "8e0ae1e03f5be468d2080a4c",
+  "level": 4,
+  "meaning": "sour, tart",
+  "pinyin": "suān",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-M^.-qmswL0-1779527160509"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

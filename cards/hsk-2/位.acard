@@ -1,0 +1,29 @@
+{
+  "audio": "d6cbcaa0661015e7c1dfefed171464e5f9390825aa5b2fe3618192cc218262bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "位",
+  "id": "b91fc29b54eb65a188ef9c4b",
+  "level": 2,
+  "meaning": "measure word for people",
+  "pinyin": "wèi",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-o^^A=<I_ec-1779527159256"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "55f75e6be666d11df0cde09bd2afbfb34dd9ea49caa72f3aba2d71d0fdc9f718.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "结"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "结尾",
+  "id": "b29f6551f477dc61ee5338a7",
+  "level": 6,
+  "meaning": "to end; end",
+  "pinyin": "jiéwěi",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-688-1779527163091"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "04ef25eb5a6fe56f33026691bb10352b93f77a6ec2d971cc6d103f4904e9231f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "饭"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "盒饭",
+  "id": "15fc14f0c1b6fdb044fbd14e",
+  "level": 5,
+  "meaning": "boxed meal",
+  "pinyin": "héfàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-c;ZfNd-d,V-1779527161279"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

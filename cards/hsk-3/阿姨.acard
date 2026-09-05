@@ -1,0 +1,31 @@
+{
+  "audio": "96dfdae0f36b370cc052ee90c294024c8898ad2b0242dc1ecd6ba83b6e639aa4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "姨"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "阿姨",
+  "id": "44cf75be35aa9cca824eaf91",
+  "level": 3,
+  "meaning": "aunt",
+  "pinyin": "āyí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-k=lUchxGb.-1779527159304"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

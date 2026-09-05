@@ -1,0 +1,31 @@
+{
+  "audio": "21e7a44b7995fd648ae1df4a25756dab9e633d888ca169d6820374666dffeade.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "定"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鉴定",
+  "id": "b0e8f94ee586e6afd8f33c53",
+  "level": 6,
+  "meaning": "to appraise, to identify; appraisal",
+  "pinyin": "jiàndìng",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-659-1779527163062"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

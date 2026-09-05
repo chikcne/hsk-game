@@ -1,0 +1,29 @@
+{
+  "audio": "66846220a6c071045754f1e6c0c7a00f517f2e939909d099f2c036b559557658.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地",
+  "id": "a1121c8d4274601d0ed57846",
+  "level": 3,
+  "meaning": "ground, earth, land",
+  "pinyin": "dì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-ziQHgFG.!O-1779527159392"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "7206836988ab87cf9bc5e303fe5a3134f0504703a85594d19e5292622d2933da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "印"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "印象",
+  "id": "8ebf3ed465892b88d67ac0a2",
+  "level": 4,
+  "meaning": "impression",
+  "pinyin": "yìnxiàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-qRP+*aEo]K-1779527160676"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

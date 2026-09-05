@@ -1,0 +1,29 @@
+{
+  "audio": "cddaa40f182a9742688c40433121bff74d6a5f9463aeb53018ba8604ae52b4b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拜访",
+  "id": "a174152e1a0f781f6712b3f4",
+  "level": 6,
+  "meaning": "to visit, to call on",
+  "pinyin": "bàifǎng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-14-1779527162417"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

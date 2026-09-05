@@ -1,0 +1,29 @@
+{
+  "audio": "7432523c80c5eb2f0d6df49cea9d573eedc48a208e66d9a160b53b7058e5a4e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "康复",
+  "id": "77ba1307119a2e23385d2122",
+  "level": 6,
+  "meaning": "to recover",
+  "pinyin": "kāngfù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-774-1779527163177"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

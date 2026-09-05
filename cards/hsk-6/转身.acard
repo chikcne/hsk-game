@@ -1,0 +1,32 @@
+{
+  "audio": "bec435dd298e98a76839404015938d9c351ffec851adc9659faf2f4a357ffe47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "身",
+      "转"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转身",
+  "id": "3d9228fd2da124d257dd2de3",
+  "level": 6,
+  "meaning": "to turn around",
+  "pinyin": "zhuǎnshēn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1767-1779527164170"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

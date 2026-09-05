@@ -1,0 +1,31 @@
+{
+  "audio": "d811d5bbb497b8d9f45c67763feef8a340c6acdd1518cc4620641f5b17ad34bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亏"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亏损",
+  "id": "391625d6e6515c2f9a1da410",
+  "level": 6,
+  "meaning": "to lose money",
+  "pinyin": "kuīsǔn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-807-1779527163210"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

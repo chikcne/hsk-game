@@ -1,0 +1,31 @@
+{
+  "audio": "39512cc682ff7e4b72c795a61468811dbf4312e245228ae0ba70a1ae614aabc0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "极"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "积极",
+  "id": "e851085f190e2dae2d51497e",
+  "level": 4,
+  "meaning": "positive",
+  "pinyin": "jījí",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MGN4+yu+m~-1779527160126"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

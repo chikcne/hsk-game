@@ -1,0 +1,32 @@
+{
+  "audio": "f9a68fc0779381288be43e541e6107488b503fa29b7c6a924449e1528f45c037.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "到",
+      "周"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "周到",
+  "id": "1740ba055b283ca9569ad733",
+  "level": 6,
+  "meaning": "thoughtful, considerate",
+  "pinyin": "zhōudào",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1739-1779527164142"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

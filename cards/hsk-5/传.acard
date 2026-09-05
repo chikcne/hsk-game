@@ -1,0 +1,29 @@
+{
+  "audio": "1ef1367f8289f014fe094b7306c6094c76ba73838bb2e334b3751ef9c95b5a16.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "传",
+  "id": "0bc04c8606cb0a031ac4a4cc",
+  "level": 5,
+  "meaning": "to pass, to spread",
+  "pinyin": "chuán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-QoW4UGqr|!-1779527160986"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

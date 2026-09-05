@@ -1,0 +1,32 @@
+{
+  "audio": "40d8bab045ae7072cbb3cc6c6d4861f8e90e18c4bb462841f8eb7426c8235ba4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "社"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "社会",
+  "id": "a0ca2369f967c9e8a66397e0",
+  "level": 4,
+  "meaning": "society, community",
+  "pinyin": "shèhuì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-q^dun<ANyl-1779527160442"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

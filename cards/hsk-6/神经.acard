@@ -1,0 +1,31 @@
+{
+  "audio": "88dc339cbeaa63ce5bc95cbd3e567b191785c8075275b0e074fb76dfd27cb4ab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "神"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "神经",
+  "id": "147326b5b7e52adff74438a2",
+  "level": 6,
+  "meaning": "nerve",
+  "pinyin": "shénjīng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1166-1779527163569"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

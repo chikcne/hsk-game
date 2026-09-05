@@ -1,0 +1,29 @@
+{
+  "audio": "8bd56230b6e212bdcb12ccdc86744126f27ad092553a1cbf3a9b5272cd7dbb92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鼓",
+  "id": "f63206d25605cc05d58c4e31",
+  "level": 5,
+  "meaning": "drum; to bulge, to swell, to encourage, to urge; bulging, plump",
+  "pinyin": "gǔ",
+  "pos": "noun、verb、 adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-N}<lyrhK#]-1779527161226"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

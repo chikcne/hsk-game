@@ -1,0 +1,29 @@
+{
+  "audio": "25f9f03399033247fce72065448a9b1ab92177230438a704bc89488a68828d82.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "份",
+  "id": "7d78559dd52f848a7530c59e",
+  "level": 4,
+  "meaning": "measure word for copies, shares",
+  "pinyin": "fèn",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kl6_MNI}oA-1779527160006"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

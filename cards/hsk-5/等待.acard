@@ -1,0 +1,32 @@
+{
+  "audio": "847e99c89cac29752571c2c4fbfffc185a70e6b3bea0e09fff1c1ef72291f820.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "待",
+      "等"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "等待",
+  "id": "a80388629a32038dc56e7565",
+  "level": 5,
+  "meaning": "to wait",
+  "pinyin": "děngdài",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-btUo?I[|rZ-1779527161066"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

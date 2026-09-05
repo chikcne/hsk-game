@@ -1,0 +1,32 @@
+{
+  "audio": "6376bcdb9f5ea4132b115e4bbffc97680dd69d94d08b4c7d04559312add8cd9a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "跟"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "跟前",
+  "id": "c5276afa693628e41d0d6547",
+  "level": 6,
+  "meaning": "in front of, near",
+  "pinyin": "gēnqián",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-447-1779527162850"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

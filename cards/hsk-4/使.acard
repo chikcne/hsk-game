@@ -1,0 +1,29 @@
+{
+  "audio": "4a6b1c07d588b73f79a8c99a2d6d44e6976db3f47f27113395804ad362cb66fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "使",
+  "id": "2d7e96667675dc701c84d253",
+  "level": 4,
+  "meaning": "to make, to cause, to use",
+  "pinyin": "shǐ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-GqJ>l37&Y$-1779527160469"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

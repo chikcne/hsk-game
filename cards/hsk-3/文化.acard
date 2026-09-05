@@ -1,0 +1,31 @@
+{
+  "audio": "e3bf3f9a5319cefd3ed5cdaa382a0ba1e86eebb919b27ac0f590c1c761b0d043.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "化"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "文化",
+  "id": "9f0d7cd21da01c631cf86085",
+  "level": 3,
+  "meaning": "culture",
+  "pinyin": "wénhuà",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-bXC!(v?agX-1779527159681"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

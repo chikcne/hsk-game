@@ -1,0 +1,29 @@
+{
+  "audio": "b317089dd0fd13428bb68bcf04c3f31675b629b610e7109b32a6b59a204642b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "走",
+  "id": "b62fc23d98494f9b30d10ca0",
+  "level": 2,
+  "meaning": "to walk",
+  "pinyin": "zǒu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-r7UOA7oJ^g-1779527159298"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

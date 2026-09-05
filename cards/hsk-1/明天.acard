@@ -1,0 +1,31 @@
+{
+  "audio": "9de046db2265448b2a4f2ae63a065f7d1c544f74f96cd2a75a75ff4dbdb8b529.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "明天",
+  "id": "b43f38991774b2896e3aad53",
+  "level": 1,
+  "meaning": "tomorrow",
+  "pinyin": "míngtiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-CE9@qx={_w-1779527158932"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

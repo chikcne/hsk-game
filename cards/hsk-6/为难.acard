@@ -1,0 +1,32 @@
+{
+  "audio": "247f4b20c6679a2d6a50d7e369e5fb133e71d794404e5e82f42b4feb77f84b29.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "为难",
+  "id": "10c70ffb51f78faa6746c282",
+  "level": 6,
+  "meaning": "difficult; to make things difficult",
+  "pinyin": "wéinán",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1370-1779527163773"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

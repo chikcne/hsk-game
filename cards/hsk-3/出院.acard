@@ -1,0 +1,31 @@
+{
+  "audio": "d67431624f41971ba242a33a62c8db0dba22c9f0236b17bcfe7c45206f1730a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出院",
+  "id": "534b8104949526b453447622",
+  "level": 3,
+  "meaning": "to be discharged from hospital",
+  "pinyin": "chūyuàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-wtxUzYyq](-1779527159367"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

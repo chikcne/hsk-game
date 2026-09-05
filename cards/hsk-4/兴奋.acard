@@ -1,0 +1,29 @@
+{
+  "audio": "cc006683e00b631f9aec896970760e67e738ed8d9e9985c57c62501f8b41c43a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "兴奋",
+  "id": "daca2597d43cd955e926b03c",
+  "level": 4,
+  "meaning": "excited, thrilled; to excite, to get excited",
+  "pinyin": "xīngfèn",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-FZ$4pO5^[?-1779527160628"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

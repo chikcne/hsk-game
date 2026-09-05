@@ -1,0 +1,32 @@
+{
+  "audio": "73f4f71f95cafd12e1ddfec92b2847abdef2c238695631132cacc5c51b289b20.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度",
+      "难"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "难度",
+  "id": "00acc9a65b41bd2bbc23ba1c",
+  "level": 5,
+  "meaning": "degree of difficulty",
+  "pinyin": "nándù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-t77CRJ^[R`-1779527161593"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

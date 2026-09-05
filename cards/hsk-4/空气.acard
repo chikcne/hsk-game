@@ -1,0 +1,32 @@
+{
+  "audio": "1e1608cf5f8bf36d4c61909eb16d4cb175f28e9930a92a841df58c6cf267a588.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气",
+      "空"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "空气",
+  "id": "e9b085f4d0da68ee661962a9",
+  "level": 4,
+  "meaning": "atmosphere, air",
+  "pinyin": "kōngqì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ue-2o@SZ;#-1779527160240"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

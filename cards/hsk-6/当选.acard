@@ -1,0 +1,32 @@
+{
+  "audio": "990f457d219e7ccf73ff6387c3f0743707b5053c12a9268573497cb49378915c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "当",
+      "选"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当选",
+  "id": "602d6616096295d66d047592",
+  "level": 6,
+  "meaning": "to be elected",
+  "pinyin": "dāngxuǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-273-1779527162676"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

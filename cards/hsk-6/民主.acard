@@ -1,0 +1,29 @@
+{
+  "audio": "8356a9142c075fcb1dd556485c48418283e6dc9b9a2aff67230105e222565c40.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "民主",
+  "id": "13d43a9dc5a6a7ca30429eee",
+  "level": 6,
+  "meaning": "democracy; democratic",
+  "pinyin": "mínzhǔ",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-923-1779527163326"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "736e1f493581bf0cfbadc241ed5956d82751c516b7f171b3209acc6a7f125e9c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "捡",
+  "id": "ecce7ee260e503269478072c",
+  "level": 5,
+  "meaning": "to pick up",
+  "pinyin": "jiǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jutx>6Ia~$-1779527161369"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

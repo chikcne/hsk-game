@@ -1,0 +1,32 @@
+{
+  "audio": "2d7d8aedacbebd680c57308a7ece76fcbf9905705d57d172a9e3caae1c372b36.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "含",
+      "量"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "含量",
+  "id": "361f7efa36e24cb2dd2fcf8b",
+  "level": 5,
+  "meaning": "content",
+  "pinyin": "hánliàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-eMcdD)ozI5-1779527161267"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

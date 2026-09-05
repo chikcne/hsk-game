@@ -1,0 +1,29 @@
+{
+  "audio": "225c863832602aa420ed58e5473f4871c58726997b7b4ae9d5057b14c2573547.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "久",
+  "id": "afe69f818155461fcde266a8",
+  "level": 3,
+  "meaning": "long",
+  "pinyin": "jiǔ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-NGENE[>Zt>-1779527159522"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

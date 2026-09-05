@@ -1,0 +1,32 @@
+{
+  "audio": "06318e2cb12201e12163d6f0eb75266c295ff6218e42f602303ed006562bc4c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "电"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发电",
+  "id": "416e5a2ed9c525c84528ad56",
+  "level": 6,
+  "meaning": "to generate electricity",
+  "pinyin": "fādiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-351-1779527162754"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

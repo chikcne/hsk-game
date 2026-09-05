@@ -1,0 +1,31 @@
+{
+  "audio": "df907d46421a886125218bf52f7202ecaf748e35f09e4dc47d8957db98d24109.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "创业",
+  "id": "9f7f668507e3988a2d1ce7dc",
+  "level": 5,
+  "meaning": "to start a business",
+  "pinyin": "chuàngyè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jKX0ZOff5W-1779527160994"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

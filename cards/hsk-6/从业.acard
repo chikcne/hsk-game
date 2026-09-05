@@ -1,0 +1,32 @@
+{
+  "audio": "72b8ec9f3ba6e3a8753edae9e2494bbb7b157c68ff6a8b97ed1d3d76ddf318a1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业",
+      "从"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "从业",
+  "id": "1dfb29d15f4381186815d332",
+  "level": 6,
+  "meaning": "to be employed, to work in a profession",
+  "pinyin": "cóngyè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-225-1779527162628"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "34caf61e8d5962277335b3910966dd3ea3ffb6a9f9d7557b47432819cd5323da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "绿色",
+  "id": "b1b8bbd78a900e0ab55df16e",
+  "level": 2,
+  "meaning": "green color; (green)",
+  "pinyin": "lǜsè",
+  "pos": "noun、 （adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-hzsvynQ}.*-1779527159199"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

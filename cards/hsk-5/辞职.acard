@@ -1,0 +1,29 @@
+{
+  "audio": "557d903aab2c879367a7a1815290db633687f11a2a2e201c20b7b6e502cceb65.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "辞职",
+  "id": "4764a4f2a3889024f9588fe6",
+  "level": 5,
+  "meaning": "to resign from a job",
+  "pinyin": "cízhí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tV-z_:CpjM-1779527160998"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

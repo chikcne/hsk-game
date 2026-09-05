@@ -1,0 +1,32 @@
+{
+  "audio": "d2a63b42be2f28e61fb2f1d1b8e4751b9011f185f94f52ddaa1826107015a2a0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "修",
+      "选"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "选修",
+  "id": "2a437002704e6c5f4eb8d7bd",
+  "level": 6,
+  "meaning": "elective course",
+  "pinyin": "xuǎnxiū",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1488-1779527163891"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

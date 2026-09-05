@@ -1,0 +1,31 @@
+{
+  "audio": "47623575df44742ccd7a8658e9fb105d879623ab22190efe09a4457a2102b122.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "谈"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "谈判",
+  "id": "b9dcbf38675893c9064a037a",
+  "level": 6,
+  "meaning": "to negotiate",
+  "pinyin": "tánpàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1262-1779527163665"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

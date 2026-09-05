@@ -1,0 +1,31 @@
+{
+  "audio": "865390d172940a46456dea18547806470ab5526bb9279891c2aa48d4d49de60d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "流"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "流程",
+  "id": "da9b3c3b8de182bb91851f7b",
+  "level": 6,
+  "meaning": "process, flow",
+  "pinyin": "liúchéng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-854-1779527163257"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

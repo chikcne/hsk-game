@@ -1,0 +1,32 @@
+{
+  "audio": "0c41f34fab7dfcf86a445737489c7d6874660b8e860f73403a300e9d5c091a6e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "播",
+      "种"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "播种",
+  "id": "0d48d96160b5050b20f2aeeb",
+  "level": 6,
+  "meaning": "to sow seeds",
+  "pinyin": "bōzhǒng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-63-1779527162466"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

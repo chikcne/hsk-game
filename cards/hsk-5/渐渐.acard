@@ -1,0 +1,29 @@
+{
+  "audio": "c1c6677fdd3677380c9251edecf23b60201143f42c1d4de23e09cf2993c0764f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "渐渐",
+  "id": "60d67ad4c43ccc2541b987db",
+  "level": 5,
+  "meaning": "gradually",
+  "pinyin": "jiànjiàn",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-sVbGv:(.h>-1779527161377"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

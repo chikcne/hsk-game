@@ -1,0 +1,32 @@
+{
+  "audio": "f4c270c428aa40001673e9d383e99288b95eb9ed47261e8d43e1522be1978c6b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "取",
+      "听"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "听取",
+  "id": "995253d17405943d16a1ee0f",
+  "level": 6,
+  "meaning": "to listen to, to hear",
+  "pinyin": "tīngqǔ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1302-1779527163705"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

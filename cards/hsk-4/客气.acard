@@ -1,0 +1,31 @@
+{
+  "audio": "5215432abc6d0987d13ba5d796c976ddbc7d7c28d89b1df3fefebd740663c63f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "客气",
+  "id": "a106b4608e8dcbec56f6b43c",
+  "level": 4,
+  "meaning": "polite, courteous; to be polite, to say polite remarks",
+  "pinyin": "kèqi",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-E7.G~3zbIU-1779527160235"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

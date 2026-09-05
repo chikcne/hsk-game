@@ -1,0 +1,32 @@
+{
+  "audio": "bd6ad2b61f5b53bb940b372a19c6f87befc7c0ab233c8ea09b9a7c78fe039862.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "饮用水",
+  "id": "9f364ed64877a07b04603331",
+  "level": 6,
+  "meaning": "drinking water",
+  "pinyin": "yǐnyòngshuǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1584-1779527163987"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

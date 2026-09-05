@@ -1,0 +1,29 @@
+{
+  "audio": "72d64578c0fe67f37c294e383dc38ce1afb977720e9099b9ca6582593c9725b8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "软",
+  "id": "757c21d4bbf2b743b13488d1",
+  "level": 5,
+  "meaning": "soft",
+  "pinyin": "ruǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-eQRJiW~9jt-1779527161741"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

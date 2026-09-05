@@ -1,0 +1,29 @@
+{
+  "audio": "3507c8d5e7727b3f5c4065baa445685e6e3de4941a8742c3bd339fcad11a6592.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "该",
+  "id": "63d3fb000804843375d12dbb",
+  "level": 6,
+  "meaning": "that, such",
+  "pinyin": "gāi",
+  "pos": "代",
+  "schema": "acard/1",
+  "senseLabel": "sense 2",
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-413-1779527162816"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

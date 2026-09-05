@@ -1,0 +1,31 @@
+{
+  "audio": "9d5f807bf3542fa6b5b470acc99d2594fc02f6848f8a64197151db870eeacd8b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "资本",
+  "id": "20a0ff56c452fea3b925bbbc",
+  "level": 6,
+  "meaning": "capital",
+  "pinyin": "zīběn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1775-1779527164178"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "de363d531c7930ea116718e353ff792867bdb54907bd17459403f72a1b32032a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暖",
+  "id": "818be5fa2c6b3c6ede0707b5",
+  "level": 6,
+  "meaning": "warm; to warm up",
+  "pinyin": "nuǎn",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-963-1779527163366"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

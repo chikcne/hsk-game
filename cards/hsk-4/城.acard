@@ -1,0 +1,29 @@
+{
+  "audio": "6bd28172bb87bc49410aaa2584989102c976f62933770bef86953afec273e39f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "城",
+  "id": "90e773c33e0c9b99d9e95c39",
+  "level": 4,
+  "meaning": "city, town",
+  "pinyin": "chéng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-LT^AV@u<Ea-1779527159880"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

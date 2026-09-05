@@ -1,0 +1,29 @@
+{
+  "audio": "db09648777ff18b8574675a2ce04016a117dbbd9bd5497cf75cf4d3703eccbfc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "堆",
+  "id": "bec639607fd976c6f8839234",
+  "level": 5,
+  "meaning": "to pile up; pile; measure word for piles",
+  "pinyin": "duī",
+  "pos": "verb、noun、",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-n6ERFTRY4a-1779527161107"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

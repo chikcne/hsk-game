@@ -1,0 +1,29 @@
+{
+  "audio": "f3a91697ffe1273d61918bb93349249ee4419d5cd57862b9341dc77d5287db28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "风",
+  "id": "baab5661d9d9e366cbce243a",
+  "level": 3,
+  "meaning": "wind",
+  "pinyin": "fēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-r*&c|Ld/>0-1779527159432"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

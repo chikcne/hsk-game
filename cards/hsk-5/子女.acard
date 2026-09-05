@@ -1,0 +1,32 @@
+{
+  "audio": "396b65ffe7dab8dc07df9657ae640c2979dae19f3581fcbc8c288488833a22ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "女",
+      "子"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "子女",
+  "id": "c1f6303e5fc1e0ec29d0d49c",
+  "level": 5,
+  "meaning": "children, sons and daughters",
+  "pinyin": "zǐnǚ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Dv^[d@5w0d-1779527162376"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "d4e97042c8af5e07892d05aa97fcb2ab67b8480dde43103cc607b175a24b2be1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "层",
+      "高"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高层",
+  "id": "072cd5707474641985bc237a",
+  "level": 6,
+  "meaning": "high-level, upper class; high-ranking",
+  "pinyin": "gāocéng",
+  "pos": "名、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-430-1779527162833"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

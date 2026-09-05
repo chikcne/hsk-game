@@ -1,0 +1,32 @@
+{
+  "audio": "aafed9b66a11edcc1aada92a1627611b25bd331de3aaa5192a988c6ebdbaf3f8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "解",
+      "讲"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "讲解",
+  "id": "1554d71ec7d5f98a4a296567",
+  "level": 6,
+  "meaning": "to explain",
+  "pinyin": "jiǎngjiě",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-665-1779527163068"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

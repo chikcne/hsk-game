@@ -1,0 +1,29 @@
+{
+  "audio": "df8c6ad5afebda36ea92112ac2104013416bea9e55c32b7b9c530fb02025d2c8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "培训",
+  "id": "a7c189f03ea760404965cb1b",
+  "level": 5,
+  "meaning": "to train",
+  "pinyin": "péixùn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-jb<YJn=t7X-1779527161620"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

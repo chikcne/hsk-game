@@ -1,0 +1,32 @@
+{
+  "audio": "fa7175ef7d97a546d0a6a63e1c0f50d35d69fa217d1185c0b985c891f914c77e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水",
+      "香"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "香水",
+  "id": "47c85bd124cad918335e25e9",
+  "level": 6,
+  "meaning": "perfume",
+  "pinyin": "xiāngshuǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1439-1779527163842"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

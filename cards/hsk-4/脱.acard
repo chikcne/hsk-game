@@ -1,0 +1,29 @@
+{
+  "audio": "cca417cc3cd8b1de98ac7aeb7a7fd0a63fcd65e7195872ad18a96c71d77ccd78.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "脱",
+  "id": "278f745ab0badff2ba4f042d",
+  "level": 4,
+  "meaning": "to take off, to shed",
+  "pinyin": "tuō",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-v5_<,45rdc-1779527160561"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

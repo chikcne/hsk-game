@@ -1,0 +1,29 @@
+{
+  "audio": "d5ac11a7c8284bb1a71b3cb520b021a8d8f9e3934da3f905208fcfaf84da5e16.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "任何",
+  "id": "19ff959c7085838a3e0ad13f",
+  "level": 4,
+  "meaning": "any, whatever",
+  "pinyin": "rènhé",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Do1EXQk9)_-1779527160416"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

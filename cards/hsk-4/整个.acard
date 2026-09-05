@@ -1,0 +1,32 @@
+{
+  "audio": "a4c8cf5979c314b0bee9ece5f9994cb93a59ecedb824d1f765d007965772dd93.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "个",
+      "整"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "整个",
+  "id": "94c33f26db28ebf621e4ac88",
+  "level": 4,
+  "meaning": "whole, entire, all",
+  "pinyin": "zhěnggè",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-evQ|d#P42Z-1779527160732"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

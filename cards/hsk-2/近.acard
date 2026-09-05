@@ -1,0 +1,29 @@
+{
+  "audio": "7cd8ee44b9f6c2b29a7e0ed0a8c663b074440e24bff54a49df71a5af43dbdf86.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "近",
+  "id": "7542f591e07fd75d8d45de34",
+  "level": 2,
+  "meaning": "near, close",
+  "pinyin": "jìn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-H*b;!L..xL-1779527159174"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

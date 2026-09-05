@@ -1,0 +1,31 @@
+{
+  "audio": "ad375507ff279666521a1441d99dbac4a4362446a2e1f221bad21ad1320cf0ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "台"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "舞台",
+  "id": "7cbc7c104a7290f5a317de4b",
+  "level": 5,
+  "meaning": "stage",
+  "pinyin": "wǔtái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-uV{.OLn[;Y-1779527162016"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

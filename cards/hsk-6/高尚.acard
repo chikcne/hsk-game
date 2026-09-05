@@ -1,0 +1,31 @@
+{
+  "audio": "977b3dd7662587356c73293b5a529d3d679d3e07e308c593e9e538b34ab86c71.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "高"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "高尚",
+  "id": "56d477a55014a2603a853c14",
+  "level": 6,
+  "meaning": "noble, lofty",
+  "pinyin": "gāoshàng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-435-1779527162838"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

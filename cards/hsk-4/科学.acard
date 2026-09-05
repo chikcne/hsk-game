@@ -1,0 +1,32 @@
+{
+  "audio": "6372cae5736064529d05787bcb1165b30bd205616887d3249aec950fdef17fec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "科"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "科学",
+  "id": "637c79d21e7c8a0bde016a82",
+  "level": 4,
+  "meaning": "science; scientific",
+  "pinyin": "kēxué",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-yRJHV,UrGg-1779527160229"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

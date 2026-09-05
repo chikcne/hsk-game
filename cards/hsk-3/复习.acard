@@ -1,0 +1,29 @@
+{
+  "audio": "f76232c2f87e4f184213750c3ba1d45464358ed0e58b0c166ae6047e5797641a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "复习",
+  "id": "f4fcc2c036c7e97bd24d7802",
+  "level": 3,
+  "meaning": "to review",
+  "pinyin": "fùxí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-k3l4PQ#@5E-1779527159437"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

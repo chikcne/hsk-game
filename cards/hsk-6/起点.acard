@@ -1,0 +1,32 @@
+{
+  "audio": "2467d159838025b72f43b6c901f8183c82ce7222d167bac51df0a1c521e94499.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点",
+      "起"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "起点",
+  "id": "7aa2e713f94f07c98f2be025",
+  "level": 6,
+  "meaning": "starting point",
+  "pinyin": "qǐdiǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1019-1779527163422"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

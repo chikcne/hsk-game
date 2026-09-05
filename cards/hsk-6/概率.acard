@@ -1,0 +1,31 @@
+{
+  "audio": "352cb9ddb91320a5040ca244c9e95103842f1184c9db1cc6d4d072caf1660dc2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "率"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "概率",
+  "id": "fd1ef95c151fb6e7ea1d0c86",
+  "level": 6,
+  "meaning": "probability",
+  "pinyin": "gàilǜ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-416-1779527162819"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "d5af009568937b4e32e4d0518a1f0eab67346938afc5e1926ad93429d52da87b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "妨碍",
+  "id": "2e0ebc2cec0c544c9fc1a460",
+  "level": 6,
+  "meaning": "to hinder, to obstruct",
+  "pinyin": "fáng’ài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-372-1779527162775"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

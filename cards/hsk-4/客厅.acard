@@ -1,0 +1,29 @@
+{
+  "audio": "7d928f12ef23e24484337ee7d2e256dfdce78e36aa6c0d9b472a58fb22fbd270.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "客厅",
+  "id": "784f45dbe12d323245908be4",
+  "level": 4,
+  "meaning": "living room, parlor",
+  "pinyin": "kètīng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-tw4csNwOug-1779527160237"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "d30affb817c78d4acad7c96396be22c01e2f1d69dbd9514b85bafd3c53dc2bc0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "旅程",
+  "id": "16114972c6d572dab2a17f1b",
+  "level": 6,
+  "meaning": "journey",
+  "pinyin": "lǚchéng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-870-1779527163273"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

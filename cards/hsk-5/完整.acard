@@ -1,0 +1,32 @@
+{
+  "audio": "899841dc8f464afc15c8a343e3b9920ab49e48835acd1f16fac9ce6762233303.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "完",
+      "整"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "完整",
+  "id": "a0bcd8b656c0c2ff1a40f6ed",
+  "level": 5,
+  "meaning": "complete, intact",
+  "pinyin": "wánzhěng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qZqK0,-5/H-1779527161979"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "a44ed6a7513bb9920efb27364e7111607f39ec521a927433c12295779b14e674.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "连",
+  "id": "0953cade1d68cae0ddee00a3",
+  "level": 4,
+  "meaning": "used to introduce the object of a verb, linking; (even, including); (to connect, to link)",
+  "pinyin": "lián",
+  "pos": "preposition、 （verb、adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p3rE,FJ*5m-1779527160272"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

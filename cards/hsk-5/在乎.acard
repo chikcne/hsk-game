@@ -1,0 +1,31 @@
+{
+  "audio": "c0e21fe6d4be60ca4b25efad7780f5a0d9ae6d0b2b1cdd777c33d6110ee2828d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "在"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "在乎",
+  "id": "68afdde499b8e3c2c7620e63",
+  "level": 5,
+  "meaning": "to care about, to mind",
+  "pinyin": "zàihu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Q}GL33/6Mj-1779527162246"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

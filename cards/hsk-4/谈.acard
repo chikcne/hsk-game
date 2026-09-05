@@ -1,0 +1,29 @@
+{
+  "audio": "b06168d821f0fc31b890529f5aa1ffebd16f5b3db9c38b775bcd94f68f3ccae9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "谈",
+  "id": "b7aeee816e7caf51349ad27d",
+  "level": 4,
+  "meaning": "to talk, to discuss",
+  "pinyin": "tán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d,=Iw4=J-O-1779527160522"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

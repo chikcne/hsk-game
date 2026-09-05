@@ -1,0 +1,29 @@
+{
+  "audio": "c12ecc1b791c4f084efdf5f0380e686f47de4dd43ac43b72a9eebbb90321d1d4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "商标",
+  "id": "390934934c05e967bb883c0c",
+  "level": 6,
+  "meaning": "trademark",
+  "pinyin": "shāngbiāo",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1143-1779527163546"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

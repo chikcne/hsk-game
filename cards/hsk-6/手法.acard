@@ -1,0 +1,32 @@
+{
+  "audio": "6966ed07ce289dc5aba3e4832f8e20aee4a83c70f7d403ea253bef974e307a03.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手",
+      "法"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "手法",
+  "id": "5eb32105e3e87187cba072ce",
+  "level": 6,
+  "meaning": "technique, method",
+  "pinyin": "shǒufǎ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1213-1779527163616"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

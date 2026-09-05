@@ -1,0 +1,32 @@
+{
+  "audio": "967953da8c8afd4a8a0fa552b04181232afc6f3a683d33787bf8dbff372646e8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水",
+      "雨"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "雨水",
+  "id": "17f18453c2b062ae8ff8572c",
+  "level": 5,
+  "meaning": "rainwater",
+  "pinyin": "yǔshuǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tXh0WdDZ}J-1779527162221"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

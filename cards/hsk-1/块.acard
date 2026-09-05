@@ -1,0 +1,29 @@
+{
+  "audio": "b4385d4e5ce1931a0988d119e9105bea3503adf7e4f8a746865d586047025d0d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "块",
+  "id": "053d46bb224436490c516172",
+  "level": 1,
+  "meaning": "measure word for pieces, chunks, money",
+  "pinyin": "kuài",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-fReEnHM<%?-1779527158908"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

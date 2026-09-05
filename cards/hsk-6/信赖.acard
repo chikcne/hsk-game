@@ -1,0 +1,32 @@
+{
+  "audio": "1640641fc0dc41bb82be33cdf46c23c2cc3d603ba9d15cd04dd2b4642942b846.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "信",
+      "赖"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "信赖",
+  "id": "d57af9816a416b6a5027c134",
+  "level": 6,
+  "meaning": "to trust",
+  "pinyin": "xìnlài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1473-1779527163876"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

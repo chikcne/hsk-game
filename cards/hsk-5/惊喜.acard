@@ -1,0 +1,29 @@
+{
+  "audio": "d46d4b575dbc4df019dad20cea50a44d1b650a036c73313a27e9c8375a1d2b8b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "惊喜",
+  "id": "cdd4214dd84d953f143b3949",
+  "level": 5,
+  "meaning": "pleasant surprise, delight",
+  "pinyin": "jīngxǐ",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-utgQ}:sX?x-1779527161427"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

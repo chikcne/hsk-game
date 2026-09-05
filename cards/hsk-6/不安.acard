@@ -1,0 +1,32 @@
+{
+  "audio": "e011672db304872dc1f77c4a33d05ddbcb1773078c6702ccc1d2e93db71c2da6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "安"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不安",
+  "id": "043bb6fea9f4094cae883413",
+  "level": 6,
+  "meaning": "uneasy, anxious",
+  "pinyin": "bù’ān",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-79-1779527162482"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

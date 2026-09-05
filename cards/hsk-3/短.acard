@@ -1,0 +1,29 @@
+{
+  "audio": "caa09fdd36f4c287c5ed76e3cf521ff44e7c9303fca21448b88186dd2df8b381.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "短",
+  "id": "bbbee403997ec34f064837a7",
+  "level": 3,
+  "meaning": "short",
+  "pinyin": "duǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-E+;>QKEG.J-1779527159408"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

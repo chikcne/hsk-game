@@ -1,0 +1,31 @@
+{
+  "audio": "e21a1ae3a19ce502438929d5acf48b6e8b42ab6ad1197de4025cedeadd75a662.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人均",
+  "id": "c5a8b779c7b549a92f6483b2",
+  "level": 6,
+  "meaning": "per capita",
+  "pinyin": "rénjūn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1096-1779527163499"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "4f758f698be4bce023d2c74dd52805651a65f60de5cabe67c9f7c00f0a87829a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "晚",
+      "点"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "晚点",
+  "id": "4e40438eccf630e500311cf1",
+  "level": 3,
+  "meaning": "to be late",
+  "pinyin": "wǎndiǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-hm#kpQ}}ih-1779527159673"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

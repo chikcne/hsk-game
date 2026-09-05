@@ -1,0 +1,31 @@
+{
+  "audio": "49a9f8a73016431f3cb7e973dc92863ac14a8e675eaf9172be355aa74e1e7629.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "扫"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扫描",
+  "id": "4a519e261556856e8592862f",
+  "level": 6,
+  "meaning": "to scan",
+  "pinyin": "sǎomiáo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1132-1779527163535"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

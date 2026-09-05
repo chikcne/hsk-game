@@ -1,0 +1,29 @@
+{
+  "audio": "f4ca71e5c8655d54442aaf43f9dc3e0c854f02f10eb0b4ac4f9fb93420750b14.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "隔",
+  "id": "9ee27a0f7242a8d095ea1c76",
+  "level": 5,
+  "meaning": "to separate, to partition",
+  "pinyin": "gé",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-MU*{<(Iuh6-1779527161199"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

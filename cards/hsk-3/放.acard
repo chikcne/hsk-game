@@ -1,0 +1,29 @@
+{
+  "audio": "9f79970db298a1c033cc845b18cdd05ab8da7dbcfdb1c17f40066867a3c26c13.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "放",
+  "id": "fc82cbbf9796f8a7cf0b148d",
+  "level": 3,
+  "meaning": "to put, to place",
+  "pinyin": "fàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Js3]:bvL,X-1779527159427"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

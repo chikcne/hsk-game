@@ -1,0 +1,32 @@
+{
+  "audio": "d5357bf470f6825c88841d750bc10a2b8780332b01405868d506828fc6f4b5ec.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "空",
+      "闲"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "空闲",
+  "id": "43fd09e4ace9d2a2fb7c7824",
+  "level": 6,
+  "meaning": "free, leisure; free time",
+  "pinyin": "kòngxián",
+  "pos": "形、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-792-1779527163195"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

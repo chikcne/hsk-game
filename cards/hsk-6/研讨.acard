@@ -1,0 +1,29 @@
+{
+  "audio": "21f68bd1e9d0aff82eeceb7fa97c4d8ef540eba765359a7c349f40fc6df5d9bb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "研讨",
+  "id": "d9d535c9db08f46a384b5049",
+  "level": 6,
+  "meaning": "to discuss, to deliberate",
+  "pinyin": "yántǎo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1511-1779527163914"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

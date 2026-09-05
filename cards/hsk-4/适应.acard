@@ -1,0 +1,29 @@
+{
+  "audio": "5493089778e285efcb1932633c11f16a9369347c7a5a8f89faf167f9c56f890d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "适应",
+  "id": "c9a36ac0bccc7c3a9d496be8",
+  "level": 4,
+  "meaning": "to adapt, to fit, to suit",
+  "pinyin": "shìyìng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-v76R9o}x(s-1779527160479"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

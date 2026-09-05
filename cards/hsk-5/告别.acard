@@ -1,0 +1,31 @@
+{
+  "audio": "5610165e04b429a32a4152fa29898190cb8b78c1f5ad7d2f77602d6775ef7f3a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "别"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "告别",
+  "id": "fbc8964afa275ddc1ddbb486",
+  "level": 5,
+  "meaning": "to bid farewell, to say goodbye",
+  "pinyin": "gàobié",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F8iMkI_Xaa-1779527161196"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

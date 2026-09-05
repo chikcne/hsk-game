@@ -1,0 +1,32 @@
+{
+  "audio": "870b5fbae5421796681784240537797f8a725839bd35897709840b21ec6ca379.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "厚",
+      "度"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "厚度",
+  "id": "0b3485f63366e4aebd87effc",
+  "level": 5,
+  "meaning": "thickness",
+  "pinyin": "hòudù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-kk%e^C(cq^-1779527161288"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

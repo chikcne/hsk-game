@@ -1,0 +1,29 @@
+{
+  "audio": "9ae502478bc4776015a3592c7c8340d209428c02f6dcb8c1d4aaeb920b19983d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "收",
+  "id": "64618a12dbf1b3443e500941",
+  "level": 3,
+  "meaning": "to receive",
+  "pinyin": "shōu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-hiD%_j[w/W-1779527159639"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

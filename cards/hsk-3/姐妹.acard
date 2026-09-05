@@ -1,0 +1,29 @@
+{
+  "audio": "a727c1bb5793e225c88385adcead2786bb16a3cd3f446b64b16928cb9a83709e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "姐妹",
+  "id": "9b50cf176e62ee82e1277810",
+  "level": 3,
+  "meaning": "sister",
+  "pinyin": "jiěmèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-uUJ>8opdh&-1779527159517"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

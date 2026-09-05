@@ -1,0 +1,29 @@
+{
+  "audio": "206cd517323b3e5618795278b737ba55ecc8e3d5b86229678c6a677582a891f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "滴",
+  "id": "214bc0d3f35ddfb51a144ada",
+  "level": 6,
+  "meaning": "to drip; measure word",
+  "pinyin": "dī",
+  "pos": "动、量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-287-1779527162690"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

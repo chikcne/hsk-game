@@ -1,0 +1,32 @@
+{
+  "audio": "b116b89e89a9f9dfab011f985c7ea5cad0ceba0fa1372338dd506c41e2583996.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为",
+      "分"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "分为",
+  "id": "17cb4db5203ac7a3fcc098b1",
+  "level": 4,
+  "meaning": "to be divided into",
+  "pinyin": "fēnwéi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-z%9)@QROxF-1779527160005"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "4acc98a3f5d81a82dfdc91821568a0f193e33f4b77608d58178392bea9fef0f3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "常",
+  "id": "cc89dbfa6528956fca6d283b",
+  "level": 3,
+  "meaning": "often, frequent",
+  "pinyin": "cháng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-OmDQAgn*|[-1779527159357"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

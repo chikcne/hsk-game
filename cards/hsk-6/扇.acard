@@ -1,0 +1,29 @@
+{
+  "audio": "2987db4236fd9fd3d923912f49393d9c61c34339981fcfab82750c3ab7b1eaf3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扇",
+  "id": "eb0dcdd6615cbcee58d2e9ae",
+  "level": 6,
+  "meaning": "measure word for doors, windows",
+  "pinyin": "shàn",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1142-1779527163545"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

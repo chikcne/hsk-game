@@ -1,0 +1,29 @@
+{
+  "audio": "81d7e9e104a990a162a3da23b28a5822ca976ff70b29cd4f4c207a18d501806a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "镇",
+  "id": "37d86df2063a8e91a6a74cb4",
+  "level": 6,
+  "meaning": "to guard; town",
+  "pinyin": "zhèn",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1680-1779527164083"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

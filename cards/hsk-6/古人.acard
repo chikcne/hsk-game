@@ -1,0 +1,32 @@
+{
+  "audio": "138027c4be2c8d70acf0dc72b4f8db5edfbb92d605bb93c675448d5b373db468.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "古"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "古人",
+  "id": "89770bc58664b975433982b3",
+  "level": 6,
+  "meaning": "ancient people",
+  "pinyin": "gǔrén",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-478-1779527162881"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

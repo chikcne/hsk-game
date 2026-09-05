@@ -1,0 +1,29 @@
+{
+  "audio": "3d29dd1fdc22ded8454112b41d9577262f0d975efdca652bb181602b7a9c1cf2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "价格",
+  "id": "6f6017d84d3977afb0c70849",
+  "level": 4,
+  "meaning": "price",
+  "pinyin": "jiàgé",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-KWQ:TGD!<G-1779527160149"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

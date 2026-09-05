@@ -1,0 +1,31 @@
+{
+  "audio": "df1347eb82856e1dd833a40408325b03650b517301971a5d169854d1680bd33e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "洗"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "洗漱",
+  "id": "0863d9bf39e1d12cc68f0eb9",
+  "level": 6,
+  "meaning": "to wash",
+  "pinyin": "xǐshù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1407-1779527163810"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

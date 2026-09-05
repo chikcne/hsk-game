@@ -1,0 +1,29 @@
+{
+  "audio": "150b007771ae2d76b19d2c6dc1a873359e6993d1cdac2acb791ddf6de7f0696b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "张",
+  "id": "227dea222a6cb2ca6320306a",
+  "level": 3,
+  "meaning": "to open; measure word for flat objects",
+  "pinyin": "zhāng",
+  "pos": "verb、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-x!LcPL$W<X-1779527159770"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

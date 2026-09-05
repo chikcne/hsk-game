@@ -1,0 +1,32 @@
+{
+  "audio": "0739d52511a0c0625fe69c88220de3af8bca62c7d16f261b53e500a004a308c1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "面"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前面",
+  "id": "74259b0650bbec35971ab390",
+  "level": 2,
+  "meaning": "front",
+  "pinyin": "qiánmiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-u=6zz<I<iw-1779527159222"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

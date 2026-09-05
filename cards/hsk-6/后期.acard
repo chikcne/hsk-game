@@ -1,0 +1,32 @@
+{
+  "audio": "eb5d943867d894904d3a4038a9686255c048149577c613b282906c3df0602d8a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "后期",
+  "id": "5ff86efcf49a3038914c8659",
+  "level": 6,
+  "meaning": "late stage, later period",
+  "pinyin": "hòuqī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-553-1779527162956"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

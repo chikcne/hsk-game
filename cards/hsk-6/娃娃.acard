@@ -1,0 +1,29 @@
+{
+  "audio": "d25e0f6f58608ff3501b9591c25b1b6ed5d81fa208e825a7ff58038a5382c8f0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "娃娃",
+  "id": "478e0deea3fab67089a209cc",
+  "level": 6,
+  "meaning": "doll, baby",
+  "pinyin": "wáwa",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1349-1779527163752"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

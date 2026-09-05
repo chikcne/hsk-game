@@ -1,0 +1,29 @@
+{
+  "audio": "6e09b0e77a3bbcfb54ca38b10d910f9ffbe61daf324eb95f6611a738a651c0db.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "球",
+  "id": "06d8a51fb46566f9fb9eb1c1",
+  "level": 2,
+  "meaning": "ball, sphere",
+  "pinyin": "qiú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-k^2j41}kJ4-1779527159224"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

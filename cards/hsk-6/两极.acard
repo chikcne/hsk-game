@@ -1,0 +1,32 @@
+{
+  "audio": "b24d23c43ba6b8ff32c85416a18b5c0ac32abd4941b4344c1ef6c2255b2ccacb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "两",
+      "极"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "两极",
+  "id": "1ad28b66b71beb919c7a1834",
+  "level": 6,
+  "meaning": "two poles",
+  "pinyin": "liǎngjí",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-848-1779527163251"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

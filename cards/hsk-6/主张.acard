@@ -1,0 +1,31 @@
+{
+  "audio": "cd4188e268ce35eb155c9c3cee7349bd53538d55c2815db005be3b5ed23d6518.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "张"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "主张",
+  "id": "f1a057a229f9df5a7e1c3123",
+  "level": 6,
+  "meaning": "to advocate; view, stance",
+  "pinyin": "zhǔzhāng",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1751-1779527164154"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

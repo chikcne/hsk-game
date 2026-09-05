@@ -1,0 +1,31 @@
+{
+  "audio": "6532b8daf74a313dc9848fa733be86777e6044e597fbb783aa95d5d0b5d13450.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "取"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "取消",
+  "id": "84b4e8dd935f998acd8a4eed",
+  "level": 4,
+  "meaning": "to cancel, to call off",
+  "pinyin": "qǔxiāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-JQO6#g2}D!-1779527160400"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

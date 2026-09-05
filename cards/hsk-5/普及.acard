@@ -1,0 +1,31 @@
+{
+  "audio": "50a075940db573dd1d86d80fbbaf2f04e6a00caa9476fd8f962c41ac50d159ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "及"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "普及",
+  "id": "3e7256bec192aecef2aa953f",
+  "level": 5,
+  "meaning": "to popularize, to spread",
+  "pinyin": "pǔjí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-xQw3|O46zY-1779527161652"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "1c366ec7e6db14e0dc9643e45b7d4a8fcbc6d9d0f1368a06d708cf71bf3d2fd3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "乘",
+      "换"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "换乘",
+  "id": "5618c36df74f3db08b5f211a",
+  "level": 4,
+  "meaning": "transfer, change",
+  "pinyin": "huànchéng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-H={.)zX>/l-1779527160109"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

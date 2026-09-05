@@ -1,0 +1,29 @@
+{
+  "audio": "580220a80dbcff72ec446dbb1392f059a967d50705b8f5d396f435b363f4331a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "供应",
+  "id": "f17696b47b68d9885f3622f4",
+  "level": 6,
+  "meaning": "to supply",
+  "pinyin": "gōngyìng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-464-1779527162867"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

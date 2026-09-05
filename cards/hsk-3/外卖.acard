@@ -1,0 +1,32 @@
+{
+  "audio": "6254e615022f6543c763fed1e8385089bfcde118fbd8b5c372524246778e4a65.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "卖",
+      "外"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外卖",
+  "id": "8ff3c4f878cb29d5e212cc8d",
+  "level": 3,
+  "meaning": "takeaway; to order takeout",
+  "pinyin": "wàimài",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Qb$;FD{xpO-1779527159669"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

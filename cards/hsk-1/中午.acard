@@ -1,0 +1,31 @@
+{
+  "audio": "5574430a2c42a0d86816061fb681e12045130a06daf6cb4331720a8f1e216b6d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中午",
+  "id": "0f25d55eee08372f14cbf01b",
+  "level": 1,
+  "meaning": "noon",
+  "pinyin": "zhōngwǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-KoUH){4mIX-1779527159094"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

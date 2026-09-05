@@ -1,0 +1,32 @@
+{
+  "audio": "5126728123606a4765d388b8cfa60a78e8866f388d17e865d73018532a8839e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "别",
+      "的"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "别的",
+  "id": "777840090a71fd530fdb413f",
+  "level": 3,
+  "meaning": "other",
+  "pinyin": "biéde",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-fg{>y-%IT_-1779527159334"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "b61747334fcc426a142c3b9860d7f9eecc2a0cb38ea0499ecfeab0b89eee7cfa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口",
+      "路"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "路口",
+  "id": "e298271b04b460fb014d52f7",
+  "level": 3,
+  "meaning": "intersection",
+  "pinyin": "lùkǒu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-xT?Jb^.&i(-1779527159566"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

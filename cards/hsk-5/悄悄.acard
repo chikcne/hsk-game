@@ -1,0 +1,29 @@
+{
+  "audio": "8752367808e2bbe44a67510e3d7cdeb2fb582cefb044eb2f8429757f8b36946d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "悄悄",
+  "id": "89e556dc6ecc666f2618d1e9",
+  "level": 5,
+  "meaning": "quietly, secretly",
+  "pinyin": "qiāoqiāo",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gXAf5l;h{t-1779527161679"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

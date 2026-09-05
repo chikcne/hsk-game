@@ -1,0 +1,32 @@
+{
+  "audio": "85af545374dc61f4730fa44a740621f447018080fcd2172bc9d2caf947307299.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "取",
+      "领"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "领取",
+  "id": "1cae0484f4ded8348c0a3041",
+  "level": 5,
+  "meaning": "to receive, to collect",
+  "pinyin": "lǐngqǔ",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-RfWh8O>K<)-1779527161531"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

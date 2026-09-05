@@ -1,0 +1,31 @@
+{
+  "audio": "6fb1c228f0dddab377f7946b107af65f0ac25d56c86e8bf40f24d9b11cb47b27.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "富"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "财富",
+  "id": "3ccb7ce8c7d05acfe9c7cf27",
+  "level": 6,
+  "meaning": "wealth",
+  "pinyin": "cáifù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-95-1779527162498"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "1eae6a74dcb28dbc97ec4b08494a74649926f31f7095cad7ee842d76ec5bb987.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "推"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "推荐",
+  "id": "b09427c1a36dde9357862835",
+  "level": 5,
+  "meaning": "to recommend",
+  "pinyin": "tuījiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-FZaP}aye$M-1779527161963"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

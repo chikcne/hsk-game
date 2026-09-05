@@ -1,0 +1,31 @@
+{
+  "audio": "d268fbcd46afb0e0823dc1f6a214916aafd440382e619abd01724bbc9f68a11f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "虚心",
+  "id": "7199d8c0afafed8b2c44e237",
+  "level": 5,
+  "meaning": "modest, open-minded",
+  "pinyin": "xūxīn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-f4H7z;SYQu-1779527162108"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

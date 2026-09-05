@@ -1,0 +1,29 @@
+{
+  "audio": "01caf85655e1c99a66583b150b29d34f9dfaa5d753b3af5589dfa18e8357b9a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "东",
+  "id": "de5d454551281935c6c0428b",
+  "level": 3,
+  "meaning": "east",
+  "pinyin": "dōng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-FUkdn%FHan-1779527159400"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

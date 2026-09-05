@@ -1,0 +1,31 @@
+{
+  "audio": "9cac96d19f0c632192e07f965081556dd91f5ad36bdb0df217320952584a55a4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "支"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "支持",
+  "id": "76c1d5cc3fdce91454169fc6",
+  "level": 4,
+  "meaning": "to support, to back",
+  "pinyin": "zhīchí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-lUbT{fBolF-1779527160742"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

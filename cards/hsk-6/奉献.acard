@@ -1,0 +1,29 @@
+{
+  "audio": "8051fd921c6a435d41014e37788dc6c1a7715162cd2f44c92c9ff01706086df6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "奉献",
+  "id": "5950e02478375783a3900c65",
+  "level": 6,
+  "meaning": "to devote, to dedicate",
+  "pinyin": "fèngxiàn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-396-1779527162799"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

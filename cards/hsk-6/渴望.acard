@@ -1,0 +1,32 @@
+{
+  "audio": "e5466f6ea1cf0eddb35c2dcac4c96d9308bc0760ea57fe98a4b00c2ca011764e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "望",
+      "渴"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "渴望",
+  "id": "48e771b63fabf6b52040fcb7",
+  "level": 6,
+  "meaning": "to long for, to thirst for",
+  "pinyin": "kěwàng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-785-1779527163188"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

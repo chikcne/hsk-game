@@ -1,0 +1,31 @@
+{
+  "audio": "17c0354c270d00e8d448a155925969b454b00a9343349e397bdd5478048e7ded.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "对"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "对象",
+  "id": "a34316664258160230da78e6",
+  "level": 5,
+  "meaning": "object, partner, boyfriend/girlfriend",
+  "pinyin": "duìxiàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Lep,}dn6/R-1779527161112"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

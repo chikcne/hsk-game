@@ -1,0 +1,32 @@
+{
+  "audio": "cec5befa0b23b6469958a88d7f43e196a0ee6cfdbbd05e53a929416eff39a877.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "去"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出去",
+  "id": "aef43ae4e9adffe3b7191097",
+  "level": 2,
+  "meaning": "to go out / go out (from inside to outside, more general)",
+  "pinyin": "chūqù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-hJ3p*?YM[@-1779527159123"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

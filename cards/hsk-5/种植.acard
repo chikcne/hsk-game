@@ -1,0 +1,31 @@
+{
+  "audio": "8e1c6b58f5f692c07d2d89306194a2ad1b59a2bf45d8859b9c2dc77f1541ab27.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "种"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "种植",
+  "id": "5e217cb372519ec419af6908",
+  "level": 5,
+  "meaning": "to plant",
+  "pinyin": "zhòngzhí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-fe>>MX;b}C-1779527162337"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

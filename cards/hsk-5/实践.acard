@@ -1,0 +1,29 @@
+{
+  "audio": "f54d9c23c9886ba324a84dded477414150f688eb25905d93b5531ec64059a128.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实践",
+  "id": "9e726fdf359ca2c021207cb7",
+  "level": 5,
+  "meaning": "to practice, to put into practice",
+  "pinyin": "shíjiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-L^kCPDed$n-1779527161816"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

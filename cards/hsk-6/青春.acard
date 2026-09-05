@@ -1,0 +1,31 @@
+{
+  "audio": "51bf7a9a746c3e63acd8179fa5ef7ebe9de9c3efe5298380c3f48beb53704857.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "青"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "青春",
+  "id": "06a74d52a0b16d01a84c106d",
+  "level": 6,
+  "meaning": "youth",
+  "pinyin": "qīngchūn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1054-1779527163457"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

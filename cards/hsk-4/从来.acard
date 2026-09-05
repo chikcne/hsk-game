@@ -1,0 +1,32 @@
+{
+  "audio": "c6a1a0f5b661fa24c4f3a19381497762ff278307d633f41da6bea16d7fdeadc5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "从",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "从来",
+  "id": "331ebc34088bd2380a18cf41",
+  "level": 4,
+  "meaning": "always, at all times",
+  "pinyin": "cónglái",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-H7fkkP)x%)-1779527159906"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

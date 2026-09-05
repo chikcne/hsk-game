@@ -1,0 +1,33 @@
+{
+  "audio": "17c8f38d69bc3dab8117dbcf037254671c876563ad6187880e50db68e77ed158.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打",
+      "电",
+      "电话"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打电话",
+  "id": "a9c3e34a6990afcefc2a798e",
+  "level": 1,
+  "meaning": "to make a phone call",
+  "pinyin": "dǎ diànhuà",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-BR0f(EHfhD-1779527158827"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

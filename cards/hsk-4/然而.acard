@@ -1,0 +1,31 @@
+{
+  "audio": "db25a6b161904f95a50362517287374c3c3b62586526c107e5216d9347832d5a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "而"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "然而",
+  "id": "d9bc0d737780ecd5b5095fcc",
+  "level": 4,
+  "meaning": "however, but",
+  "pinyin": "rán’ér",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-BkyF?$_13(-1779527160411"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

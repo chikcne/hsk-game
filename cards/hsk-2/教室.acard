@@ -1,0 +1,32 @@
+{
+  "audio": "0d85d067b1a5fae9c5c0765fa26a6127390131513eb26388d74cd6966b6b30eb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "室",
+      "教"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "教室",
+  "id": "73d73e8ba7224e8b7c13eba1",
+  "level": 2,
+  "meaning": "classroom",
+  "pinyin": "jiàoshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-AV{c*Hor1L-1779527159171"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

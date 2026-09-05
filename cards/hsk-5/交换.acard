@@ -1,0 +1,32 @@
+{
+  "audio": "05d3810902099bf81fe9d8a6bf8ad661f111019a08b84de34a315bdde256ef8e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "交",
+      "换"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "交换",
+  "id": "147d5eecf684f65160879ac5",
+  "level": 5,
+  "meaning": "to exchange",
+  "pinyin": "jiāohuàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-m1W]D(Z$3)-1779527161391"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

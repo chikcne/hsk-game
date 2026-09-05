@@ -1,0 +1,29 @@
+{
+  "audio": "d7567ffadea1d69d2968b8ccbeb86c7912b57ac505b0af5091c01c50d69c18e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吐",
+  "id": "a499404dcd4cf13d801b5cec",
+  "level": 6,
+  "meaning": "to vomit",
+  "pinyin": "tù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1335-1779527163738"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

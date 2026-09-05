@@ -1,0 +1,29 @@
+{
+  "audio": "9b9f20ab179ffdd05bd90f705d233313c84ac84c6d8b1c74d97db63e8d75c04e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "浓",
+  "id": "b07960ca57a9f9d05987970e",
+  "level": 5,
+  "meaning": "dense, thick, strong",
+  "pinyin": "nóng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-o{H9|a=|S)-1779527161606"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

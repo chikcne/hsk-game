@@ -1,0 +1,31 @@
+{
+  "audio": "e7416cf9bf576b094e7c843674582f4a313db1f6858ca8f10a72189b0ae2ecfa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "员"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "职员",
+  "id": "dcc4a22ab9075748048ba561",
+  "level": 6,
+  "meaning": "office worker, staff",
+  "pinyin": "zhíyuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1703-1779527164106"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

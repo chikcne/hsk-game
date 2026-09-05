@@ -1,0 +1,32 @@
+{
+  "audio": "a56e690819560db2379f82691b844c399f390b10e0446dc2daaf915dc65cd51f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "游",
+      "玩"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "游玩",
+  "id": "c7b7d3cf450f4743fc1014f1",
+  "level": 4,
+  "meaning": "to play, to have fun, to go sightseeing",
+  "pinyin": "yóuwán",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-cs?rIG9GJX-1779527160690"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

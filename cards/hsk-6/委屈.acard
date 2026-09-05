@@ -1,0 +1,29 @@
+{
+  "audio": "a0966041d7fedfe84d8a314d112b7547ba1245d113ad4a482dd0bc85f52300a9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "委屈",
+  "id": "97fd0f43347a51fff64e4993",
+  "level": 6,
+  "meaning": "wronged; to feel wronged",
+  "pinyin": "wěiqu",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1375-1779527163778"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

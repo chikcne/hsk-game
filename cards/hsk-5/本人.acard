@@ -1,0 +1,32 @@
+{
+  "audio": "ebc9a935e97424684d907d92a50f68f8ffe6701e6cb02a7bae726bb9a0adf215.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "本"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "本人",
+  "id": "dea93c9770f89343dd897ce6",
+  "level": 5,
+  "meaning": "oneself, I",
+  "pinyin": "běnrén",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-odDJ?2`#{4-1779527160846"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

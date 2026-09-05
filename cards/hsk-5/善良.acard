@@ -1,0 +1,29 @@
+{
+  "audio": "9a4f8ac3e7a1cda51b59d8a41e28dfa8a96314a402a52ec9ca1f9927e4210c1c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "善良",
+  "id": "2aeb9b881cfdfe3bcca59ab9",
+  "level": 5,
+  "meaning": "kind, virtuous",
+  "pinyin": "shànliáng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M:f%2!Ui~--1779527161756"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

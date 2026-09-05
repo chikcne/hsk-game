@@ -1,0 +1,32 @@
+{
+  "audio": "4100f933f512a88b1fb36b95f1f135ad9c28b23fdb58b8d5986214bfbed2b59b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入",
+      "输"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "输入",
+  "id": "766377c073dbf412dab19de7",
+  "level": 5,
+  "meaning": "to input",
+  "pinyin": "shūrù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Q+~AEc@W*$-1779527161862"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

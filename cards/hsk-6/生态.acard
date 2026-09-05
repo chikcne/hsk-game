@@ -1,0 +1,31 @@
+{
+  "audio": "80b9d60e9815546eae63dfa27b3f1d1ad02705054978b5327537e1e37f1f28f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生态",
+  "id": "436455df773b9f94f03aca7e",
+  "level": 6,
+  "meaning": "ecology",
+  "pinyin": "shēngtài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1173-1779527163576"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

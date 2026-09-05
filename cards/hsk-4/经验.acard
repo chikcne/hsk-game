@@ -1,0 +1,29 @@
+{
+  "audio": "bc8141a482d90cf76ef31f5de99071bc1dc2b9fce6fd82d9453cffc9c9131611.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "经验",
+  "id": "eb7f6cf097a8e5fe5409fbbc",
+  "level": 4,
+  "meaning": "experience",
+  "pinyin": "jīngyàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zq;Sw$<n$[-1779527160202"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

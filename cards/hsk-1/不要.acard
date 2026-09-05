@@ -1,0 +1,32 @@
+{
+  "audio": "9b1db4bcd1274b049771e8e81efe697c7cf7ab8e2c8a09b57a348e316bd3288c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "要"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不要",
+  "id": "b5b360be465c8c6b3334fc96",
+  "level": 1,
+  "meaning": "don't, not want",
+  "pinyin": "búyào",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-N?LbsG)!$f-1779527158818"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

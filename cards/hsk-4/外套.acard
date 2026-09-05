@@ -1,0 +1,32 @@
+{
+  "audio": "3b854176419480c414273e3019ca33cd6330a15317881d37cd254475b0047d2b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外",
+      "套"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外套",
+  "id": "1cc862466ea5b47bb57843c6",
+  "level": 4,
+  "meaning": "coat, jacket",
+  "pinyin": "wàitào",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zLa!)O)0z.-1779527160564"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

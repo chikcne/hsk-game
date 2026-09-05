@@ -1,0 +1,33 @@
+{
+  "audio": "d414cf55ac373ce2d59f5bcea484f53ea0703230925a494892c412af119550f2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "基本",
+      "本"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "基本上",
+  "id": "3a07be555349f7f25b8c3583",
+  "level": 4,
+  "meaning": "basically",
+  "pinyin": "jīběnshàng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MEqp{5-&fR-1779527160123"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

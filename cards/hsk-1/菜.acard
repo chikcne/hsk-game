@@ -1,0 +1,29 @@
+{
+  "audio": "bc3ef7999f84e94b53783f55c5a7640dd73d503247f0eec8e1fef2303f882f41.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "菜",
+  "id": "583bb1db12ee8c7c7b9b5d02",
+  "level": 1,
+  "meaning": "vegetable, dish",
+  "pinyin": "cài",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-k_+Z=ZWU8z-1779527158819"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

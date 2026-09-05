@@ -1,0 +1,32 @@
+{
+  "audio": "8a1593ff20240f6f3d7419cc1d0d10c5ea58bcd330522177580ac544e6984ded.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "据",
+      "根"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "根据",
+  "id": "ba721f2e95b1dbae1223ab49",
+  "level": 3,
+  "meaning": "to base on; according to; (basis)",
+  "pinyin": "gēnjù",
+  "pos": "verb、 preposition、 （noun）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-CB!7_KHhMd-1779527159448"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

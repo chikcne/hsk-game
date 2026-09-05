@@ -1,0 +1,32 @@
+{
+  "audio": "353ee6495ffc11a9108d182b8914e28a7576430bffbae973f10644ff7e98948a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "原",
+      "草"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "草原",
+  "id": "7b7334b80d4d4b2e2d5a5b9b",
+  "level": 6,
+  "meaning": "grassland, prairie",
+  "pinyin": "cǎoyuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-110-1779527162513"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "e6943c68e9981860ab019eed6ded6378e8085905c9c9cceb276e7247905bf704.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "冰"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "冰箱",
+  "id": "524c41df1c6fb02b84afbb3a",
+  "level": 3,
+  "meaning": "refrigerator",
+  "pinyin": "bīngxiāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-G)2FNRa-Ze-1779527159339"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "67645fe7f7b34c4c4f3176d42fdf41e258bfdb697ce83132582b848d9bac445e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "狮子",
+  "id": "2afc325e8f9536d0e87211b2",
+  "level": 6,
+  "meaning": "lion",
+  "pinyin": "shīzi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1180-1779527163583"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

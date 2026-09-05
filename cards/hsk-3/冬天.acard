@@ -1,0 +1,31 @@
+{
+  "audio": "7170cf36461e8a770d55c01789f2f5c1cd2a1ac1b2dca8ea4074cf784fec09c9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "冬天",
+  "id": "a2c035832c0616879e90d87a",
+  "level": 3,
+  "meaning": "winter",
+  "pinyin": "dōngtiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Nr=iD,:7:$-1779527159404"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "08e702a1a3f5da2ce0d299811181a3ff07da50a19d96e4f1cad4185b170494e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "为",
+      "成"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "成为",
+  "id": "23856b6b5ef76ce87c585ffd",
+  "level": 4,
+  "meaning": "to become",
+  "pinyin": "chéngwéi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ptn$:oNyUu-1779527159885"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

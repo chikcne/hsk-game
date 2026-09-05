@@ -1,0 +1,32 @@
+{
+  "audio": "93ae938d6ab77ba7903fa3c43131b4b8a75aab22d72b769710b91df8465c0225.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加",
+      "油"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加油",
+  "id": "a1b2e471d235b36b42bd653d",
+  "level": 4,
+  "meaning": "oil, refuel, make an all-out effort",
+  "pinyin": "jiāyóu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-D19+dFy4n>-1779527160145"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

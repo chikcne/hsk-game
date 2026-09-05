@@ -1,0 +1,31 @@
+{
+  "audio": "cecb94c806268ee49a289af38ac1d77673ec6e98369dd1fa8ba60b357a2f9fed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "味"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "趣味",
+  "id": "58791cf4a7995bf26e2bb3dc",
+  "level": 6,
+  "meaning": "interest, delight",
+  "pinyin": "qùwèi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1078-1779527163481"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

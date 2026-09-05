@@ -1,0 +1,31 @@
+{
+  "audio": "a0bed2b8b6ca18b16090374bb320df01dc14aa097eec3ed05dd6f3bb9542ba3f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "住"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "住宿",
+  "id": "31cc50835e7e58041386bdba",
+  "level": 5,
+  "meaning": "to stay, to lodge",
+  "pinyin": "zhùsù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-PY8Q6Oouvr-1779527162354"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

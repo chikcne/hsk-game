@@ -1,0 +1,32 @@
+{
+  "audio": "747623e96f393188c625d7043de9350b54806d23abaf0d7dce73c9d48fe51ed9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "头",
+      "点"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "点头",
+  "id": "9856b4927188448e31ebd900",
+  "level": 4,
+  "meaning": "to nod",
+  "pinyin": "diǎntóu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-LE]y/FX(SZ-1779527159961"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

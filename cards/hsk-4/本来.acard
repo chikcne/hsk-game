@@ -1,0 +1,32 @@
+{
+  "audio": "456b89a54820640ebd41a8e9aba8f2e8a6334cfa6c95d0e318b99e4c5beb43f4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本",
+      "来"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "本来",
+  "id": "fdad75a3abbabe5c08e14cea",
+  "level": 4,
+  "meaning": "original, former; originally, actually",
+  "pinyin": "běnlái",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-K1sEzj&k[o-1779527159828"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

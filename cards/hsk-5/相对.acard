@@ -1,0 +1,31 @@
+{
+  "audio": "b59d27d712570d3f417d99e61dbc1c9bbbe00aab4c48efa1d268a7b2f5de6eba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "对"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相对",
+  "id": "26ca433b393e5ec655fbebd7",
+  "level": 5,
+  "meaning": "to compare, to face each other; opposite, relative",
+  "pinyin": "xiāngduì",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gz+L:;uuFV-1779527162053"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

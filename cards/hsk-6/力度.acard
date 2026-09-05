@@ -1,0 +1,32 @@
+{
+  "audio": "9a6313e96188af8282d6fe3d14e8a7743f6205193e2d38ad301ee074f4436e19.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "力",
+      "度"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "力度",
+  "id": "462e7817ac8c16d6c07c19e0",
+  "level": 6,
+  "meaning": "intensity, strength",
+  "pinyin": "lìdù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-838-1779527163241"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "19fedb9735c5d522a42deed7c02b396c397cd9e914a638434cfe3fecdccd86b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "签",
+      "证"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "签证",
+  "id": "8c626b719c53c61abd973f81",
+  "level": 4,
+  "meaning": "visa; to issue a visa",
+  "pinyin": "qiānzhèng",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r>Pqr0z3#S-1779527160379"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

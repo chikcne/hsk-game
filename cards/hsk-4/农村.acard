@@ -1,0 +1,31 @@
+{
+  "audio": "b93f97aac6cb8b4747b5e8dadb59f248afc55bb4ed724b599594f885b976c029.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "村"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "农村",
+  "id": "dc2c43aa1620c354439a8ccb",
+  "level": 4,
+  "meaning": "rural area, countryside",
+  "pinyin": "nóngcūn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-AOBP%vP(22-1779527160340"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

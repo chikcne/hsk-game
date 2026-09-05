@@ -1,0 +1,29 @@
+{
+  "audio": "707f01892d942609b06d5422f23315201dbcab8be13461069246ebe1ac71bd65.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "厚",
+  "id": "b78220efad589655a35f0af4",
+  "level": 4,
+  "meaning": "thick",
+  "pinyin": "hòu",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-BTr~n[EFeH-1779527160099"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

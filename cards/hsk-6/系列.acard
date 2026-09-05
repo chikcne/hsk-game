@@ -1,0 +1,32 @@
+{
+  "audio": "e441d296dd98e4664502dd1db87cfb600192479567230f84a54ca328695c2138.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "列",
+      "系"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "系列",
+  "id": "01b96bc41802981fd8890459",
+  "level": 6,
+  "meaning": "series",
+  "pinyin": "xìliè",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1410-1779527163813"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

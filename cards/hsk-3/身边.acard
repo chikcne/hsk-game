@@ -1,0 +1,32 @@
+{
+  "audio": "93af5c9b193800c63ecc3679a96ad1b89fe4252b7e17b74bf5f80f2e30b9e2e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "身",
+      "边"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "身边",
+  "id": "d83bba0eb9971fe25bdc6f5c",
+  "level": 3,
+  "meaning": "by one's side",
+  "pinyin": "shēnbiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-dn8iQ@GGfP-1779527159629"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

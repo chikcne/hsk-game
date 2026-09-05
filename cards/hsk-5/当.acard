@@ -1,0 +1,29 @@
+{
+  "audio": "b9e42dc0ded013bd18e4f6ebca2a8a4359972ca4fa377438136389959fa61666.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "当",
+  "id": "c55bd2b3d77a7f7b553c8901",
+  "level": 5,
+  "meaning": "to treat as, to regard as; to serve as",
+  "pinyin": "dàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HPN2Qye{T}-1779527161053"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

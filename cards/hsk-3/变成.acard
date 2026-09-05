@@ -1,0 +1,32 @@
+{
+  "audio": "47e0db817d4d37231b4973f07fdabd00db1332153105dabf0ff22c31d4a485e4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "变",
+      "成"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "变成",
+  "id": "8bb42d98adec660e1c5812d1",
+  "level": 3,
+  "meaning": "to become, to turn into",
+  "pinyin": "biànchéng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-bM>Of7x[.%-1779527159331"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

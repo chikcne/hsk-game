@@ -1,0 +1,32 @@
+{
+  "audio": "7c217537e0fd7a8f2a1e72d8f165a8f410c3c68036423a0d82f52c62a3fbd5ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "转"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转发",
+  "id": "acc2c5a13ea942071ede7e66",
+  "level": 4,
+  "meaning": "to forward (a message), to retweet",
+  "pinyin": "zhuǎnfā",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Eg@:3x^8C_-1779527160774"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

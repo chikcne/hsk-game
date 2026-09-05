@@ -1,0 +1,29 @@
+{
+  "audio": "3517e8c96c08914d7ae8cf4009bc4256ae421cf03f9fd0f058c736f4e9c6ae2c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "轮",
+  "id": "d823248cd74edc2590a6f243",
+  "level": 6,
+  "meaning": "wheel; to take turns; measure word for rounds",
+  "pinyin": "lún",
+  "pos": "名、动、量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-875-1779527163278"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

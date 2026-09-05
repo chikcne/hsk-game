@@ -1,0 +1,32 @@
+{
+  "audio": "6a89f05ad0229b0835796a3a50ba51121cadf3e4d5679f805d043932a8392679.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "上",
+      "马"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "马上",
+  "id": "097527fbb6d983e37c6bfd68",
+  "level": 3,
+  "meaning": "immediately",
+  "pinyin": "mǎshàng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-bwpY,~R]6&-1779527159569"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

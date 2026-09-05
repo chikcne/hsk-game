@@ -1,0 +1,32 @@
+{
+  "audio": "0c1c2cc9194778346e22b5d0e4f239947e284135045b548f62bbe6e593288132.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "台",
+      "球"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "台球",
+  "id": "7955dce2cbb756413caae93a",
+  "level": 6,
+  "meaning": "billiards",
+  "pinyin": "táiqiú",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1258-1779527163661"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

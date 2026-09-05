@@ -1,0 +1,32 @@
+{
+  "audio": "ef8319717463bbebbf3e36eb56c1f85f7e1909764cc0c64fdb37c23359684b67.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "数"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "数学",
+  "id": "179e55ef090b8fcedb1796ed",
+  "level": 3,
+  "meaning": "mathematics",
+  "pinyin": "shùxué",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-KQ}UQgB/Xb-1779527159646"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "d4eadc61de499d1692f00e3128a355546712d406afb4f60bd9aa908351a13de2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "眼"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "眼前",
+  "id": "c3272702673b9fbaafe580ba",
+  "level": 4,
+  "meaning": "before one's eyes, at the moment",
+  "pinyin": "yǎnqián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nz)*9RIb7(-1779527160656"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

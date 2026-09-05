@@ -1,0 +1,31 @@
+{
+  "audio": "f8c5fac86ae8631cd4ecd107eb2f6bad83907e1e92e593f3a814d61605a90aa5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "国"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "国情",
+  "id": "4ceffc5e03489042bc7582fe",
+  "level": 6,
+  "meaning": "national conditions",
+  "pinyin": "guóqíng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-512-1779527162915"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

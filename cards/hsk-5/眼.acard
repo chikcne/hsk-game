@@ -1,0 +1,29 @@
+{
+  "audio": "07c1270860f57de3044cf5411f2a28cceaaf95a4c7dd620af719c91757b0af1e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "眼",
+  "id": "32413cfd307d7600d1c2952d",
+  "level": 5,
+  "meaning": "eye; measure word for wells, eyes",
+  "pinyin": "yǎn",
+  "pos": "noun、",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-c>zCP;.6AW-1779527162133"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "8a3dd666fe948ef84c98eac2d984126682595e087fee3180bf58d4644a4ea866.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "味",
+      "气"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "气味",
+  "id": "422bb6070365a06235e61b42",
+  "level": 6,
+  "meaning": "smell, odor",
+  "pinyin": "qìwèi",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1027-1779527163430"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

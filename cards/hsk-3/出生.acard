@@ -1,0 +1,32 @@
+{
+  "audio": "26c400bba811350a6d1179c0c0fc7e8f2b96fff1c9ada4e55db2bfef8354e288.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "出",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "出生",
+  "id": "5a909ba46e05760ebefa86c3",
+  "level": 3,
+  "meaning": "to be born",
+  "pinyin": "chūshēng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-CBc(diG}R3-1779527159366"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

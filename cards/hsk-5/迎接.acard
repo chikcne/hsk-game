@@ -1,0 +1,32 @@
+{
+  "audio": "d9e4a75612269fb15f6958a5e51028137f9a5e89cad6f8f51c0b027f81ef5758.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "接",
+      "迎"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "迎接",
+  "id": "3a7c157aef8e02efdd9bc768",
+  "level": 5,
+  "meaning": "to greet, to welcome",
+  "pinyin": "yíngjiē",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Nxr-EbZ*yG-1779527162182"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

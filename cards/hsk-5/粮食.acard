@@ -1,0 +1,29 @@
+{
+  "audio": "164e35027c611bf30ca9ff1fa9dc6c8bf55b6bae004cca8d9bb02b5a4d07e03c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "粮食",
+  "id": "1706ebcb9ab28e3f5d0a100d",
+  "level": 5,
+  "meaning": "grain, food",
+  "pinyin": "liángshi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ta=!C>@?j?-1779527161521"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

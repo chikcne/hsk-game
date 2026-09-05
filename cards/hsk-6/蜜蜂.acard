@@ -1,0 +1,29 @@
+{
+  "audio": "48fa14ceeed586b8c37bb4cbd042799f88980b039045cf10a1fc3a2916a219c8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "蜜蜂",
+  "id": "ea0c2f92e493a85c0258d565",
+  "level": 6,
+  "meaning": "bee",
+  "pinyin": "mìfēng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-904-1779527163307"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

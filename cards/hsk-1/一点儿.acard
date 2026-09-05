@@ -1,0 +1,32 @@
+{
+  "audio": "30ee36d366bf11c21500cde272f645ee4466eb401caee5c68060c52148ab3454.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "点"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一点儿",
+  "id": "6ca559ec717dc7943170a709",
+  "level": 1,
+  "meaning": "a little, a bit",
+  "pinyin": "yìdiǎnr",
+  "pos": "number-classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-zeJa?&KA0p-1779527159064"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

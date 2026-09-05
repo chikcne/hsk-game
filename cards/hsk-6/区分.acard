@@ -1,0 +1,32 @@
+{
+  "audio": "3a66e420c525f6114921e1b15502778ace241bbc08ccab0650b7d061bdb2d2b7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "分",
+      "区"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "区分",
+  "id": "f3a7f3197260dfc6ecdb4dae",
+  "level": 6,
+  "meaning": "to differentiate",
+  "pinyin": "qūfēn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1073-1779527163476"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

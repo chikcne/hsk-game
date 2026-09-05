@@ -1,0 +1,29 @@
+{
+  "audio": "34696a3e90cde495eeaff9a2fa6e26198efc92df571ff8e8ad5441513b2971c3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "题",
+  "id": "4b12789538d73f95100bdf69",
+  "level": 2,
+  "meaning": "question, problem, topic",
+  "pinyin": "tí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-NrHVVzN2,e-1779527159245"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

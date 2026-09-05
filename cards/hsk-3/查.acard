@@ -1,0 +1,29 @@
+{
+  "audio": "300a1724d31bb1864d73b25fe91f740c8c13c6c8c6eed874a57395cf4a90f892.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "查",
+  "id": "3e652e1bef15e4327819d924",
+  "level": 3,
+  "meaning": "to check",
+  "pinyin": "chá",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-qk$5<)bhQ2-1779527159353"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

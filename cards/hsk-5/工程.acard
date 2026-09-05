@@ -1,0 +1,29 @@
+{
+  "audio": "98a3cd8467d328c8133aa2c19bb7db41582a9ceef5f0e69a0419c98d326a3a68.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "工程",
+  "id": "39b302ea5e49fee8128c0fc3",
+  "level": 5,
+  "meaning": "project, engineering",
+  "pinyin": "gōngchéng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rc.shs2g[b-1779527161211"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

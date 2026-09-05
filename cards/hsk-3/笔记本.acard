@@ -1,0 +1,34 @@
+{
+  "audio": "4cf45c9a2dc6f946ad02a08305b794c65a5120be62441553b8e7221cd7f0d41b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "本",
+      "笔",
+      "笔记",
+      "记"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "笔记本",
+  "id": "93ee0fa6554d84f6850d286a",
+  "level": 3,
+  "meaning": "notebook",
+  "pinyin": "bǐjìběn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-nMC_^Qi9hK-1779527159325"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

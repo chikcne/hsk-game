@@ -1,0 +1,31 @@
+{
+  "audio": "b88c22091ba2c26b3c2877441f66565be7f3daedeb10a90be02fc96730a05652.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大胆",
+  "id": "e8f19fcf06aa68693542d012",
+  "level": 5,
+  "meaning": "bold, daring",
+  "pinyin": "dàdǎn",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wH7drh|.[/-1779527161021"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

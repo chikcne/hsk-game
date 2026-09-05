@@ -1,0 +1,32 @@
+{
+  "audio": "f3e4e064af897d4c1d7b7be54c6aaa40bdfabc6c77324b8d1787c84297f2bda8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "团",
+      "结"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "团结",
+  "id": "a988d3ae56ff9e496e245b8f",
+  "level": 6,
+  "meaning": "to unite; united",
+  "pinyin": "tuánjié",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1336-1779527163739"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

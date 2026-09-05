@@ -1,0 +1,31 @@
+{
+  "audio": "b2f6d68e39c1b5830a02d44726adab07a274eec40aea479a8177a4c931011ba6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "测"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "监测",
+  "id": "fab3f6896a343f5f424e6330",
+  "level": 6,
+  "meaning": "to monitor",
+  "pinyin": "jiāncè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-642-1779527163045"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

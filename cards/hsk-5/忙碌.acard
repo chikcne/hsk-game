@@ -1,0 +1,31 @@
+{
+  "audio": "e1f04f08614fe6a4c23b41353e4bcdde4cb5393999d984a52a10ac961db1d264.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "忙"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "忙碌",
+  "id": "1e0a468df8c36336ddae5ac2",
+  "level": 5,
+  "meaning": "busy",
+  "pinyin": "mánglù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E)]L<z?D+w-1779527161554"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

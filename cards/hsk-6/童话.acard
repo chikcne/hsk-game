@@ -1,0 +1,29 @@
+{
+  "audio": "df546133448d991af3143c24aed4d29df6fce18139ee975eb1297a790a45a7ab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "童话",
+  "id": "155958e5a9e03f20c260ba0d",
+  "level": 6,
+  "meaning": "fairy tale",
+  "pinyin": "tónghuà",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1312-1779527163715"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

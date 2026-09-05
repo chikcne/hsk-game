@@ -1,0 +1,32 @@
+{
+  "audio": "95a52fdcd3122396fc85211c777dc111c50bd3e81de066279d97328b61eb1d28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "产",
+      "地"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "产地",
+  "id": "9025b2cc78b5bfec29be21d9",
+  "level": 6,
+  "meaning": "place of origin, producing area",
+  "pinyin": "chǎndì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-123-1779527162526"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

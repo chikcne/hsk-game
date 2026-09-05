@@ -1,0 +1,32 @@
+{
+  "audio": "3a356bfb23ce5b8cd979d0a3e0766e0f5ee55186c9f8126af13b1f7249977f18.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "关",
+      "海"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "海关",
+  "id": "4b5241762c017b24f6b9eb38",
+  "level": 5,
+  "meaning": "customs",
+  "pinyin": "hǎiguān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Bzb64aOG%f-1779527161263"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

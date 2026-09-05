@@ -1,0 +1,29 @@
+{
+  "audio": "d3eccd712a6d84a7831b4ee400be1db797cdbfcc55d4c8b8b3f50460941c135d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "相互",
+  "id": "546afc82be87245c9b40cfbf",
+  "level": 4,
+  "meaning": "mutual, each other",
+  "pinyin": "xiānghù",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J.i<=Gyn>s-1779527160608"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

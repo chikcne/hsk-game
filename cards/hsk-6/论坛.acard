@@ -1,0 +1,29 @@
+{
+  "audio": "fb855ad222c93d3d469030a7cebcf81cf814d2b62e84cc706b3909af4b22939d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "论坛",
+  "id": "5bd3b7b0ffa642632a9f39cb",
+  "level": 6,
+  "meaning": "forum",
+  "pinyin": "lùntán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-880-1779527163283"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

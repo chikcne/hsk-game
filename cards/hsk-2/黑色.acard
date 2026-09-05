@@ -1,0 +1,31 @@
+{
+  "audio": "2ca30e754b8be33a08b1d7fa12c4f54830c2cfbffba61719f53f227e5399e587.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "黑"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "黑色",
+  "id": "a9e8a6a03150d03dfe6470e9",
+  "level": 2,
+  "meaning": "black",
+  "pinyin": "hēisè",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-D?uK(=p8Cs-1779527159156"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

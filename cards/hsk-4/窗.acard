@@ -1,0 +1,29 @@
+{
+  "audio": "71fc198473fc9b51b4b40177777d808a2664a390055574e83668b89c76dfe01a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "窗",
+  "id": "7f8a8d634e10826702074a19",
+  "level": 4,
+  "meaning": "window",
+  "pinyin": "chuāng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-l|2<zf!;xw-1779527159898"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

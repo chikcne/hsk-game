@@ -1,0 +1,29 @@
+{
+  "audio": "ff950b0fc6a7def83734327009a7dd8df8498b640d2be6d8421c0d316a378d6b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "解",
+  "id": "3ecd32ebb546a0761a321417",
+  "level": 6,
+  "meaning": "to untie, to solve",
+  "pinyin": "jiě",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-692-1779527163095"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

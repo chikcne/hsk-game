@@ -1,0 +1,29 @@
+{
+  "audio": "a3e8dd6a213c85ffc1138c1ef980301d32897aee545db9e7453bbe8960bf78ba.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "采纳",
+  "id": "c022f49fcc8a046bf3af9d28",
+  "level": 6,
+  "meaning": "to adopt, to accept",
+  "pinyin": "cǎinà",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-105-1779527162508"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

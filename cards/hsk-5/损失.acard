@@ -1,0 +1,29 @@
+{
+  "audio": "9004668dbe715d5e7a2feefcf90d20737e4f005c3ad972d2afd9f0ccc69072d3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "损失",
+  "id": "885902a3d40fd2da004cdc4e",
+  "level": 5,
+  "meaning": "to lose; loss",
+  "pinyin": "sǔnshī",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-L;MMW&!i8-1779527161898"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

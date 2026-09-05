@@ -1,0 +1,31 @@
+{
+  "audio": "1e9bda1a411e8ae7597803588ab0c17ae2765e1d8ba62ad26585035e5d1669d6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "合"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "合格",
+  "id": "c96b5de51570543629d6db0b",
+  "level": 4,
+  "meaning": "qualified",
+  "pinyin": "hégé",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s_j?yxb^)f-1779527160096"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

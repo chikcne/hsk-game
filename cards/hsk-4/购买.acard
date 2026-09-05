@@ -1,0 +1,31 @@
+{
+  "audio": "08417884ab96696fb6e0e99b7f628a250d64fa55cfb01f41c2c914828d044b4b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "买"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "购买",
+  "id": "30f4882ce70dd2d9a202781c",
+  "level": 4,
+  "meaning": "to purchase",
+  "pinyin": "gòumǎi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-JCDN_ZcbwL-1779527160064"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

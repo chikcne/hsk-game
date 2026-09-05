@@ -1,0 +1,32 @@
+{
+  "audio": "e518130db0c4b0da36df28d9841cecaa4f9899883cca27b64951a850b24e0b2c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "原",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "原有",
+  "id": "85452b3034e3996b1de91f94",
+  "level": 5,
+  "meaning": "original, previously existing",
+  "pinyin": "yuán yǒu",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x/@<]WE%</-1779527162233"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

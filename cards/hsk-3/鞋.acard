@@ -1,0 +1,29 @@
+{
+  "audio": "cdc01acaaff43117dfe1686621ed1e4f0a8efe76dcadc687b84ca2d4a8aeeef5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "鞋",
+  "id": "65e78a0abd20ea03f1d41796",
+  "level": 3,
+  "meaning": "shoe",
+  "pinyin": "xié",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-v;l!FV(X2y-1779527159704"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

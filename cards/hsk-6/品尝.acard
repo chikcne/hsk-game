@@ -1,0 +1,32 @@
+{
+  "audio": "9baecf416b9560c4668500715d3553b8bb08260f1215eeccfa04a4898f66210d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "品",
+      "尝"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "品尝",
+  "id": "3ed94bb14053e1ff32c6d515",
+  "level": 6,
+  "meaning": "to taste",
+  "pinyin": "pǐncháng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-996-1779527163399"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

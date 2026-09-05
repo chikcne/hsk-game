@@ -1,0 +1,32 @@
+{
+  "audio": "d3a6b458e87194473a2dfd3bc2b221eb0ce66886a368acf24ef112a93534ee4e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "便"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不便",
+  "id": "f8e6e94ebe6642591cb8926e",
+  "level": 4,
+  "meaning": "inconvenient; to be short of money",
+  "pinyin": "búbiàn",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ze$Z60+HW3-1779527159847"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "d1a4258f52c4d72556fc4a05e09a7692c6f8dee37a6ba99fcf25bf70b2304b4e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "差",
+      "距"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "差距",
+  "id": "e7fd40017d09440e48d410dc",
+  "level": 5,
+  "meaning": "gap, disparity",
+  "pinyin": "chājù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-8sXd7(o!b-1779527160904"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

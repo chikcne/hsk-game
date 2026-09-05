@@ -1,0 +1,31 @@
+{
+  "audio": "47ad8fbda3d71e67304f3fafea669a98a2710c19719d64d2e82dabf78ca85d34.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "杂"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "复杂",
+  "id": "54013647f048a3b5046a82b5",
+  "level": 4,
+  "meaning": "complicated, complex",
+  "pinyin": "fùzá",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xbRHC~UcL<-1779527160017"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

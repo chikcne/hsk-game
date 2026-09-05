@@ -1,0 +1,32 @@
+{
+  "audio": "e423bb816b8c30732f5129e68dd2b68f16fbf7eeeb7b81bd276a6c2e8a1818d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "电",
+      "电视"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电视剧",
+  "id": "aad7f674d2d850ef3b653c9b",
+  "level": 4,
+  "meaning": "TV drama",
+  "pinyin": "diànshìjù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-B&Az{l]uz*-1779527159963"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

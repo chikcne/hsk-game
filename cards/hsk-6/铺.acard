@@ -1,0 +1,29 @@
+{
+  "audio": "b237f1becc2830c5d52c8e861732366b79a3a894775928aab39ecbd34e54037f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "铺",
+  "id": "923cd2cd18caba7b35304257",
+  "level": 6,
+  "meaning": "to spread, to pave",
+  "pinyin": "pū",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1009-1779527163412"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

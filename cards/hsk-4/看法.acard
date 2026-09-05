@@ -1,0 +1,32 @@
+{
+  "audio": "b6ad4c7a75a990c8caca5407b15a712e5ca3ff519ee992fcdd3dd922a1881a17.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "法",
+      "看"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看法",
+  "id": "ab0f18b4a722b22a2a3b3d24",
+  "level": 4,
+  "meaning": "view",
+  "pinyin": "kànfǎ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MinG1!ox|A-1779527160223"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

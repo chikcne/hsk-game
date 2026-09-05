@@ -1,0 +1,29 @@
+{
+  "audio": "c082abef82eda12ea323314cd8abf9ee12b7a80e865108e638cde49496af90dd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "养",
+  "id": "55396e0c429f4a326f62c266",
+  "level": 3,
+  "meaning": "to raise, to keep",
+  "pinyin": "yǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-pWETrC}G{T-1779527159722"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "audio": "f87783f9993b4346620ad2f2da5a235a7927fcc92d6b6bd34cf07926f7c85495.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "书",
+      "说",
+      "说明"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "说明书",
+  "id": "012b27190765afe50c7a7ba8",
+  "level": 4,
+  "meaning": "instruction manual, user guide, explanatory booklet",
+  "pinyin": "shuōmíngshū",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-j}yiW+O4]G-1779527160504"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

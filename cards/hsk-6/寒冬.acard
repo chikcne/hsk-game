@@ -1,0 +1,29 @@
+{
+  "audio": "1b324f1a52eee73a9597a18bdee40fbddc8bd719c3cabdf66dc96947d3e95ab4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "寒冬",
+  "id": "7a8c54c3da96fc903f61bc88",
+  "level": 6,
+  "meaning": "cold winter",
+  "pinyin": "hándōng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-523-1779527162926"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

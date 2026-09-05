@@ -1,0 +1,31 @@
+{
+  "audio": "d01627530d131d25742774a14a89e771b223aef6896b6c21e5d4180cd3bcf1b2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "有"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "有效",
+  "id": "6ecdf94acf1fe0fd4be3ca15",
+  "level": 4,
+  "meaning": "effective, to be effective",
+  "pinyin": "yǒuxiào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-f>b[T^${]J-1779527160695"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

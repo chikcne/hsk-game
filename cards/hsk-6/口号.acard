@@ -1,0 +1,32 @@
+{
+  "audio": "9efffbc03d2ab08650e355a810f059382c23f4cc73c239050a41d06657409111.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口",
+      "号"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "口号",
+  "id": "8e8ca2d3aa1f58f1481513fc",
+  "level": 6,
+  "meaning": "slogan",
+  "pinyin": "kǒuhào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-794-1779527163197"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

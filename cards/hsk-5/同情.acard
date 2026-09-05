@@ -1,0 +1,31 @@
+{
+  "audio": "382c9ba5cc76c30a905a627440d6d5324a31279f68550859982d5de1e855cf21.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "同"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "同情",
+  "id": "429b4175baea6499e266cfd4",
+  "level": 5,
+  "meaning": "to sympathize, to have compassion",
+  "pinyin": "tóngqíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-i3d@O7o{>1-1779527161945"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

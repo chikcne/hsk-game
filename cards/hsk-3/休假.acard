@@ -1,0 +1,31 @@
+{
+  "audio": "15c9a59079af7d146f15f37da41830f06e1de573c226a268a31dd6e0b21bb706.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "假"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "休假",
+  "id": "96eb2b6b57452ead97e2417b",
+  "level": 3,
+  "meaning": "to take a holiday",
+  "pinyin": "xiūjià",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-e}5`|<D86i-1779527159714"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

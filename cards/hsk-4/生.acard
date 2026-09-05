@@ -1,0 +1,29 @@
+{
+  "audio": "8a48cdb71fa1aa61a66bb5404a12859f558b6de333f04b0d601e37699247224b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生",
+  "id": "6342bf05522864eaa938a5e5",
+  "level": 4,
+  "meaning": "to give birth, to produce, to grow",
+  "pinyin": "shēng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": "verb",
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-wG|rCKVCpX-1779527160449"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "f22bc72037fb2a32638fa4d67e00977e432450c41d82bca24758ba179de94466.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赚",
+  "id": "fe80ebc5c930131fc250fbc2",
+  "level": 4,
+  "meaning": "to earn, to make a profit",
+  "pinyin": "zhuàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-N#d#(-pHK@-1779527160776"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

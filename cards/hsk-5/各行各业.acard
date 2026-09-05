@@ -1,0 +1,33 @@
+{
+  "audio": "a02f6895812a87956e179afa340d858bcd2a3e0f7630d795a0b9deb848e23f33.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业",
+      "各",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "各行各业",
+  "id": "1920cad934e010561a05da00",
+  "level": 5,
+  "meaning": "all trades and professions",
+  "pinyin": "gèháng-gèyè",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-JZr]`r^CGM-1779527161202"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

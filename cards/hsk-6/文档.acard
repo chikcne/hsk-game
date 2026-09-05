@@ -1,0 +1,29 @@
+{
+  "audio": "b32ce7e60b529237c9978c5e729880b67dcdacc135ffa99a4c19b056ab4234bc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "文档",
+  "id": "9baefec35adc382c4d10e5bf",
+  "level": 6,
+  "meaning": "document",
+  "pinyin": "wéndàng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1386-1779527163789"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

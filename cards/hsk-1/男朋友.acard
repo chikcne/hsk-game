@@ -1,0 +1,32 @@
+{
+  "audio": "ddfee4e7dd5271329fadeed4ca7c7d3c099f76f6701696dede8b8126bf66b561.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "朋友",
+      "男"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "男朋友",
+  "id": "4efc153989aa558ce3b443ad",
+  "level": 1,
+  "meaning": "boyfriend",
+  "pinyin": "nánpéngyou",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-zLAN9I)FlE-1779527158946"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

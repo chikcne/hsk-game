@@ -1,0 +1,29 @@
+{
+  "audio": "fca1d7a79aad444926677ff56769672eea2a8c975b63b0a372e7d8511413a608.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扔",
+  "id": "23361372ab0bc19714338084",
+  "level": 4,
+  "meaning": "to throw, to toss",
+  "pinyin": "rēng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-g2VUv)^~95-1779527160418"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

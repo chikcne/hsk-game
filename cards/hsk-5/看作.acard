@@ -1,0 +1,31 @@
+{
+  "audio": "89c012cf3e64fd6f1ced959dc7282dc9712d4a5f410a48e5ef308d4845be13ce.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "看"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "看作",
+  "id": "6fc3f484f7b4920fde097e16",
+  "level": 5,
+  "meaning": "to regard as, to consider as",
+  "pinyin": "kànzuò",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ui&fTOt}x%-1779527161462"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

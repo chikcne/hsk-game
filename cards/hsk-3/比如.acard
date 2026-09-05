@@ -1,0 +1,32 @@
+{
+  "audio": "7483d9ea90dd1fcc5daca43b8c1e9598ed25f3ae4117dc59b98658fe2ced573c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "如",
+      "比"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "比如",
+  "id": "54710b892bfd9f64e168df22",
+  "level": 3,
+  "meaning": "for example",
+  "pinyin": "bǐrú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-pc>CA>;snx-1779527159326"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

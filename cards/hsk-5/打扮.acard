@@ -1,0 +1,31 @@
+{
+  "audio": "01d2db5ba7d820e78a6d44a9c5aab3a29ee4645155200d1085149384b6b10385.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "打"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打扮",
+  "id": "77496af5640d964714aa8443",
+  "level": 5,
+  "meaning": "to dress up, to disguise",
+  "pinyin": "dǎban",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-brEyM-YNU<-1779527161016"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

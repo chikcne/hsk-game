@@ -1,0 +1,31 @@
+{
+  "audio": "e4b94461b74ddd963dda2390153b348ecf0356484906da7e4b89a600c898c272.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "笔"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "铅笔",
+  "id": "e9b48178258bcc9f9935198a",
+  "level": 3,
+  "meaning": "pencil",
+  "pinyin": "qiānbǐ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-HYuhiR]N1H-1779527159607"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

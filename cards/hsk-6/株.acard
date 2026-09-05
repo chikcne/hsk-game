@@ -1,0 +1,29 @@
+{
+  "audio": "70e457c4dc0071d628ee0a4685ef1ba0bc031e3428388d4412f19ac5f75b846f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "株",
+  "id": "767ecb96e5d5ac971c63f657",
+  "level": 6,
+  "meaning": "measure word for plants",
+  "pinyin": "zhū",
+  "pos": "量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1741-1779527164144"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

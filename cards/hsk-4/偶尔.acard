@@ -1,0 +1,29 @@
+{
+  "audio": "03641bdc6221dafdb66b28c89b5e3d4b16510bbcb1d0e788ed2df562887f006a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "偶尔",
+  "id": "c5653da4fc359c9efe16325c",
+  "level": 4,
+  "meaning": "occasionally, sometimes; occasional",
+  "pinyin": "ǒu’ěr",
+  "pos": "adverb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bw&:}y;1ky-1779527160344"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

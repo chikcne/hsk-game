@@ -1,0 +1,29 @@
+{
+  "audio": "bbe10d8a30da8363aee097618a91ae0e02653a86f0602d1f143556b541cdf568.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "描绘",
+  "id": "280f8eb230f422775e187e42",
+  "level": 6,
+  "meaning": "to depict",
+  "pinyin": "miáohuì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-914-1779527163317"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "4813d18a90afdd27003133b77baebd924ba503fafb752aea4702f32ba8f761a6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "能"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "能源",
+  "id": "4bcbc806d07612fb5a10a158",
+  "level": 6,
+  "meaning": "energy",
+  "pinyin": "néngyuán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-954-1779527163357"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

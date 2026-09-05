@@ -1,0 +1,32 @@
+{
+  "audio": "e011739e3a21079bf01b9120bd1390b09127904dfaa56095c2a78600500c9f66.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "后"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前后",
+  "id": "f9fe0316823583a61e303aa8",
+  "level": 4,
+  "meaning": "front and back, around, about",
+  "pinyin": "qiánhòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-o)^1t~n+E=-1779527160381"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

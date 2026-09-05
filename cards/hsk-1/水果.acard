@@ -1,0 +1,31 @@
+{
+  "audio": "cc5dab15e34231c305a89eb2e4301b362c70d164036f84649e9ce2a8d2733cf2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "水"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "水果",
+  "id": "b0447f6d2e876c5bf77e9b06",
+  "level": 1,
+  "meaning": "fruit",
+  "pinyin": "shuǐguǒ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-EtFDcB^Ec.-1779527158996"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

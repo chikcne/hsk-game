@@ -1,0 +1,33 @@
+{
+  "audio": "8eadc96475b37e75498d03f6214acdfb3baa956571437f271702feb1ef1d562d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "普通",
+      "通",
+      "通话"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "普通话",
+  "id": "47c4004703f619cd4de7510d",
+  "level": 4,
+  "meaning": "Mandarin Chinese, standard Chinese",
+  "pinyin": "pǔtōnghuà",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-yr?y[(Xx)-1779527160366"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

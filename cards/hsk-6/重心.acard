@@ -1,0 +1,32 @@
+{
+  "audio": "dda340ff2f1bf97ab04ddbf7425e00962f9f337f99c213b41c206ee0f8c7e721.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "重"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "重心",
+  "id": "6024a075e5f4f7bf8071c61b",
+  "level": 6,
+  "meaning": "center of gravity, core",
+  "pinyin": "zhòngxīn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1735-1779527164138"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

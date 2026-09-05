@@ -1,0 +1,29 @@
+{
+  "audio": "a43ab0a76710a3c6ccb149b6e893d6d151a42597d7a5c143fda971129be4cfee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "民宿",
+  "id": "44a0ebaeeb75ea5df41494e0",
+  "level": 6,
+  "meaning": "homestay",
+  "pinyin": "mínsù",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-921-1779527163324"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

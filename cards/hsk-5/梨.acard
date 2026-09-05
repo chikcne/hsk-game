@@ -1,0 +1,29 @@
+{
+  "audio": "3d44a810b692ba647abd58ff4e8ce4fea8443a77ad14a391521ae9150881e796.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "梨",
+  "id": "77af8d41af4ca41b736146d7",
+  "level": 5,
+  "meaning": "pear",
+  "pinyin": "lí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-x;JSP_-^R[-1779527161500"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

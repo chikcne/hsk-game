@@ -1,0 +1,29 @@
+{
+  "audio": "1f491654bde4c18a8547fccd5cc4a0dee8ba104b709ab37b5005401d5faf0ae8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "泥",
+  "id": "50ba71cc1ac2e3c8d588a4c9",
+  "level": 6,
+  "meaning": "mud",
+  "pinyin": "ní",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-955-1779527163358"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "bc1eebbaf769f1d8521aec461248381dd934dbf5e2eed806087a076af83844f0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "台",
+      "窗"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "窗台",
+  "id": "890d235b04a29ea1b7c8bb3d",
+  "level": 5,
+  "meaning": "windowsill",
+  "pinyin": "chuāngtái",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nI/:|KO>Q-1779527160991"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "6f8f6b6243346b0e98be801cc90622913775b84dc16b25c7d2210e8b1aebb0ca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "富"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "丰富",
+  "id": "fed22fe83bc49447df4a4051",
+  "level": 4,
+  "meaning": "rich, abundant",
+  "pinyin": "fēngfù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s,rQ][Oa[!-1779527160007"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

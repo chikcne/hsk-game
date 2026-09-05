@@ -1,0 +1,32 @@
+{
+  "audio": "0b1f49328335d0937b710d4528e2cf5443215e01acc3203a4808ea7115c77c70.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "多",
+      "媒体"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "多媒体",
+  "id": "ca799e35436270c37885dfac",
+  "level": 6,
+  "meaning": "multimedia",
+  "pinyin": "duōméitǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-338-1779527162741"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

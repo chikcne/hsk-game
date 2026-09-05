@@ -1,0 +1,31 @@
+{
+  "audio": "090ce679525069d8b66c7414aed2d06ff91af8e65444649be5898a667807bb10.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "灭"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "消灭",
+  "id": "57e58f6e3a24d79125468b68",
+  "level": 6,
+  "meaning": "to annihilate",
+  "pinyin": "xiāomiè",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1449-1779527163852"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

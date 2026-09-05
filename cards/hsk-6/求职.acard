@@ -1,0 +1,31 @@
+{
+  "audio": "c45caade912da14be81c1051ebadcc302767d47e3146a73990f21db561edb97c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "求"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "求职",
+  "id": "1b63c2b0b3f59db8d493a46a",
+  "level": 6,
+  "meaning": "to apply for a job",
+  "pinyin": "qiúzhí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1071-1779527163474"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "a6e1fab530f0ec8b1f93e409d99037a635b25e069c832e0d7c8e0d83905b652d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "之",
+      "后"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "之后",
+  "id": "6949c7b27abda60f0abb6ace",
+  "level": 4,
+  "meaning": "after, later, behind",
+  "pinyin": "zhīhòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Bd]]I=JqeL-1779527160744"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

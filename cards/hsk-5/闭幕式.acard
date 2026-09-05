@@ -1,0 +1,32 @@
+{
+  "audio": "730fa56b80ed1ce504a09e866ffdbadde9bd684a237a6e6a71a77de5ea8657d3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "式",
+      "闭"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "闭幕式",
+  "id": "2b60e220d8a50b29a60304bb",
+  "level": 5,
+  "meaning": "closing ceremony",
+  "pinyin": "bìmùshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-|L!KV~jd0-1779527160855"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

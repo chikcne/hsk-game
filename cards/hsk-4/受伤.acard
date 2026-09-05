@@ -1,0 +1,32 @@
+{
+  "audio": "ee7e981f6aee3a1ada16168b3206a041da30d2e44638e8e09086116f26ad2d26.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伤",
+      "受"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "受伤",
+  "id": "623c35525e20e9b51003cf8d",
+  "level": 4,
+  "meaning": "to be injured, to get hurt",
+  "pinyin": "shòushāng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Kq`NtW8#|$-1779527160489"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "19d3de096fb41814de0d38db03dc4d0f7cd3fb960b3e4cb1a1d5101c3509d54a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "天",
+  "id": "14285cd0e14295e7c0b924c9",
+  "level": 1,
+  "meaning": "day; measure word for days",
+  "pinyin": "tiān",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-yC);-~sE33-1779527159010"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

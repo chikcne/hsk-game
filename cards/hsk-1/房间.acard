@@ -1,0 +1,31 @@
+{
+  "audio": "ae0ff8437e62b878c50954b6db386d6a4d185ca539385e27c40c04e91616f21f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "间"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "房间",
+  "id": "d2799a10802aa4c03d379ff5",
+  "level": 1,
+  "meaning": "room",
+  "pinyin": "fángjiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-y.&*v0gS!H-1779527158855"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

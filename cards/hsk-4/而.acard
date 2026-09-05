@@ -1,0 +1,29 @@
+{
+  "audio": "58a8ec8e2f8dc92ed0236c22c6a5f127a1136ff148130227517277c913225c7a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "而",
+  "id": "d511a427478bfe00e6e9b13b",
+  "level": 4,
+  "meaning": "but, and, yet",
+  "pinyin": "ér",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-jw&uI-Otj7-1779527159986"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

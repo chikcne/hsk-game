@@ -1,0 +1,29 @@
+{
+  "audio": "7bde4dfced24abe765f94607b64571087b812b9ae52131191062eff4cc2c59b6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "占",
+  "id": "dffc683d412cc9467add47a3",
+  "level": 5,
+  "meaning": "to account for, to occupy",
+  "pinyin": "zhàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-sSXvCb`P^/-1779527162271"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

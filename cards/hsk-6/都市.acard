@@ -1,0 +1,32 @@
+{
+  "audio": "ba949ada40c3e0e8bc64a94813402af76d061bfd5b141748525d0fac09cc421f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "市",
+      "都"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "都市",
+  "id": "0a8c1d726530a1a42d7556e8",
+  "level": 6,
+  "meaning": "city",
+  "pinyin": "dūshì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-324-1779527162727"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

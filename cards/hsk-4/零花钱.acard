@@ -1,0 +1,33 @@
+{
+  "audio": "ea8e85effb1212156528d94b3a18d0a8f4eb671e8b6d623dbbeb84641b45e74b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "花",
+      "钱",
+      "零"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "零花钱",
+  "id": "93b568537c4321114871e57c",
+  "level": 4,
+  "meaning": "pocket money, spending money",
+  "pinyin": "línghuāqián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-gzl$9%iH9c-1779527160280"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

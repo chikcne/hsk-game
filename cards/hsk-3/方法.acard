@@ -1,0 +1,32 @@
+{
+  "audio": "d7f071c38f32e468a4320a816ec8cf0861b0ee3e868a4c67c6947284c13b137c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "方",
+      "法"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "方法",
+  "id": "f95c4abd62d5954fac289c92",
+  "level": 3,
+  "meaning": "method",
+  "pinyin": "fāngfǎ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-C3mB<T*:rZ-1779527159424"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

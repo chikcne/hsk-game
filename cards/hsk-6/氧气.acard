@@ -1,0 +1,31 @@
+{
+  "audio": "228febbaa5f3221b22cedcb6a9566b170e86c5fda69e0dbd906ab265ae6e89c6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "气"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "氧气",
+  "id": "d190d3ae52fad2dac78a719e",
+  "level": 6,
+  "meaning": "oxygen",
+  "pinyin": "yǎngqì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1524-1779527163927"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

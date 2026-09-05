@@ -1,0 +1,32 @@
+{
+  "audio": "25e885f10acf5e1d3445f5cb470fc3ff7c07094c54c141f4c007e988918b5ac7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常",
+      "通"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "通常",
+  "id": "314b8c1360bce1d628f7a41c",
+  "level": 5,
+  "meaning": "usual, common; usually",
+  "pinyin": "tōngcháng",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-bP`xM{UP_<-1779527161942"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

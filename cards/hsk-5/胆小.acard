@@ -1,0 +1,31 @@
+{
+  "audio": "5b8a7eb5b6c91a4dfa126f931f1703caaaf8c708cdd55fa6b0bc07b08e5517d5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "小"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "胆小",
+  "id": "9c97745d4b5f68702055d105",
+  "level": 5,
+  "meaning": "timid, cowardly",
+  "pinyin": "dǎnxiǎo",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-rUi8~Y@DUp-1779527161046"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

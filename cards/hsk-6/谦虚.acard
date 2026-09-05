@@ -1,0 +1,29 @@
+{
+  "audio": "043cc4f5ba5228e29a1cb4075a42d8b6b5220940d94134da25002f78af7c9760.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "谦虚",
+  "id": "dc5e3222801475985417ec25",
+  "level": 6,
+  "meaning": "modest; to be modest",
+  "pinyin": "qiānxū",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1034-1779527163437"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

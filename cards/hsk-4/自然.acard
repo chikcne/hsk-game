@@ -1,0 +1,31 @@
+{
+  "audio": "f750986fe553e745b70fa5700c6664a0a22930698526658bece4314bca82c983.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "自"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "自然",
+  "id": "08ba36cfcf4cee7301f4db66",
+  "level": 4,
+  "meaning": "nature; natural; naturally, of course",
+  "pinyin": "zìrán",
+  "pos": "noun、adjective、 adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-rF3+U7X8C&-1779527160784"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

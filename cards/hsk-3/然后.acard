@@ -1,0 +1,31 @@
+{
+  "audio": "c2f78127fdbd3df6bf708f3b1b141509a6ada07e7c677de5616b8ec1f235eef2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "后"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "然后",
+  "id": "6514c8d8d5432e74f780adcf",
+  "level": 3,
+  "meaning": "then, afterwards",
+  "pinyin": "ránhòu",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-h{EC<FGyaT-1779527159616"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

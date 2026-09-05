@@ -1,0 +1,31 @@
+{
+  "audio": "a71bcec8284acab6bf7199f793b4777ac5e88eff1a1e5b3942d219c719c440a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "母"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "父母",
+  "id": "86df77ea4551c83161efbd41",
+  "level": 4,
+  "meaning": "parents",
+  "pinyin": "fùmǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-yblDKgB{w=-1779527160013"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

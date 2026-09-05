@@ -1,0 +1,32 @@
+{
+  "audio": "e4ffa3d39af92e306f8d443ab556bea924eab24f8bb916cc191fd67bb7c0b312.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "期中",
+  "id": "63be335651d48f05c5668592",
+  "level": 4,
+  "meaning": "midterm, middle of the term",
+  "pinyin": "qīzhōng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kr(7b6<9~P-1779527160369"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

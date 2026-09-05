@@ -1,0 +1,32 @@
+{
+  "audio": "75e0c98bf0aa53c71f09ca6c82da04deeff130fa531f6fc07caf4ad31c23f604.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "包",
+      "背"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "背包",
+  "id": "00d3b513fa509abbfd73ad6d",
+  "level": 4,
+  "meaning": "backpack",
+  "pinyin": "bēibāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I]KNIrsH>r-1779527159824"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

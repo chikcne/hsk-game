@@ -1,0 +1,32 @@
+{
+  "audio": "471aaad5b174258b7e8305ddc86c960803f27c535011ef0d06c6119c38072b1f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亮",
+      "月"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "月亮",
+  "id": "55fd7d70bf332ece3edbbf86",
+  "level": 3,
+  "meaning": "moon",
+  "pinyin": "yuèliang",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-uLY9uFeF>X-1779527159762"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

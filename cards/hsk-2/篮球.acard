@@ -1,0 +1,31 @@
+{
+  "audio": "325f6ff2c88e8b539e92a01b967e6a40f675c15654c1ca1814102781cf1da4e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "球"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "篮球",
+  "id": "498fb848809021ac031c47ce",
+  "level": 2,
+  "meaning": "basketball",
+  "pinyin": "lánqiú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-uw)`_a$w]z-1779527159190"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "audio": "601d2fc16e8cb0872eb9b804ef964d3f59ce924ee7c8d76dff4a42644aa9428a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "伙",
+      "子",
+      "小"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "小伙子",
+  "id": "51328a1f784482e2d1a2c190",
+  "level": 4,
+  "meaning": "young man, lad",
+  "pinyin": "xiǎohuǒzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-y?a9x=@{gB-1779527160616"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

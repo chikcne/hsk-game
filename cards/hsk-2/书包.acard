@@ -1,0 +1,32 @@
+{
+  "audio": "527ee6a33d65e5d7aaa2b52adace099f8c92fe70ed04c6d99e686d12e128eb94.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "书",
+      "包"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "书包",
+  "id": "b3c41ea4c146067e333b8729",
+  "level": 2,
+  "meaning": "backpack, schoolbag",
+  "pinyin": "shūbāo",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-r;*U+&0GH=-1779527159238"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

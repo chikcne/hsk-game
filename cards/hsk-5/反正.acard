@@ -1,0 +1,32 @@
+{
+  "audio": "9e0c669949505f7ed47b9560cf55b57a744d5253d3d16ba53c16e49521370b70.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "反",
+      "正"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "反正",
+  "id": "b87013e49403c68a453b77c3",
+  "level": 5,
+  "meaning": "anyway, in any case",
+  "pinyin": "fǎnzhèng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-imRVn!t%.g-1779527161139"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

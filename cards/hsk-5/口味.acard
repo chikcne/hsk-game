@@ -1,0 +1,32 @@
+{
+  "audio": "9e94d47b19368869802f219498215f0788b571ff5fd1d80c32f6bbaccee2e4e7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口",
+      "味"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "口味",
+  "id": "ba4ed335cb2eb57ab079ccfc",
+  "level": 5,
+  "meaning": "taste, flavor",
+  "pinyin": "kǒuwèi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-qt]cgI<q%6-1779527161478"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

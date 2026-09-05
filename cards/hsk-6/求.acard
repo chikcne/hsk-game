@@ -1,0 +1,29 @@
+{
+  "audio": "2c8a23c4ea766163ebb3432f7b1122671f89bc1843b1850bf4409f4a8bc599d2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "求",
+  "id": "a1407dd500cb1ec958950eff",
+  "level": 6,
+  "meaning": "to request, to seek",
+  "pinyin": "qiú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1068-1779527163471"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

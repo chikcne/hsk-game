@@ -1,0 +1,31 @@
+{
+  "audio": "dc12a74572f757121634ee2049f4cb5c4fcf8d73a482477c3a38d8073ca3dda3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "离"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "离婚",
+  "id": "42e6b6606ded0bbb47cfe6a5",
+  "level": 5,
+  "meaning": "to divorce",
+  "pinyin": "líhūn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-z^EHH00Y7(-1779527161501"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

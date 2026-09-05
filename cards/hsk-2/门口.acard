@@ -1,0 +1,32 @@
+{
+  "audio": "dd0149e6d3087cadacfcab52fd0b05df15de3c09ab0964c0d34586a7c5b3c8b5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "口",
+      "门"
+    ],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "门口",
+  "id": "02dfb3847fa87ed3dddbcf5e",
+  "level": 2,
+  "meaning": "doorway, entrance",
+  "pinyin": "ménkǒu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-llE+YjAPo$-1779527159204"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

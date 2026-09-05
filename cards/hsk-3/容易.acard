@@ -1,0 +1,29 @@
+{
+  "audio": "34b4da7dee59a75d35e33dc4a824fe0d82e77bcaa1dec7595173abbb0bbb3ee4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "容易",
+  "id": "71ff979c3fb023d22177245b",
+  "level": 3,
+  "meaning": "easy",
+  "pinyin": "róngyì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-wtP<JO1je^-1779527159621"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

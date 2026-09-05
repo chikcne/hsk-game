@@ -1,0 +1,32 @@
+{
+  "audio": "eb12edf04f0a052d52ac988d77f46361252e25fe2a7ca72222421188fa22f1ac.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "量"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大量",
+  "id": "fc278bd113c6a404fb5e9e47",
+  "level": 4,
+  "meaning": "large quantity, a large amount",
+  "pinyin": "dàliàng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Fey-a[h|89-1779527159929"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

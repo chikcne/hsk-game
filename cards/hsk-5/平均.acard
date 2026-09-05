@@ -1,0 +1,31 @@
+{
+  "audio": "d850e6b0c8521b48da1d6939d8743835e5895cfdec31f9a0dd808b3735b51e28.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "平"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平均",
+  "id": "4b54061a3ac8caaa8f8cad68",
+  "level": 5,
+  "meaning": "to average; average",
+  "pinyin": "píngjūn",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-m5-UB/tk~o-1779527161648"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "26daf49aec8bbcdf41230771b99c44668af785ef3911dce5ab917440008ca8cd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "优惠",
+  "id": "129263c39281cb2be5102cc8",
+  "level": 5,
+  "meaning": "preferential, favorable",
+  "pinyin": "yōuhuì",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Db/r[9|u8S-1779527162199"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

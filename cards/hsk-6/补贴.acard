@@ -1,0 +1,32 @@
+{
+  "audio": "a3fbe4728df584702452d470f60f434133f5dd4bfca4086103f6b50abad9b2ea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "补",
+      "贴"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "补贴",
+  "id": "5afb6a9f8b0baa79f079d696",
+  "level": 6,
+  "meaning": "to subsidize; subsidy",
+  "pinyin": "bǔtiē",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-76-1779527162479"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

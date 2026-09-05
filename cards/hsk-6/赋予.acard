@@ -1,0 +1,29 @@
+{
+  "audio": "d205f43b042d26e83d6a981bca628f99e538a2cf10e3ca53335357aba66601c4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赋予",
+  "id": "768dc3d815a6ac7e4f07aa25",
+  "level": 6,
+  "meaning": "to endow, to give",
+  "pinyin": "fùyǔ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-412-1779527162815"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

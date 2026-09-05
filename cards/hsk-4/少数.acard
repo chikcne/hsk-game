@@ -1,0 +1,32 @@
+{
+  "audio": "9fda21719fecda7715e5b1292017af2a395ae64e9eadef41aaf8226d5a452a5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "少",
+      "数"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "少数",
+  "id": "e19fb9fec2c39d2fd429fbad",
+  "level": 4,
+  "meaning": "minority, small number",
+  "pinyin": "shǎoshù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-ts~c]zFOb;-1779527160440"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

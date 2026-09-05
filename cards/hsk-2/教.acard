@@ -1,0 +1,29 @@
+{
+  "audio": "d40694e630f21d10cbe2a57535a32008d37a8b5a8c0b709d001181440437f6e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "教",
+  "id": "1385f89105590b27f973ef43",
+  "level": 2,
+  "meaning": "to teach",
+  "pinyin": "jiāo",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-i<674x6#JV-1779527159170"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

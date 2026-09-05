@@ -1,0 +1,32 @@
+{
+  "audio": "d6efa60a39c69cbb6a1d8a4e317b9eec5f7c0d786d47ca438533ffff95906228.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "毛",
+      "病"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "毛病",
+  "id": "79e98539a1198e71f9de878b",
+  "level": 5,
+  "meaning": "fault, trouble, illness",
+  "pinyin": "máobìng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-z7%9jfW@NH-1779527161556"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

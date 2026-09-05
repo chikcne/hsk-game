@@ -1,0 +1,29 @@
+{
+  "audio": "1e42048141ac3a3587ba73dbce37818e6f9913eac298ccffee448dc92d6c15d5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "标志",
+  "id": "4a0a553872fc9bad5a7bb605",
+  "level": 5,
+  "meaning": "symbol, sign; to mark",
+  "pinyin": "biāozhì",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ELDt2WY@M}-1779527160864"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

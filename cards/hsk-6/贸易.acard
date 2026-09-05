@@ -1,0 +1,29 @@
+{
+  "audio": "d9e91fde4df6536b60524d6f89bfaa2bf4c3e7d861dceafe0680dcaa61094eaa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "贸易",
+  "id": "90de52a0d364fe2c4f68487b",
+  "level": 6,
+  "meaning": "trade",
+  "pinyin": "màoyì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-895-1779527163298"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

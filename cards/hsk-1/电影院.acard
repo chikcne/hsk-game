@@ -1,0 +1,32 @@
+{
+  "audio": "6a970501014b6ffcfe9eee1375279fc618702ee88f50eecc90b68943ee64815f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "电",
+      "电影"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电影院",
+  "id": "d46d005854ff60f3a063bf99",
+  "level": 1,
+  "meaning": "cinema",
+  "pinyin": "diànyǐngyuàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-y5{Moz+Rf!-1779527158842"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "ad7157376f81f823feb2d39a828c1e0617fee5b5c62ead38fe2fca21f746cd46.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "花",
+  "id": "5eae624f0e416a7286aaa6f2",
+  "level": 2,
+  "meaning": "flower; (colorful)",
+  "pinyin": "huā",
+  "pos": "noun、 （adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-x%nWCAW8,@-1779527159161"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

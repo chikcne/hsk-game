@@ -1,0 +1,31 @@
+{
+  "audio": "9af8500cb4b4ed55b43dfa62e5a51fea06205b6e3b80611fcb4b2df1e55418ea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "量"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "音量",
+  "id": "a08634aac351b9364a13291d",
+  "level": 5,
+  "meaning": "volume of sound",
+  "pinyin": "yīnliàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Wt8qsw=a%-1779527162175"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

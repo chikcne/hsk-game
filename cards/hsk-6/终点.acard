@@ -1,0 +1,31 @@
+{
+  "audio": "05b194ce28ac2e84748b790559f20c5d85422bc62ddcc09b32c6f24c3e790d67.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "点"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "终点",
+  "id": "e48733712580f59432d0a980",
+  "level": 6,
+  "meaning": "end point, destination",
+  "pinyin": "zhōngdiǎn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1721-1779527164124"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

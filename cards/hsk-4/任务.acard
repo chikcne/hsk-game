@@ -1,0 +1,29 @@
+{
+  "audio": "2e6f842950117c879775e4fb853861c893edcd7213ac8d4b52eab07372ba0aab.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "任务",
+  "id": "18c477e0b4f65dd1705ce169",
+  "level": 4,
+  "meaning": "task, assignment, mission",
+  "pinyin": "rènwu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-P|&3VDOV^--1779527160417"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

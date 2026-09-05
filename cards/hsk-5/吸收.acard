@@ -1,0 +1,32 @@
+{
+  "audio": "09b1309df76913de5c6be5ed4ff3c6185d6db0398dae09c1fc7172d677adf8fe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "吸",
+      "收"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "吸收",
+  "id": "c7db993a7973f58eb7bb98ee",
+  "level": 5,
+  "meaning": "to absorb",
+  "pinyin": "xīshōu",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-AK`*;xnxPp-1779527162026"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

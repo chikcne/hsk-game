@@ -1,0 +1,31 @@
+{
+  "audio": "172e5040e430175870d14682706b8f970f64a7b99af68c3dc237371b7eafce91.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "直"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "垂直",
+  "id": "c680bc59cd686f6734b0a98d",
+  "level": 6,
+  "meaning": "to be vertical",
+  "pinyin": "chuízhí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-216-1779527162619"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "13cb59846afa2b38fc1bf49476b4b613c86567058632c58a4c19f7504c5114bf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "管"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不管",
+  "id": "73119ac3b7f0dbb4a6493d59",
+  "level": 4,
+  "meaning": "no matter, regardless of",
+  "pinyin": "bùguǎn",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hO3;^_EV[X-1779527159856"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

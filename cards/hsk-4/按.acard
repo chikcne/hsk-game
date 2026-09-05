@@ -1,0 +1,29 @@
+{
+  "audio": "82c06aef8dc7aa31576d1db52eb1746cd0cee49dfe607a453db9272ad0b07376.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "按",
+  "id": "e167d0dd249cd1746e6d46ad",
+  "level": 4,
+  "meaning": "to press, to push; according to",
+  "pinyin": "àn",
+  "pos": "verb、preposition",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-r{(W9t2UAr-1779527159809"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

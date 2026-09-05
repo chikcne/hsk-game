@@ -1,0 +1,29 @@
+{
+  "audio": "733f38140e4560b4993b4a12e7a4727ca4e7877f9528c457bedd1322d3cfe278.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "导致",
+  "id": "fc0b9b6c41c456d1d4377dfd",
+  "level": 5,
+  "meaning": "to cause, to lead to; director",
+  "pinyin": "dǎozhì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-CT!%ok(IQ&-1779527161058"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

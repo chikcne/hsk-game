@@ -1,0 +1,32 @@
+{
+  "audio": "2156c1d222f99b8dbe9c77ba62a0e4a7c7f6660986fae4a5d66cd0ae125cd3c9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "球",
+      "迷"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "球迷",
+  "id": "b2362d343ea72bbe1317e491",
+  "level": 4,
+  "meaning": "fan, sports enthusiast",
+  "pinyin": "qiúmí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p*4;ywH361-1779527160395"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

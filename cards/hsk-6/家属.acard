@@ -1,0 +1,32 @@
+{
+  "audio": "c6e22ce2ecd874e5e5d90245b5a833b06185732483a4386f0bbcbd1064dbc46f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "家",
+      "属"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "家属",
+  "id": "b2befd09ed4e3a05e37be7a6",
+  "level": 6,
+  "meaning": "family member",
+  "pinyin": "jiāshǔ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-634-1779527163037"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

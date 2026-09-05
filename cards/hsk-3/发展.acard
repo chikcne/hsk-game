@@ -1,0 +1,31 @@
+{
+  "audio": "2675d020e45c3bdc9f5198e2ed562aab4982df793471ade5e2726cb6db2ecbe6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发展",
+  "id": "78052fa866b6250ee6f602ef",
+  "level": 3,
+  "meaning": "to develop",
+  "pinyin": "fāzhǎn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-lv[IwRtJZ.-1779527159421"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

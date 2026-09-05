@@ -1,0 +1,31 @@
+{
+  "audio": "857504ba1802b7a818a1ce0781d76aa11b500580b73ea74d3ede6b6a573d448f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "如"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "如何",
+  "id": "09aa3b53d3151b8961e1c105",
+  "level": 5,
+  "meaning": "how, what",
+  "pinyin": "rúhé",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GYr@V*?j9l-1779527161737"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

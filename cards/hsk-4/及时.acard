@@ -1,0 +1,32 @@
+{
+  "audio": "055dc5618a6fe6b90e0053cd2ae5e008309aa255d22f876bf9cabe70c26bd4eb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "及",
+      "时"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "及时",
+  "id": "2690aea7fa5e79df4f5e640c",
+  "level": 4,
+  "meaning": "timely, prompt, in time; without delay, promptly, in a timely manner",
+  "pinyin": "jíshí",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-AazYGDy/]d-1779527160128"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "69b223a79d9e863bc1c76b27120a6b65936919fed9d6683972a8288d74f3bb61.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "变",
+      "转"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "转变",
+  "id": "a53b762988cdf6d9d4c50153",
+  "level": 5,
+  "meaning": "to change, to transform",
+  "pinyin": "zhuǎnbiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-I9W5Y@4Tva-1779527162361"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

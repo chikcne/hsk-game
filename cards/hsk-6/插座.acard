@@ -1,0 +1,32 @@
+{
+  "audio": "8595e8077641f272922f763b74428e8b9120ffed85e9869eb869630cf08b8c7d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "座",
+      "插"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "插座",
+  "id": "f69530e1437e8307005eb69a",
+  "level": 6,
+  "meaning": "socket, outlet",
+  "pinyin": "chāzuò",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-119-1779527162522"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "361f320120e46ea1ee7f5002385d20f8149c1e65822a63634ca808557435f1d4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "约"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大约",
+  "id": "6a3444ba9da1f735c473e6f1",
+  "level": 4,
+  "meaning": "approximately, about",
+  "pinyin": "dàyuē",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-lSgV}]LnHf-1779527159932"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

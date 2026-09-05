@@ -1,0 +1,31 @@
+{
+  "audio": "b33e952152d8971c1d3a24bdd9a7c276b475c8946b1ea53360035cd6eb1c891d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "败"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "击败",
+  "id": "fb24cecbf2dbc2f5cbf1aa27",
+  "level": 6,
+  "meaning": "to defeat",
+  "pinyin": "jībài",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-603-1779527163006"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

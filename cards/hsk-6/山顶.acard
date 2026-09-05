@@ -1,0 +1,32 @@
+{
+  "audio": "ab30404568ed0f1f893817daea9c5751bb86cde4a103c4d4a8aeef82c8345be8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "山",
+      "顶"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "山顶",
+  "id": "d45e24036b7c8b1611bc3452",
+  "level": 6,
+  "meaning": "mountaintop",
+  "pinyin": "shāndǐng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1137-1779527163540"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

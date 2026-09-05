@@ -1,0 +1,32 @@
+{
+  "audio": "8dd5a89755f3a58acff2d3256e5fd2b7d34226b42a72cda0328eded4d9077b71.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "录",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "录用",
+  "id": "79aa4d9a8a57eebdb7814dd2",
+  "level": 6,
+  "meaning": "to hire, to recruit",
+  "pinyin": "lùyòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-868-1779527163271"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

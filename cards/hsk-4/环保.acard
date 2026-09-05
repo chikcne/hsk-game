@@ -1,0 +1,32 @@
+{
+  "audio": "a03c5fee0934fd3a632fa76b73ebd775b665a05af5045774398395f9282faceb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "保",
+      "环"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "环保",
+  "id": "36c39227d89ffed6d33284ef",
+  "level": 4,
+  "meaning": "environmental protection; environmentally friendly, green",
+  "pinyin": "huánbǎo",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-MVs[mB2!s#-1779527160108"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

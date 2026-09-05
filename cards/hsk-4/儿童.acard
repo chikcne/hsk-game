@@ -1,0 +1,29 @@
+{
+  "audio": "18b81142111b3561ea38d255403bd0d18cbf24759c17e0d69f90e62aa3a926e8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "儿童",
+  "id": "bb1c05924785ea18c7bf7a8c",
+  "level": 4,
+  "meaning": "child",
+  "pinyin": "értóng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xJA))Yf%Qw-1779527159987"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

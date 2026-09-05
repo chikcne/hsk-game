@@ -1,0 +1,31 @@
+{
+  "audio": "f5d776fec6a250324f4d660903abbe6f5752a9c8a3aa89464cbbe5b59de26655.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "毛"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "眉毛",
+  "id": "cccad3be861a2f087eb24d2b",
+  "level": 6,
+  "meaning": "eyebrow",
+  "pinyin": "méimao",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-898-1779527163301"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

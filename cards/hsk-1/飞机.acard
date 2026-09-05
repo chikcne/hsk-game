@@ -1,0 +1,31 @@
+{
+  "audio": "584e1a97a17184114244b66962e6748f51f734980466076fd9421fdb4e2cf4a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "飞"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "飞机",
+  "id": "3dda47154f3bd2dcbdc2438e",
+  "level": 1,
+  "meaning": "airplane",
+  "pinyin": "fēijī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-j*lc93ULZt-1779527158857"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "50ffaf614152e39526d68f7671488899f63cd207a4f5e6160908ebc5b878ac83.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "图",
+      "地"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地图",
+  "id": "08d3aeabffeb0dae851e51b1",
+  "level": 3,
+  "meaning": "map",
+  "pinyin": "dìtú",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-OnniSstdnr-1779527159395"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "f3068ab356b9c4dc434e1b31ed344f2dba38d6fb4dfaffef350bb29039249f37.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "克",
+      "风"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "麦克风",
+  "id": "eae7372cb18bf3e3b24b0be6",
+  "level": 6,
+  "meaning": "microphone",
+  "pinyin": "màikèfēng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-889-1779527163292"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

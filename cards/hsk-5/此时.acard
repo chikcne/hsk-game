@@ -1,0 +1,32 @@
+{
+  "audio": "78143f209290d36163058fb77596206fca8c842128eb8a9f77a740c410d97ef4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时",
+      "此"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "此时",
+  "id": "fa0e57de57f3f66ee1a62f2e",
+  "level": 5,
+  "meaning": "at this moment",
+  "pinyin": "cǐshí",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-h58_f{aeGk-1779527161001"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

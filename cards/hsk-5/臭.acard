@@ -1,0 +1,29 @@
+{
+  "audio": "9132a30986fd79b2a58aa3d99dca6ca386a184283c59489402bcbd20d33825ae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "臭",
+  "id": "019bf4a5d4291761ddfa1925",
+  "level": 5,
+  "meaning": "smelly, stinky",
+  "pinyin": "chòu",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-s>mKd2?7vZ-1779527160972"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

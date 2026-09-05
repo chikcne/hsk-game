@@ -1,0 +1,29 @@
+{
+  "audio": "066a5769ba62dbab4a09ad2bc3936457d19583620c9bae8a4a66d1d3c783c070.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "想",
+  "id": "c1e3de58772f731676d518cf",
+  "level": 1,
+  "meaning": "to think; to want",
+  "pinyin": "xiǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-v^q~I]2<Fr-1779527159036"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

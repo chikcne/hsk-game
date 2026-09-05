@@ -1,0 +1,32 @@
+{
+  "audio": "5a09cdacb9f603c64d182f2bc5e723ff351227ebef3cbf27ed5d5dff2daf66ef.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "提",
+      "问"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "提问",
+  "id": "6a80e153f39675f186679f8e",
+  "level": 5,
+  "meaning": "to ask a question",
+  "pinyin": "tíwèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-vxz|M5Dnt]-1779527161921"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

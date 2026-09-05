@@ -1,0 +1,29 @@
+{
+  "audio": "815f5501282ba21dafa8d0dc48a478b022f4420967a77ab437ef3c47ba766e2f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "款",
+  "id": "9bc5df21a4c1f9cd9cef3632",
+  "level": 6,
+  "meaning": "sum of money; measure word for items",
+  "pinyin": "kuǎn",
+  "pos": "名、量",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-805-1779527163208"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

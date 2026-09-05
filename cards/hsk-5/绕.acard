@@ -1,0 +1,29 @@
+{
+  "audio": "7dc561baa1d812802a83bc4baaa7826996919adfd9d5edfbfadbe14bf2209c6d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "绕",
+  "id": "b70bbc5a82a4aeeea9195ba0",
+  "level": 5,
+  "meaning": "to go around, to circle",
+  "pinyin": "rào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-knF}Y^}h`^-1779527161715"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

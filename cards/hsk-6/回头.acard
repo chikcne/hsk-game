@@ -1,0 +1,32 @@
+{
+  "audio": "6929deec461db37c593eebdca81428c1078f0b93e17fd26cae635fd3ee177e1f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "回",
+      "头"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "回头",
+  "id": "84c82709bb22124cc966dc40",
+  "level": 6,
+  "meaning": "to turn around; later; if",
+  "pinyin": "huítóu",
+  "pos": "动、副、连",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-587-1779527162990"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

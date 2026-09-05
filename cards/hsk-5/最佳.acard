@@ -1,0 +1,31 @@
+{
+  "audio": "4ce19c652e9b2362fd36035f1fe4d4b08925a0d58cfb4ef76c312a0db86948b9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "最"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "最佳",
+  "id": "b4e93c3abb950eb1d3936fe3",
+  "level": 5,
+  "meaning": "best",
+  "pinyin": "zuìjiā",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-MwY8_OP%%[-1779527162400"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

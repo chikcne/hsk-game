@@ -1,0 +1,32 @@
+{
+  "audio": "124c1bcb04cd426f3dd0ff31d39fba0aedde3250dc3365c9305f35fe10f21774.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "占",
+      "据"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "占据",
+  "id": "0675b56548df572529bbd074",
+  "level": 6,
+  "meaning": "to occupy",
+  "pinyin": "zhànjù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1661-1779527164064"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

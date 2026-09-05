@@ -1,0 +1,32 @@
+{
+  "audio": "511d563511056669816ec6d5f6d21fcffa6ff118368ab30595a83f69ee975b5f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "树",
+      "立"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "树立",
+  "id": "cf2cf5d8d0d98cc840434788",
+  "level": 6,
+  "meaning": "to establish",
+  "pinyin": "shùlì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1227-1779527163630"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "946af1faf49f53c3669b0159c987a868133275da1d2e63381c38d0b6a9126100.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "制",
+  "id": "31cd703ab04a89c4fd33bc68",
+  "level": 6,
+  "meaning": "to produce, to manufacture",
+  "pinyin": "zhì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1712-1779527164115"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "bf6e1d6871f81457a9ead7020898d6e44249511619c98216ec551b096b8f0813.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生",
+      "考"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "考生",
+  "id": "fb6dd45cb599e672a4aa03e0",
+  "level": 4,
+  "meaning": "examinee",
+  "pinyin": "kǎoshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-v+HJD0{%-$-1779527160226"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "4af71ad5e78be1aea89890d372b679a73d6967207a833ffd3cbdb8e2bd7d04eb.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "实验",
+      "室"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实验室",
+  "id": "90fca24df17cd77c364ae486",
+  "level": 5,
+  "meaning": "laboratory",
+  "pinyin": "shíyànshì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-I,Mx*VW}v--1779527161826"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

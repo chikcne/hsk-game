@@ -1,0 +1,32 @@
+{
+  "audio": "a97b6ab1433078ea479ce258c528d9c7bce190c9aced9e016fff5b909ce70cc5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入",
+      "学"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "入学",
+  "id": "15373571ab6cafdb600e0054",
+  "level": 4,
+  "meaning": "to enter school, to enroll",
+  "pinyin": "rùxué",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-E`->:6a>ae-1779527160427"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

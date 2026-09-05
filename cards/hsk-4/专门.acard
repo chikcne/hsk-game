@@ -1,0 +1,31 @@
+{
+  "audio": "08b0827d96fee94edb3aa5a4204926e0a5c9fd370fc8c014318e5596ef2fe9e0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "门"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "专门",
+  "id": "d1bc9715d7bb1ccc01a9d6ed",
+  "level": 4,
+  "meaning": "specially, specifically; special",
+  "pinyin": "zhuānmén",
+  "pos": "adverb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-J0X*GQ.M7g-1779527160771"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

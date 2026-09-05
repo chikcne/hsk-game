@@ -1,0 +1,33 @@
+{
+  "audio": "a07d7e296955869a64ce7db132d713b09e9d6bf0b8b7946e1c1275bafa99c5ca.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "天",
+      "星期",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "星期天",
+  "id": "9d143f1721a924dbe7bc7e96",
+  "level": 1,
+  "meaning": "Sunday (casual)",
+  "pinyin": "xīngqītiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-tqu@5mWYwt-1779527159048"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

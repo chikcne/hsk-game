@@ -1,0 +1,31 @@
+{
+  "audio": "7791bbe8ddc5662abc952585354e42614bc035e8f21c99d8a84708bd1a3c41af.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "手"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "手续",
+  "id": "51176f2e9ceb3d2e29cc2fc9",
+  "level": 5,
+  "meaning": "procedure, formality",
+  "pinyin": "shǒuxù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-CabWD[3j$.-1779527161855"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

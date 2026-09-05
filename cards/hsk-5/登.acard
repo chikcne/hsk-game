@@ -1,0 +1,29 @@
+{
+  "audio": "3fcde208aa9038370687ccd9b95fd3409c76970c23e08f8fadf3b7f1166c91be.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "登",
+  "id": "b08909f039f9e93c787b12cf",
+  "level": 5,
+  "meaning": "to ascend, to board, to register",
+  "pinyin": "dēng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-CYF`K0`]6N-1779527161062"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

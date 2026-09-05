@@ -1,0 +1,31 @@
+{
+  "audio": "1e3b8ddd7488c229e111dd673887f6a176f416869200408909fda3171f7a4858.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "激动",
+  "id": "abb7862edc480866fbef57e4",
+  "level": 4,
+  "meaning": "excited, agitated, emotionally moved; to excite, to agitate, to move (emotionally)",
+  "pinyin": "jīdòng",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-IKF6cz?b}e-1779527160125"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "fb405eac7069343e308203f7919a9035183f45fec441018f57c034df91575369.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "周",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "周期",
+  "id": "fd5fcbdadd9ce91e849390db",
+  "level": 6,
+  "meaning": "cycle, period",
+  "pinyin": "zhōuqī",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1740-1779527164143"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

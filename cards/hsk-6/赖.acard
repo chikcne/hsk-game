@@ -1,0 +1,29 @@
+{
+  "audio": "e4f4fbacfa54bb69059d8553373af665376565a64b1c304213076e7f0fcf1db0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赖",
+  "id": "515c6611d31babfee53b6dc4",
+  "level": 6,
+  "meaning": "bad; to rely on, to depend on",
+  "pinyin": "lài",
+  "pos": "形、动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-815-1779527163218"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

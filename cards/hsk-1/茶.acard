@@ -1,0 +1,29 @@
+{
+  "audio": "300a1724d31bb1864d73b25fe91f740c8c13c6c8c6eed874a57395cf4a90f892.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "茶",
+  "id": "e523a95ebc3277baf3f3f4ee",
+  "level": 1,
+  "meaning": "tea",
+  "pinyin": "chá",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-E~,jx}:Bz?-1779527158820"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

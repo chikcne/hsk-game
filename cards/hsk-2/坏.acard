@@ -1,0 +1,29 @@
+{
+  "audio": "0f014e57f8d5ac84ac5c525676f8231e599612dcff8a38a14a8dab2a10aaa0b8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "坏",
+  "id": "6be995bf18d16f504e848433",
+  "level": 2,
+  "meaning": "bad, broken",
+  "pinyin": "huài",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-BNIp(HRh!_-1779527159163"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

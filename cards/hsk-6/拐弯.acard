@@ -1,0 +1,32 @@
+{
+  "audio": "5cba899f78e6285e9fc9b76448a8eb483ec3e1109dca07e2062e576c63edcdaf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "弯",
+      "拐"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拐弯",
+  "id": "1f9fdda29f1f51ad12cb5630",
+  "level": 6,
+  "meaning": "to turn a corner",
+  "pinyin": "guǎiwān",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-487-1779527162890"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

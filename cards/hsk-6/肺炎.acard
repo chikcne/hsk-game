@@ -1,0 +1,31 @@
+{
+  "audio": "37835fb349453a93240f54b4f68ffa7cc8c0cd26d9550acc8897eb047c732211.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "肺"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "肺炎",
+  "id": "93dce6661a2c8106d0c24cb6",
+  "level": 6,
+  "meaning": "pneumonia",
+  "pinyin": "fèiyán",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-383-1779527162786"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

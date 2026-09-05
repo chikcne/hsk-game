@@ -1,0 +1,29 @@
+{
+  "audio": "b7b015eba99e9200c7418f1fdea99c6844e7f5575e027e35fe80a55b5c7824d3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "翻",
+  "id": "f2fc8d5ac78c3b7a2a327b3d",
+  "level": 5,
+  "meaning": "to turn over, to flip",
+  "pinyin": "fān",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ycN]|sTjXk-1779527161130"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

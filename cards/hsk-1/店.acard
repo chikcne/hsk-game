@@ -1,0 +1,29 @@
+{
+  "audio": "00bf67d1e5dde5b4019a6006df2793cb19275975efcc7700f5276ede73d968e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "店",
+  "id": "bf65087d5f5083390032055d",
+  "level": 1,
+  "meaning": "shop, store",
+  "pinyin": "diàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-w}:gyr`^;/-1779527158837"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

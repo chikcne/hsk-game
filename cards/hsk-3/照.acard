@@ -1,0 +1,29 @@
+{
+  "audio": "c16827efd17a370898167ca1f97d95b65be9d16c08375a25ad3675de4d1e8d3c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "照",
+  "id": "e15e6ff0ff91cf363b8e2fb1",
+  "level": 3,
+  "meaning": "to shine, to photograph",
+  "pinyin": "zhào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-M)D,Cw*-6)-1779527159773"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

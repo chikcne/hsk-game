@@ -1,0 +1,29 @@
+{
+  "audio": "ba5084295ff7e9ac14aef2d263d2122b861339650894edc8cee3e0370b4ba157.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "干",
+  "id": "51a73c2c8c0e3f78fdda12da",
+  "level": 3,
+  "meaning": "to do, to work",
+  "pinyin": "gàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-L.GXMWGdd)-1779527159443"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

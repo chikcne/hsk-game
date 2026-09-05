@@ -1,0 +1,32 @@
+{
+  "audio": "529b98e1bf327af76437c2b1758c8e63a06436411c47896fc05860eaf310ad57.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "学",
+      "期"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学期",
+  "id": "b962461f877e09870c793dfa",
+  "level": 3,
+  "meaning": "semester",
+  "pinyin": "xuéqī",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-wX[=g{T^7N-1779527159718"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

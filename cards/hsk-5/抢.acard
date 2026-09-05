@@ -1,0 +1,29 @@
+{
+  "audio": "c6008ee0e33c0f7ac32b00930479bdc92e844a08ccc420e3f4aa07a96e25a3d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "抢",
+  "id": "3bfc8b3461267ae60d9d95bc",
+  "level": 5,
+  "meaning": "to snatch, to grab",
+  "pinyin": "qiǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-NdSjvc;duS-1779527161677"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

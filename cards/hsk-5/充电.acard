@@ -1,0 +1,31 @@
+{
+  "audio": "8fa7cc550d9c2f0d26feafbb22dda8fb6970a1f9587bc8228c7e95d0c3d3ff12.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "电"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "充电",
+  "id": "7561503ff183991d116d8da8",
+  "level": 5,
+  "meaning": "to charge",
+  "pinyin": "chōngdiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-IEr^u1NL0z-1779527160962"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

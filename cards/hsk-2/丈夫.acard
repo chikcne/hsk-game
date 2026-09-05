@@ -1,0 +1,29 @@
+{
+  "audio": "65cc0aacd11132f4ccfafb998819c4c1c88a73c61bff802a501ed31593c65670.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "丈夫",
+  "id": "a4abd7ad4c3a268f316fe632",
+  "level": 2,
+  "meaning": "husband",
+  "pinyin": "zhàngfu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-Wz$4kPjm-1779527159290"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

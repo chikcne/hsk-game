@@ -1,0 +1,29 @@
+{
+  "audio": "bff6247f4055ce794914dc9d646b2c1c5a8075137497a92d6e01840ca72b1b31.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "经济",
+  "id": "672f763ac3e1f7866f08bde5",
+  "level": 4,
+  "meaning": "economy, economics; economical, affordable",
+  "pinyin": "jīngjì",
+  "pos": "noun、 （adjective）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-hL(Pul^y{4-1779527160199"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "e10f77ba98933a2bfc19d9457950b67486a56e07c26166047db6d565299caf2c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "间"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中间",
+  "id": "190a0201685e866d43f33b45",
+  "level": 3,
+  "meaning": "middle, between",
+  "pinyin": "zhōngjiān",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-V-z|cMZ{*-1779527159785"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

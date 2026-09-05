@@ -1,0 +1,29 @@
+{
+  "audio": "8bdafb2c646779fb9012fa7db4149772f1b0120e7d10ab537ad48d292bf441a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "忘",
+  "id": "40e88afd3f5a4668afe380a2",
+  "level": 2,
+  "meaning": "to forget",
+  "pinyin": "wàng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-tIn]A>y<7Y-1779527159255"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

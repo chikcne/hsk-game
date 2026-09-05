@@ -1,0 +1,32 @@
+{
+  "audio": "bb039a0c09d68d0cfd82ec660513f198541a3c4495e85b8b45c7b0ac45d6e9d0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "电",
+      "闪"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "闪电",
+  "id": "63c15693b8956ca119baf4fa",
+  "level": 6,
+  "meaning": "lightning",
+  "pinyin": "shǎndiàn",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1141-1779527163544"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

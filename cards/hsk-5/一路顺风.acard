@@ -1,0 +1,35 @@
+{
+  "audio": "81e8d32ad477acaa28d8a1a89c48b62154b5ee8a53cecc1a90a000906657bfe6.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "一路",
+      "路",
+      "顺",
+      "风"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一路顺风",
+  "id": "1b9706795696da7c606fca10",
+  "level": 5,
+  "meaning": "bon voyage, have a safe trip",
+  "pinyin": "yílù-shùnfēng",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G*,)#M{!/s-1779527162161"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

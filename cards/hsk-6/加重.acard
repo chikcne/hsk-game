@@ -1,0 +1,32 @@
+{
+  "audio": "649ad254f62c4f8aa80239d21ad1f402f98f1542224c7953255e0746c8f1df09.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "加",
+      "重"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "加重",
+  "id": "ef57bf35585750746bdb7e93",
+  "level": 6,
+  "meaning": "to increase in weight, to aggravate",
+  "pinyin": "jiāzhòng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-637-1779527163040"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

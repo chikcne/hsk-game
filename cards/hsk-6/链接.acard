@@ -1,0 +1,31 @@
+{
+  "audio": "247fffddbd8bec68be5af66b70c4a642fbb6400059ce4300bb8237c3d75833e3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "接"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "链接",
+  "id": "eacc2aaebcd6072f2c284729",
+  "level": 6,
+  "meaning": "to link",
+  "pinyin": "liànjiē",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-846-1779527163249"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

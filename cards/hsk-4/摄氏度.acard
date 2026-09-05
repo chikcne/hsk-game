@@ -1,0 +1,31 @@
+{
+  "audio": "3fe40ba8f4d1cb2b9f68a6101fe2a6dffbe56d9f7e030b885bf3c5778dbb4627.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "度"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "摄氏度",
+  "id": "dba5d69b3da6de22031f61c4",
+  "level": 4,
+  "meaning": "degrees Celsius",
+  "pinyin": "shèshìdù",
+  "pos": "classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I,[dS67:*W-1779527160443"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

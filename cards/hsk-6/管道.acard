@@ -1,0 +1,32 @@
+{
+  "audio": "c0a3f728cb5f90b2e0422c9410d6ce5d0d5892a4040fdd280516b5d944cd7e5d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "管",
+      "道"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "管道",
+  "id": "ba32e5719a4878acd93983c3",
+  "level": 6,
+  "meaning": "pipe, tubing",
+  "pinyin": "guǎndào",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-496-1779527162899"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

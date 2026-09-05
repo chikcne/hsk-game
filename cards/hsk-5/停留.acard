@@ -1,0 +1,32 @@
+{
+  "audio": "6b4cbcbeaf2f53a4130c6d7dbf10775a37ec5296c1c8330147463315aa145490.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "停",
+      "留"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "停留",
+  "id": "8fc72697efe98ee021d01355",
+  "level": 5,
+  "meaning": "to stay, to remain",
+  "pinyin": "tíngliú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-BF)1+mxCS?-1779527161941"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

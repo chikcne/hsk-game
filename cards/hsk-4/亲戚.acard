@@ -1,0 +1,31 @@
+{
+  "audio": "aad6d7f8893ee7e297435bcfd672d43701c4b7a53b6aa87d2b7e2964c5ff7baa.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "亲"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "亲戚",
+  "id": "6c825bf4881d256d817f2d15",
+  "level": 4,
+  "meaning": "relative, relative family member",
+  "pinyin": "qīnqi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Jk>qJ_bs=!-1779527160387"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

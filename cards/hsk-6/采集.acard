@@ -1,0 +1,31 @@
+{
+  "audio": "41757ffc48ca0d85a6d690af74b036aeaa24528b65ccd5d259aa2fb7352b87c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "集"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "采集",
+  "id": "06e28929632448dbee7600c1",
+  "level": 6,
+  "meaning": "to collect, to gather",
+  "pinyin": "cǎijí",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-104-1779527162507"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

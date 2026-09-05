@@ -1,0 +1,31 @@
+{
+  "audio": "f9f6e2a7996569df2d49c0bf13bc1a5ebea1e2272761334511c906e58a4ccefe.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "总"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "总裁",
+  "id": "6d658b3f405c38d9af334b36",
+  "level": 6,
+  "meaning": "CEO, president",
+  "pinyin": "zǒngcái",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1787-1779527164190"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

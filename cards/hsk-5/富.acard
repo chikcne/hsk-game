@@ -1,0 +1,29 @@
+{
+  "audio": "57ca23ccec50c218e68829e36dc6fa00008231832766aa18481828bf7cef007c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "富",
+  "id": "05c6d825d7f3e3a3ad9c8283",
+  "level": 5,
+  "meaning": "rich, wealthy",
+  "pinyin": "fù",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-OLh0*mzgPM-1779527161173"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

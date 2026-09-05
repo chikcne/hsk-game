@@ -1,0 +1,31 @@
+{
+  "audio": "9bf40becffd4d9646dfc6315bfba7709eaf9ad1956f215ecac6be1e7f944cc4a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "费"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "浪费",
+  "id": "cd32e0f761642a5b76d595f3",
+  "level": 4,
+  "meaning": "to waste, to squander",
+  "pinyin": "làngfèi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-xWDR5jNP4#-1779527160256"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

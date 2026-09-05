@@ -1,0 +1,32 @@
+{
+  "audio": "67a94add23180e40ab0cb5a0ba51d72b9772aba8d6f8aeda878dae3605a39361.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "推",
+      "迟"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "推迟",
+  "id": "2be5e443f4b3f2ae81b88ecc",
+  "level": 4,
+  "meaning": "to postpone, to delay",
+  "pinyin": "tuīchí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-zk}8R}uGf4-1779527160559"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

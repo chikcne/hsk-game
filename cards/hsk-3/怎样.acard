@@ -1,0 +1,31 @@
+{
+  "audio": "8d974f19c6ebb795a86d1ed3ae0ed1c836cb16fc3923b075da07e9b80260a2e4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "样"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "怎样",
+  "id": "5db3ab200b54b028c9f6aed6",
+  "level": 3,
+  "meaning": "how",
+  "pinyin": "zěnyàng",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Ho1,N_yh`?-1779527159768"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

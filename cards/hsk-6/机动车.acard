@@ -1,0 +1,33 @@
+{
+  "audio": "375703a68106df786664b8e1d238762a52572dd8dad568ccd93fe7cc3290fe22.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "动车",
+      "车"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "机动车",
+  "id": "bf4e064172b8d2cb615c1be8",
+  "level": 6,
+  "meaning": "motor vehicle",
+  "pinyin": "jīdòngchē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-605-1779527163008"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

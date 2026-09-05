@@ -1,0 +1,32 @@
+{
+  "audio": "9cc55b88aaa8b60be9498e8676930b347f0546037c9b02b9037aca93213f5ab8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "张",
+      "紧"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "紧张",
+  "id": "8e91c4dff7437c964d6ffd7f",
+  "level": 4,
+  "meaning": "nervous, tense, strained, in short supply",
+  "pinyin": "jǐnzhāng",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-lr3f>?%~r+-1779527160194"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

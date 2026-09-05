@@ -1,0 +1,29 @@
+{
+  "audio": "4789f48af1278ba12de232b2dfcf47ed5ec79f2fca7b8c58b3d1dd2be80dad65.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "物体",
+  "id": "5be4f4b72d0dc6434f171703",
+  "level": 6,
+  "meaning": "object, body",
+  "pinyin": "wùtǐ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1401-1779527163804"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

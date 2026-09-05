@@ -1,0 +1,32 @@
+{
+  "audio": "12a14d8a8e2e1594fa7b1ebe29e0cb33910f60fa6e3ebc4ee38767de6a01e6bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "改",
+      "正"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "改正",
+  "id": "47c3fb5b571238bcff859fde",
+  "level": 5,
+  "meaning": "to correct",
+  "pinyin": "gǎizhèng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-zSO#3%.etl-1779527161183"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

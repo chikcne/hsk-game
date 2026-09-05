@@ -1,0 +1,29 @@
+{
+  "audio": "adde960163ddee263cd561fea45407cf9eaacb3ea7b84dc78285206db7890ff2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "式",
+  "id": "4b3cd6eacf5a9be482de0268",
+  "level": 5,
+  "meaning": "suffix meaning style, type",
+  "pinyin": "shì",
+  "pos": "suffix",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-B9IJ$RJk!*-1779527161831"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

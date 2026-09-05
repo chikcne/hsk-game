@@ -1,0 +1,32 @@
+{
+  "audio": "b763fab954df7ec865aac2e27dd319f253a384b4c58e925000da31d80f17b021.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场",
+      "球"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "球场",
+  "id": "29ca7fb8e58f99baa9488e2e",
+  "level": 3,
+  "meaning": "sports field, court",
+  "pinyin": "qiúchǎng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-OI!l!G/4.2-1779527159614"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

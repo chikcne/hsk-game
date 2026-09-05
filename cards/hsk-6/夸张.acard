@@ -1,0 +1,32 @@
+{
+  "audio": "38392a94fcc8cafc362ddacd3ccc53b07dc0bac6420541ed8930648034deaed0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "夸",
+      "张"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夸张",
+  "id": "2e84a1eef6dccfa05abd0e2f",
+  "level": 6,
+  "meaning": "exaggerated",
+  "pinyin": "kuāzhāng",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-802-1779527163205"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

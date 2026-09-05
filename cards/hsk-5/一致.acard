@@ -1,0 +1,31 @@
+{
+  "audio": "f47892a3377a9c984db5d59db8d4276dd4d466eb350679220eae1ce079ae1b33.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一致",
+  "id": "3f9149571a6029bac811e28b",
+  "level": 5,
+  "meaning": "consistent, unanimous; consistently",
+  "pinyin": "yízhì",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-nIS,;ZpNT:-1779527162163"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "aaa21a434d5b352d6e2d0fcf16097fe001191493fae2ed418f66978ae73c6224.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "料"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不料",
+  "id": "7da3d4eeac54bf670df991b9",
+  "level": 6,
+  "meaning": "unexpectedly, to one’s surprise",
+  "pinyin": "búliào",
+  "pos": "连",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-69-1779527162472"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

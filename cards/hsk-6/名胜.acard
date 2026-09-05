@@ -1,0 +1,32 @@
+{
+  "audio": "6a2287305ce0ba3e03ebd5bf0bf54de13ccb963f6ae3d672be086dff01deb067.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名",
+      "胜"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "名胜",
+  "id": "1b9566b37efb62480c150371",
+  "level": 6,
+  "meaning": "famous scenic spot",
+  "pinyin": "míngshèng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-928-1779527163331"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "c59dc489be957193c4f43044857e1f55740d7a10217fa1e31cc9329fb5790349.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "不",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "不行",
+  "id": "bae84acf253752e87c3b70f4",
+  "level": 3,
+  "meaning": "not allowed, won't do; not good",
+  "pinyin": "bùxíng",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-jc#[i$j%)G-1779527159346"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

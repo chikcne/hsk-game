@@ -1,0 +1,32 @@
+{
+  "audio": "f9a63f66a56d117614b83c9e69f55c65e05d680af694d3202efa0db07924fd79.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "原",
+      "因"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "原因",
+  "id": "0252bda12bd6dbf7598a52af",
+  "level": 4,
+  "meaning": "cause, reason",
+  "pinyin": "yuányīn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-I345FY5yf1-1779527160705"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

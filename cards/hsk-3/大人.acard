@@ -1,0 +1,32 @@
+{
+  "audio": "9a3cbd291d8d07b8232a8d9ccf8f21e4c2c46bfd32f831f66151b9f8242d3114.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "大"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "大人",
+  "id": "38a4c6f4aa260a765d96d4b5",
+  "level": 3,
+  "meaning": "adult",
+  "pinyin": "dàren",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-EC6,Ol-Y:P-1779527159377"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

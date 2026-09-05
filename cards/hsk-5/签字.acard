@@ -1,0 +1,32 @@
+{
+  "audio": "998f56b647806bb15c5c50a37e2d3a5cb6839dff85917223c8da38fee68b828d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "字",
+      "签"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "签字",
+  "id": "228cc611f3dee818332d1b9d",
+  "level": 5,
+  "meaning": "to sign; signature",
+  "pinyin": "qiānzì",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-F;37=A*)hD-1779527161665"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "53259c7c848cf72553a2b4cc94ead46220b43475912026cc5d875f2b0495869e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "大",
+      "强"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "强大",
+  "id": "b582870da997409ec428df3f",
+  "level": 5,
+  "meaning": "strong, powerful",
+  "pinyin": "qiángdà",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-gO:*j:+7K?-1779527161673"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

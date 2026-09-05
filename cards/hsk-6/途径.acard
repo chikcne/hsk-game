@@ -1,0 +1,29 @@
+{
+  "audio": "0346bbd575a5e1a565a74e5bdad6b1c20012aff82fef2c1931e6873a06bfef30.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "途径",
+  "id": "cdff3dc2b6e4fcca0234c585",
+  "level": 6,
+  "meaning": "way, channel",
+  "pinyin": "tújìng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1331-1779527163734"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

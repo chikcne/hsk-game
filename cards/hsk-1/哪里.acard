@@ -1,0 +1,32 @@
+{
+  "audio": "978f097a8a9fd97aab990597c7b4671d1553a5d97821dff5f7b81d8961de8a71.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "哪",
+      "里"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "哪里",
+  "id": "ae94a5cfc759e491cf1c851d",
+  "level": 1,
+  "meaning": "where (formal)",
+  "pinyin": "nǎlǐ",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-OcRD,Z(Np}-1779527158936"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

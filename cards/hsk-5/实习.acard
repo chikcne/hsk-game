@@ -1,0 +1,29 @@
+{
+  "audio": "1912558939403e09d7263e76fcc47959fdd44eb21483fb2fed5cccbf12ddb86e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实习",
+  "id": "5779694d9ebc9ea9ac61bc91",
+  "level": 5,
+  "meaning": "to intern, to practice",
+  "pinyin": "shíxí",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M{0_SWHnD9-1779527161822"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

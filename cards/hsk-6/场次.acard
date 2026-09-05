@@ -1,0 +1,32 @@
+{
+  "audio": "2e559cfcb09d12cebc6dcd861b90659c1cda49031a04122e19d51837a452f4c8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "场",
+      "次"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "场次",
+  "id": "b01b1bc0fd5db5a036924fdb",
+  "level": 6,
+  "meaning": "number of performances, sessions",
+  "pinyin": "chǎngcì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-130-1779527162533"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

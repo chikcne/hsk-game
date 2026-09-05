@@ -1,0 +1,29 @@
+{
+  "audio": "0aae8edbd19d7d83813475951848c496be72a52bac392cb719c16f12061648da.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "气",
+  "id": "0430b0db46cdbe5a3876d5ee",
+  "level": 4,
+  "meaning": "air, gas, breath; to anger, to make angry",
+  "pinyin": "qì",
+  "pos": "noun、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-enr})xgzzH-1779527160373"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

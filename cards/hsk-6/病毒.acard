@@ -1,0 +1,32 @@
+{
+  "audio": "d5bd75b64d4b8beeb9645a0a982ec8355767539c816460a9cc3d0d0e3e363802.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "毒",
+      "病"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "病毒",
+  "id": "fb774c705e6e7e8ec44ee6b9",
+  "level": 6,
+  "meaning": "virus",
+  "pinyin": "bìngdú",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-61-1779527162464"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

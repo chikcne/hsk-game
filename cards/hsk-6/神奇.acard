@@ -1,0 +1,31 @@
+{
+  "audio": "b2485bb730a10e4922f0944c3b30e6e3af9c27778c0671d6d9407fe47df9c6a0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "神"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "神奇",
+  "id": "abc63cd39b1945fcfcf8341b",
+  "level": 6,
+  "meaning": "magical",
+  "pinyin": "shénqí",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1167-1779527163570"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

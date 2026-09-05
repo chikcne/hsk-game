@@ -1,0 +1,32 @@
+{
+  "audio": "801ad59d4d0ca6b278f42440a4a8503cce82ffe2c96d9775ffe1cc116ed6a8c5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "刻",
+      "立"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "立刻",
+  "id": "18eaa004affe9d4129b6520a",
+  "level": 5,
+  "meaning": "immediately",
+  "pinyin": "lìkè",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u23<A>f</I-1779527161509"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

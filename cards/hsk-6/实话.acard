@@ -1,0 +1,29 @@
+{
+  "audio": "04a8167091959162d92be84622b0fdcd70f0139ec31d0184679ea81cc99247ae.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "实话",
+  "id": "8505b0cdc77e81865bc5648e",
+  "level": 6,
+  "meaning": "truth",
+  "pinyin": "shíhuà",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1185-1779527163588"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "03b56cf4e5f45dcc2ddbc7f553bfdca2c3e0dd29149d1e9951d8d2387b5476f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "生",
+      "病"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "生病",
+  "id": "c3e043072601144f41bdcdfa",
+  "level": 1,
+  "meaning": "to get sick",
+  "pinyin": "shēngbìng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-isrH)ky:Lb-1779527158986"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

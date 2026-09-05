@@ -1,0 +1,31 @@
+{
+  "audio": "d12ee433d691d0eea55a39f42c102c7e0bac43d68576c68b9e5d03eb38660c24.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地质",
+  "id": "d086184c63c9d9e144fa924b",
+  "level": 6,
+  "meaning": "geology",
+  "pinyin": "dìzhì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-295-1779527162698"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

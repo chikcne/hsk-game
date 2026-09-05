@@ -1,0 +1,31 @@
+{
+  "audio": "8f6686d46b297ee065f70258efb8f331e1a4a0670c51519e47ec252658c7160d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "量"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "质量",
+  "id": "56a5f3047e1757832204ed32",
+  "level": 4,
+  "meaning": "quality",
+  "pinyin": "zhìliàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-s!q|17fn-c-1779527160758"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

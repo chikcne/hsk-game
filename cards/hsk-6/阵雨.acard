@@ -1,0 +1,32 @@
+{
+  "audio": "71eb716dc8b88264207be7413d24a28a78bc15e78188b0f53cd029f36e4f3f7f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "阵",
+      "雨"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "阵雨",
+  "id": "0c0f2b4e66360c6f0162b044",
+  "level": 6,
+  "meaning": "shower rain",
+  "pinyin": "zhènyǔ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1681-1779527164084"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

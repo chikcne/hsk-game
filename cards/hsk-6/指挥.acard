@@ -1,0 +1,32 @@
+{
+  "audio": "a410d7d41c604ff4fd25e42aef87ae4965e1e39b6ec1af5cfb25738bc7cf0e9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "指",
+      "挥"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "指挥",
+  "id": "0a9453524148ca917fde6bd1",
+  "level": 6,
+  "meaning": "to command; command, direction",
+  "pinyin": "zhǐhuī",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1709-1779527164112"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "3974ba8543bdb70c7449f02cf9bbdbf172dfe59c7b00e8e8dee938dd822de020.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "选"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "筛选",
+  "id": "4072d93f8e694ce6f461de6b",
+  "level": 6,
+  "meaning": "to screen, to filter",
+  "pinyin": "shāixuǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1136-1779527163539"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

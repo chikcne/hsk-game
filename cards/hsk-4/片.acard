@@ -1,0 +1,29 @@
+{
+  "audio": "fb97a9b1edad1a994b16c94a3f695a66c6db72dc5bfca2e8802c0958039a2ca3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "片",
+  "id": "7e547a814d0fac2d3652d2e9",
+  "level": 4,
+  "meaning": "piece, slice, area; measure word for flat objects",
+  "pinyin": "piàn",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-oN|:c}kI|Y-1779527160358"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

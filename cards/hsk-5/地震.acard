@@ -1,0 +1,31 @@
+{
+  "audio": "ce5a820e0fc6ed44fade8685df6cb35897fa9d186d929a2081a55e772782d053.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地震",
+  "id": "731269ead91088df1eaeb666",
+  "level": 5,
+  "meaning": "to have an earthquake",
+  "pinyin": "dìzhèn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-GBcd@kNxaP-1779527161078"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

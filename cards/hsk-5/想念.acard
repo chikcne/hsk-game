@@ -1,0 +1,32 @@
+{
+  "audio": "2ae30e26b4e837fd6f3cfde06725e58402ebf6c2e8f3ea330029e444bde08663.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "念",
+      "想"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "想念",
+  "id": "749eaff44230a12134ea5bab",
+  "level": 5,
+  "meaning": "to miss",
+  "pinyin": "xiǎngniàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EQbqG04!@e-1779527162056"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

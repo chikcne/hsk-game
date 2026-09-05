@@ -1,0 +1,32 @@
+{
+  "audio": "c92bc702d7aa8e303d74bc9f2c94b8a0eeaf9c701bc203d5c69abfd068a48452.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "内",
+      "外"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "内外",
+  "id": "fefec19a581df80cc4dc4010",
+  "level": 6,
+  "meaning": "inside and outside",
+  "pinyin": "nèiwài",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-951-1779527163354"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

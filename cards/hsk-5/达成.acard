@@ -1,0 +1,31 @@
+{
+  "audio": "49f59502835deabc23ad5e2f85398b670f48f9b84b4b8a171c363691c8ffb948.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "成"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "达成",
+  "id": "cd402d0889b9620ed7fcc690",
+  "level": 5,
+  "meaning": "to reach, to accomplish",
+  "pinyin": "dáchéng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-OWWXvg5eGc-1779527161015"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

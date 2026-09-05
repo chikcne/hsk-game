@@ -1,0 +1,31 @@
+{
+  "audio": "b6eeb54ff18f2a22e95f138f1a48a8c3c0e16e5e6aa84f999e101ed9d4a29070.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "超"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "超速",
+  "id": "6905a5d40d622850b67f971c",
+  "level": 5,
+  "meaning": "to speed, to exceed the speed limit",
+  "pinyin": "chāosù",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-G~[E@p1k9B-1779527160923"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

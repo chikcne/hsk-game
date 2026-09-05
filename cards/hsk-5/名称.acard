@@ -1,0 +1,32 @@
+{
+  "audio": "2468e641f793901ab3e7b4c4b59e3aa8747a2b91e107748008fcd9f9e754c228.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "名",
+      "称"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "名称",
+  "id": "d264471c47582f8eccadfda5",
+  "level": 5,
+  "meaning": "name, designation",
+  "pinyin": "míngchēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-cP&~f~c-gs-1779527161576"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

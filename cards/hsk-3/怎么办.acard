@@ -1,0 +1,32 @@
+{
+  "audio": "758a19d9fa9d07e291d071d86f7bae34cc4e7463b9e8214d1a3ec304d6e7e739.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "办",
+      "怎么"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "怎么办",
+  "id": "27fdf35dd67f97cec23518d7",
+  "level": 3,
+  "meaning": "what to do",
+  "pinyin": "zěnme bàn",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-D;9_IMs[)u-1779527159767"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

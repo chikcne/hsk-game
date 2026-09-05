@@ -1,0 +1,29 @@
+{
+  "audio": "c5ff925ef82177ce820a30bfb0c19ca597e50654cf4ce3b2a58c2cac7b16e1e9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "齐",
+  "id": "56528bbe9b6aca5552ac45d7",
+  "level": 5,
+  "meaning": "neat, uniform; (together; equally)",
+  "pinyin": "qí",
+  "pos": "adjective、 （verb、adverb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-b.B=@|7Z&W-1779527161655"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

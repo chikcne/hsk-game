@@ -1,0 +1,31 @@
+{
+  "audio": "9b3ffcf09cc264f32d90e54e6b7970585801e768c19657016a68b6a03dd33543.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "谈"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "谈话",
+  "id": "6e8be74a49c5a5245841f441",
+  "level": 5,
+  "meaning": "to talk, to have a conversation",
+  "pinyin": "tánhuà",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-k=-xl@l>Tt-1779527161907"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

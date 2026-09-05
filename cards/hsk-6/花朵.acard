@@ -1,0 +1,32 @@
+{
+  "audio": "b8b0fb4c7708065bbbc596887d74fcd825ae0518ea16ee71766993ff8eaa59c4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "朵",
+      "花"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "花朵",
+  "id": "444031e13a8484149549a585",
+  "level": 6,
+  "meaning": "flower",
+  "pinyin": "huāduǒ",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-562-1779527162965"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

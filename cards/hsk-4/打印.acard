@@ -1,0 +1,32 @@
+{
+  "audio": "1ea85dab610673ef6c2ac1e07d811e56c6bec76f52377199ce77529a48ab9bc9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "印",
+      "打"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "打印",
+  "id": "8eff126f1ba49f4dddd7b380",
+  "level": 4,
+  "meaning": "to print",
+  "pinyin": "dǎyìn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-rU.qOidF/C-1779527159922"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

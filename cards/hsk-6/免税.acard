@@ -1,0 +1,32 @@
+{
+  "audio": "5645be774bb58561690958e67a774b01c2f421499d2cfad07331c3f3b188db7b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "免",
+      "税"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "免税",
+  "id": "b3707240bdf38dc4d8a5b836",
+  "level": 6,
+  "meaning": "tax-free, duty-free",
+  "pinyin": "miǎnshuì",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-909-1779527163312"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

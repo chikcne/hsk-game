@@ -1,0 +1,31 @@
+{
+  "audio": "fb2a9282a46eb71393cbe5257b64294f216899e24201d2cc44a87707089f27e8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "或"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "或许",
+  "id": "e21003e8922f07ea5d2e6b86",
+  "level": 5,
+  "meaning": "perhaps, maybe",
+  "pinyin": "huòxǔ",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-wzOL{Q/MCt-1779527161322"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

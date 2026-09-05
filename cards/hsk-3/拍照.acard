@@ -1,0 +1,32 @@
+{
+  "audio": "777310e8771f03fbd945830fada15b5c9d4a17be84643a841e531723337a4bc9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "拍",
+      "照"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "拍照",
+  "id": "168f4fd5cd346853c59cec7d",
+  "level": 3,
+  "meaning": "to take a photo",
+  "pinyin": "pāizhào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-sTZi0!FGGh-1779527159594"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

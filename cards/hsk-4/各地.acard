@@ -1,0 +1,32 @@
+{
+  "audio": "c163ca617ba7b26205742f1213bbb95a98ff903bee54931a512f456761be17ed.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "各",
+      "地"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "各地",
+  "id": "724dde41b349d68f99887072",
+  "level": 4,
+  "meaning": "various places",
+  "pinyin": "gèdì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-kC$g,~I?z*-1779527160048"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

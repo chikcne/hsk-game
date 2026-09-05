@@ -1,0 +1,32 @@
+{
+  "audio": "c59dc489be957193c4f43044857e1f55740d7a10217fa1e31cc9329fb5790349.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "步",
+      "行"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "步行",
+  "id": "3f61a0b9d87a7e8aef80ce36",
+  "level": 5,
+  "meaning": "to walk",
+  "pinyin": "bùxíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-v&=8ObD@1v-1779527160884"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

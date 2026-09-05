@@ -1,0 +1,31 @@
+{
+  "audio": "fed47ee009dbd79e94bc5e0e83f7485272e8b88b539d3f9181c5c65554c2db92.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "特"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "独特",
+  "id": "3d1d3f160c15d21da4dfc52b",
+  "level": 5,
+  "meaning": "unique, distinctive",
+  "pinyin": "dútè",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-J(P^aJYz=3-1779527161099"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

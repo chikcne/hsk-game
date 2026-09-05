@@ -1,0 +1,32 @@
+{
+  "audio": "04a939ae67af7c55fdea59a2a8906b437598df60ba98cbd11b9a53e0d1342c47.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "代",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "代理",
+  "id": "c3ef2315154884a65fb36265",
+  "level": 6,
+  "meaning": "to act as an agent, to represent",
+  "pinyin": "dàilǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-259-1779527162662"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

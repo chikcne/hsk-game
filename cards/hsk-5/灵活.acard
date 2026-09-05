@@ -1,0 +1,31 @@
+{
+  "audio": "14fc12ceb2186830aa7466c9db8c99530113cede80decdde0e0df696c3794035.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "活"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "灵活",
+  "id": "a4fb36c15bd8066085b545a2",
+  "level": 5,
+  "meaning": "flexible, agile",
+  "pinyin": "línghuó",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-ykz?,*4-(`-1779527161527"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

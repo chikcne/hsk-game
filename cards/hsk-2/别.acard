@@ -1,0 +1,29 @@
+{
+  "audio": "a6cd20c558e729e092aa0187abaf6f465d482303213b18967192884e450c6a43.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "别",
+  "id": "de020df0e2c4145b489afc86",
+  "level": 2,
+  "meaning": "don't, not bad",
+  "pinyin": "bié",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-e0}g$lEF4g-1779527159114"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "4c5f9bc668b0ce6109304435afa07aeb449e7f7bca473b53d61b2557bc5687ee.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "年"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中年",
+  "id": "90050aa9bf7bcd019c329d04",
+  "level": 4,
+  "meaning": "middle age",
+  "pinyin": "zhōngnián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-M]Y}$r!uyh-1779527160761"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

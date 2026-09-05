@@ -1,0 +1,32 @@
+{
+  "audio": "325b4ec1de0f2cd11f2a613dec7d444beccc5b7ebbb64082d87e504dd390a83e.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "富",
+      "有"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "富有",
+  "id": "6b81d3ba4d91b03e46909c75",
+  "level": 5,
+  "meaning": "to possess; rich, wealthy",
+  "pinyin": "fùyǒu",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-M`7tUc1KWY-1779527161177"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

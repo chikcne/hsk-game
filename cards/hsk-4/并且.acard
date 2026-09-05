@@ -1,0 +1,31 @@
+{
+  "audio": "49201dd87e9509cafc18e3838942e0e9e9c406bedec13f62c9dc13f76244527f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "并"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "并且",
+  "id": "50d5b720427c2f3e8e9696ee",
+  "level": 4,
+  "meaning": "and, moreover, furthermore",
+  "pinyin": "bìngqiě",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-d`K-e0Z%?Q-1779527159843"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "e8a72e4ec411d8bf3a0b2eff7dfd04c7e63567d161e85800d9520d73da4bdcf1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "名",
+  "id": "7ad81f06542dbb3e3ae69886",
+  "level": 2,
+  "meaning": "name, reputation; measure word for people",
+  "pinyin": "míng",
+  "pos": "noun、classifier",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-NTwxPS26NK-1779527159207"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

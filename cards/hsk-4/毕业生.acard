@@ -1,0 +1,33 @@
+{
+  "audio": "9fe53857b740de8909f8d3cebc1983a846077d65265216301ca9b180c8660741.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "业",
+      "毕业",
+      "生"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "毕业生",
+  "id": "d3065fb35df6dccb13215429",
+  "level": 4,
+  "meaning": "graduate",
+  "pinyin": "bìyèshēng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-E2*TBO9ju6-1779527159833"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

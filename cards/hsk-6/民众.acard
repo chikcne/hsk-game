@@ -1,0 +1,29 @@
+{
+  "audio": "e0fab45bc366fe7cbcd16f9c9fa42f7603894516972bc8c9dd1fb6fc67c2eb89.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "民众",
+  "id": "68c37749a9c618febf303ff4",
+  "level": 6,
+  "meaning": "public, populace",
+  "pinyin": "mínzhòng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-922-1779527163325"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

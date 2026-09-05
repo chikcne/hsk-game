@@ -1,0 +1,32 @@
+{
+  "audio": "4b9a8587b0f9bb53877a68a2ec11c6c3b87ab362bb7f9644ba599305f8d147a5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "发",
+      "病"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "发病",
+  "id": "25cf3a96266ee56c3cc0560c",
+  "level": 6,
+  "meaning": "to fall ill",
+  "pinyin": "fābìng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-349-1779527162752"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

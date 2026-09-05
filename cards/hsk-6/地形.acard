@@ -1,0 +1,31 @@
+{
+  "audio": "f6a73e13dba3a2fb0c37e588746591c79cd90b3befb588972d2004158448d99d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "地"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "地形",
+  "id": "b139485487a57c8d59cb49e5",
+  "level": 6,
+  "meaning": "terrain, landform",
+  "pinyin": "dìxíng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-293-1779527162696"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

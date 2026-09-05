@@ -1,0 +1,29 @@
+{
+  "audio": "727fd499f571b8e8d78d777eb21f66bf0661b3758d33b202e4cfef9fd93423ff.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "闪",
+  "id": "96ba388bac070888a7e3c532",
+  "level": 6,
+  "meaning": "to flash",
+  "pinyin": "shǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1140-1779527163543"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

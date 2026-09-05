@@ -1,0 +1,31 @@
+{
+  "audio": "8a0993947e82e46c6914f8532fcbfe87503735641ceb011333ea44a31f52ffe2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "互动",
+  "id": "bd26b641d6e5261f02a45f0e",
+  "level": 5,
+  "meaning": "to interact",
+  "pinyin": "hùdòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u,L^<2hB#.-1779527161295"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

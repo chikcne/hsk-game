@@ -1,0 +1,29 @@
+{
+  "audio": "80919d4809a6a28c06fac8b56476e76984b1b37f707a7fa96509902fe7b6c664.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一",
+  "id": "86c7528c69b34bcd5a32be91",
+  "level": 1,
+  "meaning": "one",
+  "pinyin": "yī",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-KwkAz%@=YL-1779527159057"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

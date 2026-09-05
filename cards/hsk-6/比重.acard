@@ -1,0 +1,32 @@
+{
+  "audio": "aae74cfe4d94c04eb8f131800c4f158596790069ddef617ffe0af926055913e4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "比",
+      "重"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "比重",
+  "id": "491a9fd7af205de35ad76117",
+  "level": 6,
+  "meaning": "proportion",
+  "pinyin": "bǐzhòng",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-50-1779527162453"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

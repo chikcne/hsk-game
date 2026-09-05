@@ -1,0 +1,29 @@
+{
+  "audio": "92208d7073595fd8d8c5a1496e7e406d32a026214511853897b52a9914124498.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "房价",
+  "id": "cee8172b4dad82a21f8f5e5e",
+  "level": 6,
+  "meaning": "housing price",
+  "pinyin": "fángjià",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-373-1779527162776"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

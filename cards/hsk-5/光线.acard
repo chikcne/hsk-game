@@ -1,0 +1,32 @@
+{
+  "audio": "b6fcbb8af84e3288924f58ad0a9511c739df4a5a73653857da8bc4870061cb35.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "光",
+      "线"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "光线",
+  "id": "cb6e1878e07182f68c76ea60",
+  "level": 5,
+  "meaning": "light, ray",
+  "pinyin": "guāngxiàn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-f&S:P<EWKR-1779527161241"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

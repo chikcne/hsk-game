@@ -1,0 +1,29 @@
+{
+  "audio": "b1a33c28846b905d07aa5c71f2877b49585800fccf8fd6cf184cecf513e2f3fc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "边",
+  "id": "14847b74192ce78411ee97c2",
+  "level": 1,
+  "meaning": "side; suffix indicating direction",
+  "pinyin": "biān",
+  "pos": "noun、suffix",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-P6{GdS1{QZ-1779527158814"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

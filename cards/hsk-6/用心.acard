@@ -1,0 +1,32 @@
+{
+  "audio": "a54237f8944960ce2fc57fdc58932f4d4b1acdef0ccc112738a6948ceae9b69c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "心",
+      "用"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "用心",
+  "id": "2b5ce59b62fb0c82724f15de",
+  "level": 6,
+  "meaning": "attentively, with concentration",
+  "pinyin": "yòngxīn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1596-1779527163999"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

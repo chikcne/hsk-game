@@ -1,0 +1,32 @@
+{
+  "audio": "4f60028c6189be9da8b2fd43f601fb82bc5aae62794e9ad10a6b3b6d5e7cc6ad.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "命",
+      "救"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "救命",
+  "id": "06a22d7e716183ab2f6f9a91",
+  "level": 6,
+  "meaning": "to save a life",
+  "pinyin": "jiùmìng",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-736-1779527163139"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

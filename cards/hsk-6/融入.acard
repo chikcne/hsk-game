@@ -1,0 +1,31 @@
+{
+  "audio": "91bbc5bf5c66e0b52bea3c411978b05ed2713297ea9116c09bb338e03e19c846.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "融入",
+  "id": "f72c7a5a6a794622fd99aeeb",
+  "level": 6,
+  "meaning": "to integrate into",
+  "pinyin": "róngrù",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1116-1779527163519"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

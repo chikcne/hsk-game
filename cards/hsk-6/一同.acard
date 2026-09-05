@@ -1,0 +1,32 @@
+{
+  "audio": "76b71cadf4bcac67619580e9d874eaad2f571917b8d64d35a691703b9c0b9c64.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "一",
+      "同"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "一同",
+  "id": "7e312036be4b2c95df152872",
+  "level": 6,
+  "meaning": "together, along with",
+  "pinyin": "yìtóng",
+  "pos": "副",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1571-1779527163974"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

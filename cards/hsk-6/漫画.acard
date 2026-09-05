@@ -1,0 +1,31 @@
+{
+  "audio": "f5dc7a1ab79024d5064830ae5f501430ca413f8d4f91b488299cc909ffba06fd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "画"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "漫画",
+  "id": "71e971afd9e5198b24fc9c7f",
+  "level": 6,
+  "meaning": "comic, cartoon",
+  "pinyin": "mànhuà",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-891-1779527163294"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "0e0576d5c61973282f623f7bd32db44df6c5ad3cc050dbf5951c77dbb613c156.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "用"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "作用",
+  "id": "756b3c09a7b2cb493774a18d",
+  "level": 4,
+  "meaning": "function, role; (to serve as, to play a role)",
+  "pinyin": "zuòyòng",
+  "pos": "noun、（verb）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p[Z_L4-hs3-1779527160802"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

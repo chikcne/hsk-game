@@ -1,0 +1,32 @@
+{
+  "audio": "1fe13948f9a50241fda8572001811809047e1b6ee1ea7d03a21cec15457901ea.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "开",
+      "离"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "离开",
+  "id": "e7f3f3c4ab48bf4b3dd4453a",
+  "level": 3,
+  "meaning": "to leave",
+  "pinyin": "líkāi",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-dBO9H<xY`0-1779527159550"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

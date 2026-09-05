@@ -1,0 +1,29 @@
+{
+  "audio": "302ba38c5f36652c7fc6389c03b072b015d11af24c350b25428284bddcf8d058.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "专注",
+  "id": "2422d1794ceb2639d1f69289",
+  "level": 6,
+  "meaning": "concentrated, focused",
+  "pinyin": "zhuānzhù",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1763-1779527164166"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

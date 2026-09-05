@@ -1,0 +1,31 @@
+{
+  "audio": "0c03c3d85fdea40c0db82a14bbc1ac08e852473287ee587f98362753760fffb4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "讲"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "讲究",
+  "id": "c009aaa73510508e2de8b8cd",
+  "level": 5,
+  "meaning": "to be particular about; exquisite, refined",
+  "pinyin": "jiǎngjiu",
+  "pos": "verb、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-tBvSCKBfNl-1779527161385"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

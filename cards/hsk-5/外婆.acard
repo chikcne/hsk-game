@@ -1,0 +1,31 @@
+{
+  "audio": "05a4f481445ba89c5dbc87ce587a7de0219ffdfa01300bf2b701391e96778ee8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "外"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "外婆",
+  "id": "ba7cfe7f7b1d0c4d075cd95e",
+  "level": 5,
+  "meaning": "grandmother",
+  "pinyin": "wàipó",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Ji)n33SL&N-1779527161973"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

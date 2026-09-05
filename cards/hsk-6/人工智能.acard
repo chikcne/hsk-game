@@ -1,0 +1,34 @@
+{
+  "audio": "d8c8ca0f27cc83d7e17b81468f4718ad0fc0503bc0b3f4b3bfefff7d5f3dd9e2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "人工",
+      "智能",
+      "能"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人工智能",
+  "id": "8261a5e3acfd8972b1bfe83b",
+  "level": 6,
+  "meaning": "artificial intelligence",
+  "pinyin": "réngōngzhìnéng",
+  "pos": null,
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1094-1779527163497"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

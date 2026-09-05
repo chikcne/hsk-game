@@ -1,0 +1,31 @@
+{
+  "audio": "1ac15ca20bb4e725e3886105cec2f9041bac9a78aa9d02a374ddc562ccc6c540.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "电"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "电话",
+  "id": "14238f2bfe200bd3180c6acf",
+  "level": 1,
+  "meaning": "telephone, phone call",
+  "pinyin": "diànhuà",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-o},y9>7v!N-1779527158838"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

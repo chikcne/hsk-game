@@ -1,0 +1,29 @@
+{
+  "audio": "28466c1c18d44160bdde3c63a01b8c4de4ef6fd1a62c14d1b780bf42ff8c53ff.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "美",
+  "id": "5cf7e43f81441219c7b2fb79",
+  "level": 4,
+  "meaning": "beautiful, pretty",
+  "pinyin": "měi",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-GL:<gw+1F<-1779527160303"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

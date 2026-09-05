@@ -1,0 +1,31 @@
+{
+  "audio": "2a1f196eeaba98fd005f2c088b5590986b3757a08a808164730f572a2f767d87.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "下"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "下午",
+  "id": "761d2ddc069bbac825811a21",
+  "level": 1,
+  "meaning": "afternoon",
+  "pinyin": "xiàwǔ",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-jI)Zj)]zWM-1779527159033"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

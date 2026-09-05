@@ -1,0 +1,32 @@
+{
+  "audio": "f8ae7f3b45bf257cb8fac06855e1b7cd3e3cbdf5a07df1c6a02f923c1455bff1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "借",
+      "凭"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "凭借",
+  "id": "efc5792804d5e372e8d50901",
+  "level": 5,
+  "meaning": "to rely on, to use",
+  "pinyin": "píngjiè",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-s2NW9SZPo8-1779527161646"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

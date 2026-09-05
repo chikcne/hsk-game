@@ -1,0 +1,29 @@
+{
+  "audio": "73cf1cc6b9bc62333d04219bea3d53f6f7a460bf5181d5c5ad9e0b85bc738510.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 2,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "面",
+  "id": "3b85736810d3d3b13ae8bc6d",
+  "level": 2,
+  "meaning": "suffix indicating a person with a certain characteristic; (to face; side, aspect; measure word for flat objects)",
+  "pinyin": "miàn",
+  "pos": "suffix、（verb、 noun、classifier）",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-2-1488171715.apkg",
+    "guids": [
+      "official-2026-QYoDXOL;ZR-1779527159206"
+    ],
+    "overrides": [],
+    "sharedId": 1488171715
+  }
+}

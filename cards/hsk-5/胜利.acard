@@ -1,0 +1,31 @@
+{
+  "audio": "a0b3ad39a5e343f251a69aae350dbc2d4e89e11fee7ff065f29494dfeb7ec0d1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "胜"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "胜利",
+  "id": "2223e830cdd1d7918d868517",
+  "level": 5,
+  "meaning": "victory, triumph; to win",
+  "pinyin": "shènglì",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-AZiK$DbkG-1779527161805"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

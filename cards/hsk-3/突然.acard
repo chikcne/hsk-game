@@ -1,0 +1,29 @@
+{
+  "audio": "dafcb939e536f91480d70b8e14fd1c9e22f08e402a8eb61cdf48799f49f79972.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "突然",
+  "id": "5bd7089db9a4561eb8fbd7e4",
+  "level": 3,
+  "meaning": "sudden",
+  "pinyin": "tūrán",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-qWcc]_VebL-1779527159665"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "audio": "33c17d5ab670725d835d5f8a8f2d2d8e4981c26ca32458534c247338e095c47a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "白",
+  "id": "1a2eba39eea0b36dbd1c4bda",
+  "level": 5,
+  "meaning": "white; in vain, for nothing",
+  "pinyin": "bái",
+  "pos": "adjective、adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-HF_BFad%)g-1779527160815"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

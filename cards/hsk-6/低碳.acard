@@ -1,0 +1,31 @@
+{
+  "audio": "75b4feab6824988440ef6929f6c0f7db99cc66c0048ca8445cf8018ce8453c9b.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "低"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "低碳",
+  "id": "d10335e2af49571a4126b842",
+  "level": 6,
+  "meaning": "low-carbon",
+  "pinyin": "dītàn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-288-1779527162691"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

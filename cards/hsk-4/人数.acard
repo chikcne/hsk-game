@@ -1,0 +1,32 @@
+{
+  "audio": "4a022050558b5cf9bc89c03d407c949d34e93389caca2601e84811ee1edb0c73.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "人",
+      "数"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人数",
+  "id": "e5b6373caf1fb50c27df7ef6",
+  "level": 4,
+  "meaning": "number of people",
+  "pinyin": "rénshù",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-Ix:7y`<t32-1779527160414"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

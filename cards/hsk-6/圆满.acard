@@ -1,0 +1,32 @@
+{
+  "audio": "f655e6e2f820b2546dd3790c4bb76e9f2801858ac0271905e6a016a374ba2883.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "圆",
+      "满"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "圆满",
+  "id": "1eb5357c5f9c73bb464dbaca",
+  "level": 6,
+  "meaning": "satisfactory, successful",
+  "pinyin": "yuánmǎn",
+  "pos": "形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1620-1779527164023"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

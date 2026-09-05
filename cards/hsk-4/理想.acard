@@ -1,0 +1,32 @@
+{
+  "audio": "fbf5b9efe6130e92a63d1111016b1f82aebd32fefbcf46f3c2f8963c06e1dc42.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "想",
+      "理"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "理想",
+  "id": "35204ee27dcc1cae3114e303",
+  "level": 4,
+  "meaning": "ideal, dream; ideal",
+  "pinyin": "lǐxiǎng",
+  "pos": "noun、adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-D`}iSElDYe-1779527160266"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

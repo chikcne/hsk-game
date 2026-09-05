@@ -1,0 +1,31 @@
+{
+  "audio": "81de45699eb1a993ed88f70a4c6b3079fba3565ee2c2912a002f5fcf9e0438c4.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "时"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "时候",
+  "id": "cd1491bdd5b23583e4606f82",
+  "level": 1,
+  "meaning": "moment, time, when, the time when, moment, occasion (point to a specific moment or circumstance when something happens)",
+  "pinyin": "shíhou",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-hc>1F1GNAa-1779527158988"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

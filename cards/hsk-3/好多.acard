@@ -1,0 +1,32 @@
+{
+  "audio": "dab92c1c322d90c953933462bae7b26face7073ce08744566d2940da6c7e0818.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "多",
+      "好"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好多",
+  "id": "15145dd03f478e0f07d106b7",
+  "level": 3,
+  "meaning": "many, a lot",
+  "pinyin": "hǎoduō",
+  "pos": "number",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Je3Z?[RG[A-1779527159466"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

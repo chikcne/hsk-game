@@ -1,0 +1,29 @@
+{
+  "audio": "90a631cd47d8f94388e87c265f8cbc6a23c197133377d4d6f4b346771e21dcf9.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "赢",
+  "id": "b5b21ad270f98e200e00e7b1",
+  "level": 4,
+  "meaning": "win",
+  "pinyin": "yíng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-nIoq54/Z:c-1779527160677"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

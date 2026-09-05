@@ -1,0 +1,32 @@
+{
+  "audio": "650535219f2118093e119161d2661943e99b97296d8013832fac04bf39be0c05.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "热",
+      "量"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "热量",
+  "id": "1e378ead49e7f71a9674ed5c",
+  "level": 5,
+  "meaning": "heat",
+  "pinyin": "rèliàng",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-AHSXg~37NI-1779527161717"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

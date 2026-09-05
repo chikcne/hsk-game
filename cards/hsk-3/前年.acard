@@ -1,0 +1,32 @@
+{
+  "audio": "5b6271b1649692b4a1f5510df81f0d770e2285d73df6296a1ed491f726403275.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "前",
+      "年"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "前年",
+  "id": "35153f29fa8d154ea5168072",
+  "level": 3,
+  "meaning": "the year before last",
+  "pinyin": "qiánnián",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-Kf]fwp5S_6-1779527159608"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

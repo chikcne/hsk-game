@@ -1,0 +1,32 @@
+{
+  "audio": "bfa36c5cd7ae8cb4d6828fcf8c9b24caa8fa5c8e9db0c7f813d740aea25b883a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "夜",
+      "晚"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夜晚",
+  "id": "73a26e45b4ef99396d9d7976",
+  "level": 4,
+  "meaning": "night, evening",
+  "pinyin": "yèwǎn",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-lY_>Jnj)tV-1779527160666"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

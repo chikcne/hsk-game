@@ -1,0 +1,29 @@
+{
+  "audio": "b778eaa2da199dc7f9cc6129d68730331aa7d6f6975455000bcd60eb8d71e841.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "夸",
+  "id": "0765a3b1dbb17878556f43cd",
+  "level": 6,
+  "meaning": "to boast, to praise",
+  "pinyin": "kuā",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-800-1779527163203"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

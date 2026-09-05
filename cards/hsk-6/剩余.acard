@@ -1,0 +1,31 @@
+{
+  "audio": "e72bf344ab9d5a8896968081d866b568d5a6149cfe1f6ca6dc514ce3001104c7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "剩"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "剩余",
+  "id": "ef654ab50dbd38a08c03d4af",
+  "level": 6,
+  "meaning": "remaining, surplus",
+  "pinyin": "shèngyú",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1175-1779527163578"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

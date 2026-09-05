@@ -1,0 +1,32 @@
+{
+  "audio": "54724eec9aa6ca2a074fccbc3d8e88883ea119d934e9112e6934c8e0ca8f65bd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "接",
+      "直"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "直接",
+  "id": "14c3f2c86d0c27228abdf7de",
+  "level": 4,
+  "meaning": "direct, straightforward",
+  "pinyin": "zhíjiē",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-bNhY(]#[[h-1779527160751"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

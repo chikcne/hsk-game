@@ -1,0 +1,32 @@
+{
+  "audio": "a036faf72290be478be5ba2e588434957bd8936428d98ecbc6b832d0b5909796.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "信",
+      "回"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "回信",
+  "id": "42fc4613c25f36c38ac790d6",
+  "level": 4,
+  "meaning": "reply to a letter, write backl; reply letter, response",
+  "pinyin": "huíxìn",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-:u#aL-7lo-1779527160111"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

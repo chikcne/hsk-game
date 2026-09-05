@@ -1,0 +1,31 @@
+{
+  "audio": "00a81b73ba75d6eaa128f6e8e551953baa27d18cd36cd95e33aaaf4696dd7013.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "止"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "截止",
+  "id": "02bbc9e2a0f433d5ed9891b1",
+  "level": 6,
+  "meaning": "to end, to cut off",
+  "pinyin": "jiézhǐ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-690-1779527163093"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

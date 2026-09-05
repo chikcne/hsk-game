@@ -1,0 +1,32 @@
+{
+  "audio": "4e921252edf4638118aac26be6ece4bd4c511f3aef80c7c8d6a8b3c189ea676a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "公",
+      "园"
+    ],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "公园",
+  "id": "9bddac82c4290ea013146bea",
+  "level": 3,
+  "meaning": "park",
+  "pinyin": "gōngyuán",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-D;{r=*d++w-1779527159451"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

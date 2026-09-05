@@ -1,0 +1,31 @@
+{
+  "audio": "1859ef4701c749f99a9c3b4f50adbade1988c4b98c6194118761b58981c66915.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "治"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "政治",
+  "id": "082d5928dc4c4f24c0231b2f",
+  "level": 5,
+  "meaning": "politics",
+  "pinyin": "zhèngzhì",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KU5JQ*1qGh-1779527162301"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

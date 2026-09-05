@@ -1,0 +1,32 @@
+{
+  "audio": "afe45376158eabfef2354d53316ae7e9e26ecbdca28101221671e6b7581bd95d.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "理",
+      "科"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "理科",
+  "id": "7221ac2b53ad29b3fcd4bb8b",
+  "level": 6,
+  "meaning": "science, sciences",
+  "pinyin": "lǐkē",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-832-1779527163235"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

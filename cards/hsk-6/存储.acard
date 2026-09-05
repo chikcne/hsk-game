@@ -1,0 +1,31 @@
+{
+  "audio": "0645f333452cbd7a735e18073933a295d34b9219eb82eee9ca9de2d0a13e25f5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "存"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "存储",
+  "id": "1e9ed35c6b68bb11f765ee56",
+  "level": 6,
+  "meaning": "to store",
+  "pinyin": "cúnchǔ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-230-1779527162633"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

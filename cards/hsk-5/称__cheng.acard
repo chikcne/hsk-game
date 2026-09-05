@@ -1,0 +1,29 @@
+{
+  "audio": "3dbb57498fd3f8836f359d9ebd01f30a411d488db25ccb97809478c42132acc7.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "称",
+  "id": "b7c96faec85de6867c0dfea9",
+  "level": 5,
+  "meaning": "to weigh",
+  "pinyin": "chēng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": "sense 2",
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-lshQ,J`GM~-1779527160936"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

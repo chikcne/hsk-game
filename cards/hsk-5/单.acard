@@ -1,0 +1,29 @@
+{
+  "audio": "51938a14d5d5ce9ec0c6fe1e1e3f5f86f6d8b33218e757cfc87c9a5e981b70fc.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "单",
+  "id": "c3caafd25c3ca02d44a0d0ff",
+  "level": 5,
+  "meaning": "single; alone; bill, list; measure word",
+  "pinyin": "dān",
+  "pos": "adjective、 adverb、noun、",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-k!bYj+c]);-1779527161041"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "97f76fc1052f347977fc58803af31043457d90d999f0cd40ec524bfc67d25599.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "压"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "压缩",
+  "id": "29cff12f19bcd390731d5b70",
+  "level": 6,
+  "meaning": "to compress",
+  "pinyin": "yāsuō",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1499-1779527163902"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

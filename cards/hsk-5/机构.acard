@@ -1,0 +1,29 @@
+{
+  "audio": "db336b8853a6d12703c4e6ee8c1408534d3c6d8148e23b6c2b9a8bd0b5547567.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "机构",
+  "id": "979dfe5094cad2242cf657b0",
+  "level": 5,
+  "meaning": "organization, institution",
+  "pinyin": "jīgòu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-mRwvy0v3Gn-1779527161323"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

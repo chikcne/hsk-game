@@ -1,0 +1,29 @@
+{
+  "audio": "683c3a9afa7951922206020c744912ea88b4626b3f56d23a67ff5e5205bda1e8.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "好",
+  "id": "79ac7598c8868e6457fd154e",
+  "level": 5,
+  "meaning": "to like, to be fond of",
+  "pinyin": "hào",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-H4S(lBxLGK-1779527161275"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

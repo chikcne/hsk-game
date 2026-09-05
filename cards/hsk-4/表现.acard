@@ -1,0 +1,31 @@
+{
+  "audio": "10788e770da48928013124b5650800064952a01142dafefe9e07b36412ff274f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "表"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "表现",
+  "id": "62e56b27420b4ff36eb5d7cd",
+  "level": 4,
+  "meaning": "to show, to display, to perform",
+  "pinyin": "biǎoxiàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-m1E[1XF#D]-1779527159839"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

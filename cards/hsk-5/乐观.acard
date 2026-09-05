@@ -1,0 +1,29 @@
+{
+  "audio": "42a66509549fcdf81fdd2fa320bb11c946b2b0625426970c5ab600ce6cf42782.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "乐观",
+  "id": "e9277d8667219c233aed58d1",
+  "level": 5,
+  "meaning": "optimistic",
+  "pinyin": "lèguān",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-KD4S)td<,V-1779527161493"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

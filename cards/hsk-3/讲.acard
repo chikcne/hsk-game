@@ -1,0 +1,29 @@
+{
+  "audio": "1a1f0942403d5ba7d5fa123c71450c83f4f5b38799643c83b895c1a8d679132a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "讲",
+  "id": "025653ab2be7afab937e05de",
+  "level": 3,
+  "meaning": "to speak, to talk",
+  "pinyin": "jiǎng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-H!@H#tvCgT-1779527159506"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

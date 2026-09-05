@@ -1,0 +1,31 @@
+{
+  "audio": "b4b077765ceda272dee542451dd7003827be3ae9fcfba90d2f27d7505ee81460.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "则"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "否则",
+  "id": "269da217eac79658f71c2461",
+  "level": 4,
+  "meaning": "otherwise, if not",
+  "pinyin": "fǒuzé",
+  "pos": "conjunction",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-N`V<vxHx?m-1779527160009"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

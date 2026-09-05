@@ -1,0 +1,29 @@
+{
+  "audio": "97d934ffc8f5aba1bed3203214d6058e977bea9e49731630a5d016158c923fdf.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "扭",
+  "id": "c78c5c09a1b35c4aa184713e",
+  "level": 6,
+  "meaning": "to twist, to turn",
+  "pinyin": "niǔ",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-959-1779527163362"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

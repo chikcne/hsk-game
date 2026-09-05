@@ -1,0 +1,32 @@
+{
+  "audio": "8114a66c32e94a4d1e00dd7ccf2b3752fdd9f6e32b07b5d33ab29680cda5bd13.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "录",
+      "记"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "记录",
+  "id": "20d337b47d84d84eccd8683e",
+  "level": 5,
+  "meaning": "to record; record",
+  "pinyin": "jìlù",
+  "pos": "verb、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-EJP%5izuZm-1779527161344"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

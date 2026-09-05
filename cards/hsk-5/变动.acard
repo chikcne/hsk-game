@@ -1,0 +1,32 @@
+{
+  "audio": "fe7bad475cd7d1841b10e8282947719a178ccbb64425fb31b5869382db083d36.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "动",
+      "变"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "变动",
+  "id": "63670ae6da47fdd6208426ef",
+  "level": 5,
+  "meaning": "to change, to fluctuate",
+  "pinyin": "biàndòng",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-u33S$`;%Jw-1779527160860"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

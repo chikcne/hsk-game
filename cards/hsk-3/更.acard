@@ -1,0 +1,29 @@
+{
+  "audio": "ba46964d346914f8887dd1e366700920fb6591e57312324e55dc1ed496357123.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 3,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "更",
+  "id": "5166e39a94c7bb2c5463879b",
+  "level": 3,
+  "meaning": "more",
+  "pinyin": "gèng",
+  "pos": "adverb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-3-1074787074.apkg",
+    "guids": [
+      "official-2026-w|6!PMd`u+-1779527159449"
+    ],
+    "overrides": [],
+    "sharedId": 1074787074
+  }
+}

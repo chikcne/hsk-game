@@ -1,0 +1,29 @@
+{
+  "audio": "cadc4437815eacfe09c18ed753a86b7a445350bbea397972c0aa100c6cd7c468.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "砍",
+  "id": "ea2d7d2eeeedf7e5cb99626f",
+  "level": 6,
+  "meaning": "to cut, to chop",
+  "pinyin": "kǎn",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-766-1779527163169"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

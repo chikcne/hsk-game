@@ -1,0 +1,31 @@
+{
+  "audio": "b6b1005333e09a007a8367992a382b437cf2d3c122e6c0dc23524fbade3e5d9f.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "多"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "多余",
+  "id": "d928df907eac1016a749076c",
+  "level": 6,
+  "meaning": "to be more than needed; superfluous, unnecessary",
+  "pinyin": "duōyú",
+  "pos": "动、形",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-339-1779527162742"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

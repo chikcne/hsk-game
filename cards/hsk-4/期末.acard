@@ -1,0 +1,32 @@
+{
+  "audio": "8bfe73d8b277323c8a6fbcb1c1e3178b9a0d0529880dc124f2e58b37b055100a.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "期",
+      "末"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "期末",
+  "id": "e6bbbcf0e863b25f062c53cc",
+  "level": 4,
+  "meaning": "end of term, end of semester",
+  "pinyin": "qīmò",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-oIVp(fh%9l-1779527160368"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

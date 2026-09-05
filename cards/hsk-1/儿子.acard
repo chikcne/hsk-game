@@ -1,0 +1,31 @@
+{
+  "audio": "77af3675d626ce4a47a9bc7fce274efe5746f0da2016e2b4cb3fb1d5e0ce2dda.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "子"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "儿子",
+  "id": "6ee53960bded8116eef3d7f3",
+  "level": 1,
+  "meaning": "son",
+  "pinyin": "érzi",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-k&*xVvhV#--1779527158851"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "audio": "302bafbff7de69737939493cbaebca21073ea962456d4eccfa1277ffb9d84be1.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "引"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "引导",
+  "id": "7c786f6eb25edd52d4893579",
+  "level": 6,
+  "meaning": "to guide, to lead",
+  "pinyin": "yǐndǎo",
+  "pos": "动",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1580-1779527163983"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

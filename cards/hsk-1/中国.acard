@@ -1,0 +1,32 @@
+{
+  "audio": "3c8830b01e2eea74187ac3af15d2a454f82b4b4c5f9aafe4f2cd530af8589687.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "中",
+      "国"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "中国",
+  "id": "88adb019db5515a4090f1320",
+  "level": 1,
+  "meaning": "China",
+  "pinyin": "Zhōngguó",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-N1whJ&CX=*-1779527159092"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

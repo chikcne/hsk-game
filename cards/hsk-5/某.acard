@@ -1,0 +1,29 @@
+{
+  "audio": "221093d8c1bec49e33c733697cd2ab680d50babacdfc516b0020936e18d04806.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "某",
+  "id": "763e163317196c180cb526fe",
+  "level": 5,
+  "meaning": "certain, some",
+  "pinyin": "mǒu",
+  "pos": "pronoun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-Jfh;!q9!8--1779527161588"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

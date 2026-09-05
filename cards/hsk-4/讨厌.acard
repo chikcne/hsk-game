@@ -1,0 +1,29 @@
+{
+  "audio": "98bbfb1f26992047265ed75f35a5173f449b589f6c145b399afbca2f34cc15cd.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "讨厌",
+  "id": "4dc4aef7f0601df5f4cc64b2",
+  "level": 4,
+  "meaning": "disgusting, annoying; to dislike, to loathe",
+  "pinyin": "tǎoyàn",
+  "pos": "adjective、verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-p=X(mKB_y0-1779527160527"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

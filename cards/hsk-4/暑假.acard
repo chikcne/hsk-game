@@ -1,0 +1,31 @@
+{
+  "audio": "e1b3268c54760a1f00723bfd36cfda5d33925f608e371cae711f520a39515a85.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "假"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "暑假",
+  "id": "8be4485c760de20446621e5d",
+  "level": 4,
+  "meaning": "summer vacation",
+  "pinyin": "shǔjià",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-i:aBCL;GeO-1779527160493"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "audio": "150e8d76f23ccd9d0cd57ba06627bcf797c346df56d07cde78b0dbe49f008d6c.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "会",
+      "学"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "学会",
+  "id": "18dde8fee5a78a4959988816",
+  "level": 6,
+  "meaning": "learned society, institute",
+  "pinyin": "xuéhuì",
+  "pos": "名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1489-1779527163892"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

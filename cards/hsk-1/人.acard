@@ -1,0 +1,29 @@
+{
+  "audio": "97cc29d416621f997ad4497a212ba3644eafbbec3cdeae6a5b927f290107bd31.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "人",
+  "id": "45641f618185e72268e33933",
+  "level": 1,
+  "meaning": "person",
+  "pinyin": "rén",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-e!ow)>Ri/2-1779527158973"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

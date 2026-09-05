@@ -1,0 +1,32 @@
+{
+  "audio": "75be2e8597e72eb94802e3902200815c0e42571fb6ae1dcd0407896e45a8c272.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "常",
+      "平"
+    ],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "平常",
+  "id": "74084800921942eeb25256bf",
+  "level": 4,
+  "meaning": "ordinary, usual; usually, ordinarily",
+  "pinyin": "píngcháng",
+  "pos": "adjective、noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-DZ)g::UkGk-1779527160360"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}

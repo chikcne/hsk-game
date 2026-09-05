@@ -1,0 +1,32 @@
+{
+  "audio": "0363eceaa7238352e9b50ae55869923b51490e50f0aa199a26656bae37dd16c2.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "入",
+      "门"
+    ],
+    "frequency": null,
+    "grade": 6,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "入门",
+  "id": "20bb5e489a321114b51b4840",
+  "level": 6,
+  "meaning": "to get started, introduction",
+  "pinyin": "rùmén",
+  "pos": "动、名",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-6-395921696.apkg",
+    "guids": [
+      "official-2026-6-1120-1779527163523"
+    ],
+    "overrides": [],
+    "sharedId": 395921696
+  }
+}

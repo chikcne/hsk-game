@@ -1,0 +1,31 @@
+{
+  "audio": "3c08d42ff8969681d5072dbcfa5274c25496e4679b012a327f7d867b89a892b0.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "便"
+    ],
+    "frequency": null,
+    "grade": 1,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "便宜",
+  "id": "ee230a67d8bbbf3a7e87f2ff",
+  "level": 1,
+  "meaning": "cheap",
+  "pinyin": "piányi",
+  "pos": "adjective",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-1-1623336797.apkg",
+    "guids": [
+      "official-2026-G6v&)m`J1L-1779527158960"
+    ],
+    "overrides": [],
+    "sharedId": 1623336797
+  }
+}

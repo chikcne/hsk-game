@@ -1,0 +1,29 @@
+{
+  "audio": "8e533d9980887c8ac9e1554e80a4f184b7e2006252e73ab22aa0ef260b4d40be.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "欧洲",
+  "id": "012f654964c147e1fd3c634a",
+  "level": 5,
+  "meaning": "Europe",
+  "pinyin": "Ōuzhōu",
+  "pos": "noun",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-E=<6[I/?h;-1779527161611"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

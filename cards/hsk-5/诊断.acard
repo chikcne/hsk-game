@@ -1,0 +1,31 @@
+{
+  "audio": "d21e5d8a22d476c1af33d663ba0e3b71ae226891c871303a19f0104cecd907d3.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [
+      "断"
+    ],
+    "frequency": null,
+    "grade": 5,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "诊断",
+  "id": "21979383a4a2520f5e94fc03",
+  "level": 5,
+  "meaning": "to diagnose",
+  "pinyin": "zhěnduàn",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-5-345498902.apkg",
+    "guids": [
+      "official-2026-c>2HfYlvja-1779527162289"
+    ],
+    "overrides": [],
+    "sharedId": 345498902
+  }
+}

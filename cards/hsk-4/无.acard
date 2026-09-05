@@ -1,0 +1,29 @@
+{
+  "audio": "c2b5514840963df2802fadff6c2b67dae989c5388d06ec1cdb226d6a93cf09e5.mp3",
+  "curriculum": {
+    "boundMorpheme": false,
+    "components": [],
+    "frequency": null,
+    "grade": 4,
+    "notes": null,
+    "pin": null,
+    "seed": false,
+    "topics": []
+  },
+  "hanzi": "无",
+  "id": "8e69b94dcf87be89efaadb17",
+  "level": 4,
+  "meaning": "to lack, to not have",
+  "pinyin": "wú",
+  "pos": "verb",
+  "schema": "acard/1",
+  "senseLabel": null,
+  "source": {
+    "deck": "hsk-4-562028400.apkg",
+    "guids": [
+      "official-2026-vd`CK%Xhvt-1779527160584"
+    ],
+    "overrides": [],
+    "sharedId": 562028400
+  }
+}
