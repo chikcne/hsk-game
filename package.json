@@ -17,6 +17,7 @@
     "validate:curriculum": "tsx tools/sort-curriculum/validate-cli.ts",
     "validate:cards": "tsx tools/import-acards/validate-cli.ts",
     "import:strokes": "tsx tools/import-strokes/cli.ts",
+    "seed:save": "tsx tools/seed-save.mts",
     "preview": "vite preview"
   },
   "dependencies": {
