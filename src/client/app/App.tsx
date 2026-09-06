@@ -792,7 +792,11 @@ function BattleScreen({ deck, strokeData, plan, snapshot, pinyinPoolWords, setti
   const total = Math.max(battle.stats.resolvedSpawns + battle.pendingWork + inFlightCount, 1);
   const progressCount = battle.stats.resolvedSpawns;
   const selection = battle.phase === "pinyin" ? battle.selection : null;
-  const typing = battle.phase === "pinyin" && !selection;
+  // The locked input mode — not the selection view — decides whether Typing
+  // Mode's QWERTY panel may render: `selection` stays null until the first
+  // target locks (and in every gap between enemies), so keying the keyboard
+  // off it alone would flash it at the start of Selection Mode battles.
+  const typing = battle.phase === "pinyin" && battle.inputMode === "typing" && !selection;
   const pinyinDisabled = !battle.target || paused || battle.learningPaused || battle.phase !== "pinyin";
 
   useEffect(() => {
@@ -925,7 +929,7 @@ function BattleScreen({ deck, strokeData, plan, snapshot, pinyinPoolWords, setti
       </div>}
     </section>
 
-    {battle.phase === "pinyin" && !selection && <MobileKeyboard
+    {typing && <MobileKeyboard
       disabled={pinyinDisabled} submitDisabled={pinyinDisabled || composing || !pinyin.trim()}
       backspaceDisabled={pinyinDisabled || pinyin.length === 0}
       onLetter={(letter) => setPinyin((value) => value + letter.toLowerCase())}
