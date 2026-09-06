@@ -143,6 +143,7 @@ export function App() {
   const [reviewPlan, setReviewPlan] = useState<ReviewPlan | null>(null);
   const [pinyinPoolWords, setPinyinPoolWords] = useState<RuntimeWordPool>({ planWords: [], outsideWords: [] });
   const [glossaryDecks, setGlossaryDecks] = useState<GlossaryDeck[]>([]);
+  const [glossaryStrokeData, setGlossaryStrokeData] = useState<StrokeDataMap>(() => new Map());
   const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -427,8 +428,12 @@ export function App() {
     setLoadError(null);
     setScreen("loading");
     const loadGlossaryProgram: Effect.Effect<void, DeckLoadError, never> = Effect.gen(function* () {
-      const loadedDeck = yield* loadRuntimeDeck(id, current.levels[id] === undefined);
+      const [loadedDeck, loadedStrokes] = yield* Effect.all(
+        [loadRuntimeDeck(id, current.levels[id] === undefined), loadStrokeBundleEffect(id)],
+        { concurrency: "unbounded" },
+      );
       setGlossaryDecks([{ deckId: id, deck: loadedDeck }]);
+      setGlossaryStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
       setScreen("glossary");
     });
     Effect.runFork(loadGlossaryProgram.pipe(Effect.catchAll(() => Effect.sync(() => {
@@ -468,7 +473,7 @@ export function App() {
     />
     {settingsOpen && <SettingsDialog settings={settings} onApply={applySettings} onClose={() => setSettingsOpen(false)} />}
   </>;
-  if (screen === "glossary") return <GlossaryScreen save={save} decks={glossaryDecks} onExit={() => setScreen("decks")} />;
+  if (screen === "glossary") return <GlossaryScreen save={save} decks={glossaryDecks} strokeData={glossaryStrokeData} onExit={() => setScreen("decks")} />;
   if (screen === "summary" && summary) return <Summary
     stats={summary} deck={deck} strokeData={strokeData} saveStatus={saveStatus}
     relearnBlocked={save.relearnSession !== null}

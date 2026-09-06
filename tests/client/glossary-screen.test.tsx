@@ -70,16 +70,31 @@ describe("GlossaryScreen", () => {
   test("renders the derived encountered and mastered totals in the summary", () => {
     const { save, decks } = fixture();
     const total = decks.reduce((sum, item) => sum + item.deck.words.length, 0);
-    const html = renderToStaticMarkup(<GlossaryScreen save={save} decks={decks} onExit={vi.fn()} />);
+    const html = renderToStaticMarkup(<GlossaryScreen save={save} decks={decks} strokeData={new Map()} onExit={vi.fn()} />);
     expect(html).toContain("<dt>ENCOUNTERED</dt><dd>2</dd>");
     expect(html).toContain("<dt>MASTERED</dt><dd>1</dd>");
     expect(html).toContain(`aria-label="Glossary with 2 encountered words and ${total - 2} concealed words"`);
   });
 
+  test("draws revealed tile hanzi as vector outlines with no visible font text", () => {
+    const { save, decks } = fixture();
+    const stroke = {
+      strokes: ["M 100 900 L 900 100"],
+      medians: [[[100, 900], [900, 100]]] as [number, number][][],
+    };
+    // The fixture's two revealed words are 你 and 学习: three characters total.
+    const strokeData = new Map([["你", stroke], ["学", stroke], ["习", stroke]]);
+    const html = renderToStaticMarkup(<GlossaryScreen save={save} decks={decks} strokeData={strokeData} onExit={vi.fn()} />);
+    expect(html.match(/class="hanzi-glyph"/g)).toHaveLength(3);
+    expect(html).toContain('data-word-length="1"');
+    expect(html).toContain('data-word-length="2"');
+    expect(html).not.toContain("vector-text-accessible");
+  });
+
   test("renders interactive faces only for encountered words and jade backs for the rest", () => {
     const { save, decks } = fixture();
     const gradeDecks = [decks[0]!];
-    const html = renderToStaticMarkup(<GlossaryScreen save={save} decks={gradeDecks} onExit={vi.fn()} />);
+    const html = renderToStaticMarkup(<GlossaryScreen save={save} decks={gradeDecks} strokeData={new Map()} onExit={vi.fn()} />);
     expect(html).not.toContain("ENCOUNTER GLOSSARY");
     expect(html).not.toContain("ALL TILES");
     expect(html.match(/class=\"legend-dot /g)).toHaveLength(4);

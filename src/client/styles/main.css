@@ -368,6 +368,7 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   width: 100%;
   aspect-ratio: .76;
   min-height: 82px;
+  container-type: inline-size;
   appearance: none;
   -webkit-appearance: none;
   border: 0;
@@ -392,8 +393,19 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   outline-offset: -3px;
 }
 .tile-face small { justify-self: start; color: rgba(70,49,25,.55); font: 7px var(--ui); letter-spacing: .05em; }
-.tile-face strong { font: 500 clamp(22px, 2vw, 31px)/1.05 var(--ui); overflow-wrap: anywhere; }
-.tile-face span { justify-self: end; color: var(--cinnabar-dark); font: 700 7px var(--ui); letter-spacing: .08em; }
+/* Word hanzi are 1em vector outlines sized against the TILE (cqw), not the
+   viewport: one character dominates the face and longer words step down so n
+   glyphs still fit a single row. The px font shorthand is the fallback for
+   engines without container-query units. */
+.tile-face strong { font: 500 21px/1.05 var(--ui); font-size: 21cqw; overflow-wrap: anywhere; }
+.tile-face strong[data-word-length="1"] { font-size: 58cqw; }
+.tile-face strong[data-word-length="2"] { font-size: 34cqw; }
+.tile-face strong[data-word-length="3"] { font-size: 26cqw; }
+.tile-face > span { justify-self: end; color: var(--cinnabar-dark); font: 700 7px var(--ui); letter-spacing: .08em; }
+/* Tile and drawer hanzi are 1em vector outlines, so multi-character words
+   wrap as flex lines (overflow-wrap cannot break a flex row of SVGs). */
+.tile-face .vector-text-visual { flex-wrap: wrap; }
+.drawer-word .vector-text-visual { flex-wrap: wrap; column-gap: .04em; row-gap: 5px; }
 .tile-back {
   display: grid;
   place-items: center;
@@ -745,8 +757,7 @@ input.mint-range { accent-color: var(--jade); }
   .mahjong-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px 8px; padding-inline: 2px; }
   .mahjong-tile { min-height: 0; border-radius: 5px 5px 7px 7px; }
   .tile-face { padding: 5px 4px 7px; grid-template-rows: 9px 1fr 9px; border-bottom-width: 4px; }
-  .tile-face small, .tile-face span { font-size: 5px; }
-  .tile-face strong { font-size: clamp(19px, 7vw, 28px); }
+  .tile-face small, .tile-face > span { font-size: 5px; }
   .tile-back { border-width: 2px; border-bottom-width: 4px; outline-offset: -4px; }
   .glossary-drawer { width: min(360px, 94vw); border-left-width: 5px; }
   .drawer-word { font-size: clamp(55px, 22vw, 82px); }

@@ -3,6 +3,8 @@ import { Effect, Exit } from "effect";
 import { DECK_IDS, type DeckId } from "../../shared/constants";
 import type { RuntimeDeck, RuntimeWord, SaveFile, WordProgress } from "../../shared/schemas";
 import { wordAudioSource, WordAudioPlayer } from "../audio/wordAudio";
+import type { StrokeDataMap } from "../data/strokeData";
+import { HanziText } from "../game/HanziText";
 
 export type GlossaryDeck = { deckId: DeckId; deck: RuntimeDeck };
 
@@ -112,14 +114,16 @@ export function buildGlossaryIndex(entries: readonly GlossaryEntry[]): {
 
 type GlossaryTileProps = {
   entry: GlossaryEntry;
+  strokeData: StrokeDataMap;
   selected: boolean;
   onPlay: (entry: GlossaryEntry) => void;
 };
 
 /** Memoized per-tile subtree. Safe because entry objects come from the
- * parent's entries memo and onPlay is a stable callback: drawer open/close,
- * audio errors, and selection flips only rerender tiles whose props changed. */
-const GlossaryTile = memo(function GlossaryTile({ entry, selected, onPlay }: GlossaryTileProps) {
+ * parent's entries memo, strokeData is a stable loaded bundle, and onPlay is a
+ * stable callback: drawer open/close, audio errors, and selection flips only
+ * rerender tiles whose props changed. */
+const GlossaryTile = memo(function GlossaryTile({ entry, strokeData, selected, onPlay }: GlossaryTileProps) {
   if (!entry.revealed) return <div className="mahjong-tile tile-back" aria-hidden="true" />;
   return <button
     className={`mahjong-tile tile-face ${selected ? "is-selected" : ""}`}
@@ -128,14 +132,17 @@ const GlossaryTile = memo(function GlossaryTile({ entry, selected, onPlay }: Glo
     aria-label={`${entry.word.displayHanzi}, ${entry.word.displayPinyin}, ${masteryLabel(entry.progress!)}`}
   >
     <small>{String(entry.encounterNumber).padStart(3, "0")}</small>
-    <strong lang="zh-Hans">{entry.word.displayHanzi}</strong>
+    <strong data-word-length={[...entry.word.displayHanzi].length}>
+      <HanziText text={entry.word.displayHanzi} data={strokeData} accessible={false} />
+    </strong>
     <span>HSK {entry.deckId.at(-1)}</span>
   </button>;
 });
 
-export function GlossaryScreen({ save, decks, onExit }: {
+export function GlossaryScreen({ save, decks, strokeData, onExit }: {
   save: SaveFile;
   decks: readonly GlossaryDeck[];
+  strokeData: StrokeDataMap;
   onExit: () => void;
 }) {
   const entries = useMemo(() => buildGlossaryEntries(save, decks), [save, decks]);
@@ -202,7 +209,7 @@ export function GlossaryScreen({ save, decks, onExit }: {
       </div>
       <ol className="mahjong-grid">
         {entries.map((entry) => <li key={entry.key}>
-          <GlossaryTile entry={entry} selected={selectedKey === entry.key} onPlay={playEntry} />
+          <GlossaryTile entry={entry} strokeData={strokeData} selected={selectedKey === entry.key} onPlay={playEntry} />
         </li>)}
       </ol>
     </section>
@@ -212,7 +219,7 @@ export function GlossaryScreen({ save, decks, onExit }: {
       <aside className="glossary-drawer" aria-label={`Details for ${selected.word.displayHanzi}`}>
         <button ref={closeButtonRef} className="drawer-close" onClick={() => setSelectedKey(null)} aria-label="Close word details">×</button>
         <p className="drawer-eyebrow">ENCOUNTER {String(selected.encounterNumber).padStart(3, "0")} · HSK {selected.deckId.at(-1)}</p>
-        <div className="drawer-word" lang="zh-Hans">{selected.word.displayHanzi}</div>
+        <div className="drawer-word"><HanziText text={selected.word.displayHanzi} data={strokeData} /></div>
         <button className="drawer-audio" onClick={() => playEntry(selected)} aria-label={`Play pronunciation for ${selected.word.displayHanzi}`}>
           <span aria-hidden="true">◖)))</span> PLAY WORD
         </button>
