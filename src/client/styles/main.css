@@ -795,6 +795,9 @@ input.mint-range { accent-color: var(--jade); }
   .meaning-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 7px; }
   .meaning-grid button { min-height: 57px; padding: 7px; }
   .meaning-label { font-size: 11px; }
+  /* Hotkey letters skip the filled square on mobile: at 11px the cinnabar
+     block reads as noise, so the letter is tinted persimmon instead. */
+  .meaning-label mark { margin-right: 0; padding: 0; background: none; color: var(--persimmon); }
   .touch-keyboard {
     display: flex;
     height: 246px;
