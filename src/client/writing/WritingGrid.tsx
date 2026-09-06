@@ -19,7 +19,9 @@ const HINT_COLOR = "#c03a1e";
 
 const PADDING_RATIO = 0.06;
 /** Forgiving grading: above 1 is more lenient than hanzi-writer's default. */
-const QUIZ_LENIENCY = 1.2;
+const QUIZ_LENIENCY = 1.35;
+/** Loosens placement without making the shape test correspondingly lax. */
+const QUIZ_AVERAGE_DISTANCE_THRESHOLD = 500;
 const SHOW_HINT_AFTER_MISSES = 2;
 const MARK_STROKE_CORRECT_AFTER_MISSES = 5;
 /** Reduced-motion "demo": the finished glyph is held briefly without animating. */
@@ -72,6 +74,37 @@ export function toGridStrokeEvent(strokeData: WriterStrokeData, isCorrect: boole
     mistakesOnStroke: strokeData.mistakesOnStroke,
     totalMistakes: strokeData.totalMistakes,
     isBackwards: strokeData.isBackwards,
+  };
+}
+
+/** Moves a drawn stroke onto the expected stroke without changing its shape,
+ * size, or direction. Hanzi Writer can then grade the first stroke by those
+ * qualities while largely ignoring where in the square the player began it. */
+export function alignStrokeMidpoint(userPoints: Point[], expectedPoints: Point[]): Point[] {
+  if (userPoints.length < 2 || expectedPoints.length < 2) return userPoints;
+  const userStart = userPoints[0]!;
+  const userEnd = userPoints[userPoints.length - 1]!;
+  const expectedStart = expectedPoints[0]!;
+  const expectedEnd = expectedPoints[expectedPoints.length - 1]!;
+  const offsetX = (expectedStart.x + expectedEnd.x - userStart.x - userEnd.x) / 2;
+  const offsetY = (expectedStart.y + expectedEnd.y - userStart.y - userEnd.y) / 2;
+  return userPoints.map(({ x, y }) => ({ x: x + offsetX, y: y + offsetY }));
+}
+
+/** Hanzi Writer has no per-stroke placement option. Intercept its synchronous
+ * grading boundary so only stroke zero is translated; the library's normal
+ * shape, direction, length, and stroke-order checks still run unchanged. */
+function allowFirstStrokeAnywhere(writer: HanziWriter) {
+  const quiz = writer._quiz;
+  if (!quiz) return;
+  const endUserStroke = quiz.endUserStroke.bind(quiz);
+  quiz.endUserStroke = () => {
+    const userStroke = quiz._userStroke;
+    const expectedStroke = quiz._character.strokes[0];
+    if (quiz._currentStrokeIndex === 0 && userStroke && expectedStroke) {
+      userStroke.points = alignStrokeMidpoint(userStroke.points, expectedStroke.points);
+    }
+    endUserStroke();
   };
 }
 
@@ -237,6 +270,7 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
         if (canceled) return;
         yield* writerOperation(writer.quiz({
           leniency: QUIZ_LENIENCY,
+          averageDistanceThreshold: QUIZ_AVERAGE_DISTANCE_THRESHOLD,
           showHintAfterMisses: SHOW_HINT_AFTER_MISSES,
           markStrokeCorrectAfterMisses: MARK_STROKE_CORRECT_AFTER_MISSES,
           acceptBackwardsStrokes: false,
@@ -257,6 +291,7 @@ export function WritingGrid({ character, data, mode, reducedMotion, label, onEng
           },
         }));
         if (canceled) return;
+        allowFirstStrokeAnywhere(writer);
 
         // Hanzi Writer listens for mouse/touch start itself, but that event has
         // already happened when it caused a demo-to-quiz transition. Replay
