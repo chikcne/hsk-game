@@ -1,6 +1,6 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, test, vi } from "vitest";
-import { GlossaryScreen, buildGlossaryEntries } from "../../src/client/app/GlossaryScreen";
+import { GlossaryScreen, buildGlossaryEntries, buildGlossaryIndex } from "../../src/client/app/GlossaryScreen";
 import { GradeMenu } from "../../src/client/app/App";
 import { createDemoDeck } from "../../src/client/data/demoDeck";
 import { createLevelProgress, type LearningDeck } from "../../src/domain/learning";
@@ -54,6 +54,26 @@ describe("GlossaryScreen", () => {
     expect(entries[1]).toMatchObject({ key: `hsk-1:${later.id}`, revealed: true, encounterNumber: 2 });
     expect(entries.slice(2)).toHaveLength(decks.reduce((sum, item) => sum + item.deck.words.length, 0) - 2);
     expect(entries.slice(2).every((entry) => !entry.revealed && entry.encounterNumber === null)).toBe(true);
+  });
+
+  test("derives the drawer lookup and summary counts in one pass over the entries", () => {
+    const { save, decks, earlier } = fixture();
+    const entries = buildGlossaryEntries(save, decks);
+    const index = buildGlossaryIndex(entries);
+    expect(index.encountered).toBe(2);
+    expect(index.mastered).toBe(1);
+    expect(index.byKey.size).toBe(entries.length);
+    expect(entries.every((entry) => index.byKey.get(entry.key) === entry)).toBe(true);
+    expect(index.byKey.get(`hsk-1:${earlier.id}`)).toBe(entries[0]);
+  });
+
+  test("renders the derived encountered and mastered totals in the summary", () => {
+    const { save, decks } = fixture();
+    const total = decks.reduce((sum, item) => sum + item.deck.words.length, 0);
+    const html = renderToStaticMarkup(<GlossaryScreen save={save} decks={decks} onExit={vi.fn()} />);
+    expect(html).toContain("<dt>ENCOUNTERED</dt><dd>2</dd>");
+    expect(html).toContain("<dt>MASTERED</dt><dd>1</dd>");
+    expect(html).toContain(`aria-label="Glossary with 2 encountered words and ${total - 2} concealed words"`);
   });
 
   test("renders interactive faces only for encountered words and jade backs for the rest", () => {

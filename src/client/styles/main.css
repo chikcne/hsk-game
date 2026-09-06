@@ -84,14 +84,6 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.62' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='.34 0 0 0 .42  0 .28 0 0 .36  0 0 .2 0 .25  0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   mix-blend-mode: multiply;
 }
-.paper::after {
-  content: "";
-  position: absolute;
-  z-index: 50;
-  inset: 0;
-  pointer-events: none;
-  box-shadow: inset 0 0 90px rgba(58,36,12,.2), inset 0 0 0 1px rgba(255,244,214,.25);
-}
 .seal {
   display: inline-grid;
   place-items: center;
@@ -364,9 +356,15 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   gap: 14px 11px;
   list-style: none;
 }
-.mahjong-grid li { min-width: 0; background: transparent; }
+/* Tiles stay deliberately flat — no cast shadows, no paint containment, no
+   content-visibility — so the grid lays out once and scrolling is pure
+   composited scroll. Hover/selection feedback is paint-only (border color,
+   inset outline) so tiles sliding under a stationary cursor never force
+   layout, and nothing can clip. */
+.mahjong-grid li {
+  min-width: 0;
+}
 .mahjong-tile {
-  position: relative;
   width: 100%;
   aspect-ratio: .76;
   min-height: 82px;
@@ -385,19 +383,13 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   background: var(--tile-face) padding-box;
   border-bottom: 5px solid #b99558;
   color: #2b2015;
-  box-shadow:
-    inset 2px 2px 1px rgba(255,255,255,.78),
-    inset -2px -2px 2px rgba(102,73,26,.19),
-    0 9px 7px -5px rgba(2,23,15,.42);
   cursor: pointer;
-  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
 }
-.tile-face:hover, .tile-face:focus-visible, .tile-face.is-selected {
-  z-index: 2;
-  transform: translateY(-5px) rotate(-.5deg);
-  filter: saturate(1.07) brightness(1.03);
-  border-bottom: 7px solid #a97f3d;
-  box-shadow: inset 2px 2px 1px rgba(255,255,255,.82), inset -2px -2px 2px rgba(102,73,26,.19), 0 15px 12px -8px rgba(2,23,15,.48);
+.tile-face:hover { border-bottom-color: #a97f3d; }
+.tile-face:focus-visible, .tile-face.is-selected {
+  border-bottom-color: #a97f3d;
+  outline: 3px solid var(--cinnabar);
+  outline-offset: -3px;
 }
 .tile-face small { justify-self: start; color: rgba(70,49,25,.55); font: 7px var(--ui); letter-spacing: .05em; }
 .tile-face strong { font: 500 clamp(22px, 2vw, 31px)/1.05 var(--ui); overflow-wrap: anywhere; }
@@ -407,10 +399,11 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   place-items: center;
   border: 3px solid #d5bd7c;
   border-bottom: 5px solid #9f7d43;
+  outline: 2px solid #205641;
+  outline-offset: -5px;
   background:
     linear-gradient(45deg, transparent 42%, rgba(213,189,124,.14) 43% 48%, transparent 49% 52%, rgba(213,189,124,.14) 53% 58%, transparent 59%),
     #2e7459;
-  box-shadow: inset 0 0 0 3px #205641, inset 0 0 15px rgba(7,42,29,.36), 0 9px 7px -5px rgba(2,23,15,.38);
 }
 .glossary-scrim {
   position: fixed;
@@ -434,7 +427,6 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   background:
     radial-gradient(circle at 100% 0, rgba(255,255,255,.6), transparent 36%),
     var(--paper-light);
-  box-shadow: -20px 0 50px rgba(16,30,21,.32);
   animation: glossary-drawer-in 360ms cubic-bezier(.16,1,.3,1) both;
 }
 @keyframes glossary-fade { from { opacity: 0; } }
@@ -752,11 +744,10 @@ input.mint-range { accent-color: var(--jade); }
   .legend-dot { width: 6px; height: 6px; }
   .mahjong-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px 8px; padding-inline: 2px; }
   .mahjong-tile { min-height: 0; border-radius: 5px 5px 7px 7px; }
-  .tile-face { padding: 5px 4px 7px; grid-template-rows: 9px 1fr 9px; border-bottom-width: 4px; box-shadow: inset 1px 1px 1px rgba(255,255,255,.78), inset -1px -1px 1px rgba(102,73,26,.19), 0 8px 6px -5px rgba(2,23,15,.4); }
-  .tile-face:hover, .tile-face:focus-visible, .tile-face.is-selected { border-bottom-width: 6px; }
+  .tile-face { padding: 5px 4px 7px; grid-template-rows: 9px 1fr 9px; border-bottom-width: 4px; }
   .tile-face small, .tile-face span { font-size: 5px; }
   .tile-face strong { font-size: clamp(19px, 7vw, 28px); }
-  .tile-back { border-width: 2px; border-bottom-width: 4px; box-shadow: inset 0 0 0 2px #205641, inset 0 0 10px rgba(7,42,29,.36), 0 8px 6px -5px rgba(2,23,15,.36); }
+  .tile-back { border-width: 2px; border-bottom-width: 4px; outline-offset: -4px; }
   .glossary-drawer { width: min(360px, 94vw); border-left-width: 5px; }
   .drawer-word { font-size: clamp(55px, 22vw, 82px); }
 
@@ -890,12 +881,14 @@ input.mint-range { accent-color: var(--jade); }
 
 .reduce-motion *, .reduce-motion *::before, .reduce-motion *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 .reduce-motion .scroll-column, .reduce-motion .scroll-menu:hover .scroll-column:not(:hover), .reduce-motion .scroll-menu:focus-within .scroll-column:not(:focus) { transform: none; }
+.reduce-motion .tile-face:hover, .reduce-motion .tile-face:focus-visible { transform: none; }
 .reduce-motion .caret { opacity: 1; }
 .reduce-motion .calligraphy-phrase.is-solved { animation-duration: 140ms !important; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .scroll-column, .scroll-menu:hover .scroll-column:not(:hover), .scroll-menu:focus-within .scroll-column:not(:focus) { transform: none; }
+  .tile-face:hover, .tile-face:focus-visible { transform: none; }
   .caret { opacity: 1; }
   .calligraphy-phrase.is-solved { animation-duration: 140ms !important; }
 }

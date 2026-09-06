@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { Effect, Exit } from "effect";
 import { DECK_IDS, type DeckId } from "../../shared/constants";
 import type { RuntimeDeck, RuntimeWord, SaveFile, WordProgress } from "../../shared/schemas";
@@ -92,20 +92,59 @@ function tileFaceColor(mastery: number): string {
   return `rgb(${channel(255, 218)} ${channel(253, 178)} ${channel(244, 72)})`;
 }
 
+/** One-pass derived view model: key lookup for the drawer plus the summary
+ * totals, so selection changes never rescan the full catalogue. */
+export function buildGlossaryIndex(entries: readonly GlossaryEntry[]): {
+  byKey: ReadonlyMap<string, GlossaryEntry>;
+  encountered: number;
+  mastered: number;
+} {
+  const byKey = new Map<string, GlossaryEntry>();
+  let encountered = 0;
+  let mastered = 0;
+  for (const entry of entries) {
+    byKey.set(entry.key, entry);
+    if (entry.revealed) encountered += 1;
+    if (entry.progress?.card.state === "review") mastered += 1;
+  }
+  return { byKey, encountered, mastered };
+}
+
+type GlossaryTileProps = {
+  entry: GlossaryEntry;
+  selected: boolean;
+  onPlay: (entry: GlossaryEntry) => void;
+};
+
+/** Memoized per-tile subtree. Safe because entry objects come from the
+ * parent's entries memo and onPlay is a stable callback: drawer open/close,
+ * audio errors, and selection flips only rerender tiles whose props changed. */
+const GlossaryTile = memo(function GlossaryTile({ entry, selected, onPlay }: GlossaryTileProps) {
+  if (!entry.revealed) return <div className="mahjong-tile tile-back" aria-hidden="true" />;
+  return <button
+    className={`mahjong-tile tile-face ${selected ? "is-selected" : ""}`}
+    style={{ "--tile-face": tileFaceColor(entry.mastery) } as CSSProperties}
+    onClick={() => onPlay(entry)}
+    aria-label={`${entry.word.displayHanzi}, ${entry.word.displayPinyin}, ${masteryLabel(entry.progress!)}`}
+  >
+    <small>{String(entry.encounterNumber).padStart(3, "0")}</small>
+    <strong lang="zh-Hans">{entry.word.displayHanzi}</strong>
+    <span>HSK {entry.deckId.at(-1)}</span>
+  </button>;
+});
+
 export function GlossaryScreen({ save, decks, onExit }: {
   save: SaveFile;
   decks: readonly GlossaryDeck[];
   onExit: () => void;
 }) {
   const entries = useMemo(() => buildGlossaryEntries(save, decks), [save, decks]);
+  const index = useMemo(() => buildGlossaryIndex(entries), [entries]);
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [audioError, setAudioError] = useState(false);
   const playerRef = useRef<WordAudioPlayer | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
-  const selected = selectedKey ? entries.find((entry) => entry.key === selectedKey) ?? null : null;
-  const revealedCount = entries.findIndex((entry) => !entry.revealed);
-  const encountered = revealedCount < 0 ? entries.length : revealedCount;
-  const mastered = entries.reduce((count, entry) => count + (entry.progress?.card.state === "review" ? 1 : 0), 0);
+  const selected = selectedKey ? index.byKey.get(selectedKey) ?? null : null;
 
   useEffect(() => {
     const player = new WordAudioPlayer();
@@ -145,13 +184,13 @@ export function GlossaryScreen({ save, decks, onExit }: {
   }, [save.settings.masterVolume]);
 
   return <main className={`glossary-screen paper ${save.settings.reducedMotion ? "reduce-motion" : ""}`}>
-    <section className="mahjong-table" aria-label={`Glossary with ${encountered} encountered words and ${entries.length - encountered} concealed words`}>
+    <section className="mahjong-table" aria-label={`Glossary with ${index.encountered} encountered words and ${entries.length - index.encountered} concealed words`}>
       <div className="glossary-overview">
         <button className="glossary-back" onClick={onExit} aria-label="Return to glossary grade selection"><span aria-hidden="true">←</span> GRADES</button>
         <div className="glossary-summary">
           <dl className="glossary-totals">
-            <div><dt>ENCOUNTERED</dt><dd>{encountered}</dd></div>
-            <div><dt>MASTERED</dt><dd>{mastered}</dd></div>
+            <div><dt>ENCOUNTERED</dt><dd>{index.encountered}</dd></div>
+            <div><dt>MASTERED</dt><dd>{index.mastered}</dd></div>
           </dl>
           <div className="glossary-legend" aria-hidden="true">
             <span><i className="legend-dot legend-new" /> NEW</span>
@@ -163,16 +202,7 @@ export function GlossaryScreen({ save, decks, onExit }: {
       </div>
       <ol className="mahjong-grid">
         {entries.map((entry) => <li key={entry.key}>
-          {entry.revealed ? <button
-            className={`mahjong-tile tile-face ${selectedKey === entry.key ? "is-selected" : ""}`}
-            style={{ "--tile-face": tileFaceColor(entry.mastery) } as CSSProperties}
-            onClick={() => playEntry(entry)}
-            aria-label={`${entry.word.displayHanzi}, ${entry.word.displayPinyin}, ${masteryLabel(entry.progress!)}`}
-          >
-            <small>{String(entry.encounterNumber).padStart(3, "0")}</small>
-            <strong lang="zh-Hans">{entry.word.displayHanzi}</strong>
-            <span>HSK {entry.deckId.at(-1)}</span>
-          </button> : <div className="mahjong-tile tile-back" aria-hidden="true" />}
+          <GlossaryTile entry={entry} selected={selectedKey === entry.key} onPlay={playEntry} />
         </li>)}
       </ol>
     </section>
