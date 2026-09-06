@@ -8,6 +8,7 @@ import { DECK_SOURCES, IMPORTER_VERSION, type DeckSource } from "./compiler";
 import { buildMeaningIndexesEffect, type WordImportError } from "../normalize/words";
 import { normalizeHanzi } from "../normalize/hanzi";
 import { acceptedPinyinForms } from "../normalize/pinyin";
+import { segmentPinyinFormsEffect } from "../normalize/pinyin-segments";
 import { normalizedKey } from "../normalize/text";
 import { stableJson } from "./stable-json";
 import { Fs, type FsError } from "../../shared/fs";
@@ -92,8 +93,11 @@ export function cardsFingerprint(cards: readonly LoadedCard[]): string {
   return digest(`deck-v2\u0000${IMPORTER_VERSION}\u0000${body}`);
 }
 
-/** Rebuilds the derived fields an `.acard` deliberately does not store. */
-function toRuntimeWord(card: LoadedCard["card"]): RuntimeWord {
+/** Rebuilds the derived fields an `.acard` deliberately does not store. The
+ * character-aligned pinyin segments are derived by the caller so a failure
+ * can carry the offending file's name. */
+function toRuntimeWord(loaded: LoadedCard, pinyinSegments: string[][]): RuntimeWord {
+  const card = loaded.card;
   return {
     id: card.id,
     sourceGuids: [...card.source.guids].sort(),
@@ -101,6 +105,7 @@ function toRuntimeWord(card: LoadedCard["card"]): RuntimeWord {
     hanziKey: normalizeHanzi(card.hanzi).hanziKey,
     displayPinyin: card.pinyin,
     acceptedPinyin: acceptedPinyinForms(card.pinyin),
+    pinyinSegments,
     partOfSpeech: card.pos,
     partOfSpeechKey: card.pos ? normalizedKey(card.pos) || null : null,
     senseLabel: card.senseLabel,
@@ -122,7 +127,17 @@ const compileOneGrade = (
     if (!cards.length) {
       return yield* Effect.fail(new CardCompileError({ detail: `${source.id}: curriculum contains no cards` }));
     }
-    const words = cards.map(({ card }) => toRuntimeWord(card));
+    // Segmentation failure on ANY card aborts the whole compile (after a
+    // temp-tree build), so a bad card can never reach the generated bundles.
+    const words = yield* Effect.forEach(
+      cards,
+      (loaded) =>
+        segmentPinyinFormsEffect(loaded.card.hanzi, loaded.card.pinyin).pipe(
+          Effect.mapError((error) => new CardCompileError({ detail: `${loaded.relative}: ${error.message}` })),
+          Effect.map((pinyinSegments) => toRuntimeWord(loaded, pinyinSegments)),
+        ),
+      { concurrency: Infinity },
+    );
     const indexes = yield* buildMeaningIndexesEffect(words);
     const fingerprint = cardsFingerprint(cards);
 

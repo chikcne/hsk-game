@@ -171,3 +171,109 @@ precise issue paths.
   session on resume (pruned defensively).
 - Old-tier fillers are uniform per draw; a shuffled Old subqueue (sampling
   without replacement per cycle) could further even coverage.
+
+## Selection Mode (pinyin by button) — fourth-slice addition
+
+Review Mode's pinyin phase can now be answered by **selecting** syllables
+instead of typing them. Two persisted settings drive it:
+
+- `settings.desktopReviewMode` and `settings.mobileReviewMode`, values
+  `"selection" | "typing"`, **default `"typing"`** (current behavior
+  preserved). The settings dialog exposes them under REVIEW MODE as the
+  exact dropdowns **Desktop Review Mode** / **Mobile Review Mode** with
+  options **Selection Mode** / **Typing Mode**.
+- Portrait orientation applies the mobile setting, landscape the desktop
+  one (`App.tsx` `usePortraitOrientation`). The effective mode is **locked
+  per enemy** inside `useBattle.commitEnemies`: orientation rotations and
+  mid-battle settings changes take effect on the NEXT target and never
+  erase an in-progress answer.
+- Schema-v5 saves written before these fields hydrate with typing defaults
+  via zod `.default()` — on the client (`parseSavePayload`) and the strict
+  server schema alike — with all progress retained and no revision bump.
+
+### Compiled pinyin segmentation
+
+`RuntimeWord` gained `pinyinSegments: string[][]` — exactly one entry per
+Han character, grouped alternatives per entry (谁 → `[["shéi","shuí"]]`;
+contracted erhua 这儿/zhèr → `[["zhè"],["r"]]`). It is **derived at compile
+time** (`tools/import-decks/normalize/pinyin-segments.ts`) from the
+authored `.acard` pinyin; no gameplay-time `.acard` reads and no
+hand-authored segment fields on source cards. Hanzi pronunciation data
+(pinyin-pro) is used ONLY to find syllable boundaries — tone-insensitive
+alignment plus a no-tone Mandarin syllabary fallback (pinyin-pro reads
+膀 páng while the corpus authors bǎng). Authored pronunciation is never
+replaced: tone sandhi (yíkuàir), neutral tones (shāngliang), apostrophes
+(nǚ’ér), separators (shízì lùkǒu, suān-tián-kǔ-là) and capitals
+(Zhōnghuá Mínzú) are reproduced verbatim, enforced by a reconstruction
+check. A card that cannot be segmented **fails the compile** (both
+`from-cards` and the `.apkg` normalize path) and `validate:cards --deep`.
+Deck identity is untouched: the fingerprint digests authored content only,
+so the regenerated bundles keep their fingerprints.
+
+### Choice generation and sourcing rules
+
+`src/domain/session/pinyin-choices.ts` is a pure deterministic generator.
+Each Han-character step of the locked target returns exactly **8 unique
+labels**: 1 correct (all authored alternatives grouped on one button),
+**4 distractors from pinyin segments of other unique words in the current
+Review plan**, and **3 from loaded deck words outside the plan**. Correct
+alternatives, the target word's own syllables, and duplicate labels are
+excluded. Positions are Fisher–Yates shuffled from a seed of **enemy id +
+character index**, so every character of every enemy draws fresh choices.
+If a plan pool cannot supply 4 unique eligible labels, it backfills from
+outside to keep 7 false choices; pathological fixtures degrade safely
+while always including the correct label. `App.deployReview` builds the
+pools (unique plan words + all loaded words outside the plan) and hands
+them to `useBattle` via `BattleOptions.pinyinPoolWords`.
+
+### Gameplay
+
+`src/domain/session/pinyin-selection.ts` holds the pure progress reducer;
+`useBattle` resets it on locked-target changes and feeds every click.
+Correct clicks append the displayed segment and advance; the final
+correct segment enters the existing meaning phase, plays audio, and shares
+clean scoring/repair rules with correctly typed pinyin. A wrong click
+immediately resolves the existing `wrongPinyin` outcome and feedback,
+carrying the selected sequence plus the wrong label. The pinyin recall
+timeout is unchanged — partial selection at the deadline reveals the full
+pinyin, enters meaning, and records a miss. There are **no letter/number
+pinyin hotkeys**; buttons work through normal focus + Enter/Space, and
+meaning hotkeys are unchanged. Selection is disabled during pause and
+corrective feedback, and the hidden typing input's focus enforcement is
+Typing-Mode-only.
+
+### Responsive layout
+
+Desktop (both modes) reserves `66px / minmax(280px, 1fr) / 220px` rows in
+the pinyin phase — the answer-track reservation is what shrinks the
+battlefield; lanes, normalized positions, landing boundary, type scale,
+and travel timing are unchanged, and the meaning phase still grows for
+long text. Mobile Typing Mode keeps the 246px QWERTY region; Mobile
+Selection Mode swaps that region's contents for the 4×2 selector grid
+(selected pinyin displayed in the answer card above) with the arena height
+stable.
+
+### Paths changed (this slice)
+
+```text
+src/shared/constants.ts                       # desktopReviewMode/mobileReviewMode defaults
+src/shared/schemas.ts                         # ReviewInputMode settings (.default("typing")), RuntimeWord.pinyinSegments + per-character refine
+src/client/app/App.tsx                        # orientation hook, pools, selector render, typing-focus guards, settings dropdowns
+src/client/app/PinyinSelector.tsx             # NEW: SelectedPinyin + PinyinChoiceGrid
+src/client/state/useBattle.ts                 # locked input mode, selection progress/state, choosePinyin, selection view
+src/client/styles/main.css                    # 220px desktop answer track, selector + touch-selector styles, select styling
+src/client/data/demoDeck.ts                   # demo pinyinSegments fixtures
+src/domain/session/pinyin-choices.ts          # NEW: pure 8-choice generator + label pools
+src/domain/session/pinyin-selection.ts        # NEW: pure per-character progress reducer
+tools/import-decks/normalize/pinyin-segments.ts  # NEW: compile-time segmentation (pronunciation-boundary alignment + syllabary fallback)
+tools/import-decks/normalize/words.ts         # .apkg path derives pinyinSegments (typed failure)
+tools/import-decks/compile/from-cards.ts      # cards path derives pinyinSegments (typed failure)
+tools/import-acards/extract.ts                # recovery path carries segments through
+tools/import-acards/validate.ts               # --deep re-derives segments for every card
+public/game-data/**                           # regenerated bundles (fingerprints unchanged)
+tests/import-decks/pinyin-segments.test.ts    # NEW: explicit cases + full 5,398-word corpus validation
+tests/domain/pinyin-choices.test.ts           # NEW: 8 labels, 4/3 provenance, exclusions, determinism, fallback
+tests/domain/pinyin-selection.test.ts         # NEW: advance/complete/wrong/alternatives/erhua r
+tests/client/pinyin-selector.test.tsx         # NEW: SSR markup, a11y, no-hotkey contract, disabled state
+tests/client/saves.test.ts, tests/server/saves.test.ts  # legacy hydration + strict roundtrip
+```

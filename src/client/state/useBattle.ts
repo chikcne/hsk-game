@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   BASE_TRAVEL_MS, DANGER_ZONE_PROGRESS, MAX_ACTIVE_ENEMIES, type ChoiceKey,
 } from "../../shared/constants";
-import type { DifficultySettings, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
+import type { DifficultySettings, ReviewInputMode, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
 import { acceptsPinyin } from "../../domain/deck/pinyin";
 import type { SchedulerSnapshot } from "../../domain/learning";
 import type { RecencyLabel, ReviewPlan, ReviewSession, ReviewSpawnDecision } from "../../domain/review";
@@ -11,6 +11,8 @@ import {
   applyReviewOutcome, createReviewSession, decideReviewSpawn, pendingReviewWork, reserveReviewSpawn,
 } from "../../domain/review";
 import { safeMeaningChoices, type MeaningChoice } from "../../domain/session/choices";
+import { buildPinyinLabelPool, generatePinyinChoices } from "../../domain/session/pinyin-choices";
+import { applyPinyinSelection, initialPinyinSelection, type PinyinSelectionProgress } from "../../domain/session/pinyin-selection";
 import { calculatePoints, nextStreak } from "../../domain/session/scoring";
 import { encounterCredit } from "../../domain/session/credit";
 import {
@@ -83,6 +85,14 @@ export type ReviewProgressReport = {
   points: number;
 };
 
+/** Distractor word pools feeding Selection Mode's pinyin choices. */
+export type RuntimeWordPool = {
+  /** Unique words scheduled by the current Review plan. */
+  planWords: readonly RuntimeWord[];
+  /** Loaded deck words not scheduled by the plan. */
+  outsideWords: readonly RuntimeWord[];
+};
+
 export type BattleOptions = {
   /** Merged cross-grade deck; word IDs are review keys (`deckId:wordId`). */
   deck: RuntimeDeck;
@@ -90,7 +100,22 @@ export type BattleOptions = {
   plan: ReviewPlan;
   /** Snapshot after plan creation; spawns advance its ordinal. */
   initialSnapshot: SchedulerSnapshot;
+  /** Pinyin-selection distractor sources (Selection Mode only). */
+  pinyinPoolWords: RuntimeWordPool;
   onChange: (report: ReviewProgressReport) => void;
+};
+
+/** Selection-mode view of the locked target's pinyin progress. */
+export type PinyinSelectionView = {
+  labels: string[];
+  correct: string;
+  selected: string[];
+  charIndex: number;
+  charCount: number;
+  /** The word's Han characters, for the visual progress indicator. */
+  hanziChars: string[];
+  /** The Han character currently being answered. */
+  hanzi: string;
 };
 
 const initialStats = (baseSpawns: number): SessionStats => ({
@@ -114,10 +139,23 @@ export function useBattle(
   paused: boolean,
   strokeData: StrokeDataMap,
   animateStrokes: boolean,
+  reviewMode: ReviewInputMode,
 ) {
   const { deck } = options;
   const words = useMemo(() => new Map(deck.words.map((word) => [word.id, word])), [deck]);
   const wordAudioPlayer = useMemo(() => new WordAudioPlayer(), [deck.fingerprint]);
+
+  /** Effective pinyin answer style for the CURRENT orientation/settings. The
+   * input mode is locked per enemy (`lockedInputModeRef`): orientation flips
+   * and mid-battle settings changes only take effect on the NEXT target, so
+   * an in-progress answer is never erased. */
+  const reviewModeRef = useRef(reviewMode);
+  reviewModeRef.current = reviewMode;
+  const lockedInputModeRef = useRef<ReviewInputMode>(reviewMode);
+  const [inputMode, setInputMode] = useState<ReviewInputMode>(reviewMode);
+  const [selectionProgress, setSelectionProgress] = useState<PinyinSelectionProgress>(initialPinyinSelection);
+  const selectionProgressRef = useRef(selectionProgress);
+  selectionProgressRef.current = selectionProgress;
 
   const planRecencyRef = useRef(options.plan.recency);
   const planPressureRef = useRef(options.plan.pressure);
@@ -181,6 +219,13 @@ export function useBattle(
       setTargetId(nextTargetId);
       phaseRef.current = "pinyin"; setPhase("pinyin");
       setPinyinAutocompleted(false); setChoices([]); setAudioError(false); phaseStarted.current = now;
+      // A new locked target re-locks the input mode from the CURRENT
+      // orientation/settings and restarts selection progress from scratch.
+      lockedInputModeRef.current = reviewModeRef.current;
+      setInputMode(reviewModeRef.current);
+      const initialSelection = initialPinyinSelection();
+      selectionProgressRef.current = initialSelection;
+      setSelectionProgress(initialSelection);
     }
     enemiesRef.current = nextEnemies;
     setEnemies(nextEnemies);
@@ -513,6 +558,25 @@ export function useBattle(
     if (acceptsPinyin(word.acceptedPinyin, raw)) beginMeaning(enemy, word, elapsed);
     else resolveEnemy(enemy, { kind: "wrongPinyin", pinyinMs: elapsed }, raw);
   };
+  /** Selection Mode click on one pinyin button. Correct clicks advance (the
+   * final one enters the meaning phase through the SAME clean path as a
+   * correctly typed pinyin); a wrong click resolves wrongPinyin immediately,
+   * carrying the selected sequence plus the wrong label. */
+  const choosePinyin = (label: string) => {
+    const enemy = targetRef.current;
+    const word = enemy ? words.get(enemy.wordId) : null;
+    if (!enemy || !word || lockedInputModeRef.current !== "selection") return;
+    if (phase !== "pinyin" || pausedRef.current || learningPausedRef.current) return;
+    const elapsed = performance.now() - phaseStarted.current;
+    const step = applyPinyinSelection(word.pinyinSegments, selectionProgressRef.current, label);
+    if (step.kind === "wrong") {
+      resolveEnemy(enemy, { kind: "wrongPinyin", pinyinMs: elapsed }, step.attempted);
+      return;
+    }
+    selectionProgressRef.current = step.progress;
+    setSelectionProgress(step.progress);
+    if (step.kind === "complete") beginMeaning(enemy, word, elapsed);
+  };
   const chooseMeaning = (key: ChoiceKey) => {
     const enemy = targetRef.current;
     if (!enemy || phase !== "meaning" || pausedRef.current || learningPausedRef.current) return;
@@ -552,9 +616,44 @@ export function useBattle(
     if (preparingEnemy) inFlightKeys.add(preparingEnemy.wordId);
     return pendingReviewWork(reviewSessionRef.current, options.plan.spawns.length, inFlightKeys);
   })();
+  /** Deterministic per-character choices for the locked target. Keyed by the
+   * stable ids (not the per-frame enemy objects) so advancing enemies never
+   * regenerate labels mid-answer; enemy id + character index seed the shuffle
+   * so every character of every enemy draws fresh positions. */
+  // Pool construction walks the full 5,398-word corpus, so cache it outside
+  // the animation-driven render path. Only the much smaller plan pool changes
+  // when the locked target changes (to exclude that entire word).
+  const outsidePinyinPool = useMemo(
+    () => buildPinyinLabelPool(options.pinyinPoolWords.outsideWords),
+    [options.pinyinPoolWords.outsideWords],
+  );
+  const targetWordId = target?.wordId;
+  const planPinyinPool = useMemo(
+    () => buildPinyinLabelPool(options.pinyinPoolWords.planWords, targetWordId),
+    [options.pinyinPoolWords.planWords, targetWordId],
+  );
+  const selection: PinyinSelectionView | null = useMemo(() => {
+    if (!target || phase !== "pinyin" || inputMode !== "selection") return null;
+    const word = words.get(target.wordId);
+    if (!word || selectionProgress.charIndex >= word.pinyinSegments.length) return null;
+    const pools = {
+      planPool: planPinyinPool,
+      outsidePool: outsidePinyinPool,
+    };
+    const { labels, correct } = generatePinyinChoices(word, selectionProgress.charIndex, pools, `${target.id}:${selectionProgress.charIndex}`);
+    const hanziChars = [...word.displayHanzi];
+    return {
+      labels, correct,
+      selected: selectionProgress.selected,
+      charIndex: selectionProgress.charIndex,
+      charCount: word.pinyinSegments.length,
+      hanziChars,
+      hanzi: hanziChars[selectionProgress.charIndex] ?? word.displayHanzi,
+    };
+  }, [inputMode, outsidePinyinPool, phase, planPinyinPool, selectionProgress, target?.id, targetWordId, words]);
   return {
     enemies, preparingEnemy, target, targetWord, phase, pinyinAutocompleted, choices, feedback, learningPaused,
     audioError, streak, performanceMultiplier, stats, sessionComplete, pendingWork, submitPinyin, chooseMeaning,
-    dismissFeedback, replay,
+    dismissFeedback, replay, inputMode, selection, choosePinyin,
   };
 }

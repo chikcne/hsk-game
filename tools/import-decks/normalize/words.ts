@@ -5,6 +5,7 @@ import type { MediaIndex, RawNote } from "../raw-types";
 import { parseSoundReferenceEffect, SoundReferenceError } from "../archive/media";
 import { normalizeHanziEffect, HanziError } from "./hanzi";
 import { acceptedPinyinForms } from "./pinyin";
+import { segmentPinyinForms, PinyinSegmentError } from "./pinyin-segments";
 import { normalizedKey, nullableText, sanitizeText } from "./text";
 import { choiceShortcutsForLabel } from "../../../src/domain/session/choices";
 
@@ -35,6 +36,16 @@ export class WordImportError extends Data.TaggedError("WordImportError")<{
     return this.detail;
   }
 }
+
+/** Character-aligned pinyin segments for one authored pinyin string, or a
+ * typed import failure naming the source note. */
+const segmentPinyinForNote = (guid: string, hanzi: string, displayPinyin: string): Effect.Effect<string[][], WordImportError, never> =>
+  Effect.try({
+    try: () => segmentPinyinForms(hanzi, displayPinyin),
+    catch: (cause) => new WordImportError({
+      detail: `Note ${guid} (${hanzi}) pinyin segmentation failed: ${cause instanceof PinyinSegmentError ? cause.message : String(cause)}`,
+    }),
+  });
 
 function hash(value: string): string {
   return createHash("sha256").update(value).digest("hex");
@@ -130,9 +141,10 @@ export const normalizeAndDedupeEffect = (
         existing.sourceGuids.push(note.guid);
         continue;
       }
+      const pinyinSegments = yield* segmentPinyinForNote(note.guid, hanzi.displayHanzi, displayPinyin);
       groups.set(semanticIdentity, {
         id, sourceGuids: [note.guid], displayHanzi: hanzi.displayHanzi, hanziKey: hanzi.hanziKey,
-        displayPinyin, acceptedPinyin, partOfSpeech, partOfSpeechKey, senseLabel: hanzi.senseLabel,
+        displayPinyin, acceptedPinyin, pinyinSegments, partOfSpeech, partOfSpeechKey, senseLabel: hanzi.senseLabel,
         meaning, meaningKey, audioUrl: "", audioFilename, sourceNoteId: note.id,
       });
     }

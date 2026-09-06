@@ -240,6 +240,40 @@ Behavior:
 
 Display a small `ü = v` hint near the field after the first deck word that needs it, and keep it in Help.
 
+### 6a. Selection Mode (pinyin by button)
+
+Each review-mode setting (`Desktop Review Mode`, `Mobile Review Mode`) also
+offers **Selection Mode** as the pinyin answer style; both default to Typing
+Mode. Portrait orientation applies the mobile setting, landscape the desktop
+setting, and the effective mode is locked per enemy — orientation flips or
+mid-battle settings changes take effect on the next target, never erasing an
+in-progress answer.
+
+- The already-selected pinyin appears above the buttons, displaced upward like
+  the typing display it replaces, with a caret and a Hanzi-character progress
+  row marking the current character (also exposed to assistive technology as
+  `character N of M`).
+- Every Han character of the target renders exactly 8 unique tone-marked
+  syllable buttons in a compact 4×2 grid (the meaning-selection visual
+  language): 1 correct label, 4 distractors from pinyin segments of other
+  unique words in the current Review plan, and 3 from loaded deck words
+  outside the plan. Positions shuffle deterministically per enemy id +
+  character index, so each character draws fresh choices. If the plan pool
+  cannot supply 4 unique eligible labels, it backfills from outside so the
+  player still faces 7 false choices.
+- Correct clicks append the displayed segment and advance; the final correct
+  segment enters the meaning phase and plays audio exactly like a correctly
+  typed pinyin (same clean scoring/repair rules). A wrong click resolves the
+  existing wrong-pinyin outcome immediately, carrying the selected sequence
+  plus the wrong label.
+- The pinyin recall timeout is unchanged: a partial selection at the deadline
+  reveals the full pinyin, enters the meaning phase, and records a miss.
+- There are NO letter/number pinyin hotkeys — buttons answer by click/tap or
+  the platform's normal focus + `Enter`/`Space` activation. Meaning hotkeys
+  are unchanged.
+- Selection is disabled while paused and during corrective feedback. The
+  hidden typing input exists (and enforces focus) only in Typing Mode.
+
 ## 7. Meaning command panel
 
 References: [`03-battle-meaning.png`](03-battle-meaning.png), [`07-mobile-meaning.png`](07-mobile-meaning.png)
@@ -302,9 +336,13 @@ Settings content:
 
 1. **Enemy spawn rate** slider, 1.5–5.0 s, showing both `1 every 3.0s` and `20/min`.
 2. **Enemy speed** slider, 0.65–1.50×, showing `SLOW`, `STANDARD`, or `FAST`.
-3. Read-only targeting rule: **SOONEST ARRIVAL LOCKS UNTIL RESOLVED**.
-4. Master volume, mute, reduced motion, and reset defaults may follow below the gameplay controls.
-5. Cancel and Apply Settings buttons.
+3. Under **Review Mode**: **Desktop Review Mode** and **Mobile Review Mode**
+   dropdowns, each offering `Selection Mode` and `Typing Mode` (default
+   Typing). Portrait play uses the mobile setting, landscape the desktop one;
+   the effective mode locks per enemy and changes on the next target.
+4. Read-only targeting rule: **SOONEST ARRIVAL LOCKS UNTIL RESOLVED**.
+5. Master volume, mute, reduced motion, and reset defaults may follow below the gameplay controls.
+6. Cancel and Apply Settings buttons.
 
 Keyboard:
 
@@ -339,9 +377,14 @@ If save has not succeeded, replace the green status with Retry, Export Progress 
 
 ### Desktop, ≥ 1024 CSS px wide
 
-- Arena and HUD occupy approximately top 70–74%.
-- Command panel spans bottom 26–30%.
-- Meaning choices use 4×2 unless text measurement requires 2×4.
+- Grid rows: ~66px HUD, `minmax(280px, 1fr)` battlefield, ~220px answer area
+  in the pinyin phase (both Typing and Selection) — the reserved answer track
+  is what shrinks the battlefield, while 12 lanes, normalized positions, the
+  landing boundary, type scale, and travel timing are unchanged. The meaning
+  answer track keeps growing for long text (`fit-content(70%)`).
+- Arena and HUD occupy approximately the top two-thirds.
+- Meaning choices use 4×2 unless text measurement requires 2×4; the pinyin
+  selector is a compact 4×2 syllable grid inside the ~220px answer area.
 - Maximum content width may be 1440 px with centered outer space.
 
 ### Tablet, 600–1023 px
@@ -359,6 +402,10 @@ If save has not succeeded, replace the green status with Retry, Export Progress 
 - Meaning choices use 2×4 with minimum 44×44 CSS px touch targets.
 - Key letters stay visible even though tapping is expected.
 - Pinyin phase uses a sticky command card above the software keyboard.
+- Mobile Typing Mode keeps the QWERTY region (246px, 218px on short
+  viewports). Mobile Selection Mode replaces that region's contents with the
+  8-syllable selector grid while keeping the arena height stable; the
+  selected-pinyin display sits in the answer card above it.
 - Respect `visualViewport` changes so input is not hidden by the keyboard.
 
 At 360×640, long meanings may make the choice region scroll internally, but the active target header and all eight choices remain reachable. Enemy descent continues while the player scrolls, matching keyboard pressure; settings can slow speed for accessibility.

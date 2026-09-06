@@ -7,6 +7,7 @@ import { extractArchiveEssentialsEffect, readChecksumFileEffect, type ArchiveErr
 import { readMediaMapEffect, type MediaError, type SoundReferenceError } from "../import-decks/archive/media";
 import { AnkiDatabase, type CollectionError } from "../import-decks/sqlite/read-collection";
 import { normalizeAndDedupeEffect, type CompiledWord, type Overrides, type WordImportError } from "../import-decks/normalize/words";
+import { segmentPinyinForms } from "../import-decks/normalize/pinyin-segments";
 import type { HanziError } from "../import-decks/normalize/hanzi";
 import { extractSelectedAudio, type AudioError } from "../import-decks/compile/audio";
 import { stableJson } from "../import-decks/compile/stable-json";
@@ -181,6 +182,7 @@ const recoverFromGenerated = (
         hanziKey: String(raw.hanziKey),
         displayPinyin: String(raw.displayPinyin),
         acceptedPinyin: (raw.acceptedPinyin as string[] | undefined) ?? [],
+        pinyinSegments: segmentPinyinForms(String(raw.displayHanzi), String(raw.displayPinyin)),
         partOfSpeech: (raw.partOfSpeech as string | null | undefined) ?? null,
         partOfSpeechKey: (raw.partOfSpeechKey as string | null | undefined) ?? null,
         senseLabel: (raw.senseLabel as string | null | undefined) ?? null,

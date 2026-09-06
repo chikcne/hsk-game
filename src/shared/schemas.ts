@@ -3,6 +3,10 @@ import { CHOICE_KEYS, DECK_IDS } from "./constants";
 
 export const DeckIdSchema = z.enum(DECK_IDS);
 export const ChoiceKeySchema = z.enum(CHOICE_KEYS);
+
+export const ReviewInputModeSchema = z.enum(["selection", "typing"]);
+export type ReviewInputMode = z.infer<typeof ReviewInputModeSchema>;
+
 export const SettingsSchema = z.object({
   spawnIntervalMs: z.number().int().min(1500).max(10_000),
   enemySpeedMultiplier: z.number().min(0.65).max(1.5),
@@ -11,6 +15,10 @@ export const SettingsSchema = z.object({
   /** Review Mode: exact length of the nonpersisted base spawn plan. Repair
    * retries for missed words are additive on top of this target. */
   reviewSessionLength: z.number().int().min(200).max(500),
+  /** Review Mode pinyin answer style in landscape (desktop) orientation. */
+  desktopReviewMode: ReviewInputModeSchema,
+  /** Review Mode pinyin answer style in portrait (mobile) orientation. */
+  mobileReviewMode: ReviewInputModeSchema,
   masterVolume: z.number().min(0).max(1),
   reducedMotion: z.boolean(),
 });
@@ -19,6 +27,11 @@ export type DifficultySettings = z.infer<typeof SettingsSchema>;
 export const RuntimeWordSchema = z.object({
   id: z.string().min(1), sourceGuids: z.array(z.string()), displayHanzi: z.string().min(1),
   hanziKey: z.string().min(1), displayPinyin: z.string().min(1), acceptedPinyin: z.array(z.string().min(1)).min(1),
+  /** Character-aligned selectable pinyin, derived at compile time from the
+   * authored `displayPinyin`: exactly one entry per Han character, each entry
+   * the grouped alternative spellings of that character's syllable (e.g.
+   * 谁 → [["shéi","shuí"]]; contracted erhua 这儿/zhèr → [["zhè"],["r"]]). */
+  pinyinSegments: z.array(z.array(z.string().min(1)).min(1)).min(1),
   partOfSpeech: z.string().nullable(), partOfSpeechKey: z.string().nullable(), senseLabel: z.string().nullable(),
   meaning: z.string().min(1), meaningKey: z.string().min(1),
   audioUrl: z.string(),
@@ -48,6 +61,11 @@ export const RuntimeDeckSchema = z.object({
   const curriculumIds = deck.curriculum.lessons.flatMap((lesson) => lesson.wordIds);
   const addIssue = (path: Array<string | number>, message: string) => ctx.addIssue({ code: z.ZodIssueCode.custom, path, message });
   if (new Set(wordIds).size !== wordIds.length) addIssue(["words"], "runtime word IDs must be unique");
+  deck.words.forEach((word, index) => {
+    if (word.pinyinSegments.length !== [...word.displayHanzi].length) {
+      addIssue(["words", index, "pinyinSegments"], "must hold exactly one selectable segment per Han character");
+    }
+  });
   if (new Set(deck.curriculum.lessons.map((lesson) => lesson.id)).size !== deck.curriculum.lessons.length) {
     addIssue(["curriculum", "lessons"], "curriculum lesson IDs must be unique");
   }

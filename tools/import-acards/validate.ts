@@ -6,11 +6,13 @@ import { DECK_SOURCES } from "../import-decks/compile/compiler";
 import { buildMeaningIndexesEffect, type WordImportError } from "../import-decks/normalize/words";
 import { normalizeHanzi } from "../import-decks/normalize/hanzi";
 import { acceptedPinyinForms } from "../import-decks/normalize/pinyin";
+import { segmentPinyinForms } from "../import-decks/normalize/pinyin-segments";
 import { normalizedKey } from "../import-decks/normalize/text";
 import { stableJson } from "../import-decks/compile/stable-json";
 import { Fs, type FsError } from "../shared/fs";
 import { ACARD_FILENAME_PATTERN, AcardSchema, acardFilename, type Acard } from "../shared/acard";
 import { componentsOf } from "./extract";
+import type { RuntimeWord } from "../../src/shared/schemas";
 
 /** Typed failure carrying every validation problem found, not just the first:
  * fixing cards one build at a time is miserable. */
@@ -202,25 +204,39 @@ export const validateCards = (
       if (!isMp3(bytes.subarray(0, 3))) problems.push(`audio/${name}: not an MP3`);
     }
 
-    // The existing distractor-safety rule, per grade, unchanged.
+    // The existing distractor-safety rule, per grade, unchanged. Deep checks
+    // also re-derive pinyin segments for every card, so a segmentation the
+    // compile pipeline would reject fails validation here first.
     let minimumSafeDistractors = Number.POSITIVE_INFINITY;
     for (const source of options.deep ? DECK_SOURCES : []) {
       const graded = cards.filter(({ relative }) => relative.startsWith(`${source.id}/`));
       if (!graded.length) continue;
-      const words = graded.map(({ card }) => ({
-        id: card.id,
-        sourceGuids: card.source.guids,
-        displayHanzi: card.hanzi,
-        hanziKey: normalizeHanzi(card.hanzi).hanziKey,
-        displayPinyin: card.pinyin,
-        acceptedPinyin: acceptedPinyinForms(card.pinyin),
-        partOfSpeech: card.pos,
-        partOfSpeechKey: card.pos ? normalizedKey(card.pos) || null : null,
-        senseLabel: card.senseLabel,
-        meaning: card.meaning,
-        meaningKey: normalizedKey(card.meaning),
-        audioUrl: "",
-      }));
+      const words: RuntimeWord[] = [];
+      for (const { relative, card } of graded) {
+        let pinyinSegments: string[][];
+        try {
+          pinyinSegments = segmentPinyinForms(card.hanzi, card.pinyin);
+        } catch (error) {
+          problems.push(`${relative}: ${error instanceof Error ? error.message : String(error)}`);
+          continue;
+        }
+        words.push({
+          id: card.id,
+          sourceGuids: card.source.guids,
+          displayHanzi: card.hanzi,
+          hanziKey: normalizeHanzi(card.hanzi).hanziKey,
+          displayPinyin: card.pinyin,
+          acceptedPinyin: acceptedPinyinForms(card.pinyin),
+          pinyinSegments,
+          partOfSpeech: card.pos,
+          partOfSpeechKey: card.pos ? normalizedKey(card.pos) || null : null,
+          senseLabel: card.senseLabel,
+          meaning: card.meaning,
+          meaningKey: normalizedKey(card.meaning),
+          audioUrl: "",
+        });
+      }
+      if (!words.length) continue;
       const indexes = yield* buildMeaningIndexesEffect(words);
       minimumSafeDistractors = Math.min(minimumSafeDistractors, indexes.minimumSafeDistractors);
     }

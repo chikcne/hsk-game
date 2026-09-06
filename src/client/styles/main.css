@@ -301,20 +301,23 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .save-state.saving i, .save-state.offline i { background: var(--cinnabar); }
 .save-state.error i { background: var(--cinnabar-dark); }
 
-/* Gameplay field */
+/* Gameplay field. The desktop pinyin answer track reserves ~220px so the
+   typing field and the pinyin selector share one stable layout; the arena
+   still claims every remaining pixel (12 lanes, normalized positions, landing
+   boundary and type scale are height-independent). */
 .battle-screen {
   width: 100%;
   height: 100dvh;
   min-height: 0;
   padding: max(18px, env(safe-area-inset-top)) clamp(24px, 3.8vw, 64px) max(20px, env(safe-area-inset-bottom));
   display: grid;
-  grid-template-rows: 66px minmax(360px, 1fr) 112px;
+  grid-template-rows: 66px minmax(280px, 1fr) 220px;
   overflow: hidden;
 }
 /* Keep the battle locked to the viewport. The content-sized answer track grows
    toward the arena, while the flexible arena gives up space above it. */
 .battle-screen.meaning-phase { grid-template-rows: 66px minmax(0, 1fr) fit-content(70%); }
-.battle-screen.meaning-phase .answer-console { min-height: 184px; align-items: flex-end; }
+.battle-screen.meaning-phase .answer-console { min-height: 220px; align-items: flex-end; }
 .battle-hud { z-index: 2; display: flex; align-items: center; gap: clamp(24px, 4vw, 68px); color: var(--ink-soft); }
 .hud-level { display: flex; align-items: center; gap: 11px; }
 .hud-level .seal { width: 36px; height: 36px; }
@@ -433,6 +436,24 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .meaning-grid button:hover, .meaning-grid button:focus-visible { border-color: var(--cinnabar); background: var(--paper-light); }
 .meaning-label { color: var(--ink); font-size: 12px; line-height: 1.55; }
 .meaning-label mark { margin-right: 1px; padding: 2px 4px; color: var(--paper-light); background: var(--cinnabar); font-weight: 700; text-transform: uppercase; }
+
+/* Pinyin selection (Review Mode Selection Mode). Same paper-strip language
+   as the meaning grid, but tone-marked syllables and NO hotkey badges:
+   buttons answer by click/tap or Enter/Space only. */
+.pinyin-selector { width: min(640px, 100%); display: flex; flex-direction: column; align-items: center; gap: 9px; transform: translateY(-7px); }
+.selected-pinyin { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.selected-pinyin .chosen { min-height: 34px; color: var(--ink); font: 400 clamp(22px, 2.1vw, 30px)/1.1 var(--ui); letter-spacing: .12em; }
+.selected-pinyin .chosen.empty { color: rgba(107,87,65,.42); }
+.selected-pinyin .caret { display: inline-block; width: 1px; height: .92em; margin-left: 4px; background: var(--cinnabar); vertical-align: -.08em; animation: blink 1.05s steps(1) infinite; }
+.char-progress { display: flex; gap: 7px; }
+.char-progress b { font: 400 13px/1.2 var(--ui); color: var(--ghost); }
+.char-progress b.done { color: var(--ink-soft); }
+.char-progress b.current { padding-bottom: 2px; color: var(--cinnabar); font-weight: 600; border-bottom: 2px solid var(--cinnabar); }
+.pinyin-grid { width: 100%; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px 12px; }
+.pinyin-grid button { min-height: 48px; padding: 8px 10px; border: 1px solid rgba(107,87,65,.28); background: rgba(247,237,211,.8); text-align: center; cursor: pointer; box-shadow: 0 2px 4px rgba(96,58,20,.05); }
+.pinyin-grid button:hover, .pinyin-grid button:focus-visible { border-color: var(--cinnabar); background: var(--paper-light); }
+.pinyin-label { color: var(--ink); font-size: 15px; letter-spacing: .06em; }
+.touch-selector { display: none; }
 .touch-keyboard { display: none; }
 
 /* Feedback and dialogs */
@@ -481,6 +502,16 @@ input[type="range"] {
   touch-action: none;
 }
 input.mint-range { accent-color: var(--jade); }
+.mode-select select {
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px 12px;
+  border: 1px solid rgba(107,61,14,.45);
+  background: var(--paper-light);
+  color: var(--ink);
+  letter-spacing: .06em;
+  cursor: pointer;
+}
 .rule { position: relative; padding: 22px; display: flex; flex-direction: column; gap: 10px; border: 1px solid rgba(107,61,14,.28); }
 .rule span { color: var(--ink-soft); }
 .rule b { color: var(--cinnabar-dark); }
@@ -569,7 +600,9 @@ input.mint-range { accent-color: var(--jade); }
   .hud-item b { font-size: 10px; }
   .hud-mastery, .save-state { display: none; }
   .pause-button { width: 32px; height: 32px; font-size: 11px; }
-  .battle-screen.pinyin-phase .battle-hud .pause-button { visibility: hidden; }
+  /* Typing Mode has a pause key in its QWERTY panel. Selection Mode does
+     not, so its HUD pause control must remain reachable. */
+  .battle-screen.pinyin-phase.review-input-typing .battle-hud .pause-button { visibility: hidden; }
   .practice-sheet { padding: 22px 0 15px; }
   .margin-note { top: 7px; font-size: 6px; }
   .calligraphy-field { inset: 22px 0 15px; }
@@ -597,6 +630,21 @@ input.mint-range { accent-color: var(--jade); }
     touch-action: none;
     user-select: none;
   }
+  /* Selection Mode swaps the QWERTY keys for the pinyin choice grid inside
+     the SAME bottom region, so the arena height stays stable. */
+  .touch-selector {
+    display: flex;
+    height: 246px;
+    align-self: end;
+    padding: 12px 8px;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid rgba(107,61,14,.3);
+    background: rgba(227,210,164,.37);
+  }
+  .touch-selector .pinyin-grid { flex: 1; align-self: stretch; grid-auto-rows: 1fr; gap: 9px 7px; }
+  .touch-selector .pinyin-grid button { min-height: 0; border-radius: 7px; }
+  .touch-selector .pinyin-label { font-size: 18px; }
   .key-row { height: 48px; display: flex; justify-content: center; gap: 4px; }
   .key-row button {
     position: relative;
@@ -660,6 +708,7 @@ input.mint-range { accent-color: var(--jade); }
   .battle-screen.meaning-phase { grid-template-rows: 52px minmax(0,1fr) fit-content(74%); }
   .battle-screen.meaning-phase .answer-console { min-height: 270px; }
   .touch-keyboard { height: 218px; gap: 5px; padding-top: 6px; }
+  .touch-selector { height: 218px; }
   .key-row { height: 41px; }
   .row-4 { height: 43px; }
 }

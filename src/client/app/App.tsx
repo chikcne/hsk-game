@@ -19,9 +19,10 @@ import {
 import { SavesApiLive, loadSaveEffect, putSaveEffect, type StorageError } from "../api/saves";
 import { GameCanvas } from "../game/GameCanvas";
 import { HanziText } from "../game/HanziText";
-import { useBattle, type ReviewProgressReport, type SessionStats, type BattleOptions } from "../state/useBattle";
+import { useBattle, type ReviewProgressReport, type SessionStats, type BattleOptions, type RuntimeWordPool } from "../state/useBattle";
 import { LearnScreen } from "./LearnScreen";
 import { RelearnScreen } from "./RelearnScreen";
+import { PinyinChoiceGrid, SelectedPinyin } from "./PinyinSelector";
 import { unlockSoundEffects } from "../audio/soundEffects";
 
 const deckLabel = (id: DeckId) => `HSK ${id.at(-1)}`;
@@ -54,6 +55,21 @@ function useMobileLayout() {
     return () => query.removeEventListener("change", update);
   }, []);
   return mobile;
+}
+
+/** Portrait play reads the mobile review-mode setting, landscape play the
+ * desktop one. The effective mode is locked per enemy inside useBattle, so a
+ * mid-battle rotation never erases an in-progress answer. */
+function usePortraitOrientation() {
+  const [portrait, setPortrait] = useState(() => typeof window !== "undefined" && window.matchMedia("(orientation: portrait)").matches);
+  useEffect(() => {
+    const query = window.matchMedia("(orientation: portrait)");
+    const update = () => setPortrait(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+  return portrait;
 }
 
 /** A generated deck failed to fetch or validate. */
@@ -124,6 +140,7 @@ export function App() {
   const [paused, setPaused] = useState(false);
   const [summary, setSummary] = useState<SessionStats | null>(null);
   const [reviewPlan, setReviewPlan] = useState<ReviewPlan | null>(null);
+  const [pinyinPoolWords, setPinyinPoolWords] = useState<RuntimeWordPool>({ planWords: [], outsideWords: [] });
   const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -301,6 +318,15 @@ export function App() {
         setScreen("decks");
         return;
       }
+      // Selection Mode distractor sources: unique plan words (review keys)
+      // plus every loaded deck word outside the plan (source words, keyed by
+      // their review identity for the exclusion check).
+      const planKeys = new Set(plan.spawns);
+      const pinyinPoolWords = {
+        planWords: reviewDeck.deck.words.filter((word) => planKeys.has(word.id)),
+        outsideWords: [...loadedDecks].flatMap(([deckId, loadedDeck]) =>
+          loadedDeck.words.filter((word) => !planKeys.has(`${deckId}:${word.id}`))),
+      };
       // Checkpoint reconciled levels (+ invalidated stale sessions) and the
       // plan-consumed RNG in one atomic snapshot, so even an immediately
       // abandoned session never replays an identical battle.
@@ -313,6 +339,7 @@ export function App() {
       });
       setDeck(reviewDeck.deck); setStrokeData(mergeStrokeData(uiStrokeData, loadedStrokes));
       setReviewPlan(plan);
+      setPinyinPoolWords(pinyinPoolWords);
       setPaused(false); setScreen("battle");
     });
     Effect.runFork(deployReviewProgram.pipe(Effect.catchAll(() => Effect.sync(() => {
@@ -437,6 +464,7 @@ export function App() {
     strokeData={strokeData}
     plan={reviewPlan}
     snapshot={reviewPlan.snapshot}
+    pinyinPoolWords={pinyinPoolWords}
     settings={settings}
     paused={paused || settingsOpen}
     saveStatus={saveStatus}
@@ -685,21 +713,24 @@ type BattleProps = {
   deck: RuntimeDeck; strokeData: StrokeDataMap;
   plan: ReviewPlan;
   snapshot: { spawnOrdinal: number; schedulerRng: [number, number, number, number] };
+  pinyinPoolWords: RuntimeWordPool;
   settings: DifficultySettings; paused: boolean; saveStatus: string;
   onPause: () => void; onResume: () => void; onSettings: () => void;
   onProgressChange: (report: ReviewProgressReport) => void;
   onEnd: (stats: SessionStats) => void; children: ReactNode;
 };
-function BattleScreen({ deck, strokeData, plan, snapshot, settings, paused, saveStatus, onPause, onResume, onSettings, onProgressChange, onEnd, children }: BattleProps) {
+function BattleScreen({ deck, strokeData, plan, snapshot, pinyinPoolWords, settings, paused, saveStatus, onPause, onResume, onSettings, onProgressChange, onEnd, children }: BattleProps) {
   const progressChangeRef = useRef(onProgressChange); progressChangeRef.current = onProgressChange;
   const options = useMemo<BattleOptions>(() => ({
-    deck, plan, initialSnapshot: snapshot,
+    deck, plan, initialSnapshot: snapshot, pinyinPoolWords,
     onChange: (report) => progressChangeRef.current(report),
-  }), [deck, plan, snapshot]);
+  }), [deck, plan, snapshot, pinyinPoolWords]);
   const mobile = useMobileLayout();
+  const portrait = usePortraitOrientation();
   const systemReducedMotion = usePrefersReducedMotion();
   const reducedMotion = settings.reducedMotion || systemReducedMotion;
-  const battle = useBattle(options, settings, paused, strokeData, !reducedMotion);
+  const reviewMode = portrait ? settings.mobileReviewMode : settings.desktopReviewMode;
+  const battle = useBattle(options, settings, paused, strokeData, !reducedMotion, reviewMode);
   const battleRef = useRef(battle); battleRef.current = battle;
   const [pinyin, setPinyin] = useState("");
   const [composing, setComposing] = useState(false);
@@ -714,20 +745,25 @@ function BattleScreen({ deck, strokeData, plan, snapshot, settings, paused, save
   const inFlightCount = battle.enemies.length + (battle.preparingEnemy ? 1 : 0);
   const total = Math.max(battle.stats.resolvedSpawns + battle.pendingWork + inFlightCount, 1);
   const progressCount = battle.stats.resolvedSpawns;
+  const selection = battle.phase === "pinyin" ? battle.selection : null;
+  const typing = battle.phase === "pinyin" && !selection;
   const pinyinDisabled = !battle.target || paused || battle.learningPaused || battle.phase !== "pinyin";
 
   useEffect(() => {
     setPinyin("");
+    // The hidden typing input only exists (and only grabs focus) in Typing
+    // Mode; Selection Mode answers through ordinary focusable buttons.
     const focusPinyin = () => {
-      if (!paused && !battle.learningPaused && battle.phase === "pinyin") input.current?.focus({ preventScroll: true });
+      if (typing && !paused && !battle.learningPaused && battle.phase === "pinyin") input.current?.focus({ preventScroll: true });
     };
     focusPinyin();
     window.addEventListener("focus", focusPinyin);
     return () => window.removeEventListener("focus", focusPinyin);
-  }, [battle.learningPaused, battle.phase, battle.target?.id, paused]);
-  // Desktop: while the battle screen is up during the pinyin phase, the hidden input always keeps focus.
+  }, [battle.learningPaused, battle.phase, battle.target?.id, paused, typing]);
+  // Desktop: while the battle screen is up during a TYPING pinyin phase, the
+  // hidden input always keeps focus.
   useEffect(() => {
-    if (mobile || paused || battle.learningPaused || battle.phase !== "pinyin" || !battle.target) return;
+    if (mobile || !typing || paused || battle.learningPaused || battle.phase !== "pinyin" || !battle.target) return;
     const interactive = "button, a, input, textarea, select, label";
     const focusPinyin = () => {
       if (document.querySelector('[aria-modal="true"]')) return;
@@ -750,7 +786,7 @@ function BattleScreen({ deck, strokeData, plan, snapshot, settings, paused, save
       document.removeEventListener("focusin", focusPinyin);
       window.removeEventListener("focus", focusPinyin);
     };
-  }, [battle.learningPaused, battle.phase, battle.target, mobile, paused]);
+  }, [battle.learningPaused, battle.phase, battle.target, mobile, paused, typing]);
   useEffect(() => {
     const listener = (event: KeyboardEvent) => {
       const current = battleRef.current;
@@ -790,7 +826,7 @@ function BattleScreen({ deck, strokeData, plan, snapshot, settings, paused, save
     : null;
   const solvedId = battle.feedback?.kind === "correct" ? battle.feedback.id : null;
 
-  return <main className={`paper battle-screen ${battle.phase}-phase ${reducedMotion ? "reduce-motion" : ""}`}>
+  return <main className={`paper battle-screen ${battle.phase}-phase review-input-${battle.inputMode} ${reducedMotion ? "reduce-motion" : ""}`}>
     <header className="battle-hud">
       <div className="hud-level"><span className="seal">R</span><p><b>REVIEW</b><small>{battle.stats.resolvedSpawns} RESOLVED</small></p></div>
       <div className="hud-item"><small>SCORE</small><b>{battle.stats.score.toLocaleString()}</b></div>
@@ -814,7 +850,12 @@ function BattleScreen({ deck, strokeData, plan, snapshot, settings, paused, save
         {battle.phase === "meaning" && <span>{battle.targetWord?.displayPinyin}</span>}
         <em>{battle.target ? `Altitude ${Math.max(0, Math.round((1 - battle.target.progress) * 100))} percent` : "Awaiting target"}</em>
       </div>
-      {battle.phase === "pinyin" ? <form className="pinyin-form" onSubmit={submit} onClick={() => input.current?.focus({ preventScroll: true })}>
+      {battle.phase === "pinyin" ? (selection ? <div className="pinyin-selector">
+        <SelectedPinyin selection={selection} />
+        {/* Desktop keeps the compact grid inside the ~220px answer area;
+            mobile renders the same grid in the QWERTY region instead. */}
+        {!mobile && <PinyinChoiceGrid selection={selection} disabled={pinyinDisabled} onChoose={battle.choosePinyin} />}
+      </div> : <form className="pinyin-form" onSubmit={submit} onClick={() => input.current?.focus({ preventScroll: true })}>
         <div className={`typed-pinyin ${!pinyin ? "empty" : ""}`} aria-hidden="true"><HanziText text={pinyin} data={strokeData} accessible={false} /><span className="caret" /></div>
         <input
           className="pinyin-input" id="pinyin" ref={input} value={pinyin} aria-label="Pinyin answer"
@@ -824,7 +865,7 @@ function BattleScreen({ deck, strokeData, plan, snapshot, settings, paused, save
           autoComplete="off" autoCapitalize="none" spellCheck={false} inputMode={mobile ? "none" : "text"}
           disabled={pinyinDisabled}
         />
-      </form> : <div className="meaning-zone">
+      </form>) : <div className="meaning-zone">
         <div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : battle.pinyinAutocompleted ? "TIME EXPIRED · PINYIN AUTOCOMPLETED" : <HanziText text="选择纸签释义 · CHOOSE MEANING" data={strokeData} />}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ REPLAY AUDIO</button></div>
         <div className="meaning-grid">{battle.choices.map((choice) => {
           const keys = [...new Set(choice.shortcuts.map((shortcut) => shortcut.key))];
@@ -838,13 +879,20 @@ function BattleScreen({ deck, strokeData, plan, snapshot, settings, paused, save
       </div>}
     </section>
 
-    {battle.phase === "pinyin" && <MobileKeyboard
+    {battle.phase === "pinyin" && !selection && <MobileKeyboard
       disabled={pinyinDisabled} submitDisabled={pinyinDisabled || composing || !pinyin.trim()}
       backspaceDisabled={pinyinDisabled || pinyin.length === 0}
       onLetter={(letter) => setPinyin((value) => value + letter.toLowerCase())}
       onBackspace={() => setPinyin((value) => value.slice(0, -1))} onPause={onPause} onSubmit={submitAnswer}
     />}
-    <div className="sr-live" aria-live="polite">{battle.targetWord ? `Target ${battle.targetWord.displayHanzi}. ${battle.phase === "pinyin" ? "Type pinyin" : battle.pinyinAutocompleted ? `Pinyin autocompleted as ${battle.targetWord.displayPinyin}. Choose meaning` : "Choose meaning"}.` : "Waiting for target"}</div>
+    {battle.phase === "pinyin" && selection && <section className="touch-selector" aria-label="Pinyin selector">
+      <PinyinChoiceGrid selection={selection} disabled={pinyinDisabled} onChoose={battle.choosePinyin} />
+    </section>}
+    <div className="sr-live" aria-live="polite">{battle.targetWord ? `Target ${battle.targetWord.displayHanzi}. ${battle.phase === "pinyin"
+      ? selection
+        ? `Select pinyin, character ${selection.charIndex + 1} of ${selection.charCount}. Selected ${selection.selected.join(" ") || "nothing"}.`
+        : "Type pinyin"
+      : battle.pinyinAutocompleted ? `Pinyin autocompleted as ${battle.targetWord.displayPinyin}. Choose meaning` : "Choose meaning"}.` : "Waiting for target"}</div>
     {battle.feedback && <FeedbackNotice feedback={battle.feedback} strokeData={strokeData} onDismiss={battle.dismissFeedback} />}
     {paused && !children && <PauseDialog onResume={onResume} onSettings={onSettings} onEnd={() => onEnd(battle.stats)} />}{children}
   </main>;
@@ -985,6 +1033,22 @@ function NumberSetting({ label, value, min, max, step, suffix = "", onChange }: 
   return <label><span>{label} <b>{value}{suffix}</b></span><input type="range" min={min} max={max} step={step} value={value} onChange={(event) => onChange(Number(event.target.value))} /></label>;
 }
 
+const REVIEW_MODE_OPTIONS: Array<{ value: DifficultySettings["desktopReviewMode"]; label: string }> = [
+  { value: "typing", label: "Typing Mode" },
+  { value: "selection", label: "Selection Mode" },
+];
+
+/** The pinyin answer style dropdown. Landscape play (desktop) reads the
+ * desktop setting, portrait play (mobile) the mobile setting; each is locked
+ * per enemy and only takes effect on the next target. */
+function ReviewModeSetting<K extends "desktopReviewMode" | "mobileReviewMode">({ label, value, onChange }: { label: string; value: DifficultySettings[K]; onChange: (value: DifficultySettings[K]) => void }) {
+  return <label className="mode-select"><span>{label} <b>{value === "selection" ? "SELECTION" : "TYPING"}</b></span>
+    <select value={value} onChange={(event) => onChange(event.target.value as DifficultySettings[K])}>
+      {REVIEW_MODE_OPTIONS.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
+    </select>
+  </label>;
+}
+
 function SettingsDialog({ settings, onApply, onClose }: { settings: DifficultySettings; onApply: (settings: DifficultySettings) => void; onClose: () => void }) {
   const [draft, setDraft] = useState(settings);
   useEffect(() => {
@@ -1000,6 +1064,8 @@ function SettingsDialog({ settings, onApply, onClose }: { settings: DifficultySe
     <NumberSetting label="SESSION LENGTH (BASE SPAWNS)" value={draft.reviewSessionLength} min={200} max={500} step={10} suffix=" WORDS" onChange={(value) => update("reviewSessionLength", value)} />
     <label><span>BASE WORD SPAWN RATE <b>1 EVERY {(draft.spawnIntervalMs / 1000).toFixed(2)}s · {Math.round(60000 / draft.spawnIntervalMs)}/MIN</b></span><input type="range" min="1500" max="10000" step="250" value={draft.spawnIntervalMs} onChange={(event) => update("spawnIntervalMs", Number(event.target.value))} /></label>
     <label><span>WORD SPEED <b>{speedLabel} · {draft.enemySpeedMultiplier.toFixed(2)}×</b></span><input className="mint-range" type="range" min="0.65" max="1.5" step="0.05" value={draft.enemySpeedMultiplier} onChange={(event) => update("enemySpeedMultiplier", Number(event.target.value))} /></label>
+    <ReviewModeSetting label="Desktop Review Mode" value={draft.desktopReviewMode} onChange={(value) => update("desktopReviewMode", value)} />
+    <ReviewModeSetting label="Mobile Review Mode" value={draft.mobileReviewMode} onChange={(value) => update("mobileReviewMode", value)} />
     <h3>ACCESSIBILITY</h3>
     <label className="volume"><span>MASTER VOLUME <b>{Math.round(draft.masterVolume * 100)}%</b></span><input type="range" min="0" max="1" step="0.05" value={draft.masterVolume} onChange={(event) => update("masterVolume", Number(event.target.value))} /></label>
     <label className="check"><input type="checkbox" checked={draft.reducedMotion} onChange={(event) => update("reducedMotion", event.target.checked)} /> REDUCED MOTION</label>

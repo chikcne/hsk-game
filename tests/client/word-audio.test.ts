@@ -10,6 +10,7 @@ function fakeWord(audioUrl: string): RuntimeWord {
     hanziKey: "字",
     displayPinyin: "zì",
     acceptedPinyin: ["zi"],
+    pinyinSegments: [["zì"]],
     partOfSpeech: null,
     partOfSpeechKey: null,
     senseLabel: null,

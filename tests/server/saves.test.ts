@@ -348,6 +348,15 @@ describe("save validation", () => {
     expect(() => parseSaveSnapshot(makeSnapshotWithWord("known"), catalog)).not.toThrow();
   });
 
+  it("roundtrips review-mode settings and rejects unknown modes", () => {
+    const selection = makeSnapshot();
+    selection.settings = { ...selection.settings, desktopReviewMode: "selection", mobileReviewMode: "selection" };
+    expect(parseSaveSnapshot(selection).settings.desktopReviewMode).toBe("selection");
+    const junk = makeSnapshot();
+    junk.settings = { ...junk.settings, mobileReviewMode: "voice" as unknown as "selection" };
+    expect(() => parseSaveSnapshot(junk)).toThrow();
+  });
+
   it("loads an old deck fingerprint for reconciliation", async () => {
     const directory = await temporaryDirectory();
     const oldSnapshot = makeSnapshotWithWord("removed-word");

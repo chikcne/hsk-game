@@ -38,6 +38,8 @@ export const DEFAULT_SETTINGS = {
   enemySpeedMultiplier: 0.9,
   levelSize: 20,
   reviewSessionLength: 200,
+  desktopReviewMode: "typing",
+  mobileReviewMode: "selection",
   masterVolume: 0.8,
   reducedMotion: false,
 } as const;

@@ -32,6 +32,15 @@ describe("pure save payload validation", () => {
     expect(parseSavePayload(corrupted)).toBeNull();
   });
 
+  it("review-mode settings roundtrip through the save schema and reject unknown modes", () => {
+    const selected = { ...blankSave(), settings: { ...blankSave().settings, desktopReviewMode: "selection" as const } };
+    const parsed = parseSavePayload(selected);
+    expect(parsed!.settings.desktopReviewMode).toBe("selection");
+    expect(parsed!.settings.mobileReviewMode).toBe("selection");
+    const junk = { ...blankSave(), settings: { ...blankSave().settings, desktopReviewMode: "voiced" } };
+    expect(parseSavePayload(junk)).toBeNull();
+  });
+
   it("parseEmergencySave guards JSON.parse and the v4 fresh-start boundary", () => {
     const save = blankSave();
     expect(parseEmergencySave(null)).toBeNull();

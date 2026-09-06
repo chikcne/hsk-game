@@ -17,6 +17,7 @@ function sourceDeck(id: DeckId, wordCount = 4, fingerprint = `${id}-fp`): Runtim
     hanziKey: `zi${index}`,
     displayPinyin: `zì ${index}`,
     acceptedPinyin: [`zi ${index}`],
+    pinyinSegments: [[`zì`], [`${index}`]],
     partOfSpeech: null,
     partOfSpeechKey: index % 2 === 0 ? "verb" : null,
     senseLabel: null,
