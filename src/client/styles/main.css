@@ -186,7 +186,7 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
   align-items: stretch;
   padding: 18px 0 10px;
 }
-.scroll-menu.mode-menu { grid-template-columns: 1.12fr 1fr 1fr 1fr; }
+.scroll-menu.mode-menu { grid-template-columns: 1.12fr repeat(4, 1fr); }
 .scroll-menu.grade-menu { grid-template-columns: .95fr minmax(0, 6fr); }
 .level-columns { min-width: 0; display: grid; grid-template-columns: repeat(6, minmax(44px, 1fr)); align-items: stretch; }
 .scroll-column {
@@ -256,13 +256,15 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .mini-seal { position: absolute; top: 38%; right: 15%; width: 27px; height: 27px; transform: rotate(7deg); opacity: .8; }
 .lesson { color: var(--cinnabar-dark); }
 .lesson::before { background: linear-gradient(to bottom, transparent, rgba(192,58,30,.025) 12%, rgba(192,58,30,.055) 25%, rgba(192,58,30,.05) 78%, transparent); }
-.lesson strong, .grades strong, .relearn strong, .review strong { color: var(--cinnabar-dark); }
+.lesson strong, .grades strong, .relearn strong, .review strong, .glossary strong { color: var(--cinnabar-dark); }
 .grades { color: var(--umber); }
 .grades .action-seal { color: var(--umber); }
 .relearn { color: var(--umber-soft); }
 .relearn .action-seal { color: var(--umber-soft); }
 .review { color: var(--jade); }
 .review .action-seal { color: var(--jade); }
+.glossary { color: #355d50; }
+.glossary .action-seal { color: #355d50; }
 .return-column { color: var(--umber-soft); }
 .return-column em { letter-spacing: .22em; }
 .return-arrow {
@@ -300,6 +302,159 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .save-state i { display: inline-block; width: 6px; height: 6px; margin-right: 6px; border-radius: 50%; background: var(--jade); }
 .save-state.saving i, .save-state.offline i { background: var(--cinnabar); }
 .save-state.error i { background: var(--cinnabar-dark); }
+
+/* Glossary — an overhead mahjong table assembled from live, accessible
+   buttons on the app's existing paper background. */
+.glossary-screen {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+  color: var(--ink);
+}
+.glossary-back {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  padding: 9px 13px;
+  border: 1px solid var(--hairline);
+  background: rgba(247,237,211,.48);
+  color: var(--umber);
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: .16em;
+}
+.glossary-back span { margin-right: 8px; font-size: 18px; vertical-align: -1px; }
+.glossary-back:hover { border-color: var(--cinnabar); color: var(--cinnabar); }
+.glossary-overview { position: relative; width: min(1400px, 100%); min-height: 77px; margin: 0 auto 17px; }
+.glossary-summary { display: flex; flex-direction: column; align-items: center; gap: 11px; }
+.glossary-totals { margin: 0; display: flex; justify-content: center; gap: clamp(30px, 6vw, 72px); text-align: center; }
+.glossary-totals div { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.glossary-totals dt { color: var(--ink-soft); font-size: 7px; letter-spacing: .13em; }
+.glossary-totals dd { margin: 0; color: var(--umber); font: 500 21px/1 var(--ui); }
+.mahjong-table {
+  height: 100%;
+  padding: max(19px, env(safe-area-inset-top)) clamp(18px, 3.5vw, 52px) 36px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: rgba(107,61,14,.38) rgba(227,210,164,.35);
+  background: transparent;
+}
+.glossary-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: var(--umber-soft);
+  font-size: 7px;
+  letter-spacing: .12em;
+}
+.glossary-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; border: 1px solid rgba(74,55,28,.2); }
+.legend-new { background: #fffdf4; }
+.legend-growing { background: #eedca9; }
+.legend-mastered { background: #dab248; }
+.legend-hidden { background: #2f765b; }
+.mahjong-grid {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+  padding: 0 6px 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 14px 11px;
+  list-style: none;
+}
+.mahjong-grid li { min-width: 0; background: transparent; }
+.mahjong-tile {
+  position: relative;
+  width: 100%;
+  aspect-ratio: .76;
+  min-height: 82px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  border-radius: 7px 7px 10px 10px;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+.tile-face {
+  padding: 8px 5px 10px;
+  display: grid;
+  grid-template-rows: 12px 1fr 12px;
+  align-items: center;
+  background: var(--tile-face) padding-box;
+  border-bottom: 5px solid #b99558;
+  color: #2b2015;
+  box-shadow:
+    inset 2px 2px 1px rgba(255,255,255,.78),
+    inset -2px -2px 2px rgba(102,73,26,.19),
+    0 9px 7px -5px rgba(2,23,15,.42);
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+.tile-face:hover, .tile-face:focus-visible, .tile-face.is-selected {
+  z-index: 2;
+  transform: translateY(-5px) rotate(-.5deg);
+  filter: saturate(1.07) brightness(1.03);
+  border-bottom: 7px solid #a97f3d;
+  box-shadow: inset 2px 2px 1px rgba(255,255,255,.82), inset -2px -2px 2px rgba(102,73,26,.19), 0 15px 12px -8px rgba(2,23,15,.48);
+}
+.tile-face small { justify-self: start; color: rgba(70,49,25,.55); font: 7px var(--ui); letter-spacing: .05em; }
+.tile-face strong { font: 500 clamp(22px, 2vw, 31px)/1.05 var(--ui); overflow-wrap: anywhere; }
+.tile-face span { justify-self: end; color: var(--cinnabar-dark); font: 700 7px var(--ui); letter-spacing: .08em; }
+.tile-back {
+  display: grid;
+  place-items: center;
+  border: 3px solid #d5bd7c;
+  border-bottom: 5px solid #9f7d43;
+  background:
+    linear-gradient(45deg, transparent 42%, rgba(213,189,124,.14) 43% 48%, transparent 49% 52%, rgba(213,189,124,.14) 53% 58%, transparent 59%),
+    #2e7459;
+  box-shadow: inset 0 0 0 3px #205641, inset 0 0 15px rgba(7,42,29,.36), 0 9px 7px -5px rgba(2,23,15,.38);
+}
+.glossary-scrim {
+  position: fixed;
+  z-index: 79;
+  inset: 0;
+  border: 0;
+  background: rgba(20,32,23,.26);
+  cursor: default;
+  animation: glossary-fade 220ms ease both;
+}
+.glossary-drawer {
+  position: fixed;
+  z-index: 80;
+  top: 0;
+  right: 0;
+  width: min(410px, 92vw);
+  height: 100dvh;
+  padding: max(54px, env(safe-area-inset-top)) clamp(30px, 4vw, 48px) max(32px, env(safe-area-inset-bottom));
+  overflow-y: auto;
+  border-left: 8px solid #b38c49;
+  background:
+    radial-gradient(circle at 100% 0, rgba(255,255,255,.6), transparent 36%),
+    var(--paper-light);
+  box-shadow: -20px 0 50px rgba(16,30,21,.32);
+  animation: glossary-drawer-in 360ms cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes glossary-fade { from { opacity: 0; } }
+@keyframes glossary-drawer-in { from { transform: translateX(100%); } }
+.drawer-close { position: absolute; top: max(17px, env(safe-area-inset-top)); right: 22px; width: 34px; height: 34px; padding: 0; border: 1px solid var(--hairline); border-radius: 50%; background: transparent; color: var(--umber); font: 300 24px/1 var(--ui); cursor: pointer; }
+.drawer-eyebrow { margin: 0; color: var(--umber-soft); font-size: 9px; font-weight: 700; letter-spacing: .18em; }
+.drawer-word { margin: 28px 0 10px; color: var(--cinnabar-dark); font: 500 clamp(62px, 8vw, 92px)/1 var(--ui); letter-spacing: .04em; overflow-wrap: anywhere; }
+.drawer-audio { padding: 8px 12px; border: 1px solid rgba(53,93,80,.5); background: rgba(53,93,80,.06); color: #355d50; cursor: pointer; font-size: 9px; font-weight: 700; letter-spacing: .12em; }
+.drawer-audio span { margin-right: 7px; letter-spacing: -.18em; }
+.drawer-audio-error { margin: 8px 0 0; color: var(--cinnabar-dark); font-size: 10px; }
+.glossary-drawer > section { margin-top: 29px; padding-top: 18px; border-top: 1px solid var(--hairline); }
+.glossary-drawer section > small { color: var(--umber-soft); font-size: 8px; font-weight: 700; letter-spacing: .19em; }
+.drawer-pinyin { margin: 7px 0 0; color: #355d50; font: 500 28px/1.2 var(--ui); }
+.drawer-definition { margin: 8px 0 0; color: var(--ink); font-size: 18px; line-height: 1.45; }
+.drawer-mastery > div { margin-top: 9px; display: flex; justify-content: space-between; align-items: baseline; }
+.drawer-mastery strong { color: var(--cinnabar-dark); font-size: 18px; font-weight: 500; }
+.drawer-mastery b { color: var(--umber); font: 500 24px var(--ui); }
+.drawer-mastery > span { display: block; height: 7px; margin-top: 10px; overflow: hidden; background: rgba(107,61,14,.14); }
+.drawer-mastery > span i { display: block; height: 100%; background: linear-gradient(90deg, #f4ead2, #d6a948); }
+.drawer-mastery > p { color: var(--ink-soft); font-size: 11px; }
 
 /* Gameplay field. The desktop pinyin answer track reserves ~220px so the
    typing field and the pinyin selector share one stable layout; the arena
@@ -557,6 +712,7 @@ input.mint-range { accent-color: var(--jade); }
   .deck-screen { padding-inline: 24px; }
   .scroll-column { padding-inline: 5px; }
   .column-count { font-size: 8px; }
+  .mahjong-grid { grid-template-columns: repeat(auto-fill, minmax(66px, 1fr)); }
   .battle-hud { gap: 20px; }
   .battle-hud .hud-mastery { display: none; }
   .summary-details { grid-template-columns: 1fr; }
@@ -569,7 +725,7 @@ input.mint-range { accent-color: var(--jade); }
     grid-template-rows: 96px minmax(0, 1fr) 42px;
   }
   .settings-button { top: max(20px, env(safe-area-inset-top)); right: 30px; width: 42px; height: 42px; }
-  .scroll-menu.mode-menu { width: 100%; min-width: 0; grid-template-columns: repeat(4, 1fr); }
+  .scroll-menu.mode-menu { width: 100%; min-width: 0; grid-template-columns: repeat(5, 1fr); }
   .scroll-menu.grade-menu { width: 100%; min-width: 0; grid-template-columns: minmax(52px, .8fr) minmax(0, 6fr); }
   .return-arrow { height: 66px; font-size: 30px; }
   .level-columns { overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: none; }
@@ -584,6 +740,25 @@ input.mint-range { accent-color: var(--jade); }
   .action-seal { width: 26px; height: 26px; margin-top: 7px; font-size: 9px; }
   .mini-seal { top: 39%; right: 0; width: 20px; height: 20px; font-size: 8px; }
   .selection-brush { width: 39px; height: 8px; }
+
+  .glossary-back { padding: 7px 8px; font-size: 7px; letter-spacing: .08em; }
+  .glossary-back span { margin-right: 3px; font-size: 14px; }
+  .glossary-overview { min-height: 72px; margin-bottom: 12px; }
+  .glossary-totals { gap: 26px; }
+  .glossary-totals dt { font-size: 5px; letter-spacing: .06em; }
+  .glossary-totals dd { font-size: 18px; }
+  .mahjong-table { padding: max(11px, env(safe-area-inset-top)) 12px 28px; }
+  .glossary-legend { gap: 9px; font-size: 5px; letter-spacing: .04em; }
+  .legend-dot { width: 6px; height: 6px; }
+  .mahjong-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px 8px; padding-inline: 2px; }
+  .mahjong-tile { min-height: 0; border-radius: 5px 5px 7px 7px; }
+  .tile-face { padding: 5px 4px 7px; grid-template-rows: 9px 1fr 9px; border-bottom-width: 4px; box-shadow: inset 1px 1px 1px rgba(255,255,255,.78), inset -1px -1px 1px rgba(102,73,26,.19), 0 8px 6px -5px rgba(2,23,15,.4); }
+  .tile-face:hover, .tile-face:focus-visible, .tile-face.is-selected { border-bottom-width: 6px; }
+  .tile-face small, .tile-face span { font-size: 5px; }
+  .tile-face strong { font-size: clamp(19px, 7vw, 28px); }
+  .tile-back { border-width: 2px; border-bottom-width: 4px; box-shadow: inset 0 0 0 2px #205641, inset 0 0 10px rgba(7,42,29,.36), 0 8px 6px -5px rgba(2,23,15,.36); }
+  .glossary-drawer { width: min(360px, 94vw); border-left-width: 5px; }
+  .drawer-word { font-size: clamp(55px, 22vw, 82px); }
 
   .battle-screen {
     min-height: 0;

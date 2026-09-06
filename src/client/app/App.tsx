@@ -24,6 +24,7 @@ import { LearnScreen } from "./LearnScreen";
 import { RelearnScreen } from "./RelearnScreen";
 import { PinyinChoiceGrid, SelectedPinyin } from "./PinyinSelector";
 import { unlockSoundEffects } from "../audio/soundEffects";
+import { GlossaryScreen, type GlossaryDeck } from "./GlossaryScreen";
 
 const deckLabel = (id: DeckId) => `HSK ${id.at(-1)}`;
 const masteredCount = (level?: LevelProgress) => level ? countGraduated(level) : 0;
@@ -125,7 +126,7 @@ function updateLifetime(save: SaveFile, outcome: EncounterOutcome, points: numbe
 }
 
 export function App() {
-  const [screen, setScreen] = useState<"decks" | "loading" | "learn" | "relearn" | "battle" | "summary">("loading");
+  const [screen, setScreen] = useState<"decks" | "loading" | "learn" | "relearn" | "battle" | "summary" | "glossary">("loading");
   const [save, setSave] = useState<SaveFile | null>(null);
   const saveRef = useRef<SaveFile | null>(null);
   const [saveStatus, setSaveStatus] = useState<"saved" | "saving" | "offline" | "error">("saving");
@@ -135,12 +136,13 @@ export function App() {
   const [uiStrokeData, setUiStrokeData] = useState<StrokeDataMap>(() => new Map());
   const [strokeData, setStrokeData] = useState<StrokeDataMap>(() => new Map());
   const [selected, setSelected] = useState<DeckId>("hsk-1");
-  const [menu, setMenu] = useState<"main" | "grades">("main");
+  const [menu, setMenu] = useState<"main" | "grades" | "glossary-grades">("main");
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [paused, setPaused] = useState(false);
   const [summary, setSummary] = useState<SessionStats | null>(null);
   const [reviewPlan, setReviewPlan] = useState<ReviewPlan | null>(null);
   const [pinyinPoolWords, setPinyinPoolWords] = useState<RuntimeWordPool>({ planWords: [], outsideWords: [] });
+  const [glossaryDecks, setGlossaryDecks] = useState<GlossaryDeck[]>([]);
   const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -418,6 +420,22 @@ export function App() {
     queueSnapshot({ ...current, relearnSession: createRelearnSession(wordKeys, new Date()) });
     return true;
   };
+  const openGlossary = (id: DeckId) => {
+    const current = saveRef.current;
+    if (!current) return;
+    setSelected(id);
+    setLoadError(null);
+    setScreen("loading");
+    const loadGlossaryProgram: Effect.Effect<void, DeckLoadError, never> = Effect.gen(function* () {
+      const loadedDeck = yield* loadRuntimeDeck(id, current.levels[id] === undefined);
+      setGlossaryDecks([{ deckId: id, deck: loadedDeck }]);
+      setScreen("glossary");
+    });
+    Effect.runFork(loadGlossaryProgram.pipe(Effect.catchAll(() => Effect.sync(() => {
+      setLoadError(`Could not load the ${deckLabel(id)} glossary. Your saved progress was not changed.`);
+      setScreen("decks");
+    }))));
+  };
   const applySettings = (settings: DifficultySettings) => {
     if (!saveRef.current) return;
     queueSnapshot({ ...saveRef.current, settings });
@@ -428,7 +446,7 @@ export function App() {
   if (!save || screen === "loading") return <LoadingScreen hasSave={Boolean(save)} strokeData={uiStrokeData} />;
   if (screen === "decks") return <>
     {loadError && <p className="deck-load-error" role="alert">{loadError}</p>}
-    <DeckSelect save={save} settings={settings} selected={selected} strokeData={uiStrokeData} menu={menu} onMenuChange={setMenu} onSelect={setSelected} onLearn={deployLearn} onReview={() => void deployReview()} onRelearn={() => void deployRelearn()} onSettings={() => setSettingsOpen(true)} />
+    <DeckSelect save={save} settings={settings} selected={selected} strokeData={uiStrokeData} menu={menu} onMenuChange={setMenu} onSelect={setSelected} onLearn={deployLearn} onReview={() => void deployReview()} onRelearn={() => void deployRelearn()} onGlossary={openGlossary} onSettings={() => setSettingsOpen(true)} />
     {settingsOpen && <SettingsDialog settings={settings} onApply={applySettings} onClose={() => setSettingsOpen(false)} />}
   </>;
   if (screen === "learn" && deck) return <>
@@ -450,6 +468,7 @@ export function App() {
     />
     {settingsOpen && <SettingsDialog settings={settings} onApply={applySettings} onClose={() => setSettingsOpen(false)} />}
   </>;
+  if (screen === "glossary") return <GlossaryScreen save={save} decks={glossaryDecks} onExit={() => setScreen("decks")} />;
   if (screen === "summary" && summary) return <Summary
     stats={summary} deck={deck} strokeData={strokeData} saveStatus={saveStatus}
     relearnBlocked={save.relearnSession !== null}
@@ -498,13 +517,13 @@ function LoadingScreen({ hasSave, strokeData }: { hasSave: boolean; strokeData: 
   return <main className="loading-screen paper"><div className="loader-logo"><HanziText text="字多多" data={strokeData} /></div><h1>ZIDUODUO</h1><p>{hasSave ? "LOADING GRADE DATA" : "CONNECTING TO SERVER"}</p><div className="loading-bar"><i /></div><small>LOCAL-FIRST • OFFLINE READY</small></main>;
 }
 
-/** The title screen has two levels: the main menu offers the four modes, and
- * the grade submenu lists the six HSK volumes with a return column. The menu
+/** The title screen has two levels: the main menu offers five destinations, and
+ * the Learn and Glossary grade submenus list the six HSK volumes with a return column. The menu
  * level lives in App so a failed launch drops the player back where they
  * started (the grades submenu after a grade click, the main menu otherwise). */
-function DeckSelect({ save, settings, selected, strokeData, menu, onMenuChange, onSelect, onLearn, onReview, onRelearn, onSettings }: {
-  save: SaveFile; settings: DifficultySettings; selected: DeckId; strokeData: StrokeDataMap; menu: "main" | "grades"; onMenuChange: (menu: "main" | "grades") => void; onSelect: (id: DeckId) => void;
-  onLearn: (id: DeckId) => void; onReview: () => void; onRelearn: () => void; onSettings: () => void;
+function DeckSelect({ save, settings, selected, strokeData, menu, onMenuChange, onSelect, onLearn, onReview, onRelearn, onGlossary, onSettings }: {
+  save: SaveFile; settings: DifficultySettings; selected: DeckId; strokeData: StrokeDataMap; menu: "main" | "grades" | "glossary-grades"; onMenuChange: (menu: "main" | "grades" | "glossary-grades") => void; onSelect: (id: DeckId) => void;
+  onLearn: (id: DeckId) => void; onReview: () => void; onRelearn: () => void; onGlossary: (id: DeckId) => void; onSettings: () => void;
 }) {
   return <main className={`paper deck-screen ${settings.reducedMotion ? "reduce-motion" : ""}`}>
     <button className="settings-button" onClick={onSettings} aria-label="System settings">
@@ -514,20 +533,22 @@ function DeckSelect({ save, settings, selected, strokeData, menu, onMenuChange, 
       ? <ModeMenu
           save={save} settings={settings} selected={selected} strokeData={strokeData}
           onSelect={onSelect} onLearn={onLearn} onReview={onReview} onRelearn={onRelearn}
+          onGlossary={() => onMenuChange("glossary-grades")}
           onOpenGrades={() => onMenuChange("grades")}
         />
       : <GradeMenu
           save={save} selected={selected} strokeData={strokeData} reducedMotion={settings.reducedMotion}
-          onSelect={onSelect} onLearn={onLearn} onReturn={() => onMenuChange("main")}
+          purpose={menu === "grades" ? "learn" : "glossary"}
+          onSelect={onSelect} onChoose={menu === "grades" ? onLearn : onGlossary} onReturn={() => onMenuChange("main")}
         />}
   </main>;
 }
 
-const MODE_COUNT = 4;
+const MODE_COUNT = 5;
 
-function ModeMenu({ save, settings, selected, strokeData, onSelect, onLearn, onReview, onRelearn, onOpenGrades }: {
+function ModeMenu({ save, settings, selected, strokeData, onSelect, onLearn, onReview, onRelearn, onGlossary, onOpenGrades }: {
   save: SaveFile; settings: DifficultySettings; selected: DeckId; strokeData: StrokeDataMap; onSelect: (id: DeckId) => void;
-  onLearn: (id: DeckId) => void; onReview: () => void; onRelearn: () => void; onOpenGrades: () => void;
+  onLearn: (id: DeckId) => void; onReview: () => void; onRelearn: () => void; onGlossary: () => void; onOpenGrades: () => void;
 }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const buttonRefs = useRef<Array<HTMLButtonElement | null>>([]);
@@ -540,6 +561,10 @@ function ModeMenu({ save, settings, selected, strokeData, onSelect, onLearn, onR
   const selectedTotal = selectedLevel ? Object.keys(selectedLevel.words).length : DECK_TOTALS[selected];
   const lessonNumber = selectedLevel ? curriculumLessonNumber(selectedLevel) : 1;
   const totalMastered = DECK_IDS.reduce((sum, id) => sum + masteredCount(save.levels[id]), 0);
+  const totalEncountered = DECK_IDS.reduce((sum, id) => {
+    const level = save.levels[id];
+    return sum + (level ? Object.values(level.words).filter((word) => word.introducedAtOrdinal !== null).length : 0);
+  }, 0);
   const totalWords = DECK_IDS.reduce((sum, id) => {
     const level = save.levels[id];
     return sum + (level ? Object.keys(level.words).length : DECK_TOTALS[id]);
@@ -611,17 +636,28 @@ function ModeMenu({ save, settings, selected, strokeData, onSelect, onLearn, onR
       <span className="column-progress"><i style={{ height: relearnEnabled ? "100%" : "0%" }} /></span>
       <span className="column-count"><HanziText text={relearnEnabled ? `${relearnSession!.wordKeys.length} 重学中` : "无进行中"} data={strokeData} vertical /></span><span className="seal action-seal"><HanziText text="重" data={strokeData} /></span>
     </button>
+    <button
+      ref={(node) => { buttonRefs.current[4] = node; }}
+      className={`scroll-column glossary ${activeIndex === 4 ? "selected" : ""}`}
+      onFocus={() => setActiveIndex(4)} onMouseEnter={() => setActiveIndex(4)} onClick={onGlossary}
+      aria-label={`Open glossary, ${totalEncountered} encountered words`}
+    >
+      <span className="column-kicker">GLOSSARY</span><strong><HanziText text="词卷" data={strokeData} vertical /></strong><em><HanziText text="已习得词" data={strokeData} vertical /></em>
+      <span className="column-progress"><i style={{ height: `${totalWords ? totalEncountered / totalWords * 100 : 0}%` }} /></span>
+      <span className="column-count"><HanziText text={`${totalEncountered} 已习得`} data={strokeData} vertical /></span><span className="seal action-seal"><HanziText text="词" data={strokeData} /></span>
+    </button>
   </section>;
 }
 
-/** Grade submenu: the return column occupies the left slot and the six HSK
- * volumes fill the rest. Digit keys 1–6 jump straight to (and launch from) a
- * grade, exactly as the old single-level menu did. */
+/** Shared grade submenu: the return column occupies the left slot and the six
+ * HSK volumes fill the rest. Learn shows mastery while Glossary shows words
+ * encountered, but both destinations deliberately use the same interaction
+ * and visual treatment. */
 const GRADE_COUNT = 7;
 
-function GradeMenu({ save, selected, strokeData, reducedMotion, onSelect, onLearn, onReturn }: {
-  save: SaveFile; selected: DeckId; strokeData: StrokeDataMap; reducedMotion: boolean; onSelect: (id: DeckId) => void;
-  onLearn: (id: DeckId) => void; onReturn: () => void;
+export function GradeMenu({ save, selected, strokeData, reducedMotion, purpose, onSelect, onChoose, onReturn }: {
+  save: SaveFile; selected: DeckId; strokeData: StrokeDataMap; reducedMotion: boolean; purpose: "learn" | "glossary"; onSelect: (id: DeckId) => void;
+  onChoose: (id: DeckId) => void; onReturn: () => void;
 }) {
   const [activeIndex, setActiveIndex] = useState(() => DECK_IDS.indexOf(selected) + 1);
   const columnRefs = useRef<Array<HTMLButtonElement | null>>([]);
@@ -687,21 +723,26 @@ function GradeMenu({ save, selected, strokeData, reducedMotion, onSelect, onLear
     {DECK_IDS.map((id, index) => {
       const level = save.levels[id];
       const mastered = masteredCount(level);
+      const encountered = level
+        ? Object.values(level.words).filter((word) => word.introducedAtOrdinal !== null).length
+        : 0;
       const total = level ? Object.keys(level.words).length : DECK_TOTALS[id];
-      const percent = total ? mastered / total * 100 : 0;
+      const progress = purpose === "glossary" ? encountered : mastered;
+      const percent = total ? progress / total * 100 : 0;
+      const complete = purpose === "glossary" ? encountered === total : Boolean(level?.firstCompletedAt);
       const menuIndex = index + 1;
       return <button
         key={id}
         ref={(node) => { columnRefs.current[menuIndex] = node; }}
-        className={`scroll-column level ${activeIndex === menuIndex ? "selected" : ""} ${level?.firstCompletedAt ? "complete" : ""}`}
+        className={`scroll-column level ${activeIndex === menuIndex ? "selected" : ""} ${complete ? "complete" : ""}`}
         onFocus={() => { setActiveIndex(menuIndex); onSelect(id); }}
         onMouseEnter={() => { setActiveIndex(menuIndex); onSelect(id); }}
-        onClick={() => void onLearn(id)}
-        aria-label={`${deckLabel(id)}, ${mastered} of ${total} words acquired`}
+        onClick={() => void onChoose(id)}
+        aria-label={`${deckLabel(id)}, ${progress} of ${total} words ${purpose === "glossary" ? "encountered" : "acquired"}`}
       >
         <span className="column-kicker">HSK 0{index + 1}</span><strong><HanziText text={`${LEVEL_HANZI[index]}级`} data={strokeData} vertical /></strong>
         <em><HanziText text={LEVEL_DESCRIPTIONS[index]!} data={strokeData} vertical /></em><span className="column-progress"><i style={{ height: `${percent}%` }} /></span>
-        <span className="column-count">{mastered} / {total}</span>{level?.firstCompletedAt && <span className="seal mini-seal"><HanziText text="成" data={strokeData} /></span>}
+        <span className="column-count">{progress} / {total}</span>{complete && <span className="seal mini-seal"><HanziText text="成" data={strokeData} /></span>}
         {activeIndex === menuIndex && <span className="selection-brush" aria-hidden="true" />}
       </button>;
     })}
