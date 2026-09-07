@@ -1,0 +1,42 @@
+{
+  "forceLink": [
+    { "keys": ["to speak to say", "to talk"], "reason": "说 vs 说话: the motivating pair; also caught by the speak class, pinned here so it can never regress." },
+    { "keys": ["to go", "to walk"], "reason": "去 vs 走: near-synonymous motion verbs with no shared character or content word; 'go' cannot be a class unigram (it also tags 围棋 'Go' and directional glosses)." },
+    { "keys": ["to take to hold", "to bring to take belt"], "reason": "拿 vs 带: physical take/bring verbs; a TAKE class would also catch 举行 'to hold (a meeting)' and 执行 'to carry out'." },
+    { "keys": ["fast soon quickly", "soon almost"], "reason": "快 vs 快要: the only shared word 'soon' sits in a size-1 unit set on the 快要 side, below the shared-word gate." },
+    { "keys": ["also too", "still also quite"], "reason": "也 vs 还: shared 'also' is one word in size-2 sets, below the 2/3-of-smaller gate." },
+    { "keys": ["still or", "or"], "reason": "还是 vs 或者: classic learner pair; 或者 is a single-word gloss below the shared-word gate." },
+    { "keys": ["a little a bit", "a little slightly"], "reason": "一点儿 vs 有点儿: classic learner pair; each shares only the word 'little' with the other." },
+    { "keys": ["week measure word for circumference cycle", "week"], "reason": "周 vs 星期: 周's gloss is entirely a structural measure-word phrase, so it has no content words to match." },
+    { "keys": ["school", "primary school"], "reason": "学校 vs 小学: 'school' is a single-word unit set on the 学校 side, below the shared-word gate." },
+    { "keys": ["school", "middle school"], "reason": "学校 vs 中学: same as primary school." },
+    { "keys": ["primary school", "middle school"], "reason": "小学 vs 中学: share only 'school' in size-2 sets." },
+    { "keys": ["to approach to get close to", "near close"], "reason": "接近 vs 近: 'close' was dropped from the near class (关闭 'to close' polysemy), leaving no shared signal." },
+    { "keys": ["to finish", "to end"], "reason": "完 vs 结束: the finish class was dissolved because 'end'/'complete' also gloss the nouns 末/期末/终点 and adjectives 完整/完全." },
+    { "keys": ["to finish", "to complete"], "reason": "完 vs 完成: same as to end." },
+    { "keys": ["to end", "to complete"], "reason": "结束 vs 完成: same as to end." },
+    { "keys": ["to look after to watch", "to watch to view"], "reason": "看 vs 观看: 'watch' was dropped from the look-see class because 手表/表 gloss 'watch' as a noun; this pins the verb pair." }
+  ],
+  "forceUnlink": [
+    { "keys": ["not bad pretty good", "don t not bad"], "reason": "不错 vs 别: 不错 means GOOD; it must not join the negation-word cluster that 'not'/'bad' in its gloss would suggest." },
+    { "keys": ["not bad pretty good", "not as good as inferior to"], "reason": "不错 vs 不如: same — 不错 is a positive evaluation, 不如 a comparison." },
+    { "keys": ["not bad pretty good", "poor not good enough almost nearly"], "reason": "不错 vs 差点: keeps 不错 from bridging the negation cluster into the almost/nearly cluster." }
+  ],
+  "forceUnlinkTags": [
+    { "key": "can jar", "tags": ["can"], "reason": "罐 'can, jar' — 'can' here is the container noun, not ability." },
+    { "key": "whether or not if", "tags": ["if"], "reason": "是否 is a yes-no question marker; the trailing 'if' gloss does not make it a conditional." },
+    { "key": "to turn around later if", "tags": ["if"], "reason": "回头 — the final 'if' gloss ('in a bit') does not make it a conditional conjunction." },
+    { "key": "like as if", "tags": ["like-love"], "reason": "似的 compares ('as if'); it does not mean ENJOY, so it must not weld the comparison class to like/love." },
+    { "key": "like as", "tags": ["like-love"], "reason": "如同 compares ('to be like'); same polysemy as 似的." },
+    { "key": "study den", "tags": ["learn"], "reason": "书房 is a ROOM ('study, den'); 'study' is a noun modifier." },
+    { "key": "to learn of to hear about", "tags": ["learn"], "reason": "得知 belongs with hear/say ('to hear about'); 'learn of' is not 'to study'." },
+    { "key": "to imagine to picture", "tags": ["photo"], "reason": "想象 — 'picture' is a verb here, not the photograph noun." },
+    { "key": "to realize to achieve", "tags": ["know"], "reason": "实现 — 'realize' means bring about, not become aware." },
+    { "key": "answer solution", "tags": ["way-method"], "reason": "答案 is the ANSWER to a question; the 'solution' gloss must not file it with way/method keys." },
+    { "key": "to rely on to base on by means of", "tags": ["way-method"], "reason": "凭 is about reliance; 'by means of' must not bridge the rely/basis cluster into the way/method cluster." },
+    { "key": "appearance look manner", "tags": ["look-see"], "reason": "样子 is a noun ('appearance'); 'look' is not the verb." },
+    { "key": "appearance look", "tags": ["look-see"], "reason": "模样 is a noun ('appearance')." },
+    { "key": "gaze look", "tags": ["look-see"], "reason": "目光 is a noun ('gaze')." },
+    { "key": "to give to send to see off", "tags": ["look-see"], "reason": "送 — 'see off' is escorting, not seeing." }
+  ]
+}

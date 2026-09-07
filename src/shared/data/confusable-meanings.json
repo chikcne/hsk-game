@@ -1,0 +1,3022 @@
+{
+  "groups": [
+    {
+      "id": "ability-talent-2",
+      "meaningKeys": [
+        "ability talent",
+        "talent ability"
+      ]
+    },
+    {
+      "id": "about-around-left",
+      "meaningKeys": [
+        "about around left and right to control",
+        "front and back around about"
+      ]
+    },
+    {
+      "id": "accept-adopt-pick",
+      "meaningKeys": [
+        "accept",
+        "to adopt to accept",
+        "to pick up to receive",
+        "to receive",
+        "to receive guests to host",
+        "to receive to be affected",
+        "to receive to be subjected to",
+        "to receive to collect",
+        "to receive to take in income revenue"
+      ]
+    },
+    {
+      "id": "according-based-basis",
+      "meaningKeys": [
+        "according to based on",
+        "basis foundation to base on to rely on according to based on"
+      ]
+    },
+    {
+      "id": "act-perform-play",
+      "meaningKeys": [
+        "to act to perform to play",
+        "to perform to act"
+      ]
+    },
+    {
+      "id": "act-perform-play-role",
+      "meaningKeys": [
+        "to act to perform to play",
+        "to play the role of to act as",
+        "to play the role of to function as to act as"
+      ]
+    },
+    {
+      "id": "act-serve-as",
+      "meaningKeys": [
+        "to act as to serve as as being",
+        "to do to act to serve as"
+      ]
+    },
+    {
+      "id": "adapt-fit-suit",
+      "meaningKeys": [
+        "to adapt to fit to suit",
+        "to suit to fit to be suitable"
+      ]
+    },
+    {
+      "id": "advanced-high-level",
+      "meaningKeys": [
+        "advanced high level",
+        "high end high level high end product"
+      ]
+    },
+    {
+      "id": "advanced-high-level-upper",
+      "meaningKeys": [
+        "advanced high level",
+        "high level upper class high ranking"
+      ]
+    },
+    {
+      "id": "advantage-merit-strong",
+      "meaningKeys": [
+        "advantage merit strong point",
+        "specialty strong point",
+        "strength strong point"
+      ]
+    },
+    {
+      "id": "after-later-behind",
+      "meaningKeys": [
+        "after later behind",
+        "behind later"
+      ]
+    },
+    {
+      "id": "after-later-behind-2",
+      "meaningKeys": [
+        "after later behind",
+        "later after"
+      ]
+    },
+    {
+      "id": "again-once-more",
+      "meaningKeys": [
+        "again once more to repeat",
+        "once again once more"
+      ]
+    },
+    {
+      "id": "agree-agreement-arrange",
+      "meaningKeys": [
+        "to agree agreement",
+        "to agree on to arrange agreement"
+      ]
+    },
+    {
+      "id": "ah-oh-2",
+      "meaningKeys": [
+        "ah oh",
+        "oh my ah"
+      ]
+    },
+    {
+      "id": "air-gas-breath",
+      "meaningKeys": [
+        "air gas breath to anger to make angry",
+        "angry",
+        "to get angry"
+      ]
+    },
+    {
+      "id": "all-aspects-every",
+      "meaningKeys": [
+        "all aspects every side",
+        "all every",
+        "all every to possess to own possessions belongings"
+      ]
+    },
+    {
+      "id": "all-everywhere-2",
+      "meaningKeys": [
+        "all around everywhere",
+        "all over everywhere everywhere"
+      ]
+    },
+    {
+      "id": "all-whole-thing",
+      "meaningKeys": [
+        "all the whole thing",
+        "all whole",
+        "whole entire all"
+      ]
+    },
+    {
+      "id": "almost-nearly-similar",
+      "meaningKeys": [
+        "almost nearly",
+        "almost similar nearly",
+        "poor not good enough almost nearly"
+      ]
+    },
+    {
+      "id": "also-too-still",
+      "meaningKeys": [
+        "also too",
+        "still also quite"
+      ]
+    },
+    {
+      "id": "altogether-total-2",
+      "meaningKeys": [
+        "altogether in total",
+        "in total altogether"
+      ]
+    },
+    {
+      "id": "and-moreover-furthermore",
+      "meaningKeys": [
+        "and moreover",
+        "and moreover furthermore"
+      ]
+    },
+    {
+      "id": "and-moreover-furthermore-other",
+      "meaningKeys": [
+        "and moreover furthermore",
+        "other else in addition moreover besides furthermore"
+      ]
+    },
+    {
+      "id": "and-well-same",
+      "meaningKeys": [
+        "and as well as",
+        "as well as and",
+        "same alike to share to be the same together with and as well as"
+      ]
+    },
+    {
+      "id": "and-with-same",
+      "meaningKeys": [
+        "and with",
+        "same alike to share to be the same together with and as well as",
+        "with and",
+        "with and heel to follow to accompany"
+      ]
+    },
+    {
+      "id": "announcement-notice-announce",
+      "meaningKeys": [
+        "announcement notice to announce",
+        "notice announcement"
+      ]
+    },
+    {
+      "id": "answer-reply-2",
+      "meaningKeys": [
+        "to answer to reply",
+        "to reply to answer"
+      ]
+    },
+    {
+      "id": "anxious-nervous-tense",
+      "meaningKeys": [
+        "anxious",
+        "nervous tense strained in short supply",
+        "to worry",
+        "to worry to be anxious",
+        "to worry to feel anxious",
+        "uneasy anxious"
+      ]
+    },
+    {
+      "id": "appear-emerge-2",
+      "meaningKeys": [
+        "to appear to emerge",
+        "to emerge to appear"
+      ]
+    },
+    {
+      "id": "appearance-look-manner",
+      "meaningKeys": [
+        "appearance look",
+        "appearance look manner"
+      ]
+    },
+    {
+      "id": "apply-exam-register",
+      "meaningKeys": [
+        "to apply for an exam to register for a test",
+        "to test to take an exam"
+      ]
+    },
+    {
+      "id": "apply-job-respond",
+      "meaningKeys": [
+        "to apply for a job",
+        "to apply for a job to respond to a job advertisement"
+      ]
+    },
+    {
+      "id": "appropriate-suitable-2",
+      "meaningKeys": [
+        "appropriate suitable",
+        "suitable appropriate"
+      ]
+    },
+    {
+      "id": "approximately-about-appointment",
+      "meaningKeys": [
+        "approximately about",
+        "to make an appointment to arrange about approximately"
+      ]
+    },
+    {
+      "id": "arrange-order-tidy",
+      "meaningKeys": [
+        "to arrange to put in order to tidy up",
+        "to put in order to tidy up to pack"
+      ]
+    },
+    {
+      "id": "arrange-row-list",
+      "meaningKeys": [
+        "to arrange in a row to list measure word for rows or lines",
+        "to line up to arrange row line measure word for rows"
+      ]
+    },
+    {
+      "id": "arrive-reach-come",
+      "meaningKeys": [
+        "to arrive",
+        "to arrive to reach",
+        "to come to arrive",
+        "to reach to accomplish",
+        "to reach to achieve"
+      ]
+    },
+    {
+      "id": "as-seem-like",
+      "meaningKeys": [
+        "as if seem",
+        "like as if",
+        "seem as if",
+        "to appear to seem",
+        "to resemble to be like as if such as image statue portrait",
+        "to seem as if perhaps",
+        "to seem to appear"
+      ]
+    },
+    {
+      "id": "aspect-side-surface",
+      "meaningKeys": [
+        "aspect side",
+        "side aspect surface"
+      ]
+    },
+    {
+      "id": "attend-look-watch",
+      "meaningKeys": [
+        "to attend to to look after",
+        "to look after to watch",
+        "to look at to gaze",
+        "to look to see",
+        "to read",
+        "to read to read aloud",
+        "to see"
+      ]
+    },
+    {
+      "id": "attend-school-study",
+      "meaningKeys": [
+        "to attend school",
+        "to study to attend school"
+      ]
+    },
+    {
+      "id": "author-writer-2",
+      "meaningKeys": [
+        "author writer",
+        "writer author"
+      ]
+    },
+    {
+      "id": "avoid-hide-2",
+      "meaningKeys": [
+        "to avoid to hide",
+        "to hide to avoid"
+      ]
+    },
+    {
+      "id": "base-foundation-basis",
+      "meaningKeys": [
+        "base foundation",
+        "basis foundation to base on to rely on according to based on"
+      ]
+    },
+    {
+      "id": "basis-foundation-base",
+      "meaningKeys": [
+        "basis foundation to base on to rely on according to based on",
+        "to base on according to basis"
+      ]
+    },
+    {
+      "id": "basis-foundation-base-rely",
+      "meaningKeys": [
+        "basis foundation to base on to rely on according to based on",
+        "to rely on to base on by means of"
+      ]
+    },
+    {
+      "id": "bear-endure-2",
+      "meaningKeys": [
+        "to bear to endure",
+        "to endure to bear"
+      ]
+    },
+    {
+      "id": "beautiful-aesthetically-pleasing",
+      "meaningKeys": [
+        "beautiful",
+        "beautiful aesthetically pleasing",
+        "beautiful lovely",
+        "beautiful pretty",
+        "beautiful splendid",
+        "good looking",
+        "graceful beautiful",
+        "handsome good looking"
+      ]
+    },
+    {
+      "id": "because-due-owing",
+      "meaningKeys": [
+        "because because of",
+        "because due to",
+        "because of due to owing to",
+        "by through from because of",
+        "for because of to",
+        "out of due to"
+      ]
+    },
+    {
+      "id": "beginning-early-first",
+      "meaningKeys": [
+        "beginning early for the first time prefix for early times",
+        "first time"
+      ]
+    },
+    {
+      "id": "behind-back-2",
+      "meaningKeys": [
+        "behind at the back",
+        "behind back"
+      ]
+    },
+    {
+      "id": "believe-self-confidence",
+      "meaningKeys": [
+        "to believe",
+        "to believe in oneself self confidence confidence confident",
+        "to believe letter",
+        "to think to believe",
+        "to trust"
+      ]
+    },
+    {
+      "id": "besides-addition-moreover",
+      "meaningKeys": [
+        "besides in addition moreover",
+        "other else in addition moreover besides furthermore"
+      ]
+    },
+    {
+      "id": "besides-addition-moreover-put",
+      "meaningKeys": [
+        "besides in addition moreover",
+        "to put off to postpone besides moreover"
+      ]
+    },
+    {
+      "id": "bill-check-pay",
+      "meaningKeys": [
+        "bill check",
+        "to pay the bill to settle an account to check out"
+      ]
+    },
+    {
+      "id": "both-sides-coasts",
+      "meaningKeys": [
+        "both sides both coasts",
+        "both sides both parties"
+      ]
+    },
+    {
+      "id": "brand-sign-label",
+      "meaningKeys": [
+        "brand sign label",
+        "card brand plaque sign"
+      ]
+    },
+    {
+      "id": "break-part-ways",
+      "meaningKeys": [
+        "to break up to part ways",
+        "to leave to part ways"
+      ]
+    },
+    {
+      "id": "bright-light-shine",
+      "meaningKeys": [
+        "bright light to shine to show",
+        "brightness bright light"
+      ]
+    },
+    {
+      "id": "bring-take-hold",
+      "meaningKeys": [
+        "to bring to take belt",
+        "to take to hold"
+      ]
+    },
+    {
+      "id": "broken-damaged-break",
+      "meaningKeys": [
+        "broken damaged to break to ruin",
+        "to break to smash broken"
+      ]
+    },
+    {
+      "id": "build-construct-2",
+      "meaningKeys": [
+        "to build to construct",
+        "to construct to build"
+      ]
+    },
+    {
+      "id": "business-open-course",
+      "meaningKeys": [
+        "to do business to be open",
+        "to open a business or course",
+        "to open for business"
+      ]
+    },
+    {
+      "id": "business-professional-work",
+      "meaningKeys": [
+        "business professional work",
+        "to handle official business to work"
+      ]
+    },
+    {
+      "id": "but-and-yet",
+      "meaningKeys": [
+        "but and yet",
+        "but yet however"
+      ]
+    },
+    {
+      "id": "but-however-yet",
+      "meaningKeys": [
+        "but however",
+        "but however only merely",
+        "but yet however",
+        "helpless but however",
+        "however but"
+      ]
+    },
+    {
+      "id": "buy-purchase-procurement",
+      "meaningKeys": [
+        "to buy",
+        "to purchase",
+        "to purchase procurement",
+        "to purchase to acquire"
+      ]
+    },
+    {
+      "id": "cafeteria-dining-hall",
+      "meaningKeys": [
+        "cafeteria dining hall",
+        "restaurant dining hall"
+      ]
+    },
+    {
+      "id": "called-known-2",
+      "meaningKeys": [
+        "be called be known as",
+        "to be called to be known as"
+      ]
+    },
+    {
+      "id": "can-able-capable",
+      "meaningKeys": [
+        "can be able to",
+        "can be able to be capable of",
+        "can may okay fine",
+        "can to be able to",
+        "possible possibility may",
+        "to go okay permissible"
+      ]
+    },
+    {
+      "id": "can-only-have",
+      "meaningKeys": [
+        "can only",
+        "can only have to"
+      ]
+    },
+    {
+      "id": "can-only-have-demand",
+      "meaningKeys": [
+        "can only have to",
+        "demand need",
+        "have to be forced to",
+        "have to cannot but",
+        "must",
+        "must have essential",
+        "must need",
+        "should",
+        "should ought to",
+        "to need",
+        "to need need",
+        "to want to need"
+      ]
+    },
+    {
+      "id": "careful-attentive-meticulous",
+      "meaningKeys": [
+        "careful attentive",
+        "careful attentive meticulous"
+      ]
+    },
+    {
+      "id": "careful-attentive-meticulous-2",
+      "meaningKeys": [
+        "careful attentive meticulous",
+        "meticulous careful"
+      ]
+    },
+    {
+      "id": "carry-implement-2",
+      "meaningKeys": [
+        "to carry out to implement",
+        "to implement to carry out"
+      ]
+    },
+    {
+      "id": "carry-lift-mention",
+      "meaningKeys": [
+        "to carry to lift to mention to bring up",
+        "to mention to bring up"
+      ]
+    },
+    {
+      "id": "cause-make-use",
+      "meaningKeys": [
+        "to cause to make",
+        "to make to cause to use"
+      ]
+    },
+    {
+      "id": "certain-certainly-sure",
+      "meaningKeys": [
+        "certain certainly",
+        "to be certain to be sure to affirm positive affirmative definite surely certainly definitely"
+      ]
+    },
+    {
+      "id": "certain-definite-determine",
+      "meaningKeys": [
+        "certain definite to determine",
+        "to be certain to be sure to affirm positive affirmative definite surely certainly definitely"
+      ]
+    },
+    {
+      "id": "certificate-proof-evidence",
+      "meaningKeys": [
+        "certificate proof evidence",
+        "to prove to demonstrate proof certificate"
+      ]
+    },
+    {
+      "id": "characteristic-feature-2",
+      "meaningKeys": [
+        "characteristic feature",
+        "feature characteristic"
+      ]
+    },
+    {
+      "id": "child-little-kid",
+      "meaningKeys": [
+        "child",
+        "child little kid",
+        "little friend child"
+      ]
+    },
+    {
+      "id": "chinese-language-literature",
+      "meaningKeys": [
+        "chinese language",
+        "chinese language and literature"
+      ]
+    },
+    {
+      "id": "chinese-new-years",
+      "meaningKeys": [
+        "chinese new year s eve",
+        "new year s day",
+        "new year s eve dinner"
+      ]
+    },
+    {
+      "id": "city-town-small",
+      "meaningKeys": [
+        "city town",
+        "town small city"
+      ]
+    },
+    {
+      "id": "clean-net-merely",
+      "meaningKeys": [
+        "clean net merely only",
+        "only merely",
+        "only merely but",
+        "only merely solely"
+      ]
+    },
+    {
+      "id": "clear-obvious-understand",
+      "meaningKeys": [
+        "clear obvious to understand",
+        "to know",
+        "to know to recognize",
+        "to realize consciousness",
+        "to recognize to be aware of",
+        "to recognize to know",
+        "to understand",
+        "to understand clear",
+        "to understand to comprehend",
+        "to understand to realize understanding"
+      ]
+    },
+    {
+      "id": "clever-ingenious-intelligence",
+      "meaningKeys": [
+        "clever ingenious",
+        "intelligence intelligent smart",
+        "skillful clever opportune",
+        "smart clever"
+      ]
+    },
+    {
+      "id": "close-intimate-press",
+      "meaningKeys": [
+        "close intimate",
+        "close intimate to become close",
+        "to press close to close intimate"
+      ]
+    },
+    {
+      "id": "coast-shore-bank",
+      "meaningKeys": [
+        "coast shore",
+        "shore coast bank"
+      ]
+    },
+    {
+      "id": "cold-catch-2",
+      "meaningKeys": [
+        "cold to catch a cold",
+        "to catch cold"
+      ]
+    },
+    {
+      "id": "college-academy-institute",
+      "meaningKeys": [
+        "college academy institute",
+        "dean head of a college or institute"
+      ]
+    },
+    {
+      "id": "combine-merge-actually",
+      "meaningKeys": [
+        "to combine to merge actually indeed and also",
+        "to merge to combine"
+      ]
+    },
+    {
+      "id": "combine-unite-united",
+      "meaningKeys": [
+        "to combine to unite",
+        "to unite to combine united"
+      ]
+    },
+    {
+      "id": "come-back-go",
+      "meaningKeys": [
+        "to come back come back toward the speaker",
+        "to go back and forth",
+        "to go back go back away from the speaker",
+        "to repay to return",
+        "to return",
+        "to return by",
+        "to return measure word for times",
+        "to return to give back",
+        "to return to turn back"
+      ]
+    },
+    {
+      "id": "common-people-ordinary",
+      "meaningKeys": [
+        "common people ordinary people",
+        "ordinary common"
+      ]
+    },
+    {
+      "id": "compare-comparison-contrast",
+      "meaningKeys": [
+        "to compare comparison contrast",
+        "to compare with to contrast"
+      ]
+    },
+    {
+      "id": "compare-quite-relatively",
+      "meaningKeys": [
+        "to compare quite relatively than",
+        "to compare than"
+      ]
+    },
+    {
+      "id": "compete-game-match",
+      "meaningKeys": [
+        "to compete game match",
+        "to compete in a final final match"
+      ]
+    },
+    {
+      "id": "complete-end-finish",
+      "meaningKeys": [
+        "to complete",
+        "to end",
+        "to finish"
+      ]
+    },
+    {
+      "id": "complete-full-set",
+      "meaningKeys": [
+        "complete full set",
+        "full complete pure"
+      ]
+    },
+    {
+      "id": "complete-full-set-form",
+      "meaningKeys": [
+        "complete full set",
+        "to form a complete set"
+      ]
+    },
+    {
+      "id": "concept-idea-2",
+      "meaningKeys": [
+        "concept idea",
+        "idea concept"
+      ]
+    },
+    {
+      "id": "convene-hold-conduct",
+      "meaningKeys": [
+        "to convene to hold a meeting",
+        "to hold to convene to conduct a ceremony meeting event"
+      ]
+    },
+    {
+      "id": "convenient-facilitate-2",
+      "meaningKeys": [
+        "convenient to facilitate",
+        "to be convenient for to facilitate"
+      ]
+    },
+    {
+      "id": "convenient-fast-high",
+      "meaningKeys": [
+        "convenient fast",
+        "fast high speed",
+        "fast quick",
+        "fast soon quickly",
+        "hurriedly quickly",
+        "quickly at once",
+        "quickly promptly",
+        "rapid quick"
+      ]
+    },
+    {
+      "id": "cooked-rice-meal",
+      "meaningKeys": [
+        "cooked rice",
+        "cooked rice meal"
+      ]
+    },
+    {
+      "id": "correct-right-accurate",
+      "meaningKeys": [
+        "correct right accurate",
+        "correct right to toward for to treat pair"
+      ]
+    },
+    {
+      "id": "correct-right-to",
+      "meaningKeys": [
+        "correct right to toward for to treat pair",
+        "for because of to"
+      ]
+    },
+    {
+      "id": "could-it-that",
+      "meaningKeys": [
+        "could it be that",
+        "it can be seen that obviously"
+      ]
+    },
+    {
+      "id": "crowded-crowd-squeeze",
+      "meaningKeys": [
+        "crowded to crowd",
+        "to crowd to squeeze crowded"
+      ]
+    },
+    {
+      "id": "day-life-time",
+      "meaningKeys": [
+        "day life time",
+        "half a day a long time"
+      ]
+    },
+    {
+      "id": "deal-handle-2",
+      "meaningKeys": [
+        "to deal with to handle",
+        "to handle to deal with"
+      ]
+    },
+    {
+      "id": "decide-decision-making",
+      "meaningKeys": [
+        "to decide decision",
+        "to decide decision making"
+      ]
+    },
+    {
+      "id": "deep-profound-2",
+      "meaningKeys": [
+        "deep profound",
+        "deep profound deeply late",
+        "profound deep"
+      ]
+    },
+    {
+      "id": "delicious-food-cuisine",
+      "meaningKeys": [
+        "delicious food cuisine",
+        "delicious food delicacy"
+      ]
+    },
+    {
+      "id": "department-unit-2",
+      "meaningKeys": [
+        "department unit",
+        "unit department"
+      ]
+    },
+    {
+      "id": "desire-happy-willing",
+      "meaningKeys": [
+        "desire",
+        "to be happy to to be willing to",
+        "to be willing",
+        "to be willing to",
+        "to think to want",
+        "to want to need",
+        "to wish to be willing",
+        "to wish to express good wishes",
+        "willing",
+        "wish desire"
+      ]
+    },
+    {
+      "id": "dessert-sweet-snack",
+      "meaningKeys": [
+        "dessert sweet snack",
+        "snack dessert"
+      ]
+    },
+    {
+      "id": "difficult-hard-difficulty",
+      "meaningKeys": [
+        "difficult hard",
+        "difficult hard difficulty trouble",
+        "difficult to hard to"
+      ]
+    },
+    {
+      "id": "digit-figure-number",
+      "meaningKeys": [
+        "digit figure number",
+        "number figure several a few"
+      ]
+    },
+    {
+      "id": "discuss-talk-narrate",
+      "meaningKeys": [
+        "to discuss to talk over",
+        "to narrate to tell",
+        "to speak speech",
+        "to speak to say",
+        "to speak to talk",
+        "to talk",
+        "to talk to discuss",
+        "to talk to have a conversation",
+        "to talk to oneself",
+        "to tell"
+      ]
+    },
+    {
+      "id": "disease-fault-trouble",
+      "meaningKeys": [
+        "disease",
+        "fault trouble illness",
+        "illness disease to be ill",
+        "to fall ill",
+        "to get sick"
+      ]
+    },
+    {
+      "id": "district-area-region",
+      "meaningKeys": [
+        "district area region",
+        "region area"
+      ]
+    },
+    {
+      "id": "do-handle-mess",
+      "meaningKeys": [
+        "to do to handle",
+        "to do to handle to mess with"
+      ]
+    },
+    {
+      "id": "dont-not-bad",
+      "meaningKeys": [
+        "don t not bad",
+        "don t not want"
+      ]
+    },
+    {
+      "id": "doubt-question-problem",
+      "meaningKeys": [
+        "doubt question",
+        "question",
+        "question problem topic",
+        "to question to doubt",
+        "topic subject question"
+      ]
+    },
+    {
+      "id": "drag-pull-draw",
+      "meaningKeys": [
+        "to drag to pull",
+        "to pull to drag to draw"
+      ]
+    },
+    {
+      "id": "draw-paint-painting",
+      "meaningKeys": [
+        "to draw to paint",
+        "to draw to paint painting picture"
+      ]
+    },
+    {
+      "id": "each-every-one",
+      "meaningKeys": [
+        "each every one by one",
+        "each every respectively",
+        "every each per"
+      ]
+    },
+    {
+      "id": "each-every-one-other",
+      "meaningKeys": [
+        "each every one by one",
+        "each other one another"
+      ]
+    },
+    {
+      "id": "each-other-mutual",
+      "meaningKeys": [
+        "each other",
+        "mutual each other",
+        "to compare to face each other opposite relative"
+      ]
+    },
+    {
+      "id": "each-other-one",
+      "meaningKeys": [
+        "each other",
+        "each other one another",
+        "mutual each other"
+      ]
+    },
+    {
+      "id": "each-other-one-another",
+      "meaningKeys": [
+        "each other one another",
+        "one after another successively",
+        "succession one after another"
+      ]
+    },
+    {
+      "id": "each-other-one-another-2",
+      "meaningKeys": [
+        "each other one another",
+        "other another separately otherwise"
+      ]
+    },
+    {
+      "id": "early-morning-very",
+      "meaningKeys": [
+        "early morning",
+        "very early morning dawn"
+      ]
+    },
+    {
+      "id": "earth-land-soil",
+      "meaningKeys": [
+        "earth land",
+        "earth soil land rustic unrefined",
+        "ground earth land"
+      ]
+    },
+    {
+      "id": "ease-alleviate-lighten",
+      "meaningKeys": [
+        "to ease to alleviate",
+        "to lighten to ease to alleviate to reduce burden weight pressure"
+      ]
+    },
+    {
+      "id": "easy-easily-light",
+      "meaningKeys": [
+        "easy",
+        "easy easily",
+        "light not heavy gentle easy",
+        "relaxed light easy",
+        "simple",
+        "simple plain",
+        "simple pure",
+        "to be easy to"
+      ]
+    },
+    {
+      "id": "effort-time-skill",
+      "meaningKeys": [
+        "effort time skill",
+        "kung fu skill effort"
+      ]
+    },
+    {
+      "id": "effort-time-skill-sell",
+      "meaningKeys": [
+        "effort time skill",
+        "to sell betray one s country or friends spare no effort show off make a living by one s skill"
+      ]
+    },
+    {
+      "id": "employed-work-profession",
+      "meaningKeys": [
+        "to be employed to work in a profession",
+        "to work in the same profession colleague"
+      ]
+    },
+    {
+      "id": "enough-sufficiently-not",
+      "meaningKeys": [
+        "enough sufficiently",
+        "not enough insufficient not sufficiently"
+      ]
+    },
+    {
+      "id": "ensure-guarantee-assurance",
+      "meaningKeys": [
+        "to ensure to guarantee guarantee",
+        "to guarantee to ensure guarantee assurance"
+      ]
+    },
+    {
+      "id": "equip-equipment-allocate",
+      "meaningKeys": [
+        "to equip equipment",
+        "to equip to allocate equipment"
+      ]
+    },
+    {
+      "id": "essential-element-factor",
+      "meaningKeys": [
+        "essential element factor",
+        "factor element"
+      ]
+    },
+    {
+      "id": "even-if-no",
+      "meaningKeys": [
+        "even if no matter",
+        "no matter regardless",
+        "no matter regardless of"
+      ]
+    },
+    {
+      "id": "even-if-though",
+      "meaningKeys": [
+        "even if",
+        "even if even though",
+        "even if no matter"
+      ]
+    },
+    {
+      "id": "even-if-though-free",
+      "meaningKeys": [
+        "even if even though",
+        "feel free to not hesitate to often in the pattern 尽管 verb although even though despite"
+      ]
+    },
+    {
+      "id": "even-if-though-precisely",
+      "meaningKeys": [
+        "even if",
+        "even if even though",
+        "precisely exactly used for emphasis only merely simply even if even as in 就是 也"
+      ]
+    },
+    {
+      "id": "even-so-much",
+      "meaningKeys": [
+        "even so much as that",
+        "so like that then",
+        "so that in order to",
+        "to be able to so that"
+      ]
+    },
+    {
+      "id": "exactly-right-just",
+      "meaningKeys": [
+        "exactly right just in time coincidentally",
+        "just exactly",
+        "just exactly right straight",
+        "just right exactly",
+        "just right exactly coincidentally"
+      ]
+    },
+    {
+      "id": "exam-paper-test",
+      "meaningKeys": [
+        "exam paper",
+        "test questions exam paper"
+      ]
+    },
+    {
+      "id": "exceed-surpass-2",
+      "meaningKeys": [
+        "to exceed to surpass",
+        "to surpass to exceed"
+      ]
+    },
+    {
+      "id": "excellent-outstanding-2",
+      "meaningKeys": [
+        "excellent outstanding",
+        "outstanding excellent"
+      ]
+    },
+    {
+      "id": "excited-agitated-emotionally",
+      "meaningKeys": [
+        "excited agitated emotionally moved to excite to agitate to move emotionally",
+        "excited thrilled to excite to get excited"
+      ]
+    },
+    {
+      "id": "exert-effort-contribute",
+      "meaningKeys": [
+        "to exert effort",
+        "to exert effort to contribute",
+        "to exert effort to use strength"
+      ]
+    },
+    {
+      "id": "experience-go-through",
+      "meaningKeys": [
+        "to experience to go through",
+        "to experience to go through experience past history"
+      ]
+    },
+    {
+      "id": "expert-master-2",
+      "meaningKeys": [
+        "expert master",
+        "master expert"
+      ]
+    },
+    {
+      "id": "express-indicate-show",
+      "meaningKeys": [
+        "to express to indicate to show",
+        "to show to indicate"
+      ]
+    },
+    {
+      "id": "face-person-folk",
+      "meaningKeys": [
+        "face to face in person",
+        "folk among the people",
+        "people",
+        "person",
+        "person character figure"
+      ]
+    },
+    {
+      "id": "fall-collapse-2",
+      "meaningKeys": [
+        "to fall to collapse",
+        "to fall to collapse however but"
+      ]
+    },
+    {
+      "id": "fall-drop-descend",
+      "meaningKeys": [
+        "to fall to drop",
+        "to fall to drop to descend to lower",
+        "to fall to drop to land"
+      ]
+    },
+    {
+      "id": "family-member-relative",
+      "meaningKeys": [
+        "family member",
+        "family member relative",
+        "relative relative family member"
+      ]
+    },
+    {
+      "id": "famous-scenic-spot",
+      "meaningKeys": [
+        "famous scenic spot",
+        "scenic spot tourist attraction point of interest"
+      ]
+    },
+    {
+      "id": "famous-well-known",
+      "meaningKeys": [
+        "famous well known",
+        "well known famous"
+      ]
+    },
+    {
+      "id": "far-reaching-long",
+      "meaningKeys": [
+        "far reaching",
+        "long remote far reaching",
+        "long term far reaching"
+      ]
+    },
+    {
+      "id": "fast-high-speed",
+      "meaningKeys": [
+        "fast high speed",
+        "high speed",
+        "high speed rail",
+        "high speed train"
+      ]
+    },
+    {
+      "id": "fast-soon-quickly",
+      "meaningKeys": [
+        "fast soon quickly",
+        "soon almost"
+      ]
+    },
+    {
+      "id": "fearful-terrified-afraid",
+      "meaningKeys": [
+        "fearful terrified",
+        "to be afraid",
+        "to fear perhaps",
+        "to fear to be afraid i m afraid perhaps maybe"
+      ]
+    },
+    {
+      "id": "fee-expense-spend",
+      "meaningKeys": [
+        "fee expense to spend",
+        "to spend money or time",
+        "to spend to cost"
+      ]
+    },
+    {
+      "id": "feeling-experience-feel",
+      "meaningKeys": [
+        "feeling experience to feel",
+        "feeling sense to feel",
+        "to feel",
+        "to feel to think"
+      ]
+    },
+    {
+      "id": "feeling-sense-feel",
+      "meaningKeys": [
+        "feeling sense to feel",
+        "sense feeling as suffix"
+      ]
+    },
+    {
+      "id": "festival-holiday-day",
+      "meaningKeys": [
+        "festival",
+        "holiday day off vacation",
+        "measure word for segments sections lessons festival joint to save to control",
+        "to go on vacation",
+        "to have a holiday",
+        "to take a holiday",
+        "vacation"
+      ]
+    },
+    {
+      "id": "fierce-intense-2",
+      "meaningKeys": [
+        "fierce intense",
+        "intense fierce"
+      ]
+    },
+    {
+      "id": "film-movie-2",
+      "meaningKeys": [
+        "film movie",
+        "movie film"
+      ]
+    },
+    {
+      "id": "fire-urgent-popular",
+      "meaningKeys": [
+        "fire urgent popular hot",
+        "hot popular"
+      ]
+    },
+    {
+      "id": "first-aid-emergency",
+      "meaningKeys": [
+        "first aid emergency treatment",
+        "to do emergency treatment emergency case"
+      ]
+    },
+    {
+      "id": "form-shape-2",
+      "meaningKeys": [
+        "form shape",
+        "shape form"
+      ]
+    },
+    {
+      "id": "form-table-watch",
+      "meaningKeys": [
+        "form table",
+        "watch meter table form to express"
+      ]
+    },
+    {
+      "id": "former-original-originally",
+      "meaningKeys": [
+        "former original",
+        "original former",
+        "original former originally actually"
+      ]
+    },
+    {
+      "id": "fragile-weak-2",
+      "meaningKeys": [
+        "fragile weak",
+        "weak fragile"
+      ]
+    },
+    {
+      "id": "free-leisure-time",
+      "meaningKeys": [
+        "free leisure free time",
+        "to leave empty to make time to free up empty free unoccupied free time empty space"
+      ]
+    },
+    {
+      "id": "front-near-close",
+      "meaningKeys": [
+        "in front of near",
+        "near close",
+        "nearby"
+      ]
+    },
+    {
+      "id": "full-filled-fill",
+      "meaningKeys": [
+        "full filled to fill",
+        "to fill to be full of"
+      ]
+    },
+    {
+      "id": "fun-amusing-delight",
+      "meaningKeys": [
+        "fun amusing",
+        "fun delight",
+        "interesting enjoyable",
+        "interesting enjoyable fun",
+        "make fun of",
+        "to play to have fun to go sightseeing"
+      ]
+    },
+    {
+      "id": "function-role-play",
+      "meaningKeys": [
+        "function role to serve as to play a role",
+        "to play the role of to function as to act as"
+      ]
+    },
+    {
+      "id": "future-prospect-2",
+      "meaningKeys": [
+        "future prospect",
+        "prospect future"
+      ]
+    },
+    {
+      "id": "gain-obtain-2",
+      "meaningKeys": [
+        "gain obtain",
+        "to obtain to gain"
+      ]
+    },
+    {
+      "id": "gather-assemble-get",
+      "meaningKeys": [
+        "to gather to assemble",
+        "to gather to assemble to get together"
+      ]
+    },
+    {
+      "id": "gather-assemble-get-together",
+      "meaningKeys": [
+        "to gather to assemble to get together",
+        "to get together to meet to gather party gathering meeting"
+      ]
+    },
+    {
+      "id": "gaze-look-2",
+      "meaningKeys": [
+        "gaze look",
+        "to look at to gaze"
+      ]
+    },
+    {
+      "id": "general-rough-probably",
+      "meaningKeys": [
+        "general rough probably approximately general idea",
+        "hard to say maybe perhaps",
+        "maybe perhaps",
+        "perhaps maybe",
+        "possible possibility may",
+        "to fear to be afraid i m afraid perhaps maybe",
+        "to seem as if perhaps"
+      ]
+    },
+    {
+      "id": "general-rough-probably-approximately",
+      "meaningKeys": [
+        "general rough probably approximately general idea",
+        "roughly approximately general"
+      ]
+    },
+    {
+      "id": "get-obtain-take",
+      "meaningKeys": [
+        "to get to obtain",
+        "to take to get to obtain"
+      ]
+    },
+    {
+      "id": "go-out-leave",
+      "meaningKeys": [
+        "to go out to leave",
+        "to go out to leave home"
+      ]
+    },
+    {
+      "id": "go-through-pass",
+      "meaningKeys": [
+        "to go through to pass through",
+        "to pass through to go through by means of"
+      ]
+    },
+    {
+      "id": "go-walk-2",
+      "meaningKeys": [
+        "to go",
+        "to walk"
+      ]
+    },
+    {
+      "id": "grasp-hold-certainty",
+      "meaningKeys": [
+        "to grasp to hold certainty",
+        "to hold to grasp"
+      ]
+    },
+    {
+      "id": "group-team-small",
+      "meaningKeys": [
+        "group team to organize measure word for groups",
+        "small group team"
+      ]
+    },
+    {
+      "id": "guide-lead-leadership",
+      "meaningKeys": [
+        "to guide to lead",
+        "to lead to guide",
+        "to lead to guide leadership"
+      ]
+    },
+    {
+      "id": "hand-pass-2",
+      "meaningKeys": [
+        "to hand down to pass on",
+        "to pass on to hand over",
+        "to pass to hand over"
+      ]
+    },
+    {
+      "id": "hand-submit-meet",
+      "meaningKeys": [
+        "to hand in to submit to meet to cross to make friends with friend acquaintance relationship",
+        "to submit to hand in"
+      ]
+    },
+    {
+      "id": "happiness-happy-blissful",
+      "meaningKeys": [
+        "happiness happy blissful",
+        "happy",
+        "happy glad",
+        "happy joyful",
+        "joyful delighted",
+        "pleasant cheerful"
+      ]
+    },
+    {
+      "id": "hard-forcibly-effort",
+      "meaningKeys": [
+        "hard forcibly with effort",
+        "to put in effort to work hard"
+      ]
+    },
+    {
+      "id": "hard-laborious-work",
+      "meaningKeys": [
+        "hard laborious to work hard to toil",
+        "to piece together to work hard",
+        "to put in effort to work hard",
+        "to work hard hardworking"
+      ]
+    },
+    {
+      "id": "have-possess-2",
+      "meaningKeys": [
+        "to have to possess",
+        "to possess to have"
+      ]
+    },
+    {
+      "id": "hear-learn-listen",
+      "meaningKeys": [
+        "to hear the result",
+        "to learn of to hear about",
+        "to listen in to tune in",
+        "to listen the action of hearing ongoing activity",
+        "to listen to to hear"
+      ]
+    },
+    {
+      "id": "height-high-tall",
+      "meaningKeys": [
+        "height high",
+        "tall high height"
+      ]
+    },
+    {
+      "id": "help-assist-auxiliary",
+      "meaningKeys": [
+        "help",
+        "to assist",
+        "to assist auxiliary",
+        "to help to contribute to",
+        "to help to give help lend a hand more general action",
+        "to help to help someone directly object usually follows",
+        "to help to rescue"
+      ]
+    },
+    {
+      "id": "here-2",
+      "meaningKeys": [
+        "here",
+        "here formal southern china",
+        "here informal northern china"
+      ]
+    },
+    {
+      "id": "high-end-level",
+      "meaningKeys": [
+        "high end high level high end product",
+        "high end upscale"
+      ]
+    },
+    {
+      "id": "high-new-technology",
+      "meaningKeys": [
+        "high and new technology",
+        "high technology high tech"
+      ]
+    },
+    {
+      "id": "high-school-junior",
+      "meaningKeys": [
+        "high school",
+        "junior high school"
+      ]
+    },
+    {
+      "id": "hinder-obstruct-obstacle",
+      "meaningKeys": [
+        "to hinder to obstruct",
+        "to hinder to obstruct obstacle"
+      ]
+    },
+    {
+      "id": "hire-recruit-2",
+      "meaningKeys": [
+        "to hire to recruit",
+        "to recruit to hire"
+      ]
+    },
+    {
+      "id": "home-family-house",
+      "meaningKeys": [
+        "home family measure word for families suffix indicating a person specializing in something",
+        "house",
+        "house building",
+        "household home",
+        "room house",
+        "to visit to go to someone s house"
+      ]
+    },
+    {
+      "id": "honest-reliable-really",
+      "meaningKeys": [
+        "honest reliable really indeed",
+        "indeed really"
+      ]
+    },
+    {
+      "id": "honest-well-behaved",
+      "meaningKeys": [
+        "honest well behaved",
+        "obedient well behaved",
+        "rule custom well behaved"
+      ]
+    },
+    {
+      "id": "how-many-few",
+      "meaningKeys": [
+        "how many a few",
+        "how many how much",
+        "many much to have more how many how much more over"
+      ]
+    },
+    {
+      "id": "how-what-you",
+      "meaningKeys": [
+        "how about what do you think",
+        "how so what",
+        "how what"
+      ]
+    },
+    {
+      "id": "id-card-credentials",
+      "meaningKeys": [
+        "id card credentials identification papers",
+        "id card identification card"
+      ]
+    },
+    {
+      "id": "idea-thought-plan",
+      "meaningKeys": [
+        "idea thought plan",
+        "thought idea",
+        "thought idea opinion"
+      ]
+    },
+    {
+      "id": "identical-same-2",
+      "meaningKeys": [
+        "identical the same",
+        "same identical"
+      ]
+    },
+    {
+      "id": "if-it-were",
+      "meaningKeys": [
+        "if it were not for",
+        "otherwise if not",
+        "whether or not if"
+      ]
+    },
+    {
+      "id": "increase-grow-rise",
+      "meaningKeys": [
+        "to increase to grow to rise",
+        "to rise to increase"
+      ]
+    },
+    {
+      "id": "increase-price-raise",
+      "meaningKeys": [
+        "to increase in price to raise prices",
+        "to increase to add to raise"
+      ]
+    },
+    {
+      "id": "information-message-news",
+      "meaningKeys": [
+        "information message",
+        "news message information"
+      ]
+    },
+    {
+      "id": "install-set-2",
+      "meaningKeys": [
+        "to install to set up",
+        "to set up to install"
+      ]
+    },
+    {
+      "id": "invest-investment-put",
+      "meaningKeys": [
+        "to invest investment",
+        "to invest to put into absorbed investment"
+      ]
+    },
+    {
+      "id": "it-is-said",
+      "meaningKeys": [
+        "it is said legend tradition",
+        "it is said reportedly"
+      ]
+    },
+    {
+      "id": "just-now-moment",
+      "meaningKeys": [
+        "just just now",
+        "just now",
+        "just now a moment ago"
+      ]
+    },
+    {
+      "id": "keep-maintain-2",
+      "meaningKeys": [
+        "to keep to maintain",
+        "to maintain to keep"
+      ]
+    },
+    {
+      "id": "key-point-emphasis",
+      "meaningKeys": [
+        "key point",
+        "key point emphasis mainly emphatically"
+      ]
+    },
+    {
+      "id": "large-quantity-amount",
+      "meaningKeys": [
+        "large quantity a large amount",
+        "quantity amount"
+      ]
+    },
+    {
+      "id": "last-year-2",
+      "meaningKeys": [
+        "last year",
+        "the year before last"
+      ]
+    },
+    {
+      "id": "learn-study-research",
+      "meaningKeys": [
+        "to learn to study",
+        "to research to study",
+        "to study",
+        "to study to attend school"
+      ]
+    },
+    {
+      "id": "lift-raise-hold",
+      "meaningKeys": [
+        "to lift to raise",
+        "to raise to lift to hold an event to give an example to recommend"
+      ]
+    },
+    {
+      "id": "light-rayl-smooth",
+      "meaningKeys": [
+        "light rayl smooth shiny used up bare expose only merely solely",
+        "only merely",
+        "only merely but",
+        "only merely solely"
+      ]
+    },
+    {
+      "id": "like-as-2",
+      "meaningKeys": [
+        "like as",
+        "like as if"
+      ]
+    },
+    {
+      "id": "limit-restrict-2",
+      "meaningKeys": [
+        "to limit to restrict",
+        "to limit to restrict limit"
+      ]
+    },
+    {
+      "id": "line-row-arrange",
+      "meaningKeys": [
+        "line row measure word for lines",
+        "to line up to arrange row line measure word for rows"
+      ]
+    },
+    {
+      "id": "little-bit-slightly",
+      "meaningKeys": [
+        "a little a bit",
+        "a little slightly"
+      ]
+    },
+    {
+      "id": "live-alive-living",
+      "meaningKeys": [
+        "live alive living flexible work job livelihood",
+        "to work a temporary job"
+      ]
+    },
+    {
+      "id": "location-position-place",
+      "meaningKeys": [
+        "location position",
+        "measure word for places place office",
+        "place",
+        "place location",
+        "place venue",
+        "seat place measure word for seats",
+        "site location",
+        "to place to arrange",
+        "to put to place"
+      ]
+    },
+    {
+      "id": "long-age-old",
+      "meaningKeys": [
+        "long age old",
+        "to age to grow old"
+      ]
+    },
+    {
+      "id": "long-distance-remote",
+      "meaningKeys": [
+        "long distance",
+        "long distance remote"
+      ]
+    },
+    {
+      "id": "long-distance-remote-far",
+      "meaningKeys": [
+        "long distance remote",
+        "long remote far reaching"
+      ]
+    },
+    {
+      "id": "long-if-suppose",
+      "meaningKeys": [
+        "as long as",
+        "if",
+        "if suppose",
+        "like as if",
+        "only if"
+      ]
+    },
+    {
+      "id": "long-term-far",
+      "meaningKeys": [
+        "long term far reaching",
+        "long term long period"
+      ]
+    },
+    {
+      "id": "long-time-half",
+      "meaningKeys": [
+        "a long time",
+        "half a day a long time"
+      ]
+    },
+    {
+      "id": "look-watch-view",
+      "meaningKeys": [
+        "to look after to watch",
+        "to watch to view"
+      ]
+    },
+    {
+      "id": "lose-loss-suffer",
+      "meaningKeys": [
+        "to lose loss",
+        "to lose to suffer a loss"
+      ]
+    },
+    {
+      "id": "love-romance-like",
+      "meaningKeys": [
+        "love",
+        "to fall in love love romance",
+        "to like",
+        "to like hobby",
+        "to like to be fond of",
+        "to like to give a thumbs up",
+        "to like to love",
+        "to love"
+      ]
+    },
+    {
+      "id": "method-means-path",
+      "meaningKeys": [
+        "method",
+        "method means",
+        "path way method measure word for long objects",
+        "technique method",
+        "to pass through to go through by means of",
+        "way channel",
+        "way method",
+        "way solution"
+      ]
+    },
+    {
+      "id": "middle-school-primary",
+      "meaningKeys": [
+        "middle school",
+        "primary school",
+        "school"
+      ]
+    },
+    {
+      "id": "middle-school-student",
+      "meaningKeys": [
+        "middle school",
+        "middle school student"
+      ]
+    },
+    {
+      "id": "mistake-error-wrong",
+      "meaningKeys": [
+        "to make a mistake mistake error",
+        "wrong mistaken mistake error"
+      ]
+    },
+    {
+      "id": "mix-blend-carelessly",
+      "meaningKeys": [
+        "to mix to blend",
+        "to mix to blend carelessly"
+      ]
+    },
+    {
+      "id": "modeling-design-style",
+      "meaningKeys": [
+        "modeling design to style",
+        "style design"
+      ]
+    },
+    {
+      "id": "modern-times-2",
+      "meaningKeys": [
+        "modern times",
+        "modern times modern"
+      ]
+    },
+    {
+      "id": "moment-time-when",
+      "meaningKeys": [
+        "moment time when the time when moment occasion point to a specific moment or circumstance when something happens",
+        "time moment season period"
+      ]
+    },
+    {
+      "id": "move-exercise-beactive",
+      "meaningKeys": [
+        "move exercise beactive activity event exercise",
+        "to move to exercise sports exercise"
+      ]
+    },
+    {
+      "id": "moved-touched-move",
+      "meaningKeys": [
+        "moved touched to move to touch",
+        "to move to touch"
+      ]
+    },
+    {
+      "id": "movement-action-2",
+      "meaningKeys": [
+        "movement action",
+        "to take action action movement"
+      ]
+    },
+    {
+      "id": "moving-touching-2",
+      "meaningKeys": [
+        "moving touching",
+        "touching moving"
+      ]
+    },
+    {
+      "id": "musical-instrument-piano",
+      "meaningKeys": [
+        "musical instrument",
+        "musical instrument piano etc"
+      ]
+    },
+    {
+      "id": "must-not-cannot",
+      "meaningKeys": [
+        "must not cannot",
+        "whether or not can or cannot"
+      ]
+    },
+    {
+      "id": "nature-natural-naturally",
+      "meaningKeys": [
+        "nature natural naturally of course",
+        "nature the natural world"
+      ]
+    },
+    {
+      "id": "near-close-approach",
+      "meaningKeys": [
+        "near close",
+        "to approach to get close to"
+      ]
+    },
+    {
+      "id": "need-not-necessary",
+      "meaningKeys": [
+        "need not",
+        "need not not necessary"
+      ]
+    },
+    {
+      "id": "new-year-celebrate",
+      "meaningKeys": [
+        "new year",
+        "to celebrate the new year"
+      ]
+    },
+    {
+      "id": "next-secondly-then",
+      "meaningKeys": [
+        "next secondly then",
+        "to continue to follow to catch then next subsequently"
+      ]
+    },
+    {
+      "id": "next-year-2",
+      "meaningKeys": [
+        "next year",
+        "the year after next"
+      ]
+    },
+    {
+      "id": "no-matter-regardless",
+      "meaningKeys": [
+        "no matter regardless",
+        "no matter regardless of",
+        "no matter what regardless"
+      ]
+    },
+    {
+      "id": "not-allowed-forbidden",
+      "meaningKeys": [
+        "not allowed forbidden",
+        "not allowed won t do not good"
+      ]
+    },
+    {
+      "id": "not-allowed-wont",
+      "meaningKeys": [
+        "not allowed won t do not good",
+        "not as good as inferior to"
+      ]
+    },
+    {
+      "id": "not-good-inferior",
+      "meaningKeys": [
+        "not as good as inferior to",
+        "poor not good enough almost nearly"
+      ]
+    },
+    {
+      "id": "not-good-inferior-wont",
+      "meaningKeys": [
+        "not as good as inferior to",
+        "won t do not work no good used in rhetorical questions"
+      ]
+    },
+    {
+      "id": "not-no-wont",
+      "meaningKeys": [
+        "not no",
+        "won t do not work no good used in rhetorical questions"
+      ]
+    },
+    {
+      "id": "not-only-2",
+      "meaningKeys": [
+        "not only",
+        "not only not only but also"
+      ]
+    },
+    {
+      "id": "not-serious-matter",
+      "meaningKeys": [
+        "not serious not matter",
+        "to be indifferent not to matter"
+      ]
+    },
+    {
+      "id": "numerous-confused-one",
+      "meaningKeys": [
+        "numerous and confused one after another",
+        "one after another successively",
+        "succession one after another"
+      ]
+    },
+    {
+      "id": "obstacle-hinder-obstruct",
+      "meaningKeys": [
+        "obstacle to hinder",
+        "to hinder to obstruct obstacle"
+      ]
+    },
+    {
+      "id": "office-worker-staff",
+      "meaningKeys": [
+        "office worker staff",
+        "staff worker"
+      ]
+    },
+    {
+      "id": "official-government-2",
+      "meaningKeys": [
+        "official government",
+        "official government official"
+      ]
+    },
+    {
+      "id": "online-internet-surf",
+      "meaningKeys": [
+        "online on the internet",
+        "to go online to surf the internet"
+      ]
+    },
+    {
+      "id": "only-if-precisely",
+      "meaningKeys": [
+        "only if",
+        "precisely exactly used for emphasis only merely simply even if even as in 就是 也"
+      ]
+    },
+    {
+      "id": "only-merely-barely",
+      "meaningKeys": [
+        "only merely",
+        "only merely barely simply",
+        "only merely but",
+        "only merely solely",
+        "precisely exactly used for emphasis only merely simply even if even as in 就是 也"
+      ]
+    },
+    {
+      "id": "only-merely-solely",
+      "meaningKeys": [
+        "only merely solely",
+        "to be only concerned with to solely attend to"
+      ]
+    },
+    {
+      "id": "open-start-beginning",
+      "meaningKeys": [
+        "to open to start",
+        "to start",
+        "to start beginning",
+        "to start to begin beginning",
+        "to start to initiate",
+        "to start to launch"
+      ]
+    },
+    {
+      "id": "opposite-contrary-oppose",
+      "meaningKeys": [
+        "opposite contrary on the contrary",
+        "opposite to oppose on the contrary"
+      ]
+    },
+    {
+      "id": "or-still-2",
+      "meaningKeys": [
+        "or",
+        "still or"
+      ]
+    },
+    {
+      "id": "order-command-2",
+      "meaningKeys": [
+        "to order to command order",
+        "to order to command order command"
+      ]
+    },
+    {
+      "id": "ordinary-usual-usually",
+      "meaningKeys": [
+        "ordinary usual usually ordinarily",
+        "usual common usually"
+      ]
+    },
+    {
+      "id": "other-people-i",
+      "meaningKeys": [
+        "other people",
+        "other people i you",
+        "others other people"
+      ]
+    },
+    {
+      "id": "painful-sore-2",
+      "meaningKeys": [
+        "painful sore extremely bitterly",
+        "painful sore to hurt"
+      ]
+    },
+    {
+      "id": "paste-stick-2",
+      "meaningKeys": [
+        "to paste to stick",
+        "to stick to paste"
+      ]
+    },
+    {
+      "id": "pay-attention-follow",
+      "meaningKeys": [
+        "to pay attention to",
+        "to pay attention to to follow",
+        "to pay attention to to value"
+      ]
+    },
+    {
+      "id": "penetrate-deeply-deep",
+      "meaningKeys": [
+        "to penetrate deeply deep thorough",
+        "to penetrate to pass through thorough"
+      ]
+    },
+    {
+      "id": "perform-show-display",
+      "meaningKeys": [
+        "to perform to put on a show",
+        "to show to display to perform"
+      ]
+    },
+    {
+      "id": "period-phase-2",
+      "meaningKeys": [
+        "period phase",
+        "period phase measure word for issues semesters etc"
+      ]
+    },
+    {
+      "id": "photo-picture-drawing",
+      "meaningKeys": [
+        "photo",
+        "picture drawing",
+        "picture drawing diagram to plan to scheme",
+        "picture image photograph",
+        "scene picture screen",
+        "to draw to paint painting picture",
+        "to shine to photograph",
+        "to take a photo",
+        "to take a photograph",
+        "to take a picture"
+      ]
+    },
+    {
+      "id": "physical-strength-power",
+      "meaningKeys": [
+        "physical strength",
+        "strength physical power"
+      ]
+    },
+    {
+      "id": "plan-project-program",
+      "meaningKeys": [
+        "plan project program scheme to plan to map out to intend",
+        "plan scheme"
+      ]
+    },
+    {
+      "id": "plan-project-program-scheme",
+      "meaningKeys": [
+        "plan project program scheme to plan to map out to intend",
+        "to plan intend plan"
+      ]
+    },
+    {
+      "id": "pleases-casual-informal",
+      "meaningKeys": [
+        "as one pleases casual",
+        "to do as one pleases casual casual informal anyway whatever"
+      ]
+    },
+    {
+      "id": "plus-add-addition",
+      "meaningKeys": [
+        "plus add with the addition of",
+        "to apply to add in addition"
+      ]
+    },
+    {
+      "id": "point-indicate-2",
+      "meaningKeys": [
+        "to point out to indicate",
+        "to point to to indicate"
+      ]
+    },
+    {
+      "id": "power-authority-2",
+      "meaningKeys": [
+        "power authority",
+        "power authority tentatively"
+      ]
+    },
+    {
+      "id": "power-driving-force",
+      "meaningKeys": [
+        "power driving force",
+        "wind power wind force"
+      ]
+    },
+    {
+      "id": "powerful-strong-2",
+      "meaningKeys": [
+        "powerful strong",
+        "strong powerful"
+      ]
+    },
+    {
+      "id": "press-push-according",
+      "meaningKeys": [
+        "to press to push according to",
+        "to press to push down to weigh down"
+      ]
+    },
+    {
+      "id": "prick-stab-thorn",
+      "meaningKeys": [
+        "to prick to stab",
+        "to stab to prick thorn"
+      ]
+    },
+    {
+      "id": "primary-school-student",
+      "meaningKeys": [
+        "primary school",
+        "primary school student"
+      ]
+    },
+    {
+      "id": "prize-award-reward",
+      "meaningKeys": [
+        "prize award reward to award to reward to praise",
+        "to reward to award"
+      ]
+    },
+    {
+      "id": "progress-advance-improve",
+      "meaningKeys": [
+        "progress advance",
+        "to advance to improve progress improvement"
+      ]
+    },
+    {
+      "id": "provide-supply-offer",
+      "meaningKeys": [
+        "to provide to supply to offer",
+        "to supply to provide"
+      ]
+    },
+    {
+      "id": "question-continuation-particle",
+      "meaningKeys": [
+        "question or continuation particle",
+        "question particle"
+      ]
+    },
+    {
+      "id": "question-problem-topic",
+      "meaningKeys": [
+        "question problem topic",
+        "topic research question",
+        "topic subject question"
+      ]
+    },
+    {
+      "id": "range-scope-extent",
+      "meaningKeys": [
+        "range scope extent",
+        "scope range"
+      ]
+    },
+    {
+      "id": "rational-reasonable-reason",
+      "meaningKeys": [
+        "rational reasonable reason",
+        "reasonable rational"
+      ]
+    },
+    {
+      "id": "read-aloud-miss",
+      "meaningKeys": [
+        "to read aloud",
+        "to read aloud to miss",
+        "to read to read aloud"
+      ]
+    },
+    {
+      "id": "reason-why-what",
+      "meaningKeys": [
+        "the reason why",
+        "why for what reason"
+      ]
+    },
+    {
+      "id": "record-recording-video",
+      "meaningKeys": [
+        "to record recording",
+        "video recording to record"
+      ]
+    },
+    {
+      "id": "regard-treat-consider",
+      "meaningKeys": [
+        "to regard to treat",
+        "to treat as to regard as",
+        "to treat as to regard as to consider as",
+        "to treat as to regard as to serve as"
+      ]
+    },
+    {
+      "id": "repeatedly-again-time",
+      "meaningKeys": [
+        "repeatedly over and over again",
+        "repeatedly time and again"
+      ]
+    },
+    {
+      "id": "resign-job-leave",
+      "meaningKeys": [
+        "to resign from a job",
+        "to resign to leave a job"
+      ]
+    },
+    {
+      "id": "restroom-toilet-2",
+      "meaningKeys": [
+        "restroom toilet",
+        "toilet restroom"
+      ]
+    },
+    {
+      "id": "rich-wealthy-possess",
+      "meaningKeys": [
+        "rich wealthy",
+        "to possess rich wealthy"
+      ]
+    },
+    {
+      "id": "ride-take-multiply",
+      "meaningKeys": [
+        "to ride to take",
+        "to ride to take to multiply"
+      ]
+    },
+    {
+      "id": "row-one-another",
+      "meaningKeys": [
+        "in a row one after another repeatedly",
+        "one after another successively",
+        "succession one after another"
+      ]
+    },
+    {
+      "id": "rule-regulation-regular",
+      "meaningKeys": [
+        "rule regulation regular",
+        "stipulate prescribe set rules regulation rule stipulation"
+      ]
+    },
+    {
+      "id": "sad-heartbroken-2",
+      "meaningKeys": [
+        "sad",
+        "sad heartbroken"
+      ]
+    },
+    {
+      "id": "same-alike-share",
+      "meaningKeys": [
+        "same alike to share to be the same together with and as well as",
+        "the same place together"
+      ]
+    },
+    {
+      "id": "same-similar-kind",
+      "meaningKeys": [
+        "same similar",
+        "similar of the same kind"
+      ]
+    },
+    {
+      "id": "same-time-meanwhile",
+      "meaningKeys": [
+        "at the same time",
+        "at the same time meanwhile moreover"
+      ]
+    },
+    {
+      "id": "save-economize-conserve",
+      "meaningKeys": [
+        "to save to economize",
+        "to save to economize to conserve"
+      ]
+    },
+    {
+      "id": "score-grade-achievement",
+      "meaningKeys": [
+        "score grade achievement",
+        "score grade fraction"
+      ]
+    },
+    {
+      "id": "send-issue-2",
+      "meaningKeys": [
+        "to send out to issue",
+        "to send to issue"
+      ]
+    },
+    {
+      "id": "shop-store-2",
+      "meaningKeys": [
+        "shop store",
+        "store shop"
+      ]
+    },
+    {
+      "id": "show-display-perform",
+      "meaningKeys": [
+        "to show to display",
+        "to show to display to perform"
+      ]
+    },
+    {
+      "id": "sign-name-signature",
+      "meaningKeys": [
+        "to sign one s name signature",
+        "to sign signature"
+      ]
+    },
+    {
+      "id": "sleepy-tired-tire",
+      "meaningKeys": [
+        "sleepy tired to trap to confine",
+        "tired",
+        "tired to tire"
+      ]
+    },
+    {
+      "id": "so-far-as",
+      "meaningKeys": [
+        "to go so far as to as for as to",
+        "up to now so far"
+      ]
+    },
+    {
+      "id": "so-such-this",
+      "meaningKeys": [
+        "so such like this",
+        "such so"
+      ]
+    },
+    {
+      "id": "sober-wake-2",
+      "meaningKeys": [
+        "sober to wake up",
+        "to wake up to sober up"
+      ]
+    },
+    {
+      "id": "source-origin-originate",
+      "meaningKeys": [
+        "source origin to originate from",
+        "to originate origin"
+      ]
+    },
+    {
+      "id": "specialized-subject-specialty",
+      "meaningKeys": [
+        "specialized subject specialty",
+        "specialty major professional specialized"
+      ]
+    },
+    {
+      "id": "spot-scene-site",
+      "meaningKeys": [
+        "on the spot at the scene",
+        "scene site spot"
+      ]
+    },
+    {
+      "id": "station-stop-stand",
+      "meaningKeys": [
+        "station stop to stand",
+        "to stand station"
+      ]
+    },
+    {
+      "id": "stay-remain-keep",
+      "meaningKeys": [
+        "to stay to remain",
+        "to stay to remain to keep"
+      ]
+    },
+    {
+      "id": "steamed-bun-mantou",
+      "meaningKeys": [
+        "steamed bun mantou",
+        "steamed stuffed bun"
+      ]
+    },
+    {
+      "id": "still-as-remain",
+      "meaningKeys": [
+        "still as before",
+        "to remain still as before"
+      ]
+    },
+    {
+      "id": "store-keep-exist",
+      "meaningKeys": [
+        "to store to keep",
+        "to store to keep to exist"
+      ]
+    },
+    {
+      "id": "strength-physical-power",
+      "meaningKeys": [
+        "strength physical power",
+        "strength power",
+        "strength power suffix indicating force"
+      ]
+    },
+    {
+      "id": "sufficient-enough-2",
+      "meaningKeys": [
+        "sufficient enough to be sufficient",
+        "sufficient to enough to"
+      ]
+    },
+    {
+      "id": "sweet-dumplings-tangyuan",
+      "meaningKeys": [
+        "sweet dumplings tangyuan",
+        "sweet dumplings yuanxiao"
+      ]
+    },
+    {
+      "id": "symbol-sign-mark",
+      "meaningKeys": [
+        "symbol sign",
+        "symbol sign to mark"
+      ]
+    },
+    {
+      "id": "telephone-bill-call",
+      "meaningKeys": [
+        "telephone bill call charges",
+        "telephone phone call"
+      ]
+    },
+    {
+      "id": "telephone-phone-call",
+      "meaningKeys": [
+        "telephone phone call",
+        "to make a phone call"
+      ]
+    },
+    {
+      "id": "test-questions-exam",
+      "meaningKeys": [
+        "test questions exam paper",
+        "to test to take an exam",
+        "written test to take a written exam"
+      ]
+    },
+    {
+      "id": "than-relatively-comparatively",
+      "meaningKeys": [
+        "than relatively comparatively",
+        "to compare quite relatively than"
+      ]
+    },
+    {
+      "id": "that-time-then",
+      "meaningKeys": [
+        "at that time then",
+        "originally at that time"
+      ]
+    },
+    {
+      "id": "that-time-then-so",
+      "meaningKeys": [
+        "at that time then",
+        "so like that then",
+        "then in that case"
+      ]
+    },
+    {
+      "id": "there-2",
+      "meaningKeys": [
+        "over there",
+        "there casual northern china spoken mandarin",
+        "there formal southern china written mandarin"
+      ]
+    },
+    {
+      "id": "this-moment-2",
+      "meaningKeys": [
+        "at this moment",
+        "this moment"
+      ]
+    },
+    {
+      "id": "this-reason-therefore",
+      "meaningKeys": [
+        "for this reason therefore",
+        "from this thus",
+        "so therefore",
+        "therefore",
+        "therefore hence so",
+        "therefore thus",
+        "thus thereby"
+      ]
+    },
+    {
+      "id": "this-so-such",
+      "meaningKeys": [
+        "like this so",
+        "so such like this"
+      ]
+    },
+    {
+      "id": "thought-thinking-think",
+      "meaningKeys": [
+        "thought thinking to think",
+        "to consider to think over to contemplate",
+        "to feel to think",
+        "to reflect to think back",
+        "to regard as to consider as",
+        "to think",
+        "to think to believe",
+        "to think to consider",
+        "to think to want",
+        "to treat as to regard as to consider as"
+      ]
+    },
+    {
+      "id": "timely-prompt-time",
+      "meaningKeys": [
+        "timely prompt in time without delay promptly in a timely manner",
+        "to delay to waste time"
+      ]
+    },
+    {
+      "id": "times-occasionally-sometimes",
+      "meaningKeys": [
+        "at times occasionally sometimes",
+        "occasionally sometimes occasional"
+      ]
+    },
+    {
+      "id": "topic-subject-discussion",
+      "meaningKeys": [
+        "topic subject of discussion",
+        "topic subject question"
+      ]
+    },
+    {
+      "id": "total-sum-2",
+      "meaningKeys": [
+        "to total to sum up",
+        "total sum"
+      ]
+    },
+    {
+      "id": "traditional-chinese-medicine",
+      "meaningKeys": [
+        "traditional chinese medicine",
+        "traditional chinese medicine practitioner",
+        "traditional chinese painting"
+      ]
+    },
+    {
+      "id": "transfer-change-planes",
+      "meaningKeys": [
+        "to transfer flight to change planes",
+        "transfer change"
+      ]
+    },
+    {
+      "id": "transfer-shift-turn",
+      "meaningKeys": [
+        "to transfer to shift",
+        "to turn to shift to transfer"
+      ]
+    },
+    {
+      "id": "unite-combine-united",
+      "meaningKeys": [
+        "to unite to combine united",
+        "to unite united"
+      ]
+    },
+    {
+      "id": "urban-area-city",
+      "meaningKeys": [
+        "urban area",
+        "urban area city center"
+      ]
+    },
+    {
+      "id": "vain-nothing-white",
+      "meaningKeys": [
+        "in vain for nothing",
+        "white in vain for nothing"
+      ]
+    },
+    {
+      "id": "very-extremely-fully",
+      "meaningKeys": [
+        "very extremely",
+        "very extremely fully"
+      ]
+    },
+    {
+      "id": "walk-stroll-2",
+      "meaningKeys": [
+        "to take a walk to stroll",
+        "to walk"
+      ]
+    },
+    {
+      "id": "wear-put-on",
+      "meaningKeys": [
+        "to wear",
+        "to wear to put on"
+      ]
+    },
+    {
+      "id": "week-2",
+      "meaningKeys": [
+        "week",
+        "week measure word for circumference cycle"
+      ]
+    },
+    {
+      "id": "whether-not-can",
+      "meaningKeys": [
+        "whether or not can or cannot",
+        "whether or not if"
+      ]
+    },
+    {
+      "id": "whole-complete-entire",
+      "meaningKeys": [
+        "whole complete entire",
+        "whole entire all",
+        "whole entire completely entirely"
+      ]
+    },
+    {
+      "id": "wide-broad-width",
+      "meaningKeys": [
+        "wide broad",
+        "wide broad width to widen"
+      ]
+    },
+    {
+      "id": "will-going-about",
+      "meaningKeys": [
+        "will be going to be about to",
+        "with by used to introduce the object of a verb similar to 把 will shall be about to"
+      ]
+    },
+    {
+      "id": "win-prize-receive",
+      "meaningKeys": [
+        "to win a prize",
+        "win a prize receive an award"
+      ]
+    },
+    {
+      "id": "with-by-according",
+      "meaningKeys": [
+        "with by according to in order to",
+        "with by used to introduce the object of a verb similar to 把 will shall be about to"
+      ]
+    },
+    {
+      "id": "wrong-mistaken-mistake",
+      "meaningKeys": [
+        "wrong mistaken",
+        "wrong mistaken mistake error"
+      ]
+    }
+  ],
+  "schemaVersion": 1
+}

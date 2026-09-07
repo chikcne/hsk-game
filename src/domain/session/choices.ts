@@ -1,6 +1,7 @@
 import { Data, Effect } from "effect";
 import { CHOICE_KEYS, type ChoiceKey } from "../../shared/constants";
 import type { RuntimeDeck, RuntimeWord } from "../../shared/schemas";
+import { areConfusableMeanings } from "./confusables";
 
 export type MeaningChoice = { shortcuts: MeaningShortcut[]; label: string; correct: boolean };
 
@@ -210,6 +211,26 @@ function shuffle(items: string[], next: () => number): string[] {
   return result;
 }
 
+/** Distractor candidates for one round, most preferred first: same-part-of-speech
+ * meanings that are not confusable with the answer, then the remaining
+ * non-confusables, then confusable near-synonyms strictly last (§2 of
+ * designs/confusable_distractors.md). Confusability demotes, never excludes —
+ * a starved pool still fills from the confusable tier rather than failing with
+ * `insufficient-distractors`. The three tiers are shuffled separately: shuffling
+ * the union would discard the preferences this ordering exists to express (§8a).
+ * With an empty confusable index the first two tiers equal the old two-tier pool
+ * and the third is empty, which consumes no RNG draws, so outputs are unchanged. */
+function tieredDistractorPool(deck: RuntimeDeck, word: RuntimeWord, next: () => number): string[] {
+  const eligible = deck.allMeaningKeys.filter((key) => key !== word.meaningKey && !deck.meaningIndex[key]?.hanziKeys.includes(word.hanziKey));
+  const confusableWithAnswer = (key: string) => areConfusableMeanings(key, word.meaningKey);
+  const preferredKeys = new Set(word.partOfSpeechKey ? (deck.meaningKeysByPartOfSpeech[word.partOfSpeechKey] ?? []) : []);
+  return [
+    ...shuffle(eligible.filter((key) => preferredKeys.has(key) && !confusableWithAnswer(key)), next),
+    ...shuffle(eligible.filter((key) => !preferredKeys.has(key) && !confusableWithAnswer(key)), next),
+    ...shuffle(eligible.filter(confusableWithAnswer), next),
+  ];
+}
+
 export class ChoiceGenerationError extends Data.TaggedError("ChoiceGenerationError")<{
   readonly reason: "missing-shortcut" | "insufficient-distractors";
   readonly wordId: string;
@@ -222,15 +243,8 @@ export function generateChoicesEffect(
   seed: string,
 ): Effect.Effect<MeaningChoice[], ChoiceGenerationError, never> {
   return Effect.gen(function* () {
-    const eligible = deck.allMeaningKeys.filter((key) => key !== word.meaningKey && !deck.meaningIndex[key]?.hanziKeys.includes(word.hanziKey));
-    const preferredKeys = new Set(word.partOfSpeechKey ? (deck.meaningKeysByPartOfSpeech[word.partOfSpeechKey] ?? []) : []);
     const next = random(hashSeed(seed));
-    // Shuffle the two tiers separately: shuffling the union would discard the
-    // same-part-of-speech preference this ordering exists to express (§8a).
-    const pool = [
-      ...shuffle(eligible.filter((key) => preferredKeys.has(key)), next),
-      ...shuffle(eligible.filter((key) => !preferredKeys.has(key)), next),
-    ];
+    const pool = tieredDistractorPool(deck, word, next);
 
     const correctLabel = word.meaning.trim();
     const correctShortcuts = choiceShortcutsForLabel(correctLabel);
@@ -269,13 +283,8 @@ export function generateChoicesEffect(
 }
 
 export function generateChoices(deck: RuntimeDeck, word: RuntimeWord, seed: string): MeaningChoice[] {
-  const eligible = deck.allMeaningKeys.filter((key) => key !== word.meaningKey && !deck.meaningIndex[key]?.hanziKeys.includes(word.hanziKey));
-  const preferredKeys = new Set(word.partOfSpeechKey ? (deck.meaningKeysByPartOfSpeech[word.partOfSpeechKey] ?? []) : []);
   const next = random(hashSeed(seed));
-  const pool = [
-    ...shuffle(eligible.filter((key) => preferredKeys.has(key)), next),
-    ...shuffle(eligible.filter((key) => !preferredKeys.has(key)), next),
-  ];
+  const pool = tieredDistractorPool(deck, word, next);
   const correctLabel = word.meaning.trim();
   const correctShortcuts = choiceShortcutsForLabel(correctLabel);
   if (correctShortcuts.length === 0) throw new Error(`Meaning must contain A-Z: ${word.meaning}`);
@@ -319,8 +328,11 @@ export function generateChoicesLenientEffect(
       }
       const choices: MeaningChoice[] = [{ shortcuts: correctShortcuts, label: correctLabel, correct: true }];
       const usedKeys = new Set<ChoiceKey>(correctShortcuts.map((shortcut) => shortcut.key));
-      for (const meaningKey of deck.allMeaningKeys) {
-        if (meaningKey === word.meaningKey) continue;
+      // Same demotion as the strict pool (§2): every non-confusable key gets its
+      // chance before a confusable near-synonym of the answer does.
+      const nonConfusable = deck.allMeaningKeys.filter((key) => key !== word.meaningKey && !areConfusableMeanings(key, word.meaningKey));
+      const confusable = deck.allMeaningKeys.filter((key) => key !== word.meaningKey && areConfusableMeanings(key, word.meaningKey));
+      for (const meaningKey of [...nonConfusable, ...confusable]) {
         const label = (deck.meaningIndex[meaningKey]?.label ?? meaningKey).trim();
         if (!label) continue;
         const shortcuts = choiceShortcutsForLabel(label);
