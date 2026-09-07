@@ -1,7 +1,9 @@
 import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { choiceShortcutForLabel, choiceShortcutsForLabel, generateChoices } from "../../src/domain/session/choices";
+import { areConfusableMeanings } from "../../src/domain/session/confusables";
 import { createDemoDeck } from "../../src/client/data/demoDeck";
+import { createReviewDeck } from "../../src/client/data/reviewDeck";
 import { DECK_IDS } from "../../src/shared/constants";
 import type { RuntimeDeck } from "../../src/shared/schemas";
 
@@ -160,6 +162,59 @@ describe("meaning choices", () => {
       for (const word of deck.words) {
         for (const seed of ["enemy-1", "enemy-2"]) {
           expect(() => generateChoices(deck, word, seed), `${word.displayHanzi} ${seed}`).not.toThrow();
+        }
+      }
+    }
+  });
+
+  /** designs/confusable_distractors.md §2a: the confusable third tier is a guard against a
+   * starved pool, and no reachable pool starves. Both call sites of `createReviewDeck` load
+   * every grade, so the distractor pool is always the whole corpus regardless of how few
+   * words the player has acquired. If either of these two tests fails, tier 3 has stopped
+   * being decorative and §2a needs rewriting before the tiering is simplified away. */
+  it("gives every word eight non-confusable distractor candidates on distinct keys", () => {
+    const { deck } = createReviewDeck(
+      new Map(DECK_IDS.map((id, index) => [id, compiledDecks[index]!])),
+      DECK_IDS.flatMap((id, index) => compiledDecks[index]!.words.map((word) => `${id}:${word.id}`)),
+    );
+    expect(deck.allMeaningKeys.length).toBeGreaterThan(4000);
+    const primaryKeyOf = new Map(deck.allMeaningKeys.map((key) =>
+      [key, choiceShortcutsForLabel((deck.meaningIndex[key]?.label ?? key).trim())[0]?.key]));
+
+    let fewestCandidates = Infinity;
+    let fewestKeys = Infinity;
+    for (const word of deck.words) {
+      const claimedByAnswer = new Set(choiceShortcutsForLabel(word.meaning.trim()).map((shortcut) => shortcut.key));
+      const candidates = deck.allMeaningKeys.filter((key) =>
+        key !== word.meaningKey
+        && !deck.meaningIndex[key]?.hanziKeys.includes(word.hanziKey)
+        && !areConfusableMeanings(key, word.meaningKey));
+      const availableKeys = new Set(candidates
+        .map((key) => primaryKeyOf.get(key))
+        .filter((key) => key !== undefined && !claimedByAnswer.has(key)));
+      expect(candidates.length, word.displayHanzi).toBeGreaterThanOrEqual(8);
+      expect(availableKeys.size, word.displayHanzi).toBeGreaterThanOrEqual(7);
+      fewestCandidates = Math.min(fewestCandidates, candidates.length);
+      fewestKeys = Math.min(fewestKeys, availableKeys.size);
+    }
+    expect(fewestCandidates).toBeGreaterThan(4000);
+    expect(fewestKeys).toBeGreaterThanOrEqual(20);
+  });
+
+  it("never offers a confusable distractor, for every word in every compiled deck", () => {
+    for (const deck of compiledDecks) {
+      const meaningKeyByLabel = new Map(Object.entries(deck.meaningIndex)
+        .map(([meaningKey, entry]) => [entry.label.trim(), meaningKey]));
+      for (const word of deck.words) {
+        for (const seed of ["enemy-1", "enemy-2"]) {
+          const choices = generateChoices(deck, word, seed);
+          expect(choices, `${word.displayHanzi} ${seed}`).toHaveLength(8);
+          for (const choice of choices) {
+            if (choice.correct) continue;
+            const meaningKey = meaningKeyByLabel.get(choice.label);
+            if (!meaningKey) continue;
+            expect(areConfusableMeanings(meaningKey, word.meaningKey), `${word.displayHanzi} vs ${choice.label}`).toBe(false);
+          }
         }
       }
     }

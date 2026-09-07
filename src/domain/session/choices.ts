@@ -214,12 +214,15 @@ function shuffle(items: string[], next: () => number): string[] {
 /** Distractor candidates for one round, most preferred first: same-part-of-speech
  * meanings that are not confusable with the answer, then the remaining
  * non-confusables, then confusable near-synonyms strictly last (§2 of
- * designs/confusable_distractors.md). Confusability demotes, never excludes —
- * a starved pool still fills from the confusable tier rather than failing with
- * `insufficient-distractors`. The three tiers are shuffled separately: shuffling
- * the union would discard the preferences this ordering exists to express (§8a).
- * With an empty confusable index the first two tiers equal the old two-tier pool
- * and the third is empty, which consumes no RNG draws, so outputs are unchanged. */
+ * designs/confusable_distractors.md). Confusability demotes, never excludes.
+ * The third tier is a guard, not a working path: no reachable deck starves —
+ * the merged Review deck always holds the whole corpus — so on today's data
+ * tiers one and two always fill eight and the demotion is observationally
+ * identical to a hard filter (§2a, with measurements). The three tiers are
+ * shuffled separately: shuffling the union would discard the preferences this
+ * ordering exists to express (§8a). With an empty confusable index the first two
+ * tiers equal the old two-tier pool and the third is empty, which consumes no
+ * RNG draws, so outputs are unchanged. */
 function tieredDistractorPool(deck: RuntimeDeck, word: RuntimeWord, next: () => number): string[] {
   const eligible = deck.allMeaningKeys.filter((key) => key !== word.meaningKey && !deck.meaningIndex[key]?.hanziKeys.includes(word.hanziKey));
   const confusableWithAnswer = (key: string) => areConfusableMeanings(key, word.meaningKey);

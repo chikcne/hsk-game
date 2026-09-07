@@ -49,8 +49,12 @@ function fixtureDeck(excludedMeaningKeys: readonly string[] = []): RuntimeDeck {
 }
 
 const plentiful = fixtureDeck();
-const starvedStrict = fixtureDeck(["house", "car"]);        // 6 fillers: only the confusable tier completes the round
-const starvedLenient = fixtureDeck(["house", "book", "car"]); // 5 fillers: even tier 3 cannot reach eight
+// The two starved fixtures are HYPOTHETICAL deck shapes, not production ones: no call site
+// builds a distractor pool this small, and tier 3 has never been reached on the real decks
+// (designs/confusable_distractors.md §2a). They exercise the tiering mechanism so it stays
+// correct if a future caller ever does build a pool that starves.
+const hypotheticallyStarvedStrict = fixtureDeck(["house", "car"]);        // 6 fillers: only the confusable tier completes the round
+const hypotheticallyStarvedLenient = fixtureDeck(["house", "book", "car"]); // 5 fillers: even tier 3 cannot reach eight
 const answer = plentiful.words[0]!;
 const seeds = ["enemy-1", "enemy-2", "enemy-3", "enemy-4", "enemy-5", "enemy-6"];
 
@@ -105,7 +109,7 @@ describe("generateChoices confusable tiering", () => {
     indexConfusableGroups({ schemaVersion: 1, groups: [] });
     expect(labels(generateChoices(plentiful, answer, "enemy-1")))
       .toEqual(["book", "to talk", "house", "fire", "to drink", "person", "car", "to speak, to say"]);
-    expect(labels(generateChoicesLenient(starvedLenient, answer, "enemy-1")))
+    expect(labels(generateChoicesLenient(hypotheticallyStarvedLenient, answer, "enemy-1")))
       .toEqual(["to speak, to say", "to talk", "to eat", "to drink", "water", "fire", "person"]);
   });
 
@@ -122,9 +126,9 @@ describe("generateChoices confusable tiering", () => {
     }
   });
 
-  it("still fills from the confusable tier when the pool starves", () => {
+  it("still fills from the confusable tier when a (hypothetical) pool starves", () => {
     for (const seed of seeds) {
-      const choices = generateChoices(starvedStrict, answer, seed);
+      const choices = generateChoices(hypotheticallyStarvedStrict, answer, seed);
       expect(choices, seed).toHaveLength(8);
       expect(labels(choices), seed).toContain("to talk");
       expect(choices.filter((choice) => choice.correct), seed).toHaveLength(1);
@@ -132,10 +136,11 @@ describe("generateChoices confusable tiering", () => {
   });
 
   it("appends confusables last on the lenient degrade path, without dropping them", () => {
-    // Genuinely starved: even the confusable tier cannot reach eight, so the
-    // strict contract fails and lenient's catch-all is what runs.
-    expect(() => generateChoices(starvedLenient, answer, "enemy-1")).toThrow(/Not enough meanings/);
-    expect(labels(generateChoicesLenient(starvedLenient, answer, "enemy-1")))
+    // Starved past tier 3: even the confusable tier cannot reach eight, so the
+    // strict contract fails and lenient's catch-all is what runs. Reachable only
+    // with a hand-built deck this small — see the fixture note above.
+    expect(() => generateChoices(hypotheticallyStarvedLenient, answer, "enemy-1")).toThrow(/Not enough meanings/);
+    expect(labels(generateChoicesLenient(hypotheticallyStarvedLenient, answer, "enemy-1")))
       .toEqual(["to speak, to say", "to eat", "to drink", "water", "fire", "person", "to talk"]);
   });
 

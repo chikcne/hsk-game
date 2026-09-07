@@ -6,8 +6,10 @@ import { DECK_IDS } from "../../shared/constants";
  * [{ id, meaningKeys }] }`. Two meaning keys are confusable iff they share at
  * least one group; a key may appear in several groups. Review Mode demotes such
  * distractors to a last-resort tier instead of excluding them, because 说话
- * "to talk" is indistinguishable from 说's answer "to speak, to say" yet a hard
- * filter would starve small acquired pools (see designs/confusable_distractors.md §1, §2). */
+ * "to talk" is indistinguishable from 说's answer "to speak, to say". The
+ * last-resort tier is never actually reached on the shipped decks — it guards a
+ * pool small enough to starve, which no call site builds
+ * (see designs/confusable_distractors.md §1, §2, §2a). */
 
 const GROUPS_BY_MEANING_KEY = new Map<string, Set<string>>();
 
