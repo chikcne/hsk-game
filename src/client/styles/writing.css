@@ -107,8 +107,8 @@
 .writing-danger { border-color: var(--cinnabar) !important; color: var(--cinnabar) !important; }
 .writing-skip-confirm { display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; color: var(--ink-soft); font-size: 12px; }
 
-/* Hangman-style row: completed characters in ink, the active and pending
- * ones as dashed slots. */
+/* Hangman-style row: completed characters in ink; unwritten ones are empty
+ * space — invisible placeholders keep the fill-in position stable. */
 .writing-row {
   margin: 4px 0 0;
   padding: 0;
@@ -126,9 +126,7 @@
 .writing-slot.is-skipped .hanzi-glyph,
 .writing-slot.is-missing .hanzi-glyph { color: var(--ink-soft); opacity: .6; }
 .writing-slot.is-missing .hanzi-glyph { text-decoration: underline dotted rgba(107, 61, 14, .6); text-underline-offset: .12em; }
-.writing-slot-blank { width: .92em; height: .92em; border: 1.5px dashed rgba(180, 163, 126, .9); border-radius: 2px; }
-.writing-slot.is-active .writing-slot-blank { border-color: var(--cinnabar); border-style: solid; }
-.writing-slot.is-pending .writing-slot-blank { opacity: .55; }
+.writing-slot-blank { width: .92em; height: .92em; }
 
 .writing-sr {
   position: absolute !important;
