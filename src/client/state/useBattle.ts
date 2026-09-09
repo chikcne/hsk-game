@@ -22,7 +22,7 @@ import {
 } from "../../domain/session/performance";
 import { advanceEnemies, moveEnemiesUp } from "../../domain/session/landing";
 import { wordSpeedMultiplierForFamiliarity } from "../../domain/session/speed";
-import { selectLockedTarget } from "../../domain/session/targeting";
+import { minimumTargetTravelTime, selectLockedTarget } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
 import { playSoundEffect } from "../audio/soundEffects";
 import { WordAudioPlayer, wordAudioSource } from "../audio/wordAudio";
@@ -171,6 +171,8 @@ export function useBattle(
    * an in-progress answer is never erased. */
   const inputModeSettingRef = useRef(inputModeSetting);
   inputModeSettingRef.current = inputModeSetting;
+  const enemySpeedMultiplierRef = useRef(settings.enemySpeedMultiplier);
+  enemySpeedMultiplierRef.current = settings.enemySpeedMultiplier;
   const lockedInputModeRef = useRef<ReviewInputMode>(inputModeSetting);
   const [inputMode, setInputMode] = useState<ReviewInputMode>(inputModeSetting);
   const [selectionProgress, setSelectionProgress] = useState<PinyinSelectionProgress>(initialPinyinSelection);
@@ -258,7 +260,10 @@ export function useBattle(
     if (nextEnemies.length === 0 && preparingRef.current === null) {
       spawnDue.current = Math.min(spawnDue.current, now + EMPTY_BATTLEFIELD_SPAWN_DELAY_MS);
     }
-    const nextTarget = selectLockedTarget(nextEnemies, targetIdRef.current);
+    const minimumTravelTime = minimumTargetTravelTime(
+      enemySpeedMultiplierRef.current * performanceMultiplierRef.current,
+    );
+    const nextTarget = selectLockedTarget(nextEnemies, targetIdRef.current, minimumTravelTime);
     const nextTargetId = nextTarget?.id ?? null;
     if (nextTargetId !== targetIdRef.current) {
       targetIdRef.current = nextTargetId;

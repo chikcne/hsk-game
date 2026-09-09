@@ -1,34 +1,57 @@
+import { BASE_TRAVEL_MS } from "../../shared/constants";
 import type { Enemy } from "./types";
+
+export const MIN_TARGET_TRAVEL_MS = 2000;
 
 export function remainingTravelTime(enemy: Enemy): number {
   if (enemy.speedMultiplier <= 0 || !Number.isFinite(enemy.speedMultiplier)) return Number.POSITIVE_INFINITY;
   return Math.max(0, 1 - enemy.progress) / enemy.speedMultiplier;
 }
 
+export function minimumTargetTravelTime(globalSpeedMultiplier: number): number {
+  if (globalSpeedMultiplier <= 0 || !Number.isFinite(globalSpeedMultiplier)) return 0;
+  return MIN_TARGET_TRAVEL_MS * globalSpeedMultiplier / BASE_TRAVEL_MS;
+}
+
 /** Selects by predicted time to ground, not by altitude. */
-export function soonestLandingEnemy(enemies: readonly Enemy[]): Enemy | null {
+export function soonestLandingEnemy(enemies: readonly Enemy[], minimumTravelTime = 0): Enemy | null {
   let selected: Enemy | null = null;
   let selectedTime = Number.POSITIVE_INFINITY;
+  let fallback: Enemy | null = null;
+  let fallbackTime = Number.NEGATIVE_INFINITY;
   for (const enemy of enemies) {
     if (enemy.status !== "descending") continue;
     const landingTime = remainingTravelTime(enemy);
-    if (
-      selected === null
-      || landingTime < selectedTime
-      || (landingTime === selectedTime && enemy.spawnOrdinal < selected.spawnOrdinal)
+    if (landingTime > minimumTravelTime) {
+      if (
+        selected === null
+        || landingTime < selectedTime
+        || (landingTime === selectedTime && enemy.spawnOrdinal < selected.spawnOrdinal)
+      ) {
+        selected = enemy;
+        selectedTime = landingTime;
+      }
+    } else if (
+      fallback === null
+      || landingTime > fallbackTime
+      || (landingTime === fallbackTime && enemy.spawnOrdinal < fallback.spawnOrdinal)
     ) {
-      selected = enemy;
-      selectedTime = landingTime;
+      fallback = enemy;
+      fallbackTime = landingTime;
     }
   }
-  return selected;
+  return selected ?? fallback;
 }
 
 /** Keeps a live target locked. A newly spawned faster word cannot steal the
  * selection; prediction is run again only after the locked target disappears. */
-export function selectLockedTarget(enemies: readonly Enemy[], lockedTargetId: string | null): Enemy | null {
+export function selectLockedTarget(
+  enemies: readonly Enemy[],
+  lockedTargetId: string | null,
+  minimumTravelTime = 0,
+): Enemy | null {
   const locked = lockedTargetId === null
     ? undefined
     : enemies.find((enemy) => enemy.id === lockedTargetId && enemy.status === "descending");
-  return locked ?? soonestLandingEnemy(enemies);
+  return locked ?? soonestLandingEnemy(enemies, minimumTravelTime);
 }

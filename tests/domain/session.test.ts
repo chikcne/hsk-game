@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { advanceEnemies, moveEnemiesUp } from "../../src/domain/session/landing";
 import { wordSpeedMultiplierForFamiliarity } from "../../src/domain/session/speed";
-import { selectLockedTarget, soonestLandingEnemy } from "../../src/domain/session/targeting";
+import { minimumTargetTravelTime, selectLockedTarget, soonestLandingEnemy } from "../../src/domain/session/targeting";
 import { calculatePoints, nextStreak } from "../../src/domain/session/scoring";
 import {
   emptyFieldWriteSchedule,
@@ -11,6 +11,7 @@ import {
   performanceAdjustedSpawnDelayMs,
 } from "../../src/domain/session/performance";
 import type { Enemy } from "../../src/domain/session/types";
+import { BASE_TRAVEL_MS } from "../../src/shared/constants";
 
 const enemy = (id: string, progress: number, spawnOrdinal: number, speedMultiplier = 1): Enemy => ({
   id,
@@ -42,6 +43,33 @@ describe("session rules", () => {
     const fasterArrival = enemy("new", 0.9, 2, 2);
     expect(selectLockedTarget([selected, fasterArrival], selected.id)?.id).toBe(selected.id);
     expect(selectLockedTarget([fasterArrival], selected.id)?.id).toBe(fasterArrival.id);
+  });
+
+  it("expresses the two-second targeting floor in base-travel units", () => {
+    expect(minimumTargetTravelTime(1)).toBeCloseTo(2000 / BASE_TRAVEL_MS);
+    expect(minimumTargetTravelTime(0.9)).toBeCloseTo(0.075);
+    expect(minimumTargetTravelTime(0)).toBe(0);
+  });
+
+  it("skips a landing inside the two-second floor for the next soonest answerable word", () => {
+    const floor = minimumTargetTravelTime(0.9);
+    const doomed = enemy("doomed", 0.97, 1);
+    const answerable = enemy("answerable", 0.8, 2);
+    const later = enemy("later", 0.1, 3);
+    expect(soonestLandingEnemy([doomed, answerable, later], floor)?.id).toBe("answerable");
+    expect(selectLockedTarget([doomed, answerable, later], null, floor)?.id).toBe("answerable");
+  });
+
+  it("selects the word with the most time left when every landing is inside the floor", () => {
+    const floor = minimumTargetTravelTime(0.9);
+    expect(soonestLandingEnemy([enemy("a", 0.99, 1), enemy("b", 0.96, 2)], floor)?.id).toBe("b");
+    expect(soonestLandingEnemy([], floor)).toBeNull();
+  });
+
+  it("never drops a locked target that falls inside the floor", () => {
+    const floor = minimumTargetTravelTime(0.9);
+    const locked = enemy("locked", 0.99, 1);
+    expect(selectLockedTarget([locked, enemy("fresh", 0.2, 2)], locked.id, floor)?.id).toBe("locked");
   });
 
   it("advances each word at its mastery-scaled speed", () => {
