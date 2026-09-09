@@ -1,33 +1,27 @@
-import { mkdir, mkdtemp, rm, writeFile } from "node:fs/promises";
-import { tmpdir } from "node:os";
+import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
 import { buildApp } from "../../src/server/app";
-import { MAX_SAVE_BYTES } from "../../src/server/saves/repository";
-import { makeSnapshot, makeSnapshotWithRelearn, makeSnapshotWithSession } from "./helpers";
+import { DEFAULT_SETTINGS } from "../../src/shared/constants";
 
-const directories: string[] = [];
-async function temporaryDirectory(): Promise<string> {
-  const directory = await mkdtemp(join(tmpdir(), "hanzi-api-"));
-  directories.push(directory);
-  return directory;
-}
-afterEach(async () => {
-  await Promise.all(directories.splice(0).map((directory) => rm(directory, { recursive: true, force: true })));
-});
+import { TEST_BATTLE_CONFIG, cleanupDirectories, temporaryDirectory, writeCurriculumFixture } from "./helpers";
 
-async function makeApp() {
-  const root = await temporaryDirectory();
+afterEach(cleanupDirectories);
+
+async function makeApp(curriculumCount = 8) {
+  const root = await temporaryDirectory("hanzi-api-");
+  const fixture = await writeCurriculumFixture(curriculumCount);
   const app = await buildApp({
     saveDirectory: join(root, "saves"),
-    gameDataDirectory: join(root, "game-data"),
+    curriculumPath: fixture.path,
+    // No configPath: the real config/battle.yaml must load and validate.
     serveStatic: false,
   });
-  return { root, app };
+  return { root, fixture, app };
 }
 
 describe("save API", () => {
-  it("serves health and a valid first-run save", async () => {
+  it("serves health and a fresh first-run save state from the real YAML", async () => {
     const { app } = await makeApp();
     const health = await app.inject({ method: "GET", url: "/api/health" });
     expect(health.statusCode).toBe(200);
@@ -36,105 +30,156 @@ describe("save API", () => {
     const response = await app.inject({ method: "GET", url: "/api/saves/default" });
     expect(response.statusCode).toBe(200);
     expect(response.headers["cache-control"]).toBe("no-store");
-    expect(response.json()).toMatchObject({ schemaVersion: 5, profileId: "default", revision: 0 });
-    await app.close();
-  });
-
-  it("accepts PUT, increments revision, and rejects a stale tab", async () => {
-    const { app } = await makeApp();
-    const payload = { expectedRevision: 0, snapshot: makeSnapshot() };
-    const accepted = await app.inject({ method: "PUT", url: "/api/saves/default", payload });
-    expect(accepted.statusCode).toBe(200);
-    expect(accepted.json()).toMatchObject({ revision: 1 });
-
-    const conflict = await app.inject({ method: "PUT", url: "/api/saves/default", payload });
-    expect(conflict.statusCode).toBe(409);
-    expect(conflict.json()).toMatchObject({ error: "revision_conflict", current: { revision: 1 } });
-    await app.close();
-  });
-
-  it("accepts a save with an active Learn session and acquired words", async () => {
-    const { app } = await makeApp();
-    const snapshot = makeSnapshotWithSession("hsk-1", ["word-1"]);
-    snapshot.acquiredWords = ["hsk-1:word-1"];
-    snapshot.levels["hsk-1"]!.words["word-1"]!.card = {
-      state: "review", due: "2025-01-01T00:00:00.000Z", stability: 3, difficulty: 5,
-      elapsedDays: 0, scheduledDays: 3, learningSteps: 0, reps: 2, lapses: 0,
-      lastReview: "2024-12-29T00:00:00.000Z",
-    };
-    snapshot.levels["hsk-1"]!.words["word-1"]!.learnReviews = 1;
-    const response = await app.inject({ method: "PUT", url: "/api/saves/default", payload: { expectedRevision: 0, snapshot } });
-    expect(response.statusCode).toBe(200);
-    await app.close();
-  });
-
-  it("accepts a save with the active relearn session and rejects an incoherent one", async () => {
-    const { app } = await makeApp();
-    const accepted = await app.inject({
-      method: "PUT", url: "/api/saves/default",
-      payload: { expectedRevision: 0, snapshot: makeSnapshotWithRelearn(["hsk-1:word-1"]) },
+    expect(response.json()).toEqual({
+      settings: DEFAULT_SETTINGS,
+      vocab: [],
+      battleConfig: TEST_BATTLE_CONFIG,
     });
-    expect(accepted.statusCode).toBe(200);
-
-    const invalid = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    invalid.acquiredWords = []; // member no longer acquired
-    const rejected = await app.inject({
-      method: "PUT", url: "/api/saves/default",
-      payload: { expectedRevision: 1, snapshot: invalid },
-    });
-    expect(rejected.statusCode).toBe(400);
-    expect(rejected.json()).toMatchObject({ error: "invalid_save" });
     await app.close();
   });
 
-  it("accepts a validated text/plain pagehide beacon", async () => {
-    const { app } = await makeApp();
-    const response = await app.inject({
+  it("battle open seeds five slots and is idempotent", async () => {
+    const { fixture, app } = await makeApp();
+    const first = await app.inject({ method: "POST", url: "/api/saves/default/battle/open" });
+    expect(first.statusCode).toBe(200);
+    const opened = first.json();
+    expect(opened.addedRows.map((row: { id: number }) => row.id)).toEqual([1, 2, 3, 4, 5]);
+    expect(opened.vocab).toEqual(opened.addedRows);
+
+    const second = await app.inject({ method: "POST", url: "/api/saves/default/battle/open" });
+    expect(second.statusCode).toBe(200);
+    expect(second.json().addedRows).toEqual([]);
+    expect(second.json().vocab).toHaveLength(5);
+    expect(fixture.cardIds).toHaveLength(8);
+    await app.close();
+  });
+
+  it("outcome updates mastery and refills on graduation", async () => {
+    const { fixture, app } = await makeApp();
+    await app.inject({ method: "POST", url: "/api/saves/default/battle/open" });
+    const url = `/api/saves/default/vocab/${fixture.cardIds[2]}/outcome`;
+
+    // 0 -> 50 stays low: five clean answers, no refill yet.
+    for (let index = 0; index < 5; index += 1) {
+      const response = await app.inject({ method: "POST", url, payload: { cleanCorrect: true } });
+      expect(response.statusCode).toBe(200);
+      expect(response.json().addedRows).toEqual([]);
+    }
+    // 50 -> 60 graduates the slot: position 6 is appended.
+    const graduated = await app.inject({ method: "POST", url, payload: { cleanCorrect: true } });
+    expect(graduated.statusCode).toBe(200);
+    const body = graduated.json();
+    expect(body.row).toMatchObject({ id: 3, cardId: fixture.cardIds[2], mastery: 60 });
+    expect(body.addedRows.map((row: { id: number }) => row.id)).toEqual([6]);
+
+    const state = await app.inject({ method: "GET", url: "/api/saves/default" });
+    expect(state.json().vocab).toHaveLength(6);
+    await app.close();
+  });
+
+  it("outcome rejects unknown cards, malformed IDs, and invalid bodies", async () => {
+    const { fixture, app } = await makeApp();
+    await app.inject({ method: "POST", url: "/api/saves/default/battle/open" });
+
+    const unknown = await app.inject({
       method: "POST",
-      url: "/api/saves/default/beacon",
-      headers: { "content-type": "text/plain;charset=UTF-8" },
-      payload: JSON.stringify({ expectedRevision: 0, snapshot: makeSnapshot() }),
+      url: `/api/saves/default/vocab/${fixture.cardIds[7]}/outcome`,
+      payload: { cleanCorrect: true },
     });
-    expect(response.statusCode).toBe(202);
-    expect(response.json()).toMatchObject({ revision: 1 });
-    await app.close();
-  });
+    expect(unknown.statusCode).toBe(404);
+    expect(unknown.json()).toMatchObject({ error: "unknown_card" });
 
-  it("returns 400 for malformed JSON, invalid schema, and out-of-range values", async () => {
-    const { app } = await makeApp();
     const malformed = await app.inject({
-      method: "PUT",
-      url: "/api/saves/default",
+      method: "POST",
+      url: "/api/saves/default/vocab/not-a-card-id/outcome",
+      payload: { cleanCorrect: true },
+    });
+    expect(malformed.statusCode).toBe(400);
+    expect(malformed.json()).toMatchObject({ error: "invalid_card_id" });
+
+    for (const payload of [{}, { cleanCorrect: "yes" }, { cleanCorrect: true, extra: 1 }]) {
+      const invalid = await app.inject({
+        method: "POST",
+        url: `/api/saves/default/vocab/${fixture.cardIds[0]}/outcome`,
+        payload,
+      });
+      expect(invalid.statusCode).toBe(400);
+      expect(invalid.json()).toMatchObject({ error: "invalid_outcome" });
+    }
+
+    const nullBody = await app.inject({
+      method: "POST",
+      url: `/api/saves/default/vocab/${fixture.cardIds[0]}/outcome`,
+      headers: { "content-type": "application/json" },
+      payload: "null",
+    });
+    expect(nullBody.statusCode).toBe(400);
+    expect(nullBody.json()).toMatchObject({ error: "invalid_outcome" });
+
+    const malformedJson = await app.inject({
+      method: "POST",
+      url: `/api/saves/default/vocab/${fixture.cardIds[0]}/outcome`,
       headers: { "content-type": "application/json" },
       payload: "{",
     });
-    expect(malformed.statusCode).toBe(400);
-
-    const snapshot = makeSnapshot();
-    snapshot.settings.spawnIntervalMs = 100;
-    const invalid = await app.inject({
-      method: "PUT",
-      url: "/api/saves/default",
-      payload: { expectedRevision: 0, snapshot },
-    });
-    expect(invalid.statusCode).toBe(400);
-    expect(invalid.json()).toMatchObject({ error: "invalid_save" });
+    expect(malformedJson.statusCode).toBe(400);
     await app.close();
   });
 
-  it("rejects request bodies over the configured save limit", async () => {
+  it("settings roundtrip through PUT and GET", async () => {
     const { app } = await makeApp();
-    const response = await app.inject({
-      method: "PUT",
-      url: "/api/saves/default",
-      headers: { "content-type": "application/json" },
-      payload: JSON.stringify({ padding: "x".repeat(MAX_SAVE_BYTES) }),
-    });
-    expect(response.statusCode).toBe(413);
+    const next = {
+      ...DEFAULT_SETTINGS,
+      spawnIntervalMs: 2500,
+      enemySpeedMultiplier: 1.2,
+      desktopReviewMode: "selection" as const,
+      masterVolume: 0.25,
+      reducedMotion: true,
+    };
+    const accepted = await app.inject({ method: "PUT", url: "/api/saves/default/settings", payload: { settings: next } });
+    expect(accepted.statusCode).toBe(200);
+    expect(accepted.json()).toEqual(next);
+
+    const state = await app.inject({ method: "GET", url: "/api/saves/default" });
+    expect(state.json().settings).toEqual(next);
     await app.close();
   });
 
-  it("does not expose profile or path parameters", async () => {
+  it("settings rejects invalid bodies", async () => {
+    const { app } = await makeApp();
+    const outOfRange = await app.inject({
+      method: "PUT",
+      url: "/api/saves/default/settings",
+      payload: { settings: { ...DEFAULT_SETTINGS, spawnIntervalMs: 10 } },
+    });
+    expect(outOfRange.statusCode).toBe(400);
+    expect(outOfRange.json()).toMatchObject({ error: "invalid_settings" });
+
+    const unknownMode = await app.inject({
+      method: "PUT",
+      url: "/api/saves/default/settings",
+      payload: { settings: { ...DEFAULT_SETTINGS, desktopReviewMode: "voice" } },
+    });
+    expect(unknownMode.statusCode).toBe(400);
+
+    const missingWrapper = await app.inject({
+      method: "PUT",
+      url: "/api/saves/default/settings",
+      payload: DEFAULT_SETTINGS,
+    });
+    expect(missingWrapper.statusCode).toBe(400);
+
+    const malformedJson = await app.inject({
+      method: "PUT",
+      url: "/api/saves/default/settings",
+      headers: { "content-type": "application/json" },
+      payload: "{",
+    });
+    expect(malformedJson.statusCode).toBe(400);
+    await app.close();
+  });
+
+  it("does not expose other profiles or path parameters", async () => {
     const { app } = await makeApp();
     for (const url of ["/api/saves/other", "/api/saves/default/..%2Fsecret", "/api/saves/default.json"]) {
       expect((await app.inject({ method: "GET", url })).statusCode).toBe(404);
@@ -142,32 +187,44 @@ describe("save API", () => {
     await app.close();
   });
 
-  it("starts fresh when the stored save is corrupt", async () => {
-    const { root, app } = await makeApp();
-    await writeFile(join(root, "saves", "default.json"), "broken");
-    const response = await app.inject({ method: "GET", url: "/api/saves/default" });
-    expect(response.statusCode).toBe(200);
-    expect(response.json()).toMatchObject({ schemaVersion: 5, profileId: "default", revision: 0 });
+  it("seeds from the real ordered curriculum", async () => {
+    const root = await temporaryDirectory("hanzi-real-");
+    // Default curriculumPath: the repository's cards/curriculum.json.
+    const app = await buildApp({ saveDirectory: join(root, "saves"), serveStatic: false });
+    const opened = await app.inject({ method: "POST", url: "/api/saves/default/battle/open" });
+    expect(opened.statusCode).toBe(200);
+    const body = opened.json();
+    expect(body.addedRows).toHaveLength(5);
+    expect(body.addedRows.map((row: { id: number }) => row.id)).toEqual([1, 2, 3, 4, 5]);
+    // Global positions 1..5 are 我, 你, 是, 在, 他 in the committed curriculum.
+    expect(body.addedRows.map((row: { cardId: string }) => row.cardId)).toEqual([
+      "b755617c48bfeec4d694db49",
+      "65bed40b7b3a86118ec4c85c",
+      "3176e0539e27ccb4c8e4fb56",
+      "944cf5f64bb7b26816440186",
+      "4473c682e51be511c6427db3",
+    ]);
     await app.close();
   });
 });
 
 describe("production static server", () => {
   it("serves built assets and falls back to index.html outside /api", async () => {
-    const root = await temporaryDirectory();
+    const root = await temporaryDirectory("hanzi-static-");
     const dist = join(root, "dist");
     await mkdir(dist);
     await writeFile(join(dist, "index.html"), "<!doctype html><title>Ziduoduo</title>");
     await writeFile(join(dist, "asset.txt"), "local asset");
+    const fixture = await writeCurriculumFixture(8);
     const app = await buildApp({
       saveDirectory: join(root, "saves"),
-      gameDataDirectory: join(root, "game-data"),
+      curriculumPath: fixture.path,
       publicDirectory: dist,
       serveStatic: true,
     });
 
     expect((await app.inject({ method: "GET", url: "/asset.txt" })).body).toBe("local asset");
-    expect((await app.inject({ method: "GET", url: "/battle/hsk-1" })).body).toContain("Ziduoduo");
+    expect((await app.inject({ method: "GET", url: "/battle" })).body).toContain("Ziduoduo");
     expect((await app.inject({ method: "GET", url: "/api/unknown" })).statusCode).toBe(404);
     await app.close();
   });

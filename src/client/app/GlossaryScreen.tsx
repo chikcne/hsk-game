@@ -1,7 +1,8 @@
 import { memo, useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { Effect, Exit } from "effect";
 import { DECK_IDS, type DeckId } from "../../shared/constants";
-import type { RuntimeDeck, RuntimeWord, SaveFile, WordProgress } from "../../shared/schemas";
+import type { DifficultySettings, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
+import type { VocabRow } from "../../shared/battle";
 import { wordAudioSource, WordAudioPlayer } from "../audio/wordAudio";
 import type { StrokeDataMap } from "../data/strokeData";
 import { HanziText } from "../game/HanziText";
@@ -12,80 +13,67 @@ export type GlossaryEntry = {
   key: string;
   deckId: DeckId;
   word: RuntimeWord;
-  progress: WordProgress | null;
+  row: VocabRow | null;
   revealed: boolean;
+  /** Global curriculum position (vocab `id`) — the encounter number. */
   encounterNumber: number | null;
   mastery: number;
 };
 
-function masteryPercent(progress: WordProgress | null): number {
-  if (!progress) return 0;
-  switch (progress.card.state) {
-    case "new": return Math.min(20, progress.learnReviews * 5);
-    case "learning": return Math.min(55, 25 + progress.learnReviews * 6);
-    case "relearning": return 60;
-    case "review": return 100;
-  }
+function masteryLabel(mastery: number): string {
+  if (mastery === 100) return "Mastered";
+  if (mastery === 0) return "Just encountered";
+  return "Building memory";
 }
 
-function masteryLabel(progress: WordProgress): string {
-  switch (progress.card.state) {
-    case "new": return "Newly encountered";
-    case "learning": return "Building memory";
-    case "relearning": return "Rebuilding memory";
-    case "review": return "Mastered";
-  }
-}
-
-/** Builds the table with encountered words first in global introduction
- * order, followed by every still-concealed curriculum tile. Ties are stable:
- * first-review time, acquisition order, grade, then authored curriculum. */
-export function buildGlossaryEntries(save: SaveFile, decks: readonly GlossaryDeck[]): GlossaryEntry[] {
-  const acquisitionOrder = new Map(
-    [...save.acquiredWords].reverse().map((key, index) => [key, index]),
+/** Builds the table with revealed (in-vocabulary) words first in global
+ * curriculum order, followed by every still-concealed curriculum tile. */
+export function buildGlossaryEntries(vocab: readonly VocabRow[], decks: readonly GlossaryDeck[]): GlossaryEntry[] {
+  const vocabByCard = new Map(vocab.map((row) => [row.cardId, row]));
+  const deckOrder = new Map(DECK_IDS.map((deckId, index) => [deckId, index]));
+  // Canonicalize caller input before filtering so duplicate IDs always belong
+  // to their earliest DECK_IDS deck, matching the battle corpus.
+  const orderedDecks = [...decks].sort((a, b) =>
+    (deckOrder.get(a.deckId) ?? Number.POSITIVE_INFINITY)
+    - (deckOrder.get(b.deckId) ?? Number.POSITIVE_INFINITY)
   );
-  const sortable = decks.flatMap(({ deckId, deck }) => {
+  const seenCardIds = new Set<string>();
+  const sortable = orderedDecks.flatMap(({ deckId, deck }, deckIndex) => {
     const curriculumIndex = new Map(
       deck.curriculum.lessons.flatMap((lesson) => lesson.wordIds).map((id, index) => [id, index]),
     );
-    const level = save.levels[deckId];
-    return deck.words.map((word, fallbackIndex) => {
-      const progress = level?.words[word.id] ?? null;
-      const introducedOrdinal = progress?.introducedAtOrdinal ?? null;
-      const key = `${deckId}:${word.id}`;
-      const seenMs = progress?.lastSeenAt ? Date.parse(progress.lastSeenAt) : Number.POSITIVE_INFINITY;
-      return {
+    return deck.words.flatMap((word, fallbackIndex) => {
+      // A card ID shipped by more than one deck collapses to its EARLIEST
+      // deck, exactly like the battle corpus deck and the keyed curriculum —
+      // the catalogue totals 5396 tiles, never 5398.
+      if (seenCardIds.has(word.id)) return [];
+      seenCardIds.add(word.id);
+      const row = vocabByCard.get(word.id) ?? null;
+      return [{
         entry: {
-          key,
+          key: `${deckId}:${word.id}`,
           deckId,
           word,
-          progress,
-          revealed: introducedOrdinal !== null,
-          encounterNumber: null,
-          mastery: masteryPercent(progress),
+          row,
+          revealed: row !== null,
+          encounterNumber: row?.id ?? null,
+          mastery: row?.mastery ?? 0,
         } satisfies GlossaryEntry,
-        introducedOrdinal: introducedOrdinal ?? Number.POSITIVE_INFINITY,
-        seenMs: Number.isFinite(seenMs) ? seenMs : Number.POSITIVE_INFINITY,
-        acquiredIndex: acquisitionOrder.get(key) ?? Number.POSITIVE_INFINITY,
-        deckIndex: DECK_IDS.indexOf(deckId),
+        revealed: row !== null,
+        curriculumPosition: row?.id ?? Number.POSITIVE_INFINITY,
+        deckIndex,
         curriculumIndex: curriculumIndex.get(word.id) ?? fallbackIndex,
-      };
+      }];
     });
   });
 
   sortable.sort((a, b) =>
-    Number(b.entry.revealed) - Number(a.entry.revealed)
-    || a.introducedOrdinal - b.introducedOrdinal
-    || a.seenMs - b.seenMs
-    || a.acquiredIndex - b.acquiredIndex
+    Number(b.revealed) - Number(a.revealed)
+    || a.curriculumPosition - b.curriculumPosition
     || a.deckIndex - b.deckIndex
-    || a.curriculumIndex - b.curriculumIndex,
+    || a.curriculumIndex - b.curriculumIndex
   );
-
-  let encounterNumber = 0;
-  return sortable.map(({ entry }) => entry.revealed
-    ? { ...entry, encounterNumber: ++encounterNumber }
-    : entry);
+  return sortable.map(({ entry }) => entry);
 }
 
 function tileFaceColor(mastery: number): string {
@@ -107,7 +95,7 @@ export function buildGlossaryIndex(entries: readonly GlossaryEntry[]): {
   for (const entry of entries) {
     byKey.set(entry.key, entry);
     if (entry.revealed) encountered += 1;
-    if (entry.progress?.card.state === "review") mastered += 1;
+    if (entry.mastery === 100) mastered += 1;
   }
   return { byKey, encountered, mastered };
 }
@@ -129,7 +117,7 @@ const GlossaryTile = memo(function GlossaryTile({ entry, strokeData, selected, o
     className={`mahjong-tile tile-face ${selected ? "is-selected" : ""}`}
     style={{ "--tile-face": tileFaceColor(entry.mastery) } as CSSProperties}
     onClick={() => onPlay(entry)}
-    aria-label={`${entry.word.displayHanzi}, ${entry.word.displayPinyin}, ${masteryLabel(entry.progress!)}`}
+    aria-label={`${entry.word.displayHanzi}, ${entry.word.displayPinyin}, ${masteryLabel(entry.mastery)}`}
   >
     <small>{String(entry.encounterNumber).padStart(3, "0")}</small>
     <strong data-word-length={[...entry.word.displayHanzi].length}>
@@ -139,13 +127,14 @@ const GlossaryTile = memo(function GlossaryTile({ entry, strokeData, selected, o
   </button>;
 });
 
-export function GlossaryScreen({ save, decks, strokeData, onExit }: {
-  save: SaveFile;
+export function GlossaryScreen({ settings, vocab, decks, strokeData, onExit }: {
+  settings: DifficultySettings;
+  vocab: readonly VocabRow[];
   decks: readonly GlossaryDeck[];
   strokeData: StrokeDataMap;
   onExit: () => void;
 }) {
-  const entries = useMemo(() => buildGlossaryEntries(save, decks), [save, decks]);
+  const entries = useMemo(() => buildGlossaryEntries(vocab, decks), [vocab, decks]);
   const index = useMemo(() => buildGlossaryIndex(entries), [entries]);
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [audioError, setAudioError] = useState(false);
@@ -183,17 +172,17 @@ export function GlossaryScreen({ save, decks, strokeData, onExit }: {
     setSelectedKey(entry.key);
     setAudioError(false);
     if (!player || !source) return;
-    Effect.runFork(player.playEffect(source, save.settings.masterVolume).pipe(
+    Effect.runFork(player.playEffect(source, settings.masterVolume).pipe(
       Effect.onExit((exit) => Effect.sync(() => {
         if (Exit.isFailure(exit) && playerRef.current === player) setAudioError(true);
       })),
     ));
-  }, [save.settings.masterVolume]);
+  }, [settings.masterVolume]);
 
-  return <main className={`glossary-screen paper ${save.settings.reducedMotion ? "reduce-motion" : ""}`}>
+  return <main className={`glossary-screen paper ${settings.reducedMotion ? "reduce-motion" : ""}`}>
     <section className="mahjong-table" aria-label={`Glossary with ${index.encountered} encountered words and ${entries.length - index.encountered} concealed words`}>
       <div className="glossary-overview">
-        <button className="glossary-back" onClick={onExit} aria-label="Return to glossary grade selection"><span aria-hidden="true">←</span> GRADES</button>
+        <button className="glossary-back" onClick={onExit} aria-label="Return to the main menu"><span aria-hidden="true">←</span> MENU</button>
         <div className="glossary-summary">
           <dl className="glossary-totals">
             <div><dt>ENCOUNTERED</dt><dd>{index.encountered}</dd></div>
@@ -228,9 +217,9 @@ export function GlossaryScreen({ save, decks, strokeData, onExit }: {
         <section><small>DEFINITION</small><p className="drawer-definition">{selected.word.meaning}</p></section>
         <section className="drawer-mastery">
           <small>MASTERY</small>
-          <div><strong>{masteryLabel(selected.progress!)}</strong><b>{selected.mastery}%</b></div>
+          <div><strong>{masteryLabel(selected.mastery)}</strong><b>{selected.mastery}%</b></div>
           <span><i style={{ width: `${selected.mastery}%` }} /></span>
-          <p>{selected.progress!.learnReviews} learning {selected.progress!.learnReviews === 1 ? "review" : "reviews"}</p>
+          {selected.row?.timeMastered && <p>Mastered at {new Date(selected.row.timeMastered).toLocaleDateString()}</p>}
         </section>
       </aside>
     </>}

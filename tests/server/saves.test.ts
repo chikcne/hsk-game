@@ -1,382 +1,415 @@
-import { mkdtemp, readFile, readdir, rm, writeFile } from "node:fs/promises";
-import { tmpdir } from "node:os";
+import Database from "better-sqlite3";
+import { existsSync } from "node:fs";
+import { writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { afterEach, describe, expect, it } from "vitest";
-import type { DeckCatalog } from "../../src/server/saves/manifests";
+import { z } from "zod";
+import { DEFAULT_SETTINGS } from "../../src/shared/constants";
+
+import { Curriculum } from "../../src/server/saves/curriculum";
+import { BattleSaveRepository, SaveDatabaseError } from "../../src/server/saves/repository";
 import {
-  RevisionConflictError,
-  SaveRepository,
-} from "../../src/server/saves/repository";
-import { parseSaveSnapshot } from "../../src/server/saves/validation";
-import type { AtomicWriteStage } from "../../src/server/saves/atomic-writer";
-import { makeSnapshot, makeSnapshotWithAcquiredWord, makeSnapshotWithRelearn, makeSnapshotWithSession, makeSnapshotWithWord, makeWordProgress, makeAcquiredReviewCard } from "./helpers";
+  TEST_BATTLE_CONFIG,
+  cleanupDirectories,
+  fastGraduationConfig,
+  fixedClock,
+  fixtureCardId,
+  temporaryDirectory,
+  writeCurriculumFixture,
+} from "./helpers";
 
-const directories: string[] = [];
-async function temporaryDirectory(): Promise<string> {
-  const directory = await mkdtemp(join(tmpdir(), "hanzi-saves-"));
-  directories.push(directory);
-  return directory;
-}
-afterEach(async () => {
-  await Promise.all(directories.splice(0).map((directory) => rm(directory, { recursive: true, force: true })));
-});
+afterEach(cleanupDirectories);
 
-function clock(...values: string[]): () => Date {
-  let index = 0;
-  return () => new Date(values[Math.min(index++, values.length - 1)]!);
+type TableInfo = Array<{ name: string; type: string; notnull: number; pk: number }>;
+
+function openRaw(path: string): Database.Database {
+  return new Database(path, { readonly: true });
 }
 
-describe("SaveRepository", () => {
-  it("returns a valid first-run default and assigns server revisions", async () => {
+function tableInfo(db: Database.Database, table: string): TableInfo {
+  return (db.prepare(`PRAGMA table_info(${table})`).all() as TableInfo).map(
+    ({ name, type, notnull, pk }) => ({ name, type, notnull, pk }),
+  );
+}
+
+async function makeRepository(options: Partial<ConstructorParameters<typeof BattleSaveRepository>[0]> & {
+  curriculumCount?: number;
+} = {}) {
+  const directory = await temporaryDirectory();
+  const fixture = await writeCurriculumFixture(options.curriculumCount ?? 8);
+  const curriculum = Curriculum.load(fixture.path);
+  const repository = new BattleSaveRepository({
+    directory,
+    curriculum,
+    battleConfig: options.battleConfig ?? TEST_BATTLE_CONFIG,
+    now: options.now,
+  });
+  return { directory, savePath: join(directory, "default.sql"), fixture, curriculum, repository };
+}
+
+describe("BattleSaveRepository schema", () => {
+  it("creates saves/default.sql with the exact approved vocab and settings tables", async () => {
+    const { repository, savePath } = await makeRepository();
+    expect(existsSync(savePath)).toBe(true);
+    repository.close();
+
+    const db = openRaw(savePath);
+    const tables = (db.prepare(
+      "SELECT name FROM sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%' ORDER BY name",
+    ).all() as Array<{ name: string }>).map((row) => row.name);
+    expect(tables).toEqual(["settings", "vocab"]);
+
+    expect(tableInfo(db, "vocab")).toEqual([
+      { name: "id", type: "INTEGER", notnull: 0, pk: 1 },
+      { name: "card_id", type: "TEXT", notnull: 1, pk: 0 },
+      { name: "mastery", type: "INTEGER", notnull: 1, pk: 0 },
+      { name: "time_added", type: "DATETIME", notnull: 1, pk: 0 },
+      { name: "time_mastered", type: "DATETIME", notnull: 0, pk: 0 },
+    ]);
+    expect(tableInfo(db, "settings")).toEqual([
+      { name: "key", type: "TEXT", notnull: 0, pk: 1 },
+      { name: "value", type: "TEXT", notnull: 1, pk: 0 },
+    ]);
+
+    const indexes = db.prepare("PRAGMA index_list(vocab)").all() as Array<{ name: string; unique: number }>;
+    const uniqueIndex = indexes.find((index) => index.unique);
+    expect(uniqueIndex).toBeDefined();
+    const indexColumns = db.prepare(`PRAGMA index_info(${uniqueIndex!.name})`).all() as Array<{ name: string }>;
+    expect(indexColumns.map((column) => column.name)).toEqual(["card_id"]);
+
+    const settingsRows = db.prepare("SELECT key, value FROM settings ORDER BY key").all() as Array<{ key: string; value: string }>;
+    expect(settingsRows.map((row) => row.key)).toEqual([...Object.keys(DEFAULT_SETTINGS)].sort());
+    db.close();
+  });
+
+  it("enforces integral, range-checked mastery and the card_id UNIQUE constraint", async () => {
+    const { repository, savePath, fixture } = await makeRepository();
+    repository.close();
+
+    const db = new Database(savePath);
+    expect(() =>
+      db.prepare("INSERT INTO vocab (id, card_id, mastery, time_added) VALUES (1, ?, 101, '2026-01-01T00:00:00.000Z')")
+        .run(fixture.cardIds[0]!),
+    ).toThrow(/CHECK/i);
+    expect(() =>
+      db.prepare("INSERT INTO vocab (id, card_id, mastery, time_added) VALUES (1, ?, -1, '2026-01-01T00:00:00.000Z')")
+        .run(fixture.cardIds[1]!),
+    ).toThrow(/CHECK/i);
+    // SQLite's dynamic typing: a REAL mastery must be rejected by the typeof
+    // guard, not silently stored as 1.5.
+    expect(() =>
+      db.prepare("INSERT INTO vocab (id, card_id, mastery, time_added) VALUES (1, ?, 1.5, '2026-01-01T00:00:00.000Z')")
+        .run(fixture.cardIds[1]!),
+    ).toThrow(/CHECK/i);
+    db.prepare("INSERT INTO vocab (id, card_id, mastery, time_added) VALUES (1, ?, 0, '2026-01-01T00:00:00.000Z')")
+      .run(fixture.cardIds[0]!);
+    expect(() =>
+      db.prepare("INSERT INTO vocab (id, card_id, mastery, time_added) VALUES (2, ?, 0, '2026-01-01T00:00:00.000Z')")
+        .run(fixture.cardIds[0]!),
+    ).toThrow(/UNIQUE/i);
+    db.close();
+  });
+
+  it("fails loudly when the mastery CHECK is missing, weakened, or widened", async () => {
+    const fixture = await writeCurriculumFixture(8);
+    const settings = "CREATE TABLE settings (key TEXT PRIMARY KEY, value TEXT NOT NULL)";
+
+    // Identical five columns and unique index, but no CHECK at all.
+    const missingCheck = await temporaryDirectory();
+    const missingCheckDb = new Database(join(missingCheck, "default.sql"));
+    missingCheckDb.exec(settings);
+    missingCheckDb.exec("CREATE TABLE vocab (id INTEGER PRIMARY KEY, card_id TEXT NOT NULL UNIQUE, mastery INTEGER NOT NULL, time_added DATETIME NOT NULL, time_mastered DATETIME)");
+    missingCheckDb.close();
+    expect(() => new BattleSaveRepository({
+      directory: missingCheck,
+      curriculum: Curriculum.load(fixture.path),
+      battleConfig: TEST_BATTLE_CONFIG,
+    })).toThrow(/CREATE TABLE contract/i);
+
+    // Range-only CHECK: REAL masteries such as 1.5 would pass.
+    const weakCheck = await temporaryDirectory();
+    const weakCheckDb = new Database(join(weakCheck, "default.sql"));
+    weakCheckDb.exec(settings);
+    weakCheckDb.exec("CREATE TABLE vocab (id INTEGER PRIMARY KEY, card_id TEXT NOT NULL UNIQUE, mastery INTEGER NOT NULL CHECK (mastery BETWEEN 0 AND 100), time_added DATETIME NOT NULL, time_mastered DATETIME)");
+    weakCheckDb.close();
+    expect(() => new BattleSaveRepository({
+      directory: weakCheck,
+      curriculum: Curriculum.load(fixture.path),
+      battleConfig: TEST_BATTLE_CONFIG,
+    })).toThrow(/CREATE TABLE contract/i);
+
+    // Correct typeof guard but a widened bound.
+    const widenedBound = await temporaryDirectory();
+    const widenedDb = new Database(join(widenedBound, "default.sql"));
+    widenedDb.exec(settings);
+    widenedDb.exec("CREATE TABLE vocab (id INTEGER PRIMARY KEY, card_id TEXT NOT NULL UNIQUE, mastery INTEGER NOT NULL CHECK (typeof(mastery) = 'integer' AND mastery BETWEEN 0 AND 200), time_added DATETIME NOT NULL, time_mastered DATETIME)");
+    widenedDb.close();
+    expect(() => new BattleSaveRepository({
+      directory: widenedBound,
+      curriculum: Curriculum.load(fixture.path),
+      battleConfig: TEST_BATTLE_CONFIG,
+    })).toThrow(/CREATE TABLE contract/i);
+  });
+
+  it("fails loudly on an existing incompatible database", async () => {
     const directory = await temporaryDirectory();
-    const repository = new SaveRepository({
+    const savePath = join(directory, "default.sql");
+    await writeFile(savePath, "this is not a sqlite database");
+    const fixture = await writeCurriculumFixture(8);
+    expect(() => new BattleSaveRepository({
       directory,
-      now: clock("2025-01-01T00:00:00.000Z", "2025-01-02T00:00:00.000Z"),
-    });
-    await repository.initialize();
+      curriculum: Curriculum.load(fixture.path),
+      battleConfig: TEST_BATTLE_CONFIG,
+    })).toThrow(SaveDatabaseError);
 
-    const initial = await repository.load();
-    expect(initial.firstRun).toBe(true);
-    expect(initial.save.revision).toBe(0);
+    const directory2 = await temporaryDirectory();
+    const savePath2 = join(directory2, "default.sql");
+    const wrongColumns = new Database(savePath2);
+    wrongColumns.exec("CREATE TABLE settings (key TEXT PRIMARY KEY, value TEXT NOT NULL)");
+    wrongColumns.exec("CREATE TABLE vocab (id INTEGER PRIMARY KEY, card_id TEXT, mastery INTEGER)");
+    wrongColumns.close();
+    expect(() => new BattleSaveRepository({
+      directory: directory2,
+      curriculum: Curriculum.load(fixture.path),
+      battleConfig: TEST_BATTLE_CONFIG,
+    })).toThrow(/exactly 5 columns/);
 
-    const written = await repository.save(0, makeSnapshot());
-    expect(written).toMatchObject({ revision: 1, savedAt: "2025-01-02T00:00:00.000Z" });
-    const source = await readFile(join(directory, "default.json"), "utf8");
-    expect(source.endsWith("\n")).toBe(true);
-    expect(JSON.parse(source)).toEqual(written);
-  });
+    const directory4 = await temporaryDirectory();
+    const savePath4 = join(directory4, "default.sql");
+    const wrongConstraints = new Database(savePath4);
+    wrongConstraints.exec("CREATE TABLE settings (key TEXT PRIMARY KEY, value TEXT NOT NULL)");
+    wrongConstraints.exec("CREATE TABLE vocab (id INTEGER PRIMARY KEY, card_id TEXT NOT NULL, mastery INTEGER NOT NULL, time_added DATETIME NOT NULL, time_mastered DATETIME)");
+    wrongConstraints.close();
+    expect(() => new BattleSaveRepository({
+      directory: directory4,
+      curriculum: Curriculum.load(fixture.path),
+      battleConfig: TEST_BATTLE_CONFIG,
+    })).toThrow(/card_id|UNIQUE/i);
 
-  it("rejects a stale revision without changing disk", async () => {
-    const directory = await temporaryDirectory();
-    const repository = new SaveRepository({ directory });
-    await repository.initialize();
-    await repository.save(0, makeSnapshot());
-
-    await expect(repository.save(0, makeSnapshot())).rejects.toBeInstanceOf(RevisionConflictError);
-    expect((await repository.load()).save.revision).toBe(1);
-  });
-
-  it("serializes concurrent writes so only one expected revision wins", async () => {
-    const directory = await temporaryDirectory();
-    const repository = new SaveRepository({ directory });
-    await repository.initialize();
-
-    const results = await Promise.allSettled([
-      repository.save(0, makeSnapshot()),
-      repository.save(0, { ...makeSnapshot(), settings: { ...makeSnapshot().settings, masterVolume: 0.2 } }),
-    ]);
-    expect(results.filter((result) => result.status === "fulfilled")).toHaveLength(1);
-    expect(results.filter((result) => result.status === "rejected")).toHaveLength(1);
-    expect((await repository.load()).save.revision).toBe(1);
-  });
-
-  for (const stage of ["afterTempOpen", "afterPartialWrite", "afterFlush", "beforeRename"] as const) {
-    it(`keeps the original readable after a ${stage} failure`, async () => {
-      const directory = await temporaryDirectory();
-      const initial = new SaveRepository({ directory });
-      await initial.initialize();
-      await initial.save(0, makeSnapshot());
-
-      const failing = new SaveRepository({
-        directory,
-        writer: { faultInjector: (current: AtomicWriteStage) => {
-          if (current === stage) throw new Error(`injected ${stage}`);
-        } },
-      });
-      await failing.initialize();
-      const changed = makeSnapshot();
-      changed.settings.masterVolume = 0.1;
-      await expect(failing.save(1, changed)).rejects.toThrow(`injected ${stage}`);
-
-      const verifier = new SaveRepository({ directory });
-      await verifier.initialize();
-      expect((await verifier.load()).save).toMatchObject({ revision: 1, settings: { masterVolume: 0.8 } });
-      expect((await readdir(directory)).some((name) => name.startsWith("default.json.tmp-"))).toBe(false);
-    });
-  }
-
-  it("cleans stale temporary files on startup", async () => {
-    const directory = await temporaryDirectory();
-    await writeFile(join(directory, "default.json.tmp-99-stale"), "partial");
-    await writeFile(join(directory, "unrelated.tmp"), "keep");
-    const repository = new SaveRepository({ directory });
-    await repository.initialize();
-    expect(await readdir(directory)).toEqual(["unrelated.tmp"]);
-  });
-
-  it("starts fresh when the main save is malformed and replaces it on the next PUT", async () => {
-    const directory = await temporaryDirectory();
-    await writeFile(join(directory, "default.json"), "not json");
-    const repository = new SaveRepository({ directory });
-    await repository.initialize();
-
-    const loaded = await repository.load();
-    expect(loaded.firstRun).toBe(true);
-    expect(loaded.save.revision).toBe(0);
-    // No recovery copies: the malformed file is simply replaced.
-    await expect(repository.save(0, makeSnapshot())).resolves.toMatchObject({ revision: 1 });
-    expect((await repository.load()).firstRun).toBe(false);
-    expect((await readdir(directory)).some((name) => name.includes("corrupt"))).toBe(false);
+    const directory3 = await temporaryDirectory();
+    const savePath3 = join(directory3, "default.sql");
+    const missingTable = new Database(savePath3);
+    missingTable.exec("CREATE TABLE vocab (id INTEGER PRIMARY KEY, card_id TEXT NOT NULL UNIQUE, mastery INTEGER NOT NULL CHECK (mastery >= 0 AND mastery <= 100), time_added DATETIME NOT NULL, time_mastered DATETIME)");
+    missingTable.close();
+    expect(() => new BattleSaveRepository({
+      directory: directory3,
+      curriculum: Curriculum.load(fixture.path),
+      battleConfig: TEST_BATTLE_CONFIG,
+    })).toThrow(/exactly the vocab and settings tables/);
   });
 });
 
-describe("save validation", () => {
-  it("rejects unsupported save schema versions", () => {
-    const raw = { ...makeSnapshot(), schemaVersion: 1 };
-    expect(() => parseSaveSnapshot(raw)).toThrow();
+describe("BattleSaveRepository state", () => {
+  it("first run initializes default settings and an empty vocab", async () => {
+    const { repository } = await makeRepository();
+    const state = repository.getState();
+    expect(state.settings).toEqual(DEFAULT_SETTINGS);
+    expect(state.vocab).toEqual([]);
+    expect(state.battleConfig).toEqual(TEST_BATTLE_CONFIG);
+    repository.close();
   });
 
-  it("enforces the card memory invariants of the single-card model", () => {
-    const snapshot = makeSnapshotWithWord();
-    snapshot.levels["hsk-1"]!.words["word-1"]!.card.state = "review";
-    expect(() => parseSaveSnapshot(snapshot)).toThrow(/last review/); // review card without lastReview
+  it("roundtrips settings and persists them across repository instances", async () => {
+    const { repository, directory, fixture } = await makeRepository();
+    const next = { ...DEFAULT_SETTINGS, spawnIntervalMs: 2500, enemySpeedMultiplier: 1.2, masterVolume: 0.25, reducedMotion: true };
+    expect(repository.updateSettings(next)).toEqual(next);
+    repository.close();
+
+    const reopened = new BattleSaveRepository({
+      directory,
+      curriculum: Curriculum.load(fixture.path),
+      battleConfig: TEST_BATTLE_CONFIG,
+    });
+    expect(reopened.getState().settings).toEqual(next);
+    reopened.close();
   });
 
-  it("enforces learn session invariants", () => {
-    const snapshot = makeSnapshotWithSession("hsk-1", ["word-1"]);
-    expect(() => parseSaveSnapshot(snapshot)).not.toThrow();
+  it("rejects invalid settings instead of persisting them", async () => {
+    const { repository } = await makeRepository();
+    expect(() => repository.updateSettings({ ...DEFAULT_SETTINGS, spawnIntervalMs: 10 })).toThrow(z.ZodError);
+    expect(() => repository.updateSettings({ ...DEFAULT_SETTINGS, surprise: true })).toThrow(z.ZodError);
+    repository.close();
+  });
+});
 
-    const unknownMember = makeSnapshotWithSession("hsk-1", ["word-1"]);
-    unknownMember.learnSessions["hsk-1"]!.wordIds = ["word-1", "ghost"];
-    expect(() => parseSaveSnapshot(unknownMember)).toThrow(/member word/);
+describe("BattleSaveRepository battle open", () => {
+  it("seeds curriculum positions 1..5 at mastery 0 in strict order", async () => {
+    const { repository, fixture } = await makeRepository({
+      curriculumCount: 8,
+      now: fixedClock("2026-09-09T01:00:00.000Z"),
+    });
+    const opened = repository.openBattle();
+    expect(opened.addedRows).toHaveLength(5);
+    expect(opened.addedRows.map((row) => row.id)).toEqual([1, 2, 3, 4, 5]);
+    expect(opened.addedRows.map((row) => row.cardId)).toEqual(fixture.cardIds.slice(0, 5));
+    expect(opened.vocab).toHaveLength(5);
+    for (const row of opened.vocab) {
+      expect(row.mastery).toBe(0);
+      expect(row.timeAdded).toBe("2026-09-09T01:00:00.000Z");
+      expect(row.timeMastered).toBeNull();
+    }
 
-    const wrongFingerprint = makeSnapshotWithSession("hsk-1", ["word-1"]);
-    wrongFingerprint.learnSessions["hsk-1"]!.deckFingerprint = "other";
-    expect(() => parseSaveSnapshot(wrongFingerprint)).toThrow(/deck fingerprint/);
+    const reopened = repository.openBattle();
+    expect(reopened.addedRows).toEqual([]);
+    expect(reopened.vocab.map((row) => row.id)).toEqual([1, 2, 3, 4, 5]);
+    repository.close();
   });
 
-  it("validates learn session entries even when their grade has no level record", () => {
-    const orphaned = makeSnapshotWithSession("hsk-1", ["word-1"]);
-    delete orphaned.levels["hsk-1"];
-    // Structurally sound without a level: dedupe and completion rules hold.
-    expect(() => parseSaveSnapshot(orphaned)).not.toThrow();
+  it("seeds only what a shorter curriculum offers", async () => {
+    const { repository } = await makeRepository({ curriculumCount: 3 });
+    const opened = repository.openBattle();
+    expect(opened.addedRows.map((row) => row.id)).toEqual([1, 2, 3]);
+    repository.close();
+  });
+});
 
-    orphaned.learnSessions["hsk-1"]!.wordIds = ["word-1", "word-1"];
-    expect(() => parseSaveSnapshot(orphaned)).toThrow(/duplicate word IDs/);
+describe("BattleSaveRepository outcomes", () => {
+  it("applies +10 for clean correct and -10 for a miss, clamped to 0..100", async () => {
+    const { repository, fixture } = await makeRepository({ now: fixedClock("2026-09-09T02:00:00.000Z") });
+    repository.openBattle();
+    const cardId = fixture.cardIds[0]!;
 
-    const ghostCompletion = makeSnapshotWithSession("hsk-1", ["word-1"]);
-    delete ghostCompletion.levels["hsk-1"];
-    ghostCompletion.learnSessions["hsk-1"]!.completedWordIds = ["ghost"];
-    expect(() => parseSaveSnapshot(ghostCompletion)).toThrow(/completed word must be a session member/);
+    expect(repository.applyOutcome(cardId, true)!.row.mastery).toBe(10);
+    expect(repository.applyOutcome(cardId, false)!.row.mastery).toBe(0);
+    expect(repository.applyOutcome(cardId, false)!.row.mastery).toBe(0); // clamped at 0
+    repository.close();
   });
 
-  it("enforces introducedAtOrdinal against the save's spawn ordinal and cursor coherence", () => {
-    const future = makeSnapshotWithWord();
-    future.levels["hsk-1"]!.words["word-1"]!.introducedAtOrdinal = 5; // spawnOrdinal is 0
-    expect(() => parseSaveSnapshot(future)).toThrow(/introducedAtOrdinal/);
+  it("clamps at 100 and stamps time_mastered exactly once", async () => {
+    const { repository, directory, savePath, fixture } = await makeRepository({
+      now: fixedClock("2026-09-09T03:00:00.000Z"),
+    });
+    repository.openBattle();
+    const cardId = fixture.cardIds[0]!;
+    repository.close();
 
-    const futureOrphan = makeSnapshotWithWord();
-    futureOrphan.levels["hsk-1"]!.orphanedProgress = {
-      gone: { ...makeWordProgress(5), card: makeAcquiredReviewCard() },
-    };
-    expect(() => parseSaveSnapshot(futureOrphan)).toThrow(/introducedAtOrdinal/);
+    const db = new Database(savePath);
+    db.prepare("UPDATE vocab SET mastery = 95 WHERE card_id = ?").run(cardId);
+    db.close();
 
-    // Without a catalog the cursor must at least cover every introduced word.
-    const cursorBehind = makeSnapshotWithWord();
-    cursorBehind.levels["hsk-1"]!.curriculumCursor = 0; // word-1 IS introduced (ordinal 0)
-    expect(() => parseSaveSnapshot(cursorBehind)).toThrow(/cannot be smaller than the introduced word count/);
+    const resumed = new BattleSaveRepository({
+      directory,
+      curriculum: Curriculum.load(fixture.path),
+      battleConfig: TEST_BATTLE_CONFIG,
+      now: fixedClock(
+        "2026-09-09T04:00:00.000Z", // 95 -> 100
+        "2026-09-09T05:00:00.000Z", // 100 -> 90 (miss keeps the stamp)
+        "2026-09-09T06:00:00.000Z", // 90 -> 100 (stamp unchanged)
+      ),
+    });
+    const mastered = resumed.applyOutcome(cardId, true)!.row;
+    expect(mastered.mastery).toBe(100);
+    expect(mastered.timeMastered).toBe("2026-09-09T04:00:00.000Z");
 
-    // With a catalog the cursor must EQUAL the introduced count exactly.
-    const catalog: DeckCatalog = new Map([
-      ["hsk-1", { fingerprint: "fixture-fingerprint", wordIds: new Set(["word-1"]) }],
-    ]);
-    const coherent = makeSnapshotWithWord();
-    expect(() => parseSaveSnapshot(coherent, catalog)).not.toThrow(); // cursor 1 === 1 introduced
-    const incoherent = makeSnapshotWithWord();
-    incoherent.levels["hsk-1"]!.words["word-1"]!.introducedAtOrdinal = null;
-    expect(() => parseSaveSnapshot(incoherent, catalog)).toThrow(/must equal the introduced word count/);
+    const decayed = resumed.applyOutcome(cardId, false)!.row;
+    expect(decayed.mastery).toBe(90);
+    expect(decayed.timeMastered).toBe("2026-09-09T04:00:00.000Z"); // never cleared
+
+    const regained = resumed.applyOutcome(cardId, true)!.row;
+    expect(regained.mastery).toBe(100);
+    expect(regained.timeMastered).toBe("2026-09-09T04:00:00.000Z"); // first-set only
+    resumed.close();
   });
 
-  it("accepts a coherent active relearn session and enforces its invariants", () => {
-    const snapshot = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    expect(() => parseSaveSnapshot(snapshot)).not.toThrow();
-
-    // Two members from different grades with independent fresh cards.
-    const crossGrade = makeSnapshotWithRelearn(["hsk-1:word-1", "hsk-2:other"]);
-    crossGrade.levels["hsk-2"] = {
-      ...crossGrade.levels["hsk-1"]!,
-      deckId: "hsk-2",
-    };
-    crossGrade.levels["hsk-2"]!.words = {
-      other: { ...crossGrade.levels["hsk-1"]!.words["word-1"]! },
-    };
-    crossGrade.acquiredWords = ["hsk-2:other", "hsk-1:word-1"];
-    expect(() => parseSaveSnapshot(crossGrade)).not.toThrow();
-
-    const duplicateKeys = makeSnapshotWithRelearn(["hsk-1:word-1", "hsk-1:word-1"]);
-    expect(() => parseSaveSnapshot(duplicateKeys)).toThrow(/duplicate/);
-
-    const missingCard = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    delete missingCard.relearnSession!.cards["hsk-1:word-1"];
-    expect(() => parseSaveSnapshot(missingCard)).toThrow(/missing its independent card/);
-
-    const orphanCard = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    orphanCard.relearnSession!.cards["hsk-1:ghost"] = {
-      card: orphanCard.relearnSession!.cards["hsk-1:word-1"]!.card,
-      reviews: 0,
-    };
-    expect(() => parseSaveSnapshot(orphanCard)).toThrow(/no session member/);
-
-    const notAcquired = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    notAcquired.acquiredWords = [];
-    expect(() => parseSaveSnapshot(notAcquired)).toThrow(/acquired word/);
-
-    // A member whose independent card is ALREADY review must have been
-    // removed at rating time — persisting one is a runtime leak.
-    const finishedMember = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    finishedMember.relearnSession!.cards["hsk-1:word-1"] = {
-      card: { ...finishedMember.relearnSession!.cards["hsk-1:word-1"]!.card, state: "review", reps: 2, stability: 3, difficulty: 5, lastReview: "2024-12-29T00:00:00.000Z" },
-      reviews: 1,
-    };
-    expect(() => parseSaveSnapshot(finishedMember)).toThrow(/must have been removed/);
-
-    // …while learning/relearning independent cards are legal mid-session.
-    const midSession = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    midSession.relearnSession!.cards["hsk-1:word-1"] = {
-      card: { ...midSession.relearnSession!.cards["hsk-1:word-1"]!.card, state: "learning", reps: 1, stability: 3, difficulty: 5, lastReview: "2024-12-29T00:00:00.000Z" },
-      reviews: 1,
-    };
-    expect(() => parseSaveSnapshot(midSession)).not.toThrow();
-
-    const badFormat = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    badFormat.relearnSession!.wordKeys = ["noseparator"];
-    badFormat.relearnSession!.cards = {};
-    expect(() => parseSaveSnapshot(badFormat)).toThrow(/<deckId>:<wordId>/);
-
-    // Independent cards follow the same memory-shape rules but are never
-    // compared against the member's main Learn card.
-    const ratedIndependently = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    ratedIndependently.relearnSession!.cards["hsk-1:word-1"] = {
-      card: {
-        state: "learning", due: "2025-01-01T10:00:00.000Z", stability: 0.5, difficulty: 6,
-        elapsedDays: 0, scheduledDays: 0.01, learningSteps: 1, reps: 1, lapses: 0,
-        lastReview: "2025-01-01T00:00:00.000Z",
-      },
-      reviews: 1,
-    };
-    expect(() => parseSaveSnapshot(ratedIndependently)).not.toThrow();
-
-    const ratedWithoutCounter = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    ratedWithoutCounter.relearnSession!.cards["hsk-1:word-1"]!.card = {
-      ...ratedWithoutCounter.relearnSession!.cards["hsk-1:word-1"]!.card,
-      state: "learning", reps: 1, lastReview: "2025-01-01T00:00:00.000Z",
-    };
-    expect(() => parseSaveSnapshot(ratedWithoutCounter)).toThrow(/at least one rating/);
-
-    const newCardWithReviews = makeSnapshotWithRelearn(["hsk-1:word-1"]);
-    newCardWithReviews.relearnSession!.cards["hsk-1:word-1"]!.reviews = 2;
-    expect(() => parseSaveSnapshot(newCardWithReviews)).toThrow(/cannot have reviews/);
+  it("never stamps time_mastered below 100", async () => {
+    const { repository, fixture } = await makeRepository({ now: fixedClock("2026-09-09T02:00:00.000Z") });
+    repository.openBattle();
+    const row = repository.applyOutcome(fixture.cardIds[1]!, true)!.row;
+    expect(row.mastery).toBe(10);
+    expect(row.timeMastered).toBeNull();
+    repository.close();
   });
 
-  it("enforces acquired_words coherence", () => {
-    const snapshot = makeSnapshotWithWord("word-1");
-    snapshot.levels["hsk-1"]!.words["word-1"]!.card = {
-      state: "review", due: "2025-01-01T00:00:00.000Z", stability: 3, difficulty: 5,
-      elapsedDays: 0, scheduledDays: 3, learningSteps: 0, reps: 2, lapses: 0,
-      lastReview: "2024-12-29T00:00:00.000Z",
-    };
-    snapshot.levels["hsk-1"]!.words["word-1"]!.learnReviews = 1;
-    snapshot.acquiredWords = ["hsk-1:word-1"];
-    expect(() => parseSaveSnapshot(snapshot)).not.toThrow();
+  it("returns null for a card that is not in the vocab pool", async () => {
+    const { repository, fixture } = await makeRepository({ curriculumCount: 8 });
+    repository.openBattle();
+    expect(repository.applyOutcome(fixture.cardIds[7]!, true)).toBeNull(); // exists in curriculum, unseen
+    expect(repository.applyOutcome("ffffffffffffffffffffffff", true)).toBeNull(); // not in curriculum
+    repository.close();
+  });
+});
 
-    const duplicate = makeSnapshotWithWord("word-1");
-    duplicate.acquiredWords = ["hsk-1:word-1", "hsk-1:word-1"];
-    expect(() => parseSaveSnapshot(duplicate)).toThrow(/duplicate/);
+describe("BattleSaveRepository learning-slot refill", () => {
+  it("refills strictly in curriculum order when a slot graduates past lowMax", async () => {
+    const { repository, fixture } = await makeRepository({
+      curriculumCount: 8,
+      now: fixedClock("2026-09-09T02:00:00.000Z"),
+    });
+    repository.openBattle();
+    const cardId = fixture.cardIds[2]!;
 
-    const badKey = makeSnapshot();
-    badKey.acquiredWords = ["not-a-key"];
-    expect(() => parseSaveSnapshot(badKey)).toThrow(/deckId/);
+    // 0 -> 10 -> 20 -> 30 -> 40 -> 50: still low, no refill.
+    for (let index = 0; index < 5; index += 1) {
+      expect(repository.applyOutcome(cardId, true)!.addedRows).toEqual([]);
+    }
+    // 50 -> 60: graduates, position 6 is appended.
+    const graduated = repository.applyOutcome(cardId, true)!;
+    expect(graduated.addedRows.map((row) => row.id)).toEqual([6]);
+    expect(graduated.addedRows[0]!.cardId).toBe(fixture.cardIds[5]!);
+    expect(graduated.addedRows[0]!.mastery).toBe(0);
+    expect(graduated.addedRows[0]!.timeMastered).toBeNull();
 
-    const unearned = makeSnapshotWithWord("word-1"); // card is still new
-    unearned.acquiredWords = ["hsk-1:word-1"];
-    expect(() => parseSaveSnapshot(unearned)).toThrow(/review or relearning/);
+    // A second graduation appends position 7, never reordering.
+    const cardId2 = fixture.cardIds[0]!;
+    for (let index = 0; index < 6; index += 1) repository.applyOutcome(cardId2, true);
+    const state = repository.getState();
+    expect(state.vocab.map((row) => row.id)).toEqual([1, 2, 3, 4, 5, 6, 7]);
+    repository.close();
   });
 
-  it("starts fresh on an old schema instead of migrating it", async () => {
-    const directory = await temporaryDirectory();
-    const repository = new SaveRepository({ directory, now: clock("2025-06-01T00:00:00.000Z") });
-    await repository.initialize();
-    await writeFile(join(directory, "default.json"), JSON.stringify({
-      schemaVersion: 3, profileId: "default", revision: 4, savedAt: "2025-05-01T00:00:00.000Z",
-      settings: { spawnIntervalMs: 5000, enemySpeedMultiplier: 0.9, levelSize: 20, masterVolume: 0.8, reducedMotion: false },
-      spawnOrdinal: 2,
-      schedulerRng: [1, 2, 3, 4],
-      levels: {},
-      lifetime: { score: 0, resolvedEnemies: 0, completeCorrect: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0, bestStreak: 0, totalThinkingMs: 0 },
-    }));
-    const loaded = await repository.load();
-    expect(loaded.firstRun).toBe(true);
-    expect(loaded.save.revision).toBe(0);
-    // Old data is neither migrated nor preserved in copy files.
-    expect(await readdir(directory)).toEqual(["default.json"]);
+  it("a miss on a low word never refills", async () => {
+    const { repository, fixture } = await makeRepository({ curriculumCount: 8 });
+    repository.openBattle();
+    const outcome = repository.applyOutcome(fixture.cardIds[4]!, false)!;
+    expect(outcome.row.mastery).toBe(0);
+    expect(outcome.addedRows).toEqual([]);
+    repository.close();
   });
 
-  it("rejects scheduler states that domain constructors cannot use", () => {
-    const zeroRng = makeSnapshot();
-    zeroRng.schedulerRng = [0, 0, 0, 0];
-    expect(() => parseSaveSnapshot(zeroRng)).toThrow(/must not be all zero/);
-
-    const invalidCard = makeSnapshotWithWord();
-    invalidCard.levels["hsk-1"]!.words["word-1"]!.card = {
-      ...invalidCard.levels["hsk-1"]!.words["word-1"]!.card,
-      state: "review",
-      reps: 3,
-      stability: 3,
-      difficulty: 0,
-      lastReview: "2024-12-29T00:00:00.000Z",
-    };
-    expect(() => parseSaveSnapshot(invalidCard)).toThrow(/difficulty of at least 1/);
-
-    const reversedDates = makeSnapshotWithWord();
-    reversedDates.levels["hsk-1"]!.words["word-1"]!.card = {
-      ...reversedDates.levels["hsk-1"]!.words["word-1"]!.card,
-      state: "review",
-      reps: 3,
-      stability: 3,
-      difficulty: 5,
-      due: "2025-01-01T00:00:00.000Z",
-      lastReview: "2099-01-01T00:00:00.000Z",
-    };
-    expect(() => parseSaveSnapshot(reversedDates)).toThrow(/must not precede/);
+  it("consecutive graduations append the next unseen positions one at a time", async () => {
+    const { repository, fixture } = await makeRepository({ curriculumCount: 8, battleConfig: fastGraduationConfig });
+    repository.openBattle();
+    const first = repository.applyOutcome(fixture.cardIds[4]!, true)!;
+    expect(first.addedRows.map((row) => row.id)).toEqual([6]);
+    const second = repository.applyOutcome(fixture.cardIds[0]!, true)!;
+    expect(second.addedRows.map((row) => row.id)).toEqual([7]);
+    repository.close();
   });
 
-  it("rejects unknown current word IDs when a generated manifest is available", () => {
-    const catalog: DeckCatalog = new Map([
-      ["hsk-1", { fingerprint: "fixture-fingerprint", wordIds: new Set(["known"]) }],
-    ]);
-    expect(() => parseSaveSnapshot(makeSnapshotWithWord("unknown"), catalog)).toThrow(/not present/);
-    expect(() => parseSaveSnapshot(makeSnapshotWithWord("known"), catalog)).not.toThrow();
+  it("stops refilling when the curriculum is exhausted", async () => {
+    const { repository, fixture } = await makeRepository({ curriculumCount: 6, battleConfig: fastGraduationConfig });
+    repository.openBattle(); // seeds 1..5, one unseen remains
+    expect(repository.applyOutcome(fixture.cardIds[0]!, true)!.addedRows.map((row) => row.id)).toEqual([6]);
+    // Curriculum exhausted: graduating more slots appends nothing, never throws.
+    for (const index of [1, 2, 3, 4]) {
+      const outcome = repository.applyOutcome(fixture.cardIds[index]!, true)!;
+      expect(outcome.addedRows).toEqual([]);
+    }
+    const state = repository.getState();
+    expect(state.vocab).toHaveLength(6);
+    repository.close();
   });
 
-  it("roundtrips review-mode settings and rejects unknown modes", () => {
-    const selection = makeSnapshot();
-    selection.settings = { ...selection.settings, desktopReviewMode: "selection", mobileReviewMode: "selection" };
-    expect(parseSaveSnapshot(selection).settings.desktopReviewMode).toBe("selection");
-    const junk = makeSnapshot();
-    junk.settings = { ...junk.settings, mobileReviewMode: "voice" as unknown as "selection" };
-    expect(() => parseSaveSnapshot(junk)).toThrow();
-  });
+  it("a decayed pool word keeps the vocab coherent without extra seeding", async () => {
+    const { repository, directory, savePath, fixture } = await makeRepository({ curriculumCount: 8, battleConfig: fastGraduationConfig });
+    repository.openBattle();
+    repository.applyOutcome(fixture.cardIds[0]!, true); // graduates -> refill appends 6
+    repository.close();
 
-  it("loads an old deck fingerprint for reconciliation", async () => {
-    const directory = await temporaryDirectory();
-    const oldSnapshot = makeSnapshotWithWord("removed-word");
-    const persisted = {
-      ...oldSnapshot,
-      revision: 3,
-      savedAt: "2025-01-01T00:00:00.000Z",
-    };
-    await writeFile(join(directory, "default.json"), JSON.stringify(persisted));
-    const catalog: DeckCatalog = new Map([
-      ["hsk-1", { fingerprint: "new-fingerprint", wordIds: new Set(["new-word"]) }],
-    ]);
-    const repository = new SaveRepository({ directory, catalog });
-    await repository.initialize();
+    // A developed word decays back into the low range: now six low rows exist,
+    // more than the five learning slots. No refill may fire (nothing missing).
+    const db = new Database(savePath);
+    db.prepare("UPDATE vocab SET mastery = 45 WHERE id = 1").run();
+    db.close();
 
-    expect((await repository.load()).save.levels["hsk-1"]?.words).toHaveProperty("removed-word");
-    await expect(repository.save(3, oldSnapshot)).rejects.toThrow(/not present/);
-  });
-
-  it("rejects unknown keys instead of silently stripping them", () => {
-    expect(() => parseSaveSnapshot({ ...makeSnapshot(), surprise: true })).toThrow();
+    const resumed = new BattleSaveRepository({
+      directory,
+      curriculum: Curriculum.load(fixture.path),
+      battleConfig: fastGraduationConfig,
+    });
+    const opened = resumed.openBattle();
+    expect(opened.addedRows).toEqual([]);
+    expect(opened.vocab).toHaveLength(6);
+    resumed.close();
   });
 });

@@ -1,19 +1,26 @@
 import { describe, expect, it } from "vitest";
 import { createDemoDeck } from "../../src/client/data/demoDeck";
-import { createReviewDeck } from "../../src/client/data/reviewDeck";
+import { createBattleDeck } from "../../src/client/data/battleDeck";
 import type { SaveFile } from "../../src/shared/schemas";
-import { DEFAULT_SETTINGS, REVIEW_REPAIR_DELAY_SPAWNS } from "../../src/shared/constants";
+import { DEFAULT_SETTINGS } from "../../src/shared/constants";
+import type { VocabRow } from "../../src/shared/battle";
+import { applyMasteryOutcome, battlePools, selectBattleSpawn } from "../../src/domain/battle";
 import { createLevelProgress, type LearningDeck } from "../../src/domain/learning";
 import { applyLearnRating, createLearnSession, nextLearnCardId } from "../../src/domain/learn";
-import { applyRelearnRating, createRelearnSession, nextRelearnKey } from "../../src/domain/relearn";
-import {
-  applyReviewOutcome, buildReviewPlanFromSnapshot, createReviewSession as createSpawnSession,
-  decideReviewSpawn, reserveReviewSpawn, reviewWordKey,
-} from "../../src/domain/review";
+import { reviewWordKey } from "../../src/domain/review";
 import { generateChoices } from "../../src/domain/session/choices";
-import { randomStateFromSeed } from "../../src/domain/random";
+import { randomStateFromSeed, Xoshiro128StarStar } from "../../src/domain/random";
 
 const NOW = new Date("2026-01-01T00:00:00Z");
+/** The approved tuning, inlined as a fixture (runtime tuning lives only in
+ * config/battle.yaml served by the server). */
+const CONFIG = {
+  learningSlots: 5,
+  boundaries: { lowMax: 50, developingMax: 99 },
+  masteryDelta: 10,
+  curve: { midpoint: 5, shape: 1.3 },
+  asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 },
+};
 
 function baseSave(deckOfSave: LearningDeck): SaveFile {
   return {
@@ -27,6 +34,38 @@ function baseSave(deckOfSave: LearningDeck): SaveFile {
     relearnSession: null,
     lifetime: { score: 0, resolvedEnemies: 0, completeCorrect: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0, bestStreak: 0, totalThinkingMs: 0 },
   };
+}
+
+/** Pure mirror of the approved server outcome contract, driving the client
+ * pipeline end to end: mastery delta with clamp, time_mastered set once at
+ * 100 and never cleared, and the ordered learning-slot refill (append the
+ * next unseen curriculum entry whenever fewer than `learningSlots` low rows
+ * remain). Curriculum ids arrive as the deck's flattened word order. */
+function simulateServerOutcome(
+  vocab: readonly VocabRow[],
+  curriculumIds: readonly string[],
+  cardId: string,
+  cleanCorrect: boolean,
+): { vocab: VocabRow[]; row: VocabRow; addedRows: VocabRow[] } {
+  const rows = vocab.map((row) => ({ ...row }));
+  const target = rows.find((row) => row.cardId === cardId)!;
+  target.mastery = applyMasteryOutcome(target.mastery, cleanCorrect, CONFIG);
+  if (target.mastery === 100 && target.timeMastered === null) {
+    target.timeMastered = NOW.toISOString();
+  }
+
+  const addedRows: VocabRow[] = [];
+  const lowCount = () => rows.filter((row) => row.mastery <= CONFIG.boundaries.lowMax).length;
+  const nextId = () => Math.max(0, ...rows.map((row) => row.id)) + 1;
+  while (lowCount() < CONFIG.learningSlots) {
+    const id = nextId();
+    const unseen = curriculumIds.find((candidate) => !rows.some((row) => row.cardId === candidate));
+    if (unseen === undefined) break;
+    const added: VocabRow = { id, cardId: unseen, mastery: 0, timeAdded: NOW.toISOString(), timeMastered: null };
+    rows.push(added);
+    addedRows.push(added);
+  }
+  return { vocab: rows.sort((left, right) => left.id - right.id), row: target, addedRows };
 }
 
 describe("playable runtime slice", () => {
@@ -75,80 +114,85 @@ describe("playable runtime slice", () => {
     expect(applied.save.acquiredWords).toEqual([reviewWordKey("hsk-1", wordId)]);
   });
 
-  it("runs the acquired_words review pipeline: plan → battle reducer → relearn → move-to-front", () => {
+  it("runs the battle pipeline: seed → live selection → outcomes → ordered refill", () => {
     const deckOfSave = createDemoDeck("hsk-1");
-    let save = baseSave(deckOfSave);
+    const curriculumIds = deckOfSave.curriculum.lessons.flatMap((lesson) => lesson.wordIds);
 
-    // 1. Learn and acquire the 20-word minimum (Easy ratings graduate immediately).
-    const created = createLearnSession(deckOfSave, save.levels["hsk-1"]!, NOW, { newCardLimit: 20, spawnOrdinal: 0 });
-    save = { ...save, levels: { ...save.levels, "hsk-1": created.level }, learnSessions: { ...save.learnSessions, "hsk-1": created.session } };
-    let ordinal = save.spawnOrdinal;
-    for (const wordId of created.session.wordIds) {
-      save = applyLearnRating(save, "hsk-1", wordId, "easy", NOW).save;
-      ordinal += 1;
+    // 1. First launch: the server seeds curriculum positions 1..5 at mastery 0.
+    let vocab: VocabRow[] = curriculumIds.slice(0, 5).map((cardId, index) => ({
+      id: index + 1, cardId, mastery: 0, timeAdded: NOW.toISOString(), timeMastered: null,
+    }));
+    const battleDeck = createBattleDeck(new Map([["hsk-1", deckOfSave as never]]));
+
+    // 2. Live selection from a fresh save: n = 0, so every spawn is a low
+    //    seed; the merged corpus deck resolves every vocab card id.
+    const rng = new Xoshiro128StarStar(randomStateFromSeed("battle-runtime"));
+    const pools = battlePools(vocab, CONFIG);
+    expect(pools.low.map((row) => row.cardId)).toEqual(curriculumIds.slice(0, 5));
+    for (let draw = 0; draw < 50; draw += 1) {
+      const selection = selectBattleSpawn(vocab, CONFIG, rng, new Set());
+      expect(selection!.category).toBe("low");
+      expect(curriculumIds.slice(0, 5)).toContain(selection!.row.cardId);
+      expect(battleDeck.deck.words.some((word) => word.id === selection!.row.cardId)).toBe(true);
     }
-    expect(save.acquiredWords).toHaveLength(20);
-    expect(save.learnSessions["hsk-1"]).toBeNull();
 
-    // 2. The review deck presents exactly the acquired log — regardless of
-    //    any later main-card state change.
-    const merged = createReviewDeck(new Map([["hsk-1", deckOfSave as never]]), save.acquiredWords);
-    expect(merged.deck.words.map((word) => word.id)).toEqual(save.acquiredWords);
+    // Deterministic under the injected seed: the same state replays the
+    // same stream.
+    const stateSnapshot = rng.state();
+    const first = Array.from({ length: 20 }, () => selectBattleSpawn(vocab, CONFIG, rng, new Set())!.row.cardId);
+    const replay = new Xoshiro128StarStar(stateSnapshot);
+    const second = Array.from({ length: 20 }, () => selectBattleSpawn(vocab, CONFIG, replay, new Set())!.row.cardId);
+    expect(first).toEqual(second);
 
-    // 3. At the minimum pool size, the base plan scales to 20/100 of the
-    // configured target and consumes the RNG. Four words are New (twice
-    // guaranteed); the other 16 are Recent (once guaranteed + filler).
-    const before = save.schedulerRng;
-    const plan = buildReviewPlanFromSnapshot(save.acquiredWords, save.settings.reviewSessionLength, { spawnOrdinal: ordinal, schedulerRng: save.schedulerRng });
-    expect(plan.spawns).toHaveLength(DEFAULT_SETTINGS.reviewSessionLength * 20 / 100);
-    expect(plan.snapshot.schedulerRng).not.toEqual(before);
-    for (let rank = 0; rank < save.acquiredWords.length; rank += 1) {
-      const minimumOccurrences = rank < 4 ? 2 : 1;
-      expect(plan.spawns.filter((spawn) => spawn === save.acquiredWords[rank]).length).toBeGreaterThanOrEqual(minimumOccurrences);
+    // 3. Exclusions: while all five seeds are active nothing may spawn; four
+    //    active leaves exactly the idle one.
+    const allActive = new Set(vocab.map((row) => row.cardId));
+    expect(selectBattleSpawn(vocab, CONFIG, rng, allActive)).toBeNull();
+    const fourActive = new Set(vocab.slice(0, 4).map((row) => row.cardId));
+    expect(selectBattleSpawn(vocab, CONFIG, rng, fourActive)!.row.cardId).toBe(vocab[4]!.cardId);
+
+    // 4. Ten clean corrects graduate the first seed; each graduation beyond
+    //    the low boundary refills the slot with the NEXT unseen curriculum
+    //    entry in strict order (positions 6, 7, ...).
+    const seedCard = vocab[0]!.cardId;
+    for (let step = 0; step < 10; step += 1) {
+      const result = simulateServerOutcome(vocab, curriculumIds, seedCard, true);
+      vocab = result.vocab;
+      // The client's optimistic mirror always agrees with the server row.
+      expect(result.row.mastery).toBe(applyMasteryOutcome(step * 10, true, CONFIG));
     }
-    expect(new Set(plan.spawns)).toEqual(new Set(save.acquiredWords));
+    expect(vocab.find((row) => row.cardId === seedCard)!.mastery).toBe(100);
+    expect(vocab.find((row) => row.cardId === seedCard)!.timeMastered).toBe(NOW.toISOString());
+    // One refill: the graduated seed left four low rows, so position 6 joined.
+    expect(vocab.map((row) => row.cardId)).toEqual([seedCard, ...curriculumIds.slice(1, 6)]);
+    expect(vocab.filter((row) => row.mastery <= CONFIG.boundaries.lowMax)).toHaveLength(5);
 
-    // 4. Battle reducer: clean encounters throughout, then miss the FINAL
-    //    base spawn so the forced endgame retry must fire (an earlier miss
-    //    would typically be cleared by the word's own later base
-    //    occurrences, which is equally valid per the spec).
-    let battle = createSpawnSession(plan.spawns);
-    let resolved = 0;
-    const active = new Set<string>();
-    let missedKey: string | null = null;
-    while (true) {
-      const decision = decideReviewSpawn(battle, active);
-      if (decision.kind === "complete") break;
-      if (decision.kind !== "spawn") throw new Error("unexpected wait");
-      battle = reserveReviewSpawn(battle, decision);
-      resolved += 1;
-      const miss = resolved === plan.spawns.length; // miss exactly the last base spawn
-      if (miss) missedKey = decision.wordKey;
-      battle = applyReviewOutcome(battle, decision.wordKey, !miss).session;
+    // 5. With one mature row the weights shift: draws now include the
+    //    developing category (~10% mature at n = 1), never a benched row.
+    const idleSeeds = vocab.filter((row) => row.mastery === 0).map((row) => row.cardId);
+    const matureCard = seedCard;
+    let matureDraws = 0;
+    const drawCounts = new Map<string, number>();
+    for (let draw = 0; draw < 4000; draw += 1) {
+      const selection = selectBattleSpawn(vocab, CONFIG, rng, new Set())!;
+      drawCounts.set(selection.row.cardId, (drawCounts.get(selection.row.cardId) ?? 0) + 1);
+      if (selection.row.cardId === matureCard) matureDraws += 1;
     }
-    expect(missedKey).toBe(plan.spawns[plan.spawns.length - 1]);
-    expect(battle.cursor).toBe(plan.spawns.length);
-    expect(battle.obligations.size).toBe(0);
-    // Exactly one additive retry beyond the slider target: the forced repair.
-    expect(battle.repairsServed).toBe(1);
-    expect(resolved).toBe(plan.spawns.length + 1);
-    expect(REVIEW_REPAIR_DELAY_SPAWNS).toBe(10);
+    expect(matureDraws / 4000).toBeGreaterThan(0.06);
+    expect(matureDraws / 4000).toBeLessThan(0.14);
+    for (const cardId of drawCounts.keys()) {
+      expect([...idleSeeds, matureCard]).toContain(cardId);
+    }
 
-    // 5. Relearn the missed word: independent card, then move-to-front.
-    save = { ...save, spawnOrdinal: plan.snapshot.spawnOrdinal, schedulerRng: plan.snapshot.schedulerRng };
-    save = { ...save, relearnSession: createRelearnSession([missedKey!], NOW) };
-    const next = nextRelearnKey(save.relearnSession!, NOW);
-    expect(next.status).toBe("card");
-    const applied = applyRelearnRating(save, missedKey!, "easy", NOW);
-    save = applied.save;
-    expect(applied.keyFinished).toBe(true);
-    expect(applied.sessionCompleted).toBe(true);
-    expect(save.relearnSession).toBeNull();
-    expect(save.acquiredWords[0]).toBe(missedKey); // moved to newest/front
-    expect(save.acquiredWords.filter((key) => key === missedKey)).toHaveLength(1); // exactly once
-    // The main Learn card never changed during review/relearn: it still has
-    // only the one original Learn rating.
-    const missedId = missedKey!.slice("hsk-1:".length);
-    expect(save.levels["hsk-1"]!.words[missedId]!.card.reps).toBe(1);
+    // 6. Misses decrement mastery and clamp at zero; time_mastered survives
+    //    a later miss (never cleared).
+    for (let step = 0; step < 12; step += 1) {
+      vocab = simulateServerOutcome(vocab, curriculumIds, matureCard, false).vocab;
+    }
+    const demoted = vocab.find((row) => row.cardId === matureCard)!;
+    expect(demoted.mastery).toBe(0);
+    expect(demoted.timeMastered).toBe(NOW.toISOString());
+    // Demoted back into the low category, it competes by id order again.
+    expect(battlePools(vocab, CONFIG).low.map((row) => row.cardId)).toContain(matureCard);
   });
 });

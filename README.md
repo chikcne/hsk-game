@@ -1,6 +1,6 @@
 # Ziduoduo (字多多)
 
-A local-first vocabulary game built from the six HSK Anki packages in `decks/`. Clicking an HSK grade launches **Learn Mode**: every currently due word of the grade plus a fresh batch of new curriculum words, presented one card at a time with pinyin, meaning, and audio while you write each character in PRC stroke order. Long-term memory runs on FSRS (via `ts-fsrs`) with **one card per word** and four explicit self-ratings — Again, Hard, Good, Easy — each showing the interval it will produce before you commit. Graduated words feed the cross-grade **Review arcade** and the independent **Re-Learn workflow**.
+A local-first vocabulary game built from the six HSK Anki packages. **Battle Mode is the main game mode**: an endless, cross-grade arcade battle against descending words. Every enemy is drawn live from your vocabulary's mastery categories — answer the pinyin, choose the meaning, and climb from brand-new words toward mastery. The Writing/Learn workflow (FSRS self-ratings with stroke-order writing) remains implemented internally but is disabled in the UI; the Re-Learn workflow is hidden.
 
 ## Run
 
@@ -10,7 +10,7 @@ npm run import:decks   # one-time; compiles the source APKGs and local audio
 npm run dev            # http://100.65.64.80:5757
 ```
 
-The client includes a small bundled training deck so it remains playable while generated deck data is unavailable. Imported data takes precedence automatically.
+Battle Mode requires the generated deck data (`npm run import:decks`) and a reachable save server — there is no bundled demo fallback and no offline progress.
 
 Production:
 
@@ -19,52 +19,47 @@ npm run build
 npm start              # http://100.65.64.80:5757
 ```
 
-Progress is written atomically to the gitignored `saves/default.json` after every rating. If the local API is unavailable, the browser keeps an emergency retry copy and clearly marks the save state `OFFLINE`.
+## Saves
 
-## Learn Mode
+Progress lives in a server-side SQLite database at the gitignored `saves/default.sql`: a `vocab` table (one row per encountered card — global curriculum position, card id, mastery 0..100, time added, time mastered) and a separate settings key/value table. The browser talks to it exclusively through four endpoints:
 
-Each Learn session is created (or resumed exactly) when you click a grade:
+- `GET /api/saves/default` → `{ settings, vocab, battleConfig }`
+- `POST /api/saves/default/battle/open` → seeds curriculum positions 1..5 on first launch → `{ vocab, addedRows }`
+- `POST /api/saves/default/vocab/:cardId/outcome` body `{ cleanCorrect }` → `{ row, addedRows }`
+- `PUT /api/saves/default/settings` body `{ settings }` → settings
 
-1. it contains **every currently due introduced word** of that grade plus **up to "new cards per session" brand-new curriculum words** (a 5–20 settings slider), drawn only from the current authored 20-card lesson;
-2. every card shows pinyin and meaning, auto-plays its audio (replayable), and is completed by guided, forgiving stroke-order writing; on a word's very first presentation, each character loops its stroke-order demo until you start writing it, while later appearances offer **Show Demo** instead;
-3. after writing, the card shows the writing elapsed time and the four ratings with live next-interval previews; FSRS applies the chosen rating to the word's single card;
-4. a word leaves the session when its card reaches the FSRS review state — a lapsed repair recurs via **learn-ahead** (the earliest due remaining card is always served, even if not yet due) — and the session ends only when every word has passed. Words enter the ordered `acquired_words` table exactly once, the moment their card first reaches review.
+Each resolved battle encounter persists through the outcome endpoint immediately (per-card serialized, never blocking the animation); the returned authoritative row and any refill rows merge back into the in-memory vocabulary. There are no migrations or save compatibility paths — saves start fresh.
 
-Leaving mid-session keeps the session; clicking the grade resumes it.
+All battle tuning parameters (learning slots, category boundaries, mastery delta, Hill curve, asymptotic shares) live in `config/battle.yaml`, strictly validated at server startup and served to the client as `battleConfig`.
 
-## Controls (Learn Mode)
+## Battle Mode
 
-- **Tap / Enter** on the writing square — start writing (after a demo)
-- **1–4** or the buttons — rate Again / Hard / Good / Easy
-- **Replay audio button (♪)** — replay word audio
+The first title-screen column (focused by default) starts the battle; it is enabled from a completely fresh save — launching it seeds curriculum positions 1..5 at mastery 0 on the server.
 
-## Review Mode
+**Live endless draws.** There is no finite session plan and no forced repair queue. Every spawn is chosen at that moment from the vocabulary:
 
-The rightmost title-screen column opens the cross-grade Review arcade. It is enabled at **20 acquired words** (the column shows the acquired count, never a due count) and battles draw **solely from the ordered `acquired_words` log** — never from FSRS due dates or retrievability, and battle answers never mutate any main Learn card.
+- the **pool** is every vocab row with mastery > 50 plus exactly the five lowest-position rows with mastery ≤ 50;
+- categories are **low** (0..50), **developing** (51..99), and **mastered** (100);
+- with `n` = count of rows above 50, the Hill ratio `r = n^1.3 / (n^1.3 + 5^1.3)` sets the shares: low draws `1 − 0.9·r`, the remaining `0.9·r` splits developing:mastered as .50:.40, renormalizing over categories that are empty (n = 0 is 100% low; n ≈ 1 is ~10% mature; n ≈ 7 is ~55% mature);
+- the draw is uniform within the selected category and never picks a word that is already active or preparing.
 
-Each session gets a **deterministic, nonpersisted base plan** built once at session start from the persisted RNG. At 100+ acquired words, it uses exactly `settings.reviewSessionLength` spawns (integer slider, 200–500, default 200):
+**Mastery.** A clean correct answer (typed/selected pinyin, correct meaning, no reveal) gives **+10**; a wrong pinyin, wrong meaning, reveal, or landing gives **−10**, clamped to 0..100. When a learning-slot word graduates past 50, the server appends the next unseen curriculum entry (strictly in order) until five low rows remain. `time_mastered` is recorded the first time a word reaches 100 and never cleared. Current mastery/100 is the enemy's pressure input — fresh words descend gently, mastered words fall fast.
 
-- ranks 0–19 in the acquisition log (**New**, the 20 newest words) are served **exactly twice**;
-- ranks 20–99 (**Recent**) exactly once;
-- every remaining slot draws uniformly at random from rank 100+ (**Old**), with Recent then New as fallbacks. Quota and filler entries are shuffled together, so tiers interleave instead of arriving in blocks.
+**Sessions never auto-complete.** A battle runs until you end it from the pause dialog; the summary keeps score, accuracy, best streak, words served, and a most-reinforcement-needed ranking with mastery-category chips.
 
-For 20–99 acquired words, the New/Recent boundaries, recency pressure, and base session length all scale by `acquiredWords.length / 100`. For example, 50 acquired words produce 10 New + 40 Recent words and a default 100-spawn battle. Recency drives difficulty instead of FSRS: New words are gentlest, rising linearly to near-maximum pressure at the end of a smaller pool or maximum by rank 100 in a full pool. The global spawn-rate and word-speed settings and the live performance multiplier still apply on top.
-
-A **miss** is a wrong pinyin, a wrong meaning, a word reaching the ground, or a pinyin autocomplete/reveal — even if the meaning is then answered correctly. A missed word enters a delayed repair queue and re-enters the stream after 10 further base spawns; it remains an obligation until one later encounter is **clean** (typed pinyin, correct meaning, no reveal). Base occurrences can clear a repair. If obligations survive the base plan, retries are **additive beyond the slider target** and forced, so the session always ends: every base spawn resolved, no enemies left, all repairs cleared. The session is **not resumable** — leaving ends it (progress and RNG advances are checkpointed throughout).
-
-The summary ranks the most-missed words with wrong/miss counts and New/Recent/Old chips. Struggle rows are selectable (errors preselected) and **START RE-LEARNING (N)** hands the selection to the Re-Learn workflow; a perfect round simply omits it. **START NEW REVIEW** rebuilds a fresh plan; **RETURN TO GRADES** exits.
-
-## Re-Learn
-
-Struggling acquired words can be sent to the single cross-grade **Re-Learn session** (重学). It persists in the save, holds each selected word's **fresh, independent FSRS card** inside the session (ratings never copy back to the main Learn cards), and uses the same Learn/Writing UX: pinyin + meaning, immediate writing with an optional **Show Demo** control (never an automatic demo), elapsed writing time, four ratings with interval previews, and earliest-due learn-ahead. Progress saves after every rating, so exiting preserves exact state. Each word finishes the moment its independent card reaches the FSRS review state — its key is then **removed and prepended to `acquired_words`** (moved to newest/front) — and completing the session clears it. The title screen's dedicated Re-Learn column (between the grades and Review) resumes the active session and is visually and semantically disabled when none exists.
+A **miss** is a wrong pinyin, a wrong meaning, a word reaching the ground, or a pinyin autocomplete/reveal — even if the meaning is then answered correctly. A miss opens the blocking correction panel (word, pinyin, meaning, what you typed) exactly as before.
 
 ## Title screen navigation
 
-Nine columns: **Next Learn**, the six HSK grades (keyboard **1–6**), **Re-Learn**, **Review**. Arrow keys cycle, Home/End jump; disabled columns are focusable (so their state is discoverable) but refuse activation.
+Three columns: **Battle** (first, focused), **Writing** (disabled), **Glossary**. Arrow keys cycle, Home/End jump; the disabled Writing column is focusable (so its state is discoverable) but refuses activation.
+
+## Glossary
+
+The glossary loads the whole corpus as a mahjong table: vocabulary words are revealed tiles colored by mastery (with their global encounter number), everything else stays concealed. The drawer shows pinyin, definition, audio, and mastery.
 
 ## Settings
 
-Learn Mode's **new cards per session (5–20)**, Review Mode's **session length (base spawns, 200–500)**, base spawn rate and global word speed, volume, and reduced motion are adjustable. Learn follows the committed frequency-led curriculum in `cards/curriculum.json`; there is no per-profile shuffle, and lowering the setting simply splits one fixed lesson across multiple sessions. All memory parameters (FSRS weights, retention target, learning steps) are fixed constants in `src/domain/memory` so scheduling cannot drift from the science. During Review, a smoothed 0.70–1.50× performance multiplier increases pressure after fast correct answers and eases it after misses; answers are auto-graded for arcade score only.
+Battle pacing (base spawn rate, global word speed), the pinyin answer style per orientation (Typing/Selection for desktop and mobile), master volume, and reduced motion are adjustable. The obsolete Learn/session-length controls are hidden. During battle a smoothed 0.70–1.50× performance multiplier increases pressure after fast correct answers and eases it after misses; answers are auto-graded for arcade score only.
 
 ## Stroke-order data
 
@@ -87,6 +82,4 @@ npm test
 npm run build
 ```
 
-Generated deck/audio assets in `public/game-data/` and player progress in `saves/` are intentionally not committed. The trimmed, licensed stroke bundles in `public/stroke-data/` are committed so production and the demo fallback work without a generation step.
-
-Save schema v5 is a fresh start: older or corrupt saves fail validation and simply start over on the next save.
+Generated deck/audio assets in `public/game-data/` and player progress in `saves/` are intentionally not committed. The trimmed, licensed stroke bundles in `public/stroke-data/` are committed so production works without a generation step.

@@ -1,78 +1,88 @@
 import type { FastifyInstance, FastifyReply } from "fastify";
-import { Effect } from "effect";
-import { FsError, JsonParseError, normalizeError } from "../errors";
-import { FileSystem } from "../filesystem";
-import { runPromiseUnchecked } from "../runtime";
-import type { AtomicWriteError } from "../saves/atomic-writer";
-import type { DeckCatalog } from "../saves/manifests";
-import { RevisionConflictError, type SaveRepository } from "../saves/repository";
-import { parseSaveRequestEffect, SaveValidationError } from "../saves/validation";
+import { z } from "zod";
+import { SettingsSchema } from "../../shared/schemas";
+import type { BattleSaveRepository } from "../saves/repository";
 
 export type SaveRoutesOptions = {
-  repository: SaveRepository;
-  catalog?: DeckCatalog;
+  repository: BattleSaveRepository;
 };
 
-const setNoStore = (reply: FastifyReply): Effect.Effect<void, never, never> =>
-  Effect.sync(() => reply.header("cache-control", "no-store"));
+/** Curriculum card IDs are 24-character hex strings (see the ordered
+ * curriculum manifest and the generator's CurriculumEntrySchema). */
+const CARD_ID_PATTERN = /^[0-9a-f]{24}$/;
 
-const sendJson = (reply: FastifyReply, code: number, payload: unknown): Effect.Effect<void, never, never> =>
-  Effect.sync(() => reply.code(code).send(payload));
+/** POST /api/saves/default/vocab/:cardId/outcome body. */
+const OutcomeRequestSchema = z.object({
+  cleanCorrect: z.boolean(),
+}).strict();
 
-const decodeJsonBody = (body: string): Effect.Effect<unknown, JsonParseError, never> =>
-  Effect.try({ try: () => JSON.parse(body) as unknown, catch: (cause) => new JsonParseError({ cause: normalizeError(cause) }) });
+/** PUT /api/saves/default/settings body. */
+const SettingsRequestSchema = z.object({
+  settings: SettingsSchema.strict(),
+}).strict();
 
+const issueList = (error: z.ZodError): Array<{ path: (string | number)[]; message: string }> =>
+  error.issues.map((issue) => ({ path: issue.path, message: issue.message }));
+
+/**
+ * The four Battle save endpoints:
+ *
+ * - GET  /api/saves/default
+ *       -> { settings, vocab, battleConfig }
+ * - POST /api/saves/default/battle/open
+ *       -> { vocab, addedRows }  (atomically seeds/refills the learning slots)
+ * - POST /api/saves/default/vocab/:cardId/outcome  body { cleanCorrect }
+ *       -> { row, addedRows }    (atomic delta/clamp/time_mastered + refill)
+ * - PUT  /api/saves/default/settings  body { settings }
+ *       -> the validated, persisted settings
+ *
+ * The repository serializes every mutation through SQLite transactions, so
+ * these handlers only translate validation and lookup outcomes into status
+ * codes. Unexpected repository failures reject the handler and surface as
+ * Fastify 500s.
+ */
 export function registerSaveRoutes(app: FastifyInstance, options: SaveRoutesOptions): void {
-  const { repository, catalog } = options;
+  const { repository } = options;
 
-  const loadDefault = (reply: FastifyReply): Effect.Effect<void, FsError, FileSystem> =>
-    Effect.gen(function* () {
-      yield* setNoStore(reply);
-      const loaded = yield* repository.loadEffect();
-      yield* sendJson(reply, 200, loaded.save);
-    });
+  const noStore = (reply: FastifyReply): void => {
+    reply.header("cache-control", "no-store");
+  };
 
-  /** Expected failures map onto their API responses; unexpected failures
-   * (e.g. fs errors) reject the handler promise and become Fastify 500s. */
-  const save = (
-    body: unknown,
-    reply: FastifyReply,
-    beacon: boolean,
-  ): Effect.Effect<void, FsError | AtomicWriteError, FileSystem> =>
-    Effect.gen(function* () {
-      yield* setNoStore(reply);
-      const decoded = typeof body === "string" ? yield* decodeJsonBody(body) : body;
-      const request = yield* parseSaveRequestEffect(decoded, catalog);
-      const authoritative = yield* repository.saveEffect(request.expectedRevision, request.snapshot);
-      yield* sendJson(reply, beacon ? 202 : 200, {
-        revision: authoritative.revision,
-        savedAt: authoritative.savedAt,
-      });
-    }).pipe(
-      Effect.catchTags({
-        JsonParseError: () =>
-          sendJson(reply, 400, { error: "invalid_json", message: "Request body is not valid JSON" }),
-        SaveValidationError: (error) =>
-          sendJson(reply, 400, {
-            error: "invalid_save",
-            message: "The save request failed validation",
-            issues: error.cause.issues.map((issue) => ({ path: issue.path, message: issue.message })),
-          }),
-        RevisionConflictError: (error) =>
-          sendJson(reply, 409, {
-            error: "revision_conflict",
-            message: error.message,
-            current: error.current,
-          }),
-      }),
-    );
+  app.get("/api/saves/default", (_request, reply) => {
+    noStore(reply);
+    return repository.getState();
+  });
 
-  // Each Fastify handler is a thin Effect boundary; rejections surface the
-  // original error (no FiberFailure wrapper) for Fastify's error logger.
-  app.get("/api/saves/default", (_request, reply) =>
-    runPromiseUnchecked(loadDefault(reply).pipe(Effect.provide(FileSystem.layer))));
-  app.put("/api/saves/default", (request, reply) =>
-    runPromiseUnchecked(save(request.body, reply, false).pipe(Effect.provide(FileSystem.layer))));
-  app.post("/api/saves/default/beacon", (request, reply) =>
-    runPromiseUnchecked(save(request.body, reply, true).pipe(Effect.provide(FileSystem.layer))));
+  app.post("/api/saves/default/battle/open", (_request, reply) => {
+    noStore(reply);
+    return repository.openBattle();
+  });
+
+  app.post("/api/saves/default/vocab/:cardId/outcome", (request, reply) => {
+    noStore(reply);
+    const { cardId } = request.params as { cardId?: string };
+    if (typeof cardId !== "string" || !CARD_ID_PATTERN.test(cardId)) {
+      return reply.code(400).send({ error: "invalid_card_id", message: "cardId must be a 24-hex curriculum card ID" });
+    }
+    const parsed = OutcomeRequestSchema.safeParse(request.body);
+    if (!parsed.success) {
+      return reply.code(400).send({ error: "invalid_outcome", message: "body must be { cleanCorrect: boolean }", issues: issueList(parsed.error) });
+    }
+    const outcome = repository.applyOutcome(cardId, parsed.data.cleanCorrect);
+    if (outcome === null) {
+      return reply.code(404).send({ error: "unknown_card", message: `card ${cardId} is not in the vocab pool` });
+    }
+    return outcome;
+  });
+
+  app.put("/api/saves/default/settings", (request, reply) => {
+    noStore(reply);
+    const parsed = SettingsRequestSchema.safeParse(request.body);
+    if (!parsed.success) {
+      return reply.code(400).send({ error: "invalid_settings", message: "body must be { settings } with valid Battle settings", issues: issueList(parsed.error) });
+    }
+    // Input already validated; updateSettings re-parses defensively and only
+    // throws on database-level failures.
+    return repository.updateSettings(parsed.data.settings);
+  });
 }

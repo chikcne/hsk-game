@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { DeckId } from "../../src/shared/constants";
 import type { RuntimeDeck, RuntimeWord } from "../../src/shared/schemas";
-import { createReviewDeck } from "../../src/client/data/reviewDeck";
+import { createBattleDeck } from "../../src/client/data/battleDeck";
 import { curriculumFromWordIds } from "../../src/domain/learning";
 import { generateChoices, generateChoicesLenient, safeMeaningChoices } from "../../src/domain/session/choices";
 
@@ -11,13 +11,13 @@ import { generateChoices, generateChoicesLenient, safeMeaningChoices } from "../
 function sourceDeck(id: DeckId, wordCount = 4, fingerprint = `${id}-fp`): RuntimeDeck {
   const letterOffset = (Number(id.at(-1)) - 1) * 6;
   const words: RuntimeWord[] = Array.from({ length: wordCount }, (_, index) => ({
-    id: `word-${index}`,
+    id: `card-${id}-${String(index).padStart(2, "0")}`,
     sourceGuids: [],
     displayHanzi: `字${index}`,
     hanziKey: `zi${index}`,
     displayPinyin: `zì ${index}`,
     acceptedPinyin: [`zi ${index}`],
-    pinyinSegments: [[`zì`], [`${index}`]],
+    pinyinSegments: [["zì"], [`${index}`]],
     partOfSpeech: null,
     partOfSpeechKey: index % 2 === 0 ? "verb" : null,
     senseLabel: null,
@@ -44,19 +44,24 @@ function sourceDeck(id: DeckId, wordCount = 4, fingerprint = `${id}-fp`): Runtim
   };
 }
 
-describe("createReviewDeck distractor pools", () => {
-  it("keeps deck.words restricted to the selected keys but merges ALL source meaning pools namespaced", () => {
+describe("createBattleDeck corpus membership", () => {
+  it("merges every source deck's words under their card ids with namespaced pools", () => {
     const hsk1 = sourceDeck("hsk-1", 4);
     const hsk2 = sourceDeck("hsk-2", 4);
     const decks = new Map<DeckId, RuntimeDeck>([["hsk-1", hsk1], ["hsk-2", hsk2]]);
 
-    const { deck } = createReviewDeck(decks, ["hsk-1:word-0"]);
+    const { deck } = createBattleDeck(decks);
 
-    // Only the acquired member spawns…
-    expect(deck.words.map((word) => word.id)).toEqual(["hsk-1:word-0"]);
-    // …but distractors draw from every loaded source deck, namespaced.
+    // Full corpus membership: card ids stay raw (vocab `card_id` maps 1:1)…
+    expect(deck.words.map((word) => word.id)).toEqual([
+      ...hsk1.words.map((word) => word.id),
+      ...hsk2.words.map((word) => word.id),
+    ]);
+    expect(deck.source.sourceNoteCount).toBe(8);
+    expect(deck.source.logicalWordCount).toBe(8);
+    // …but distractor pools draw from every loaded source deck, namespaced.
     expect(deck.allMeaningKeys).toHaveLength(8);
-    for (const deckId of ["hsk-1", "hsk-2"]) {
+    for (const deckId of ["hsk-1", "hsk-2"] as const) {
       for (const meaningKey of hsk1.allMeaningKeys) {
         expect(deck.allMeaningKeys).toContain(`${deckId}:${meaningKey}`);
       }
@@ -65,16 +70,41 @@ describe("createReviewDeck distractor pools", () => {
     expect(deck.meaningIndex["hsk-2:meaning-2"]?.hanziKeys).toEqual(["hsk-2:zi2"]);
     expect(deck.meaningKeysByPartOfSpeech["hsk-1:verb"]).toEqual(["hsk-1:meaning-0", "hsk-1:meaning-2"]);
     expect(deck.meaningKeysByPartOfSpeech["hsk-2:verb"]).toEqual(["hsk-2:meaning-0", "hsk-2:meaning-2"]);
-    // The member word itself is namespaced consistently with the pools.
+    // A member word's own keys are namespaced consistently with the pools.
     expect(deck.words[0]!.meaningKey).toBe("hsk-1:meaning-0");
     expect(deck.words[0]!.hanziKey).toBe("hsk-1:zi0");
+    // The runtime curriculum covers every word exactly once, in corpus order.
+    const curriculumIds = deck.curriculum.lessons.flatMap((lesson) => lesson.wordIds);
+    expect(curriculumIds).toEqual(deck.words.map((word) => word.id));
   });
 
-  it("lets a ONE-WORD acquired pool pass full choice generation without throwing", () => {
+  it("collapses a duplicate card id to its earliest deck (curriculum rule)", () => {
+    const hsk1 = sourceDeck("hsk-1", 2);
+    const later = sourceDeck("hsk-2", 2);
+    // hsk-2 re-ships hsk-1's first card under its own meaning keys.
+    const duplicated: RuntimeWord = { ...hsk1.words[0]!, meaning: "duplicate meaning", meaningKey: "dup" };
+    later.words = [duplicated, ...later.words.slice(1)];
+    const decks = new Map<DeckId, RuntimeDeck>([["hsk-1", hsk1], ["hsk-2", later]]);
+
+    const { deck } = createBattleDeck(decks);
+
+    const occurrences = deck.words.filter((word) => word.id === hsk1.words[0]!.id);
+    expect(occurrences).toHaveLength(1);
+    expect(occurrences[0]!.meaning).toBe(hsk1.words[0]!.meaning);
+    expect(occurrences[0]!.meaningKey).toBe(`hsk-1:${hsk1.words[0]!.meaningKey}`);
+  });
+
+  it("resolves per-deck relative audio URLs against the owning grade", () => {
+    const hsk1 = sourceDeck("hsk-1", 1);
+    hsk1.words[0]!.audioUrl = "audio/word.mp3";
+    const { deck } = createBattleDeck(new Map([["hsk-1", hsk1]]));
+    expect(deck.words[0]!.audioUrl).toBe("/game-data/hsk-1/audio/word.mp3");
+  });
+
+  it("feeds full choice generation from the merged pools", () => {
     const hsk1 = sourceDeck("hsk-1", 6);
     const hsk2 = sourceDeck("hsk-2", 6);
-    const decks = new Map<DeckId, RuntimeDeck>([["hsk-1", hsk1], ["hsk-2", hsk2]]);
-    const { deck } = createReviewDeck(decks, ["hsk-1:word-0"]);
+    const { deck } = createBattleDeck(new Map<DeckId, RuntimeDeck>([["hsk-1", hsk1], ["hsk-2", hsk2]]));
     const word = deck.words[0]!;
 
     const choices = generateChoices(deck, word, "seed");
@@ -83,19 +113,12 @@ describe("createReviewDeck distractor pools", () => {
     const keys = choices.flatMap((choice) => choice.shortcuts.map((shortcut) => shortcut.key));
     expect(new Set(keys).size).toBe(keys.length); // unique shortcut keys
 
-    // Same merge also feeds a single-deck map (relearn of one grade): the
-    // pool there is smaller, so the LENIENT path supplies the choices.
-    const single = createReviewDeck(new Map([["hsk-1", hsk1]]), ["hsk-1:word-1"]).deck;
-    const singleChoices = safeMeaningChoices(single, single.words[0]!, "seed");
+    // A single-deck map has a smaller pool: the LENIENT path still supplies
+    // the correct choice for every word.
+    const single = createBattleDeck(new Map([["hsk-1", hsk1]])).deck;
+    const singleChoices = safeMeaningChoices(single, single.words[1]!, "seed");
     expect(singleChoices.length).toBeGreaterThanOrEqual(1);
     expect(singleChoices.some((choice) => choice.correct)).toBe(true);
-  });
-
-  it("skips missing words but still merges their source pools", () => {
-    const hsk1 = sourceDeck("hsk-1", 3);
-    const { deck } = createReviewDeck(new Map([["hsk-1", hsk1]]), ["hsk-1:word-0", "hsk-1:gone"]);
-    expect(deck.words.map((word) => word.id)).toEqual(["hsk-1:word-0"]);
-    expect(deck.allMeaningKeys).toHaveLength(3);
   });
 });
 
@@ -104,7 +127,7 @@ describe("defensive choice generation", () => {
     // Two words whose meanings collide on the same shortcut key: the strict
     // generator throws, the lenient one returns what it can, correct first.
     const tiny = sourceDeck("hsk-1", 2);
-    const tinyDeck = createReviewDeck(new Map([["hsk-1", tiny]]), ["hsk-1:word-0"]).deck;
+    const tinyDeck = createBattleDeck(new Map([["hsk-1", tiny]])).deck;
     expect(() => generateChoices(tinyDeck, tinyDeck.words[0]!, "seed")).toThrow(/Not enough meanings/);
     const choices = generateChoicesLenient(tinyDeck, tinyDeck.words[0]!, "seed");
     expect(choices.length).toBeGreaterThanOrEqual(1);
@@ -115,7 +138,7 @@ describe("defensive choice generation", () => {
 
   it("safeMeaningChoices NEVER throws and always includes exactly one correct choice", () => {
     const hsk1 = sourceDeck("hsk-1", 5);
-    const deck = createReviewDeck(new Map([["hsk-1", hsk1]]), ["hsk-1:word-0"]).deck;
+    const deck = createBattleDeck(new Map([["hsk-1", hsk1]])).deck;
     for (const word of deck.words) {
       const choices = safeMeaningChoices(deck, word, "seed");
       expect(choices.length).toBeGreaterThanOrEqual(1);

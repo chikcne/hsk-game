@@ -1,10 +1,12 @@
 # Ziduoduo — main execution plan
 
-**Status:** architecture and implementation plan, ready to split into focused agent tasks  
+**Status:** Battle Mode is the active implementation; retired Learn/Review planning remains below only as historical context
 **Product:** Ziduoduo (字多多) — a local-first TypeScript web game that turns HSK vocabulary into descending words  
 **Source decks:** the six `.apkg` files in [`../decks/`](../decks/README.md)
 
-This document is the implementation authority. Supporting details live in:
+The Battle status blocks and runtime topology describe the active contract.
+Unmarked Learn/Review release-planning details below are retired historical
+context and are not implementation authority. Supporting details live in:
 
 - [`GAMEPLAY.md`](GAMEPLAY.md) — encounter rules, multi-enemy targeting, scoring, and settings
 - [`DATA_PIPELINE.md`](DATA_PIPELINE.md) — Anki import, normalization, indexes, audio, and source audit
@@ -16,6 +18,21 @@ This document is the implementation authority. Supporting details live in:
 ## 1. Product contract
 
 ### Core loop
+
+> **Status update (battle-first rework):** steps 1–8 below describe the
+> retired Learn-first flow. The implemented primary flow is: the title
+> screen offers **Battle Mode first** (enabled at zero vocabulary; the first
+> launch seeds curriculum positions 1..5 at mastery 0), an **endless
+> battle** whose every spawn is a live weighted draw from the vocabulary's
+> mastery categories (Hill curve `r = n^1.3/(n^1.3+5^1.3)`; low share
+> `1 − 0.9r`; developing:mastered .50:.40; uniform within category;
+> active/preparing words excluded), mastery moves ±10 per clean
+> correct/miss and drives enemy pressure (`mastery/100`), sessions end only
+> manually and keep a summary, and progress persists per-outcome to a
+> server-side SQLite `saves/default.sql` (vocab + settings tables) through
+> the four REST endpoints in `src/shared/battle.ts`. The Writing/Learn
+> workflow (steps 2–5) and the Re-Learn workflow remain implemented
+> internally but are disabled/hidden in the UI.
 
 1. The player selects exactly one HSK grade (HSK 1–6). Grades are never locked. **A grade click launches Learn Mode — never a battle.**
 2. Learn Mode creates (or resumes) a session: every currently due introduced word of the grade plus up to the configured number of new curriculum words, presented one card at a time.
@@ -38,17 +55,17 @@ This document is the implementation authority. Supporting details live in:
 | Topic | Decision |
 |---|---|
 | Application shape | Local Node server plus browser client; a static-only app cannot write repository-local save files. |
-| Deck scope | One selected source deck per session, not cumulative HSK 1–N. |
+| Deck scope | One merged HSK 1–6 Battle corpus keyed by the insertion-ordered curriculum card IDs; duplicate IDs keep their earliest deck occurrence. |
 | Enemy population | Multiple simultaneous enemies; maximum 32 active as a rendering safety ceiling. |
 | Targeting | Shortest predicted time to ground, then lowest `spawnOrdinal` as tie-breaker. Lock until resolution; no spawn-time or manual switching. |
 | Wrong answer | One scored/mastery outcome per enemy. A wrong non-empty pinyin or wrong meaning key removes the enemy and opens a blocking correction panel; descent and spawning resume only after **Continue**. |
 | Blank/irrelevant input | Blank Enter and keys outside the current phase are ignored, not counted wrong. |
 | Audio timing | Play word audio after pinyin succeeds, before the meaning choice; **R** replays it in the meaning phase. Play a blaster on a complete correct answer and a buzzer on wrong answers or natural landings. |
-| Persistence | Authoritative JSON file in `saves/`; browser storage may only be an emergency retry cache. |
-| Completion | `firstCompletedAt` is a permanent achievement; current mastery can regress if a mastered fallback word is later missed. |
+| Persistence | Authoritative server-side SQLite `saves/default.sql` (vocab + settings tables) behind the four REST endpoints in `src/shared/battle.ts`; battle tuning lives in `config/battle.yaml`. |
+| Completion | Battle is endless and ends only when the player chooses **End Battle**; there is no automatic completion state. |
 | Source duplicates | Exact semantic duplicates become one logical word with multiple source GUIDs; distinct senses remain distinct. |
-| Learning set | Learn Mode introduces up to `levelSize` new curriculum words per session (plus all due words). Every word owns exactly one FSRS card rated explicitly (Again/Hard/Good/Easy); acquisition is recorded once in the ordered `acquired_words` table when the card first reaches review. |
-| Offline behavior | Runtime uses only local generated deck data, fonts, audio, and server APIs. No CDN is required. |
+| Learning set | The active pool contains all vocab rows above mastery 50 plus the five lowest-position rows at or below 50; graduation refills low slots from the next unseen curriculum IDs in strict order. |
+| Offline behavior | Generated decks and a reachable local save server are required; there is no offline progress or demo fallback. Runtime assets require no CDN. |
 
 ## 2. Reference experience
 
@@ -92,7 +109,7 @@ flowchart LR
   Importer --> Audit[public/game-data/import-report.json]
 
   Browser[React browser client] <-->|same-origin JSON| API[Fastify local server]
-  API <-->|atomic read/write| Saves[saves/default.json]
+  API <-->|SQLite transactions| Saves[saves/default.sql]
   Browser --> Phaser[Phaser battle scene]
   Browser --> Domain[Pure TS learning + session state]
   Data --> Browser
@@ -239,11 +256,12 @@ See [`DATA_PIPELINE.md`](DATA_PIPELINE.md) for exact schemas and known source an
 
 ### Save files
 
-Browser sandboxing makes a repository-local Node API mandatory. The client checkpoints scheduler state, word progress, settings, aggregate statistics, and a revision number to `/api/saves/default`. The server writes `saves/default.json.tmp`, fsyncs/closes it, then renames it over `saves/default.json`.
-
-No active enemy positions need to survive a voluntary end-session action. Spawn ordinals, long-term FSRS memory, and PRNG state do survive, so ending and restarting cannot erase progress or replay an identical battle (review plans are re-drawn from the advanced persisted RNG).
-
-See [`LEARNING_AND_SAVES.md`](LEARNING_AND_SAVES.md) for the current schema and persistence policy.
+Browser sandboxing makes a repository-local Node API mandatory. Battle progress
+is stored in server-side SQLite at `saves/default.sql`: the five-column `vocab`
+table and separate `settings` table are accessed through the four REST
+endpoints in `src/shared/battle.ts`. Each resolved encounter writes its mastery
+outcome transactionally; Battle has no persisted finite plan or scheduler RNG.
+Fresh saves only are supported, with no migration or fallback path.
 
 ## 7. Quality gates
 
@@ -257,13 +275,14 @@ An implementation is not feature-complete until all gates pass.
 - Meaning generation can produce eight unique labels for every word and never includes another sense of the same displayed Hanzi as a distractor.
 - Import output is byte-for-byte deterministic for the same inputs and importer version.
 
-### Gate B — deterministic learning
+### Gate B — live Battle selection and mastery
 
-- A word never respawns until its stored number of **other** spawns (10–25 inclusive) has occurred.
-- Repair words are preferred, then the 30-word active curriculum, then mastered fallback filler.
-- Wrong/landing outcomes increase weight substantially and create three repair-priority recalls; faster complete answers reduce weight more than slow complete answers.
-- One enemy causes at most one weight update.
-- Every word at weight `1` sets live level mastery to complete.
+- The active pool contains exactly the five lowest-position vocab rows at mastery 0..50 plus every row above 50.
+- Every spawn is a live category draw using the configured Hill shares, followed by a uniform draw within that category; empty categories renormalize and active/preparing words are excluded.
+- A clean correct outcome adds 10 mastery; a wrong pinyin, wrong meaning, reveal, or landing subtracts 10, clamped to 0..100.
+- One enemy produces at most one mastery outcome.
+- Graduating a low-slot word above 50 appends the next unseen curriculum row in strict order until five low slots are restored.
+- `time_mastered` is set the first time mastery reaches 100 and is never cleared by later regression.
 
 ### Gate C — game behavior
 
@@ -277,9 +296,9 @@ An implementation is not feature-complete until all gates pass.
 
 ### Gate D — persistence
 
-- Refresh after a resolved answer loads the same memory state, stats, settings, scheduler snapshot, and revision from `saves/default.json`.
-- Writes are atomic and schema validated; a malformed file is quarantined and reported instead of silently overwritten.
-- Ending at any time reaches a summary only after the latest checkpoint is acknowledged or a clear retry warning is shown.
+- Refresh after a resolved answer loads the same vocab mastery and settings from `saves/default.sql`.
+- SQLite writes are transactional and schema validated; incompatible schemas fail visibly rather than being migrated or replaced.
+- Each resolved encounter is persisted through the outcome endpoint; failed requests surface a clear error.
 - `saves/` and generated runtime deck assets remain ignored by Git.
 
 ### Gate E — UX and accessibility
@@ -339,12 +358,12 @@ npm start
 
 and then, from the browser:
 
-1. choose any HSK deck;
+1. launch Battle from a fresh save and seed the first five curriculum words;
 2. see a growing queue of mastery-speed-scaled descending Hanzi enemies;
 3. answer the highlighted, locked predicted arrival with pinyin then one of eight meaning keys;
 4. hear local word audio after correct pinyin;
 5. change spawn rate and global speed from settings;
 6. accumulate score/streak without a death state;
-7. end voluntarily, see a report, and verify progress in `saves/default.json`;
-8. resume with memory state and scheduler snapshot intact (the FSRS rewrite replaced the old 10–25-spawn cooldown with per-card due dates);
-9. eventually reduce every logical word to weight `1` and earn the level-cleared milestone.
+7. end voluntarily, see a report, and verify mastery progress in `saves/default.sql`;
+8. resume with vocab mastery and settings intact;
+9. graduate low-mastery slots and observe strictly ordered curriculum refill.

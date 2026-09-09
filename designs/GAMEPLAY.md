@@ -1,5 +1,14 @@
 # Gameplay specification
 
+> **Status update (battle-first rework):** Battle Mode is now the main game
+> mode and the only launched gameplay flow. Spawns are live weighted draws
+> from the vocabulary's mastery categories (see README §Battle Mode and
+> `src/domain/battle`); the finite review base plan, recency tiers, repair
+> obligations, and persisted scheduler RNG are gone. Writing/Learn and
+> Re-Learn remain implemented internally but are disabled/hidden in the UI.
+> Sections below that still describe recency pressure describe the retained
+> mechanics in their new mastery-driven form.
+
 ## 1. Battlefield model
 
 The battlefield is a pressure queue, not a one-enemy flashcard screen.
@@ -7,7 +16,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 - Enemies spawn at normalized vertical progress `0` and land at `1`.
 - More than one enemy may be descending at once; default settings produce roughly eight visible enemies once the queue stabilizes.
 - Every enemy displays its own normalized Hanzi.
-- Each Review enemy has a word-specific speed derived from its **acquisition recency**, not FSRS: pressure `min(rank / min(acquiredCount, 100), 1)` over the `acquired_words` log (rank 0 = newest) maps linearly from `0.65×` to `1.50×`. Eligible pools below 100 scale through the same pressure range proportionally; rank 100+ is maximum in full-size pools. The global speed setting multiplies it uniformly.
+- Each Battle enemy has a word-specific speed derived from its **current mastery**: pressure `mastery / 100` maps linearly from `0.65×` (brand-new words, gentlest) to `1.50×` (mastered words, fastest). The global speed setting multiplies it uniformly.
 - The global speed setting multiplies every word-specific speed; there is no random velocity.
 - When a target is needed, choose the descending enemy with the shortest predicted time to ground, not the lowest altitude. An amber box/beam and the command panel identify it.
 - Equal predicted arrival times are broken by lower `spawnOrdinal`.
@@ -17,7 +26,7 @@ The battlefield is a pressure queue, not a one-enemy flashcard screen.
 Use normalized progress in the domain/simulation layer rather than canvas pixels:
 
 ```ts
-wordSpeed = lerp(0.65, 1.50, recencyPressure(word)) // min(rank / min(acquiredCount,100), 1)
+wordSpeed = lerp(0.65, 1.50, word.mastery / 100)
 progress += (deltaMs / BASE_TRAVEL_MS) * enemySpeedMultiplier * wordSpeed
 arrivalTime = (1 - progress) / wordSpeed
 ```
@@ -76,7 +85,7 @@ A resolved target is removed from answer state immediately. Its explosion or bre
 MVP allows one learning outcome per enemy. Retrying the same enemy would complicate timing, allow repeated weight changes, and let one enemy block the whole pressure queue. A wrong answer therefore:
 
 1. resets streak;
-2. records one miss in the session/lifetime stats: Review battles never mutate FSRS memory (Learn Mode owns the single card per word, see designs/LEARNING_AND_SAVES.md);
+2. records one miss in the session stats and applies the Battle mastery penalty through the outcome endpoint;
 3. reveals Hanzi, toned pinyin, and correct meaning;
 4. starts a short breach animation;
 5. removes the enemy from target eligibility;
@@ -139,6 +148,8 @@ The encounter reducer marks an enemy resolved before emitting its outcome. Any l
 
 Audio success/failure, animation completion, frame rate, and settings do not alter the outcome.
 
+Battle persistence consumes the outcome directly: a **clean correct** (correct outcome, no reveal — exactly the `encounterCredit` semantics) POSTs `cleanCorrect: true` to the vocab outcome endpoint; every miss (wrong pinyin, wrong meaning, reveal, or landing) POSTs `false`. The server applies ±`masteryDelta` clamped 0..100, sets `time_mastered` once at 100, and refills the learning slot when a low word graduates; the client mirrors the delta optimistically and merges the authoritative rows asynchronously without blocking the animation.
+
 ## 6. Score and streak
 
 There is no negative score and no game-over state.
@@ -184,18 +195,16 @@ Accuracy is `completeCorrect / resolvedEnemies`. Do not count blank or irrelevan
 
 The spawn clock runs while the battle is active, including pinyin, meaning, and non-blocking hit/landing feedback. It freezes during wrong-answer review, while paused/settings, while the page is hidden, and before deck/save loading completes.
 
-After a word spawns, its acquisition recency sets the next interval. The multiplier interpolates linearly from `1.60` at pressure `0` (newest words, gentlest), through `1.00` at pressure `0.5`, to `0.40` at pressure `1` (maximum pressure): `masteryInterval = baseInterval * lerp(1.60, 0.40, pressure)` where pressure is `min(rank / min(acquiredCount, 100), 1)` over the `acquired_words` log, captured at session start. Eligible pools below 100 scale pressure proportionally. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
+After a word spawns, its current mastery sets the next interval. The multiplier interpolates linearly from `1.60` at pressure `0` (fresh words, gentlest), through `1.00` at pressure `0.5`, to `0.40` at pressure `1` (maximum pressure): `masteryInterval = baseInterval * lerp(1.60, 0.40, pressure)` where pressure is the spawned word's live `mastery / 100`. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
 
 Empty battlefield: after the board clears, the next word must be playable within two seconds (`EMPTY_FIELD_MAX_WRITE_MS`). The pre-write stroke animation compresses (`emptyFieldWriteSchedule`, speedup capped at 8x) instead of serializing its full natural-cadence lead. With enemies still active, pacing is unchanged.
 
 When a timer is due:
 
 1. if 32 enemies are active, keep one pending spawn and retry when a slot opens;
-2. take the next word from the deterministic review base plan — or the oldest due repair obligation (delayed 10 base spawns; forced immediately once the base plan is exhausted) — never spawning a word that is already active or preparing;
+2. draw the next word LIVE: category weights from the Hill curve over the current pools, uniform within the selected category, never a word that is already active or preparing (`selectBattleSpawn` in `src/domain/battle/select.ts`);
 3. assign enemy ID, ordinal, visual lane, and choice seed;
-4. advance the global spawn ordinal;
-5. checkpoint the scheduler snapshot;
-6. create the Phaser enemy.
+4. create the Phaser enemy.
 
 Do not “catch up” with several immediate spawns after a pause, settings dialog, hidden tab, lag spike, or frame clamp. Set `nextSpawnAt = activeClock + currentInterval` after one spawn. This prevents bursts unrelated to player-selected pressure.
 
@@ -233,13 +242,15 @@ A wrong-answer breach is already logically resolved, so it cannot generate a sec
 
 ## 10. Session ending
 
-**End Session** is always available from pause. It:
+**End Battle** is always available from pause — and it is the ONLY way a
+session ends (battles are endless; there is no automatic completion). It:
 
 1. stops the active clock and spawning;
 2. does not mark currently descending enemies wrong;
-3. flushes the latest scheduler/save snapshot;
-4. waits for acknowledgement or shows a retry/export warning;
-5. opens the defense report;
-6. starts the next play session with a fresh battlefield and zero streak, while retained cooldown ordinals prevent restart farming.
+3. opens the battle summary (score, accuracy, best streak, words served, and
+   the most-reinforcement-needed ranking with mastery-category chips);
+4. starts the next play session with a fresh battlefield and zero streak.
 
-Closing the tab is less reliable than End Session, so the app already checkpoints every spawn/outcome/settings change. `pagehide` sends a final beacon as best effort, not as the primary save mechanism.
+Every outcome is already persisted through the outcome endpoint at
+resolution time, so ending a session has nothing left to flush; there is no
+save beacon.

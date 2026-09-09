@@ -1,10 +1,20 @@
 # Learning scheduler, memory, and local saves
 
-> Status: implemented (save schema v5, Learn Mode + Review Mode + Relearn
-> shipped). This document describes the shipping single-card FSRS design
-> with Learn Mode as the only path that mutates the main cards, the
-> acquired-word Review arcade, and the independent Relearn session. Save v5
-> is a fresh start: older saves are rejected, never migrated.
+> **Status update (battle-first rework):** the authoritative save model is
+> now the server-side SQLite database `saves/default.sql` with a `vocab`
+> table (`id` = 1-based global curriculum position, unique `card_id`,
+> `mastery` 0..100, `time_added`, `time_mastered` set once at 100) and a
+> settings key/value table, exposed only through the REST contract in
+> `src/shared/battle.ts`. The whole-file `SaveFile` JSON snapshots, revision
+> counters, beacons, and emergency localStorage cache described below are
+> retired. Battle mastery moves ±10 per clean correct/miss (see
+> `config/battle.yaml`). The FSRS Learn/Relearn machinery this document
+> describes remains implemented internally (`src/domain/learn`,
+> `src/domain/relearn`) but is disabled/hidden in the UI.
+
+> Historical status of the design below: implemented through save schema v5
+> (Learn Mode + Review Mode + Relearn). Save v5 was a fresh start: older
+> saves were rejected, never migrated.
 
 ## 1. Model overview
 

@@ -1,88 +1,79 @@
-import type { SaveSnapshot } from "../../src/server/saves/validation";
-import { createDefaultSave } from "../../src/server/saves/repository";
-import type { ComponentMemory, LevelProgress, WordProgress } from "../../src/shared/schemas";
+import { mkdtemp, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import type { BattleConfig } from "../../src/shared/battle";
 
-export function makeMemory(state: ComponentMemory["state"] = "new"): ComponentMemory {
-  return {
-    state, due: "2025-01-01T00:00:00.000Z", stability: state === "new" ? 0 : 3, difficulty: state === "new" ? 0 : 5,
-    elapsedDays: 0, scheduledDays: state === "new" ? 0 : 3, learningSteps: 0,
-    reps: state === "new" ? 0 : 3, lapses: 0,
-    lastReview: state === "new" ? null : "2024-12-29T00:00:00.000Z",
-  };
+const directories: string[] = [];
+
+export async function temporaryDirectory(prefix = "hanzi-saves-"): Promise<string> {
+  const directory = await mkdtemp(join(tmpdir(), prefix));
+  directories.push(directory);
+  return directory;
 }
 
-export function makeWordProgress(introducedAtOrdinal: number | null = 0): WordProgress {
-  return {
-    card: makeMemory(),
-    learnReviews: 0,
-    lastSeenAt: null,
-    introducedAtOrdinal,
-  };
+export async function cleanupDirectories(): Promise<void> {
+  await Promise.all(directories.splice(0).map((directory) => rm(directory, { recursive: true, force: true })));
 }
 
-export function makeLevel(deckId: LevelProgress["deckId"], words: Record<string, WordProgress> = {}): LevelProgress {
-  return {
-    deckId,
-    deckFingerprint: "fixture-fingerprint",
-    curriculumCursor: Object.keys(words).length,
-    firstCompletedAt: null,
-    words,
-    orphanedProgress: {},
-  };
+/** Deterministic 24-hex card ID for a 1-based curriculum position. */
+export const fixtureCardId = (position: number): string => position.toString(16).padStart(24, "0");
+
+export type CurriculumFixture = {
+  path: string;
+  cardIds: string[];
+};
+
+/** Writes an ordered curriculum JSON fixture: `count` cards, insertion order
+ * = position 1..count, each entry depending on its predecessor. */
+export async function writeCurriculumFixture(count: number, hskLevels: number[] = []): Promise<CurriculumFixture> {
+  const directory = await temporaryDirectory("hanzi-curriculum-");
+  const cardIds = Array.from({ length: count }, (_, index) => fixtureCardId(index + 1));
+  const manifest: Record<string, unknown> = {};
+  for (const [index, cardId] of cardIds.entries()) {
+    manifest[cardId] = {
+      file: `hsk-${hskLevels[index] ?? 1}/word-${index + 1}.acard`,
+      hanzi: `词${index + 1}`,
+      prerequisiteIds: index > 0 ? [cardIds[index - 1]!] : [],
+      hskLevel: hskLevels[index] ?? 1,
+    };
+  }
+  const path = join(directory, "curriculum.json");
+  await writeFile(path, `${JSON.stringify(manifest, null, 2)}\n`);
+  return { path, cardIds };
 }
 
-export function makeSnapshot(): SaveSnapshot {
-  const { revision: _revision, savedAt: _savedAt, ...snapshot } = createDefaultSave(
-    new Date("2025-01-01T00:00:00.000Z"),
-  );
-  return snapshot;
+export async function writeCurriculumFrom(
+  entries: Record<string, unknown>,
+): Promise<{ path: string }> {
+  const directory = await temporaryDirectory("hanzi-curriculum-");
+  const path = join(directory, "curriculum.json");
+  await writeFile(path, JSON.stringify(entries));
+  return { path };
 }
 
-export function makeAcquiredReviewCard(): ComponentMemory {
-  return {
-    state: "review", due: "2025-01-01T00:00:00.000Z", stability: 3, difficulty: 5,
-    elapsedDays: 0, scheduledDays: 3, learningSteps: 0, reps: 2, lapses: 0,
-    lastReview: "2024-12-29T00:00:00.000Z",
-  };
+export async function writeConfigFixture(text: string): Promise<string> {
+  const directory = await temporaryDirectory("hanzi-config-");
+  const path = join(directory, "battle.yaml");
+  await writeFile(path, text);
+  return path;
 }
 
-export function makeSnapshotWithAcquiredWord(wordId = "word-1"): SaveSnapshot {
-  const snapshot = makeSnapshotWithWord(wordId);
-  snapshot.levels["hsk-1"]!.words[wordId]!.card = makeAcquiredReviewCard();
-  snapshot.levels["hsk-1"]!.words[wordId]!.learnReviews = 1;
-  snapshot.acquiredWords = [`hsk-1:${wordId}`];
-  return snapshot;
+/** A clock advancing through the given ISO stamps (last one repeats). */
+export function fixedClock(...stamps: string[]): () => Date {
+  let index = 0;
+  return () => new Date(stamps[Math.min(index++, stamps.length - 1)]!);
 }
 
-export function makeSnapshotWithRelearn(wordKeys: string[] = ["hsk-1:word-1"]): SaveSnapshot {
-  const snapshot = makeSnapshotWithAcquiredWord(wordKeys[0]!.split(":")[1]!);
-  snapshot.relearnSession = {
-    startedAt: "2025-01-01T00:00:00.000Z",
-    wordKeys,
-    cards: Object.fromEntries(wordKeys.map((key) => [key, {
-      card: makeMemory(),
-      reviews: 0,
-    }])),
-  };
-  return snapshot;
-}
+/** Test-only Battle tuning fixture carrying the approved values. Production
+ * loads config/battle.yaml as the single runtime tuning source — there is no
+ * runtime TS default — so tests spell the expected numbers out explicitly. */
+export const TEST_BATTLE_CONFIG: BattleConfig = {
+  learningSlots: 5,
+  boundaries: { lowMax: 50, developingMax: 99 },
+  masteryDelta: 10,
+  curve: { midpoint: 5, shape: 1.3 },
+  asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 },
+};
 
-export function makeSnapshotWithWord(wordId = "word-1"): SaveSnapshot {
-  const snapshot = makeSnapshot();
-  snapshot.levels["hsk-1"] = makeLevel("hsk-1", { [wordId]: makeWordProgress() });
-  return snapshot;
-}
-
-export function makeSnapshotWithSession(deckId: LevelProgress["deckId"], wordIds: string[]): SaveSnapshot {
-  const snapshot = makeSnapshot();
-  snapshot.levels[deckId] = makeLevel(deckId, Object.fromEntries(wordIds.map((id) => [id, makeWordProgress()])));
-  snapshot.learnSessions[deckId] = {
-    deckId,
-    deckFingerprint: "fixture-fingerprint",
-    startedAt: "2025-01-01T00:00:00.000Z",
-    wordIds,
-    completedWordIds: [],
-    currentWordId: wordIds[0]!,
-  };
-  return snapshot;
-}
+/** One clean correct answer moves a fresh word past lowMax (0 -> 60 > 50). */
+export const fastGraduationConfig: BattleConfig = { ...TEST_BATTLE_CONFIG, masteryDelta: 60 };

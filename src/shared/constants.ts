@@ -1,8 +1,10 @@
 export const DECK_IDS = ["hsk-1", "hsk-2", "hsk-3", "hsk-4", "hsk-5", "hsk-6"] as const;
 export type DeckId = (typeof DECK_IDS)[number];
+/** Unique card counts per grade AFTER the keyed curriculum collapses
+ * duplicate card IDs to their earliest occurrence (5396 total). */
 export const DECK_TOTALS: Record<DeckId, number> = {
   "hsk-1": 352, "hsk-2": 210, "hsk-3": 567,
-  "hsk-4": 1028, "hsk-5": 1534, "hsk-6": 1707,
+  "hsk-4": 1028, "hsk-5": 1533, "hsk-6": 1706,
 };
 export const CHOICE_KEYS = [
   "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
@@ -13,26 +15,10 @@ export const BASE_TRAVEL_MS = 24_000;
 export const MAX_ACTIVE_ENEMIES = 32;
 export const DANGER_ZONE_PROGRESS = 0.82;
 
-/** Review Mode needs this many entries in `acquired_words` before it can
- * start. Between this threshold and the full-size pool, tier boundaries,
- * recency pressure, and base session length scale by the same pool-size
- * ratio. See src/domain/review/plan.ts. */
-export const REVIEW_MIN_ACQUIRED_WORDS = 20;
-export const REVIEW_FULL_SCALE_WORD_COUNT = 100;
-/** Full-size Review selection tiers over the `acquired_words` ranking
- * (rank 0 = newest acquisition). At 100+ words, ranks 0–19 ("New") are
- * served twice, ranks 20–99 ("Recent") once, and ranks 100+ ("Old") only
- * via the random filler pool. Smaller eligible pools scale these boundaries. */
-export const REVIEW_NEW_TIER_RANK_LIMIT = 20;
-export const REVIEW_RECENT_TIER_RANK_LIMIT = REVIEW_FULL_SCALE_WORD_COUNT;
-/** A missed review word re-enters the spawn stream after this many further
- * base-plan spawns (or immediately once the base plan is exhausted). */
-export const REVIEW_REPAIR_DELAY_SPAWNS = 10;
-
-/** Arcade-facing settings only. Every long-term memory parameter (FSRS
- * weights, desired retention, learning steps) and every latency rating
- * threshold lives as a named constant in src/domain/memory so the science
- * stays out of the settings dialog. */
+/** Arcade-facing settings only. Battle tuning parameters (learning slots,
+ * category boundaries, mastery delta, Hill curve, asymptotic shares) live in
+ * the server's YAML-backed battle config, served as `battleConfig` (see
+ * src/shared/battle.ts). */
 export const DEFAULT_SETTINGS = {
   spawnIntervalMs: 5000,
   enemySpeedMultiplier: 0.9,

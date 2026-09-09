@@ -10,10 +10,12 @@ export type ReviewInputMode = z.infer<typeof ReviewInputModeSchema>;
 export const SettingsSchema = z.object({
   spawnIntervalMs: z.number().int().min(1500).max(10_000),
   enemySpeedMultiplier: z.number().min(0.65).max(1.5),
-  /** Learn Mode: maximum brand-new curriculum words introduced per session. */
+  /** Learn Mode: maximum brand-new curriculum words introduced per session.
+   * @deprecated Learn/Writing is disabled in the UI; kept for the settings
+   * store and the internally-retained Learn implementation. */
   levelSize: z.number().int().min(5).max(20),
-  /** Review Mode: exact length of the nonpersisted base spawn plan. Repair
-   * retries for missed words are additive on top of this target. */
+  /** @deprecated Battle Mode is endless — there is no session-length target.
+   * Retained so existing settings records keep validating. */
   reviewSessionLength: z.number().int().min(200).max(500),
   /** Review Mode pinyin answer style in landscape (desktop) orientation. */
   desktopReviewMode: ReviewInputModeSchema,

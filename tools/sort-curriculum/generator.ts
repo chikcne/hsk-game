@@ -7,6 +7,7 @@ import { canonicalizePinyin } from "../import-decks/normalize/pinyin";
 import { sanitizeText } from "../import-decks/normalize/text";
 import { stableJson } from "../import-decks/compile/stable-json";
 import { CURRICULUM_LESSON_SIZE, CURRICULUM_RULES_VERSION, type CurriculumLock, type CurriculumManifest } from "./types";
+import { orderedJson } from "./ordered-json";
 
 const CORPUS_SHA256 = "0a34556e278008539273e07bda10baca9e2b9637cff2ff3ca9cd93782571abbd";
 const sha256 = (value: string | Buffer): string => createHash("sha256").update(value).digest("hex");
@@ -23,7 +24,7 @@ function parseSourceCard(text: string): Acard {
 }
 
 export type CurriculumCard = { relative: string; card: Acard; prerequisiteIds: string[] };
-export type GeneratedCurriculum = { cards: CurriculumCard[]; manifest: CurriculumManifest; lock: CurriculumLock };
+export type GeneratedCurriculum = { cards: CurriculumCard[]; manifest: CurriculumManifest; lock: CurriculumLock; gradeCounts: Map<number, number> };
 
 type TopicsFile = { schemaVersion: 1; topics: Array<{ id: string; title: string }> };
 type OverridesFile = {
@@ -322,16 +323,30 @@ export async function generateCurriculum(repositoryRoot: string): Promise<Genera
       }
     }
   }
-  const levels: CurriculumManifest["levels"] = [];
+  const manifest: CurriculumManifest = {};
+  const gradeCounts = new Map<number, number>();
+  // Flatten effective grades 1..6 in their scheduled lesson/card order into one
+  // insertion-ordered object; key order is the curriculum order. Later copies
+  // of cross-grade duplicate semantic IDs (看, 结果) collapse to the earliest
+  // occurrence, which prerequisite resolution already treats as canonical.
   for (let grade = 1; grade <= 6; grade += 1) {
-    const lessons = scheduleLessons(cards.filter((item) => item.card.curriculum.grade === grade));
-    levels.push({ deckId: `hsk-${grade}` as CurriculumManifest["levels"][number]["deckId"], hskLevel: grade, cardCount: lessons.flat().length,
-      lessons: lessons.map((lesson, index) => ({ id: `hsk-${grade}-lesson-${index + 1}`,
-        cards: lesson.map((item) => ({ id: item.card.id, file: item.relative, hanzi: item.card.hanzi, prerequisiteIds: item.prerequisiteIds })) })) });
+    let placed = 0;
+    for (const lesson of scheduleLessons(cards.filter((item) => item.card.curriculum.grade === grade))) {
+      for (const item of lesson) {
+        if (manifest[item.card.id]) continue;
+        manifest[item.card.id] = {
+          file: item.relative,
+          hanzi: item.card.hanzi,
+          prerequisiteIds: item.prerequisiteIds,
+          hskLevel: item.card.curriculum.grade,
+        };
+        placed += 1;
+      }
+    }
+    gradeCounts.set(grade, placed);
   }
-  const manifest: CurriculumManifest = { schemaVersion: 1, generator: { name: "sort-curriculum", version: "1.0.0", rulesVersion: CURRICULUM_RULES_VERSION }, lessonSize: CURRICULUM_LESSON_SIZE, levels };
   const cardInputs = cards.map((item) => ({ relative: item.relative, card: item.card, prerequisiteIds: item.prerequisiteIds }));
   const lock: CurriculumLock = { schemaVersion: 1, rulesVersion: CURRICULUM_RULES_VERSION, corpusSha256: sha256(corpusText), topicsSha256: sha256(topicsText),
-    overridesSha256: sha256(overridesText), cardsSha256: sha256(stableJson(cardInputs)), manifestSha256: sha256(stableJson(manifest)) };
-  return { cards, manifest, lock };
+    overridesSha256: sha256(overridesText), cardsSha256: sha256(stableJson(cardInputs)), manifestSha256: sha256(orderedJson(manifest)) };
+  return { cards, manifest, lock, gradeCounts };
 }

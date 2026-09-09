@@ -2,7 +2,7 @@ import { Effect } from "effect";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { areConfusableMeanings, indexConfusableGroups } from "../../src/domain/session/confusables";
 import { generateChoices, generateChoicesEffect, generateChoicesLenient, type MeaningChoice } from "../../src/domain/session/choices";
-import { createReviewDeck } from "../../src/client/data/reviewDeck";
+import { createBattleDeck } from "../../src/client/data/battleDeck";
 import { curriculumFromWordIds } from "../../src/domain/learning";
 import shippedConfusables from "../../src/shared/data/confusable-meanings.json";
 import type { DeckId } from "../../src/shared/constants";
@@ -151,7 +151,7 @@ describe("generateChoices confusable tiering", () => {
   });
 
   it("demotes through the grade-namespaced keys of a merged Review Mode deck", () => {
-    const { deck: merged } = createReviewDeck(new Map<DeckId, RuntimeDeck>([["hsk-1", plentiful]]), ["hsk-1:word-0"]);
+    const { deck: merged } = createBattleDeck(new Map<DeckId, RuntimeDeck>([["hsk-1", plentiful]]));
     expect(merged.words[0]!.meaningKey).toBe("hsk-1:to speak to say");
     for (const seed of seeds) {
       const choices = generateChoices(merged, merged.words[0]!, seed);

@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import { choiceShortcutForLabel, choiceShortcutsForLabel, generateChoices } from "../../src/domain/session/choices";
 import { areConfusableMeanings } from "../../src/domain/session/confusables";
 import { createDemoDeck } from "../../src/client/data/demoDeck";
-import { createReviewDeck } from "../../src/client/data/reviewDeck";
+import { createBattleDeck } from "../../src/client/data/battleDeck";
 import { DECK_IDS } from "../../src/shared/constants";
 import type { RuntimeDeck } from "../../src/shared/schemas";
 
@@ -168,15 +168,12 @@ describe("meaning choices", () => {
   });
 
   /** designs/confusable_distractors.md §2a: the confusable third tier is a guard against a
-   * starved pool, and no reachable pool starves. Both call sites of `createReviewDeck` load
-   * every grade, so the distractor pool is always the whole corpus regardless of how few
-   * words the player has acquired. If either of these two tests fails, tier 3 has stopped
+   * starved pool, and no reachable pool starves. The battle deck loads every
+   * grade, so the distractor pool is always the whole corpus regardless of how few
+   * words are in the vocabulary. If either of these two tests fails, tier 3 has stopped
    * being decorative and §2a needs rewriting before the tiering is simplified away. */
   it("gives every word eight non-confusable distractor candidates on distinct keys", () => {
-    const { deck } = createReviewDeck(
-      new Map(DECK_IDS.map((id, index) => [id, compiledDecks[index]!])),
-      DECK_IDS.flatMap((id, index) => compiledDecks[index]!.words.map((word) => `${id}:${word.id}`)),
-    );
+    const { deck } = createBattleDeck(new Map(DECK_IDS.map((id, index) => [id, compiledDecks[index]!])));
     expect(deck.allMeaningKeys.length).toBeGreaterThan(4000);
     const primaryKeyOf = new Map(deck.allMeaningKeys.map((key) =>
       [key, choiceShortcutsForLabel((deck.meaningIndex[key]?.label ?? key).trim())[0]?.key]));

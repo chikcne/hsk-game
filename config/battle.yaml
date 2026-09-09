@@ -1,0 +1,40 @@
+# Battle Mode tuning parameters. Parsed and strictly validated exactly once at
+# server startup (src/server/config.ts); the validated object is also served
+# to the client as `battleConfig` on GET /api/saves/default.
+#
+# Every learning-slot, category-boundary, mastery-delta, and draw-curve number
+# lives here — never hardcoded in server or domain logic. The mastery scale
+# itself is fixed at 0..100 by the vocab schema.
+
+# Learning slots: the pool always holds exactly this many lowest-id words at
+# mastery <= boundaries.lowMax (plus every word above lowMax). When an outcome
+# graduates a slot word past lowMax, the next unseen curriculum entry is
+# appended in strict curriculum order until the slot count is restored.
+learningSlots: 5
+
+# Mastery category boundaries. low: 0..lowMax, developing: lowMax+1..developingMax,
+# mastered: developingMax+1..100.
+boundaries:
+  lowMax: 50
+  developingMax: 99
+
+# Symmetric mastery delta per encounter, clamped to 0..100: a clean correct
+# answer (pinyin + meaning, no reveal) earns +masteryDelta; a wrong pinyin, a
+# wrong meaning, a reveal, or a landing costs -masteryDelta.
+masteryDelta: 10
+
+# Hill curve r(n) = n^shape / (n^shape + midpoint^shape), where n counts words
+# with mastery above lowMax. r interpolates the low-category draw share from 1
+# down to its asymptote as the developed vocabulary grows.
+curve:
+  midpoint: 5
+  shape: 1.3
+
+# Asymptotic category shares as n -> infinity (must sum to 1). lowShare(n) =
+# 1 - r(n) * (1 - asymptotes.low); the developed remainder r(n) splits between
+# developing and mastered proportionally to their asymptotes, renormalized
+# when a category is empty.
+asymptotes:
+  low: 0.10
+  developing: 0.50
+  mastered: 0.40
