@@ -32,9 +32,9 @@
   ],
   "bundles": {
     "ui": {
-      "characterCount": 78,
-      "bytes": 169571,
-      "sha256": "c9aee3d81e8e7c55658ec47560a5749ca5fdb25a872b2ee0c81ad8bab862957f"
+      "characterCount": 80,
+      "bytes": 173424,
+      "sha256": "2b783cc14fbdb7eb22ba0a797d507bc1e962d9f85781b0267664a3ab72935072"
     },
     "hsk-1": {
       "characterCount": 252,

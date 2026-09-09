@@ -576,7 +576,16 @@ kbd { padding: 1px 5px; border: 1px solid currentColor; font: inherit; }
 .landing-rule span { position: absolute; right: 0; top: 5px; color: var(--cinnabar); font: 8px var(--ui); letter-spacing: .12em; }
 
 /* Answers */
-.answer-console { z-index: 3; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.answer-console { z-index: 3; position: relative; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.second-chance-banner { position: absolute; z-index: 4; left: 50%; top: -14px; padding: 5px 16px; transform: translate(-50%, -100%); display: flex; flex-direction: column; align-items: center; gap: 2px; border: 1px solid var(--umber); background: var(--paper-light); box-shadow: 4px 4px 0 rgba(107,61,14,.14); text-align: center; white-space: nowrap; }
+.second-chance-banner span { color: var(--umber); font-size: 13px; letter-spacing: .08em; }
+.second-chance-banner small { color: var(--ink-soft); font-size: 8px; letter-spacing: .12em; }
+.battle-screen.second-chance .calligraphy-field { filter: saturate(.72); }
+.battle-screen.second-chance .landing-rule { background: linear-gradient(to right, transparent, rgba(107,61,14,.4) 20%, rgba(107,61,14,.4) 80%, transparent); }
+@media (prefers-reduced-motion: no-preference) {
+  .second-chance-banner { animation: second-chance-in 180ms cubic-bezier(.16,1,.3,1) both; }
+}
+@keyframes second-chance-in { from { opacity: 0; transform: translate(-50%, calc(-100% + 6px)); } to { opacity: 1; transform: translate(-50%, -100%); } }
 .pinyin-form { position: relative; width: min(560px, 100%); display: flex; flex-direction: column; align-items: center; transform: translateY(-8px); cursor: text; }
 .typed-pinyin { min-width: 260px; min-height: 38px; text-align: center; color: var(--ink); font: 400 clamp(24px, 2.3vw, 33px)/1.1 var(--ui); letter-spacing: .12em; }
 .typed-pinyin.empty { color: rgba(107,87,65,.42); }

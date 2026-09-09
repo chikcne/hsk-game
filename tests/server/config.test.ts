@@ -9,6 +9,21 @@ import { fixtureCardId, TEST_BATTLE_CONFIG, writeConfigFixture, writeCurriculumF
 
 const repositoryRoot = resolve(join(dirname(fileURLToPath(import.meta.url)), "../.."));
 
+const CURVE_LINE = "masteryCurve: { maxMs: 2000, maxGain: 20, midMs: 5000, midGain: 10, floorMs: 8000, floorGain: 1, secondChanceGain: 0 }";
+const RELIEF_LINE = "relief: { correct: 0.1, secondChance: 0.05 }";
+const BASE = [
+  "learningSlots: 5",
+  "boundaries: { lowMax: 50, developingMax: 99 }",
+  "masteryDelta: 10",
+  CURVE_LINE,
+  RELIEF_LINE,
+  "curve: { midpoint: 5, shape: 1.3 }",
+  "",
+].join("\n");
+const ASYMPTOTES = "asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 }\n";
+const withoutCurveSection = BASE.replace(`${CURVE_LINE}\n`, "");
+const withoutReliefSection = BASE.replace(`${RELIEF_LINE}\n`, "");
+
 describe("battle configuration loading", () => {
   it("loads the committed config/battle.yaml and validates it", () => {
     const config = loadBattleConfig(join(repositoryRoot, "config/battle.yaml"));
@@ -17,9 +32,13 @@ describe("battle configuration loading", () => {
 
   it("rejects missing keys, extra keys, and renamed keys", async () => {
     const cases: Array<string> = [
-      "learningSlots: 5\nboundaries: { lowMax: 50, developingMax: 99 }\nmasteryDelta: 10\ncurve: { midpoint: 5, shape: 1.3 }\n", // asymptotes missing
-      "learningSlots: 5\nboundaries: { lowMax: 50, developingMax: 99 }\nmasteryDelta: 10\ncurve: { midpoint: 5, shape: 1.3 }\nasymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 }\nsurprise: true\n",
-      "learningSlots: 5\nboundaries: { lowMax: 50, ceiling: 99 }\nmasteryDelta: 10\ncurve: { midpoint: 5, shape: 1.3 }\nasymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 }\n",
+      BASE, // asymptotes missing
+      `${BASE}${ASYMPTOTES}surprise: true\n`,
+      `${BASE.replace("developingMax: 99", "ceiling: 99")}${ASYMPTOTES}`,
+      `${withoutCurveSection}${ASYMPTOTES}`,
+      `${withoutReliefSection}${ASYMPTOTES}`,
+      `${BASE.replace("secondChanceGain", "secondChance")}${ASYMPTOTES}`,
+      `${BASE.replace("secondChance: 0.05", "secondChanceRelief: 0.05")}${ASYMPTOTES}`,
     ];
     for (const text of cases) {
       const path = await writeConfigFixture(text);
@@ -29,11 +48,17 @@ describe("battle configuration loading", () => {
 
   it("rejects wrong types and violated invariants", async () => {
     const cases: Array<string> = [
-      "learningSlots: five\nboundaries: { lowMax: 50, developingMax: 99 }\nmasteryDelta: 10\ncurve: { midpoint: 5, shape: 1.3 }\nasymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 }\n",
-      "learningSlots: 0\nboundaries: { lowMax: 50, developingMax: 99 }\nmasteryDelta: 10\ncurve: { midpoint: 5, shape: 1.3 }\nasymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 }\n",
-      "learningSlots: 5\nboundaries: { lowMax: 99, developingMax: 50 }\nmasteryDelta: 10\ncurve: { midpoint: 5, shape: 1.3 }\nasymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 }\n",
-      "learningSlots: 5\nboundaries: { lowMax: 50, developingMax: 99 }\nmasteryDelta: 10\ncurve: { midpoint: 5, shape: 1.3 }\nasymptotes: { low: 0.2, developing: 0.5, mastered: 0.4 }\n",
-      "learningSlots: 5\nboundaries: { lowMax: 50, developingMax: 99 }\nmasteryDelta: -10\ncurve: { midpoint: 5, shape: 1.3 }\nasymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 }\n",
+      `${BASE.replace("learningSlots: 5", "learningSlots: five")}${ASYMPTOTES}`,
+      `${BASE.replace("learningSlots: 5", "learningSlots: 0")}${ASYMPTOTES}`,
+      `${BASE.replace("lowMax: 50, developingMax: 99", "lowMax: 99, developingMax: 50")}${ASYMPTOTES}`,
+      `${BASE}asymptotes: { low: 0.2, developing: 0.5, mastered: 0.4 }\n`,
+      `${BASE.replace("masteryDelta: 10", "masteryDelta: -10")}${ASYMPTOTES}`,
+      `${BASE.replace("midMs: 5000", "midMs: 9000")}${ASYMPTOTES}`,
+      `${BASE.replace("maxMs: 2000", "maxMs: 5000")}${ASYMPTOTES}`,
+      `${BASE.replace("floorMs: 8000", "floorMs: 4000")}${ASYMPTOTES}`,
+      `${BASE.replace("maxGain: 20", "maxGain: 20.5")}${ASYMPTOTES}`,
+      `${BASE.replace("correct: 0.1", "correct: 1.4")}${ASYMPTOTES}`,
+      `${BASE.replace("secondChance: 0.05", "secondChance: -0.05")}${ASYMPTOTES}`,
     ];
     for (const text of cases) {
       const path = await writeConfigFixture(text);

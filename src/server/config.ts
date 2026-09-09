@@ -13,8 +13,10 @@ export class BattleConfigError extends Data.TaggedError("BattleConfigError")<{
 /** The exact key set config/battle.yaml may carry, nested shape included.
  * Anything missing, extra, or renamed is an operator error. */
 const EXPECTED_KEYS = {
-  root: ["learningSlots", "boundaries", "masteryDelta", "curve", "asymptotes"],
+  root: ["learningSlots", "boundaries", "masteryDelta", "masteryCurve", "relief", "curve", "asymptotes"],
   boundaries: ["lowMax", "developingMax"],
+  masteryCurve: ["maxMs", "maxGain", "midMs", "midGain", "floorMs", "floorGain", "secondChanceGain"],
+  relief: ["correct", "secondChance"],
   curve: ["midpoint", "shape"],
   asymptotes: ["low", "developing", "mastered"],
 } as const;
@@ -39,7 +41,8 @@ function checkKeySet(path: string, value: unknown, expected: readonly string[], 
  * Reads and strictly validates the battle tuning YAML exactly once at server
  * startup. The file must carry precisely the documented key set (no extras,
  * no renames) and satisfy every range/invariant of BattleConfigSchema — the
- * asymptotic shares must sum to 1 and the category boundaries must be ordered.
+ * asymptotic shares must sum to 1, the category boundaries must be ordered,
+ * and the mastery-curve anchor times must strictly increase.
  * Any violation is a fatal BattleConfigError; there is no default fallback.
  */
 export function loadBattleConfig(path: string): BattleConfig {
@@ -63,6 +66,8 @@ export function loadBattleConfig(path: string): BattleConfig {
   try {
     checkKeySet(path, document, EXPECTED_KEYS.root, "battle configuration");
     checkKeySet(path, (document as Record<string, unknown>).boundaries, EXPECTED_KEYS.boundaries, "boundaries");
+    checkKeySet(path, (document as Record<string, unknown>).masteryCurve, EXPECTED_KEYS.masteryCurve, "masteryCurve");
+    checkKeySet(path, (document as Record<string, unknown>).relief, EXPECTED_KEYS.relief, "relief");
     checkKeySet(path, (document as Record<string, unknown>).curve, EXPECTED_KEYS.curve, "curve");
     checkKeySet(path, (document as Record<string, unknown>).asymptotes, EXPECTED_KEYS.asymptotes, "asymptotes");
   } catch (error) {

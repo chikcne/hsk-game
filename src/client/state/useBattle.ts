@@ -1,12 +1,12 @@
 import { Effect } from "effect";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import {
-  BASE_TRAVEL_MS, DANGER_ZONE_PROGRESS, MAX_ACTIVE_ENEMIES, type ChoiceKey,
-} from "../../shared/constants";
-import type { BattleConfig, VocabRow } from "../../shared/battle";
+import { BASE_TRAVEL_MS, MAX_ACTIVE_ENEMIES, type ChoiceKey } from "../../shared/constants";
+import type { BattleConfig, BattleOutcome, VocabRow } from "../../shared/battle";
 import type { DifficultySettings, ReviewInputMode, RuntimeDeck, RuntimeWord } from "../../shared/schemas";
 import { acceptsPinyin } from "../../domain/deck/pinyin";
-import { applyMasteryOutcome, battlePools, masteryCategory, selectBattleSpawn } from "../../domain/battle";
+import {
+  applyMasteryOutcome, battlePools, masteryCategory, opensSecondChance, reliefForCorrect, selectBattleSpawn,
+} from "../../domain/battle";
 import { createSecureRandomState, Xoshiro128StarStar } from "../../domain/random";
 import { safeMeaningChoices, type MeaningChoice } from "../../domain/session/choices";
 import { buildPinyinLabelPool, generatePinyinChoices } from "../../domain/session/pinyin-choices";
@@ -20,7 +20,7 @@ import {
   nextPerformanceMultiplier,
   performanceAdjustedSpawnDelayMs,
 } from "../../domain/session/performance";
-import { advanceEnemiesForRecallWindow, moveEnemiesUp, PINYIN_RECALL_WINDOW_MS } from "../../domain/session/landing";
+import { advanceEnemies, moveEnemiesUp } from "../../domain/session/landing";
 import { wordSpeedMultiplierForFamiliarity } from "../../domain/session/speed";
 import { selectLockedTarget } from "../../domain/session/targeting";
 import type { Enemy, EncounterOutcome } from "../../domain/session/types";
@@ -30,25 +30,26 @@ import { phraseStrokeLeadMs, type StrokeDataMap } from "../data/strokeData";
 
 export type Feedback = {
   id: string;
-  kind: "correct" | "miss" | "landed";
+  kind: "correct" | "miss";
   word: RuntimeWord;
   typed?: string;
   points?: number;
-  /** True when the pinyin was revealed by the recall window and the meaning
-   * answer then succeeded: a miss — never presented as a clean DIRECT HIT,
-   * scoring no points, resetting the streak, and costing mastery. */
-  revealed?: boolean;
+  /** True when the answer was given in second chance: never presented as a
+   * clean DIRECT HIT, scoring no points, resetting the streak, and leaving
+   * mastery exactly where it was. */
+  secondChance?: boolean;
 };
 export type WordSessionStats = {
   attempts: number;
-  /** Total miss events: wrong pinyin/meaning, landings, and pinyin
-   * autocomplete reveals — even when the meaning was then correct. */
+  /** Answers that were not clean recalls: wrong pinyin/meaning plus every
+   * second-chance answer, even a correct one. */
   misses: number;
   wrongPinyin: number;
   wrongMeaning: number;
-  landed: number;
-  /** Pinyin autocomplete reveals (a subset of `misses`). */
-  autocompleted: number;
+  /** Times this word reached the ground unanswered — no penalty, no reveal. */
+  vanished: number;
+  /** Encounters resolved in second chance (a subset of `misses`). */
+  secondChance: number;
   totalPinyinMs: number;
 };
 export type SessionStats = {
@@ -57,7 +58,8 @@ export type SessionStats = {
   correct: number;
   wrongPinyin: number;
   wrongMeaning: number;
-  landed: number;
+  vanished: number;
+  secondChance: number;
   bestStreak: number;
   /** Unique word keys served (a word can serve multiple times). */
   seen: Set<string>;
@@ -96,7 +98,7 @@ export type BattleOptions = {
   /** Persists one resolved encounter asynchronously. The hook merges the
    * returned authoritative/added rows back into its in-memory vocab without
    * blocking the animation. */
-  persistOutcome: (cardId: string, cleanCorrect: boolean) => Promise<OutcomePersistenceResult>;
+  persistOutcome: (cardId: string, outcome: BattleOutcome) => Promise<OutcomePersistenceResult>;
   /** Notified after every vocab mutation (optimistic or authoritative). */
   onVocabChange?: (vocab: readonly VocabRow[]) => void;
 };
@@ -118,8 +120,13 @@ export type PinyinSelectionView = {
 export type MasteryCounts = { low: number; developing: number; mastered: number };
 
 const initialStats = (): SessionStats => ({
-  mode: "battle", score: 0, correct: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0,
-  bestStreak: 0, seen: new Set(), wordStats: new Map(), resolvedSpawns: 0,
+  mode: "battle", score: 0, correct: 0, wrongPinyin: 0, wrongMeaning: 0, vanished: 0,
+  secondChance: 0, bestStreak: 0, seen: new Set(), wordStats: new Map(), resolvedSpawns: 0,
+});
+
+const emptyWordStats = (): WordSessionStats => ({
+  attempts: 0, misses: 0, wrongPinyin: 0, wrongMeaning: 0, vanished: 0, secondChance: 0,
+  totalPinyinMs: 0,
 });
 
 const countMastery = (vocab: readonly VocabRow[], config: BattleConfig): MasteryCounts => {
@@ -188,7 +195,6 @@ export function useBattle(
   const targetIdRef = useRef<string | null>(null);
   const [phase, setPhase] = useState<"pinyin" | "meaning">("pinyin");
   const phaseRef = useRef<"pinyin" | "meaning">("pinyin");
-  const [pinyinAutocompleted, setPinyinAutocompleted] = useState(false);
   const [choices, setChoices] = useState<MeaningChoice[]>([]);
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const [learningPaused, setLearningPaused] = useState(false);
@@ -203,14 +209,14 @@ export function useBattle(
   const targetRef = useRef(target); targetRef.current = target;
   const targetWord = target ? words.get(target.wordId) ?? null : null;
   const phaseStarted = useRef(performance.now());
+  const answerStarted = useRef(performance.now());
+  const [secondChance, setSecondChance] = useState(false);
+  const secondChanceRef = useRef(false);
+  const secondChanceStarted = useRef(0);
   const meaningPinyinMs = useRef(0);
   const spawnDue = useRef(0);
   const [preparingEnemy, setPreparingEnemy] = useState<Enemy | null>(null);
   const preparingRef = useRef<PreparedSpawn | null>(null);
-  /** Enemy ids whose pinyin was revealed by the recall window; their meaning
-   * phase still counts toward session stats — and counts as a miss even if
-   * the meaning answer is correct. */
-  const autocompleteRevealed = useRef(new Set<string>());
   // Neutral 0.5 pressure keeps the configured base spawn interval at session start.
   const previousPressure = useRef(0.5);
   const lastFrame = useRef<number | null>(null);
@@ -259,7 +265,8 @@ export function useBattle(
       targetRef.current = nextTarget;
       setTargetId(nextTargetId);
       phaseRef.current = "pinyin"; setPhase("pinyin");
-      setPinyinAutocompleted(false); setChoices([]); setAudioError(false); phaseStarted.current = now;
+      setChoices([]); setAudioError(false);
+      phaseStarted.current = now; answerStarted.current = now;
       // A new locked target re-locks the input mode from the CURRENT
       // orientation/settings and restarts selection progress from scratch.
       lockedInputModeRef.current = inputModeSettingRef.current;
@@ -279,6 +286,8 @@ export function useBattle(
     else if (!suspended && suspendedAt.current !== null) {
       const suspendedFor = now - suspendedAt.current;
       phaseStarted.current += suspendedFor;
+      answerStarted.current += suspendedFor;
+      secondChanceStarted.current += suspendedFor;
       spawnDue.current += suspendedFor;
       if (preparingRef.current) preparingRef.current.spawnAt += suspendedFor;
       suspendedAt.current = null;
@@ -292,6 +301,8 @@ export function useBattle(
       else if (!document.hidden && suspendedAt.current !== null && !pausedRef.current && !learningPausedRef.current) {
         const suspendedFor = now - suspendedAt.current;
         phaseStarted.current += suspendedFor;
+        answerStarted.current += suspendedFor;
+        secondChanceStarted.current += suspendedFor;
         spawnDue.current += suspendedFor;
         if (preparingRef.current) preparingRef.current.spawnAt += suspendedFor;
         suspendedAt.current = null;
@@ -308,41 +319,45 @@ export function useBattle(
     pinyinMs: number,
     points: number,
     missed: boolean,
-    autocompleted: boolean,
+    inSecondChance: boolean,
   ) => {
-    const credit = encounterCredit(outcome, autocompleted);
+    const credit = encounterCredit(outcome, inSecondChance);
     const nowStreak = nextStreak(streakRef.current, credit.streakContinues, false);
     setStreak(nowStreak);
     setStats((old) => {
       const seen = new Set(old.seen).add(word.id);
       const wordStats = new Map(old.wordStats);
-      const previous = wordStats.get(word.id) ?? {
-        attempts: 0, misses: 0, wrongPinyin: 0, wrongMeaning: 0, landed: 0, autocompleted: 0,
-        totalPinyinMs: 0,
-      };
+      const previous = wordStats.get(word.id) ?? emptyWordStats();
       wordStats.set(word.id, {
+        ...previous,
         attempts: previous.attempts + 1,
         misses: previous.misses + (missed ? 1 : 0),
         wrongPinyin: previous.wrongPinyin + (outcome.kind === "wrongPinyin" ? 1 : 0),
         wrongMeaning: previous.wrongMeaning + (outcome.kind === "wrongMeaning" ? 1 : 0),
-        landed: previous.landed + (outcome.kind === "landed" ? 1 : 0),
-        autocompleted: previous.autocompleted + (autocompleted ? 1 : 0),
+        secondChance: previous.secondChance + (inSecondChance ? 1 : 0),
         totalPinyinMs: previous.totalPinyinMs + pinyinMs,
       });
       return {
         ...old,
         score: old.score + points,
-        // A revealed-then-meaning-correct encounter is a miss, not a clean
-        // recall: it counts toward misses and never inflates accuracy.
         correct: old.correct + (credit.countsAsCorrect ? 1 : 0),
         wrongPinyin: old.wrongPinyin + (outcome.kind === "wrongPinyin" ? 1 : 0),
         wrongMeaning: old.wrongMeaning + (outcome.kind === "wrongMeaning" ? 1 : 0),
-        landed: old.landed + (outcome.kind === "landed" ? 1 : 0),
+        secondChance: old.secondChance + (inSecondChance ? 1 : 0),
         bestStreak: Math.max(old.bestStreak, nowStreak),
         seen,
         wordStats,
         resolvedSpawns: old.resolvedSpawns + 1,
       };
+    });
+  }, []);
+
+  const recordVanished = useCallback((word: RuntimeWord) => {
+    setStats((old) => {
+      const wordStats = new Map(old.wordStats);
+      const previous = wordStats.get(word.id) ?? emptyWordStats();
+      wordStats.set(word.id, { ...previous, vanished: previous.vanished + 1 });
+      return { ...old, vanished: old.vanished + 1, wordStats };
     });
   }, []);
 
@@ -357,15 +372,13 @@ export function useBattle(
     ));
   }, [deck.id, settings.masterVolume, wordAudioPlayer]);
 
-  const beginMeaning = useCallback((enemy: Enemy, word: RuntimeWord, pinyinMs: number, autocompleted = false) => {
+  const beginMeaning = useCallback((enemy: Enemy, word: RuntimeWord, pinyinMs: number) => {
     if (targetIdRef.current !== enemy.id || phaseRef.current !== "pinyin") return;
     meaningPinyinMs.current = pinyinMs;
-    if (autocompleted) autocompleteRevealed.current.add(enemy.id);
     // Safe by contract: choice generation can never throw here, so a
     // pathological deck can never terminate the rAF frame loop.
     setChoices(safeMeaningChoices(deck, word, enemy.id));
     phaseRef.current = "meaning"; setPhase("meaning");
-    setPinyinAutocompleted(autocompleted);
     phaseStarted.current = performance.now();
     playWordAudio(word);
   }, [deck, playWordAudio]);
@@ -404,24 +417,24 @@ export function useBattle(
     return { enemy, pressure, leadMs: 0, startedAt: 0, spawnAt: 0 };
   }, [words]);
 
-  const updateWord = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
+  const updateWord = useCallback((
+    enemy: Enemy,
+    outcome: EncounterOutcome,
+    answerMs: number,
+    inSecondChance: boolean,
+    typed?: string,
+  ) => {
     const word = words.get(enemy.wordId); if (!word) return;
-    const wasRevealed = autocompleteRevealed.current.has(enemy.id);
-    autocompleteRevealed.current.delete(enemy.id);
-    // Clean correct is EXACTLY the encounterCredit semantics: a correct
-    // outcome with no autocomplete reveal. It is the only mastery-earning
-    // resolution; wrong pinyin, wrong meaning, a landing, and a reveal (even
-    // when the meaning answer then succeeds) all cost mastery.
-    const cleanCorrect = encounterCredit(outcome, wasRevealed).countsAsCorrect;
-    const pinyinMs = outcome.kind === "landed" ? 0 : outcome.pinyinMs;
-    const thinking = outcome.kind === "correct" || outcome.kind === "wrongMeaning"
-      ? outcome.pinyinMs + outcome.meaningMs
-      : outcome.kind === "wrongPinyin" ? outcome.pinyinMs : outcome.activeThinkingMs ?? 0;
+    const battleOutcome: BattleOutcome = outcome.kind !== "correct"
+      ? { kind: "wrong" }
+      : inSecondChance ? { kind: "secondChance" } : { kind: "correct", answerMs };
+    const pinyinMs = outcome.pinyinMs;
+    const thinking = outcome.kind === "wrongPinyin"
+      ? outcome.pinyinMs
+      : outcome.pinyinMs + outcome.meaningMs;
     const currentPerformanceMultiplier = performanceMultiplierRef.current;
     const effectiveSpawnIntervalMs = settings.spawnIntervalMs / currentPerformanceMultiplier;
-    const credit = encounterCredit(outcome, wasRevealed);
-    // A revealed pinyin forfeits the round's reward: the encounter resolves
-    // (the meaning answer stands) but scores nothing and resets the streak.
+    const credit = encounterCredit(outcome, inSecondChance);
     const points = credit.earnsPoints
       ? calculatePoints(
         thinking,
@@ -438,10 +451,10 @@ export function useBattle(
       const current = vocabRef.current[rowIndex]!;
       commitVocab(mergeVocabRows(vocabRef.current, [{
         ...current,
-        mastery: applyMasteryOutcome(current.mastery, cleanCorrect, battleConfig),
+        mastery: applyMasteryOutcome(current.mastery, battleOutcome, battleConfig),
       }]));
     }
-    void optionsRef.current.persistOutcome(word.id, cleanCorrect).then((result) => {
+    void optionsRef.current.persistOutcome(word.id, battleOutcome).then((result) => {
       if (!mountedRef.current || !result) return;
       commitVocab(mergeVocabRows(vocabRef.current, [result.row, ...result.addedRows]));
       preloadCardAudio(result.addedRows.map((row) => row.cardId));
@@ -450,13 +463,13 @@ export function useBattle(
       // the caller surfaces save status from its own persistOutcome wrapper.
     });
 
-    updateSessionStats(word, outcome, pinyinMs, points, !cleanCorrect, wasRevealed);
+    updateSessionStats(word, outcome, pinyinMs, points, !credit.countsAsCorrect, inSecondChance);
 
     const feedback: Feedback = {
       id: enemy.id,
-      kind: outcome.kind === "correct" ? "correct" : outcome.kind === "landed" ? "landed" : "miss",
+      kind: outcome.kind === "correct" ? "correct" : "miss",
       word, typed, points,
-      revealed: wasRevealed || undefined,
+      secondChance: inSecondChance || undefined,
     };
 
     const nowStreak = nextStreak(streakRef.current, credit.streakContinues, false);
@@ -494,13 +507,23 @@ export function useBattle(
 
   const resolveEnemy = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     if (!enemiesRef.current.some((item) => item.id === enemy.id)) return;
+    const now = performance.now();
+    const answerMs = Math.max(0, now - answerStarted.current);
+    const inSecondChance = secondChanceRef.current;
+    if (inSecondChance) {
+      const frozenFor = Math.max(0, now - secondChanceStarted.current);
+      spawnDue.current += frozenFor;
+      if (preparingRef.current) preparingRef.current.spawnAt += frozenFor;
+      secondChanceRef.current = false;
+      setSecondChance(false);
+    }
     const remaining = enemiesRef.current.filter((item) => item.id !== enemy.id);
-    const relieved = outcome.kind === "correct" && enemy.progress > DANGER_ZONE_PROGRESS
-      ? moveEnemiesUp(remaining)
+    const relieved = outcome.kind === "correct"
+      ? moveEnemiesUp(remaining, reliefForCorrect(inSecondChance, battleConfig))
       : remaining;
-    commitEnemies(relieved);
-    updateWord(enemy, outcome, typed);
-  }, [commitEnemies, updateWord]);
+    commitEnemies(relieved, now);
+    updateWord(enemy, outcome, answerMs, inSecondChance, typed);
+  }, [battleConfig, commitEnemies, updateWord]);
 
   const strokeLeadForWord = useCallback((wordId: string) => {
     if (!animateStrokes) return 0;
@@ -518,6 +541,13 @@ export function useBattle(
       const delta = Math.min(100, now - lastFrame.current); lastFrame.current = now;
       if (!pausedRef.current && !learningPausedRef.current && !document.hidden) {
         const currentPerformanceMultiplier = performanceMultiplierRef.current;
+        const answerMs = targetIdRef.current === null ? 0 : Math.max(0, now - answerStarted.current);
+        if (targetIdRef.current !== null && !secondChanceRef.current && opensSecondChance(answerMs, battleConfig)) {
+          secondChanceRef.current = true;
+          secondChanceStarted.current = now;
+          setSecondChance(true);
+        }
+        if (secondChanceRef.current) { frame = requestAnimationFrame(tick); return; }
 
         if (preparingRef.current === null && enemiesRef.current.length < MAX_ACTIVE_ENEMIES) {
           const selection = decideSpawn();
@@ -562,26 +592,17 @@ export function useBattle(
         }
 
         const advance = delta / BASE_TRAVEL_MS * settings.enemySpeedMultiplier * currentPerformanceMultiplier;
-        const lockedTargetId = targetIdRef.current;
-        const activeRecallMs = lockedTargetId === null ? 0 : Math.max(0, now - phaseStarted.current);
-        const result = advanceEnemiesForRecallWindow(
-          enemiesRef.current,
-          advance,
-          lockedTargetId,
-          phaseRef.current,
-          activeRecallMs,
-          PINYIN_RECALL_WINDOW_MS,
-        );
+        const result = advanceEnemies(enemiesRef.current, advance);
         commitEnemies(result.active, now);
-        for (const enemy of result.landed) updateWord(enemy, { kind: "landed", activeThinkingMs: activeRecallMs });
-        const autocompleted = result.autocompleted[0];
-        const autocompletedWord = autocompleted ? words.get(autocompleted.wordId) : null;
-        if (autocompleted && autocompletedWord) beginMeaning(autocompleted, autocompletedWord, activeRecallMs, true);
+        for (const enemy of result.vanished) {
+          const vanishedWord = words.get(enemy.wordId);
+          if (vanishedWord) recordVanished(vanishedWord);
+        }
       }
       frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick); return () => cancelAnimationFrame(frame);
-  }, [beginMeaning, commitEnemies, decideSpawn, reserveSpawn, settings.enemySpeedMultiplier, settings.spawnIntervalMs, strokeLeadForWord, updateWord, words]);
+  }, [battleConfig, commitEnemies, decideSpawn, recordVanished, reserveSpawn, settings.enemySpeedMultiplier, settings.spawnIntervalMs, strokeLeadForWord, words]);
 
   const submitPinyin = (raw: string) => {
     const enemy = targetRef.current; const word = enemy ? words.get(enemy.wordId) : null;
@@ -629,7 +650,7 @@ export function useBattle(
       if (preparingRef.current) preparingRef.current.spawnAt += suspendedFor;
     }
     suspendedAt.current = null;
-    phaseStarted.current = now; lastFrame.current = now;
+    phaseStarted.current = now; answerStarted.current = now; lastFrame.current = now;
     if (preparingRef.current === null) {
       spawnDue.current = now + performanceAdjustedSpawnDelayMs(
         settings.spawnIntervalMs,
@@ -676,7 +697,7 @@ export function useBattle(
     };
   }, [inputMode, outsidePinyinPool, phase, poolPinyinPool, selectionProgress, target?.id, targetWordId, words]);
   return {
-    enemies, preparingEnemy, target, targetWord, phase, pinyinAutocompleted, choices, feedback, learningPaused,
+    enemies, preparingEnemy, target, targetWord, phase, secondChance, choices, feedback, learningPaused,
     audioError, streak, performanceMultiplier, stats, vocab, masteryCounts, submitPinyin, chooseMeaning,
     dismissFeedback, replay, inputMode, selection, choosePinyin,
   };

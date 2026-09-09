@@ -43,11 +43,26 @@ The first title-screen column (focused by default) starts the battle; it is enab
 - with `n` = count of rows above 50, the Hill ratio `r = n^1.3 / (n^1.3 + 5^1.3)` sets the shares: low draws `1 − 0.9·r`, the remaining `0.9·r` splits developing:mastered as .50:.40, renormalizing over categories that are empty (n = 0 is 100% low; n ≈ 1 is ~10% mature; n ≈ 7 is ~55% mature);
 - the draw is uniform within the selected category and never picks a word that is already active or preparing.
 
-**Mastery.** A clean correct answer (typed/selected pinyin, correct meaning, no reveal) gives **+10**; a wrong pinyin, wrong meaning, reveal, or landing gives **−10**, clamped to 0..100. When a learning-slot word graduates past 50, the server appends the next unseen curriculum entry (strictly in order) until five low rows remain. `time_mastered` is recorded the first time a word reaches 100 and never cleared. Current mastery/100 is the enemy's pressure input — fresh words descend gently, mastered words fall fast.
+**Mastery is earned by speed.** A dedicated answer clock starts the moment a word becomes the locked target and runs across both the pinyin and the meaning phase. The gain is read off a piecewise-linear curve through three configured anchors:
+
+| Answer clock | Mastery |
+| --- | --- |
+| ≤ 2s | **+20** (maximum) |
+| 5s | **+10** (midpoint) |
+| 8s | **+1** (floor) |
+| ≥ 8s | **second chance**: the whole field freezes, the answer is untimed, and a correct answer leaves mastery **unchanged** |
+
+A wrong pinyin or meaning costs **−10** at any point, second chance included. Everything is clamped to 0..100 and every number lives in `config/battle.yaml` (`masteryCurve`, `masteryDelta`).
+
+Every correct answer also lifts the remaining words by **10%** of the descent (**5%** after a second-chance answer) — `relief` in the same file.
+
+When a learning-slot word graduates past 50, the server appends the next unseen curriculum entry (strictly in order) until five low rows remain. `time_mastered` is recorded the first time a word reaches 100 and never cleared. Current mastery/100 is the enemy's pressure input — fresh words descend gently, mastered words fall fast.
 
 **Sessions never auto-complete.** A battle runs until you end it from the pause dialog; the summary keeps score, accuracy, best streak, words served, and a most-reinforcement-needed ranking with mastery-category chips.
 
-A **miss** is a wrong pinyin, a wrong meaning, a word reaching the ground, or a pinyin autocomplete/reveal — even if the meaning is then answered correctly. A miss opens the blocking correction panel (word, pinyin, meaning, what you typed) exactly as before.
+A **miss** is a wrong pinyin or a wrong meaning; it opens the blocking correction panel (word, pinyin, meaning, what you typed). A second-chance answer is also counted as a miss for accuracy, points, and streak even when it is right — only its mastery is spared.
+
+**Reaching the ground costs nothing.** A word that lands simply disappears: no reveal, no penalty, no streak break, and the next word locks immediately. The 8-second freeze arrives before the ground can, so a word you are actively answering effectively never slips away — the backlog behind it does.
 
 ## Title screen navigation
 

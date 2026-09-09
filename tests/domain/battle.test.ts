@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
 import {
   applyMasteryOutcome, battlePools, categoryShares, hillMatureRatio, isInPool,
-  masteryCategory, matureCount, selectBattleSpawn, type BattleSpawnSelection,
+  masteryCategory, masteryDeltaFor, matureCount, opensSecondChance, reliefForCorrect, selectBattleSpawn,
+  speedMasteryGain, type BattleSpawnSelection,
 } from "../../src/domain/battle";
 import type { VocabRow } from "../../src/shared/battle";
 import { randomStateFromSeed, Xoshiro128StarStar, type RandomSource } from "../../src/domain/random";
@@ -14,6 +15,8 @@ const CONFIG: BattleConfig = {
   learningSlots: 5,
   boundaries: { lowMax: 50, developingMax: 99 },
   masteryDelta: 10,
+  masteryCurve: { maxMs: 2000, maxGain: 20, midMs: 5000, midGain: 10, floorMs: 8000, floorGain: 1, secondChanceGain: 0 },
+  relief: { correct: 0.1, secondChance: 0.05 },
   curve: { midpoint: 5, shape: 1.3 },
   asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 },
 };
@@ -238,20 +241,89 @@ describe("live spawn selection", () => {
   });
 });
 
-describe("mastery outcome delta", () => {
-  it("adds the delta on a clean correct and subtracts on any miss, clamped 0..100", () => {
-    expect(applyMasteryOutcome(40, true, CONFIG)).toBe(50);
-    expect(applyMasteryOutcome(95, true, CONFIG)).toBe(100);
-    expect(applyMasteryOutcome(100, true, CONFIG)).toBe(100);
-    expect(applyMasteryOutcome(5, false, CONFIG)).toBe(0);
-    expect(applyMasteryOutcome(0, false, CONFIG)).toBe(0);
-    expect(applyMasteryOutcome(60, false, CONFIG)).toBe(50);
+describe("answer-speed mastery curve", () => {
+  const gain = (answerMs: number) => speedMasteryGain(answerMs, CONFIG);
+
+  it("hits every configured anchor exactly", () => {
+    expect(gain(2_000)).toBe(20);
+    expect(gain(5_000)).toBe(10);
+    expect(gain(8_000)).toBe(1);
   });
 
-  it("reaches exactly 100 from 0 after ten clean corrects (time_mastered trigger point)", () => {
+  it("holds the maximum below the flat band and never exceeds it", () => {
+    for (const answerMs of [0, 1, 500, 1_999, 2_000]) expect(gain(answerMs)).toBe(20);
+  });
+
+  it("decreases monotonically across the whole curve", () => {
+    let previous = Number.POSITIVE_INFINITY;
+    for (let answerMs = 0; answerMs <= 9_000; answerMs += 50) {
+      const current = gain(answerMs);
+      expect(current).toBeLessThanOrEqual(previous);
+      previous = current;
+    }
+  });
+
+  it("interpolates linearly between the anchors", () => {
+    const halfwayFromMaxToMid = 3_500;
+    const halfwayFromMidToFloor = 6_500;
+    expect(gain(halfwayFromMaxToMid)).toBe(15);
+    expect(gain(halfwayFromMidToFloor)).toBe(6);
+    expect(gain(2_750)).toBe(18);
+    expect(gain(7_250)).toBe(3);
+  });
+
+  it("clamps at the floor at and beyond the second-chance threshold", () => {
+    expect(gain(8_000)).toBe(1);
+    expect(gain(30_000)).toBe(1);
+  });
+
+  it("opens second chance exactly at the floor anchor, never before", () => {
+    expect(opensSecondChance(7_999, CONFIG)).toBe(false);
+    expect(opensSecondChance(8_000, CONFIG)).toBe(true);
+    expect(opensSecondChance(60_000, CONFIG)).toBe(true);
+    expect(opensSecondChance(0, CONFIG)).toBe(false);
+  });
+});
+
+describe("mastery outcome delta", () => {
+  it("reads a correct answer off the speed curve", () => {
+    expect(masteryDeltaFor({ kind: "correct", answerMs: 1_000 }, CONFIG)).toBe(20);
+    expect(masteryDeltaFor({ kind: "correct", answerMs: 5_000 }, CONFIG)).toBe(10);
+    expect(masteryDeltaFor({ kind: "correct", answerMs: 7_999 }, CONFIG)).toBe(1);
+  });
+
+  it("holds mastery flat for a second-chance answer and costs the delta for a wrong one", () => {
+    expect(masteryDeltaFor({ kind: "secondChance" }, CONFIG)).toBe(0);
+    expect(masteryDeltaFor({ kind: "wrong" }, CONFIG)).toBe(-10);
+  });
+
+  it("clamps every applied outcome to 0..100", () => {
+    expect(applyMasteryOutcome(40, { kind: "correct", answerMs: 5_000 }, CONFIG)).toBe(50);
+    expect(applyMasteryOutcome(95, { kind: "correct", answerMs: 0 }, CONFIG)).toBe(100);
+    expect(applyMasteryOutcome(100, { kind: "correct", answerMs: 0 }, CONFIG)).toBe(100);
+    expect(applyMasteryOutcome(5, { kind: "wrong" }, CONFIG)).toBe(0);
+    expect(applyMasteryOutcome(0, { kind: "wrong" }, CONFIG)).toBe(0);
+    expect(applyMasteryOutcome(60, { kind: "wrong" }, CONFIG)).toBe(50);
+    expect(applyMasteryOutcome(77, { kind: "secondChance" }, CONFIG)).toBe(77);
+  });
+
+  it("reaches exactly 100 from 0 after ten midpoint answers, or five maximum-speed ones", () => {
     let mastery = 0;
-    for (let step = 0; step < 9; step += 1) mastery = applyMasteryOutcome(mastery, true, CONFIG);
+    for (let step = 0; step < 9; step += 1) {
+      mastery = applyMasteryOutcome(mastery, { kind: "correct", answerMs: 5_000 }, CONFIG);
+    }
     expect(mastery).toBe(90);
-    expect(applyMasteryOutcome(mastery, true, CONFIG)).toBe(100);
+    expect(applyMasteryOutcome(mastery, { kind: "correct", answerMs: 5_000 }, CONFIG)).toBe(100);
+
+    let fast = 0;
+    for (let step = 0; step < 5; step += 1) {
+      fast = applyMasteryOutcome(fast, { kind: "correct", answerMs: 1_500 }, CONFIG);
+    }
+    expect(fast).toBe(100);
+  });
+
+  it("grants the smaller altitude relief for a second-chance answer", () => {
+    expect(reliefForCorrect(false, CONFIG)).toBeCloseTo(0.1);
+    expect(reliefForCorrect(true, CONFIG)).toBeCloseTo(0.05);
   });
 });

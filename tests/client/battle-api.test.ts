@@ -33,6 +33,8 @@ describe("battle save API", () => {
         learningSlots: 5,
         boundaries: { lowMax: 50, developingMax: 99 },
         masteryDelta: 10,
+        masteryCurve: { maxMs: 2000, maxGain: 20, midMs: 5000, midGain: 10, floorMs: 8000, floorGain: 1, secondChanceGain: 0 },
+        relief: { correct: 0.1, secondChance: 0.05 },
         curve: { midpoint: 5, shape: 1.3 },
         asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 },
       },
@@ -70,21 +72,31 @@ describe("battle save API", () => {
     expect(fetchMock).toHaveBeenCalledWith("/api/saves/default/battle/open", { method: "POST" });
   });
 
-  it("POST /vocab/:cardId/outcome sends cleanCorrect and returns the authoritative row", async () => {
+  it("POST /vocab/:cardId/outcome sends the outcome and returns the authoritative row", async () => {
     const fetchMock = vi.fn().mockResolvedValue(jsonResponse({ row: row(1, 10), addedRows: [] }));
     globalThis.fetch = fetchMock as unknown as typeof fetch;
 
-    const outcome = await Effect.runPromise(postVocabOutcomeEffect("card/1:值得", true));
+    const outcome = await Effect.runPromise(postVocabOutcomeEffect("card/1:值得", { kind: "correct", answerMs: 1_450 }));
     expect(outcome.row.mastery).toBe(10);
     const [url, init] = fetchMock.mock.calls[0]! as [string, RequestInit];
     expect(url).toBe("/api/saves/default/vocab/card%2F1%3A%E5%80%BC%E5%BE%97/outcome");
     expect(init.method).toBe("POST");
-    expect(JSON.parse(init.body as string)).toEqual({ cleanCorrect: true });
+    expect(JSON.parse(init.body as string)).toEqual({ outcome: { kind: "correct", answerMs: 1_450 } });
+  });
+
+  it("posts second-chance and wrong outcomes without an answer time", async () => {
+    const fetchMock = vi.fn().mockImplementation(() => Promise.resolve(jsonResponse({ row: row(1, 10), addedRows: [] })));
+    globalThis.fetch = fetchMock as unknown as typeof fetch;
+
+    await Effect.runPromise(postVocabOutcomeEffect("card-1", { kind: "secondChance" }));
+    await Effect.runPromise(postVocabOutcomeEffect("card-1", { kind: "wrong" }));
+    const bodies = fetchMock.mock.calls.map(([, init]) => JSON.parse((init as RequestInit).body as string));
+    expect(bodies).toEqual([{ outcome: { kind: "secondChance" } }, { outcome: { kind: "wrong" } }]);
   });
 
   it("a rejected outcome POST fails with BattleApiError", async () => {
     globalThis.fetch = vi.fn().mockResolvedValue(jsonResponse({ error: "unknown card" }, 404)) as unknown as typeof fetch;
-    await expect(Effect.runPromise(postVocabOutcomeEffect("missing", false))).rejects.toThrow(/rejected \(404\)/);
+    await expect(Effect.runPromise(postVocabOutcomeEffect("missing", { kind: "wrong" }))).rejects.toThrow(/rejected \(404\)/);
   });
 
   it("PUT /settings sends the settings object and returns the stored settings", async () => {

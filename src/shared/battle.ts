@@ -43,8 +43,29 @@ export const BattleConfigSchema = z.object({
     /** Inclusive upper bound of the developing category. */
     developingMax: z.number().int().min(1).max(99),
   }),
-  /** Mastery gained on a clean correct answer and lost on any miss. */
+  /** Mastery lost on a wrong pinyin or a wrong meaning, at any time. */
   masteryDelta: z.number().int().min(1),
+  /** Piecewise-linear answer-speed gain curve over the answer timer, which
+   * starts when a word becomes the locked target and spans the pinyin AND
+   * meaning phases. Reaching `floorMs` unresolved opens second chance. */
+  masteryCurve: z.object({
+    /** Upper bound of the flat maximum band. */
+    maxMs: z.number().int().min(0),
+    maxGain: z.number().int(),
+    /** Midpoint anchor time. */
+    midMs: z.number().int().min(1),
+    midGain: z.number().int(),
+    /** Floor anchor time; also the second-chance threshold. */
+    floorMs: z.number().int().min(2),
+    floorGain: z.number().int(),
+    /** Applied when a correct answer lands in second chance. */
+    secondChanceGain: z.number().int(),
+  }),
+  /** Altitude relief for every other word when one is answered correctly. */
+  relief: z.object({
+    correct: z.number().min(0).max(1),
+    secondChance: z.number().min(0).max(1),
+  }),
   curve: z.object({
     /** Hill midpoint: the mature-word count at which the mature share
      * reaches half of its asymptote. */
@@ -66,8 +87,22 @@ export const BattleConfigSchema = z.object({
   }
   const total = config.asymptotes.low + config.asymptotes.developing + config.asymptotes.mastered;
   if (Math.abs(total - 1) > 1e-9) add("asymptotes", "asymptotic shares must sum to 1");
+  const { maxMs, midMs, floorMs } = config.masteryCurve;
+  if (!(maxMs < midMs && midMs < floorMs)) {
+    add("masteryCurve", "anchor times must be strictly increasing: maxMs < midMs < floorMs");
+  }
 });
 export type BattleConfig = z.infer<typeof BattleConfigSchema>;
+
+/** One resolved encounter as sent to the outcome endpoint. `correct` carries
+ * the answer-timer reading that selects a point on the speed curve; a word that
+ * reaches the ground unanswered changes nothing and is never posted. */
+export const BattleOutcomeSchema = z.discriminatedUnion("kind", [
+  z.object({ kind: z.literal("correct"), answerMs: z.number().min(0) }),
+  z.object({ kind: z.literal("secondChance") }),
+  z.object({ kind: z.literal("wrong") }),
+]);
+export type BattleOutcome = z.infer<typeof BattleOutcomeSchema>;
 
 export const BattleSaveBundleSchema = z.object({
   settings: SettingsSchema,
@@ -86,8 +121,8 @@ export const BattleOpenResponseSchema = z.object({
 export type BattleOpenResponse = z.infer<typeof BattleOpenResponseSchema>;
 
 /** POST /api/saves/default/vocab/:cardId/outcome: the authoritative row for
- * the resolved card (mastery clamped 0..100; `time_mastered` set the first
- * time mastery reaches 100) plus any refill rows appended because a low row
+ * the resolved card (mastery moved by the outcome's curve delta and clamped to
+ * 0..100; `time_mastered` set the first time mastery reaches 100) plus any refill rows appended because a low row
  * graduated and fewer than `learningSlots` low rows remained. */
 export const VocabOutcomeResponseSchema = z.object({
   row: VocabRowSchema,

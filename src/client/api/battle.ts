@@ -2,8 +2,8 @@ import { Data, Effect } from "effect";
 import { HttpFetch, HttpFetchLive, TransportError } from "./saves";
 import {
   BattleOpenResponseSchema, BattleSaveBundleSchema,
-  VocabOutcomeResponseSchema, type BattleOpenResponse, type BattleSaveBundle,
-  type VocabOutcomeResponse,
+  VocabOutcomeResponseSchema, type BattleOpenResponse, type BattleOutcome,
+  type BattleSaveBundle, type VocabOutcomeResponse,
 } from "../../shared/battle";
 import { SettingsSchema, type DifficultySettings } from "../../shared/schemas";
 
@@ -51,17 +51,17 @@ export const openBattleEffect: Effect.Effect<BattleOpenResponse, BattleApiError 
   );
 
 /** POST /api/saves/default/vocab/:cardId/outcome: persists one resolved
- * encounter (`cleanCorrect` exactly mirrors encounterCredit semantics) and
- * returns the authoritative row plus any refill rows appended because a low
- * row graduated out of the learning slots. */
+ * encounter — the server reads the mastery move off its own configured speed
+ * curve — and returns the authoritative row plus any refill rows appended
+ * because a low row graduated out of the learning slots. */
 export const postVocabOutcomeEffect = (
   cardId: string,
-  cleanCorrect: boolean,
+  outcome: BattleOutcome,
 ): Effect.Effect<VocabOutcomeResponse, BattleApiError | TransportError, never> =>
   requestJson(`/api/saves/default/vocab/${encodeURIComponent(cardId)}/outcome`, {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ cleanCorrect }),
+    body: JSON.stringify({ outcome }),
   }).pipe(
     Effect.flatMap((payload) => parseWith(VocabOutcomeResponseSchema, payload)),
     Effect.provide(HttpFetchLive),
@@ -82,8 +82,8 @@ export const putSettingsEffect = (
   );
 
 /** Promise adapters for non-Effect callers (fire-and-forget persistence). */
-export function postVocabOutcome(cardId: string, cleanCorrect: boolean): Promise<VocabOutcomeResponse> {
-  return Effect.runPromise(postVocabOutcomeEffect(cardId, cleanCorrect));
+export function postVocabOutcome(cardId: string, outcome: BattleOutcome): Promise<VocabOutcomeResponse> {
+  return Effect.runPromise(postVocabOutcomeEffect(cardId, outcome));
 }
 
 export function putSettings(settings: DifficultySettings): Promise<DifficultySettings> {

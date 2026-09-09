@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { advanceEnemiesForRecallWindow } from "../../src/domain/session/landing";
+import { advanceEnemies, moveEnemiesUp } from "../../src/domain/session/landing";
 import { wordSpeedMultiplierForFamiliarity } from "../../src/domain/session/speed";
 import { selectLockedTarget, soonestLandingEnemy } from "../../src/domain/session/targeting";
 import { calculatePoints, nextStreak } from "../../src/domain/session/scoring";
@@ -45,14 +45,8 @@ describe("session rules", () => {
   });
 
   it("advances each word at its mastery-scaled speed", () => {
-    const result = advanceEnemiesForRecallWindow(
-      [enemy("slow", 0, 1, 0.5), enemy("fast", 0, 2, 1.5)],
-      0.1,
-      "slow",
-      "pinyin",
-      0,
-      5_000,
-    );
+    const result = advanceEnemies([enemy("slow", 0, 1, 0.5), enemy("fast", 0, 2, 1.5)], 0.1);
+    expect(result.vanished).toEqual([]);
     expect(result.active.find((item) => item.id === "slow")?.progress).toBeCloseTo(0.05);
     expect(result.active.find((item) => item.id === "fast")?.progress).toBeCloseTo(0.15);
   });
@@ -106,33 +100,33 @@ describe("session rules", () => {
     expect(gameplayWriteSchedule(100, 6_000, 8_000)).toEqual({ spawnAtMs: 8_100, writeMs: 8_000, writeSpeed: 1 });
   });
 
-  it("gives a selected word its full recall window and a two-second autocomplete grace period", () => {
-    const nearGround = enemy("target", 0.99, 1);
-    const early = advanceEnemiesForRecallWindow([nearGround], 0.02, nearGround.id, "pinyin", 1_000, 5_000);
-    expect(early.autocompleted).toEqual([]);
-    expect(early.active[0]?.progress).toBe(1);
-
-    const timedOut = advanceEnemiesForRecallWindow(early.active, 0.02, nearGround.id, "pinyin", 5_000, 5_000);
-    expect(timedOut.autocompleted).toEqual([]);
-    expect(timedOut.active[0]?.pinyinTimeoutStartedAtMs).toBe(5_000);
-
-    const graceElapsed = advanceEnemiesForRecallWindow(timedOut.active, 0, nearGround.id, "pinyin", 7_000, 5_000);
-    expect(graceElapsed.landed).toEqual([]);
-    expect(graceElapsed.autocompleted.map((item) => item.id)).toEqual([nearGround.id]);
+  it("drops a word that reaches the ground, keeping the rest on the field", () => {
+    const nearGround = enemy("gone", 0.99, 1);
+    const high = enemy("high", 0.2, 2);
+    const result = advanceEnemies([nearGround, high], 0.02);
+    expect(result.vanished.map((item) => item.id)).toEqual([nearGround.id]);
+    expect(result.vanished[0]?.progress).toBe(1);
+    expect(result.active.map((item) => item.id)).toEqual([high.id]);
   });
 
-  it("moves every word up by 25% when a target is autocompleted", () => {
-    const target = { ...enemy("target", 1, 1), pinyinTimeoutStartedAtMs: 5_000 };
-    const other = enemy("other", 0.5, 2);
-    const result = advanceEnemiesForRecallWindow([target, other], 0, target.id, "pinyin", 7_000, 5_000);
-    expect(result.active.find((item) => item.id === target.id)?.progress).toBeCloseTo(0.75);
-    expect(result.active.find((item) => item.id === other.id)?.progress).toBeCloseTo(0.25);
+  it("never parks a word at the landing line", () => {
+    let active = [enemy("target", 0.5, 1)];
+    for (let frame = 0; frame < 200 && active.length > 0; frame += 1) {
+      const result = advanceEnemies(active, 0.01);
+      for (const item of result.active) expect(item.progress).toBeLessThan(1);
+      active = result.active;
+    }
+    expect(active).toEqual([]);
   });
 
-  it("does not turn altitude during meaning selection into a recall failure", () => {
-    const target = enemy("target", 1, 1);
-    const result = advanceEnemiesForRecallWindow([target], 0.1, target.id, "meaning", 20_000, 5_000);
-    expect(result.landed).toEqual([]);
-    expect(result.active.map((item) => item.id)).toEqual([target.id]);
+  it("lifts the surviving words by the configured relief, never above the top", () => {
+    const correctRelief = 0.1;
+    const secondChanceRelief = 0.05;
+    const wrongAnswerRelief = 0;
+    const lifted = moveEnemiesUp([enemy("low", 0.9, 1), enemy("fresh", 0.04, 2)], correctRelief);
+    expect(lifted.find((item) => item.id === "low")?.progress).toBeCloseTo(0.8);
+    expect(lifted.find((item) => item.id === "fresh")?.progress).toBe(0);
+    expect(moveEnemiesUp([enemy("low", 0.9, 1)], secondChanceRelief)[0]?.progress).toBeCloseTo(0.85);
+    expect(moveEnemiesUp([enemy("low", 0.9, 1)], wrongAnswerRelief)[0]?.progress).toBeCloseTo(0.9);
   });
 });

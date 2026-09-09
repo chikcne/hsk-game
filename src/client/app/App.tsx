@@ -3,7 +3,7 @@ import { Data, Effect } from "effect";
 import { CHOICE_KEYS, DECK_IDS, DECK_TOTALS, DEFAULT_SETTINGS, type ChoiceKey, type DeckId } from "../../shared/constants";
 import { RuntimeDeckSchema, type DifficultySettings, type RuntimeDeck } from "../../shared/schemas";
 import { battlePools, masteryCategory } from "../../domain/battle";
-import type { BattleConfig, VocabRow } from "../../shared/battle";
+import type { BattleConfig, BattleOutcome, VocabRow } from "../../shared/battle";
 import { createBattleDeck } from "../data/battleDeck";
 import {
   loadStrokeBundleEffect,
@@ -144,9 +144,9 @@ export function App() {
    * rapid resolutions of the SAME word reach the server in order, so the
    * authoritative row never regresses an earlier outcome. */
   const pendingByCard = useRef(new Map<string, Promise<unknown>>());
-  const persistOutcome = useCallback(async (cardId: string, cleanCorrect: boolean): Promise<OutcomePersistenceResult> => {
+  const persistOutcome = useCallback(async (cardId: string, outcome: BattleOutcome): Promise<OutcomePersistenceResult> => {
     const previous = pendingByCard.current.get(cardId) ?? Promise.resolve();
-    const attempt = previous.then(() => postVocabOutcome(cardId, cleanCorrect));
+    const attempt = previous.then(() => postVocabOutcome(cardId, outcome));
     const chain = attempt.catch(() => undefined);
     pendingByCard.current.set(cardId, chain);
     void chain.then(() => {
@@ -483,7 +483,7 @@ function BattleScreen({ deck, strokeData, initialVocab, battleConfig, pinyinPool
   const solvedId = battle.feedback?.kind === "correct" ? battle.feedback.id : null;
   const masteryTotal = battle.masteryCounts.low + battle.masteryCounts.developing + battle.masteryCounts.mastered;
 
-  return <main className={`paper battle-screen ${battle.phase}-phase review-input-${battle.inputMode} ${reducedMotion ? "reduce-motion" : ""}`}>
+  return <main className={`paper battle-screen ${battle.phase}-phase review-input-${battle.inputMode} ${battle.secondChance ? "second-chance" : ""} ${reducedMotion ? "reduce-motion" : ""}`}>
     <header className="battle-hud">
       <div className="hud-level"><span className="seal"><HanziText text="战" data={strokeData} /></span><p><b>BATTLE</b><small>{battle.stats.resolvedSpawns} RESOLVED</small></p></div>
       <div className="hud-item"><small>SCORE</small><b>{battle.stats.score.toLocaleString()}</b></div>
@@ -500,13 +500,17 @@ function BattleScreen({ deck, strokeData, initialVocab, battleConfig, pinyinPool
     <section className="practice-sheet" aria-hidden="true">
       <GameCanvas
         enemies={enemyViews} preparingEnemy={preparingView} targetId={battle.target?.id ?? null} solvedId={solvedId}
-        strokeData={strokeData} paused={paused || battle.learningPaused} reducedMotion={reducedMotion}
+        strokeData={strokeData} paused={paused || battle.learningPaused || battle.secondChance} reducedMotion={reducedMotion}
       />
     </section>
 
     <section className={`answer-console ${battle.phase}`} aria-label="Answer console">
+      {battle.secondChance && <p className="second-chance-banner" role="status">
+        <span><HanziText text="再来一次 · SECOND CHANCE" data={strokeData} /></span>
+        <small>TIME FROZEN · ANSWER WHEN READY · MASTERY UNCHANGED</small>
+      </p>}
       <div className="accessible-target-status">
-        <span>{battle.phase === "meaning" ? battle.pinyinAutocompleted ? "Pinyin autocompleted" : "Pinyin confirmed" : battle.target ? "Locked target" : "Scanning"}</span>
+        <span>{battle.secondChance ? "Second chance, time frozen" : battle.phase === "meaning" ? "Pinyin confirmed" : battle.target ? "Locked target" : "Scanning"}</span>
         <strong lang="zh-Hans">{battle.targetWord?.displayHanzi ?? "No target"}</strong>
         {battle.phase === "meaning" && <span>{battle.targetWord?.displayPinyin}</span>}
         <em>{battle.target ? `Altitude ${Math.max(0, Math.round((1 - battle.target.progress) * 100))} percent` : "Awaiting target"}</em>
@@ -527,7 +531,7 @@ function BattleScreen({ deck, strokeData, initialVocab, battleConfig, pinyinPool
           disabled={pinyinDisabled}
         />
       </form>) : <div className="meaning-zone">
-        <div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : battle.pinyinAutocompleted ? "TIME EXPIRED · PINYIN AUTOCOMPLETED" : <HanziText text="选择纸签释义 · CHOOSE MEANING" data={strokeData} />}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ REPLAY AUDIO</button></div>
+        <div className="meaning-heading"><span>{battle.audioError ? "AUDIO UNAVAILABLE — ANSWER STILL COUNTS" : <HanziText text="选择纸签释义 · CHOOSE MEANING" data={strokeData} />}</span><button onClick={battle.replay} disabled={battle.audioError}>↻ REPLAY AUDIO</button></div>
         <div className="meaning-grid">{battle.choices.map((choice) => {
           const keys = [...new Set(choice.shortcuts.map((shortcut) => shortcut.key))];
           const highlighted = new Set(choice.shortcuts.map((shortcut) => shortcut.index));
@@ -553,7 +557,7 @@ function BattleScreen({ deck, strokeData, initialVocab, battleConfig, pinyinPool
       ? selection
         ? `Select pinyin, character ${selection.charIndex + 1} of ${selection.charCount}. Selected ${selection.selected.join(" ") || "nothing"}.`
         : "Type pinyin"
-      : battle.pinyinAutocompleted ? `Pinyin autocompleted as ${battle.targetWord.displayPinyin}. Choose meaning` : "Choose meaning"}.` : "Waiting for target"}</div>
+      : "Choose meaning"}.${battle.secondChance ? " Second chance: time is frozen and mastery will not change." : ""}` : "Waiting for target"}</div>
     {battle.feedback && <FeedbackNotice feedback={battle.feedback} strokeData={strokeData} onDismiss={battle.dismissFeedback} />}
     {paused && !children && <PauseDialog onResume={onResume} onSettings={onSettings} onEnd={() => onEnd(battle.stats, battle.vocab)} />}{children}
   </main>;
@@ -673,16 +677,14 @@ function MobileKeyboard({ disabled, submitDisabled, backspaceDisabled, onLetter,
 }
 
 function FeedbackNotice({ feedback, strokeData, onDismiss }: { feedback: NonNullable<ReturnType<typeof useBattle>["feedback"]>; strokeData: StrokeDataMap; onDismiss: () => void }) {
-  // An autocomplete reveal is a miss: even when the meaning choice then
-  // succeeds it must never present as a clean DIRECT HIT.
-  if (feedback.kind === "correct" && feedback.revealed) {
-    return <aside className="breach-notice" role="status"><strong><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b><footer><span>PINYIN REVEALED · MEANING SAVED, RECALL RECORDED AS A MISS</span></footer></aside>;
+  if (feedback.kind === "correct" && feedback.secondChance) {
+    return <aside className="breach-notice" role="status"><strong><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b><footer><span>SECOND CHANCE ANSWER · MASTERY UNCHANGED</span></footer></aside>;
   }
   if (feedback.kind === "correct" && (feedback.points ?? 0) >= 0) {
     return <aside className="hit-notice" role="status"><b>+{feedback.points ?? 0}</b><span>DIRECT HIT</span></aside>;
   }
   const blocking = feedback.kind !== "correct";
-  const notice = <aside className="breach-notice" role={blocking ? "dialog" : "alert"} aria-modal={blocking ? true : undefined} aria-labelledby={blocking ? "learning-feedback-title" : undefined}><strong id={blocking ? "learning-feedback-title" : undefined}><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b>{feedback.typed && <em><HanziText text={`YOU TYPED: ${feedback.typed}`} data={strokeData} /></em>}<footer><span>{feedback.kind === "landed" ? "WORD REACHED THE GROUND" : "RECALL RECORDED"}</span></footer>{blocking && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE</button>}</aside>;
+  const notice = <aside className="breach-notice" role={blocking ? "dialog" : "alert"} aria-modal={blocking ? true : undefined} aria-labelledby={blocking ? "learning-feedback-title" : undefined}><strong id={blocking ? "learning-feedback-title" : undefined}><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b>{feedback.typed && <em><HanziText text={`YOU TYPED: ${feedback.typed}`} data={strokeData} /></em>}<footer><span>{feedback.secondChance ? "SECOND CHANCE MISSED · RECALL RECORDED" : "RECALL RECORDED"}</span></footer>{blocking && <button autoFocus className="primary" onClick={onDismiss}>CONTINUE</button>}</aside>;
   return blocking ? <div className="modal-backdrop learning-backdrop">{notice}</div> : notice;
 }
 
@@ -741,10 +743,11 @@ function Summary({ stats, vocab, battleConfig, deck, strokeData, saveStatus, onN
   // Most commonly wrong/missed words first: miss events dominate, then raw
   // wrong answers, then slower average recall.
   const ranking = [...stats.wordStats.entries()]
-    .filter(([, item]) => item.misses > 0)
+    .filter(([, item]) => item.misses > 0 || item.vanished > 0)
     .sort((left, right) =>
       right[1].misses - left[1].misses
-      || (right[1].wrongPinyin + right[1].wrongMeaning + right[1].landed) - (left[1].wrongPinyin + left[1].wrongMeaning + left[1].landed)
+      || (right[1].wrongPinyin + right[1].wrongMeaning) - (left[1].wrongPinyin + left[1].wrongMeaning)
+      || right[1].vanished - left[1].vanished
       || right[1].totalPinyinMs - left[1].totalPinyinMs)
     .slice(0, 12);
   const accuracy = stats.resolvedSpawns
@@ -757,12 +760,12 @@ function Summary({ stats, vocab, battleConfig, deck, strokeData, saveStatus, onN
       ? <p>Perfect round — no struggles or misses.</p>
       : <div className="ranking-table">{ranking.map(([cardId, item], index) => {
         const word = wordMap.get(cardId);
-        const errors = item.wrongPinyin + item.wrongMeaning + item.landed;
+        const errors = item.wrongPinyin + item.wrongMeaning;
         const mastery = vocabByCard.get(cardId)?.mastery ?? 0;
         const category = masteryCategory(mastery, battleConfig);
         return <div key={cardId} className="ranking-row">
           <b>#{index + 1}</b><strong><HanziText text={word?.displayHanzi ?? cardId} data={strokeData} /></strong><span>{word?.displayPinyin}</span>
-          <span>{errors} WRONG · {item.misses} {item.misses === 1 ? "MISS" : "MISSES"}</span>
+          <span>{errors} WRONG · {item.secondChance} SECOND CHANCE · {item.vanished} MISSED</span>
           <em className={`mastery-chip is-${category}`}>{MASTERY_CHIP_LABEL[category]}</em>
           <em>{item.attempts > 0 ? `${(item.totalPinyinMs / item.attempts / 1000).toFixed(1)}s AVG` : "—"}</em>
         </div>;

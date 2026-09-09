@@ -4,7 +4,8 @@ import Database from "better-sqlite3";
 import { Data } from "effect";
 import { DEFAULT_SETTINGS } from "../../shared/constants";
 import { SettingsSchema, type DifficultySettings } from "../../shared/schemas";
-import type { BattleConfig, BattleOpenResponse, VocabOutcomeResponse, VocabRow } from "../../shared/battle";
+import type { BattleConfig, BattleOpenResponse, BattleOutcome, VocabOutcomeResponse, VocabRow } from "../../shared/battle";
+import { masteryDeltaFor } from "../../domain/battle/outcome";
 import type { Curriculum } from "./curriculum";
 
 /**
@@ -181,16 +182,18 @@ export class BattleSaveRepository {
   }
 
   /**
-   * One resolved encounter. Applies the configured delta (clamped to 0..100),
-   * stamps `time_mastered` the first time mastery reaches 100 (never cleared),
-   * and refills the learning slots when the outcome graduates a low row past
-   * `lowMax`. Returns null when `cardId` is not in the vocab table.
+   * One resolved encounter. Reads the mastery move off the configured
+   * answer-speed curve (a correct answer's timer, the flat second-chance gain,
+   * or the wrong-answer delta), clamps it to 0..100, stamps `time_mastered`
+   * the first time mastery reaches 100 (never cleared), and refills the
+   * learning slots when the outcome graduates a low row past `lowMax`.
+   * Returns null when `cardId` is not in the vocab table.
    */
-  applyOutcome(cardId: string, cleanCorrect: boolean): VocabOutcomeResponse | null {
+  applyOutcome(cardId: string, outcome: BattleOutcome): VocabOutcomeResponse | null {
     return this.db.transaction((): VocabOutcomeResponse | null => {
       const record = this.selectByCardId.get(cardId) as VocabRecord | undefined;
       if (record === undefined) return null;
-      const delta = cleanCorrect ? this.battleConfig.masteryDelta : -this.battleConfig.masteryDelta;
+      const delta = masteryDeltaFor(outcome, this.battleConfig);
       const mastery = Math.max(0, Math.min(100, record.mastery + delta));
       const timeMastered = record.time_mastered ?? (mastery >= 100 ? this.now().toISOString() : null);
       this.updateMastery.run(mastery, timeMastered, record.id);

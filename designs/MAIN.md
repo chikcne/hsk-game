@@ -47,7 +47,7 @@ context and are not implementation authority. Supporting details live in:
 
 - A settings screen adjusts **enemy spawn rate** and one **global enemy speed**.
 - The global setting multiplies every active and future enemy's mastery-derived speed uniformly; per-enemy random speeds are out of scope.
-- A new target is chosen by shortest predicted time to ground, then locked until removal or landing. New spawns cannot steal the lock.
+- A new target is chosen by shortest predicted time to ground, then locked until it is answered or vanishes at the ground. New spawns cannot steal the lock.
 - Opening settings pauses the simulation. Applying a global speed change updates all active enemies uniformly. Applying a spawn-rate change starts a fresh interval rather than causing a burst.
 
 ### Explicit MVP decisions
@@ -60,7 +60,7 @@ context and are not implementation authority. Supporting details live in:
 | Targeting | Shortest predicted time to ground, then lowest `spawnOrdinal` as tie-breaker. Lock until resolution; no spawn-time or manual switching. |
 | Wrong answer | One scored/mastery outcome per enemy. A wrong non-empty pinyin or wrong meaning key removes the enemy and opens a blocking correction panel; descent and spawning resume only after **Continue**. |
 | Blank/irrelevant input | Blank Enter and keys outside the current phase are ignored, not counted wrong. |
-| Audio timing | Play word audio after pinyin succeeds, before the meaning choice; **R** replays it in the meaning phase. Play a blaster on a complete correct answer and a buzzer on wrong answers or natural landings. |
+| Audio timing | Play word audio after pinyin succeeds, before the meaning choice; **R** replays it in the meaning phase. Play a blaster on a complete correct answer and a buzzer on wrong answers. A vanishing word is silent. |
 | Persistence | Authoritative server-side SQLite `saves/default.sql` (vocab + settings tables) behind the four REST endpoints in `src/shared/battle.ts`; battle tuning lives in `config/battle.yaml`. |
 | Completion | Battle is endless and ends only when the player chooses **End Battle**; there is no automatic completion state. |
 | Source duplicates | Exact semantic duplicates become one logical word with multiple source GUIDs; distinct senses remain distinct. |
@@ -76,7 +76,7 @@ The PNGs are visual acceptance references rather than exact pixel-coordinate man
 | Deck selection and progress | [`01-deck-select.png`](01-deck-select.png) |
 | Multiple enemies; nearest target; pinyin entry | [`02-battle-pinyin.png`](02-battle-pinyin.png) |
 | Pinyin confirmed, audio played, eight-key meaning grid | [`03-battle-meaning.png`](03-battle-meaning.png) |
-| Wrong answer or landing feedback | [`04-miss-feedback.png`](04-miss-feedback.png) |
+| Wrong answer feedback | [`04-miss-feedback.png`](04-miss-feedback.png) |
 | End-session report and persisted progress | [`05-session-summary.png`](05-session-summary.png) |
 | Spawn-rate and global-speed settings | [`06-settings.png`](06-settings.png) |
 | Mobile/touch meaning selection | [`07-mobile-meaning.png`](07-mobile-meaning.png) |
@@ -207,7 +207,7 @@ stateDiagram-v2
   Summary --> DeckSelect
 ```
 
-World spawning and descent continue during `Pinyin`, `Meaning`, hit feedback, and natural-landing feedback. They freeze in `Paused`, settings, and wrong-answer review. Wrong-answer review remains visible until **Continue** is pressed; response timing and the spawn interval restart on dismissal so review time cannot penalize the player or cause a spawn burst.
+World spawning and descent continue during `Pinyin`, `Meaning`, and hit feedback. They freeze in `Paused`, settings, second chance, and wrong-answer review. Wrong-answer review remains visible until **Continue** is pressed; response timing and the spawn interval restart on dismissal so review time cannot penalize the player or cause a spawn burst.
 
 The active target is a lock. Keep it while that enemy remains descending; only then choose a replacement:
 
@@ -236,7 +236,7 @@ type SessionEvent =
   | { type: "sessionEnded"; atMs: number };
 ```
 
-A reducer returns commands such as `playWordAudio`, `destroyEnemy`, `breachEnemy`, `checkpointSave`, or `showSummary`. Side effects execute outside the reducer. Duplicate landing/submission events for an already resolved enemy are ignored by enemy ID, ensuring exactly one learning update.
+A reducer returns commands such as `playWordAudio`, `destroyEnemy`, `breachEnemy`, `checkpointSave`, or `showSummary`. Side effects execute outside the reducer. Duplicate submission events for an already resolved enemy are ignored by enemy ID, ensuring exactly one learning update.
 
 ## 6. Data and persistence boundaries
 
@@ -279,7 +279,7 @@ An implementation is not feature-complete until all gates pass.
 
 - The active pool contains exactly the five lowest-position vocab rows at mastery 0..50 plus every row above 50.
 - Every spawn is a live category draw using the configured Hill shares, followed by a uniform draw within that category; empty categories renormalize and active/preparing words are excluded.
-- A clean correct outcome adds 10 mastery; a wrong pinyin, wrong meaning, reveal, or landing subtracts 10, clamped to 0..100.
+- Mastery moves on the answer-speed curve: a correct answer adds `masteryCurve` gain read at the answer clock (+20 under 2s, +10 at 5s, +1 at 8s, piecewise linear between), a correct answer given in second chance adds `secondChanceGain` (0), a wrong pinyin or meaning subtracts `masteryDelta` (10), and a word that vanishes at the ground changes nothing. All clamped to 0..100.
 - One enemy produces at most one mastery outcome.
 - Graduating a low-slot word above 50 appends the next unseen curriculum row in strict order until five low slots are restored.
 - `time_mastered` is set the first time mastery reaches 100 and is never cleared by later regression.
@@ -289,10 +289,10 @@ An implementation is not feature-complete until all gates pass.
 - At least two enemies can be visible simultaneously under default settings.
 - Active enemies move at their deterministic mastery-derived speeds multiplied by the same global setting.
 - The locked predicted-soonest arrival is highlighted and is the only word accepted by the command panel.
-- Removing/landing the target immediately locks the remaining enemy predicted to land soonest.
-- A target at ground level cannot land until its active pinyin recall window expires; altitude before selection never shortens that window, and accepted pinyin disables landing during meaning selection.
+- Resolving the target, or losing it to the ground, immediately locks the remaining enemy predicted to land soonest.
+- The answer clock, started at selection and spanning both phases, opens second chance at `masteryCurve.floorMs`; that freeze arrives before the ground can, so a word under active answer effectively never vanishes.
 - Spawn and speed sliders work, persist, and do not create a spawn burst.
-- Wrong answer and natural landing both reset streak; neither ends the game.
+- A wrong answer and a second-chance answer both reset streak; a vanished word does not. None end the game.
 
 ### Gate D — persistence
 

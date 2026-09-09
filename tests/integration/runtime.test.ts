@@ -5,6 +5,7 @@ import type { SaveFile } from "../../src/shared/schemas";
 import { DEFAULT_SETTINGS } from "../../src/shared/constants";
 import type { VocabRow } from "../../src/shared/battle";
 import { applyMasteryOutcome, battlePools, selectBattleSpawn } from "../../src/domain/battle";
+import type { BattleOutcome } from "../../src/shared/battle";
 import { createLevelProgress, type LearningDeck } from "../../src/domain/learning";
 import { applyLearnRating, createLearnSession, nextLearnCardId } from "../../src/domain/learn";
 import { reviewWordKey } from "../../src/domain/review";
@@ -18,6 +19,8 @@ const CONFIG = {
   learningSlots: 5,
   boundaries: { lowMax: 50, developingMax: 99 },
   masteryDelta: 10,
+  masteryCurve: { maxMs: 2000, maxGain: 20, midMs: 5000, midGain: 10, floorMs: 8000, floorGain: 1, secondChanceGain: 0 },
+  relief: { correct: 0.1, secondChance: 0.05 },
   curve: { midpoint: 5, shape: 1.3 },
   asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 },
 };
@@ -37,19 +40,20 @@ function baseSave(deckOfSave: LearningDeck): SaveFile {
 }
 
 /** Pure mirror of the approved server outcome contract, driving the client
- * pipeline end to end: mastery delta with clamp, time_mastered set once at
- * 100 and never cleared, and the ordered learning-slot refill (append the
- * next unseen curriculum entry whenever fewer than `learningSlots` low rows
- * remain). Curriculum ids arrive as the deck's flattened word order. */
+ * pipeline end to end: the answer-speed curve delta with clamp, time_mastered
+ * set once at 100 and never cleared, and the ordered learning-slot refill
+ * (append the next unseen curriculum entry whenever fewer than
+ * `learningSlots` low rows remain). Curriculum ids arrive as the deck's
+ * flattened word order. */
 function simulateServerOutcome(
   vocab: readonly VocabRow[],
   curriculumIds: readonly string[],
   cardId: string,
-  cleanCorrect: boolean,
+  outcome: BattleOutcome,
 ): { vocab: VocabRow[]; row: VocabRow; addedRows: VocabRow[] } {
   const rows = vocab.map((row) => ({ ...row }));
   const target = rows.find((row) => row.cardId === cardId)!;
-  target.mastery = applyMasteryOutcome(target.mastery, cleanCorrect, CONFIG);
+  target.mastery = applyMasteryOutcome(target.mastery, outcome, CONFIG);
   if (target.mastery === 100 && target.timeMastered === null) {
     target.timeMastered = NOW.toISOString();
   }
@@ -151,15 +155,16 @@ describe("playable runtime slice", () => {
     const fourActive = new Set(vocab.slice(0, 4).map((row) => row.cardId));
     expect(selectBattleSpawn(vocab, CONFIG, rng, fourActive)!.row.cardId).toBe(vocab[4]!.cardId);
 
-    // 4. Ten clean corrects graduate the first seed; each graduation beyond
+    // 4. Ten midpoint-speed corrects graduate the first seed; each graduation beyond
     //    the low boundary refills the slot with the NEXT unseen curriculum
     //    entry in strict order (positions 6, 7, ...).
     const seedCard = vocab[0]!.cardId;
+    const midpointAnswer: BattleOutcome = { kind: "correct", answerMs: CONFIG.masteryCurve.midMs };
     for (let step = 0; step < 10; step += 1) {
-      const result = simulateServerOutcome(vocab, curriculumIds, seedCard, true);
+      const result = simulateServerOutcome(vocab, curriculumIds, seedCard, midpointAnswer);
       vocab = result.vocab;
       // The client's optimistic mirror always agrees with the server row.
-      expect(result.row.mastery).toBe(applyMasteryOutcome(step * 10, true, CONFIG));
+      expect(result.row.mastery).toBe(applyMasteryOutcome(step * 10, midpointAnswer, CONFIG));
     }
     expect(vocab.find((row) => row.cardId === seedCard)!.mastery).toBe(100);
     expect(vocab.find((row) => row.cardId === seedCard)!.timeMastered).toBe(NOW.toISOString());
@@ -184,10 +189,13 @@ describe("playable runtime slice", () => {
       expect([...idleSeeds, matureCard]).toContain(cardId);
     }
 
-    // 6. Misses decrement mastery and clamp at zero; time_mastered survives
-    //    a later miss (never cleared).
+    // 6. A second-chance answer holds mastery exactly where it is, while
+    //    wrong answers decrement and clamp at zero; time_mastered survives a
+    //    later demotion (never cleared).
+    const held = simulateServerOutcome(vocab, curriculumIds, matureCard, { kind: "secondChance" });
+    expect(held.row.mastery).toBe(100);
     for (let step = 0; step < 12; step += 1) {
-      vocab = simulateServerOutcome(vocab, curriculumIds, matureCard, false).vocab;
+      vocab = simulateServerOutcome(vocab, curriculumIds, matureCard, { kind: "wrong" }).vocab;
     }
     const demoted = vocab.find((row) => row.cardId === matureCard)!;
     expect(demoted.mastery).toBe(0);

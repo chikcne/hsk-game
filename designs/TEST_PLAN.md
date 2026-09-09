@@ -174,13 +174,14 @@ Cover every state/event pair, especially ignored events.
 - correct key → one hit/score/mastery/save command;
 - wrong key → one miss/breach/save command;
 - key repeat after resolution → no-op;
-- late Phaser landing callback after wrong breach → no-op;
-- duplicate landing callback → one outcome;
-- target at ground during meaning → remains answerable and does not create a landing outcome;
+- late Phaser vanish callback after wrong breach → no-op;
+- duplicate vanish callback → one removal, still no outcome;
+- answer clock at the curve floor → second chance freezes the field and leaves input live;
+- correct answer in second chance → one hit command with a zero mastery delta;
 
 ### Deadline race
 
-Define and test ordering: input events captured before a fixed simulation step are reduced before that step advances movement. Therefore a valid submission queued just before progress crosses `1` wins; once a landing outcome has been reduced, later input loses. Tests use explicit sequence numbers, not real event-loop timing.
+Define and test ordering: input events captured before a fixed simulation step are reduced before that step advances movement. Therefore a valid submission queued just before progress crosses `1` wins; once the word has vanished, later input loses (and produces no outcome either way). Tests use explicit sequence numbers, not real event-loop timing.
 
 ## 7. Multi-enemy simulation tests
 
@@ -190,10 +191,10 @@ Define and test ordering: input events captured before a fixed simulation step a
 - equal predicted landing times choose lower spawn ordinal;
 - a newly spawned earlier arrival does not steal the current target lock;
 - hit/removal selects the predicted-soonest remaining enemy immediately;
-- natural landing selects the predicted-soonest remaining enemy immediately;
+- a word reaching the ground vanishes and selects the predicted-soonest remaining enemy immediately;
 - changing global speed applies an identical additional multiplier to every active enemy and preserves arrival ordering;
 - changing spawn interval creates no immediate catch-up burst;
-- pause/settings/hidden page freezes progress, spawn clock, and answer clocks;
+- pause/settings/hidden page/second chance freezes progress, spawn clock, and answer clocks;
 - one spawn occurs after lag clamp, not several catch-up spawns;
 - maximum 32 defers a spawn without discarding an existing enemy;
 - ending session does not mark active enemies missed.
@@ -277,7 +278,7 @@ Use a tiny generated test deck and deterministic clock.
 1. **Keyboard success**: select HSK, see several enemies, confirm lowest highlighted, type pinyin, hear mocked audio call, press correct letter, score/streak increase, save file updates.
 2. **Wrong pinyin**: wrong non-empty Enter shows correction, resets streak, breaches once, grades the FSRS component Again, and selects the next enemy.
 3. **Wrong meaning**: correct pinyin then wrong letter shows chosen/correct labels and one miss.
-4. **Natural landing**: put the target at ground, verify it receives a full selection-based pinyin window, then advance the recall clock and verify no game over and the next target highlight.
+4. **Ground and second chance**: advance a queued word to the ground and verify it vanishes silently — no reveal, no mastery change, next target highlighted; then hold a target past the curve floor and verify the field freezes, the answer stays live, and a correct answer leaves mastery untouched.
 5. **Cooldown across restart**: spawn a word, end, reload, verify it does not reappear before stored eligibility.
 6. **Settings**: pause, adjust rate/speed, assert scene frozen, apply, assert all enemies same new speed and no burst, reload and verify persistence.
 7. **End session**: end with enemies active, verify they are not misses, report waits for save, resume fresh arena with progress retained.

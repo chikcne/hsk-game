@@ -59,14 +59,14 @@ describe("save API", () => {
     await app.inject({ method: "POST", url: "/api/saves/default/battle/open" });
     const url = `/api/saves/default/vocab/${fixture.cardIds[2]}/outcome`;
 
-    // 0 -> 50 stays low: five clean answers, no refill yet.
+    // 0 -> 50 stays low: five midpoint answers at +10 each, no refill yet.
     for (let index = 0; index < 5; index += 1) {
-      const response = await app.inject({ method: "POST", url, payload: { cleanCorrect: true } });
+      const response = await app.inject({ method: "POST", url, payload: { outcome: { kind: "correct", answerMs: 5_000 } } });
       expect(response.statusCode).toBe(200);
       expect(response.json().addedRows).toEqual([]);
     }
     // 50 -> 60 graduates the slot: position 6 is appended.
-    const graduated = await app.inject({ method: "POST", url, payload: { cleanCorrect: true } });
+    const graduated = await app.inject({ method: "POST", url, payload: { outcome: { kind: "correct", answerMs: 5_000 } } });
     expect(graduated.statusCode).toBe(200);
     const body = graduated.json();
     expect(body.row).toMatchObject({ id: 3, cardId: fixture.cardIds[2], mastery: 60 });
@@ -84,7 +84,7 @@ describe("save API", () => {
     const unknown = await app.inject({
       method: "POST",
       url: `/api/saves/default/vocab/${fixture.cardIds[7]}/outcome`,
-      payload: { cleanCorrect: true },
+      payload: { outcome: { kind: "correct", answerMs: 5_000 } },
     });
     expect(unknown.statusCode).toBe(404);
     expect(unknown.json()).toMatchObject({ error: "unknown_card" });
@@ -92,12 +92,19 @@ describe("save API", () => {
     const malformed = await app.inject({
       method: "POST",
       url: "/api/saves/default/vocab/not-a-card-id/outcome",
-      payload: { cleanCorrect: true },
+      payload: { outcome: { kind: "correct", answerMs: 5_000 } },
     });
     expect(malformed.statusCode).toBe(400);
     expect(malformed.json()).toMatchObject({ error: "invalid_card_id" });
 
-    for (const payload of [{}, { cleanCorrect: "yes" }, { cleanCorrect: true, extra: 1 }]) {
+    for (const payload of [
+      {},
+      { outcome: true },
+      { outcome: { kind: "correct" } },
+      { outcome: { kind: "correct", answerMs: -1 } },
+      { outcome: { kind: "shrug" } },
+      { outcome: { kind: "wrong" }, extra: 1 },
+    ]) {
       const invalid = await app.inject({
         method: "POST",
         url: `/api/saves/default/vocab/${fixture.cardIds[0]}/outcome`,

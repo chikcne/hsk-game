@@ -12,6 +12,8 @@ import {
   TEST_BATTLE_CONFIG,
   cleanupDirectories,
   fastGraduationConfig,
+  midAnswer,
+  wrongAnswer,
   fixedClock,
   fixtureCardId,
   temporaryDirectory,
@@ -264,14 +266,14 @@ describe("BattleSaveRepository battle open", () => {
 });
 
 describe("BattleSaveRepository outcomes", () => {
-  it("applies +10 for clean correct and -10 for a miss, clamped to 0..100", async () => {
+  it("applies the curve gain for a correct answer and -delta for a wrong one, clamped to 0..100", async () => {
     const { repository, fixture } = await makeRepository({ now: fixedClock("2026-09-09T02:00:00.000Z") });
     repository.openBattle();
     const cardId = fixture.cardIds[0]!;
 
-    expect(repository.applyOutcome(cardId, true)!.row.mastery).toBe(10);
-    expect(repository.applyOutcome(cardId, false)!.row.mastery).toBe(0);
-    expect(repository.applyOutcome(cardId, false)!.row.mastery).toBe(0); // clamped at 0
+    expect(repository.applyOutcome(cardId, midAnswer)!.row.mastery).toBe(10);
+    expect(repository.applyOutcome(cardId, wrongAnswer)!.row.mastery).toBe(0);
+    expect(repository.applyOutcome(cardId, wrongAnswer)!.row.mastery).toBe(0); // clamped at 0
     repository.close();
   });
 
@@ -297,15 +299,15 @@ describe("BattleSaveRepository outcomes", () => {
         "2026-09-09T06:00:00.000Z", // 90 -> 100 (stamp unchanged)
       ),
     });
-    const mastered = resumed.applyOutcome(cardId, true)!.row;
+    const mastered = resumed.applyOutcome(cardId, midAnswer)!.row;
     expect(mastered.mastery).toBe(100);
     expect(mastered.timeMastered).toBe("2026-09-09T04:00:00.000Z");
 
-    const decayed = resumed.applyOutcome(cardId, false)!.row;
+    const decayed = resumed.applyOutcome(cardId, wrongAnswer)!.row;
     expect(decayed.mastery).toBe(90);
     expect(decayed.timeMastered).toBe("2026-09-09T04:00:00.000Z"); // never cleared
 
-    const regained = resumed.applyOutcome(cardId, true)!.row;
+    const regained = resumed.applyOutcome(cardId, midAnswer)!.row;
     expect(regained.mastery).toBe(100);
     expect(regained.timeMastered).toBe("2026-09-09T04:00:00.000Z"); // first-set only
     resumed.close();
@@ -314,7 +316,7 @@ describe("BattleSaveRepository outcomes", () => {
   it("never stamps time_mastered below 100", async () => {
     const { repository, fixture } = await makeRepository({ now: fixedClock("2026-09-09T02:00:00.000Z") });
     repository.openBattle();
-    const row = repository.applyOutcome(fixture.cardIds[1]!, true)!.row;
+    const row = repository.applyOutcome(fixture.cardIds[1]!, midAnswer)!.row;
     expect(row.mastery).toBe(10);
     expect(row.timeMastered).toBeNull();
     repository.close();
@@ -323,8 +325,8 @@ describe("BattleSaveRepository outcomes", () => {
   it("returns null for a card that is not in the vocab pool", async () => {
     const { repository, fixture } = await makeRepository({ curriculumCount: 8 });
     repository.openBattle();
-    expect(repository.applyOutcome(fixture.cardIds[7]!, true)).toBeNull(); // exists in curriculum, unseen
-    expect(repository.applyOutcome("ffffffffffffffffffffffff", true)).toBeNull(); // not in curriculum
+    expect(repository.applyOutcome(fixture.cardIds[7]!, midAnswer)).toBeNull(); // exists in curriculum, unseen
+    expect(repository.applyOutcome("ffffffffffffffffffffffff", midAnswer)).toBeNull(); // not in curriculum
     repository.close();
   });
 });
@@ -340,10 +342,10 @@ describe("BattleSaveRepository learning-slot refill", () => {
 
     // 0 -> 10 -> 20 -> 30 -> 40 -> 50: still low, no refill.
     for (let index = 0; index < 5; index += 1) {
-      expect(repository.applyOutcome(cardId, true)!.addedRows).toEqual([]);
+      expect(repository.applyOutcome(cardId, midAnswer)!.addedRows).toEqual([]);
     }
     // 50 -> 60: graduates, position 6 is appended.
-    const graduated = repository.applyOutcome(cardId, true)!;
+    const graduated = repository.applyOutcome(cardId, midAnswer)!;
     expect(graduated.addedRows.map((row) => row.id)).toEqual([6]);
     expect(graduated.addedRows[0]!.cardId).toBe(fixture.cardIds[5]!);
     expect(graduated.addedRows[0]!.mastery).toBe(0);
@@ -351,7 +353,7 @@ describe("BattleSaveRepository learning-slot refill", () => {
 
     // A second graduation appends position 7, never reordering.
     const cardId2 = fixture.cardIds[0]!;
-    for (let index = 0; index < 6; index += 1) repository.applyOutcome(cardId2, true);
+    for (let index = 0; index < 6; index += 1) repository.applyOutcome(cardId2, midAnswer);
     const state = repository.getState();
     expect(state.vocab.map((row) => row.id)).toEqual([1, 2, 3, 4, 5, 6, 7]);
     repository.close();
@@ -360,7 +362,7 @@ describe("BattleSaveRepository learning-slot refill", () => {
   it("a miss on a low word never refills", async () => {
     const { repository, fixture } = await makeRepository({ curriculumCount: 8 });
     repository.openBattle();
-    const outcome = repository.applyOutcome(fixture.cardIds[4]!, false)!;
+    const outcome = repository.applyOutcome(fixture.cardIds[4]!, wrongAnswer)!;
     expect(outcome.row.mastery).toBe(0);
     expect(outcome.addedRows).toEqual([]);
     repository.close();
@@ -369,9 +371,9 @@ describe("BattleSaveRepository learning-slot refill", () => {
   it("consecutive graduations append the next unseen positions one at a time", async () => {
     const { repository, fixture } = await makeRepository({ curriculumCount: 8, battleConfig: fastGraduationConfig });
     repository.openBattle();
-    const first = repository.applyOutcome(fixture.cardIds[4]!, true)!;
+    const first = repository.applyOutcome(fixture.cardIds[4]!, midAnswer)!;
     expect(first.addedRows.map((row) => row.id)).toEqual([6]);
-    const second = repository.applyOutcome(fixture.cardIds[0]!, true)!;
+    const second = repository.applyOutcome(fixture.cardIds[0]!, midAnswer)!;
     expect(second.addedRows.map((row) => row.id)).toEqual([7]);
     repository.close();
   });
@@ -379,10 +381,10 @@ describe("BattleSaveRepository learning-slot refill", () => {
   it("stops refilling when the curriculum is exhausted", async () => {
     const { repository, fixture } = await makeRepository({ curriculumCount: 6, battleConfig: fastGraduationConfig });
     repository.openBattle(); // seeds 1..5, one unseen remains
-    expect(repository.applyOutcome(fixture.cardIds[0]!, true)!.addedRows.map((row) => row.id)).toEqual([6]);
+    expect(repository.applyOutcome(fixture.cardIds[0]!, midAnswer)!.addedRows.map((row) => row.id)).toEqual([6]);
     // Curriculum exhausted: graduating more slots appends nothing, never throws.
     for (const index of [1, 2, 3, 4]) {
-      const outcome = repository.applyOutcome(fixture.cardIds[index]!, true)!;
+      const outcome = repository.applyOutcome(fixture.cardIds[index]!, midAnswer)!;
       expect(outcome.addedRows).toEqual([]);
     }
     const state = repository.getState();
@@ -393,7 +395,7 @@ describe("BattleSaveRepository learning-slot refill", () => {
   it("a decayed pool word keeps the vocab coherent without extra seeding", async () => {
     const { repository, directory, savePath, fixture } = await makeRepository({ curriculumCount: 8, battleConfig: fastGraduationConfig });
     repository.openBattle();
-    repository.applyOutcome(fixture.cardIds[0]!, true); // graduates -> refill appends 6
+    repository.applyOutcome(fixture.cardIds[0]!, midAnswer); // graduates -> refill appends 6
     repository.close();
 
     // A developed word decays back into the low range: now six low rows exist,

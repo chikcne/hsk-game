@@ -7,8 +7,10 @@
 > settings key/value table, exposed only through the REST contract in
 > `src/shared/battle.ts`. The whole-file `SaveFile` JSON snapshots, revision
 > counters, beacons, and emergency localStorage cache described below are
-> retired. Battle mastery moves ±10 per clean correct/miss (see
-> `config/battle.yaml`). The FSRS Learn/Relearn machinery this document
+> retired. Battle mastery now moves on an answer-speed curve — +20/+10/+1 as
+> the answer clock passes 2s/5s/8s, 0 for a correct second-chance answer,
+> −10 for any wrong answer, and nothing at all for a word that reaches the
+> ground (see `config/battle.yaml`). The FSRS Learn/Relearn machinery this document
 > describes remains implemented internally (`src/domain/learn`,
 > `src/domain/relearn`) but is disabled/hidden in the UI.
 

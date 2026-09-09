@@ -1,7 +1,7 @@
 import { mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import type { BattleConfig } from "../../src/shared/battle";
+import type { BattleConfig, BattleOutcome } from "../../src/shared/battle";
 
 const directories: string[] = [];
 
@@ -71,9 +71,25 @@ export const TEST_BATTLE_CONFIG: BattleConfig = {
   learningSlots: 5,
   boundaries: { lowMax: 50, developingMax: 99 },
   masteryDelta: 10,
+  masteryCurve: { maxMs: 2000, maxGain: 20, midMs: 5000, midGain: 10, floorMs: 8000, floorGain: 1, secondChanceGain: 0 },
+  relief: { correct: 0.1, secondChance: 0.05 },
   curve: { midpoint: 5, shape: 1.3 },
   asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 },
 };
 
-/** One clean correct answer moves a fresh word past lowMax (0 -> 60 > 50). */
-export const fastGraduationConfig: BattleConfig = { ...TEST_BATTLE_CONFIG, masteryDelta: 60 };
+/** Any correct answer, at any speed, moves a fresh word past lowMax
+ * (0 -> 60 > 50), and one wrong answer takes it straight back down. */
+export const fastGraduationConfig: BattleConfig = {
+  ...TEST_BATTLE_CONFIG,
+  masteryDelta: 60,
+  masteryCurve: { ...TEST_BATTLE_CONFIG.masteryCurve, maxGain: 60, midGain: 60, floorGain: 60 },
+};
+
+/** Outcome fixtures at the committed curve anchors: `fastAnswer` sits in the
+ * flat maximum band, `midAnswer` on the midpoint anchor, `slowAnswer` one
+ * millisecond short of the second-chance threshold. */
+export const fastAnswer: BattleOutcome = { kind: "correct", answerMs: 1_000 };
+export const midAnswer: BattleOutcome = { kind: "correct", answerMs: 5_000 };
+export const slowAnswer: BattleOutcome = { kind: "correct", answerMs: 7_999 };
+export const secondChanceAnswer: BattleOutcome = { kind: "secondChance" };
+export const wrongAnswer: BattleOutcome = { kind: "wrong" };

@@ -18,10 +18,35 @@ boundaries:
   lowMax: 50
   developingMax: 99
 
-# Symmetric mastery delta per encounter, clamped to 0..100: a clean correct
-# answer (pinyin + meaning, no reveal) earns +masteryDelta; a wrong pinyin, a
-# wrong meaning, a reveal, or a landing costs -masteryDelta.
+# Cost of a wrong answer, at any point in an encounter and in second chance
+# too: a wrong pinyin or a wrong meaning subtracts masteryDelta, clamped to
+# 0..100. A word that simply reaches the ground unanswered costs nothing.
 masteryDelta: 10
+
+# Answer-speed mastery curve. A dedicated answer timer starts the moment a word
+# becomes the locked target and runs until the meaning answer resolves it, so it
+# spans BOTH the pinyin and the meaning phase. Gain is piecewise linear through
+# three anchors: flat at maxGain up to maxMs, sloping down to midGain at midMs,
+# then down to floorGain at floorMs.
+#
+# Reaching floorMs without resolving opens SECOND CHANCE instead: gameplay
+# freezes, the answer has no time limit, and answering correctly there applies
+# secondChanceGain rather than any curve value.
+masteryCurve:
+  maxMs: 1500
+  maxGain: 50
+  midMs: 5000
+  midGain: 20
+  floorMs: 8000
+  floorGain: 1
+  secondChanceGain: 0
+
+# Altitude relief granted to every OTHER word on the field when one word is
+# answered correctly, as a fraction of the full descent. A second-chance answer
+# grants the smaller amount; a wrong answer grants none.
+relief:
+  correct: 0.10
+  secondChance: 0.05
 
 # Hill curve r(n) = n^shape / (n^shape + midpoint^shape), where n counts words
 # with mastery above lowMax. r interpolates the low-category draw share from 1

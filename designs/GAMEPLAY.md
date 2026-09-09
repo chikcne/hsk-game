@@ -61,19 +61,29 @@ PINYIN
   blank Enter                    -> ignore
   normalized answer accepted    -> play word audio -> MEANING
   non-empty answer rejected     -> MISS(reason=pinyin)
-  target at ground before recall window expires -> wait at ground
-  target at ground after recall window expires  -> MISS(reason=landing)
+  target reaches ground          -> VANISH (silent, no outcome)
+  answer clock reaches floorMs   -> SECOND CHANCE (whole field freezes)
 
 MEANING
   R                              -> replay word audio
   non-ASDFHJKL key               -> ignore
   correct choice key             -> HIT
   wrong choice key               -> MISS(reason=meaning)
-  target reaches ground          -> wait for meaning answer
+  target reaches ground          -> VANISH (silent, no outcome)
+  answer clock reaches floorMs   -> SECOND CHANCE (whole field freezes)
+
+SECOND CHANCE
+  descent, spawning, and the answer clock are frozen; input stays live
+  correct answer                 -> HIT with mastery held flat
+  wrong answer                   -> MISS(reason=pinyin|meaning)
+
+VANISH
+  the word is removed with no reveal, no outcome, and no mastery change
+  -> predicted-soonest remaining enemy becomes PINYIN target
 
 HIT / MISS
   target is already resolved; late events are ignored
-  HIT and natural-landing feedback are short and non-blocking
+  HIT feedback is short and non-blocking
   wrong-answer feedback freezes descent and spawning until CONTINUE DEFENSE
   -> predicted-soonest remaining enemy becomes PINYIN target
 ```
@@ -108,7 +118,7 @@ Examples:
 
 Canonicalization is specified in [`DATA_PIPELINE.md`](DATA_PIPELINE.md). It is used both during import and submission, after which the insertion tolerance is applied. A plain `u` is also accepted where the expected canonical form contains `v` (`ü`), since learners commonly omit the umlaut when typing without tone marks. Do not perform incremental red/green character checking; a submission is judged only on Enter. This avoids leaking the answer and supports natural editing.
 
-Timing starts when the enemy first becomes the active target, not when it spawned. Pause, settings, and hidden-tab time are excluded. An enemy that reaches the ground before selection waits there, and a newly selected enemy always receives the full configured recall window regardless of altitude. Once pinyin is accepted, altitude cannot turn meaning-selection time into a recall failure.
+Timing starts when the enemy first becomes the active target, not when it spawned. Pause, settings, second-chance, and hidden-tab time are excluded. The same clock keeps running across the pinyin AND meaning phases: it is the single answer clock that scores the encounter on the mastery speed curve and that opens second chance at `masteryCurve.floorMs`.
 
 ## 4. Meaning choices
 
@@ -138,17 +148,24 @@ Each enemy produces exactly one of:
 
 ```ts
 type EncounterOutcome =
-  | { kind: "correct"; pinyinMs: number; meaningMs: number; pinyinAutocompleted?: boolean }
+  | { kind: "correct"; pinyinMs: number; meaningMs: number }
   | { kind: "wrongPinyin"; pinyinMs: number }
-  | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number; pinyinAutocompleted?: boolean }
-  | { kind: "landed"; activeThinkingMs: number | null };
+  | { kind: "wrongMeaning"; pinyinMs: number; meaningMs: number };
 ```
 
-The encounter reducer marks an enemy resolved before emitting its outcome. Any late key, animation, or landing callback with that ID becomes a no-op. The learning module consumes one outcome and returns one updated word record.
+A word that reaches the ground produces NO outcome at all: it vanishes silently and the next target locks.
+
+The encounter reducer marks an enemy resolved before emitting its outcome. Any late key or animation callback with that ID becomes a no-op. The learning module consumes one outcome and returns one updated word record.
 
 Audio success/failure, animation completion, frame rate, and settings do not alter the outcome.
 
-Battle persistence consumes the outcome directly: a **clean correct** (correct outcome, no reveal — exactly the `encounterCredit` semantics) POSTs `cleanCorrect: true` to the vocab outcome endpoint; every miss (wrong pinyin, wrong meaning, reveal, or landing) POSTs `false`. The server applies ±`masteryDelta` clamped 0..100, sets `time_mastered` once at 100, and refills the learning slot when a low word graduates; the client mirrors the delta optimistically and merges the authoritative rows asynchronously without blocking the animation.
+Battle persistence POSTs one `BattleOutcome` to the vocab outcome endpoint:
+
+- `{ kind: "correct", answerMs }` — answered before the floor; the server reads the gain off the piecewise-linear `masteryCurve` at `answerMs`;
+- `{ kind: "secondChance" }` — answered correctly after the field froze; applies `masteryCurve.secondChanceGain` (0 by default);
+- `{ kind: "wrong" }` — a wrong pinyin or meaning at any time; applies `-masteryDelta`.
+
+A vanished word POSTs nothing. The server clamps to 0..100, sets `time_mastered` once at 100, and refills the learning slot when a low word graduates; the client mirrors the same delta optimistically through `applyMasteryOutcome` and merges the authoritative rows asynchronously without blocking the animation.
 
 ## 6. Score and streak
 
@@ -156,8 +173,9 @@ There is no negative score and no game-over state.
 
 ### Streak
 
-- A complete pinyin-plus-meaning success increments streak by one.
-- Wrong pinyin, wrong meaning, or landing sets streak to zero.
+- A complete pinyin-plus-meaning success before the floor increments streak by one.
+- Wrong pinyin, wrong meaning, or any second-chance answer sets streak to zero.
+- A vanished word leaves the streak untouched.
 - Pinyin success alone does not increment streak.
 - Ending/pausing a session does not break streak; the current session streak is included in the voluntary summary but a new session starts at zero.
 
@@ -165,7 +183,8 @@ Show small celebrations at streaks 5, 10, 20, 30, and every additional 25. Celeb
 
 ### Points
 
-Only complete correct encounters award points:
+Only complete correct encounters answered before the floor award points; a
+second-chance answer scores exactly zero:
 
 ```ts
 speedScore = clamp((12_000 - thinkingMs) / (12_000 - 2_500), 0, 1)
@@ -184,7 +203,8 @@ Track per-session:
 - complete correct count;
 - wrong-pinyin count;
 - wrong-meaning count;
-- natural landings;
+- second-chance answers;
+- vanished words;
 - best streak;
 - words seen (unique and total);
 - newly mastered and newly unmastered words.
@@ -193,7 +213,7 @@ Accuracy is `completeCorrect / resolvedEnemies`. Do not count blank or irrelevan
 
 ## 7. Spawning and pressure
 
-The spawn clock runs while the battle is active, including pinyin, meaning, and non-blocking hit/landing feedback. It freezes during wrong-answer review, while paused/settings, while the page is hidden, and before deck/save loading completes.
+The spawn clock runs while the battle is active, including pinyin, meaning, and non-blocking hit feedback. It freezes during second chance, during wrong-answer review, while paused/settings, while the page is hidden, and before deck/save loading completes.
 
 After a word spawns, its current mastery sets the next interval. The multiplier interpolates linearly from `1.60` at pressure `0` (fresh words, gentlest), through `1.00` at pressure `0.5`, to `0.40` at pressure `1` (maximum pressure): `masteryInterval = baseInterval * lerp(1.60, 0.40, pressure)` where pressure is the spawned word's live `mastery / 100`. The existing performance multiplier then applies to that interval. The empty-battlefield 0.5-second refill remains the safety override.
 
@@ -224,21 +244,51 @@ Settings are reachable from deck selection and the pause overlay.
 
 Settings persist in the player save but do not belong to an HSK level.
 
-## 9. Landing and feedback
+## 9. Vanishing, second chance, and feedback
 
-A natural landing occurs only when the selected target is at progress `>= 1`, remains in the pinyin phase, and its active recall window has expired. Reaching the ground before selection or before that deadline clamps the enemy at ground level instead. A landing:
+### Vanishing
 
-- removes the enemy;
-- emits one `landed` outcome;
-- resets streak;
-- flashes the impacted base lane and displays the correction;
-- leaves score unchanged;
-- checkpoints immediately;
-- targets the remaining enemy predicted to land soonest.
+Any word — target or not — that reaches progress `>= 1` vanishes. Vanishing is
+deliberately consequence-free: it
 
-Natural-landing notices do not block the simulation. The next enemy becomes selected immediately, but even if it is already at ground level its own recall window starts at selection, so landings cannot cascade from queued altitude alone.
+- removes the word from the field;
+- emits NO outcome, reveals nothing, and leaves mastery untouched;
+- leaves score and streak unchanged;
+- records only a per-word `vanished` tally for the summary;
+- immediately targets the remaining word predicted to land soonest.
 
-A wrong-answer breach is already logically resolved, so it cannot generate a second landing outcome. Its correction panel reveals Hanzi, pinyin, and meaning; freezes descent, spawning, and answer input; and remains until the player presses **Continue Defense**. Review time is excluded from response timing, and the spawn interval restarts on dismissal instead of catching up.
+Nothing ever parks at the landing line, so queued altitude drains instead of
+piling up.
+
+### Altitude relief
+
+Every correct answer lifts each remaining word by a configured fraction of the
+full descent: `relief.correct` (0.10) normally and `relief.secondChance` (0.05)
+when the answer came in second chance. A wrong answer grants none. Relief is
+unconditional — it no longer depends on the resolved word being in the danger
+zone.
+
+### Second chance
+
+When the answer clock reaches `masteryCurve.floorMs` the encounter escalates to
+second chance: descent, spawning, and the clock itself freeze while answer input
+stays live, so the player may take as long as they like. A correct answer there
+resolves the word and applies `masteryCurve.secondChanceGain` (0 by default) —
+mastery is held exactly where it was — but scores no points and resets the
+streak. A wrong answer costs `masteryDelta` like any other. The frozen duration
+is handed back to the spawn clock on resolution so the untimed answer cannot
+dump a burst of overdue spawns onto the field.
+
+Because the freeze arrives before the ground can, a word that is being answered
+effectively never vanishes; a word selected while already near the ground may.
+
+### Correction panel
+
+A wrong-answer breach is already logically resolved, so it cannot generate a
+second outcome. Its correction panel reveals Hanzi, pinyin, and meaning; freezes
+descent, spawning, and answer input; and remains until the player presses
+**Continue Defense**. Review time is excluded from response timing, and the
+spawn interval restarts on dismissal instead of catching up.
 
 ## 10. Session ending
 

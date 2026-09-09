@@ -27,7 +27,7 @@ Reference palette:
 | Mint | `#87F5C5` | correct/saved/mastered |
 | Amber | `#FFC857` | active target/streak |
 | Pink | `#FF5CA8` | brand/enemy effects |
-| Red | `#FF5B6E` | wrong/landing only |
+| Red | `#FF5B6E` | wrong answers only |
 
 Bundle fonts locally. Use a Latin pixel display font similar to “Press Start 2P” for short headings/labels, a compact monospace for body/long meanings, and Noto Sans/Serif CJK SC for Hanzi. Do not force English pixel type onto Chinese glyphs.
 
@@ -266,8 +266,9 @@ in-progress answer.
   typed pinyin (same clean scoring/repair rules). A wrong click resolves the
   existing wrong-pinyin outcome immediately, carrying the selected sequence
   plus the wrong label.
-- The pinyin recall timeout is unchanged: a partial selection at the deadline
-  reveals the full pinyin, enters the meaning phase, and records a miss.
+- A partial selection when the answer clock reaches the floor opens second
+  chance: the field freezes and the remaining segments stay selectable for as
+  long as the player needs. Nothing is revealed.
 - There are NO letter/number pinyin hotkeys — buttons answer by click/tap or
   the platform's normal focus + `Enter`/`Space` activation. Meaning hotkeys
   are unchanged.
