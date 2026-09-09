@@ -1,5 +1,5 @@
 import HanziWriter from "hanzi-writer";
-import { Data, Effect } from "effect";
+import { Data, Effect, Fiber } from "effect";
 import { memo, useEffect, useRef, useState } from "react";
 import { STROKE_DRAW_MS, STROKE_GAP_MS, type StrokeCharacterData } from "../data/strokeData";
 
@@ -143,10 +143,11 @@ function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, writeSpee
       });
     // Load local data, wait for this character's turn in the phrase cadence,
     // then animate; a paused start arms the writer in place.
+    let writing: Fiber.RuntimeFiber<void, never> | null = null;
     const sequence = Effect.gen(function* () {
       yield* setCharacter(writer, character);
       yield* waitForSequenceTurn(() => pausedRef.current, startDelayMs);
-      yield* Effect.fork(animateCharacter(writer).pipe(Effect.catchAll(onSequenceFailure)));
+      writing = yield* Effect.forkDaemon(animateCharacter(writer).pipe(Effect.catchAll(onSequenceFailure)));
       if (pausedRef.current) yield* Effect.ignore(pauseAnimation(writer));
     });
     const fiber = Effect.runFork(Effect.catchAll(sequence, onSequenceFailure));
@@ -159,6 +160,7 @@ function AnimatedStrokeOrderCharacter({ character, data, startDelayMs, writeSpee
     return () => {
       disposed = true;
       fiber.unsafeInterruptAsFork(fiber.id());
+      writing?.unsafeInterruptAsFork(fiber.id());
       observer?.disconnect();
       writer._renderState?.cancelAll();
       writer._hanziWriterRenderer?.destroy();
