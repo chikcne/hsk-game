@@ -497,9 +497,10 @@ function BattleScreen({ deck, strokeData, initialVocab, battleConfig, pinyinPool
       <button className="pause-button" onClick={onPause} aria-label="Pause game">Ⅱ</button>
     </header>
 
-    <section className="practice-sheet" aria-hidden="true">
+    <section className="practice-sheet" aria-label="Battlefield">
       <GameCanvas
         enemies={enemyViews} preparingEnemy={preparingView} targetId={battle.target?.id ?? null} solvedId={solvedId}
+        columnCount={mobile ? 6 : 12} onSelectEnemy={battle.selectTarget}
         strokeData={strokeData} paused={paused || battle.learningPaused || battle.secondChance} reducedMotion={reducedMotion}
       />
     </section>

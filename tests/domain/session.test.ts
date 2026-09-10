@@ -1,7 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { advanceEnemies, moveEnemiesUp } from "../../src/domain/session/landing";
 import { wordSpeedMultiplierForFamiliarity } from "../../src/domain/session/speed";
-import { minimumTargetTravelTime, selectLockedTarget, soonestLandingEnemy } from "../../src/domain/session/targeting";
+import {
+  battlefieldColumn,
+  bottomMostEnemyInColumn,
+  minimumTargetTravelTime,
+  selectLockedTarget,
+  soonestLandingEnemy,
+} from "../../src/domain/session/targeting";
 import { calculatePoints, nextStreak } from "../../src/domain/session/scoring";
 import {
   emptyFieldWriteSchedule,
@@ -21,6 +27,7 @@ const enemy = (id: string, progress: number, spawnOrdinal: number, speedMultipli
   isNewWord: false,
   spawnOrdinal,
   lane: 0,
+  columnSlot: spawnOrdinal,
   status: "descending",
 });
 
@@ -43,6 +50,23 @@ describe("session rules", () => {
     const fasterArrival = enemy("new", 0.9, 2, 2);
     expect(selectLockedTarget([selected, fasterArrival], selected.id)?.id).toBe(selected.id);
     expect(selectLockedTarget([fasterArrival], selected.id)?.id).toBe(fasterArrival.id);
+  });
+
+  it("maps assigned slots to responsive columns and resolves a column to its live word", () => {
+    const rightmost = enemy("rightmost", 0.25, 0);
+    const nextColumn = enemy("next", 0.9, 1);
+    const wideOnly = enemy("wide", 0.7, 6);
+    const resolved = { ...enemy("resolved", 0.95, 2), status: "resolved" as const };
+
+    expect(battlefieldColumn(rightmost, 12)).toBe(11);
+    expect(battlefieldColumn(rightmost, 6)).toBe(5);
+    expect(battlefieldColumn(nextColumn, 6)).toBe(4);
+    expect(battlefieldColumn(wideOnly, 12)).toBe(5);
+    expect(battlefieldColumn(wideOnly, 6)).toBe(5);
+    expect(bottomMostEnemyInColumn([rightmost, nextColumn], 5, 6)?.id).toBe("rightmost");
+    expect(bottomMostEnemyInColumn([rightmost, nextColumn], 4, 6)?.id).toBe("next");
+    expect(bottomMostEnemyInColumn([rightmost, resolved], 9, 12)).toBeNull();
+    expect(bottomMostEnemyInColumn([rightmost], 0, 6)).toBeNull();
   });
 
   it("expresses the two-second targeting floor in base-travel units", () => {

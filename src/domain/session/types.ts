@@ -13,6 +13,9 @@ export type Enemy = {
   isNewWord: boolean;
   lane: number;
   spawnOrdinal: number;
+  /** Battlefield slot this word occupies. At most one live word per column:
+   * see `nextFreeColumnSlot` in ./columns. */
+  columnSlot: number;
   /** Pre-spawn write cadence multiplier (1 = natural). Only a preparing enemy
    * carries it: on an empty battlefield the stroke animation compresses so the
    * word is playable within the two-second empty-field budget. Gameplay

@@ -20,6 +20,7 @@ import {
   nextPerformanceMultiplier,
   performanceAdjustedSpawnDelayMs,
 } from "../../domain/session/performance";
+import { COLUMN_SLOTS, nextFreeColumnSlot } from "../../domain/session/columns";
 import { advanceEnemies, moveEnemiesUp } from "../../domain/session/landing";
 import { wordSpeedMultiplierForFamiliarity } from "../../domain/session/speed";
 import { minimumTargetTravelTime, selectLockedTarget } from "../../domain/session/targeting";
@@ -224,6 +225,7 @@ export function useBattle(
   const lastFrame = useRef<number | null>(null);
   const enemySequence = useRef(0);
   const spawnOrdinal = useRef(0);
+  const columnCursor = useRef(0);
   const pausedRef = useRef(paused); pausedRef.current = paused;
   const optionsRef = useRef(options); optionsRef.current = options;
   const suspendedAt = useRef<number | null>(null);
@@ -256,6 +258,26 @@ export function useBattle(
 
   useEffect(() => () => wordAudioPlayer.dispose(), [wordAudioPlayer]);
 
+  const lockTarget = useCallback((nextTarget: Enemy | null, now = performance.now()) => {
+    const nextTargetId = nextTarget?.id ?? null;
+    // Keep the synchronous answer handlers pointed at the latest enemy object
+    // even though progress updates do not require a target-state transition.
+    targetRef.current = nextTarget;
+    if (nextTargetId === targetIdRef.current) return;
+    targetIdRef.current = nextTargetId;
+    setTargetId(nextTargetId);
+    phaseRef.current = "pinyin"; setPhase("pinyin");
+    setChoices([]); setAudioError(false);
+    phaseStarted.current = now; answerStarted.current = now;
+    // A newly selected target re-locks the input mode from the current
+    // orientation/settings and discards any partial answer for the old word.
+    lockedInputModeRef.current = inputModeSettingRef.current;
+    setInputMode(inputModeSettingRef.current);
+    const initialSelection = initialPinyinSelection();
+    selectionProgressRef.current = initialSelection;
+    setSelectionProgress(initialSelection);
+  }, []);
+
   const commitEnemies = useCallback((nextEnemies: Enemy[], now = performance.now()) => {
     if (nextEnemies.length === 0 && preparingRef.current === null) {
       spawnDue.current = Math.min(spawnDue.current, now + EMPTY_BATTLEFIELD_SPAWN_DELAY_MS);
@@ -264,25 +286,10 @@ export function useBattle(
       enemySpeedMultiplierRef.current * performanceMultiplierRef.current,
     );
     const nextTarget = selectLockedTarget(nextEnemies, targetIdRef.current, minimumTravelTime);
-    const nextTargetId = nextTarget?.id ?? null;
-    if (nextTargetId !== targetIdRef.current) {
-      targetIdRef.current = nextTargetId;
-      targetRef.current = nextTarget;
-      setTargetId(nextTargetId);
-      phaseRef.current = "pinyin"; setPhase("pinyin");
-      setChoices([]); setAudioError(false);
-      phaseStarted.current = now; answerStarted.current = now;
-      // A new locked target re-locks the input mode from the CURRENT
-      // orientation/settings and restarts selection progress from scratch.
-      lockedInputModeRef.current = inputModeSettingRef.current;
-      setInputMode(inputModeSettingRef.current);
-      const initialSelection = initialPinyinSelection();
-      selectionProgressRef.current = initialSelection;
-      setSelectionProgress(initialSelection);
-    }
+    lockTarget(nextTarget, now);
     enemiesRef.current = nextEnemies;
     setEnemies(nextEnemies);
-  }, []);
+  }, [lockTarget]);
 
   useEffect(() => {
     const suspended = paused || learningPaused || document.hidden;
@@ -404,7 +411,10 @@ export function useBattle(
 
   /** Reserves a decided spawn: builds the enemy keyed by the vocab card id.
    * The mastery snapshot at spawn time is the encounter's pressure input. */
-  const reserveSpawn = useCallback((selection: NonNullable<ReturnType<typeof decideSpawn>>): PreparedSpawn | null => {
+  const reserveSpawn = useCallback((
+    selection: NonNullable<ReturnType<typeof decideSpawn>>,
+    columnSlot: number,
+  ): PreparedSpawn | null => {
     const word = words.get(selection.row.cardId);
     if (!word) return null;
     const ordinal = spawnOrdinal.current++;
@@ -417,6 +427,7 @@ export function useBattle(
       isNewWord: selection.row.mastery === 0,
       lane: (ordinal * 5 + 1) % 8,
       spawnOrdinal: ordinal,
+      columnSlot,
       status: "descending",
     };
     return { enemy, pressure, leadMs: 0, startedAt: 0, spawnAt: 0 };
@@ -513,7 +524,11 @@ export function useBattle(
   const resolveEnemy = useCallback((enemy: Enemy, outcome: EncounterOutcome, typed?: string) => {
     if (!enemiesRef.current.some((item) => item.id === enemy.id)) return;
     const now = performance.now();
-    const answerMs = Math.max(0, now - answerStarted.current);
+    // Mastery timing measures the pinyin phase only: once the meaning phase
+    // begins, the clock freezes at the pinyin selection time.
+    const answerMs = phaseRef.current === "meaning"
+      ? meaningPinyinMs.current
+      : Math.max(0, now - answerStarted.current);
     const inSecondChance = secondChanceRef.current;
     if (inSecondChance) {
       const frozenFor = Math.max(0, now - secondChanceStarted.current);
@@ -546,7 +561,9 @@ export function useBattle(
       const delta = Math.min(100, now - lastFrame.current); lastFrame.current = now;
       if (!pausedRef.current && !learningPausedRef.current && !document.hidden) {
         const currentPerformanceMultiplier = performanceMultiplierRef.current;
-        const answerMs = targetIdRef.current === null ? 0 : Math.max(0, now - answerStarted.current);
+        const answerMs = targetIdRef.current === null ? 0
+          : phaseRef.current === "meaning" ? meaningPinyinMs.current
+          : Math.max(0, now - answerStarted.current);
         if (targetIdRef.current !== null && !secondChanceRef.current && opensSecondChance(answerMs, battleConfig)) {
           secondChanceRef.current = true;
           secondChanceStarted.current = now;
@@ -554,13 +571,20 @@ export function useBattle(
         }
         if (secondChanceRef.current) { frame = requestAnimationFrame(tick); return; }
 
-        if (preparingRef.current === null && enemiesRef.current.length < MAX_ACTIVE_ENEMIES) {
+        const freeColumnSlot = preparingRef.current === null
+          ? nextFreeColumnSlot(enemiesRef.current, columnCursor.current)
+          : null;
+        if (preparingRef.current === null && freeColumnSlot === null) {
+          spawnDue.current += delta;
+        }
+        if (freeColumnSlot !== null && enemiesRef.current.length < MAX_ACTIVE_ENEMIES) {
           const selection = decideSpawn();
           if (selection) {
             const fullLeadMs = strokeLeadForWord(selection.row.cardId);
             if (now >= spawnDue.current - fullLeadMs) {
-              const reserved = reserveSpawn(selection);
+              const reserved = reserveSpawn(selection, freeColumnSlot);
               if (reserved) {
+                columnCursor.current = (freeColumnSlot + 1) % COLUMN_SLOTS;
                 // An empty battlefield must serve the next word within the
                 // two-second budget: its write compresses instead of serializing
                 // the full stroke lead after the board already cleared. With
@@ -608,6 +632,16 @@ export function useBattle(
     };
     frame = requestAnimationFrame(tick); return () => cancelAnimationFrame(frame);
   }, [battleConfig, commitEnemies, decideSpawn, recordVanished, reserveSpawn, settings.enemySpeedMultiplier, settings.spawnIntervalMs, strokeLeadForWord, words]);
+
+  /** Manual battlefield selection. GameCanvas hands over the word standing in
+   * the tapped column; the hook validates that it is still live before
+   * switching. */
+  const selectTarget = useCallback((enemyId: string) => {
+    if (pausedRef.current || learningPausedRef.current || secondChanceRef.current) return;
+    const enemy = enemiesRef.current.find((item) => item.id === enemyId && item.status === "descending");
+    if (!enemy) return;
+    lockTarget(enemy);
+  }, [lockTarget]);
 
   const submitPinyin = (raw: string) => {
     const enemy = targetRef.current; const word = enemy ? words.get(enemy.wordId) : null;
@@ -704,6 +738,6 @@ export function useBattle(
   return {
     enemies, preparingEnemy, target, targetWord, phase, secondChance, choices, feedback, learningPaused,
     audioError, streak, performanceMultiplier, stats, vocab, masteryCounts, submitPinyin, chooseMeaning,
-    dismissFeedback, replay, inputMode, selection, choosePinyin,
+    dismissFeedback, replay, inputMode, selection, choosePinyin, selectTarget,
   };
 }

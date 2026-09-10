@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 import type { Enemy } from "../../domain/session/types";
 import { DANGER_ZONE_PROGRESS } from "../../shared/constants";
 import type { RuntimeWord } from "../../shared/schemas";
+import { battlefieldColumn, bottomMostEnemyInColumn } from "../../domain/session/targeting";
 import { STROKE_CADENCE_MS, type StrokeDataMap } from "../data/strokeData";
 import { HanziText } from "./HanziText";
 import { StrokeOrderCharacter } from "./StrokeOrderCharacter";
@@ -22,8 +23,8 @@ type PhraseStyle = CSSProperties & {
 };
 
 const phraseStyle = (enemy: EnemyView): PhraseStyle => {
-  const desktopColumn = 12 - 1 - (enemy.spawnOrdinal % 12);
-  const mobileColumn = 6 - 1 - (enemy.spawnOrdinal % 6);
+  const desktopColumn = battlefieldColumn(enemy, 12);
+  const mobileColumn = battlefieldColumn(enemy, 6);
   const progress = Math.min(1, Math.max(0, enemy.progress));
   return {
     "--desktop-x": `${((desktopColumn + 0.5) / 12) * 100}%`,
@@ -91,14 +92,16 @@ function SolvedPhrase({ item, reducedMotion, strokeData, onDone }: {
 /**
  * The word field is DOM-owned so glyphs stay sharp at every device pixel
  * ratio. Encounter timing and progress still come directly from useBattle;
- * columns are a cosmetic projection of spawnOrdinal only.
+ * each responsive column also exposes one hit area for its bottom-most word.
  */
-export function GameCanvas({ enemies, preparingEnemy, targetId, solvedId, strokeData, paused = false, reducedMotion = false }: {
+export function GameCanvas({ enemies, preparingEnemy, targetId, solvedId, strokeData, columnCount = 12, onSelectEnemy, paused = false, reducedMotion = false }: {
   enemies: EnemyView[];
   preparingEnemy: EnemyView | null;
   targetId: string | null;
   solvedId: string | null;
   strokeData: StrokeDataMap;
+  columnCount?: 6 | 12;
+  onSelectEnemy?: (enemyId: string) => void;
   paused?: boolean;
   reducedMotion?: boolean;
 }) {
@@ -128,11 +131,15 @@ export function GameCanvas({ enemies, preparingEnemy, targetId, solvedId, stroke
   const visualEnemies = preparingEnemy && !enemies.some((enemy) => enemy.id === preparingEnemy.id)
     ? [preparingEnemy, ...enemies]
     : enemies;
-  return <div className="calligraphy-field" aria-hidden="true">
-    <div className="column-rules">
+  const columnTargets = Array.from(
+    { length: columnCount },
+    (_, column) => bottomMostEnemyInColumn(enemies, column, columnCount),
+  );
+  return <div className="calligraphy-field" role="group" aria-label="Battlefield word columns">
+    <div className="column-rules" aria-hidden="true">
       {Array.from({ length: 12 }, (_, index) => <i key={index} />)}
     </div>
-    <div className="calligraphy-contents">
+    <div className="calligraphy-contents" aria-hidden="true">
       {target && <div className="target-column" style={phraseStyle(target)} />}
       {visualEnemies.map((enemy) => <Phrase
         key={enemy.id} enemy={enemy} target={enemy.id === targetId}
@@ -144,6 +151,18 @@ export function GameCanvas({ enemies, preparingEnemy, targetId, solvedId, stroke
         onDone={(key) => setRemnants((items) => items.filter((candidate) => candidate.key !== key))}
       />)}
     </div>
-    <div className="landing-rule" />
+    <div className="column-selectors" style={{ gridTemplateColumns: `repeat(${columnCount}, minmax(0, 1fr))` }}>
+      {columnTargets.map((enemy, column) => <button
+        key={column}
+        type="button"
+        className="column-selector"
+        aria-label={enemy ? `Select ${enemy.word.displayHanzi}` : undefined}
+        aria-pressed={enemy ? enemy.id === targetId : undefined}
+        data-enemy-id={enemy?.id}
+        disabled={paused || !enemy || !onSelectEnemy}
+        onClick={() => { if (enemy) onSelectEnemy?.(enemy.id); }}
+      />)}
+    </div>
+    <div className="landing-rule" aria-hidden="true" />
   </div>;
 }

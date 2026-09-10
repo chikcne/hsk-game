@@ -3,7 +3,8 @@ import type { BattleConfig, BattleOutcome } from "../../shared/battle";
 /**
  * Mastery gain for a correct answer, read off the piecewise-linear speed curve
  * at `answerMs` — the answer timer that starts the moment a word becomes the
- * locked target and runs across the pinyin AND meaning phases.
+ * locked target and stops when the pinyin answer completes, so it measures
+ * only the pinyin selection time, never the meaning phase.
  *
  * The curve is flat at `maxGain` up to `maxMs`, slopes to `midGain` at `midMs`,
  * then to `floorGain` at `floorMs`, and stays at `floorGain` beyond it. In live

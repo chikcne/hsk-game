@@ -24,12 +24,12 @@ boundaries:
 masteryDelta: 10
 
 # Answer-speed mastery curve. A dedicated answer timer starts the moment a word
-# becomes the locked target and runs until the meaning answer resolves it, so it
-# spans BOTH the pinyin and the meaning phase. Gain is piecewise linear through
-# three anchors: flat at maxGain up to maxMs, sloping down to midGain at midMs,
-# then down to floorGain at floorMs.
+# becomes the locked target and stops when the pinyin answer completes: it
+# measures ONLY the pinyin selection time, never the meaning phase. Gain is
+# piecewise linear through three anchors: flat at maxGain up to maxMs, sloping
+# down to midGain at midMs, then down to floorGain at floorMs.
 #
-# Reaching floorMs without resolving opens SECOND CHANCE instead: gameplay
+# Reaching floorMs during the pinyin phase opens SECOND CHANCE instead: gameplay
 # freezes, the answer has no time limit, and answering correctly there applies
 # secondChanceGain rather than any curve value.
 masteryCurve:
@@ -52,8 +52,8 @@ relief:
 # with mastery above lowMax. r interpolates the low-category draw share from 1
 # down to its asymptote as the developed vocabulary grows.
 curve:
-  midpoint: 5
-  shape: 1.3
+  midpoint: 10
+  shape: 1.1
 
 # Asymptotic category shares as n -> infinity (must sum to 1). lowShare(n) =
 # 1 - r(n) * (1 - asymptotes.low); the developed remainder r(n) splits between
