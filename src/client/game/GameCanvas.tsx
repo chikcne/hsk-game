@@ -94,7 +94,7 @@ function SolvedPhrase({ item, reducedMotion, strokeData, onDone }: {
  * ratio. Encounter timing and progress still come directly from useBattle;
  * each responsive column also exposes one hit area for its bottom-most word.
  */
-export function GameCanvas({ enemies, preparingEnemy, targetId, solvedId, strokeData, columnCount = 12, onSelectEnemy, paused = false, reducedMotion = false }: {
+export function GameCanvas({ enemies, preparingEnemy, targetId, solvedId, strokeData, columnCount = 12, onSelectEnemy, paused = false, freezeWriting = false, reducedMotion = false }: {
   enemies: EnemyView[];
   preparingEnemy: EnemyView | null;
   targetId: string | null;
@@ -103,6 +103,10 @@ export function GameCanvas({ enemies, preparingEnemy, targetId, solvedId, stroke
   columnCount?: 6 | 12;
   onSelectEnemy?: (enemyId: string) => void;
   paused?: boolean;
+  /** Suspends the pre-write stroke animation without disabling column
+   * selection: the meaning-selection freeze stops drawing but must not change
+   * which inputs the player can use. */
+  freezeWriting?: boolean;
   reducedMotion?: boolean;
 }) {
   const previous = useRef(new Map<string, EnemyView>());
@@ -144,7 +148,7 @@ export function GameCanvas({ enemies, preparingEnemy, targetId, solvedId, stroke
       {visualEnemies.map((enemy) => <Phrase
         key={enemy.id} enemy={enemy} target={enemy.id === targetId}
         preparing={enemy.id === preparingEnemy?.id}
-        reducedMotion={reducedMotion} paused={paused || pageHidden} strokeData={strokeData}
+        reducedMotion={reducedMotion} paused={paused || freezeWriting || pageHidden} strokeData={strokeData}
       />)}
       {remnants.map((item) => <SolvedPhrase
         key={item.key} item={item} reducedMotion={reducedMotion} strokeData={strokeData}

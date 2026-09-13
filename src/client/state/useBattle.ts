@@ -304,8 +304,17 @@ export function useBattle(
       phaseStarted.current += suspendedFor;
       answerStarted.current += suspendedFor;
       secondChanceStarted.current += suspendedFor;
+      // A suspension during the meaning phase is paid here; moving its start
+      // forward keeps resolveEnemy's freeze window from paying it twice.
+      meaningStarted.current += suspendedFor;
       spawnDue.current += suspendedFor;
-      if (preparingRef.current) preparingRef.current.spawnAt += suspendedFor;
+      // The pre-write animation is visually paused for the same window, so its
+      // startedAt/spawnAt clocks must skip it too: the write's remaining time
+      // is active drawing time, never frozen wall-clock time.
+      if (preparingRef.current) {
+        preparingRef.current.startedAt += suspendedFor;
+        preparingRef.current.spawnAt += suspendedFor;
+      }
       suspendedAt.current = null;
       lastFrame.current = now;
     }
@@ -319,8 +328,14 @@ export function useBattle(
         phaseStarted.current += suspendedFor;
         answerStarted.current += suspendedFor;
         secondChanceStarted.current += suspendedFor;
+        // Same window payment as the pause effect: a hidden-tab stretch during
+        // the meaning phase must not also be counted by resolveEnemy.
+        meaningStarted.current += suspendedFor;
         spawnDue.current += suspendedFor;
-        if (preparingRef.current) preparingRef.current.spawnAt += suspendedFor;
+        if (preparingRef.current) {
+          preparingRef.current.startedAt += suspendedFor;
+          preparingRef.current.spawnAt += suspendedFor;
+        }
         suspendedAt.current = null;
         lastFrame.current = now;
       }
@@ -537,21 +552,28 @@ export function useBattle(
       ? meaningPinyinMs.current
       : Math.max(0, now - answerStarted.current);
     const inSecondChance = secondChanceRef.current;
-    if (inSecondChance) {
-      const frozenFor = Math.max(0, now - secondChanceStarted.current);
+    // The meaning phase and a second chance both suspend the battlefield and
+    // the pre-write stroke animation; when they overlap (a slow pinyin answer
+    // can open the second chance right as the meaning phase begins) the frozen
+    // interval is the union [earliest start, now], paid exactly once. The
+    // preparing spawn's startedAt/spawnAt skip the same window because its
+    // write animates only unfrozen time.
+    const freezeStarted = phaseRef.current === "meaning" && inSecondChance
+      ? Math.min(meaningStarted.current, secondChanceStarted.current)
+      : phaseRef.current === "meaning" ? meaningStarted.current
+      : inSecondChance ? secondChanceStarted.current
+      : null;
+    if (freezeStarted !== null) {
+      const frozenFor = Math.max(0, now - freezeStarted);
       spawnDue.current += frozenFor;
-      if (preparingRef.current) preparingRef.current.spawnAt += frozenFor;
+      if (preparingRef.current) {
+        preparingRef.current.startedAt += frozenFor;
+        preparingRef.current.spawnAt += frozenFor;
+      }
+    }
+    if (inSecondChance) {
       secondChanceRef.current = false;
       setSecondChance(false);
-    }
-    // The meaning phase suspends falling and spawning; hand that frozen time
-    // back to the spawn schedule so cadence resumes where it left off. A
-    // second chance that opened during the meaning phase already shifted this
-    // window, so the freeze starts after whichever began later.
-    if (phaseRef.current === "meaning") {
-      const frozenFor = Math.max(0, now - Math.max(meaningStarted.current, secondChanceStarted.current));
-      spawnDue.current += frozenFor;
-      if (preparingRef.current) preparingRef.current.spawnAt += frozenFor;
     }
     const remaining = enemiesRef.current.filter((item) => item.id !== enemy.id);
     const relieved = outcome.kind === "correct"
@@ -709,7 +731,12 @@ export function useBattle(
     if (suspendedAt.current !== null) {
       const suspendedFor = now - suspendedAt.current;
       spawnDue.current += suspendedFor;
-      if (preparingRef.current) preparingRef.current.spawnAt += suspendedFor;
+      // The pre-write animation was paused for this window too (learning
+      // pause gates GameCanvas), so both of its clocks skip it.
+      if (preparingRef.current) {
+        preparingRef.current.startedAt += suspendedFor;
+        preparingRef.current.spawnAt += suspendedFor;
+      }
     }
     suspendedAt.current = null;
     phaseStarted.current = now; answerStarted.current = now; lastFrame.current = now;

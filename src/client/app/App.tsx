@@ -501,7 +501,8 @@ function BattleScreen({ deck, strokeData, initialVocab, battleConfig, pinyinPool
       <GameCanvas
         enemies={enemyViews} preparingEnemy={preparingView} targetId={battle.target?.id ?? null} solvedId={solvedId}
         columnCount={mobile ? 6 : 12} onSelectEnemy={battle.selectTarget}
-        strokeData={strokeData} paused={paused || battle.learningPaused || battle.secondChance} reducedMotion={reducedMotion}
+        strokeData={strokeData} paused={paused || battle.learningPaused || battle.secondChance}
+        freezeWriting={battle.phase === "meaning" && battle.target !== null} reducedMotion={reducedMotion}
       />
     </section>
 
