@@ -217,6 +217,10 @@ export function useBattle(
   const secondChanceRef = useRef(false);
   const secondChanceStarted = useRef(0);
   const meaningPinyinMs = useRef(0);
+  /** When the current meaning phase began: enemy motion is suspended for its
+   * whole duration, and the spawn schedule is shifted by the same amount when
+   * the encounter resolves. */
+  const meaningStarted = useRef(0);
   const spawnDue = useRef(0);
   const [preparingEnemy, setPreparingEnemy] = useState<Enemy | null>(null);
   const preparingRef = useRef<PreparedSpawn | null>(null);
@@ -387,6 +391,7 @@ export function useBattle(
   const beginMeaning = useCallback((enemy: Enemy, word: RuntimeWord, pinyinMs: number) => {
     if (targetIdRef.current !== enemy.id || phaseRef.current !== "pinyin") return;
     meaningPinyinMs.current = pinyinMs;
+    meaningStarted.current = performance.now();
     // Safe by contract: choice generation can never throw here, so a
     // pathological deck can never terminate the rAF frame loop.
     setChoices(safeMeaningChoices(deck, word, enemy.id));
@@ -537,6 +542,15 @@ export function useBattle(
       secondChanceRef.current = false;
       setSecondChance(false);
     }
+    // The meaning phase suspends falling and spawning; hand that frozen time
+    // back to the spawn schedule so cadence resumes where it left off. A
+    // second chance that opened during the meaning phase already shifted this
+    // window, so the freeze starts after whichever began later.
+    if (phaseRef.current === "meaning") {
+      const frozenFor = Math.max(0, now - Math.max(meaningStarted.current, secondChanceStarted.current));
+      spawnDue.current += frozenFor;
+      if (preparingRef.current) preparingRef.current.spawnAt += frozenFor;
+    }
     const remaining = enemiesRef.current.filter((item) => item.id !== enemy.id);
     const relieved = outcome.kind === "correct"
       ? moveEnemiesUp(remaining, reliefForCorrect(inSecondChance, battleConfig))
@@ -570,6 +584,11 @@ export function useBattle(
           setSecondChance(true);
         }
         if (secondChanceRef.current) { frame = requestAnimationFrame(tick); return; }
+        // Meaning selection suspends the battlefield: no falling, no spawning
+        // until the player answers and resolveEnemy shifts the clocks forward.
+        if (targetIdRef.current !== null && phaseRef.current === "meaning") {
+          frame = requestAnimationFrame(tick); return;
+        }
 
         const freeColumnSlot = preparingRef.current === null
           ? nextFreeColumnSlot(enemiesRef.current, columnCursor.current)
