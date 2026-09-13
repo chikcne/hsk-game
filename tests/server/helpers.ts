@@ -64,9 +64,10 @@ export function fixedClock(...stamps: string[]): () => Date {
   return () => new Date(stamps[Math.min(index++, stamps.length - 1)]!);
 }
 
-/** Test-only Battle tuning fixture carrying the approved values. Production
- * loads config/battle.yaml as the single runtime tuning source — there is no
- * runtime TS default — so tests spell the expected numbers out explicitly. */
+/** Test-only Battle tuning fixture injected into repositories for domain-level
+ * tests. It is NOT kept value-identical to the committed config/battle.yaml:
+ * that file is the single runtime tuning source, and tests that exercise it
+ * load it themselves rather than comparing against this literal. */
 export const TEST_BATTLE_CONFIG: BattleConfig = {
   learningSlots: 5,
   boundaries: { lowMax: 50, developingMax: 99 },

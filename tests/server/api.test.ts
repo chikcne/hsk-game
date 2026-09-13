@@ -1,12 +1,19 @@
 import { mkdir, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import { dirname, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { afterEach, describe, expect, it } from "vitest";
 import { buildApp } from "../../src/server/app";
+import { loadBattleConfig } from "../../src/server/config";
 import { DEFAULT_SETTINGS } from "../../src/shared/constants";
 
-import { TEST_BATTLE_CONFIG, cleanupDirectories, temporaryDirectory, writeCurriculumFixture } from "./helpers";
+import { cleanupDirectories, temporaryDirectory, writeCurriculumFixture } from "./helpers";
 
 afterEach(cleanupDirectories);
+
+const repositoryRoot = resolve(join(dirname(fileURLToPath(import.meta.url)), "../.."));
+// The real tuning source of truth, loaded the same way the server loads it —
+// these tests assert behavior, not any particular set of numbers.
+const battleConfig = loadBattleConfig(join(repositoryRoot, "config/battle.yaml"));
 
 async function makeApp(curriculumCount = 8) {
   const root = await temporaryDirectory("hanzi-api-");
@@ -33,7 +40,7 @@ describe("save API", () => {
     expect(response.json()).toEqual({
       settings: DEFAULT_SETTINGS,
       vocab: [],
-      battleConfig: TEST_BATTLE_CONFIG,
+      battleConfig,
     });
     await app.close();
   });
@@ -59,17 +66,22 @@ describe("save API", () => {
     await app.inject({ method: "POST", url: "/api/saves/default/battle/open" });
     const url = `/api/saves/default/vocab/${fixture.cardIds[2]}/outcome`;
 
-    // 0 -> 50 stays low: five midpoint answers at +10 each, no refill yet.
-    for (let index = 0; index < 5; index += 1) {
-      const response = await app.inject({ method: "POST", url, payload: { outcome: { kind: "correct", answerMs: 5_000 } } });
+    // Answers at the midpoint speed each earn masteryCurve.midGain. Enough of
+    // them to reach but not exceed lowMax keep the word in the low category
+    // (no refill); one more graduates the slot.
+    const { midGain, midMs } = battleConfig.masteryCurve;
+    const lowMax = battleConfig.boundaries.lowMax;
+    const stayingAnswers = Math.floor(lowMax / midGain);
+    for (let index = 0; index < stayingAnswers; index += 1) {
+      const response = await app.inject({ method: "POST", url, payload: { outcome: { kind: "correct", answerMs: midMs } } });
       expect(response.statusCode).toBe(200);
       expect(response.json().addedRows).toEqual([]);
     }
-    // 50 -> 60 graduates the slot: position 6 is appended.
-    const graduated = await app.inject({ method: "POST", url, payload: { outcome: { kind: "correct", answerMs: 5_000 } } });
+    // Graduation: mastery crosses lowMax and position 6 is appended.
+    const graduated = await app.inject({ method: "POST", url, payload: { outcome: { kind: "correct", answerMs: midMs } } });
     expect(graduated.statusCode).toBe(200);
     const body = graduated.json();
-    expect(body.row).toMatchObject({ id: 3, cardId: fixture.cardIds[2], mastery: 60 });
+    expect(body.row).toMatchObject({ id: 3, cardId: fixture.cardIds[2], mastery: Math.min(100, (stayingAnswers + 1) * midGain) });
     expect(body.addedRows.map((row: { id: number }) => row.id)).toEqual([6]);
 
     const state = await app.inject({ method: "GET", url: "/api/saves/default" });

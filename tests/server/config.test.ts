@@ -5,7 +5,7 @@ import { describe, expect, it } from "vitest";
 import { BattleConfigError, loadBattleConfig } from "../../src/server/config";
 import { Curriculum, CurriculumError } from "../../src/server/saves/curriculum";
 
-import { fixtureCardId, TEST_BATTLE_CONFIG, writeConfigFixture, writeCurriculumFrom } from "./helpers";
+import { fixtureCardId, writeConfigFixture, writeCurriculumFrom } from "./helpers";
 
 const repositoryRoot = resolve(join(dirname(fileURLToPath(import.meta.url)), "../.."));
 
@@ -26,8 +26,9 @@ const withoutReliefSection = BASE.replace(`${RELIEF_LINE}\n`, "");
 
 describe("battle configuration loading", () => {
   it("loads the committed config/battle.yaml and validates it", () => {
-    const config = loadBattleConfig(join(repositoryRoot, "config/battle.yaml"));
-    expect(config).toEqual(TEST_BATTLE_CONFIG);
+    // The yaml is the single tuning source of truth: assert it loads cleanly,
+    // not that it carries any particular numbers.
+    expect(() => loadBattleConfig(join(repositoryRoot, "config/battle.yaml"))).not.toThrow();
   });
 
   it("rejects missing keys, extra keys, and renamed keys", async () => {

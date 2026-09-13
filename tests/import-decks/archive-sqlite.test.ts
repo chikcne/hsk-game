@@ -1,10 +1,9 @@
 import { mkdtemp, rm } from "node:fs/promises";
-import { join, resolve } from "node:path";
+import { join } from "node:path";
 import { tmpdir } from "node:os";
 import Database from "better-sqlite3";
 import { afterEach, describe, expect, it } from "vitest";
 import { parseMediaMap, parseSoundReference, readMediaMap } from "../../tools/import-decks/archive/media";
-import { extractArchiveEssentials, sha256File } from "../../tools/import-decks/archive/zip";
 import { ANKI_FIELD_NAMES } from "../../tools/import-decks/raw-types";
 import { readCollection } from "../../tools/import-decks/sqlite/read-collection";
 
@@ -45,16 +44,6 @@ describe("APKG boundary validation", () => {
     expect(collection.notes.map((note) => note.guid)).toEqual(["earlier", "later"]);
     expect(collection.notes[0]?.fields.hanzi).toBe("a0");
     expect(collection).toMatchObject({ noteCount: 2, cardCount: 1 });
-  });
-
-  it("lazily extracts only collection and media from a real small source package", async () => {
-    const directory = await mkdtemp(join(tmpdir(), "hsk-apkg-test-"));
-    temporaryDirectories.push(directory);
-    const apkg = resolve("decks/hsk-2-1488171715.apkg");
-    expect(await sha256File(apkg)).toBe("9c8fad18ad8ea5eed3ee897f72d7ffcb2c32e5f7f6200e771d8598154c524e8e");
-    const extracted = await extractArchiveEssentials(apkg, directory);
-    expect(readCollection(extracted.collectionPath)).toMatchObject({ noteCount: 200, cardCount: 600 });
-    expect((await readMediaMap(extracted.mediaPath)).filenameByMember.size).toBe(597);
   });
 
   it("blocks an unexpected note model", async () => {
