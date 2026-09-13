@@ -34,7 +34,7 @@ masteryDelta: 10
 # secondChanceGain rather than any curve value.
 masteryCurve:
   maxMs: 1500
-  maxGain: 50
+  maxGain: 30
   midMs: 5000
   midGain: 20
   floorMs: 8000
@@ -60,6 +60,6 @@ curve:
 # developing and mastered proportionally to their asymptotes, renormalized
 # when a category is empty.
 asymptotes:
-  low: 0.10
+  low: 0.30
   developing: 0.50
-  mastered: 0.40
+  mastered: 0.20
