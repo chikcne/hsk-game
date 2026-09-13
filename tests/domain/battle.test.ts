@@ -15,7 +15,7 @@ const CONFIG: BattleConfig = {
   learningSlots: 5,
   boundaries: { lowMax: 50, developingMax: 99 },
   masteryDelta: 10,
-  masteryCurve: { maxMs: 2000, maxGain: 20, midMs: 5000, midGain: 10, floorMs: 8000, floorGain: 1, secondChanceGain: 0 },
+  masteryCurve: { maxMsPerChar: 2000, maxGain: 20, midMsPerChar: 5000, midGain: 10, floorMsPerChar: 8000, floorGain: 1, secondChanceGain: 0 },
   relief: { correct: 0.1, secondChance: 0.05 },
   curve: { midpoint: 5, shape: 1.3 },
   asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 },
@@ -242,7 +242,7 @@ describe("live spawn selection", () => {
 });
 
 describe("answer-speed mastery curve", () => {
-  const gain = (answerMs: number) => speedMasteryGain(answerMs, CONFIG);
+  const gain = (answerMs: number) => speedMasteryGain(answerMs, 1, CONFIG);
 
   it("hits every configured anchor exactly", () => {
     expect(gain(2_000)).toBe(20);
@@ -278,18 +278,29 @@ describe("answer-speed mastery curve", () => {
   });
 
   it("opens second chance exactly at the floor anchor, never before", () => {
-    expect(opensSecondChance(7_999, CONFIG)).toBe(false);
-    expect(opensSecondChance(8_000, CONFIG)).toBe(true);
-    expect(opensSecondChance(60_000, CONFIG)).toBe(true);
-    expect(opensSecondChance(0, CONFIG)).toBe(false);
+    expect(opensSecondChance(7_999, 1, CONFIG)).toBe(false);
+    expect(opensSecondChance(8_000, 1, CONFIG)).toBe(true);
+    expect(opensSecondChance(60_000, 1, CONFIG)).toBe(true);
+    expect(opensSecondChance(0, 1, CONFIG)).toBe(false);
+  });
+
+  it("scales every anchor by the word's character count", () => {
+    // A two-character word faces each anchor doubled: max at 4s, mid at 10s,
+    // floor (second chance) at 16s.
+    expect(speedMasteryGain(3_999, 2, CONFIG)).toBe(20);
+    expect(speedMasteryGain(4_000, 2, CONFIG)).toBe(20);
+    expect(speedMasteryGain(7_000, 2, CONFIG)).toBe(15);
+    expect(speedMasteryGain(13_000, 2, CONFIG)).toBe(6);
+    expect(opensSecondChance(15_999, 2, CONFIG)).toBe(false);
+    expect(opensSecondChance(16_000, 2, CONFIG)).toBe(true);
   });
 });
 
 describe("mastery outcome delta", () => {
   it("reads a correct answer off the speed curve", () => {
-    expect(masteryDeltaFor({ kind: "correct", answerMs: 1_000 }, CONFIG)).toBe(20);
-    expect(masteryDeltaFor({ kind: "correct", answerMs: 5_000 }, CONFIG)).toBe(10);
-    expect(masteryDeltaFor({ kind: "correct", answerMs: 7_999 }, CONFIG)).toBe(1);
+    expect(masteryDeltaFor({ kind: "correct", answerMs: 1_000, charCount: 1 }, CONFIG)).toBe(20);
+    expect(masteryDeltaFor({ kind: "correct", answerMs: 5_000, charCount: 1 }, CONFIG)).toBe(10);
+    expect(masteryDeltaFor({ kind: "correct", answerMs: 7_999, charCount: 1 }, CONFIG)).toBe(1);
   });
 
   it("holds mastery flat for a second-chance answer and costs the delta for a wrong one", () => {
@@ -298,9 +309,9 @@ describe("mastery outcome delta", () => {
   });
 
   it("clamps every applied outcome to 0..100", () => {
-    expect(applyMasteryOutcome(40, { kind: "correct", answerMs: 5_000 }, CONFIG)).toBe(50);
-    expect(applyMasteryOutcome(95, { kind: "correct", answerMs: 0 }, CONFIG)).toBe(100);
-    expect(applyMasteryOutcome(100, { kind: "correct", answerMs: 0 }, CONFIG)).toBe(100);
+    expect(applyMasteryOutcome(40, { kind: "correct", answerMs: 5_000, charCount: 1 }, CONFIG)).toBe(50);
+    expect(applyMasteryOutcome(95, { kind: "correct", answerMs: 0, charCount: 1 }, CONFIG)).toBe(100);
+    expect(applyMasteryOutcome(100, { kind: "correct", answerMs: 0, charCount: 1 }, CONFIG)).toBe(100);
     expect(applyMasteryOutcome(5, { kind: "wrong" }, CONFIG)).toBe(0);
     expect(applyMasteryOutcome(0, { kind: "wrong" }, CONFIG)).toBe(0);
     expect(applyMasteryOutcome(60, { kind: "wrong" }, CONFIG)).toBe(50);
@@ -310,14 +321,14 @@ describe("mastery outcome delta", () => {
   it("reaches exactly 100 from 0 after ten midpoint answers, or five maximum-speed ones", () => {
     let mastery = 0;
     for (let step = 0; step < 9; step += 1) {
-      mastery = applyMasteryOutcome(mastery, { kind: "correct", answerMs: 5_000 }, CONFIG);
+      mastery = applyMasteryOutcome(mastery, { kind: "correct", answerMs: 5_000, charCount: 1 }, CONFIG);
     }
     expect(mastery).toBe(90);
-    expect(applyMasteryOutcome(mastery, { kind: "correct", answerMs: 5_000 }, CONFIG)).toBe(100);
+    expect(applyMasteryOutcome(mastery, { kind: "correct", answerMs: 5_000, charCount: 1 }, CONFIG)).toBe(100);
 
     let fast = 0;
     for (let step = 0; step < 5; step += 1) {
-      fast = applyMasteryOutcome(fast, { kind: "correct", answerMs: 1_500 }, CONFIG);
+      fast = applyMasteryOutcome(fast, { kind: "correct", answerMs: 1_500, charCount: 1 }, CONFIG);
     }
     expect(fast).toBe(100);
   });

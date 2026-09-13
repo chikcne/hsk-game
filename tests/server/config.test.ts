@@ -9,7 +9,7 @@ import { fixtureCardId, writeConfigFixture, writeCurriculumFrom } from "./helper
 
 const repositoryRoot = resolve(join(dirname(fileURLToPath(import.meta.url)), "../.."));
 
-const CURVE_LINE = "masteryCurve: { maxMs: 2000, maxGain: 20, midMs: 5000, midGain: 10, floorMs: 8000, floorGain: 1, secondChanceGain: 0 }";
+const CURVE_LINE = "masteryCurve: { maxMsPerChar: 2000, maxGain: 20, midMsPerChar: 5000, midGain: 10, floorMsPerChar: 8000, floorGain: 1, secondChanceGain: 0 }";
 const RELIEF_LINE = "relief: { correct: 0.1, secondChance: 0.05 }";
 const BASE = [
   "learningSlots: 5",
@@ -54,9 +54,9 @@ describe("battle configuration loading", () => {
       `${BASE.replace("lowMax: 50, developingMax: 99", "lowMax: 99, developingMax: 50")}${ASYMPTOTES}`,
       `${BASE}asymptotes: { low: 0.2, developing: 0.5, mastered: 0.4 }\n`,
       `${BASE.replace("masteryDelta: 10", "masteryDelta: -10")}${ASYMPTOTES}`,
-      `${BASE.replace("midMs: 5000", "midMs: 9000")}${ASYMPTOTES}`,
-      `${BASE.replace("maxMs: 2000", "maxMs: 5000")}${ASYMPTOTES}`,
-      `${BASE.replace("floorMs: 8000", "floorMs: 4000")}${ASYMPTOTES}`,
+      `${BASE.replace("midMsPerChar: 5000", "midMsPerChar: 9000")}${ASYMPTOTES}`,
+      `${BASE.replace("maxMsPerChar: 2000", "maxMsPerChar: 5000")}${ASYMPTOTES}`,
+      `${BASE.replace("floorMsPerChar: 8000", "floorMsPerChar: 4000")}${ASYMPTOTES}`,
       `${BASE.replace("maxGain: 20", "maxGain: 20.5")}${ASYMPTOTES}`,
       `${BASE.replace("correct: 0.1", "correct: 1.4")}${ASYMPTOTES}`,
       `${BASE.replace("secondChance: 0.05", "secondChance: -0.05")}${ASYMPTOTES}`,

@@ -6,13 +6,19 @@ import type { BattleConfig, BattleOutcome } from "../../shared/battle";
  * locked target and stops when the pinyin answer completes, so it measures
  * only the pinyin selection time, never the meaning phase.
  *
- * The curve is flat at `maxGain` up to `maxMs`, slopes to `midGain` at `midMs`,
- * then to `floorGain` at `floorMs`, and stays at `floorGain` beyond it. In live
- * play `floorMs` is never crossed while answering: it opens second chance
+ * The curve's anchor times are configured per character and scaled by
+ * `charCount`, the target word's length: every threshold a longer word faces
+ * grows proportionally. It is flat at `maxGain` up to `maxMsPerChar *
+ * charCount`, slopes to `midGain` at `midMsPerChar * charCount`, then to
+ * `floorGain` at `floorMsPerChar * charCount`, and stays there beyond. In live
+ * play the floor is never crossed while answering: it opens second chance
  * instead, whose gain is a separate configured constant.
  */
-export function speedMasteryGain(answerMs: number, config: BattleConfig): number {
-  const { maxMs, maxGain, midMs, midGain, floorMs, floorGain } = config.masteryCurve;
+export function speedMasteryGain(answerMs: number, charCount: number, config: BattleConfig): number {
+  const { maxMsPerChar, maxGain, midMsPerChar, midGain, floorMsPerChar, floorGain } = config.masteryCurve;
+  const maxMs = maxMsPerChar * charCount;
+  const midMs = midMsPerChar * charCount;
+  const floorMs = floorMsPerChar * charCount;
   if (answerMs <= maxMs) return maxGain;
   if (answerMs >= floorMs) return floorGain;
   const [fromMs, toMs, fromGain, toGain] = answerMs <= midMs
@@ -21,10 +27,11 @@ export function speedMasteryGain(answerMs: number, config: BattleConfig): number
   return Math.round(fromGain + (toGain - fromGain) * ((answerMs - fromMs) / (toMs - fromMs)));
 }
 
-/** True once the answer clock has reached the curve floor, at which point the
- * encounter escalates to second chance instead of scoring the floor gain. */
-export function opensSecondChance(answerMs: number, config: BattleConfig): boolean {
-  return answerMs >= config.masteryCurve.floorMs;
+/** True once the answer clock has reached the (character-scaled) curve floor,
+ * at which point the encounter escalates to second chance instead of scoring
+ * the floor gain. */
+export function opensSecondChance(answerMs: number, charCount: number, config: BattleConfig): boolean {
+  return answerMs >= config.masteryCurve.floorMsPerChar * charCount;
 }
 
 /**
@@ -37,7 +44,7 @@ export function opensSecondChance(answerMs: number, config: BattleConfig): boole
 export function masteryDeltaFor(outcome: BattleOutcome, config: BattleConfig): number {
   if (outcome.kind === "wrong") return -config.masteryDelta;
   if (outcome.kind === "secondChance") return config.masteryCurve.secondChanceGain;
-  return speedMasteryGain(outcome.answerMs, config);
+  return speedMasteryGain(outcome.answerMs, outcome.charCount, config);
 }
 
 /** Pure client-side mirror of the server's mastery update, clamped to 0..100.

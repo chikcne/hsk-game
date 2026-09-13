@@ -46,17 +46,18 @@ export const BattleConfigSchema = z.object({
   /** Mastery lost on a wrong pinyin or a wrong meaning, at any time. */
   masteryDelta: z.number().int().min(1),
   /** Piecewise-linear answer-speed gain curve over the answer timer, which
-   * starts when a word becomes the locked target and spans the pinyin AND
-   * meaning phases. Reaching `floorMs` unresolved opens second chance. */
+   * starts when a word becomes the locked target. Anchor times are per
+   * character and scale with the target word's length. Reaching the scaled
+   * `floorMsPerChar` unresolved opens second chance. */
   masteryCurve: z.object({
-    /** Upper bound of the flat maximum band. */
-    maxMs: z.number().int().min(0),
+    /** Upper bound of the flat maximum band, per character of the target word. */
+    maxMsPerChar: z.number().int().min(0),
     maxGain: z.number().int(),
-    /** Midpoint anchor time. */
-    midMs: z.number().int().min(1),
+    /** Midpoint anchor time, per character. */
+    midMsPerChar: z.number().int().min(1),
     midGain: z.number().int(),
-    /** Floor anchor time; also the second-chance threshold. */
-    floorMs: z.number().int().min(2),
+    /** Floor anchor time (also the second-chance threshold), per character. */
+    floorMsPerChar: z.number().int().min(2),
     floorGain: z.number().int(),
     /** Applied when a correct answer lands in second chance. */
     secondChanceGain: z.number().int(),
@@ -87,18 +88,24 @@ export const BattleConfigSchema = z.object({
   }
   const total = config.asymptotes.low + config.asymptotes.developing + config.asymptotes.mastered;
   if (Math.abs(total - 1) > 1e-9) add("asymptotes", "asymptotic shares must sum to 1");
-  const { maxMs, midMs, floorMs } = config.masteryCurve;
-  if (!(maxMs < midMs && midMs < floorMs)) {
-    add("masteryCurve", "anchor times must be strictly increasing: maxMs < midMs < floorMs");
+  const { maxMsPerChar, midMsPerChar, floorMsPerChar } = config.masteryCurve;
+  if (!(maxMsPerChar < midMsPerChar && midMsPerChar < floorMsPerChar)) {
+    add("masteryCurve", "anchor times must be strictly increasing: maxMsPerChar < midMsPerChar < floorMsPerChar");
   }
 });
 export type BattleConfig = z.infer<typeof BattleConfigSchema>;
 
 /** One resolved encounter as sent to the outcome endpoint. `correct` carries
- * the answer-timer reading that selects a point on the speed curve; a word that
- * reaches the ground unanswered changes nothing and is never posted. */
+ * the answer-timer reading that selects a point on the speed curve plus the
+ * target word's character count, which scales the per-character curve anchors;
+ * a word that reaches the ground unanswered changes nothing and is never
+ * posted. */
 export const BattleOutcomeSchema = z.discriminatedUnion("kind", [
-  z.object({ kind: z.literal("correct"), answerMs: z.number().min(0) }),
+  z.object({
+    kind: z.literal("correct"),
+    answerMs: z.number().min(0),
+    charCount: z.number().int().min(1),
+  }),
   z.object({ kind: z.literal("secondChance") }),
   z.object({ kind: z.literal("wrong") }),
 ]);

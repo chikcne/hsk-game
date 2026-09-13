@@ -26,18 +26,24 @@ masteryDelta: 10
 # Answer-speed mastery curve. A dedicated answer timer starts the moment a word
 # becomes the locked target and stops when the pinyin answer completes: it
 # measures ONLY the pinyin selection time, never the meaning phase. Gain is
-# piecewise linear through three anchors: flat at maxGain up to maxMs, sloping
-# down to midGain at midMs, then down to floorGain at floorMs.
+# piecewise linear through three anchors: flat at maxGain up to maxMsPerChar,
+# sloping down to midGain at midMsPerChar, then down to floorGain at
+# floorMsPerChar.
 #
-# Reaching floorMs during the pinyin phase opens SECOND CHANCE instead: gameplay
-# freezes, the answer has no time limit, and answering correctly there applies
-# secondChanceGain rather than any curve value.
+# Every anchor is PER CHARACTER and multiplied by the word's character count,
+# so longer words get proportionally more time: a 1-character word earns
+# maxGain within maxMsPerChar, a 2-character word within 2 x maxMsPerChar,
+# and so on.
+#
+# Reaching floorMsPerChar x characters during the pinyin phase opens SECOND
+# CHANCE instead: gameplay freezes, the answer has no time limit, and answering
+# correctly there applies secondChanceGain rather than any curve value.
 masteryCurve:
-  maxMs: 1500
+  maxMsPerChar: 1500
   maxGain: 30
-  midMs: 5000
+  midMsPerChar: 5000
   midGain: 20
-  floorMs: 8000
+  floorMsPerChar: 8000
   floorGain: 1
   secondChanceGain: 0
 

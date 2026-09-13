@@ -19,7 +19,7 @@ const CONFIG = {
   learningSlots: 5,
   boundaries: { lowMax: 50, developingMax: 99 },
   masteryDelta: 10,
-  masteryCurve: { maxMs: 2000, maxGain: 20, midMs: 5000, midGain: 10, floorMs: 8000, floorGain: 1, secondChanceGain: 0 },
+  masteryCurve: { maxMsPerChar: 2000, maxGain: 20, midMsPerChar: 5000, midGain: 10, floorMsPerChar: 8000, floorGain: 1, secondChanceGain: 0 },
   relief: { correct: 0.1, secondChance: 0.05 },
   curve: { midpoint: 5, shape: 1.3 },
   asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 },
@@ -159,7 +159,7 @@ describe("playable runtime slice", () => {
     //    the low boundary refills the slot with the NEXT unseen curriculum
     //    entry in strict order (positions 6, 7, ...).
     const seedCard = vocab[0]!.cardId;
-    const midpointAnswer: BattleOutcome = { kind: "correct", answerMs: CONFIG.masteryCurve.midMs };
+    const midpointAnswer: BattleOutcome = { kind: "correct", answerMs: CONFIG.masteryCurve.midMsPerChar, charCount: 1 };
     for (let step = 0; step < 10; step += 1) {
       const result = simulateServerOutcome(vocab, curriculumIds, seedCard, midpointAnswer);
       vocab = result.vocab;

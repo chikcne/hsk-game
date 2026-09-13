@@ -15,7 +15,7 @@ export class BattleConfigError extends Data.TaggedError("BattleConfigError")<{
 const EXPECTED_KEYS = {
   root: ["learningSlots", "boundaries", "masteryDelta", "masteryCurve", "relief", "curve", "asymptotes"],
   boundaries: ["lowMax", "developingMax"],
-  masteryCurve: ["maxMs", "maxGain", "midMs", "midGain", "floorMs", "floorGain", "secondChanceGain"],
+  masteryCurve: ["maxMsPerChar", "maxGain", "midMsPerChar", "midGain", "floorMsPerChar", "floorGain", "secondChanceGain"],
   relief: ["correct", "secondChance"],
   curve: ["midpoint", "shape"],
   asymptotes: ["low", "developing", "mastered"],

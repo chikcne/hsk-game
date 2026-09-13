@@ -463,7 +463,9 @@ export function useBattle(
     const word = words.get(enemy.wordId); if (!word) return;
     const battleOutcome: BattleOutcome = outcome.kind !== "correct"
       ? { kind: "wrong" }
-      : inSecondChance ? { kind: "secondChance" } : { kind: "correct", answerMs };
+      : inSecondChance
+        ? { kind: "secondChance" }
+        : { kind: "correct", answerMs, charCount: word.pinyinSegments.length };
     const pinyinMs = outcome.pinyinMs;
     const thinking = outcome.kind === "wrongPinyin"
       ? outcome.pinyinMs
@@ -599,10 +601,15 @@ export function useBattle(
       const delta = Math.min(100, now - lastFrame.current); lastFrame.current = now;
       if (!pausedRef.current && !learningPausedRef.current && !document.hidden) {
         const currentPerformanceMultiplier = performanceMultiplierRef.current;
+        const targetWordId = targetIdRef.current === null
+          ? undefined
+          : enemiesRef.current.find((item) => item.id === targetIdRef.current)?.wordId;
+        const targetWord = targetWordId === undefined ? undefined : words.get(targetWordId);
         const answerMs = targetIdRef.current === null ? 0
           : phaseRef.current === "meaning" ? meaningPinyinMs.current
           : Math.max(0, now - answerStarted.current);
-        if (targetIdRef.current !== null && !secondChanceRef.current && opensSecondChance(answerMs, battleConfig)) {
+        if (targetWord && !secondChanceRef.current
+          && opensSecondChance(answerMs, targetWord.pinyinSegments.length, battleConfig)) {
           secondChanceRef.current = true;
           secondChanceStarted.current = now;
           setSecondChance(true);

@@ -72,7 +72,7 @@ export const TEST_BATTLE_CONFIG: BattleConfig = {
   learningSlots: 5,
   boundaries: { lowMax: 50, developingMax: 99 },
   masteryDelta: 10,
-  masteryCurve: { maxMs: 2000, maxGain: 20, midMs: 5000, midGain: 10, floorMs: 8000, floorGain: 1, secondChanceGain: 0 },
+  masteryCurve: { maxMsPerChar: 2000, maxGain: 20, midMsPerChar: 5000, midGain: 10, floorMsPerChar: 8000, floorGain: 1, secondChanceGain: 0 },
   relief: { correct: 0.1, secondChance: 0.05 },
   curve: { midpoint: 5, shape: 1.3 },
   asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 },
@@ -89,8 +89,8 @@ export const fastGraduationConfig: BattleConfig = {
 /** Outcome fixtures at the committed curve anchors: `fastAnswer` sits in the
  * flat maximum band, `midAnswer` on the midpoint anchor, `slowAnswer` one
  * millisecond short of the second-chance threshold. */
-export const fastAnswer: BattleOutcome = { kind: "correct", answerMs: 1_000 };
-export const midAnswer: BattleOutcome = { kind: "correct", answerMs: 5_000 };
-export const slowAnswer: BattleOutcome = { kind: "correct", answerMs: 7_999 };
+export const fastAnswer: BattleOutcome = { kind: "correct", answerMs: 1_000, charCount: 1 };
+export const midAnswer: BattleOutcome = { kind: "correct", answerMs: 5_000, charCount: 1 };
+export const slowAnswer: BattleOutcome = { kind: "correct", answerMs: 7_999, charCount: 1 };
 export const secondChanceAnswer: BattleOutcome = { kind: "secondChance" };
 export const wrongAnswer: BattleOutcome = { kind: "wrong" };

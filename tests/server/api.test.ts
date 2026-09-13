@@ -69,16 +69,16 @@ describe("save API", () => {
     // Answers at the midpoint speed each earn masteryCurve.midGain. Enough of
     // them to reach but not exceed lowMax keep the word in the low category
     // (no refill); one more graduates the slot.
-    const { midGain, midMs } = battleConfig.masteryCurve;
+    const { midGain, midMsPerChar } = battleConfig.masteryCurve;
     const lowMax = battleConfig.boundaries.lowMax;
     const stayingAnswers = Math.floor(lowMax / midGain);
     for (let index = 0; index < stayingAnswers; index += 1) {
-      const response = await app.inject({ method: "POST", url, payload: { outcome: { kind: "correct", answerMs: midMs } } });
+      const response = await app.inject({ method: "POST", url, payload: { outcome: { kind: "correct", answerMs: midMsPerChar, charCount: 1 } } });
       expect(response.statusCode).toBe(200);
       expect(response.json().addedRows).toEqual([]);
     }
     // Graduation: mastery crosses lowMax and position 6 is appended.
-    const graduated = await app.inject({ method: "POST", url, payload: { outcome: { kind: "correct", answerMs: midMs } } });
+    const graduated = await app.inject({ method: "POST", url, payload: { outcome: { kind: "correct", answerMs: midMsPerChar, charCount: 1 } } });
     expect(graduated.statusCode).toBe(200);
     const body = graduated.json();
     expect(body.row).toMatchObject({ id: 3, cardId: fixture.cardIds[2], mastery: Math.min(100, (stayingAnswers + 1) * midGain) });
@@ -96,7 +96,7 @@ describe("save API", () => {
     const unknown = await app.inject({
       method: "POST",
       url: `/api/saves/default/vocab/${fixture.cardIds[7]}/outcome`,
-      payload: { outcome: { kind: "correct", answerMs: 5_000 } },
+      payload: { outcome: { kind: "correct", answerMs: 5_000, charCount: 1 } },
     });
     expect(unknown.statusCode).toBe(404);
     expect(unknown.json()).toMatchObject({ error: "unknown_card" });
@@ -104,7 +104,7 @@ describe("save API", () => {
     const malformed = await app.inject({
       method: "POST",
       url: "/api/saves/default/vocab/not-a-card-id/outcome",
-      payload: { outcome: { kind: "correct", answerMs: 5_000 } },
+      payload: { outcome: { kind: "correct", answerMs: 5_000, charCount: 1 } },
     });
     expect(malformed.statusCode).toBe(400);
     expect(malformed.json()).toMatchObject({ error: "invalid_card_id" });
@@ -113,7 +113,7 @@ describe("save API", () => {
       {},
       { outcome: true },
       { outcome: { kind: "correct" } },
-      { outcome: { kind: "correct", answerMs: -1 } },
+      { outcome: { kind: "correct", answerMs: -1, charCount: 1 } },
       { outcome: { kind: "shrug" } },
       { outcome: { kind: "wrong" }, extra: 1 },
     ]) {

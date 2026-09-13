@@ -33,7 +33,7 @@ describe("battle save API", () => {
         learningSlots: 5,
         boundaries: { lowMax: 50, developingMax: 99 },
         masteryDelta: 10,
-        masteryCurve: { maxMs: 2000, maxGain: 20, midMs: 5000, midGain: 10, floorMs: 8000, floorGain: 1, secondChanceGain: 0 },
+        masteryCurve: { maxMsPerChar: 2000, maxGain: 20, midMsPerChar: 5000, midGain: 10, floorMsPerChar: 8000, floorGain: 1, secondChanceGain: 0 },
         relief: { correct: 0.1, secondChance: 0.05 },
         curve: { midpoint: 5, shape: 1.3 },
         asymptotes: { low: 0.1, developing: 0.5, mastered: 0.4 },
@@ -76,12 +76,12 @@ describe("battle save API", () => {
     const fetchMock = vi.fn().mockResolvedValue(jsonResponse({ row: row(1, 10), addedRows: [] }));
     globalThis.fetch = fetchMock as unknown as typeof fetch;
 
-    const outcome = await Effect.runPromise(postVocabOutcomeEffect("card/1:值得", { kind: "correct", answerMs: 1_450 }));
+    const outcome = await Effect.runPromise(postVocabOutcomeEffect("card/1:值得", { kind: "correct", answerMs: 1_450, charCount: 2 }));
     expect(outcome.row.mastery).toBe(10);
     const [url, init] = fetchMock.mock.calls[0]! as [string, RequestInit];
     expect(url).toBe("/api/saves/default/vocab/card%2F1%3A%E5%80%BC%E5%BE%97/outcome");
     expect(init.method).toBe("POST");
-    expect(JSON.parse(init.body as string)).toEqual({ outcome: { kind: "correct", answerMs: 1_450 } });
+    expect(JSON.parse(init.body as string)).toEqual({ outcome: { kind: "correct", answerMs: 1_450, charCount: 2 } });
   });
 
   it("posts second-chance and wrong outcomes without an answer time", async () => {
