@@ -519,7 +519,9 @@ export function useBattle(
     playSoundEffect(feedback.kind === "correct" ? "blaster" : "buzzer", settings.masterVolume);
     if (outcome.kind === "wrongPinyin" || outcome.kind === "wrongMeaning") playWordAudio(word);
     setFeedback(feedback);
-    if (feedback.kind !== "correct") {
+    // Misses and second-chance answers both pause the battlefield behind a
+    // blocking reveal (the word's pinyin and meaning) until dismissed.
+    if (feedback.kind !== "correct" || inSecondChance) {
       learningPausedRef.current = true; setLearningPaused(true);
     } else {
       window.setTimeout(() => setFeedback((item) => item?.id === enemy.id ? null : item), 1100);
@@ -700,7 +702,9 @@ export function useBattle(
   const dismissFeedback = useCallback(() => {
     if (!learningPausedRef.current) return;
     learningPausedRef.current = false; setLearningPaused(false);
-    setFeedback((item) => item?.kind !== "correct" ? null : item);
+    // Every feedback that sets the learning pause (misses and second-chance
+    // answers) is dismissed by this call, so the reveal always clears here.
+    setFeedback(null);
     const now = performance.now();
     if (suspendedAt.current !== null) {
       const suspendedFor = now - suspendedAt.current;

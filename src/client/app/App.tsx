@@ -679,7 +679,8 @@ function MobileKeyboard({ disabled, submitDisabled, backspaceDisabled, onLetter,
 
 function FeedbackNotice({ feedback, strokeData, onDismiss }: { feedback: NonNullable<ReturnType<typeof useBattle>["feedback"]>; strokeData: StrokeDataMap; onDismiss: () => void }) {
   if (feedback.kind === "correct" && feedback.secondChance) {
-    return <aside className="breach-notice" role="status"><strong><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b><footer><span>SECOND CHANCE ANSWER · MASTERY UNCHANGED</span></footer></aside>;
+    const notice = <aside className="breach-notice" role="dialog" aria-modal={true} aria-labelledby="learning-feedback-title"><strong id="learning-feedback-title"><HanziText text={feedback.word.displayHanzi} data={strokeData} /></strong><span>{feedback.word.displayPinyin}</span><b><HanziText text={feedback.word.meaning} data={strokeData} /></b><footer><span>SECOND CHANCE ANSWER · MASTERY UNCHANGED</span></footer><button autoFocus className="primary" onClick={onDismiss}>CONTINUE</button></aside>;
+    return <div className="modal-backdrop learning-backdrop">{notice}</div>;
   }
   if (feedback.kind === "correct" && (feedback.points ?? 0) >= 0) {
     return <aside className="hit-notice" role="status"><b>+{feedback.points ?? 0}</b><span>DIRECT HIT</span></aside>;
